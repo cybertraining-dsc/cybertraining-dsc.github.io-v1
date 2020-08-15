@@ -12,6 +12,8 @@ description: >
 TODO: why is it important
 {{% /pageinfo %}}
 
+
+
 ## Covid 101, Climate Change and their Technologies
 
 ### General Material
@@ -37,11 +39,11 @@ Need to add material here
     [(google docs)](https://docs.google.com/document/d/1KT3KHgV-jEIfnLSfI772kdKaFdXoiyAGjyLfU1TpzDA/edit?usp=sharing)
     This unit includes 3 videos
 
-    -   [how-to-create-a-colab-notebook.mp4](https://drive.google.com/open?id=17ezxX6PclXX5A5G18JRm69G1FEdzlWpg)
+    -   How to create a colab notebook [(mp4)](https://drive.google.com/open?id=17ezxX6PclXX5A5G18JRm69G1FEdzlWpg)
 
-    -   [how-to-create-a-simple-program.mp4](https://drive.google.com/open?id=1a831PDMQ9g9SxEohrNEs29TJXRngt_KX)
+    -   How to create a simple program [(mp4)](https://drive.google.com/open?id=1a831PDMQ9g9SxEohrNEs29TJXRngt_KX)
 
-    -   [how-to-do-benchmark.mp4](https://drive.google.com/open?id=1usVO36H3pNbpJYTi-YEue-nbOibHnQiY)
+    -   How to do benchmark [(mp4)](https://drive.google.com/open?id=1usVO36H3pNbpJYTi-YEue-nbOibHnQiY)
 
 -   **Deep Learning for MNIST** The docs are located alongside the video
     at
