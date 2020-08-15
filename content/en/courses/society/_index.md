@@ -1,6 +1,6 @@
 ---
-title: "Data Scient to Help Society Society"
-linkTitle: "Society"
+title: "Data Science to Help Society"
+linkTitle: "Data Science and Society"
 weight: 8
 date: 2020-08-15
 description: >
