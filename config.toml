@@ -15,7 +15,7 @@ contentDir = "content"
 # defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
-# enableMissingTranslationPlaceholders = true
+enableMissingTranslationPlaceholders = false
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
