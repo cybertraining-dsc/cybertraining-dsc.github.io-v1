@@ -11,11 +11,11 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content"
-# defaultContentLanguage = "en"
+contentDir = "content/en"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
-enableMissingTranslationPlaceholders = false
+enableMissingTranslationPlaceholders = true
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
