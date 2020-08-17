@@ -1,3 +1,11 @@
+draft:
+	hugo server -D
+
+view:
+	gopen http://localhost:1313/ 
+server:
+	hugo server
+
 publish:
 	hugo
 	git commit -m "Publish hugo" .

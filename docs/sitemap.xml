@@ -13,13 +13,38 @@
   </url>
   
   <url>
+    <loc>/courses/bigdata/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/cloud/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/society/</loc>
     <lastmod>2020-08-17T11:33:48-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/e523/</loc>
-    <lastmod>2020-08-15T16:31:40-04:00</lastmod>
+    <loc>/courses/linux/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/markdown/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/openstack/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/python/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
