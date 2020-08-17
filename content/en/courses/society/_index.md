@@ -12,6 +12,21 @@ description: >
 TODO: why is it important
 {{% /pageinfo %}}
 
+# test
+
+cite \[1\]
+
+<div id="refs" class="references">
+
+<div id="ref-doi:10.1002/cpe.572">
+
+\[1\] G. von Laszewski, I. Foster, J. Gawor, and P. Lane, “A java
+commodity grid kit,” *Concurrency and Computation: Practice and
+Experience*, vol. 13, no. 8‐9, pp. 645–662, 2001.
+
+</div>
+
+</div>
 
 
 ## Covid 101, Climate Change and their Technologies
