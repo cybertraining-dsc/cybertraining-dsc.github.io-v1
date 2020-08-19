@@ -7,21 +7,36 @@ description: >
   Show your user how to work through some end to end examples.
 ---
 
+<!--
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
+-->
 
-Tutorials are **complete worked examples** made up of **multiple tasks** that guide the user through a relatively simple but realistic scenario: building an application that uses some of your project’s features, for example. If you have already created some Examples for your project you can base Tutorials on them. This section is **optional**. However, remember that although you may not need this section at first, having tutorials can be useful to help your users engage with your example code, especially if there are aspects that need more explanation than you can easily provide in code comments.
+An important part of any scientific research is to communicate and
+document it. Previously we used LaTeX in this class to provide the
+ability to contribute professional looking documents. However here we
+will describe how ou can use markdown to create scientific documents.
+We use markdown also on the Web page.
 
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
-[^1]: This is the first footnote.
+[{{< figure src="https://github.com/laszewski/laszewski.github.io/raw/master/book/writing/featured.png"
+title="Scientific Writing with Markdown" width="30%">}}](https://laszewski.github.io/book/writing/)
 
-[^bignote]: Here's one with multiple paragraphs and code.
+The document is availanle as online book in ePub and PDF from the
+following Web Page:
 
-    Indent paragraphs to include them in the footnote.
+* <https://laszewski.github.io/book/writing/>
 
-    `{ my code }`
+For ePub we recommend to use iBooks on Macos and calibre on all other systems.
 
-    Add as many paragraphs as you like.
+Topics coverd include:
+
+* Plagarism
+* Writing Scientific Articles
+* Markdown (Pandoc format)
+* Markdown for presentations
+* Writing papers and reports with markdown
+* Emacs and markdown as an editor
+* Graphviz in markdown
     

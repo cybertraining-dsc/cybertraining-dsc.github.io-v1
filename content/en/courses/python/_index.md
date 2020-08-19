@@ -29,8 +29,7 @@ can conduct your programming for the cloud in python. Although this
 introduction was firts developed for Cloud COmputing related classes,
 it is a general introduction suitable for other classes.
 
-
-[<img class="special-img-class" style="width:30%" src="https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png"/>](https://laszewski.github.io/book/python/)
+[{{< figure src="https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png" title="Introduction to Python" width="30%">}}](https://laszewski.github.io/book/python/)
 
 The document is availanle as online book in ePub and PDF from the
 following Web Page:

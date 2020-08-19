@@ -4,11 +4,11 @@ linkTitle: "OpenStack"
 weight: 8
 date: 2020-08-15
 description: >
-  You will have the oportunity to learn more about OpenSTack. OpenStack is a Cloud toolkit allowing you to do Bare metal and virtual machine provisioning. Show your user how to work through some end to end examples.
+  You will have the oportunity to learn more about OpenStack. OpenStack is a Cloud toolkit allowing you to do Bare metal and virtual machine provisioning. Show your user how to work through some end to end examples.
 ---
 
 {{% pageinfo %}}
-OpenSTack is usable via commandline tools and REST APIs. YOu will be able to experiment with it on Chameleon Cloud. 
+OpenStack is usable via commandline tools and REST APIs. YOu will be able to experiment with it on Chameleon Cloud. 
 {{% /pageinfo %}}
 
 # OpenStack with Chameleon Cloud

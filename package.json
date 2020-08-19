@@ -16,7 +16,9 @@
     "url": "https://github.com/google/docsy-example/issues"
   },
   "homepage": "https://github.com/google/docsy-example#readme",
-  "dependencies": {},
+  "dependencies": {
+    "mermaid.cli": "^0.5.1"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
     "postcss-cli": "^7.1.1"

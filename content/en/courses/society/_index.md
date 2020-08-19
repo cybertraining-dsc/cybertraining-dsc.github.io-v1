@@ -8,9 +8,11 @@ description: >
   other for hydrology.
 ---
 
+<!--
 {{% pageinfo %}}
 TODO: why is it important
 {{% /pageinfo %}}
+-->
 
 ## Covid 101, Climate Change and their Technologies
 

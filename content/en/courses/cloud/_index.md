@@ -4,24 +4,66 @@ linkTitle: "Cloud Computing"
 weight: 8
 date: 2020-08-15
 description: >
-  Show your user how to work through some end to end examples.
+  This is a large volume that introduces you to many aspects of cloud computing.
 ---
 
+<!--
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
+-->
 
-Tutorials are **complete worked examples** made up of **multiple tasks** that guide the user through a relatively simple but realistic scenario: building an application that uses some of your project’s features, for example. If you have already created some Examples for your project you can base Tutorials on them. This section is **optional**. However, remember that although you may not need this section at first, having tutorials can be useful to help your users engage with your example code, especially if there are aspects that need more explanation than you can easily provide in code comments.
 
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+[{{< figure
+     src="https://github.com/laszewski/laszewski.github.io/raw/master/book/cloud/featured.png"
+     title="Cloud Computing" width="30%">}}](https://laszewski.github.io/book/cloud/)
 
-[^1]: This is the first footnote.
+The document is availanle as online book in ePub and PDF from the
+following Web Page:
 
-[^bignote]: Here's one with multiple paragraphs and code.
+* <https://laszewski.github.io/book/cloud/>
 
-    Indent paragraphs to include them in the footnote.
+For ePub we recommend to use iBooks on Macos and calibre on all other systems.
 
-    `{ my code }`
+THe book has over 590 pages. Topics coverd include:
 
-    Add as many paragraphs as you like.
-    
+
+* DEFINITION OF CLOUD COMPUTING
+* CLOUD DATACENTER
+* CLOUD ARCHITECTURE
+* CLOUD REST
+  * NIST  
+  * GRAPHQL
+* HYPERVISOR
+  * Virtualization
+    * Virtual Machine Management with QEMU
+* IAAS
+    * Multipass
+    * Vagrant 
+    * Amazon Web Services
+    * Microsoft Azure
+    * Google IaaS Cloud Services
+    * OpenStack
+    * Python Libcloud
+    * AWS Boto 
+    * Cloudmesh
+* MAPREDUCE
+  * HADOOP
+  * SPARK
+  * HADOOP ECOSYSTEM
+  * TWISTER
+  * HADOOP RDMA
+* CONTAINERS
+   * DOCKER
+   * KUBERNETES
+   * Singularity
+* SERVERLESS
+  * FaaS
+  * Apache OpenWhisk
+  * Kubeless
+  * OpenFaaS
+` * OpenLamda
+* MESSAGING
+  * MQTT
+  * Apache Avro
+* GO
