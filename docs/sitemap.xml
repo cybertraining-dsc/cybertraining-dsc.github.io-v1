@@ -58,13 +58,13 @@
   </url>
   
   <url>
-    <loc>/blog/e534/</loc>
-    <lastmod>2020-08-19T00:00:00+00:00</lastmod>
+    <loc>/courses/</loc>
+    <lastmod>2020-08-15T02:05:33-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/</loc>
-    <lastmod>2020-08-15T02:05:33-04:00</lastmod>
+    <loc>/blog/e534/</loc>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
   </url>
   
   <url>
@@ -74,7 +74,7 @@
   
   <url>
     <loc>/blog/news/</loc>
-    <lastmod>2020-08-15T02:05:33-04:00</lastmod>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
   </url>
   
   <url>
@@ -85,6 +85,11 @@
   <url>
     <loc>/modules/transformer/</loc>
     <lastmod>2020-08-20T00:02:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/git-pull-request/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -99,12 +104,12 @@
   
   <url>
     <loc>/blog/2020/08/19/new-web-site/</loc>
-    <lastmod>2020-08-15T02:05:33-04:00</lastmod>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/2020/08/19/welcome-to-e534-and-e434/</loc>
-    <lastmod>2020-08-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
   </url>
   
   <url>
@@ -119,7 +124,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-08-20T00:02:37-04:00</lastmod>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
   </url>
   
   <url>
