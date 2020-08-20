@@ -6,7 +6,6 @@ enableRobotsTXT = true
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
-
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
@@ -62,9 +61,12 @@ weight = 1
 
 
 [markup]
+  
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.pandoc]
+    args = "--matjax -s --bibliography /home/blue/Desktop/hugo/cybertraining-dsc.github.io/bib/references.bib --csl /home/blue/Desktop/hugo/cybertraining-dsc.github.io/bib/ieee.csl"
   [markup.highlight]
       # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
       style = "tango"
