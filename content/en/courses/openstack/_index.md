@@ -40,7 +40,7 @@ For ePub, we recommend using iBooks on MacOS and calibre on all other systems.
 
 Topics covered include:
 
-* Using CHameleoncloud more securely
+* Using Chameleoncloud more securely
 * Resources
 * Hardware
 * Charging
