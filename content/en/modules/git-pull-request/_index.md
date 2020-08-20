@@ -1,10 +1,10 @@
 ---
-title: "Git pull requst"
-linkTitle: "Git pull request"
+title: "Git pull request"
+linkTitle: "Git pull request."
 weight: 100
 date: 2020-08-15
 description: >
-  We provide a practical guide on how to do GitHub pull requests from the commandline and the GUI for this Web site.
+  We provide a practical guide on GitHub pull requests from the command line and the GUI for this Web site.
 #resources:
 #- src: "**.{png,jpg}"
 #  title: "Image #:counter"
@@ -12,24 +12,22 @@ description: >
 #    byline: "Photo: Gregor von Laszewski / CC-BY-CA"
 ---
 
-
 {{% pageinfo %}}
 
-It is actually very easy to help us modifying the Web Site through
-GitHub pull requests. We demonstrate this via the commandline and via
+It is very easy to help us modifying the Web Site through
+GitHub pull requests. We demonstrate this via the command line and 
 the GitHub GUI.
 
-The commandline can be run form any computer with Linux, Windows, and
-macOS. ON Windows you need to install gitbash and use that. This way
-you have a commandline terminal that just works like on LInux and OSX.
+The command line can be run from any computer with Linux, Windows, and
+macOS. On Windows, you need to install gitbash and use that. This way, you have a command line terminal that works the same on Linux and OSX.
 
 {{% /pageinfo %}}
 
-Please note that we have two different mechanisms
+Please note that we have two different mechanisms:
 
-1. A pull request via the commandline, in which we also demonstrate how easy it is to see your changes in realtime
+1. A pull request via the command line, in which we also demonstrate how easy it is to see your changes in realtime
 
-2. A pull request via the github GUI
+2. A pull request via the GitHub GUI
 
 We are not explaining how to keep up with the original forked repository.
 
@@ -37,11 +35,11 @@ We are not explaining how to keep up with the original forked repository.
 
 9:15 min
 
-{{< youtube F369RBlL33A >}}
+{{< video id="F369RBlL33A" >}}
 
 ## 2. Pull Request with GUI
 
 4:20 min
 
-{{< youtube  eU3jOuM7OQc >}}
+{{< video  id="eU3jOuM7OQc" >}}
 

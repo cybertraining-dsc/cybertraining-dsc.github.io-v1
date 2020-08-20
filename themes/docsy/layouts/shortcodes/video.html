@@ -1,6 +1,5 @@
-<div>
-  <p> {{ .Get "title" }} </p>
-
-  <iframe src="{{ .Get "url" }}" width="320" height="240"></iframe>
-
+<div style="max-width:560px;margin:0 auto; padding:5px;">
+  <div style="position: relative;padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe width="560" height="315" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/{{ .Get "id" }}?showinfo=0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; max-width: 560px; max-height: 315px;"></iframe>
+  </div>
 </div>
