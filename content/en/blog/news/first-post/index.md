@@ -1,8 +1,8 @@
 ---
 date: 2020-08-19
-title: "New Web SIte"
+title: "New Web Site"
 linkTitle: "New Web"
-description: "A new web site  was created"
+description: "The new web site  was created."
 author: Gregor von Laszewski ([@laszewski](https://laszewski.github.io))
 resources:
 - src: "**.{png,jpg}"

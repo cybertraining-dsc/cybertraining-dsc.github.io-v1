@@ -83,23 +83,38 @@
   </url>
   
   <url>
-    <loc>/modules/transformer/</loc>
-    <lastmod>2020-08-20T00:02:37-04:00</lastmod>
+    <loc>/modules/deep-learning/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/git-pull-request/</loc>
-    <lastmod>2020-08-20T12:03:02-04:00</lastmod>
+    <loc>/modules/sample/module/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/pandoc/</loc>
-    <lastmod>2020-08-19T22:45:56-04:00</lastmod>
+    <loc>/modules/sample/pandoc/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/git/git-pull-request/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/modules/sample/</loc>
     <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/deep-learning/transformer/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/git/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -119,7 +134,6 @@
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2020-08-19T17:15:42-04:00</lastmod>
   </url>
   
   <url>

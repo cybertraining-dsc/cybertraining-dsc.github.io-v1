@@ -4,8 +4,7 @@ linkTitle: "Data Science and Society"
 weight: 8
 date: 2020-08-15
 description: >
-  In this module we will learn how to aply data science for the good of the society. We introduce two examples one for COVID-19, the
-  other for hydrology.
+  In this module, we will learn how to apply data science for the good of society. We introduce two examples, one for COVID-19, the other for hydrology.
 ---
 
 <!--
@@ -14,7 +13,7 @@ TODO: why is it important
 {{% /pageinfo %}}
 -->
 
-## Covid 101, Climate Change and their Technologies
+## COVID 101, Climate Change and their Technologies
 
 ### General Material
 
@@ -24,7 +23,7 @@ Need to add material here
 
 ### Using Google CoLab and Jupyter notebooks
 
--   For questions on software please mail [Fugang
+-   For questions on software, please mail [Fugang
     Wang](mailto:KevinWangfg@gmail.com)
 
     -   Fugang can also give you help on python including introductory

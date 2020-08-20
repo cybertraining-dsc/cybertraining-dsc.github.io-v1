@@ -4,7 +4,7 @@ linkTitle: "Python"
 weight: 8
 date: 2020-08-15
 description: >
-  You will find here information about learning the Python Programming language and learn about its ecosuystem.
+  You will find here information about learning the Python Programming language and learn about its ecosystem.
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
@@ -24,24 +24,23 @@ on most platforms.
 
 # Introduction to Python
 
-This online book will provide you with enough information so that you
-can conduct your programming for the cloud in python. Although this
-introduction was firts developed for Cloud COmputing related classes,
+This online book will provide you with enough information to conduct your programming for the cloud in python. Although this
+the introduction was first developed for Cloud Computing related classes,
 it is a general introduction suitable for other classes.
 
 [{{< figure src="https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png" title="Introduction to Python" width="30%">}}](https://laszewski.github.io/book/python/)
 
-The document is availanle as online book in ePub and PDF from the
+The document is available as an online book in ePub and PDF from the
 following Web Page:
 
 * <https://laszewski.github.io/book/python/>
 
-For ePub we recommend to use iBooks on Macos and calibre on all other systems.
+For ePub, we recommend using iBooks on macOS and calibre on all other systems.
 
-Topics coverd include:
+Topics covered include:
 
 
-* Python Instalation
+* Python Installation
   * Using Multiple different Python Versions
 * First Steps
   * REPL
@@ -65,7 +64,3 @@ Topics coverd include:
   * Fingerprint Matching
   * Face Detection
 
-
-
-
-  
