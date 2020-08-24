@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cybertraining – Samples</title>
+    <title>Cybertraining – Sample</title>
     <link>/modules/sample/</link>
-    <description>Recent content in Samples on Cybertraining</description>
+    <description>Recent content in Sample on Cybertraining</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
     
@@ -13,118 +13,6 @@
         
       
     
-    
-    <item>
-      <title>Modules: Sample Module</title>
-      <link>/modules/sample/module/</link>
-      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/sample/module/</guid>
-      <description>
-        
-        
-        
-        <![CDATA[<img src="/modules/sample/module/featured_hu1f843290fd829ec69bff8ebeb30e7767_131071_640x0_resize_catmullrom_2.png" width="640" height="880"/>]]>
-        
-        
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Here comes the complete abstract about this module, while the
-the description is a summary; the abstract is a bit more verbose.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Splash: An optional module related image may be nice to start the image may be nice to create a splash the learners find attractive.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://laszewski.github.io/book/python/&#34;&gt;&lt;figure&gt;
-    &lt;img src=&#34;https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png&#34; width=&#34;10%&#34;/&gt; &lt;figcaption&gt;
-            &lt;h4&gt;Introduction to Python&lt;/h4&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h2&gt;
-&lt;p&gt;Describe what knowledge needs to be here to start the module. Use a list and be specific as much as possible:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Computer with Python 3.8.3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;effort&#34;&gt;Effort&lt;/h2&gt;
-&lt;p&gt;If possible, describe here how much effort it takes to complete the module. Use a list&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 hour&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;list-of-topics-covered&#34;&gt;List of Topics covered&lt;/h2&gt;
-&lt;p&gt;Please list here the topics that are covered by the module. A list is often the preferred way to do that. Use the abstract/pageinfo to provide a more textual description.&lt;/p&gt;
-&lt;h2 id=&#34;organization&#34;&gt;Organization&lt;/h2&gt;
-&lt;p&gt;Please describe how the MOdule is organized, if needed.&lt;/p&gt;
-&lt;h2 id=&#34;unit-1-tbd&#34;&gt;Unit 1: TBD&lt;/h2&gt;
-&lt;p&gt;Include Unit 1 here&lt;/p&gt;
-&lt;h2 id=&#34;unit-2-tbd&#34;&gt;Unit 2: TBD&lt;/h2&gt;
-&lt;p&gt;Include Unit 2 here&lt;/p&gt;
-&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
-&lt;p&gt;Include the assignments here. Use a numbered list.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;p&gt;Put the references here&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Pandoc</title>
-      <link>/modules/sample/pandoc/</link>
-      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/sample/pandoc/</guid>
-      <description>
-        
-        
-        
-        <![CDATA[<img src="/modules/sample/pandoc/featured_hu1f843290fd829ec69bff8ebeb30e7767_131071_640x0_resize_catmullrom_2.png" width="640" height="880"/>]]>
-        
-        &lt;p&gt;Citations are not yet working &lt;span class=&#34;citation&#34; data-cites=&#34;doi:10.1002/cpe.572&#34;&gt;[@doi:10.1002/cpe.572]&lt;/span&gt;. Instead, please use footnotes for now Here is a footnote reference,&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34; role=&#34;doc-noteref&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Here comes the complete abstract about this module, while the the description is a summary; the abstract is a bit more verbose.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Splash: An optional module related image may be nice to start the image may be nice to create a splash the learners find attractive.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://laszewski.github.io/book/python/&#34;&gt;&lt;figure&gt;
-    &lt;img src=&#34;https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png&#34; width=&#34;10%&#34;/&gt; &lt;figcaption&gt;
-            &lt;h4&gt;Introduction to Python&lt;/h4&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h2&gt;
-&lt;p&gt;Describe what knowledge needs to be here to start the module. Use a list and be specific as much as possible:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Computer with Python 3.8.3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;effort&#34;&gt;Effort&lt;/h2&gt;
-&lt;p&gt;If possible, describe here how much effort it takes to complete the module. Use a list&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 hour&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;list-of-topics-covered&#34;&gt;List of Topics covered&lt;/h2&gt;
-&lt;p&gt;Please list here the topics that are covered by the module. A list is often the preferred way to do that. Use the abstract/pageinfo to provide a more textual description.&lt;/p&gt;
-&lt;h2 id=&#34;organization&#34;&gt;Organization&lt;/h2&gt;
-&lt;p&gt;Please describe how the MOdule is organized, if needed&lt;/p&gt;
-&lt;h2 id=&#34;unit-1-tbd&#34;&gt;Unit 1: TBD&lt;/h2&gt;
-&lt;p&gt;Include Unit 1 here&lt;/p&gt;
-&lt;h2 id=&#34;unit-2-tbd&#34;&gt;Unit 2: TBD&lt;/h2&gt;
-&lt;p&gt;Include Unit 2 here&lt;/p&gt;
-&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
-&lt;p&gt;Include the assignments here. Use a numbered list.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;p&gt;Put the references here&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn1&#34; role=&#34;doc-endnote&#34;&gt;&lt;p&gt;Here is the footnote.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-
-      </description>
-    </item>
     
   </channel>
 </rss>
