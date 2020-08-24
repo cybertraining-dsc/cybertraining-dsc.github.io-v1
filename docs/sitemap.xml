@@ -14,17 +14,17 @@
   
   <url>
     <loc>/courses/bigdata/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/cloud/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/society/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
@@ -34,22 +34,22 @@
   
   <url>
     <loc>/courses/linux/</loc>
-    <lastmod>2020-08-17T14:17:47-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/markdown/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/openstack/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/python/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
@@ -59,7 +59,7 @@
   
   <url>
     <loc>/courses/</loc>
-    <lastmod>2020-08-15T02:05:33-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
@@ -69,7 +69,7 @@
   
   <url>
     <loc>/modules/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
@@ -83,12 +83,27 @@
   </url>
   
   <url>
+    <loc>/modules/sample/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/git/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/deep-learning/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/modules/sample/module/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/list/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,23 +118,13 @@
   </url>
   
   <url>
-    <loc>/modules/sample/</loc>
-    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/modules/deep-learning/transformer/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/git/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/2020/08/19/new-web-site/</loc>
-    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>
@@ -148,7 +153,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-08-19T16:37:12-04:00</lastmod>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
   </url>
   
   <url>

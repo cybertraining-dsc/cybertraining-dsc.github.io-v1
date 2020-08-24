@@ -1,7 +1,7 @@
 ---
 title: "Samples"
 linkTitle: "Samples"
-weight: 100
+weight: 70
 date: 2020-08-15
 description: >
   For creating new pages on this Web site, we have prepared a number of samples. 
