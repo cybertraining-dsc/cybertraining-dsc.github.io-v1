@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/contrib/overview/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/devop-ci/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contrib/start/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/devops-iac/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/bigdata/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/cloud/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/society/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/isystems/</loc>
+    <lastmod>2020-08-19T14:00:51-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/linux/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/markdown/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/openstack/</loc>
+    <lastmod>2020-08-20T17:13:53-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/python/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/ansible/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contrib/guidelines/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/e534/</loc>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/news/</loc>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/puppet/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contrib/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/travis/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/devop-aws/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/devops/devop-azure-monitor/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/git-pull-request/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/pandoc/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/sample/</loc>
+    <lastmod>2020-08-24T14:47:47-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/transformer/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2020/08/19/new-web-site/</loc>
+    <lastmod>2020-08-20T16:43:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2020/08/19/welcome-to-e534-and-e434/</loc>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contrib/start/markdown/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-08-20T00:29:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contrib/contributors/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/search/</loc>
+    <lastmod>2020-08-15T02:05:33-04:00</lastmod>
+  </url>
+  
+</urlset>

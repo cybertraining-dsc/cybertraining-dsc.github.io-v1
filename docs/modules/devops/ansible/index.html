@@ -1,0 +1,1130 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.75.0-DEV" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Ansible | Cybertraining</title><meta property="og:title" content="Ansible" />
+<meta property="og:description" content="Ansible is an open-source IT automation DevOps engine allowing you to manage and configure many compute resources in a scalable, consistent and reliable way.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/modules/devops/ansible/" />
+<meta property="article:modified_time" content="2020-08-25T21:55:09-04:00" /><meta property="og:site_name" content="Cybertraining" />
+<meta itemprop="name" content="Ansible">
+<meta itemprop="description" content="Ansible is an open-source IT automation DevOps engine allowing you to manage and configure many compute resources in a scalable, consistent and reliable way.
+">
+<meta itemprop="dateModified" content="2020-08-25T21:55:09-04:00" />
+<meta itemprop="wordCount" content="3249">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ansible"/>
+<meta name="twitter:description" content="Ansible is an open-source IT automation DevOps engine allowing you to manage and configure many compute resources in a scalable, consistent and reliable way.
+"/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.f90b9edd4e8825c565e3db16bd41e9002e1c446d6fb5bf1f9ebd4ee5581677a6.css" as="style">
+<link href="/scss/main.min.f90b9edd4e8825c565e3db16bd41e9002e1c446d6fb5bf1f9ebd4ee5581677a6.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zM197.0804 232.033c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zM197.0804 177.6188c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zM197.5309 286.4723c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zM197.0804 340.5784c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="text-uppercase font-weight-bold">Cybertraining</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/courses/" ><span>Courses</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/modules/devops/" ><span class="active">DevOps</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/modules/" ><span class="active">Modules</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/contrib/" ><span>Contributing</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/blog/" ><span>Blog</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Modules</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="modules">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/devops/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">DevOps</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="modulesdevops">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevop-ci" href="/modules/devops/devop-ci/">DevOps - Continuous Improvement</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevops-iac" href="/modules/devops/devops-iac/">Infrastructure as Code (IaC)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-modulesdevopsansible" href="/modules/devops/ansible/">Ansible</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopspuppet" href="/modules/devops/puppet/">Puppet</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopstravis" href="/modules/devops/travis/">Travis</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevop-aws" href="/modules/devops/devop-aws/">DevOps with AWS</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevop-azure-monitor" href="/modules/devops/devop-azure-monitor/">DevOps with Azure Monitor</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/git-pull-request/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Git pull request</a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesgit-pull-request">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/pandoc/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Pandoc Sample</a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulespandoc">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/sample/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Sample</a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulessample">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/transformer/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Sample Module</a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulestransformer">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/edit/master/content/en/modules/devops/ansible.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/issues/new?title=Ansible" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-ansible">Introduction to Ansible</a>
+      <ul>
+        <li><a href="#prerequisite">Prerequisite</a></li>
+        <li><a href="#setting-up-a-playbook">Setting up a playbook</a></li>
+        <li><a href="#run-the-playbook">Run the playbook</a></li>
+      </ul>
+    </li>
+    <li><a href="#ansible-roles">Ansible Roles</a></li>
+    <li><a href="#using-variables">Using Variables</a></li>
+    <li><a href="#ansible-galaxy">Ansible Galaxy</a>
+      <ul>
+        <li><a href="#ansible-galaxy-helloworld">Ansible Galaxy helloworld</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-complete-ansible-galaxy-project">A Complete Ansible Galaxy Project</a>
+      <ul>
+        <li><a href="#ansible-write-a-playbooks-for-mongodb">Ansible: Write a Playbooks for MongoDB</a></li>
+        <li><a href="#first-playbook-for-mongodb-installation">First playbook for MongoDB Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#exercise">Exercise</a></li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/modules/">Modules</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/modules/devops/">DevOps</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/modules/devops/ansible/">Ansible</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Ansible</h1>
+    <div class="lead">Ansible is an open-source IT automation DevOps engine allowing you to manage and configure many compute resources in a scalable, consistent and reliable way.</div>
+	       
+	<h2 id="introduction-to-ansible">Introduction to Ansible</h2>
+<p>Ansible is an open-source IT automation DevOps engine allowing you to manage
+and configure many compute resources in a scalable, consistent and
+reliable way.</p>
+<p>Ansible to automates the following tasks:</p>
+<ul>
+<li>
+<p><strong>Provisioning:</strong> It sets up the servers that you will use as part
+of your infrastructure.</p>
+</li>
+<li>
+<p><strong>Configuration management:</strong> You can change the configuration of an
+application, OS, or device. You can implement security policies and
+other configuration tasks.</p>
+</li>
+<li>
+<p><strong>Service management:</strong> You can start and stop services, install
+updates</p>
+</li>
+<li>
+<p><strong>Application deployment:</strong> You can conduct application deployments
+in an automated fashion that integrate with your DevOps strategies.</p>
+</li>
+</ul>
+<h3 id="prerequisite">Prerequisite</h3>
+<p>We assume you</p>
+<ul>
+<li>
+<p>can install Ubuntu 18.04 virtual machine on VirtualBox</p>
+</li>
+<li>
+<p>can install software packages via &lsquo;apt-get&rsquo; tool in Ubuntu
+virtual host</p>
+</li>
+<li>
+<p>already reserved a virtual cluster (with at least 1 virtual
+machine in it) on some cloud. OR you can use VMs installed in
+VirtualBox instead.</p>
+</li>
+<li>
+<p>have SSH credentials and can login to your virtual machines.</p>
+</li>
+</ul>
+<h3 id="setting-up-a-playbook">Setting up a playbook</h3>
+<p>Let us develop a sample from scratch, based on the paradigms that
+ansible supports. We are going to use Ansible to install Apache server on
+our virtual machines.</p>
+<p>First, we install ansible on our machine and make sure we have an up
+to date OS:</p>
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install ansible
+</code></pre>
+<p>Next, we prepare a working environment for your Ansible example</p>
+<pre><code>$ mkdir ansible-apache
+$ cd ansible-apache
+</code></pre>
+<p>To use ansible we will need a local configuration. When you execute
+Ansible within this folder, this local configuration file is always
+going to overwrite a system level Ansible configuration.  It is in
+general beneficial to keep custom configurations locally unless you
+absolutely believe it should be applied system wide. Create a file
+<code>inventory.cfg</code> in this folder, add the following:</p>
+<pre><code>[defaults]
+hostfile = hosts.txt
+</code></pre>
+<p>This local configuration file tells that the target machines&rsquo; names
+are given in a file named <code>hosts.txt</code>. Next we will specify hosts in
+the file.</p>
+<p>You should have ssh login accesses to all VMs listed in this file as
+part of our prerequisites. Now create and edit file <code>hosts.txt</code> with
+the following content:</p>
+<pre><code>[apache]
+&lt;server_ip&gt; ansible_ssh_user=&lt;server_username&gt;
+</code></pre>
+<p>The name <code>apache</code> in the brackets defines a server group name. We will
+use this name to refer to all server items in this group. As we intend
+to install and run apache on the server, the name choice seems quite
+appropriate. Fill in the IP addresses of the virtual machines you
+launched in your VirtualBox and fire up these VMs in you VirtualBox.</p>
+<p>To deploy the service, we need to create a playbook. A playbook tells
+Ansible what to do. it uses YAML Markup syntax. Create and edit a file
+with a proper name e.g. <code>apache.yml</code> as follow:</p>
+<pre><code>---
+- hosts: apache #comment: apache is the group name we just defined
+  become: yes #comment: this operation needs privilege access
+  tasks:
+    - name: install apache2 # text description
+      apt: name=apache2 update_cache=yes state=latest
+</code></pre>
+<p>This block defines the target VMs and operations(tasks) need to apply.
+We are using the <code>apt</code> attribute to indicate all software packages that
+need to be installed. Dependent on the distribution of the operating
+system it will find the correct module installer without your
+knowledge. Thus an ansible playbook could also work for multiple
+different OSes.</p>
+<p>Ansible relies on various kinds of modules to fulfil tasks on the remote
+servers. These modules are developed for particular tasks and take in
+related arguments. For instance, when we use <code>apt</code> module, we
+need to tell which package we intend to install. That is why we provide
+a value for the <code>name=</code> argument. The first <code>-name</code> attribute is just
+a comment that will be printed when this task is executed.</p>
+<h3 id="run-the-playbook">Run the playbook</h3>
+<p>In the same folder, execute</p>
+<pre><code>ansible-playbook apache.yml --ask-sudo-pass
+</code></pre>
+<p>After a successful run, open a browser and fill in your server IP. you
+should see an &lsquo;It works!&rsquo; Apache2 Ubuntu default page. Make sure the
+security policy on your cloud opens port 80 to let the HTTP traffic go
+through.</p>
+<p>Ansible playbook can have more complex and fancy structure and syntaxes.
+Go explore! This example is based on:</p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04</a></li>
+</ul>
+<p>We are going to offer an advanced Ansible in next chapter.</p>
+<h2 id="ansible-roles">Ansible Roles</h2>
+<p>Next we install the R package onto our cloud VMs.  R is a useful
+statistic programing language commonly used in many scientific and
+statistics computing projects, maybe also the one you chose for this
+class.  With this example we illustrate the concept of Ansible Roles,
+install source code through Github, and make use of variables. These
+are key features you will find useful in your project deployments.</p>
+<p>We are going to use a top-down fashion in this example. We first start
+from a playbook that is already good to go. You can execute this
+playbook (do not do it yet, always read the entire section first) to
+get R installed in your remote hosts. We then further complicate this
+concise playbook by introducing functionalities to do the same tasks
+but in different ways. Although these different ways are not necessary
+they help you grasp the power of Ansible and ease your life when they
+are needed in your real projects.</p>
+<p>Let us now create the following playbook with the name <code>example.yml</code>:</p>
+<pre><code>---
+- hosts: R_hosts
+  become: yes
+  tasks:
+    - name: install the R package
+      apt: name=r-base update_cache=yes state=latest
+</code></pre>
+<p>The hosts are defined in a file <code>hosts.txt</code>, which we configured in
+a file that we now call <code>ansible.cfg</code>:</p>
+<pre><code>[R_hosts]
+&lt;cloud_server_ip&gt; ansible_ssh_user=&lt;cloud_server_username&gt;
+</code></pre>
+<p>Certainly, this should get the installation job done. But we are going
+to extend it via new features called role next</p>
+<p>Role is an important concept used often in large Ansible projects.
+You divide a series of tasks into different groups. Each group
+corresponds to certain role within the project.</p>
+<p>For example, if your project is to deploy a web site, you may need to
+install the back end database, the web server that responses HTTP
+requests and the web application itself. They are three different roles
+and should carry out their own installation and configuration tasks.</p>
+<p>Even though we only need to install the R package in this example, we
+can still do it by defining a role &lsquo;r&rsquo;. Let us modify our <code>example.yml</code> to be:</p>
+<pre><code>---
+- hosts: R_hosts
+
+  roles:
+    - r
+</code></pre>
+<p>Now we create a directory structure in your top project directory as follows</p>
+<pre><code>$ mkdir -p roles/r/tasks
+$ touch roles/r/tasks/main.yml
+</code></pre>
+<p>Next, we edit the  <code>main.yml</code> file and include the following content:</p>
+<pre><code>---
+- name: install the R package
+  apt: name=r-base update_cache=yes state=latest
+  become: yes
+</code></pre>
+<p>You probably already get the point. We take the &lsquo;tasks&rsquo; section out of
+the earlier <code>example.yml</code> and re-organize them into roles. Each role
+specified in <code>example.yml</code> should have its own directory under roles/ and
+the tasks need be done by this role is listed in a file &lsquo;tasks/main.yml&rsquo;
+as previous.</p>
+<h2 id="using-variables">Using Variables</h2>
+<p>We demonstrate this feature by installing source code from Github.
+Although R can be installed through the OS package manager (apt-get
+etc.), the software used in your projects may not. Many research
+projects are available by Git instead. Here we are going to show you how
+to install packages from their Git repositories. Instead of directly
+executing the module &lsquo;apt&rsquo;, we pretend Ubuntu does not provide this
+package and you have to find it on Git. The source code of R can be
+found at <a href="https://github.com/wch/r-source.git">https://github.com/wch/r-source.git</a>. We are going to clone it
+to a remote VM&rsquo;s hard drive, build the package and install the binary
+there.</p>
+<p>To do so, we need a few new Ansible modules. You may remember from the
+last example that Ansible modules assist us to do different tasks
+based on the arguments we pass to it. It will come to no surprise that
+Ansible has a module &lsquo;git&rsquo; to take care of git-related works, and a
+&lsquo;command&rsquo; module to run shell commands.  Let us modify
+<code>roles/r/tasks/main.yml</code> to be:</p>
+<pre><code>---
+- name: get R package source
+  git:
+    repo: https://github.com/wch/r-source.git
+    dest: /tmp/R
+
+- name: build and install R
+  become: yes
+  command: chdir=/tmp/R &quot;{{ item }}&quot;
+  with_items:
+    - ./configure
+    - make
+    - make install
+</code></pre>
+<p>The role <code>r</code> will now carry out two tasks. One to clone the R source
+code into <code>/tmp/R</code>, the other uses a series of shell commands to build and
+install the packages.</p>
+<p>Note that the commands executed by the second task may not be
+available on a fresh VM image. But the point of this example is to
+show an alternative way to install packages, so we conveniently assume
+the conditions are all met.</p>
+<p>To achieve this we are using variables in a separate file.</p>
+<p>We typed several string constants in our Ansible scripts so far. In
+general, it is a good practice to give these values names and use them
+by referring to their names. This way, you complex Ansible project can
+be less error prone. Create a file in the same directory, and name it
+<code>vars.yml</code>:</p>
+<pre><code>---
+repository: https://github.com/wch/r-source.git
+tmp: /tmp/R
+</code></pre>
+<p>Accordingly, we will update our <code>example.yml</code>:</p>
+<pre><code>---
+- hosts: R_hosts
+  vars_files:
+    - vars.yml
+  roles:
+    - r
+</code></pre>
+<p>As shown, we specify a <code>vars_files</code> telling the script that the file
+<code>vars.yml</code> is going to supply variable values, whose keys are denoted by
+Double curly brackets like in <code>roles/r/tasks/main.yml</code>:</p>
+<pre><code>---
+- name: get R package source
+  git:
+    repo: &quot;{{ repository }}&quot;
+    dest: &quot;{{ tmp }}&quot;
+
+- name: build and install R
+  become: yes
+  command: chdir=&quot;{{ tmp }}&quot; &quot;{{ item }}&quot;
+  with_items:
+    - ./configure
+    - make
+    - make install
+</code></pre>
+<p>Now, just edit the <code>hosts.txt</code> file with your target VMs&rsquo; IP addresses and
+execute the playbook.</p>
+<p>You should be able to extend the Ansible playbook for your
+needs. Configuration tools like Ansible are important components to
+master the cloud environment.</p>
+<h2 id="ansible-galaxy">Ansible Galaxy</h2>
+<p>Ansible Galaxy is a marketplace, where developers can share Ansible
+Roles to complete their system administration tasks. Roles exchanged
+in Ansible Galaxy community need to follow common conventions so that
+all participants know what to expect. We will illustrate details in
+this chapter.</p>
+<p>It is good to follow the Ansible Galaxy standard during your development
+as much as possible.</p>
+<h3 id="ansible-galaxy-helloworld">Ansible Galaxy helloworld</h3>
+<p>Let us start with a simplest case: We will build an Ansible Galaxy
+project. This project will install the Emacs software package on your
+localhost as the target host. It is a <em>helloworld</em> project only meant to
+get us familiar with Ansible Galaxy project structures.</p>
+<p>First you need to create a directory. Let us call it <code>mongodb</code>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir mongodb
+</code></pre></div><p>Go ahead and create files <code>README.md</code>, <code>playbook.yml</code>, <code>inventory</code> and a
+subdirectory <code>roles/</code> then  `playbook.yml is your project playbook. It
+should perform the Emacs installation task by executing the
+corresponding role you will develop in the folder &lsquo;roles/&rsquo;. The only
+difference is that we will construct the role with the help of
+ansible-galaxy this time.</p>
+<p>Now, let ansible-galaxy initialize the directory structure for you:</p>
+<pre><code>$ cd roles
+$ ansible-galaxy init &lt;to-be-created-role-name&gt;
+</code></pre>
+<p>The naming convention is to concatenate your name and the role name by a
+dot. @fig:ansible shows how it looks like.</p>
+<p><img src="../images/ansible-galaxy-init-structure.png" alt="image">{#fig:ansible}</p>
+<p>Let us fill in information to our project. There are several <code>main.yml</code>
+files in different folders, and we will illustrate their usages.</p>
+<p>defaults and vars:</p>
+<blockquote>
+<p>These folders should hold variables key-value pairs for your
+playbook scripts. We will leave them empty in this example.</p>
+</blockquote>
+<p>files:</p>
+<blockquote>
+<p>This folder is for files need to be copied to the target
+hosts. Data files or configuration files can be specified if
+needed. We will leave it empty too.</p>
+</blockquote>
+<p>templates:</p>
+<blockquote>
+<p>Similar missions to files/, templates is allocated for template
+files. Keep empty for a simple Emacs installation.</p>
+</blockquote>
+<p>handlers:</p>
+<blockquote>
+<p>This is reserved for services running on target hosts. For example,
+to restart a service under certain circumstance.</p>
+</blockquote>
+<p>tasks:</p>
+<blockquote>
+<p>This file is the actual script for all tasks. You can use the role you
+built previously for Emacs installation here:</p>
+<pre><code>---
+- name: install Emacs on Ubuntu 16.04
+  become: yes
+  package: name=emacs state=present
+</code></pre>
+</blockquote>
+<p>meta:</p>
+<blockquote>
+<p>Provide necessary metadata for our Ansible Galaxy project for
+shipping:</p>
+</blockquote>
+<pre><code>    ---
+    galaxy_info:
+      author: &lt;you name&gt;
+      description: emacs installation on Ubuntu 16.04
+      license:
+        - MIT
+      min_ansible_version: 2.0
+      platforms:
+        - name: Ubuntu
+          versions:
+            - xenial
+      galaxy_tags:
+        - development
+
+    dependencies: []
+</code></pre>
+<p>Next let us test it out. You have your Ansible Galaxy role ready
+now. To test it as a user, go to your directory and edit the other
+two files <code>inventory.txt</code> and <code>playbook.yml</code>, which are already generated
+for you in directory <code>tests</code> by the script:</p>
+<pre><code>$ ansible-playbook -i ./hosts playbook.yml
+</code></pre>
+<p>After running this playbook, you should have Emacs installed on
+localhost.</p>
+<h2 id="a-complete-ansible-galaxy-project">A Complete Ansible Galaxy Project</h2>
+<p>We are going to use ansible-galaxy to setup a sample project. This
+sample project will:</p>
+<ul>
+<li>use a cloud cluster with multiple VMs</li>
+<li>deploy Apache Spark on this cluster</li>
+<li>install a particular HPC application</li>
+<li>prepare raw data for this cluster to process</li>
+<li>run the experiment and collect results</li>
+</ul>
+<h3 id="ansible-write-a-playbooks-for-mongodb">Ansible: Write a Playbooks for MongoDB</h3>
+<p>Ansible Playbooks are automated scripts written in YAML data format.
+Instead of using manual commands to setup multiple remote machines, you
+can utilize Ansible Playbooks to configure your entire systems. YAML
+syntax is easy to read and express the data structure of certain Ansible
+functions. You simply write some tasks, for example, installing
+software, configuring default settings, and starting the software, in a
+Ansible Playbook. With a few examples in this section, you will
+understand how it works and how to write your own Playbooks.</p>
+<dl>
+<dt>There are also several examples of using Ansible <a href="http://docs.ansible.com/playbooks.html">Playbooks</a> from the official site. It covers</dt>
+<dd>
+<p>from basic usage of Ansible Playbooks to advanced usage such as
+applying patches and updates with different roles and groups.</p>
+</dd>
+</dl>
+<p>We are going to write a basic playbook of Ansible
+software. Keep in mind that <code>Ansible</code> is a main program and <code>playbook</code>
+is a template that you would like to use. You may have several playbooks
+in your Ansible.</p>
+<h3 id="first-playbook-for-mongodb-installation">First playbook for MongoDB Installation</h3>
+<p>As a first example, we are going to write a playbook which installs
+MongoDB server. It includes the following tasks:</p>
+<ul>
+<li>Import the public key used by the package management system</li>
+<li>Create a list file for MongoDB</li>
+<li>Reload local package database</li>
+<li>Install the MongoDB packages</li>
+<li>Start MongoDB</li>
+</ul>
+<p>The material presented here is based on the manual installation of MongoDB from the
+official site:</p>
+<ul>
+<li><a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*">http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*</a></li>
+</ul>
+<p>We also assume that we install MongoDB on Ubuntu 15.10.</p>
+<h4 id="enabling-root-ssh-access">Enabling Root SSH Access</h4>
+<p>Some setups of managed nodes may not allow you to log in as root. As
+this may be problematic later, let us create a playbook to resolve this.
+Create a <code>enable-root-access.yaml</code> file with the following contents:</p>
+<pre><code>---
+- hosts: ansible-test
+  remote_user: ubuntu
+  tasks:
+    - name: Enable root login
+      shell: sudo cp ~/.ssh/authorized_keys /root/.ssh/
+</code></pre>
+<p>Explanation:</p>
+<ul>
+<li>
+<p><code>hosts</code> specifies the name of a group of machines in the inventory</p>
+</li>
+<li>
+<p><code>remote_user</code> specifies the username on the managed nodes to log in
+as</p>
+</li>
+<li>
+<p><code>tasks</code> is a list of tasks to accomplish having a <code>name</code> (a
+description) and modules to execute. In this case we use the <code>shell</code>
+module.</p>
+</li>
+</ul>
+<p>We can run this playbook like so:</p>
+<pre><code>$ ansible-playbook -i inventory.txt -c ssh enable-root-access.yaml
+
+PLAY [ansible-test] ***********************************************************
+
+GATHERING FACTS ***************************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+
+TASK: [Enable root login] *****************************************************
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+
+PLAY RECAP ********************************************************************
+10.23.2.104                : ok=2    changed=1    unreachable=0    failed=0
+10.23.2.105                : ok=2    changed=1    unreachable=0    failed=0
+</code></pre>
+<h4 id="hosts-and-users">Hosts and Users</h4>
+<p>First step is choosing hosts to install MongoDB and a user account to
+run commands (tasks). We start with the following lines in the example
+filename of <code>mongodb.yaml</code>:</p>
+<pre><code>---
+- hosts: ansible-test
+  remote_user: root
+  become: yes
+</code></pre>
+<p>In a previous section, we setup two machines with <code>ansible-test</code> group
+name. We use two machines for MongoDB installation.
+Also, we use <code>root</code> account to complete Ansible tasks.</p>
+<dl>
+<dt>Indentation is important in YAML format. Do not ignore spaces start</dt>
+<dd>
+<p>with in each line.</p>
+</dd>
+</dl>
+<h4 id="tasks">Tasks</h4>
+<p>A list of tasks contains commands or configurations to be executed on
+remote machines in a sequential order. Each task comes with a <code>name</code> and
+a <code>module</code> to run your command or configuration. You provide a
+description of your task in <code>name</code> section and choose a <code>module</code> for
+your task. There are several modules that you can use, for example,
+<code>shell</code> module simply executes a command without considering a return
+value. You may use <code>apt</code> or <code>yum</code> module which is one of the packaging
+modules to install software. You can find an entire list of modules
+here: <a href="http://docs.ansible.com/list_of_all_modules.html">http://docs.ansible.com/list_of_all_modules.html</a></p>
+<h4 id="module-apt_key-add-repository-keys">Module apt_key: add repository keys</h4>
+<p>We need to import the MongoDB public GPG Key. This is going to be a
+first task in our playbook.:</p>
+<pre><code>tasks:
+  - name: Import the public key used by the package management system
+    apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
+</code></pre>
+<h4 id="module-apt_repository-add-repositories">Module apt_repository: add repositories</h4>
+<p>Next add the MongoDB repository to apt:</p>
+<pre><code>- name: Add MongoDB repository
+  apt_repository: repo='deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' state=present
+</code></pre>
+<h4 id="module-apt-install-packages">Module apt: install packages</h4>
+<p>We use <code>apt</code> module to install <code>mongodb-org</code> package. <code>notify</code> action is
+added to start <code>mongod</code> after the completion of this task. Use the
+<code>update_cache=yes</code> option to reload the local package database.:</p>
+<pre><code>- name: install mongodb
+  apt: pkg=mongodb-org state=latest update_cache=yes
+  notify:
+  - start mongodb
+</code></pre>
+<h4 id="module-service-manage-services">Module service: manage services</h4>
+<p>We use <code>handlers</code> here to start or restart services. It is similar to
+<code>tasks</code> but will run only once.:</p>
+<pre><code>handlers:
+  - name: start mongodb
+    service: name=mongod state=started
+</code></pre>
+<h4 id="the-full-playbook">The Full Playbook</h4>
+<p>Our first playbook looks like this:</p>
+<pre><code>---
+- hosts: ansible-test
+  remote_user: root
+  become: yes
+  tasks:
+  - name: Import the public key used by the package management system
+    apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
+  - name: Add MongoDB repository
+    apt_repository: repo='deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' state=present
+  - name: install mongodb
+    apt: pkg=mongodb-org state=latest update_cache=yes
+    notify:
+    - start mongodb
+  handlers:
+    - name: start mongodb
+      service: name=mongod state=started
+</code></pre>
+<h4 id="running-a-playbook">Running a Playbook</h4>
+<p>We use <code>ansible-playbook</code> command to run our playbook:</p>
+<pre><code>$ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
+
+PLAY [ansible-test] ***********************************************************
+
+GATHERING FACTS ***************************************************************
+ok: [10.23.2.104]
+ok: [10.23.2.105]
+
+TASK: [Import the public key used by the package management system] ***********
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+
+TASK: [Add MongoDB repository] ************************************************
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+
+TASK: [install mongodb] *******************************************************
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+
+NOTIFIED: [start mongodb] *****************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+
+PLAY RECAP ********************************************************************
+10.23.2.104                : ok=5    changed=3    unreachable=0    failed=0
+10.23.2.105                : ok=5    changed=3    unreachable=0    failed=0
+</code></pre>
+<p>If you rerun the playbook, you should see that nothing changed:</p>
+<pre><code>$ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
+
+PLAY [ansible-test] ***********************************************************
+
+GATHERING FACTS ***************************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+
+TASK: [Import the public key used by the package management system] ***********
+ok: [10.23.2.104]
+ok: [10.23.2.105]
+
+TASK: [Add MongoDB repository] ************************************************
+ok: [10.23.2.104]
+ok: [10.23.2.105]
+
+TASK: [install mongodb] *******************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+
+PLAY RECAP ********************************************************************
+10.23.2.104                : ok=4    changed=0    unreachable=0    failed=0
+10.23.2.105                : ok=4    changed=0    unreachable=0    failed=0
+</code></pre>
+<h4 id="sanity-check-test-mongodb">Sanity Check: Test MongoDB</h4>
+<p>Let us try to run &lsquo;mongo&rsquo; to enter mongodb shell.:</p>
+<pre><code>$ ssh ubuntu@$IP
+$ mongo
+MongoDB shell version: 2.6.9
+connecting to: test
+Welcome to the MongoDB shell.
+For interactive help, type &quot;help&quot;.
+For more comprehensive documentation, see
+        http://docs.mongodb.org/
+Questions? Try the support group
+        http://groups.google.com/group/mongodb-user
+&gt;
+</code></pre>
+<h4 id="terms">Terms</h4>
+<ul>
+<li>
+<p>Module: Ansible library to run or manage services, packages, files
+or commands.</p>
+</li>
+<li>
+<p>Handler: A task for notifier.</p>
+</li>
+<li>
+<p>Task: Ansible job to run a command, check files, or update
+configurations.</p>
+</li>
+<li>
+<p>Playbook: a list of tasks for Ansible nodes. YAML format used.</p>
+</li>
+<li>
+<p>YAML: Human readable generic data serialization.</p>
+</li>
+</ul>
+<h4 id="reference">Reference</h4>
+<p>The main tutorial from Ansible is here:
+<a href="http://docs.ansible.com/playbooks_intro.html">http://docs.ansible.com/playbooks_intro.html</a></p>
+<p>You can also find an index of the ansible modules here:
+<a href="http://docs.ansible.com/modules_by_category.html">http://docs.ansible.com/modules_by_category.html</a></p>
+<h2 id="exercise">Exercise</h2>
+<p>We have shown a couple of examples of using Ansible tools. Before you
+apply it in you final project, we will practice it in this exercise.</p>
+<ul>
+<li>set up the project structure similar to Ansible Galaxy example</li>
+<li>install MongoDB from the package manager (apt in this class)</li>
+<li>configure your MongoDB installation to start the service
+automatically</li>
+<li>use default port and let it serve local client connections only</li>
+</ul>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified August 25, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/b6515d672e75ac07f1b3a6656dcc5fb24dcaa1f9">update the web site (b6515d6)</a>
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Gregor von Laszewski" aria-label="Gregor von Laszewski">
+    <a class="text-white" target="_blank" href="https://laszewski.github.io">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 Indiana University, 2020 All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About Cybertraining</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/js/main.min.29b0315468c00226fa6f4556a9cebc0ac4fe1ce1457a01b22c0a06b329877383.js" integrity="sha256-KbAxVGjAAib6b0VWqc68CsT&#43;HOFFegGyLAoGsymHc4M=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
