@@ -1,7 +1,0 @@
-#! /bin/sh
-
-# pandoc -t html -s --bibliography bib/references.bib --csl bib/ieee.csl $1
-
-echo "HHHHHH"
-
-cat $1 | pandoc -s --bibliography ./bib/references.bib --csl ./bib/ieee.csl
