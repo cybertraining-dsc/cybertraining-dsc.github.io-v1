@@ -3,8 +3,84 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment1/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/usecases/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/cloud/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/lifestyle/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/health/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/intro-bd-deprecated/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/intro-fall-2018/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week1/</loc>
+  </url>
+  
+  <url>
     <loc>/contrib/overview/</loc>
     <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/physics/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/plotviz/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/kmeans/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/radar/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/sensor/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/sport/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/statistics/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/web/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/webplotviz/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment2/</loc>
   </url>
   
   <url>
@@ -18,13 +94,53 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/week2/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment3/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week3/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment4/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment5/</loc>
+  </url>
+  
+  <url>
     <loc>/modules/devops/devops-iac/</loc>
     <lastmod>2020-08-25T21:55:09-04:00</lastmod>
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/week5/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment6/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week6/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment7/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week7/</loc>
+  </url>
+  
+  <url>
     <loc>/courses/bigdata2020/</loc>
-    <lastmod>2020-08-28T08:54:13-04:00</lastmod>
+    <lastmod>2020-08-28T10:30:08-04:00</lastmod>
   </url>
   
   <url>
@@ -68,6 +184,22 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/assignments/assignment8/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week8/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week9/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/tech/python/</loc>
+  </url>
+  
+  <url>
     <loc>/modules/devops/ansible/</loc>
     <lastmod>2020-08-25T21:55:09-04:00</lastmod>
   </url>
@@ -75,6 +207,18 @@
   <url>
     <loc>/contrib/guidelines/</loc>
     <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/tech/github/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week10/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/e534-cloud-computing-unit/</loc>
   </url>
   
   <url>
@@ -90,6 +234,10 @@
   <url>
     <loc>/blog/e534/</loc>
     <lastmod>2020-08-20T00:29:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/intro-cloud/</loc>
   </url>
   
   <url>
@@ -128,6 +276,11 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/git-pull-request/</loc>
     <lastmod>2020-08-28T01:08:40-04:00</lastmod>
   </url>
@@ -145,6 +298,18 @@
   <url>
     <loc>/modules/transformer/</loc>
     <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/assignments/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/applications/</loc>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/tech/</loc>
   </url>
   
   <url>
