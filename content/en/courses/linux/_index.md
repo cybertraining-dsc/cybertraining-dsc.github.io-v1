@@ -33,8 +33,7 @@ following Web Page:
 
 [<img class="special-img-class" style="width:30%" src="https://raw.githubusercontent.com/laszewski/laszewski.github.io/master/book/linux/featured.png"/>](https://laszewski.github.io/book/linux/)
 
-
-* <https://laszewski.github.io/book/linux/>
+* <https://laszewski.github.io/publication/las-20-book-python/>
 
 For ePub, we recommend using iBooks on MacOS and calibre on all other systems.
 
