@@ -28,8 +28,8 @@ The lecture notes will be updated, so download a new version every week to make 
 
 |     |
 | --- |
-| [{{< figure src="https://laszewski.github.io/publication/las-20-book-bigdata/featured_hu67f18d37c5bab7f45026548c1c5a89d2_1265828_720x0_resize_lanczos_2.png" width="15%">}}](https://laszewski.github.io/publication/las-20-book-bigdata/)
-| Big Data Applications (Nov 2019. ) [(ePub)](https://cloudmesh-community.github.io/pub//vonLaszewski-big-data-applications.epub) [(PDF)](http://dsc.soic.indiana.edu/publications/E534-BigDataSystems-DeepLearning.pdf) |
+| [{{< figure src="https://laszewski.github.io/publication/las-20-book-bigdata/featured_hu67f18d37c5bab7f45026548c1c5a89d2_1265828_720x0_resize_lanczos_2.png" width="15%">}}](http://dsc.soic.indiana.edu/publications/E534-BigDataSystems-DeepLearning.pdf)
+| Big Data Applications (Nov. 2019) [(PDF)](http://dsc.soic.indiana.edu/publications/E534-BigDataSystems-DeepLearning.pdf) |
 |  [{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) Scientific Writing with Markdown [(ePub)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub) [(PDF)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) |
 | Git Pull Request [Videos](/modules/git-pull-request/) |
 
