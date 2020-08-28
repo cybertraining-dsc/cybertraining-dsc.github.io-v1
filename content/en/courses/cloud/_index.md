@@ -15,10 +15,11 @@ This is a placeholder page that shows you how to use this template site.
 
 
 [{{< figure
-     src="https://github.com/laszewski/laszewski.github.io/raw/master/book/cloud/featured.png"
-     title="Cloud Computing" width="30%">}}](https://laszewski.github.io/book/cloud/)
+     src="https://laszewski.github.io/publication/las-20-book-cloudeng/featured_hu48f601133e68cd0671d4babb966e2aa3_1260884_720x0_resize_lanczos_2.png"
+     title="Cloud Computing" width="30%">}}](https://laszewski.github.io/publication/las-20-book-cloudeng/)
 
-The document is available as an online book in ePub and PDF from the
+The document is available as an online book in
+[ePub](https://cloudmesh-community.github.io/pub//vonLaszewski-cloud.epub) and [PDF](https://cloudmesh-community.github.io/pub//vonLaszewski-cloud.pdf) from the
 following Web Page:
 
 * <https://laszewski.github.io/book/cloud/>

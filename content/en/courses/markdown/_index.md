@@ -20,10 +20,12 @@ will describe how you can use markdown to create scientific documents.
 We use markdown also on the Web page.
 
 
-[{{< figure src="https://github.com/laszewski/laszewski.github.io/raw/master/book/writing/featured.png"
-title="Scientific Writing with Markdown" width="30%">}}](https://laszewski.github.io/book/writing/)
+[{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png" title="Scientific Writing with Markdown" width="30%">}}](https://laszewski.github.io/publication/las-20-book-markdown/)
 
-The document is available as an online book in ePub and PDF from the
+The document is available as an online book in
+[ePub](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub)
+and
+[PDF](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) from the
 following Web Page:
 
 * <https://laszewski.github.io/book/writing/>

@@ -28,12 +28,12 @@ This online book will provide you with enough information to conduct your progra
 the introduction was first developed for Cloud Computing related classes,
 it is a general introduction suitable for other classes.
 
-[{{< figure src="https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png" title="Introduction to Python" width="30%">}}](https://laszewski.github.io/book/python/)
+[{{< figure src="https://laszewski.github.io/publication/las-20-book-python/featured.png" title="Introduction to Python" width="30%">}}](https://laszewski.github.io/publication/las-20-book-python/)
 
-The document is available as an online book in ePub and PDF from the
-following Web Page:
-
-* <https://laszewski.github.io/book/python/>
+The document is available as an online book in
+[ePub](https://cloudmesh-community.github.io/pub//vonLaszewski-python.epub)
+and
+[PDF](https://cloudmesh-community.github.io/pub//vonLaszewski-python.pdf)
 
 For ePub, we recommend using iBooks on macOS and calibre on all other systems.
 
