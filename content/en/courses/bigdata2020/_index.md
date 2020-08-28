@@ -63,6 +63,8 @@ managing files. Under Windows we recommend you to use gitbash which is
 a terminal that has all the command build in that you would need for
 elementary work.
 
+|     |
+| --- |
 | [{{<figure  width="15%" src="https://laszewski.github.io/publication/las-20-book-linux/featured_hu9c80192b9ef636ff9a0c7a277fb84741_1248027_720x0_resize_lanczos_2.png">}}](https://laszewski.github.io/publication/las-20-book-linux/) Introduction to Linux [(PDF)](https://cloudmesh-community.github.io/pub//vonLaszewski-linux.pdf) [(ePub)](https://cloudmesh-community.github.io/pub//vonLaszewski-linux.epub) |
 
 ## Contribution
