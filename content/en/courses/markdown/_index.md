@@ -25,10 +25,7 @@ We use markdown also on the Web page.
 The document is available as an online book in
 [ePub](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub)
 and
-[PDF](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) from the
-following Web Page:
-
-* <https://laszewski.github.io/book/writing/>
+[PDF](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) 
 
 For ePub, we recommend using iBooks on macOS and calibre on all other systems.
 
