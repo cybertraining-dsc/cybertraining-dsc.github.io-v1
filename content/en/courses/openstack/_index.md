@@ -31,10 +31,10 @@ same command line interface.
 The Chameleon Cloud document is availanle as online book in ePub and PDF from the
 following Web Page:
 
-[<img class="special-img-class" style="width:30%" src="https://raw.githubusercontent.com/laszewski/laszewski.github.io/master/book/chameleon/featured.png"/>](https://laszewski.github.io/book/chameleon/)
+[<img class="special-img-class" style="width:30%" src="https://raw.githubusercontent.com/laszewski/laszewski.github.io/master/book/chameleon/featured.png"/>](https://laszewski.github.io/publication/las-20-book-chameleon/)
 
 
-* <https://laszewski.github.io/book/chameleon/>
+* <https://laszewski.github.io/publication/las-20-book-chameleon/>
 
 For ePub, we recommend using iBooks on MacOS and calibre on all other systems.
 
