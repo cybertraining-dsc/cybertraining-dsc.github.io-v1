@@ -24,9 +24,12 @@ Note: We will update the course book about big data shortely.
 
 For this class we use:
 
+The lecture notes will be updated, so download a new version every week to make sure you are up to date.
+
 |     |
 | --- |
-| [{{< figure src="https://laszewski.github.io/publication/las-20-book-bigdata/featured_hu67f18d37c5bab7f45026548c1c5a89d2_1265828_720x0_resize_lanczos_2.png" width="15%">}}](https://laszewski.github.io/publication/las-20-book-bigdata/) Big Data Applications [(ePub)](https://cloudmesh-community.github.io/pub//vonLaszewski-big-data-applications.epub) [(PDF)](https://cloudmesh-community.github.io/pub//vonLaszewski-big-data-applications.pdf) |
+| [{{< figure src="https://laszewski.github.io/publication/las-20-book-bigdata/featured_hu67f18d37c5bab7f45026548c1c5a89d2_1265828_720x0_resize_lanczos_2.png" width="15%">}}](https://laszewski.github.io/publication/las-20-book-bigdata/)
+| Big Data Applications (Nov 2019. ) [(ePub)](https://cloudmesh-community.github.io/pub//vonLaszewski-big-data-applications.epub) [(PDF)](http://dsc.soic.indiana.edu/publications/E534-BigDataSystems-DeepLearning.pdf) |
 |  [{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) Scientific Writing with Markdown [(ePub)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub) [(PDF)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) |
 | Git Pull Request [Videos](/modules/git-pull-request/) |
 
@@ -65,6 +68,8 @@ elementary work.
 
 |     |
 | --- |
+| [{{< figure src="https://laszewski.github.io/publication/las-20-book-bigdata/featured_hu67f18d37c5bab7f45026548c1c5a89d2_1265828_720x0_resize_lanczos_2.png" width="15%">}}](https://laszewski.github.io/publication/las-20-book-bigdata/)
+| Big Data Applications (old version) [(ePub)](https://cloudmesh-community.github.io/pub//vonLaszewski-big-data-applications.epub) [(PDF)](https://cloudmesh-community.github.io/pub//vonLaszewski-big-data-applications.pdf) |
 | [{{<figure  width="15%" src="https://laszewski.github.io/publication/las-20-book-linux/featured_hu9c80192b9ef636ff9a0c7a277fb84741_1248027_720x0_resize_lanczos_2.png">}}](https://laszewski.github.io/publication/las-20-book-linux/) Introduction to Linux [(PDF)](https://cloudmesh-community.github.io/pub//vonLaszewski-linux.pdf) [(ePub)](https://cloudmesh-community.github.io/pub//vonLaszewski-linux.epub) |
 
 ## Contribution
