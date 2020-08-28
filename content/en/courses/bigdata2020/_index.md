@@ -4,7 +4,7 @@ linkTitle: "Big Data 2020"
 weight: 8
 date: 2020-08-28
 description: >
-  This coursebook introduces the students to Cloud Big Data Applications. The notes are prepared for the course taugt in 2020.
+  This coursebook introduces the students to Cloud Big Data Applications. The notes are prepared for the course taught in 2020.
 ---
 
 <!--
@@ -13,18 +13,18 @@ This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
 -->
 
-## CLass Material 
+## Class Material 
 
-As part of this class we will be using a variety of sources. To
+As part of this class, we will be using a variety of sources. To
 simplify the presentation we provide them in a variety of smaller
-packaged material incluing books, lecture notes, slides, presentations
+packaged material including books, lecture notes, slides, presentations
 and code.
 
-Note: We will update the course book about big data shortely.
+Note: We will update the coursebook about big data shortly.
 
-For this class we use:
+For this class, we use:
 
-The lecture notes will be updated, so download a new version every week to make sure you are up to date.
+The lecture notes will be updated, so download a new version every week to ensure you are up to date.
 
 |     |
 | --- |
