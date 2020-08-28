@@ -11,7 +11,7 @@ In this tutorial we will learn the fist lab on deep neural networks.
 Basic classification using deep learning will be discussed in this
 chapter.
 
-[![Video](images/deeplearning/lab1/mnist-1.png){width=20%}](https://drive.google.com/open?id=1NQnrWboSI2kc38uTgd3OtFQkK44L5jZP)
+[![Video](/images/deeplearning/lab1/mnist-1.png){width=20%}](https://drive.google.com/open?id=1NQnrWboSI2kc38uTgd3OtFQkK44L5jZP)
 
 ## MNIST Classification Version 1
 
@@ -24,7 +24,7 @@ because the ** Assignment 4 ** will be focused on the content of this
 lab.
 
 
-[![Video](images/deeplearning/lab1/mnist-2.png){width=20%}](https://drive.google.com/open?id=165fvbfdrrsUznzyO_ulPyKhn6Xtopgtv)
+[![Video](/images/deeplearning/lab1/mnist-2.png){width=20%}](https://drive.google.com/open?id=165fvbfdrrsUznzyO_ulPyKhn6Xtopgtv)
 
 ```python
 !pip install cloudmesh-common
@@ -137,7 +137,7 @@ from cloudmesh.common.StopWatch import StopWatch
 
 ## Pre-process data
 
-[![Video](images/deeplearning/lab1/mnist-3.png){width=20%}](https://drive.google.com/open?id=1_K--i9O2QioJ7SVOKgd4NmV71yvSDRcj)
+[![Video](/images/deeplearning/lab1/mnist-3.png){width=20%}](https://drive.google.com/open?id=1_K--i9O2QioJ7SVOKgd4NmV71yvSDRcj)
 
 ### Load data
 
@@ -205,7 +205,7 @@ x_test = x_test.astype('float32') / 255
 
 ## Create a Keras Model
 
-[![Video](images/deeplearning/lab1/mnist-4.png){width=20%}](https://drive.google.com/open?id=1pb11xVSv3lSY1sSefTSfVGmdYkzli8Ij)
+[![Video](/images/deeplearning/lab1/mnist-4.png){width=20%}](https://drive.google.com/open?id=1pb11xVSv3lSY1sSefTSfVGmdYkzli8Ij)
 
 Keras is a neural network library. Most important thing with Keras is the way we design the neural network.
 
@@ -263,11 +263,11 @@ plot_model(model, to_file='mnist_v1.png', show_shapes=True)
     _________________________________________________________________
 
 
-![images](images/deeplearning/lab1/output_20_1.png)
+![images](/images/deeplearning/lab1/output_20_1.png)
 
 ## Compile and Train
 
-[![Video](images/deeplearning/lab1/mnist-5.png){width=20%}](https://drive.google.com/open?id=1PTgID_ZRirgJXszLQJZzt03Fo0gtWWm4)
+[![Video](/images/deeplearning/lab1/mnist-5.png){width=20%}](https://drive.google.com/open?id=1PTgID_ZRirgJXszLQJZzt03Fo0gtWWm4)
 
 A keras model need to be compiled before it can be used to train
 the model. In the compile function, you can provide the optimization

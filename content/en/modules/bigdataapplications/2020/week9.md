@@ -19,7 +19,7 @@ Recommender engines used to be dominated by collaborative filtering using matrix
 
 {{< youtube "iO5TtX_hGqI" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1PnqQjj24x-DPhA9KL2ed1Jn2gbtClOMQ6I16vR4MlK8)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1PnqQjj24x-DPhA9KL2ed1Jn2gbtClOMQ6I16vR4MlK8)
 
 ## Retail: Overview of AI in Retail Sector (e-commerce)
 
@@ -27,7 +27,7 @@ The retail sector can use AI in Personalization, Search and Chatbots. They must 
 
 {{< youtube "UhFAtzPHSrk" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1HUiHyTQpIhAoTl6WCKrCc9QENaZsSI0d97M87JAiNA8)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1HUiHyTQpIhAoTl6WCKrCc9QENaZsSI0d97M87JAiNA8)
 
 ## RideHailing: Overview of AI in Ride Hailing Industry (Uber, Lyft, Didi)
 
@@ -35,7 +35,7 @@ The Ride Hailing industry will grow as it becomes main mobility method for many 
 
 {{< youtube "qYpAlstoEWo" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1DZWPxzkTL0Xj_VP1Sr8JymIAcXCXzjXM0nGOKnq4sdk)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1DZWPxzkTL0Xj_VP1Sr8JymIAcXCXzjXM0nGOKnq4sdk)
 
 ## SelfDriving: Overview of AI in Self (AI-Assisted) Driving cars
 
@@ -43,7 +43,7 @@ Automobile Industry needs to remake itself as mobility companies. Basic automoti
 
 {{< youtube "MYDyaktINTs" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1cLW7sHNXXrB2D26iZorVmEXpQ-b1O8nt4m1bUgLgJXg)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1cLW7sHNXXrB2D26iZorVmEXpQ-b1O8nt4m1bUgLgJXg)
 
 ## Imaging: Overview of Scene Understanding
 
@@ -51,7 +51,7 @@ Imaging is area where convolutional neural nets and deep learning has made amazi
 
 {{< youtube "92as3CXolHo" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1d9MoXvzPOdC8Ap1CrkPSNlLES_d-ofRYCOYVEVLrwRI)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1d9MoXvzPOdC8Ap1CrkPSNlLES_d-ofRYCOYVEVLrwRI)
 
 ## MainlyMedicine: Overview of AI in Health and Telecommunication
 
@@ -59,7 +59,7 @@ Telecommunication Industry has little traditional growth to look forward to. It 
 
 {{< youtube "OJxbH7KGo-g" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1d6VP1TwoaxLSkLbgfpD0-RYJ7SjQ-gI-2312i2QHfpQ)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1d6VP1TwoaxLSkLbgfpD0-RYJ7SjQ-gI-2312i2QHfpQ)
 
 ## BankingFinance: Overview of Banking and Finance
 
@@ -67,6 +67,6 @@ This FinTech sector has huge investments (larger than other applications we stud
 
 {{< youtube "3CK0lDrK0O0" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1DMuGUPL_NNSXkCjfTHLQyD9Bk7KmkVGFRr7DwQMPgS8)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1DMuGUPL_NNSXkCjfTHLQyD9Bk7KmkVGFRr7DwQMPgS8)
 
 

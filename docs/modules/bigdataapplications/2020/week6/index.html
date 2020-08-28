@@ -25,11 +25,11 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/modules/bigdataapplications/2020/week6/" />
-<meta property="og:site_name" content="Cybertraining" />
+<meta property="article:modified_time" content="2020-08-28T14:36:30-04:00" /><meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="Deep Learning">
 <meta itemprop="description" content="Introduction to Deep Learning
 ">
-
+<meta itemprop="dateModified" content="2020-08-28T14:36:30-04:00" />
 <meta itemprop="wordCount" content="1700">
 
 
@@ -543,7 +543,7 @@
 <p>In this tutorial we will learn the fist lab on deep neural networks.
 Basic classification using deep learning will be discussed in this
 chapter.</p>
-<p><a href="https://drive.google.com/open?id=1NQnrWboSI2kc38uTgd3OtFQkK44L5jZP"><img src="images/deeplearning/lab1/mnist-1.png" alt="Video">{width=20%}</a></p>
+<p><a href="https://drive.google.com/open?id=1NQnrWboSI2kc38uTgd3OtFQkK44L5jZP"><img src="/images/deeplearning/lab1/mnist-1.png" alt="Video">{width=20%}</a></p>
 <h2 id="mnist-classification-version-1">MNIST Classification Version 1</h2>
 <h2 id="using-cloudmesh-common">Using Cloudmesh Common</h2>
 <p>Here we do a simple benchmark. We calculate compile time, train time,
@@ -551,7 +551,7 @@ test time and data loading time for this example. Installing
 cloudmesh-common library is the first step. Focus on this section
 because the ** Assignment 4 ** will be focused on the content of this
 lab.</p>
-<p><a href="https://drive.google.com/open?id=165fvbfdrrsUznzyO_ulPyKhn6Xtopgtv"><img src="images/deeplearning/lab1/mnist-2.png" alt="Video">{width=20%}</a></p>
+<p><a href="https://drive.google.com/open?id=165fvbfdrrsUznzyO_ulPyKhn6Xtopgtv"><img src="/images/deeplearning/lab1/mnist-2.png" alt="Video">{width=20%}</a></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a40000">!</span><span style="color:#000">pip</span> <span style="color:#000">install</span> <span style="color:#000">cloudmesh</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">common</span>
 </code></pre></div><pre><code>    Collecting cloudmesh-common
      Downloading https://files.pythonhosted.org/packages/42/72/3c4aabce294273db9819be4a0a350f506d2b50c19b7177fb6cfe1cbbfe63/cloudmesh_common-4.2.13-py2.py3-none-any.whl (55kB)
@@ -635,7 +635,7 @@ Successfully installed tensorflow-gpu-1.14.0
 </code></pre></div><pre><code>Using TensorFlow backend.
 </code></pre>
 <h2 id="pre-process-data">Pre-process data</h2>
-<p><a href="https://drive.google.com/open?id=1_K--i9O2QioJ7SVOKgd4NmV71yvSDRcj"><img src="images/deeplearning/lab1/mnist-3.png" alt="Video">{width=20%}</a></p>
+<p><a href="https://drive.google.com/open?id=1_K--i9O2QioJ7SVOKgd4NmV71yvSDRcj"><img src="/images/deeplearning/lab1/mnist-3.png" alt="Video">{width=20%}</a></p>
 <h3 id="load-data">Load data</h3>
 <p>First we load the data from the inbuilt mnist dataset from Keras</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">StopWatch</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">start</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;data-load&#34;</span><span style="color:#000;font-weight:bold">)</span>
@@ -669,7 +669,7 @@ preserving the accuracy or improving the accuracy.</strong></p>
 <span style="color:#000">x_test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">np</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">reshape</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x_test</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">input_size</span><span style="color:#000;font-weight:bold">])</span>
 <span style="color:#000">x_test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">x_test</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">astype</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;float32&#39;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">/</span> <span style="color:#0000cf;font-weight:bold">255</span>
 </code></pre></div><h2 id="create-a-keras-model">Create a Keras Model</h2>
-<p><a href="https://drive.google.com/open?id=1pb11xVSv3lSY1sSefTSfVGmdYkzli8Ij"><img src="images/deeplearning/lab1/mnist-4.png" alt="Video">{width=20%}</a></p>
+<p><a href="https://drive.google.com/open?id=1pb11xVSv3lSY1sSefTSfVGmdYkzli8Ij"><img src="/images/deeplearning/lab1/mnist-4.png" alt="Video">{width=20%}</a></p>
 <p>Keras is a neural network library. Most important thing with Keras is the way we design the neural network.</p>
 <p>In this model we have a couple of ideas to understand.</p>
 <p><strong>|Exercise MNIST_V1.1.0: Find out what is a dense layer?</strong></p>
@@ -715,9 +715,9 @@ Trainable params: 50,890
 Non-trainable params: 0
 _________________________________________________________________
 </code></pre>
-<p><img src="images/deeplearning/lab1/output_20_1.png" alt="images"></p>
+<p><img src="/images/deeplearning/lab1/output_20_1.png" alt="images"></p>
 <h2 id="compile-and-train">Compile and Train</h2>
-<p><a href="https://drive.google.com/open?id=1PTgID_ZRirgJXszLQJZzt03Fo0gtWWm4"><img src="images/deeplearning/lab1/mnist-5.png" alt="Video">{width=20%}</a></p>
+<p><a href="https://drive.google.com/open?id=1PTgID_ZRirgJXszLQJZzt03Fo0gtWWm4"><img src="/images/deeplearning/lab1/mnist-5.png" alt="Video">{width=20%}</a></p>
 <p>A keras model need to be compiled before it can be used to train
 the model. In the compile function, you can provide the optimization
 that you want to add, metrics you expect and the type of loss function
@@ -844,7 +844,7 @@ Include codes or observations you made on those sections.</p>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">Last modified August 28, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/300769a5c9a073c2d2548d5dbd596e61e1361d11">add the data course (300769a)</a>
 </div>
 </div>
 

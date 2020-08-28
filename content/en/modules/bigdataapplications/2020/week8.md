@@ -35,7 +35,7 @@ Heuristics.
 
 {{< youtube "JvnzgbNGBM4" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1t6LcpCGwWxfrIvys-zJQWNq-yeu9oju2)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1t6LcpCGwWxfrIvys-zJQWNq-yeu9oju2)
 
 
 ### First Deep Learning Example
@@ -47,7 +47,7 @@ Multilayer Perceptron using Keras+Tensorflow running on Google Colab
 
 {{< youtube "jchO2kWv5Do" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1SCkRn2TLqQekAZoPM4hg8V884DqgQxOn)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1SCkRn2TLqQekAZoPM4hg8V884DqgQxOn)
 
 ### Deep Learning Basics
 
@@ -58,7 +58,7 @@ Back Propagation, One-hot Vector, Vanishing Gradient, Hyperparameter
 
 {{< youtube "3OLRON81K_g" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1PJ_aVc-Na8ZFdgmH02s3Wod7FOjGIdoS)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1PJ_aVc-Na8ZFdgmH02s3Wod7FOjGIdoS)
 
 ### Deep Learning Types
 
@@ -72,4 +72,4 @@ Network, (D)RL (Deep) Reinforcement Learning.
 
 {{< youtube "hlCc2JaC_Q4" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1tEPdWN9vPn2gxONwFrEPkvm8YmsGVGd_)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1tEPdWN9vPn2gxONwFrEPkvm8YmsGVGd_)

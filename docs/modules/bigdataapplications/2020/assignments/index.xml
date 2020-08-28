@@ -208,23 +208,33 @@ format only.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The idea of the project,&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Doesn&amp;rsquo;t need to be a novel idea. But a novel idea will carry more weight towards a very higher grade. If you&amp;rsquo;re trying to replicate an existing idea. Need to provide the original source you&amp;rsquo;re referring. If it is a github project, need to reference it and showcase what you have done to improve it or what changes you made in applying the same idea to solve a different problem.&lt;/p&gt;
+&lt;p&gt;Doesn&amp;rsquo;t need to be a novel idea. But a novel idea will carry more
+weight towards a very higher grade. If you&amp;rsquo;re trying to replicate an
+existing idea. Need to provide the original source you&amp;rsquo;re
+referring. If it is a github project, need to reference it and
+showcase what you have done to improve it or what changes you made in
+applying the same idea to solve a different problem.&lt;/p&gt;
 &lt;p&gt;a). For a deep learning project, if you are using an existing model, you need to explain how did you use the same model to solve the problem suggested by you.
 b). If you planned to improve the existing model, explain the suggested improvements.
 c). If you are just using an existing model and solving an existing problem, you need to do an extensive benchmark. This kind of project carries lesser marks than a project like a) or b)&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Benchmark&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;No need to use a very large dataset. You can use the Google Colab and train your network with a smaller dataset.
-Think of a smaller dataset like MNIST.
-UCI Machine Learning Repository is a very good place to find such a dataset. &lt;a href=&#34;https://archive.ics.uci.edu/ml/index.php&#34;&gt;https://archive.ics.uci.edu/ml/index.php&lt;/a&gt; (Links to an external site.)&lt;/p&gt;
+&lt;p&gt;No need to use a very large dataset. You can use the Google Colab and
+train your network with a smaller dataset.  Think of a smaller dataset
+like MNIST.  UCI Machine Learning Repository is a very good place to
+find such a dataset. &lt;a href=&#34;https://archive.ics.uci.edu/ml/index.php&#34;&gt;https://archive.ics.uci.edu/ml/index.php&lt;/a&gt; (Links
+to an external site.)&lt;/p&gt;
 &lt;p&gt;Get CPU, GPU, TPU Benchmarks. This can be something similar to what we did with our first deep learning tutorial.&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Final Report&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The report must include diagrams or flowcharts describing the idea. Benchmark results in graphs, not in tables.
-Use IEEE Template to write the document. Latex or Word is your choice. But submit a PDF file only.
-Template: &lt;a href=&#34;https://www.ieee.org/conferences/publishing/templates.html&#34;&gt;https://www.ieee.org/conferences/publishing/templates.html&lt;/a&gt; (Links to an external site.)&lt;/p&gt;
+&lt;p&gt;The report must include diagrams or flowcharts describing the
+idea. Benchmark results in graphs, not in tables.  Use IEEE Template
+to write the document. Latex or Word is your choice. But submit a PDF
+file only.  Template:
+&lt;a href=&#34;https://www.ieee.org/conferences/publishing/templates.html&#34;&gt;https://www.ieee.org/conferences/publishing/templates.html&lt;/a&gt; (Links to
+an external site.)&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;Submission Include,&lt;/p&gt;
@@ -238,10 +248,14 @@ Providing Colab link is acceptable.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This is the expected structure of your project.&lt;/p&gt;
-&lt;p&gt;In the first phase, you need to submit the project proposal by Nov 10th. This must include the idea of the project with approximate details that you try to include in the project. It doesn&amp;rsquo;t need
-to claim the final result, it is just a proposal. Add a flowchart or diagrams to explain your idea.
-Use a maximum of 2 pages to include your content. There is no extension for this submission.
-If you cannot make it by Nov 10th, you need to inform the professor and decide the way you plan to finish the class.&lt;/p&gt;
+&lt;p&gt;In the first phase, you need to submit the project proposal by Nov
+10th. This must include the idea of the project with approximate
+details that you try to include in the project. It doesn&amp;rsquo;t need to
+claim the final result, it is just a proposal. Add a flowchart or
+diagrams to explain your idea.  Use a maximum of 2 pages to include
+your content. There is no extension for this submission.  If you
+cannot make it by Nov 10th, you need to inform the professor and
+decide the way you plan to finish the class.&lt;/p&gt;
 &lt;p&gt;Anyone who fails to submit this by the deadline will fail to complete the course.&lt;/p&gt;
 &lt;p&gt;For a Term Paper&lt;/p&gt;
 &lt;p&gt;For a graduate student, by doing a term paper, the maximum possible grade is going to be an A-.
@@ -252,17 +266,31 @@ given in project report writing section. (&lt;a href=&#34;https://www.ieee.org/c
 &lt;p&gt;Once the area is sorted. Write a two-page proposal on what you will be including in the paper. This can be a rough
 estimation of what you will be writing.&lt;/p&gt;
 &lt;p&gt;When writing the paper,&lt;/p&gt;
-&lt;p&gt;You will be reading online blogs, papers, articles, etc, so you will be trying to understand concepts and write the paper.
-In this process make sure not to copy and paste from online sources. If we find such an activity, your paper will not be accepted.
-Do references properly and do paraphrasing when needed.&lt;/p&gt;
-&lt;p&gt;Keep these in mind, before you propose the idea that you want to write.
-The term paper must include a minimum of 15 references which includes articles, blogs or papers that you have read.
-You need to reference them in the write-up. So be cautious in deciding the idea for the proposal.&lt;/p&gt;
-&lt;p&gt;Submission date is Nov 10th and there will be no extensions for this. If you cannot make it by this date, you need to discuss with the professor to decide the way you want to finish the class. Reach us via office hours or class meetings to sort out any issues.&lt;/p&gt;
+&lt;p&gt;You will be reading online blogs, papers, articles, etc, so you will
+be trying to understand concepts and write the paper.  In this process
+make sure not to copy and paste from online sources. If we find such
+an activity, your paper will not be accepted.  Do references properly
+and do paraphrasing when needed.&lt;/p&gt;
+&lt;p&gt;Keep these in mind, before you propose the idea that you want to
+write.  The term paper must include a minimum of 15 references which
+includes articles, blogs or papers that you have read.  You need to
+reference them in the write-up. So be cautious in deciding the idea
+for the proposal.&lt;/p&gt;
+&lt;p&gt;Submission date is Nov 10th and there will be no extensions for
+this. If you cannot make it by this date, you need to discuss with the
+professor to decide the way you want to finish the class. Reach us via
+office hours or class meetings to sort out any issues.&lt;/p&gt;
 &lt;p&gt;Special Note on Team Projects&lt;/p&gt;
-&lt;p&gt;Each member must submit the report.  The common section must be Abstract, Introduction, Overall process, results, etc. Each contributor must write a section on his or her contribution to the project.
-This content must be the additional 50% of the report.  For instance, if the paper size is 8 pages for an individual project,  another 4 pages explaining each member&amp;rsquo;s contribution must be added (for the two-person project). If there are 4 members the additional pages must be 8 pages. 2 additional pages per author.
-If results and methods involve your contribution, clearly state it as a subsection, Author&amp;rsquo;s Contribution.&lt;/p&gt;
+&lt;p&gt;Each member must submit the report.  The common section must be
+Abstract, Introduction, Overall process, results, etc. Each
+contributor must write a section on his or her contribution to the
+project.  This content must be the additional 50% of the report.  For
+instance, if the paper size is 8 pages for an individual project,
+another 4 pages explaining each member&amp;rsquo;s contribution must be added
+(for the two-person project). If there are 4 members the additional
+pages must be 8 pages. 2 additional pages per author.  If results and
+methods involve your contribution, clearly state it as a subsection,
+Author&amp;rsquo;s Contribution.&lt;/p&gt;
 
       </description>
     </item>

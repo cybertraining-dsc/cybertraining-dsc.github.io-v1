@@ -22,7 +22,7 @@ MLP and CNN.
 
 {{< youtube "OLq0s-r4IDo" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1sYRkiXhYU-qrXRlBW3ZQXwnNfmYuMHRlpRtfwZkiFTc)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1sYRkiXhYU-qrXRlBW3ZQXwnNfmYuMHRlpRtfwZkiFTc)
 
 
 ## Deep Learning Algorithms Part 2
@@ -34,7 +34,7 @@ solve this problem.
 
 {{< youtube "0A4dnEMKuYU" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1MMUErmadF8RTWPQY6xxuXhpchh6gczuYr6Z7znCQkbM)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1MMUErmadF8RTWPQY6xxuXhpchh6gczuYr6Z7znCQkbM)
 
 
 ## Deep Learning Algorithms Part 3
@@ -47,7 +47,7 @@ networks. Here we discuss a brief history on CNN.
 
 {{< youtube "KXFfKyDNhBE" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1oedasSs6tBFLYyaskes0gZEhTz2Sva57Qb2Kv2ruiXU)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1oedasSs6tBFLYyaskes0gZEhTz2Sva57Qb2Kv2ruiXU)
 
 
 ## Deep Learning Algorithms Part 4
@@ -59,7 +59,7 @@ applications in various fields.
 
 {{< youtube "hinOsG7eLRk" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1N9V7ehwKuA2fZN-bGX6m-DLkeTBpNiYpZAGQu6IqkeU)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1N9V7ehwKuA2fZN-bGX6m-DLkeTBpNiYpZAGQu6IqkeU)
 
 
 ## Deep Learning Algorithms Part 5
@@ -70,7 +70,7 @@ Here we portray how an auto-encoder can be used to do such tasks.
 
 {{< youtube "Q9Bl3QM5Img" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1MoQQOb5a8ptUSLrBCm2dT8P0yrZat6beKv1CDjJn44I)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1MoQQOb5a8ptUSLrBCm2dT8P0yrZat6beKv1CDjJn44I)
 
 
 ## Deep Learning Algorithms Part 6
@@ -83,7 +83,7 @@ to generate best counterfits.
 
 {{< youtube "KwVpYp19fe8" >}}
 
-[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1dHvLXgdjZLE-W-Ic0AdK-nYO9pvij4jcruHxTmNJx74)
+[![Image](/images/presentation.png)Slides](https://drive.google.com/open?id=1dHvLXgdjZLE-W-Ic0AdK-nYO9pvij4jcruHxTmNJx74)
 
 # Additional Material 
 
@@ -93,4 +93,4 @@ deep learning can be found in the following slide deck. Please refer it
 to get more information. Some of these information can help for writing
 term papers and projects. 
 
-[![Image](images/presentation.png)Slides](https://docs.google.com/presentation/d/192NZBZNR4VVOIE8GdoJNm01o5AvY9tP1lWCdEA-Qy8Q/edit?usp=sharing)
+[![Image](/images/presentation.png)Slides](https://docs.google.com/presentation/d/192NZBZNR4VVOIE8GdoJNm01o5AvY9tP1lWCdEA-Qy8Q/edit?usp=sharing)
