@@ -1,6 +1,7 @@
 ---
 title: Assignments
 weight: 100 
+draft: true
 description: >
   Assignments
 ---

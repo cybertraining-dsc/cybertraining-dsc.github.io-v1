@@ -1,6 +1,7 @@
 ---
 title: Applications
 weight: 200 
+draft: true
 description: >
   Applications
 ---

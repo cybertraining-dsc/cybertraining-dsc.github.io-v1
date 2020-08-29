@@ -1,5 +1,6 @@
 ---
 title: Cloud
+draft: true
 weight: 3
 description: >
   We present the motivation why big data is so important

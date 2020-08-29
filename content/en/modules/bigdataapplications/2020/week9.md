@@ -1,5 +1,6 @@
 ---
 title: Deep Learning (Cont. II)
+draft: true
 weight: 8
 description: >
   Introduction to Deep Lenning (cont.) Part II

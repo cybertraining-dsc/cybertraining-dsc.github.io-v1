@@ -1,5 +1,6 @@
 ---
 title: Introduction to Cloud Computing
+draft: true
 weight: 20
 description: >
   Introduction to Cloud Computing

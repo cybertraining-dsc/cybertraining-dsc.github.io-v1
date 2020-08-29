@@ -1,5 +1,6 @@
 ---
 title: Cloud Computing
+draft: true
 weight: 20
 description: >
   Cloud Computing

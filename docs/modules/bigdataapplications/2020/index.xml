@@ -1,0 +1,56 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybertraining – 2020</title>
+    <link>/modules/bigdataapplications/2020/</link>
+    <description>Recent content in 2020 on Cybertraining</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/modules/bigdataapplications/2020/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Modules: Motivation</title>
+      <link>/modules/bigdataapplications/2020/week1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/week1/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;intorduction&#34;&gt;Intorduction&lt;/h1&gt;
+&lt;p&gt;In this first Lecture we discuss the motivation of teh class. We
+provide an outlook what you will learn.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/89qhS5bVm6E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;administrative-topics&#34;&gt;Administrative topics&lt;/h2&gt;
+&lt;p&gt;The following topics were addressed&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Homework&lt;/li&gt;
+&lt;li&gt;Differnce undergrad graduate requirements&lt;/li&gt;
+&lt;li&gt;Contact&lt;/li&gt;
+&lt;li&gt;Commuication via Piazza&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have questions please post them on &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;assignment-1-professional-bio&#34;&gt;Assignment 1: Professional Bio&lt;/h2&gt;
+&lt;p&gt;Post a professional three paragrap Bio on
+&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;. Please post it
+under bio. Use as subject &amp;ldquo;Bio: Lastname, Firstname&amp;rdquo;. Research what a
+provessional Biograpghy is.&lt;/p&gt;
+&lt;p&gt;Remember to write it in 3rd person and focus on professional
+activities. Look up the Bio from Geoffrey or Gregor as an example.&lt;/p&gt;
+&lt;p&gt;Due date: 2nd week of class.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

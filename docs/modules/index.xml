@@ -15,10 +15,10 @@
     
     <item>
       <title>Modules: Assignment 1</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment1/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment1/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment1/</guid>
       <description>
         
         
@@ -36,10 +36,10 @@ document. Please submit a PDF.&lt;/p&gt;
     
     <item>
       <title>Modules: Big Data Use Cases Survey</title>
-      <link>/modules/bigdataapplications/2020/applications/usecases/</link>
+      <link>/modules/bigdataapplications/2019/applications/usecases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/usecases/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/usecases/</guid>
       <description>
         
         
@@ -651,10 +651,10 @@ at DOE&amp;rsquo;s NERSC center&lt;/p&gt;
     
     <item>
       <title>Modules: Cloud Computing</title>
-      <link>/modules/bigdataapplications/2020/applications/cloud/</link>
+      <link>/modules/bigdataapplications/2019/applications/cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/cloud/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/cloud/</guid>
       <description>
         
         
@@ -1073,10 +1073,10 @@ application opportunities.&lt;/p&gt;
     
     <item>
       <title>Modules: e-Commerce and LifeStyle</title>
-      <link>/modules/bigdataapplications/2020/applications/lifestyle/</link>
+      <link>/modules/bigdataapplications/2019/applications/lifestyle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/lifestyle/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/lifestyle/</guid>
       <description>
         
         
@@ -1328,10 +1328,10 @@ Hammerbacher&lt;/a&gt;[@20120117berkeley1]&lt;/li&gt;
     
     <item>
       <title>Modules: Health Informatics</title>
-      <link>/modules/bigdataapplications/2020/applications/health/</link>
+      <link>/modules/bigdataapplications/2019/applications/health/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/health/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/health/</guid>
       <description>
         
         
@@ -1485,10 +1485,10 @@ trees.&lt;/p&gt;
     
     <item>
       <title>Modules: Introduction</title>
-      <link>/modules/bigdataapplications/2020/intro-bd-deprecated/</link>
+      <link>/modules/bigdataapplications/2019/intro-bd-deprecated/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/intro-bd-deprecated/</guid>
+      <guid>/modules/bigdataapplications/2019/intro-bd-deprecated/</guid>
       <description>
         
         
@@ -1531,10 +1531,10 @@ trees.&lt;/p&gt;
     
     <item>
       <title>Modules: Introduction (Fall 2018)</title>
-      <link>/modules/bigdataapplications/2020/intro-fall-2018/</link>
+      <link>/modules/bigdataapplications/2019/intro-fall-2018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/intro-fall-2018/</guid>
+      <guid>/modules/bigdataapplications/2019/intro-fall-2018/</guid>
       <description>
         
         
@@ -1757,10 +1757,10 @@ This is Part 15 of the introduction.
     
     <item>
       <title>Modules: Motivation</title>
-      <link>/modules/bigdataapplications/2020/week1/</link>
+      <link>/modules/bigdataapplications/2019/week1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week1/</guid>
+      <guid>/modules/bigdataapplications/2019/week1/</guid>
       <description>
         
         
@@ -1960,11 +1960,49 @@ from previous years referenced in 2019 class&lt;/p&gt;
     </item>
     
     <item>
-      <title>Modules: Overview of Data Science</title>
-      <link>/modules/bigdataapplications/2020/applications/overview/</link>
+      <title>Modules: Motivation</title>
+      <link>/modules/bigdataapplications/2020/week1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/overview/</guid>
+      <guid>/modules/bigdataapplications/2020/week1/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;intorduction&#34;&gt;Intorduction&lt;/h1&gt;
+&lt;p&gt;In this first Lecture we discuss the motivation of teh class. We
+provide an outlook what you will learn.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/89qhS5bVm6E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;administrative-topics&#34;&gt;Administrative topics&lt;/h2&gt;
+&lt;p&gt;The following topics were addressed&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Homework&lt;/li&gt;
+&lt;li&gt;Differnce undergrad graduate requirements&lt;/li&gt;
+&lt;li&gt;Contact&lt;/li&gt;
+&lt;li&gt;Commuication via Piazza&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have questions please post them on &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;assignment-1-professional-bio&#34;&gt;Assignment 1: Professional Bio&lt;/h2&gt;
+&lt;p&gt;Post a professional three paragrap Bio on
+&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;. Please post it
+under bio. Use as subject &amp;ldquo;Bio: Lastname, Firstname&amp;rdquo;. Research what a
+provessional Biograpghy is.&lt;/p&gt;
+&lt;p&gt;Remember to write it in 3rd person and focus on professional
+activities. Look up the Bio from Geoffrey or Gregor as an example.&lt;/p&gt;
+&lt;p&gt;Due date: 2nd week of class.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Overview of Data Science</title>
+      <link>/modules/bigdataapplications/2019/applications/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2019/applications/overview/</guid>
       <description>
         
         
@@ -2236,10 +2274,10 @@ Davenport&lt;/a&gt;&lt;/li&gt;
     
     <item>
       <title>Modules: Physics</title>
-      <link>/modules/bigdataapplications/2020/applications/physics/</link>
+      <link>/modules/bigdataapplications/2019/applications/physics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/physics/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/physics/</guid>
       <description>
         
         
@@ -2510,10 +2548,10 @@ Start at about 1:03:00 (e.g. the one hour mark)&lt;/li&gt;
     
     <item>
       <title>Modules: Plotviz</title>
-      <link>/modules/bigdataapplications/2020/applications/plotviz/</link>
+      <link>/modules/bigdataapplications/2019/applications/plotviz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/plotviz/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/plotviz/</guid>
       <description>
         
         
@@ -2600,10 +2638,10 @@ download. We also remind you that a picture is worth a 1000 words.&lt;/p&gt;
     
     <item>
       <title>Modules: Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics</title>
-      <link>/modules/bigdataapplications/2020/applications/kmeans/</link>
+      <link>/modules/bigdataapplications/2019/applications/kmeans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/kmeans/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/kmeans/</guid>
       <description>
         
         
@@ -2703,10 +2741,10 @@ for general web pages by extracting the secret from Google.&lt;/p&gt;
     
     <item>
       <title>Modules: Radar</title>
-      <link>/modules/bigdataapplications/2020/applications/radar/</link>
+      <link>/modules/bigdataapplications/2019/applications/radar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/radar/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/radar/</guid>
       <description>
         
         
@@ -2777,10 +2815,10 @@ forecast future changes in climate.&lt;/p&gt;
     
     <item>
       <title>Modules: Sensors</title>
-      <link>/modules/bigdataapplications/2020/applications/sensor/</link>
+      <link>/modules/bigdataapplications/2019/applications/sensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/sensor/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/sensor/</guid>
       <description>
         
         
@@ -2882,10 +2920,10 @@ exist this is currently in progress}&lt;/p&gt;
     
     <item>
       <title>Modules: Sports</title>
-      <link>/modules/bigdataapplications/2020/applications/sport/</link>
+      <link>/modules/bigdataapplications/2019/applications/sport/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/sport/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/sport/</guid>
       <description>
         
         
@@ -3112,10 +3150,10 @@ exist this is currently in progress}&lt;/p&gt;
     
     <item>
       <title>Modules: Statistics</title>
-      <link>/modules/bigdataapplications/2020/applications/statistics/</link>
+      <link>/modules/bigdataapplications/2019/applications/statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/statistics/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/statistics/</guid>
       <description>
         
         
@@ -3208,10 +3246,10 @@ look into outstanding pull requests.&lt;/p&gt;
     
     <item>
       <title>Modules: Web Search and Text Mining</title>
-      <link>/modules/bigdataapplications/2020/applications/web/</link>
+      <link>/modules/bigdataapplications/2019/applications/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/web/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/web/</guid>
       <description>
         
         
@@ -3371,10 +3409,10 @@ Conference&lt;/a&gt;&lt;/li&gt;
     
     <item>
       <title>Modules: WebPlotViz</title>
-      <link>/modules/bigdataapplications/2020/applications/webplotviz/</link>
+      <link>/modules/bigdataapplications/2019/applications/webplotviz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/applications/webplotviz/</guid>
+      <guid>/modules/bigdataapplications/2019/applications/webplotviz/</guid>
       <description>
         
         
@@ -3465,10 +3503,10 @@ data so certain patterns can be followed with companies with passing years.&lt;/
     
     <item>
       <title>Modules: Assignment 2</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment2/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment2/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment2/</guid>
       <description>
         
         
@@ -3565,10 +3603,10 @@ experience is essentially called Continuous Improvement.&lt;/p&gt;
     
     <item>
       <title>Modules: Motivation (cont.)</title>
-      <link>/modules/bigdataapplications/2020/week2/</link>
+      <link>/modules/bigdataapplications/2019/week2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week2/</guid>
+      <guid>/modules/bigdataapplications/2019/week2/</guid>
       <description>
         
         
@@ -3655,10 +3693,10 @@ And also it contains some discussion on data science platforms.&lt;/p&gt;
     
     <item>
       <title>Modules: Assignment 3</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment3/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment3/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment3/</guid>
       <description>
         
         
@@ -3686,10 +3724,10 @@ format only.&lt;/p&gt;
     
     <item>
       <title>Modules: Cloud</title>
-      <link>/modules/bigdataapplications/2020/week3/</link>
+      <link>/modules/bigdataapplications/2019/week3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week3/</guid>
+      <guid>/modules/bigdataapplications/2019/week3/</guid>
       <description>
         
         
@@ -3839,10 +3877,10 @@ computing Serverless and FaaS Cloud Native Microservices Update to 2019 Hypecycl
     
     <item>
       <title>Modules: Assignment 4</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment4/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment4/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment4/</guid>
       <description>
         
         
@@ -3874,10 +3912,10 @@ format only.&lt;/p&gt;
     
     <item>
       <title>Modules: Assignment 5</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment5/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment5/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment5/</guid>
       <description>
         
         
@@ -4025,10 +4063,10 @@ Inc, 2017.&lt;/p&gt;
     
     <item>
       <title>Modules: Physics</title>
-      <link>/modules/bigdataapplications/2020/week5/</link>
+      <link>/modules/bigdataapplications/2019/week5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week5/</guid>
+      <guid>/modules/bigdataapplications/2019/week5/</guid>
       <description>
         
         
@@ -4305,10 +4343,10 @@ and multiple experiments to be accumulated.&lt;/p&gt;
     
     <item>
       <title>Modules: Assignment 6</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment6/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment6/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment6/</guid>
       <description>
         
         
@@ -4344,10 +4382,10 @@ format only.&lt;/p&gt;
     
     <item>
       <title>Modules: Deep Learning</title>
-      <link>/modules/bigdataapplications/2020/week6/</link>
+      <link>/modules/bigdataapplications/2019/week6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week6/</guid>
+      <guid>/modules/bigdataapplications/2019/week6/</guid>
       <description>
         
         
@@ -4659,10 +4697,10 @@ Include codes or observations you made on those sections.&lt;/p&gt;
     
     <item>
       <title>Modules: Assignment 7</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment7/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment7/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment7/</guid>
       <description>
         
         
@@ -4761,10 +4799,10 @@ Author&amp;rsquo;s Contribution.&lt;/p&gt;
     
     <item>
       <title>Modules: Sports</title>
-      <link>/modules/bigdataapplications/2020/week7/</link>
+      <link>/modules/bigdataapplications/2019/week7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week7/</guid>
+      <guid>/modules/bigdataapplications/2019/week7/</guid>
       <description>
         
         
@@ -4911,10 +4949,10 @@ Tennis and Horse Racing.&lt;/p&gt;
     
     <item>
       <title>Modules: Assignment 8</title>
-      <link>/modules/bigdataapplications/2020/assignments/assignment8/</link>
+      <link>/modules/bigdataapplications/2019/assignments/assignment8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/assignments/assignment8/</guid>
+      <guid>/modules/bigdataapplications/2019/assignments/assignment8/</guid>
       <description>
         
         
@@ -4945,10 +4983,10 @@ clearly state it as a subsection, Author&amp;rsquo;s Contribution. Good luck !!!
     
     <item>
       <title>Modules: Deep Learning (Cont. I)</title>
-      <link>/modules/bigdataapplications/2020/week8/</link>
+      <link>/modules/bigdataapplications/2019/week8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week8/</guid>
+      <guid>/modules/bigdataapplications/2019/week8/</guid>
       <description>
         
         
@@ -5021,10 +5059,10 @@ Network, (D)RL (Deep) Reinforcement Learning.&lt;/p&gt;
     
     <item>
       <title>Modules: Deep Learning (Cont. II)</title>
-      <link>/modules/bigdataapplications/2020/week9/</link>
+      <link>/modules/bigdataapplications/2019/week9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week9/</guid>
+      <guid>/modules/bigdataapplications/2019/week9/</guid>
       <description>
         
         
@@ -5094,10 +5132,10 @@ This unit is an introduction to deep learning with currently 7 lessons&lt;/p&gt;
     
     <item>
       <title>Modules: Python</title>
-      <link>/modules/bigdataapplications/2020/tech/python/</link>
+      <link>/modules/bigdataapplications/2019/tech/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/tech/python/</guid>
+      <guid>/modules/bigdataapplications/2019/tech/python/</guid>
       <description>
         
         
@@ -5735,10 +5773,10 @@ automatically&lt;/li&gt;
     
     <item>
       <title>Modules: Github</title>
-      <link>/modules/bigdataapplications/2020/tech/github/</link>
+      <link>/modules/bigdataapplications/2019/tech/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/tech/github/</guid>
+      <guid>/modules/bigdataapplications/2019/tech/github/</guid>
       <description>
         
         
@@ -5791,10 +5829,10 @@ given issue.&lt;/p&gt;
     
     <item>
       <title>Modules: Introduction to Deep Learning (III)</title>
-      <link>/modules/bigdataapplications/2020/week10/</link>
+      <link>/modules/bigdataapplications/2019/week10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/week10/</guid>
+      <guid>/modules/bigdataapplications/2019/week10/</guid>
       <description>
         
         
@@ -5884,10 +5922,10 @@ term papers and projects.&lt;/p&gt;
     
     <item>
       <title>Modules: Cloud Computing</title>
-      <link>/modules/bigdataapplications/2020/e534-cloud-computing-unit/</link>
+      <link>/modules/bigdataapplications/2019/e534-cloud-computing-unit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/e534-cloud-computing-unit/</guid>
+      <guid>/modules/bigdataapplications/2019/e534-cloud-computing-unit/</guid>
       <description>
         
         
@@ -6028,10 +6066,10 @@ Compute Infrastructure&lt;/li&gt;
     
     <item>
       <title>Modules: Introduction to Cloud Computing</title>
-      <link>/modules/bigdataapplications/2020/intro-cloud/</link>
+      <link>/modules/bigdataapplications/2019/intro-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/intro-cloud/</guid>
+      <guid>/modules/bigdataapplications/2019/intro-cloud/</guid>
       <description>
         
         
