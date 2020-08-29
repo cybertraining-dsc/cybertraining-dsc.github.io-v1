@@ -1,6 +1,7 @@
 ---
 title: e-Commerce and LifeStyle
 weight: 1
+draft: true
 description: >
   e-Commerce and LifeStyle
 ---

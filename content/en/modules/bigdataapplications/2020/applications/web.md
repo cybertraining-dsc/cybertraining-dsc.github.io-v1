@@ -1,6 +1,7 @@
 ---
 title: Web Search and Text Mining
 weight: 1
+draft: true
 description: >
   Web Search and Text Mining
 ---

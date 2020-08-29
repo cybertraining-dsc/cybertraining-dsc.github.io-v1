@@ -1,6 +1,7 @@
 ---
 title: Plotviz
 weight: 1
+draft: true
 description: >
   Plotviz
 ---

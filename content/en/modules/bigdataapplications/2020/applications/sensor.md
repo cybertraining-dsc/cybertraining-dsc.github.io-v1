@@ -1,6 +1,7 @@
 ---
 title: Sensors
 weight: 1
+draft: true
 description: >
   Sensors
 ---

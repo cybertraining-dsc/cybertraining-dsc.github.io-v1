@@ -1,6 +1,7 @@
 ---
 title: WebPlotViz
 weight: 1
+draft: true
 description: >
   WebPlotViz
 ---

@@ -650,6 +650,621 @@ at DOE&amp;rsquo;s NERSC center&lt;/p&gt;
     </item>
     
     <item>
+      <title>Modules: Big Data Use Cases Survey</title>
+      <link>/modules/bigdataapplications/2020/applications/usecases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/applications/usecases/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This section covers 51 values of X and an overall study of Big data that
+emerged from a NIST (National Institute for Standards and Technology)
+study of Big data. The section covers the NIST Big Data Public Working
+Group (NBD-PWG) Process and summarizes the work of five subgroups:
+Definitions and Taxonomies Subgroup, Reference Architecture Subgroup,
+Security and Privacy Subgroup, Technology Roadmap Subgroup and the
+Requirements andUse Case Subgroup. 51 use cases collected in this
+process are briefly discussed with a classification of the source of
+parallelism and the high and low level computational structure. We
+describe the key features of this classification.&lt;/p&gt;
+&lt;h2 id=&#34;nist-big-data-public-working-group&#34;&gt;NIST Big Data Public Working Group&lt;/h2&gt;
+&lt;p&gt;This unit covers the NIST Big Data Public Working Group (NBD-PWG)
+Process and summarizes the work of five subgroups: Definitions and
+Taxonomies Subgroup, Reference Architecture Subgroup, Security and
+Privacy Subgroup, Technology Roadmap Subgroup and the Requirements and
+Use Case Subgroup. The work of latter is continued in next two units.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmODIxNGttU1pveWc&#34;&gt;&lt;img src=&#34;images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Overview
+(45)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;introduction-to-nist-big-data-public-working&#34;&gt;Introduction to NIST Big Data Public Working&lt;/h3&gt;
+&lt;p&gt;The focus of the (NBD-PWG) is to form a community of interest from
+industry, academia, and government, with the goal of developing a
+consensus definitions, taxonomies, secure reference architectures, and
+technology roadmap. The aim is to create vendor-neutral, technology and
+infrastructure agnostic deliverables to enable big data stakeholders to
+pick-and-choose best analytics tools for their processing and
+visualization requirements on the most suitable computing platforms and
+clusters while allowing value-added from big data service providers and
+flow of data between the stakeholders in a cohesive and secure manner.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=3oKdmuH0N3k&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Introduction
+(13:02)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;definitions-and-taxonomies-subgroup&#34;&gt;Definitions and Taxonomies Subgroup&lt;/h3&gt;
+&lt;p&gt;The focus is to gain a better understanding of the principles of Big
+Data. It is important to develop a consensus-based common language and
+vocabulary terms used in Big Data across stakeholders from industry,
+academia, and government. In addition, it is also critical to identify
+essential actors with roles and responsibility, and subdivide them into
+components and sub-components on how they interact/ relate with each
+other according to their similarities and differences.&lt;/p&gt;
+&lt;p&gt;For Definitions: Compile terms used from all stakeholders regarding the
+meaning of Big Data from various standard bodies, domain applications,
+and diversified operational environments. For Taxonomies: Identify key
+actors with their roles and responsibilities from all stakeholders,
+categorize them into components and subcomponents based on their
+similarities and differences. In particular data Science and Big Data
+terms are discussed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=7eOtuBV8udo&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Taxonomies
+(7:42)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;reference-architecture-subgroup&#34;&gt;Reference Architecture Subgroup&lt;/h3&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia,
+and government, with the goal of developing a consensus-based approach
+to orchestrate vendor-neutral, technology and infrastructure agnostic
+for analytics tools and computing environments. The goal is to enable
+Big Data stakeholders to pick-and-choose technology-agnostic analytics
+tools for processing and visualization in any computing platform and
+cluster while allowing value-added from Big Data service providers and
+the flow of the data between the stakeholders in a cohesive and secure
+manner. Results include a reference architecture with well defined
+components and linkage as well as several exemplars.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=h4ylW0vztDw&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Architecture
+(10:05)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;security-and-privacy-subgroup&#34;&gt;Security and Privacy Subgroup&lt;/h3&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia,
+and government, with the goal of developing a consensus secure reference
+architecture to handle security and privacy issues across all
+stakeholders. This includes gaining an understanding of what standards
+are available or under development, as well as identifies which key
+organizations are working on these standards. The Top Ten Big Data
+Security and Privacy Challenges from the CSA (Cloud Security Alliance)
+BDWG are studied. Specialized use cases include Retail/Marketing, Modern
+Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare,
+Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data
+Sharing, Cyber-security, Government, Military and Education.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dHrHk-GvruY&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Security (9:51)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;technology-roadmap-subgroup&#34;&gt;Technology Roadmap Subgroup&lt;/h3&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia,
+and government, with the goal of developing a consensus vision with
+recommendations on how Big Data should move forward by performing a good
+gap analysis through the materials gathered from all other NBD
+subgroups. This includes setting standardization and adoption priorities
+through an understanding of what standards are available or under
+development as part of the recommendations. Tasks are gather input from
+NBD subgroups and study the taxonomies for the actors&amp;rsquo; roles and
+responsibility, use cases and requirements, and secure reference
+architecture; gain understanding of what standards are available or
+under development for Big Data; perform a thorough gap analysis and
+document the findings; identify what possible barriers may delay or
+prevent adoption of Big Data; and document vision and recommendations.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=va0UCR5gMTA&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Technology
+(4:14)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;interfaces-subgroup&#34;&gt;Interfaces Subgroup&lt;/h3&gt;
+&lt;p&gt;This subgroup is working on the following document: &lt;em&gt;NIST Big Data
+Interoperability Framework: Volume 8, Reference Architecture Interface&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This document summarizes interfaces that are instrumental for the
+interaction with Clouds, Containers, and HPC systems to manage virtual
+clusters to support the NIST Big Data Reference Architecture (NBDRA).
+The Representational State Transfer (REST) paradigm is used to define
+these interfaces allowing easy integration and adoption by a wide
+variety of frameworks. . This volume, Volume 8, uses the work performed
+by the NBD-PWG to identify objects instrumental for the NIST Big Data
+Reference Architecture (NBDRA) which is introduced in the NBDIF: Volume
+6, Reference Architecture.&lt;/p&gt;
+&lt;p&gt;This presentation was given at the &lt;em&gt;2nd NIST Big Data Public Working
+Group (NBD-PWG) Workshop&lt;/em&gt; in Washington DC in June 2017. It explains our
+thoughts on deriving automatically a reference architecture form the
+Reference Architecture Interface specifications directly from the
+document.&lt;/p&gt;
+&lt;p&gt;The workshop Web page is located at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigdatawg.nist.gov/workshop2.php&#34;&gt;https://bigdatawg.nist.gov/workshop2.php&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The agenda of the workshop is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigdatawg.nist.gov/2017_NIST_Big_Data_PWG_WorkshopAgenda_with_Speakers_Bio.pdf&#34;&gt;https://bigdatawg.nist.gov/2017_NIST_Big_Data_PWG_WorkshopAgenda_with_Speakers_Bio.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Web cas of the presentation is given bellow, while you need to fast
+forward to a particular time&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Webcast: Interface subgroup:
+&lt;a href=&#34;https://www.nist.gov/news-events/events/2017/06/2nd-nist-big-data-public-working-group-nbd-pwg-workshop&#34;&gt;https://www.nist.gov/news-events/events/2017/06/2nd-nist-big-data-public-working-group-nbd-pwg-workshop&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;see: Big Data Working Group Day 1, part 2 Time start: 21:00 min,
+Time end: 44:00&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slides:
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh.rest/blob/master/docs/NBDPWG-vol8.pptx?raw=true&#34;&gt;https://github.com/cloudmesh/cloudmesh.rest/blob/master/docs/NBDPWG-vol8.pptx?raw=true&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Document:
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh.rest/raw/master/docs/NIST.SP.1500-8-draft.pdf&#34;&gt;https://github.com/cloudmesh/cloudmesh.rest/raw/master/docs/NIST.SP.1500-8-draft.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You are welcome to view other presentations if you are interested.&lt;/p&gt;
+&lt;h3 id=&#34;requirements-and-use-case-subgroup&#34;&gt;Requirements and Use Case Subgroup&lt;/h3&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia,
+and government, with the goal of developing a consensus list of Big Data
+requirements across all stakeholders. This includes gathering and
+understanding various use cases from diversified application
+domains.Tasks are gather use case input from all stakeholders; derive
+Big Data requirements from each use case; analyze/prioritize a list of
+challenging general requirements that may delay or prevent adoption of
+Big Data deployment; develop a set of general patterns capturing the
+&lt;em&gt;essence&lt;/em&gt; of use cases (not done yet) and work with Reference
+Architecture to validate requirements and reference architecture by
+explicitly implementing some patterns based on use cases. The progress
+of gathering use cases (discussed in next two units) and requirements
+systemization are discussed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=f_vxmx3CmMU&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Requirements
+(27:28)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;51-big-data-use-cases&#34;&gt;51 Big Data Use Cases&lt;/h2&gt;
+&lt;p&gt;This units consists of one or more slides for each of the 51 use cases -
+typically additional (more than one) slides are associated with
+pictures. Each of the use cases is identified with source of parallelism
+and the high and low level computational structure. As each new
+classification topic is introduced we briefly discuss it but full
+discussion of topics is given in following unit.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmYUlKckhLSUQxMUk&#34;&gt;&lt;img src=&#34;images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; 51 Use Cases
+(100)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;government-use-cases&#34;&gt;Government Use Cases&lt;/h3&gt;
+&lt;p&gt;This covers Census 2010 and 2000 - Title 13 Big Data; National Archives
+and Records Administration Accession NARA, Search, Retrieve,
+Preservation; Statistical Survey Response Improvement (Adaptive Design)
+and Non-Traditional Data in Statistical Survey Response Improvement
+(Adaptive Design).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=e0ks_BuYUVM&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Government Use Cases
+(17:43)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;commercial-use-cases&#34;&gt;Commercial Use Cases&lt;/h3&gt;
+&lt;p&gt;This covers Cloud Eco-System, for Financial Industries (Banking,
+Securities &amp;amp; Investments, Insurance) transacting business within the
+United States; Mendeley - An International Network of Research; Netflix
+Movie Service; Web Search; IaaS (Infrastructure as a Service) Big Data
+Business Continuity &amp;amp; Disaster Recovery (BC/DR) Within A Cloud
+Eco-System; Cargo Shipping; Materials Data for Manufacturing and
+Simulation driven Materials Genomics.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=URy9u8_34ww&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Commercial Use Cases
+(17:43)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;defense-use-cases&#34;&gt;Defense Use Cases&lt;/h3&gt;
+&lt;p&gt;This covers Large Scale Geospatial Analysis and Visualization; Object
+identification and tracking from Wide Area Large Format Imagery (WALF)
+Imagery or Full Motion Video (FMV) - Persistent Surveillance and
+Intelligence Data Processing and Analysis.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=FXFfE8zcco8&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Defense Use Cases
+(15:43)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;healthcare-and-life-science-use-cases&#34;&gt;Healthcare and Life Science Use Cases&lt;/h3&gt;
+&lt;p&gt;This covers Electronic Medical Record (EMR) Data; Pathology
+Imaging/digital pathology; Computational Bioimaging; Genomic
+Measurements; Comparative analysis for metagenomes and genomes;
+Individualized Diabetes Management; Statistical Relational Artificial
+Intelligence for Health Care; World Population Scale Epidemiological
+Study; Social Contagion Modeling for Planning, Public Health and
+Disaster Management and Biodiversity and LifeWatch.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=uGeYrXENlpU&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Healthcare and Life Science Use Cases
+(30:11)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deep-learning-and-social-networks-use-cases&#34;&gt;Deep Learning and Social Networks Use Cases&lt;/h3&gt;
+&lt;p&gt;This covers Large-scale Deep Learning; Organizing large-scale,
+unstructured collections of consumer photos; Truthy: Information
+diffusion research from Twitter Data; Crowd Sourcing in the Humanities
+as Source for Bigand Dynamic Data; CINET: Cyberinfrastructure for
+Network (Graph) Science and Analytics and NIST Information Access
+Division analytic technology performance measurement, evaluations, and
+standards.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=bdWyhT8bvE4&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Deep Learning and Social Networks Use Cases
+(14:19)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;research-ecosystem-use-cases&#34;&gt;Research Ecosystem Use Cases&lt;/h3&gt;
+&lt;p&gt;DataNet Federation Consortium DFC; The &amp;lsquo;Discinnet process&amp;rsquo;, metadata
+-big data global experiment; Semantic Graph-search on Scientific
+Chemical and Text-based Data and Light source beamlines.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=jjyv4RmMIUU&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Research Ecosystem Use Cases
+(9:09)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;astronomy-and-physics-use-cases&#34;&gt;Astronomy and Physics Use Cases&lt;/h3&gt;
+&lt;p&gt;This covers Catalina Real-Time Transient Survey (CRTS): a digital,
+panoramic, synoptic sky survey; DOE Extreme Data from Cosmological Sky
+Survey and Simulations; Large Survey Data for Cosmology; Particle
+Physics: Analysis of LHC Large Hadron Collider Data: Discovery of Higgs
+particle and Belle II High Energy Physics Experiment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MPEe8yDVwAo&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Astronomy and Physics Use Cases
+(17:33)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;environment-earth-and-polar-science-use-cases&#34;&gt;Environment, Earth and Polar Science Use Cases&lt;/h3&gt;
+&lt;p&gt;EISCAT 3D incoherent scatter radar system; ENVRI, Common Operations of
+Environmental Research Infrastructure; Radar Data Analysis for CReSIS
+Remote Sensing of Ice Sheets; UAVSAR Data Processing, DataProduct
+Delivery, and Data Services; NASA LARC/GSFC iRODS Federation Testbed;
+MERRA Analytic Services MERRA/AS; Atmospheric Turbulence - Event
+Discovery and Predictive Analytics; Climate Studies using the Community
+Earth System Model at DOE&amp;rsquo;s NERSC center; DOE-BER Subsurface
+Biogeochemistry Scientific Focus Area and DOE-BER AmeriFlux and FLUXNET
+Networks.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=YJGk-uvaUCg&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Environment, Earth and Polar Science Use Cases
+(25:29)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;energy-use-case&#34;&gt;Energy Use Case&lt;/h3&gt;
+&lt;p&gt;This covers Consumption forecasting in Smart Grids.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=5y_O-a8_Fbg&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Energy Use Case
+(4:01)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;features-of-51-big-data-use-cases&#34;&gt;Features of 51 Big Data Use Cases&lt;/h2&gt;
+&lt;p&gt;This unit discusses the categories used to classify the 51 use-cases.
+These categories include concepts used for parallelism and low and high
+level computational structure. The first lesson is an introduction to
+all categories and the further lessons give details of particular
+categories.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmREJTMHhjMktXRHc&#34;&gt;&lt;img src=&#34;images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Features
+(43)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;summary-of-use-case-classification&#34;&gt;Summary of Use Case Classification&lt;/h3&gt;
+&lt;p&gt;This discusses concepts used for parallelism and low and high level
+computational structure. Parallelism can be over People (users or
+subjects), Decision makers; Items such as Images, EMR, Sequences;
+observations, contents of online store; Sensors &amp;ndash; Internet of Things;
+Events; (Complex) Nodes in a Graph; Simple nodes as in a learning
+network; Tweets, Blogs, Documents, Web Pages etc.; Files or data to be
+backed up, moved or assigned metadata; Particles/cells/mesh points. Low
+level computational types include PP (Pleasingly Parallel); MR
+(MapReduce); MRStat; MRIter (Iterative MapReduce); Graph; Fusion; MC
+(Monte Carlo) and Streaming. High level computational types include
+Classification; S/Q (Search and Query); Index; CF (Collaborative
+Filtering); ML (Machine Learning); EGO (Large Scale Optimizations); EM
+(Expectation maximization); GIS; HPC; Agents. Patterns include Classic
+Database; NoSQL; Basic processing of data as in backup or metadata; GIS;
+Host of Sensors processed on demand; Pleasingly parallel processing; HPC
+assimilated with observational data; Agent-based models; Multi-modal
+data fusion or Knowledge Management; Crowd Sourcing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=X0vEmbn1Ld8&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Summary of Use Case Classification
+(23:39)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;databasesql-use-case-classification&#34;&gt;Database(SQL) Use Case Classification&lt;/h3&gt;
+&lt;p&gt;This discusses classic (SQL) database approach to data handling with
+Search&amp;amp;Query and Index features. Comparisons are made to NoSQL
+approaches.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=jIVdQID11Q4&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Database (SQL) Use Case Classification
+(11:13)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;nosql-use-case-classification&#34;&gt;NoSQL Use Case Classification&lt;/h3&gt;
+&lt;p&gt;This discusses NoSQL (compared in previous lesson) with HDFS, Hadoop and
+Hbase. The Apache Big data stack is introduced and further details of
+comparison with SQL.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=uGL8cFPrhoE&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; NoSQL Use Case Classification
+(11:20)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;other-use-case-classifications&#34;&gt;Other Use Case Classifications&lt;/h3&gt;
+&lt;p&gt;This discusses a subset of use case features: GIS, Sensors. the support
+of data analysis and fusion by streaming data between filters.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=79IwNCNjVWU&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Use Case Classifications I
+(12:42)&lt;/a&gt; This discusses a
+subset of use case features: Pleasingly parallel, MRStat, Data
+Assimilation, Crowd sourcing, Agents, data fusion and agents, EGO and
+security.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=b-olNbWCJyg&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Use Case Classifications II
+(20:18)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This discusses a subset of use case features: Classification, Monte
+Carlo, Streaming, PP, MR, MRStat, MRIter and HPC(MPI), global and local
+analytics (machine learning), parallel computing, Expectation
+Maximization, graphs and Collaborative Filtering.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ewqoFGxyQmc&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Use Case Classifications III
+(17:25)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;\TODO{These resources have not all been checked to see if they still
+exist this is currently in progress}&lt;/p&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nist.gov/el/cyber-physical-systems/big-data-pwg&#34;&gt;NIST Big Data Public Working Group (NBD-PWG)
+Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-1&#34;&gt;Big Data Definitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-2&#34;&gt;Big Data Taxonomies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-3&#34;&gt;Big Data Use Cases and
+Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-4&#34;&gt;Big Data Security and
+Privacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-5&#34;&gt;Big Data Architecture White Paper
+Survey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-6&#34;&gt;Big Data Reference
+Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-7&#34;&gt;Big Data Standards
+Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of the links bellow may be outdated. Please let us know the new
+links and notify us of the outdated links.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=l4Qii7T8zeg&#34;&gt;DCGSA Standard Cloud&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://bigdatawg.nist.gov/usecases.php&#34;&gt;On line 51 Use Cases&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx&#34;&gt;Summary of Requirements
+Subgroup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://mendeley.com%20http//dev.mendeley.com&#34;&gt;Use Case 6 Mendeley&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria&#34;&gt;Use Case 7 Netflix&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 8 Search&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013&#34;&gt;http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html&#34;&gt;http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws&#34;&gt;http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro&#34;&gt;http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.worldwidewebsize.com/&#34;&gt;http://www.worldwidewebsize.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.disasterrecovery.org/&#34;&gt;Use Case 9 IaaS (Infrastructure as a Service) Big Data Business
+Continuity &amp;amp; Disaster Recovery (BC/DR) Within A Cloud Eco-System
+provided by Cloud Service Providers (CSPs) and Cloud Brokerage
+Service Providers (CBSPs)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.materialsproject.org/&#34;&gt;Use Case 11 and Use Case 12 Simulation driven Materials
+Genomics&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 13 Large Scale Geospatial Analysis and Visualization&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opengeospatial.org/standards&#34;&gt;http://www.opengeospatial.org/standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://geojson.org/&#34;&gt;http://geojson.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html&#34;&gt;http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 14 Object identification and tracking from Wide Area Large
+Format Imagery (WALF) Imagery or Full Motion Video (FMV) -
+Persistent Surveillance&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm&#34;&gt;http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/&#34;&gt;http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 15 Intelligence Data Processing and Analysis&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf&#34;&gt;http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf&#34;&gt;http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf&#34;&gt;http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf&lt;/a&gt;,&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=l4Qii7T8zeg&#34;&gt;https://www.youtube.com/watch?v=l4Qii7T8zeg&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://dcgsa.apg.army.mil/&#34;&gt;http://dcgsa.apg.army.mil/&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 16 Electronic Medical Record (EMR) Data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.regenstrief.org/&#34;&gt;Regenstrief Institute&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://loinc.org/&#34;&gt;Logical observation identifiers names and
+codes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.ihie.org/&#34;&gt;Indiana Health Information Exchange&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx&#34;&gt;Institute of Medicine Learning Healthcare
+System&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 17&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.cci.emory.edu/confluence/display/PAIS%3E&#34;&gt;Pathology Imaging/digital
+pathology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.cci.emory.edu/confluence/display/HadoopGIS&#34;&gt;https://web.cci.emory.edu/confluence/display/HadoopGIS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 19 Genome in a Bottle Consortium:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org&#34;&gt;www.genomeinabottle.org&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://img.jgi.doe.gov/&#34;&gt;Use Case 20 Comparative analysis for metagenomes and
+genomes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 25&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.biodiversitycatalogue.org/&#34;&gt;Biodiversity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lifewatch.eu/web/guest/home&#34;&gt;LifeWatch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 26 Deep Learning: Recent popular press coverage of deep
+learning technology:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html&#34;&gt;http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html&#34;&gt;http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.wired.com/2013/06/andrew_ng/&#34;&gt;http://www.wired.com/2013/06/andrew_ng/&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf&#34;&gt;A recent research paper on HPC for Deep
+Learning&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Widely-used tutorials and references for Deep Learning:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ufldl.stanford.edu/wiki/index.php/Main_Page&#34;&gt;http://ufldl.stanford.edu/wiki/index.php/Main_Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deeplearning.net/&#34;&gt;http://deeplearning.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://vision.soic.indiana.edu/projects/disco/&#34;&gt;Use Case 27 Organizing large-scale, unstructured collections of
+consumer photos&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 28&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://truthy.indiana.edu/&#34;&gt;Truthy: Information diffusion research from Twitter
+Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cnets.indiana.edu/groups/nan/truthy/&#34;&gt;http://cnets.indiana.edu/groups/nan/truthy/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cnets.indiana.edu/groups/nan/despic/&#34;&gt;http://cnets.indiana.edu/groups/nan/despic/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://cinet.vbi.vt.edu/cinet_new/&#34;&gt;Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
+and Analytics&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.nist.gov/itl/iad/&#34;&gt;Use Case 31 NIST Information Access Division analytic technology
+performance measurement, evaluations, and
+standards&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 32&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DataNet Federation Consortium DFC: &lt;a href=&#34;http://datafed.org/&#34;&gt;The DataNet Federation
+Consortium&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://irods.org/&#34;&gt;iRODS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 33 The &amp;lsquo;Discinnet process&amp;rsquo;, &lt;a href=&#34;http://www.discinnet.org/&#34;&gt;big data global
+experiment&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 34 Semantic Graph-search on Scientific Chemical and
+Text-based Data&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php&#34;&gt;http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xpdb.nist.gov/chemblast/pdb.pl&#34;&gt;http://xpdb.nist.gov/chemblast/pdb.pl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 35 Light source beamlines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www-als.lbl.gov/&#34;&gt;http://www-als.lbl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www1.aps.anl.gov/&#34;&gt;https://www1.aps.anl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 36&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://crts.caltech.edu/&#34;&gt;CRTS survey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lpl.arizona.edu/css/&#34;&gt;CSS survey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For an &lt;a href=&#34;http://arxiv.org/abs/1209.1681&#34;&gt;overview of the classification
+challenges&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 37 DOE Extreme Data from Cosmological Sky Survey and
+Simulations&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lsst.org/lsst/&#34;&gt;http://www.lsst.org/lsst/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/&#34;&gt;http://www.nersc.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf&#34;&gt;http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 38 Large Survey Data for Cosmology&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://desi.lbl.gov/&#34;&gt;http://desi.lbl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.darkenergysurvey.org/&#34;&gt;http://www.darkenergysurvey.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 39 Particle Physics: Analysis of LHC Large Hadron Collider
+Data: Discovery of Higgs particle&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&#34;&gt;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf&#34;&gt;http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://belle2.kek.jp/&#34;&gt;Use Case 40 Belle II High Energy Physics
+Experiment&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(old link does not exist, new link: &lt;a href=&#34;https://www.belle2.org&#34;&gt;https://www.belle2.org&lt;/a&gt;)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.eiscat3d.se/&#34;&gt;Use Case 41 EISCAT 3D incoherent scatter radar
+system&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 42 ENVRI, Common Operations of Environmental Research
+Infrastructure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://envri.eu/&#34;&gt;ENVRI Project website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://confluence.envri.eu:8090/display/ERM/Start&#34;&gt;ENVRI Reference Model&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&amp;amp;modificationDate=1366965933706&amp;amp;api=v2&#34;&gt;ENVRI deliverable D3.2 : Analysis of common requirements of
+Environmental Research
+Infrastructures&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.icos-ri.eu/&#34;&gt;ICOS&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.euro-argo.eu/&#34;&gt;Euro-Argo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.eiscat3d.se/node&#34;&gt;EISCAT 3D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lifewatch.com/&#34;&gt;LifeWatch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.epos-eu.org/&#34;&gt;EPOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.emso-eu.org/&#34;&gt;EMSO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cresis.ku.edu/%3E&#34;&gt;Use Case 43 Radar Data Analysis for CReSIS Remote Sensing of Ice
+Sheets&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 44 UAVSAR Data Processing, Data Product Delivery, and Data
+Services&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://uavsar.jpl.nasa.gov/&#34;&gt;http://uavsar.jpl.nasa.gov/&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.asf.alaska.edu/program/sdc&#34;&gt;http://www.asf.alaska.edu/program/sdc&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://geo-gateway.org/main.html&#34;&gt;http://geo-gateway.org/main.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 47 Atmospheric Turbulence - Event Discovery and Predictive
+Analytics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm&#34;&gt;http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/&#34;&gt;http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 48 Climate Studies using the Community Earth System Model
+at DOE&amp;rsquo;s NERSC center&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www-pcmdi.llnl.gov/&#34;&gt;http://www-pcmdi.llnl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/&#34;&gt;http://www.nersc.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://science.energy.gov/ber/research/cesd/&#34;&gt;http://science.energy.gov/ber/research/cesd/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www2.cisl.ucar.edu/&#34;&gt;http://www2.cisl.ucar.edu/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 50 DOE-BER AmeriFlux and FLUXNET Networks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ameriflux.lbl.gov/&#34;&gt;http://ameriflux.lbl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fluxdata.org/default.aspx&#34;&gt;http://www.fluxdata.org/default.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use Case 51 Consumption forecasting in Smart Grids&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://smartgrid.usc.edu/&#34;&gt;http://smartgrid.usc.edu/&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(old link does not exsit, new link: &lt;a href=&#34;http://dslab.usc.edu/smartgrid.php&#34;&gt;http://dslab.usc.edu/smartgrid.php&lt;/a&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ganges.usc.edu/wiki/Smart_Grid&#34;&gt;http://ganges.usc.edu/wiki/Smart_Grid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17&#34;&gt;https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927&#34;&gt;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Cloud Computing</title>
       <link>/modules/bigdataapplications/2019/applications/cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2547,6 +3162,280 @@ Start at about 1:03:00 (e.g. the one hour mark)&lt;/li&gt;
     </item>
     
     <item>
+      <title>Modules: Physics</title>
+      <link>/modules/bigdataapplications/2020/applications/physics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/applications/physics/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This section starts by describing the LHC accelerator at CERN and
+evidence found by the experiments suggesting existence of a Higgs Boson.
+The huge number of authors on a paper, remarks on histograms and Feynman
+diagrams is followed by an accelerator picture gallery. The next unit is
+devoted to Python experiments looking at histograms of Higgs Boson
+production with various forms of shape of signal and various background
+and with various event totals. Then random variables and some simple
+principles of statistics are introduced with explanation as to why they
+are relevant to Physics counting experiments. The unit introduces
+Gaussian (normal) distributions and explains why they seen so often in
+natural phenomena. Several Python illustrations are given. Random
+Numbers with their Generators and Seeds lead to a discussion of Binomial
+and Poisson Distribution. Monte-Carlo and accept-reject methods. The
+Central Limit Theorem concludes discussion.&lt;/p&gt;
+&lt;h2 id=&#34;looking-for-higgs-particles&#34;&gt;Looking for Higgs Particles&lt;/h2&gt;
+&lt;h3 id=&#34;bumps-in-histograms-experiments-and-accelerators&#34;&gt;Bumps in Histograms, Experiments and Accelerators&lt;/h3&gt;
+&lt;p&gt;This unit is devoted to Python and Java experiments looking at
+histograms of Higgs Boson production with various forms of shape of
+signal and various background and with various event totals. The
+lectures use Python but use of Java is described.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmYXNoM3ZadGR6QlE&#34;&gt;&lt;img src=&#34;images/presentation.png&#34; alt=&#34;Presentation&#34;&gt;
+Higgs (20)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lt;{gitcode}/physics/mr-higgs/higgs-classI-sloping.py&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;particle-counting&#34;&gt;Particle Counting&lt;/h3&gt;
+&lt;p&gt;We return to particle case with slides used in introduction and stress
+that particles often manifested as bumps in histograms and those bumps
+need to be large enough to stand out from background in a statistically
+significant fashion.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=iaypHlgFyuU&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Discovery of Higgs Particle
+(13:49)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We give a few details on one LHC experiment ATLAS. Experimental physics
+papers have a staggering number of authors and quite big budgets.
+Feynman diagrams describe processes in a fundamental fashion.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/UAMzmOgjj7I&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Looking for Higgs Particle and Counting Introduction II
+(7:38)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;experimental-facilities&#34;&gt;Experimental Facilities&lt;/h3&gt;
+&lt;p&gt;We give a few details on one LHC experiment ATLAS. Experimental physics
+papers have a staggering number of authors and quite big budgets.
+Feynman diagrams describe processes in a fundamental fashion.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/BW12d780qT8&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Looking for Higgs Particle Experiments
+(9:29)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;accelerator-picture-gallery-of-big-science&#34;&gt;Accelerator Picture Gallery of Big Science&lt;/h3&gt;
+&lt;p&gt;This lesson gives a small picture gallery of accelerators. Accelerators,
+detection chambers and magnets in tunnels and a large underground
+laboratory used fpr experiments where you need to be shielded from
+background like cosmic rays.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/WLJIxWWMYi8&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Accelerator Picture Gallery of Big Science
+(11:21)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&#34;&gt;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&lt;/a&gt; [@fox2011does]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/S037026931200857X&#34;&gt;http://www.sciencedirect.com/science/article/pii/S037026931200857X&lt;/a&gt; [@aad2012observation]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nature.com/news/specials/lhc/interactive.html&#34;&gt;http://www.nature.com/news/specials/lhc/interactive.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Looking for Higgs Particles: Python Event Counting for Signal and
+Background (Part 2)&lt;/p&gt;
+&lt;p&gt;This unit is devoted to Python experiments looking at histograms of
+Higgs Boson production with various forms of shape of signal and various
+background and with various event totals.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmUHRpV2g2V28walE&#34;&gt;&lt;img src=&#34;images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Higgs II
+(29)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;{gitcode}/physics/mr-higgs/higgs-classI-sloping.py&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;{gitcode}/physics/number-theory/higgs-classIII.py&amp;gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;{gitcode}/physics/mr-higgs/higgs-classII-uniform.py&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;event-counting&#34;&gt;Event Counting&lt;/h3&gt;
+&lt;p&gt;We define &lt;em&gt;event counting&lt;/em&gt; data collection environments. We discuss the
+python and Java code to generate events according to a particular
+scenario (the important idea of Monte Carlo data). Here a sloping
+background plus either a Higgs particle generated similarly to LHC
+observation or one observed with better resolution (smaller measurement
+error).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/h8-szCeFugQ&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Event Counting (7:02)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monte-carlo&#34;&gt;Monte Carlo&lt;/h3&gt;
+&lt;p&gt;This uses Monte Carlo data both to generate data like the experimental
+observations and explore effect of changing amount of data and changing
+measurement resolution for Higgs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://youtu.be/bl2f0tAzLj4&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; With Python examples of Signal plus Background
+(7:33)&lt;/a&gt; This lesson continues the
+examination of Monte Carlo data looking at effect of change in
+number of Higgs particles produced and in change in shape of
+background.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://youtu.be/bw3fd5cfQhk&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Change shape of background &amp;amp; num of Higgs Particles
+(7:01)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;resources-1&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Python for Data Analysis: Agile Tools for Real World Data By Wes
+McKinney, Publisher: O&amp;rsquo;Reilly Media, Released: October 2012,
+Pages: 472. [@mckinney-python]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jwork.org/scavis/api/&#34;&gt;http://jwork.org/scavis/api/&lt;/a&gt; [@jwork-api]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/DataMelt&#34;&gt;https://en.wikipedia.org/wiki/DataMelt&lt;/a&gt; [@wikipedia-datamelt]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;random-variables-physics-and-normal-distributions&#34;&gt;Random Variables, Physics and Normal Distributions&lt;/h3&gt;
+&lt;p&gt;We introduce random variables and some simple principles of statistics
+and explains why they are relevant to Physics counting experiments. The
+unit introduces Gaussian (normal) distributions and explains why they
+seen so often in natural phenomena. Several Python illustrations are
+given. Java is currently not available in this unit.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmNWhrS0xadk16SWM&#34;&gt;&lt;img src=&#34;images/presentation.png&#34; alt=&#34;Presentation&#34;&gt;
+Higgs (39)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;lt;{gitcode}/physics/number-theory/higgs-classIII.py&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;statistics-overview-and-fundamental-idea-random-variables&#34;&gt;Statistics Overview and Fundamental Idea: Random Variables&lt;/h3&gt;
+&lt;p&gt;We go through the many different areas of statistics covered in the
+Physics unit. We define the statistics concept of a random variable.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_sLGyt4qWWk&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Random variables and normal distributions
+(8:19)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;physics-and-random-variables&#34;&gt;Physics and Random Variables&lt;/h3&gt;
+&lt;p&gt;We describe the DIKW pipeline for the analysis of this type of physics
+experiment and go through details of analysis pipeline for the LHC ATLAS
+experiment. We give examples of event displays showing the final state
+particles seen in a few events. We illustrate how physicists decide
+whats going on with a plot of expected Higgs production experimental
+cross sections (probabilities) for signal and background.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/Tn3GBxgplxg&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Physics and Random Variables I
+(8:34)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/qWEjp0OtvdA&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Physics and Random Variables II
+(5:50)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;statistics-of-events-with-normal-distributions&#34;&gt;Statistics of Events with Normal Distributions&lt;/h3&gt;
+&lt;p&gt;We introduce Poisson and Binomial distributions and define independent
+identically distributed (IID) random variables. We give the law of large
+numbers defining the errors in counting and leading to Gaussian
+distributions for many things. We demonstrate this in Python
+experiments.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/LMBtpWOOQLo&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Statistics of Events with Normal Distributions
+(11:25)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gaussian-distributions&#34;&gt;Gaussian Distributions&lt;/h3&gt;
+&lt;p&gt;We introduce the Gaussian distribution and give Python examples of the
+fluctuations in counting Gaussian distributions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/LWIbPa-P5W0&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Gaussian Distributions
+(9:08)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;using-statistics&#34;&gt;Using Statistics&lt;/h3&gt;
+&lt;p&gt;We discuss the significance of a standard deviation and role of biases
+and insufficient statistics with a Python example in getting incorrect
+answers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/n4jlUrGwgic&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Using Statistics (14:02)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;resources-2&#34;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides&#34;&gt;http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.atlas.ch/photos/events.html&#34;&gt;http://www.atlas.ch/photos/events.html&lt;/a&gt;&lt;/del&gt; (this link is outdated)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cms.cern/&#34;&gt;https://cms.cern/&lt;/a&gt; [@cms]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;random-numbers-distributions-and-central-limit-theorem&#34;&gt;Random Numbers, Distributions and Central Limit Theorem&lt;/h3&gt;
+&lt;p&gt;We discuss Random Numbers with their Generators and Seeds. It introduces
+Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods
+are discussed. The Central Limit Theorem and Bayes law concludes
+discussion. Python and Java (for student - not reviewed in class)
+examples and Physics applications are given.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmTUxkZXVRRmlBSUk&#34;&gt;&lt;img src=&#34;images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Higgs
+III (44)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;{gitcode}/physics/calculated-dice-roll/higgs-classIV-seeds.py&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;generators-and-seeds&#34;&gt;Generators and Seeds&lt;/h4&gt;
+&lt;p&gt;We define random numbers and describe how to generate them on the
+computer giving Python examples. We define the seed used to define to
+specify how to start generation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=de4AQ9AFt54&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Higgs Particle Counting Errors
+(6:28)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/9QY5qkQj2Ag&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Generators and Seeds II
+(7:10)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;binomial-distribution&#34;&gt;Binomial Distribution&lt;/h4&gt;
+&lt;p&gt;We define binomial distribution and give LHC data as an example of where
+this distribution valid.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/DPd-eVI_twQ&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Binomial Distribution:
+(12:38)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;accept-reject&#34;&gt;Accept-Reject&lt;/h4&gt;
+&lt;p&gt;We introduce an advanced method &lt;strong&gt;accept/reject&lt;/strong&gt; for generating random
+variables with arbitrary distributions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/GfshkKMKCj8&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Accept-Reject (5:54)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;monte-carlo-method&#34;&gt;Monte Carlo Method&lt;/h4&gt;
+&lt;p&gt;We define Monte Carlo method which usually uses accept/reject method in
+typical case for distribution.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/kIQ-BTyDfOQ&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Monte Carlo Method (2:23)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;poisson-distribution&#34;&gt;Poisson Distribution&lt;/h4&gt;
+&lt;p&gt;We extend the Binomial to the Poisson distribution and give a set of
+amusing examples from Wikipedia.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/WFvgsVo-k4s&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Poisson Distribution (4:37)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;central-limit-theorem&#34;&gt;Central Limit Theorem&lt;/h4&gt;
+&lt;p&gt;We introduce Central Limit Theorem and give examples from Wikipedia.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/ZO53iKlPn7c&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Central Limit Theorem
+(4:47)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;interpretation-of-probability-bayes-v-frequency&#34;&gt;Interpretation of Probability: Bayes v. Frequency&lt;/h4&gt;
+&lt;p&gt;This lesson describes difference between Bayes and frequency views of
+probability. Bayes&amp;rsquo;s law of conditional probability is derived and
+applied to Higgs example to enable information about Higgs from multiple
+channels and multiple experiments to be accumulated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://youtu.be/jzDkExAQI9M&#34;&gt;&lt;img src=&#34;images/video.png&#34; alt=&#34;Video&#34;&gt; Interpretation of Probability
+(12:39)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;resources-3&#34;&gt;Resources&lt;/h4&gt;
+&lt;p&gt;\TODO{integrate physics-references.bib}&lt;/p&gt;
+&lt;h2 id=&#34;ska----square-kilometer-array&#34;&gt;SKA &amp;ndash; Square Kilometer Array&lt;/h2&gt;
+&lt;p&gt;Professor Diamond, accompanied by Dr. Rosie Bolton from the SKA Regional
+Centre Project gave a presentation at SC17 &amp;ldquo;into the deepest reaches of
+the observable universe as they describe the SKA&amp;rsquo;s international
+partnership that will map and study the entire sky in greater detail
+than ever before.&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://sc17.supercomputing.org/presentation/?id=inspkr101&amp;amp;sess=sess263&#34;&gt;http://sc17.supercomputing.org/presentation/?id=inspkr101&amp;amp;sess=sess263&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A summary article about this effort is available at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hpcwire.com/2017/11/17/sc17-keynote-hpc-powers-ska-efforts-peer-deep-cosmos/&#34;&gt;https://www.hpcwire.com/2017/11/17/sc17-keynote-hpc-powers-ska-efforts-peer-deep-cosmos/&lt;/a&gt;
+The video is hosted at&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sc17.supercomputing.org/presentation/?id=inspkr101&amp;amp;sess=sess263&#34;&gt;http://sc17.supercomputing.org/presentation/?id=inspkr101&amp;amp;sess=sess263&lt;/a&gt;
+Start at about 1:03:00 (e.g. the one hour mark)&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Plotviz</title>
       <link>/modules/bigdataapplications/2019/applications/plotviz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3144,6 +4033,139 @@ exist this is currently in progress}&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://www.liveathos.com/apparel/app&#34;&gt;http://www.liveathos.com/apparel/app&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Sports</title>
+      <link>/modules/bigdataapplications/2020/applications/sport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/applications/sport/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sports sees significant growth in analytics with pervasive statistics
+shifting to more sophisticated measures. We start with baseball as game
+is built around segments dominated by individuals where detailed
+(video/image) achievement measures including PITCHf/x and FIELDf/x are
+moving field into big data arena. There are interesting relationships
+between the economics of sports and big data analytics. We look at
+Wearables and consumer sports/recreation. The importance of spatial
+visualization is discussed. We look at other Sports: Soccer, Olympics,
+NFL Football, Basketball, Tennis and Horse Racing.&lt;/p&gt;
+&lt;h2 id=&#34;basic-sabermetrics&#34;&gt;Basic Sabermetrics&lt;/h2&gt;
+&lt;p&gt;This unit discusses baseball starting with the movie Moneyball and the
+2002-2003 Oakland Athletics. Unlike sports like basketball and soccer,
+most baseball action is built around individuals often interacting in
+pairs. This is much easier to quantify than many player phenomena in
+other sports. We discuss Performance-Dollar relationship including new
+stadiums and media/advertising. We look at classic baseball averages and
+sophisticated measures like Wins Above Replacement.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmbWt6bGZuTFJ4TFE&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Overview (40)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;introduction-and-sabermetrics-baseball-informatics-lesson&#34;&gt;Introduction and Sabermetrics (Baseball Informatics) Lesson&lt;/h3&gt;
+&lt;p&gt;Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
+Athletics, Diamond Dollars economic model of baseball, Performance -
+Dollar relationship, Value of a Win.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Dd4zV__G5Q8&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Introduction and Sabermetrics (Baseball Informatics) Lesson (31:4)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;basic-sabermetrics-1&#34;&gt;Basic Sabermetrics&lt;/h3&gt;
+&lt;p&gt;Different Types of Baseball Data, Sabermetrics, Overview of all data,
+Details of some statistics based on basic data, OPS, wOBA, ERA, ERC,
+FIP, UZR.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=L0X-RQJZKrs&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Basic Sabermetrics (26:53)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;wins-above-replacement&#34;&gt;Wins Above Replacement&lt;/h3&gt;
+&lt;p&gt;Wins above Replacement WAR, Discussion of Calculation, Examples,
+Comparisons of different methods, Coefficient of Determination, Another,
+Sabermetrics Example, Summary of Sabermetrics.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=D6PHqPor4LA&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Wins Above Replacement (30:43)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;advanced-sabermetrics&#34;&gt;Advanced Sabermetrics&lt;/h2&gt;
+&lt;p&gt;This unit discusses &amp;lsquo;advanced sabermetrics&amp;rsquo; covering advances possible
+from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmUDh0Y01GbW9tWnc&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Sporta II (41)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;pitching-clustering&#34;&gt;Pitching Clustering&lt;/h3&gt;
+&lt;p&gt;A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data
+from Blog and video at 2013 SABR conference.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rZ9-b54aEvw&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Pitching Clustering (20:59)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;pitcher-quality&#34;&gt;Pitcher Quality&lt;/h3&gt;
+&lt;p&gt;Results of optimizing match ups, Data from video at 2013 SABR
+conference.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=OkkUaySvXOY&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Pitcher Quality (10:02)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pitchfx&#34;&gt;PITCHf/X&lt;/h2&gt;
+&lt;p&gt;Examples of use of PITCHf/X.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=m7IXhsHgQmE&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; PITCHf/X (10:39)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;other-video-data-gathering-in-baseball&#34;&gt;Other Video Data Gathering in Baseball&lt;/h3&gt;
+&lt;p&gt;FIELDf/X, MLBAM, HITf/X, COMMANDf/X.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=nKZiOOGccms&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Other Video Data Gathering in Baseball (18:5)&lt;/a&gt; Other Sports&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We look at Wearables and consumer sports/recreation. The importance of
+spatial visualization is discussed. We look at other Sports: Soccer,
+Olympics, NFL Football, Basketball, Tennis and Horse Racing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmUGdpUzFaRzhyWXM&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Sport Sports III (44)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;wearables&#34;&gt;Wearables&lt;/h3&gt;
+&lt;p&gt;Consumer Sports, Stake Holders, and Multiple Factors.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=F_cPq6xIXw0&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Wearables (22:2)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;soccer-and-the-olympics&#34;&gt;Soccer and the Olympics&lt;/h3&gt;
+&lt;p&gt;Soccer, Tracking Players and Balls, Olympics.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=AiZneaLJMTs&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Soccer and the Olympics
+(8:28)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;spatial-visualization-in-nfl-and-nba&#34;&gt;Spatial Visualization in NFL and NBA&lt;/h3&gt;
+&lt;p&gt;NFL, NBA, and Spatial Visualization.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Uorh3RJLC1s&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Spatial Visualization in NFL and NBA (15:19)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tennis-and-horse-racing&#34;&gt;Tennis and Horse Racing&lt;/h3&gt;
+&lt;p&gt;Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=2P-pismFSrI&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Tennis and Horse Racing (8:52)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;p&gt;These resources have not all been checked to see if they still exist this is currently in progress&lt;/p&gt;
+&lt;p&gt;Assignment: let us know which resources do not work&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports&#34;&gt;http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports&lt;/a&gt; [@www-slideshare-tricon-infotech]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling&#34;&gt;http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling&lt;/a&gt; [@www-slideshare-sports]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/elew/sport-analytics-innovation&#34;&gt;http://www.slideshare.net/elew/sport-analytics-innovation&lt;/a&gt; [@www-slideshare-elew-sport-analytics]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.wired.com/2013/02/catapault-smartball/&#34;&gt;http://www.wired.com/2013/02/catapault-smartball/&lt;/a&gt; [@www-wired-smartball]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf&#34;&gt;http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf&lt;/a&gt; [@www-sloansportsconference-automated-playbook]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/&#34;&gt;http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/&lt;/a&gt; [@www-autoscout-illinois-football-trajectory]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf&#34;&gt;http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf&lt;/a&gt; [@sloansportconference-goldsberry]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gamesetmap.com/&#34;&gt;http://gamesetmap.com/&lt;/a&gt; [@gamesetmap]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling&#34;&gt;http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling&lt;/a&gt; [@www-slideshare-sports-datapowered]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sloansportsconference.com/&#34;&gt;http://www.sloansportsconference.com/&lt;/a&gt; [@www-sloansportsconferences]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sabr.org/&#34;&gt;http://sabr.org/&lt;/a&gt; [@www-sabr]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Sabermetrics&#34;&gt;http://en.wikipedia.org/wiki/Sabermetrics&lt;/a&gt; [@wikipedia-Sabermetrics]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Baseball_statistics&#34;&gt;http://en.wikipedia.org/wiki/Baseball_statistics&lt;/a&gt; [@www-wikipedia-baseball-statistics]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://m.mlb.com/news/article/68514514/mlbam-introduces-new-way-to-analyze-every-play&#34;&gt;http://m.mlb.com/news/article/68514514/mlbam-introduces-new-way-to-analyze-every-play&lt;/a&gt; [@www-mlb-mlbam-new-way-play]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fangraphs.com/library/offense/offensive-statistics-list/&#34;&gt;http://www.fangraphs.com/library/offense/offensive-statistics-list/&lt;/a&gt; [@www-fangraphs-offensive-statistics]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Component_ERA&#34;&gt;http://en.wikipedia.org/wiki/Component_ERA&lt;/a&gt; [@www-wiki-component-era]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fangraphs.com/library/pitching/fip/&#34;&gt;http://www.fangraphs.com/library/pitching/fip/&lt;/a&gt; [@www-fangraphs-pitching-fip]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Wins_Above_Replacement&#34;&gt;http://en.wikipedia.org/wiki/Wins_Above_Replacement&lt;/a&gt; [@www-wiki-wins-above-replacement]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fangraphs.com/library/misc/war/&#34;&gt;http://www.fangraphs.com/library/misc/war/&lt;/a&gt; [@www-fangraphs-library-war]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.baseball-reference.com/about/war_explained.shtml&#34;&gt;http://www.baseball-reference.com/about/war_explained.shtml&lt;/a&gt; [@www-baseball-references-war-explained]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.baseball-reference.com/about/war_explained_comparison.shtml&#34;&gt;http://www.baseball-reference.com/about/war_explained_comparison.shtml&lt;/a&gt; [@www-baseball-references-war-explained-comparison]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.baseball-reference.com/about/war_explained_position.shtml&#34;&gt;http://www.baseball-reference.com/about/war_explained_position.shtml&lt;/a&gt; [@www-baseball-reference-war-explained-position]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.baseball-reference.com/about/war_explained_pitch.shtml&#34;&gt;http://www.baseball-reference.com/about/war_explained_pitch.shtml&lt;/a&gt; [@www-baseball-reference-war-explained-pitch]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fangraphs.com/leaders.aspx?pos=all&amp;amp;stats=bat&amp;amp;lg=all&amp;amp;qual=y&amp;amp;type=8&amp;amp;season=2014&amp;amp;month=0&amp;amp;season1=1871&amp;amp;ind=0&#34;&gt;http://www.fangraphs.com/leaders.aspx?pos=all&amp;amp;stats=bat&amp;amp;lg=all&amp;amp;qual=y&amp;amp;type=8&amp;amp;season=2014&amp;amp;month=0&amp;amp;season1=1871&amp;amp;ind=0&lt;/a&gt; [@www-fangraphs-leaders-pose-qual]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/&#34;&gt;http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/&lt;/a&gt; [@battingleadoff-baseball-player]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Coefficient_of_determination&#34;&gt;http://en.wikipedia.org/wiki/Coefficient_of_determination&lt;/a&gt; [@www-wiki-coefficient-of-determination]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sloansportsconference.com/wp-content/uploads/2014/02/2014_SSAC_Data-driven-Method-for-In-game-Decision-Making.pdf&#34;&gt;http://www.sloansportsconference.com/wp-content/uploads/2014/02/2014_SSAC_Data-driven-Method-for-In-game-Decision-Making.pdf&lt;/a&gt; [@ganeshapillai2014data]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/&#34;&gt;https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vincegennaro.mlblogs.com/&#34;&gt;http://vincegennaro.mlblogs.com/&lt;/a&gt; [@www-vincegennaro-mlblogs]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=H-kx-x_d0Mk&#34;&gt;https://www.youtube.com/watch?v=H-kx-x_d0Mk&lt;/a&gt; [@www-youtube-watch]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.baseballprospectus.com/article.php?articleid=13109&#34;&gt;http://www.baseballprospectus.com/article.php?articleid=13109&lt;/a&gt; [@www-baseball-prospectus-spinning-yarn]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://baseball.physics.illinois.edu/FastPFXGuide.pdf&#34;&gt;http://baseball.physics.illinois.edu/FastPFXGuide.pdf&lt;/a&gt; [@baseball-physics-PITCHf]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://baseball.physics.illinois.edu/FieldFX-TDR-GregR.pdf&#34;&gt;http://baseball.physics.illinois.edu/FieldFX-TDR-GregR.pdf&lt;/a&gt; [@baseball-physics-fieldfx]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://regressing.deadspin.com/mlb-announces-revolutionary-new-fielding-tracking-syste-1534200504&#34;&gt;http://regressing.deadspin.com/mlb-announces-revolutionary-new-fielding-tracking-syste-1534200504&lt;/a&gt; [@www-deadspin-field-tracking-syste]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/&#34;&gt;http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/&lt;/a&gt; [@grantland-mlb-bob-bowman]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=YkjtnuNmK74&#34;&gt;https://www.youtube.com/watch?v=YkjtnuNmK74&lt;/a&gt; [@www-youtube-science-home-run]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These resources do not exsit:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.sportvision.com/baseball&#34;&gt;http://www.sportvision.com/baseball&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.sportvision.com/media/pitchfx-how-it-works&#34;&gt;http://www.sportvision.com/media/pitchfx-how-it-works&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.sportvision.com/baseball/fieldfx&#34;&gt;http://www.sportvision.com/baseball/fieldfx&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.sportvision.com/baseball/hitfx&#34;&gt;http://www.sportvision.com/baseball/hitfx&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.trakus.com/technology.asp#tNetText&#34;&gt;http://www.trakus.com/technology.asp#tNetText&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.sloansportsconference.com/?page_id=481&amp;amp;sort_cate=Research%20Paper&#34;&gt;http://www.sloansportsconference.com/?page_id=481&amp;amp;sort_cate=Research%20Paper&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.liveathos.com/apparel/app&#34;&gt;http://www.liveathos.com/apparel/app&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>

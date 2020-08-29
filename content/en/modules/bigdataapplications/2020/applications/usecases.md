@@ -1,6 +1,7 @@
 ---
 title: Big Data Use Cases Survey
 weight: 1
+draft: flase
 description: >
   Big Data Use Cases Survey
 ---

@@ -1,6 +1,7 @@
 ---
 title: Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics
 weight: 1
+draft: true
 description: >
   Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics
 ---

@@ -1,6 +1,7 @@
 ---
 title: Overview of Data Science
-weight: 1
+weight: 
+draft: true
 description: >
   Overview of Data Science
 ---

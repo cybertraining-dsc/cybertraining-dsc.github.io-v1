@@ -1,6 +1,7 @@
 ---
 title: Health Informatics
 weight: 1
+draft: true
 description: >
   Health Informatics
 ---
