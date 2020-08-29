@@ -3,10 +3,10 @@ title: Sports
 draft: false
 weight: 7
 description: >
-  Big Data and Sports.
+  Week TBD: Big Data and Sports.
 ---
 
-# Sports with Big Data Applications {#sec:534-week7}
+# Sports with Big Data Applications
 
 E534 2019 Big Data Applications and Analytics Sports Informatics Part I
 (Unit 32) Section Summary (Parts I, II, III): Sports sees significant
