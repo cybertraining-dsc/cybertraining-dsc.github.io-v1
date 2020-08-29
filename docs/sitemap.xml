@@ -153,8 +153,8 @@
   </url>
   
   <url>
-    <loc>/modules/bigdataapplications/2020/week5/</loc>
-    <lastmod>2020-08-28T22:29:33-04:00</lastmod>
+    <loc>/modules/bigdataapplications/2020/physics/</loc>
+    <lastmod>2020-08-29T18:57:11-04:00</lastmod>
   </url>
   
   <url>
@@ -178,8 +178,8 @@
   </url>
   
   <url>
-    <loc>/modules/bigdataapplications/2020/week7/</loc>
-    <lastmod>2020-08-28T22:29:33-04:00</lastmod>
+    <loc>/modules/bigdataapplications/2020/sports/</loc>
+    <lastmod>2020-08-29T18:57:11-04:00</lastmod>
   </url>
   
   <url>
@@ -250,6 +250,11 @@
   <url>
     <loc>/modules/devops/ansible/</loc>
     <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/usecases/</loc>
+    <lastmod>2020-08-29T18:57:11-04:00</lastmod>
   </url>
   
   <url>
@@ -380,11 +385,6 @@
   <url>
     <loc>/modules/bigdataapplications/2019/applications/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/modules/bigdataapplications/2020/applications/</loc>
-    <lastmod>2020-08-29T18:45:39-04:00</lastmod>
   </url>
   
   <url>

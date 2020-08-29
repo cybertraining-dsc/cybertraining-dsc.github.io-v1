@@ -1,7 +1,7 @@
 ---
 title: Big Data Use Cases Survey
-weight: 10
-draft: false
+weight: 1
+draft: true
 description: >
   Big Data Use Cases Survey
 ---
@@ -25,7 +25,8 @@ Taxonomies Subgroup, Reference Architecture Subgroup, Security and
 Privacy Subgroup, Technology Roadmap Subgroup and the Requirements and
 Use Case Subgroup. The work of latter is continued in next two units.
 
-[![Presentation](/images/presentation.png) Overview (45)](https://drive.google.com/open?id=0B8936_ytjfjmODIxNGttU1pveWc)
+[![Presentation](/images/presentation.png) Overview
+(45)](https://drive.google.com/open?id=0B8936_ytjfjmODIxNGttU1pveWc)
 
 ### Introduction to NIST Big Data Public Working
 
@@ -39,9 +40,8 @@ visualization requirements on the most suitable computing platforms and
 clusters while allowing value-added from big data service providers and
 flow of data between the stakeholders in a cohesive and secure manner.
 
-Introduction (13:02)
-
-{{< youtube "3oKdmuH0N3k" >}}
+[![Video](/images/video.png) Introduction
+(13:02)](https://www.youtube.com/watch?v=3oKdmuH0N3k)
 
 ### Definitions and Taxonomies Subgroup
 
@@ -61,9 +61,8 @@ categorize them into components and subcomponents based on their
 similarities and differences. In particular data Science and Big Data
 terms are discussed.
 
-Taxonomies (7:42)
-
-{{< youtube "7eOtuBV8udo" >}}
+[![Video](/images/video.png) Taxonomies
+(7:42)](https://www.youtube.com/watch?v=7eOtuBV8udo)
 
 ### Reference Architecture Subgroup
 
@@ -78,9 +77,8 @@ the flow of the data between the stakeholders in a cohesive and secure
 manner. Results include a reference architecture with well defined
 components and linkage as well as several exemplars.
 
-Architecture (10:05)
-
-{{< youtube "h4ylW0vztDw" >}}
+[![Video](/images/video.png) Architecture
+(10:05)](https://www.youtube.com/watch?v=h4ylW0vztDw)
 
 ### Security and Privacy Subgroup
 
@@ -96,9 +94,7 @@ Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare,
 Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data
 Sharing, Cyber-security, Government, Military and Education.
 
-Security (9:51)
-
-{{< youtube "dHrHk-GvruY" >}}
+[![Video](/images/video.png) Security (9:51)](https://www.youtube.com/watch?v=dHrHk-GvruY)
 
 ### Technology Roadmap Subgroup
 
@@ -116,9 +112,8 @@ under development for Big Data; perform a thorough gap analysis and
 document the findings; identify what possible barriers may delay or
 prevent adoption of Big Data; and document vision and recommendations.
 
-Technology (4:14)
-
-{{< youtube "va0UCR5gMTA" >}}
+[![Video](/images/video.png) Technology
+(4:14)](https://www.youtube.com/watch?v=va0UCR5gMTA)
 
 ### Interfaces Subgroup
 
@@ -182,9 +177,8 @@ explicitly implementing some patterns based on use cases. The progress
 of gathering use cases (discussed in next two units) and requirements
 systemization are discussed.
 
-Requirements (27:28)
-
-{{< youtube "f_vxmx3CmMU" >}}
+[![Video](/images/video.png) Requirements
+(27:28)](https://www.youtube.com/watch?v=f_vxmx3CmMU)
 
 ## 51 Big Data Use Cases
 
@@ -206,9 +200,8 @@ Preservation; Statistical Survey Response Improvement (Adaptive Design)
 and Non-Traditional Data in Statistical Survey Response Improvement
 (Adaptive Design).
 
-Government Use Cases (17:43)
-
-{{< youtube "e0ks_BuYUVM" >}}
+[![Video](/images/video.png) Government Use Cases
+(17:43)](https://www.youtube.com/watch?v=e0ks_BuYUVM)
 
 ### Commercial Use Cases
 
@@ -220,9 +213,8 @@ Business Continuity & Disaster Recovery (BC/DR) Within A Cloud
 Eco-System; Cargo Shipping; Materials Data for Manufacturing and
 Simulation driven Materials Genomics.
 
-Commercial Use Cases (17:43)
-
-{{< youtube "URy9u8_34ww" >}}
+[![Video](/images/video.png) Commercial Use Cases
+(17:43)](https://www.youtube.com/watch?v=URy9u8_34ww)
 
 ### Defense Use Cases
 
@@ -231,9 +223,8 @@ identification and tracking from Wide Area Large Format Imagery (WALF)
 Imagery or Full Motion Video (FMV) - Persistent Surveillance and
 Intelligence Data Processing and Analysis.
 
-Defense Use Cases (15:43)
-
-{{< youtube "FXFfE8zcco8" >}}
+[![Video](/images/video.png) Defense Use Cases
+(15:43)](https://www.youtube.com/watch?v=FXFfE8zcco8)
 
 ### Healthcare and Life Science Use Cases
 
@@ -245,9 +236,8 @@ Intelligence for Health Care; World Population Scale Epidemiological
 Study; Social Contagion Modeling for Planning, Public Health and
 Disaster Management and Biodiversity and LifeWatch.
 
-Healthcare and Life Science Use Cases (30:11)
-
-{{< youtube "uGeYrXENlpU" >}}
+[![Video](/images/video.png) Healthcare and Life Science Use Cases
+(30:11)](https://www.youtube.com/watch?v=uGeYrXENlpU)
 
 ### Deep Learning and Social Networks Use Cases
 
@@ -259,9 +249,8 @@ Network (Graph) Science and Analytics and NIST Information Access
 Division analytic technology performance measurement, evaluations, and
 standards.
 
-Deep Learning and Social Networks Use Cases (14:19)
-
-{{< youtube "bdWyhT8bvE4" >}}
+[![Video](/images/video.png) Deep Learning and Social Networks Use Cases
+(14:19)](https://www.youtube.com/watch?v=bdWyhT8bvE4)
 
 ### Research Ecosystem Use Cases
 
@@ -269,9 +258,8 @@ DataNet Federation Consortium DFC; The 'Discinnet process', metadata
 -big data global experiment; Semantic Graph-search on Scientific
 Chemical and Text-based Data and Light source beamlines.
 
-Research Ecosystem Use Cases (9:09)
-
-{{< youtube "jjyv4RmMIUU" >}}
+[![Video](/images/video.png) Research Ecosystem Use Cases
+(9:09)](https://www.youtube.com/watch?v=jjyv4RmMIUU)
 
 ### Astronomy and Physics Use Cases
 
@@ -281,9 +269,8 @@ Survey and Simulations; Large Survey Data for Cosmology; Particle
 Physics: Analysis of LHC Large Hadron Collider Data: Discovery of Higgs
 particle and Belle II High Energy Physics Experiment.
 
-Astronomy and Physics Use Cases (17:33)
-
-{{< youtube "MPEe8yDVwAo" >}}
+[![Video](/images/video.png) Astronomy and Physics Use Cases
+(17:33)](https://www.youtube.com/watch?v=MPEe8yDVwAo)
 
 ### Environment, Earth and Polar Science Use Cases
 
@@ -297,17 +284,15 @@ Earth System Model at DOE's NERSC center; DOE-BER Subsurface
 Biogeochemistry Scientific Focus Area and DOE-BER AmeriFlux and FLUXNET
 Networks.
 
-Environment, Earth and Polar Science Use Cases (25:29)
-
-{{< youtube "YJGk-uvaUCg" >}}
+[![Video](/images/video.png) Environment, Earth and Polar Science Use Cases
+(25:29)](https://www.youtube.com/watch?v=YJGk-uvaUCg)
 
 ### Energy Use Case
 
 This covers Consumption forecasting in Smart Grids.
 
-Energy Use Case (4:01)
-
-{{< youtube "5y_O-a8_Fbg" >}}
+[![Video](/images/video.png) Energy Use Case
+(4:01)](https://www.youtube.com/watch?v=5y_O-a8_Fbg)
 
 ## Features of 51 Big Data Use Cases
 
@@ -317,7 +302,8 @@ level computational structure. The first lesson is an introduction to
 all categories and the further lessons give details of particular
 categories.
 
-[![Presentation](/images/presentation.png) Features (43)](https://drive.google.com/open?id=0B8936_ytjfjmREJTMHhjMktXRHc)
+[![Presentation](/images/presentation.png) Features
+(43)](https://drive.google.com/open?id=0B8936_ytjfjmREJTMHhjMktXRHc)
 
 ### Summary of Use Case Classification
 
@@ -329,7 +315,7 @@ Events; (Complex) Nodes in a Graph; Simple nodes as in a learning
 network; Tweets, Blogs, Documents, Web Pages etc.; Files or data to be
 backed up, moved or assigned metadata; Particles/cells/mesh points. Low
 level computational types include PP (Pleasingly Parallel); MR
-(MapReduce); MRStat; MRIter (iterative MapReduce); Graph; Fusion; MC
+(MapReduce); MRStat; MRIter (/iterative MapReduce); Graph; Fusion; MC
 (Monte Carlo) and Streaming. High level computational types include
 Classification; S/Q (Search and Query); Index; CF (Collaborative
 Filtering); ML (Machine Learning); EGO (Large Scale Optimizations); EM
@@ -339,9 +325,8 @@ Host of Sensors processed on demand; Pleasingly parallel processing; HPC
 assimilated with observational data; Agent-based models; Multi-modal
 data fusion or Knowledge Management; Crowd Sourcing.
 
-Summary of Use Case Classification (23:39)
-
-{{< youtube "X0vEmbn1Ld8" >}}
+[![Video](/images/video.png) Summary of Use Case Classification
+(23:39)](https://www.youtube.com/watch?v=X0vEmbn1Ld8)
 
 ### Database(SQL) Use Case Classification
 
@@ -349,9 +334,8 @@ This discusses classic (SQL) database approach to data handling with
 Search&Query and Index features. Comparisons are made to NoSQL
 approaches.
 
-Database (SQL) Use Case Classification (11:13)
-
-{{< youtube "jIVdQID11Q4" >}}
+[![Video](/images/video.png) Database (SQL) Use Case Classification
+(11:13)](https://www.youtube.com/watch?v=jIVdQID11Q4)
 
 ### NoSQL Use Case Classification
 
@@ -359,36 +343,30 @@ This discusses NoSQL (compared in previous lesson) with HDFS, Hadoop and
 Hbase. The Apache Big data stack is introduced and further details of
 comparison with SQL.
 
-NoSQL Use Case Classification (11:20)
-
-{{< youtube "uGL8cFPrhoE" >}}
+[![Video](/images/video.png) NoSQL Use Case Classification
+(11:20)](https://www.youtube.com/watch?v=uGL8cFPrhoE)
 
 ### Other Use Case Classifications
 
 This discusses a subset of use case features: GIS, Sensors. the support
 of data analysis and fusion by streaming data between filters.
 
-Use Case Classifications I (12:42)
-
-{{< youtube "79IwNCNjVWU" >}}
-
-This discusses a
+[![Video](/images/video.png) Use Case Classifications I
+(12:42)](https://www.youtube.com/watch?v=79IwNCNjVWU) This discusses a
 subset of use case features: Pleasingly parallel, MRStat, Data
 Assimilation, Crowd sourcing, Agents, data fusion and agents, EGO and
 security.
 
-Use Case Classifications II (20:18)
-
-{{< youtube "b-olNbWCJyg" >}}
+[![Video](/images/video.png) Use Case Classifications II
+(20:18)](https://www.youtube.com/watch?v=b-olNbWCJyg)
 
 This discusses a subset of use case features: Classification, Monte
 Carlo, Streaming, PP, MR, MRStat, MRIter and HPC(MPI), global and local
 analytics (machine learning), parallel computing, Expectation
 Maximization, graphs and Collaborative Filtering.
 
-[Use Case Classifications III (17:25)
-
-{{< youtube "ewqoFGxyQmc" >}}
+[![Video](/images/video.png) Use Case Classifications III
+(17:25)](https://www.youtube.com/watch?v=ewqoFGxyQmc)
 
 \TODO{These resources have not all been checked to see if they still
   exist this is currently in progress}
@@ -426,7 +404,7 @@ links and notify us of the outdated links.
     -   <http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws>,
     -   <http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro>,
     -   <http://www.worldwidewebsize.com/>
--   [Use Case 9 IaaS (infrastructure as a Service) Big Data Business
+-   [Use Case 9 IaaS (/infrastructure as a Service) Big Data Business
     Continuity & Disaster Recovery (BC/DR) Within A Cloud Eco-System
     provided by Cloud Service Providers (CSPs) and Cloud Brokerage
     Service Providers (CBSPs)](http://www.disasterrecovery.org/)
@@ -520,8 +498,8 @@ links and notify us of the outdated links.
     Data: Discovery of Higgs particle
     -   <http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf>,
     -   <http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf>
--   [Use Case 40 Belle II High Energy Physics
-    Experiment](https://www.belle2.org)
+-   ~~[Use Case 40 Belle II High Energy Physics
+    Experiment](http://belle2.kek.jp/)~~ **(old link does not exist, new link: https://www.belle2.org)**
 -   [Use Case 41 EISCAT 3D incoherent scatter radar
     system](https://www.eiscat3d.se/)
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
@@ -558,7 +536,7 @@ links and notify us of the outdated links.
     -   <http://ameriflux.lbl.gov/>
     -   <http://www.fluxdata.org/default.aspx>
 -   Use Case 51 Consumption forecasting in Smart Grids
-    -   <http://dslab.usc.edu/smartgrid.php>
+    -   ~~<http://smartgrid.usc.edu/>~~ **(old link does not exsit, new link: http://dslab.usc.edu/smartgrid.php)**
     -   <http://ganges.usc.edu/wiki/Smart_Grid>
     -   <https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17>
     -   <http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927>
