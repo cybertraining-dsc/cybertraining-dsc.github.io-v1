@@ -1,7 +1,7 @@
 ---
 title: Big Data Use Cases Survey
-weight: 1
-draft: true
+weight: 10
+draft: false
 description: >
   Big Data Use Cases Survey
 ---
