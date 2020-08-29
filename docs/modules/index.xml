@@ -6065,6 +6065,56 @@ Compute Infrastructure&lt;/li&gt;
     </item>
     
     <item>
+      <title>Modules: Google Colab</title>
+      <link>/modules/python/google-colab/python-google-colab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/python/google-colab/python-google-colab/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;In this module we are going to introduce you, how to use Google Colab
+to run deep learning models.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;google-colab&#34;&gt;Google Colab&lt;/h1&gt;
+&lt;p&gt;In this section we are going to introduce you, how to use Google Colab
+to run deep learning models.&lt;/p&gt;
+&lt;h2 id=&#34;introduction-to-google-colab&#34;&gt;Introduction to Google Colab&lt;/h2&gt;
+&lt;p&gt;This video contains the introduction to Google Colab. In this section
+we will be learning how to start a Google Colab project.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1vz2_VaXCAae-9luzcrIuP_ugMmKJIy7w/view?usp=sharing&#34;&gt;&lt;figure&gt;
+    &lt;img src=&#34;/images/youtube.jpg&#34; width=&#34;15%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;programming-in-google-colab&#34;&gt;Programming in Google Colab&lt;/h2&gt;
+&lt;p&gt;In this video we will learn how to create a simple, Colab Notebook.&lt;/p&gt;
+&lt;p&gt;Required Installations&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pip install numpy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18mGVxgydx1TDdb4AYD8qb1To8rkSLS-H/view?usp=sharing&#34;&gt;&lt;figure&gt;
+    &lt;img src=&#34;/images/youtube.jpg&#34; width=&#34;15%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;benchamrking-in-google-colab-with-cloudmesh&#34;&gt;Benchamrking in Google Colab with Cloudmesh&lt;/h2&gt;
+&lt;p&gt;In this video we learn how to do a basic benchmark with Cloudmesh tools.
+Cloudmesh StopWatch will be used in this tutorial.&lt;/p&gt;
+&lt;p&gt;Required Installations&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pip install numpy
+pip install cloudmesh-installer
+pip install cloudmesh-common
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Ujs0XjzCTwZgmx-ADM5zx9cS5iplXfIu/view?usp=sharing&#34;&gt;&lt;figure&gt;
+    &lt;img src=&#34;/images/youtube.jpg&#34; width=&#34;15%&#34;/&gt; 
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Introduction to Cloud Computing</title>
       <link>/modules/bigdataapplications/2019/intro-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
