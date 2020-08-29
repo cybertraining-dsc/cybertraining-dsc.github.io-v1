@@ -6,4 +6,4 @@ description: >
   Applications
 ---
 
-We will discuss each of these applications in more detail# Applications
+We will discuss each of these applications in more detail Applications
