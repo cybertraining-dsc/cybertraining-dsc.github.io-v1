@@ -1,6 +1,6 @@
 ---
 title: Sports
-draft: true
+draft: false
 weight: 7
 description: >
   Big Data and Sports.

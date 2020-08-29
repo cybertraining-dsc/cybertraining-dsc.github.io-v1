@@ -1,14 +1,14 @@
 ---
 title: Sports
 weight: 1
-draft: false
+draft: true
 description: >
   Sports
 ---
 
 Sports sees significant growth in analytics with pervasive statistics
-shifting to more sophisticated measures. We start with baseball as game
-is built around segments dominated by individuals where detailed
+shifting to more sophisticated measures. We start with baseball as
+game is built around segments dominated by individuals where detailed
 (video/image) achievement measures including PITCHf/x and FIELDf/x are
 moving field into big data arena. There are interesting relationships
 between the economics of sports and big data analytics. We look at
@@ -23,8 +23,8 @@ This unit discusses baseball starting with the movie Moneyball and the
 most baseball action is built around individuals often interacting in
 pairs. This is much easier to quantify than many player phenomena in
 other sports. We discuss Performance-Dollar relationship including new
-stadiums and media/advertising. We look at classic baseball averages and
-sophisticated measures like Wins Above Replacement.
+stadiums and media/advertising. We look at classic baseball averages
+and sophisticated measures like Wins Above Replacement.
 
 [![Presentation](/images/presentation.png) Overview (40)](https://drive.google.com/open?id=0B8936_ytjfjmbWt6bGZuTFJ4TFE)
 

@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>/modules/bigdataapplications/2020/applications/usecases/</loc>
-    <lastmod>2020-08-28T14:36:30-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/modules/bigdataapplications/2019/applications/cloud/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -68,11 +63,6 @@
   </url>
   
   <url>
-    <loc>/modules/bigdataapplications/2020/applications/physics/</loc>
-    <lastmod>2020-08-28T14:36:30-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/modules/bigdataapplications/2019/applications/plotviz/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -95,11 +85,6 @@
   <url>
     <loc>/modules/bigdataapplications/2019/applications/sport/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/modules/bigdataapplications/2020/applications/sport/</loc>
-    <lastmod>2020-08-28T14:36:30-04:00</lastmod>
   </url>
   
   <url>
@@ -168,6 +153,11 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/week5/</loc>
+    <lastmod>2020-08-28T22:29:33-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/bigdataapplications/2019/assignments/assignment6/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -184,6 +174,11 @@
   
   <url>
     <loc>/modules/bigdataapplications/2019/week7/</loc>
+    <lastmod>2020-08-28T22:29:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/week7/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
   
@@ -389,7 +384,7 @@
   
   <url>
     <loc>/modules/bigdataapplications/2020/applications/</loc>
-    <lastmod>2020-08-28T22:29:33-04:00</lastmod>
+    <lastmod>2020-08-29T18:45:39-04:00</lastmod>
   </url>
   
   <url>

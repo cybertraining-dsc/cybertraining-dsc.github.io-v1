@@ -1,12 +1,12 @@
 ---
 title: Physics
-draft: true
+draft: false
 weight: 5
 description: >
   Big Data applications and Physics
 ---
 
-# Physics with Big Data Applications {#sec:534-week5}
+# Physics with Big Data Applications
 
 E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson
 Part I (Unit 8) Section Units 9-11 Summary: This section starts by
