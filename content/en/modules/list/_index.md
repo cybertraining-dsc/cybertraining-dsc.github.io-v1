@@ -11,7 +11,6 @@ menu:
 This page contains the list of current modules.
 {{% /pageinfo %}}
 *  [chapters](https://github.com/cloudmesh-community/book/blob/master/chapters/)
-* &nbsp;&nbsp;&nbsp;&nbsp; [authors.md](https://github.com/cloudmesh-community/book/blob/master/chapters//authors.md)
 * &nbsp;&nbsp;&nbsp;&nbsp; [assignment.md](https://github.com/cloudmesh-community/book/blob/master/chapters//assignment.md)
 * &nbsp;&nbsp;&nbsp;&nbsp; [devops](https://github.com/cloudmesh-community/book/blob/master/chapters//devops)
 * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [puppet.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/puppet.md)

@@ -19,7 +19,9 @@ This page contains the list of current modules.
 """.strip())
 
 
-exclude = [".pdf",
+exclude = [
+    "authors.md",
+    ".pdf",
                ".PDF",
                ".svg",
                ".png",
