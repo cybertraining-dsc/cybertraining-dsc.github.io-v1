@@ -2,9 +2,6 @@
 title: "Google Colab"
 linkTitle: "Google Colab"
 weight: 20
-menu:
-  main:
-    weight: 20
 ---
 
 {{% pageinfo %}}

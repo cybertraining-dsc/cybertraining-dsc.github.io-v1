@@ -1,10 +1,9 @@
 ---
-title: "List"
-linkTitle: "List"
-weight: 20
-menu:
-  main:
-    weight: 20
+title: "Module List"
+linkTitle: "Module List"
+description: >
+  A list of modules that you can look at or incllude in a customized course.
+weight: 1
 ---
 
 {{% pageinfo %}}
