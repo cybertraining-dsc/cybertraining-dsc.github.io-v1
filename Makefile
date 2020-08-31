@@ -17,3 +17,6 @@ test:
 #	pandoc a.md --filter pandoc-citeproc -s --bibliography a.bib --csl ieee.csl -o output.md
 	cat a.md | pandoc -t commonmark  -s --bibliography a.bib --csl ieee.csl
 #-o output.md
+
+list:
+	python bin/tree.py > content/en/modules/list/_index.md

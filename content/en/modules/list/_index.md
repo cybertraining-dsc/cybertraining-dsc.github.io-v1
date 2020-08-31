@@ -10,666 +10,342 @@ menu:
 {{% pageinfo %}}
 This page contains the list of current modules.
 {{% /pageinfo %}}
-
-```
-../book/chapters
-├── 222-assignments.md
-├── 516-assignment.md
-├── SECTION
-│   ├── PI-SETUP-SINGLE.md
-│   ├── SECTION-516-DETAILS.md
-│   ├── SECTION-516-OVERVIEW.md
-│   ├── SECTION-INCOMING.md
-│   ├── SECTION-ISSUES.md
-│   ├── SECTION-PI-CLUSTER-CLOUD.md
-│   ├── SECTION-PI-CLUSTER-TRADITIONAL.md
-│   ├── SECTION-PI-SETUP.md
-│   ├── SECTION-QUICK516.md
-│   ├── SECTION-SYLLABUS.md
-│   └── SECTION-TECH.md
-├── ai
-│   ├── ai-cloud-services.bib
-│   ├── ai-cloud-services.md
-│   ├── ai.md
-│   ├── google-ai-pipelines.md
-│   ├── kubeflow.md
-│   └── tensorflow-on-ubuntu-2004.md
-├── art
-│   └── sentient.md
-├── assignment.md
-├── authors.md
-├── bigdata
-│   ├── applications
-│   │   ├── cloud.md
-│   │   ├── health.md
-│   │   ├── kmeans.md
-│   │   ├── lifestyle.md
-│   │   ├── overview.md
-│   │   ├── physics.md
-│   │   ├── plotviz.md
-│   │   ├── radar.md
-│   │   ├── sensor.md
-│   │   ├── sport.md
-│   │   ├── statistics.md
-│   │   ├── usecases.md
-│   │   ├── web.md
-│   │   └── webplotviz.md
-│   ├── assignments
-│   │   ├── assignment1.md
-│   │   ├── assignment2.md
-│   │   ├── assignment3.md
-│   │   ├── assignment4.md
-│   │   ├── assignment5.md
-│   │   ├── assignment6.md
-│   │   ├── assignment7.md
-│   │   ├── assignment8.md
-│   │   └── index.md
-│   ├── e534-cloud-computing-unit.md
-│   ├── github
-│   │   └── index.md
-│   │   ├── motivation
-│   │   ├── motivation_old
-│   │   ├── physics
-│   │   ├── sports
-│   ├── intro-bd-deprecated.md
-│   ├── intro-cloud.md
-│   ├── intro-fall-2018.md
-│   ├── python.md
-│   ├── week1.md
-│   ├── week10.md
-│   ├── week2.md
-│   ├── week3.md
-│   ├── week5.md
-│   ├── week6.md
-│   ├── week7.md
-│   ├── week8.md
-│   └── week9.md
-├── blockchain
-│   └── blockchain.md
-├── books
-│   ├── books.md
-├── case
-│   ├── case.md
-├── class
-│   ├── 222-a.md
-│   ├── 222-cloud-intro.md
-│   ├── 516
-│   │   ├── calendar-2020.md
-│   │   ├── communication.md
-│   │   ├── exercise
-│   │   │   ├── week1.md
-│   │   │   └── week10.md
-│   │   ├── faq.md
-│   │   ├── overview.md
-│   │   ├── quicktips.md
-│   │   ├── summary.md
-│   │   ├── syllabus-2019.md
-│   │   ├── syllabus-2020.md
-│   │   ├── ufo.md
-│   │   ├── week1-intro.md
-│   │   ├── week11-messaging.md
-│   │   ├── week12-GO.md
-│   │   ├── week13-faas.md
-│   │   ├── week2-center.md
-│   │   ├── week3-arch.md
-│   │   ├── week4-openstack.md
-│   │   ├── week5-compute.md
-│   │   ├── week6-REST.md
-│   │   ├── week7-mapreduce.md
-│   │   ├── week8-midterm.md
-│   │   ├── week8-multi.md
-│   │   ├── week9-container.md
-│   │   ├── week9-virt-2.md
-│   │   └── weekn.md
-│   ├── SECTION.md
-│   ├── assignments-516.md
-│   ├── assignments-523.md
-│   ├── assignments-a.md
-│   ├── assignments.md
-│   ├── e222-syllabus-old.md
-│   ├── e222-syllabus.md
-│   ├── e516-engineering-cloud-computing.md
-│   ├── e516-summary.md
-│   ├── e516-syllabus-nodates.md
-│   ├── e516-syllabus-table-old.md
-│   ├── e516-syllabus-table.md
-│   ├── e516-week.md
-│   ├── e534-i523.md
-│   ├── fall2018.md
-│   ├── grading.md
-│   ├── organization-516.md
-│   ├── organization-523.md
-│   ├── organization.md
-│   ├── plagiarism.md
-│   ├── policies-old.md
-│   ├── policies.md
-│   ├── project-ideas.md
-│   ├── support-principles.md
-│   ├── syllabus.md
-│   └── volumes.md
-├── cloud
-│   ├── arch-scheduling.md
-│   ├── arch.md
-│   ├── chameleon
-│   │   ├── baremetal.md
-│   │   ├── charge.md
-│   │   ├── cli-openstack.md
-│   │   ├── cli.md
-│   │   ├── faq-orig.md
-│   │   ├── faq.md
-│   │   ├── hardware.md
-│   │   ├── heat.md
-│   │   ├── horizon.md
-│   │   ├── resources.md
-│   │   ├── start.md
-│   │   ├── user-guide.md
-│   │   └── warning.md
-│   ├── cloud-foundry.md
-│   ├── datacenter.md
-│   ├── definition.md
-│   ├── gregor.md
-│   ├── multipass.md
-│   ├── packer.md
-│   ├── qemu.md
-│   ├── use-cases.md
-│   ├── vagrant.md
-│   ├── virsh.md
-│   ├── virtualbox.md
-│   └── virtualization.md
-├── clusters
-├── container
-│   ├── SECTION-DOCKER-PAAS.md
-│   ├── bookmanager.md
-│   ├── cncf.md
-│   ├── container.md
-│   ├── docker-compose.md
-│   ├── docker-fs.md
-│   ├── docker-hadoop.md
-│   ├── docker-intro.md
-│   ├── docker-local.md
-│   ├── docker-pagerank-example-instruction.md
-│   ├── docker-rest.md
-│   ├── docker-spark.md
-│   ├── docker-swarm.md
-│   ├── dockerfile.md
-│   ├── dockerhub.md
-│   ├── exercise.md
-│   ├── glossary.md
-│   ├── k8s-kubernetes-scheduler.bib
-│   ├── k8s-kubernetes-scheduler.md
-│   ├── kubernetes-fs.md
-│   ├── kubernetes-intro.md
-│   ├── kubernetes-scheduling.md
-│   ├── resources.md
-│   └── singularity
-│       ├── singularity.html
-│       └── singularity.md
-├── data
-│   ├── aws-redshift.md
-│   ├── formats.md
-│   ├── mongodb.md
-│   └── mongoengine.md
-├── dbase
-├── deprecated
-│   ├── assignments.md
-│   ├── fall2017.md
-│   ├── fundamentals.md
-│   ├── iaas.md
-│   ├── icloud
-│   │   ├── assignment
-│   │   │   ├── assignment.md
-│   │   │   ├── deprecated
-│   │   │   │   ├── assignment_0.pptx
-│   │   │   │   ├── exercise-old7
-│   │   │   │   │   ├── FindingNearestCenter.java
-│   │   │   │   │   ├── UpdatingCenters.java
-│   │   │   │   │   ├── exercise7.docx
-│   │   │   │   │   ├── exercise7.md
-│   │   │   │   │   ├── exercise7.pdf
-│   │   │   │   ├── project1.pdf
-│   │   │   │   ├── project1_input_data.txt
-│   │   │   │   ├── project2.pdf
-│   │   │   │   ├── project3.pdf
-│   │   │   │   ├── project4.pdf
-│   │   │   │   ├── project4_pre.pdf
-│   │   │   │   ├── project5.pdf
-│   │   │   │   ├── project6.pdf
-│   │   │   │   ├── project7.pdf
-│   │   │   │   └── project8.pdf
-│   │   │   ├── exercise0
-│   │   │   │   ├── Assignment0.pptx
-│   │   │   │   └── readme.txt
-│   │   │   ├── exercise1
-│   │   │   │   ├── data.txt
-│   │   │   │   ├── exercise1.md
-│   │   │   ├── exercise2
-│   │   │   │   ├── PageRankMap.java
-│   │   │   │   ├── PageRankReducer.java
-│   │   │   │   ├── exercise2.md
-│   │   │   │   ├── pagerank.md
-│   │   │   ├── exercise3
-│   │   │   │   ├── DataAnalysis.java
-│   │   │   │   ├── RunnerMap.java
-│   │   │   │   └── exercise3.md
-│   │   │   ├── exercise4
-│   │   │   │   ├── Project\ 4\ HBase\ WordCount.docx
-│   │   │   │   ├── exercise4.bib
-│   │   │   │   ├── exercise4.md
-│   │   │   │   ├── exercise4.pdf
-│   │   │   │   ├── exercise4_Prereq.pdf
-│   │   │   ├── exercise5
-│   │   │   │   ├── FibMapper.java
-│   │   │   │   ├── exercise5.md
-│   │   │   ├── exercise6
-│   │   │   │   ├── SearchEngineTester.java
-│   │   │   │   ├── exercise6.md
-│   │   │   ├── exercise7
-│   │   │   │   ├── code-base
-│   │   │   │   │   ├── input
-│   │   │   │   │   │   ├── pr_0
-│   │   │   │   │   │   └── pr_1
-│   │   │   │   │   └── simplepagerank
-│   │   │   │   │       ├── HarpPageRank.java
-│   │   │   │   │       ├── PageRankConstants.java
-│   │   │   │   │       ├── PageRankMapper.java
-│   │   │   │   │       └── Utils.java
-│   │   │   │   ├── computePartialPR.java
-│   │   │   │   ├── exercise7.md
-│   │   │   │   └── pagerank.bib
-│   │   │   └── exercise8
-│   │   │       ├── exercise8.md
-│   │   │       ├── mbkmeans.bib
-│   │   ├── course
-│   │   │   ├── fundamentals.md
-│   │   │   ├── iaas.md
-│   │   │   ├── iot.md
-│   │   │   ├── iterative-mapreduce.md
-│   │   │   ├── mapreduce.md
-│   │   │   ├── nosql-new.md
-│   │   │   ├── nosql.md
-│   │   │   ├── old-fundamentals.md
-│   │   │   ├── saas.md
-│   │   │   └── selected.draft.md
-│   │   ├── deprecated.md
-│   │   ├── evaluation.md
-│   │   ├── participation.md
-│   │   ├── preface.md
-│   │   ├── project2.md
-│   │   └── syllabus.md
-│   ├── iot.md
-│   ├── iterative-mapreduce.md
-│   ├── mapreduce.md
-│   ├── nosql.md
-│   ├── old-class
-│   │   ├── assignment
-│   │   │   └── index.md
-│   │   ├── evaluation
-│   │   │   └── index.md
-│   │   └── participation
-│   │       └── index.md
-│   └── saas.md
-├── devops
-│   ├── ansible.md
-│   ├── circleci.md
-│   ├── devop-aws.md
-│   ├── devop-azure-monitor.md
-│   ├── devop-ci
-│   │   └── _index.md
-│   ├── devop-ci.md
-│   ├── devops-iac.md
-│   ├── devops.md
-│   ├── puppet.md
-│   ├── terraform.md
-│   └── travis.md
-├── doc
-│   ├── SECTION.md
-│   ├── acknowledgement.md
-│   ├── communicate.md
-│   ├── emacs.md
-│   ├── graphviz.md
-│   ├── markdown.md
-│   ├── overview-2.md
-│   ├── piazza.md
-│   ├── plagiarism.md
-│   ├── ppt.md
-│   ├── projects-2.md
-│   ├── report-2.md
-│   ├── report-book-2.md
-│   ├── report.md
-│   ├── type.md
-│   └── writing-markdown.md
-├── empty.md
-├── faas
-│   ├── aws-lambda.md
-│   ├── exercise.md
-│   ├── fission.md
-│   ├── fn.md
-│   ├── gestalt.md
-│   ├── google-cloud-functions.md
-│   ├── introduction.md
-│   ├── ironfunction.md
-│   ├── kubeless.md
-│   ├── microsoft-azure-functions.md
-│   ├── openfaas.md
-│   ├── openlambda.md
-│   ├── openwhisk.md
-│   ├── riff.md
-│   └── spring-cloud-function.md
-├── faq-516.md
-├── faq-523.md
-├── faq.md
-├── futuresystems.md
-├── git
-│   ├── git-techlist.md
-│   ├── git-tools.md
-│   ├── github.md
-│   ├── gitpullreqest.md
-├── graphql
-│   ├── graphql.md
-├── iaas
-│   ├── aws
-│   │   ├── aws.md
-│   │   ├── link-1.md
-│   │   ├── link.md
-│   │   ├── links.md
-│   │   ├── products-orig.md
-│   │   └── products.md
-│   ├── azure
-│   │   ├── azure.md
-│   │   ├── index.md
-│   │   ├── product-container.md
-│   │   └── products.md
-│   ├── boto.md
-│   ├── futuresystems
-│   │   ├── futuresystems.md
-│   ├── gcloud
-│   │   ├── gcloud.md
-│   ├── iaas.md
-│   ├── libcloud.md
-│   ├── openstack
-│   │   ├── openstack.md
-│   │   └── openstacksdk.md
-│   └── watson
-│       └── watson.md
-│   ├── grovepi
-├── in
-│   ├── ai-rest.md
-│   ├── assignments.md
-│   ├── aws-auroradb.md
-│   ├── aws-documentdb.md
-│   ├── aws-elasticbeanstalk.md
-│   ├── box.md
-│   ├── compliance.md
-│   ├── course1.md
-│   ├── datasets.md
-│   ├── old.md
-│   ├── pyenv-anaconda.md
-│   ├── vis.md
-│   └── windows-subsystem-for-linux.md
-├── index.md
-├── intro
-│   └── introduction.md
-├── iot
-│   ├── dexter.md
-│   ├── easyplug.md
-│   ├── esp8266.md
-│   ├── grovepi.md
-│   ├── hardware.md
-│   ├── introduction.md
-│   ├── pi.md
-│   ├── projects.md
-│   ├── sensors.md
-│   ├── tools.md
-│   └── turtle.md
-├── issues
-│   ├── issues-in.md
-│   └── issues.md
-├── linux
-│   ├── linux.md
-│   ├── perl.md
-│   ├── recording.yaml
-│   ├── refcards.md
-│   ├── ssh-excerise.md
-│   ├── ssh-futuresystems.md
-│   ├── ssh-windows.md
-│   ├── ssh.md
-│   └── zsh.md
-├── login-node.md
-├── machinelearing
-│   ├── aws-sagemaker.md
-├── mapreduce
-│   ├── amazon-emr-1.md
-│   ├── aws-emr.md
-│   ├── cm-hadoop.md
-│   ├── hadoop-comet.md
-│   ├── hadoop-hbase.md
-│   ├── hadoop-hdfs.md
-│   ├── hadoop-installation.md
-│   ├── hadoop-lectures.md
-│   ├── hadoop-rdma.md
-│   ├── mapreduce.md
-│   ├── spark-installation.md
-│   ├── spark-lectures.md
-│   ├── spark-streaming.md
-│   ├── spark-udf.md
-│   ├── spark.md
-│   ├── twister-installation.md
-│   ├── twister.md
-│   └── twister2-example.md
-├── modify-pi-image.md
-├── msg
-│   ├── amazon-kenesis-data-streams.md
-│   ├── avro.md
-│   ├── exercise.md
-│   ├── flink.md
-│   └── mqtt.md
-├── new
-│   ├── amqp.md
-│   └── osx-tricks.md
-├── nist
-│   ├── bdra.md
-├── notes.md
-├── os
-│   ├── ubuntu-setup.md
-│   ├── ubuntu-usb-osx.md
-│   └── ubuntu.md
-├── pi
-│   ├── board.md
-│   ├── car
-│   │   ├── car-face.md
-│   ├── case.md
-│   ├── clusters
-│   │   ├── pi-cassandra-apache2.md
-│   │   ├── pi-configure-cluster.md
-│   │   ├── pi-docker.md
-│   │   ├── pi-hadoop.md
-│   │   ├── pi-kubernetes.md
-│   │   ├── pi-now.md
-│   │   ├── pi-setup.md
-│   │   ├── pi-spark-orig.md
-│   │   ├── pi-spark.md
-│   │   └── pxe.md
-│   ├── config-display.md
-│   ├── exercise.md
-│   ├── fortran.md
-│   ├── kubernetes
-│   │   ├── 417
-│   │   └── 526
-│   │       └── head
-│   │           ├── clusters
-│   │           ├── dhcpcd.conf
-│   │           ├── dnsmasq.conf
-│   │           ├── head_node_readme.md
-│   │           └── setup
-│   ├── links.md
-│   ├── motherboard-led.md
-│   ├── mpi.md
-│   ├── preface.md
-│   ├── run-at-boot.md
-│   ├── setup-dev.md
-│   ├── setup-multiple.md
-│   ├── setup-ultimate.md
-│   ├── setup.md
-│   ├── slurm.md
-│   ├── software2.md
-│   └── vnc.md
-├── preface
-│   ├── a.md
-│   ├── aa.txt
-│   ├── contributing-latex.md
-│   ├── contributing.md
-│   ├── contributors.md
-│   ├── corrections.md
-│   ├── create-deprecated.md
-│   ├── create.md
-│   ├── emoji.md
-│   ├── exercises.md
-│   ├── gg.md
-│   ├── git.md
-│   ├── issues.md
-│   ├── learning.md
-│   ├── notation.md
-│   ├── outline.md
-│   ├── preface.md
-│   ├── reader.md
-│   └── updates.md
-├── prg
-│   ├── SECTION-PYTHON-LANG.md
-│   ├── SECTION-PYTHON.md
-│   ├── github.md
-│   ├── go
-│   │   ├── go-cloud.md
-│   │   ├── go-cmd.md
-│   │   ├── go-editor.md
-│   │   ├── go-excerises.md
-│   │   ├── go-install.md
-│   │   ├── go-intro.md
-│   │   ├── go-language.md
-│   │   ├── go-libraries.md
-│   │   ├── go-links.md
-│   │   ├── go-openapi.md
-│   │   ├── go-rest.md
-│   ├── julia
-│   │   ├── README.md
-│   │   ├── julia-aws.md
-│   │   ├── julia-docopts.md
-│   │   ├── julia-external.md
-│   │   ├── julia-ide.md
-│   │   ├── julia-install.md
-│   │   ├── julia-language.md
-│   │   ├── julia-modules.md
-│   │   ├── julia-network.md
-│   │   ├── julia-opttype.md
-│   │   ├── julia-parallel.md
-│   │   └── julia-rest.md
-│   ├── python
-│   │   ├── cloudmesh
-│   │   │   ├── config.md
-│   │   │   ├── console.md
-│   │   │   ├── dict.md
-│   │   │   ├── exercises.md
-│   │   │   ├── installation.md
-│   │   │   ├── introduction.md
-│   │   │   ├── inventory.md
-│   │   │   ├── python-cloudmesh.md
-│   │   │   ├── python-cmd5.md
-│   │   │   ├── shell.md
-│   │   │   └── stopwatch.md
-│   │   ├── dask
-│   │   │   ├── dask.md
-│   │   │   ├── generate-data.py
-│   │   │   ├── requirement.txt
-│   │   │   └── student.csv
-│   │   ├── facedetection
-│   │   │   ├── facedetection.ipynb
-│   │   │   ├── facedetection.md
-│   │   │   ├── facedetection.rst
-│   │   │   ├── facedetection.tex
-│   │   ├── fingerprint
-│   │   │   ├── fingerprint-matching.ipynb
-│   │   │   ├── fingerprint.md
-│   │   ├── google-colab
-│   │   │   └── python-google-colab.md
-│   │   ├── machinelearning
-│   │   │   ├── crossvalidation.ipynb
-│   │   │   ├── machinelearning.ipynb
-│   │   │   ├── perceptronproblem.ipynb
-│   │   │   ├── precisionrecall.ipynb
-│   │   │   ├── readme.md
-│   │   │   └── seabornexercies.ipynb
-│   │   ├── numpy
-│   │   │   ├── numpy.ipynb
-│   │   │   └── numpy.md
-│   │   ├── opencv
-│   │   │   │   ├── opencv
-│   │   │   │   ├── secchi
-│   │   │   │   ├── secchi-field-test
-│   │   │   │   │   ├── data
-│   │   │   │   │   │   ├── data-only.txt
-│   │   │   │   │   │   └── secchi.ipynb
-│   │   │   ├── notebook.tex
-│   │   │   ├── opencv.ipynb
-│   │   │   ├── opencv.md
-│   │   │   └── secchi.md
-│   │   ├── pandas
-│   │   │   ├── DataCleaning-Preparation.ipynb
-│   │   │   └── DataCleaning-Preparation.md
-│   │   ├── python-advanced.md
-│   │   ├── python-big-data.md
-│   │   ├── python-click.md
-│   │   ├── python-cmd.md
-│   │   ├── python-data.md
-│   │   ├── python-deprecated.md
-│   │   ├── python-docopts.md
-│   │   ├── python-editor.md
-│   │   ├── python-install-pyenv.md
-│   │   ├── python-install.md
-│   │   ├── python-interactive.md
-│   │   ├── python-intro.md
-│   │   ├── python-libraries.md
-│   │   ├── python-matplotlib.md
-│   │   ├── python-parallel.md
-│   │   ├── python-subprocess.md
-│   │   ├── python-wordcount.md
-│   │   ├── python.md
-│   │   ├── random-forest
-│   │   │   ├── random-forest.ipynb
-│   │   │   ├── random-forest.md
-│   │   │   ├── winequality-red.csv
-│   │   │   ├── winequality-white.csv
-│   │   │   └── winequality.names
-│   │   ├── scikit-learn
-│   │   │   ├── scikit-learn.ipynb
-│   │   │   └── scikit-learn.md
-│   │   └── scipy
-│   │       ├── scipy-examples.ipynb
-│   │       └── scipy.md
-│   └── scala
-│       └── scala.md
-├── quick516.md
-├── references.md
-├── rest
-│   ├── rest-ai.md
-│   ├── rest-django.md
-│   ├── rest-eve-extensions.md
-│   ├── rest-eve.md
-│   ├── rest-excersises.md
-│   ├── rest-haetos.md
-│   ├── rest-old.md
-│   ├── rest-restful.md
-│   ├── rest-spec.md
-│   ├── rest.md
-│   ├── swagger-bravado.md
-│   ├── swagger-codegen.md
-│   ├── swagger-introspection-2-0.md
-│   ├── swagger-introspection.md
-│   ├── swagger-spec.md
-│   └── swagger.md
-├── todo.md
-├── version.md
-├── virtualmachines
-│   ├── qemu-kvm.md
-│   └── virtualmachines.md
-└── windows
-    └── windows.md
-```
+*  [chapters](https://github.com/cloudmesh-community/book/blob/master/chapters/)
+* &nbsp;&nbsp;&nbsp;&nbsp; [authors.md](https://github.com/cloudmesh-community/book/blob/master/chapters//authors.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [assignment.md](https://github.com/cloudmesh-community/book/blob/master/chapters//assignment.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [devops](https://github.com/cloudmesh-community/book/blob/master/chapters//devops)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [puppet.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/puppet.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [devop-ci](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/devop-ci)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [_index.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/devop-ci/_index.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [devop-azure-monitor.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/devop-azure-monitor.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [devop-ci.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/devop-ci.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [terraform.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/terraform.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [travis.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/travis.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [devops-iac.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/devops-iac.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [devops.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/devops.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [devop-aws.md](https://github.com/cloudmesh-community/book/blob/master/chapters//devops/devop-aws.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [SECTION](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-PI-SETUP.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-PI-SETUP.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-QUICK516.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-QUICK516.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-SYLLABUS.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-SYLLABUS.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-516-OVERVIEW.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-516-OVERVIEW.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-TECH.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-TECH.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-ISSUES.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-ISSUES.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-PI-CLUSTER-TRADITIONAL.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-516-DETAILS.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-516-DETAILS.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [PI-SETUP-SINGLE.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/PI-SETUP-SINGLE.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-INCOMING.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-INCOMING.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-PI-CLUSTER-CLOUD.md](https://github.com/cloudmesh-community/book/blob/master/chapters//SECTION/SECTION-PI-CLUSTER-CLOUD.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [intro](https://github.com/cloudmesh-community/book/blob/master/chapters//intro)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [introduction.md](https://github.com/cloudmesh-community/book/blob/master/chapters//intro/introduction.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [iaas](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [openstack](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/openstack)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/openstack/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [openstacksdk.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/openstack/openstacksdk.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [openstack.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/openstack/openstack.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [azure](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/azure)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [product-container.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/azure/product-container.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/azure/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [index.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/azure/index.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [products.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/azure/products.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [azure.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/azure/azure.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [iaas.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/iaas.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [aws](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/aws)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/aws/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [products.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/aws/products.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [aws.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/aws/aws.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [products-orig.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/aws/products-orig.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [watson](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/watson)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/watson/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [watson.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/watson/watson.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [futuresystems](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/futuresystems)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/futuresystems/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [futuresystems.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/futuresystems/futuresystems.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [boto.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iaas/boto.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [msg](https://github.com/cloudmesh-community/book/blob/master/chapters//msg)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [exercise.md](https://github.com/cloudmesh-community/book/blob/master/chapters//msg/exercise.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//msg/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [avro.md](https://github.com/cloudmesh-community/book/blob/master/chapters//msg/avro.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [amazon-kenesis-data-streams.md](https://github.com/cloudmesh-community/book/blob/master/chapters//msg/amazon-kenesis-data-streams.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [mqtt.md](https://github.com/cloudmesh-community/book/blob/master/chapters//msg/mqtt.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [516-assignment.md](https://github.com/cloudmesh-community/book/blob/master/chapters//516-assignment.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [prg](https://github.com/cloudmesh-community/book/blob/master/chapters//prg)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-PYTHON-LANG.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/SECTION-PYTHON-LANG.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go-editor.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go/go-editor.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go-intro.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go/go-intro.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go-cmd.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go/go-cmd.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go-openapi.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go/go-openapi.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go-excerises.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go/go-excerises.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [go-rest.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/go/go-rest.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [facedetection](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/facedetection)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/facedetection/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [facedetection.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/facedetection/facedetection.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-docopts.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-docopts.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [fingerprint](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/fingerprint)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/fingerprint/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [fingerprint.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/fingerprint/fingerprint.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-deprecated.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-deprecated.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-cmd.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-cmd.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [dask](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/dask)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [dask.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/dask/dask.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-subprocess.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-subprocess.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-editor.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-editor.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-wordcount.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-wordcount.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [numpy](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/numpy)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [numpy.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/numpy/numpy.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-big-data.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-big-data.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [opencv](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/opencv)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/opencv/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [opencv](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/opencv/images/opencv)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [secchi](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/opencv/images/secchi)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [secchi.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/opencv/secchi.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [opencv.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/opencv/opencv.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-intro.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-intro.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-advanced.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-advanced.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-interactive.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-interactive.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python-data.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/python-data.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [random-forest](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/random-forest)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/random-forest/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [random-forest.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/random-forest/random-forest.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [scipy](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/scipy)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [scipy.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/scipy/scipy.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/scipy/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [pandas](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/python/pandas)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [github.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/github.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-PYTHON.md](https://github.com/cloudmesh-community/book/blob/master/chapters//prg/SECTION-PYTHON.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [grovepi](https://github.com/cloudmesh-community/book/blob/master/chapters//images/grovepi)
+* &nbsp;&nbsp;&nbsp;&nbsp; [art](https://github.com/cloudmesh-community/book/blob/master/chapters//art)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//art/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [sentient.md](https://github.com/cloudmesh-community/book/blob/master/chapters//art/sentient.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [preface](https://github.com/cloudmesh-community/book/blob/master/chapters//preface)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [corrections.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/corrections.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [reader.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/reader.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [exercises.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/exercises.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [create-deprecated.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/create-deprecated.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [gg.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/gg.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [create.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/create.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [contributors.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/contributors.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [contributing.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/contributing.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [issues.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/issues.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [git.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/git.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [preface.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/preface.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [notation.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/notation.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [updates.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/updates.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [a.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/a.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [emoji.md](https://github.com/cloudmesh-community/book/blob/master/chapters//preface/emoji.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [dbase](https://github.com/cloudmesh-community/book/blob/master/chapters//dbase)
+* &nbsp;&nbsp;&nbsp;&nbsp; [in](https://github.com/cloudmesh-community/book/blob/master/chapters//in)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [aws-documentdb.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/aws-documentdb.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignments.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/assignments.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ai-rest.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/ai-rest.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//in/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [box.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/box.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [datasets.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/datasets.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [pyenv-anaconda.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/pyenv-anaconda.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [vis.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/vis.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [course1.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/course1.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [aws-auroradb.md](https://github.com/cloudmesh-community/book/blob/master/chapters//in/aws-auroradb.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [futuresystems.md](https://github.com/cloudmesh-community/book/blob/master/chapters//futuresystems.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [faas](https://github.com/cloudmesh-community/book/blob/master/chapters//faas)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [fission.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/fission.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [openfaas.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/openfaas.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [fn.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/fn.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [exercise.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/exercise.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [introduction.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/introduction.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [openwhisk.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/openwhisk.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [microsoft-azure-functions.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/microsoft-azure-functions.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ironfunction.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/ironfunction.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [riff.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faas/riff.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [faq.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faq.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [books](https://github.com/cloudmesh-community/book/blob/master/chapters//books)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//books/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [books.md](https://github.com/cloudmesh-community/book/blob/master/chapters//books/books.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [todo.md](https://github.com/cloudmesh-community/book/blob/master/chapters//todo.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [nist](https://github.com/cloudmesh-community/book/blob/master/chapters//nist)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//nist/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [bdra.md](https://github.com/cloudmesh-community/book/blob/master/chapters//nist/bdra.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [iot](https://github.com/cloudmesh-community/book/blob/master/chapters//iot)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [hardware.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/hardware.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [introduction.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/introduction.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [projects.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/projects.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [esp8266.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/esp8266.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [sensors.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/sensors.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [grovepi.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/grovepi.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [dexter.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/dexter.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [pi.md](https://github.com/cloudmesh-community/book/blob/master/chapters//iot/pi.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [faq-516.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faq-516.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [version.md](https://github.com/cloudmesh-community/book/blob/master/chapters//version.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [container](https://github.com/cloudmesh-community/book/blob/master/chapters//container)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION-DOCKER-PAAS.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/SECTION-DOCKER-PAAS.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [docker-fs.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/docker-fs.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [resources.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/resources.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [container.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/container.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [cncf.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/cncf.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [docker-spark.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/docker-spark.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [exercise.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/exercise.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [docker-hadoop.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/docker-hadoop.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//container/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [kubernetes-fs.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/kubernetes-fs.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [docker-rest.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/docker-rest.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [docker-intro.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/docker-intro.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [docker-swarm.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/docker-swarm.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [docker-compose.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/docker-compose.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [bookmanager.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/bookmanager.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [kubernetes-intro.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/kubernetes-intro.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [dockerhub.md](https://github.com/cloudmesh-community/book/blob/master/chapters//container/dockerhub.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [pi](https://github.com/cloudmesh-community/book/blob/master/chapters//pi)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [run-at-boot.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/run-at-boot.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [case.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/case.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [car](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/car)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/car/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [car-face.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/car/car-face.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [mpi.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/mpi.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [setup.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/setup.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [exercise.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/exercise.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [software2.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/software2.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [vnc.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/vnc.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [fortran.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/fortran.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [board.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/board.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [preface.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/preface.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [setup-dev.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/setup-dev.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [kubernetes](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/kubernetes)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [526](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/kubernetes/526)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [head](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/kubernetes/526/head)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [head_node_readme.md](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/kubernetes/526/head/head_node_readme.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [setup](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/kubernetes/526/head/setup)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [417](https://github.com/cloudmesh-community/book/blob/master/chapters//pi/kubernetes/417)
+* &nbsp;&nbsp;&nbsp;&nbsp; [references.md](https://github.com/cloudmesh-community/book/blob/master/chapters//references.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [222-assignments.md](https://github.com/cloudmesh-community/book/blob/master/chapters//222-assignments.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [index.md](https://github.com/cloudmesh-community/book/blob/master/chapters//index.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [ai](https://github.com/cloudmesh-community/book/blob/master/chapters//ai)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//ai/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ai.md](https://github.com/cloudmesh-community/book/blob/master/chapters//ai/ai.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [new](https://github.com/cloudmesh-community/book/blob/master/chapters//new)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [osx-tricks.md](https://github.com/cloudmesh-community/book/blob/master/chapters//new/osx-tricks.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [amqp.md](https://github.com/cloudmesh-community/book/blob/master/chapters//new/amqp.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [modify-pi-image.md](https://github.com/cloudmesh-community/book/blob/master/chapters//modify-pi-image.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [faq-523.md](https://github.com/cloudmesh-community/book/blob/master/chapters//faq-523.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [quick516.md](https://github.com/cloudmesh-community/book/blob/master/chapters//quick516.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [doc](https://github.com/cloudmesh-community/book/blob/master/chapters//doc)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [markdown.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/markdown.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [emacs.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/emacs.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [piazza](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/images/piazza)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [report.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/report.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [report-2.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/report-2.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [report-book-2.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/report-book-2.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [piazza.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/piazza.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [writing-markdown.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/writing-markdown.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ppt.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/ppt.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [graphviz.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/graphviz.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [communicate.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/communicate.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SECTION.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/SECTION.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [type.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/type.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [overview-2.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/overview-2.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [projects-2.md](https://github.com/cloudmesh-community/book/blob/master/chapters//doc/projects-2.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [case](https://github.com/cloudmesh-community/book/blob/master/chapters//case)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [case.md](https://github.com/cloudmesh-community/book/blob/master/chapters//case/case.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//case/images)
+* &nbsp;&nbsp;&nbsp;&nbsp; [os](https://github.com/cloudmesh-community/book/blob/master/chapters//os)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ubuntu-usb-osx.md](https://github.com/cloudmesh-community/book/blob/master/chapters//os/ubuntu-usb-osx.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//os/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ubuntu.md](https://github.com/cloudmesh-community/book/blob/master/chapters//os/ubuntu.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ubuntu-setup.md](https://github.com/cloudmesh-community/book/blob/master/chapters//os/ubuntu-setup.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [notes.md](https://github.com/cloudmesh-community/book/blob/master/chapters//notes.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [windows](https://github.com/cloudmesh-community/book/blob/master/chapters//windows)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [windows.md](https://github.com/cloudmesh-community/book/blob/master/chapters//windows/windows.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [data](https://github.com/cloudmesh-community/book/blob/master/chapters//data)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [formats.md](https://github.com/cloudmesh-community/book/blob/master/chapters//data/formats.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//data/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [mongoengine.md](https://github.com/cloudmesh-community/book/blob/master/chapters//data/mongoengine.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [aws-redshift.md](https://github.com/cloudmesh-community/book/blob/master/chapters//data/aws-redshift.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [mongodb.md](https://github.com/cloudmesh-community/book/blob/master/chapters//data/mongodb.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [issues](https://github.com/cloudmesh-community/book/blob/master/chapters//issues)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//issues/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [issues.md](https://github.com/cloudmesh-community/book/blob/master/chapters//issues/issues.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [issues-in.md](https://github.com/cloudmesh-community/book/blob/master/chapters//issues/issues-in.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [mapreduce](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [spark.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/spark.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [hadoop-rdma.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/hadoop-rdma.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [spark-streaming.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/spark-streaming.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [hadoop-comet.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/hadoop-comet.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [README.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/images/README.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [twister.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/twister.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [aws-emr.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/aws-emr.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [amazon-emr-1.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/amazon-emr-1.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [cm-hadoop.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/cm-hadoop.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [mapreduce.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/mapreduce.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [spark-udf.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/spark-udf.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [hadoop-hbase.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/hadoop-hbase.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [hadoop-hdfs.md](https://github.com/cloudmesh-community/book/blob/master/chapters//mapreduce/hadoop-hdfs.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [rest](https://github.com/cloudmesh-community/book/blob/master/chapters//rest)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [swagger-bravado.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/swagger-bravado.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest-haetos.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest-haetos.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [swagger-introspection-2-0.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/swagger-introspection-2-0.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest-django.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest-django.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest-spec.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest-spec.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [swagger-spec.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/swagger-spec.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [swagger-codegen.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/swagger-codegen.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest-eve-extensions.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest-eve-extensions.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest-excersises.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest-excersises.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [swagger.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/swagger.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest-eve.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest-eve.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [swagger-introspection.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/swagger-introspection.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest-ai.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest-ai.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [rest.md](https://github.com/cloudmesh-community/book/blob/master/chapters//rest/rest.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [git](https://github.com/cloudmesh-community/book/blob/master/chapters//git)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//git/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [github.md](https://github.com/cloudmesh-community/book/blob/master/chapters//git/github.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [bigdata](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [python.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/python.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignments](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment8.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment8.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment3.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment3.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment7.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment7.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment6.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment6.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment2.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment2.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment5.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment5.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment1.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment1.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [index.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/index.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignment4.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/assignments/assignment4.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [images](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/images)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignments](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/images/assignments)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [git](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/images/assignments/git)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [sports](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/images/sports)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [physics](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/images/physics)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [motivation](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/images/motivation)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week5.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week5.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week1.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week1.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week3.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week3.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week7.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week7.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [github](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/github)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [index.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/github/index.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week6.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week6.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week10.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week10.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week2.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week2.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week9.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week9.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [intro-bd-deprecated.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/intro-bd-deprecated.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [week8.md](https://github.com/cloudmesh-community/book/blob/master/chapters//bigdata/week8.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [empty.md](https://github.com/cloudmesh-community/book/blob/master/chapters//empty.md)
+* &nbsp;&nbsp;&nbsp;&nbsp; [deprecated](https://github.com/cloudmesh-community/book/blob/master/chapters//deprecated)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [assignments.md](https://github.com/cloudmesh-community/book/blob/master/chapters//deprecated/assignments.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [iot.md](https://github.com/cloudmesh-community/book/blob/master/chapters//deprecated/iot.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [iaas.md](https://github.com/cloudmesh-community/book/blob/master/chapters//deprecated/iaas.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [iterative-mapreduce.md](https://github.com/cloudmesh-community/book/blob/master/chapters//deprecated/iterative-mapreduce.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [mapreduce.md](https://github.com/cloudmesh-community/book/blob/master/chapters//deprecated/mapreduce.md)
+* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [saas.md](https://github.com/cloudmesh-community/book/blob/master/chapters//deprecated/saas.md)

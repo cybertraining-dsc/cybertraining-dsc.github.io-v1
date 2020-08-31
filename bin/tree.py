@@ -1,4 +1,23 @@
+
+
 home = "https://github.com/cloudmesh-community/book/blob/master/chapters/"
+
+print("""
+---
+title: "List"
+linkTitle: "List"
+weight: 20
+menu:
+  main:
+    weight: 20
+---
+
+{{% pageinfo %}}
+This page contains the list of current modules.
+{{% /pageinfo %}}
+
+""".strip())
+
 
 exclude = [".pdf",
                ".PDF",
@@ -10,7 +29,7 @@ exclude = [".pdf",
                ".sh",
                ".JPG",
                ".scad",
-               "graffle",
+               ".graffle",
                ".bib",
                ".java",
                ".docx",
@@ -20,8 +39,7 @@ exclude = [".pdf",
                ".mm",
                ".conf",
                ".yaml"
-               " images",
-               " images",
+               "images",
                ".html",
                ".py",
                ".PNG",
@@ -34,9 +52,8 @@ exclude = [".pdf",
                ".csv",
                ".fzz",
                ".bin",
-               "─ bin",
-               " bin",
-               "─ l"]
+               "bin",
+               "l"]
 
 def valid(name):
     for t in exclude:
@@ -57,10 +74,11 @@ for line in lines:
         p = line
 
         count = len(p.split("/"))
-        indent =  "&nbsp" * count
-
+        #indent =  "____" * count
+        indent =  "&nbsp;&nbsp;&nbsp;&nbsp;" * (count - 3)
+        
         base = p.rsplit("/", 1)[1]
 
         link = p.replace("../book/chapters", home)
         
-        print (f"{indent} [{base}]({link})") 
+        print (f"* {indent} [{base}]({link})") 
