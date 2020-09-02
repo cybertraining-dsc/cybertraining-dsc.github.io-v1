@@ -1,6 +1,6 @@
 ---
 title: "Intelligent Systems"
-linkTitle: "Intelligen Systems"
+linkTitle: "Intelligent Systems"
 weight: 8
 date: 2020-08-15
 description: >
