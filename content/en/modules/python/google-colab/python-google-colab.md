@@ -24,6 +24,8 @@ we will be learning how to start a Google Colab project.
 
 [{{< figure src="/images/youtube.jpg"width="15%">}}](https://drive.google.com/file/d/1vz2_VaXCAae-9luzcrIuP_ugMmKJIy7w/view?usp=sharing)
 
+{{< youtube "oSzhLJ_1Z8s" >}}
+
 ## Programming in Google Colab
 
 In this video we will learn how to create a simple, Colab Notebook. 
