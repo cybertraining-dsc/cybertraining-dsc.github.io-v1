@@ -38,6 +38,7 @@ pip install numpy
 
 [{{< figure src="/images/youtube.jpg"width="15%">}}](https://drive.google.com/file/d/18mGVxgydx1TDdb4AYD8qb1To8rkSLS-H/view?usp=sharing)
 
+{{< youtube "znE_knoNnDE" >}}
 
 ## Benchamrking in Google Colab with Cloudmesh
 
