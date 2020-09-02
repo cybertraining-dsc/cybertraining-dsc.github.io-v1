@@ -6,7 +6,7 @@ description: >
   Week 1: We present the motivation why big data is so important
 ---
 
-# Intorduction
+# Introduction
 
 In this first Lecture we discuss the motivation of teh class. We
 provide an outlook what you will learn.
@@ -24,7 +24,7 @@ The following topics were addressed
 
 If you have questions please post them on [Piazza](https://piazza.com/class/kedccsbsthm5sc).
 
-## Assignment 1: Professional Bio
+## Suggested Assignment: Professional Bio
 
 Post a professional three paragrap Bio on
 [Piazza](https://piazza.com/class/kedccsbsthm5sc). Please post it
