@@ -143,6 +143,11 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/usecases/</loc>
+    <lastmod>2020-08-29T19:31:07-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/bigdataapplications/2019/assignments/assignment5/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -255,11 +260,6 @@
   <url>
     <loc>/modules/devops/ansible/</loc>
     <lastmod>2020-08-25T21:55:09-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/modules/bigdataapplications/2020/usecases/</loc>
-    <lastmod>2020-08-29T19:31:07-04:00</lastmod>
   </url>
   
   <url>

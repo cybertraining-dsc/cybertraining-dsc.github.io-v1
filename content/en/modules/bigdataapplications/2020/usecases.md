@@ -1,6 +1,6 @@
 ---
 title: Big Data Use Cases Survey
-weight: 10
+weight: 4
 draft: false
 description: >
   Week TBD: Big Data Use Cases Survey

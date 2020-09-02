@@ -53,436 +53,6 @@ activities. Look up the Bio from Geoffrey or Gregor as an example.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Modules: Physics</title>
-      <link>/modules/bigdataapplications/2020/physics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/physics/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;physics-with-big-data-applications&#34;&gt;Physics with Big Data Applications&lt;/h1&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson
-Part I (Unit 8) Section Units 9-11 Summary: This section starts by
-describing the LHC accelerator at CERN and evidence found by the
-experiments suggesting existence of a Higgs Boson. The huge number of
-authors on a paper, remarks on histograms and Feynman diagrams is
-followed by an accelerator picture gallery. The next unit is devoted
-to Python experiments looking at histograms of Higgs Boson production
-with various forms of shape of signal and various background and with
-various event totals. Then random variables and some simple principles
-of statistics are introduced with explanation as to why they are
-relevant to Physics counting experiments. The unit introduces Gaussian
-(normal) distributions and explains why they seen so often in natural
-phenomena. Several Python illustrations are given. Random Numbers with
-their Generators and Seeds lead to a discussion of Binomial and
-Poisson Distribution. Monte-Carlo and accept-reject methods.  The
-Central Limit Theorem concludes discussion.&lt;/p&gt;
-&lt;h2 id=&#34;unit-8&#34;&gt;Unit 8:&lt;/h2&gt;
-&lt;h3 id=&#34;81---looking-for-higgs-1-particle-and-counting-introduction-1&#34;&gt;8.1 - Looking for Higgs: 1. Particle and Counting Introduction 1&lt;/h3&gt;
-&lt;p&gt;We return to particle case with slides used in introduction and stress
-that particles often manifested as bumps in histograms and those bumps
-need to be large enough to stand out from background in a
-statistically significant fashion.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/L0wIh0Z-ZwI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;82---looking-for-higgs-2-particle-and-counting-introduction-2&#34;&gt;8.2 - Looking for Higgs: 2. Particle and Counting Introduction 2&lt;/h3&gt;
-&lt;p&gt;We give a few details on one LHC experiment ATLAS. Experimental
-physics papers have a staggering number of authors and quite big
-budgets. Feynman diagrams describe processes in a fundamental fashion.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ulX3oIiAusI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;83---looking-for-higgs-3-particle-experiments&#34;&gt;8.3 - Looking for Higgs: 3. Particle Experiments&lt;/h3&gt;
-&lt;p&gt;We give a few details on one LHC experiment ATLAS. Experimental
-physics papers have a staggering number of authors and quite big
-budgets. Feynman diagrams describe processes in a fundamental fashion&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/BW12d780qT8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;84---looking-for-higgs--4-accelerator-picture-gallery-of-big-science&#34;&gt;8.4 - Looking for Higgs:  4. Accelerator Picture Gallery of Big Science&lt;/h3&gt;
-&lt;p&gt;This lesson gives a small picture gallery of accelerators. Accelerators, detection chambers and magnets in tunnels and a large underground laboratory used fpr experiments where you need to be shielded from background like cosmic rays.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/WLJIxWWMYi8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;unit-9&#34;&gt;Unit 9&lt;/h2&gt;
-&lt;p&gt;This unit is devoted to Python experiments with Geoffrey looking at
-histograms of Higgs Boson production with various forms of shape of
-signal and various background and with various event totals&lt;/p&gt;
-&lt;h3 id=&#34;91---looking-for-higgs-ii-1-class-software&#34;&gt;9.1 - Looking for Higgs II: 1: Class Software&lt;/h3&gt;
-&lt;p&gt;We discuss how this unit uses Java (deprecated) and Python on both a backend server
-(FutureGrid - closed!) or a local client. We point out useful book on
-Python for data analysis. This lesson is deprecated. Follow current
-technology for class&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/tOFJEUM-Vww&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;92---looking-for-higgs-ii-2-event-counting&#34;&gt;9.2 - Looking for Higgs II: 2: Event Counting&lt;/h3&gt;
-&lt;p&gt;We define &amp;lsquo;&amp;lsquo;event counting&amp;rsquo;&amp;rsquo; data collection environments. We discuss the python and Java
-code to generate events according to a particular scenario (the
-important idea of Monte Carlo data). Here a sloping background plus
-either a Higgs particle generated similarly to LHC observation or one
-observed with better resolution (smaller measurement error).&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/h8-szCeFugQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;93---looking-for-higgs-ii-3-with-python-examples-of-signal-plus-background&#34;&gt;9.3 - Looking for Higgs II: 3: With Python examples of Signal plus Background&lt;/h3&gt;
-&lt;p&gt;This uses Monte Carlo data both to generate data like the
-experimental observations and explore effect of changing amount of data
-and changing measurement resolution for Higgs.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/bl2f0tAzLj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;94---looking-for-higgs-ii-4-change-shape-of-background--number-of-higgs-particles&#34;&gt;9.4 - Looking for Higgs II: 4: Change shape of background &amp;amp; number of Higgs Particles&lt;/h3&gt;
-&lt;p&gt;This lesson continues the examination of Monte Carlo
-data looking at effect of change in number of Higgs particles produced
-and in change in shape of background&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/bw3fd5cfQhk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;unit-10&#34;&gt;Unit 10&lt;/h2&gt;
-&lt;p&gt;In this unit we discuss;&lt;/p&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
-Big Data Higgs Unit 10: Looking for Higgs Particles Part III: Random
-Variables, Physics and Normal Distributions Section Units 9-11 Summary:
-This section starts by describing the LHC accelerator at CERN and
-evidence found by the experiments suggesting existence of a Higgs Boson.
-The huge number of authors on a paper, remarks on histograms and Feynman
-diagrams is followed by an accelerator picture gallery. The next unit is
-devoted to Python experiments looking at histograms of Higgs Boson
-production with various forms of shape of signal and various background
-and with various event totals. Then random variables and some simple
-principles of statistics are introduced with explanation as to why they
-are relevant to Physics counting experiments. The unit introduces
-Gaussian (normal) distributions and explains why they seen so often in
-natural phenomena. Several Python illustrations are given. Random
-Numbers with their Generators and Seeds lead to a discussion of Binomial
-and Poisson Distribution. Monte-Carlo and accept-reject methods. The
-Central Limit Theorem concludes discussion. Big Data Higgs Unit 10:
-Looking for Higgs Particles Part III: Random Variables, Physics and
-Normal Distributions Overview: Geoffrey introduces random variables and
-some simple principles of statistics and explains why they are relevant
-to Physics counting experiments. The unit introduces Gaussian (normal)
-distributions and explains why they seen so often in natural phenomena.
-Several Python illustrations are given. Java is currently not available
-in this unit.&lt;/p&gt;
-&lt;h3 id=&#34;101---statistics-overview-and-fundamental-idea-random-variables&#34;&gt;10.1 - Statistics Overview and Fundamental Idea: Random Variables&lt;/h3&gt;
-&lt;p&gt;We go through the many different areas of statistics covered in the Physics
-unit. We define the statistics concept of a random variable.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/jCgY6MEfLWI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;102---physics-and-random-variables-i&#34;&gt;10.2 - Physics and Random Variables I&lt;/h3&gt;
-&lt;p&gt;We describe the DIKW pipeline for the analysis of this type of physics experiment
-and go through details of analysis pipeline for the LHC ATLAS experiment.
-We give examples of event displays showing the final state particles
-seen in a few events. We illustrate how physicists decide whats going
-on with a plot of expected Higgs production experimental cross sections
-(probabilities) for signal and background.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Tn3GBxgplxg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;103---physics-and-random-variables-ii&#34;&gt;10.3 - Physics and Random Variables II&lt;/h3&gt;
-&lt;p&gt;We describe the DIKW pipeline for the analysis of this type of physics
-experiment and go through details of analysis pipeline for the LHC ATLAS
-experiment. We give examples of event displays showing the final state
-particles seen in a few events. We illustrate how physicists decide
-whats  going on with a plot of expected Higgs production experimental
-cross sections (probabilities) for signal and background.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/qWEjp0OtvdA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;104---statistics-of-events-with-normal-distributions&#34;&gt;10.4 - Statistics of Events with Normal Distributions&lt;/h3&gt;
-&lt;p&gt;We introduce Poisson and Binomial distributions and define independent
-identically distributed (IID) random variables. We give the law of
-large numbers defining the errors in counting and leading to Gaussian
-distributions for many things. We demonstrate this in Python experiments.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/LMBtpWOOQLo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;105---gaussian-distributions&#34;&gt;10.5 - Gaussian Distributions&lt;/h3&gt;
-&lt;p&gt;We introduce the Gaussian distribution and give Python examples of the
-fluctuations in counting Gaussian distributions.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/LWIbPa-P5W0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;106---using-statistics&#34;&gt;10.6 - Using Statistics&lt;/h3&gt;
-&lt;p&gt;We discuss the significance of a standard deviation and role of biases
-and insufficient statistics with a Python example in getting incorrect answers.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/n4jlUrGwgic&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;unit-11&#34;&gt;Unit 11&lt;/h2&gt;
-&lt;p&gt;In this section we discuss;&lt;/p&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
-Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers,
-Distributions and Central Limit Theorem
-Section Units 9-11 Summary: This section starts by describing the
-LHC accelerator at CERN and evidence found by the experiments suggesting
-existence of a Higgs Boson. The huge number of authors on a paper,
-remarks on histograms and Feynman diagrams is followed by an accelerator
-picture gallery. The next unit is devoted to Python experiments looking
-at histograms of Higgs Boson production with various forms of shape of
-signal and various background and with various event totals. Then random
-variables and some simple principles of statistics are introduced with
-explanation as to why they are relevant to Physics counting experiments.
-The unit introduces Gaussian (normal) distributions and explains why they
-seen so often in natural phenomena. Several Python illustrations are given.
-Random Numbers with their Generators and Seeds lead to a discussion of
-Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods.
-The Central Limit Theorem concludes discussion.
-Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers,
-Distributions and Central Limit Theorem
-Unit Overview: Geoffrey discusses Random Numbers with their Generators
-and Seeds. It introduces Binomial and Poisson Distribution. Monte-Carlo
-and accept-reject methods are discussed. The Central Limit Theorem and
-Bayes law concludes discussion. Python and Java (for student - not
-reviewed in class) examples and Physics applications are given.&lt;/p&gt;
-&lt;h3 id=&#34;111---generators-and-seeds-i&#34;&gt;11.1 - Generators and Seeds I&lt;/h3&gt;
-&lt;p&gt;We define random numbers and describe how to generate them on the computer
-giving Python examples. We define the seed used to define to specify how to start generation.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/r80Sk_KVG2s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;112---generators-and-seeds-ii&#34;&gt;11.2 - Generators and Seeds II&lt;/h3&gt;
-&lt;p&gt;We define random numbers and describe how to generate them on the computer
-giving Python examples. We define the seed used to define to specify how to start generation.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/9QY5qkQj2Ag&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;113---binomial-distribution&#34;&gt;11.3 - Binomial Distribution&lt;/h3&gt;
-&lt;p&gt;We define binomial distribution and give LHC data as an eaxmple of where this distribution valid.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/DPd-eVI_twQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;114---accept-reject&#34;&gt;11.4 - Accept-Reject&lt;/h3&gt;
-&lt;p&gt;We introduce an advanced method &amp;ndash; accept/reject &amp;ndash; for generating random variables with arbitrary distrubitions.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/GfshkKMKCj8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;115---monte-carlo-method&#34;&gt;11.5 - Monte Carlo Method&lt;/h3&gt;
-&lt;p&gt;We define Monte Carlo method which usually uses accept/reject method in typical case for distribution.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/kIQ-BTyDfOQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;116---poisson-distribution&#34;&gt;11.6 - Poisson Distribution&lt;/h3&gt;
-&lt;p&gt;We extend the Binomial to the Poisson distribution and give a set of amusing examples from Wikipedia.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/WFvgsVo-k4s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;117---central-limit-theorem&#34;&gt;11.7 - Central Limit Theorem&lt;/h3&gt;
-&lt;p&gt;We introduce Central Limit Theorem and give examples from Wikipedia.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ZO53iKlPn7c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;118---interpretation-of-probability-bayes-v-frequency&#34;&gt;11.8 - Interpretation of Probability: Bayes v. Frequency&lt;/h3&gt;
-&lt;p&gt;This lesson describes difference between Bayes and frequency views of
-probability. Bayes&amp;rsquo;s law of conditional probability is derived and applied
-to Higgs example to enable information about Higgs from multiple channels
-and multiple experiments to be accumulated.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/jzDkExAQI9M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Sports</title>
-      <link>/modules/bigdataapplications/2020/sports/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/sports/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;sports-with-big-data-applications&#34;&gt;Sports with Big Data Applications&lt;/h1&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part I
-(Unit 32) Section Summary (Parts I, II, III): Sports sees significant
-growth in analytics with pervasive statistics shifting to more
-sophisticated measures. We start with baseball as game is built around
-segments dominated by individuals where detailed (video/image)
-achievement measures including PITCHf/x and FIELDf/x are moving field
-into big data arena. There are interesting relationships between the
-economics of sports and big data analytics. We look at Wearables and
-consumer sports/recreation. The importance of spatial visualization is
-discussed. We look at other Sports: Soccer, Olympics, NFL Football,
-Basketball, Tennis and Horse Racing.&lt;/p&gt;
-&lt;h2 id=&#34;unit-32&#34;&gt;Unit 32&lt;/h2&gt;
-&lt;p&gt;Unit Summary (PartI, Unit 32): This unit discusses baseball starting
-with the movie Moneyball and the 2002-2003 Oakland Athletics. Unlike
-sports like basketball and soccer, most baseball action is built around
-individuals often interacting in pairs. This is much easier to quantify
-than many player phenomena in other sports. We discuss
-Performance-Dollar relationship including new stadiums and
-media/advertising. We look at classic baseball averages and
-sophisticated measures like Wins Above Replacement.&lt;/p&gt;
-&lt;h3 id=&#34;lesson-summaries&#34;&gt;Lesson Summaries&lt;/h3&gt;
-&lt;h2 id=&#34;bdaa-321---e534-sports---introduction-and-sabermetrics-baseball-informatics-lesson&#34;&gt;BDAA 32.1 - E534 Sports - Introduction and Sabermetrics (Baseball Informatics) Lesson&lt;/h2&gt;
-&lt;p&gt;Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
-Athletics, Diamond Dollars economic model of baseball, Performance -
-Dollar relationship, Value of a Win.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/oviNJ-_fLto&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-322---e534-sports---basic-sabermetrics&#34;&gt;BDAA 32.2 - E534 Sports - Basic Sabermetrics&lt;/h3&gt;
-&lt;p&gt;Different Types of Baseball Data, Sabermetrics, Overview of all data,
-Details of some statistics based on basic data, OPS, wOBA, ERA, ERC, FIP, UZR.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/-5JYfQXC2ew&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-323---e534-sports---wins-above-replacement&#34;&gt;BDAA 32.3 - E534 Sports - Wins Above Replacement&lt;/h3&gt;
-&lt;p&gt;Wins above Replacement WAR, Discussion of Calculation, Examples,
-Comparisons of different methods, Coefficient of Determination, Another,
-Sabermetrics Example, Summary of Sabermetrics.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/V5uzUS6jdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;unit-33&#34;&gt;Unit 33&lt;/h2&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part II
-(Unit 33) Section Summary (Parts I, II, III): Sports sees significant
-growth in analytics with pervasive statistics shifting to more
-sophisticated measures. We start with baseball as game is built around
-segments dominated by individuals where detailed (video/image)
-achievement measures including PITCHf/x and FIELDf/x are moving field
-into big data arena. There are interesting relationships between the
-economics of sports and big data analytics. We look at Wearables and
-consumer sports/recreation. The importance of spatial visualization is
-discussed. We look at other Sports: Soccer, Olympics, NFL Football,
-Basketball, Tennis and Horse Racing.&lt;/p&gt;
-&lt;p&gt;Unit Summary (Part II, Unit 33):
-This unit discusses &amp;lsquo;advanced sabermetrics&amp;rsquo; covering advances possible
-from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.&lt;/p&gt;
-&lt;h3 id=&#34;bdaa-331---e534-sports---pitching-clustering&#34;&gt;BDAA 33.1 - E534 Sports - Pitching Clustering&lt;/h3&gt;
-&lt;p&gt;A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data
-from Blog and video at 2013 SABR conference&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/I06_AOKyB20&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-332---e534-sports---pitcher-quality&#34;&gt;BDAA 33.2 - E534 Sports - Pitcher Quality&lt;/h3&gt;
-&lt;p&gt;Results of optimizing match ups, Data from video at 2013 SABR conference.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/vAPJx8as4_0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-333---e534-sports---pitchfx&#34;&gt;BDAA 33.3 - E534 Sports - PITCHf/X&lt;/h3&gt;
-&lt;p&gt;Examples of use of PITCHf/X.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/JN1-sCa9Bjs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-334---e534-sports---other-video-data-gathering-in-baseball&#34;&gt;BDAA 33.4 - E534 Sports - Other Video Data Gathering in Baseball&lt;/h3&gt;
-&lt;p&gt;FIELDf/X, MLBAM, HITf/X, COMMANDf/X.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/zGGThkkIJg8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;unit-34&#34;&gt;Unit 34&lt;/h2&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part
-III (Unit 34). Section Summary (Parts I, II, III): Sports sees
-significant growth in analytics with pervasive statistics shifting to
-more sophisticated measures. We start with baseball as game is built
-around segments dominated by individuals where detailed (video/image)
-achievement measures including PITCHf/x and FIELDf/x are moving field
-into big data arena. There are interesting relationships between the
-economics of sports and big data analytics. We look at Wearables and
-consumer sports/recreation. The importance of spatial visualization is
-discussed. We look at other Sports: Soccer, Olympics, NFL Football,
-Basketball, Tennis and Horse Racing.&lt;/p&gt;
-&lt;p&gt;Unit Summary (Part III, Unit 34): We look at Wearables and consumer
-sports/recreation. The importance of spatial visualization is discussed.
-We look at other Sports: Soccer, Olympics, NFL Football, Basketball,
-Tennis and Horse Racing.&lt;/p&gt;
-&lt;p&gt;Lesson Summaries&lt;/p&gt;
-&lt;h3 id=&#34;bdaa-341---e534-sports---wearables&#34;&gt;BDAA 34.1 - E534 Sports - Wearables&lt;/h3&gt;
-&lt;p&gt;Consumer Sports, Stake Holders, and Multiple Factors.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1UzvNHzFCFQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-342---e534-sports---soccer-and-the-olympics&#34;&gt;BDAA 34.2 - E534 Sports - Soccer and the Olympics&lt;/h3&gt;
-&lt;p&gt;Soccer, Tracking Players and Balls, Olympics.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/01mlZ2KBkzE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-343---e534-sports---spatial-visualization-in-nfl-and-nba&#34;&gt;BDAA 34.3 - E534 Sports - Spatial Visualization in NFL and NBA&lt;/h3&gt;
-&lt;p&gt;NFL, NBA, and Spatial Visualization.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Q0Pt97BwRlo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-344---e534-sports---tennis-and-horse-racing&#34;&gt;BDAA 34.4 - E534 Sports - Tennis and Horse Racing&lt;/h3&gt;
-&lt;p&gt;Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/EuXrtfHG3cY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
       <title>Modules: Big Data Use Cases Survey</title>
       <link>/modules/bigdataapplications/2020/usecases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1177,6 +747,436 @@ at DOE&amp;rsquo;s NERSC center&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Physics</title>
+      <link>/modules/bigdataapplications/2020/physics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/physics/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;physics-with-big-data-applications&#34;&gt;Physics with Big Data Applications&lt;/h1&gt;
+&lt;p&gt;E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson
+Part I (Unit 8) Section Units 9-11 Summary: This section starts by
+describing the LHC accelerator at CERN and evidence found by the
+experiments suggesting existence of a Higgs Boson. The huge number of
+authors on a paper, remarks on histograms and Feynman diagrams is
+followed by an accelerator picture gallery. The next unit is devoted
+to Python experiments looking at histograms of Higgs Boson production
+with various forms of shape of signal and various background and with
+various event totals. Then random variables and some simple principles
+of statistics are introduced with explanation as to why they are
+relevant to Physics counting experiments. The unit introduces Gaussian
+(normal) distributions and explains why they seen so often in natural
+phenomena. Several Python illustrations are given. Random Numbers with
+their Generators and Seeds lead to a discussion of Binomial and
+Poisson Distribution. Monte-Carlo and accept-reject methods.  The
+Central Limit Theorem concludes discussion.&lt;/p&gt;
+&lt;h2 id=&#34;unit-8&#34;&gt;Unit 8:&lt;/h2&gt;
+&lt;h3 id=&#34;81---looking-for-higgs-1-particle-and-counting-introduction-1&#34;&gt;8.1 - Looking for Higgs: 1. Particle and Counting Introduction 1&lt;/h3&gt;
+&lt;p&gt;We return to particle case with slides used in introduction and stress
+that particles often manifested as bumps in histograms and those bumps
+need to be large enough to stand out from background in a
+statistically significant fashion.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/L0wIh0Z-ZwI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;82---looking-for-higgs-2-particle-and-counting-introduction-2&#34;&gt;8.2 - Looking for Higgs: 2. Particle and Counting Introduction 2&lt;/h3&gt;
+&lt;p&gt;We give a few details on one LHC experiment ATLAS. Experimental
+physics papers have a staggering number of authors and quite big
+budgets. Feynman diagrams describe processes in a fundamental fashion.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ulX3oIiAusI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;83---looking-for-higgs-3-particle-experiments&#34;&gt;8.3 - Looking for Higgs: 3. Particle Experiments&lt;/h3&gt;
+&lt;p&gt;We give a few details on one LHC experiment ATLAS. Experimental
+physics papers have a staggering number of authors and quite big
+budgets. Feynman diagrams describe processes in a fundamental fashion&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BW12d780qT8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;84---looking-for-higgs--4-accelerator-picture-gallery-of-big-science&#34;&gt;8.4 - Looking for Higgs:  4. Accelerator Picture Gallery of Big Science&lt;/h3&gt;
+&lt;p&gt;This lesson gives a small picture gallery of accelerators. Accelerators, detection chambers and magnets in tunnels and a large underground laboratory used fpr experiments where you need to be shielded from background like cosmic rays.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WLJIxWWMYi8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;unit-9&#34;&gt;Unit 9&lt;/h2&gt;
+&lt;p&gt;This unit is devoted to Python experiments with Geoffrey looking at
+histograms of Higgs Boson production with various forms of shape of
+signal and various background and with various event totals&lt;/p&gt;
+&lt;h3 id=&#34;91---looking-for-higgs-ii-1-class-software&#34;&gt;9.1 - Looking for Higgs II: 1: Class Software&lt;/h3&gt;
+&lt;p&gt;We discuss how this unit uses Java (deprecated) and Python on both a backend server
+(FutureGrid - closed!) or a local client. We point out useful book on
+Python for data analysis. This lesson is deprecated. Follow current
+technology for class&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tOFJEUM-Vww&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;92---looking-for-higgs-ii-2-event-counting&#34;&gt;9.2 - Looking for Higgs II: 2: Event Counting&lt;/h3&gt;
+&lt;p&gt;We define &amp;lsquo;&amp;lsquo;event counting&amp;rsquo;&amp;rsquo; data collection environments. We discuss the python and Java
+code to generate events according to a particular scenario (the
+important idea of Monte Carlo data). Here a sloping background plus
+either a Higgs particle generated similarly to LHC observation or one
+observed with better resolution (smaller measurement error).&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h8-szCeFugQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;93---looking-for-higgs-ii-3-with-python-examples-of-signal-plus-background&#34;&gt;9.3 - Looking for Higgs II: 3: With Python examples of Signal plus Background&lt;/h3&gt;
+&lt;p&gt;This uses Monte Carlo data both to generate data like the
+experimental observations and explore effect of changing amount of data
+and changing measurement resolution for Higgs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bl2f0tAzLj4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;94---looking-for-higgs-ii-4-change-shape-of-background--number-of-higgs-particles&#34;&gt;9.4 - Looking for Higgs II: 4: Change shape of background &amp;amp; number of Higgs Particles&lt;/h3&gt;
+&lt;p&gt;This lesson continues the examination of Monte Carlo
+data looking at effect of change in number of Higgs particles produced
+and in change in shape of background&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bw3fd5cfQhk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;unit-10&#34;&gt;Unit 10&lt;/h2&gt;
+&lt;p&gt;In this unit we discuss;&lt;/p&gt;
+&lt;p&gt;E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
+Big Data Higgs Unit 10: Looking for Higgs Particles Part III: Random
+Variables, Physics and Normal Distributions Section Units 9-11 Summary:
+This section starts by describing the LHC accelerator at CERN and
+evidence found by the experiments suggesting existence of a Higgs Boson.
+The huge number of authors on a paper, remarks on histograms and Feynman
+diagrams is followed by an accelerator picture gallery. The next unit is
+devoted to Python experiments looking at histograms of Higgs Boson
+production with various forms of shape of signal and various background
+and with various event totals. Then random variables and some simple
+principles of statistics are introduced with explanation as to why they
+are relevant to Physics counting experiments. The unit introduces
+Gaussian (normal) distributions and explains why they seen so often in
+natural phenomena. Several Python illustrations are given. Random
+Numbers with their Generators and Seeds lead to a discussion of Binomial
+and Poisson Distribution. Monte-Carlo and accept-reject methods. The
+Central Limit Theorem concludes discussion. Big Data Higgs Unit 10:
+Looking for Higgs Particles Part III: Random Variables, Physics and
+Normal Distributions Overview: Geoffrey introduces random variables and
+some simple principles of statistics and explains why they are relevant
+to Physics counting experiments. The unit introduces Gaussian (normal)
+distributions and explains why they seen so often in natural phenomena.
+Several Python illustrations are given. Java is currently not available
+in this unit.&lt;/p&gt;
+&lt;h3 id=&#34;101---statistics-overview-and-fundamental-idea-random-variables&#34;&gt;10.1 - Statistics Overview and Fundamental Idea: Random Variables&lt;/h3&gt;
+&lt;p&gt;We go through the many different areas of statistics covered in the Physics
+unit. We define the statistics concept of a random variable.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jCgY6MEfLWI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;102---physics-and-random-variables-i&#34;&gt;10.2 - Physics and Random Variables I&lt;/h3&gt;
+&lt;p&gt;We describe the DIKW pipeline for the analysis of this type of physics experiment
+and go through details of analysis pipeline for the LHC ATLAS experiment.
+We give examples of event displays showing the final state particles
+seen in a few events. We illustrate how physicists decide whats going
+on with a plot of expected Higgs production experimental cross sections
+(probabilities) for signal and background.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Tn3GBxgplxg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;103---physics-and-random-variables-ii&#34;&gt;10.3 - Physics and Random Variables II&lt;/h3&gt;
+&lt;p&gt;We describe the DIKW pipeline for the analysis of this type of physics
+experiment and go through details of analysis pipeline for the LHC ATLAS
+experiment. We give examples of event displays showing the final state
+particles seen in a few events. We illustrate how physicists decide
+whats  going on with a plot of expected Higgs production experimental
+cross sections (probabilities) for signal and background.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/qWEjp0OtvdA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;104---statistics-of-events-with-normal-distributions&#34;&gt;10.4 - Statistics of Events with Normal Distributions&lt;/h3&gt;
+&lt;p&gt;We introduce Poisson and Binomial distributions and define independent
+identically distributed (IID) random variables. We give the law of
+large numbers defining the errors in counting and leading to Gaussian
+distributions for many things. We demonstrate this in Python experiments.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LMBtpWOOQLo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;105---gaussian-distributions&#34;&gt;10.5 - Gaussian Distributions&lt;/h3&gt;
+&lt;p&gt;We introduce the Gaussian distribution and give Python examples of the
+fluctuations in counting Gaussian distributions.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LWIbPa-P5W0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;106---using-statistics&#34;&gt;10.6 - Using Statistics&lt;/h3&gt;
+&lt;p&gt;We discuss the significance of a standard deviation and role of biases
+and insufficient statistics with a Python example in getting incorrect answers.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/n4jlUrGwgic&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;unit-11&#34;&gt;Unit 11&lt;/h2&gt;
+&lt;p&gt;In this section we discuss;&lt;/p&gt;
+&lt;p&gt;E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
+Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers,
+Distributions and Central Limit Theorem
+Section Units 9-11 Summary: This section starts by describing the
+LHC accelerator at CERN and evidence found by the experiments suggesting
+existence of a Higgs Boson. The huge number of authors on a paper,
+remarks on histograms and Feynman diagrams is followed by an accelerator
+picture gallery. The next unit is devoted to Python experiments looking
+at histograms of Higgs Boson production with various forms of shape of
+signal and various background and with various event totals. Then random
+variables and some simple principles of statistics are introduced with
+explanation as to why they are relevant to Physics counting experiments.
+The unit introduces Gaussian (normal) distributions and explains why they
+seen so often in natural phenomena. Several Python illustrations are given.
+Random Numbers with their Generators and Seeds lead to a discussion of
+Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods.
+The Central Limit Theorem concludes discussion.
+Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers,
+Distributions and Central Limit Theorem
+Unit Overview: Geoffrey discusses Random Numbers with their Generators
+and Seeds. It introduces Binomial and Poisson Distribution. Monte-Carlo
+and accept-reject methods are discussed. The Central Limit Theorem and
+Bayes law concludes discussion. Python and Java (for student - not
+reviewed in class) examples and Physics applications are given.&lt;/p&gt;
+&lt;h3 id=&#34;111---generators-and-seeds-i&#34;&gt;11.1 - Generators and Seeds I&lt;/h3&gt;
+&lt;p&gt;We define random numbers and describe how to generate them on the computer
+giving Python examples. We define the seed used to define to specify how to start generation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/r80Sk_KVG2s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;112---generators-and-seeds-ii&#34;&gt;11.2 - Generators and Seeds II&lt;/h3&gt;
+&lt;p&gt;We define random numbers and describe how to generate them on the computer
+giving Python examples. We define the seed used to define to specify how to start generation.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9QY5qkQj2Ag&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;113---binomial-distribution&#34;&gt;11.3 - Binomial Distribution&lt;/h3&gt;
+&lt;p&gt;We define binomial distribution and give LHC data as an eaxmple of where this distribution valid.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DPd-eVI_twQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;114---accept-reject&#34;&gt;11.4 - Accept-Reject&lt;/h3&gt;
+&lt;p&gt;We introduce an advanced method &amp;ndash; accept/reject &amp;ndash; for generating random variables with arbitrary distrubitions.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GfshkKMKCj8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;115---monte-carlo-method&#34;&gt;11.5 - Monte Carlo Method&lt;/h3&gt;
+&lt;p&gt;We define Monte Carlo method which usually uses accept/reject method in typical case for distribution.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kIQ-BTyDfOQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;116---poisson-distribution&#34;&gt;11.6 - Poisson Distribution&lt;/h3&gt;
+&lt;p&gt;We extend the Binomial to the Poisson distribution and give a set of amusing examples from Wikipedia.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WFvgsVo-k4s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;117---central-limit-theorem&#34;&gt;11.7 - Central Limit Theorem&lt;/h3&gt;
+&lt;p&gt;We introduce Central Limit Theorem and give examples from Wikipedia.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZO53iKlPn7c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;118---interpretation-of-probability-bayes-v-frequency&#34;&gt;11.8 - Interpretation of Probability: Bayes v. Frequency&lt;/h3&gt;
+&lt;p&gt;This lesson describes difference between Bayes and frequency views of
+probability. Bayes&amp;rsquo;s law of conditional probability is derived and applied
+to Higgs example to enable information about Higgs from multiple channels
+and multiple experiments to be accumulated.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jzDkExAQI9M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Sports</title>
+      <link>/modules/bigdataapplications/2020/sports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/sports/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;sports-with-big-data-applications&#34;&gt;Sports with Big Data Applications&lt;/h1&gt;
+&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part I
+(Unit 32) Section Summary (Parts I, II, III): Sports sees significant
+growth in analytics with pervasive statistics shifting to more
+sophisticated measures. We start with baseball as game is built around
+segments dominated by individuals where detailed (video/image)
+achievement measures including PITCHf/x and FIELDf/x are moving field
+into big data arena. There are interesting relationships between the
+economics of sports and big data analytics. We look at Wearables and
+consumer sports/recreation. The importance of spatial visualization is
+discussed. We look at other Sports: Soccer, Olympics, NFL Football,
+Basketball, Tennis and Horse Racing.&lt;/p&gt;
+&lt;h2 id=&#34;unit-32&#34;&gt;Unit 32&lt;/h2&gt;
+&lt;p&gt;Unit Summary (PartI, Unit 32): This unit discusses baseball starting
+with the movie Moneyball and the 2002-2003 Oakland Athletics. Unlike
+sports like basketball and soccer, most baseball action is built around
+individuals often interacting in pairs. This is much easier to quantify
+than many player phenomena in other sports. We discuss
+Performance-Dollar relationship including new stadiums and
+media/advertising. We look at classic baseball averages and
+sophisticated measures like Wins Above Replacement.&lt;/p&gt;
+&lt;h3 id=&#34;lesson-summaries&#34;&gt;Lesson Summaries&lt;/h3&gt;
+&lt;h2 id=&#34;bdaa-321---e534-sports---introduction-and-sabermetrics-baseball-informatics-lesson&#34;&gt;BDAA 32.1 - E534 Sports - Introduction and Sabermetrics (Baseball Informatics) Lesson&lt;/h2&gt;
+&lt;p&gt;Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
+Athletics, Diamond Dollars economic model of baseball, Performance -
+Dollar relationship, Value of a Win.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oviNJ-_fLto&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-322---e534-sports---basic-sabermetrics&#34;&gt;BDAA 32.2 - E534 Sports - Basic Sabermetrics&lt;/h3&gt;
+&lt;p&gt;Different Types of Baseball Data, Sabermetrics, Overview of all data,
+Details of some statistics based on basic data, OPS, wOBA, ERA, ERC, FIP, UZR.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-5JYfQXC2ew&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-323---e534-sports---wins-above-replacement&#34;&gt;BDAA 32.3 - E534 Sports - Wins Above Replacement&lt;/h3&gt;
+&lt;p&gt;Wins above Replacement WAR, Discussion of Calculation, Examples,
+Comparisons of different methods, Coefficient of Determination, Another,
+Sabermetrics Example, Summary of Sabermetrics.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/V5uzUS6jdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;unit-33&#34;&gt;Unit 33&lt;/h2&gt;
+&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part II
+(Unit 33) Section Summary (Parts I, II, III): Sports sees significant
+growth in analytics with pervasive statistics shifting to more
+sophisticated measures. We start with baseball as game is built around
+segments dominated by individuals where detailed (video/image)
+achievement measures including PITCHf/x and FIELDf/x are moving field
+into big data arena. There are interesting relationships between the
+economics of sports and big data analytics. We look at Wearables and
+consumer sports/recreation. The importance of spatial visualization is
+discussed. We look at other Sports: Soccer, Olympics, NFL Football,
+Basketball, Tennis and Horse Racing.&lt;/p&gt;
+&lt;p&gt;Unit Summary (Part II, Unit 33):
+This unit discusses &amp;lsquo;advanced sabermetrics&amp;rsquo; covering advances possible
+from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.&lt;/p&gt;
+&lt;h3 id=&#34;bdaa-331---e534-sports---pitching-clustering&#34;&gt;BDAA 33.1 - E534 Sports - Pitching Clustering&lt;/h3&gt;
+&lt;p&gt;A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data
+from Blog and video at 2013 SABR conference&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/I06_AOKyB20&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-332---e534-sports---pitcher-quality&#34;&gt;BDAA 33.2 - E534 Sports - Pitcher Quality&lt;/h3&gt;
+&lt;p&gt;Results of optimizing match ups, Data from video at 2013 SABR conference.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vAPJx8as4_0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-333---e534-sports---pitchfx&#34;&gt;BDAA 33.3 - E534 Sports - PITCHf/X&lt;/h3&gt;
+&lt;p&gt;Examples of use of PITCHf/X.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/JN1-sCa9Bjs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-334---e534-sports---other-video-data-gathering-in-baseball&#34;&gt;BDAA 33.4 - E534 Sports - Other Video Data Gathering in Baseball&lt;/h3&gt;
+&lt;p&gt;FIELDf/X, MLBAM, HITf/X, COMMANDf/X.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zGGThkkIJg8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;unit-34&#34;&gt;Unit 34&lt;/h2&gt;
+&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part
+III (Unit 34). Section Summary (Parts I, II, III): Sports sees
+significant growth in analytics with pervasive statistics shifting to
+more sophisticated measures. We start with baseball as game is built
+around segments dominated by individuals where detailed (video/image)
+achievement measures including PITCHf/x and FIELDf/x are moving field
+into big data arena. There are interesting relationships between the
+economics of sports and big data analytics. We look at Wearables and
+consumer sports/recreation. The importance of spatial visualization is
+discussed. We look at other Sports: Soccer, Olympics, NFL Football,
+Basketball, Tennis and Horse Racing.&lt;/p&gt;
+&lt;p&gt;Unit Summary (Part III, Unit 34): We look at Wearables and consumer
+sports/recreation. The importance of spatial visualization is discussed.
+We look at other Sports: Soccer, Olympics, NFL Football, Basketball,
+Tennis and Horse Racing.&lt;/p&gt;
+&lt;p&gt;Lesson Summaries&lt;/p&gt;
+&lt;h3 id=&#34;bdaa-341---e534-sports---wearables&#34;&gt;BDAA 34.1 - E534 Sports - Wearables&lt;/h3&gt;
+&lt;p&gt;Consumer Sports, Stake Holders, and Multiple Factors.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1UzvNHzFCFQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-342---e534-sports---soccer-and-the-olympics&#34;&gt;BDAA 34.2 - E534 Sports - Soccer and the Olympics&lt;/h3&gt;
+&lt;p&gt;Soccer, Tracking Players and Balls, Olympics.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/01mlZ2KBkzE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-343---e534-sports---spatial-visualization-in-nfl-and-nba&#34;&gt;BDAA 34.3 - E534 Sports - Spatial Visualization in NFL and NBA&lt;/h3&gt;
+&lt;p&gt;NFL, NBA, and Spatial Visualization.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Q0Pt97BwRlo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;bdaa-344---e534-sports---tennis-and-horse-racing&#34;&gt;BDAA 34.4 - E534 Sports - Tennis and Horse Racing&lt;/h3&gt;
+&lt;p&gt;Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EuXrtfHG3cY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
