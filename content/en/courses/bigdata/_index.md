@@ -1,6 +1,6 @@
 ---
-title: "Big Data"
-linkTitle: "Big Data"
+title: "Big Data 2019"
+linkTitle: "Big Data 2019"
 weight: 8
 date: 2020-08-15
 description: >
