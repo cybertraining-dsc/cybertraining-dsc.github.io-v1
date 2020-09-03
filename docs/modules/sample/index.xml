@@ -23,14 +23,29 @@
       <description>
         
         
-        &lt;script async src=&#34;https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
+        &lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
 
 &lt;div class=&#34;mermaid&#34;&gt;
   
-graph LR;
-W1(Week 1)--&gt;W1L[L: Introduction]
-W1L--&gt;bio[A: Bio]
-W1L--&gt;github[A: Github]
+graph LR
+A[Introduction]
+B[Usecases]
+C[Physics]
+D[Sports]
+A--&gt;B--&gt;C--&gt;D
+
+&lt;/div&gt;
+&lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+  
+gantt
+    title Class
+    dateFormat  YYYY-MM-DD
+    section Week 1
+    Introduction     :w1, 2020-08-01, 7d
+    Bio              :after w1  , 1d
+    Github           :after w1  , 1d	
 
 &lt;/div&gt;
 

@@ -21,21 +21,21 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Mermaid Sample | Cybertraining</title><meta property="og:title" content="Mermaid Sample" />
-<meta property="og:description" content=" graph LR; W1(Week 1)--W1L[L: Introduction] W1L--bio[A: Bio] W1L--github[A: Github]  " />
+<meta property="og:description" content=" graph LR A[Introduction] B[Usecases] C[Physics] D[Sports] A--B--C--D   gantt title Class dateFormat YYYY-MM-DD section Week 1 Introduction :w1, 2020-08-01, 7d Bio :after w1 , 1d Github :after w1 , 1d	 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/modules/sample/mermaid/" />
-<meta property="og:site_name" content="Cybertraining" />
+<meta property="article:modified_time" content="2020-09-03T03:58:52-04:00" /><meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="Mermaid Sample">
-<meta itemprop="description" content=" graph LR; W1(Week 1)--W1L[L: Introduction] W1L--bio[A: Bio] W1L--github[A: Github]  ">
-
-<meta itemprop="wordCount" content="9">
+<meta itemprop="description" content=" graph LR A[Introduction] B[Usecases] C[Physics] D[Sports] A--B--C--D   gantt title Class dateFormat YYYY-MM-DD section Week 1 Introduction :w1, 2020-08-01, 7d Bio :after w1 , 1d Github :after w1 , 1d	 ">
+<meta itemprop="dateModified" content="2020-09-03T03:58:52-04:00" />
+<meta itemprop="wordCount" content="29">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mermaid Sample"/>
-<meta name="twitter:description" content=" graph LR; W1(Week 1)--W1L[L: Introduction] W1L--bio[A: Bio] W1L--github[A: Github]  "/>
+<meta name="twitter:description" content=" graph LR A[Introduction] B[Usecases] C[Physics] D[Sports] A--B--C--D   gantt title Class dateFormat YYYY-MM-DD section Week 1 Introduction :w1, 2020-08-01, 7d Bio :after w1 , 1d Github :after w1 , 1d	 "/>
 
 
 
@@ -819,20 +819,35 @@
 	<h1>Mermaid Sample</h1>
     
 	       
-	<script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
+	<script async src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js"></script>
 
 <div class="mermaid">
   
-graph LR;
-W1(Week 1)-->W1L[L: Introduction]
-W1L-->bio[A: Bio]
-W1L-->github[A: Github]
+graph LR
+A[Introduction]
+B[Usecases]
+C[Physics]
+D[Sports]
+A-->B-->C-->D
+
+</div>
+<script async src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js"></script>
+
+<div class="mermaid">
+  
+gantt
+    title Class
+    dateFormat  YYYY-MM-DD
+    section Week 1
+    Introduction     :w1, 2020-08-01, 7d
+    Bio              :after w1  , 1d
+    Github           :after w1  , 1d	
 
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 3, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/fd2be2bbd61ed12b8f9017bf3ed354994b8db0f2">add mermaid (fd2be2b)</a>
 </div>
 </div>
 
