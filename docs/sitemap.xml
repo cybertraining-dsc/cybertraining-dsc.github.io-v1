@@ -18,6 +18,10 @@
   </url>
   
   <url>
+    <loc>/modules/contrib/</loc>
+  </url>
+  
+  <url>
     <loc>/modules/bigdataapplications/2019/applications/lifestyle/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -484,7 +488,7 @@
   
   <url>
     <loc>/modules/sample/mermaid/</loc>
-    <lastmod>2020-09-03T03:58:52-04:00</lastmod>
+    <lastmod>2020-09-03T04:27:51-04:00</lastmod>
   </url>
   
   <url>
