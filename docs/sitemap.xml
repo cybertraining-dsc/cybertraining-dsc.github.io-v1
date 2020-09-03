@@ -144,7 +144,7 @@
   
   <url>
     <loc>/modules/bigdataapplications/2020/usecases/</loc>
-    <lastmod>2020-08-29T19:31:07-04:00</lastmod>
+    <lastmod>2020-09-02T15:13:53-04:00</lastmod>
   </url>
   
   <url>
@@ -480,6 +480,10 @@
   <url>
     <loc>/</loc>
     <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/sample/mermaid/</loc>
   </url>
   
   <url>
