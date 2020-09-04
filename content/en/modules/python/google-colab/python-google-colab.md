@@ -2,6 +2,8 @@
 title: "Google Colab"
 linkTitle: "Google Colab"
 weight: 20
+description: >
+  A gentle introduction to Google Colab
 ---
 
 {{% pageinfo %}}
