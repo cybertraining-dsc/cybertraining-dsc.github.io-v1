@@ -13,19 +13,24 @@ description: >
 ### Use Case 1-1 Introduction to NIST Big Data Public Working
 
 The focus of the (NBD-PWG) is to form a community of interest from industry, academia, and government, with the goal of developing a consensus definition, taxonomies, secure reference architectures, and technology roadmap. The aim is to create vendor-neutral, technology and infrastructure agnostic deliverables to enable big data stakeholders to pick-and-choose best analytics tools for their processing and visualization requirements on the most suitable computing platforms and clusters while allowing value-added from big data service providers and flow of data between the stakeholders in a cohesive and secure manner.
+
 Introduction (13:02)
+
 {{< youtube "3oKdmuH0N3k" >}}
 
 ### Use Case 1-2 Definitions and Taxonomies Subgroup
 
 The focus is to gain a better understanding of the principles of Big Data. It is important to develop a consensus-based common language and vocabulary terms used in Big Data across stakeholders from industry, academia, and government. In addition, it is also critical to identify essential actors with roles and responsibility, and subdivide them into components and sub-components on how they interact/ relate with each other according to their similarities and differences.
 For Definitions: Compile terms used from all stakeholders regarding the meaning of Big Data from various standard bodies, domain applications, and diversified operational environments. For Taxonomies: Identify key actors with their roles and responsibilities from all stakeholders, categorize them into components and subcomponents based on their similarities and differences. In particular data, Science and Big Data terms are discussed.
+
 Taxonomies (7:42)
+
 {{< youtube "7eOtuBV8udo" >}}
 
 ### Use Case 1-3 Reference Architecture Subgroup
  
 The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus-based approach to orchestrate vendor-neutral, technology and infrastructure agnostic for analytics tools and computing environments. The goal is to enable Big Data stakeholders to pick-and-choose technology-agnostic analytics tools for processing and visualization in any computing platform and cluster while allowing value-added from Big Data service providers and the flow of the data between the stakeholders in a cohesive and secure manner. Results include a reference architecture with well-defined components and linkage as well as several exemplars.
+
 Architecture (10:05)
 
 {{< youtube "h4ylW0vztDw" >}}
@@ -135,9 +140,10 @@ Simulation driven Materials Genomics.
 
 #### Part 1
 
+(9:31)
+
 {{< youtube "8Z2Sk11PcPU" >}}
 
-(9:31)
 
 #### Part 2
 
@@ -173,6 +179,7 @@ Study; Social Contagion Modeling for Planning, Public Health and
 Disaster Management and Biodiversity and LifeWatch.
 
 Healthcare and Life Science Use Cases (30:11)
+
 {{< youtube "uGeYrXENlpU" >}}
 
 ### Use Case 2-5 Deep Learning and Social Networks Use Cases
