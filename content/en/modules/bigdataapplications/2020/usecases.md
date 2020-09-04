@@ -456,13 +456,13 @@ links and notify us of the outdated links.
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
     Infrastructure
     -   [ENVRI Project website](http://envri.eu/)
-    -   ~~[ENVRI Reference Model](https://web.archive.org/web/20130509014836/http://confluence.envri.eu:8090/display/ERM/Start)~~ (Archive Pages)
+    -   [ENVRI Reference Model](https://web.archive.org/web/20130509014836/http://confluence.envri.eu:8090/display/ERM/Start) (Archive Pages)
     -   ~~[ENVRI deliverable D3.2 : Analysis of common requirements of
         Environmental Research
-        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)~~
+        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)~~ **(this link does not exist any longer)**
     -   [ICOS](https://www.icos-ri.eu/),
     -   [Euro-Argo](http://www.euro-argo.eu/)
-    -   ~~[EISCAT 3D](https://web.archive.org/web/20130905211646/https://www.eiscat3d.se/node)~~ (Archived Pages)
+    -   [EISCAT 3D](https://web.archive.org/web/20130905211646/https://www.eiscat3d.se/node) (Archived Pages)
     -   [LifeWatch](http://www.lifewatch.com/)
     -   [EPOS](http://www.epos-eu.org/)
     -   [EMSO](http://www.emso-eu.org/)
