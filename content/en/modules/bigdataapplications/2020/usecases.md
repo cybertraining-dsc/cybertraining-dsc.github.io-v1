@@ -488,5 +488,5 @@ links and notify us of the outdated links.
 -   Use Case 51 Consumption forecasting in Smart Grids
     -   <https://web.archive.org/web/20160412194521/http://dslab.usc.edu/smartgrid.php> (Archived Pages)
     -   <https://web.archive.org/web/20120130051124/http://ganges.usc.edu/wiki/Smart_Grid> (Archived Pages)
-    -   <https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17> **(this link does not exist any longer)**
+    -   ~~<https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17>~~ **(this link does not exist any longer)**
     -   <http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927>
