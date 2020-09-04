@@ -3919,78 +3919,34 @@ format only.&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;This section covers 51 values of X and an overall study of Big data that
-emerged from a NIST (National Institute for Standards and Technology)
-study of Big data. The section covers the NIST Big Data Public Working
-Group (NBD-PWG) Process and summarizes the work of five subgroups:
-Definitions and Taxonomies Subgroup, Reference Architecture Subgroup,
-Security and Privacy Subgroup, Technology Roadmap Subgroup and the
-Requirements andUse Case Subgroup. 51 use cases collected in this
-process are briefly discussed with a classification of the source of
-parallelism and the high and low level computational structure. We
-describe the key features of this classification.&lt;/p&gt;
-&lt;h2 id=&#34;nist-big-data-public-working-group&#34;&gt;NIST Big Data Public Working Group&lt;/h2&gt;
-&lt;p&gt;This unit covers the NIST Big Data Public Working Group (NBD-PWG)
-Process and summarizes the work of five subgroups: Definitions and
-Taxonomies Subgroup, Reference Architecture Subgroup, Security and
-Privacy Subgroup, Technology Roadmap Subgroup and the Requirements and
-Use Case Subgroup. The work of latter is continued in next two units.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmODIxNGttU1pveWc&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Overview (45)&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;introduction-to-nist-big-data-public-working&#34;&gt;Introduction to NIST Big Data Public Working&lt;/h3&gt;
-&lt;p&gt;The focus of the (NBD-PWG) is to form a community of interest from
-industry, academia, and government, with the goal of developing a
-consensus definitions, taxonomies, secure reference architectures, and
-technology roadmap. The aim is to create vendor-neutral, technology and
-infrastructure agnostic deliverables to enable big data stakeholders to
-pick-and-choose best analytics tools for their processing and
-visualization requirements on the most suitable computing platforms and
-clusters while allowing value-added from big data service providers and
-flow of data between the stakeholders in a cohesive and secure manner.&lt;/p&gt;
-&lt;p&gt;Introduction (13:02)&lt;/p&gt;
+        &lt;h2 id=&#34;overview-of-nist-big-data-public-working-group-nbd-pwg-process-and-results-slide-deck-1&#34;&gt;Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results (Slide Deck 1)&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;use-case-1-1-introduction-to-nist-big-data-public-working&#34;&gt;Use Case 1-1 Introduction to NIST Big Data Public Working&lt;/h3&gt;
+&lt;p&gt;The focus of the (NBD-PWG) is to form a community of interest from industry, academia, and government, with the goal of developing a consensus definition, taxonomies, secure reference architectures, and technology roadmap. The aim is to create vendor-neutral, technology and infrastructure agnostic deliverables to enable big data stakeholders to pick-and-choose best analytics tools for their processing and visualization requirements on the most suitable computing platforms and clusters while allowing value-added from big data service providers and flow of data between the stakeholders in a cohesive and secure manner.
+Introduction (13:02)
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/3oKdmuH0N3k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;definitions-and-taxonomies-subgroup&#34;&gt;Definitions and Taxonomies Subgroup&lt;/h3&gt;
-&lt;p&gt;The focus is to gain a better understanding of the principles of Big
-Data. It is important to develop a consensus-based common language and
-vocabulary terms used in Big Data across stakeholders from industry,
-academia, and government. In addition, it is also critical to identify
-essential actors with roles and responsibility, and subdivide them into
-components and sub-components on how they interact/ relate with each
-other according to their similarities and differences.&lt;/p&gt;
-&lt;p&gt;For Definitions: Compile terms used from all stakeholders regarding the
-meaning of Big Data from various standard bodies, domain applications,
-and diversified operational environments. For Taxonomies: Identify key
-actors with their roles and responsibilities from all stakeholders,
-categorize them into components and subcomponents based on their
-similarities and differences. In particular data Science and Big Data
-terms are discussed.&lt;/p&gt;
-&lt;p&gt;Taxonomies (7:42)&lt;/p&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;use-case-1-2-definitions-and-taxonomies-subgroup&#34;&gt;Use Case 1-2 Definitions and Taxonomies Subgroup&lt;/h3&gt;
+&lt;p&gt;The focus is to gain a better understanding of the principles of Big Data. It is important to develop a consensus-based common language and vocabulary terms used in Big Data across stakeholders from industry, academia, and government. In addition, it is also critical to identify essential actors with roles and responsibility, and subdivide them into components and sub-components on how they interact/ relate with each other according to their similarities and differences.
+For Definitions: Compile terms used from all stakeholders regarding the meaning of Big Data from various standard bodies, domain applications, and diversified operational environments. For Taxonomies: Identify key actors with their roles and responsibilities from all stakeholders, categorize them into components and subcomponents based on their similarities and differences. In particular data, Science and Big Data terms are discussed.
+Taxonomies (7:42)
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/7eOtuBV8udo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;reference-architecture-subgroup&#34;&gt;Reference Architecture Subgroup&lt;/h3&gt;
-&lt;p&gt;The focus is to form a community of interest from industry, academia,
-and government, with the goal of developing a consensus-based approach
-to orchestrate vendor-neutral, technology and infrastructure agnostic
-for analytics tools and computing environments. The goal is to enable
-Big Data stakeholders to pick-and-choose technology-agnostic analytics
-tools for processing and visualization in any computing platform and
-cluster while allowing value-added from Big Data service providers and
-the flow of the data between the stakeholders in a cohesive and secure
-manner. Results include a reference architecture with well defined
-components and linkage as well as several exemplars.&lt;/p&gt;
-&lt;p&gt;Architecture (10:05)&lt;/p&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;use-case-1-3-reference-architecture-subgroup&#34;&gt;Use Case 1-3 Reference Architecture Subgroup&lt;/h3&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus-based approach to orchestrate vendor-neutral, technology and infrastructure agnostic for analytics tools and computing environments. The goal is to enable Big Data stakeholders to pick-and-choose technology-agnostic analytics tools for processing and visualization in any computing platform and cluster while allowing value-added from Big Data service providers and the flow of the data between the stakeholders in a cohesive and secure manner. Results include a reference architecture with well-defined components and linkage as well as several exemplars.
+Architecture (10:05)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/h4ylW0vztDw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;security-and-privacy-subgroup&#34;&gt;Security and Privacy Subgroup&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-1-4-security-and-privacy-subgroup&#34;&gt;Use Case 1-4 Security and Privacy Subgroup&lt;/h3&gt;
 &lt;p&gt;The focus is to form a community of interest from industry, academia,
 and government, with the goal of developing a consensus secure reference
 architecture to handle security and privacy issues across all
@@ -4008,73 +3964,27 @@ Sharing, Cyber-security, Government, Military and Education.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/dHrHk-GvruY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;technology-roadmap-subgroup&#34;&gt;Technology Roadmap Subgroup&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-1-5-technology-roadmap-subgroup&#34;&gt;Use Case 1-5 Technology Roadmap Subgroup&lt;/h3&gt;
 &lt;p&gt;The focus is to form a community of interest from industry, academia,
 and government, with the goal of developing a consensus vision with
 recommendations on how Big Data should move forward by performing a good
 gap analysis through the materials gathered from all other NBD
 subgroups. This includes setting standardization and adoption priorities
 through an understanding of what standards are available or under
-development as part of the recommendations. Tasks are gather input from
+development as part of the recommendations. Tasks are gathered input from
 NBD subgroups and study the taxonomies for the actors&amp;rsquo; roles and
 responsibility, use cases and requirements, and secure reference
-architecture; gain understanding of what standards are available or
+architecture; gain an understanding of what standards are available or
 under development for Big Data; perform a thorough gap analysis and
 document the findings; identify what possible barriers may delay or
-prevent adoption of Big Data; and document vision and recommendations.&lt;/p&gt;
+prevent the adoption of Big Data; and document vision and recommendations.&lt;/p&gt;
 &lt;p&gt;Technology (4:14)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/va0UCR5gMTA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;interfaces-subgroup&#34;&gt;Interfaces Subgroup&lt;/h3&gt;
-&lt;p&gt;This subgroup is working on the following document: &lt;em&gt;NIST Big Data
-Interoperability Framework: Volume 8, Reference Architecture Interface&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;This document summarizes interfaces that are instrumental for the
-interaction with Clouds, Containers, and HPC systems to manage virtual
-clusters to support the NIST Big Data Reference Architecture (NBDRA).
-The Representational State Transfer (REST) paradigm is used to define
-these interfaces allowing easy integration and adoption by a wide
-variety of frameworks. . This volume, Volume 8, uses the work performed
-by the NBD-PWG to identify objects instrumental for the NIST Big Data
-Reference Architecture (NBDRA) which is introduced in the NBDIF: Volume
-6, Reference Architecture.&lt;/p&gt;
-&lt;p&gt;This presentation was given at the &lt;em&gt;2nd NIST Big Data Public Working
-Group (NBD-PWG) Workshop&lt;/em&gt; in Washington DC in June 2017. It explains our
-thoughts on deriving automatically a reference architecture form the
-Reference Architecture Interface specifications directly from the
-document.&lt;/p&gt;
-&lt;p&gt;The workshop Web page is located at&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigdatawg.nist.gov/workshop2.php&#34;&gt;https://bigdatawg.nist.gov/workshop2.php&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The agenda of the workshop is as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigdatawg.nist.gov/2017_NIST_Big_Data_PWG_WorkshopAgenda_with_Speakers_Bio.pdf&#34;&gt;https://bigdatawg.nist.gov/2017_NIST_Big_Data_PWG_WorkshopAgenda_with_Speakers_Bio.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The Web cas of the presentation is given bellow, while you need to fast
-forward to a particular time&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Webcast: Interface subgroup:
-&lt;a href=&#34;https://www.nist.gov/news-events/events/2017/06/2nd-nist-big-data-public-working-group-nbd-pwg-workshop&#34;&gt;https://www.nist.gov/news-events/events/2017/06/2nd-nist-big-data-public-working-group-nbd-pwg-workshop&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;see: Big Data Working Group Day 1, part 2 Time start: 21:00 min,
-Time end: 44:00&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Slides:
-&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh.rest/blob/master/docs/NBDPWG-vol8.pptx?raw=true&#34;&gt;https://github.com/cloudmesh/cloudmesh.rest/blob/master/docs/NBDPWG-vol8.pptx?raw=true&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Document:
-&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh.rest/raw/master/docs/NIST.SP.1500-8-draft.pdf&#34;&gt;https://github.com/cloudmesh/cloudmesh.rest/raw/master/docs/NIST.SP.1500-8-draft.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You are welcome to view other presentations if you are interested.&lt;/p&gt;
-&lt;h3 id=&#34;requirements-and-use-case-subgroup&#34;&gt;Requirements and Use Case Subgroup&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-1-6-requirements-and-use-case-subgroup&#34;&gt;Use Case 1-6 Requirements and Use Case Subgroup&lt;/h3&gt;
 &lt;p&gt;The focus is to form a community of interest from industry, academia,
 and government, with the goal of developing a consensus list of Big Data
 requirements across all stakeholders. This includes gathering and
@@ -4094,16 +4004,23 @@ systemization are discussed.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/f_vxmx3CmMU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;51-big-data-use-cases&#34;&gt;51 Big Data Use Cases&lt;/h2&gt;
-&lt;p&gt;This units consists of one or more slides for each of the 51 use cases -
-typically additional (more than one) slides are associated with
-pictures. Each of the use cases is identified with source of parallelism
-and the high and low level computational structure. As each new
-classification topic is introduced we briefly discuss it but full
-discussion of topics is given in following unit.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmYUlKckhLSUQxMUk&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; 51 Use Cases
-(100)&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;government-use-cases&#34;&gt;Government Use Cases&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-1-7-recent-updates-of-work-of-nist-public-big-data-working-group&#34;&gt;Use Case 1-7 Recent Updates of work of NIST Public Big Data Working Group&lt;/h3&gt;
+&lt;p&gt;This video is an update of recent work in this area. The first slide of this short lesson discusses a new version of use case survey that had many improvements including tags to label key features (as discussed in slide deck 3) and merged in a significant set of security and privacy fields.  This came from the security and privacy working group described in lesson 4 of this slide deck. A link for this new use case form is
+&lt;a href=&#34;https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf&#34;&gt;https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf&lt;/a&gt;
+A recent December 2018 use case form for Astronomy’s Square Kilometer Array is at &lt;a href=&#34;https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing&#34;&gt;https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing&lt;/a&gt; This uses a simplification of the official new form.&lt;/p&gt;
+&lt;p&gt;The second (last) slide in update gives some useful on latest work.
+NIST’s latest work just published is at
+&lt;a href=&#34;https://bigdatawg.nist.gov/V3_output_docs.php&#34;&gt;https://bigdatawg.nist.gov/V3_output_docs.php&lt;/a&gt;
+Related activities are described at
+&lt;a href=&#34;http://hpc-abds.org/kaleidoscope/&#34;&gt;http://hpc-abds.org/kaleidoscope/&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2PAC2bAAcIA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;introduction-to-nist-big-data-public-working-group-nbd-pwg-51-big-data-use-cases&#34;&gt;Introduction to NIST Big Data Public Working Group (NBD-PWG) 51 Big Data Use Cases&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1_m97KGvBu0Fkx47Fkp78_8m89ni2P8jK/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;use-case-2-1-government-use-cases&#34;&gt;Use Case 2-1 Government Use Cases&lt;/h3&gt;
 &lt;p&gt;This covers Census 2010 and 2000 - Title 13 Big Data; National Archives
 and Records Administration Accession NARA, Search, Retrieve,
 Preservation; Statistical Survey Response Improvement (Adaptive Design)
@@ -4115,7 +4032,7 @@ and Non-Traditional Data in Statistical Survey Response Improvement
   &lt;iframe src=&#34;https://www.youtube.com/embed/e0ks_BuYUVM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;commercial-use-cases&#34;&gt;Commercial Use Cases&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-2-2-commercial-use-cases&#34;&gt;Use Case 2-2 Commercial Use Cases&lt;/h3&gt;
 &lt;p&gt;This covers Cloud Eco-System, for Financial Industries (Banking,
 Securities &amp;amp; Investments, Insurance) transacting business within the
 United States; Mendeley - An International Network of Research; Netflix
@@ -4123,13 +4040,28 @@ Movie Service; Web Search; IaaS (/infrastructure as a Service) Big Data
 Business Continuity &amp;amp; Disaster Recovery (BC/DR) Within A Cloud
 Eco-System; Cargo Shipping; Materials Data for Manufacturing and
 Simulation driven Materials Genomics.&lt;/p&gt;
-&lt;p&gt;Commercial Use Cases (17:43)&lt;/p&gt;
+&lt;h4 id=&#34;part-1&#34;&gt;Part 1&lt;/h4&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/URy9u8_34ww&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8Z2Sk11PcPU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;defense-use-cases&#34;&gt;Defense Use Cases&lt;/h3&gt;
+&lt;p&gt;(9:31)&lt;/p&gt;
+&lt;h4 id=&#34;part-2&#34;&gt;Part 2&lt;/h4&gt;
+&lt;p&gt;(19:45)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bUGxcmbuVaM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&#34;part-3&#34;&gt;Part 3&lt;/h4&gt;
+&lt;p&gt;(10:48)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fTT66Y0Uoqo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;use-case-2-3-defense-use-cases&#34;&gt;Use Case 2-3 Defense Use Cases&lt;/h3&gt;
 &lt;p&gt;This covers Large Scale Geospatial Analysis and Visualization; Object
 identification and tracking from Wide Area Large Format Imagery (WALF)
 Imagery or Full Motion Video (FMV) - Persistent Surveillance and
@@ -4140,7 +4072,7 @@ Intelligence Data Processing and Analysis.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/FXFfE8zcco8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;healthcare-and-life-science-use-cases&#34;&gt;Healthcare and Life Science Use Cases&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-2-4-healthcare-and-life-science-use-cases&#34;&gt;Use Case 2-4 Healthcare and Life Science Use Cases&lt;/h3&gt;
 &lt;p&gt;This covers Electronic Medical Record (EMR) Data; Pathology
 Imaging/digital pathology; Computational Bioimaging; Genomic
 Measurements; Comparative analysis for metagenomes and genomes;
@@ -4148,13 +4080,13 @@ Individualized Diabetes Management; Statistical Relational Artificial
 Intelligence for Health Care; World Population Scale Epidemiological
 Study; Social Contagion Modeling for Planning, Public Health and
 Disaster Management and Biodiversity and LifeWatch.&lt;/p&gt;
-&lt;p&gt;Healthcare and Life Science Use Cases (30:11)&lt;/p&gt;
+&lt;p&gt;Healthcare and Life Science Use Cases (30:11)
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/uGeYrXENlpU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;deep-learning-and-social-networks-use-cases&#34;&gt;Deep Learning and Social Networks Use Cases&lt;/h3&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;use-case-2-5-deep-learning-and-social-networks-use-cases&#34;&gt;Use Case 2-5 Deep Learning and Social Networks Use Cases&lt;/h3&gt;
 &lt;p&gt;This covers Large-scale Deep Learning; Organizing large-scale,
 unstructured collections of consumer photos; Truthy: Information
 diffusion research from Twitter Data; Crowd Sourcing in the Humanities
@@ -4168,7 +4100,7 @@ standards.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/bdWyhT8bvE4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;research-ecosystem-use-cases&#34;&gt;Research Ecosystem Use Cases&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-2-6-research-ecosystem-use-cases&#34;&gt;Use Case 2-6 Research Ecosystem Use Cases&lt;/h3&gt;
 &lt;p&gt;DataNet Federation Consortium DFC; The &amp;lsquo;Discinnet process&amp;rsquo;, metadata
 -big data global experiment; Semantic Graph-search on Scientific
 Chemical and Text-based Data and Light source beamlines.&lt;/p&gt;
@@ -4178,7 +4110,7 @@ Chemical and Text-based Data and Light source beamlines.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/jjyv4RmMIUU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;astronomy-and-physics-use-cases&#34;&gt;Astronomy and Physics Use Cases&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-2-7-astronomy-and-physics-use-cases&#34;&gt;Use Case 2-7 Astronomy and Physics Use Cases&lt;/h3&gt;
 &lt;p&gt;This covers Catalina Real-Time Transient Survey (CRTS): a digital,
 panoramic, synoptic sky survey; DOE Extreme Data from Cosmological Sky
 Survey and Simulations; Large Survey Data for Cosmology; Particle
@@ -4190,7 +4122,7 @@ particle and Belle II High Energy Physics Experiment.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/MPEe8yDVwAo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;environment-earth-and-polar-science-use-cases&#34;&gt;Environment, Earth and Polar Science Use Cases&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-2-8-environment-earth-and-polar-science-use-cases&#34;&gt;Use Case 2-8 Environment, Earth and Polar Science Use Cases&lt;/h3&gt;
 &lt;p&gt;EISCAT 3D incoherent scatter radar system; ENVRI, Common Operations of
 Environmental Research Infrastructure; Radar Data Analysis for CReSIS
 Remote Sensing of Ice Sheets; UAVSAR Data Processing, DataProduct
@@ -4206,22 +4138,22 @@ Networks.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/YJGk-uvaUCg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;energy-use-case&#34;&gt;Energy Use Case&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-2-9--energy-use-case&#34;&gt;Use Case 2-9  Energy Use Case&lt;/h3&gt;
 &lt;p&gt;This covers Consumption forecasting in Smart Grids.&lt;/p&gt;
 &lt;p&gt;Energy Use Case (4:01)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/5y_O-a8_Fbg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5y_O-a8_Fbg%20&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;features-of-51-big-data-use-cases&#34;&gt;Features of 51 Big Data Use Cases&lt;/h2&gt;
+&lt;h2 id=&#34;introduction-to-nist-big-data-public-working-group-nbd-pwg-features-of-51-big-data-use-cases&#34;&gt;Introduction to NIST Big Data Public Working Group (NBD-PWG) Features of 51 Big Data Use Cases&lt;/h2&gt;
 &lt;p&gt;This unit discusses the categories used to classify the 51 use-cases.
 These categories include concepts used for parallelism and low and high
 level computational structure. The first lesson is an introduction to
 all categories and the further lessons give details of particular
 categories.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=0B8936_ytjfjmREJTMHhjMktXRHc&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Features (43)&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;summary-of-use-case-classification&#34;&gt;Summary of Use Case Classification&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1rAYrSaI1gNMNRcoJPy9oGVg5FdSeka5m/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;use-case-3-1-summary-of-use-case-classification&#34;&gt;Use Case 3-1 Summary of Use Case Classification&lt;/h3&gt;
 &lt;p&gt;This discusses concepts used for parallelism and low and high level
 computational structure. Parallelism can be over People (users or
 subjects), Decision makers; Items such as Images, EMR, Sequences;
@@ -4245,7 +4177,7 @@ data fusion or Knowledge Management; Crowd Sourcing.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/X0vEmbn1Ld8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;databasesql-use-case-classification&#34;&gt;Database(SQL) Use Case Classification&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-3-2-databasesql-use-case-classification&#34;&gt;Use Case 3-2 Database(SQL) Use Case Classification&lt;/h3&gt;
 &lt;p&gt;This discusses classic (SQL) database approach to data handling with
 Search&amp;amp;Query and Index features. Comparisons are made to NoSQL
 approaches.&lt;/p&gt;
@@ -4255,7 +4187,7 @@ approaches.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/jIVdQID11Q4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;nosql-use-case-classification&#34;&gt;NoSQL Use Case Classification&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-3-3-nosql-use-case-classification&#34;&gt;Use Case 3-3 NoSQL Use Case Classification&lt;/h3&gt;
 &lt;p&gt;This discusses NoSQL (compared in previous lesson) with HDFS, Hadoop and
 Hbase. The Apache Big data stack is introduced and further details of
 comparison with SQL.&lt;/p&gt;
@@ -4265,7 +4197,7 @@ comparison with SQL.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/uGL8cFPrhoE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;other-use-case-classifications&#34;&gt;Other Use Case Classifications&lt;/h3&gt;
+&lt;h3 id=&#34;use-case-3-4-other-use-case-classifications&#34;&gt;Use Case 3-4 Other Use Case Classifications&lt;/h3&gt;
 &lt;p&gt;This discusses a subset of use case features: GIS, Sensors. the support
 of data analysis and fusion by streaming data between filters.&lt;/p&gt;
 &lt;p&gt;Use Case Classifications I (12:42)&lt;/p&gt;
@@ -4274,337 +4206,39 @@ of data analysis and fusion by streaming data between filters.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/79IwNCNjVWU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This discusses a
-subset of use case features: Pleasingly parallel, MRStat, Data
-Assimilation, Crowd sourcing, Agents, data fusion and agents, EGO and
-security.&lt;/p&gt;
-&lt;p&gt;Use Case Classifications II (20:18)&lt;/p&gt;
+&lt;h3 id=&#34;use-case-3-5&#34;&gt;Use Case 3-5&lt;/h3&gt;
+&lt;p&gt;This discusses a subset of use case features: Classification, Monte
+Carlo, Streaming, PP, MR, MRStat, MRIter and HPC(MPI), global and local
+analytics (machine learning), parallel computing, Expectation
+Maximization, graphs and Collaborative Filtering.&lt;/p&gt;
+&lt;p&gt;Case Classifications II (20:18)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/b-olNbWCJyg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This discusses a subset of use case features: Classification, Monte
-Carlo, Streaming, PP, MR, MRStat, MRIter and HPC(MPI), global and local
-analytics (machine learning), parallel computing, Expectation
-Maximization, graphs and Collaborative Filtering.&lt;/p&gt;
-&lt;p&gt;[Use Case Classifications III (17:25)&lt;/p&gt;
+&lt;h3 id=&#34;use-case-3-6&#34;&gt;Use Case 3-6&lt;/h3&gt;
+&lt;p&gt;This discusses the classification, PP, Fusion, EGO, HPC, GIS, Agent, MC, PP, MR, Expectation maximization and benchmarks.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/ewqoFGxyQmc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;\TODO{These resources have not all been checked to see if they still
-exist this is currently in progress}&lt;/p&gt;
-&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.nist.gov/el/cyber-physical-systems/big-data-pwg&#34;&gt;NIST Big Data Public Working Group (NBD-PWG)
-Process&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-1&#34;&gt;Big Data Definitions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-2&#34;&gt;Big Data Taxonomies&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-3&#34;&gt;Big Data Use Cases and
-Requirements&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-4&#34;&gt;Big Data Security and
-Privacy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-5&#34;&gt;Big Data Architecture White Paper
-Survey&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-6&#34;&gt;Big Data Reference
-Architecture&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-7&#34;&gt;Big Data Standards
-Roadmap&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some of the links bellow may be outdated. Please let us know the new
-links and notify us of the outdated links.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=l4Qii7T8zeg&#34;&gt;DCGSA Standard Cloud&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://bigdatawg.nist.gov/usecases.php&#34;&gt;On line 51 Use Cases&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx&#34;&gt;Summary of Requirements
-Subgroup&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://mendeley.com%20http//dev.mendeley.com&#34;&gt;Use Case 6 Mendeley&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria&#34;&gt;Use Case 7 Netflix&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 8 Search&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013&#34;&gt;http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html&#34;&gt;http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws&#34;&gt;http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro&#34;&gt;http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.worldwidewebsize.com/&#34;&gt;http://www.worldwidewebsize.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.disasterrecovery.org/&#34;&gt;Use Case 9 IaaS (infrastructure as a Service) Big Data Business
-Continuity &amp;amp; Disaster Recovery (BC/DR) Within A Cloud Eco-System
-provided by Cloud Service Providers (CSPs) and Cloud Brokerage
-Service Providers (CBSPs)&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.materialsproject.org/&#34;&gt;Use Case 11 and Use Case 12 Simulation driven Materials
-Genomics&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 13 Large Scale Geospatial Analysis and Visualization&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.opengeospatial.org/standards&#34;&gt;http://www.opengeospatial.org/standards&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://geojson.org/&#34;&gt;http://geojson.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html&#34;&gt;http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 14 Object identification and tracking from Wide Area Large
-Format Imagery (WALF) Imagery or Full Motion Video (FMV) -
-Persistent Surveillance&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm&#34;&gt;http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/&#34;&gt;http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 15 Intelligence Data Processing and Analysis&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf&#34;&gt;http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf&lt;/a&gt;,&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf&#34;&gt;http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf&lt;/a&gt;,&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf&#34;&gt;http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf&lt;/a&gt;,&lt;/del&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=l4Qii7T8zeg&#34;&gt;https://www.youtube.com/watch?v=l4Qii7T8zeg&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://dcgsa.apg.army.mil/&#34;&gt;http://dcgsa.apg.army.mil/&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 16 Electronic Medical Record (EMR) Data:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.regenstrief.org/&#34;&gt;Regenstrief Institute&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://loinc.org/&#34;&gt;Logical observation identifiers names and
-codes&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.ihie.org/&#34;&gt;Indiana Health Information Exchange&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx&#34;&gt;Institute of Medicine Learning Healthcare
-System&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 17&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://web.cci.emory.edu/confluence/display/PAIS%3E&#34;&gt;Pathology Imaging/digital
-pathology&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://web.cci.emory.edu/confluence/display/HadoopGIS&#34;&gt;https://web.cci.emory.edu/confluence/display/HadoopGIS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 19 Genome in a Bottle Consortium:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org&#34;&gt;www.genomeinabottle.org&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://img.jgi.doe.gov/&#34;&gt;Use Case 20 Comparative analysis for metagenomes and
-genomes&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 25&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.biodiversitycatalogue.org/&#34;&gt;Biodiversity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.lifewatch.eu/web/guest/home&#34;&gt;LifeWatch&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 26 Deep Learning: Recent popular press coverage of deep
-learning technology:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html&#34;&gt;http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html&#34;&gt;http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.wired.com/2013/06/andrew_ng/&#34;&gt;http://www.wired.com/2013/06/andrew_ng/&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf&#34;&gt;A recent research paper on HPC for Deep
-Learning&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;Widely-used tutorials and references for Deep Learning:
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ufldl.stanford.edu/wiki/index.php/Main_Page&#34;&gt;http://ufldl.stanford.edu/wiki/index.php/Main_Page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://deeplearning.net/&#34;&gt;http://deeplearning.net/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://vision.soic.indiana.edu/projects/disco/&#34;&gt;Use Case 27 Organizing large-scale, unstructured collections of
-consumer photos&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 28&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://truthy.indiana.edu/&#34;&gt;Truthy: Information diffusion research from Twitter
-Data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cnets.indiana.edu/groups/nan/truthy/&#34;&gt;http://cnets.indiana.edu/groups/nan/truthy/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cnets.indiana.edu/groups/nan/despic/&#34;&gt;http://cnets.indiana.edu/groups/nan/despic/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://cinet.vbi.vt.edu/cinet_new/&#34;&gt;Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
-and Analytics&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.nist.gov/itl/iad/&#34;&gt;Use Case 31 NIST Information Access Division analytic technology
-performance measurement, evaluations, and
-standards&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 32&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DataNet Federation Consortium DFC: &lt;a href=&#34;http://datafed.org/&#34;&gt;The DataNet Federation
-Consortium&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://irods.org/&#34;&gt;iRODS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 33 The &amp;lsquo;Discinnet process&amp;rsquo;, &lt;a href=&#34;http://www.discinnet.org/&#34;&gt;big data global
-experiment&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 34 Semantic Graph-search on Scientific Chemical and
-Text-based Data&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php&#34;&gt;http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://xpdb.nist.gov/chemblast/pdb.pl&#34;&gt;http://xpdb.nist.gov/chemblast/pdb.pl&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 35 Light source beamlines&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www-als.lbl.gov/&#34;&gt;http://www-als.lbl.gov/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www1.aps.anl.gov/&#34;&gt;https://www1.aps.anl.gov/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 36&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://crts.caltech.edu/&#34;&gt;CRTS survey&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.lpl.arizona.edu/css/&#34;&gt;CSS survey&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;For an &lt;a href=&#34;http://arxiv.org/abs/1209.1681&#34;&gt;overview of the classification
-challenges&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 37 DOE Extreme Data from Cosmological Sky Survey and
-Simulations&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.lsst.org/lsst/&#34;&gt;http://www.lsst.org/lsst/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/&#34;&gt;http://www.nersc.gov/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf&#34;&gt;http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 38 Large Survey Data for Cosmology&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://desi.lbl.gov/&#34;&gt;http://desi.lbl.gov/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.darkenergysurvey.org/&#34;&gt;http://www.darkenergysurvey.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 39 Particle Physics: Analysis of LHC Large Hadron Collider
-Data: Discovery of Higgs particle&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&#34;&gt;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf&#34;&gt;http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.belle2.org&#34;&gt;Use Case 40 Belle II High Energy Physics
-Experiment&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.eiscat3d.se/&#34;&gt;Use Case 41 EISCAT 3D incoherent scatter radar
-system&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 42 ENVRI, Common Operations of Environmental Research
-Infrastructure&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://envri.eu/&#34;&gt;ENVRI Project website&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://confluence.envri.eu:8090/display/ERM/Start&#34;&gt;ENVRI Reference Model&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&amp;amp;modificationDate=1366965933706&amp;amp;api=v2&#34;&gt;ENVRI deliverable D3.2 : Analysis of common requirements of
-Environmental Research
-Infrastructures&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.icos-ri.eu/&#34;&gt;ICOS&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.euro-argo.eu/&#34;&gt;Euro-Argo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.eiscat3d.se/node&#34;&gt;EISCAT 3D&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.lifewatch.com/&#34;&gt;LifeWatch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.epos-eu.org/&#34;&gt;EPOS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.emso-eu.org/&#34;&gt;EMSO&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.cresis.ku.edu/%3E&#34;&gt;Use Case 43 Radar Data Analysis for CReSIS Remote Sensing of Ice
-Sheets&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 44 UAVSAR Data Processing, Data Product Delivery, and Data
-Services&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://uavsar.jpl.nasa.gov/&#34;&gt;http://uavsar.jpl.nasa.gov/&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.asf.alaska.edu/program/sdc&#34;&gt;http://www.asf.alaska.edu/program/sdc&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://geo-gateway.org/main.html&#34;&gt;http://geo-gateway.org/main.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 47 Atmospheric Turbulence - Event Discovery and Predictive
-Analytics&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm&#34;&gt;http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/&#34;&gt;http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 48 Climate Studies using the Community Earth System Model
-at DOE&amp;rsquo;s NERSC center&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www-pcmdi.llnl.gov/&#34;&gt;http://www-pcmdi.llnl.gov/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/&#34;&gt;http://www.nersc.gov/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://science.energy.gov/ber/research/cesd/&#34;&gt;http://science.energy.gov/ber/research/cesd/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www2.cisl.ucar.edu/&#34;&gt;http://www2.cisl.ucar.edu/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 50 DOE-BER AmeriFlux and FLUXNET Networks&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ameriflux.lbl.gov/&#34;&gt;http://ameriflux.lbl.gov/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.fluxdata.org/default.aspx&#34;&gt;http://www.fluxdata.org/default.aspx&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use Case 51 Consumption forecasting in Smart Grids&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dslab.usc.edu/smartgrid.php&#34;&gt;http://dslab.usc.edu/smartgrid.php&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ganges.usc.edu/wiki/Smart_Grid&#34;&gt;http://ganges.usc.edu/wiki/Smart_Grid&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17&#34;&gt;https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927&#34;&gt;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;use-case-3-7-other-benchmark-sets-and-classifications&#34;&gt;Use Case 3-7 Other Benchmark Sets and Classifications&lt;/h3&gt;
+&lt;p&gt;This video looks at several efforts to divide applications into categories of related applications It includes “Computational Giants” from the National Research Council; Linpack or HPL from the HPC community;  the NAS Parallel benchmarks from NASA; and finally the Berkeley Dwarfs from UCB. The second part of this video describes efforts in the Digital Science Center to develop Big Data classification and to unify Big Data and simulation categories. This leads to the Ogre and Convergence Diamonds. Diamonds have facets representing the different aspects by which we classify applications. See &lt;a href=&#34;http://hpc-abds.org/kaleidoscope/&#34;&gt;http://hpc-abds.org/kaleidoscope/&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/H-PZkJOeX0U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;overview-of-nist-big-data-public-working-group-nbd-pwg-the-10-use-case-patterns&#34;&gt;Overview of NIST Big Data Public Working Group (NBD-PWG) The 10 Use Case Patterns&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Rs2h7JTaTbqkZluigD7Wk_22kiaKuZ9s/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this last slide deck of the use cases unit, we will be focusing on 10 Use case patterns. This includes multi-user querying, real-time analytics, batch analytics, data movement from external data sources, interactive analysis, data visualization, ETL, data mining and orchestration of sequential and parallel data transformations. We go through the different ways the user and system interact in each case. The use case patterns are divided into 3 classes 1) initial examples 2) science data use case patterns and 3) remaining use case patterns.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/A3rucn5mcVU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
