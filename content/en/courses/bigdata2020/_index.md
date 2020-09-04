@@ -31,8 +31,8 @@ We will use the following material:
 |  [{{< figure src="/images/greendoor.png" width="15%">}} Introduction (Web)](/modules/bigdataapplications/2020/introduction)|
 |  [{{< figure src="/images/usecases.png" width="15%">}} Big Data Usecases Survey (Web)](/modules/bigdataapplications/2020/usecases)|
 |  [{{< figure src="/images/physics.png" width="15%">}} Physics (Web)](/modules/bigdataapplications/2020/physics)|
-|  [{{< figure src="/images/sport.png" width="15%">}} Sport (Web)](/modules/bigdataapplications/2020/sports)|
-|  [{{< figure src="/images/colab.png" width="15%">}} A gentle introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
+|  [{{< figure src="/images/sport.png" width="15%">}} Sports (Web)](/modules/bigdataapplications/2020/sports)|
+|  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
 |  [{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) Scientific Writing with Markdown [(ePub)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub) [(PDF)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) |
 |  [{{< figure src="/images/youtube.jpg" width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) [Git Pull Request](/modules/git-pull-request/) |
 |  [{{< figure src="/images/piazza.png" width="15%">}}](https://piazza.com/class/kedccsbsthm5sc) [Piazza](https://piazza.com/class/kedccsbsthm5sc) |
@@ -81,7 +81,7 @@ contributions. Please review our guide on plagiarizm.
 This course does not require a sophisticated computer. Most of the
 things can be done remotely. Even a Raspberry Pi with 4 or 8GB could
 be used as a terminal to log into remote computers. This will cost you
-betwene $50 - $100 dependent on which version and equipment. However,
+between $50 - $100 dependent on which version and equipment. However,
 in this class we will not teach you how to use or setup a Pi or other
 computer. This is for you to do and find out.
 
@@ -90,5 +90,5 @@ computer is upgradable to 16GB of main memory. We do no longer
 recommend using HDD's but use SSDs. Buy the fast ones, as not every
 SSD is the same. Samsung is offering some under the EVO Pro
 branding. Get as much memory as you can effort. In addition make sure
-you back up your work. Either in an online storage such as
+you back up your work regularly. Either in an online storage such as
 google, or an external drive.
