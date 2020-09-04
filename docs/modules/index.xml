@@ -1530,6 +1530,44 @@ trees.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Modules: Introduction</title>
+      <link>/modules/bigdataapplications/2020/week1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/week1/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;initial-lecture&#34;&gt;Initial Lecture&lt;/h1&gt;
+&lt;p&gt;In this first Lecture we discuss the motivation of the class. We
+provide an outlook what you will learn.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/89qhS5bVm6E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;administrative-topics&#34;&gt;Administrative topics&lt;/h2&gt;
+&lt;p&gt;The following topics were addressed&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Homework&lt;/li&gt;
+&lt;li&gt;Differnce undergrad graduate requirements&lt;/li&gt;
+&lt;li&gt;Contact&lt;/li&gt;
+&lt;li&gt;Commuication via Piazza&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have questions please post them on &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;suggested-assignment-professional-bio&#34;&gt;Suggested Assignment: Professional Bio&lt;/h2&gt;
+&lt;p&gt;Post a professional three paragrap Bio on
+&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;. Please post it
+under bio. Use as subject &amp;ldquo;Bio: Lastname, Firstname&amp;rdquo;. Research what a
+provessional Biograpghy is.&lt;/p&gt;
+&lt;p&gt;Remember to write it in 3rd person and focus on professional
+activities. Look up the Bio from Geoffrey or Gregor as an example.&lt;/p&gt;
+&lt;p&gt;Due date: 2nd week of class.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Introduction (Fall 2018)</title>
       <link>/modules/bigdataapplications/2019/intro-fall-2018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1955,44 +1993,6 @@ from previous years referenced in 2019 class&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/iMwnPg6SW_Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Motivation</title>
-      <link>/modules/bigdataapplications/2020/week1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/week1/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;In this first Lecture we discuss the motivation of teh class. We
-provide an outlook what you will learn.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/89qhS5bVm6E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;administrative-topics&#34;&gt;Administrative topics&lt;/h2&gt;
-&lt;p&gt;The following topics were addressed&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Homework&lt;/li&gt;
-&lt;li&gt;Differnce undergrad graduate requirements&lt;/li&gt;
-&lt;li&gt;Contact&lt;/li&gt;
-&lt;li&gt;Commuication via Piazza&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you have questions please post them on &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;suggested-assignment-professional-bio&#34;&gt;Suggested Assignment: Professional Bio&lt;/h2&gt;
-&lt;p&gt;Post a professional three paragrap Bio on
-&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;. Please post it
-under bio. Use as subject &amp;ldquo;Bio: Lastname, Firstname&amp;rdquo;. Research what a
-provessional Biograpghy is.&lt;/p&gt;
-&lt;p&gt;Remember to write it in 3rd person and focus on professional
-activities. Look up the Bio from Geoffrey or Gregor as an example.&lt;/p&gt;
-&lt;p&gt;Due date: 2nd week of class.&lt;/p&gt;
 
       </description>
     </item>
@@ -4239,6 +4239,239 @@ Maximization, graphs and Collaborative Filtering.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/A3rucn5mcVU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nist.gov/el/cyber-physical-systems/big-data-pwg&#34;&gt;NIST Big Data Public Working Group (NBD-PWG) Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-1&#34;&gt;Big Data Definitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-2&#34;&gt;Big Data Taxonomies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-3&#34;&gt;Big Data Use Cases and Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-4&#34;&gt;Big Data Security and Privacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-5&#34;&gt;Big Data Architecture White Paper Survey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-6&#34;&gt;Big Data Reference Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dx.doi.org/10.6028/NIST.SP.1500-7&#34;&gt;Big Data Standards Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of the links bellow may be outdated. Please let us know the new
+links and notify us of the outdated links.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=l4Qii7T8zeg&#34;&gt;DCGSA Standard Cloud&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bigdatawg.nist.gov/usecases.php&#34;&gt;On line 51 Use Cases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx&#34;&gt;Summary of Requirements Subgroup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dev.mendeley.com/&#34;&gt;Use Case 6 Mendeley&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial&#34;&gt;Use Case 7 Netflix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 8 Search
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013&#34;&gt;http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20160828041032/http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html&#34;&gt;https://web.archive.org/web/20160828041032/http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html&lt;/a&gt; (Archived Pages),&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws&#34;&gt;http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro&#34;&gt;http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.worldwidewebsize.com/&#34;&gt;http://www.worldwidewebsize.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.disasterrecovery.org/&#34;&gt;Use Case 9 IaaS (infrastructure as a Service) Big Data Business
+Continuity &amp;amp; Disaster Recovery (BC/DR) Within A Cloud Eco-System
+provided by Cloud Service Providers (CSPs) and Cloud Brokerage
+Service Providers (CBSPs)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.materialsproject.org/&#34;&gt;Use Case 11 and Use Case 12 Simulation driven Materials
+Genomics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 13 Large Scale Geospatial Analysis and Visualization
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opengeospatial.org/standards&#34;&gt;http://www.opengeospatial.org/standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://geojson.org/&#34;&gt;http://geojson.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html&#34;&gt;http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 14 Object identification and tracking from Wide Area Large
+Format Imagery (WALF) Imagery or Full Motion Video (FMV) -
+Persistent Surveillance
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20160828235002/http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm&#34;&gt;https://web.archive.org/web/20160828235002/http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm&lt;/a&gt; (Archived Pages),&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/&#34;&gt;http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 15 Intelligence Data Processing and Analysis
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf&#34;&gt;http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf&lt;/a&gt;&lt;/del&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf&#34;&gt;http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf&#34;&gt;http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf&lt;/a&gt;,&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=l4Qii7T8zeg&#34;&gt;https://www.youtube.com/watch?v=l4Qii7T8zeg&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href=&#34;http://dcgsa.apg.army.mil/&#34;&gt;http://dcgsa.apg.army.mil/&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 16 Electronic Medical Record (EMR) Data:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.regenstrief.org/&#34;&gt;Regenstrief Institute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://loinc.org/&#34;&gt;Logical observation identifiers names and codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ihie.org/&#34;&gt;Indiana Health Information Exchange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx&#34;&gt;Institute of Medicine Learning Healthcare System&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 17
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.cci.emory.edu/confluence/display/PAIS%3E&#34;&gt;Pathology Imaging/digital pathology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://web.cci.emory.edu/confluence/display/HadoopGIS&#34;&gt;https://web.cci.emory.edu/confluence/display/HadoopGIS&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 19 Genome in a Bottle Consortium:
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org&#34;&gt;www.genomeinabottle.org&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://img.jgi.doe.gov/&#34;&gt;Use Case 20 Comparative analysis for metagenomes and genomes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 25
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.biodiversitycatalogue.org/&#34;&gt;Biodiversity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lifewatch.eu/web/guest/home&#34;&gt;LifeWatch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 26 Deep Learning: Recent popular press coverage of deep
+learning technology:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html&#34;&gt;http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html&#34;&gt;http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.wired.com/2013/06/andrew_ng/&#34;&gt;http://www.wired.com/2013/06/andrew_ng/&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf&#34;&gt;A recent research paper on HPC for Deep Learning&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Widely-used tutorials and references for Deep Learning:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ufldl.stanford.edu/wiki/index.php/Main_Page&#34;&gt;http://ufldl.stanford.edu/wiki/index.php/Main_Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deeplearning.net/&#34;&gt;http://deeplearning.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vision.soic.indiana.edu/projects/disco/&#34;&gt;Use Case 27 Organizing large-scale, unstructured collections of consumer photos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 28
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://truthy.indiana.edu/&#34;&gt;Truthy: Information diffusion research from Twitter Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cnets.indiana.edu/groups/nan/truthy/&#34;&gt;http://cnets.indiana.edu/groups/nan/truthy/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cnets.indiana.edu/groups/nan/despic/&#34;&gt;http://cnets.indiana.edu/groups/nan/despic/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://cinet.vbi.vt.edu/cinet_new/&#34;&gt;Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
+and Analytics&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nist.gov/itl/iad/&#34;&gt;Use Case 31 NIST Information Access Division analytic technology
+performance measurement, evaluations, and
+standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 32
+&lt;ul&gt;
+&lt;li&gt;DataNet Federation Consortium DFC: &lt;a href=&#34;http://datafed.org/&#34;&gt;The DataNet Federation
+Consortium&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://irods.org/&#34;&gt;iRODS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Use Case 33 The &amp;lsquo;Discinnet process&amp;rsquo;, &lt;a href=&#34;http://www.discinnet.org/&#34;&gt;big data global
+experiment&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 34 Semantic Graph-search on Scientific Chemical and
+Text-based Data
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php&#34;&gt;http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xpdb.nist.gov/chemblast/pdb.pl&#34;&gt;http://xpdb.nist.gov/chemblast/pdb.pl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 35 Light source beamlines
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www-als.lbl.gov/&#34;&gt;http://www-als.lbl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://www1.aps.anl.gov/&#34;&gt;https://www1.aps.anl.gov/&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 36
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://crts.caltech.edu/&#34;&gt;CRTS survey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lpl.arizona.edu/css/&#34;&gt;CSS survey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For an &lt;a href=&#34;http://arxiv.org/abs/1209.1681&#34;&gt;overview of the classification
+challenges&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 37 DOE Extreme Data from Cosmological Sky Survey and
+Simulations
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lsst.org/lsst/&#34;&gt;http://www.lsst.org/lsst/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/&#34;&gt;http://www.nersc.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf&#34;&gt;http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 38 Large Survey Data for Cosmology
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://desi.lbl.gov/&#34;&gt;http://desi.lbl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.darkenergysurvey.org/&#34;&gt;http://www.darkenergysurvey.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 39 Particle Physics: Analysis of LHC Large Hadron Collider
+Data: Discovery of Higgs particle
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&#34;&gt;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf&#34;&gt;http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.belle2.org&#34;&gt;Use Case 40 Belle II High Energy Physics
+Experiment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.eiscat3d.se/&#34;&gt;Use Case 41 EISCAT 3D incoherent scatter radar
+system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 42 ENVRI, Common Operations of Environmental Research
+Infrastructure
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://envri.eu/&#34;&gt;ENVRI Project website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20130509014836/http://confluence.envri.eu:8090/display/ERM/Start&#34;&gt;ENVRI Reference Model&lt;/a&gt; (Archive Pages)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&amp;amp;modificationDate=1366965933706&amp;amp;api=v2&#34;&gt;ENVRI deliverable D3.2 : Analysis of common requirements of
+Environmental Research
+Infrastructures&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.icos-ri.eu/&#34;&gt;ICOS&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.euro-argo.eu/&#34;&gt;Euro-Argo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20130905211646/https://www.eiscat3d.se/node&#34;&gt;EISCAT 3D&lt;/a&gt; (Archived Pages)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lifewatch.com/&#34;&gt;LifeWatch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.epos-eu.org/&#34;&gt;EPOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.emso-eu.org/&#34;&gt;EMSO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cresis.ku.edu/%3E&#34;&gt;Use Case 43 Radar Data Analysis for CReSIS Remote Sensing of Ice
+Sheets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use Case 44 UAVSAR Data Processing, Data Product Delivery, and Data Services
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://uavsar.jpl.nasa.gov/&#34;&gt;http://uavsar.jpl.nasa.gov/&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20101107053715/http://www.asf.alaska.edu/program/sdc&#34;&gt;https://web.archive.org/web/20101107053715/http://www.asf.alaska.edu/program/sdc&lt;/a&gt; (Archived Pages)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://geo-gateway.org/main.html&#34;&gt;http://geo-gateway.org/main.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 47 Atmospheric Turbulence - Event Discovery and Predictive
+Analytics
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20050303202554/http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm&#34;&gt;https://web.archive.org/web/20050303202554/http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm&lt;/a&gt; (Archived Pages),&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/&#34;&gt;http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 48 Climate Studies using the Community Earth System Model
+at DOE&amp;rsquo;s NERSC center
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www-pcmdi.llnl.gov/&#34;&gt;http://www-pcmdi.llnl.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nersc.gov/&#34;&gt;http://www.nersc.gov/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://science.energy.gov/ber/research/cesd/&#34;&gt;http://science.energy.gov/ber/research/cesd/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www2.cisl.ucar.edu/&#34;&gt;http://www2.cisl.ucar.edu/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 50 DOE-BER AmeriFlux and FLUXNET Networks
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20121210222321/http://ameriflux.lbl.gov/&#34;&gt;https://web.archive.org/web/20121210222321/http://ameriflux.lbl.gov/&lt;/a&gt; (Archived Pages)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fluxdata.org/default.aspx&#34;&gt;http://www.fluxdata.org/default.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Case 51 Consumption forecasting in Smart Grids
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20160412194521/http://dslab.usc.edu/smartgrid.php&#34;&gt;https://web.archive.org/web/20160412194521/http://dslab.usc.edu/smartgrid.php&lt;/a&gt; (Archived Pages)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20120130051124/http://ganges.usc.edu/wiki/Smart_Grid&#34;&gt;https://web.archive.org/web/20120130051124/http://ganges.usc.edu/wiki/Smart_Grid&lt;/a&gt; (Archived Pages)&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17&#34;&gt;https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;amp;_afrWindowMode=0&amp;amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17&lt;/a&gt;&lt;/del&gt; &lt;strong&gt;(this link does not exist any longer)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927&#34;&gt;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -6850,10 +7083,6 @@ to run deep learning models.&lt;/p&gt;
 &lt;h2 id=&#34;introduction-to-google-colab&#34;&gt;Introduction to Google Colab&lt;/h2&gt;
 &lt;p&gt;This video contains the introduction to Google Colab. In this section
 we will be learning how to start a Google Colab project.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1vz2_VaXCAae-9luzcrIuP_ugMmKJIy7w/view?usp=sharing&#34;&gt;&lt;figure&gt;
-    &lt;img src=&#34;/images/youtube.jpg&#34; width=&#34;15%&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/a&gt;&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/oSzhLJ_1Z8s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -6863,13 +7092,9 @@ we will be learning how to start a Google Colab project.&lt;/p&gt;
 &lt;p&gt;In this video we will learn how to create a simple, Colab Notebook.&lt;/p&gt;
 &lt;p&gt;Required Installations&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pip install numpy
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18mGVxgydx1TDdb4AYD8qb1To8rkSLS-H/view?usp=sharing&#34;&gt;&lt;figure&gt;
-    &lt;img src=&#34;/images/youtube.jpg&#34; width=&#34;15%&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/a&gt;&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/wkpyp55tfRA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/znE_knoNnDE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;benchamrking-in-google-colab-with-cloudmesh&#34;&gt;Benchamrking in Google Colab with Cloudmesh&lt;/h2&gt;
@@ -6879,10 +7104,11 @@ Cloudmesh StopWatch will be used in this tutorial.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pip install numpy
 pip install cloudmesh-installer
 pip install cloudmesh-common
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Ujs0XjzCTwZgmx-ADM5zx9cS5iplXfIu/view?usp=sharing&#34;&gt;&lt;figure&gt;
-    &lt;img src=&#34;/images/youtube.jpg&#34; width=&#34;15%&#34;/&gt; 
-&lt;/figure&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wkpyp55tfRA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>

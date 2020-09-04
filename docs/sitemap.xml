@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/week1/</loc>
+    <lastmod>2020-09-04T09:12:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/bigdataapplications/2019/intro-fall-2018/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -50,11 +55,6 @@
   <url>
     <loc>/modules/bigdataapplications/2019/week1/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/modules/bigdataapplications/2020/week1/</loc>
-    <lastmod>2020-09-02T14:15:46-04:00</lastmod>
   </url>
   
   <url>
@@ -149,7 +149,7 @@
   
   <url>
     <loc>/modules/bigdataapplications/2020/usecases/</loc>
-    <lastmod>2020-09-04T06:05:16-04:00</lastmod>
+    <lastmod>2020-09-04T08:08:32-04:00</lastmod>
   </url>
   
   <url>
@@ -199,7 +199,7 @@
   
   <url>
     <loc>/courses/bigdata2020/</loc>
-    <lastmod>2020-08-28T22:29:33-04:00</lastmod>
+    <lastmod>2020-09-04T09:33:45-04:00</lastmod>
   </url>
   
   <url>
@@ -304,7 +304,7 @@
   
   <url>
     <loc>/modules/python/google-colab/python-google-colab/</loc>
-    <lastmod>2020-09-02T15:04:17-04:00</lastmod>
+    <lastmod>2020-09-04T09:23:08-04:00</lastmod>
   </url>
   
   <url>
