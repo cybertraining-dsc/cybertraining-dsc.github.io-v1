@@ -470,7 +470,7 @@ links and notify us of the outdated links.
     Sheets](https://www.cresis.ku.edu/%3E)
 -   Use Case 44 UAVSAR Data Processing, Data Product Delivery, and Data Services
     -   <http://uavsar.jpl.nasa.gov/>,
-    -   <https://web.archive.org/web/20101107053715/http://www.asf.alaska.edu/program/sdc> (Archived Pages),
+    -   <https://web.archive.org/web/20101107053715/http://www.asf.alaska.edu/program/sdc> (Archived Pages)
     -   <http://geo-gateway.org/main.html>
 -   Use Case 47 Atmospheric Turbulence - Event Discovery and Predictive
     Analytics
