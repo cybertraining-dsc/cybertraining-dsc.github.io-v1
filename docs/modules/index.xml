@@ -4477,6 +4477,31 @@ at DOE&amp;rsquo;s NERSC center
     </item>
     
     <item>
+      <title>Modules: Course Lectures</title>
+      <link>/modules/bigdataapplications/2020/course_lectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/course_lectures/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;week-1&#34;&gt;Week 1&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/89qhS5bVm6E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;week-2&#34;&gt;Week 2&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/r1HFofbAbHk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Assignment 5</title>
       <link>/modules/bigdataapplications/2019/assignments/assignment5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8126,45 +8151,6 @@ they are provided through Azure Serverless Function-As-Service.&lt;/p&gt;
 &lt;p&gt;[1] Microsoft Azure, &lt;em&gt;Azure Monitor Overview&lt;/em&gt;. Microsoft, 2018
 [Online]. Available:
 &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-monitor/overview&#34;&gt;https://docs.microsoft.com/en-us/azure/azure-monitor/overview&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Mermaid Sample</title>
-      <link>/modules/sample/mermaid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/sample/mermaid/</guid>
-      <description>
-        
-        
-        &lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
-
-&lt;div class=&#34;mermaid&#34;&gt;
-  
-graph LR
-A[Introduction]
-B[Usecases]
-C[Physics]
-D[Sports]
-A--&gt;B--&gt;C--&gt;D
-
-&lt;/div&gt;
-&lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
-
-&lt;div class=&#34;mermaid&#34;&gt;
-  
-gantt
-    title Class
-    dateFormat  YYYY-MM-DD
-    section Week 1
-    Introduction     :w1, 2020-08-01, 7d
-    Bio              :after w1  , 1d
-    Github           :after w1  , 1d	
-
-&lt;/div&gt;
-&lt;p&gt;To design a chart you can use the &lt;a href=&#34;https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19&#34;&gt;live edior&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
