@@ -6,9 +6,9 @@ description: >
   Week 1: We present the motivation why big data is so important
 ---
 
-# Initial Class
+# Initial Lecture
 
-In this first Lecture we discuss the motivation of teh class. We
+In this first Lecture we discuss the motivation of the class. We
 provide an outlook what you will learn.
 
 {{< youtube "89qhS5bVm6E" >}}
