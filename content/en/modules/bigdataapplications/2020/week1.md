@@ -1,12 +1,12 @@
 ---
-title: Motivation
+title: Introduction
 draft: false
 weight: 1
 description: >
   Week 1: We present the motivation why big data is so important
 ---
 
-# Introduction
+# Initial Class
 
 In this first Lecture we discuss the motivation of teh class. We
 provide an outlook what you will learn.
