@@ -30,12 +30,11 @@ We will use the following material:
 
 |     |
 | --- |
-|  [{{< figure src="/images/puzzle.png"width="15%">}}](/modules/bigdataapplications/2020)
-| [Lectures will be recorded and published through this link. A notification will be send to you when a significant update is done. (Web)](/modules/bigdataapplications/2020) |
-|  [{{< figure src="/images/puzzle.png"width="15%">}} A gentle introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
+|  [{{< figure src="/images/puzzle.png" width="15%">}} Lectures will be recorded and published through this link. A notification will be send to you when a significant update is done. (Web)](/modules/bigdataapplications/2020) |
+|  [{{< figure src="/images/colab.png" width="15%">}} A gentle introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
 |  [{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) Scientific Writing with Markdown [(ePub)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub) [(PDF)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) |
-|  [{{< figure src="/images/youtube.jpg"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) [Git Pull Request](/modules/git-pull-request/) |
-|  [{{< figure src="/images/piazza.png"width="15%">}}](https://piazza.com/class/kedccsbsthm5sc) [Piazza](https://piazza.com/class/kedccsbsthm5sc) |
+|  [{{< figure src="/images/youtube.jpg" width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) [Git Pull Request](/modules/git-pull-request/) |
+|  [{{< figure src="/images/piazza.png" width="15%">}}](https://piazza.com/class/kedccsbsthm5sc) [Piazza](https://piazza.com/class/kedccsbsthm5sc) |
 
 ---
 
