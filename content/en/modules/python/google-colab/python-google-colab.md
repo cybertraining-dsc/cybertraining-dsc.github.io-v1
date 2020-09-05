@@ -7,7 +7,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-In this module we are going to introduce you, how to use Google Colab 
+In this module we are going to introduce you as to how to use Google Colab 
 to run deep learning models.
 {{% /pageinfo %}}
 
