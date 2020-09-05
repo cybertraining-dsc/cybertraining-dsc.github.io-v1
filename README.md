@@ -84,8 +84,17 @@ If you are satisfied, you can commit it with a
 reasonable commit message. 
 
 ```
-git commit -m "my super improveement" content/en/courses/bigdata2020/_index.md
+git commit -m "my super improvement" content/en/courses/bigdata2020/_index.md
 ```
+
+However as hugo will create other changes, you can do 
+
+```
+git commit -a
+```
+
+which presents you in your editor that you use for git the ability to commit multiple 
+files with the same comment that you fill out in the editor.
 
 After the commit you want to push it with
 
