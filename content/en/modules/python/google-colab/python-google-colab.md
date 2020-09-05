@@ -37,7 +37,7 @@ pip install numpy
 ```
 {{< youtube "znE_knoNnDE" >}}
 
-## Benchamrking in Google Colab with Cloudmesh
+## Benchmarking in Google Colab with Cloudmesh
 
 In this video we learn how to do a basic benchmark with Cloudmesh tools.
 Cloudmesh StopWatch will be used in this tutorial. 
