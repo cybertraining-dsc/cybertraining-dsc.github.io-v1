@@ -1530,44 +1530,6 @@ trees.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Modules: Introduction</title>
-      <link>/modules/bigdataapplications/2020/introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/introduction/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;initial-lecture&#34;&gt;Initial Lecture&lt;/h1&gt;
-&lt;p&gt;In this first Lecture we discuss the motivation of the class. We
-provide an outlook what you will learn.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/89qhS5bVm6E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;administrative-topics&#34;&gt;Administrative topics&lt;/h2&gt;
-&lt;p&gt;The following topics were addressed&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Homework&lt;/li&gt;
-&lt;li&gt;Differnce undergrad graduate requirements&lt;/li&gt;
-&lt;li&gt;Contact&lt;/li&gt;
-&lt;li&gt;Commuication via Piazza&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you have questions please post them on &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;suggested-assignment-professional-bio&#34;&gt;Suggested Assignment: Professional Bio&lt;/h2&gt;
-&lt;p&gt;Post a professional three paragrap Bio on
-&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;. Please post it
-under bio. Use as subject &amp;ldquo;Bio: Lastname, Firstname&amp;rdquo;. Research what a
-provessional Biograpghy is.&lt;/p&gt;
-&lt;p&gt;Remember to write it in 3rd person and focus on professional
-activities. Look up the Bio from Geoffrey or Gregor as an example.&lt;/p&gt;
-&lt;p&gt;Due date: 2nd week of class.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Modules: Introduction (Fall 2018)</title>
       <link>/modules/bigdataapplications/2019/intro-fall-2018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1789,6 +1751,37 @@ This is Part 15 of the introduction.
 &lt;a href=&#34;https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt;&lt;/a&gt; .
 &lt;a href=&#34;https://drive.google.com/open?id=1gt5ClfCnn72bWJxlnbTCAueSJ-25zBC7&#34;&gt;&lt;img src=&#34;/images/audio.png&#34; alt=&#34;Audio&#34;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Introduction to AI-Driven Digital Transformation</title>
+      <link>/modules/bigdataapplications/2020/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/introduction/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;This Lecture is recorded in 8 parts and gives an introduction and motivation for the class. This and other lectures in class are divided into &amp;ldquo;bite-sized lessons&amp;rdquo; from 5 to 30 minutes in length; that&amp;rsquo;s why it has 8 parts.&lt;/p&gt;
+&lt;p&gt;Lecture explains what students might gain from the class even if they end up with different types of jobs from data engineering, software engineering, data science or a business (application) expert. It stresses that we are well into a transformation that impacts industry research and the way life is lived. This transformation is centered on using the digital way with clouds, edge computing and deep learning giving the implementation. This &amp;ldquo;AI-Driven Digital Transformation&amp;rdquo; is as transformational as the Industrial Revolution in the past. We note that deep learning dominates most innovative AI replacing several traditional machine learning methods.&lt;/p&gt;
+&lt;p&gt;The slides for this course can be found at &lt;a href=&#34;https://docs.google.com/presentation/d/1ztKIAb6GaIcaOtiyWEHuRdR9z2xPyucgbhw-EpiDIRI/edit#slide=id.g94cec20bdc_0_240&#34;&gt;E534-Fall2020-Introduction&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;a-getting-started-bdaa-course-introduction-part-a-big-data-applications-and-analytics&#34;&gt;A: Getting Started: BDAA Course Introduction Part A: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;p&gt;This lesson describes briefly the trends driving and consequent of the AI-Driven Digital Transformation. It discusses the organizational aspects of the class and notes the two driving trends are clouds and AI. Clouds are mature and a dominant presence. AI is still rapidly changing and we can expect further major changes. The edge (devices and associated local fog computing) has always been important but now more is being done there.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nCbJ-2kKf0s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;b-technology-futures-from-gartners-analysis-bdaa-course-introduction-part-b-big-data-applications-and-analytics&#34;&gt;B: Technology Futures from Gartner&amp;rsquo;s Analysis: BDAA Course Introduction Part B: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;p&gt;This lesson goes through the technologies (AI Edge Cloud) from 2008-2020 that are driving the AI-Driven Digital Transformation. we use Hype Cycles and Priority Matrices from Gartner tracking importance concepts from the Innovation Trigger, Peak of Inflated Expectations through the Plateau of Productivity. We contrast clouds and AI.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QN-rPFbUAwc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
