@@ -12,6 +12,27 @@ This first discussed overall issues and did the first ~40% of the introductory s
 {{< youtube "89qhS5bVm6E" >}}
 
 
+### Administrative topics
+
+The following topics were addressed
+
+* Homework
+* Differnce undergrad graduate requirements
+* Contact
+* Commuication via Piazza
+
+If you have questions please post them on [Piazza](https://piazza.com/class/kedccsbsthm5sc).
+
+### Suggested Assignment: Professional Bio
+
+Post a professional three paragrap Bio on
+[Piazza](https://piazza.com/class/kedccsbsthm5sc). Please post it
+under bio. Use as subject "Bio: Lastname, Firstname". Research what a
+provessional Biograpghy is.
+
+Remember to write it in 3rd person and focus on professional
+activities. Look up the Bio from Geoffrey or Gregor as an example.
+
 ## Week 2
 
 This did the remaining 60% of the introductory slides. This presentation is also available as 8 recorded presentations under "introduction". Student questions were answered
