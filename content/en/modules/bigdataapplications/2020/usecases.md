@@ -12,9 +12,10 @@ This unit has four lectures (slide=decks). The survey is 6 years old but the ill
 * 3. Common features of the 51 Use Cases
 * 4. 10 Patterns of data -- computer -- user interaction seen in Big Data Applications
 
-## Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results (Slide Deck 1)
+## Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results 
 
-This first lecture on Big Data Use Cases. It describes the process by which NIST produced this survey
+This is first of 4 lectures on Big Data Use Cases. It describes the process by which NIST produced this survey
+
 [Slides](https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing)
 
 ### Use Case 1-1 Introduction to NIST Big Data Public Working Group
@@ -44,17 +45,7 @@ Architecture (10:05)
 
 ### Use Case 1-4 Security and Privacy Subgroup
 
-The focus is to form a community of interest from industry, academia,
-and government, with the goal of developing a consensus secure reference
-architecture to handle security and privacy issues across all
-stakeholders. This includes gaining an understanding of what standards
-are available or under development, as well as identifies which key
-organizations are working on these standards. The Top Ten Big Data
-Security and Privacy Challenges from the CSA (Cloud Security Alliance)
-BDWG are studied. Specialized use cases include Retail/Marketing, Modern
-Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare,
-Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data
-Sharing, Cyber-security, Government, Military and Education.
+The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus secure reference architecture to handle security and privacy issues across all stakeholders. This includes gaining an understanding of what standards are available or under development, as well as identifies which key organizations are working on these standards. The Top Ten Big Data Security and Privacy Challenges from the CSA (Cloud Security Alliance) BDWG are studied. Specialized use cases include Retail/Marketing, Modern Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare, Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data Sharing, Cyber-security, Government, Military and Education.
 
 Security (9:51)
 
@@ -63,19 +54,7 @@ Security (9:51)
 ### Use Case 1-5 Technology Roadmap Subgroup
 
 
-The focus is to form a community of interest from industry, academia,
-and government, with the goal of developing a consensus vision with
-recommendations on how Big Data should move forward by performing a good
-gap analysis through the materials gathered from all other NBD
-subgroups. This includes setting standardization and adoption priorities
-through an understanding of what standards are available or under
-development as part of the recommendations. Tasks are gathered input from
-NBD subgroups and study the taxonomies for the actors' roles and
-responsibility, use cases and requirements, and secure reference
-architecture; gain an understanding of what standards are available or
-under development for Big Data; perform a thorough gap analysis and
-document the findings; identify what possible barriers may delay or
-prevent the adoption of Big Data; and document vision and recommendations.
+The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus vision with recommendations on how Big Data should move forward by performing a good gap analysis through the materials gathered from all other NBD subgroups. This includes setting standardization and adoption priorities through an understanding of what standards are available or under development as part of the recommendations. Tasks are gathered input from NBD subgroups and study the taxonomies for the actors' roles and responsibility, use cases and requirements, and secure reference architecture; gain an understanding of what standards are available or under development for Big Data; perform a thorough gap analysis and document the findings; identify what possible barriers may delay or prevent the adoption of Big Data; and document vision and recommendations.
 
 
 Technology (4:14)
@@ -84,20 +63,8 @@ Technology (4:14)
 
 ### Use Case 1-6 Requirements and Use Case Subgroup
 
+The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus list of Big Data requirements across all stakeholders. This includes gathering and understanding various use cases from diversified application domains.Tasks are gather use case input from all stakeholders; derive Big Data requirements from each use case; analyze/prioritize a list of challenging general requirements that may delay or prevent adoption of Big Data deployment; develop a set of general patterns capturing the *essence* of use cases (not done yet) and work with Reference Architecture to validate requirements and reference architecture by explicitly implementing some patterns based on use cases. The progress of gathering use cases (discussed in next two units) and requirements systemization are discussed.
 
-The focus is to form a community of interest from industry, academia,
-and government, with the goal of developing a consensus list of Big Data
-requirements across all stakeholders. This includes gathering and
-understanding various use cases from diversified application
-domains.Tasks are gather use case input from all stakeholders; derive
-Big Data requirements from each use case; analyze/prioritize a list of
-challenging general requirements that may delay or prevent adoption of
-Big Data deployment; develop a set of general patterns capturing the
-*essence* of use cases (not done yet) and work with Reference
-Architecture to validate requirements and reference architecture by
-explicitly implementing some patterns based on use cases. The progress
-of gathering use cases (discussed in next two units) and requirements
-systemization are discussed.
 
 Requirements (27:28)
 
@@ -107,6 +74,7 @@ Requirements (27:28)
 
 This video is an update of recent work in this area. The first slide of this short lesson discusses a new version of use case survey that had many improvements including tags to label key features (as discussed in slide deck 3) and merged in a significant set of security and privacy fields.  This came from the security and privacy working group described in lesson 4 of this slide deck. A link for this new use case form is 
 https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf
+
 A recent December 2018 use case form for Astronomy’s Square Kilometer Array is at https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing This uses a simplification of the official new form. 
 
 The second (last) slide in update gives some useful on latest work.
