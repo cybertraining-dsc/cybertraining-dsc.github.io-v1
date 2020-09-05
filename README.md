@@ -1,72 +1,101 @@
-# Docsy Example
+# Cybertraining Web Page
 
-[Docsy](https://github.com/google/docsy) is a Hugo theme for technical
-documentation sites, providing easy site navigation, structure, and
-more. This **Docsy Example Project** uses the Docsy theme, as well as
-providing a skeleton documentation structure for you to use. You can
-either copy this project and edit it with your own content, or use the
-theme in your projects like any other [Hugo
-theme](https://gohugo.io/themes/installing-and-using-themes/).
+The cybertraining web page can be created locally and one can review
+changes prior to a commit.
 
-This Docsy Example Project is hosted at
-[https://example.docsy.dev/](https://example.docsy.dev/).
+First you will have to iinstall `go` and `hugo`
 
-You can find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs/
+## Windows
 
-This is not an officially supported Google product. This project is currently maintained.
+See golang
 
-## Cloning the Docsy Example Project
+* <https://golang.org/doc/install>
 
-The following will give you a project that is set up and ready to use
-(don't forget to use `--recurse-submodules` or you won't pull down
-some of the code you need to generate a working site). The `hugo
-server` command builds and serves the site. If you just want to build
-the site, run `hugo` instead.
+Install Cocolatey via powershell
 
-```bash
-git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
-cd docsy-example
-hugo server
-```
+* <https://chocolatey.org/install>
 
-The theme is included as a Git submodule:
+See hugo
 
-```bash
-▶ git submodule
- a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
-```
+* <https://gohugo.io/getting-started/installing/#chocolatey-windows>
 
-If you want to do SCSS edits and want to publish these, you need to
-install `PostCSS` (not needed for `hugo server`):
+Please also install gitbash and use gitbash instead of powershell
 
-```bash
-npm install
-```
+## OSX
 
-<!--### Cloning the Example from the Theme Project
+See golang
 
+See hugo
+
+
+## Linux
+
+See golang
+
+See hugo
+
+
+## Clone
+
+If you have not yet cloned the repo you can do this with
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/docsy.git
-cd tech-doc-hugo-theme/exampleSite
-HUGO_THEMESDIR="../.." hugo server
+git clone https://github.com/cybertraining-dsc/cybertraining-dsc.github.io.git
+cd cybertraining-dsc.github.io
 ```
 
+## Compile
 
-Note that the Hugo Theme Site requires the `exampleSite` to live in a
-subfolder of the theme itself. To avoid recursive duplication, the
-example site is added as a Git subtree:
+The web page can be compiled and run with
 
 ```bash
-git subtree add --prefix exampleSite https://github.com/google/docsy.git  master --squash
+hugo serve
 ```
 
-To pull in changes, see `pull-deps.sh` script in the theme.-->
+This allows you to modify the source with your favourite editor and
+the changes will be automatically viewed.
 
-## Running the website locally
+The web page can be viewed with your browser at
 
-Once you've cloned the site repo, from the repo root folder, run:
+* <http://localhost:1313/>
+
+## Commit
+
+Content is loacted in "./content./en"
+
+Let us assume you like to change the content of the file
+`content/en/courses/bigdata2020/_index.md`. Please use your favourite
+editor, mine is emacs:
 
 ```
-hugo server
+emacs content/en/courses/bigdata2020/_index.md 
 ```
+
+Make your change and save is. Browse to the page that you changed and
+observer the changes. To generate the changes for the web page we also
+need to say
+
+```
+hugo
+```
+
+
+If you are satisfied, you can commit it with a
+reasonable commit message. 
+
+```
+git commit -m "my super improveement" content/en/courses/bigdata2020/_index.md
+```
+
+After the commit you want to push it with
+
+```
+git push
+```
+
+To keep up to date with other peoples changes you **MUST** often do a
+git pull and if you see a conflict you need to resolve this. Thus it
+is pest to communicate with the development team in aces you need to
+do larger cahnges or have the risk that others work in pararlel.
+
+
