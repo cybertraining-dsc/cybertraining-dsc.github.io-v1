@@ -77,9 +77,9 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;lecture-set-1-overview-of-nist-big-data-public-working-group-nbd-pwg-process-and-results-slide-deck-1&#34;&gt;Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results (Slide Deck 1)&lt;/h2&gt;
-&lt;p&gt;This first lecture on Big Data Use Cases. It describes the process by which NIST produced this survey
-&lt;a href=&#34;https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;lecture-set-1-overview-of-nist-big-data-public-working-group-nbd-pwg-process-and-results&#34;&gt;Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results&lt;/h2&gt;
+&lt;p&gt;This is first of 4 lectures on Big Data Use Cases. It describes the process by which NIST produced this survey&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;use-case-1-1-introduction-to-nist-big-data-public-working-group&#34;&gt;Use Case 1-1 Introduction to NIST Big Data Public Working Group&lt;/h3&gt;
 &lt;p&gt;The focus of the (NBD-PWG) is to form a community of interest from industry, academia, and government, with the goal of developing a consensus definition, taxonomies, secure reference architectures, and technology roadmap. The aim is to create vendor-neutral, technology and infrastructure agnostic deliverables to enable big data stakeholders to pick-and-choose best analytics tools for their processing and visualization requirements on the most suitable computing platforms and clusters while allowing value-added from big data service providers and flow of data between the stakeholders in a cohesive and secure manner.&lt;/p&gt;
 &lt;p&gt;Introduction (13:02)&lt;/p&gt;
@@ -106,17 +106,7 @@ For Definitions: Compile terms used from all stakeholders regarding the meaning 
 &lt;/div&gt;
 
 &lt;h3 id=&#34;use-case-1-4-security-and-privacy-subgroup&#34;&gt;Use Case 1-4 Security and Privacy Subgroup&lt;/h3&gt;
-&lt;p&gt;The focus is to form a community of interest from industry, academia,
-and government, with the goal of developing a consensus secure reference
-architecture to handle security and privacy issues across all
-stakeholders. This includes gaining an understanding of what standards
-are available or under development, as well as identifies which key
-organizations are working on these standards. The Top Ten Big Data
-Security and Privacy Challenges from the CSA (Cloud Security Alliance)
-BDWG are studied. Specialized use cases include Retail/Marketing, Modern
-Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare,
-Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data
-Sharing, Cyber-security, Government, Military and Education.&lt;/p&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus secure reference architecture to handle security and privacy issues across all stakeholders. This includes gaining an understanding of what standards are available or under development, as well as identifies which key organizations are working on these standards. The Top Ten Big Data Security and Privacy Challenges from the CSA (Cloud Security Alliance) BDWG are studied. Specialized use cases include Retail/Marketing, Modern Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare, Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data Sharing, Cyber-security, Government, Military and Education.&lt;/p&gt;
 &lt;p&gt;Security (9:51)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -124,19 +114,7 @@ Sharing, Cyber-security, Government, Military and Education.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&#34;use-case-1-5-technology-roadmap-subgroup&#34;&gt;Use Case 1-5 Technology Roadmap Subgroup&lt;/h3&gt;
-&lt;p&gt;The focus is to form a community of interest from industry, academia,
-and government, with the goal of developing a consensus vision with
-recommendations on how Big Data should move forward by performing a good
-gap analysis through the materials gathered from all other NBD
-subgroups. This includes setting standardization and adoption priorities
-through an understanding of what standards are available or under
-development as part of the recommendations. Tasks are gathered input from
-NBD subgroups and study the taxonomies for the actors&amp;rsquo; roles and
-responsibility, use cases and requirements, and secure reference
-architecture; gain an understanding of what standards are available or
-under development for Big Data; perform a thorough gap analysis and
-document the findings; identify what possible barriers may delay or
-prevent the adoption of Big Data; and document vision and recommendations.&lt;/p&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus vision with recommendations on how Big Data should move forward by performing a good gap analysis through the materials gathered from all other NBD subgroups. This includes setting standardization and adoption priorities through an understanding of what standards are available or under development as part of the recommendations. Tasks are gathered input from NBD subgroups and study the taxonomies for the actors&amp;rsquo; roles and responsibility, use cases and requirements, and secure reference architecture; gain an understanding of what standards are available or under development for Big Data; perform a thorough gap analysis and document the findings; identify what possible barriers may delay or prevent the adoption of Big Data; and document vision and recommendations.&lt;/p&gt;
 &lt;p&gt;Technology (4:14)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -144,19 +122,7 @@ prevent the adoption of Big Data; and document vision and recommendations.&lt;/p
 &lt;/div&gt;
 
 &lt;h3 id=&#34;use-case-1-6-requirements-and-use-case-subgroup&#34;&gt;Use Case 1-6 Requirements and Use Case Subgroup&lt;/h3&gt;
-&lt;p&gt;The focus is to form a community of interest from industry, academia,
-and government, with the goal of developing a consensus list of Big Data
-requirements across all stakeholders. This includes gathering and
-understanding various use cases from diversified application
-domains.Tasks are gather use case input from all stakeholders; derive
-Big Data requirements from each use case; analyze/prioritize a list of
-challenging general requirements that may delay or prevent adoption of
-Big Data deployment; develop a set of general patterns capturing the
-&lt;em&gt;essence&lt;/em&gt; of use cases (not done yet) and work with Reference
-Architecture to validate requirements and reference architecture by
-explicitly implementing some patterns based on use cases. The progress
-of gathering use cases (discussed in next two units) and requirements
-systemization are discussed.&lt;/p&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus list of Big Data requirements across all stakeholders. This includes gathering and understanding various use cases from diversified application domains.Tasks are gather use case input from all stakeholders; derive Big Data requirements from each use case; analyze/prioritize a list of challenging general requirements that may delay or prevent adoption of Big Data deployment; develop a set of general patterns capturing the &lt;em&gt;essence&lt;/em&gt; of use cases (not done yet) and work with Reference Architecture to validate requirements and reference architecture by explicitly implementing some patterns based on use cases. The progress of gathering use cases (discussed in next two units) and requirements systemization are discussed.&lt;/p&gt;
 &lt;p&gt;Requirements (27:28)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -165,8 +131,8 @@ systemization are discussed.&lt;/p&gt;
 
 &lt;h3 id=&#34;use-case-1-7-recent-updates-of-work-of-nist-public-big-data-working-group&#34;&gt;Use Case 1-7 Recent Updates of work of NIST Public Big Data Working Group&lt;/h3&gt;
 &lt;p&gt;This video is an update of recent work in this area. The first slide of this short lesson discusses a new version of use case survey that had many improvements including tags to label key features (as discussed in slide deck 3) and merged in a significant set of security and privacy fields.  This came from the security and privacy working group described in lesson 4 of this slide deck. A link for this new use case form is
-&lt;a href=&#34;https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf&#34;&gt;https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf&lt;/a&gt;
-A recent December 2018 use case form for Astronomy’s Square Kilometer Array is at &lt;a href=&#34;https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing&#34;&gt;https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing&lt;/a&gt; This uses a simplification of the official new form.&lt;/p&gt;
+&lt;a href=&#34;https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf&#34;&gt;https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A recent December 2018 use case form for Astronomy’s Square Kilometer Array is at &lt;a href=&#34;https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing&#34;&gt;https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing&lt;/a&gt; This uses a simplification of the official new form.&lt;/p&gt;
 &lt;p&gt;The second (last) slide in update gives some useful on latest work.
 NIST’s latest work just published is at
 &lt;a href=&#34;https://bigdatawg.nist.gov/V3_output_docs.php&#34;&gt;https://bigdatawg.nist.gov/V3_output_docs.php&lt;/a&gt;
