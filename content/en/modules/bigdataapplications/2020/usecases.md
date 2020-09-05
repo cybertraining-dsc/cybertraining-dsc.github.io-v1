@@ -3,14 +3,21 @@ title: Big Data Use Cases Survey
 weight: 4
 draft: false
 description: >
-  Week 2: Big Data Use Cases Survey
+ 4 Lectures on Big Data Use Cases Survey
 ---
+This unit has four lectures (slide=decks). The survey is 6 years old but the illustrative scope of Big Data Applications is still valid and has no better alternative. The problems and use of clouds has not changed. There has been algorithmic advances (deep earning) in some cases. The lectures are
 
-## Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results (Slide Deck 1)
+* 1. Overview of NIST Process
+* 2. The 51 Use cases divided into groups
+* 3. Common features of the 51 Use Cases
+* 4. 10 Patterns of data -- computer -- user interaction seen in Big Data Applications
 
+## Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results (Slide Deck 1)
+
+This first lecture on Big Data Use Cases. It describes the process by which NIST produced this survey
 [Slides](https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing)
 
-### Use Case 1-1 Introduction to NIST Big Data Public Working
+### Use Case 1-1 Introduction to NIST Big Data Public Working Group
 
 The focus of the (NBD-PWG) is to form a community of interest from industry, academia, and government, with the goal of developing a consensus definition, taxonomies, secure reference architectures, and technology roadmap. The aim is to create vendor-neutral, technology and infrastructure agnostic deliverables to enable big data stakeholders to pick-and-choose best analytics tools for their processing and visualization requirements on the most suitable computing platforms and clusters while allowing value-added from big data service providers and flow of data between the stakeholders in a cohesive and secure manner.
 
@@ -110,7 +117,7 @@ http://hpc-abds.org/kaleidoscope/
 
 {{< youtube "2PAC2bAAcIA" >}}
 
-## Introduction to NIST Big Data Public Working Group (NBD-PWG) 51 Big Data Use Cases
+## Lecture set 2: 51 Big Data Use Cases from  NIST Big Data Public Working Group (NBD-PWG)
 
 [Slides](https://drive.google.com/file/d/1_m97KGvBu0Fkx47Fkp78_8m89ni2P8jK/view?usp=sharing)
 
@@ -136,7 +143,7 @@ Business Continuity & Disaster Recovery (BC/DR) Within A Cloud
 Eco-System; Cargo Shipping; Materials Data for Manufacturing and
 Simulation driven Materials Genomics.
 
-
+This lesson is divided into 3 separate videos
 
 #### Part 1
 
@@ -244,7 +251,7 @@ Energy Use Case (4:01)
 
 {{< youtube "5y_O-a8_Fbg " >}}
 
-## Introduction to NIST Big Data Public Working Group (NBD-PWG) Features of 51 Big Data Use Cases
+## Lecture set 3: Features of 51 Big Data Use Cases from the NIST Big Data Public Working Group (NBD-PWG)
 
 This unit discusses the categories used to classify the 51 use-cases.
 These categories include concepts used for parallelism and low and high
@@ -330,7 +337,7 @@ This video looks at several efforts to divide applications into categories of re
 
 {{< youtube "H-PZkJOeX0U" >}}
 
-## Overview of NIST Big Data Public Working Group (NBD-PWG) The 10 Use Case Patterns
+## Lecture set 4. The 10 Use Case Patterns from the NIST Big Data Public Working Group (NBD-PWG)
 
 [Slides](https://drive.google.com/file/d/1Rs2h7JTaTbqkZluigD7Wk_22kiaKuZ9s/view?usp=sharing)
 
