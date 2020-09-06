@@ -6,8 +6,18 @@ description: >
   Python Exercise on Google Colab
 ---
 
-
 ## Python Exercise on Google Colab
+
+<div class="aside">
+  <table style="width:100%">
+  <tr>
+    <th><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb\" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></th>    
+    <th><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt="View In Github"/>View in Github</a></th>
+    <th><a href="https://raw.githubusercontent.com/cybertraining-dsc/cybertraining-dsc.github.io/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb\" target="_parent"><img src="https://www.tensorflow.org/images/download_logo_32px.png" alt="Download Notebook"/>Download Notebook</a></th>
+  </tr>
+</table>  
+</div>
+
 
 In this exercise, we will take a look at some basic Python Concepts needed for
 day-to-day coding. 
