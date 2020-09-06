@@ -1,6 +1,6 @@
 ---
 title: Deep Learning
-draft: true
+draft: false
 weight: 6
 description: >
   Introduction to Deep Learning
