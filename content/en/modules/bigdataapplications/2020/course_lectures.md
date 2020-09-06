@@ -1,5 +1,5 @@
 ---
-title: Course Lectures
+title: BDAA Fall 2020 Course Lectures
 weight: 4
 draft: false
 description: >
@@ -17,7 +17,7 @@ This first discussed overall issues and did the first ~40% of the introductory s
 The following topics were addressed
 
 * Homework
-* Differnce undergrad graduate requirements
+* Difference between undergrad and graduate requirements
 * Contact
 * Commuication via Piazza
 
