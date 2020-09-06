@@ -139,6 +139,8 @@ plot_model(model, to_file='mlp-mnist.png', show_shapes=True)
 
 ![images](/images/deeplearning/lab1/output_20_1.png)
 
+{{< youtube "UagrQBdrkjM" >}}
+
 ## Compile and Train
 
 A keras model need to be compiled before it can be used to train
@@ -208,6 +210,7 @@ all the instructions before a code section.
 
 **Solve Exercise MNIST_V1.0.**
 
+{{< youtube "lbCyefwZGlI" >}}
 
 ### Reference: 
 
