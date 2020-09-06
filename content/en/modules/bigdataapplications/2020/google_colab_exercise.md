@@ -3,10 +3,10 @@ title: Deep Learning
 draft: false
 weight: 6
 description: >
-  Introduction to Deep Learning
+  MNIST Classification on Google Colab
 ---
 
-# MNIST Classification 
+# MNIST Classification on Google Colab
 
 
 In this lesson we discuss in how to create a simple IPython Notebook to solve
