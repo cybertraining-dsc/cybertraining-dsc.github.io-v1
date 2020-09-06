@@ -147,7 +147,7 @@ plot_model(model, to_file='mlp-mnist.png', show_shapes=True)
     _________________________________________________________________
 
 
-![images](/images/deeplearning/lab1/output_20_1.png)
+![images](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/bigdataapplications/2020/images/deeplearning/lab1/output_20_1.png)
 
 {{< youtube "UagrQBdrkjM" >}}
 
