@@ -12,6 +12,8 @@ description: >
 In this exercise, we will take a look at some basic Python Concepts needed for
 day-to-day coding. 
 
+{{< youtube "x1ICvWDlvB0" >}}
+
 Check the installed Python version.
 
 
@@ -99,6 +101,8 @@ list_items
 
     ['b', 'c', 'd', 'e', 'f']
 
+
+{{< youtube "oudT4sRIuwU" >}}
 
 
 ## Dictionary
@@ -224,6 +228,8 @@ else:
 
     This is False
 
+
+{{< youtube "GKU6-SNZGQc" >}}
 
 ## Arithmetic
 
