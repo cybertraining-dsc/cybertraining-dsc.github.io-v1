@@ -35,7 +35,7 @@ We will use the following material:
 
 |     |
 | --- |
-|  [{{< figure src="/images/lecture.png" width="15%">}} Course Lectures. These meeting notes are updated weekly (Web)](http://localhost:1313/modules/bigdataapplications/2020/course_lectures)|
+|  [{{< figure src="/images/lecture.png" width="15%">}} Course Lectures. These meeting notes are updated weekly (Web)](/modules/bigdataapplications/2020/course_lectures)|
 |  [{{< figure src="/images/usecases.png" width="15%">}} Big Data Usecases Survey (Web)](/modules/bigdataapplications/2020/usecases)|
 |  [{{< figure src="/images/physics.png" width="15%">}} Physics (Web)](/modules/bigdataapplications/2020/physics)|
 |  [{{< figure src="/images/sport.png" width="15%">}} Sports (Web)](/modules/bigdataapplications/2020/sports)|
