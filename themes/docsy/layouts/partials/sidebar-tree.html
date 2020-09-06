@@ -35,7 +35,7 @@
 {{ $sid := $s.RelPermalink | anchorize }}
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="{{ $s.RelPermalink }}" class="align-left pl-0 pr-2{{ if not $show }} collapsed{{ end }}{{ if $active}} active{{ end }} td-sidebar-link td-sidebar-link__section">{{ $s.LinkTitle }}</a>
+    <a  href="{{ $s.RelPermalink }}" class="align-left pl-0 pr-2{{ if not $show }} collapsed{{ end }}{{ if $active}} active{{ end }} td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> {{ $s.LinkTitle }}</div></a>
   </li>
   <ul>
     <li class="collapse {{ if $show }}show{{ end }}" id="{{ $sid }}">
