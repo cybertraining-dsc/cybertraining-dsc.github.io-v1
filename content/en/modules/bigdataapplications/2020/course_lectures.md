@@ -67,3 +67,6 @@ HPC-ABDS Global AI Supercomputer compared to classic cluster.
 Six Computational Paradigms for Data Analytics
 
 ![6 System Data Architectures](/bigdata/images/6archsB.png)
+
+
+Features that can be used to distinguish and group together applications in both data and computational science[Facets](/bigdata/images/Facets.png)
