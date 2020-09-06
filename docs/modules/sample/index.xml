@@ -73,12 +73,7 @@ description is a short summary, the abstract is a bit more verbose.&lt;/p&gt;
       <description>
         
         
-        &lt;figure&gt;
-    &lt;img src=&#34;/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png&#34;/&gt; &lt;figcaption&gt;
-            &lt;h4&gt;A sample caption&lt;/h4&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;
-
+        &lt;p&gt;&lt;img src=&#34;/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png&#34; alt=&#34;A sample caption&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
