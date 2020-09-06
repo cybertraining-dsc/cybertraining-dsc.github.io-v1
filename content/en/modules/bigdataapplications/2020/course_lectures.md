@@ -69,4 +69,6 @@ Six Computational Paradigms for Data Analytics
 ![6 System Data Architectures](/bigdata/images/6archsB.png)
 
 
-Features that can be used to distinguish and group together applications in both data and computational science[Facets](/bigdata/images/Facets.png)
+Features that can be used to distinguish and group together applications in both data and computational science
+
+![Facets](/bigdata/images/Facets.png)
