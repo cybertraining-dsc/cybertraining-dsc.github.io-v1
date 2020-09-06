@@ -343,11 +343,6 @@ c[0]
 
 
 ```python
-
-```
-
-
-```python
 c = np.mean(b,axis=1)
 c.shape
 ```
@@ -359,10 +354,6 @@ c.shape
 
 
 
-
-```python
-
-```
 
 
 ```python
