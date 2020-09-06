@@ -149,7 +149,7 @@
   
   <url>
     <loc>/modules/bigdataapplications/2020/course_lectures/</loc>
-    <lastmod>2020-09-06T14:54:55-04:00</lastmod>
+    <lastmod>2020-09-06T18:07:20-04:00</lastmod>
   </url>
   
   <url>
@@ -185,16 +185,6 @@
   <url>
     <loc>/modules/bigdataapplications/2019/week6/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/modules/bigdataapplications/2020/google_colab_exercise/</loc>
-    <lastmod>2020-09-06T00:23:36-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/modules/bigdataapplications/2020/python_initial/</loc>
-    <lastmod>2020-09-05T23:57:11-04:00</lastmod>
   </url>
   
   <url>
@@ -298,6 +288,11 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/python_initial/</loc>
+    <lastmod>2020-09-06T19:18:21-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/bigdataapplications/2019/e534-cloud-computing-unit/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -340,6 +335,11 @@
   <url>
     <loc>/modules/devops/puppet/</loc>
     <lastmod>2020-08-25T21:55:09-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/google_colab_exercise/</loc>
+    <lastmod>2020-09-06T19:18:43-04:00</lastmod>
   </url>
   
   <url>
