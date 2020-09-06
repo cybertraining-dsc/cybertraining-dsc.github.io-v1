@@ -503,6 +503,10 @@
   </url>
   
   <url>
+    <loc>/modules/sample/figure/</loc>
+  </url>
+  
+  <url>
     <loc>/modules/sample/mermaid/</loc>
     <lastmod>2020-09-03T04:27:51-04:00</lastmod>
   </url>
