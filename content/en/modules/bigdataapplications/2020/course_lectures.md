@@ -52,6 +52,7 @@ Collage of Big Data Players
 
 ![Collage of Big Data Players](/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png)
 
+
 Software systems of importance through early 2016. This collection was
 stopped due to rapid change but categories and entries are still
 valuable. We call this HPC-ABDS for High Performance Computing
@@ -65,4 +66,4 @@ HPC-ABDS Global AI Supercomputer compared to classic cluster.
 
 Six Computational Paradigms for Data Analytics
 
-![6 System Data Architectures](/bigdata/images/6archs.png)
+![6 System Data Architectures](/bigdata/images/6archsB.png)
