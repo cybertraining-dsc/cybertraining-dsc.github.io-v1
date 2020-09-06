@@ -48,7 +48,21 @@ under "introduction". Student questions were answered
 
 ### Big Data in pictures
 
-Collage of Big Data Players ![Collage of Big Data Players](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/themes/docsy/static/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png)
-Software systems of importance through early 2016. This collection was stopped due to rapid change but categories and entries are still valuable. We call this HPC-ABDS for High Performance Computing Enhanced Apache Big Data Stack ![HPC-ABDS](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/themes/docsy/static/bigdata/images/Kaleidoscope.png)
-HPC-ABDS Global AI Supercomputer compared to classic cluster.![AI Supercomputer](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/themes/docsy/static/bigdata/images/GlobalAIvHPC.png)
-Six Computational Paradigms for Data Analytics ![6 System Data Architectures](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/themes/docsy/static/bigdata/images/6archs.png)
+Collage of Big Data Players
+
+![Collage of Big Data Players](/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png)
+
+Software systems of importance through early 2016. This collection was
+stopped due to rapid change but categories and entries are still
+valuable. We call this HPC-ABDS for High Performance Computing
+Enhanced Apache Big Data Stack
+
+![HPC-ABDS](/bigdata/images/Kaleidoscope.png)
+
+HPC-ABDS Global AI Supercomputer compared to classic cluster.
+
+![AI Supercomputer](/bigdata/images/GlobalAIvHPC.png)
+
+Six Computational Paradigms for Data Analytics
+
+![6 System Data Architectures](/bigdata/images/6archs.png)
