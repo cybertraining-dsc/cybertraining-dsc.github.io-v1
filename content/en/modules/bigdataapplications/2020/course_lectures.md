@@ -40,3 +40,8 @@ This presentation is also available as 8 recorded presentations
 under "introduction". Student questions were answered
 
 {{< youtube "r1HFofbAbHk" >}}
+
+### Notebooks
+
+* [Python Warm-up Notebook](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/python_warmup.ipynb)
+* [Python MNIST Notebook](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb)
