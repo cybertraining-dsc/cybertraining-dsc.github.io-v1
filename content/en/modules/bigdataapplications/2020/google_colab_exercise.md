@@ -1,7 +1,7 @@
 ---
 title: Google Colab Exercise and Homework
 draft: false
-weight: 6
+weight: 21
 description: >
   MNIST Classification on Google Colab
 ---
