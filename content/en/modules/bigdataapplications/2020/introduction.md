@@ -3,7 +3,7 @@ title: Introduction to AI-Driven Digital Transformation
 draft: false
 weight: 1
 description: >
-  The Full Introduction Lecture with introduction to and Motivation for Big Data Applications and Analytics Class
+  The Full Introductory Lecture with introduction to and Motivation for Big Data Applications and Analytics Class
 ---
 
 ### Overview
@@ -25,3 +25,67 @@ This lesson describes briefly the trends driving and consequent of the AI-Driven
 This lesson goes through the technologies (AI Edge Cloud) from 2008-2020 that are driving the AI-Driven Digital Transformation. we use Hype Cycles and Priority Matrices from Gartner tracking importance concepts from the Innovation Trigger, Peak of Inflated Expectations through the Plateau of Productivity. We contrast clouds and AI.
 
 {{< youtube "QN-rPFbUAwc" >}}
+
+### C: Big Data Trends: BDAA Course Introduction Part C: Big Data Applications and Analytics 
+
+* This gives illustrations of sources of big data.
+* It gives key graphs of data sizes, images uploaded; computing, data, bandwidth trends; 
+* Cloud-Edge architecture.
+* Intelligent machines and comparison of data from aircraft engine monitors compared to Twitter
+
+{{< youtube "b_HeufZSEaE" >}}
+
+### D: Computing Trends: BDAA Course Introduction Part D: Big Data Applications and Analytics 
+
+* Multicore revolution
+* Overall Global AI and Modeling Supercomputer GAIMSC
+* Moores Law compared to Deep Learning computing needs
+* Intel and NVIDIA status
+
+{{< youtube "NxoOe5XKGyE" >}}
+
+### E: Big Data and Science: BDAA Course Introduction Part E: Big Data Applications and Analytics
+
+* Applications and Analytics
+* Cyberinfrastructure, e-moreorlessanything.
+* LHC, Higgs Boson and accelerators.
+* Astronomy, SKA, multi-wavelength.
+* Polar Grid.
+* Genome Sequencing.
+* Examples, Long Tail of Science.
+* Wired's End of Science; the 4 paradigms.
+* More data versus Better algorithms.
+
+{{< youtube "C_jk161mQ_s" >}}
+
+### F: Big Data Systems: BDAA Course Introduction Part F: Big Data Applications and Analytics
+
+* Clouds, Service-oriented architectures, HPC High Performance Computing, Apace Software
+* DIKW process illustrated by Google maps
+* Raw data to Information/Knowledge/Wisdom/Decision Deluge from the EdgeInformation/Knowledge/Wisdom/Decision Deluge
+* Parallel Computing
+* Map Reduce
+
+{{< youtube "V_iqzUXCcyg" >}}
+
+### G: Industry Transformation: BDAA Course Introduction Part G: Big Data Applications and Analytics
+
+AI grows in importance and industries transform with 
+
+* Core Technologies related to
+* New “Industries” over the last 25 years
+* Traditional “Industries” Transformed; malls and other old industries transform
+* Good to be master of Cloud Computing and Deep Learning
+* AI-First Industries, 
+
+{{< youtube "DAJw6mitjao" >}}
+
+### H: Jobs and Conclusions: BDAA Course Introduction Part H: Big Data Applications and Analytics
+
+* Job trends
+* Become digitally savvy so you can take advantage of the AI/Cloud/Edge revolution with different jobs
+* The qualitative idea of Big Data has turned into a quantitative realization as Cloud, Edge and Deep Learning
+* Clouds are here to stay and one should plan on exploiting them
+* Data Intensive studies in business and research continue to grow in importance
+
+{{< youtube "nsgPI45XJlw" >}}
