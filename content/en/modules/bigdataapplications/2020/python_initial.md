@@ -317,9 +317,6 @@ b.shape
     (10, 10)
 
 
-
-b[0]
-
 ### Manipulate Array Elements
 
 
