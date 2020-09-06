@@ -1,7 +1,7 @@
 ---
 title: Python Warm Up
 draft: false
-weight: 6
+weight: 19
 description: >
   Python Exercise on Google Colab
 ---
