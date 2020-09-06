@@ -1,4 +1,13 @@
-## Python Warm Up
+---
+title: Python Warm Up
+draft: false
+weight: 6
+description: >
+  Python Exercise on Google Colab
+---
+
+
+## Python Exercise on Google Colab
 
 In this exercise, we will take a look at some basic Python Concepts needed for
 day-to-day coding. 
