@@ -1,3 +1,5 @@
+## Google Colab with MNIST Classification 
+
 Homework 2 is based on the exercise on Google Colab with MNIST. 
 Follow this lesson and answer the MNIST_V1.0|Exercise described at the end of the exercise. 
 In order to do this exercise first make a copy of this Google Colab Notebook by doing the following.  
