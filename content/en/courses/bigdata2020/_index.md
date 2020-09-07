@@ -52,7 +52,7 @@ We will use the following material:
 
 |     |
 | --- |
-|  [{{< figure src="/images/usecases.png" width="15%">}} Big Data Usecases Survey (Web)](/modules/bigdataapplications/2020/usecases)|
+|  [{{< figure src="/images/usecases.png" width="15%">}} This module covers 51 usecases of Big data that emerged from a NIST (National Institute for Standards and Technology) study of Big data. We cover the NIST Big Data Public Working Group (NBD-PWG) Process and summarizes the work of five subgroups: Definitions and Taxonomies Subgroup, Reference Architecture Subgroup, Security and Privacy Subgroup, Technology Roadmap Subgroup and the Requirements andUse Case Subgroup. 51 use cases collected in this process are briefly discussed with a classification of the source of parallelism and the high and low level computational structure. We describe the key features of this classification.](/modules/bigdataapplications/2020/usecases)|
 
 ## Introduction to Google Colab
 
@@ -66,13 +66,13 @@ We will use the following material:
 
 |     |
 | --- |
-|  [{{< figure src="/images/physics.png" width="15%">}} Physics (Web)](/modules/bigdataapplications/2020/physics)|
+|  [{{< figure src="/images/physics.png" width="15%">}} Big Data Applications and Analytics Discovery of Higgs Boson Part I (Unit 8) Section Units 9-11 Summary: This section starts by describing the LHC accelerator at CERN and evidence found by the experiments suggesting existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of shape of signal and various background and with various event totals. Then random variables and some simple principles of statistics are introduced with explanation as to why they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why they seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. The Central Limit Theorem concludes discussion.](/modules/bigdataapplications/2020/physics)|
 
 ## Sports
 
 |     |
 | --- |
-|  [{{< figure src="/images/sport.png" width="15%">}} Sports (Web)](/modules/bigdataapplications/2020/sports)|
+|  [{{< figure src="/images/sport.png" width="15%">}} Sports sees significant growth in analytics with pervasive statistics shifting to more sophisticated measures. We start with baseball as game is built around segments dominated by individuals where detailed (video/image) achievement measures including PITCHf/x and FIELDf/x are moving field into big data arena. There are interesting relationships between the economics of sports and big data analytics. We look at Wearables and consumer sports/recreation. The importance of spatial visualization is discussed. We look at other Sports: Soccer, Olympics, NFL Football, Basketball, Tennis and Horse Racing.](/modules/bigdataapplications/2020/sports)|
 
 
 ## Complementary Material
