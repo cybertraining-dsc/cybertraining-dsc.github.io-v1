@@ -43,8 +43,10 @@ under "introduction". Student questions were answered
 
 ### Notebooks
 
-* [Python Warm-up Notebook](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/python_warmup.ipynb)
-* [Python MNIST Notebook](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb)
+* [Introduction to Google Colab](https://cybertraining-dsc.github.io/modules/python/google-colab/python-google-colab/)
+* [Python Warm-up Notebook](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/python_initial/)
+* [Python MNIST Notebook](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/google_colab_exercise/)
+* [Homework 2](https://iu.instructure.com/courses/1908830/assignments/11187838)
 
 ### Big Data in pictures
 
