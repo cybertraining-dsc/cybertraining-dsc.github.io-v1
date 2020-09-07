@@ -12,7 +12,7 @@ description: >
 #    byline: "Photo: Gregor von Laszewski / CC-BY-CA"
 ---
 
-![MNIST Character recognition](/images/MNIST.png)
+![MNIST Character Recognition](/images/MNIST.png)
 
 
 {{% pageinfo %}}
