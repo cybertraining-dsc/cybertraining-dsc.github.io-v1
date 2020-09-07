@@ -3985,7 +3985,7 @@ format only.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Modules: BDAA Fall 2020 Course Lectures</title>
+      <title>Modules: BDAA Fall 2020 Course Lectures and Organization</title>
       <link>/modules/bigdataapplications/2020/course_lectures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3993,7 +3993,8 @@ format only.&lt;/p&gt;
       <description>
         
         
-        &lt;h2 id=&#34;week-1&#34;&gt;Week 1&lt;/h2&gt;
+        &lt;p&gt;This describes weekly meeting and overall videos and homeworks&lt;/p&gt;
+&lt;h2 id=&#34;week-1&#34;&gt;Week 1&lt;/h2&gt;
 &lt;p&gt;This first discussed overall issues and did the first ~40% of the introductory slides. This presentation is also available as 8 recorded presentations under &amp;ldquo;introduction&amp;rdquo;&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -4009,29 +4010,31 @@ format only.&lt;/p&gt;
 &lt;li&gt;Commuication via Piazza&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you have questions please post them on &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;suggested-assignment-bio&#34;&gt;Suggested Assignment: Bio&lt;/h3&gt;
-&lt;p&gt;Post a &lt;strong&gt;professional&lt;/strong&gt; three paragraph Bio on
-&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;. Please post it
-under teh folder bio. Use as subject &amp;ldquo;Bio: Lastname, Firstname&amp;rdquo;. Research what a
-provessional Biograpghy is.&lt;/p&gt;
-&lt;p&gt;Remember to write it in 3rd person and focus on professional
-activities. Look up the Bio from Geoffrey or Gregor as an example.&lt;/p&gt;
+&lt;h3 id=&#34;assignment-1&#34;&gt;Assignment 1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Post a &lt;strong&gt;professional&lt;/strong&gt; three paragraph Bio on &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc&#34;&gt;Piazza&lt;/a&gt;. Please post it under the folder bio. Use as subject &amp;ldquo;Bio: Lastname, Firstname&amp;rdquo;. Research what a professional Biography is. Remember to write it in 3rd person and focus on professional activities. Look up the Bios from Geoffrey or Gregor as examples.&lt;/li&gt;
+&lt;li&gt;Write report described in &lt;a href=&#34;https://iu.instructure.com/courses/1908830/assignments/11163939&#34;&gt;Homework 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Please study recorded lectures either in zoom or in &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/introduction/&#34;&gt;Introduction to AI-Driven Digital Transformation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;week-2&#34;&gt;Week 2&lt;/h2&gt;
-&lt;p&gt;This did the remaining 60% of the introductory slides.
-This presentation is also available as 8 recorded presentations
-under &amp;ldquo;introduction&amp;rdquo;. Student questions were answered&lt;/p&gt;
+&lt;p&gt;This did the remaining 60% of the introductory slides. This presentation is also available as &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/introduction/&#34;&gt;8 recorded presentations&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Student questions were answered&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/r1HFofbAbHk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&#34;notebooks&#34;&gt;Notebooks&lt;/h3&gt;
+&lt;h3 id=&#34;video-and-assignment&#34;&gt;Video and Assignment&lt;/h3&gt;
+&lt;p&gt;These introduce Colab with examples and a Homework using Colab for deep learning. Please study videos and do homework.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/python/google-colab/python-google-colab/&#34;&gt;Introduction to Google Colab&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/python_initial/&#34;&gt;Python Warm-up Notebook&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/google_colab_exercise/&#34;&gt;Python MNIST Notebook&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://iu.instructure.com/courses/1908830/assignments/11187838&#34;&gt;Homework 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;week-3&#34;&gt;Week 3&lt;/h3&gt;
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+&lt;p&gt;Please study &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/usecases/&#34;&gt;Big Data Use Cases Survey&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;big-data-in-pictures&#34;&gt;Big Data in pictures&lt;/h3&gt;
 &lt;p&gt;Collage of Big Data Players&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png&#34; alt=&#34;Collage of Big Data Players&#34;&gt;&lt;/p&gt;

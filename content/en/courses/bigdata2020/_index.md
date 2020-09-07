@@ -32,39 +32,77 @@ refresh the page.
 
 We will use the following material:
 
-<!--
-|  [{{< figure src="/images/greendoor.png" width="15%">}} Introduction (Web)](/modules/bigdataapplications/2020/introduction)|
--->
-
 
 ## Course Lectures and Management
 
-|     |
-| --- |
-|  [{{< figure src="/images/lecture.png" width="15%">}} Course Lectures. These meeting notes are updated weekly (Web)](/modules/bigdataapplications/2020/course_lectures)|
+
+{{< view_module alt="Course Lectures"
+	src="/images/lecture.png"
+	url="/modules/bigdataapplications/2020/course_lectures"
+>}}
+
+Course Lectures. These meeting notes are updated weekly (Web)
+
+{{< /view_module >}}
+
 
 ## Lectures on Particular Topics
 
 ### Introduction to AI-Driven Digital Transformation
 
-|     |
-| --- |
-|[{{< figure src="/images/lecture.png" width="15%">}} Introduction to AI-Driven Digital Transformation (Web)](/modules/bigdataapplications/2020/introduction)|
+{{< view_module
+	alt="Introduction to AI-Driven Digital Transformation (Web)"
+	src="/images/lecture.png"
+	url="/modules/bigdataapplications/2020/introduction"
+>}}
 
+Introduction to AI-Driven Digital Transformation (Web)
+
+{{< /view_module >}}
 
 ### Big Data Usecases Survey
 
-|     |
-| --- |
-|  [{{< figure src="/images/usecases.png" width="15%">}} This module covers 51 usecases of Big data that emerged from a NIST (National Institute for Standards and Technology) study of Big data. We cover the NIST Big Data Public Working Group (NBD-PWG) Process and summarizes the work of five subgroups: Definitions and Taxonomies Subgroup, Reference Architecture Subgroup, Security and Privacy Subgroup, Technology Roadmap Subgroup and the Requirements andUse Case Subgroup. 51 use cases collected in this process are briefly discussed with a classification of the source of parallelism and the high and low level computational structure. We describe the key features of this classification.](/modules/bigdataapplications/2020/usecases)|
+{{< view_module
+	alt="Big Data Usecases Survey"
+	src="/images/usecases.png"
+	url="/modules/bigdataapplications/2020/usecases"
+>}}
+
+This module covers 51 usecases of Big data that emerged from a NIST (National Institute for Standards and Technology) study of Big data. We cover the NIST Big Data Public Working Group (NBD-PWG) Process and summarizes the work of five subgroups: Definitions and Taxonomies Subgroup, Reference Architecture Subgroup, Security and Privacy Subgroup, Technology Roadmap Subgroup and the Requirements andUse Case Subgroup. 51 use cases collected in this process are briefly discussed with a classification of the source of parallelism and the high and low level computational structure. We describe the key features of this classification.
+
+{{< /view_module >}}
 
 ### Introduction to Google Colab
 
-|     |
-| --- |
-|  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
-|  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Python on Google Colab (Web)](/modules/bigdataapplications/2020/python_initial) |
-|  [{{< figure src="/images/colab.png" width="15%">}} MNIST Classification on Google Colab (Web)](/modules/bigdataapplications/2020/google_colab_exercise) |
+{{< view_module
+	alt="A Gentle Introduction to Google Colab (Web)"
+	src="/images/colab.png"
+	url="/modules/python/google-colab/python-google-colab"
+	>}}
+
+A Gentle Introduction to Google Colab (Web)
+
+{{< /view_module >}}
+
+{{< view_module
+	alt="A Gentle Introduction to Python on Google Colab (Web)"
+	src="/images/colab.png"
+	url="/modules/bigdataapplications/2020/python_initial"
+>}}
+
+A Gentle Introduction to Python on Google Colab (Web)
+
+{{< /view_module >}}
+
+{{< view_module
+	alt="MNIST Classification on Google Colab (Web)"
+	src="/images/colab.png"
+	url="/modules/bigdataapplications/2020/google_colab_exercise"
+	>}}
+	
+MNIST Classification on Google Colab (Web)
+	
+{{< /view_module >}}
 
 ## Preview Material
 
@@ -72,20 +110,36 @@ These lecture are still being worked but are included to give students  an intui
 
 ### Physics
 
-|     |
-| --- |
-|  [{{< figure src="/images/physics.png" width="15%">}} Big Data Applications and Analytics Discovery of Higgs Boson Part I (Unit 8) Section Units 9-11 Summary: This section starts by describing the LHC accelerator at CERN and evidence found by the experiments suggesting existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of shape of signal and various background and with various event totals. Then random variables and some simple principles of statistics are introduced with explanation as to why they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why they seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. The Central Limit Theorem concludes discussion.](/modules/bigdataapplications/2020/physics)|
+{{< view_module
+	alt="Physics"
+	src="/images/physics.png"
+	url="/modules/bigdataapplications/2020/physics"
+>}}
+
+Big Data Applications and Analytics Discovery of Higgs Boson Part I (Unit 8) Section Units 9-11 Summary: This section starts by describing the LHC accelerator at CERN and evidence found by the experiments suggesting existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of shape of signal and various background and with various event totals. Then random variables and some simple principles of statistics are introduced with explanation as to why they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why they seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. The Central Limit Theorem concludes discussion.
+
+{{< /view_module >}}
 
 ### Sports
 
-|     |
-| --- |
-|  [{{< figure src="/images/sport.png" width="15%">}} Sports sees significant growth in analytics with pervasive statistics shifting to more sophisticated measures. We start with baseball as game is built around segments dominated by individuals where detailed (video/image) achievement measures including PITCHf/x and FIELDf/x are moving field into big data arena. There are interesting relationships between the economics of sports and big data analytics. We look at Wearables and consumer sports/recreation. The importance of spatial visualization is discussed. We look at other Sports: Soccer, Olympics, NFL Football, Basketball, Tennis and Horse Racing.](/modules/bigdataapplications/2020/sports)|
+{{< view_module
+	alt="Sports"
+	src="/images/sport.png"
+	url="/modules/bigdataapplications/2020/sports"
+>}}
 
+Sports sees significant growth in analytics with pervasive statistics shifting to more sophisticated measures. We start with baseball as game is built around segments dominated by individuals where detailed (video/image) achievement measures including PITCHf/x and FIELDf/x are moving field into big data arena. There are interesting relationships between the economics of sports and big data analytics. We look at Wearables and consumer sports/recreation. The importance of spatial visualization is discussed. We look at other Sports: Soccer, Olympics, NFL Football, Basketball, Tennis and Horse Racing.
+
+{{< /view_module >}}
 
 ## Complementary Material
 
+* When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
+  other systems.
+
+
 ### Scientific Writing with Markdown
+
 |     |
 | --- |
 |  [{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) Scientific Writing with Markdown [(ePub)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub) [(PDF)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) |
@@ -93,16 +147,27 @@ These lecture are still being worked but are included to give students  an intui
 
 ### Git Pull Request
 
-|     |
-| --- |
-|  [{{< figure src="/images/youtube.jpg" width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) [Git Pull Request](/modules/git-pull-request/) |
-|  [{{< figure src="/images/piazza.png" width="15%">}}](https://piazza.com/class/kedccsbsthm5sc) [Piazza](https://piazza.com/class/kedccsbsthm5sc) |
 
----
+{{< view_module alt="Git Pull Request"
+	src="/images/youtube.jpg"
+	url="/modules/git-pull-request/"
+>}}
+
+Git Pull Request. Here you will learn how to do a simple git pull request either via the GitHub GUI or the git command line tools
+
+{{< /view_module >}}
+
+{{< view_module alt="Piazza"
+	src="/images/piazza.png"
+	url="https://piazza.com/class/kedccsbsthm5sc"
+>}}
+
+Piazza. The link for all those that participate in the IU class to its class Piazza.
+
+{{< /view_module >}}
 
 
-* When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
-  other systems.
+
 
 
 ### Introduction to Linux

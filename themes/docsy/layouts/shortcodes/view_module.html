@@ -1,0 +1,18 @@
+<table>
+  <colgroup>
+    <col style="width:15%;background-color:white">
+    <col style="width:100%;background-color:light-grey">
+  </colgroup>
+  <tr>
+    <td>
+      <a href="{{ .Get "url" }}">
+        <img alt="{{ .Get "alt" }}" src="{{ .Get "src" }}"/>
+      </a>
+    </td>
+    <td>
+      <a href="{{ .Get "url" }}">
+         {{ .Inner }}
+      </a>
+   </td>
+  </tr>
+</table>
