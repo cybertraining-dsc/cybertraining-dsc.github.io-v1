@@ -68,7 +68,7 @@ We will use the following material:
 
 ## Preview Material
 
-These lecture are still being worked but are included to give students  an intuition for the Future
+These lecture are still being worked but are included to give students  an intuition for the Future.
 
 ### Physics
 
