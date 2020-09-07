@@ -8209,8 +8209,7 @@ management.” Web Page, May-2017 [Online]. Available:
       <description>
         
         
-        &lt;h1 id=&#34;mnist-classification-on-google-colab&#34;&gt;MNIST Classification on Google Colab&lt;/h1&gt;
-&lt;div class=&#34;aside&#34;&gt;
+        &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
     &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
