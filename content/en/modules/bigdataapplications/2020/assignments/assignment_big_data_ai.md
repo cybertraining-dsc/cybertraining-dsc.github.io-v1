@@ -1,3 +1,5 @@
+## Homework 1: Big Data AI 
+
 a) Look at section Section G of overview ([slides 67 to 84](https://docs.google.com/presentation/d/1ztKIAb6GaIcaOtiyWEHuRdR9z2xPyucgbhw-EpiDIRI/edit?usp=sharing)). 
 Chose an area where Big Data (and AI) is radically changing the operation of that industry.  
 Chose an area where either the area or its change is most interesting to you so I can learn what interests you
