@@ -9,11 +9,14 @@ description: >
 
 ![This is an image](/images/network-4774766_1920.jpg)
 
-<!--
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+
+This course introduces the students to Cloud Big Data
+Applications we provide the following sections
+
+{{< table_of_contents >}}
+
 {{% /pageinfo %}}
--->
 
 ## Class Material 
 
@@ -33,28 +36,68 @@ We will use the following material:
 |  [{{< figure src="/images/greendoor.png" width="15%">}} Introduction (Web)](/modules/bigdataapplications/2020/introduction)|
 -->
 
+## Introduction to AI-Driven Digital Transformation
+
 |     |
 | --- |
 |[{{< figure src="/images/lecture.png" width="15%">}} Introduction to AI-Driven Digital Transformation (Web)](/modules/bigdataapplications/2020/introduction)|
+
+## Course Lectures
+
+|     |
+| --- |
 |  [{{< figure src="/images/lecture.png" width="15%">}} Course Lectures. These meeting notes are updated weekly (Web)](/modules/bigdataapplications/2020/course_lectures)|
+
+## Big Data Usecases Survey
+
+|     |
+| --- |
 |  [{{< figure src="/images/usecases.png" width="15%">}} Big Data Usecases Survey (Web)](/modules/bigdataapplications/2020/usecases)|
+
+## Introduction to Google Colab
+
+|     |
+| --- |
 |  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
 |  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Python on Google Colab (Web)](/modules/bigdataapplications/2020/python_initial) |
 |  [{{< figure src="/images/colab.png" width="15%">}} MNIST Classification on Google Colab (Web)](/modules/bigdataapplications/2020/google_colab_exercise) |
+
+## Physics
+
+|     |
+| --- |
 |  [{{< figure src="/images/physics.png" width="15%">}} Physics (Web)](/modules/bigdataapplications/2020/physics)|
+
+## Sports
+
+|     |
+| --- |
 |  [{{< figure src="/images/sport.png" width="15%">}} Sports (Web)](/modules/bigdataapplications/2020/sports)|
+
+
+## Complementary Material
+
+### Scientific Writing with Markdown
+|     |
+| --- |
 |  [{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) Scientific Writing with Markdown [(ePub)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub) [(PDF)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) |
+
+
+### Git Pull Request
+
+|     |
+| --- |
 |  [{{< figure src="/images/youtube.jpg" width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) [Git Pull Request](/modules/git-pull-request/) |
 |  [{{< figure src="/images/piazza.png" width="15%">}}](https://piazza.com/class/kedccsbsthm5sc) [Piazza](https://piazza.com/class/kedccsbsthm5sc) |
 
 ---
 
 
-
 * When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
   other systems.
 
-## Complementary material
+
+### Introduction to Linux
 
 This course does not require you to do much Linux. However, if you do
 need it, we recommend the following as starting point listed 
@@ -75,7 +118,7 @@ A subset of modules used in this class are also available from this link
 | --- |
 |  [{{< figure src="/images/puzzle.png" width="15%">}} Big Data Application lectures will be recorded and published through this link. A notification will be sent to you when a significant update is done. The material is the same as referenced above. (Web)](/modules/bigdataapplications/2020)|
 
-## Older course material
+### Older Course Material
 
 Older versions of the material are available at
 
