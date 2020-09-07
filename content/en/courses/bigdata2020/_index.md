@@ -35,6 +35,7 @@ We will use the following material:
 
 |     |
 | --- |
+|[{{< figure src="/images/lecture.png" width="15%">}} Introduction to AI-Driven Digital Transformation (Web)](/modules/bigdataapplications/2020/introduction)|
 |  [{{< figure src="/images/lecture.png" width="15%">}} Course Lectures. These meeting notes are updated weekly (Web)](/modules/bigdataapplications/2020/course_lectures)|
 |  [{{< figure src="/images/usecases.png" width="15%">}} Big Data Usecases Survey (Web)](/modules/bigdataapplications/2020/usecases)|
 |  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
