@@ -6,8 +6,6 @@ description: >
   MNIST Classification on Google Colab
 ---
 
-# MNIST Classification on Google Colab
-
 
 <div class="aside">
   <table style="width:100%">
