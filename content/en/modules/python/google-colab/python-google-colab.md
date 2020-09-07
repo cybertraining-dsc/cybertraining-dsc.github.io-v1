@@ -1,14 +1,14 @@
 ---
-title: "Google Colab"
-linkTitle: "Google Colab"
+title: "Google Colab for MNIST"
+linkTitle: "Google Colab for MNIST"
 weight: 20
 description: >
-  A gentle introduction to Google Colab
+  A gentle introduction to Google Colab for Deep Learning
 ---
 
 {{% pageinfo %}}
 In this module we are going to introduce you as to how to use Google Colab 
-to run deep learning models.
+to run deep learning models illustrated by MNIST dataset
 {{% /pageinfo %}}
 
 
