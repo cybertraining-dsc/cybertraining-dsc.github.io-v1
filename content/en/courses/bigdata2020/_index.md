@@ -37,11 +37,11 @@ We will use the following material:
 | --- |
 |  [{{< figure src="/images/lecture.png" width="15%">}} Course Lectures. These meeting notes are updated weekly (Web)](/modules/bigdataapplications/2020/course_lectures)|
 |  [{{< figure src="/images/usecases.png" width="15%">}} Big Data Usecases Survey (Web)](/modules/bigdataapplications/2020/usecases)|
-|  [{{< figure src="/images/physics.png" width="15%">}} Physics (Web)](/modules/bigdataapplications/2020/physics)|
-|  [{{< figure src="/images/sport.png" width="15%">}} Sports (Web)](/modules/bigdataapplications/2020/sports)|
 |  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Python on Google Colab (Web)](/modules/bigdataapplications/2020/python_initial) |
 |  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Google Colab (Web)](/modules/python/google-colab/python-google-colab) |
 |  [{{< figure src="/images/colab.png" width="15%">}} MNIST on Google Colab (Web)](/modules/bigdataapplications/2020/google_colab_exercise) |
+|  [{{< figure src="/images/physics.png" width="15%">}} Physics (Web)](/modules/bigdataapplications/2020/physics)|
+|  [{{< figure src="/images/sport.png" width="15%">}} Sports (Web)](/modules/bigdataapplications/2020/sports)|
 |  [{{< figure src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) Scientific Writing with Markdown [(ePub)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub) [(PDF)](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) |
 |  [{{< figure src="/images/youtube.jpg" width="15%">}}](https://laszewski.github.io/publication/las-20-book-markdown/) [Git Pull Request](/modules/git-pull-request/) |
 |  [{{< figure src="/images/piazza.png" width="15%">}}](https://piazza.com/class/kedccsbsthm5sc) [Piazza](https://piazza.com/class/kedccsbsthm5sc) |
