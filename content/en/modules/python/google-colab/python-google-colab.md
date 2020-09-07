@@ -11,9 +11,6 @@ In this module we are going to introduce you to using Google Colab.
 {{% /pageinfo %}}
 
 
-
-# Google Colab
-
 In this section we are going to introduce you, how to use Google Colab
 to run deep learning models.
 
