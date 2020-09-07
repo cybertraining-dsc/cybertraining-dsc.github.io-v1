@@ -36,25 +36,29 @@ We will use the following material:
 |  [{{< figure src="/images/greendoor.png" width="15%">}} Introduction (Web)](/modules/bigdataapplications/2020/introduction)|
 -->
 
-## Introduction to AI-Driven Digital Transformation
 
-|     |
-| --- |
-|[{{< figure src="/images/lecture.png" width="15%">}} Introduction to AI-Driven Digital Transformation (Web)](/modules/bigdataapplications/2020/introduction)|
-
-## Course Lectures
+## Course Lectures and Management
 
 |     |
 | --- |
 |  [{{< figure src="/images/lecture.png" width="15%">}} Course Lectures. These meeting notes are updated weekly (Web)](/modules/bigdataapplications/2020/course_lectures)|
 
-## Big Data Usecases Survey
+## Lectures on Particular Topics
+
+### Introduction to AI-Driven Digital Transformation
+
+|     |
+| --- |
+|[{{< figure src="/images/lecture.png" width="15%">}} Introduction to AI-Driven Digital Transformation (Web)](/modules/bigdataapplications/2020/introduction)|
+
+
+### Big Data Usecases Survey
 
 |     |
 | --- |
 |  [{{< figure src="/images/usecases.png" width="15%">}} Big Data Usecases Survey (Web)](/modules/bigdataapplications/2020/usecases)|
 
-## Introduction to Google Colab
+### Introduction to Google Colab
 
 |     |
 | --- |
@@ -62,13 +66,17 @@ We will use the following material:
 |  [{{< figure src="/images/colab.png" width="15%">}} A Gentle Introduction to Python on Google Colab (Web)](/modules/bigdataapplications/2020/python_initial) |
 |  [{{< figure src="/images/colab.png" width="15%">}} MNIST Classification on Google Colab (Web)](/modules/bigdataapplications/2020/google_colab_exercise) |
 
-## Physics
+## Preview Material
+
+These lecture are still being worked but are included to give students  an intuition for the Future
+
+### Physics
 
 |     |
 | --- |
 |  [{{< figure src="/images/physics.png" width="15%">}} Physics (Web)](/modules/bigdataapplications/2020/physics)|
 
-## Sports
+### Sports
 
 |     |
 | --- |
