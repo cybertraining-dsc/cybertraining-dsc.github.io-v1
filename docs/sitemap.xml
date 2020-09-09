@@ -388,6 +388,11 @@
   </url>
   
   <url>
+    <loc>/modules/mnist-reu/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/pandoc/</loc>
     <lastmod>2020-08-24T11:24:44-04:00</lastmod>
   </url>
@@ -493,6 +498,10 @@
   </url>
   
   <url>
+    <loc>/modules/sample/alert/</loc>
+  </url>
+  
+  <url>
     <loc>/blog/</loc>
     <lastmod>2020-08-20T00:29:44-04:00</lastmod>
   </url>
@@ -514,7 +523,7 @@
   
   <url>
     <loc>/modules/sample/mermaid/</loc>
-    <lastmod>2020-09-03T04:27:51-04:00</lastmod>
+    <lastmod>2020-09-07T13:49:34-04:00</lastmod>
   </url>
   
   <url>

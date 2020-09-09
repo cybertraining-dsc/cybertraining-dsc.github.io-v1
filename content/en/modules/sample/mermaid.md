@@ -1,37 +1,37 @@
 ---
 title: Mermaid Sample
 ---
-
 {{< mermaid >}}
 graph LR
-A[Introduction]
-B[Usecases]
-C[Physics]
-D[Sports]
+
+	A[Introduction]
+	B[Usecases]
+	C[Physics]
+	D[Sports]
+
 A-->B-->C-->D
+
+click A "/courses/bigdata2020/#introduction-to-ai-driven-digital-transformation" _blank
+click B "/courses/bigdata2020/#big-data-usecases-survey" _blank
+click C "/courses/bigdata2020/#physics" _blank
+click D "/courses/bigdata2020/#sports" _blank
+
 {{</ mermaid >}}
+
 
 {{< mermaid >}}
 gantt
-    title Class
-    dateFormat  YYYY-MM-DD
-    section Week 1
-    Introduction     :w1, 2020-08-01, 7d
-    Bio              :after w1  , 1d
-    Github           :after w1  , 1d	
-{{</ mermaid >}}
-
-{{< mermaid >}}
-gantt
-    title Class
+    title Class Calendar
     dateFormat  YYYY-MM-DD
     section Lectures
-    Overview         :w1, 2020-08-01, 7d
-    Introduction     :after w1, 7d
-    Sport            :after w2, 7d
-    Github           :after w1, 1d	
+    Overview         :w1, 2020-08-28, 7d
+    Introduction     :w2, 2020-09-04, 7d 
+    Physics          :w3, 2020-09-11, 7d 
+    Sport            :w4, 2020-09-18, 7d
     section Practice
-    Colab            after :w1, 7d
+	Colab            :after w1, 14d
+    Github           :after w2, 7d	
+
 {{</ mermaid >}}
 
 To design a chart you can use the [live edior](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19).
