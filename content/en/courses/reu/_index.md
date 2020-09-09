@@ -7,6 +7,13 @@ description: >
   This course introduces the REU students to various topics in Intelligent Systems Engineering. The course was taught in Summer 2020.
 ---
 
+{{% pageinfo %}}
+
+This course introduces the REU students to various topics in Intelligent Systems Engineering. The course was taught in Summer 2020.
+
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
 
 ## Computational Foundations	
 
