@@ -1,5 +1,7 @@
 ---
 title: Mermaid Sample
+categories: [sample]
+tags: [mermaid,graph]
 ---
 {{< mermaid >}}
 graph LR

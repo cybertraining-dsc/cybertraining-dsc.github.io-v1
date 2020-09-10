@@ -1,0 +1,195 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybertraining – sample</title>
+    <link>/categories/sample/</link>
+    <description>Recent content in sample on Cybertraining</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/categories/sample/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Modules: Pandoc</title>
+      <link>/modules/sample/pandoc/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/sample/pandoc/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here is a footnote reference,&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and another.&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Here comes the more complete abstract about this module, while the
+description is a short summary, the abstract is a bit more verbose.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Splash: An optional module related image may be nice to start the image may be nice to create a splash the learners find attractive.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://laszewski.github.io/book/python/&#34;&gt;&lt;figure&gt;
+    &lt;img src=&#34;https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png&#34; width=&#34;10%&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Introduction to Python&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h2&gt;
+&lt;p&gt;Describe what knowlede needs to be here to start the module. Use a list and be specific as much as possible:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer with Python 3.8.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;effort&#34;&gt;Effort&lt;/h2&gt;
+&lt;p&gt;If possible describe here how much effort it takes to complete the module. Use a list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 hour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;list-of-topics-covered&#34;&gt;List of Topics covered&lt;/h2&gt;
+&lt;p&gt;Please list here the topics that are covered by the module A list is often the prefered way to do that. Use the abstract/pageinfo to provide a more textual description.&lt;/p&gt;
+&lt;h2 id=&#34;organization&#34;&gt;Organization&lt;/h2&gt;
+&lt;p&gt;Please decribe how the MOdule is organized, if needed&lt;/p&gt;
+&lt;h2 id=&#34;unit-1-tbd&#34;&gt;Unit 1: TBD&lt;/h2&gt;
+&lt;p&gt;Include Unit 1 here&lt;/p&gt;
+&lt;h2 id=&#34;unit-2-tbd&#34;&gt;Unit 2: TBD&lt;/h2&gt;
+&lt;p&gt;Include Unit 2 here&lt;/p&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;p&gt;Include the assignments here. Use a numbered list.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Put the refernces here&lt;/p&gt;
+&lt;h1 id=&#34;test&#34;&gt;test&lt;/h1&gt;
+&lt;p&gt;cite [@doi:10.1002/cpe.572]&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Here is the footnote. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Sample Module</title>
+      <link>/modules/sample/module/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/sample/module/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Here comes the more complete abstract about this module, while the
+description is a short summary, the abstract is a bit more verbose.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Splash: An optional module related image may be nice to start the image may be nice to create a splash the learners find attractive.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://laszewski.github.io/book/python/&#34;&gt;&lt;figure&gt;
+    &lt;img src=&#34;https://github.com/laszewski/laszewski.github.io/raw/master/book/python/featured.png&#34; width=&#34;10%&#34;/&gt; &lt;figcaption&gt;
+            &lt;h4&gt;Introduction to Python&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h2&gt;
+&lt;p&gt;Describe what knowlede needs to be here to start the module. Use a list and be specific as much as possible:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer with Python 3.8.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;effort&#34;&gt;Effort&lt;/h2&gt;
+&lt;p&gt;If possible describe here how much effort it takes to complete the module. Use a list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 hour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;list-of-topics-covered&#34;&gt;List of Topics covered&lt;/h2&gt;
+&lt;p&gt;Please list here the topics that are covered by the module A list is often the prefered way to do that. Use the abstract/pageinfo to provide a more textual description.&lt;/p&gt;
+&lt;h2 id=&#34;organization&#34;&gt;Organization&lt;/h2&gt;
+&lt;p&gt;Please decribe how the MOdule is organized, if needed&lt;/p&gt;
+&lt;h2 id=&#34;unit-1-tbd&#34;&gt;Unit 1: TBD&lt;/h2&gt;
+&lt;p&gt;Include Unit 1 here&lt;/p&gt;
+&lt;h2 id=&#34;unit-2-tbd&#34;&gt;Unit 2: TBD&lt;/h2&gt;
+&lt;p&gt;Include Unit 2 here&lt;/p&gt;
+&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;p&gt;Include the assignments here. Use a numbered list.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Put the refernces here&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Figure Sample</title>
+      <link>/modules/sample/figure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/sample/figure/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png&#34; alt=&#34;A sample caption&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Mermaid Sample</title>
+      <link>/modules/sample/mermaid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/sample/mermaid/</guid>
+      <description>
+        
+        
+        &lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+  
+graph LR
+
+	A[Introduction]
+	B[Usecases]
+	C[Physics]
+	D[Sports]
+
+A--&gt;B--&gt;C--&gt;D
+
+click A &#34;/courses/bigdata2020/#introduction-to-ai-driven-digital-transformation&#34; _blank
+click B &#34;/courses/bigdata2020/#big-data-usecases-survey&#34; _blank
+click C &#34;/courses/bigdata2020/#physics&#34; _blank
+click D &#34;/courses/bigdata2020/#sports&#34; _blank
+
+
+&lt;/div&gt;
+&lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+  
+gantt
+    title Class Calendar
+    dateFormat  YYYY-MM-DD
+    section Lectures
+    Overview         :w1, 2020-08-28, 7d
+    Introduction     :w2, 2020-09-04, 7d 
+    Physics          :w3, 2020-09-11, 7d 
+    Sport            :w4, 2020-09-18, 7d
+    section Practice
+	Colab            :after w1, 14d
+    Github           :after w2, 7d	
+
+
+&lt;/div&gt;
+&lt;p&gt;To design a chart you can use the &lt;a href=&#34;https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19&#34;&gt;live edior&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

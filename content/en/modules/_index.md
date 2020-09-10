@@ -16,3 +16,8 @@ At this time, we have not yet placed additional modules here.
 
 Please revisit this page ...
 
+## Tag Cloud
+
+{{< tag_cloud >}}
+
+## List

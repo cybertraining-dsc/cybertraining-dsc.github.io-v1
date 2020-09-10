@@ -5,6 +5,8 @@ weight: 100
 date: 2020-08-15
 description: >
   In this section you will be using a short description that is displayed in the module summary page
+categories: [sample]
+tags: [module]
 #resources:
 #- src: "**.{png,jpg}"
 #  title: "Image #:counter"
