@@ -50,6 +50,10 @@ These introduce Colab with examples and a Homework using Colab for deep learning
 
 ### Week 3
 
+This lecture reviewed where we had got to and introduced the new Cybertraining web site. Then we gave an overview of the use case lectures which are to be studied this week.
+
+{{, youtube "AFQLwfpm6ow" >}}. The use case overview slides are available as [Google Slides](https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing)
+
 ### Videos
 
 Please study [Big Data Use Cases Survey](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/usecases/)
