@@ -53,7 +53,7 @@ These introduce Colab with examples and a Homework using Colab for deep learning
 This lecture reviewed where we had got to and introduced the new Cybertraining web site. Then we gave an overview of the use case lectures which are to be studied this week.  The use case overview slides are available as [Google Slides](https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing)
 
 
-{{, youtube "AFQLwfpm6ow" >}}.
+{{< youtube "AFQLwfpm6ow" >}}.
 
 ### Videos
 
