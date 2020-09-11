@@ -29,7 +29,7 @@ It is also assumed that the user has installed and has familiarity with the foll
 
 * 15 minutes (not including assignment)
 
-### 1.3 List of Topics covered
+### 1.3 List of Topics Covered
 
 In this module, we focus on the following:
 
@@ -41,16 +41,20 @@ In this module, we focus on the following:
 ## 2. The Python Code
 
 First, let's ensure we are in the correct directory. If you followed the cloudmesh-openapi installation directions as dictated in the [installation guide](https://github.com/cloudmesh/cloudmesh-openapi), simply navigate to the root directory of `cloudmesh-openapi`. Notice how we are still working in our python virtual environment `ENV3` from the installation guide.
+
 ```
 (ENV3) > pwd
 ~/cm/cloudmesh-openapi
 ```
+
 Let's take a look at the PipelineAnova SVM example code.
+
 ```
 (ENV3) > code ./tests/Scikitlearn-experimental/sklearn_svm.py
 ```
 
 The class within this file has two main methods to interact with (except for the file upload capability which is added at runtime)
+
 ```
 @classmethod
 def train(cls, filename: str) -> str:
@@ -70,9 +74,10 @@ def make_prediction(cls, model_name: str, params: str):
     """
     # some code...
 ```
+
 Note the parameters that each of these methods takes in. These parameters are expected as part of the stateless request for each method.
 
-## 3. Generating the openapi YAML file
+## 3. Generating the OpenAPI YAML file
 
 Let us now use the python code from above to create the openapi YAML file that we will deploy onto our server. To correctly generate this file, use the following command:
 ```
@@ -82,17 +87,21 @@ Let us now use the python code from above to create the openapi YAML file that w
     \ --enable_upload
 ```
 Let us digest the options we have specified:
+
 * `--filename` indicates the path to the python file in which our code is located
-* `--import_class` notifies `cms openapi` that the YAML file is generated from a class. The name of this class is specified as `PipelineAnovaSVM`
+* `--import_class` notifies `cms openapi` that the YAML file is generated 
+  from a class. The name of this class is specified as `PipelineAnovaSVM`
 * `--enable_upload` allows the user to upload files to be stored on the server for reference. This flag causes `cms openapi` to auto-generate a new python file with the `upload` method appended to the end of 
 the file. For this example, you will notice a new file has been added in the same directory as `sklearn_svm.py`. The file is aptly called: `sklearn_svm_upload-enabled.py`
 
-## 4. (optional) The openapi YAML file
+## 4. The OpenAPI YAML File (optional) 
 
 If Section 2 above was correctly, cms will have generated the corresponding openapi YAML file. Let us take a look at it.
+
 ```
 (ENV3) > code ./tests/Scikitlearn-experimental/sklearn_svm.yaml
 ```
+
 This YAML file has a lot of information to digest. The basic structure is documented [here](https://swagger.io/docs/specification/basic-structure/). However, it is not necessary to understand this information to deploy RESTful APIs. 
 
 However, take a look at `paths:` on line 9 in this file. Under this section, we have several different endpoints for our API listed. Notice the correlation between the endpoints and the python file we generated from.
@@ -100,9 +109,11 @@ However, take a look at `paths:` on line 9 in this file. Under this section, we 
 ## 5. Starting the Server
 
 Using the YAML file from Section 2, we can now start the server.
+
 ```
 (ENV3) > cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml
 ```
+
 The server should now be active. Navigate to [http://localhost:8080/cloudmesh/ui](http://localhost:8080/cloudmesh/ui). 
 
 ![Unavailable](cloudmesh_ui.png)
@@ -133,9 +144,10 @@ Navigate to the `/make_prediction` endpoint as we have with other endpoints. Aga
 
 As expected, we have a classification of `Iris-setosa`. 
 
-## Section 7. (optional) Clean Up
+## 7. Clean Up (optional)
 
 At this point, we have created and trained a model using `cms openapi`. After satisfactory use, we can shut down the server. Let us check what we have running.
+
 ```
 (ENV3) > cms openapi server ps
 openapi server ps
@@ -152,11 +164,15 @@ INFO: Running Cloudmesh OpenAPI Servers
 |             |      | experimental/sklearn_svm.yaml                    |
 +-------------+------+--------------------------------------------------+
 ```
+
 We can stop the server with the following command:
+
 ```
 (ENV3) > cms openapi server stop sklearn_svm
 ```
+
 We can verify the server is shut down by running the `ps` command again.
+
 ```
 (ENV3) > 
 openapi server ps
@@ -170,6 +186,7 @@ None
 ## 8. Assignments
 
 Many ML models follow the same basic process for training and testing:
+
 1. Upload Training Data
 2. Train the model
 3. Test the model
