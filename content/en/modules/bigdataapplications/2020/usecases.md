@@ -12,7 +12,7 @@ This unit has four lectures (slide=decks). The survey is 6 years old but the ill
 * 3. Common features of the 51 Use Cases
 * 4. 10 Patterns of data -- computer -- user interaction seen in Big Data Applications
 
-There is an overview of these lectures in The use case overview slides are available as [Google Slides](https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing)
+There is an overview of these lectures below. The use case overview slides recorded here are available as [Google Slides](https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing)
 
 {{< youtube "AFQLwfpm6ow" >}}.
 
