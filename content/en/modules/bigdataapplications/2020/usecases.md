@@ -16,7 +16,7 @@ This unit has four lectures (slide=decks). The survey is 6 years old but the ill
 
 This is first of 4 lectures on Big Data Use Cases. It describes the process by which NIST produced this survey
 
-[Slides](https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing)
+[Presentation](https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing) or [Google Slides](https://docs.google.com/presentation/d/1BQOuxKU3-y1v6s_nTpSp-3y81EivfanfwlTP-lg_-Tc/edit?usp=sharing)
 
 ### Use Case 1-1 Introduction to NIST Big Data Public Working Group
 
@@ -87,7 +87,7 @@ http://hpc-abds.org/kaleidoscope/
 
 ## Lecture set 2: 51 Big Data Use Cases from  NIST Big Data Public Working Group (NBD-PWG)
 
-[Slides](https://drive.google.com/file/d/1_m97KGvBu0Fkx47Fkp78_8m89ni2P8jK/view?usp=sharing)
+[Presentation](https://drive.google.com/file/d/1_m97KGvBu0Fkx47Fkp78_8m89ni2P8jK/view?usp=sharing) or [Google Slides](https://docs.google.com/presentation/d/1sZCiIeIdiLjq5eWziJgvuaDzYxAggo63w-3tv504oMk/edit?usp=sharing)
 
 ### Use Case 2-1 Government Use Cases
 
@@ -227,7 +227,7 @@ level computational structure. The first lesson is an introduction to
 all categories and the further lessons give details of particular
 categories.
 
-[Slides](https://drive.google.com/file/d/1rAYrSaI1gNMNRcoJPy9oGVg5FdSeka5m/view?usp=sharing)
+[Presentation](https://drive.google.com/file/d/1rAYrSaI1gNMNRcoJPy9oGVg5FdSeka5m/view?usp=sharing) or [Google Slides](https://docs.google.com/presentation/d/1GYLJse6s3TJtq00DcrhcNw5AA24hyBm85ZV5VhMV0ls/edit?usp=sharing)
 
 ### Use Case 3-1 Summary of Use Case Classification
 
@@ -307,7 +307,7 @@ This video looks at several efforts to divide applications into categories of re
 
 ## Lecture set 4. The 10 Use Case Patterns from the NIST Big Data Public Working Group (NBD-PWG)
 
-[Slides](https://drive.google.com/file/d/1Rs2h7JTaTbqkZluigD7Wk_22kiaKuZ9s/view?usp=sharing)
+[Presentation](https://drive.google.com/file/d/1Rs2h7JTaTbqkZluigD7Wk_22kiaKuZ9s/view?usp=sharing) or [Google Slides](https://docs.google.com/presentation/d/1uD17-CHCFlr05tdmwB8osmIT1vQR-FdDu4A2puNQqs8/edit?usp=sharing)
 
 
 In this last slide deck of the use cases unit, we will be focusing on 10 Use case patterns. This includes multi-user querying, real-time analytics, batch analytics, data movement from external data sources, interactive analysis, data visualization, ETL, data mining and orchestration of sequential and parallel data transformations. We go through the different ways the user and system interact in each case. The use case patterns are divided into 3 classes 1) initial examples 2) science data use case patterns and 3) remaining use case patterns.

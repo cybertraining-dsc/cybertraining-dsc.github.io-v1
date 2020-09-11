@@ -11,7 +11,10 @@ weight: 20
 On this page, we will deploy a Pipeline Anova SVM onto our openapi server, and subsequently train the model 
 with data and make predictions from said data. All code needed for this is provided in the [cloudmesh-openapi](https://github.com/cloudmesh/cloudmesh-openapi) repository. The code is largely based on this [sklearn example](https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html). 
 
+{{< table_of_contents >}}
+
 {{% /pageinfo %}}
+
 
 ## Prerequisite
 
@@ -166,5 +169,6 @@ Using the PipelineAnovaSVM code as a template, write python code for a new model
 ## References
 
 [sklearn](sikit-learn.org)
+
 
 
