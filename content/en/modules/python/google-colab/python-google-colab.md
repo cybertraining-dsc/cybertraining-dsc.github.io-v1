@@ -14,7 +14,16 @@ In this module we are going to introduce you to using Google Colab.
 In this section we are going to introduce you, how to use Google Colab
 to run deep learning models.
 
-## Introduction to Google Colab
+## 1. Updates
+
+1. Another Python notebook demonstrating StopWatch and Benchmark is available at:
+
+   * https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat
+
+2. The line `! pip install cloudmesh-installer` is not needed, but is used in the video.
+
+
+## 2. Introduction to Google Colab
 
 This video contains the introduction to Google Colab. In this section
 we will be learning how to start a Google Colab project.
@@ -22,7 +31,7 @@ we will be learning how to start a Google Colab project.
 
 {{< youtube "oSzhLJ_1Z8s" >}}
 
-## Programming in Google Colab
+## 3. Programming in Google Colab
 
 In this video we will learn how to create a simple, Colab Notebook. 
 
@@ -33,7 +42,7 @@ pip install numpy
 ```
 {{< youtube "znE_knoNnDE" >}}
 
-## Benchmarking in Google Colab with Cloudmesh
+## 4. Benchmarking in Google Colab with Cloudmesh
 
 In this video we learn how to do a basic benchmark with Cloudmesh tools.
 Cloudmesh StopWatch will be used in this tutorial. 
@@ -47,5 +56,6 @@ pip install cloudmesh-common
 ```
 {{< youtube "wkpyp55tfRA" >}}
 
+## 5. Refernces
 
-
+1. Benchmark Colab Notebook. <https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat>
