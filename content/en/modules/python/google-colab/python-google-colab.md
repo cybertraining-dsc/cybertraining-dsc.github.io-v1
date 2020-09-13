@@ -8,6 +8,9 @@ description: >
 
 {{% pageinfo %}}
 In this module we are going to introduce you to using Google Colab.
+
+{{< table_of_contents >}}
+
 {{% /pageinfo %}}
 
 
