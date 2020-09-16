@@ -821,7 +821,6 @@ at DOE&amp;rsquo;s NERSC center
 &lt;/div&gt;
  {slides 1-10}&lt;/p&gt;
 &lt;p&gt;Refer to &lt;strong&gt;A: Studying Higgs Boson Analysis. Signal and Background, Part 1 The background&lt;/strong&gt;&lt;/p&gt;
-&lt;!--
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
@@ -829,15 +828,6 @@ at DOE&amp;rsquo;s NERSC center
   href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
     &lt;td&gt;&lt;a
   href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;  
-&lt;/div&gt;
---&gt;
-&lt;div class=&#34;aside&#34;&gt;
-  &lt;table style=&#34;width:100%&#34;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -859,8 +849,10 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -875,8 +867,10 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -884,8 +878,10 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_B.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_B.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_B.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_B.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -928,8 +924,10 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -944,8 +942,10 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -960,8 +960,10 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -990,17 +992,21 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_D.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_D.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_D.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_D.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
-&lt;/table&gt;
+&lt;/table&gt;  
 &lt;/div&gt;
 &lt;p&gt;Refer to &lt;strong&gt;C: Gaussian Distributions and Counting Experiments, Part 4&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -1022,8 +1028,10 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
@@ -1059,10 +1067,13 @@ at DOE&amp;rsquo;s NERSC center
 &lt;div class=&#34;aside&#34;&gt;
   &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a
+  href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
+    &lt;td&gt;&lt;a
+  href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
+&lt;/div&gt;
 &lt;/div&gt;
 
       </description>

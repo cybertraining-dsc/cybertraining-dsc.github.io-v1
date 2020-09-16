@@ -60,18 +60,7 @@ We discuss Python on both a backend server (FutureGrid - closed!) or a local cli
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1 The background** 
 
-<!--
 {{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
--->
-
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
 
 ### Event Counting 
 
@@ -87,14 +76,8 @@ This uses Monte Carlo data both to generate data like the experimental observati
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1,2,3,4,6,7**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
+
 
 ### Examples of Event Counting II: Change shape of background and number of Higgs Particles produced in experiment
 
@@ -104,33 +87,21 @@ This lesson continues the examination of Monte Carlo data looking at the effect 
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 5- Part 6**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
 
 Refer to **B: Studying Higgs Boson Analysis. Signal and Background**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_B.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+
+{{< ipynb name="E534_Higgs_Discovery_B.ipynb" >}}
+
 
 ### Resources 
 
 Python for Data Analysis: Agile Tools for Real-World Data By Wes McKinney, Publisher: O’Reilly Media, Released: October 2012, Pages: 472. 
 
-http://jwork.org/scavis/api/ 
+<http://jwork.org/scavis/api/> 
 
-https://en.wikipedia.org/wiki/DataMelt
+<https://en.wikipedia.org/wiki/DataMelt>
 
 ## Looking for Higgs Part III: Random variables, Physics and Normal Distributions
 
@@ -164,14 +135,8 @@ We introduce Poisson and Binomial distributions and define independent identical
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 1**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
 
 ### Gaussian Distributions 
 
@@ -181,14 +146,8 @@ We introduce the Gaussian distribution and give Python examples of the fluctuati
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 2**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
 
 ### Using Statistics 
 
@@ -198,14 +157,8 @@ We discuss the significance of a standard deviation and role of biases and insuf
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 3**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
 
 
 ### Resources 
@@ -234,24 +187,13 @@ We define random numbers and describe how to generate them on the computer givin
 
 Refer to **D: Random Numbers, Part 1**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_D.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_D.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>
-</div>
+{{< ipynb name="E534_Higgs_Discovery_D.ipynb" >}}
+
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 4**
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
 
 ### Binomial Distribution 
 
@@ -267,14 +209,8 @@ We introduce an advanced method accept/reject for generating random variables wi
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_A.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
-</div>
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
+
 
 ### Monte Carlo Method 
 
@@ -302,11 +238,7 @@ This lesson describes the difference between Bayes and frequency views of probab
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 5**
 
-<div class="aside">
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td>    
-    <td><a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github</a></td>
-  </tr>
-</table>  
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
+
 </div>
