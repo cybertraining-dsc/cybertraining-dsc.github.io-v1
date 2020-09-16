@@ -60,6 +60,10 @@ We discuss Python on both a backend server (FutureGrid - closed!) or a local cli
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1 The background** 
 
+<!--
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
+-->
+
 <div class="aside">
   <table style="width:100%">
   <tr>
