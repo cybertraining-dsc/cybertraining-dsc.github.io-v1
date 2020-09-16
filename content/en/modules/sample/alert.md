@@ -1,5 +1,6 @@
 ---
 title: Alert Sample
+linkTitle: "Alert"
 description: >
   The alert shortcode allows you to highlight information in your page.
 ---

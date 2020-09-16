@@ -1,6 +1,6 @@
 ---
-title: "Pandoc"
-linkTitle: "Pandoc Sample"
+title: "Pandoc Sample"
+linkTitle: "Pandoc"
 weight: 100
 date: 2020-08-15
 categories: [sample]
@@ -13,6 +13,7 @@ markup: pandoc
 {{% pageinfo %}}
 
 In this section we demonstret the usage of pandoc within hugo.
+
 
 {{% /pageinfo %}}
 

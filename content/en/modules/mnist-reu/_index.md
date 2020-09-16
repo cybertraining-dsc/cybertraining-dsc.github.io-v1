@@ -1,6 +1,6 @@
 ---
 title: "MNIST for REU Students"
-linkTitle: "MNIST for REU Students"
+linkTitle: "MNIST"
 weight: 100
 date: 2020-08-15
 description: >

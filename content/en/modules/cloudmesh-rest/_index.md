@@ -1,6 +1,6 @@
 ---
 title: "Autogenerating Analytics Rest Services"
-linkTitle: "Autogenerating Analytics Rest Services"
+linkTitle: "Analytics Services"
 description: >
     In this section, we will deploy a Pipeline Anova SVM API on an openapi service using cloudmesh-openapi
 weight: 20
