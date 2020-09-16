@@ -20,25 +20,25 @@ This unit is devoted to Python and Java experiments looking at histograms of Hig
 
 We return to the particle case with slides used in introduction and stress that particles often manifested as bumps in histograms and those bumps need to be large enough to stand out from the background in a statistically significant fashion.
 
-Video: {{< youtube "L0wIh0Z-ZwI" >}} {slides1-5} 
+Video: {{< syoutube "L0wIh0Z-ZwI" >}} {slides1-5} 
 
 ### Looking for Higgs Particle II Counting Introduction 2
 
 We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion
 
-Video: {{< youtube "UAMzmOgjj7I" >}} {slides 6-8}
+Video: {{< syoutube "UAMzmOgjj7I" >}} {slides 6-8}
 
 ### Experimental Facilities 
 
 We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion.
 
-Video: {{< youtube "BW12d780qT8" >}} {slides 9-14}
+Video: {{< syoutube "BW12d780qT8" >}} {slides 9-14}
 
 ### Accelerator Picture Gallery of Big Science 
 
 This lesson gives a small picture gallery of accelerators. Accelerators, detection chambers and magnets in tunnels and a large underground laboratory used for experiments where you need to be shielded from the background like cosmic rays.
 
-{{< youtube "WLJIxWWMYi8" >}} {slides 14-20}
+{{< syoutube "WLJIxWWMYi8" >}} {slides 14-20}
 
 ### Resources
 http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf 
@@ -56,7 +56,7 @@ Python Event Counting for Signal and Background (Part 2) This unit is devoted to
 
 We discuss Python on both a backend server (FutureGrid - closed!) or a local client. We point out a useful book on Python for data analysis. 
 
-{{< youtube "ulX3oIiAusI" >}} {slides 1-10}
+{{< syoutube "ulX3oIiAusI" >}} {slides 1-10}
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1 The background** 
 
@@ -73,13 +73,13 @@ Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1 The b
 
 We define event counting of data collection environments. We discuss the python and Java code to generate events according to a particular scenario (the important idea of Monte Carlo data). Here a sloping background plus either a Higgs particle generated similarly to LHC observation or one observed with better resolution (smaller measurement error).
 
-{{< youtube "h8-szCeFugQ" >}} {slides 11-14}
+{{< syoutube "h8-szCeFugQ" >}} {slides 11-14}
 
 ### Examples of Event Counting I with Python Examples of Signal and Background
 
 This uses Monte Carlo data both to generate data like the experimental observations and explore the effect of changing amount of data and changing measurement resolution for Higgs.
 
-{{< youtube "bl2f0tAzLj4" >}} {slides 15-23}
+{{< syoutube "bl2f0tAzLj4" >}} {slides 15-23}
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1,2,3,4,6,7**
 
@@ -96,7 +96,7 @@ Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1,2,3,4
 
 This lesson continues the examination of Monte Carlo data looking at the effect of change in the number of Higgs particles produced and in the change in the shape of the background.
 
-{{< youtube "bw3fd5cfQhk" >}} {slides 25-29} 
+{{< syoutube "bw3fd5cfQhk" >}} {slides 25-29} 
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 5- Part 6**
 
@@ -138,7 +138,7 @@ We introduce random variables and some simple principles of statistics and expla
 
 We go through the many different areas of statistics covered in the Physics unit. We define the statistics concept of a random variable
 
-{{< youtube "jCgY6MEfLWI" >}} {slides 1-6}
+{{< syoutube "jCgY6MEfLWI" >}} {slides 1-6}
 
 ### Physics and Random Variables 
 
@@ -146,17 +146,17 @@ We describe the DIKW pipeline for the analysis of this type of physics experimen
 
 #### Part 1
 
-{{< youtube "Tn3GBxgplxg" >}} {slides 6-9}
+{{< syoutube "Tn3GBxgplxg" >}} {slides 6-9}
 
 #### Part 2
 
-{{< youtube "qWEjp0OtvdA" >}} {slides 10-12}
+{{< syoutube "qWEjp0OtvdA" >}} {slides 10-12}
 
 ### Statistics of Events with Normal Distributions 
 
 We introduce Poisson and Binomial distributions and define independent identically distributed (IID) random variables. We give the law of large numbers defining the errors in counting and leading to Gaussian distributions for many things. We demonstrate this in Python experiments.
 
-{{< youtube "LMBtpWOOQLo" >}} {slides 13-19}
+{{< syoutube "LMBtpWOOQLo" >}} {slides 13-19}
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 1**
 
@@ -173,7 +173,7 @@ Refer to **C: Gaussian Distributions and Counting Experiments, Part 1**
 
 We introduce the Gaussian distribution and give Python examples of the fluctuations in counting Gaussian distributions.
 
-{{< youtube "LWIbPa-P5W0" >}} {slides 21-32}
+{{< syoutube "LWIbPa-P5W0" >}} {slides 21-32}
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 2**
 
@@ -190,7 +190,7 @@ Refer to **C: Gaussian Distributions and Counting Experiments, Part 2**
 
 We discuss the significance of a standard deviation and role of biases and insufficient statistics with a Python example in getting incorrect answers.
 
-{{< youtube "n4jlUrGwgic" >}} {slides 33-39}
+{{< syoutube "n4jlUrGwgic" >}} {slides 33-39}
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 3**
 
@@ -222,11 +222,11 @@ We define random numbers and describe how to generate them on the computer givin
 
 #### Part 1
 
-{{< youtube "r80Sk_KVG2s" >}} {slides 5-6}
+{{< syoutube "r80Sk_KVG2s" >}} {slides 5-6}
 
 #### Part 2
 
-{{< youtube "9QY5qkQj2Ag" >}} {slides 7-13}
+{{< syoutube "9QY5qkQj2Ag" >}} {slides 7-13}
 
 Refer to **D: Random Numbers, Part 1**
 
@@ -253,13 +253,13 @@ Refer to **C: Gaussian Distributions and Counting Experiments, Part 4**
 
 We define the binomial distribution and give LHC data as an example of where this distribution is valid.
 
-{{< youtube "DPd-eVI_twQ" >}} {slides 14-22}
+{{< syoutube "DPd-eVI_twQ" >}} {slides 14-22}
 
 ### Accept-Reject Methods for generating Random (Monte-Carlo) Events
 
 We introduce an advanced method accept/reject for generating random variables with arbitrary distributions.
 
-{{< youtube "GfshkKMKCj8" >}} {slides 23-27}
+{{< syoutube "GfshkKMKCj8" >}} {slides 23-27}
 
 Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1**
 
@@ -276,25 +276,25 @@ Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1**
 
 We define the Monte Carlo method which usually uses the accept/reject method in the typical case for distribution.
 
-{{< youtube "kIQ-BTyDfOQ" >}} {slides 27-28}
+{{< syoutube "kIQ-BTyDfOQ" >}} {slides 27-28}
 
 ### Poisson Distribution 
 
 We extend the Binomial to the Poisson distribution and give a set of amusing examples from Wikipedia.
 
-{{< youtube "WFvgsVo-k4s" >}} {slides 30-33}
+{{< syoutube "WFvgsVo-k4s" >}} {slides 30-33}
 
 ### Central Limit Theorem 
 
 We introduce Central Limit Theorem and give examples from Wikipedia
 
-{{< youtube "ZO53iKlPn7c" >}} {slides 35-37}
+{{< syoutube "ZO53iKlPn7c" >}} {slides 35-37}
 
 ### Interpretation of Probability: Bayes v. Frequency
 
 This lesson describes the difference between Bayes and frequency views of probability. Bayes’s law of conditional probability is derived and applied to Higgs example to enable information about Higgs from multiple channels and multiple experiments to be accumulated.
 
-{{< youtube "jzDkExAQI9M" >}} {slides 38-44}
+{{< syoutube "jzDkExAQI9M" >}} {slides 38-44}
 
 Refer to **C: Gaussian Distributions and Counting Experiments, Part 5**
 
