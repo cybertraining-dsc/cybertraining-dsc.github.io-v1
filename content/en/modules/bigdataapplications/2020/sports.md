@@ -41,7 +41,6 @@ Dollar relationship, Value of a Win.
 
 {{< youtube "oviNJ-_fLto" >}}
 
-{{< yy "oviNJ-_fLto" >}}
 
 ### BDAA 32.2 - E534 Sports - Basic Sabermetrics
 
