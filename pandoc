@@ -1,0 +1,5 @@
+#! /bin/sh
+
+# BIB=`pwd`/bib/all.bib
+
+cat - | /usr/local/bin/pandoc -F pandoc-crossref -F pandoc-citeproc -f markdown -t html -N --metadata link-citations=true --bibliography=bib/all.bib --csl=bib/ieee-with-url.csl
