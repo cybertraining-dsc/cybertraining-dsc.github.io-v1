@@ -807,8 +807,8 @@ at DOE&amp;rsquo;s NERSC center
 &lt;/div&gt;
  {slides 14-20}&lt;/p&gt;
 &lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&#34;&gt;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&lt;/a&gt;
-&lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/S037026931200857X&#34;&gt;http://www.sciencedirect.com/science/article/pii/S037026931200857X&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&#34;&gt;http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/S037026931200857X&#34;&gt;http://www.sciencedirect.com/science/article/pii/S037026931200857X&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.nature.com/news/specials/lhc/interactive.html&#34;&gt;http://www.nature.com/news/specials/lhc/interactive.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;looking-for-higgs-particles-part-ii-python-event-counting-for-signal-and-background&#34;&gt;Looking for Higgs Particles Part II: Python Event Counting for Signal and Background&lt;/h2&gt;
 &lt;p&gt;Python Event Counting for Signal and Background (Part 2) This unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of the shape of the signal and various backgrounds and with various event totals.&lt;/p&gt;
@@ -1073,7 +1073,6 @@ at DOE&amp;rsquo;s NERSC center
   href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
-&lt;/div&gt;
 &lt;/div&gt;
 
       </description>

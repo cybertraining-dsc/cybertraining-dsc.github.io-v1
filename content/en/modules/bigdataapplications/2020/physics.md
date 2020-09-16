@@ -41,10 +41,12 @@ This lesson gives a small picture gallery of accelerators. Accelerators, detecti
 {{< youtube "WLJIxWWMYi8" >}} {slides 14-20}
 
 ### Resources
-http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf 
-http://www.sciencedirect.com/science/article/pii/S037026931200857X
 
-http://www.nature.com/news/specials/lhc/interactive.html
+<http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf>
+
+<http://www.sciencedirect.com/science/article/pii/S037026931200857X>
+
+<http://www.nature.com/news/specials/lhc/interactive.html>
 
 ## Looking for Higgs Particles Part II: Python Event Counting for Signal and Background
 
@@ -241,4 +243,3 @@ Refer to **C: Gaussian Distributions and Counting Experiments, Part 5**
 {{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
 
 
-</div>
