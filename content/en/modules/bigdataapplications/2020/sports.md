@@ -39,7 +39,7 @@ Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
 Athletics, Diamond Dollars economic model of baseball, Performance -
 Dollar relationship, Value of a Win.
 
-{{< syoutube "oviNJ-_fLto" >}}
+{{< youtube "oviNJ-_fLto" >}}
 
 
 ### BDAA 32.2 - E534 Sports - Basic Sabermetrics
@@ -47,7 +47,7 @@ Dollar relationship, Value of a Win.
 Different Types of Baseball Data, Sabermetrics, Overview of all data, 
 Details of some statistics based on basic data, OPS, wOBA, ERA, ERC, FIP, UZR.
 
-{{< syoutube "-5JYfQXC2ew" >}}
+{{< youtube "-5JYfQXC2ew" >}}
 
 ### BDAA 32.3 - E534 Sports - Wins Above Replacement
 
@@ -55,7 +55,7 @@ Wins above Replacement WAR, Discussion of Calculation, Examples,
 Comparisons of different methods, Coefficient of Determination, Another,
 Sabermetrics Example, Summary of Sabermetrics.
 
-{{< syoutube "V5uzUS6jdHw" >}}
+{{< youtube "V5uzUS6jdHw" >}}
 
 ## Unit 33
 
@@ -80,25 +80,25 @@ from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.
 A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data 
 from Blog and video at 2013 SABR conference
 
-{{< syoutube "I06_AOKyB20" >}}
+{{< youtube "I06_AOKyB20" >}}
 
 ### BDAA 33.2 - E534 Sports - Pitcher Quality
 
 Results of optimizing match ups, Data from video at 2013 SABR conference.
 
-{{< syoutube "vAPJx8as4_0" >}}
+{{< youtube "vAPJx8as4_0" >}}
 
 ### BDAA 33.3 - E534 Sports - PITCHf/X
 
 Examples of use of PITCHf/X.
 
-{{< syoutube "JN1-sCa9Bjs" >}}
+{{< youtube "JN1-sCa9Bjs" >}}
 
 ### BDAA 33.4 - E534 Sports - Other Video Data Gathering in Baseball
 
 FIELDf/X, MLBAM, HITf/X, COMMANDf/X.
 
-{{< syoutube "zGGThkkIJg8" >}}
+{{< youtube "zGGThkkIJg8" >}}
 
 ## Unit 34
 
@@ -125,22 +125,22 @@ Lesson Summaries
 
 Consumer Sports, Stake Holders, and Multiple Factors.
 
-{{< syoutube "1UzvNHzFCFQ" >}}
+{{< youtube "1UzvNHzFCFQ" >}}
 
 ### BDAA 34.2 - E534 Sports - Soccer and the Olympics
 
 Soccer, Tracking Players and Balls, Olympics.
 
-{{< syoutube "01mlZ2KBkzE" >}}
+{{< youtube "01mlZ2KBkzE" >}}
 
 ### BDAA 34.3 - E534 Sports - Spatial Visualization in NFL and NBA
 
 NFL, NBA, and Spatial Visualization.
 
-{{< syoutube "Q0Pt97BwRlo" >}}
+{{< youtube "Q0Pt97BwRlo" >}}
 
 ### BDAA 34.4 - E534 Sports - Tennis and Horse Racing
 
 Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 
-{{< syoutube "EuXrtfHG3cY" >}}
+{{< youtube "EuXrtfHG3cY" >}}
