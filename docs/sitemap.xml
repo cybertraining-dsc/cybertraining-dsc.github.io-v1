@@ -299,7 +299,7 @@
   
   <url>
     <loc>/modules/cloudmesh-rest/</loc>
-    <lastmod>2020-09-11T15:25:40-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
@@ -394,7 +394,7 @@
   
   <url>
     <loc>/modules/mnist-reu/</loc>
-    <lastmod>2020-09-09T08:42:24-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
@@ -404,12 +404,12 @@
   
   <url>
     <loc>/modules/sample/module/</loc>
-    <lastmod>2020-09-10T12:13:17-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/modules/sample/pandoc/</loc>
-    <lastmod>2020-09-16T06:47:16-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
@@ -449,7 +449,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-09-16T06:47:16-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
@@ -484,7 +484,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-09-16T06:47:16-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
@@ -494,22 +494,22 @@
   
   <url>
     <loc>/tags/markdown/</loc>
-    <lastmod>2020-09-16T06:47:16-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/module/</loc>
-    <lastmod>2020-09-10T12:13:17-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/pandoc/</loc>
-    <lastmod>2020-09-16T06:47:16-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/sample/</loc>
-    <lastmod>2020-09-16T06:47:16-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
@@ -544,7 +544,7 @@
   
   <url>
     <loc>/modules/sample/alert/</loc>
-    <lastmod>2020-09-11T15:09:48-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
@@ -563,28 +563,32 @@
   </url>
   
   <url>
+    <loc>/modules/sample/elements/</loc>
+  </url>
+  
+  <url>
     <loc>/modules/sample/figure/</loc>
-    <lastmod>2020-09-10T12:13:17-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/figure/</loc>
-    <lastmod>2020-09-10T12:13:17-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/graph/</loc>
-    <lastmod>2020-09-10T12:13:17-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/modules/sample/mermaid/</loc>
-    <lastmod>2020-09-10T12:13:17-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/mermaid/</loc>
-    <lastmod>2020-09-10T12:13:17-04:00</lastmod>
+    <lastmod>2020-09-16T14:56:26-04:00</lastmod>
   </url>
   
   <url>
