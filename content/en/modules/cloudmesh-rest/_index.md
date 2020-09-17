@@ -41,9 +41,9 @@ First, let's ensure we are in the correct directory. If you followed the cloudme
 (ENV3) > pwd
 ~/cm/cloudmesh-openapi
 ```
-Let's take a look at the PipelineAnova SVM example code.
+Let's take a look at the PipelineAnova SVM example code. Use your favorite editor to look at it (whether it be vscode, vim, nano, etc). We'll use emacs
 ```
-(ENV3) > code ./tests/Scikitlearn-experimental/sklearn_svm.py
+(ENV3) > emacs ./tests/Scikitlearn-experimental/sklearn_svm.py
 ```
 
 The class within this file has two main methods to interact with (except for the file upload capability which is added at runtime)
@@ -85,7 +85,7 @@ the file. For this example, you will notice a new file has been added in the sam
 ## Section 3 (optional): The openapi YAML file
 If Section 2 above was correctly, cms will have generated the corresponding openapi YAML file. Let us take a look at it.
 ```
-(ENV3) > code ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+(ENV3) > emacs ./tests/Scikitlearn-experimental/sklearn_svm.yaml
 ```
 This YAML file has a lot of information to digest. The basic structure is documented [here](https://swagger.io/docs/specification/basic-structure/). However, it is not necessary to understand this information to deploy RESTful APIs. 
 
