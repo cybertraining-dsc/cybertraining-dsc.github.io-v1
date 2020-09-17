@@ -20,7 +20,7 @@ with data and make predictions from said data. All code needed for this is provi
 ### 1.1 Prerequisite
 
 It is also assumed that the user has installed and has familiarity with the following:
-* [cloudmesh-openapi](https://github.com/cloudmesh/cloudmesh-openapi)
+* Install cloudmesh-openapi using the developer install as documented [here](https://github.com/cloudmesh/cloudmesh-openapi)
 * Python 3.8.x
 * Linux Command line
 * Working in a python environment
@@ -46,11 +46,9 @@ First, let's ensure we are in the correct directory. If you followed the cloudme
 (ENV3) > pwd
 ~/cm/cloudmesh-openapi
 ```
-
-Let's take a look at the PipelineAnova SVM example code.
-
+Let's take a look at the PipelineAnova SVM example code. Use your favorite editor to look at it (whether it be vscode, vim, nano, etc). We'll use emacs
 ```
-(ENV3) > code ./tests/Scikitlearn-experimental/sklearn_svm.py
+(ENV3) > emacs ./tests/Scikitlearn-experimental/sklearn_svm.py
 ```
 
 The class within this file has two main methods to interact with (except for the file upload capability which is added at runtime)
@@ -99,7 +97,7 @@ the file. For this example, you will notice a new file has been added in the sam
 If Section 2 above was correctly, cms will have generated the corresponding openapi YAML file. Let us take a look at it.
 
 ```
-(ENV3) > code ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+(ENV3) > emacs ./tests/Scikitlearn-experimental/sklearn_svm.yaml
 ```
 
 This YAML file has a lot of information to digest. The basic structure is documented [here](https://swagger.io/docs/specification/basic-structure/). However, it is not necessary to understand this information to deploy RESTful APIs. 
