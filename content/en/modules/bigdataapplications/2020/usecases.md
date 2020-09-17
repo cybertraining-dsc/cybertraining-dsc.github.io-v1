@@ -12,6 +12,10 @@ This unit has four lectures (slide=decks). The survey is 6 years old but the ill
 * 3. Common features of the 51 Use Cases
 * 4. 10 Patterns of data -- computer -- user interaction seen in Big Data Applications
 
+There is an overview of these lectures below. The use case overview slides recorded here are available as [Google Slides](https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing)
+
+{{< youtube "AFQLwfpm6ow" >}}.
+
 ## Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results 
 
 This is first of 4 lectures on Big Data Use Cases. It describes the process by which NIST produced this survey

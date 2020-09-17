@@ -22,15 +22,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Autogenerating Analytics Rest Services | Cybertraining</title><meta property="og:title" content="Autogenerating Analytics Rest Services" />
-<meta property="og:description" content="We present here ... " />
+<meta property="og:description" content="In this section, we will deploy a Pipeline Anova SVM API on an openapi service using cloudmesh-openapi
+" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/modules/cloudmesh-rest/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="Autogenerating Analytics Rest Services">
-<meta itemprop="description" content="We present here ... ">
+<meta itemprop="description" content="In this section, we will deploy a Pipeline Anova SVM API on an openapi service using cloudmesh-openapi
+">
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Autogenerating Analytics Rest Services"/>
-<meta name="twitter:description" content="We present here ... "/>
+<meta name="twitter:description" content="In this section, we will deploy a Pipeline Anova SVM API on an openapi service using cloudmesh-openapi
+"/>
 
 
 
@@ -210,7 +213,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/cloudmesh-rest/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Autogenerating Analytics Rest Services</div></a>
+    <a  href="/modules/cloudmesh-rest/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Analytics Services</div></a>
   </li>
   <ul>
     <li class="collapse show" id="modulescloudmesh-rest">
@@ -729,7 +732,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/mnist-reu/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> MNIST for REU Students</div></a>
+    <a  href="/modules/mnist-reu/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> MNIST</div></a>
   </li>
   <ul>
     <li class="collapse " id="modulesmnist-reu">
@@ -769,30 +772,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/sample/pandoc/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Pandoc Sample</div></a>
-  </li>
-  <ul>
-    <li class="collapse " id="modulessamplepandoc">
-      
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/sample/module/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Sample Module</div></a>
+    <a  href="/modules/sample/module/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Module</div></a>
   </li>
   <ul>
     <li class="collapse " id="modulessamplemodule">
@@ -808,19 +788,31 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplealert" href="/modules/sample/alert/">Alert Sample</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplepandoc" href="/modules/sample/pandoc/">Pandoc</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplefigure" href="/modules/sample/figure/">Figure Sample</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplealert" href="/modules/sample/alert/">Alert</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplemermaid" href="/modules/sample/mermaid/">Mermaid Sample</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessampleelements" href="/modules/sample/elements/">Elements</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplefigure" href="/modules/sample/figure/">Figure</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplemermaid" href="/modules/sample/mermaid/">Mermaid</a>
       
       
     </li>
@@ -867,6 +859,32 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-overview">1. Overview</a>
+      <ul>
+        <li><a href="#11-prerequisite">1.1 Prerequisite</a></li>
+        <li><a href="#12-effort">1.2 Effort</a></li>
+        <li><a href="#13-list-of-topics-covered">1.3 List of Topics Covered</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-the-python-code">2. The Python Code</a></li>
+    <li><a href="#3-generating-the-openapi-yaml-file">3. Generating the OpenAPI YAML file</a></li>
+    <li><a href="#4-the-openapi-yaml-file-optional">4. The OpenAPI YAML File (optional)</a></li>
+    <li><a href="#5-starting-the-server">5. Starting the Server</a></li>
+    <li><a href="#6-interacting-with-the-endpoints">6. Interacting With the Endpoints</a>
+      <ul>
+        <li><a href="#uploading-the-dataset">Uploading the Dataset</a></li>
+        <li><a href="#training-on-the-dataset">Training on the Dataset</a></li>
+        <li><a href="#making-predictions">Making Predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-clean-up-optional">7. Clean Up (optional)</a></li>
+    <li><a href="#8-assignments">8. Assignments</a></li>
+    <li><a href="#9-references">9. References</a></li>
+  </ul>
+</nav>
+
 
 
 
@@ -893,7 +911,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/modules/cloudmesh-rest/">Autogenerating Analytics Rest Services</a>
+	<a href="/modules/cloudmesh-rest/">Analytics Services</a>
 </li>
 
 	</ol>
@@ -902,18 +920,164 @@
             
 <div class="td-content">
 	<h1>Autogenerating Analytics Rest Services</h1>
-        <div class="lead">We present here &hellip;</div>
+        <div class="lead">In this section, we will deploy a Pipeline Anova SVM API on an openapi service using cloudmesh-openapi</div>
 	
 	
 
 <div class="pageinfo pageinfo-primary">
-<p>We present here &hellip;</p>
-
-</div>
-
+<p>On this page, we will deploy a Pipeline Anova SVM onto our openapi server, and subsequently train the model
+with data and make predictions from said data. All code needed for this is provided in the <a href="https://github.com/cloudmesh/cloudmesh-openapi">cloudmesh-openapi</a> repository. The code is largely based on this <a href="https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html">sklearn example</a>.</p>
 <div class="toc">
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-overview">1. Overview</a>
+      <ul>
+        <li><a href="#11-prerequisite">1.1 Prerequisite</a></li>
+        <li><a href="#12-effort">1.2 Effort</a></li>
+        <li><a href="#13-list-of-topics-covered">1.3 List of Topics Covered</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-the-python-code">2. The Python Code</a></li>
+    <li><a href="#3-generating-the-openapi-yaml-file">3. Generating the OpenAPI YAML file</a></li>
+    <li><a href="#4-the-openapi-yaml-file-optional">4. The OpenAPI YAML File (optional)</a></li>
+    <li><a href="#5-starting-the-server">5. Starting the Server</a></li>
+    <li><a href="#6-interacting-with-the-endpoints">6. Interacting With the Endpoints</a>
+      <ul>
+        <li><a href="#uploading-the-dataset">Uploading the Dataset</a></li>
+        <li><a href="#training-on-the-dataset">Training on the Dataset</a></li>
+        <li><a href="#making-predictions">Making Predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-clean-up-optional">7. Clean Up (optional)</a></li>
+    <li><a href="#8-assignments">8. Assignments</a></li>
+    <li><a href="#9-references">9. References</a></li>
+  </ul>
+</nav>
 </div>
+
+</div>
+
+<h2 id="1-overview">1. Overview</h2>
+<h3 id="11-prerequisite">1.1 Prerequisite</h3>
+<p>It is also assumed that the user has installed and has familiarity with the following:</p>
+<ul>
+<li><a href="https://github.com/cloudmesh/cloudmesh-openapi">cloudmesh-openapi</a></li>
+<li>Python 3.8.x</li>
+<li>Linux Command line</li>
+<li>Working in a python environment</li>
+</ul>
+<h3 id="12-effort">1.2 Effort</h3>
+<ul>
+<li>15 minutes (not including assignment)</li>
+</ul>
+<h3 id="13-list-of-topics-covered">1.3 List of Topics Covered</h3>
+<p>In this module, we focus on the following:</p>
+<ul>
+<li>Training ML models with stateless requests</li>
+<li>Generating RESTful APIs using <code>cms openapi</code> for existing python code</li>
+<li>Deploying openapi definitions onto a localserver</li>
+<li>Interacting with newly created openapi services</li>
+</ul>
+<h2 id="2-the-python-code">2. The Python Code</h2>
+<p>First, let&rsquo;s ensure we are in the correct directory. If you followed the cloudmesh-openapi installation directions as dictated in the <a href="https://github.com/cloudmesh/cloudmesh-openapi">installation guide</a>, simply navigate to the root directory of <code>cloudmesh-openapi</code>. Notice how we are still working in our python virtual environment <code>ENV3</code> from the installation guide.</p>
+<pre><code>(ENV3) &gt; pwd
+~/cm/cloudmesh-openapi
+</code></pre><p>Let&rsquo;s take a look at the PipelineAnova SVM example code.</p>
+<pre><code>(ENV3) &gt; code ./tests/Scikitlearn-experimental/sklearn_svm.py
+</code></pre><p>The class within this file has two main methods to interact with (except for the file upload capability which is added at runtime)</p>
+<pre><code>@classmethod
+def train(cls, filename: str) -&gt; str:
+    &quot;&quot;&quot;
+    Given the filename of an uploaded file, train a PipelineAnovaSVM
+    model from the data. Assumption of data is the classifications 
+    are in the last column of the data.
+
+    Returns the classification report of the test split
+    &quot;&quot;&quot;
+    # some code...
+
+@classmethod
+def make_prediction(cls, model_name: str, params: str):
+    &quot;&quot;&quot;
+    Make a prediction based on training configuration
+    &quot;&quot;&quot;
+    # some code...
+</code></pre><p>Note the parameters that each of these methods takes in. These parameters are expected as part of the stateless request for each method.</p>
+<h2 id="3-generating-the-openapi-yaml-file">3. Generating the OpenAPI YAML file</h2>
+<p>Let us now use the python code from above to create the openapi YAML file that we will deploy onto our server. To correctly generate this file, use the following command:</p>
+<pre><code>(ENV3) &gt; cms openapi generate PipelineAnovaSVM 
+    \ --filename=./tests/Scikitlearn-experimental/sklearn_svm.py
+    \ --import_class
+    \ --enable_upload
+</code></pre><p>Let us digest the options we have specified:</p>
+<ul>
+<li><code>--filename</code> indicates the path to the python file in which our code is located</li>
+<li><code>--import_class</code> notifies <code>cms openapi</code> that the YAML file is generated
+from a class. The name of this class is specified as <code>PipelineAnovaSVM</code></li>
+<li><code>--enable_upload</code> allows the user to upload files to be stored on the server for reference. This flag causes <code>cms openapi</code> to auto-generate a new python file with the <code>upload</code> method appended to the end of
+the file. For this example, you will notice a new file has been added in the same directory as <code>sklearn_svm.py</code>. The file is aptly called: <code>sklearn_svm_upload-enabled.py</code></li>
+</ul>
+<h2 id="4-the-openapi-yaml-file-optional">4. The OpenAPI YAML File (optional)</h2>
+<p>If Section 2 above was correctly, cms will have generated the corresponding openapi YAML file. Let us take a look at it.</p>
+<pre><code>(ENV3) &gt; code ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+</code></pre><p>This YAML file has a lot of information to digest. The basic structure is documented <a href="https://swagger.io/docs/specification/basic-structure/">here</a>. However, it is not necessary to understand this information to deploy RESTful APIs.</p>
+<p>However, take a look at <code>paths:</code> on line 9 in this file. Under this section, we have several different endpoints for our API listed. Notice the correlation between the endpoints and the python file we generated from.</p>
+<h2 id="5-starting-the-server">5. Starting the Server</h2>
+<p>Using the YAML file from Section 2, we can now start the server.</p>
+<pre><code>(ENV3) &gt; cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+</code></pre><p>The server should now be active. Navigate to <a href="http://localhost:8080/cloudmesh/ui">http://localhost:8080/cloudmesh/ui</a>.</p>
+<p><img src="cloudmesh_ui.png" alt="Unavailable"></p>
+<h2 id="6-interacting-with-the-endpoints">6. Interacting With the Endpoints</h2>
+<h3 id="uploading-the-dataset">Uploading the Dataset</h3>
+<p>We now have a nice user inteface to interact with our newly generated API. Let&rsquo;s upload the data set. We are going to use the iris data set in this example. We have provided it for you to use. Simply navigate to the <code>/upload</code> endpoint by clicking on it, then click Try it out.</p>
+<p>We can now upload the file. Click on Choose File and upload the data set located at <code>./tests/Scikitlearn-experimental/iris.data</code>. Simply hit Execute after the file is uploaded. We should then get a <code>200</code> return code (telling us that everything went ok).</p>
+<p><img src="upload_endpoint.png" alt="Unavaialable"></p>
+<h3 id="training-on-the-dataset">Training on the Dataset</h3>
+<p>The server now has our dataset. Let us now navigate to the <code>/train</code> endpoint by, again, clicking on it. Similarly, click <code>Try it out</code>. The parameter being asked for is the filename. The filename we are interested in is iris.data. Then click execute. We should get another <code>200</code> return code with a Classification Report in the Response Body.</p>
+<p><img src="train_endpoint.png" alt="Unavailable"></p>
+<h3 id="making-predictions">Making Predictions</h3>
+<p>We now have a trained model on the iris data set. Let us now use it to make predictions. The model expects 4 attribute values: sepal length, seapl width, petal length, and petal width. Let us use the values <code>5.1, 3.5, 1.4, 0.2</code> as our attributes. The expected classification is <code>Iris-setosa</code>.</p>
+<p>Navigate to the <code>/make_prediction</code> endpoint as we have with other endpoints. Again, let us <code>Try it out</code>. We need to provide the name of the model and the params (attribute values). For the model name, our model is aptly called <code>iris</code> (based on the name of the data set).</p>
+<p><img src="make_prediction_endpoint.png" alt="Unavailable"></p>
+<p>As expected, we have a classification of <code>Iris-setosa</code>.</p>
+<h2 id="7-clean-up-optional">7. Clean Up (optional)</h2>
+<p>At this point, we have created and trained a model using <code>cms openapi</code>. After satisfactory use, we can shut down the server. Let us check what we have running.</p>
+<pre><code>(ENV3) &gt; cms openapi server ps
+openapi server ps
+
+INFO: Running Cloudmesh OpenAPI Servers
+
+...
+
+[{'name': 'sklearn_svm', 'pid': 7496, 'spec': './tests/Scikitlearn-experimental/sklearn_svm.yaml'}]
++-------------+------+--------------------------------------------------+
+| name        | pid  | spec                                             |
++-------------+------+--------------------------------------------------+
+| sklearn_svm | 7496 | ./tests/Scikitlearn-                             |
+|             |      | experimental/sklearn_svm.yaml                    |
++-------------+------+--------------------------------------------------+
+</code></pre><p>We can stop the server with the following command:</p>
+<pre><code>(ENV3) &gt; cms openapi server stop sklearn_svm
+</code></pre><p>We can verify the server is shut down by running the <code>ps</code> command again.</p>
+<pre><code>(ENV3) &gt; 
+openapi server ps
+
+INFO: Running Cloudmesh OpenAPI Servers
+
+[]
+None
+</code></pre><h2 id="8-assignments">8. Assignments</h2>
+<p>Many ML models follow the same basic process for training and testing:</p>
+<ol>
+<li>Upload Training Data</li>
+<li>Train the model</li>
+<li>Test the model</li>
+</ol>
+<p>Using the PipelineAnovaSVM code as a template, write python code for a new model and deploy it as a RESTful API as we have done above. Train and test your model using the provided iris data set. There are plenty of examples that can be referenced <a href="https://scikit-learn.org/stable/auto_examples/index.html#">here</a></p>
+<h2 id="9-references">9. References</h2>
+<ul>
+<li><a href="https://sikit-learn.org">Sikit-learn Web Page</a></li>
+</ul>
 
         <div class="section-index">
     
@@ -1064,12 +1228,14 @@
         
             
         
+            
+        
     
 </div>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified September 10, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/c64d2eab82d9971982c71efd943795c002f26546">Update _index.md (c64d2ea)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 16, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/0964baadde8a866a57b3eedee94f1671a642c859">move shortcodes (0964baa)</a>
 </div>
 </div>
 

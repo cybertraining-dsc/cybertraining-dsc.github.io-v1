@@ -1,268 +1,245 @@
 ---
 title: Physics
 draft: false
-weight: 5
+weight: 4
 description: >
-  Week TBD: Big Data applications and Physics
+  Week 4: Big Data applications and Physics
 ---
 
-# Physics with Big Data Applications
+## E534 2020 Big Data Applications and Analytics Discovery of Higgs Boson 
 
-E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson
-Part I (Unit 8) Section Units 9-11 Summary: This section starts by
-describing the LHC accelerator at CERN and evidence found by the
-experiments suggesting existence of a Higgs Boson. The huge number of
-authors on a paper, remarks on histograms and Feynman diagrams is
-followed by an accelerator picture gallery. The next unit is devoted
-to Python experiments looking at histograms of Higgs Boson production
-with various forms of shape of signal and various background and with
-various event totals. Then random variables and some simple principles
-of statistics are introduced with explanation as to why they are
-relevant to Physics counting experiments. The unit introduces Gaussian
-(normal) distributions and explains why they seen so often in natural
-phenomena. Several Python illustrations are given. Random Numbers with
-their Generators and Seeds lead to a discussion of Binomial and
-Poisson Distribution. Monte-Carlo and accept-reject methods.  The
-Central Limit Theorem concludes discussion.
+Summary: This section of the class is devoted to a particular Physics experiment but uses this to discuss so-called counting experiments. Here one observes “events” that occur randomly in time and one studies the properties of the events; in particular are the events collection of subatomic particles coming from the decay of particles from a “Higgs Boson” produced in high energy accelerator collisions. The four video lecture sets (Parts I II III IV) start by describing the LHC accelerator at CERN and evidence found by the experiments suggesting the existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of the shape of the signal and various backgrounds and with various event totals. Then random variables and some simple principles of statistics are introduced with an explanation as to why they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why they have seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. The Central Limit Theorem concludes the discussion.
 
-## Unit 8:
+## Looking for Higgs Particle Part I : Bumps in Histograms, Experiments and Accelerators
 
-### 8.1 - Looking for Higgs: 1. Particle and Counting Introduction 1
+This unit is devoted to Python and Java experiments looking at histograms of Higgs Boson production with various forms of the shape of the signal and various backgrounds and with various event totals. The lectures use Python but the use of Java is described. Students today can ignore Java!
 
-We return to particle case with slides used in introduction and stress
-that particles often manifested as bumps in histograms and those bumps
-need to be large enough to stand out from background in a
-statistically significant fashion.
+[Slides](https://drive.google.com/file/d/1KxK2XKnjqqvQI9gjga7EYwcm_z0zZt-Z/view?usp=sharing) {20 slides}
 
-{{< youtube "L0wIh0Z-ZwI" >}}
+### Looking for Higgs Particle and Counting Introduction 1
 
-### 8.2 - Looking for Higgs: 2. Particle and Counting Introduction 2
+We return to the particle case with slides used in introduction and stress that particles often manifested as bumps in histograms and those bumps need to be large enough to stand out from the background in a statistically significant fashion.
 
-We give a few details on one LHC experiment ATLAS. Experimental
-physics papers have a staggering number of authors and quite big
-budgets. Feynman diagrams describe processes in a fundamental fashion.
+Video: {{< youtube "L0wIh0Z-ZwI" >}} {slides1-5} 
 
-{{< youtube "ulX3oIiAusI" >}}
+### Looking for Higgs Particle II Counting Introduction 2
 
-### 8.3 - Looking for Higgs: 3. Particle Experiments
+We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion
 
-We give a few details on one LHC experiment ATLAS. Experimental
-physics papers have a staggering number of authors and quite big
-budgets. Feynman diagrams describe processes in a fundamental fashion
+Video: {{< youtube "UAMzmOgjj7I" >}} {slides 6-8}
 
-{{< youtube "BW12d780qT8" >}}
+### Experimental Facilities 
 
-### 8.4 - Looking for Higgs:  4. Accelerator Picture Gallery of Big Science
+We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion.
 
-This lesson gives a small picture gallery of accelerators. Accelerators, detection chambers and magnets in tunnels and a large underground laboratory used fpr experiments where you need to be shielded from background like cosmic rays.
+Video: {{< youtube "BW12d780qT8" >}} {slides 9-14}
 
-{{< youtube "WLJIxWWMYi8" >}}
+### Accelerator Picture Gallery of Big Science 
 
+This lesson gives a small picture gallery of accelerators. Accelerators, detection chambers and magnets in tunnels and a large underground laboratory used for experiments where you need to be shielded from the background like cosmic rays.
 
+{{< youtube "WLJIxWWMYi8" >}} {slides 14-20}
 
-## Unit 9
+### Resources
 
-This unit is devoted to Python experiments with Geoffrey looking at 
-histograms of Higgs Boson production with various forms of shape of 
-signal and various background and with various event totals
+<http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf>
 
+<http://www.sciencedirect.com/science/article/pii/S037026931200857X>
 
-### 9.1 - Looking for Higgs II: 1: Class Software 
+<http://www.nature.com/news/specials/lhc/interactive.html>
 
-We discuss how this unit uses Java (deprecated) and Python on both a backend server
-(FutureGrid - closed!) or a local client. We point out useful book on
-Python for data analysis. This lesson is deprecated. Follow current
-technology for class
+## Looking for Higgs Particles Part II: Python Event Counting for Signal and Background
 
-{{< youtube "tOFJEUM-Vww" >}}
+Python Event Counting for Signal and Background (Part 2) This unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of the shape of the signal and various backgrounds and with various event totals.
 
+[Slides](https://drive.google.com/file/d/1n3vu5LvW5WkD9Eaz57GUsG3wp4PbOxHs/view?usp=sharing) {1-29 slides}
 
-### 9.2 - Looking for Higgs II: 2: Event Counting 
+### Class Software
 
-We define ''event counting'' data collection environments. We discuss the python and Java
-code to generate events according to a particular scenario (the
-important idea of Monte Carlo data). Here a sloping background plus
-either a Higgs particle generated similarly to LHC observation or one
-observed with better resolution (smaller measurement error).
+We discuss Python on both a backend server (FutureGrid - closed!) or a local client. We point out a useful book on Python for data analysis. 
 
-{{< youtube "h8-szCeFugQ" >}}
+{{< youtube "ulX3oIiAusI" >}} {slides 1-10}
 
-### 9.3 - Looking for Higgs II: 3: With Python examples of Signal plus Background 
+Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1 The background** 
 
-This uses Monte Carlo data both to generate data like the
-experimental observations and explore effect of changing amount of data
-and changing measurement resolution for Higgs.
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
 
-{{< youtube "bl2f0tAzLj4" >}}
+### Event Counting 
 
-### 9.4 - Looking for Higgs II: 4: Change shape of background & number of Higgs Particles 
+We define event counting of data collection environments. We discuss the python and Java code to generate events according to a particular scenario (the important idea of Monte Carlo data). Here a sloping background plus either a Higgs particle generated similarly to LHC observation or one observed with better resolution (smaller measurement error).
 
-This lesson continues the examination of Monte Carlo
-data looking at effect of change in number of Higgs particles produced
-and in change in shape of background
+{{< youtube "h8-szCeFugQ" >}} {slides 11-14}
 
-{{< youtube "bw3fd5cfQhk" >}}
+### Examples of Event Counting I with Python Examples of Signal and Background
 
-## Unit 10 
+This uses Monte Carlo data both to generate data like the experimental observations and explore the effect of changing amount of data and changing measurement resolution for Higgs.
 
-In this unit we discuss;
+{{< youtube "bl2f0tAzLj4" >}} {slides 15-23}
 
-E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
-Big Data Higgs Unit 10: Looking for Higgs Particles Part III: Random
-Variables, Physics and Normal Distributions Section Units 9-11 Summary:
-This section starts by describing the LHC accelerator at CERN and
-evidence found by the experiments suggesting existence of a Higgs Boson.
-The huge number of authors on a paper, remarks on histograms and Feynman
-diagrams is followed by an accelerator picture gallery. The next unit is
-devoted to Python experiments looking at histograms of Higgs Boson
-production with various forms of shape of signal and various background
-and with various event totals. Then random variables and some simple
-principles of statistics are introduced with explanation as to why they
-are relevant to Physics counting experiments. The unit introduces
-Gaussian (normal) distributions and explains why they seen so often in
-natural phenomena. Several Python illustrations are given. Random
-Numbers with their Generators and Seeds lead to a discussion of Binomial
-and Poisson Distribution. Monte-Carlo and accept-reject methods. The
-Central Limit Theorem concludes discussion. Big Data Higgs Unit 10:
-Looking for Higgs Particles Part III: Random Variables, Physics and
-Normal Distributions Overview: Geoffrey introduces random variables and
-some simple principles of statistics and explains why they are relevant
-to Physics counting experiments. The unit introduces Gaussian (normal)
-distributions and explains why they seen so often in natural phenomena.
-Several Python illustrations are given. Java is currently not available
-in this unit.
-
-### 10.1 - Statistics Overview and Fundamental Idea: Random Variables 
+Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1,2,3,4,6,7**
 
-We go through the many different areas of statistics covered in the Physics
-unit. We define the statistics concept of a random variable.
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
 
-{{< youtube "jCgY6MEfLWI" >}}
 
-### 10.2 - Physics and Random Variables I
+### Examples of Event Counting II: Change shape of background and number of Higgs Particles produced in experiment
 
-We describe the DIKW pipeline for the analysis of this type of physics experiment 
-and go through details of analysis pipeline for the LHC ATLAS experiment. 
-We give examples of event displays showing the final state particles 
-seen in a few events. We illustrate how physicists decide whats going 
-on with a plot of expected Higgs production experimental cross sections 
-(probabilities) for signal and background.
+This lesson continues the examination of Monte Carlo data looking at the effect of change in the number of Higgs particles produced and in the change in the shape of the background.
 
-{{< youtube "Tn3GBxgplxg" >}}
+{{< youtube "bw3fd5cfQhk" >}} {slides 25-29} 
 
-### 10.3 - Physics and Random Variables II
+Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 5- Part 6**
 
-We describe the DIKW pipeline for the analysis of this type of physics
-experiment and go through details of analysis pipeline for the LHC ATLAS
-experiment. We give examples of event displays showing the final state
-particles seen in a few events. We illustrate how physicists decide
-whats  going on with a plot of expected Higgs production experimental
-cross sections (probabilities) for signal and background.
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
 
-{{< youtube "qWEjp0OtvdA" >}}
+Refer to **B: Studying Higgs Boson Analysis. Signal and Background**
 
-### 10.4 - Statistics of Events with Normal Distributions
 
-We introduce Poisson and Binomial distributions and define independent 
-identically distributed (IID) random variables. We give the law of 
-large numbers defining the errors in counting and leading to Gaussian 
-distributions for many things. We demonstrate this in Python experiments.
+{{< ipynb name="E534_Higgs_Discovery_B.ipynb" >}}
 
-{{< youtube "LMBtpWOOQLo" >}}
 
-### 10.5 - Gaussian Distributions
+### Resources 
 
-We introduce the Gaussian distribution and give Python examples of the 
-fluctuations in counting Gaussian distributions.
+Python for Data Analysis: Agile Tools for Real-World Data By Wes McKinney, Publisher: O’Reilly Media, Released: October 2012, Pages: 472. 
 
-{{< youtube "LWIbPa-P5W0" >}}
+<http://jwork.org/scavis/api/> 
 
-### 10.6 - Using Statistics
+<https://en.wikipedia.org/wiki/DataMelt>
 
-We discuss the significance of a standard deviation and role of biases 
-and insufficient statistics with a Python example in getting incorrect answers.
+## Looking for Higgs Part III: Random variables, Physics and Normal Distributions
 
-{{< youtube "n4jlUrGwgic" >}}
+We introduce random variables and some simple principles of statistics and explain why they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why they have seen so often in natural phenomena. Several Python illustrations are given. Java is not discussed in this unit.
 
-## Unit 11
+[Slides](https://drive.google.com/file/d/1eH59S0G43RTLHI-YCr6uGFaAcp1NcS0P/view?usp=sharing) {slides 1-39}
 
-In this section we discuss;
+### Statistics Overview and Fundamental Idea: Random Variables 
 
-E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson: 
-Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers, 
-Distributions and Central Limit Theorem
-Section Units 9-11 Summary: This section starts by describing the 
-LHC accelerator at CERN and evidence found by the experiments suggesting 
-existence of a Higgs Boson. The huge number of authors on a paper, 
-remarks on histograms and Feynman diagrams is followed by an accelerator 
-picture gallery. The next unit is devoted to Python experiments looking 
-at histograms of Higgs Boson production with various forms of shape of 
-signal and various background and with various event totals. Then random 
-variables and some simple principles of statistics are introduced with 
-explanation as to why they are relevant to Physics counting experiments. 
-The unit introduces Gaussian (normal) distributions and explains why they 
-seen so often in natural phenomena. Several Python illustrations are given. 
-Random Numbers with their Generators and Seeds lead to a discussion of 
-Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. 
-The Central Limit Theorem concludes discussion.
-Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers, 
-Distributions and Central Limit Theorem
-Unit Overview: Geoffrey discusses Random Numbers with their Generators 
-and Seeds. It introduces Binomial and Poisson Distribution. Monte-Carlo 
-and accept-reject methods are discussed. The Central Limit Theorem and 
-Bayes law concludes discussion. Python and Java (for student - not 
-reviewed in class) examples and Physics applications are given.
+We go through the many different areas of statistics covered in the Physics unit. We define the statistics concept of a random variable
 
+{{< youtube "jCgY6MEfLWI" >}} {slides 1-6}
 
-### 11.1 - Generators and Seeds I
+### Physics and Random Variables 
 
-We define random numbers and describe how to generate them on the computer 
-giving Python examples. We define the seed used to define to specify how to start generation.
+We describe the DIKW pipeline for the analysis of this type of physics experiment and go through details of the analysis pipeline for the LHC ATLAS experiment. We give examples of event displays showing the final state particles seen in a few events. We illustrate how physicists decide what’s going on with a plot of expected Higgs production experimental cross sections (probabilities) for signal and background.
 
-{{< youtube "r80Sk_KVG2s" >}}
+#### Part 1
 
-### 11.2 - Generators and Seeds II
+{{< youtube "Tn3GBxgplxg" >}} {slides 6-9}
 
-We define random numbers and describe how to generate them on the computer 
-giving Python examples. We define the seed used to define to specify how to start generation.
+#### Part 2
 
-{{< youtube "9QY5qkQj2Ag" >}}
+{{< youtube "qWEjp0OtvdA" >}} {slides 10-12}
 
-### 11.3 - Binomial Distribution
+### Statistics of Events with Normal Distributions 
 
-We define binomial distribution and give LHC data as an eaxmple of where this distribution valid.
+We introduce Poisson and Binomial distributions and define independent identically distributed (IID) random variables. We give the law of large numbers defining the errors in counting and leading to Gaussian distributions for many things. We demonstrate this in Python experiments.
 
-{{< youtube "DPd-eVI_twQ" >}}
+{{< youtube "LMBtpWOOQLo" >}} {slides 13-19}
 
-### 11.4 - Accept-Reject
+Refer to **C: Gaussian Distributions and Counting Experiments, Part 1**
 
-We introduce an advanced method -- accept/reject -- for generating random variables with arbitrary distrubitions.
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
 
-{{< youtube "GfshkKMKCj8" >}}
 
-### 11.5 - Monte Carlo Method
+### Gaussian Distributions 
 
-We define Monte Carlo method which usually uses accept/reject method in typical case for distribution.
+We introduce the Gaussian distribution and give Python examples of the fluctuations in counting Gaussian distributions.
 
-{{< youtube "kIQ-BTyDfOQ" >}}
+{{< youtube "LWIbPa-P5W0" >}} {slides 21-32}
 
-### 11.6 - Poisson Distribution
+Refer to **C: Gaussian Distributions and Counting Experiments, Part 2**
+
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
+
+### Using Statistics 
+
+We discuss the significance of a standard deviation and role of biases and insufficient statistics with a Python example in getting incorrect answers.
+
+{{< youtube "n4jlUrGwgic" >}} {slides 33-39}
+
+Refer to **C: Gaussian Distributions and Counting Experiments, Part 3**
+
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
+
+
+### Resources 
+
+http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides
+http://www.atlas.ch/photos/events.html (this link is outdated) 
+https://cms.cern/
+
+## Looking for Higgs Part IV: Random Numbers, Distributions and Central Limit Theorem
+
+We discuss Random Numbers with their Generators and Seeds. It introduces Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods are discussed. The Central Limit Theorem and Bayes law conclude the discussion. Python and Java (for student - not reviewed in class) examples and Physics applications are given
+
+[Slides](https://drive.google.com/file/d/1IlAACaEiuw6c9HUlHmLxAgtyTw-iTOXk/view?usp=sharing) {slides 1-44}
+
+### Generators and Seeds 
+
+We define random numbers and describe how to generate them on the computer giving Python examples. We define the seed used to define how to start generation.
+
+#### Part 1
+
+{{< youtube "r80Sk_KVG2s" >}} {slides 5-6}
+
+#### Part 2
+
+{{< youtube "9QY5qkQj2Ag" >}} {slides 7-13}
+
+Refer to **D: Random Numbers, Part 1**
+
+{{< ipynb name="E534_Higgs_Discovery_D.ipynb" >}}
+
+
+Refer to **C: Gaussian Distributions and Counting Experiments, Part 4**
+
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
+
+### Binomial Distribution 
+
+We define the binomial distribution and give LHC data as an example of where this distribution is valid.
+
+{{< youtube "DPd-eVI_twQ" >}} {slides 14-22}
+
+### Accept-Reject Methods for generating Random (Monte-Carlo) Events
+
+We introduce an advanced method accept/reject for generating random variables with arbitrary distributions.
+
+{{< youtube "GfshkKMKCj8" >}} {slides 23-27}
+
+Refer to **A: Studying Higgs Boson Analysis. Signal and Background, Part 1**
+
+{{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
+
+
+### Monte Carlo Method 
+
+We define the Monte Carlo method which usually uses the accept/reject method in the typical case for distribution.
+
+{{< youtube "kIQ-BTyDfOQ" >}} {slides 27-28}
+
+### Poisson Distribution 
 
 We extend the Binomial to the Poisson distribution and give a set of amusing examples from Wikipedia.
 
-{{< youtube "WFvgsVo-k4s" >}}
+{{< youtube "WFvgsVo-k4s" >}} {slides 30-33}
 
-### 11.7 - Central Limit Theorem
+### Central Limit Theorem 
 
-We introduce Central Limit Theorem and give examples from Wikipedia.
+We introduce Central Limit Theorem and give examples from Wikipedia
 
-{{< youtube "ZO53iKlPn7c" >}}
+{{< youtube "ZO53iKlPn7c" >}} {slides 35-37}
 
-### 11.8 - Interpretation of Probability: Bayes v. Frequency
+### Interpretation of Probability: Bayes v. Frequency
 
-This lesson describes difference between Bayes and frequency views of 
-probability. Bayes's law of conditional probability is derived and applied 
-to Higgs example to enable information about Higgs from multiple channels 
-and multiple experiments to be accumulated.
+This lesson describes the difference between Bayes and frequency views of probability. Bayes’s law of conditional probability is derived and applied to Higgs example to enable information about Higgs from multiple channels and multiple experiments to be accumulated.
 
-{{< youtube "jzDkExAQI9M" >}}
+{{< youtube "jzDkExAQI9M" >}} {slides 38-44}
+
+Refer to **C: Gaussian Distributions and Counting Experiments, Part 5**
+
+{{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+
+

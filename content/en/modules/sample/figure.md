@@ -1,5 +1,8 @@
 ---
 title: Figure Sample
+linkTitle: "Figure"
+description: >
+  Showcases how to include a figure.
 categories: [sample]
 tags: [figure]
 ---

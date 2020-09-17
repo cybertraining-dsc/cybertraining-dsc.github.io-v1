@@ -25,12 +25,12 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/modules/python/google-colab/python-google-colab/" />
-<meta property="article:modified_time" content="2020-09-07T09:45:54-04:00" /><meta property="og:site_name" content="Cybertraining" />
+<meta property="article:modified_time" content="2020-09-13T09:38:52-04:00" /><meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="Google Colab">
 <meta itemprop="description" content="A gentle introduction to Google Colab for Programming
 ">
-<meta itemprop="dateModified" content="2020-09-07T09:45:54-04:00" />
-<meta itemprop="wordCount" content="119">
+<meta itemprop="dateModified" content="2020-09-13T09:38:52-04:00" />
+<meta itemprop="wordCount" content="177">
 
 
 
@@ -218,7 +218,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/cloudmesh-rest/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Autogenerating Analytics Rest Services</div></a>
+    <a  href="/modules/cloudmesh-rest/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Analytics Services</div></a>
   </li>
   <ul>
     <li class="collapse " id="modulescloudmesh-rest">
@@ -737,7 +737,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/mnist-reu/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> MNIST for REU Students</div></a>
+    <a  href="/modules/mnist-reu/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> MNIST</div></a>
   </li>
   <ul>
     <li class="collapse " id="modulesmnist-reu">
@@ -777,30 +777,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/sample/pandoc/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Pandoc Sample</div></a>
-  </li>
-  <ul>
-    <li class="collapse " id="modulessamplepandoc">
-      
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/modules/sample/module/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Sample Module</div></a>
+    <a  href="/modules/sample/module/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Module</div></a>
   </li>
   <ul>
     <li class="collapse " id="modulessamplemodule">
@@ -816,19 +793,31 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplealert" href="/modules/sample/alert/">Alert Sample</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplepandoc" href="/modules/sample/pandoc/">Pandoc</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplefigure" href="/modules/sample/figure/">Figure Sample</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplealert" href="/modules/sample/alert/">Alert</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplemermaid" href="/modules/sample/mermaid/">Mermaid Sample</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessampleelements" href="/modules/sample/elements/">Elements</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplefigure" href="/modules/sample/figure/">Figure</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplemermaid" href="/modules/sample/mermaid/">Mermaid</a>
       
       
     </li>
@@ -877,9 +866,11 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#introduction-to-google-colab">Introduction to Google Colab</a></li>
-    <li><a href="#programming-in-google-colab">Programming in Google Colab</a></li>
-    <li><a href="#benchmarking-in-google-colab-with-cloudmesh">Benchmarking in Google Colab with Cloudmesh</a></li>
+    <li><a href="#1-updates">1. Updates</a></li>
+    <li><a href="#2-introduction-to-google-colab">2. Introduction to Google Colab</a></li>
+    <li><a href="#3-programming-in-google-colab">3. Programming in Google Colab</a></li>
+    <li><a href="#4-benchmarking-in-google-colab-with-cloudmesh">4. Benchmarking in Google Colab with Cloudmesh</a></li>
+    <li><a href="#5-refernces">5. Refernces</a></li>
   </ul>
 </nav>
 
@@ -924,12 +915,35 @@
 
 <div class="pageinfo pageinfo-primary">
 <p>In this module we are going to introduce you to using Google Colab.</p>
+<div class="toc">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-updates">1. Updates</a></li>
+    <li><a href="#2-introduction-to-google-colab">2. Introduction to Google Colab</a></li>
+    <li><a href="#3-programming-in-google-colab">3. Programming in Google Colab</a></li>
+    <li><a href="#4-benchmarking-in-google-colab-with-cloudmesh">4. Benchmarking in Google Colab with Cloudmesh</a></li>
+    <li><a href="#5-refernces">5. Refernces</a></li>
+  </ul>
+</nav>
+</div>
 
 </div>
 
 <p>In this section we are going to introduce you, how to use Google Colab
 to run deep learning models.</p>
-<h2 id="introduction-to-google-colab">Introduction to Google Colab</h2>
+<h2 id="1-updates">1. Updates</h2>
+<ol>
+<li>
+<p>Another Python notebook demonstrating StopWatch and Benchmark is available at:</p>
+<ul>
+<li><a href="https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat">https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat</a></li>
+</ul>
+</li>
+<li>
+<p>The line <code>! pip install cloudmesh-installer</code> is not needed, but is used in the video.</p>
+</li>
+</ol>
+<h2 id="2-introduction-to-google-colab">2. Introduction to Google Colab</h2>
 <p>This video contains the introduction to Google Colab. In this section
 we will be learning how to start a Google Colab project.</p>
 
@@ -937,7 +951,7 @@ we will be learning how to start a Google Colab project.</p>
   <iframe src="https://www.youtube.com/embed/oSzhLJ_1Z8s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="programming-in-google-colab">Programming in Google Colab</h2>
+<h2 id="3-programming-in-google-colab">3. Programming in Google Colab</h2>
 <p>In this video we will learn how to create a simple, Colab Notebook.</p>
 <p>Required Installations</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install numpy
@@ -946,7 +960,7 @@ we will be learning how to start a Google Colab project.</p>
   <iframe src="https://www.youtube.com/embed/znE_knoNnDE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="benchmarking-in-google-colab-with-cloudmesh">Benchmarking in Google Colab with Cloudmesh</h2>
+<h2 id="4-benchmarking-in-google-colab-with-cloudmesh">4. Benchmarking in Google Colab with Cloudmesh</h2>
 <p>In this video we learn how to do a basic benchmark with Cloudmesh tools.
 Cloudmesh StopWatch will be used in this tutorial.</p>
 <p>Required Installations</p>
@@ -958,10 +972,14 @@ pip install cloudmesh-common
   <iframe src="https://www.youtube.com/embed/wkpyp55tfRA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<h2 id="5-refernces">5. Refernces</h2>
+<ol>
+<li>Benchmark Colab Notebook. <a href="https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat">https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat</a></li>
+</ol>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified September 7, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/b3e46d2d7f21a375450f5b250f7de7bb603b6c91">Update python-google-colab.md (b3e46d2)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 13, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/048b5ee9fc6f03bd517bb2864f470d7e457d6652">Update python-google-colab.md (048b5ee)</a>
 </div>
 </div>
 

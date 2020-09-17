@@ -41,6 +41,7 @@ Dollar relationship, Value of a Win.
 
 {{< youtube "oviNJ-_fLto" >}}
 
+
 ### BDAA 32.2 - E534 Sports - Basic Sabermetrics
 
 Different Types of Baseball Data, Sabermetrics, Overview of all data, 
