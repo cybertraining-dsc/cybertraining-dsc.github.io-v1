@@ -85,3 +85,15 @@ Six Computational Paradigms for Data Analytics
 Features that can be used to distinguish and group together applications in both data and computational science
 
 ![Facets](/bigdata/images/Facets.png)
+
+### Week 4
+We surveyed next weeks videos which describe the search for the Higgs Boson and the statistics methods used in the analysis of such conting experiments.
+
+The Higgs Boson slides are available as [Google Slides](https://docs.google.com/presentation/d/1kdVI5_fCqBye8wkZmEmOd3MEh5CFFUID9uBQZX5TMDI/edit?usp=sharing)
+
+{{< youtube "VviZs21IYUg" >}}.
+
+
+### Videos
+
+Please study [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
