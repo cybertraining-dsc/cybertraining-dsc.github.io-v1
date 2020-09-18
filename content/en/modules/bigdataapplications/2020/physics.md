@@ -10,6 +10,16 @@ description: >
 
 Summary: This section of the class is devoted to a particular Physics experiment but uses this to discuss so-called counting experiments. Here one observes “events” that occur randomly in time and one studies the properties of the events; in particular are the events collection of subatomic particles coming from the decay of particles from a “Higgs Boson” produced in high energy accelerator collisions. The four video lecture sets (Parts I II III IV) start by describing the LHC accelerator at CERN and evidence found by the experiments suggesting the existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of the shape of the signal and various backgrounds and with various event totals. Then random variables and some simple principles of statistics are introduced with an explanation as to why they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why they have seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. The Central Limit Theorem concludes the discussion.
 
+## Colab Notebooks for Physics Usecases
+
+For this lecture, we will be using the following Colab Notebooks along with the following lecture materials. 
+They will be referenced in the corresponding sections. 
+
+1. Notebook A {{< ipynb name="E534_Higgs_Discovery_A.ipynb" >}}
+2. Notebook B {{< ipynb name="E534_Higgs_Discovery_B.ipynb" >}}
+3. Notebook C {{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
+4. Notebook D {{< ipynb name="E534_Higgs_Discovery_D.ipynb" >}}
+
 ## Looking for Higgs Particle Part I : Bumps in Histograms, Experiments and Accelerators
 
 This unit is devoted to Python and Java experiments looking at histograms of Higgs Boson production with various forms of the shape of the signal and various backgrounds and with various event totals. The lectures use Python but the use of Java is described. Students today can ignore Java!
