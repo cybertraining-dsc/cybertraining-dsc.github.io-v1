@@ -14,8 +14,9 @@ markup: pandoc
 
 In this section we demonstret the usage of pandoc within hugo.
 
-
 {{% /pageinfo %}}
+
+{{< table_of_contents >}}
 
 # Pandoc Sample
 

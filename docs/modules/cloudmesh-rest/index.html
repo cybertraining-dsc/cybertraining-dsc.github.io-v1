@@ -961,7 +961,7 @@ with data and make predictions from said data. All code needed for this is provi
 <h3 id="11-prerequisite">1.1 Prerequisite</h3>
 <p>It is also assumed that the user has installed and has familiarity with the following:</p>
 <ul>
-<li><a href="https://github.com/cloudmesh/cloudmesh-openapi">cloudmesh-openapi</a></li>
+<li>Install cloudmesh-openapi using the developer install as documented <a href="https://github.com/cloudmesh/cloudmesh-openapi">here</a></li>
 <li>Python 3.8.x</li>
 <li>Linux Command line</li>
 <li>Working in a python environment</li>
@@ -982,8 +982,8 @@ with data and make predictions from said data. All code needed for this is provi
 <p>First, let&rsquo;s ensure we are in the correct directory. If you followed the cloudmesh-openapi installation directions as dictated in the <a href="https://github.com/cloudmesh/cloudmesh-openapi">installation guide</a>, simply navigate to the root directory of <code>cloudmesh-openapi</code>. Notice how we are still working in our python virtual environment <code>ENV3</code> from the installation guide.</p>
 <pre><code>(ENV3) &gt; pwd
 ~/cm/cloudmesh-openapi
-</code></pre><p>Let&rsquo;s take a look at the PipelineAnova SVM example code.</p>
-<pre><code>(ENV3) &gt; code ./tests/Scikitlearn-experimental/sklearn_svm.py
+</code></pre><p>Let&rsquo;s take a look at the PipelineAnova SVM example code. Use your favorite editor to look at it (whether it be vscode, vim, nano, etc). We&rsquo;ll use emacs</p>
+<pre><code>(ENV3) &gt; emacs ./tests/Scikitlearn-experimental/sklearn_svm.py
 </code></pre><p>The class within this file has two main methods to interact with (except for the file upload capability which is added at runtime)</p>
 <pre><code>@classmethod
 def train(cls, filename: str) -&gt; str:
@@ -1019,7 +1019,7 @@ the file. For this example, you will notice a new file has been added in the sam
 </ul>
 <h2 id="4-the-openapi-yaml-file-optional">4. The OpenAPI YAML File (optional)</h2>
 <p>If Section 2 above was correctly, cms will have generated the corresponding openapi YAML file. Let us take a look at it.</p>
-<pre><code>(ENV3) &gt; code ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+<pre><code>(ENV3) &gt; emacs ./tests/Scikitlearn-experimental/sklearn_svm.yaml
 </code></pre><p>This YAML file has a lot of information to digest. The basic structure is documented <a href="https://swagger.io/docs/specification/basic-structure/">here</a>. However, it is not necessary to understand this information to deploy RESTful APIs.</p>
 <p>However, take a look at <code>paths:</code> on line 9 in this file. Under this section, we have several different endpoints for our API listed. Notice the correlation between the endpoints and the python file we generated from.</p>
 <h2 id="5-starting-the-server">5. Starting the Server</h2>
@@ -1235,7 +1235,7 @@ None
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified September 16, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/0964baadde8a866a57b3eedee94f1671a642c859">move shortcodes (0964baa)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 17, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/43ed6fd0165a23f896a77254b2224500499957bb">Changed preferred editor (43ed6fd)</a>
 </div>
 </div>
 

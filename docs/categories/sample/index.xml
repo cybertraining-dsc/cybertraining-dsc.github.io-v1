@@ -96,6 +96,9 @@ provide a more textual description.&lt;/p&gt;
 
 &lt;/div&gt;
 
+&lt;div class=&#34;toc&#34;&gt;
+  
+&lt;/div&gt;
 &lt;h1 data-number=&#34;1&#34; id=&#34;pandoc-sample&#34;&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; Pandoc Sample&lt;/h1&gt;
 &lt;p&gt;We process this file with pandoc.&lt;/p&gt;
 &lt;h2 data-number=&#34;1.1&#34; id=&#34;footnote&#34;&gt;&lt;span class=&#34;header-section-number&#34;&gt;1.1&lt;/span&gt; Footnote&lt;/h2&gt;
