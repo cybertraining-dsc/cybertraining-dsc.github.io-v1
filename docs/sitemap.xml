@@ -374,7 +374,7 @@
   
   <url>
     <loc>/modules/sdsc/</loc>
-    <lastmod>2020-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-21T14:16:40-04:00</lastmod>
   </url>
   
   <url>
@@ -414,7 +414,7 @@
   
   <url>
     <loc>/modules/sample/pandoc/</loc>
-    <lastmod>2020-09-18T15:33:15-04:00</lastmod>
+    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
@@ -454,7 +454,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-09-18T15:33:15-04:00</lastmod>
+    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
@@ -489,7 +489,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-09-18T15:33:15-04:00</lastmod>
+    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
@@ -499,7 +499,7 @@
   
   <url>
     <loc>/tags/markdown/</loc>
-    <lastmod>2020-09-18T15:33:15-04:00</lastmod>
+    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
@@ -509,12 +509,12 @@
   
   <url>
     <loc>/tags/pandoc/</loc>
-    <lastmod>2020-09-18T15:33:15-04:00</lastmod>
+    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/sample/</loc>
-    <lastmod>2020-09-18T15:33:15-04:00</lastmod>
+    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
@@ -559,6 +559,7 @@
   
   <url>
     <loc>/modules/sdsc/sshconnect-cybertraining/</loc>
+    <lastmod>2020-09-21T14:16:40-04:00</lastmod>
   </url>
   
   <url>
