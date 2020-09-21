@@ -6,7 +6,7 @@ date: 2020-08-15
 categories: [sample]
 tags: [pandoc,markdown]
 description: >
-  In this section we demonstret the usage of pandoc within hugo.
+  In this section we demonstrate the usage of pandoc within hugo.
 markup: pandoc
 ---
 
