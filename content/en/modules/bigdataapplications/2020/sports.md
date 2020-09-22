@@ -73,7 +73,7 @@ consumer sports/recreation. The importance of spatial visualization is
 discussed. We look at other Sports: Soccer, Olympics, NFL Football,
 Basketball, Tennis and Horse Racing.
 
-[Slides](https://drive.google.com/file/d/1sFHzh1KoGiBqU4po6WTUpap2GUmvY27J/view?usp=sharing) **wrong slide deck since 2018**
+[Slides](https://drive.google.com/file/d/1FcXaC0cDYLIs-WQI9ORQ-U71OH2sADMn/view?usp=sharing)
 
 Unit Summary (Part II): 
 This unit discusses 'advanced sabermetrics' covering advances possible 
