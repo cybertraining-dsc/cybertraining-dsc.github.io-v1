@@ -1143,8 +1143,8 @@ They will be referenced in the corresponding sections.&lt;/p&gt;
         
         
         &lt;h1 id=&#34;sports-with-big-data-applications&#34;&gt;Sports with Big Data Applications&lt;/h1&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part I
-(Unit 32) Section Summary (Parts I, II, III): Sports sees significant
+&lt;p&gt;E534 2020 Big Data Applications and Analytics Sports Informatics Part I
+Section Summary (Parts I, II, III): Sports sees significant
 growth in analytics with pervasive statistics shifting to more
 sophisticated measures. We start with baseball as game is built around
 segments dominated by individuals where detailed (video/image)
@@ -1154,8 +1154,8 @@ economics of sports and big data analytics. We look at Wearables and
 consumer sports/recreation. The importance of spatial visualization is
 discussed. We look at other Sports: Soccer, Olympics, NFL Football,
 Basketball, Tennis and Horse Racing.&lt;/p&gt;
-&lt;h2 id=&#34;unit-32&#34;&gt;Unit 32&lt;/h2&gt;
-&lt;p&gt;Unit Summary (PartI, Unit 32): This unit discusses baseball starting
+&lt;h2 id=&#34;part-1&#34;&gt;Part 1&lt;/h2&gt;
+&lt;p&gt;Unit Summary (PartI): This unit discusses baseball starting
 with the movie Moneyball and the 2002-2003 Oakland Athletics. Unlike
 sports like basketball and soccer, most baseball action is built around
 individuals often interacting in pairs. This is much easier to quantify
@@ -1163,36 +1163,37 @@ than many player phenomena in other sports. We discuss
 Performance-Dollar relationship including new stadiums and
 media/advertising. We look at classic baseball averages and
 sophisticated measures like Wins Above Replacement.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/13xlEMnEvOQLQAp-iU1PUAFJ3Bm-wb6hE/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;lesson-summaries&#34;&gt;Lesson Summaries&lt;/h3&gt;
-&lt;h2 id=&#34;bdaa-321---e534-sports---introduction-and-sabermetrics-baseball-informatics-lesson&#34;&gt;BDAA 32.1 - E534 Sports - Introduction and Sabermetrics (Baseball Informatics) Lesson&lt;/h2&gt;
+&lt;h2 id=&#34;part-11---e534-sports---introduction-and-sabermetrics-baseball-informatics-lesson&#34;&gt;Part 1.1 - E534 Sports - Introduction and Sabermetrics (Baseball Informatics) Lesson&lt;/h2&gt;
 &lt;p&gt;Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
 Athletics, Diamond Dollars economic model of baseball, Performance -
 Dollar relationship, Value of a Win.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/oviNJ-_fLto&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-322---e534-sports---basic-sabermetrics&#34;&gt;BDAA 32.2 - E534 Sports - Basic Sabermetrics&lt;/h3&gt;
+ {slides 1-15}&lt;/p&gt;
+&lt;h3 id=&#34;part-12---e534-sports---basic-sabermetrics&#34;&gt;Part 1.2 - E534 Sports - Basic Sabermetrics&lt;/h3&gt;
 &lt;p&gt;Different Types of Baseball Data, Sabermetrics, Overview of all data,
 Details of some statistics based on basic data, OPS, wOBA, ERA, ERC, FIP, UZR.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/-5JYfQXC2ew&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-323---e534-sports---wins-above-replacement&#34;&gt;BDAA 32.3 - E534 Sports - Wins Above Replacement&lt;/h3&gt;
+ {slides 16-26}&lt;/p&gt;
+&lt;h3 id=&#34;part-13---e534-sports---wins-above-replacement&#34;&gt;Part 1.3 - E534 Sports - Wins Above Replacement&lt;/h3&gt;
 &lt;p&gt;Wins above Replacement WAR, Discussion of Calculation, Examples,
 Comparisons of different methods, Coefficient of Determination, Another,
 Sabermetrics Example, Summary of Sabermetrics.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/V5uzUS6jdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h2 id=&#34;unit-33&#34;&gt;Unit 33&lt;/h2&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part II
-(Unit 33) Section Summary (Parts I, II, III): Sports sees significant
+ {slides 17-40}&lt;/p&gt;
+&lt;h2 id=&#34;part-2&#34;&gt;Part 2&lt;/h2&gt;
+&lt;p&gt;E534 2020 Big Data Applications and Analytics Sports Informatics Part II
+Section Summary (Parts I, II, III): Sports sees significant
 growth in analytics with pervasive statistics shifting to more
 sophisticated measures. We start with baseball as game is built around
 segments dominated by individuals where detailed (video/image)
@@ -1202,41 +1203,42 @@ economics of sports and big data analytics. We look at Wearables and
 consumer sports/recreation. The importance of spatial visualization is
 discussed. We look at other Sports: Soccer, Olympics, NFL Football,
 Basketball, Tennis and Horse Racing.&lt;/p&gt;
-&lt;p&gt;Unit Summary (Part II, Unit 33):
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1FcXaC0cDYLIs-WQI9ORQ-U71OH2sADMn/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Unit Summary (Part II):
 This unit discusses &amp;lsquo;advanced sabermetrics&amp;rsquo; covering advances possible
 from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.&lt;/p&gt;
-&lt;h3 id=&#34;bdaa-331---e534-sports---pitching-clustering&#34;&gt;BDAA 33.1 - E534 Sports - Pitching Clustering&lt;/h3&gt;
+&lt;h3 id=&#34;part-21---e534-sports---pitching-clustering&#34;&gt;Part 2.1 - E534 Sports - Pitching Clustering&lt;/h3&gt;
 &lt;p&gt;A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data
 from Blog and video at 2013 SABR conference&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/I06_AOKyB20&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-332---e534-sports---pitcher-quality&#34;&gt;BDAA 33.2 - E534 Sports - Pitcher Quality&lt;/h3&gt;
+ {slides 1-16}&lt;/p&gt;
+&lt;h3 id=&#34;part-22---e534-sports---pitcher-quality&#34;&gt;Part 2.2 - E534 Sports - Pitcher Quality&lt;/h3&gt;
 &lt;p&gt;Results of optimizing match ups, Data from video at 2013 SABR conference.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/vAPJx8as4_0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-333---e534-sports---pitchfx&#34;&gt;BDAA 33.3 - E534 Sports - PITCHf/X&lt;/h3&gt;
+ {slides 17-24}&lt;/p&gt;
+&lt;h3 id=&#34;part-23---e534-sports---pitchfx&#34;&gt;Part 2.3 - E534 Sports - PITCHf/X&lt;/h3&gt;
 &lt;p&gt;Examples of use of PITCHf/X.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/JN1-sCa9Bjs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-334---e534-sports---other-video-data-gathering-in-baseball&#34;&gt;BDAA 33.4 - E534 Sports - Other Video Data Gathering in Baseball&lt;/h3&gt;
+ {slides 25-30}&lt;/p&gt;
+&lt;h3 id=&#34;part-24---e534-sports---other-video-data-gathering-in-baseball&#34;&gt;Part 2.4 - E534 Sports - Other Video Data Gathering in Baseball&lt;/h3&gt;
 &lt;p&gt;FIELDf/X, MLBAM, HITf/X, COMMANDf/X.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/zGGThkkIJg8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h2 id=&#34;unit-34&#34;&gt;Unit 34&lt;/h2&gt;
-&lt;p&gt;E534 2019 Big Data Applications and Analytics Sports Informatics Part
-III (Unit 34). Section Summary (Parts I, II, III): Sports sees
+ {slides 26-41}&lt;/p&gt;
+&lt;h2 id=&#34;part-3&#34;&gt;Part 3&lt;/h2&gt;
+&lt;p&gt;E534 2020 Big Data Applications and Analytics Sports Informatics Part
+III. Section Summary (Parts I, II, III): Sports sees
 significant growth in analytics with pervasive statistics shifting to
 more sophisticated measures. We start with baseball as game is built
 around segments dominated by individuals where detailed (video/image)
@@ -1246,39 +1248,40 @@ economics of sports and big data analytics. We look at Wearables and
 consumer sports/recreation. The importance of spatial visualization is
 discussed. We look at other Sports: Soccer, Olympics, NFL Football,
 Basketball, Tennis and Horse Racing.&lt;/p&gt;
-&lt;p&gt;Unit Summary (Part III, Unit 34): We look at Wearables and consumer
+&lt;p&gt;Unit Summary (Part III): We look at Wearables and consumer
 sports/recreation. The importance of spatial visualization is discussed.
 We look at other Sports: Soccer, Olympics, NFL Football, Basketball,
 Tennis and Horse Racing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1kD7_Uhn6bxFpaT7nQjAhLLmStqFv9Bae/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Lesson Summaries&lt;/p&gt;
-&lt;h3 id=&#34;bdaa-341---e534-sports---wearables&#34;&gt;BDAA 34.1 - E534 Sports - Wearables&lt;/h3&gt;
+&lt;h3 id=&#34;part-31---e534-sports---wearables&#34;&gt;Part 3.1 - E534 Sports - Wearables&lt;/h3&gt;
 &lt;p&gt;Consumer Sports, Stake Holders, and Multiple Factors.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/1UzvNHzFCFQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-342---e534-sports---soccer-and-the-olympics&#34;&gt;BDAA 34.2 - E534 Sports - Soccer and the Olympics&lt;/h3&gt;
+ {Slides 1-17}&lt;/p&gt;
+&lt;h3 id=&#34;part-32---e534-sports---soccer-and-the-olympics&#34;&gt;Part 3.2 - E534 Sports - Soccer and the Olympics&lt;/h3&gt;
 &lt;p&gt;Soccer, Tracking Players and Balls, Olympics.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/01mlZ2KBkzE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-343---e534-sports---spatial-visualization-in-nfl-and-nba&#34;&gt;BDAA 34.3 - E534 Sports - Spatial Visualization in NFL and NBA&lt;/h3&gt;
+ {Slides 17-24}&lt;/p&gt;
+&lt;h3 id=&#34;part-33---e534-sports---spatial-visualization-in-nfl-and-nba&#34;&gt;Part 3.3 - E534 Sports - Spatial Visualization in NFL and NBA&lt;/h3&gt;
 &lt;p&gt;NFL, NBA, and Spatial Visualization.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/Q0Pt97BwRlo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&#34;bdaa-344---e534-sports---tennis-and-horse-racing&#34;&gt;BDAA 34.4 - E534 Sports - Tennis and Horse Racing&lt;/h3&gt;
+ {Slides 25-38}&lt;/p&gt;
+&lt;h3 id=&#34;part-34---e534-sports---tennis-and-horse-racing&#34;&gt;Part 3.4 - E534 Sports - Tennis and Horse Racing&lt;/h3&gt;
 &lt;p&gt;Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.&lt;/p&gt;
-
+&lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/EuXrtfHG3cY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
+ {Slides 39-44}&lt;/p&gt;
 
       </description>
     </item>
