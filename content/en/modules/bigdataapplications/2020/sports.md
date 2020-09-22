@@ -84,25 +84,25 @@ from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.
 A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data 
 from Blog and video at 2013 SABR conference
 
-{{< youtube "I06_AOKyB20" >}} {slides 1-x}
+{{< youtube "I06_AOKyB20" >}} {slides 1-16}
 
 ### Part 2.2 - E534 Sports - Pitcher Quality
 
 Results of optimizing match ups, Data from video at 2013 SABR conference.
 
-{{< youtube "vAPJx8as4_0" >}} {slides 1-x}
+{{< youtube "vAPJx8as4_0" >}} {slides 17-24}
 
 ### Part 2.3 - E534 Sports - PITCHf/X
 
 Examples of use of PITCHf/X.
 
-{{< youtube "JN1-sCa9Bjs" >}}
+{{< youtube "JN1-sCa9Bjs" >}} {slides 25-30}
 
 ### Part 2.4 - E534 Sports - Other Video Data Gathering in Baseball
 
 FIELDf/X, MLBAM, HITf/X, COMMANDf/X.
 
-{{< youtube "zGGThkkIJg8" >}}
+{{< youtube "zGGThkkIJg8" >}} {slides 26-41}
 
 ## Part 3
 
