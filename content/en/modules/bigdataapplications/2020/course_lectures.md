@@ -97,3 +97,11 @@ The Higgs Boson slides are available as [Google Slides](https://docs.google.com/
 ### Videos
 
 Please study [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
+
+### Week 5
+Discussion of Final Project for Class and use of markdown text technology based on slides [Course Project](https://docs.google.com/presentation/d/1LRcuE7ffSftCOiF0eXNKitTcqqW1ckaSWNWMySVYaqE/edit?usp=sharing).
+
+Summary of Sports Informatics Module based on slides [Sports Summary](https://docs.google.com/presentation/d/1BeeTowVeYYJ4kSst33HBQsWEoziYaG9QAV-WtUbVGzY/edit?usp=sharing).
+
+{{< youtube "_b_qt-OQ26A" >}}.
+
