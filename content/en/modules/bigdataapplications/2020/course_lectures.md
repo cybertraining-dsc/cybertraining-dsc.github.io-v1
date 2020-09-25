@@ -48,7 +48,7 @@ These introduce Colab with examples and a Homework using Colab for deep learning
 * [Python MNIST Notebook](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/google_colab_exercise/)
 * [Homework 2](https://iu.instructure.com/courses/1908830/assignments/11187838)
 
-### Week 3
+## Week 3
 
 This lecture reviewed where we had got to and introduced the new Cybertraining web site. Then we gave an overview of the use case lectures which are to be studied this week.  The use case overview slides are available as [Google Slides](https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing)
 
@@ -86,7 +86,7 @@ Features that can be used to distinguish and group together applications in both
 
 ![Facets](/bigdata/images/Facets.png)
 
-### Week 4
+## Week 4
 We surveyed next weeks videos which describe the search for the Higgs Boson and the statistics methods used in the analysis of such conting experiments.
 
 The Higgs Boson slides are available as [Google Slides](https://docs.google.com/presentation/d/1kdVI5_fCqBye8wkZmEmOd3MEh5CFFUID9uBQZX5TMDI/edit?usp=sharing)
@@ -98,7 +98,7 @@ The Higgs Boson slides are available as [Google Slides](https://docs.google.com/
 
 Please study [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
 
-### Week 5
+## Week 5
 Discussion of Final Project for Class and use of markdown text technology based on slides [Course Project](https://docs.google.com/presentation/d/1LRcuE7ffSftCOiF0eXNKitTcqqW1ckaSWNWMySVYaqE/edit?usp=sharing).
 
 Summary of Sports Informatics Module based on slides [Sports Summary](https://docs.google.com/presentation/d/1BeeTowVeYYJ4kSst33HBQsWEoziYaG9QAV-WtUbVGzY/edit?usp=sharing).
