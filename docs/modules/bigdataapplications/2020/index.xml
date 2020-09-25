@@ -174,7 +174,7 @@
 &lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/google_colab_exercise/&#34;&gt;Python MNIST Notebook&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://iu.instructure.com/courses/1908830/assignments/11187838&#34;&gt;Homework 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;week-3&#34;&gt;Week 3&lt;/h3&gt;
+&lt;h2 id=&#34;week-3&#34;&gt;Week 3&lt;/h2&gt;
 &lt;p&gt;This lecture reviewed where we had got to and introduced the new Cybertraining web site. Then we gave an overview of the use case lectures which are to be studied this week.  The use case overview slides are available as &lt;a href=&#34;https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing&#34;&gt;Google Slides&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -197,7 +197,7 @@ Enhanced Apache Big Data Stack&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/bigdata/images/6archsB.png&#34; alt=&#34;6 System Data Architectures&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Features that can be used to distinguish and group together applications in both data and computational science&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/bigdata/images/Facets.png&#34; alt=&#34;Facets&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;week-4&#34;&gt;Week 4&lt;/h3&gt;
+&lt;h2 id=&#34;week-4&#34;&gt;Week 4&lt;/h2&gt;
 &lt;p&gt;We surveyed next weeks videos which describe the search for the Higgs Boson and the statistics methods used in the analysis of such conting experiments.&lt;/p&gt;
 &lt;p&gt;The Higgs Boson slides are available as &lt;a href=&#34;https://docs.google.com/presentation/d/1kdVI5_fCqBye8wkZmEmOd3MEh5CFFUID9uBQZX5TMDI/edit?usp=sharing&#34;&gt;Google Slides&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -205,8 +205,18 @@ Enhanced Apache Big Data Stack&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/VviZs21IYUg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 .&lt;/p&gt;
-&lt;h3 id=&#34;videos-1&#34;&gt;Videos&lt;/h3&gt;
+&lt;h3 id=&#34;videos-for-week-4&#34;&gt;Videos for Week 4&lt;/h3&gt;
 &lt;p&gt;Please study &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/&#34;&gt;Discovery of Higgs Boson&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;week-5&#34;&gt;Week 5&lt;/h2&gt;
+&lt;p&gt;Discussion of Final Project for Class and use of markdown text technology based on slides &lt;a href=&#34;https://docs.google.com/presentation/d/1LRcuE7ffSftCOiF0eXNKitTcqqW1ckaSWNWMySVYaqE/edit?usp=sharing&#34;&gt;Course Project&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Summary of Sports Informatics Module based on slides &lt;a href=&#34;https://docs.google.com/presentation/d/1BeeTowVeYYJ4kSst33HBQsWEoziYaG9QAV-WtUbVGzY/edit?usp=sharing&#34;&gt;Sports Summary&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_b_qt-OQ26A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+.&lt;/p&gt;
+&lt;h3 id=&#34;videos-for-week-5&#34;&gt;Videos for Week 5&lt;/h3&gt;
+&lt;p&gt;Please Study &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/&#34;&gt;Sports as Big Data Analytics&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
