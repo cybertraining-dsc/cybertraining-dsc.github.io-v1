@@ -94,7 +94,7 @@ The Higgs Boson slides are available as [Google Slides](https://docs.google.com/
 {{< youtube "VviZs21IYUg" >}}.
 
 
-### Videos
+### Videos for Week 4
 
 Please study [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
 
@@ -104,4 +104,8 @@ Discussion of Final Project for Class and use of markdown text technology based 
 Summary of Sports Informatics Module based on slides [Sports Summary](https://docs.google.com/presentation/d/1BeeTowVeYYJ4kSst33HBQsWEoziYaG9QAV-WtUbVGzY/edit?usp=sharing).
 
 {{< youtube "_b_qt-OQ26A" >}}.
+
+### Videos for Week 5
+
+Please Study [Sports as Big Data Analytics](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/)
 
