@@ -7,7 +7,7 @@ description: >
   This course introduces the students to Cloud Big Data Applications. The notes are prepared for the course taught in 2020.
 ---
 
-![This is an image](/images/network-4774766_1920.jpg)
+![This is an image](/images/bigdata.png)
 
 {{% pageinfo %}}
 
@@ -37,7 +37,7 @@ We will use the following material:
 
 
 {{< view_module alt="Course Lectures"
-	src="/images/lecture.png"
+	src="/images/bigdata.png"
 	url="/modules/bigdataapplications/2020/course_lectures"
 >}}
 
@@ -52,7 +52,7 @@ Course Lectures. These meeting notes are updated weekly (Web)
 
 {{< view_module
 	alt="Introduction to AI-Driven Digital Transformation (Web)"
-	src="/images/lecture.png"
+	src="/images/aitransform.png"
 	url="/modules/bigdataapplications/2020/introduction"
 >}}
 
@@ -112,7 +112,7 @@ These lecture are still being worked but are included to give students  an intui
 
 {{< view_module
 	alt="Physics"
-	src="/images/physics.png"
+	src="/images/physics-hep.jpg"
 	url="/modules/bigdataapplications/2020/physics"
 >}}
 
