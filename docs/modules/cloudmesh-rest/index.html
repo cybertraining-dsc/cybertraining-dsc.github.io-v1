@@ -1014,10 +1014,20 @@ with data and make predictions from said data. All code needed for this is provi
 <li>Interacting with newly created openapi services</li>
 </ul>
 <h2 id="2-the-python-code">2. The Python Code</h2>
-<p>First, let&rsquo;s ensure we are in the correct directory. If you followed the cloudmesh-openapi installation directions as dictated in the <a href="https://github.com/cloudmesh/cloudmesh-openapi">installation guide</a>, simply navigate to the root directory of <code>cloudmesh-openapi</code>. Notice how we are still working in our python virtual environment <code>ENV3</code> from the installation guide.</p>
+<p>First, let us ensure we are in the correct directory. If you followed the cloudmesh-openapi installation directions as dictated in the <a href="https://github.com/cloudmesh/cloudmesh-openapi">installation guide</a>, simply navigate to the root directory of <code>cloudmesh-openapi</code>. Notice how we are still working in our python virtual environment <code>ENV3</code> from the installation guide.</p>
 <pre><code>(ENV3) &gt; pwd
 ~/cm/cloudmesh-openapi
-</code></pre><p>Let&rsquo;s take a look at the PipelineAnova SVM example code. Use your favorite editor to look at it (whether it be vscode, vim, nano, etc). We&rsquo;ll use emacs</p>
+</code></pre><p>Let us take a look at the PipelineAnova SVM example code.</p>
+<p>A
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">Pipeline</a>
+is a <em>pipeline</em> of transformations to apply with a final
+estimator. Analysis of variance
+(<a href="https://en.wikipedia.org/wiki/Analysis_of_variance">ANOVA</a>) is used
+for feature selection. A Support vector machine
+<a href="https://en.wikipedia.org/wiki/Support_vector_machine">SVM</a> is used as
+the actual learning model on the features.</p>
+<p>Use your favorite editor to look at it (whether it be vscode, vim,
+nano, etc). We will use emacs</p>
 <pre><code>(ENV3) &gt; emacs ./tests/Scikitlearn-experimental/sklearn_svm.py
 </code></pre><p>The class within this file has two main methods to interact with (except for the file upload capability which is added at runtime)</p>
 <pre><code>@classmethod
@@ -1064,7 +1074,8 @@ the file. For this example, you will notice a new file has been added in the sam
 <p><img src="cloudmesh_ui.png" alt="Unavailable"></p>
 <h2 id="6-interacting-with-the-endpoints">6. Interacting With the Endpoints</h2>
 <h3 id="uploading-the-dataset">Uploading the Dataset</h3>
-<p>We now have a nice user inteface to interact with our newly generated API. Let&rsquo;s upload the data set. We are going to use the iris data set in this example. We have provided it for you to use. Simply navigate to the <code>/upload</code> endpoint by clicking on it, then click Try it out.</p>
+<p>We now have a nice user inteface to interact with our newly generated
+API. Let us upload the data set. We are going to use the iris data set in this example. We have provided it for you to use. Simply navigate to the <code>/upload</code> endpoint by clicking on it, then click Try it out.</p>
 <p>We can now upload the file. Click on Choose File and upload the data set located at <code>./tests/Scikitlearn-experimental/iris.data</code>. Simply hit Execute after the file is uploaded. We should then get a <code>200</code> return code (telling us that everything went ok).</p>
 <p><img src="upload_endpoint.png" alt="Unavaialable"></p>
 <h3 id="training-on-the-dataset">Training on the Dataset</h3>
@@ -1276,7 +1287,7 @@ None
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified September 17, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/43ed6fd0165a23f896a77254b2224500499957bb">Changed preferred editor (43ed6fd)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 29, 2020: <a  href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/commit/6c96c2b8194ab8789af66375c965cf62b4c92686">add new links to scikit learn (6c96c2b)</a>
 </div>
 </div>
 
