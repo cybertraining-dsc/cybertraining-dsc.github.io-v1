@@ -40,13 +40,27 @@ In this module, we focus on the following:
 
 ## 2. The Python Code
 
-First, let's ensure we are in the correct directory. If you followed the cloudmesh-openapi installation directions as dictated in the [installation guide](https://github.com/cloudmesh/cloudmesh-openapi), simply navigate to the root directory of `cloudmesh-openapi`. Notice how we are still working in our python virtual environment `ENV3` from the installation guide.
+First, let us ensure we are in the correct directory. If you followed the cloudmesh-openapi installation directions as dictated in the [installation guide](https://github.com/cloudmesh/cloudmesh-openapi), simply navigate to the root directory of `cloudmesh-openapi`. Notice how we are still working in our python virtual environment `ENV3` from the installation guide.
 
 ```
 (ENV3) > pwd
 ~/cm/cloudmesh-openapi
 ```
-Let's take a look at the PipelineAnova SVM example code. Use your favorite editor to look at it (whether it be vscode, vim, nano, etc). We'll use emacs
+
+Let us take a look at the PipelineAnova SVM example code.
+
+A
+[Pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html)
+is a *pipeline* of transformations to apply with a final
+estimator. Analysis of variance
+([ANOVA](https://en.wikipedia.org/wiki/Analysis_of_variance)) is used
+for feature selection. A Support vector machine
+[SVM](https://en.wikipedia.org/wiki/Support_vector_machine) is used as
+the actual learning model on the features.
+
+
+Use your favorite editor to look at it (whether it be vscode, vim,
+nano, etc). We will use emacs
 ```
 (ENV3) > emacs ./tests/Scikitlearn-experimental/sklearn_svm.py
 ```
@@ -120,7 +134,8 @@ The server should now be active. Navigate to [http://localhost:8080/cloudmesh/ui
 
 ### Uploading the Dataset
 
-We now have a nice user inteface to interact with our newly generated API. Let's upload the data set. We are going to use the iris data set in this example. We have provided it for you to use. Simply navigate to the `/upload` endpoint by clicking on it, then click Try it out.
+We now have a nice user inteface to interact with our newly generated
+API. Let us upload the data set. We are going to use the iris data set in this example. We have provided it for you to use. Simply navigate to the `/upload` endpoint by clicking on it, then click Try it out.
 
 We can now upload the file. Click on Choose File and upload the data set located at `./tests/Scikitlearn-experimental/iris.data`. Simply hit Execute after the file is uploaded. We should then get a `200` return code (telling us that everything went ok).
 
