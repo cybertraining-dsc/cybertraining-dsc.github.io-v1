@@ -15,16 +15,16 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Overall Summary
 
-  ![Video](/images/video.png) Video: https://drive.google.com/open?id=1Iq-sKUP28AiTeDU3cW_7L1fEQ2hqakae
-
-  :orange_book: Slides https://drive.google.com/open?id=1MLYwAM6MrrZSKQjKm570mNtyNHiWSCjC
+  Video: {{< youtube "bd9KXMUsQGM" >}}
+  
+  [Slides](https://drive.google.com/file/d/1_Vuv4dSs4MbbL0DzS99zV5ePap__bpXp/view?usp=sharing)
 
 
 ## Defining Clouds I:
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=15TbpDGR2VOy5AAYb_o4740enMZKiVTSz
+  Video: {{< youtube "8OE3oOVDmlQ" >}}
 
-  :orange_book: Slides https://drive.google.com/open?id=1CMqgcpNwNiMqP8TZooqBMhwFhu2EAa3C
+  [Slides](https://drive.google.com/file/d/1AnHop8Qydz48ZyJ3r-w5qUwcIIAr-Co4/view?usp=sharing)
 
   1. Basic definition of cloud and two very simple examples of why virtualization is important.
   2. How clouds are situated wrt HPC and supercomputers
@@ -34,10 +34,10 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Defining Clouds II:
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1BvJCqBQHLMhrPrUsYvGWoq1nk7iGD9cd
+  Video: {{< youtube "LnYbJYzmJ0I" >}}
 
-  :orange_book: Slides https://drive.google.com/open?id=1_rczdp74g8hFnAvXQPVfZClpvoB_B3RN
-
+  [Slides](https://drive.google.com/file/d/1wOmmARvK23Qe2tsE_ILozEUV-loeNglj/view?usp=sharing)
+  
   1. Service-oriented architectures: Software services as Message-linked computing capabilities
   2. The different aaS’s: Network, Infrastructure, Platform, Software
   3. The amazing services that Amazon AWS and Microsoft Azure have
@@ -46,9 +46,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Defining Clouds III:
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1MjIU3N2PX_3SsYSN7eJtAlHGfdePbKEL
+  Video: {{< youtube "X1HwKJ7yBEk" >}}
 
-  :orange_book: Slides https://drive.google.com/open?id=1cDJhE86YRAOCPCAz4dVv2ieq-4SwTYQW
+  [Slides](https://drive.google.com/file/d/1egHTcJnjh9RU44fjZ79eyuZOo-2zjoHt/view?usp=sharing)
 
   1. Cloud Market Share
   2. How important are they?
@@ -56,10 +56,10 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 
 ## Virtualization:
+  
+  Video: {{< youtube "Tqsx-sEPY6M" >}}
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1-zd6wf3zFCaTQFInosPHuHvcVrLOywsw
-
-  :orange_book: Slides https://drive.google.com/open?id=1_-BIAVHSgOnWQmMfIIC61wH-UBYywluO
+  [Slides](https://drive.google.com/file/d/1qFEUaXEj-Fqaf86pu52KUJ3Lu8iVxOHd/view?usp=sharing)
 
   1. Virtualization Technologies, Hypervisors and the different approaches
   2. KVM Xen, Docker and Openstack
@@ -67,9 +67,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Infrastructure I:
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1CIVNiqu88yeRkeU5YOW3qNJbfQHwfBzE
-
-  :orange_book: Slides https://drive.google.com/open?id=11JRZe2RblX2MnJEAyNwc3zup6WS8lU-V
+  Video: {{< youtube "KTNx2SEe2Jo" >}}
+    
+  [Slides]()https://drive.google.com/open?id=11JRZe2RblX2MnJEAyNwc3zup6WS8lU-V
 
   1. Comments on trends in the data center and its technologies
   2. Clouds physically across the world
@@ -79,9 +79,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Infrastructure II:
 
-  ![Video](/images/video.png) Videos https://drive.google.com/open?id=1yGR0YaqSoZ83m1_Kz7q7esFrrxcFzVgl
+  Video: {{< youtube "R0Sk1rAS20M" >}}
 
-  :orange_book: Slides https://drive.google.com/open?id=1L6fnuALdW3ZTGFvu4nXsirPAn37ZMBEb
+  [Slides](https://drive.google.com/file/d/14MTMPqV7AmjQNT4_oDbcKNdzlArNkKyI/view?usp=sharing)
 
   1. Gartner hypecycle and priority matrix on Infrastructure Strategies and
   Compute Infrastructure
@@ -91,9 +91,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Software:
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=14HISqj17Ihom8G6v9KYR2GgAyjeK1mOp
+  Video: {{< youtube "MZrlX8fj48o" >}}
 
-  :orange_book: Slides https://drive.google.com/open?id=10TaEQE9uEPBFtAHpCAT_1akCYbvlMCPg
+  [Slides](https://drive.google.com/file/d/11Zkysv-fGQDdWw-Mp4XZ7lCbnYQcrgil/view?usp=sharing)
 
   1. HPC-ABDS with over 350 software packages and how to use each of 21 layers
   2. Google’s software innovations
@@ -103,39 +103,39 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 
 ## Cloud Applications I: Research applications
+  
+  Video: {{< youtube "sAbYkZHD81U" >}}
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=11zuqeUbaxyfpONOmHRaJQinc4YSZszri
-
-  :orange_book: Slides https://drive.google.com/open?id=1hUgC82FLutp32rICEbPJMgHaadTlOOJv
+  [Slides](https://drive.google.com/file/d/1BXnxRE4q5RmbKzqDsXUbCz38SyfCc8L2/view?usp=sharing)
 
   1. Clouds in science where the area called cyberinfrastructure
 
 
 ## Cloud Applications II: Few key types
-
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1S2-MgshCSqi9a6_tqEVktktN4Nf6Hj4d
-
-  :orange_book: Slides https://drive.google.com/open?id=1KlYnTZgRzqjnG1g-Mf8NTvw1k8DYUCbw
+  
+  Video: {{< youtube "YaPg-OOlkdw" >}}
+  
+  [Slides](https://drive.google.com/file/d/1HwZhPSbS-NzIBzNcfXpV1rmFN6wq7oly/view?usp=sharing)
 
   1. Internet of Things
   2. Different types of MapReduce
 
 
 ##  Parallel Computing in Pictures
-
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1LSnVj0Vw2LXOAF4_CMvehkn0qMIr4y4J
-
-  :orange_book: Slides https://drive.google.com/open?id=1IDozpqtGbTEzANDRt4JNb1Fhp7JCooZH
+  
+  Video: {{< youtube "SzRQ8HSsuvQ" >}}
+  
+  [Slides](https://drive.google.com/file/d/1S4G5bDkdifXIHU_TkprgK3E2AwiLtkjZ/view?usp=sharing)
 
   1. Some useful analogies and principles
   2. Society and Building Hadrian’s wall
 
 
 ## Parallel Computing in real world
-
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1d0pwvvQmm5VMyClm_kGlmB79H69ihHwk
-
-  :orange_book: Slides https://drive.google.com/open?id=1aPEIx98aDYaeJS-yY1JhqqnPPJbizDAJ
+  
+  Video: {{< youtube "C7OBEfyDE8c" >}}
+  
+  [Slides](https://drive.google.com/file/d/1UfkrJlNUMWf7j6ooiOBscUB9CJ89_mTN/view?usp=sharing)
 
   1. Single Program/Instruction Multiple Data SIMD SPMD
   2. Parallel Computing in general
@@ -145,19 +145,19 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Storage:
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1ukgyO048qX0uZ9sti3HxIDGscyKqeCaB
+  Video: {{< youtube "NcIbKQ-AChA" >}}
 
-  :orange_book: Slides https://drive.google.com/open?id=1rVRMcfrpFPpKVhw9VZ8I72TTW21QxzuI
+  [Slides](https://drive.google.com/file/d/1DC8av7f-3er0lEiPgOA4xO13Ya_7SaN8/view?usp=sharing)
 
   1. Cloud data approaches
   2. Repositories, File Systems, Data lakes
 
 
 ## HPC and Clouds: The Branscomb Pyramid
+  
+  Video: {{< youtube "QTxYKhpVtDw" >}}
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=15rrCZ_yaMSpQNZg1lBs_YaOSPw1Rddog
-
-  :orange_book: Slides https://drive.google.com/open?id=1JRdtXWWW0qJrbWAXaHJHxDUZEhPCOK_C
+  [Slides](https://drive.google.com/file/d/1KUL6rif0r7wpPydxbcN_hSOg5yRDWAG7/view?usp=sharing)
 
   1. Supercomputers versus clouds
   2. Science Computing Environments
@@ -165,9 +165,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Comparison of Data Analytics with Simulation:
 
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=1wmt7MQLz3Bf2mvLN8iHgXFHiuvGfyRKr
+  Video: {{< youtube "6WmWE_7iB3w" >}} 
 
-  :orange_book: Slides https://drive.google.com/open?id=1vRv76LerhgJKUsGosXLVKq4s_wDqFlK4
+  [Slides](https://drive.google.com/file/d/1bzfjZtrXSvfq_dbWqPqrbxgduEwKTWSW/view?usp=sharing)
 
   1. Structure of different applications for simulations and Big Data
   2. Software implications
@@ -176,6 +176,21 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## The Future:
 
+  1. Future I [Slides]()
+  
+  Video: {{< youtube "1xH5ow5kOhc" >}}
+  
+  2. Future and Other Issues II [Slides]()
+  
+  Video: {{< youtube "" >}}
+  
+  3. Future and Other Issues III [Slides]()
+  
+  Video: {{< youtube "" >}}
+  
+ 
+  
+  Video: {{< youtube "" >}}
   ![Video](/images/video.png) Video https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc
 
   :orange_book: Slides https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K
@@ -185,10 +200,3 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
   3. Serverless and FaaS
   4. Cloud Native
   5. Microservices
-
-
-## Fault Tolerance
-
-  ![Video](/images/video.png) Video https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24
-
-  :orange_book: Slides https://drive.google.com/open?id=1oNztdHQPDmj24NSGx1RzHa7XfZ5vqUZg
