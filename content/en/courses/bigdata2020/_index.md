@@ -104,9 +104,7 @@ MNIST Classification on Google Colab (Web)
 	
 {{< /view_module >}}
 
-## Preview Material
-
-These lecture are still being worked but are included to give students  an intuition for the Future.
+## Material
 
 ### Physics
 
