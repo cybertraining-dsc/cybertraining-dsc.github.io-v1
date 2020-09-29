@@ -167,15 +167,6 @@ provide a more textual description.&lt;/p&gt;
 
 
 
-&lt;h2 id=&#34;syoutube&#34;&gt;syoutube&lt;/h2&gt;
-&lt;p&gt;Small youtube window&lt;/p&gt;
-&lt;div class=&#34;responsive-embed widescreen&#34;&gt;
-    &lt;div class=&#34;embed video-player&#34;&gt;
-        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34;
-                src=&#34;http://www.youtube.com/embed/abc&#34; start=&#34;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-        &lt;/iframe&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
 &lt;h2 id=&#34;table_of_contents&#34;&gt;table_of_contents&lt;/h2&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -183,7 +174,6 @@ provide a more textual description.&lt;/p&gt;
     &lt;li&gt;&lt;a href=&#34;#ipynb&#34;&gt;ipynb&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#fa&#34;&gt;fa&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#python_icon&#34;&gt;python_icon&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#syoutube&#34;&gt;syoutube&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#table_of_contents&#34;&gt;table_of_contents&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#tag_cloud&#34;&gt;tag_cloud&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#view_book&#34;&gt;view_book&lt;/a&gt;&lt;/li&gt;

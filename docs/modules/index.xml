@@ -7468,6 +7468,227 @@ Compute Infrastructure&lt;/li&gt;
     </item>
     
     <item>
+      <title>Modules: Cloud Computing</title>
+      <link>/modules/bigdataapplications/2020/e534-cloud-computing-unit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/e534-cloud-computing-unit/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;e534-cloud-computing-unit&#34;&gt;E534 Cloud Computing Unit&lt;/h1&gt;
+&lt;h2 id=&#34;overall-summary&#34;&gt;Overall Summary&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bd9KXMUsQGM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1or3WcK_Db2JK4hfZEOkvQq5Ev1i53ky1/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;defining-clouds-i&#34;&gt;Defining Clouds I:&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/8OE3oOVDmlQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1WRZif4my1QUbhjnEYENmpK9Naq_Js09I/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Basic definition of cloud and two very simple examples of why virtualization is important.&lt;/li&gt;
+&lt;li&gt;How clouds are situated wrt HPC and supercomputers&lt;/li&gt;
+&lt;li&gt;Why multicore chips are important&lt;/li&gt;
+&lt;li&gt;Typical data center&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;defining-clouds-ii&#34;&gt;Defining Clouds II:&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LnYbJYzmJ0I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1RFREyzdv4dvERzcdSKbw04_TgO_19RfU/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Service-oriented architectures: Software services as Message-linked computing capabilities&lt;/li&gt;
+&lt;li&gt;The different aaS’s: Network, Infrastructure, Platform, Software&lt;/li&gt;
+&lt;li&gt;The amazing services that Amazon AWS and Microsoft Azure have&lt;/li&gt;
+&lt;li&gt;Initial Gartner comments on clouds (they are now the norm) and evolution of servers; serverless and microservices&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;defining-clouds-iii&#34;&gt;Defining Clouds III:&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/X1HwKJ7yBEk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1JlBjkMfpmaKEwyZphfyQSWDG5PdzeJ5c/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cloud Market Share&lt;/li&gt;
+&lt;li&gt;How important are they?&lt;/li&gt;
+&lt;li&gt;How much money do they make?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;virtualization-e&#34;&gt;Virtualization: E&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Tqsx-sEPY6M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1ezNAmxozgPVTC26BMN_c9-H5sN7wSzjW/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Virtualization Technologies, Hypervisors and the different approaches&lt;/li&gt;
+&lt;li&gt;KVM Xen, Docker and Openstack&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud-infrastructure-i&#34;&gt;Cloud Infrastructure I:&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KTNx2SEe2Jo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Bv7nmTuLr3XUwaY7SSyN-KIgyc0YQcUv/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Comments on trends in the data center and its technologies&lt;/li&gt;
+&lt;li&gt;Clouds physically across the world&lt;/li&gt;
+&lt;li&gt;Green computing&lt;/li&gt;
+&lt;li&gt;Amount of world’s computing ecosystem in clouds&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud-infrastructure-ii-g&#34;&gt;Cloud Infrastructure II: G&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/R0Sk1rAS20M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1u-k-M-Yk2ovstYeFrpHE-zA2wwSaosCa/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Gartner hypecycle and priority matrix on Infrastructure Strategies and
+Compute Infrastructure&lt;/li&gt;
+&lt;li&gt;Containers compared to virtual machines&lt;/li&gt;
+&lt;li&gt;The emergence of artificial intelligence as a dominant force&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud-software&#34;&gt;Cloud Software:&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MZrlX8fj48o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1bmeh_bigk2ojf8-l9eczypNvTOXLMRVU/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;HPC-ABDS with over 350 software packages and how to use each of 21 layers&lt;/li&gt;
+&lt;li&gt;Google’s software innovations&lt;/li&gt;
+&lt;li&gt;MapReduce in pictures&lt;/li&gt;
+&lt;li&gt;Cloud and HPC software stacks compared&lt;/li&gt;
+&lt;li&gt;Components need to support cloud/distributed system programming&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud-applications-i-research-applications&#34;&gt;Cloud Applications I: Research applications&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sAbYkZHD81U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Rg_u_pVIvhyJ9H2nRl9ZSZfNLs6Ppgym/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clouds in science where the area called cyberinfrastructure&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud-applications-ii-few-key-types&#34;&gt;Cloud Applications II: Few key types&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YaPg-OOlkdw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1k72Haok2n4crsFjOZmqKpjHoVloOzHwt/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Internet of Things&lt;/li&gt;
+&lt;li&gt;Different types of MapReduce&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;parallel-computing-in-pictures&#34;&gt;Parallel Computing in Pictures&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SzRQ8HSsuvQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18yzOQvFiyfcu_JjHQF1qhFflARWtU5wb/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Some useful analogies and principles&lt;/li&gt;
+&lt;li&gt;Society and Building Hadrian’s wall&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;parallel-computing-in-real-world&#34;&gt;Parallel Computing in real world&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/C7OBEfyDE8c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1KTJQENaymH6WB09yZPeXRiDMGCNYkXbr/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Single Program/Instruction Multiple Data SIMD SPMD&lt;/li&gt;
+&lt;li&gt;Parallel Computing in general&lt;/li&gt;
+&lt;li&gt;Big Data and Simulations Compared&lt;/li&gt;
+&lt;li&gt;What is hard to do?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;cloud-storage&#34;&gt;Cloud Storage:&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NcIbKQ-AChA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1pm24uinfQ6UdbpNsLXeZusF1oIcK6I7Q/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cloud data approaches&lt;/li&gt;
+&lt;li&gt;Repositories, File Systems, Data lakes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;hpc-and-clouds-the-branscomb-pyramid&#34;&gt;HPC and Clouds: The Branscomb Pyramid&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QTxYKhpVtDw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1F85YOQmXTLMLuK8XBGmFa1GoKnlcr676/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Supercomputers versus clouds&lt;/li&gt;
+&lt;li&gt;Science Computing Environments&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;comparison-of-data-analytics-with-simulation&#34;&gt;Comparison of Data Analytics with Simulation:&lt;/h2&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6WmWE_7iB3w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1z_Crt1R0C94ksH4N5nrkiJXqN41HFF-4/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Structure of different applications for simulations and Big Data&lt;/li&gt;
+&lt;li&gt;Software implications&lt;/li&gt;
+&lt;li&gt;Languages&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;the-future&#34;&gt;The Future:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Future I &lt;a href=&#34;https://drive.google.com/file/d/1HyfRKf7G3Jn7lGaahTzi-zG-7APXv9CY/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1xH5ow5kOhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Future and Other Issues II &lt;a href=&#34;https://drive.google.com/file/d/1o5KKlY2o5m3KySVp9O-YjQDfPipLBDx7/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9AmVHEXv7gY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Future and Other Issues III &lt;a href=&#34;https://drive.google.com/file/d/1CYu2T9m8yLmmmJbwvDDP_2l9q2pOIOaD/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VnkkCix3yEE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Gartner cloud computing hypecycle and priority matrix&lt;/li&gt;
+&lt;li&gt;Hyperscale computing&lt;/li&gt;
+&lt;li&gt;Serverless and FaaS&lt;/li&gt;
+&lt;li&gt;Cloud Native&lt;/li&gt;
+&lt;li&gt;Microservices&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Google Colab</title>
       <link>/modules/python/google-colab/python-google-colab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8497,60 +8718,6 @@ all the instructions before a code section.&lt;/p&gt;
 
 &lt;h3 id=&#34;reference&#34;&gt;Reference:&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras&#34;&gt;Orignal Source to Source Code&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Travis</title>
-      <link>/modules/devops/travis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/devops/travis/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Travis CI is a continuous integration tool that is often used as part
-of DevOps development. It is a hosted service that enables users to
-test their projects on GitHub.&lt;/p&gt;
-&lt;p&gt;Once travis is activated in a GitHub project, the developers can place
-a &lt;code&gt;.travis&lt;/code&gt; file in the project root. Upon checkin the travis
-configuration file will be interpreted and the commands indicated in
-it will be executed.&lt;/p&gt;
-&lt;p&gt;In fact this book has also a travis file that is located at&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/book/blob/master/.travis.yml&#34;&gt;https://github.com/cloudmesh-community/book/blob/master/.travis.yml&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Please inspect it as we will illustrate some concepts of
-it. Unfortunately travis does not use an up to date operating system
-such as ubuntu 18.04. Therefore it contains outdated
-libraries. Although we would be able to use containers, we have
-elected for us to chose mechanism to update the operating system as we
-need.&lt;/p&gt;
-&lt;p&gt;This is done in the &lt;code&gt;install&lt;/code&gt; phase that in our case installs a new
-version of pandoc, as well as some additional libraries that we use.&lt;/p&gt;
-&lt;p&gt;in the &lt;code&gt;env&lt;/code&gt; we specify where we can find our executables with the
-&lt;code&gt;PATH&lt;/code&gt; variable.&lt;/p&gt;
-&lt;p&gt;The last portion in our example file specifies the script that is
-executed after the install phase has been completed. As our
-installation contains convenient and sophisticated makefiles, the
-script is very simple while executing the appropriate make command in
-the corresponding directories.&lt;/p&gt;
-&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
-&lt;p&gt;E.travis.1:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Develop an alternative travis file that in conjunction uses a
-preconfigured container for ubuntu 18.04&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;E.travis.2:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Develop an travis file that checks our books on multiple operating
-systems such as macOS, and ubuntu 18.04.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.travis-ci.com/&#34;&gt;https://docs.travis-ci.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>

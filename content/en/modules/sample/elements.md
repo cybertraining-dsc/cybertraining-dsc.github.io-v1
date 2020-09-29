@@ -19,12 +19,6 @@ tags: [figure]
 
 {{< python_icon >}}
 
-## syoutube
-
-Small youtube window
-
-{{< syoutube abc >}}
-
 ## table_of_contents
 
 {{< table_of_contents >}}
