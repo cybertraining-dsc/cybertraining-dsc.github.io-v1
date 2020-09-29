@@ -11,6 +11,8 @@ weight: 20
 On this page, we will deploy a Pipeline Anova SVM onto our openapi server, and subsequently train the model 
 with data and make predictions from said data. All code needed for this is provided in the [cloudmesh-openapi](https://github.com/cloudmesh/cloudmesh-openapi) repository. The code is largely based on this [sklearn example](https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html). 
 
+A [Pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) is a "pipeline" of transformations to apply with a final estimator. Analysis of variance ([ANOVA](https://en.wikipedia.org/wiki/Analysis_of_variance)) is used for feature selection. A Support vector machine [SVM](https://en.wikipedia.org/wiki/Support_vector_machine) is used as the actual learning model on the features.
+
 {{< table_of_contents >}}
 
 {{% /pageinfo %}}
