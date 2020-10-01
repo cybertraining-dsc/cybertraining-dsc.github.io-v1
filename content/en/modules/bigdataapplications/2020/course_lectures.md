@@ -119,7 +119,7 @@ This class started with a review of applications for AI enhancement.
 * Physics: [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
 * Survey of [51 Applications](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/usecases/)
 * [Sports](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/)
-* [Health and Medicine]
+* [Health and Medicine](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/)
 
 plus those covered Spring 2020 but not updated this semester
 
