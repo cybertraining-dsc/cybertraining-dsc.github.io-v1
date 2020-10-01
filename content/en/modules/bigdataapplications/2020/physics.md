@@ -253,3 +253,12 @@ Refer to **C: Gaussian Distributions and Counting Experiments, Part 5**
 {{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
 
 
+### Homework 3 (Posted on Canvas)
+
+The use case analysis that you were asked to watch in week 3, described over 50 use cases based on templates filled in by users.  This homework has two choices.
+
+1. Consider the existing SKA Template [here](https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit?usp=sharing). Use this plus web resources such as [this](https://www.youtube.com/user/SquareKilometreArray) to write a 3 page description of science goals, current progress and big data challenges of the SKA
+
+OR
+
+2. Here is a Blank use case [Template](https://docs.google.com/document/d/1pEiOjHuVYgu2sCjJ1A-GzVabYnkQn7eQ0BfUNJwrgMc/edit?usp=sharing) (make your own copy). Chose any Big Data use case (including those in videos but address 2020 not 2013 situation) and fill in ONE new use case template producing about 2 pages of new material (summed over answers to questions)
