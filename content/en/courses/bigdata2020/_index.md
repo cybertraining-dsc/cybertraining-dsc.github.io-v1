@@ -130,6 +130,20 @@ Sports sees significant growth in analytics with pervasive statistics shifting t
 
 {{< /view_module >}}
 
+
+### Health and Medicine
+
+{{< view_module
+	alt="Sports"
+	src="/images/health.jpg"
+	url="/modules/bigdataapplications/2020/health_and_medicine"
+>}}
+
+Health and Medicine sector has become a much more needed service than ever. With the uprising of the Covid-19, resource usage, monitoring, research on anti-virals and many more challenging tasks were on the shoulders of scientists. To face such challenges, AI can become a worthy partner in solving some of the related problems efficiently and effectively. 
+
+{{< /view_module >}}
+
+
 ## Complementary Material
 
 * When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
