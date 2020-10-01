@@ -220,6 +220,22 @@ Enhanced Apache Big Data Stack&lt;/p&gt;
 .&lt;/p&gt;
 &lt;h3 id=&#34;videos-for-week-5&#34;&gt;Videos for Week 5&lt;/h3&gt;
 &lt;p&gt;Please Study &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/&#34;&gt;Sports as Big Data Analytics&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;week-6&#34;&gt;Week 6&lt;/h2&gt;
+&lt;p&gt;This class started with a review of applications for AI enhancement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Physics: &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/&#34;&gt;Discovery of Higgs Boson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Survey of &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/usecases/&#34;&gt;51 Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/&#34;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Health and Medicine]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;plus those covered Spring 2020 but not updated this semester&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Banking: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9kAiC-MBaJldZJY4iWWzOK&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/10gQtuXuqAtdc4x7briVis1iQSbqu6XmZCtSlBb2np38/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Commerce: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9GiaepPagh2RjI8Cbr3idV&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/1mAcwVUutv8n8-i5Yjc0wFSlJcwDG4DWaB-wMgdmOFVs/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mobility Industry: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9ptIs1yCZALn24IxNxLdyG&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Transportation Systems: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9ws63uH7vkFHTjfszZmZWr&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Space and Energy: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9Cor0Gxopn-Xwp0xstbtZ_&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/1411g_YlmX0ibGTovY8roBhqRYJgcoJ_SAb-0NQBKgMs/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -1142,6 +1158,158 @@ They will be referenced in the corresponding sections.&lt;/p&gt;
   &lt;/tr&gt;
 &lt;/table&gt;  
 &lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Introduction to AI in Health and Medicine</title>
+      <link>/modules/bigdataapplications/2020/health_and_medicine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/health_and_medicine/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This module discusses AI and the digital transformation for the Health and Medicine Area with a special emphasis on COVID-19 issues. We cover both the impact of COVID and some of the many activities that are addressing it.   Parts B and C have an extensive general discussion of AI in Health and Medicine&lt;/p&gt;
+&lt;p&gt;The complete presentation is available at &lt;a href=&#34;https://docs.google.com/presentation/d/1ONxy6Fu-pGZII235mfMRGAubPun5hO3bEovyETU88p8/edit?usp=sharing&#34;&gt;Google Slides&lt;/a&gt; while the videos are a YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz8MoWDLMjS-v0-OWhA--lBp&#34;&gt;playlist&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;part-a-introduction&#34;&gt;Part A: Introduction&lt;/h2&gt;
+&lt;p&gt;This lesson describes some overarching issues including the&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Summary in terms of Hypecycles&lt;/li&gt;
+&lt;li&gt;Players in the digital health ecosystem and in particular role of Big Tech which has needed AI expertise and infrastructure from clouds to smart watches/phones&lt;/li&gt;
+&lt;li&gt;Views of Pataients and Doctors on New Technology&lt;/li&gt;
+&lt;li&gt;Role of clouds. This is essentially assumed throughout presentation but not stressed.&lt;/li&gt;
+&lt;li&gt;Importance of Security&lt;/li&gt;
+&lt;li&gt;Introduction to Internet of Medical Things; this area is discussed in more detail later in preserntation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18gsYv9yE2SPs_cuxQEInoSnLlSc_vEAZ/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/08ZbpK5oe3A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-b-diagnostics&#34;&gt;Part B: Diagnostics&lt;/h2&gt;
+&lt;p&gt;This highlights some diagnostic appliocations of AI and the digital transformation. Part C also has some diagnostic coverage &amp;ndash; especially particular applications&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General use of AI in Diagnostics&lt;/li&gt;
+&lt;li&gt;Early progress in diagnostic imaging including Radiology and Opthalmology&lt;/li&gt;
+&lt;li&gt;AI In Clinical Decision Support&lt;/li&gt;
+&lt;li&gt;Digital Therapeutics is a recognized and growing activity area&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1-n4kVEL1dkQfB7esEo6PNo6kLs64jBH1/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7-ULGwApFzM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-c-examples&#34;&gt;Part C: Examples&lt;/h2&gt;
+&lt;p&gt;This lesson covers a broad range of AI uses in Health and Medicine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flagging Issues requirng urgent attentation and more generally AI for Precision Merdicine&lt;/li&gt;
+&lt;li&gt;Oncology and cancer have made early progress as exploit AI for images. Avoiding mistakes and diagnosing curable cervical cancer in developing countries with less screening.&lt;/li&gt;
+&lt;li&gt;Predicting Gestational Diabetes&lt;/li&gt;
+&lt;li&gt;cardiovascular diagnostics and AI to interpret and guide Ultrasound measurements&lt;/li&gt;
+&lt;li&gt;Robot Nurses and robots to comfort patients&lt;/li&gt;
+&lt;li&gt;AI to guide cosmetic surgery measuring beauty&lt;/li&gt;
+&lt;li&gt;AI in analysis DNA in blood tests&lt;/li&gt;
+&lt;li&gt;AI For Stroke detection (large vessel occlusion)&lt;/li&gt;
+&lt;li&gt;AI monitoring of breathing to flag opioid-induced respiratory depression.&lt;/li&gt;
+&lt;li&gt;AI to relieve administration burden including voice to text for Doctor&amp;rsquo;s notes&lt;/li&gt;
+&lt;li&gt;AI in consumer genomics&lt;/li&gt;
+&lt;li&gt;Areas that are slow including genomics, Consumer Robotics, Augmented/Virtual Reality and Blockchain&lt;/li&gt;
+&lt;li&gt;AI analysis of information resources flags probleme earlier&lt;/li&gt;
+&lt;li&gt;Internet of Medical Things applications from watches to toothbrushes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Sp9h_-bf_I8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-d-impact-of-covid-19&#34;&gt;Part D: Impact of Covid-19&lt;/h2&gt;
+&lt;p&gt;This covers some aspects of the impact of COVID -19 pandedmic starting in March 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The features of the first stimulus bill&lt;/li&gt;
+&lt;li&gt;Impact on Digital Health, Banking, Fintech, Commerce &amp;ndash; bricks and mortar, e-commerce, groceries, credit cards, advertising, connectivity, tech industry, Ride Hailing and Delivery,&lt;/li&gt;
+&lt;li&gt;Impact on Restaurants, Airlines, Cruise lines, general travel, Food Delivery&lt;/li&gt;
+&lt;li&gt;Impact of working from home and videoconferencing&lt;/li&gt;
+&lt;li&gt;The economy and&lt;/li&gt;
+&lt;li&gt;The often positive trends for Tech industry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1UjBvb6LnKZ8xzHlZhLe5TlDIme00G83v/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/E6EIZr6L7x4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-e-covid-19-and-recession&#34;&gt;Part E: Covid-19 and Recession&lt;/h2&gt;
+&lt;p&gt;This is largely outdated as centered on start of pandemic induced recession. and we know what really happenmed now. Probably the pandemic accelerated the transformation of industry and the use of AI.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1sbEVK_RQdBuOmx-J8WYoYo7LhGXIp99e/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fGdyC3SVA1s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-f-tackling-covid-19&#34;&gt;Part F: Tackling Covid-19&lt;/h2&gt;
+&lt;p&gt;This discusses some of AI and digital methods used to understand and reduce impact of COVID-19&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Robots for remote patient examination&lt;/li&gt;
+&lt;li&gt;computerized tomography scan + AI to identify COVID-19&lt;/li&gt;
+&lt;li&gt;Early activities of Big Tech and COVID&lt;/li&gt;
+&lt;li&gt;Other early biotech activities with COVID-19&lt;/li&gt;
+&lt;li&gt;Remote-work technology: Hopin, Zoom, Run the World, FreeConferenceCall, Slack, GroWrk, Webex, Lifesize, Google Meet, Teams&lt;/li&gt;
+&lt;li&gt;Vaccines&lt;/li&gt;
+&lt;li&gt;Wearables and Monitoring, Remote patient monitoring&lt;/li&gt;
+&lt;li&gt;Telehealth,  Telemedicine and Mobile Health&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/17mYnNxsoLWJ682aDXyJ7HjR1caxYesZj/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iPDNxRS7JmI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-g-data-and-computational-science-and-covid-19&#34;&gt;Part G: Data and Computational Science and Covid-19&lt;/h2&gt;
+&lt;p&gt;This lesson reviews some sophisticated high performance computing HPC and Big Data approaches to COVID&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rosetta volunteer computer to analyze proteins&lt;/li&gt;
+&lt;li&gt;COVID-19 High Performance Computing Consortium&lt;/li&gt;
+&lt;li&gt;AI based drug discovery by startup Insilico Medicine&lt;/li&gt;
+&lt;li&gt;Review of several research projects&lt;/li&gt;
+&lt;li&gt;Global Pervasive Computational Epidemiology for COVID-19 studies&lt;/li&gt;
+&lt;li&gt;Simulations of Virtual Tissues at Indiana University available on &lt;a href=&#34;https://nanohub.org/groups/nanobio&#34;&gt;nanoHUB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/12Mry7k1lk7f0D0VWATeyWKz82DJv0HvM/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/02emPIxf_IA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-h-screening-drug-and-candidates&#34;&gt;Part H: Screening Drug and Candidates&lt;/h2&gt;
+&lt;p&gt;A major project involving Department of Energy Supercomputers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General Structure of Drug Discovery&lt;/li&gt;
+&lt;li&gt;DeepDriveMD Project using AI combined with molecular dynamics  to accelerate discovery of drug properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/10Umb37DZrTqYSP0HigNCads60Zv3tyI1/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tbZ_ObdOoFA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-i-areas-for-covid19-study-and-pandemics-as-complex-systems&#34;&gt;Part I: Areas for Covid19 Study and Pandemics as Complex Systems&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Nnx2GjIs1Ax7IpB1rO4nvN5XoEP0fhEu/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Possible Projects in AI for Health and Medicine and especially COVID-19&lt;/li&gt;
+&lt;li&gt;Pandemics as a Complex System&lt;/li&gt;
+&lt;li&gt;AI and computational Futures for Complex Systems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/F6vykp-gKoI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>

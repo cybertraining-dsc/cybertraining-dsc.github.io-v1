@@ -4078,6 +4078,22 @@ Enhanced Apache Big Data Stack&lt;/p&gt;
 .&lt;/p&gt;
 &lt;h3 id=&#34;videos-for-week-5&#34;&gt;Videos for Week 5&lt;/h3&gt;
 &lt;p&gt;Please Study &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/&#34;&gt;Sports as Big Data Analytics&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;week-6&#34;&gt;Week 6&lt;/h2&gt;
+&lt;p&gt;This class started with a review of applications for AI enhancement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Physics: &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/&#34;&gt;Discovery of Higgs Boson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Survey of &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/usecases/&#34;&gt;51 Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/&#34;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Health and Medicine]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;plus those covered Spring 2020 but not updated this semester&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Banking: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9kAiC-MBaJldZJY4iWWzOK&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/10gQtuXuqAtdc4x7briVis1iQSbqu6XmZCtSlBb2np38/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Commerce: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9GiaepPagh2RjI8Cbr3idV&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/1mAcwVUutv8n8-i5Yjc0wFSlJcwDG4DWaB-wMgdmOFVs/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mobility Industry: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9ptIs1yCZALn24IxNxLdyG&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Transportation Systems: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9ws63uH7vkFHTjfszZmZWr&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Space and Energy: YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz9Cor0Gxopn-Xwp0xstbtZ_&#34;&gt;playlist&lt;/a&gt; and Google &lt;a href=&#34;https://docs.google.com/presentation/d/1411g_YlmX0ibGTovY8roBhqRYJgcoJ_SAb-0NQBKgMs/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -5785,6 +5801,158 @@ Include codes or observations you made on those sections.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/MNIST_database&#34;&gt;Mnist Database&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras&#34;&gt;Advanced Deep Learning Models&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://deeplearning.net/tutorial/gettingstarted.html&#34;&gt;Minist Deep Learning&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Introduction to AI in Health and Medicine</title>
+      <link>/modules/bigdataapplications/2020/health_and_medicine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/health_and_medicine/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This module discusses AI and the digital transformation for the Health and Medicine Area with a special emphasis on COVID-19 issues. We cover both the impact of COVID and some of the many activities that are addressing it.   Parts B and C have an extensive general discussion of AI in Health and Medicine&lt;/p&gt;
+&lt;p&gt;The complete presentation is available at &lt;a href=&#34;https://docs.google.com/presentation/d/1ONxy6Fu-pGZII235mfMRGAubPun5hO3bEovyETU88p8/edit?usp=sharing&#34;&gt;Google Slides&lt;/a&gt; while the videos are a YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz8MoWDLMjS-v0-OWhA--lBp&#34;&gt;playlist&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;part-a-introduction&#34;&gt;Part A: Introduction&lt;/h2&gt;
+&lt;p&gt;This lesson describes some overarching issues including the&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Summary in terms of Hypecycles&lt;/li&gt;
+&lt;li&gt;Players in the digital health ecosystem and in particular role of Big Tech which has needed AI expertise and infrastructure from clouds to smart watches/phones&lt;/li&gt;
+&lt;li&gt;Views of Pataients and Doctors on New Technology&lt;/li&gt;
+&lt;li&gt;Role of clouds. This is essentially assumed throughout presentation but not stressed.&lt;/li&gt;
+&lt;li&gt;Importance of Security&lt;/li&gt;
+&lt;li&gt;Introduction to Internet of Medical Things; this area is discussed in more detail later in preserntation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18gsYv9yE2SPs_cuxQEInoSnLlSc_vEAZ/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/08ZbpK5oe3A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-b-diagnostics&#34;&gt;Part B: Diagnostics&lt;/h2&gt;
+&lt;p&gt;This highlights some diagnostic appliocations of AI and the digital transformation. Part C also has some diagnostic coverage &amp;ndash; especially particular applications&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General use of AI in Diagnostics&lt;/li&gt;
+&lt;li&gt;Early progress in diagnostic imaging including Radiology and Opthalmology&lt;/li&gt;
+&lt;li&gt;AI In Clinical Decision Support&lt;/li&gt;
+&lt;li&gt;Digital Therapeutics is a recognized and growing activity area&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1-n4kVEL1dkQfB7esEo6PNo6kLs64jBH1/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7-ULGwApFzM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-c-examples&#34;&gt;Part C: Examples&lt;/h2&gt;
+&lt;p&gt;This lesson covers a broad range of AI uses in Health and Medicine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flagging Issues requirng urgent attentation and more generally AI for Precision Merdicine&lt;/li&gt;
+&lt;li&gt;Oncology and cancer have made early progress as exploit AI for images. Avoiding mistakes and diagnosing curable cervical cancer in developing countries with less screening.&lt;/li&gt;
+&lt;li&gt;Predicting Gestational Diabetes&lt;/li&gt;
+&lt;li&gt;cardiovascular diagnostics and AI to interpret and guide Ultrasound measurements&lt;/li&gt;
+&lt;li&gt;Robot Nurses and robots to comfort patients&lt;/li&gt;
+&lt;li&gt;AI to guide cosmetic surgery measuring beauty&lt;/li&gt;
+&lt;li&gt;AI in analysis DNA in blood tests&lt;/li&gt;
+&lt;li&gt;AI For Stroke detection (large vessel occlusion)&lt;/li&gt;
+&lt;li&gt;AI monitoring of breathing to flag opioid-induced respiratory depression.&lt;/li&gt;
+&lt;li&gt;AI to relieve administration burden including voice to text for Doctor&amp;rsquo;s notes&lt;/li&gt;
+&lt;li&gt;AI in consumer genomics&lt;/li&gt;
+&lt;li&gt;Areas that are slow including genomics, Consumer Robotics, Augmented/Virtual Reality and Blockchain&lt;/li&gt;
+&lt;li&gt;AI analysis of information resources flags probleme earlier&lt;/li&gt;
+&lt;li&gt;Internet of Medical Things applications from watches to toothbrushes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Sp9h_-bf_I8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-d-impact-of-covid-19&#34;&gt;Part D: Impact of Covid-19&lt;/h2&gt;
+&lt;p&gt;This covers some aspects of the impact of COVID -19 pandedmic starting in March 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The features of the first stimulus bill&lt;/li&gt;
+&lt;li&gt;Impact on Digital Health, Banking, Fintech, Commerce &amp;ndash; bricks and mortar, e-commerce, groceries, credit cards, advertising, connectivity, tech industry, Ride Hailing and Delivery,&lt;/li&gt;
+&lt;li&gt;Impact on Restaurants, Airlines, Cruise lines, general travel, Food Delivery&lt;/li&gt;
+&lt;li&gt;Impact of working from home and videoconferencing&lt;/li&gt;
+&lt;li&gt;The economy and&lt;/li&gt;
+&lt;li&gt;The often positive trends for Tech industry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1UjBvb6LnKZ8xzHlZhLe5TlDIme00G83v/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/E6EIZr6L7x4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-e-covid-19-and-recession&#34;&gt;Part E: Covid-19 and Recession&lt;/h2&gt;
+&lt;p&gt;This is largely outdated as centered on start of pandemic induced recession. and we know what really happenmed now. Probably the pandemic accelerated the transformation of industry and the use of AI.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1sbEVK_RQdBuOmx-J8WYoYo7LhGXIp99e/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fGdyC3SVA1s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-f-tackling-covid-19&#34;&gt;Part F: Tackling Covid-19&lt;/h2&gt;
+&lt;p&gt;This discusses some of AI and digital methods used to understand and reduce impact of COVID-19&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Robots for remote patient examination&lt;/li&gt;
+&lt;li&gt;computerized tomography scan + AI to identify COVID-19&lt;/li&gt;
+&lt;li&gt;Early activities of Big Tech and COVID&lt;/li&gt;
+&lt;li&gt;Other early biotech activities with COVID-19&lt;/li&gt;
+&lt;li&gt;Remote-work technology: Hopin, Zoom, Run the World, FreeConferenceCall, Slack, GroWrk, Webex, Lifesize, Google Meet, Teams&lt;/li&gt;
+&lt;li&gt;Vaccines&lt;/li&gt;
+&lt;li&gt;Wearables and Monitoring, Remote patient monitoring&lt;/li&gt;
+&lt;li&gt;Telehealth,  Telemedicine and Mobile Health&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/17mYnNxsoLWJ682aDXyJ7HjR1caxYesZj/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iPDNxRS7JmI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-g-data-and-computational-science-and-covid-19&#34;&gt;Part G: Data and Computational Science and Covid-19&lt;/h2&gt;
+&lt;p&gt;This lesson reviews some sophisticated high performance computing HPC and Big Data approaches to COVID&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rosetta volunteer computer to analyze proteins&lt;/li&gt;
+&lt;li&gt;COVID-19 High Performance Computing Consortium&lt;/li&gt;
+&lt;li&gt;AI based drug discovery by startup Insilico Medicine&lt;/li&gt;
+&lt;li&gt;Review of several research projects&lt;/li&gt;
+&lt;li&gt;Global Pervasive Computational Epidemiology for COVID-19 studies&lt;/li&gt;
+&lt;li&gt;Simulations of Virtual Tissues at Indiana University available on &lt;a href=&#34;https://nanohub.org/groups/nanobio&#34;&gt;nanoHUB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/12Mry7k1lk7f0D0VWATeyWKz82DJv0HvM/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/02emPIxf_IA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-h-screening-drug-and-candidates&#34;&gt;Part H: Screening Drug and Candidates&lt;/h2&gt;
+&lt;p&gt;A major project involving Department of Energy Supercomputers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General Structure of Drug Discovery&lt;/li&gt;
+&lt;li&gt;DeepDriveMD Project using AI combined with molecular dynamics  to accelerate discovery of drug properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/10Umb37DZrTqYSP0HigNCads60Zv3tyI1/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tbZ_ObdOoFA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-i-areas-for-covid19-study-and-pandemics-as-complex-systems&#34;&gt;Part I: Areas for Covid19 Study and Pandemics as Complex Systems&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Nnx2GjIs1Ax7IpB1rO4nvN5XoEP0fhEu/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Possible Projects in AI for Health and Medicine and especially COVID-19&lt;/li&gt;
+&lt;li&gt;Pandemics as a Complex System&lt;/li&gt;
+&lt;li&gt;AI and computational Futures for Complex Systems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/F6vykp-gKoI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -8564,160 +8732,6 @@ management.” Web Page, May-2017 [Online]. Available:
 &lt;p&gt;[4] Puppet, “Config files: The main config files.” Web Page, Apr-2014
 [Online]. Available:
 &lt;a href=&#34;https://puppet.com/docs/puppet/5.3/config_file_main.html&#34;&gt;https://puppet.com/docs/puppet/5.3/config_file_main.html&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: MNIST Classification on Google Colab</title>
-      <link>/modules/bigdataapplications/2020/google_colab_exercise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/google_colab_exercise/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;aside&#34;&gt;
-  &lt;table style=&#34;width:100%&#34;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;&lt;/a&gt;&lt;/td&gt;    
-    &lt;td&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb&#34; target=&#34;_parent&#34;&gt;&lt;img src=&#34;https://www.tensorflow.org/images/GitHub-Mark-32px.png&#34; alt=&#34;&#34;/&gt; View in Github&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href=&#34;https://raw.githubusercontent.com/cybertraining-dsc/cybertraining-dsc.github.io/master/content/en/modules/notebooks/google_colab_mnist_example.ipynb&#34; download&gt;&lt;img src=&#34;https://www.tensorflow.org/images/download_logo_32px.png&#34; alt=&#34;&#34;/&gt;&lt;/a&gt; Download Notebook&lt;/td&gt;    
-  &lt;/tr&gt;
-&lt;/table&gt;  
-&lt;/div&gt;
-&lt;p&gt;In this lesson we discuss in how to create a simple IPython Notebook to solve
-an image classification problem. MNIST contains a set of pictures&lt;/p&gt;
-&lt;h2 id=&#34;import-libraries&#34;&gt;Import Libraries&lt;/h2&gt;
-&lt;p&gt;Note: &lt;a href=&#34;https://python-future.org/quickstart.html&#34;&gt;https://python-future.org/quickstart.html&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;__future__&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;absolute_import&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;__future__&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;division&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;__future__&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;print_function&lt;/span&gt;
-
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;numpy&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;np&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keras.models&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Sequential&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keras.layers&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Dense&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Activation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Dropout&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keras.utils&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to_categorical&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plot_model&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;keras.datasets&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mnist&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;warm-up-exercise&#34;&gt;Warm Up Exercise&lt;/h2&gt;
-&lt;h2 id=&#34;pre-process-data&#34;&gt;Pre-process data&lt;/h2&gt;
-&lt;h3 id=&#34;load-data&#34;&gt;Load data&lt;/h3&gt;
-&lt;p&gt;First we load the data from the inbuilt mnist dataset from Keras
-Here we have to split the data set into training and testing data.
-The training data or testing data has two components.
-Training features and training labels.
-For instance every sample in the dataset has a corresponding label.
-In Mnist the training sample contains image data represented in terms of
-an array. The training labels are from 0-9.&lt;/p&gt;
-&lt;p&gt;Here we say x_train for training data features and y_train as the training labels. Same goes for testing data.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x_train&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;y_train&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x_test&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;y_test&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mnist&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;load_data&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
-11493376/11490434 [==============================] - 0s 0us/step
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;identify-number-of-classes&#34;&gt;Identify Number of Classes&lt;/h3&gt;
-&lt;p&gt;As this is a number classification problem. We need to know how many classes are there.
-So we&amp;rsquo;ll count the number of unique labels.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;num_labels&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;len&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;np&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;unique&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;y_train&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;convert-labels-to-one-hot-vector&#34;&gt;Convert Labels To One-Hot Vector&lt;/h3&gt;
-&lt;p&gt;Read more on one-hot vector.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;y_train&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to_categorical&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;y_train&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;y_test&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to_categorical&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;y_test&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;image-reshaping&#34;&gt;Image Reshaping&lt;/h2&gt;
-&lt;p&gt;The training model is designed by considering the data as a vector.
-This is a model dependent modification. Here we assume the image is
-a squared shape image.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;image_size&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;x_train&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shape&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;input_size&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;image_size&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;image_size&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;resize-and-normalize&#34;&gt;Resize and Normalize&lt;/h2&gt;
-&lt;p&gt;The next step is to continue the reshaping to a fit into a vector
-and normalize the data. Image values are from 0 - 255, so an
-easy way to normalize is to divide by the maximum value.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;x_train&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;np&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;reshape&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x_train&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input_size&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;])&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;x_train&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;x_train&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;astype&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;float32&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;255&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;x_test&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;np&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;reshape&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x_test&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input_size&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;])&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;x_test&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;x_test&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;astype&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;float32&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;255&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;create-a-keras-model&#34;&gt;Create a Keras Model&lt;/h2&gt;
-&lt;p&gt;Keras is a neural network library. The summary function provides tabular summary on the model you created. And the plot_model function provides a grpah on the network you created.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Create Model&lt;/span&gt;
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# network parameters&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;batch_size&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;hidden_units&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;64&lt;/span&gt;
-
-&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Sequential&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Dense&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;hidden_units&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input_dim&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;input_size&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Dense&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;num_labels&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Activation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;softmax&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;span style=&#34;color:#000&#34;&gt;plot_model&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to_file&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;mlp-mnist.png&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;show_shapes&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#3465a4&#34;&gt;True&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Model: &amp;quot;sequential_1&amp;quot;
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-dense_5 (Dense)              (None, 512)               401920    
-_________________________________________________________________
-dense_6 (Dense)              (None, 10)                5130      
-_________________________________________________________________
-activation_5 (Activation)    (None, 10)                0         
-=================================================================
-Total params: 407,050
-Trainable params: 407,050
-Non-trainable params: 0
-_________________________________________________________________
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/master/content/en/modules/bigdataapplications/2020/images/deeplearning/lab1/output_20_1.png&#34; alt=&#34;images&#34;&gt;&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/UagrQBdrkjM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;compile-and-train&#34;&gt;Compile and Train&lt;/h2&gt;
-&lt;p&gt;A keras model need to be compiled before it can be used to train
-the model. In the compile function, you can provide the optimization
-that you want to add, metrics you expect and the type of loss function
-you need to use.&lt;/p&gt;
-&lt;p&gt;Here we use adam optimizer, a famous optimizer used in neural networks.&lt;/p&gt;
-&lt;p&gt;The loss funtion we have used is the categorical_crossentropy.&lt;/p&gt;
-&lt;p&gt;Once the model is compiled, then the fit function is called upon passing the number of epochs, traing data and batch size.&lt;/p&gt;
-&lt;p&gt;The batch size determines the number of elements used per minibatch in optimizing the function.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note: Change the number of epochs, batch size and see what happens.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;compile&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;loss&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;categorical_crossentropy&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-              &lt;span style=&#34;color:#000&#34;&gt;optimizer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;adam&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-              &lt;span style=&#34;color:#000&#34;&gt;metrics&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;accuracy&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;])&lt;/span&gt;
-
-&lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;fit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x_train&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;y_train&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;epochs&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;batch_size&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;batch_size&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;469/469 [==============================] - 3s 7ms/step - loss: 0.3647 - accuracy: 0.8947
-
-
-
-
-
-&amp;lt;tensorflow.python.keras.callbacks.History at 0x7fe88faf4c50&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;testing&#34;&gt;Testing&lt;/h2&gt;
-&lt;p&gt;Now we can test the trained model. Use the evaluate function by passing
-test data and batch size and the accuracy and the loss value can be retrieved.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MNIST_V1.0|Exercise: Try to observe the network behavior by changing the number of epochs, batch size and record the best accuracy that you can gain. Here you can record what happens when you change these values. Describe your observations in 50-100 words.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;loss&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;acc&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;model&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;evaluate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x_test&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;y_test&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;batch_size&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;batch_size&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;Test accuracy: &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;%.1f%%&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;%&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;100.0&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;acc&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;79/79 [==============================] - 0s 4ms/step - loss: 0.2984 - accuracy: 0.9148
-
-Test accuracy: 91.5%
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;final-note&#34;&gt;Final Note&lt;/h2&gt;
-&lt;p&gt;This programme can be defined as a hello world programme in deep
-learning. Objective of this exercise is not to teach you the depths of
-deep learning. But to teach you basic concepts that may need to design a
-simple network to solve a problem. Before running the whole code, read
-all the instructions before a code section.&lt;/p&gt;
-&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Solve Exercise MNIST_V1.0.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/lbCyefwZGlI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;reference&#34;&gt;Reference:&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras&#34;&gt;Orignal Source to Source Code&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
