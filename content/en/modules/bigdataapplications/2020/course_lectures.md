@@ -106,7 +106,26 @@ This week's class and its zoom video covers two topics
 
 {{< youtube "_b_qt-OQ26A" >}}.
 
+
 ### Videos for Week 5
 
 Please Study [Sports as Big Data Analytics](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/)
+
+
+## Week 6
+
+This class started with a review of applications for AI enhancement.
+
+* Physics: [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
+* Survey of [51 Applications](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/usecases/)
+* [Sports](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/)
+* [Health and Medicine]
+
+plus those covered Spring 2020 but not updated this semester
+
+* Banking: YouTube [playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz9kAiC-MBaJldZJY4iWWzOK) and Google [slides](https://docs.google.com/presentation/d/10gQtuXuqAtdc4x7briVis1iQSbqu6XmZCtSlBb2np38/edit?usp=sharing)
+* Commerce: YouTube [playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz9GiaepPagh2RjI8Cbr3idV) and Google [slides](https://docs.google.com/presentation/d/1mAcwVUutv8n8-i5Yjc0wFSlJcwDG4DWaB-wMgdmOFVs/edit?usp=sharing)   
+* Mobility Industry: YouTube [playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz9ptIs1yCZALn24IxNxLdyG) and Google [slides](https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing)  
+* Transportation Systems: YouTube [playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz9ws63uH7vkFHTjfszZmZWr) and Google [slides](https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing)
+* Space and Energy: YouTube [playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz9Cor0Gxopn-Xwp0xstbtZ_) and Google [slides](https://docs.google.com/presentation/d/1411g_YlmX0ibGTovY8roBhqRYJgcoJ_SAb-0NQBKgMs/edit?usp=sharing)
 
