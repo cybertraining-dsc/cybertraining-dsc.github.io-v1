@@ -226,7 +226,7 @@ Enhanced Apache Big Data Stack&lt;/p&gt;
 &lt;li&gt;Physics: &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/&#34;&gt;Discovery of Higgs Boson&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Survey of &lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/usecases/&#34;&gt;51 Applications&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/sports/&#34;&gt;Sports&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[Health and Medicine]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/&#34;&gt;Health and Medicine&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;plus those covered Spring 2020 but not updated this semester&lt;/p&gt;
 &lt;ul&gt;
@@ -1167,6 +1167,12 @@ They will be referenced in the corresponding sections.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Here is a Blank use case &lt;a href=&#34;https://docs.google.com/document/d/1pEiOjHuVYgu2sCjJ1A-GzVabYnkQn7eQ0BfUNJwrgMc/edit?usp=sharing&#34;&gt;Template&lt;/a&gt; (make your own copy). Chose any Big Data use case (including those in videos but address 2020 not 2013 situation) and fill in ONE new use case template producing about 2 pages of new material (summed over answers to questions)&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;homwork-4-posted-on-canvashttpsiuinstructurecomcourses1908830assignments11232343&#34;&gt;Homwork 4 (Posted on &lt;a href=&#34;https://iu.instructure.com/courses/1908830/assignments/11232343&#34;&gt;Canvas&lt;/a&gt;)&lt;/h3&gt;
+&lt;p&gt;Consider Physics Colab A &lt;strong&gt;&amp;ldquo;Part 4 Error Estimates&amp;rdquo; and Colab D &amp;ldquo;Part 2 Varying Seed (randomly) gives distinct results&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Consider a Higgs of measured width 0.5 GeV (narrowGauss and narrowTotal in Part A) and use analysis of A Part 4 to estimate the difference between signal and background compared to expected error (standard deviation)&lt;/p&gt;
+&lt;p&gt;Run 3 different random number choices (as in D Part 2) to show how conclusions change&lt;/p&gt;
+&lt;p&gt;Recommend changing bin size in A Part 4 from 2 GeV to 1 GeV when the Higgs signal will be in two bins you can add (equivalently use 2 GeV histogram bins shifting origin so Higgs mass of 126 GeV is in the center of a bin)&lt;/p&gt;
+&lt;p&gt;Suppose you keep background unchanged and reduce the Higgs signal by a factor of 2 (300 to 150 events). Can Higgs still be detected?&lt;/p&gt;
 
       </description>
     </item>
