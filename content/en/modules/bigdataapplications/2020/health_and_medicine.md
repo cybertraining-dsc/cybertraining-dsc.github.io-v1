@@ -61,25 +61,45 @@ This lesson covers a broad range of AI uses in Health and Medicine
 * Internet of Medical Things applications from watches to toothbrushes
 
 
-
-
-
 [slides](https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing)
 
 {{< youtube "Sp9h_-bf_I8" >}}
 
 ## Part D: Impact of Covid-19
 
+This covers some aspects of the impact of COVID -19 pandedmic starting in March 2020
+
+* The features of the first stimulus bill
+* Impact on Digital Health, Banking, Fintech, Commerce -- bricks and mortar, e-commerce, groceries, credit cards, advertising, connectivity, tech industry, Ride Hailing and Delivery, 
+* Impact on Restaurants, Airlines, Cruise lines, general travel, Food Delivery
+* Impact of working from home and videoconferencing
+* The economy and
+* The often positive trends for Tech industry
+
 [slides](https://drive.google.com/file/d/1UjBvb6LnKZ8xzHlZhLe5TlDIme00G83v/view?usp=sharing)
+
 {{< youtube "E6EIZr6L7x4" >}}
 
 ## Part E: Covid-19 and Recession
+
+This is largely outdated as centered on start of pandemic induced recession. and we know what really happenmed now. Probably the pandemic accelerated the transformation of industry and the use of AI.
 
 [slides](https://drive.google.com/file/d/1sbEVK_RQdBuOmx-J8WYoYo7LhGXIp99e/view?usp=sharing)
 
 {{< youtube "fGdyC3SVA1s" >}}
 
 ## Part F: Tackling Covid-19
+
+This discusses some of AI and digital methods used to understand and reduce impact of COVID-19
+
+* Robots for remote patient examination
+* computerized tomography scan + AI to identify COVID-19
+* Early activities of Big Tech and COVID
+* Other early biotech activities with COVID-19
+* Remote-work technology: Hopin, Zoom, Run the World, FreeConferenceCall, Slack, GroWrk, Webex, Lifesize, Google Meet, Teams
+* Vaccines
+* Wearables and Monitoring, Remote patient monitoring
+* Telehealth,  Telemedicine and Mobile Health
 
 [slides](https://drive.google.com/file/d/17mYnNxsoLWJ682aDXyJ7HjR1caxYesZj/view?usp=sharing)
 
