@@ -130,6 +130,23 @@ Sports sees significant growth in analytics with pervasive statistics shifting t
 
 {{< /view_module >}}
 
+
+### Introduction to AI in Health and Medicine
+
+{{< view_module
+	alt="Health"
+	src="/images/health.jpg"
+	url="/modules/bigdataapplications/2020/health_and_medicine/"
+>}}
+
+This module discusses AI and the digital transformation for the Health
+and Medicine Area with a special emphasis on COVID-19 issues. We cover
+both the impact of COVID and some of the many activities that are
+addressing it. Parts B and C have an extensive general discussion of
+AI in Health and Medicine
+
+{{< /view_module >}}
+
 ## Complementary Material
 
 * When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
