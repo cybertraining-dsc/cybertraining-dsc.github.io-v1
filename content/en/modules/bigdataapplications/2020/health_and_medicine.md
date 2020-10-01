@@ -107,19 +107,37 @@ This discusses some of AI and digital methods used to understand and reduce impa
 
 ## Part G: Data and Computational Science and Covid-19
 
+This lesson reviews some sophisticated high performance computing HPC and Big Data approaches to COVID
+
+* Rosetta volunteer computer to analyze proteins
+* COVID-19 High Performance Computing Consortium
+* AI based drug discovery by startup Insilico Medicine
+* Review of several research projects
+* Global Pervasive Computational Epidemiology for COVID-19 studies
+* Simulations of Virtual Tissues at Indiana University available on [nanoHUB](https://nanohub.org/groups/nanobio)
+
 [slides](https://drive.google.com/file/d/12Mry7k1lk7f0D0VWATeyWKz82DJv0HvM/view?usp=sharing)
 
 {{< youtube "02emPIxf_IA" >}}
 
 ## Part H: Screening Drug and Candidates
+A major project involving Department of Energy Supercomputers
+
+* General Structure of Drug Discovery
+* DeepDriveMD Project using AI combined with molecular dynamics  to accelerate discovery of drug properties
+
 
 [slides](https://drive.google.com/file/d/10Umb37DZrTqYSP0HigNCads60Zv3tyI1/view?usp=sharing)
 
 {{< youtube "tbZ_ObdOoFA" >}}
 
-## Part I: Areas for Projects
+## Part I: Areas for Covid19 Study and Pandemics as Complex Systems
 
 [slides](https://drive.google.com/file/d/1Nnx2GjIs1Ax7IpB1rO4nvN5XoEP0fhEu/view?usp=sharing)
+
+* Possible Projects in AI for Health and Medicine and especially COVID-19
+* Pandemics as a Complex System 
+* AI and computational Futures for Complex Systems
 
 {{< youtube "F6vykp-gKoI" >}}
 
