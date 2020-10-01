@@ -114,6 +114,13 @@ Please Study [Sports as Big Data Analytics](https://cybertraining-dsc.github.io/
 
 ## Week 6
 
+This weeks's class and its zoom video covers the Health and Medicine with Artificial Intelligence. 
+We focuses on COVID-19 and related topics with this lecture. 
+
+Please study [Health and Medicine](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/)
+
+## More 
+
 This class started with a review of applications for AI enhancement.
 
 * Physics: [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)

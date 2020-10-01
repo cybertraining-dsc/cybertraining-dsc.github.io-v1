@@ -68,7 +68,16 @@ Introduction to AI-Driven Digital Transformation (Web)
 	url="/modules/bigdataapplications/2020/usecases"
 >}}
 
-This module covers 51 usecases of Big data that emerged from a NIST (National Institute for Standards and Technology) study of Big data. We cover the NIST Big Data Public Working Group (NBD-PWG) Process and summarizes the work of five subgroups: Definitions and Taxonomies Subgroup, Reference Architecture Subgroup, Security and Privacy Subgroup, Technology Roadmap Subgroup and the Requirements andUse Case Subgroup. 51 use cases collected in this process are briefly discussed with a classification of the source of parallelism and the high and low level computational structure. We describe the key features of this classification.
+This module covers 51 usecases of Big data that emerged from a NIST
+(National Institute for Standards and Technology) study of Big
+data. We cover the NIST Big Data Public Working Group (NBD-PWG)
+Process and summarizes the work of five subgroups: Definitions and
+Taxonomies Subgroup, Reference Architecture Subgroup, Security and
+Privacy Subgroup, Technology Roadmap Subgroup and the Requirements
+andUse Case Subgroup. 51 use cases collected in this process are
+briefly discussed with a classification of the source of parallelism
+and the high and low level computational structure. We describe the
+key features of this classification.
 
 {{< /view_module >}}
 
@@ -114,7 +123,22 @@ MNIST Classification on Google Colab (Web)
 	url="/modules/bigdataapplications/2020/physics"
 >}}
 
-Big Data Applications and Analytics Discovery of Higgs Boson Part I (Unit 8) Section Units 9-11 Summary: This section starts by describing the LHC accelerator at CERN and evidence found by the experiments suggesting existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking at histograms of Higgs Boson production with various forms of shape of signal and various background and with various event totals. Then random variables and some simple principles of statistics are introduced with explanation as to why they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why they seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. The Central Limit Theorem concludes discussion.
+Big Data Applications and Analytics Discovery of Higgs Boson Part I
+(Unit 8) Section Units 9-11 Summary: This section starts by describing
+the LHC accelerator at CERN and evidence found by the experiments
+suggesting existence of a Higgs Boson. The huge number of authors on a
+paper, remarks on histograms and Feynman diagrams is followed by an
+accelerator picture gallery. The next unit is devoted to Python
+experiments looking at histograms of Higgs Boson production with
+various forms of shape of signal and various background and with
+various event totals. Then random variables and some simple principles
+of statistics are introduced with explanation as to why they are
+relevant to Physics counting experiments. The unit introduces Gaussian
+(normal) distributions and explains why they seen so often in natural
+phenomena. Several Python illustrations are given. Random Numbers with
+their Generators and Seeds lead to a discussion of Binomial and
+Poisson Distribution. Monte-Carlo and accept-reject methods. The
+Central Limit Theorem concludes discussion.
 
 {{< /view_module >}}
 
@@ -126,26 +150,36 @@ Big Data Applications and Analytics Discovery of Higgs Boson Part I (Unit 8) Sec
 	url="/modules/bigdataapplications/2020/sports"
 >}}
 
-Sports sees significant growth in analytics with pervasive statistics shifting to more sophisticated measures. We start with baseball as game is built around segments dominated by individuals where detailed (video/image) achievement measures including PITCHf/x and FIELDf/x are moving field into big data arena. There are interesting relationships between the economics of sports and big data analytics. We look at Wearables and consumer sports/recreation. The importance of spatial visualization is discussed. We look at other Sports: Soccer, Olympics, NFL Football, Basketball, Tennis and Horse Racing.
+Sports sees significant growth in analytics with pervasive statistics
+shifting to more sophisticated measures. We start with baseball as
+game is built around segments dominated by individuals where detailed
+(video/image) achievement measures including PITCHf/x and FIELDf/x are
+moving field into big data arena. There are interesting relationships
+between the economics of sports and big data analytics. We look at
+Wearables and consumer sports/recreation. The importance of spatial
+visualization is discussed. We look at other Sports: Soccer, Olympics,
+NFL Football, Basketball, Tennis and Horse Racing.
 
 {{< /view_module >}}
 
 
-### Introduction to AI in Health and Medicine
+### Health and Medicine
 
 {{< view_module
-	alt="Health"
+	alt="Sports"
 	src="/images/health.jpg"
-	url="/modules/bigdataapplications/2020/health_and_medicine/"
+	url="/modules/bigdataapplications/2020/health_and_medicine"
 >}}
 
-This module discusses AI and the digital transformation for the Health
-and Medicine Area with a special emphasis on COVID-19 issues. We cover
-both the impact of COVID and some of the many activities that are
-addressing it. Parts B and C have an extensive general discussion of
-AI in Health and Medicine
+Health and Medicine sector has become a much more needed service than
+ever. With the uprising of the Covid-19, resource usage, monitoring,
+research on anti-virals and many more challenging tasks were on the
+shoulders of scientists. To face such challenges, AI can become a
+worthy partner in solving some of the related problems efficiently and
+effectively.
 
 {{< /view_module >}}
+
 
 ## Complementary Material
 
@@ -159,7 +193,8 @@ AI in Health and Medicine
 	url="https://piazza.com/class/kedccsbsthm5sc"
 >}}
 
-Piazza. The link for all those that participate in the IU class to its class Piazza.
+Piazza. The link for all those that participate in the IU class to its
+class Piazza.
 
 {{< /view_module >}}
 
@@ -183,7 +218,8 @@ Piazza. The link for all those that participate in the IU class to its class Pia
 	url="/modules/git-pull-request/"
 >}}
 
-Git Pull Request. Here you will learn how to do a simple git pull request either via the GitHub GUI or the git command line tools
+Git Pull Request. Here you will learn how to do a simple git pull
+request either via the GitHub GUI or the git command line tools
 
 {{< /view_module >}}
 
