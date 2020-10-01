@@ -253,7 +253,7 @@ Refer to **C: Gaussian Distributions and Counting Experiments, Part 5**
 {{< ipynb name="E534_Higgs_Discovery_C.ipynb" >}}
 
 
-### Homework 3 (Posted on Canvas)
+### Homework 3 (Posted on [Canvas](https://iu.instructure.com/courses/1908830/assignments/11210806))
 
 The use case analysis that you were asked to watch in week 3, described over 50 use cases based on templates filled in by users.  This homework has two choices.
 
