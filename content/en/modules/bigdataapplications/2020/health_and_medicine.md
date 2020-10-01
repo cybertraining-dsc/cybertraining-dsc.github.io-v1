@@ -3,13 +3,26 @@ title: Introduction to AI in Health and Medicine
 draft: false
 weight: 6
 description: >
-  This section discusses on the health and medicine sector 
+  This section discusses the health and medicine sector 
 ---
 
 ## Overview
 
+This module discusses AI and the digital transformation for the Health and Medicine Area with a special emphasis on COVID-19 issues. We cover both the impact of COVID and some of the many activities that are addressing it.
+
+The complete presentation is available at [Google Slides](https://docs.google.com/presentation/d/1ONxy6Fu-pGZII235mfMRGAubPun5hO3bEovyETU88p8/edit?usp=sharing)
+
+
 
 ## Part A: Introduction
+This lesson describes some overarching issues including the
+
+* Summary in terms of Hypecycles
+* Players in the digital health ecosystem and in particular role of Big Tech which has needed AI expertise and infrastructure
+* Views of Pataients and Doctors on New Technology
+* Role of clouds
+* Importance of Security
+* Introduction to Internet of Medical Things 
 
 [slides](https://drive.google.com/file/d/18gsYv9yE2SPs_cuxQEInoSnLlSc_vEAZ/view?usp=sharing)
 
