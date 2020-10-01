@@ -262,3 +262,15 @@ The use case analysis that you were asked to watch in week 3, described over 50 
 OR
 
 2. Here is a Blank use case [Template](https://docs.google.com/document/d/1pEiOjHuVYgu2sCjJ1A-GzVabYnkQn7eQ0BfUNJwrgMc/edit?usp=sharing) (make your own copy). Chose any Big Data use case (including those in videos but address 2020 not 2013 situation) and fill in ONE new use case template producing about 2 pages of new material (summed over answers to questions)
+
+### Homwork 4 (Posted on [Canvas](https://iu.instructure.com/courses/1908830/assignments/11232343))
+
+Consider Physics Colab A **"Part 4 Error Estimates" and Colab D "Part 2 Varying Seed (randomly) gives distinct results"**
+
+Consider a Higgs of measured width 0.5 GeV (narrowGauss and narrowTotal in Part A) and use analysis of A Part 4 to estimate the difference between signal and background compared to expected error (standard deviation)
+
+Run 3 different random number choices (as in D Part 2) to show how conclusions change
+
+Recommend changing bin size in A Part 4 from 2 GeV to 1 GeV when the Higgs signal will be in two bins you can add (equivalently use 2 GeV histogram bins shifting origin so Higgs mass of 126 GeV is in the center of a bin)
+
+Suppose you keep background unchanged and reduce the Higgs signal by a factor of 2 (300 to 150 events). Can Higgs still be detected?
