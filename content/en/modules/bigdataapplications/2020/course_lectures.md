@@ -114,6 +114,10 @@ Please Study [Sports as Big Data Analytics](https://cybertraining-dsc.github.io/
 
 ## Week 6
 
+This week's video class recorded first part of [Google Slides](https://docs.google.com/presentation/d/1hqs8qVW8ZFrj5lDYmC6wA25oGKn8rJz-dF8pvSuKiOU/edit?usp=sharing) and emphasizes that these lectures are partly aimed at suggesting projects.
+
+{{< youtube "Ob2Rqf-_kNA" >}}.
+
 This class started with a review of applications for AI enhancement.
 
 * Physics: [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
