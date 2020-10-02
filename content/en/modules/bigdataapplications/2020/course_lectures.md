@@ -114,13 +114,6 @@ Please Study [Sports as Big Data Analytics](https://cybertraining-dsc.github.io/
 
 ## Week 6
 
-This weeks's class and its zoom video covers the Health and Medicine with Artificial Intelligence. 
-We focuses on COVID-19 and related topics with this lecture. 
-
-Please study [Health and Medicine](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/)
-
-## More 
-
 This class started with a review of applications for AI enhancement.
 
 * Physics: [Discovery of Higgs Boson](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/physics/)
@@ -136,3 +129,8 @@ plus those covered Spring 2020 but not updated this semester
 * Transportation Systems: YouTube [playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz9ws63uH7vkFHTjfszZmZWr) and Google [slides](https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing)
 * Space and Energy: YouTube [playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz9Cor0Gxopn-Xwp0xstbtZ_) and Google [slides](https://docs.google.com/presentation/d/1411g_YlmX0ibGTovY8roBhqRYJgcoJ_SAb-0NQBKgMs/edit?usp=sharing)
 
+We focus on Health and Medicine with summary [talk](https://docs.google.com/presentation/d/1hqs8qVW8ZFrj5lDYmC6wA25oGKn8rJz-dF8pvSuKiOU/edit?usp=sharing)
+
+### Videos for Week 6
+
+See  module on [Health and Medicine](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/)
