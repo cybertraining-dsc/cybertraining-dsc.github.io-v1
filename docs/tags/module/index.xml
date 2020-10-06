@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybertraining – module</title>
+    <link>/tags/module/</link>
+    <description>Recent content in module on Cybertraining</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/tags/module/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Modules: Module Sample</title>
+      <link>/modules/sample/module/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/sample/module/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Here comes the more complete abstract about this module, while the
+description is a short summary, the abstract is a bit more verbose.&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-overview&#34;&gt;1. Overview&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#11-prerequisite&#34;&gt;1.1. Prerequisite&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#12-effort&#34;&gt;1.2. Effort&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#13-topics&#34;&gt;1.3. Topics&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#14-organization&#34;&gt;1.4. Organization&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-section-a&#34;&gt;2. Section A&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-section-b&#34;&gt;3. Section B&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-assignments&#34;&gt;4. Assignments&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Splash: An optional module related image may be nice to start the
+image may be nice to create a splash the learners find attractive.&lt;/p&gt;
+&lt;h2 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h2&gt;
+&lt;h3 id=&#34;11-prerequisite&#34;&gt;1.1. Prerequisite&lt;/h3&gt;
+&lt;p&gt;Describe what knowlede needs to be here to start the module. Use a list and be specific as much as possible:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer with Python 3.8.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;12-effort&#34;&gt;1.2. Effort&lt;/h3&gt;
+&lt;p&gt;If possible describe here how much effort it takes to complete the module. Use a list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 hour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13-topics&#34;&gt;1.3. Topics&lt;/h3&gt;
+&lt;p&gt;Please list here the topics that are covered by the module A list is
+often the prefered way to do that. Use the abstract/pageinfo to
+provide a more textual description.&lt;/p&gt;
+&lt;h3 id=&#34;14-organization&#34;&gt;1.4. Organization&lt;/h3&gt;
+&lt;p&gt;Please decribe how the Module is organized, if needed&lt;/p&gt;
+&lt;h2 id=&#34;2-section-a&#34;&gt;2. Section A&lt;/h2&gt;
+&lt;p&gt;Include Section A here&lt;/p&gt;
+&lt;h2 id=&#34;3-section-b&#34;&gt;3. Section B&lt;/h2&gt;
+&lt;p&gt;Include Unit 2 here&lt;/p&gt;
+&lt;h2 id=&#34;4-assignments&#34;&gt;4. Assignments&lt;/h2&gt;
+&lt;p&gt;Include the assignments here. Use a numbered list.&lt;/p&gt;
+&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
+&lt;p&gt;Put the refernces here&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

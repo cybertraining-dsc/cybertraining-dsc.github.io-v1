@@ -1,0 +1,69 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybertraining – mermaid</title>
+    <link>/tags/mermaid/</link>
+    <description>Recent content in mermaid on Cybertraining</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/tags/mermaid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Modules: Mermaid Sample</title>
+      <link>/modules/sample/mermaid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/sample/mermaid/</guid>
+      <description>
+        
+        
+        &lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+  
+graph LR
+
+	A[Introduction]
+	B[Usecases]
+	C[Physics]
+	D[Sports]
+
+A--&gt;B--&gt;C--&gt;D
+
+click A &#34;/courses/bigdata2020/#introduction-to-ai-driven-digital-transformation&#34; _blank
+click B &#34;/courses/bigdata2020/#big-data-usecases-survey&#34; _blank
+click C &#34;/courses/bigdata2020/#physics&#34; _blank
+click D &#34;/courses/bigdata2020/#sports&#34; _blank
+
+
+&lt;/div&gt;
+&lt;script async src=&#34;https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;
+  
+gantt
+    title Class Calendar
+    dateFormat  YYYY-MM-DD
+    section Lectures
+    Overview         :w1, 2020-08-28, 7d
+    Introduction     :w2, 2020-09-04, 7d 
+    Physics          :w3, 2020-09-11, 7d 
+    Sport            :w4, 2020-09-18, 7d
+    section Practice
+	Colab            :after w1, 14d
+    Github           :after w2, 7d	
+
+
+&lt;/div&gt;
+&lt;p&gt;To design a chart you can use the &lt;a href=&#34;https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19&#34;&gt;live edior&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
