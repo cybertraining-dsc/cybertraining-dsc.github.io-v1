@@ -1339,6 +1339,111 @@ They will be referenced in the corresponding sections.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Modules: Mobility (Industry)</title>
+      <link>/modules/bigdataapplications/2020/mobility_and_transportation_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/mobility_and_transportation_systems/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Industry being transformed by a)  Autonomy (AI) and b) Electric power&lt;/li&gt;
+&lt;li&gt;Established Organizations can’t change
+&lt;ul&gt;
+&lt;li&gt;General Motors (employees: 225,000 in 2016 to around 180,000 in 2018) finds it hard to compete with Tesla (42000 employees)&lt;/li&gt;
+&lt;li&gt;Market value GM was half the market value of Tesla at the start of 2020 but is now just 11% October 2020&lt;/li&gt;
+&lt;li&gt;GM purchased Cruise to compete&lt;/li&gt;
+&lt;li&gt;Funding and then buying startups is an important “transformation” strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Autonomy needs Sensors Computers Algorithms and Software
+&lt;ul&gt;
+&lt;li&gt;Also experience (training data)&lt;/li&gt;
+&lt;li&gt;Algorithms main bottleneck; others will automatically improve although lots of interesting work in new sensors, computers and software&lt;/li&gt;
+&lt;li&gt;Over the last 3 years, electrical power has gone from interesting to “bound to happen”; Tesla’s happy customers probably contribute to this&lt;/li&gt;
+&lt;li&gt;Batteries and Charging stations needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1_N3JwUz4Hj7YE_rmYPZRYdJUTbs7eDdw/view?usp=sharing&#34;&gt;Summary Slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1UYAq4VfpJ4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;Full Slide Deck&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mobility-industry-a-introduction&#34;&gt;Mobility Industry A: Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Futures of Automobile Industry, Mobility, and Ride-Hailing&lt;/li&gt;
+&lt;li&gt;Self-cleaning cars&lt;/li&gt;
+&lt;li&gt;Medical Transportation&lt;/li&gt;
+&lt;li&gt;Society of Automotive Engineers, Levels 0-5&lt;/li&gt;
+&lt;li&gt;Gartner’s conservative View&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cUn4FbJdkjY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-b-self-driving-ai&#34;&gt;Mobility Industry B: Self Driving AI&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Image processing and Deep Learning&lt;/li&gt;
+&lt;li&gt;Examples of Self Driving cars&lt;/li&gt;
+&lt;li&gt;Road construction Industry&lt;/li&gt;
+&lt;li&gt;Role of Simulated data&lt;/li&gt;
+&lt;li&gt;Role of AI in autonomy&lt;/li&gt;
+&lt;li&gt;Fleet cars&lt;/li&gt;
+&lt;li&gt;3 Leaders: Waymo, Cruise, NVIDIA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LgS05R23q3M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-c-general-motors-view&#34;&gt;Mobility Industry C: General Motors View&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Talk by Dave Brooks at GM, &amp;ldquo;AI for Automotive Engineering&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Zero crashes, zero emission, zero congestion&lt;/li&gt;
+&lt;li&gt;GM moving to electric autonomous vehicles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pybTudmAod0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-d-self-driving-snippets&#34;&gt;Mobility Industry D: Self Driving Snippets&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Worries about and data on its Progress&lt;/li&gt;
+&lt;li&gt;Tesla’s specialized self-driving chip&lt;/li&gt;
+&lt;li&gt;Some tasks that are hard for AI&lt;/li&gt;
+&lt;li&gt;Scooters and Bikes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-YzXTfeVZMw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-e-electrical-power&#34;&gt;Mobility Industry E: Electrical Power&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rise in use of electrical power&lt;/li&gt;
+&lt;li&gt;Special opportunities in e-Trucks and time scale&lt;/li&gt;
+&lt;li&gt;Future of Trucks&lt;/li&gt;
+&lt;li&gt;Tesla market value&lt;/li&gt;
+&lt;li&gt;Drones and Robot deliveries; role of 5G&lt;/li&gt;
+&lt;li&gt;Robots in Logistics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EwPsb_izTTo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Sports</title>
       <link>/modules/bigdataapplications/2020/sports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1487,6 +1592,67 @@ Tennis and Horse Racing.&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/EuXrtfHG3cY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
  {Slides 39-44}&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Space and Energy</title>
+      <link>/modules/bigdataapplications/2020/space_and_energy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/space_and_energy/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Energy sources and AI for powering Grids.&lt;/li&gt;
+&lt;li&gt;Energy Solution from Bill Gates&lt;/li&gt;
+&lt;li&gt;Space and AI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1411g_YlmX0ibGTovY8roBhqRYJgcoJ_SAb-0NQBKgMs/edit?usp=sharing&#34;&gt;Full Slide Deck&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;a-energy&#34;&gt;A: Energy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Distributed Energy Resources as a grid of renewables with a hierarchical set of Local Distribution Areas&lt;/li&gt;
+&lt;li&gt;Electric Vehicles in Grid&lt;/li&gt;
+&lt;li&gt;Economics of microgrids&lt;/li&gt;
+&lt;li&gt;Investment into Clean Energy&lt;/li&gt;
+&lt;li&gt;Batteries&lt;/li&gt;
+&lt;li&gt;Fusion and Deep Learning for plasma stability&lt;/li&gt;
+&lt;li&gt;AI for Power Grid, Virtual Power Plant, Power Consumption Monitoring, Electricity Trading&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rdGWniEHpT8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1JkBbAy58e7DAmVx2jj2-WVkUnWGA72UK/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;b-clean-energy-startups-from-bill-gates&#34;&gt;B: Clean Energy startups from Bill Gates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;26 Startups in areas like long-duration storage, nuclear energy, carbon capture, batteries, fusion, and hydropower …&lt;/li&gt;
+&lt;li&gt;The slide deck gives links to 26 companies from their website and pitchbook which describes their startup status (#employees, funding)&lt;/li&gt;
+&lt;li&gt;It summarizes their products&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rgq99JSKoe8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18zfISCIknCKWEpVDf4qinVmrH1f6aQ6X/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;c-space&#34;&gt;C: Space&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Space supports AI  with communications, image data and global navigation&lt;/li&gt;
+&lt;li&gt;AI Supports space in AI-controlled remote manufacturing, imaging control, system control, dynamic spectrum use&lt;/li&gt;
+&lt;li&gt;Privatization of Space - SpaceX, Investment&lt;/li&gt;
+&lt;li&gt;57,000 satellites through 2029&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bpXNLFa7piY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/173WROavlVriMm3HEAY-4Ttd4cg9lR1Gu/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

@@ -6084,6 +6084,111 @@ Author&amp;rsquo;s Contribution.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Modules: Mobility (Industry)</title>
+      <link>/modules/bigdataapplications/2020/mobility_and_transportation_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/mobility_and_transportation_systems/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Industry being transformed by a)  Autonomy (AI) and b) Electric power&lt;/li&gt;
+&lt;li&gt;Established Organizations can’t change
+&lt;ul&gt;
+&lt;li&gt;General Motors (employees: 225,000 in 2016 to around 180,000 in 2018) finds it hard to compete with Tesla (42000 employees)&lt;/li&gt;
+&lt;li&gt;Market value GM was half the market value of Tesla at the start of 2020 but is now just 11% October 2020&lt;/li&gt;
+&lt;li&gt;GM purchased Cruise to compete&lt;/li&gt;
+&lt;li&gt;Funding and then buying startups is an important “transformation” strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Autonomy needs Sensors Computers Algorithms and Software
+&lt;ul&gt;
+&lt;li&gt;Also experience (training data)&lt;/li&gt;
+&lt;li&gt;Algorithms main bottleneck; others will automatically improve although lots of interesting work in new sensors, computers and software&lt;/li&gt;
+&lt;li&gt;Over the last 3 years, electrical power has gone from interesting to “bound to happen”; Tesla’s happy customers probably contribute to this&lt;/li&gt;
+&lt;li&gt;Batteries and Charging stations needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1_N3JwUz4Hj7YE_rmYPZRYdJUTbs7eDdw/view?usp=sharing&#34;&gt;Summary Slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1UYAq4VfpJ4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;Full Slide Deck&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mobility-industry-a-introduction&#34;&gt;Mobility Industry A: Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Futures of Automobile Industry, Mobility, and Ride-Hailing&lt;/li&gt;
+&lt;li&gt;Self-cleaning cars&lt;/li&gt;
+&lt;li&gt;Medical Transportation&lt;/li&gt;
+&lt;li&gt;Society of Automotive Engineers, Levels 0-5&lt;/li&gt;
+&lt;li&gt;Gartner’s conservative View&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cUn4FbJdkjY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-b-self-driving-ai&#34;&gt;Mobility Industry B: Self Driving AI&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Image processing and Deep Learning&lt;/li&gt;
+&lt;li&gt;Examples of Self Driving cars&lt;/li&gt;
+&lt;li&gt;Road construction Industry&lt;/li&gt;
+&lt;li&gt;Role of Simulated data&lt;/li&gt;
+&lt;li&gt;Role of AI in autonomy&lt;/li&gt;
+&lt;li&gt;Fleet cars&lt;/li&gt;
+&lt;li&gt;3 Leaders: Waymo, Cruise, NVIDIA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LgS05R23q3M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-c-general-motors-view&#34;&gt;Mobility Industry C: General Motors View&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Talk by Dave Brooks at GM, &amp;ldquo;AI for Automotive Engineering&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Zero crashes, zero emission, zero congestion&lt;/li&gt;
+&lt;li&gt;GM moving to electric autonomous vehicles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pybTudmAod0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-d-self-driving-snippets&#34;&gt;Mobility Industry D: Self Driving Snippets&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Worries about and data on its Progress&lt;/li&gt;
+&lt;li&gt;Tesla’s specialized self-driving chip&lt;/li&gt;
+&lt;li&gt;Some tasks that are hard for AI&lt;/li&gt;
+&lt;li&gt;Scooters and Bikes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-YzXTfeVZMw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-e-electrical-power&#34;&gt;Mobility Industry E: Electrical Power&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rise in use of electrical power&lt;/li&gt;
+&lt;li&gt;Special opportunities in e-Trucks and time scale&lt;/li&gt;
+&lt;li&gt;Future of Trucks&lt;/li&gt;
+&lt;li&gt;Tesla market value&lt;/li&gt;
+&lt;li&gt;Drones and Robot deliveries; role of 5G&lt;/li&gt;
+&lt;li&gt;Robots in Logistics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EwPsb_izTTo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Sports</title>
       <link>/modules/bigdataapplications/2019/week7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6565,6 +6670,67 @@ This unit is an introduction to deep learning with currently 7 lessons&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1DMuGUPL_NNSXkCjfTHLQyD9Bk7KmkVGFRr7DwQMPgS8&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Space and Energy</title>
+      <link>/modules/bigdataapplications/2020/space_and_energy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/space_and_energy/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Energy sources and AI for powering Grids.&lt;/li&gt;
+&lt;li&gt;Energy Solution from Bill Gates&lt;/li&gt;
+&lt;li&gt;Space and AI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1411g_YlmX0ibGTovY8roBhqRYJgcoJ_SAb-0NQBKgMs/edit?usp=sharing&#34;&gt;Full Slide Deck&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;a-energy&#34;&gt;A: Energy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Distributed Energy Resources as a grid of renewables with a hierarchical set of Local Distribution Areas&lt;/li&gt;
+&lt;li&gt;Electric Vehicles in Grid&lt;/li&gt;
+&lt;li&gt;Economics of microgrids&lt;/li&gt;
+&lt;li&gt;Investment into Clean Energy&lt;/li&gt;
+&lt;li&gt;Batteries&lt;/li&gt;
+&lt;li&gt;Fusion and Deep Learning for plasma stability&lt;/li&gt;
+&lt;li&gt;AI for Power Grid, Virtual Power Plant, Power Consumption Monitoring, Electricity Trading&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rdGWniEHpT8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1JkBbAy58e7DAmVx2jj2-WVkUnWGA72UK/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;b-clean-energy-startups-from-bill-gates&#34;&gt;B: Clean Energy startups from Bill Gates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;26 Startups in areas like long-duration storage, nuclear energy, carbon capture, batteries, fusion, and hydropower …&lt;/li&gt;
+&lt;li&gt;The slide deck gives links to 26 companies from their website and pitchbook which describes their startup status (#employees, funding)&lt;/li&gt;
+&lt;li&gt;It summarizes their products&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rgq99JSKoe8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18zfISCIknCKWEpVDf4qinVmrH1f6aQ6X/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;c-space&#34;&gt;C: Space&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Space supports AI  with communications, image data and global navigation&lt;/li&gt;
+&lt;li&gt;AI Supports space in AI-controlled remote manufacturing, imaging control, system control, dynamic spectrum use&lt;/li&gt;
+&lt;li&gt;Privatization of Space - SpaceX, Investment&lt;/li&gt;
+&lt;li&gt;57,000 satellites through 2029&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bpXNLFa7piY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/173WROavlVriMm3HEAY-4Ttd4cg9lR1Gu/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -7954,808 +8120,6 @@ pip install cloudmesh-common
 &lt;ol&gt;
 &lt;li&gt;Benchmark Colab Notebook. &lt;a href=&#34;https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat&#34;&gt;https://colab.research.google.com/drive/1tG7IcP-XMQiNVxU05yazKQYciQ9GpMat&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Introduction to Cloud Computing</title>
-      <link>/modules/bigdataapplications/2019/intro-cloud/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2019/intro-cloud/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;introduction-to-cloud-computing&#34;&gt;Introduction to Cloud Computing&lt;/h2&gt;
-&lt;p&gt;This introduction to Cloud Computing covers all aspects of the field
-drawing on industry and academic advances. It makes use of analyses from
-the Gartner group on future Industry trends. The presentation is broken
-into 21 parts starting with a survey of all the material covered. Note
-this first part is A while the substance of the talk is in parts B to U.&lt;/p&gt;
-&lt;h2 id=&#34;introduction---part-a-scloud-fundamentals-a&#34;&gt;Introduction - Part A {#s:cloud-fundamentals-a}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Parts B to D &lt;strong&gt;define cloud computing&lt;/strong&gt;, its key concepts and how it
-is situated in the data center space&lt;/li&gt;
-&lt;li&gt;The next part E reviews &lt;strong&gt;virtualization&lt;/strong&gt; technologies comparing
-containers and hypervisors&lt;/li&gt;
-&lt;li&gt;Part F is the first on &lt;strong&gt;Gartner&amp;rsquo;s Hypecycles&lt;/strong&gt; and especially those
-for emerging technologies in 2017 and 2016&lt;/li&gt;
-&lt;li&gt;Part G is the second on &lt;strong&gt;Gartner&amp;rsquo;s Hypecycles&lt;/strong&gt; with Emerging
-Technologies hypecycles and the Priority matrix at selected times
-2008-2015&lt;/li&gt;
-&lt;li&gt;Parts H and I cover &lt;strong&gt;Cloud Infrastructure&lt;/strong&gt; with Comments on trends
-in the data center and its technologies and the Gartner hypecycle
-and priority matrix on Infrastructure Strategies and Compute
-Infrastructure&lt;/li&gt;
-&lt;li&gt;Part J covers &lt;strong&gt;Cloud Software&lt;/strong&gt; with HPC-ABDS(High Performance
-Computing enhanced Apache Big Data Stack) with over 350 software
-packages and how to use each of its 21 layers&lt;/li&gt;
-&lt;li&gt;Part K is first on &lt;strong&gt;Cloud Applications&lt;/strong&gt; covering those from
-industry and commercial usage patterns from NIST&lt;/li&gt;
-&lt;li&gt;Part L is second on &lt;strong&gt;Cloud Applications&lt;/strong&gt; covering those from
-science where area called cyberinfrastructure; we look at the
-science usage pattern from NIST&lt;/li&gt;
-&lt;li&gt;Part M is third on &lt;strong&gt;Cloud Applications&lt;/strong&gt; covering the
-characterization of applications using the NIST approach.&lt;/li&gt;
-&lt;li&gt;Part N covers &lt;strong&gt;Clouds and Parallel Computing&lt;/strong&gt; and compares Big
-Data and Simulations&lt;/li&gt;
-&lt;li&gt;Part O covers &lt;strong&gt;Cloud storage&lt;/strong&gt;: Cloud data approaches:
-Repositories, File Systems, Data lakes&lt;/li&gt;
-&lt;li&gt;Part P covers &lt;strong&gt;HPC and Clouds&lt;/strong&gt; with The Branscomb Pyramid and
-Supercomputers versus clouds&lt;/li&gt;
-&lt;li&gt;Part Q compares &lt;strong&gt;Data Analytics with Simulation&lt;/strong&gt; with application
-and software implications&lt;/li&gt;
-&lt;li&gt;Part R compares &lt;strong&gt;Jobs&lt;/strong&gt; from Computer Engineering, Clouds, Design
-and Data Science/Engineering&lt;/li&gt;
-&lt;li&gt;Part S covers the &lt;strong&gt;Future&lt;/strong&gt; with Gartner cloud computing hypecycle
-and priority matrix, Hyperscale computing, Serverless and FaaS,
-Cloud Native and Microservices&lt;/li&gt;
-&lt;li&gt;Part T covers &lt;strong&gt;Security and Blockchain&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Part U covers &lt;strong&gt;fault-tolerance&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=16gPOZ7EK6iaac2B-9KbM3OHITqHT8YxG&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (14:48) Introduction - Part A&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=17_voZxBdqiLicJKzroQ2DzjW4zvp0VYb&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (7 Slides) Introduction - Part A&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This lecture describes the contents of the following 20 parts (B to U).&lt;/p&gt;
-&lt;h2 id=&#34;introduction---part-b---defining-clouds-i-scloud-fundamentals-b&#34;&gt;Introduction - Part B - Defining Clouds I {#s:cloud-fundamentals-b}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1iGv6GG2b2th_RL3kQX6P04Y0AyuUxQcj&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (20:22) Part B - Defining Clouds I&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1SJZblEkhjgQBCDaDSiSCaXTLVPx_X8m4&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (13 Slides) Part B - Defining Clouds I&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;B: Defining Clouds I&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Basic definition of cloud and two very simple examples of why
-virtualization is important.&lt;/li&gt;
-&lt;li&gt;How clouds are situated wrt HPC and supercomputers&lt;/li&gt;
-&lt;li&gt;Why multicore chips are important&lt;/li&gt;
-&lt;li&gt;Typical data center&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-c---defining-clouds-ii-scloud-fundamentals-c&#34;&gt;Introduction - Part C - Defining Clouds II {#s:cloud-fundamentals-c}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1nU9HlqDe_vEZR1MlOq2XibnoHmaygo-H&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (20:45) Part C - Defining Clouds II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1Thg2yOnKBQKdndgdItpviGw0hhxjY2K2&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (11 Slides) Part C - Defining Clouds II&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;C: Defining Clouds II&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Service-oriented architectures: Software services as Message-linked
-computing capabilities&lt;/li&gt;
-&lt;li&gt;The different aaS&amp;rsquo;s: Network, Infrastructure, Platform, Software&lt;/li&gt;
-&lt;li&gt;The amazing services that Amazon AWS and Microsoft Azure have&lt;/li&gt;
-&lt;li&gt;Initial Gartner comments on clouds (they are now the norm) and
-evolution of servers; serverless and microservices&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-d---defining-clouds-iii-scloud-fundamentals-d&#34;&gt;Introduction - Part D - Defining Clouds III {#s:cloud-fundamentals-d}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1Qayxfwuc_qSeCzaIpHj3-F0N7TONvM5L&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (9:08) Part D - Defining Clouds III&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1EsHbUn7xdjTrLXmY8HCIhZqLaWeODD_1&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (9 Slides) Part D - Defining Clouds III&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;D: Defining Clouds III&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cloud Market Share&lt;/li&gt;
-&lt;li&gt;How important are they?&lt;/li&gt;
-&lt;li&gt;How much money do they make?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-e---virtualization-scloud-fundamentals-e&#34;&gt;Introduction - Part E - Virtualization {#s:cloud-fundamentals-e}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1EC-eOYuBOV1qMojSg4Mg50doPqjAY0Hr&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (11:21) Part E - Virtualization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1K3RzVlfiwZAqwhCPxNEP8Q1JNxyOZhrv&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (8 Slides) Part E - Virtualization&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;E: Virtualization&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Virtualization Technologies, Hypervisors and the different
-approaches&lt;/li&gt;
-&lt;li&gt;KVM Xen, Docker and Openstack&lt;/li&gt;
-&lt;li&gt;Several web resources are listed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-f---technology-hypecycle-i-scloud-fundamentals-f&#34;&gt;Introduction - Part F - Technology Hypecycle I {#s:cloud-fundamentals-f}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1_M0HDemFmykAq4iPuQ0MHYIW0kffHuMa&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (13:41) Part F - Technology Hypecycle I&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=18deLUm2zGlHcHHbyVhecwSf52RHAq9VT&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (11 Slides) Part F - Technology Hypecycle I&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;F:Technology Hypecycle I&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Gartner&amp;rsquo;s Hypecycles and especially that for emerging technologies
-in 2017 and 2016&lt;/li&gt;
-&lt;li&gt;The phases of hypecycles&lt;/li&gt;
-&lt;li&gt;Priority Matrix with benefits and adoption time&lt;/li&gt;
-&lt;li&gt;Today clouds have got through the cycle (they have emerged) but
-features like blockchain, serverless and machine learning are on
-cycle&lt;/li&gt;
-&lt;li&gt;Hypecycle and Priority Matrix for Data Center Infrastructure 2017&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-g---technology-hypecycle-ii-scloud-fundamentals-g&#34;&gt;Introduction - Part G - Technology Hypecycle II {#s:cloud-fundamentals-g}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=19k6os58_OCCsmbusWQ6z6n9hwVmmd163&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (16:05) Part G - Technology Hypecycle II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1ZD-h-dmQgAFROBEI1KMJROTxPVPAJ_P_&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (15 Slides) Part G - Technology Hypecycle II&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;G: Technology Hypecycle II&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Emerging Technologies hypecycles and Priority matrix at selected
-times 2008-2015&lt;/li&gt;
-&lt;li&gt;Clouds star from 2008 to today&lt;/li&gt;
-&lt;li&gt;They are mixed up with transformational and disruptive changes&lt;/li&gt;
-&lt;li&gt;The route to Digital Business (2015)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-h---iaas-i-scloud-fundamentals-h&#34;&gt;Introduction - Part H - IaaS I {#s:cloud-fundamentals-h}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1_lH7ou_UQOMMfdSSQLrqZr8yJZIr7rC0&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (13:22) Part H - IaaS I&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1WOlwFtHNvFSaQX9WAXBwO2q1qsvBM6Yd&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (12 Slides) Part H - IaaS I&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;H: Cloud Infrastructure I&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Comments on trends in the data center and its technologies&lt;/li&gt;
-&lt;li&gt;Clouds physically across the world&lt;/li&gt;
-&lt;li&gt;Green computing and fraction of world&amp;rsquo;s computing ecosystem in
-clouds&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-i---iaas-ii-scloud-fundamentals-i&#34;&gt;Introduction - Part I - IaaS II {#s:cloud-fundamentals-i}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1UwBzSKK-iHYW7aRCS_f4BoXNYxUb476i&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (13:13) Part I - IaaS II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1_1fL2L-tpjlL7og49XDxH_HLPD6Tupik&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (11 Slides) Part I - IaaS II&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;I: Cloud Infrastructure II&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Gartner hypecycle and priority matrix on Infrastructure Strategies
-and Compute Infrastructure&lt;/li&gt;
-&lt;li&gt;Containers compared to virtual machines&lt;/li&gt;
-&lt;li&gt;The emergence of artificial intelligence as a dominant force&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-j---cloud-software-scloud-fundamentals-j&#34;&gt;Introduction - Part J - Cloud Software {#s:cloud-fundamentals-j}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1tasT1lJE_7pwowuk0D68M7rgW1gtv3im&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (37:56) Part J - Cloud Software&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1DKshrkb2bMOt5p0H2YDkOZhekAFIx5nJ&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (15 Slides) Part J - Cloud Software&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;J: Cloud Software&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HPC-ABDS(High Performance Computing enhanced Apache Big Data Stack)
-with over 350 software packages and how to use each of 21 layers&lt;/li&gt;
-&lt;li&gt;Google&amp;rsquo;s software innovations&lt;/li&gt;
-&lt;li&gt;MapReduce in pictures&lt;/li&gt;
-&lt;li&gt;Cloud and HPC software stacks compared&lt;/li&gt;
-&lt;li&gt;Components need to support cloud/distributed system programming&lt;/li&gt;
-&lt;li&gt;Single Program/Instruction Multiple Data SIMD SPMD&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-k---applications-i-scloud-fundamentals-k&#34;&gt;Introduction - Part K - Applications I {#s:cloud-fundamentals-k}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1BzpXNqs3Ai_QlSsjxSV6Q3FevZt1BPj-&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (11:58) Part K - Applications I&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1dQbzoVwDoqqnwSO8eHmu_WfiU2FVXtLL&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (16 Slides) Part K - Applications I&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;K: Cloud Applications I&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Big Data in Industry/Social media; a lot of best examples have NOT
-been updated so some slides old but still make the correct points&lt;/li&gt;
-&lt;li&gt;Some of the business usage patterns from NIST&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-l---applications-ii-scloud-fundamentals-l&#34;&gt;Introduction - Part L - Applications II {#s:cloud-fundamentals-l}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1pIjcar6SZSelWiR6dv4lhnsmweDarNXR&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (13:03) Part L - Applications II&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=10bAckYz455Yd5tqDGpwkMZUmDn9FKl0n&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (11 Slides) Part L - Applications II&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;L: Cloud Applications II&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Clouds in science where area called cyberinfrastructure;&lt;/li&gt;
-&lt;li&gt;The science usage pattern from NIST&lt;/li&gt;
-&lt;li&gt;Artificial Intelligence from Gartner&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-m---applications-iii-scloud-fundamentals-m&#34;&gt;Introduction - Part M - Applications III {#s:cloud-fundamentals-m}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=16rb0zZafTLoYhT638qc4IRorOk5qgRP-&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (24:12) Part M - Applications III&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1TPgbfK6PhWjyr3u115Pq4jTPNPo2JU70&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (14 Slides) Part M - Applications III&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;M: Cloud Applications III&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Characterize Applications using NIST approach&lt;/li&gt;
-&lt;li&gt;Internet of Things&lt;/li&gt;
-&lt;li&gt;Different types of MapReduce&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-n---parallelism-scloud-fundamentals-n&#34;&gt;Introduction - Part N - Parallelism {#s:cloud-fundamentals-n}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1apuvCaKlQBZp8FjvqN9It5bJhfXmf1kg&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (35:46) Part N - Parallelism&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1lBmpMry2FXwEjf93EMJPNDpw_G-yUcI1&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (15 Slides) Part N - Parallelism&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;N: Clouds and Parallel Computing&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Parallel Computing in general&lt;/li&gt;
-&lt;li&gt;Big Data and Simulations Compared&lt;/li&gt;
-&lt;li&gt;What is hard to do?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-o---storage-scloud-fundamentals-o&#34;&gt;Introduction - Part O - Storage {#s:cloud-fundamentals-o}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1_A51jrlzKYKhQvefXbJPs0J4GiCCQ1et&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (19:22) Part O - Storage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1JvIK-J4HUSvexmNKbBV_fdN8xvGBylR2&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (10 Slides) Part O - Storage&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;O: Cloud Storage&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cloud data approaches&lt;/li&gt;
-&lt;li&gt;Repositories, File Systems, Data lakes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-p---hpc-in-the-cloud-scloud-fundamentals-p&#34;&gt;Introduction - Part P - HPC in the Cloud {#s:cloud-fundamentals-p}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (19:29) Part P - HPC in the Cloud&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (8 Slides) Part P - HPC in the Cloud&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;P: HPC and Clouds&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The Branscomb Pyramid&lt;/li&gt;
-&lt;li&gt;Supercomputers versus clouds&lt;/li&gt;
-&lt;li&gt;Science Computing Environments&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-q---analytics-and-simulation-scloud-fundamentals-q&#34;&gt;Introduction - Part Q - Analytics and Simulation {#s:cloud-fundamentals-q}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1vmtpndTlmtV4DzUtl04_nWo9DCR84mIM&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (16:19) Part Q - Analytics and Simulation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1u_rugpZg6m2x0B7r4kifEUxMej71-wMh&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (10 Slides) Part Q - Analytics and Simulation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Q: Comparison of Data Analytics with Simulation&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Structure of different applications for simulations and Big Data&lt;/li&gt;
-&lt;li&gt;Software implications&lt;/li&gt;
-&lt;li&gt;Languages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-r---jobs-scloud-fundamentals-r&#34;&gt;Introduction - Part R - Jobs {#s:cloud-fundamentals-r}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1JMNPLdbS81Hfi5P7irDUy7kna35jpU6j&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (4:52) Part R - Jobs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1Sev0VF7tDZo4Oxa_ghk6b4YhE4iTPkhE&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (6 Slides) Part R - Jobs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;R: Availability of Jobs in different areas&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Computer Engineering&lt;/li&gt;
-&lt;li&gt;Clouds&lt;/li&gt;
-&lt;li&gt;Design&lt;/li&gt;
-&lt;li&gt;Data Science/Engineering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-s---the-future-scloud-fundamentals-s&#34;&gt;Introduction - Part S - The Future {#s:cloud-fundamentals-s}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1kgbrDiDNj0DKYi_ICvOXYeFZ32R1JH2_&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (19:46) Part S - The Future&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1_LdE64DJqSKI7EmMbSsppHMO6KU4q4Sl&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (6 Slides) Part S - The Future&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;S: The Future&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Gartner cloud computing hypecycle and priority matrix highlights:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Hyperscale computing&lt;/li&gt;
-&lt;li&gt;Serverless and FaaS&lt;/li&gt;
-&lt;li&gt;Cloud Native&lt;/li&gt;
-&lt;li&gt;Microservices&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-t---security-scloud-fundamentals-t&#34;&gt;Introduction - Part T - Security {#s:cloud-fundamentals-t}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1TQsCuR-2C6D_OJeJH818WO5-OBrA8Spo&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (11:29) Part T - Security&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1fVelFbLaUbNXMGS6ENRn4QHLzFitAyUD&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (13 Slides) Part T - Security&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;T: Security&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;CIO Perspective&lt;/li&gt;
-&lt;li&gt;Blockchain&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction---part-u---fault-tolerance-scloud-fundamentals-u&#34;&gt;Introduction - Part U - Fault Tolerance {#s:cloud-fundamentals-u}&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1jRpkdGCT-sQRb6pOGrW-qG58A_HYfr9W&#34;&gt;&lt;img src=&#34;/images/video.png&#34; alt=&#34;Video&#34;&gt; Cloud (9:10) Part U - Fault Tolerance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=1cR9YLcrtUMKINRFNMbdVre8Ydfa-lvAj&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Presentation&#34;&gt; Cloud (5 Slides) Part U - Fault Tolerance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;U: Fault Tolerance&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;S3 Fault Tolerance&lt;/li&gt;
-&lt;li&gt;Application Requirements&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;© 2018 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub
-Pricing API Training Blog About Press h to open a hovercard with more
-details.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Puppet</title>
-      <link>/modules/devops/puppet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/devops/puppet/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Configuration management is an important task of IT department in any
-organization. It is process of managing infrastructure changes in
-structured and systematic way. Manual rolling back of infrastructure to
-previous version of software is cumbersome, time consuming and error
-prone. Puppet is configuration management tool that simplifies complex
-task of deploying new software, applying software updates and rollback
-software packages in large cluster. Puppet does this through
-Infrastructure as Code (IAC). Code is written for infrastructure on one
-central location and is pushed to nodes in all environments (Dev, Test,
-Production) using puppet tool. Configuration management tool has two
-approaches for managing infrastructure; Configuration push and pull. In
-push configuration, infrastructure as code is pushed from centralized
-server to nodes whereas in pull configuration nodes pulls infrastructure
-as code from central server as shown in fig. 1.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&#34;../images/IAC.jpg&#34; id=&#34;fig:InfrastructureAsCode&#34; alt=&#34;Figure 1: Infrastructure As Code [1]&#34; /&gt;&lt;figcaption aria-hidden=&#34;true&#34;&gt;Figure 1: Infrastructure As Code &lt;span class=&#34;citation&#34; data-cites=&#34;hid-sp18-523-puppet../images&#34;&gt;[1]&lt;/span&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;Puppet uses push and pull configuration in centralized manner as shown
-in fig. 2.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&#34;../images/push-pull-configuration.jpg&#34; id=&#34;fig:push-pull-config&#34; alt=&#34;Figure 2: push-pull-config Image [1]&#34; /&gt;&lt;figcaption aria-hidden=&#34;true&#34;&gt;Figure 2: push-pull-config Image &lt;span class=&#34;citation&#34; data-cites=&#34;hid-sp18-523-puppet../images&#34;&gt;[1]&lt;/span&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;Another popular infrastructure tool is Ansible. It does not have master
-and client nodes. Any node in Ansible can act as executor. Any node
-containing list of inventory and SSH credential can play master node
-role to connect with other nodes as opposed to puppet architecture where
-server and agent software needs to be setup and installed. Configuring
-Ansible nodes is simple, it just requires python version 2.5 or greater.
-Ansible uses push architecture for configuration.&lt;/p&gt;
-&lt;h2 id=&#34;master-slave-architecture&#34;&gt;Master slave architecture&lt;/h2&gt;
-&lt;p&gt;Puppet uses master slave architecture as shown in fig. 3. Puppet server
-is called as master node and client nodes are called as puppet agent.
-Agents poll server at regular interval and pulls updated configuration
-from master. Puppet Master is highly available. It supports multi master
-architecture. If one master goes down backup master stands up to serve
-infrastructure.&lt;/p&gt;
-&lt;h4 id=&#34;workflow&#34;&gt;Workflow&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;nodes (puppet agents) sends information (for e.g IP, hardware
-detail, network etc.) to master. Master stores such information in
-manifest file.&lt;/li&gt;
-&lt;li&gt;Master node compiles catalog file containing configuration
-information that needs to be implemented on agent nodes.&lt;/li&gt;
-&lt;li&gt;Master pushes catalog to puppet agent nodes for implementing
-configuration.&lt;/li&gt;
-&lt;li&gt;Client nodes send back updated report to Master. Master updates its
-inventory.&lt;/li&gt;
-&lt;li&gt;All exchange between master and agent is secured through SSL
-encryption (see fig. 3)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;
-&lt;img src=&#34;../images/master-slave.jpg&#34; id=&#34;fig:master-slave&#34; alt=&#34;Figure 3: Master and Slave Architecture [1]&#34; /&gt;&lt;figcaption aria-hidden=&#34;true&#34;&gt;Figure 3: Master and Slave Architecture &lt;span class=&#34;citation&#34; data-cites=&#34;hid-sp18-523-puppet../images&#34;&gt;[1]&lt;/span&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;fig. 4, shows flow between master and slave.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&#34;../images/master-slave1.jpg&#34; id=&#34;fig:master-slave1&#34; alt=&#34;Figure 4: Master Slave Workflow 1 [1]&#34; /&gt;&lt;figcaption aria-hidden=&#34;true&#34;&gt;Figure 4: Master Slave Workflow 1 &lt;span class=&#34;citation&#34; data-cites=&#34;hid-sp18-523-puppet../images&#34;&gt;[1]&lt;/span&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;fig. 5 shows SSL workflow between master and slave.&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&#34;../images/master-slave-connection.jpg&#34; id=&#34;fig:master-slave-connection&#34; alt=&#34;Figure 5: Master Slave SSL Workflow [1]&#34; /&gt;&lt;figcaption aria-hidden=&#34;true&#34;&gt;Figure 5: Master Slave SSL Workflow &lt;span class=&#34;citation&#34; data-cites=&#34;hid-sp18-523-puppet../images&#34;&gt;[1]&lt;/span&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;Puppet comes in two forms. Open source Puppet and Enterprise In this
-tutorial we will showcase installation steps of both forms.&lt;/p&gt;
-&lt;h2 id=&#34;install-opensource-puppet-on-ubuntu&#34;&gt;Install Opensource Puppet on Ubuntu&lt;/h2&gt;
-&lt;p&gt;We will demonstrate installation of Puppet on Ubuntu&lt;/p&gt;
-&lt;p&gt;Prerequisite - Atleast 4 GB RAM, Ubuntu box ( standalone or VM )&lt;/p&gt;
-&lt;p&gt;First, we need to make sure that Puppet master and agent is able to
-communicate with each other. Agent should be able to connect with master
-using name.&lt;/p&gt;
-&lt;p&gt;configure Puppet server name and map with its ip address&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo nano /etc/hosts
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;contents of the &lt;code&gt;/etc/hosts&lt;/code&gt; should look like&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;ip_address&amp;gt; my-puppet-master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;my-puppet-master is name of Puppet master to which Puppet agent would
-try to connect&lt;/p&gt;
-&lt;p&gt;press &lt;code&gt;&amp;lt;ctrl&amp;gt; + O&lt;/code&gt; to Save and &lt;code&gt;&amp;lt;ctrl&amp;gt; + X&lt;/code&gt; to exit&lt;/p&gt;
-&lt;p&gt;Next, we will install Puppet on Ubuntu server. We will execute the
-following commands to pull from official Puppet Labs Repository&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ curl -O https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
-$ sudo dpkg -i puppetlabs-release-pc1-xenial.deb
-$ sudo apt-get update
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Intstall the Puppet server&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get install puppetserver
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Default instllation of Puppet server is configured to use 2 GB of RAM.
-However, we can customize this by opening puppetserver configuration
-file&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo nano /etc/default/puppetserver
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will open the file in editor. Look for JAVA_ARGS line and change
-the value of &lt;code&gt;-Xms&lt;/code&gt; and &lt;code&gt;-Xmx&lt;/code&gt; parameters to 3g if we wish to configure
-Puppet server for 3GB RAM. Note that default value of this parameter is
-2g.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;JAVA_ARGS=&amp;quot;-Xms3g -Xmx3g -XX:MaxPermSize=256m&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;press &lt;code&gt;&amp;lt;ctrl&amp;gt; + O&lt;/code&gt; to Save and &lt;code&gt;&amp;lt;ctrl&amp;gt; + X&lt;/code&gt; to exit&lt;/p&gt;
-&lt;p&gt;By default Puppet server is configured to use port 8140 to communicate
-with agents. We need to make sure that firewall allows to communicate on
-this port&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo ufw allow 8140
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;next, we start Puppet server&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo systemctl start puppetserver
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Verify server has started&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo systemctl status puppetserver
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;we would see “active(running)” if server has started successfully&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo systemctl status puppetserver
-● puppetserver.service - puppetserver Service
-   Loaded: loaded (/lib/systemd/system/puppetserver.service; disabled; vendor pr
-   Active: active (running) since Sun 2019-01-27 00:12:38 EST; 2min 29s ago
-  Process: 3262 ExecStart=/opt/puppetlabs/server/apps/puppetserver/bin/puppetser
- Main PID: 3269 (java)
-   CGroup: /system.slice/puppetserver.service
-           └─3269 /usr/bin/java -Xms3g -Xmx3g -XX:MaxPermSize=256m -Djava.securi
-
-Jan 27 00:11:34 ritesh-ubuntu1 systemd[1]: Starting puppetserver Service...
-Jan 27 00:11:34 ritesh-ubuntu1 puppetserver[3262]: OpenJDK 64-Bit Server VM warn
-Jan 27 00:12:38 ritesh-ubuntu1 systemd[1]: Started puppetserver Service.
-lines 1-11/11 (END)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;configure Puppet server to start at boot time&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo systemctl enable puppetserver
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we will install Puppet agent&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get install puppet-agent
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;start Puppet agent&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo systemctl start puppet
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;configure Puppet agent to start at boot time&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo systemctl enable puppet
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;next, we need to change Puppet agent config file so that it can connect
-to Puppet master and communicate&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo nano /etc/puppetlabs/puppet/puppet.conf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;configuration file will be opened in an editor. Add following sections
-in file&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[main]
-certname = &amp;lt;puppet-agent&amp;gt;
-server = &amp;lt;my-puppet-server&amp;gt;
-
-[agent]
-server = &amp;lt;my-puppet-server&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Note: my-puppet-server is the name that we have set up in /etc/hosts
-file while installing Puppet server. And certname is the name of the
-certificate&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Puppet agent sends certificate signing request to Puppet server when it
-connects first time. After signing request, Puppet server trusts and
-identifies agent for managing.&lt;/p&gt;
-&lt;p&gt;execute following command on Puppet Master in order to see all incoming
-cerficate signing requests&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo /opt/puppetlabs/bin/puppet cert list
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;we will see something like&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo /opt/puppetlabs/bin/puppet cert list
- &amp;quot;puppet-agent&amp;quot; (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:
- 05:09:2F:EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Note that puppet-agent is the name that we have configured for
-certname in puppet.conf file*&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;After validating that request is from valid and trusted agent, we sign
-the request&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;we will see message saying certificate was signed if successful&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
-Signing Certificate Request for:
-  &amp;quot;puppet-agent&amp;quot; (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:05:09:2F:
-  EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
-Notice: Signed certificate request for puppet-agent
-Notice: Removing file Puppet::SSL::CertificateRequest puppet-agent
-at &#39;/etc/puppetlabs/puppet/ssl/ca/requests/puppet-agent.pem&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we will verify installation and make sure that Puppet server is
-able to push configuration to agent. Puppet uses domian specific
-language code written in manifests ( .pp ) file&lt;/p&gt;
-&lt;p&gt;create default manifest site.pp file&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo nano /etc/puppetlabs/code/environments/production/manifests/site.pp
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will open file in edit mode. Make following changes to this file&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;file {&#39;/tmp/it_works.txt&#39;:                        # resource type file and filename
-  ensure  =&amp;gt; present,                             # make sure it exists
-  mode    =&amp;gt; &#39;0644&#39;,                              # file permissions
-  content =&amp;gt; &amp;quot;It works!\n&amp;quot;,  # Print the eth0 IP fact
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;domain specific language is used to create it_works.txt file inside
-/tmp directory on agent node. ensure directive make sure that file is
-present. It creates one if file is removed. mode directive specifies
-that process has write permission on file to make changes. content
-directive is used to define content of the changes applied
-[hid-sp18-523-open]&lt;/p&gt;
-&lt;p&gt;next, we test the installation on single node&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo /opt/puppetlabs/bin/puppet agent --test
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;successfull verification will display&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Info: Using configured environment &#39;production&#39;
-Info: Retrieving pluginfacts
-Info: Retrieving plugin
-Info: Caching catalog for puppet-agent
-Info: Applying configuration version &#39;1548305548&#39;
-Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content:
---- /tmp/it_works.txt    2019-01-27 02:32:49.810181594 +0000
-+++ /tmp/puppet-file20190124-9628-1vy51gg    2019-01-27 02:52:28.717734377 +0000
-@@ -0,0 +1 @@
-+it works!
-
-Info: Computing checksum on file /tmp/it_works.txt
-Info: /Stage[main]/Main/File[/tmp/it_works.txt]: Filebucketed /tmp/it_works.txt
-to puppet with sum d41d8cd98f00b204e9800998ecf8427e
-Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content: content
-changed &#39;{md5}d41d8cd98f00b204e9800998ecf8427e&#39; to &#39;{md5}0375aad9b9f3905d3c545b500e871aca&#39;
-Info: Creating state file /opt/puppetlabs/puppet/cache/state/state.yaml
-Notice: Applied catalog in 0.13 seconds
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;installation-of-puppet-enterprise&#34;&gt;Installation of Puppet Enterprise&lt;/h2&gt;
-&lt;p&gt;First, download &lt;code&gt;ubuntu-&amp;lt;version and arch&amp;gt;.tar.gz&lt;/code&gt; and CPG signature
-file on Ubuntu VM&lt;/p&gt;
-&lt;p&gt;Second, we import Puppet public key&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub | gpg --import
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;we will see ouput as&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;--2019-02-03 14:02:54--  https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub
-Resolving downloads.puppetlabs.com
-(downloads.puppetlabs.com)... 2600:9000:201a:b800:10:d91b:7380:93a1
-, 2600:9000:201a:800:10:d91b:7380:93a1, 2600:9000:201a:be00:10:d91b:7380:93a1, ...
-Connecting to downloads.puppetlabs.com (downloads.puppetlabs.com)
-|2600:9000:201a:b800:10:d91b:7380:93a1|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 3139 (3.1K) [binary/octet-stream]
-Saving to: ‘STDOUT’
-
--                   100%[===================&amp;gt;]   3.07K  --.-KB/s    in 0s
-
-2019-02-03 14:02:54 (618 MB/s) - written to stdout [3139/3139]
-
-gpg: key 7F438280EF8D349F: &amp;quot;Puppet, Inc. Release Key
-(Puppet, Inc. Release Key) &amp;lt;release@puppet.com&amp;gt;&amp;quot; not changed
-gpg: Total number processed: 1
-gpg:              unchanged: 1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Third, we print fingerprint of used key&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ gpg --fingerprint 0x7F438280EF8D349F
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;we will see successful output as&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pub   rsa4096 2016-08-18 [SC] [expires: 2021-08-17]
-      6F6B 1550 9CF8 E59E 6E46  9F32 7F43 8280 EF8D 349F
-uid           [ unknown] Puppet, Inc. Release Key
-(Puppet, Inc. Release Key) &amp;lt;release@puppet.com&amp;gt;
-sub   rsa4096 2016-08-18 [E] [expires: 2021-08-17]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Fourth, we verify release signature of installed package&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ gpg --verify puppet-enterprise-VERSION-PLATFORM.tar.gz.asc
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;successful output will show as&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;gpg: assuming signed data in &#39;puppet-enterprise-2019.0.2-ubuntu-18.04-amd64.tar.gz&#39;
-gpg: Signature made Fri 25 Jan 2019 02:03:23 PM EST
-gpg:                using RSA key 7F438280EF8D349F
-gpg: Good signature from &amp;quot;Puppet, Inc. Release Key
-(Puppet, Inc. Release Key) &amp;lt;release@puppet.com&amp;gt;&amp;quot; [unknown]
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: 6F6B 1550 9CF8 E59E 6E46  9F32 7F43 8280 EF8D 349
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we need to unpack installation tarball. Store location of path in
-&lt;code&gt;$TARBALL&lt;/code&gt; variable. This variable will be used in our installation.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ export TARBALL=path of tarball file
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;then, we extract tarball&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ tar -xf $TARBALL
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we run installer from installer directory&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo ./puppet-enterprise-installer
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will ask us to chose installation option; we could chose from
-guided installation or text based installation&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
-$ sudo ./puppet-enterprise-installer
-~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
-~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
-=============================================================
-    Puppet Enterprise Installer
-=============================================================
-
-## Installer analytics are enabled by default.
-## To disable, set the DISABLE_ANALYTICS environment variable and rerun
-this script.
-For example, &amp;quot;sudo DISABLE_ANALYTICS=1 ./puppet-enterprise-installer&amp;quot;.
-## If puppet_enterprise::send_analytics_data is set to false in your
-existing pe.conf, this is not necessary and analytics will be disabled.
-
-Puppet Enterprise offers three different methods of installation.
-
-[1] Express Installation (Recommended)
-
-This method will install PE and provide you with a link at the end
-of the installation to reset your PE console admin password
-
-Make sure to click on the link and reset your password before proceeding
-to use PE
-
-[2] Text-mode Install
-
-This method will open your EDITOR (vi) with a PE config file (pe.conf)
-for you to edit before you proceed with installation.
-
-The pe.conf file is a HOCON formatted file that declares parameters
-and values needed to install and configure PE.
-We recommend that you review it carefully before proceeding.
-
-[3] Graphical-mode Install
-
-This method will install and configure a temporary webserver to walk
-you through the various configuration options.
-
-NOTE: This method requires you to be able to access port 3000 on this
-machine from your desktop web browser.
-
-=============================================================
-
- How to proceed? [1]:
-
--------------------------------------------------------------------
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press 3 for web based Graphic-mode-Install&lt;/p&gt;
-&lt;p&gt;when successfull, we will see output as&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;## We&#39;re preparing the Web Installer...
-
-2019-02-02T20:01:39.677-05:00 Running command:
-mkdir -p /opt/puppetlabs/puppet/share/installer/installer
-2019-02-02T20:01:39.685-05:00 Running command:
-cp -pR /home/ritesh/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64/*
-/opt/puppetlabs/puppet/share/installer/installer/
-
-## Go to https://&amp;lt;localhost&amp;gt;:3000 in your browser to continue installation.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;By default Puppet Enterprise server uses 3000 port. Make sure that
-firewall allows communication on port 3000&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo ufw allow 3000
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, go to &lt;code&gt;https://localhost:3000&lt;/code&gt; url for completing installation&lt;/p&gt;
-&lt;p&gt;Click on &lt;code&gt;get started&lt;/code&gt; button.&lt;/p&gt;
-&lt;p&gt;Chose install on this server&lt;/p&gt;
-&lt;p&gt;Enter &lt;code&gt;&amp;lt;mypserver&amp;gt;&lt;/code&gt; as DNS name. This is our Puppet Server name. This
-can be configured in confile file also.&lt;/p&gt;
-&lt;p&gt;Enter console admin password&lt;/p&gt;
-&lt;p&gt;Click continue&lt;/p&gt;
-&lt;p&gt;we will get confirm the plan screen with following information&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;The Puppet master component
-Hostname
-ritesh-ubuntu-pe
-DNS aliases
-&amp;lt;mypserver&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;click continue and verify installer validation screen.&lt;/p&gt;
-&lt;p&gt;click &lt;code&gt;Deploy Now&lt;/code&gt; button&lt;/p&gt;
-&lt;p&gt;Puppet enterprise will be installed and will display message on screen&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Puppet agent ran sucessfully
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;login to console with admin password that was set earlier and click on
-nodes links to manage nodes.&lt;/p&gt;
-&lt;p&gt;Installing Puppet Enterprise as Text mode monolithic installation&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo ./puppet-enterprise-installer
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Enter 2 on &lt;code&gt;How to Proceed&lt;/code&gt; for text mode monolithic installation.
-Following message will be displayed if successfull.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;2019-02-02T22:08:12.662-05:00 - [Notice]: Applied catalog in 339.28 seconds
-2019-02-02T22:08:13.856-05:00 - [Notice]:
-Sent analytics: pe_installer - install_finish - succeeded
-* /opt/puppetlabs/puppet/bin/puppet infrastructure configure
---detailed-exitcodes --environmentpath /opt/puppetlabs/server/data/environments
---environment enterprise --no-noop --install=2019.0.2 --install-method=&#39;repair&#39;
-* returned: 2
-
-## Puppet Enterprise configuration complete!
-
-
-Documentation: https://puppet.com/docs/pe/2019.0/pe_user_guide.html
-Release notes: https://puppet.com/docs/pe/2019.0/pe_release_notes.html
-
-If this is a monolithic configuration, run &#39;puppet agent -t&#39; to complete the
-setup of this system.
-
-If this is a split configuration, install or upgrade the remaining PE components,
-and then run puppet agent -t on the Puppet master, PuppetDB, and PE console,
-in that order.
-~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
-2019-02-02T22:08:14.805-05:00 Running command: /opt/puppetlabs/puppet/bin/puppet
-agent --enable
-~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is called as monolithic installation as all components of Puppet
-Enterprise such as Puppet master, PuppetDB and Console are installed on
-single node. This installation type is easy to install. Troubleshooting
-errors and upgrading infrastructure using this type is simple. This
-installation type can easily support infrastructure of up to 20,000
-managed nodes. Compiled master nodes can be added as network grows. This
-is recommended installation type for small to mid size organizations
-[2].&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;pe.conf&lt;/code&gt; configuration file will be opened in editor to configure
-values. This file contains parameters and values for installing,
-upgrading and configuring Puppet.&lt;/p&gt;
-&lt;p&gt;Some important parameters that can be specified in &lt;code&gt;pe.conf&lt;/code&gt; file are&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;console_admin_password
-puppet_enterprise::console_host
-puppet_enterprise::puppetdb_host
-puppet_enterprise::puppetdb_database_name
-puppet_enterprise::puppetdb_database_user
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Lastly, we run puppet after installation is complete&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ puppet agent -t
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Text mode split installation is performed for large networks. Compared
-to monolithic installation split installation type can manage large
-infrastucture that requires more than 20,000 nodes. In this type of
-installation different components of Puppet Enterprise (master, PuppetDB
-and Console) are installed on different nodes. This installation type is
-recommended for organizations with large infrastructure needs [3].&lt;/p&gt;
-&lt;p&gt;In this type of installation, we need to install componenets in specific
-order. First master then puppet db followed by console.&lt;/p&gt;
-&lt;p&gt;Puppet Enterprise master and agent settings can be configured in
-&lt;code&gt;puppet.conf&lt;/code&gt; file. Most configuration settings of Puppet Enterprise
-componenets such as Master, Agent and security certificates are all
-specified in this file.&lt;/p&gt;
-&lt;p&gt;Config section of Agent Node&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[main]
-
-certname = &amp;lt;http://your-domain-name.com/&amp;gt;
-server = puppetserver
-environment = testing
-runinterval = 4h
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Config section of Master Node&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[main]
-
-certname =  &amp;lt;http://your-domain-name.com/&amp;gt;
-server = puppetserver
-environment = testing
-runinterval = 4h
-strict_variables = true
-
-[master]
-
-dns_alt_names = puppetserver,puppet, &amp;lt;http://your-domain-name.com/&amp;gt;
-reports = pupated
-storeconfigs_backend = puppetdb
-storeconfigs = true
-environment_timeout = unlimited
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Comment lines, Settings lines and Settings variables are main components
-of puppet configuration file. Comments in config files are specified by
-prefixing hash character. Setting line consists name of setting followed
-by equal sign, value of setting are specified in this section. Setting
-variable value generally consists of one word but multiple can be
-specified in rare cases [4].&lt;/p&gt;
-&lt;h2 id=&#34;refernces&#34;&gt;Refernces&lt;/h2&gt;
-&lt;p&gt;[1] Edureka, “Puppet tutorial – devops tool for configuration
-management.” Web Page, May-2017 [Online]. Available:
-&lt;a href=&#34;https://www.edureka.co/blog/videos/puppet-tutorial/&#34;&gt;https://www.edureka.co/blog/videos/puppet-tutorial/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[2] Puppet, “Text mode installation: Monolithic.” Web Page, Nov-2017
-[Online]. Available:
-&lt;a href=&#34;https://puppet.com/docs/pe/2017.1/install_text_mode_mono.html&#34;&gt;https://puppet.com/docs/pe/2017.1/install_text_mode_mono.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[3] Puppet, “Text mode installation : Split.” Web Page, Nov-2017
-[Online]. Available:
-&lt;a href=&#34;https://puppet.com/docs/pe/2017.1/install_text_mode_split.html&#34;&gt;https://puppet.com/docs/pe/2017.1/install_text_mode_split.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[4] Puppet, “Config files: The main config files.” Web Page, Apr-2014
-[Online]. Available:
-&lt;a href=&#34;https://puppet.com/docs/puppet/5.3/config_file_main.html&#34;&gt;https://puppet.com/docs/puppet/5.3/config_file_main.html&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
