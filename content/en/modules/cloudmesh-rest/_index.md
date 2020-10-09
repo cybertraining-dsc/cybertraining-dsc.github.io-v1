@@ -132,7 +132,7 @@ The server should now be active. Navigate to [http://localhost:8080/cloudmesh/ui
 
 ## 6. Interacting With the Endpoints
 
-### Uploading the Dataset
+### 6.1 Uploading the Dataset
 
 We now have a nice user inteface to interact with our newly generated
 API. Let us upload the data set. We are going to use the iris data set in this example. We have provided it for you to use. Simply navigate to the `/upload` endpoint by clicking on it, then click Try it out.
@@ -141,13 +141,13 @@ We can now upload the file. Click on Choose File and upload the data set located
 
 ![Unavaialable](upload_endpoint.png)
 
-### Training on the Dataset
+### 6.2 Training on the Dataset
 
 The server now has our dataset. Let us now navigate to the `/train` endpoint by, again, clicking on it. Similarly, click `Try it out`. The parameter being asked for is the filename. The filename we are interested in is iris.data. Then click execute. We should get another `200` return code with a Classification Report in the Response Body.
 
 ![Unavailable](train_endpoint.png)
 
-### Making Predictions
+### 6.3 Making Predictions
 
 We now have a trained model on the iris data set. Let us now use it to make predictions. The model expects 4 attribute values: sepal length, seapl width, petal length, and petal width. Let us use the values `5.1, 3.5, 1.4, 0.2` as our attributes. The expected classification is `Iris-setosa`.
 
