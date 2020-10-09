@@ -1,9 +1,9 @@
 ---
-title: Mobility and Transportation Systems
+title: Mobility (Industry)
 draft: false
 weight: 7
 description: >
-  This section discusses the mobility and transportation systems. 
+  This section discusses the mobility in Industry
 ---
 
 ## Overview
@@ -36,8 +36,6 @@ description: >
 
 {{< youtube "cUn4FbJdkjY" >}}
 
-[Slides](https://drive.google.com/file/d/1QSfRydVNJ63hKYg5TDuaCRI7b2pULy9J/view?usp=sharing)
-
 ## Mobility Industry B: Self Driving AI
 
   - Image processing and Deep Learning
@@ -50,8 +48,6 @@ description: >
   
 {{< youtube "LgS05R23q3M" >}}
 
-[Slides](https://drive.google.com/file/d/1GBbyrjSdRZM3lIGN4LJwL92_XnC_Sr_2/view?usp=sharing)
-
 ## Mobility Industry C: General Motors View
 
   - Talk by Dave Brooks at GM, "AI for Automotive Engineering" 
@@ -59,8 +55,6 @@ description: >
   - GM moving to electric autonomous vehicles
 
 {{< youtube "pybTudmAod0" >}}
-
-[Slides](https://drive.google.com/file/d/1y0SoX66AcASV6dCi8TdFEjOx77sNElpc/view?usp=sharing)
 
 ## Mobility Industry D: Self Driving Snippets
 
@@ -70,8 +64,6 @@ description: >
   - Scooters and Bikes
 
 {{< youtube "-YzXTfeVZMw" >}}
-
-[Slides](https://drive.google.com/file/d/1iouRaiyaP0OXwXPDPiDPb6ASfs0H7gqM/view?usp=sharing)
 
 ## Mobility Industry E: Electrical Power
 
@@ -83,7 +75,5 @@ description: >
   - Robots in Logistics
 
 {{< youtube "EwPsb_izTTo" >}}
-
-[Slides](https://drive.google.com/file/d/1KVlyh_bvm_u40fxl_nVPe_UqUtsYWMpP/view?usp=sharing)
 
 
