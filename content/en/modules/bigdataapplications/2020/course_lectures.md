@@ -138,3 +138,17 @@ We focus on Health and Medicine with summary [talk](https://docs.google.com/pres
 ### Videos for Week 6
 
 See  module on [Health and Medicine](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/)
+
+
+## Week 7
+
+This week's video class recorded the second part of [Google Slides](https://docs.google.com/presentation/d/1hqs8qVW8ZFrj5lDYmC6wA25oGKn8rJz-dF8pvSuKiOU/edit?usp=sharing).
+
+{{< youtube "j_2XeEPCD0Y" >}}.
+
+
+### Videos for Week 7
+
+Continue  module on [Health and Medicine](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/)
+
+
