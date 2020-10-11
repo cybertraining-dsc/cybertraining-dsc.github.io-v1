@@ -23,16 +23,34 @@
         
         
         &lt;h1 id=&#34;aquatic-toxicity-analysis-with-the-aid-of-autonomous-surface-vehicle-asv&#34;&gt;Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)&lt;/h1&gt;
+&lt;p&gt;Saptarshi Sinha, fa20-523-312, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&#34;&gt;report.md&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; remove all ins, nd /ins as it  will impact uniform formatting. E.g. we do not do wysiwyg we do markdown. ins is not markdown&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; sections do not have colons at the end&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; you do not have a refernce section.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please rename the directory to &amp;ldquo;project&amp;rdquo;, please rename the report to report.md.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; all http links that are not res, must be in smaller, greater brackets.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; refernce section is missing&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; this is a done item. Once you have done the item mar them with [+]&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; include a small abstract here&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Saptarshi Sinha, fa20-523-312&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#background-research-and-previous-work&#34;&gt;Background Research and Previous Work&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#choice-of-data-sets&#34;&gt;Choice of Data-sets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#methodology&#34;&gt;Methodology&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#hardware-component&#34;&gt;Hardware Component&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#software-component&#34;&gt;Software Component&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#inference&#34;&gt;Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#refernces&#34;&gt;Refernces&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When it comes to revolutionizing our qualities of life and improving standards, there is not another branch of science and technology that has made more impact than the myriad technological capabilities offered by the areas of Artificial Intelligence (AI) and its sub-fields involving Computer Vision, Robotics, Machine Learning, Deep Learning, Reinforcement Learning, etc. It should be borne in mind that AI was developed to allow machines/computer processors to work in the same way as the human brain works and which could make intelligent decisions at every conscious level. It was meant to help with tasks for rendering scientific applications more smarter and efficient. There are many tasks that can be performed in a far more dexterous fashion by employing smart-machines and algorithms than by involving human beings. But even more importantly, AI has also been designed to perform tasks that cannot be successfully completed by employing human beings. This could either be due to the prolonged boredom of the task itself, or a task that involves hazardous environments that cannot sustain life-forms for a long time. Some examples in this regard would involve exploring deep mines or volcanic trenches for mineral deposits, exploring the vast expanse of the universe and heavenly bodies, etc. And this is where the concept employing AI/Robotics based technology fits in perfectly for aquatic monitoring and oceanographical surveillance based applications.&lt;/p&gt;
 &lt;p&gt;Toxicity analysis of ecologically vulnerable water-bodies, or any other marine ecosystem for that matter, could give us a treasure trove of information regarding biodiversity, mineral deposits, unknown biophysical phenomenon, but most importantly, it could also provide meaningful and scientific information related to the biodegradation of the ecosystem itself. In this research project, an attempt will be made to design a simple foundation of an aquatic Autonomous Surface Vehicle (ASV) that will be deployed in marine ecosystems. Such a vehicle would be embedded with different kind of electronic sensors, that are capable of measuring physical quantities such as temperature, pH, conductance, dissolved oxygen level, etc. The data collected by such a system can either be over a period of time (temporal data), or it could cover a vast aquatic geographical region (spatial data). This data will then be compared with existing datasets that are made publicly available by various environmental organizations in the United States, most importantly the Environmental Protection Agency (EPA) and the US Geological Survey (USGS). A comparative data analysis task between the data collected by the ASV and the vast array of environmental data that are made available from these agencies can then give us an indication about the status of the aquatic degradation of the ecosystem in question by measuring the extent to which the current data deviates from relevant historical data trends.&lt;/p&gt;
