@@ -368,6 +368,10 @@
   </url>
   
   <url>
+    <loc>/report/</loc>
+  </url>
+  
+  <url>
     <loc>/modules/bigdataapplications/2020/google_colab_exercise/</loc>
     <lastmod>2020-09-07T09:49:21-04:00</lastmod>
   </url>
@@ -560,6 +564,10 @@
   <url>
     <loc>/contrib/start/markdown/</loc>
     <lastmod>2020-08-24T11:24:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/report/fa20-523-312/project/project/</loc>
   </url>
   
   <url>
