@@ -16,8 +16,9 @@ This page conatins the list of the reports and projects.
 ### Reports with Projects, Fall 2020
 
 *
-  [Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV), Saptarshi Sinha](/report/fa20-523-312/project/project/), [[report.md]](https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md)
-
+  [Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV), Saptarshi Sinha](/report/fa20-523-312/project/project/), [[project.md]](https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md)
+*
+[Analysis of Future of Buffalo Breeds and Milk Production Growth in India, Gangaprasad Shahapurkar],  [[project.md]](https://github.com/cybertraining-dsc/fa20-523-326/blob/master/project/project.md)
 ### Reports without Project, Fall 2020
 
 * None reported to us.
