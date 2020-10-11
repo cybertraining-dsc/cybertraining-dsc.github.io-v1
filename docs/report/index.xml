@@ -135,7 +135,7 @@ contribution to Indian Economy. Most of the rural community in the
 nation still make their livelihood on Dairy Framing or Agriculture
 farming. Dairy framing itself has been on its progressive stage from
 past few years and it is contributing to almost more than 25% of
-agriculture GDP [^2].&lt;/p&gt;
+agriculture GDP &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Livestock rearing has been integral part of rural community of the
 nation. Livestock production plays major role in life of farmers. It
 provides food, income, employment. It also does other contributions to
@@ -148,7 +148,7 @@ leveraging the economy in big way considering the growth we can see.&lt;/p&gt;
 &lt;p&gt;Livestock population comprises of different species by age, sex and
 uses. This project takes a closer look and focus on the Buffalo breed in
 India and will attempt to estimate milk production for year 2020 based
-on the various features available in the dataset [^3]. The reason for
+on the various features available in the dataset &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The reason for
 focusing on milk production because of various aspect came across based
 on the past and current research seen in this area&lt;/p&gt;
 &lt;ul&gt;
@@ -181,7 +181,7 @@ in Asia and 2.67% in the rest of the world.&lt;/p&gt;
 &lt;p&gt;The Animal Husbandry Statistics Division of the Department of Animal
 Husbandry &amp;amp; Dairying division (DAHD) is responsible for generation of
 Animal Husbandry Statistics through the schemes of Livestock Census and
-Integrated Sample Surveys [^1].&lt;/p&gt;
+Integrated Sample Surveys &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;It is mandate for this division&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -207,13 +207,27 @@ competitive data source was found.&lt;/p&gt;
 &lt;h2 id=&#34;3-software-component&#34;&gt;3. Software Component&lt;/h2&gt;
 &lt;p&gt;Based on features available in survey dataset, supervized machine learning algorithm will be devised and applied to get the predicted out labels being looked at as part of this project&lt;/p&gt;
 &lt;h2 id=&#34;4-references&#34;&gt;4. References&lt;/h2&gt;
-&lt;p&gt;[^1] PIB Delhi. (2019). &amp;ldquo;Department of Animal Husbandry &amp;amp; Dairying
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; use consitant capitalisation in refernces. see &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; which is different.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;DEPARTMENT OF ANIMAL HUSBANDRY AND DAIRYING.
+&lt;a href=&#34;http://dahd.nic.in/about-us/divisions/statistics&#34;&gt;http://dahd.nic.in/about-us/divisions/statistics&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Alessandro, Nardone. (2010). &amp;ldquo;Buffalo Production and Research&amp;rdquo;.
+Italian Journal of Animal Science. 5. 10.4081/ijas.2006.203. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;PIB Delhi. (2019). &amp;ldquo;Department of Animal Husbandry &amp;amp; Dairying
 releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
-&lt;a href=&#34;https://pib.gov.in/PressReleasePage.aspx?PRID=1588304&#34;&gt;https://pib.gov.in/PressReleasePage.aspx?PRID=1588304&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[^2] DEPARTMENT OF ANIMAL HUSBANDRY AND DAIRYING.
-&lt;a href=&#34;http://dahd.nic.in/about-us/divisions/statistics&#34;&gt;http://dahd.nic.in/about-us/divisions/statistics&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[^3] Alessandro, Nardone. (2010). &amp;ldquo;Buffalo Production and Research&amp;rdquo;.
-Italian Journal of Animal Science. 5. 10.4081/ijas.2006.203.&lt;/p&gt;
+&lt;a href=&#34;https://pib.gov.in/PressReleasePage.aspx?PRID=1588304&#34;&gt;https://pib.gov.in/PressReleasePage.aspx?PRID=1588304&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>
