@@ -13,7 +13,7 @@ This page conatins the list of the reports and projects.
 
 ## List
 
-### Samlple
+### Sample
 
 * [Sample Report Markdown](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md). Please
 do not use any HTML tags, use markdown. Make sure to add abstract,
