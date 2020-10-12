@@ -15,6 +15,119 @@
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-301/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-301/project/project/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;nba-performance-and-injury&#34;&gt;NBA Performance and Injury&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Gavin Hemmerlein, fa20-523-301&lt;/li&gt;
+&lt;li&gt;Chelsea Gorius, fa20-523-344&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-301/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please add abstract&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-dataset&#34;&gt;2. Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-objective&#34;&gt;3. Objective&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-references&#34;&gt;4. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; please add keywords&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;The topic to be investigated is basketball player performance as it relates to injury. The topic of injury and recovery is a multi-billion dollar industry.  The Sports Medicine field is expected to reach $7.2 billion dollars by 2025 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The scope of this effort is to explore National Basketball Association(NBA) teams, but the additional uses of a topic such as this could expand into other realms such as the National Football League, Major League Baseball, the Olympic Committees, and many other avenues.  For leagues with salaries, projecting an expected return on the investment can assist in contract negotiations and cater expectations.&lt;/p&gt;
+&lt;h2 id=&#34;2-dataset&#34;&gt;2. Dataset&lt;/h2&gt;
+&lt;p&gt;To compare performance and injury, a minimum of two datasets will be needed. The first is a dataset of injuries for players &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This dataset will create the samples necessary for review.&lt;/p&gt;
+&lt;p&gt;Once the controls for injuries are established, the next requirement will be to establish  pre-injury performance parameters and post-injury parameters.  These areas will be where the feature engineering will take place.  The datasets needed must dive into appropriate basketball performance stats to establish a metric to encompass a player’s performance. One example that ESPN has tried in the past is the Player Efficiency Rating (PER).  To accomplish this, it will be important to review player performance within games such as in the “NBA games data” &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; dataset.  There is a potential to pull more data from other datasets such as the “NBA Enhanced Box Score and Standings (2012 - 2018)” &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.  It is important to use the in depth data from the “NBA games data” &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. dataset because of how it will allow us to see how the player was performing throughout the season, and not just their average stats across the year.  With in depth information about each game of the season, and not just the teams and players aggregated stats, added to the data provided from the injury dataset &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; we will be able to compose new metrics to understand how these injuries are actually affecting the players performance.&lt;/p&gt;
+&lt;p&gt;Along the way we look forward to discovering if there is also a causal relationship to the severity of some of the injuries, based on how the player was performing just before the injury.  The term “load management” has become popular in recent years to describe players taking rest periodically throughout the season in order to prevent injury from overplaying.  This new practice has received both support for the player safety it provides and also criticism around players taking too much time off.  Of course not all injuries are entirely based on the recent strain under the players body, but a better understanding about how that affects the injury as a whole could give better insight into avoiding more injuries.  It is important to remember though that any pattern identification would not lead to an elimination of all injuries, any contact sport will continue to have injuries, especially one as high impact as the NBA.  There is value to learn from why some players are able to return from certain injuries more quickly and why some return to almost equivalent or better playing performance than before the injury.  This comparison of performance will be made by deriving metrics based on varying ranges of games immediately leading up to injury and then immediately after returning from injury.  In addition to that we will perform comparisons to the players known peak performance to better understand how the injury affected them.  Another factor it will be important to include is the length of time recovering from the injury. Different players take differing amounts of time off, sometimes even with similar injuries.  Something will be said about the player’s dedication to recovery and determination to remain at peak performance, even through injury, when looking at how severe their injury was, how much time was taken for recovery, and how they performed upon returning.&lt;/p&gt;
+&lt;p&gt;These datasets were chosen because they allow for a review of individual game performance, for each team, throughout each season in the recent decade.  Aggregate statistics such as points per game (ppg) can be deceptive because duration of the metric is such a large period of time.  The large sample of 82 games can lead to a perception issue when reviewing the data.  These datasets include more variables to help us determine effects to player injury, such as minutes per game (mpg) to understand how strenuous the pre-injury performance or how fatigue may have played a factor in the injury.  Understanding more of the variables such as fouls given or drawn can help determine if the player or other team seemed to be the primary aggressor before any injury.&lt;/p&gt;
+&lt;h2 id=&#34;3-objective&#34;&gt;3. Objective&lt;/h2&gt;
+&lt;p&gt;The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyse this information from the datasets, a predictive model will need to be created using a large set of the data to train.&lt;/p&gt;
+&lt;p&gt;From this point, a test run will be used to gauge the validity and accuracy of the model compared to some of the data set aside.  The model created will be able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance.  Feature engineering will be performed prior to training the model in order to improve the chances of higher accuracy from the predictions.  This model could be used to keep an eye out for how a player&amp;rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.&lt;/p&gt;
+&lt;h2 id=&#34;4-references&#34;&gt;4. References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;A. Mehra, &lt;em&gt;Sports Medicine Market worth $7.2 billion by 2025&lt;/em&gt;, Markets and Markets.
+&lt;a href=&#34;https://www.marketsandmarkets.com/PressReleases/sports-medicine-devices.asp&#34;&gt;https://www.marketsandmarkets.com/PressReleases/sports-medicine-devices.asp&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;R. Hopkins, &lt;em&gt;NBA Injuries from 2010-2020&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/ghopkins/nba-injuries-2010-2018&#34;&gt;https://www.kaggle.com/ghopkins/nba-injuries-2010-2018&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;N. Lauga, &lt;em&gt;NBA games data&lt;/em&gt;, Kaggle.  &lt;a href=&#34;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&#34;&gt;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;P. Rossotti, &lt;em&gt;NBA Enhanced Box Score and Standings (2012 - 2018)&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/pablote/nba-enhanced-stats&#34;&gt;https://www.kaggle.com/pablote/nba-enhanced-stats&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-301/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-301/test/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;gavin-hemmerlein&#34;&gt;Gavin Hemmerlein&lt;/h2&gt;
+&lt;h2 id=&#34;ghemmer&#34;&gt;ghemmer&lt;/h2&gt;
+&lt;h2 id=&#34;engr-e-534&#34;&gt;ENGR-E 534&lt;/h2&gt;
+&lt;p&gt;This is a test MarkDown file to ensure I have write privileges.&lt;/p&gt;
+&lt;h1 id=&#34;test-typing&#34;&gt;Test Typing&lt;/h1&gt;
+&lt;p&gt;This appears to be &lt;em&gt;working.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;table&#34;&gt;Table&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Col1&lt;/th&gt;
+&lt;th&gt;Col2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Row 1&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Row 2&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;images&#34;&gt;Images&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://assets.iu.edu/brand/3.2.x/trident-large.png&#34; alt=&#34;Image of IU Logo&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-312/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -23,14 +136,12 @@
         
         
         &lt;h1 id=&#34;aquatic-toxicity-analysis-with-the-aid-of-autonomous-surface-vehicle-asv&#34;&gt;Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)&lt;/h1&gt;
-&lt;p&gt;Saptarshi Sinha, fa20-523-312, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&#34;&gt;report.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Saptarshi Sinha, fa20-523-312, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; include a small abstract here&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;With the passage of time, human activities have created and contributed much to the aggrandizing problems of various forms of environmental pollution. Massive amounts of industrial effluents and agricultural waste wash-offs, that often comprise pesticides and other forms of agricultural chemicals, find their way to fresh water bodies, to lakes, and eventually to the oceanic systems. Such events start producing a gradual increase in the toxicity levels of marine ecosystems thereby perturbing the natural balance of such water-bodies. In this endeavor, an attempt will be made to measure the various water quality metrics (viz. temperature, pH, dissolved-oxygen level, and conductivity) with the help of an autonomous surface vehicle (ASV). This collected data will then be analyzed to ascertain if these values exhibit aberration from the established values that are found from USGS and EPA databases for water-quality standards. In the event, the collected data significantly deviates from the standard values of unpolluted sources in nearby geographical areas, that are obtained from the above databases, it can be concluded that the aquatic system in question has been degraded and may no longer be utilized for any form of human usage, such as being sourced for drinking water.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -46,18 +157,20 @@
     &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#5-inference&#34;&gt;5. Inference&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#6-conclusion&#34;&gt;6. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#7-refernces&#34;&gt;7. Refernces&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#8-references&#34;&gt;8. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; toxicology, pollution, autonomous systems, surface vehicle, water quality, data analysis, environment, big data, ecosystem&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;When it comes to revolutionizing our qualities of life and improving standards, there is not another branch of science and technology that has made more impact than the myriad technological capabilities offered by the areas of Artificial Intelligence (AI) and its sub-fields involving Computer Vision, Robotics, Machine Learning, Deep Learning, Reinforcement Learning, etc. It should be borne in mind that AI was developed to allow machines/computer processors to work in the same way as the human brain works and which could make intelligent decisions at every conscious level. It was meant to help with tasks for rendering scientific applications more smarter and efficient. There are many tasks that can be performed in a far more dexterous fashion by employing smart-machines and algorithms than by involving human beings. But even more importantly, AI has also been designed to perform tasks that cannot be successfully completed by employing human beings. This could either be due to the prolonged boredom of the task itself, or a task that involves hazardous environments that cannot sustain life-forms for a long time. Some examples in this regard would involve exploring deep mines or volcanic trenches for mineral deposits, exploring the vast expanse of the universe and heavenly bodies, etc. And this is where the concept employing AI/Robotics based technology fits in perfectly for aquatic monitoring and oceanographical surveillance based applications.&lt;/p&gt;
 &lt;p&gt;Toxicity analysis of ecologically vulnerable water-bodies, or any other marine ecosystem for that matter, could give us a treasure trove of information regarding biodiversity, mineral deposits, unknown biophysical phenomenon, but most importantly, it could also provide meaningful and scientific information related to the biodegradation of the ecosystem itself. In this research project, an attempt will be made to design a simple foundation of an aquatic Autonomous Surface Vehicle (ASV) that will be deployed in marine ecosystems. Such a vehicle would be embedded with different kind of electronic sensors, that are capable of measuring physical quantities such as temperature, pH, conductance, dissolved oxygen level, etc. The data collected by such a system can either be over a period of time (temporal data), or it could cover a vast aquatic geographical region (spatial data). This data will then be compared with existing datasets that are made publicly available by various environmental organizations in the United States, most importantly the Environmental Protection Agency (EPA) and the US Geological Survey (USGS). A comparative data analysis task between the data collected by the ASV and the vast array of environmental data that are made available from these agencies can then give us an indication about the status of the aquatic degradation of the ecosystem in question by measuring the extent to which the current data deviates from relevant historical data trends.&lt;/p&gt;
 &lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
-&lt;p&gt;After reviewing the necessary background literture and previous work that has been done in this field, it can be stated that most of such endeavors focussed majorly on continuous environmental data collection with the help of sensors attached to a stationary buoy in a particular location of a water-body. Some of the other endeavors did involve deploying a non-stationary vehicle that collected data from large swaths of geographical areas in a particular water body. However, neither did such attempts focus much on the data analysis portion for multiple sensory input(s) nor did it involve an intricate procedure to compare the collected data with historical trends so as to arrive at a suitable conclusion regarding the extent of environmental degradation.&lt;/p&gt;
+&lt;p&gt;After reviewing the necessary background literture and previous work that has been done in this field, it can be stated that most of such endeavors focussed majorly on continuous environmental data collection with the help of sensors attached to a stationary buoy in a particular location of a water-body. Some of the other endeavors did involve deploying a non-stationary vehicle that collected data from large swaths of geographical areas in various water bodies &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, while some others focussed on niche areas involving migration pattern exhibited by zooplanktons upon natural and aritifical irradiance &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. However, neither did such attempts focus much on the data analysis portion for multiple sensory input(s) nor did it involve an intricate procedure to compare the collected data with historical trends so as to arrive at a suitable conclusion regarding the extent of environmental degradation.&lt;/p&gt;
 &lt;p&gt;As mentioned in the previous section, this research project will exhaustively focus not just on the data-collection portion by a non-stationary vehicle, but it will also involve employing deeper study towards the subject of big-data analysis of both the current data of the system in question and the past data obtained for similar aquatic profiles. In this way, it would be possible to learn more about the toxicological aspects of the ecosystem in question.&lt;/p&gt;
 &lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
 &lt;p&gt;Upon exploring a wide array of available datasets, the following data repositories were chosen to get the required water quality based data over a particular period of time and for a particular geographical region.&lt;/p&gt;
@@ -68,7 +181,7 @@
 &lt;p&gt;To answer the questions involving existence of multiple data-sets and motivation of using multiple data-sets, we must keep in mind that the very nature of this study is based on historical trends of the how the water-quality has altered in the past and how it relates to the current situation. Because of these reasons, multiple data-sets will be referred to from multiple sources so as to achieve a robust data-analytical results. This would ensure that too much focus is not given on outlier cases, that may be relevant to just a particular geographical region or an aberration in the data that may only have arisen due to an unknown underlying phenomenon or some form of cataclysmic event from the past. Using multiple datasets from different sources would help to get a resultant data structure that is more likely to converge towards an approximate level of historical thresholds and which can then be used to find out how the current observed data deviates from such previous patterns.&lt;/p&gt;
 &lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
 &lt;h3 id=&#34;41-hardware-component&#34;&gt;4.1 Hardware Component&lt;/h3&gt;
-&lt;p&gt;A very rough outline of the autonomous surface vehicle (ASV) in question has been preceived in the Autodesk Fusion 360 software model. A preliminary model has been erected in this software so as to 3D print the design and then interface it with the appropriate sensors in question. Then system will be driven by an Arduino-Uno based microcontroller, and it will have different types of environmental sensors that will collect and log data. These sensors have been purchased from the vendor, &amp;ldquo;Atlas Scientific&amp;rdquo;. As of now, the sensors that have been chosen for this ASV are as follows:&lt;/p&gt;
+&lt;p&gt;A very rough outline of the autonomous surface vehicle (ASV) in question has been preceived in the Autodesk Fusion 360 software model. A preliminary model has been designed in this software so as to 3D print the system. It will then be interfaced with the appropriate sensors in question. Then system will be driven by an Arduino-Uno based microcontroller, and it will have different types of environmental sensors that will collect and log data. These sensors have been purchased from the vendor, &amp;ldquo;Atlas Scientific&amp;rdquo;. As of now, the sensors that have been chosen for this ASV are as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;PT-1000 Temperature sensor kit - &lt;a href=&#34;https://atlas-scientific.com/kits/pt-1000-temperature-kit/&#34;&gt;https://atlas-scientific.com/kits/pt-1000-temperature-kit/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Potential of Hydrogen (pH) sensor kit - &lt;a href=&#34;https://atlas-scientific.com/kits/ph-kit/&#34;&gt;https://atlas-scientific.com/kits/ph-kit/&lt;/a&gt;&lt;/li&gt;
@@ -80,15 +193,19 @@
 &lt;p&gt;The establishment of the degree of variance of the data from the historical data will be carried out by documenting the particular quartile range that the current data lies in with respect to the median data that is obtained from the past/historical datasets. For instance, if the current data resides in the second quartile, it can be demarcated as being more or less consistent with previously established values. However, if it resides in the first or third quartile then it might will that the system has aberrant aspects which might need to be investigated for possible levels of outside pollutants (viz. industrial effluents, agricultural wash-off, etc.), or presence of harmful invasive species that might be altering the delicate natural balance of the ecosystem in question.&lt;/p&gt;
 &lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s a simple citation&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
-&lt;h2 id=&#34;7-refernces&#34;&gt;7. Refernces&lt;/h2&gt;
+&lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
+&lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Gregor von Laszewski. A sample citation. Oct. 2020 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Valada A., Velagapudi P., Kannan B., Tomaszewski C., Kantor G., Scerri P. (2014) Development of a Low Cost Multi-Robot Autonomous Marine Surface Platform. In: Yoshida K., Tadokoro S. (eds) Field and Service Robotics. Springer Tracts in Advanced Robotics, vol 92. Springer, Berlin, Heidelberg. &lt;a href=&#34;https://doi.org/10.1007/978-3-642-40686-7_43&#34;&gt;https://doi.org/10.1007/978-3-642-40686-7_43&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;M. Ludvigsen, J. Berge, M. Geoffroy, J. H. Cohen, P. R. De La Torre, S. M. Nornes, H. Singh, A. J. Sørensen, M. Daase, G. Johnsen, Use of an Autonomous Surface Vehicle reveals small-scale diel vertical migrations of zooplankton and susceptibility to light pollution under low solar irradiance. Sci. Adv. 4, eaap9887 (2018).  &lt;a href=&#34;https://advances.sciencemag.org/content/4/1/eaap9887/tab-pdf%3E&#34;&gt;https://advances.sciencemag.org/content/4/1/eaap9887/tab-pdf&amp;gt;&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -106,7 +223,7 @@
         
         
         &lt;h1 id=&#34;analysis-of-future-of-buffalo-breeds-and-milk-production-growth-in-india&#34;&gt;Analysis of Future of Buffalo Breeds and Milk Production Growth in India&lt;/h1&gt;
-&lt;p&gt;Gangaprasad Shahapurkar, fa20-523-326, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-326/blob/master/project/project.md&#34;&gt;project.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Gangaprasad Shahapurkar, fa20-523-326, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-326/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;

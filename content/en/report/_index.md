@@ -17,6 +17,8 @@ This page conatins the list of the reports and projects.
 
 * [Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV), Saptarshi Sinha](/report/fa20-523-312/project/project/), [[project.md]](https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md)
 * [Analysis of Future of Buffalo Breeds and Milk Production Growth in India, Gangaprasad Shahapurkar](/report/fa20-523-326/project/project/),  [[project.md]](https://github.com/cybertraining-dsc/fa20-523-326/blob/master/project/project.md)
+* [NBA Performance and Injury, Gavin Hemmerlein, Chelsea Gorius](/report/fa20-523-301/project/project/),  [[project.md]](https://github.com/cybertraining-dsc/fa20-523-301/blob/master/project/project.md)
+
 
 ### Reports without Project, Fall 2020
 

@@ -4,3 +4,6 @@
 [submodule "content/en/report/fa20-523-326"]
 	path = content/en/report/fa20-523-326
 	url = https://github.com/cybertraining-dsc/fa20-523-326.git
+[submodule "content/en/report/fa20-523-301"]
+	path = content/en/report/fa20-523-301
+	url = https://github.com/cybertraining-dsc/fa20-523-301.git

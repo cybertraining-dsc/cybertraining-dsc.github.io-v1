@@ -1,6 +1,11 @@
 draft:
 	hugo server -D
 
+update:
+	cd content/en/report/fa20-523-301; git pull
+	cd content/en/report/fa20-523-312; git pull
+	cd content/en/report/fa20-523-326; git pull
+
 view:
 	gopen http://localhost:1313/ 
 server:
