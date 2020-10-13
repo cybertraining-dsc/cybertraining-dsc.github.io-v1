@@ -128,6 +128,160 @@
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-305/homework-3/cody_harris_hw3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-305/homework-3/cody_harris_hw3/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;square-kilometer-array-ska-use-case&#34;&gt;Square Kilometer Array (SKA) Use Case&lt;/h1&gt;
+&lt;p&gt;The SKA is an unprecedented, international, engineering endeavor to create the largest radio telescope in the world. Completion of this project requires the use of state-of-the-art technologies to facilitate the massive amount of data that will be captured [1]. Once this data is captured, it will require advanced high-performance computing centers to make sense of the data and gain valuable insight. While there are many innovative ideas involved with the SKA, this use case will only examine the technologies and processes involved with the solutions directly related to the SKA’s big data needs.&lt;/p&gt;
+&lt;h1 id=&#34;what-is-a-radio-telescope&#34;&gt;What is a radio telescope?&lt;/h1&gt;
+&lt;p&gt;Before understanding the data needs of the SKA, it is important to understand what a radio telescope is. Many people are familiar with a regular telescope that uses a series of lenses to amplify light waves from distant places to create an image. A radio telescope is similar in the fact that it collects weak electromagnetic radiation from far distances, and then amplifies it so that it can be analyzed. Another application could be to send radio waves towards a direction and then record the reflection off celestial bodies. In any case, the signal’s that astronomers are interested in are extremely weak. Many earthly sources of electro-magnetic radiation are many times greater in strength. There are multiple ways to combat this noise from earth-based radiation, and some of it could be done using hardware, or software, but there are also other ways to combat this that the SKA is utilizing.
+Modern radio telescopes accept a wide range of radio frequencies, and then computationally split the frequencies into up to many thousands of channels. To further complicate things, while increasing the efficacy of the radio telescopes, generally more than one telescope is used. This allows multiple positions on the ground to receive the same radio signal, but at slightly different times and slightly different phases of the waveform. This variation allows for more complex analysis of the radio signal. Obviously, this adds another step in the computational work, but having a large array of radio telescopes is imperative to accomplish most modern astronomical research goals [2].&lt;/p&gt;
+&lt;h1 id=&#34;science-goals&#34;&gt;Science Goals&lt;/h1&gt;
+&lt;p&gt;The vast size of the SKA project allows the exploration of a variety of burning questions that not only intrigue astrophysicists, but nearly everyone on the planet. One overreaching design goal of the SKA is to have a design flexible enough that it can be used as a “discovery machine” for the “exploration of the unknown”. With that said, there are five broad research goals of the SKA [3].&lt;/p&gt;
+&lt;h2 id=&#34;galaxy-evolution-and-dark-energy&#34;&gt;Galaxy Evolution and Dark Energy&lt;/h2&gt;
+&lt;p&gt;As a central goal of the SKA, this is quite a broad question that requires a great deal of study to fully understand. With the data gathered, researchers how to understand fundamental questions about how galaxies change over the course of their lifetimes. One problem with studying this, is that most galaxies nearest to us are so far along in their evolution that it is hard to know what happens in the early years of the galaxy. We can overcome this challenge with SKA, due to its “sensitivity and resolution”. The SKA will be able to focus on younger galaxies that are much earlier in their evolution to study what our galaxy was like shortly after the big bang.
+To gain an understanding of the creation and evolution of galaxies, a study of dark energy must be done. While this mysterious energy has made headlines in the past decade, it is still the subject of a lot of speculation. As gravity is a main driving factor in the evolution of cosmic objects, understanding dark energy is needed to gain a full picture of what is happening in galactical evolution. Currently our fundamental physical theories, derived by Einstein, suggest that universal expansion should be slowing, but it is not. This is where dark energy plays a part in the formation of our universe [4].&lt;/p&gt;
+&lt;h2 id=&#34;was-einsteins-theory-of-relativity-correct&#34;&gt;Was Einstein’s theory of relativity, correct?&lt;/h2&gt;
+&lt;p&gt;It is a tall order to question the most influential physicist in history. Technology is catching up with our theoretical understanding of physics so that we can test fundamental theories that we have held true for many years. The SKA hopes to use its incredible sensitivity to investigate gravitational waves from extremely powerful sources of gravity such as black holes. While Einstein’s theories are very likely to be mostly true, they might not be fully complete and that is what SKA hopes to find out [1].&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-sources-of-large-magnetic-fields-in-space&#34;&gt;What are the sources of large magnetic fields in space?&lt;/h2&gt;
+&lt;p&gt;We know that our earth creates a magnetic field that is imperative for life to exist. For the most part we understand that this is due to the composition and actions of the core of the planet. When it comes to the origin of magnetic fields in space, we are not completely sure what creates all the fields. The study of these magnetic fields will allow further study of the evolution of galaxies and our universe [5].&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-origins-of-our-universe&#34;&gt;What are the origins of our universe?&lt;/h2&gt;
+&lt;p&gt;This is a burning question that we have some theories about, but still have a great deal of exploration to do on the topic. The prevailing theory relies on the big bang, but the SKA hopes to further study the eras shortly after the big bang to gain insight into the origins of our universe. The SKA hopes to do this by once again using its sensitivity to give the most accurate measurements of the initial light sources in our universe [6]. As long this question remains unsolved, humans will always want to understand where we all came from.&lt;/p&gt;
+&lt;h2 id=&#34;as-living-beings-are-we-alone-in-the-universe&#34;&gt;As living beings, are we alone in the universe?&lt;/h2&gt;
+&lt;p&gt;Using Drake’s equation, and new exoplanet information, scientists are extremely optimistic that life exists somewhere in our universe. In some estimates, what has happened on our planet, could have happened about “10 billion other times over in cosmic history!” [7].  One way that SKA can look for extraterrestrial life is by searching for radio signals sent out by advanced civilizations such as ours. Another way that SKA could look for extraterrestrial life is by looking for signs of the building blocks of life. One of these building blocks are amino acids, which can be identified by the SKA.&lt;/p&gt;
+&lt;h1 id=&#34;current-progress&#34;&gt;Current Progress&lt;/h1&gt;
+&lt;p&gt;The SKA telescopes reside in two separate locations. One location is in Western Australia and will be focused on low frequencies. The second location is in South Africa and will have two arrays, one for mid frequencies, and one for mid to high frequency [8].&lt;/p&gt;
+&lt;h2 id=&#34;south-africa&#34;&gt;South Africa&lt;/h2&gt;
+&lt;p&gt;Design and preparations for the final SKA implementation are still on-going. Currently there are two arrays named KAT7 and MeerKAT that are installed and functioning and will be the precursor to the SKA arrays in South Africa.&lt;/p&gt;
+&lt;h2 id=&#34;australia&#34;&gt;Australia&lt;/h2&gt;
+&lt;p&gt;This site also has a precursor to SKA already operating named ASKAP. It is currently located in the same location that the SKA’s major components will eventually occupy, so this will give insights into the performance of this location for radio telescopes. Also, in Australia, as recent as in the past year, prototype antennas are being setup in smaller arrays to capture data and run tests before the design is used in the final array [10].&lt;/p&gt;
+&lt;h1 id=&#34;big-data-challenges-and-solutions&#34;&gt;Big Data Challenges and Solutions&lt;/h1&gt;
+&lt;p&gt;The SKA presents many big data challenges, from preprocessing to long-term storage of data. The estimated output of all the telescopes is around 700 PB per year [12].&lt;/p&gt;
+&lt;h2 id=&#34;raw-data-and-preprocessing&#34;&gt;Raw Data and Preprocessing&lt;/h2&gt;
+&lt;p&gt;The data comes in the form of an analog radio signals that are collected over a vast geographical area. At some point, to do analytics on the data, the data needs to be converted from analog to digital. While this is usually done via hardware, and is not on computational machines, this is still a data processing step that must be done at scale.
+There is also some preprocessing of the data, that must happen constantly as data is collected. While this could be done once reaching the supercomputer, it is a repetitive task that could be done using FPGAs. The benefit of using a FGPA is that it can parallel process in many more threads and do repetitive algorithms faster and with less power as normal CPUs [12].&lt;/p&gt;
+&lt;h2 id=&#34;storage-and-access&#34;&gt;Storage and Access&lt;/h2&gt;
+&lt;p&gt;As mentioned previously, the estimated data output of the telescope at peak is 700 PB. The initiative also hopes to save all data for the lifetime of the project which is around 50 years. This ends up being in the realm of needing to eventually store 35 EB of data. For more immediate storage, the SKA team plans to use a buffer system. The way this works is by having a large array of fast read and write storage devices such as SSDs and NVMe (a specialized SSD). This buffer will immediately take in the data as it is coming in at rates that require write speeds that are not as prevalent with traditional spinning disks. After being written to this buffer, they will slowly move the data onto more affordable solutions, that have slower read/write speeds.
+While the team could use SSDs for the entire storage, the cost would be enormous. It is much more cost effective to have most of the data stored on hard disk. When it comes to long-term storage of data, even cheaper sources of data such as tape drives could be utilized. After a certain time from data collection, the data will be opened up to the public, this means that the data will likely not end up in a cold storage system [12].&lt;/p&gt;
+&lt;h2 id=&#34;processing-of-data&#34;&gt;Processing of data&lt;/h2&gt;
+&lt;p&gt;Currently, the processing of data will be done at a large network of sites that will be made up of a variety of technologies. Mostly, no new high-performance computing centers will be created. Existing infrastructures, including public clouds will be used for the processing of data. Along with using FPGAs for pre-processing and possibly more processing afterwards, the SKA team plans to use GPU accelerators to allow for efficient processing.
+Each team of researchers will have various goals that they will want from the data. This means that they will have a variety of processing needs, which will be carried out in SKA Regional Centers (SRCs). This might mean machine learning programs to get insights from the data, all the way to other mathematical operations to make the data ready for study. In any case, it is the expectation that this additional data is preserved as well, leading to even more data needing to be managed [12].&lt;/p&gt;
+&lt;h2 id=&#34;other-challenges&#34;&gt;Other Challenges&lt;/h2&gt;
+&lt;p&gt;While this data is not the most sensitive data on the planet, it is important that security is considered. The SKA team is planning on creating a sort of firewall between users and the actual HPC centers by using an AAAI (authorization, access, authentication, and identification) system. Security of proprietary data will be a concern that will have to be addressed. As there is a large team working on the project, as well as many external actors, security becomes extremely complex, especially the more access points there are to the data [12].
+A project this large and versatile requires the use of many software tools. These software tools generally need some level or automatic communication if they are used together in a project. With a large number of tools, there becomes a complex IT infrastructure that needs to be managed, and constantly monitored. It is possible for one tool to receive a critical update, and then cause issues with integration of other software systems.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;[1] &amp;ldquo;Square Kilometre Array - ICRAR&amp;rdquo;, ICRAR, 2020. [Online]. Available: &lt;a href=&#34;https://www.icrar.org/our-research/ska/&#34;&gt;https://www.icrar.org/our-research/ska/&lt;/a&gt;. [Accessed: 23- Sep- 2020].&lt;br&gt;
+[2] &amp;ldquo;What are Radio Telescopes? - National Radio Astronomy Observatory&amp;rdquo;, National Radio Astronomy Observatory, 2020. [Online]. Available:                                              &lt;a href=&#34;https://public.nrao.edu/telescopes/radio-telescopes/&#34;&gt;https://public.nrao.edu/telescopes/radio-telescopes/&lt;/a&gt;. [Accessed: 23- Sep- 2020].&lt;br&gt;
+[3] &amp;ldquo;SKA Science - Public Website&amp;rdquo;, SQUARE KILOMETRE ARRAY, 2020. [Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/science/&#34;&gt;https://www.skatelescope.org/science/&lt;/a&gt;. [Accessed: 24-      Sep- 2020].&lt;br&gt;
+[4] &amp;ldquo;Galaxy Evolution, Cosmology and Dark Energy - Public Website&amp;rdquo;, SQUARE KILOMETRE ARRAY, 2020. [Online]. Available:      &lt;a href=&#34;https://www.skatelescope.org/galaxyevolution/&#34;&gt;https://www.skatelescope.org/galaxyevolution/&lt;/a&gt;. [Accessed:      24- Sep- 2020].&lt;br&gt;
+[5] &amp;ldquo;Cosmic Magnetism - Public Website&amp;rdquo;, SQUARE KILOMETRE ARRAY, 2020. [Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/magnetism/&#34;&gt;https://www.skatelescope.org/magnetism/&lt;/a&gt;. [Accessed: 24- Sep- 2020].&lt;br&gt;
+[6] &amp;ldquo;Probing the Cosmic Dawn - Public Website&amp;rdquo;, SQUARE KILOMETRE ARRAY, 2020. [Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/cosmicdawn/&#34;&gt;https://www.skatelescope.org/cosmicdawn/&lt;/a&gt;. [Accessed: 24- Sep- 2020].&lt;br&gt;
+[7] L. Sierra, &amp;ldquo;Are we alone in the universe? Revisiting the Drake equation&amp;rdquo;, Exoplanet Exploration: Planets Beyond our Solar System, 2020. [Online]. Available: &lt;a href=&#34;https://exoplanets.nasa.gov/news/1350/are-we-alone-in-the-universe-revisiting-the-drake-equation/&#34;&gt;https://exoplanets.nasa.gov/news/1350/are-we-alone-in-the-universe-revisiting-the-drake-equation/&lt;/a&gt;. [Accessed: 24- Sep- 2020].&lt;br&gt;
+[8] &amp;ldquo;Design - ICRAR&amp;rdquo;, ICRAR, 2020. [Online]. Available: &lt;a href=&#34;https://www.icrar.org/our-research/ska/design/&#34;&gt;https://www.icrar.org/our-research/ska/design/&lt;/a&gt;. [Accessed: 24- Sep- 2020].&lt;br&gt;
+[9] &amp;ldquo;Africa - Public Website&amp;rdquo;, SQUARE KILOMETRE ARRAY, 2020. [Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/africa/&#34;&gt;https://www.skatelescope.org/africa/&lt;/a&gt;. [Accessed: 24- Sep- 2020].&lt;br&gt;
+[10] Square Kilometre Array, Building a giant telescope in the outback - part 2. 2020.&lt;br&gt;
+[11] &amp;ldquo;Australia - Public Website&amp;rdquo;, SQUARE KILOMETRE ARRAY, 2020. [Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/australia/&#34;&gt;https://www.skatelescope.org/australia/&lt;/a&gt;. [Accessed: 24- Sep- 2020].&lt;br&gt;
+[12] Filled in Use Case Survey for SKA&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-305/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-305/project/project/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;how-big-data-technologies-can-improve-indoor-agriculture&#34;&gt;How Big Data Technologies Can Improve Indoor Agriculture&lt;/h1&gt;
+&lt;p&gt;Cody Harris, &lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;, fa20-523-305&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#topic-discussion&#34;&gt;Topic Discussion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#dataset&#34;&gt;Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#getting-a-good-grade&#34;&gt;Getting a Good Grade&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#data-storage-and-streaming&#34;&gt;Data Storage and Streaming&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#analytics&#34;&gt;Analytics&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#hardware&#34;&gt;Hardware&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#novel-ideas&#34;&gt;Novel Ideas&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#extensions&#34;&gt;Extensions&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; agriculture&lt;/p&gt;
+&lt;h2 id=&#34;topic-discussion&#34;&gt;Topic Discussion&lt;/h2&gt;
+&lt;p&gt;The overall topic of the project will include investigating how a host of Big Data technologies could be leveraged to improve multiple facets of the growing and distribution process for indoor farmers. One of the biggest benefits of growing indoors is the ability to precisely control the growing environment. From the light intensity and spectrum, to the nutrients given to the plant, there is an optimal combination of variables that produce the best results. Each farmer has priorities, whether those are yield, produce quality or a combination of various factors, it is a complex system that requires experimentation and robust tools to see the best results. There are a host of IoT sensors and controllers that can be employed to help monitor and control the growing environment, these all produce vast amounts of data that must be sifted through to extract insights. For sizeable farms, this produces big data problems that must be overcome.&lt;/p&gt;
+&lt;p&gt;While some insights from the data can come during or directly after the growing “season”, some requires the produce to hit the shelves or to be used to create various food products. This means monitoring continues through the logistics process, and this data is integral when it comes to the end result of the produce. All this data allows for traceability in the food supply chain as well, in which big data technologies are perfect to handle.&lt;/p&gt;
+&lt;p&gt;The end goal is to investigate and implement a scalable solution that follows the farmers crops from seed to consumers tables and optimizes the process along the way. Although indoor farms allow for great control, it is important to understand that there are many costs that are not associated with traditional farms. This means that to make the farming endeavor sustainable, optimization is important.&lt;/p&gt;
+&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+&lt;p&gt;There are not any publicly available data sources that meet the needs of this project. In order to accomplish the goal of building an analytics platform for an indoor farm and the related logistics, simulation data will be created. The simulation data will encompass many different situations that could be encountered and labeled by these issues. Along with possible issues, the data will include mostly satisfactory situations, as this is what the farmer is most likely to encounter.&lt;/p&gt;
+&lt;p&gt;The majority of the data being worked with will be streaming sensor data. The sensors will include: PAR (Photosynthetically Active Radiation), temperature, humidity, pH of grow medium, and CO2. Along with these streaming measurements, other data points about the specific grow area will be taken. A grow area could be as small as a row of ten plants, all the way to thousands of plants. These datapoints could be things such as phenotype, light spectrum, light cycle, feeding schedule, or any other labels that could be beneficial in determining the end attributes of the given produce.&lt;/p&gt;
+&lt;p&gt;Variance in the data will come in a variety of forms. As completely identical data is not analogous to real life, it can be for certain measurements. For example, in an indoor growing environment equipped with HVAC, the temperature might only fluctuate a few percent all day, and then have a rapid change as the lights are turned off. With this in mind, certain simulation measurements should not have a great deal of noise in them unless trying to simulate an adverse event.&lt;/p&gt;
+&lt;p&gt;As this data is streaming, the dataset will be a time series that needs to be handled in the sense of streaming as well as in a postmortem capacity. The size of the data should be large enough to properly simulate a large farm over the course of a grow cycle. This data set will simulate an experiment, in which a variety of conditions or phenotypes will be compared to a control. Within the realm of the experiment the simulation data might include adverse events, such as a power outage, that could actually occur during an experiment and these adverse events must be accounted for in the end conclusion.&lt;/p&gt;
+&lt;h2 id=&#34;getting-a-good-grade&#34;&gt;Getting a Good Grade&lt;/h2&gt;
+&lt;p&gt;As I am a graduate student, I am expected to not only write a report, but also create a software component. For the software, it will be a proof of concept to show that a scalable solution could be built to use open source big data technologies. The report will detail the work done in the solution being built, as well as exploring ideas that cannot be built but are required for the full solution to be implemented.&lt;/p&gt;
+&lt;h3 id=&#34;data-storage-and-streaming&#34;&gt;Data Storage and Streaming&lt;/h3&gt;
+&lt;p&gt;With a focus on open source platforms, Apache has solutions that can be leveraged to handle many aspects of big data streaming and storage in a distributed computing environment. While more investigation needs to be done on the exact software that will be used, Hadoop, Spark, or the combination of the two will be used to handle the large amount of data, whether that is for longer term storage or real time streaming. Another Apache system that will be evaluated is Kafka, but again, there are many possibly solutions to be used. The goal is to stay within the Apache environment as it is widely used in industry as well as is an open source platform.&lt;/p&gt;
+&lt;h3 id=&#34;analytics&#34;&gt;Analytics&lt;/h3&gt;
+&lt;p&gt;The analytics component of this project is diverse. While all goals might not be able to be achieved in the proof of work, all of the data needs that are required for the growing and logistics processes of an indoor farm will be evaluated and explained in the final report. There are two main components to the analytics: real time analytics and historic data analysis. While some models are being fine tuned for the specific farm, the real time analytics will likely be mostly monitoring at the beginning. As grow seasons go by and metrics are collected on the harvest, the real time analytics will be informed by the historic data using some sort of machine learning processes. These analytic goals can likely be completed using tools within Spark, using MLlib. If this cannot be accomplished, then another library will be used such as sci-kit learn.&lt;/p&gt;
+&lt;h3 id=&#34;hardware&#34;&gt;Hardware&lt;/h3&gt;
+&lt;p&gt;It is important that the proof of concept is designed for a distributed computing environment. The goal is to create open source software that can be used by small farms that sell solely at farmers markets, all the way to large commercial operations. When designing in this way, growing pains in the future can be minimized. For the hardware being used, multiple solutions are being evaluated. The first possible idea is using a commercial cloud application such as AWS, Azure, Google Cloud, etc. Secondly, personal local hardware could be used to create a virtual distributed computing environment. There are two options for local hardware. Either a personal computer with multiple virtual machines, or an array of Raspberry Pi’s will be used.&lt;/p&gt;
+&lt;h3 id=&#34;novel-ideas&#34;&gt;Novel Ideas&lt;/h3&gt;
+&lt;p&gt;Everything that has already been explained has more or less been attempted or implemented successfully. The innovation comes by trying to implement some ideas that are fresh by borrowing ideas and implementing them in the context of an indoor produce farm. The first big deviation from the norm is using a blockchain backbone to store immutable data. This idea is used in some niche farming scenarios but is yet to be adopted by produce farmers. Blockchain could be used to hold the logistical data to establish immutable custody data, but also to store the data from the growing process, pesticides tests, chemical makeup tests, genetic markers and more. Next, in the spirit of providing transparency there will be a public blockchain that could be explored by consumers or businesses that buy the farmers produce. In today’s world, we always wonder if we are paying some premium for products in order to just have a special label on that product. For this example, the label is: organic, GMO free, pesticide free, etc. Transparency goes a long way to prove to consumers that you are doing more for them to provide a good product, which allows for a greater amount that people are willing to spend. Some data might be proprietary, such as the exact genome of the phenotypes being used, or the specific growing protocols, so this information must stay off the blockchain.&lt;/p&gt;
+&lt;h3 id=&#34;extensions&#34;&gt;Extensions&lt;/h3&gt;
+&lt;p&gt;Not everything can be built or examined completely within the time constraints. Part of the project will be planning future updates or technologies that could improve the solution. One immediate future plan would be to incorporate cameras and computer vision to monitor the crops. Using images of plants, certain diseases, pests, or nutrient deficiencies can be seen as soon as they start to develop, giving the farmer the best odds at reversing the issue without effecting the harvest. Many of these issues cannot be greatly noticed with sensor data alone, which requires a farmer to constantly visually inspect crops. While this might not be terribly hard in some cases, some vertical grows might require large ladders to see all levels of the crop. This improvement could lead to less staff being required, which can allow more farmers to grow more for less money.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-305/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-305/test/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Testing if I have write access to this repo.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-307/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-307/project/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-312/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -209,6 +363,72 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-316/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-316/project/project/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;sentiment-analysis-and-visualization-using-an-us-election-dataset-for-the-2020-election&#34;&gt;Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election.&lt;/h1&gt;
+&lt;p&gt;Sudheer Alluri Indiana university
+&lt;a href=&#34;mailto:ngsudheer@gmail.com&#34;&gt;ngsudheer@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vishwanadham Mandala Indiana university
+&lt;a href=&#34;mailto:vmandal@iu.edu&#34;&gt;vmandal@iu.edu&lt;/a&gt;
+(&lt;a href=&#34;mailto:vishwandh.mandala@gmail.com&#34;&gt;vishwandh.mandala@gmail.com&lt;/a&gt;) Dataset: &lt;a href=&#34;https://www.kaggle.com/tunguz/us-elections-dataset&#34;&gt;https://www.kaggle.com/tunguz/us-elections-dataset&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. DataSets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-technologies-used&#34;&gt;4. Technologies used&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-refernces&#34;&gt;5. Refernces&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; sentiment,  US-election&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;For our final project, we will be focusing on the upcoming U.S. presidential elections. We plan to use a US-elections dataset to predict the votes each contestant will attain, by area. With growing data, the prediction will be changing constantly. We are making the difference by selecting the latest dataset available and previous election data to predict the number of votes each contestant will get to the closest figure. A feature we are introducing to enhance the quality is predicting various area types like counties, towns, and/or big cities.
+One might argue that these kinds of predictions will only be helping organizations and not individuals. We assure you that this project will be helping the general public in many ways. The most evident being, an individual knowing which contestant his/her community or the general public around him/her prefer. This project is strictly statistical and does not have a goal to sway the elections in any way or to pressure an individual&lt;/p&gt;
+&lt;p&gt;into picking a candidate. Overall, this is just a small step towards a future that might hold an environment where the next president of the United States of America could be accurately guessed based on previous data and innovative Big Data Technologies.&lt;/p&gt;
+&lt;h2 id=&#34;2-datasets&#34;&gt;2. DataSets&lt;/h2&gt;
+&lt;p&gt;We will be going to use the dataset, &lt;a href=&#34;https://www.kaggle.com/tunguz/us-elections-dataset,&#34;&gt;https://www.kaggle.com/tunguz/us-elections-dataset,&lt;/a&gt; and we will create the filets based on location. If needed, we may download Twitter data from posts on and by Donald Trump, Joe Biden, and their associates. Which leads us to our objective for the project, based on the data we collected, we should be able to predict the winner of the 2020 United States of America’s presidential elections.&lt;/p&gt;
+&lt;p&gt;All of the data will be location-based and if required we will download realtime campaigning and debate analysis data, giving us a live and updated prediction every time increment. To strengthen the prediction, even more, we may reuse some code from the 2016 election’s analysis, however, our main focus will be using the latest data we readily acquire during the time leading up to the 2020 election.
+In conclusion, to make our predictions as realistic and as strong as we can get, we will be going to choose multiple data sets to integrate between the previous election and twitter data to predict the number of votes each candidate will acquire. Therefore, we will be predicting the winner of the 2020 presidential elections.&lt;/p&gt;
+&lt;h2 id=&#34;3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/h2&gt;
+&lt;p&gt;We will collect election data and twitter information and integrate both to predict the results. A lot of twitter or dataset data will be trimmed and parsed to build the model. We will calculate
+Our data-gathering and preparation methodology is composed of the following steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Use the latest election dataset-2020, we will be creating the model.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data cleaning and extraction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We will try to download the latest data from twitter and campaigning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-technologies-used&#34;&gt;4. Technologies used&lt;/h2&gt;
+&lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, PyTorch,&lt;/p&gt;
+&lt;h2 id=&#34;5-refernces&#34;&gt;5. Refernces&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
 
       </description>
     </item>
@@ -360,6 +580,32 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
         
         &lt;p&gt;Test Data 1&lt;/p&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-342/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-342/project/project/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-348/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-348/project/project/</guid>
+      <description>
+        
+        
+        
       </description>
     </item>
     
