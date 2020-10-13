@@ -5,6 +5,11 @@ update:
 	cd content/en/report/fa20-523-301; git pull
 	cd content/en/report/fa20-523-312; git pull
 	cd content/en/report/fa20-523-326; git pull
+	cd content/en/report/fa20-523-316; git pull
+	cd content/en/report/fa20-523-305; git pull
+	cd content/en/report/fa20-523-307; git pull
+	cd content/en/report/fa20-523-342; git pull
+	cd content/en/report/fa20-523-348; git pull
 
 view:
 	gopen http://localhost:1313/ 

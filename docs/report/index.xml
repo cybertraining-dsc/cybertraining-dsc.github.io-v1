@@ -269,14 +269,15 @@ A project this large and versatile requires the use of many software tools. Thes
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-307/project/</link>
+      <link>/report/fa20-523-307/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-307/project/</guid>
+      <guid>/report/fa20-523-307/project/project/</guid>
       <description>
         
         
-        
+        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
+
       </description>
     </item>
     
@@ -319,7 +320,7 @@ A project this large and versatile requires the use of many software tools. Thes
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; toxicology, pollution, autonomous systems, surface vehicle, water quality, data analysis, environment, big data, ecosystem&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; toxicology, pollution, autonomous systems, surface vehicle, sensors, arduino, water quality, data analysis, environment, big data, ecosystem&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;When it comes to revolutionizing our qualities of life and improving standards, there is not another branch of science and technology that has made more impact than the myriad technological capabilities offered by the areas of Artificial Intelligence (AI) and its sub-fields involving Computer Vision, Robotics, Machine Learning, Deep Learning, Reinforcement Learning, etc. It should be borne in mind that AI was developed to allow machines/computer processors to work in the same way as the human brain works and which could make intelligent decisions at every conscious level. It was meant to help with tasks for rendering scientific applications more smarter and efficient. There are many tasks that can be performed in a far more dexterous fashion by employing smart-machines and algorithms than by involving human beings. But even more importantly, AI has also been designed to perform tasks that cannot be successfully completed by employing human beings. This could either be due to the prolonged boredom of the task itself, or a task that involves hazardous environments that cannot sustain life-forms for a long time. Some examples in this regard would involve exploring deep mines or volcanic trenches for mineral deposits, exploring the vast expanse of the universe and heavenly bodies, etc. And this is where the concept employing AI/Robotics based technology fits in perfectly for aquatic monitoring and oceanographical surveillance based applications.&lt;/p&gt;
 &lt;p&gt;Toxicity analysis of ecologically vulnerable water-bodies, or any other marine ecosystem for that matter, could give us a treasure trove of information regarding biodiversity, mineral deposits, unknown biophysical phenomenon, but most importantly, it could also provide meaningful and scientific information related to the biodegradation of the ecosystem itself. In this research project, an attempt will be made to design a simple foundation of an aquatic Autonomous Surface Vehicle (ASV) that will be deployed in marine ecosystems. Such a vehicle would be embedded with different kind of electronic sensors, that are capable of measuring physical quantities such as temperature, pH, conductance, dissolved oxygen level, etc. The data collected by such a system can either be over a period of time (temporal data), or it could cover a vast aquatic geographical region (spatial data). This data will then be compared with existing datasets that are made publicly available by various environmental organizations in the United States, most importantly the Environmental Protection Agency (EPA) and the US Geological Survey (USGS). A comparative data analysis task between the data collected by the ASV and the vast array of environmental data that are made available from these agencies can then give us an indication about the status of the aquatic degradation of the ecosystem in question by measuring the extent to which the current data deviates from relevant historical data trends.&lt;/p&gt;
@@ -332,7 +333,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;li&gt;USGS Water Quality Data: &lt;a href=&#34;https://waterdata.usgs.gov/nwis/qw&#34;&gt;https://waterdata.usgs.gov/nwis/qw&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;EPA Water Quality Data: &lt;a href=&#34;https://www.epa.gov/waterdata/water-quality-data-download&#34;&gt;https://www.epa.gov/waterdata/water-quality-data-download&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;To answer the questions involving existence of multiple data-sets and motivation of using multiple data-sets, we must keep in mind that the very nature of this study is based on historical trends of the how the water-quality has altered in the past and how it relates to the current situation. Because of these reasons, multiple data-sets will be referred to from multiple sources so as to achieve a robust data-analytical results. This would ensure that too much focus is not given on outlier cases, that may be relevant to just a particular geographical region or an aberration in the data that may only have arisen due to an unknown underlying phenomenon or some form of cataclysmic event from the past. Using multiple datasets from different sources would help to get a resultant data structure that is more likely to converge towards an approximate level of historical thresholds and which can then be used to find out how the current observed data deviates from such previous patterns.&lt;/p&gt;
+&lt;p&gt;To answer the questions involving existence of multiple data-sets and motivation of using multiple data-sets, we must keep in mind that the very nature of this study is based on historical trends of the nature of water-quality in a particular region from the past and how it relates to the current situation. Because of these reasons, multiple data-sets will be referred to from multiple sources so as to achieve robust data-analytical results. This would ensure that too much focus is not given on outlier cases, that may be relevant to just a particular geographical region or an aberration in the data that may only have arisen due to an unknown underlying phenomenon or some form of cataclysmic event from the past. Using multiple datasets from different sources would help to get a resultant data structure that is more likely to converge towards an approximate level of historical thresholds and which can then be used to find out how the current observed data deviates from such previous patterns.&lt;/p&gt;
 &lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
 &lt;h3 id=&#34;41-hardware-component&#34;&gt;4.1 Hardware Component&lt;/h3&gt;
 &lt;p&gt;A very rough outline of the autonomous surface vehicle (ASV) in question has been preceived in the Autodesk Fusion 360 software model. A preliminary model has been designed in this software so as to 3D print the system. It will then be interfaced with the appropriate sensors in question. Then system will be driven by an Arduino-Uno based microcontroller, and it will have different types of environmental sensors that will collect and log data. These sensors have been purchased from the vendor, &amp;ldquo;Atlas Scientific&amp;rdquo;. As of now, the sensors that have been chosen for this ASV are as follows:&lt;/p&gt;
@@ -359,7 +360,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;Valada A., Velagapudi P., Kannan B., Tomaszewski C., Kantor G., Scerri P. (2014) Development of a Low Cost Multi-Robot Autonomous Marine Surface Platform. In: Yoshida K., Tadokoro S. (eds) Field and Service Robotics. Springer Tracts in Advanced Robotics, vol 92. Springer, Berlin, Heidelberg. &lt;a href=&#34;https://doi.org/10.1007/978-3-642-40686-7_43&#34;&gt;https://doi.org/10.1007/978-3-642-40686-7_43&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;M. Ludvigsen, J. Berge, M. Geoffroy, J. H. Cohen, P. R. De La Torre, S. M. Nornes, H. Singh, A. J. Sørensen, M. Daase, G. Johnsen, Use of an Autonomous Surface Vehicle reveals small-scale diel vertical migrations of zooplankton and susceptibility to light pollution under low solar irradiance. Sci. Adv. 4, eaap9887 (2018).  &lt;a href=&#34;https://advances.sciencemag.org/content/4/1/eaap9887/tab-pdf%3E&#34;&gt;https://advances.sciencemag.org/content/4/1/eaap9887/tab-pdf&amp;gt;&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;M. Ludvigsen, J. Berge, M. Geoffroy, J. H. Cohen, P. R. De La Torre, S. M. Nornes, H. Singh, A. J. Sørensen, M. Daase, G. Johnsen, Use of an Autonomous Surface Vehicle reveals small-scale diel vertical migrations of zooplankton and susceptibility to light pollution under low solar irradiance. Sci. Adv. 4, eaap9887 (2018). &lt;a href=&#34;https://advances.sciencemag.org/content/4/1/eaap9887/tab-pdf&#34;&gt;https://advances.sciencemag.org/content/4/1/eaap9887/tab-pdf&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -376,7 +377,7 @@ A project this large and versatile requires the use of many software tools. Thes
       <description>
         
         
-        &lt;h1 id=&#34;sentiment-analysis-and-visualization-using-an-us-election-dataset-for-the-2020-election&#34;&gt;Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election.&lt;/h1&gt;
+        &lt;h1 id=&#34;sentiment-analysis-and-visualization-using-an-us-election-dataset-for-the-2020-election&#34;&gt;Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election&lt;/h1&gt;
 &lt;p&gt;Sudheer Alluri Indiana university
 &lt;a href=&#34;mailto:ngsudheer@gmail.com&#34;&gt;ngsudheer@gmail.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vishwanadham Mandala Indiana university
@@ -592,7 +593,8 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
       <description>
         
         
-        
+        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
+
       </description>
     </item>
     
@@ -605,7 +607,8 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
       <description>
         
         
-        
+        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
+
       </description>
     </item>
     

@@ -5,6 +5,14 @@ owner:
   hid: "fa20-523-316"
   community: "534"
   semester: "fa20"
+co-owner:
+   firstname: "Vishwanadham"
+   lastname: "Mandala"
+   email: "vishwanadh.mandala@gmail.com"
+   hid: "fa20-523-316"
+   community: "534"
+   semester: "fa20"
+
 project:
   title: TBD
   url: TBD
