@@ -230,6 +230,20 @@ data analysis have become key components in succeeding the challenge to unravel 
 
 {{< /view_module >}}
 
+### Mobility (Industry)
+
+{{< view_module
+	alt="Mobility (Industry)"
+	src="/images/mobility.jpg"
+	url="/modules/bigdataapplications/2020/mobility"
+>}}
+
+Mobility is a key part in everyday life. From the personal car to space exploring rockets, there are many places that can 
+be enhanced by using AI. Autonomous vehicles and sensing features provide safety and efficiency. Many motorcar companies
+have already moved towards AI to power the vehicles and provide new features for the drivers. 
+
+{{< /view_module >}}
+
 
 ## Complementary Material
 
