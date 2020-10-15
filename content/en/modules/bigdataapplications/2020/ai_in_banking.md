@@ -53,28 +53,23 @@ banking, real world examples of AI in Banking, banking systems and banking as a 
 
 ## AI in Banking E: Examples
 
-1. Global Card Transactions
-2. Counting Coins with Robots
-3. Insurance
-4. Chat bots in Insurance
-5. Banks and Technology
-6. RBC uses AI for Customer Insights
-7. Handwriting recognition
-8. Leakbot leak detection
+1. Credit cards
+2. The stock trading ecosystem
+3. Robots counting coins
+4. AI in Insurance: Chatbots, Customer Support
+5. Banking itself
+6. Handwriting recognition
+7. Detect leaks for insurance
 
 
 {{< youtube "0uWDWfeLLuY" >}}
 
 ## AI in Banking F: As a Service
 
-1. Greendot and Synapse
-2. Camber, Clearbank, Starling
-3. BAAS providers, Banking services stack, Two general BAAS business model
-4. Performance Metrics
-5. Other BAAS Companies
+1. Banking Services Stack
+2. Business Model
+3. Several Examples
+4. Metrics compared among examples
+5. Breadth, Depth, Reputation, Speed to Market, Scalability
 
 {{< youtube "UYY0-OJltqQ" >}}
-
-
-
-
