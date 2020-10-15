@@ -198,8 +198,8 @@
   </url>
   
   <url>
-    <loc>/modules/bigdataapplications/2020/mobility_and_transportation_systems/</loc>
-    <lastmod>2020-10-09T07:49:12-04:00</lastmod>
+    <loc>/modules/bigdataapplications/2020/mobility/</loc>
+    <lastmod>2020-10-15T14:07:29-04:00</lastmod>
   </url>
   
   <url>
@@ -283,6 +283,11 @@
   </url>
   
   <url>
+    <loc>/modules/bigdataapplications/2020/ai_in_banking/</loc>
+    <lastmod>2020-10-15T13:42:47-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/modules/bigdataapplications/2019/tech/python/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
   </url>
@@ -305,6 +310,11 @@
   <url>
     <loc>/modules/bigdataapplications/2019/week10/</loc>
     <lastmod>2020-08-28T22:29:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/modules/bigdataapplications/2020/transportation_systems/</loc>
+    <lastmod>2020-10-15T13:50:11-04:00</lastmod>
   </url>
   
   <url>
@@ -369,7 +379,7 @@
   
   <url>
     <loc>/report/</loc>
-    <lastmod>2020-10-12T21:04:11-04:00</lastmod>
+    <lastmod>2020-10-12T21:24:52-04:00</lastmod>
   </url>
   
   <url>

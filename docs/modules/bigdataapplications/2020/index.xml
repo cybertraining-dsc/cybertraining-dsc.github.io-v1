@@ -1349,10 +1349,10 @@ They will be referenced in the corresponding sections.&lt;/p&gt;
     
     <item>
       <title>Modules: Mobility (Industry)</title>
-      <link>/modules/bigdataapplications/2020/mobility_and_transportation_systems/</link>
+      <link>/modules/bigdataapplications/2020/mobility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/modules/bigdataapplications/2020/mobility_and_transportation_systems/</guid>
+      <guid>/modules/bigdataapplications/2020/mobility/</guid>
       <description>
         
         
@@ -1662,6 +1662,167 @@ Tennis and Horse Racing.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/173WROavlVriMm3HEAY-4Ttd4cg9lR1Gu/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: AI In Banking</title>
+      <link>/modules/bigdataapplications/2020/ai_in_banking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/ai_in_banking/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;In this lecture, AI in Banking is discussed. Here we focus on the transition of legacy banks towards AI based
+banking, real world examples of AI in Banking, banking systems and banking as a service.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/10gQtuXuqAtdc4x7briVis1iQSbqu6XmZCtSlBb2np38/edit?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ai-in-banking-a-the-transition-of-legacy-banks&#34;&gt;AI in Banking A: The Transition of legacy Banks&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Types of AI that is used&lt;/li&gt;
+&lt;li&gt;Closing of physical branches&lt;/li&gt;
+&lt;li&gt;Making the transition&lt;/li&gt;
+&lt;li&gt;Growth in Fintech as legacy bank services decline&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5xR8uisfSc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-b-fintech&#34;&gt;AI in Banking B: FinTech&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Fintech examples and investment&lt;/li&gt;
+&lt;li&gt;Broad areas of finance/banking where Fintech operating&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/k0o74_e7xec&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-c-neobanks&#34;&gt;AI in Banking C: Neobanks&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Types and Examples of neobanks&lt;/li&gt;
+&lt;li&gt;Customer uptake by world region&lt;/li&gt;
+&lt;li&gt;Neobanking in Small and Medium Business segment&lt;/li&gt;
+&lt;li&gt;Neobanking in real estate, mortgages&lt;/li&gt;
+&lt;li&gt;South American Examples&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DMS_h_qkpDk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-d-the-system&#34;&gt;AI in Banking D: The System&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The Front, Middle, Back Office&lt;/li&gt;
+&lt;li&gt;Front Office: Chatbots&lt;/li&gt;
+&lt;li&gt;Robo-advisors&lt;/li&gt;
+&lt;li&gt;Middle Office: Fraud, Money laundering&lt;/li&gt;
+&lt;li&gt;Fintech&lt;/li&gt;
+&lt;li&gt;Payment Gateways (Back Office)&lt;/li&gt;
+&lt;li&gt;Banking as a Service&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/V6KuN0yZQws&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-e-examples&#34;&gt;AI in Banking E: Examples&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Credit cards&lt;/li&gt;
+&lt;li&gt;The stock trading ecosystem&lt;/li&gt;
+&lt;li&gt;Robots counting coins&lt;/li&gt;
+&lt;li&gt;AI in Insurance: Chatbots, Customer Support&lt;/li&gt;
+&lt;li&gt;Banking itself&lt;/li&gt;
+&lt;li&gt;Handwriting recognition&lt;/li&gt;
+&lt;li&gt;Detect leaks for insurance&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0uWDWfeLLuY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-f-as-a-service&#34;&gt;AI in Banking F: As a Service&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Banking Services Stack&lt;/li&gt;
+&lt;li&gt;Business Model&lt;/li&gt;
+&lt;li&gt;Several Examples&lt;/li&gt;
+&lt;li&gt;Metrics compared among examples&lt;/li&gt;
+&lt;li&gt;Breadth, Depth, Reputation, Speed to Market, Scalability&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UYY0-OJltqQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Transportation Systems</title>
+      <link>/modules/bigdataapplications/2020/transportation_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/bigdataapplications/2020/transportation_systems/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;transportation-systems-summary&#34;&gt;Transportation Systems Summary&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The ride-hailing industry highlights the growth of a new “Transportation System” TS
+a. For ride-hailing TS controls rides matching drivers and customers; it predicts how to position cars and how to avoid traffic slowdowns
+b. However, TS is much bigger outside ride-hailing as we move into the “connected vehicle” era
+c. TS will probably find autonomous vehicles easier to deal with than human drivers&lt;/li&gt;
+&lt;li&gt;Cloud Fog and Edge components&lt;/li&gt;
+&lt;li&gt;Autonomous AI was centered on generalized image processing&lt;/li&gt;
+&lt;li&gt;TS also needs AI (and DL) but this is for routing and geospatial time-series; different technologies from those for image processing&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1UYAq4VfpJ4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;transportation-systems-a-introduction&#34;&gt;Transportation Systems A: Introduction&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;“Smart” Insurance&lt;/li&gt;
+&lt;li&gt;Fundamentals  of Ride-Hailing&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aRBi94QTyvQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;transportation-systems-b-components-of-a-ride-hailing-system&#34;&gt;Transportation Systems B: Components of a Ride-Hailing System&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Transportation Brain and Services&lt;/li&gt;
+&lt;li&gt;Maps, Routing,&lt;/li&gt;
+&lt;li&gt;Traffic forecasting with deep learning&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/obUYIj4cNao&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;transportation-systems-c-different-ai-approaches-in-ride-hailing&#34;&gt;Transportation Systems C: Different AI Approaches in Ride-Hailing&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;View as a Time Series: LSTM and ARIMA&lt;/li&gt;
+&lt;li&gt;View as an image in a 2D earth surface - Convolutional networks&lt;/li&gt;
+&lt;li&gt;Use of Graph Neural Nets&lt;/li&gt;
+&lt;li&gt;Use of Convolutional Recurrent Neural Nets&lt;/li&gt;
+&lt;li&gt;Spatio-temporal modeling&lt;/li&gt;
+&lt;li&gt;Comparison of data with predictions&lt;/li&gt;
+&lt;li&gt;Reinforcement Learning&lt;/li&gt;
+&lt;li&gt;Formulation of General Geospatial Time-Series Problem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/k9qFE5WdQWA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
