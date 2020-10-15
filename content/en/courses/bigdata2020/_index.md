@@ -185,7 +185,7 @@ effectively.
 ### AI in Banking
 
 {{< view_module
-	alt="Sports"
+	alt="AI in Banking"
 	src="/images/ai_in_banking.jpg"
 	url="/modules/bigdataapplications/2020/ai_in_banking"
 >}}
@@ -194,6 +194,22 @@ AI in banking has become a vital component in providing best services to the
 peopel. AI provides securing bank transactions, providing suggestions and
 many other services for the clients. And legacy banking systems are also being
 reinforced with novel AI techniques to migrate business models with technology. 
+
+{{< /view_module >}}
+
+
+### Transportation Systems
+
+{{< view_module
+	alt="Transportation Systems"
+	src="/images/transportation_systems.jpg"
+	url="/modules/bigdataapplications/2020/transportation_systems"
+>}}
+
+Transportation systems is a vital component in human life. With the dawn of AI,
+transportation systems are also reinforced to provide better service for the people. 
+Analyzing tera-bytes of data collected in day-to-day transportation activities are used
+to analyze issues and provide a better experience for the user. 
 
 {{< /view_module >}}
 
