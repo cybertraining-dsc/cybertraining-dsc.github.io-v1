@@ -181,6 +181,23 @@ effectively.
 {{< /view_module >}}
 
 
+
+### AI in Banking
+
+{{< view_module
+	alt="Sports"
+	src="/images/ai_in_banking.jpg"
+	url="/modules/bigdataapplications/2020/ai_in_banking"
+>}}
+
+AI in banking has become a vital component in providing best services to the
+peopel. AI provides securing bank transactions, providing suggestions and
+many other services for the clients. And legacy banking systems are also being
+reinforced with novel AI techniques to migrate business models with technology. 
+
+{{< /view_module >}}
+
+
 ## Complementary Material
 
 * When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
