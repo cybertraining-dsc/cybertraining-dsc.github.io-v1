@@ -214,6 +214,23 @@ to analyze issues and provide a better experience for the user.
 {{< /view_module >}}
 
 
+### Space and Energy
+
+{{< view_module
+	alt="Space and Energy"
+	src="/images/space_and_energy.jpg"
+	url="/modules/bigdataapplications/2020/space_and_energy"
+>}}
+
+Energy is a term we find in everyday life. Conserving energy and smart usage is vital in managing energy demands. 
+Here the role played by AI has become significant in recent years. 
+Many efforts have been taken by industry leaders like Bill Gates to provide better solutions for efficient energy consumption. 
+Apart from that Space explorations are also being reinforced with AI. Better communication, remote sensing, 
+data analysis have become key components in succeeding the challenge to unravel the mysteries in the universe. 
+
+{{< /view_module >}}
+
+
 ## Complementary Material
 
 * When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
