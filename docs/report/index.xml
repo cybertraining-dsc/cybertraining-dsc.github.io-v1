@@ -15,6 +15,20 @@
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-301/project/misc_files/blank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-301/project/misc_files/blank/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;blank&#34;&gt;Blank&lt;/h1&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-301/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -76,6 +90,87 @@
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;P. Rossotti, &lt;em&gt;NBA Enhanced Box Score and Standings (2012 - 2018)&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/pablote/nba-enhanced-stats&#34;&gt;https://www.kaggle.com/pablote/nba-enhanced-stats&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-301/report/blank_report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-301/report/blank_report/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;random-report-template&#34;&gt;Random Report Template&lt;/h1&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-301/report/report_assignment6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-301/report/report_assignment6/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;assignment-6&#34;&gt;Assignment 6&lt;/h1&gt;
+&lt;h1 id=&#34;health-and-medicine&#34;&gt;Health and Medicine&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Gavin Hemmerlein, fa20-523-301&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-301/blob/master/report/report_Assignment6.md&#34;&gt;Edit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please add abstract&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-the-subject&#34;&gt;2. The Subject&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-objective&#34;&gt;3. Objective&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-references&#34;&gt;4. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; please add keywords&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;The topic to be investigated is problems in Health and Medicine. The topic is intended to explore the nature and status of the AI solution.&lt;/p&gt;
+&lt;h2 id=&#34;2-the-subject&#34;&gt;2. The Subject&lt;/h2&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;AI helps bust stroke, identify occlusions&amp;rdquo; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Computer-aided imaging analysis in acute ischemic stroke – background and clinical applications&amp;rdquo; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Artificial intelligence to diagnose ischemic stroke and identify large vessel occlusions: a systematic review&amp;rdquo; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Detecting Large Vessel Occlusion at Multiphase CT Angiography by Using a Deep Convolutional Neural Network&amp;rdquo; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;3-objective&#34;&gt;3. Objective&lt;/h2&gt;
+&lt;p&gt;The&lt;/p&gt;
+&lt;h2 id=&#34;4-references&#34;&gt;4. References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Y. Mokli, J. Pfaff, D. Pinto dos Santos, C. Herweh, and S. Nagel &amp;ldquo;Computer-aided imaging analysis in acute ischemic stroke – background and clinical applications&amp;rdquo;, &lt;em&gt;Neurological Research and Practice&lt;/em&gt;, p. 1-13. 2020 [Online serial]. Available:  &lt;a href=&#34;https://neurolrespract.biomedcentral.com/track/pdf/10.1186/s42466-019-0028-y&#34;&gt;https://neurolrespract.biomedcentral.com/track/pdf/10.1186/s42466-019-0028-y&lt;/a&gt; [Accessed Oct. 13, 2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;N. Murray, &amp;ldquo;Artificial intelligence to diagnose ischemic stroke and identify large vessel occlusions: a systematic review,&amp;rdquo; &lt;em&gt;Journal of NeuroInterventional Surgery&lt;/em&gt;, vol. 12, no. 2, p. 156-164. 2020 [Online serial]. Available: &lt;a href=&#34;https://jnis.bmj.com/content/12/2/156&#34;&gt;https://jnis.bmj.com/content/12/2/156&lt;/a&gt;. [Accessed Oct. 13, 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;M. Stib, J. Vasquez, M. Dong, Y. Kim, S. Subzwari, H. Triedman, A. Wang, H. Wang, A. Yao, M. Jayaraman, J. Boxerman, C. Eickhoff, U. Cetintemel, G. Baird, and R. McTaggart, &amp;ldquo;Detecting Large Vessel Occlusion at Multiphase CT Angiography by Using a Deep Convolutional Neural Network&amp;rdquo;, &lt;em&gt;Original Research Neuroradiology&lt;/em&gt;, Sep 29, 2020. [Online serial]. Available: &lt;a href=&#34;https://pubs.rsna.org/doi/full/10.1148/radiol.2020200334&#34;&gt;https://pubs.rsna.org/doi/full/10.1148/radiol.2020200334&lt;/a&gt; [Accessed Oct. 13, 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -276,7 +371,46 @@ A project this large and versatile requires the use of many software tools. Thes
       <description>
         
         
-        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
+        &lt;h1 id=&#34;analysis-of-financial-markets-based-on-president-trumps-tweets&#34;&gt;Analysis of Financial Markets based on President Trump&amp;rsquo;s Tweets&lt;/h1&gt;
+&lt;p&gt;Alex Baker, fa20-523-307, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-307/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Financial markets can be unpredictable as is but this unpredictability is increased by one man&amp;rsquo;s Twitter account, President Trump. My goal is to use Twitter and finance datasets to see how these tweets affect the market.&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. DataSets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-technologies-used&#34;&gt;4. Technologies used&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; analysis, finance, stock markets, politics&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;For the final project, my focus will be on financial market reactions through the President&amp;rsquo;s tweets. The plan is to utilize President Trump&amp;rsquo;s tweets and stock market data to predict the market reaction based on what is going to be published. A feature that is being introduced is a way to craft tweets based on historical data to see how the markets will react if a tweet such as that is published. This can be useful to see how news from the president can cause an increase or decline in markets.&lt;/p&gt;
+&lt;h2 id=&#34;2-datasets&#34;&gt;2. DataSets&lt;/h2&gt;
+&lt;p&gt;The datasets that will be used are the tweets from President Trump&amp;rsquo;s personal account as well as Yahoo fiance data. These will be gathered from their respected APIs. If needed, the following dataset from Kaggle (&lt;a href=&#34;https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv&#34;&gt;https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv&lt;/a&gt;) can be used in replace of Twitter&amp;rsquo;s API for President Trump&amp;rsquo;s tweets but are only available up to June 2020. Which leads to the objective for the project, based on the data collected, the program should be able to visualize and predict how the market will react when President Trump send out a tweet.&lt;/p&gt;
+&lt;p&gt;The data will span from President Trumps inauguration to the current day. To strengthen the prediction, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&amp;rsquo;s rallies. In order to have a realistic and strong prediction, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.&lt;/p&gt;
+&lt;h2 id=&#34;3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/h2&gt;
+&lt;p&gt;The collection of finance and Twitter data will be used to visualize and predict the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use data from President Trump&amp;rsquo;s personal twitter to help visualize and create the model&lt;/li&gt;
+&lt;li&gt;Use data from Yahoo finance API to help visualize and create the model&lt;/li&gt;
+&lt;li&gt;Data cleaning and extraction.&lt;/li&gt;
+&lt;li&gt;New data will be updated to keep up with the current time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-technologies-used&#34;&gt;4. Technologies used&lt;/h2&gt;
+&lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, Tensorflow/PyTorch&lt;/p&gt;
+&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
 
       </description>
     </item>
@@ -378,16 +512,16 @@ A project this large and versatile requires the use of many software tools. Thes
         
         
         &lt;h1 id=&#34;sentiment-analysis-and-visualization-using-an-us-election-dataset-for-the-2020-election&#34;&gt;Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election&lt;/h1&gt;
-&lt;p&gt;Sudheer Alluri Indiana university
+&lt;p&gt;Sudheer Alluri Indiana University fa20-523-316
 &lt;a href=&#34;mailto:ngsudheer@gmail.com&#34;&gt;ngsudheer@gmail.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Vishwanadham Mandala Indiana university
+&lt;p&gt;Vishwanadham Mandala Indiana University fa20-523-316
 &lt;a href=&#34;mailto:vmandal@iu.edu&#34;&gt;vmandal@iu.edu&lt;/a&gt;
-(&lt;a href=&#34;mailto:vishwandh.mandala@gmail.com&#34;&gt;vishwandh.mandala@gmail.com&lt;/a&gt;) Dataset: &lt;a href=&#34;https://www.kaggle.com/tunguz/us-elections-dataset&#34;&gt;https://www.kaggle.com/tunguz/us-elections-dataset&lt;/a&gt;&lt;/p&gt;
+(&lt;a href=&#34;mailto:vishwandh.mandala@gmail.com&#34;&gt;vishwandh.mandala@gmail.com&lt;/a&gt;)&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;Sentiment analysis is an evaluation of the opinion of the speaker, writer or other subject with regard to some topic.We are going to use US-elections dataset and combining the tweets of people opninon for leading presidential candidates. We have various datasets from kallage and combining tweets and NY times datasets, by combining all data predication will be dervied.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;

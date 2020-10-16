@@ -21,21 +21,30 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="TBD " />
+<meta property="og:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets Alex Baker, fa20-523-307, Edit
+Abstract Financial markets can be unpredictable as is but this unpredictability is increased by one man&rsquo;s Twitter account, President Trump. My goal is to use Twitter and finance datasets to see how these tweets affect the market.
+Contents
+ 1. Introduction 2. DataSets 3. Methodology/Process 4. Technologies used 5. References     Keywords: analysis, finance, stock markets, politics" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-307/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="TBD ">
+<meta itemprop="description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets Alex Baker, fa20-523-307, Edit
+Abstract Financial markets can be unpredictable as is but this unpredictability is increased by one man&rsquo;s Twitter account, President Trump. My goal is to use Twitter and finance datasets to see how these tweets affect the market.
+Contents
+ 1. Introduction 2. DataSets 3. Methodology/Process 4. Technologies used 5. References     Keywords: analysis, finance, stock markets, politics">
 
-<meta itemprop="wordCount" content="1">
+<meta itemprop="wordCount" content="468">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="TBD "/>
+<meta name="twitter:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets Alex Baker, fa20-523-307, Edit
+Abstract Financial markets can be unpredictable as is but this unpredictability is increased by one man&rsquo;s Twitter account, President Trump. My goal is to use Twitter and finance datasets to see how these tweets affect the market.
+Contents
+ 1. Introduction 2. DataSets 3. Methodology/Process 4. Technologies used 5. References     Keywords: analysis, finance, stock markets, politics"/>
 
 
 
@@ -172,7 +181,25 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-301projectmisc_filesblank" href="/report/fa20-523-301/project/misc_files/blank/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-301projectproject" href="/report/fa20-523-301/project/project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-301reportblank_report" href="/report/fa20-523-301/report/blank_report/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-301reportreport_assignment6" href="/report/fa20-523-301/report/report_assignment6/"></a>
       
       
       
@@ -279,6 +306,16 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-datasets">2. DataSets</a></li>
+    <li><a href="#3-methodologyprocess">3. Methodology/Process</a></li>
+    <li><a href="#4-technologies-used">4. Technologies used</a></li>
+    <li><a href="#5-references">5. References</a></li>
+  </ul>
+</nav>
+
 
 
 
@@ -316,7 +353,46 @@
 	<h1></h1>
     
 	       
-	<h1 id="tbd">TBD</h1>
+	<h1 id="analysis-of-financial-markets-based-on-president-trumps-tweets">Analysis of Financial Markets based on President Trump&rsquo;s Tweets</h1>
+<p>Alex Baker, fa20-523-307, <a href="https://github.com/cybertraining-dsc/fa20-523-307/blob/master/project/project.md">Edit</a></p>
+
+
+<div class="pageinfo pageinfo-primary">
+<h2 id="abstract">Abstract</h2>
+<p>Financial markets can be unpredictable as is but this unpredictability is increased by one man&rsquo;s Twitter account, President Trump. My goal is to use Twitter and finance datasets to see how these tweets affect the market.</p>
+<p>Contents</p>
+<div class="toc">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-datasets">2. DataSets</a></li>
+    <li><a href="#3-methodologyprocess">3. Methodology/Process</a></li>
+    <li><a href="#4-technologies-used">4. Technologies used</a></li>
+    <li><a href="#5-references">5. References</a></li>
+  </ul>
+</nav>
+</div>
+
+</div>
+
+<p><strong>Keywords:</strong> analysis, finance, stock markets, politics</p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>For the final project, my focus will be on financial market reactions through the President&rsquo;s tweets. The plan is to utilize President Trump&rsquo;s tweets and stock market data to predict the market reaction based on what is going to be published. A feature that is being introduced is a way to craft tweets based on historical data to see how the markets will react if a tweet such as that is published. This can be useful to see how news from the president can cause an increase or decline in markets.</p>
+<h2 id="2-datasets">2. DataSets</h2>
+<p>The datasets that will be used are the tweets from President Trump&rsquo;s personal account as well as Yahoo fiance data. These will be gathered from their respected APIs. If needed, the following dataset from Kaggle (<a href="https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv">https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv</a>) can be used in replace of Twitter&rsquo;s API for President Trump&rsquo;s tweets but are only available up to June 2020. Which leads to the objective for the project, based on the data collected, the program should be able to visualize and predict how the market will react when President Trump send out a tweet.</p>
+<p>The data will span from President Trumps inauguration to the current day. To strengthen the prediction, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&rsquo;s rallies. In order to have a realistic and strong prediction, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.</p>
+<h2 id="3-methodologyprocess">3. Methodology/Process</h2>
+<p>The collection of finance and Twitter data will be used to visualize and predict the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:</p>
+<ul>
+<li>Use data from President Trump&rsquo;s personal twitter to help visualize and create the model</li>
+<li>Use data from Yahoo finance API to help visualize and create the model</li>
+<li>Data cleaning and extraction.</li>
+<li>New data will be updated to keep up with the current time.</li>
+</ul>
+<h2 id="4-technologies-used">4. Technologies used</h2>
+<p>Python, Jupyter notebook or collab, Pandas, Scikit-learn, Tensorflow/PyTorch</p>
+<h2 id="5-references">5. References</h2>
+<p>TBD</p>
 
 	
 	
