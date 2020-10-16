@@ -30,6 +30,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 #### Sports
 
 * {{% addreport title="NBA Performance and Injury" author="Gavin Hemmerlein, Chelsea Gorius" hid="fa20-523-301" %}}
+* {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
 
 #### Environment
 
