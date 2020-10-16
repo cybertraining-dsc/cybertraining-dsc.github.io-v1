@@ -151,4 +151,16 @@ This week's video class recorded the second part of [Google Slides](https://docs
 
 Continue  module on [Health and Medicine](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/health_and_medicine/)
 
+## Week 8
+
+We discussed projects with current list https://docs.google.com/document/d/13TZclzrWvkgQK6-8UR-LBu_LkpRsbiQ5FG1p--VZKZ8/edit?usp=sharing 
+
+This week's video class recorded the first part of [Google Slides](https://docs.google.com/presentation/d/1mH5DW_qSH2KdagLSKAPD5QfKMV9AhuXQZz7TdHCFuAc/edit?usp=sharing).
+
+{{< youtube "GoBQpcab1RA" >}}.
+
+
+### Videos for Week 8
+
+Module on [Cloud Computing](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/e534-cloud-computing-unit/)
 
