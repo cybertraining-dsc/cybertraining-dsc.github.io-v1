@@ -3,12 +3,22 @@ draft:
 
 update:
 	cd content/en/report/fa20-523-301; git pull
-	cd content/en/report/fa20-523-312; git pull
-	cd content/en/report/fa20-523-326; git pull
-	cd content/en/report/fa20-523-316; git pull
+	cd content/en/report/fa20-523-304; git pull
 	cd content/en/report/fa20-523-305; git pull
 	cd content/en/report/fa20-523-307; git pull
+	cd content/en/report/fa20-523-308; git pull
+	cd content/en/report/fa20-523-309; git pull
+	cd content/en/report/fa20-523-312; git pull
+	cd content/en/report/fa20-523-313; git pull
+	cd content/en/report/fa20-523-314; git pull
+	cd content/en/report/fa20-523-316; git pull
+	cd content/en/report/fa20-523-317; git pull
+	cd content/en/report/fa20-523-326; git pull
+	cd content/en/report/fa20-523-329; git pull
+	cd content/en/report/fa20-523-333; git pull
+	cd content/en/report/fa20-523-337; git pull
 	cd content/en/report/fa20-523-342; git pull
+	cd content/en/report/fa20-523-343; git pull
 	cd content/en/report/fa20-523-348; git pull
 
 view:
