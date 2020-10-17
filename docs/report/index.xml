@@ -15,6 +15,2265 @@
     
     <item>
       <title>Report: </title>
+      <link>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;openapi-function-generator&#34;&gt;Openapi Function generator&lt;/h1&gt;
+&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;/h2&gt;
+&lt;h2 id=&#34;week-of-mar-9---mar-16&#34;&gt;Week of Mar 9 - Mar 16&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Andrew Goldfarb&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked with Ishan and Jonathan to finalize the start stop
+functionality.&lt;/li&gt;
+&lt;li&gt;Added functionality to delete the process entry from the
+registry upon stop command.&lt;/li&gt;
+&lt;li&gt;Debugged weird start error for my personal machine where the
+start functionality was running two bash terminals causing the
+start function to fail.&lt;/li&gt;
+&lt;li&gt;Met with Professor to discuss proper implementation of the
+start/stop and how to tie into registry functionality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;week-prior-to-mar-9th&#34;&gt;Week prior to Mar 9th&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;bkgerreis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jonathan Beckford&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prateek&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Andrew Goldfarb&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Edited the stop function to take process PID and use os.kill to
+stop the process based on the name of the python file. However,
+according to Ishan this is still not working.&lt;/li&gt;
+&lt;li&gt;Resolved conflicts between master and our working branch&lt;/li&gt;
+&lt;li&gt;Began work on assigning a default name if the user does not provide
+one for server start. Potetially, a function to assign an alias
+name to the whole process to amke it easier to reference.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;install-for-development&#34;&gt;Install for development&lt;/h2&gt;
+&lt;p&gt;cloudmesh-installer git pull analytics&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd cloudmesh-openapi
+pip install -e .
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;keep-up-to-date&#34;&gt;Keep up to date&lt;/h2&gt;
+&lt;p&gt;explain how to set up and use upstream sync&lt;/p&gt;
+&lt;h3 id=&#34;project-meeting&#34;&gt;Project Meeting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://iu.zoom.us/rec/share/4dIpJZ-p8ztIHpH_q1HAZ6wzL6iiaaa8h3QX8_YMzRkn8tBfY_mRIe8z3j-3cZ_9?startTime=1581987567000&#34;&gt;Mon 17 Feb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://iu.zoom.us/rec/share/_8ZLKK7Z6zpLb53f73_UW4EFBY_iX6a8gydM_vVbzRu2MhrC_sUCKhChUkLzgEK8?startTime=1582591839000&#34;&gt;Mon 24 Feb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;basic-function-generator&#34;&gt;Basic Function Generator&lt;/h3&gt;
+&lt;h4 id=&#34;prateek-shaw----code-link&#34;&gt;Prateek Shaw -  code link.&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;created a basic function that will return the OpenAPI YAML file
+of given python function including parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;sp20-516-237----jonathan-beckford&#34;&gt;SP20-516-237 &amp;ndash; Jonathan Beckford&lt;/h4&gt;
+&lt;p&gt;I created a class that generates the OpenAPI yaml file. I also created
+a sample program that defines an example function, instantiates my
+OpenAPI generator class and passes in the sample function as input. I
+figured this would make things really easy to just paste any new
+sample function for testing purposes. I also included the parameters
+as was requested. I also ran my output yaml through the swagger
+validator (&lt;a href=&#34;https://editor.swagger.io/&#34;&gt;https://editor.swagger.io/&lt;/a&gt;) to make sure it was compliant
+and it was.&lt;br&gt;
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-237/tree/master/projectAI/generateOpenAPI&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;sp20-516-231---brian-kegerreis&#34;&gt;sp20-516-231 - Brian Kegerreis&lt;/h4&gt;
+&lt;p&gt;I created a function to generate an OpenAPI spec including a rough
+attempt at response types (only supports text/plain media types at
+this point)
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;server-start&#34;&gt;Server Start&lt;/h3&gt;
+&lt;h4 id=&#34;andrew-goldfarb---sp20-516-234&#34;&gt;Andrew Goldfarb - SP20-516-234&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&#34;&gt;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&lt;/a&gt;
+I have created a basic function that returns the IP address of the
+server running the function to tell if it is running on the device
+itself or connected to the internet running while running the
+function.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/cloudmesh/openapi/scikitlearn/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/cloudmesh/openapi/scikitlearn/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;sklearngeneratorfile-high-level-overview&#34;&gt;SKlearnGeneratorFile High level Overview&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The SklearnGeneratorFile.py is the generator function which outputs the python file for given
+Sckit-learn Library.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The function takes two inputs&lt;/p&gt;
+&lt;p&gt;1.input_sklibrary&lt;/p&gt;
+&lt;p&gt;2.model_tag&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples of the inputs are&lt;/p&gt;
+&lt;p&gt;input_sklibrary = sklearn.linear_model.LinearRegression(Full model specification)
+model_tag = any name which you want the tag the model instance like LinReg1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This Version of Scikit-learn service accepts csv files in UTF-8 format only.It is the user responsibility to make
+sure the files are in UTF-8 format.It is the user responsibility to split the data in to train and test datasets.
+Split data functionality is not currently supported.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;scikit-learn uses numpydoc format in the docstring so the scraping of the parameters and docstrings
+are done using docscrape from numpydoc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All the templates used in the code are based on X and y inputs scikit-learn takes and also based on the
+return type&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pytests-for-scikit-learn-tests&#34;&gt;Pytests for Scikit learn tests.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The below pytest generates the .py file used by generator to do a OPENAPI specification.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/Scikitlearn-tests/test_06c_sklearngeneratortest.py&#34;&gt;Pytestcode&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/Scikitlearn_tests/test_06c_sklearngeneratortest.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The below pytest tests the methods generated .&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/Scikitlearn-tests/test_06d_sklearngeneratortest.py&#34;&gt;Pytestcode&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/Scikitlearn_tests/test_06d_sklearngeneratortest.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/deprecated/openapi/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/deprecated/openapi/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;openapi-function-generator&#34;&gt;Openapi Function generator&lt;/h1&gt;
+&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;/h2&gt;
+&lt;h2 id=&#34;week-of-mar-9---mar-16&#34;&gt;Week of Mar 9 - Mar 16&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Andrew Goldfarb&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked with Ishan and Jonathan to finalize the start stop
+functionality.&lt;/li&gt;
+&lt;li&gt;Added functionality to delete the process entry from the
+registry upon stop command.&lt;/li&gt;
+&lt;li&gt;Debugged weird start error for my personal machine where the
+start functionality was running two bash terminals causing the
+start function to fail.&lt;/li&gt;
+&lt;li&gt;Met with Professor to discuss proper implementation of the
+start/stop and how to tie into registry functionality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;week-prior-to-mar-9th&#34;&gt;Week prior to Mar 9th&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;bkgerreis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jonathan Beckford&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prateek&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Andrew Goldfarb&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Edited the stop function to take process PID and use os.kill to
+stop the process based on the name of the python file. However,
+according to Ishan this is still not working.&lt;/li&gt;
+&lt;li&gt;Resolved conflicts between master and our working branch&lt;/li&gt;
+&lt;li&gt;Began work on assigning a default name if the user does not provide
+one for server start. Potetially, a function to assign an alias
+name to the whole process to amke it easier to reference.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;install-for-development&#34;&gt;Install for development&lt;/h2&gt;
+&lt;p&gt;cloudmesh-installer git pull analytics&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd cloudmesh-openapi
+pip install -e .
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;keep-up-to-date&#34;&gt;Keep up to date&lt;/h2&gt;
+&lt;p&gt;explain how to set up and use upstream sync&lt;/p&gt;
+&lt;h3 id=&#34;project-meeting&#34;&gt;Project Meeting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://iu.zoom.us/rec/share/4dIpJZ-p8ztIHpH_q1HAZ6wzL6iiaaa8h3QX8_YMzRkn8tBfY_mRIe8z3j-3cZ_9?startTime=1581987567000&#34;&gt;Mon 17 Feb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://iu.zoom.us/rec/share/_8ZLKK7Z6zpLb53f73_UW4EFBY_iX6a8gydM_vVbzRu2MhrC_sUCKhChUkLzgEK8?startTime=1582591839000&#34;&gt;Mon 24 Feb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;basic-function-generator&#34;&gt;Basic Function Generator&lt;/h3&gt;
+&lt;h4 id=&#34;prateek-shaw----code-link&#34;&gt;Prateek Shaw -  code link.&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;created a basic function that will return the OpenAPI YAML file
+of given python function including parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;sp20-516-237----jonathan-beckford&#34;&gt;SP20-516-237 &amp;ndash; Jonathan Beckford&lt;/h4&gt;
+&lt;p&gt;I created a class that generates the OpenAPI yaml file. I also created
+a sample program that defines an example function, instantiates my
+OpenAPI generator class and passes in the sample function as input. I
+figured this would make things really easy to just paste any new
+sample function for testing purposes. I also included the parameters
+as was requested. I also ran my output yaml through the swagger
+validator (&lt;a href=&#34;https://editor.swagger.io/&#34;&gt;https://editor.swagger.io/&lt;/a&gt;) to make sure it was compliant
+and it was.
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-237/tree/master/projectAI/generateOpenAPI&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;sp20-516-231---brian-kegerreis&#34;&gt;sp20-516-231 - Brian Kegerreis&lt;/h4&gt;
+&lt;p&gt;I created a function to generate an OpenAPI spec including a rough
+attempt at response types (only supports text/plain media types at
+this point)
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;server-start&#34;&gt;Server Start&lt;/h3&gt;
+&lt;h4 id=&#34;andrew-goldfarb---sp20-516-234&#34;&gt;Andrew Goldfarb - SP20-516-234&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&#34;&gt;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&lt;/a&gt;
+I have created a basic function that returns the IP address of the
+server running the function to tell if it is running on the device
+itself or connected to the internet running while running the
+function.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/docker/ubuntu19.10/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/docker/ubuntu19.10/todo/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
+currently everything&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
+This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;support both ways&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;leverage cmsd
+we have told the class that we have cmsd taht starts up cloudmesh in
+a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/docker/ubuntu20.04-sklearn/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/docker/ubuntu20.04-sklearn/todo/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;THIS IS JUST THE SKELETON AND HAS NOT BEEN RUN ONCE IT HAS BUGS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;THIS HAS NOT YET THE SKLERAN START STOP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
+currently everything&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
+This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;support both ways&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;leverage cmsd
+we have told the class that we have cmsd taht starts up cloudmesh in
+a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/docker/ubuntu20.04/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/docker/ubuntu20.04/todo/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;THIS IS JUST THE SKELETON AND HAS NOT BEEN RUN ONCE IT HAS BUGS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
+currently everything&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
+This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;support both ways&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;leverage cmsd
+we have told the class that we have cmsd taht starts up cloudmesh in
+a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/project_review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/project_review/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;project-review&#34;&gt;Project Review&lt;/h1&gt;
+&lt;h2 id=&#34;team-members&#34;&gt;Team members:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Jonathan Beckford&lt;/li&gt;
+&lt;li&gt;Brian Kegerreis&lt;/li&gt;
+&lt;li&gt;Prateek Shaw&lt;/li&gt;
+&lt;li&gt;Jagadeesh Kandimalla&lt;/li&gt;
+&lt;li&gt;Ishan Mishra&lt;/li&gt;
+&lt;li&gt;Andrew G&lt;/li&gt;
+&lt;li&gt;Falconi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;project-documentation&#34;&gt;Project Documentation:&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-openapi/index.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-openapi/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;contributors-based-on-git-tracking&#34;&gt;Contributors based on Git tracking&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;/em&gt; This is not completely accurate because some did not have git config done correctly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/graphs/contributors&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/graphs/contributors&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-breakdown&#34;&gt;Code Breakdown&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;cms command:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/command/openapi.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/command/openapi.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; all team&lt;/p&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cms generate - to generate server yaml&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;executor&lt;/strong&gt; that parses parameters and calls generator:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/executor.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/executor.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Brian, Professor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;generator&lt;/strong&gt; that generates the server yaml:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/generator.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/generator.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Brian, Jonathan, Prateek&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cms server - to start and stop server&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/server.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/server.py&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Jonathan, Andrew, Prateek, Ishan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cms registry - register the server and cache model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt; - registers server&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/Registry.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/Registry.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Falconi, Praful, Professor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;cache&lt;/strong&gt; - cache serialized model locally&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/cache.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/cache.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jonathan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;fileoperation&lt;/strong&gt; - upload input files&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/fileoperation.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/fileoperation.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Prateek, Brian&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cms scikitlearn - generate sklearn functions&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/scikitlearn/SklearnGeneratorFile.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/scikitlearn/SklearnGeneratorFile.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jagadeesh&lt;/p&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cms image processing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Falconi, Ishan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cms text analysis&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contirbutor:&lt;/strong&gt; Andrew Goldfarb&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/generator-natural-lang&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/generator-natural-lang&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;deployment-steps&#34;&gt;Deployment steps&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-openapi/README.html#installation&#34;&gt;https://cloudmesh.github.io/cloudmesh-openapi/README.html#installation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-openapi/README.html#quick-steps-to-generate-start-and-stop-cpu-sample-example&#34;&gt;https://cloudmesh.github.io/cloudmesh-openapi/README.html#quick-steps-to-generate-start-and-stop-cpu-sample-example&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;pytests&#34;&gt;Pytests&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-openapi/README.html#pytests&#34;&gt;https://cloudmesh.github.io/cloudmesh-openapi/README.html#pytests&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Integration of openapi with cms allows for running locally only.  Cloud integration was not fully completed although team did create a way to setup openapi in a VM using a remote script for &lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/ubuntu18.04/index.html&#34;&gt;openstack&lt;/a&gt; and &lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/google/index.html&#34;&gt;google&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The generator only supports creating arrays of number data type.  This limitation is due to the bug documented below in &lt;em&gt;&lt;strong&gt;Bugs&lt;/strong&gt;&lt;/em&gt; section.  So manual changes are required to the output yaml to allow for other data types until another work around is found or the bug is resolved.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;reported a bug to Connexion and documented it in github for future reference:
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/issues/60&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/issues/60&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;additional-artifacts-produced&#34;&gt;Additional artifacts produced:&lt;/h2&gt;
+&lt;h3 id=&#34;openstack-vm-set-up-script&#34;&gt;Openstack VM set up script&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/ubuntu18.04/index.html&#34;&gt;OPENSTACK&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/google/index.html&#34;&gt;GOOGLE&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jonathan Beckford, Andrew Goldfarb&lt;/p&gt;
+&lt;h3 id=&#34;openapi-project-readme-generator&#34;&gt;Openapi project readme generator&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/sphinx&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/sphinx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jonathan Beckford, Professor&lt;/p&gt;
+&lt;h3 id=&#34;chapters&#34;&gt;Chapters&lt;/h3&gt;
+&lt;h5 id=&#34;kubernetes&#34;&gt;Kubernetes&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/master/chapter/k8s-kubernetes-scheduler.md&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/master/chapter/k8s-kubernetes-scheduler.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Jonathan Beckford, Brian Kegerreis, Ashok Singam&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/readme-scikitlearn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/readme-scikitlearn/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;cloudmesh-openapi-scikit-learn&#34;&gt;Cloudmesh OpenAPI Scikit-learn&lt;/h1&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We use recommend Python 3.8.2 Python or newer.&lt;/li&gt;
+&lt;li&gt;We recommend pip version 20.0.2 or newer&lt;/li&gt;
+&lt;li&gt;We recommend that you use a venv (see developer install)&lt;/li&gt;
+&lt;li&gt;MongoDB installed as regular program not as service&lt;/li&gt;
+&lt;li&gt;Please run cim init command to start mongodb server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We have not checked if it works on older versions.&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Make sure to follow the instruction for &lt;code&gt;cms openapi&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;When getting started using the &lt;code&gt;openapi&lt;/code&gt;, please first call &lt;code&gt;cms help openapi&lt;/code&gt; to see the available functions and options. For your
+convenience we include the manual page later on in this document.&lt;/p&gt;
+&lt;h2 id=&#34;scikit-learn-documentation&#34;&gt;Scikit-learn Documentation&lt;/h2&gt;
+&lt;p&gt;Scikit-learn is a Machine learning library in Python.We can choose a
+ML algorithm like LinearRegression and cloudmesh will be able to spin
+up OPENAPI specification for the library we choose.  We can interact
+with the Scikit-learn library using either CURL commands or through
+GUI.&lt;/p&gt;
+&lt;p&gt;This Version of Scikit-learn service accepts csv files in UTF-8 format
+only.It is the user responsibility to make sure the files are in UTF-8
+format.It is the user responsiblity to split the data in to train and
+test datasets.  Split data functionality is not currently supported.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-scikit-learn-service&#34;&gt;Setting up Scikit-learn service&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Please complete the basic installation of
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;cloudmesh-openapi&lt;/a&gt;,
+To make set up easy the same steps are even referenced at the
+Developer Installation section in the document.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can find Scikit-learn documentation in
+&lt;a href=&#34;https://scikit-learn.org/dev/modules/classes.html&#34;&gt;Scikit-learn&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The following packages needs to be installed to access Scikit-learn&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;p&gt;pip install pandas
+pip install Scikit-learn&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the &lt;code&gt;./cloudmesh-openapi&lt;/code&gt; directory on your machine&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilize the Scikit-learn generate command to create the python file
+which will used to generate OpenAPI spec&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi sklearnreadfile sklearn.linear_model.LinearRegression Linregpytest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The sample generated file can be viewed at
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/generator&#34;&gt;tests/generator&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilize the generate command to generate OpenAPI spec with upload functionality enabled&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate --filename=./tests/generator/LinearRegression.py --all_functions --enable_upload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the server after the yaml file is generated ot the same directory as the .py file&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server start ./tests/generator/LinearRegression.yaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access the REST service using
+&lt;a href=&#34;http://localhost:8080/cloudmesh/ui/&#34;&gt;http://localhost:8080/cloudmesh/ui/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run a curl command against the newly running server to upload the
+testfiles.&lt;/p&gt;
+&lt;p&gt;Place your test files in
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/Scikitlearn-data&#34;&gt;Scikitlearn-data&lt;/a&gt;
+We are testing with X_SAT.csv(SAT Scores of students),y_GPA(GPA of
+students)&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X POST &amp;quot;http://localhost:8080/cloudmesh/upload&amp;quot; \
+     -H &amp;quot;accept: text/plain&amp;quot; \
+     -H &amp;quot;Content-Type: multipart/form-data&amp;quot; \
+     -F &amp;quot;upload=@tests/Scikitlearn-data/X_SAT.csv;type=text/csv&amp;quot;
+
+
+curl -X POST &amp;quot;http://localhost:8080/cloudmesh/upload&amp;quot; \
+     -H &amp;quot;accept: text/plain&amp;quot; \
+     -H &amp;quot;Content-Type: multipart/form-data&amp;quot; \
+     -F &amp;quot;upload=@tests/Scikitlearn-data/y_GPA.csv;type=text/csv&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run a curl command against the newly running server to verify fit
+method in Scikit-learn using the uploaded files&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/LinearRegression_upload-enabled/fit?X=X_SAT&amp;amp;y=y_GPA&amp;quot; -H &amp;quot;accept: */*&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run a curl command against the newly running server to run the
+Predict method.&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/LinearRegression_upload-enabled/predict?X=X_SAT&amp;quot; -H &amp;quot;accept: text/plain&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run a curl command against the newly running server to run the Score method.&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/LinearRegression_upload-enabled/score?X=X_SAT&amp;amp;y=y_GPA&amp;quot; -H &amp;quot;accept: text/plain&amp;quot;   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stop the server&lt;/p&gt;
+&lt;p&gt;.. code:: bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server stop LinearRegression
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;cloudmesh-openapi-service-generator&#34;&gt;Cloudmesh OpenAPI Service Generator&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The README.md page is outomatically generated, do not edit it.
+To modify  change the content in
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/README-source.md&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/README-source.md&lt;/a&gt;
+Curley brackets must use two in README-source.md&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://pypi.org/project/cloudmesh-openapi/&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/v/cloudmesh-openapi.svg&#34; alt=&#34;image&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/pyversions/cloudmesh-openapi.svg&#34; alt=&#34;Python&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/LICENSE&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/License-Apache%202.0-blue.svg&#34; alt=&#34;License&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/format/cloudmesh-openapi.svg&#34; alt=&#34;Format&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/status/cloudmesh-openapi.svg&#34; alt=&#34;Status&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi.svg?branch=master&#34; alt=&#34;Travis&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We recommend Python 3.8.2 Python or newer.&lt;/li&gt;
+&lt;li&gt;We recommend pip version 20.0.2 or newer&lt;/li&gt;
+&lt;li&gt;We recommend that you use a venv (see developer install)&lt;/li&gt;
+&lt;li&gt;MongoDB installed as regular program not as service, which can
+easily be done with cloudmesh on macOS, Linux, and Windows.&lt;/li&gt;
+&lt;li&gt;Please run &lt;code&gt;cms gui quick&lt;/code&gt; to initialize the password for the mongodb
+server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: On windows you can use &lt;a href=&#34;https://gitforwindows.org/&#34;&gt;gitbash&lt;/a&gt;
+so you can use bash and can use the same commands as on Linux or
+macOS. Otherwise, please use the appropriate backslashes to access
+the path.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;The installation is rather simple  and is documented next.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python -m venv ~/ENV3
+source ~/ENV3/bin/activate 
+mkdir cm
+cd cm
+pip install cloudmesh-installer
+cloudmesh-installer get openapi 
+cms help
+cms gui quick
+# fill out mongo variables
+# make sure autinstall is True
+cms config set cloudmesh.data.mongo.MONGO_AUTOINSTALL=True
+cms admin mongo install --force
+# Restart a new terminal to make sure mongod is in your path
+cms init
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you like to know more about the installation of cloudmesh, please
+visit the &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;Cloudmesh
+Manual&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;command-overview&#34;&gt;Command Overview&lt;/h2&gt;
+&lt;p&gt;When getting started using cloudmes &lt;code&gt;openapi&lt;/code&gt;, please first call to
+get familiar with the options you have:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms help openapi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We include the manual page later on in this document.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;Next we provide a very simple quickstart guide to steps to generate a
+simple microservice that returns the CPU information of your computer.
+We demonstrate how to generate, start, and stop the servive.&lt;/p&gt;
+&lt;p&gt;Navigate to &lt;code&gt;~/cm/cloudmesh-openapi&lt;/code&gt; folder. In this folder you will
+have a file called &lt;code&gt;cpu.py&lt;/code&gt; from which we will generate the server.&lt;/p&gt;
+&lt;p&gt;First, generate an OpenAPI YAML file with the convenient command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate get_processor_name \
+    --filename=./tests/server-cpu/cpu.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create the file &lt;code&gt;cpu.yaml&lt;/code&gt; that contains the OpenAPI
+specification. To start the service from this specification simply use
+the command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server start ./tests/server-cpu/cpu.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now that the service is up and running, you can issue a request for
+example via the commandline with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/get_processor_name&amp;quot; \
+     -H &amp;quot;accept: text/plain&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To view the automatically generated documentation, you can go to your
+browser and open the link&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:8080/cloudmesh/ui&#34;&gt;http://localhost:8080/cloudmesh/ui&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;images/openapi-ui.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can also look at the status of the server with the command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server list
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;images/openapi-info.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Once yo no longer need the service, you can stop it with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server stop cpu
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;quickstart-to-creating-your-own-microservice&#34;&gt;Quickstart to Creating your own Microservice&lt;/h2&gt;
+&lt;p&gt;Cloudmesh uses introspection to generate an OpenAPI compliant YAML
+specification that will allow your Python code to run as a web
+service. For this reason, any code you write must conform to a set of
+guidelines.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The parameters and return values of any functions you write must use
+python typing&lt;/li&gt;
+&lt;li&gt;Your functions must include docstrings&lt;/li&gt;
+&lt;li&gt;If a function uses or returns a class, that class must be defined as
+a dataclass in the same file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next we demonstrate how to create your own microservice.
+We provide two examples. One in which we return a float,
+te other one in which the return value is wrapped in a
+json object.&lt;/p&gt;
+&lt;h3 id=&#34;returning-a-float&#34;&gt;Returning a Float&lt;/h3&gt;
+&lt;p&gt;We define a function that adds tow values.  Note how x,
+y, and the return value are all typed. In this case they are all
+&lt;code&gt;float&lt;/code&gt;, but other types are supported. The description in the
+docstring will be added to your YAML specification to help describe
+what the function does.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def add(x: float, y: float) -&amp;gt; float:
+    &amp;quot;&amp;quot;&amp;quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &amp;quot;&amp;quot;&amp;quot;
+    result = x + y
+
+    return result
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To generate, start, retrieve a result, and stop the service you can use the
+following command sequence:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate add --filename=./tests/add-float/add.py
+cms openapi server start ./tests/add-float/add.yaml 
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+# This command returns
+&amp;gt; 3.0
+cms openapi server stop add
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;returning-a-json-object&#34;&gt;Returning a Json Object&lt;/h3&gt;
+&lt;p&gt;Often we like to wrap the return value into a json string object, which can easily be
+done by modifying the previous example as showcased next.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from flask import jsonify
+
+def add(x: float, y: float) -&amp;gt; str:
+    &amp;quot;&amp;quot;&amp;quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &amp;quot;&amp;quot;&amp;quot;
+    result = {&amp;quot;result&amp;quot;: x + y}
+
+    return jsonify(result)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To generate, start, retrieve a result, and stop the service you can use the
+following command sequence:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate add --filename=./tests/add-json/add.py
+cms openapi server start ./tests/add-json/add.yaml 
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+# This command returns
+&amp;gt; {&amp;quot;result&amp;quot;:3.0}
+cms openapi server stop add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As usual in both cases the web browser can be used to inspect the documentation as well as to test running the
+example, by filling out the form.&lt;/p&gt;
+&lt;h2 id=&#34;details-of-the-cms-openapi-command&#34;&gt;Details of the &lt;code&gt;cms openapi&lt;/code&gt; command&lt;/h2&gt;
+&lt;p&gt;The gaol as stated earlier is to transform a simple python function as a service&lt;/p&gt;
+&lt;h3 id=&#34;generating-openapi-specification&#34;&gt;Generating OpenAPI specification&lt;/h3&gt;
+&lt;p&gt;Once you have a Python function you would like to deploy as a web
+service, you can generate the OpenAPI specification. Navigate to your
+.py file&amp;rsquo;s directory and generate the YAML. This will print
+information to your console about the YAML file that was generated.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate [function_name] --filename=[filename.py]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you would like to include more than one function in your web
+service, like addition and subtraction, use the &lt;code&gt;--all_functions&lt;/code&gt;
+flag. This will ignore functions whose names start with &amp;lsquo;_&amp;rsquo;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate --filename=[filename.py] --all_functions
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can even write a class like Calculator that contains functions for
+addition, subtraction, etc. You can generate a specification for an
+entire class by using the &lt;code&gt;--import_class&lt;/code&gt; flag.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate [ClassName] --filename=[filename.py] --import_class
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;starting-a-server&#34;&gt;Starting a server&lt;/h3&gt;
+&lt;p&gt;Once you have generated a specification, you can start the web service
+on your localhost by providing the path to the YAML file. This will
+print information to your console about the server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server start ./[filename.yaml]
+
+  Starting: [server name]
+  PID:      [PID]
+  Spec:     ./[filename.py]
+  URL:      http://localhost:8080/cloudmesh
+  Cloudmesh UI:      http://localhost:8080/cloudmesh/ui
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;sending-requests-to-the-server&#34;&gt;Sending requests to the server&lt;/h3&gt;
+&lt;p&gt;Now you have two options to interact with the web service. The first
+is to navigate the the Cloudmesh UI and click on each endpoint to test
+the functionality. The second is to use curl commands to submit
+requests.&lt;/p&gt;
+&lt;p&gt;We have already shown you earlier in our quickstart how to apply this to a
+service such as our add service&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ curl -X GET &amp;quot;http://localhost:8080/cloudmesh/add?x=1.2&amp;amp;y=1.5&amp;quot; -H &amp;quot;accept: text/plain&amp;quot;
+&amp;gt;   2.7
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;stopping-the-server&#34;&gt;Stopping the server&lt;/h3&gt;
+&lt;p&gt;Now you can stop the server using the name of the server. If you
+forgot the name, use &lt;code&gt;cms openapi server ps&lt;/code&gt; to get a list of server
+processes.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms openapi server stop [server name]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;basic-auth&#34;&gt;Basic Auth&lt;/h3&gt;
+&lt;p&gt;To use basic http authentication with a user password for the
+generated API, add the following flag at the end of a &lt;code&gt;cms openapi generate&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--basic_auth=&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We plan on supporting more security features in the future. Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate get_processor_name \
+    --filename=./tests/server-cpu/cpu.py \
+    --basic_auth=admin:secret
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;manual-page&#34;&gt;Manual Page&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;openapi generate [FUNCTION] --filename=FILENAME
+                         [--serverurl=SERVERURL]
+                         [--yamlfile=YAML]
+                         [--import_class]
+                         [--all_functions]
+                         [--enable_upload]
+                         [--verbose]
+                         [--basic_auth=CREDENTIALS]
+openapi server start YAML [NAME]
+              [--directory=DIRECTORY]
+              [--port=PORT]
+              [--server=SERVER]
+              [--host=HOST]
+              [--verbose]
+              [--debug]
+              [--fg]
+              [--os]
+openapi server stop NAME
+openapi server list [NAME] [--output=OUTPUT]
+openapi server ps [NAME] [--output=OUTPUT]
+openapi register add NAME ENDPOINT
+openapi register filename NAME
+openapi register delete NAME
+openapi register list [NAME] [--output=OUTPUT]
+openapi TODO merge [SERVICES...] [--dir=DIR] [--verbose]
+openapi TODO doc FILE --format=(txt|md)[--indent=INDENT]
+openapi TODO doc [SERVICES...] [--dir=DIR]
+openapi sklearn FUNCTION MODELTAG
+openapi sklearnreadfile FUNCTION MODELTAG
+openapi sklearn upload --filename=FILENAME
+
+Arguments:
+  FUNCTION  The name for the function or class
+  MODELTAG  The arbirtary name choosen by the user to store the Sklearn trained model as Pickle object
+  FILENAME  Path to python file containing the function or class
+  SERVERURL OpenAPI server URL Default: https://localhost:8080/cloudmesh
+  YAML      Path to yaml file that will contain OpenAPI spec. Default: FILENAME with .py replaced by .yaml
+  DIR       The directory of the specifications
+  FILE      The specification
+
+Options:
+  --import_class         FUNCTION is a required class name instead of an optional function name
+  --all_functions        Generate OpenAPI spec for all functions in FILENAME
+  --debug                Use the server in debug mode
+  --verbose              Specifies to run in debug mode
+                         [default: False]
+  --port=PORT            The port for the server [default: 8080]
+  --directory=DIRECTORY  The directory in which the server is run
+  --server=SERVER        The server [default: flask]
+  --output=OUTPUT        The outputformat, table, csv, yaml, json
+                         [default: table]
+  --srcdir=SRCDIR        The directory of the specifications
+  --destdir=DESTDIR      The directory where the generated code
+                         is placed
+
+Description:
+This command does some useful things.
+
+openapi TODO doc FILE --format=(txt|md|rst) [--indent=INDENT]
+    Sometimes it is useful to generate teh openaopi documentation
+    in another format. We provide fucntionality to generate the
+    documentation from the yaml file in a different formt.
+
+openapi TODO doc --format=(txt|md|rst) [SERVICES...]
+    Creates a short documentation from services registered in the
+    registry.
+
+openapi TODO merge [SERVICES...] [--dir=DIR] [--verbose]
+    Merges tow service specifications into a single servoce
+    TODO: do we have a prototype of this?
+
+
+openapi sklearn sklearn.linear_model.LogisticRegression
+    Generates the .py file for the Model given for the generator
+
+openapi sklearnreadfile sklearn.linear_model.LogisticRegression
+Generates the .py file for the Model given for the generator which supports reading files
+
+openapi generate [FUNCTION] --filename=FILENAME
+                             [--serverurl=SERVERURL]
+                             [--yamlfile=YAML]
+                             [--import_class]
+                             [--all_functions]
+                             [--enable_upload]
+                             [--verbose]
+                             [--basic_auth=CREDENTIALS]
+    Generates an OpenAPI specification for FUNCTION in FILENAME and
+    writes the result to YAML. Use --import_class to import a class
+    with its associated class methods, or use --all_functions to 
+    import all functions in FILENAME. These options ignore functions
+    whose names start with &#39;_&#39;. Use --enable_upload to add file
+    upload functionality to a copy of your python file and the
+    resulting yaml file.
+
+    For optional basic authorization, we support (temporarily) a single user
+    credential. CREDENTIALS should be formatted as follows:
+
+    user:password
+
+    Example: --basic_auth=admin:secret
+
+openapi server start YAML [NAME]
+                  [--directory=DIRECTORY]
+                  [--port=PORT]
+                  [--server=SERVER]
+                  [--host=HOST]
+                  [--verbose]
+                  [--debug]
+                  [--fg]
+                  [--os]
+    starts an openapi web service using YAML as a specification
+    TODO: directory is hard coded as None, and in server.py it
+      defaults to the directory where the yaml file lives. Can
+      we just remove this argument?
+
+openapi server stop NAME
+    stops the openapi service with the given name
+    TODO: where does this command has to be started from
+
+openapi server list [NAME] [--output=OUTPUT]
+    Provides a list of all OpenAPI services in the registry
+
+openapi server ps [NAME] [--output=OUTPUT]
+    list the running openapi service
+
+openapi register add NAME ENDPOINT
+    Openapi comes with a service registry in which we can register
+    openapi services.
+
+openapi register filename NAME
+    In case you have a yaml file the openapi service can also be
+    registerd from a yaml file
+
+openapi register delete NAME
+    Deletes the names service from the registry
+
+openapi register list [NAME] [--output=OUTPUT]
+    Provides a list of all registerd OpenAPI services
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;basic-examples&#34;&gt;Basic Examples&lt;/h2&gt;
+&lt;p&gt;Please follow &lt;a href=&#34;tests/README.md&#34;&gt;Pytest Information&lt;/a&gt; document for
+pytests related information&lt;/p&gt;
+&lt;p&gt;We have included a significant number of tests that aso serve as examples&lt;/p&gt;
+&lt;h3 id=&#34;example-one-function-in-a-python-file&#34;&gt;Example: One function in a python file&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Please check &lt;a href=&#34;tests/server-cpu/cpu.py&#34;&gt;Python file&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run below command to generate yaml file and start server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate get_processor_name --filename=./tests/server-cpu/cpu.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example-multiple-functions-in-python-file&#34;&gt;Example: Multiple functions in python file&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Please check &lt;a href=&#34;tests/generator-calculator/calculator.py&#34;&gt;Python file&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run below command to generate yaml file and start server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate --filename=./tests/generator-calculator/calculator.py --all_functions
+cms openapi generate server start ./tests/generator-calculator/calculator.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example-functions-in-python-class-file&#34;&gt;Example: Function(s) in python class file&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Please check &lt;a href=&#34;tests/generator-testclass/calculator.py&#34;&gt;Python file&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run below command to generate yaml file and start server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate Calculator \
+    --filename=./tests/generator-testclass/calculator.py \
+    --import_class&amp;quot;
+cms openapi server start ./tests/generator-testclass/calculator.yaml
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/Calculator/multiplyint?x=1&amp;amp;y=5&amp;quot;
+cms openapi server stop Calculator
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example-uploading-data&#34;&gt;Example: Uploading data&lt;/h3&gt;
+&lt;p&gt;Code to handle uploads is located in
+&lt;code&gt;cloudmesh-openapi/tests/generator-upload&lt;/code&gt;. The code snippet in
+uploadexample.py and the specification in uploadexample.yaml can be
+added to existing projects by adding the &lt;code&gt;--enable_upload&lt;/code&gt; flag to the
+&lt;code&gt;cms openapi generate&lt;/code&gt; command. The web service will be able to
+retrieve the uploaded file from &lt;code&gt;~/.cloudmesh/upload-file/&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;upload-example&#34;&gt;Upload example&lt;/h4&gt;
+&lt;p&gt;This example shows how to upload a CSV file and how the web service
+can retrieve it.&lt;/p&gt;
+&lt;p&gt;First, generate the OpenAPI specification and start the server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate print_csv2np \
+    --filename=./tests/generator-upload/csv_reader.py \
+    --enable_upload
+cms openapi server start ./tests/generator-upload/csv_reader.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, navigate to localhost:8080/cloudmesh/ui. Click to open
+the /upload endpoint, then click &amp;lsquo;Try it out.&amp;rsquo; Click to choose a file
+to upload, then upload &lt;code&gt;tests/generator-upload/np_test.csv&lt;/code&gt;. Click
+&amp;lsquo;Execute&amp;rsquo; to complete the upload.&lt;/p&gt;
+&lt;p&gt;The uploaded file will be located at
+&lt;code&gt;~/.cloudmesh/upload-file/[filename]&lt;/code&gt;. The file
+&lt;code&gt;tests/generator-upload/csv_reader.py&lt;/code&gt; contains some example code to
+retrieve the array in the uploaded file. To see this in action, click
+to open the /print_csv2np endpoint, then click &amp;lsquo;Try it out.&amp;rsquo; Enter
+&amp;ldquo;np_test.csv&amp;rdquo; in the field that prompts for a filename, and then click
+Execute to view the numpy array defined by the CSV file.&lt;/p&gt;
+&lt;h3 id=&#34;example-pipeline-anova-svm-example&#34;&gt;Example: Pipeline Anova SVM Example&lt;/h3&gt;
+&lt;p&gt;This example is based on the sklearn example
+&lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html#sphx-glr-auto-examples-feature-selection-plot-feature-selection-pipeline-py&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this example, we will upload a data set to the server, tell the
+server to train the model, and utilize said model for predictions.&lt;/p&gt;
+&lt;p&gt;Firstly, ensure we are in the correct directory.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pwd
+~/cm/cloudmesh-openapi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Let us generate the yaml file from our python file to generate the proper specs for our service.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms openapi generate PipelineAnovaSVM \
+      --filename=./tests/Scikitlearn-experimental/sklearn_svm.py \
+      --import_class --enable_upload
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now let us start the server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The server should now be active. Navigate to
+&lt;code&gt;http://localhost:8080/cloudmesh/ui&lt;/code&gt;. We now have a nice user inteface
+to interact with our newly generated API. Let us upload the data
+set. We are going to use the iris data set in this example. We have
+provided it for you to use. Simply navigate to the &lt;code&gt;/upload&lt;/code&gt; endpoint
+by clicking on it, then click &lt;code&gt;Try it out&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We can now upload the file. Click on &lt;code&gt;Choose File&lt;/code&gt; and upload the data
+set located at &lt;code&gt;~./tests/Scikitlearn-experimental/iris.data&lt;/code&gt;.  Simply
+hit &lt;code&gt;Execute&lt;/code&gt; after the file is uploaded. We should then get a return
+code of 200 (telling us that everything went ok).&lt;/p&gt;
+&lt;p&gt;The server now has our dataset. Let us now navigate to the &lt;code&gt;/train&lt;/code&gt;
+endpoint by, again, clicking on it. Similarly, click &lt;code&gt;Try it out&lt;/code&gt;.
+The parameter being asked for is the filename. The filename we are
+interested in is &lt;code&gt;iris.data&lt;/code&gt;. Then click &lt;code&gt;execute&lt;/code&gt;.  We should get
+another 200 return code with a Classification Report in the Response
+Body.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-CLASSIFICATION_REPORT:&#34; data-lang=&#34;CLASSIFICATION_REPORT:&#34;&gt;
+           0       1.00      1.00      1.00         8
+           1       0.85      1.00      0.92        11
+           2       1.00      0.89      0.94        19
+
+    accuracy                           0.95        38
+   macro avg       0.95      0.96      0.95        38
+weighted avg       0.96      0.95      0.95        38
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Our model is now trained and stored on the server. Let us make a
+prediction now. As we have done, navigate to the &lt;code&gt;/make_prediction&lt;/code&gt;
+endpoint.  The information we need to provide is the name of the model
+we have trained as well as some test data. The name of the model will
+be the same as the name of the data-file (ie. iris). So type in &lt;code&gt;iris&lt;/code&gt;
+into the &lt;code&gt;model_name&lt;/code&gt; field. Finally for params, let us use the
+example &lt;code&gt;5.1, 3.5, 1.4, 0.2&lt;/code&gt; as the model expects 4 values
+(attributes). After clicking execute, we should received a response
+with the classification the model has made given the parameters.&lt;/p&gt;
+&lt;p&gt;The response received should be as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Classification: [&#39;Iris-setosa&#39;]&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can make as many predictions as we like. When finished, we can shut down the server.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms openapi server stop sklearn_svm
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;example-to-run-ai-services-in-the-cloud&#34;&gt;Example to Run AI Services in the Cloud&lt;/h2&gt;
+&lt;h3 id=&#34;google&#34;&gt;Google&lt;/h3&gt;
+&lt;p&gt;After you create your google cloud account, it is recommended to
+download and install Google&amp;rsquo;s &lt;a href=&#34;https://cloud.google.com/sdk/docs/quickstarts&#34;&gt;Cloud
+SDK&lt;/a&gt;.  This will
+enable CLI. Make sure you enable all the required services.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gcloud services enable servicemanagement.googleapis.com
+gcloud services enable endpoints.googleapis.com
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and any other services you might be using for your specific Cloud API
+function.&lt;/p&gt;
+&lt;p&gt;To begin using the tests for any of the Google Cloud Platform AI
+services you must first set up a Google account (set up a free tier
+account): &lt;a href=&#34;https://cloud.google.com/billing/docs/how-to/manage-billing-account&#34;&gt;Google Account
+Setup&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After you create your google cloud account, it is recommended to
+download and install Google&amp;rsquo;s &lt;a href=&#34;https://cloud.google.com/sdk/docs/quickstarts&#34;&gt;Cloud
+SDK&lt;/a&gt;.  This will
+enable CLI. Make sure you enable all the required services.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gcloud services enable servicemanagement.googleapis.com
+gcloud services enable servicecontrol.googleapis.com
+gcloud services enable endpoints.googleapis.com
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and any other services you might be using for your specific Cloud API
+function.&lt;/p&gt;
+&lt;p&gt;It is also required to install the cloudmesh-cloud package, if not
+already installed:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cloudmesh-installer get cloud
+cloudmesh-installer install cloud
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will allow you automatically fill out the cloudmesh yaml file
+with your credentials once you generate the servcie account JSON file.&lt;/p&gt;
+&lt;p&gt;After you have verified your account is created you must then give your account access to the proper APIs and create a
+project in the Google Cloud Platform(GCP) console.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the &lt;a href=&#34;console.cloud.google.com/projectselector2/home/&#34;&gt;project
+selector&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Follow directions from Google to create a project linked to your
+account&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;quickstart-google-python-api&#34;&gt;Quickstart Google Python API&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;For quickstart in using Google API for Python visit &lt;a href=&#34;https://developers.google.com/docs/api/quickstart/python&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;setting-up-your-google-account&#34;&gt;Setting up your Google account&lt;/h3&gt;
+&lt;p&gt;Before you generate the service account JSON file for your account you
+will want to enable a number of services in the GCP console.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Compute&lt;/li&gt;
+&lt;li&gt;Billing&lt;/li&gt;
+&lt;li&gt;Cloud Natural Language API&lt;/li&gt;
+&lt;li&gt;Translate API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To do this you will need to click the menu icon in the Dashboard
+navigation bar. Ensure you are in the correct porject.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once that menu is open hover over the &amp;ldquo;APIs and Services&amp;rdquo; menu item
+and click on &amp;ldquo;Dashboard&amp;rdquo; in the submenu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At the dashboard click on the &amp;ldquo;+ Enable APIs and Services&amp;rdquo; button
+at the top of the dashboard&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Search for &lt;strong&gt;cloud natural language&lt;/strong&gt; to find the API in the search
+results and click the result&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once the page opens click &amp;ldquo;Enable&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do the same for the &lt;strong&gt;translate&lt;/strong&gt; API to enable that as well&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do the same for the &lt;strong&gt;compute engine API&lt;/strong&gt; to enable that as well&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You must now properly set up the account roles to ensure you will have
+access to the API. Follow the directions from Google to &lt;a href=&#34;https://cloud.google.com/natural-language/docs/setup#auth&#34;&gt;set up proper
+authentication&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Make you account an owner for each of the APIs in the IAM tool as
+directed in the authentication steps for the natural language API.
+This makes your service account have proper access to the required
+APIs and once the private key is downloaded those will be stored
+there.&lt;/p&gt;
+&lt;p&gt;It is VERY important that you create a service account and download
+the private key as described in the directions from Google.  If you do
+not the cms google commands will not work properly.&lt;/p&gt;
+&lt;p&gt;Once you have properly set up your permissions please make sure you
+download your JSON private key for the service account that has
+permissions set up for the required API services. These steps to
+download are found
+&lt;a href=&#34;https://cloud.google.com/natural-language/docs/setup#sa-create&#34;&gt;here&lt;/a&gt;.
+Please take note of where you store the downloaded JSON and copy the
+path string to a easily accessible location.&lt;/p&gt;
+&lt;p&gt;The client libraries for each API are included in teh requirements.txt file for the openapi proejct and should be isntalled when the
+package is installed. If not, follow directions outlined by google install each package:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;google-cloud-translate
+google-cloud-language
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To pass the information from your service account private key file ot
+the cloudmesh yaml file run the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms register update --kind=google --service=compute --filename=GOOGLE_JSON_FILE
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;running-the-google-natural-language-and-translate-rest-services&#34;&gt;Running the Google Natural Language and Translate REST Services&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the &lt;code&gt;~/.cloudmesh&lt;/code&gt; repo and create a cache directory
+for your text examples you would like to analyze.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir text-cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add any plain text files your would like to analyze to this
+directory with a name that has no special characters or spaces.
+You can copy the files at this location,
+&lt;code&gt;./cloudmesh-openapi/tests/textanaysis-example-text/reviews/&lt;/code&gt; into
+the text-cache if you want to use provided examples.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the &lt;code&gt;./cloudmesh-openapi&lt;/code&gt; directory on your machine&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilize the generate command to create the OpenAPI spec&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate TextAnalysis --filename=./tests/generator-natural-lang/natural-lang-analysis.py --all_functions
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the server after the yaml file is generated ot the same
+directory as the .py file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapie start server ./tests/generator-natural-lang/natural-lang-analysis.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run a curl command against the newly running server to verify it
+returns a result as expected.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sample text file name is only meant to be the name of the file
+not the full path.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://127.0.0.1:8080/cloudmesh/analyze?filename=SAMPLE_TEXT_FILENAME&amp;amp;cloud=google&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This is currently only ready to translate a single word through
+the API.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://127.0.0.1:8080/cloudmesh/translate_text?cloud=google&amp;amp;text=WORD_TO_TRANSLATE&amp;amp;lang=LANG_CODE&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stop the server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server stop natural-lang-analysis
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example-using-aws&#34;&gt;Example using AWS&lt;/h3&gt;
+&lt;p&gt;Sign up for AWS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://portal.aws.amazon.com/billing/signup&#34;&gt;https://portal.aws.amazon.com/billing/signup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Follow online instructions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create an IAM User&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For instructions, see
+&lt;a href=&#34;https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Set up AWS CLI and AWS SDKs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To download and instructions to install AWS CLI, see
+&lt;a href=&#34;https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Install Boto 3&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install boto3
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;For quickstart, vist &lt;a href=&#34;https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As long as you enable all the services you need for using AWS AI APIs you should be able to write your functions for OpenAPI&lt;/p&gt;
+&lt;h3 id=&#34;example-using-azure&#34;&gt;Example using Azure&lt;/h3&gt;
+&lt;h4 id=&#34;setting-up-azure-sentiment-analysis-and-translation-services&#34;&gt;Setting up Azure Sentiment Analysis and Translation Services&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create an Azure subscription. If you do not have one, create a
+&lt;a href=&#34;https://azure.microsoft.com/try/cognitive-services/&#34;&gt;free account&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a &lt;a href=&#34;https://portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics&#34;&gt;Text Analysis resource&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This link will require you to be logged in to the Azure portal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Cwindows&#34;&gt;Translation Resource&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The microsoft packages are included in the openapi package
+requirements file so they should be installed. If they are not,
+install the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install msrest 
+pip install azure-ai-textanalytics
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the &lt;code&gt;~/.cloudmesh&lt;/code&gt; repo and create a cache directory for your text examples you would like to analyze.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir text-cache
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add any plain text files your would like to analyze to this
+directory with a name that has no special characters or spaces.
+You can copy the files at this location,
+&lt;code&gt;./cloudmesh-openapi/tests/textanaysis-example-text/reviews/&lt;/code&gt; into
+the text-cache if you want to use provided examples.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the &lt;code&gt;./cloudmesh-openapi&lt;/code&gt; directory on your machine&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Utilize the generate command to create the OpenAPI spec&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate TextAnalysis --filename=./tests/generator-natural-lang/natural-lang-analysis.py --all_functions
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the server after the yaml file is generated ot the same
+directory as the .py file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapie start server ./tests/generator-natural-lang/natural-lang-analysis.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run a curl command against the newly running server to verify it
+returns a result as expected.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sample text file name is only meant to be the name of the file not the full path.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://127.0.0.1:8080/cloudmesh/analyze?filename=&amp;lt;&amp;lt;sample text file name&amp;gt;&amp;gt;&amp;amp;cloud=azure&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This is currently only ready to translate a single word through the API.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Available language tags are described in the &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cognitive-services/translator/reference/v3-0-languages&#34;&gt;Azure docs&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://127.0.0.1:8080/cloudmesh/translate_text?cloud=azure&amp;amp;text=&amp;lt;&amp;lt;word to translate&amp;gt;&amp;gt;&amp;amp;lang=&amp;lt;&amp;lt;lang code&amp;gt;&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stop the server&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server stop natural-lang-analysis
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The natural langauge analysis API can be improved by allowing for full
+phrase translation via the API. If you contribute to this API there is
+room for improvement to add custom translation models as well if
+preferred to pre-trained APIs.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-azure-computervision-ai-services&#34;&gt;Setting up Azure ComputerVision AI services&lt;/h4&gt;
+&lt;h5 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h5&gt;
+&lt;p&gt;Using the Azure Computer Vision AI service, you can describe, analyze
+and/ or get tags for a locally stored image or you can read the text
+from an image or hand-written file.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Azure subscription. If you do not have one, create a &lt;a href=&#34;https://azure.microsoft.com/try/cognitive-services/&#34;&gt;free
+account&lt;/a&gt; before
+you continue further.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a Computer Vision resource and get the
+&lt;code&gt;COMPUTER_VISION_SUBSCRIPTION_KEY&lt;/code&gt; and
+&lt;code&gt;COMPUTER_VISION_ENDPOINT&lt;/code&gt;. Follow
+&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account?tabs=singleservice%2Cunix&#34;&gt;instructions&lt;/a&gt;
+to get the same.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install following Python packages in your virtual environment:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install requests
+pip install Pillow
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Computer Vision client library&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install --upgrade azure-cognitiveservices-vision-computervision
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;steps-to-implement-and-use-azure-ai-image-and-text-rest-services&#34;&gt;Steps to implement and use Azure AI image and text &lt;em&gt;REST-services&lt;/em&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;code&gt;./cloudmesh-openapi&lt;/code&gt; directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run following command to generate the YAML files&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate AzureAiImage --filename=./tests/generator-azureai/azure-ai-image-function.py --all_functions --enable_upload
+cms openapi generate AzureAiText --filename=./tests/generator-azureai/azure-ai-text-function.py --all_functions --enable_upload
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verify the &lt;em&gt;YAML&lt;/em&gt; files created in &lt;code&gt;./tests/generator-azureai&lt;/code&gt; directory&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;azure-ai-image-function.yaml
+azure-ai-text-function.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start the REST service by running following command in &lt;code&gt;./cloudmesh-openapi&lt;/code&gt; directory&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server start ./tests/generator-azureai/azure-ai-image-function.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The default port used for starting the service is 8080. In case you
+want to start more than one REST service, use a different port in
+following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server start ./tests/generator-azureai/azure-ai-text-function.yaml --port=&amp;lt;**Use a different port than 8080**&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Access the REST service using &lt;a href=&#34;http://localhost:8080/cloudmesh/ui/&#34;&gt;http://localhost:8080/cloudmesh/ui/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After you have started the azure-ai-image-function or azure-ai-text-function on default port 8080, run following command to upload the image or text_image file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X POST &amp;quot;http://localhost:8080/cloudmesh/upload&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot; -H  &amp;quot;Content-Type: multipart/form-data&amp;quot; -F &amp;quot;upload=@tests/generator-azureai/&amp;lt;image_name_with_extension&amp;gt;;type=image/jpeg&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Keep your test image files at &lt;code&gt;./tests/generator-azureai/&lt;/code&gt; directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With &lt;em&gt;azure-ai-text-function&lt;/em&gt; started on port=8080, in order to test the azure ai function for text detection in an image, run following command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/azure-ai-text-function_upload-enabled/get_text_results?image_name=&amp;lt;image_name_with_extension_uploaded_earlier&amp;gt;&amp;quot; -H &amp;quot;accept: text/plain&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With &lt;em&gt;azure-ai-image-function&lt;/em&gt; started on port=8080, in order to
+test the azure ai function for describing an image, run following
+command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/azure-ai-image-function_upload-enabled/get_image_desc?image_name=&amp;lt;image_name_with_extension_uploaded_earlier&amp;gt;&amp;quot; -H &amp;quot;accept: text/plain&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With &lt;em&gt;azure-ai-image-function&lt;/em&gt; started on port=8080, in order to
+test the azure ai function for analyzing an image, run following
+command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/azure-ai-image-function_upload-enabled/get_image_analysis?image_name=&amp;lt;image_name_with_extension_uploaded_earlier&amp;gt;&amp;quot; -H &amp;quot;accept: text/plain&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With &lt;em&gt;azure-ai-image-function&lt;/em&gt; started on port=8080, in order to
+test the azure ai function for identifying tags in an image, run
+following command&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -X GET &amp;quot;http://localhost:8080/cloudmesh/azure-ai-image-function_upload-enabled/get_image_tags?image_name=&amp;lt;image_name_with_extension_uploaded_earlier&amp;gt;&amp;quot; -H &amp;quot;accept: text/plain&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check the running REST services using following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server ps
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stop the REST service using following command(s):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server stop azure-ai-image-function
+cms openapi server stop azure-ai-text-function
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;list-of-tests&#34;&gt;List of Tests&lt;/h2&gt;
+&lt;p&gt;The following table lists the different test we have, we provide additional
+information for the tests in the test directory in a README file. Summaries
+are provided below the table&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Test&lt;/th&gt;
+&lt;th&gt;Short Description&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Generator-calculator&lt;/td&gt;
+&lt;td&gt;Test to check if calculator api is generated correctly. This is to test multiple function in one python file&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/generator-calculator/test_01_generator.py&#34;&gt;test_01_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Generator-testclass&lt;/td&gt;
+&lt;td&gt;Test to check if calculator api is generated correctly. This is to test multiple function in one python class file&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/generator-testclass/test_02_generator.py&#34;&gt;test_02_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Server-cpu&lt;/td&gt;
+&lt;td&gt;Test to check if cpu api is generated correctly. This is to test single function in one python file and function name is different than file name&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/server-cpu/test_03_generator.py&#34;&gt;test_03_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Server-cms&lt;/td&gt;
+&lt;td&gt;Test to check if cms api is generated correctly. This is to test multiple function in one python file.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/server-cms/test_04_generator.py&#34;&gt;test_04_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Registry&lt;/td&gt;
+&lt;td&gt;test_001_registry.py - Runs tests for registry. Description is in tests/README.md&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/README.md&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image-Analysis&lt;/td&gt;
+&lt;td&gt;image_test.py - Runs benchmark for text detection for Google Vision API and AWS Rekognition. Description in image-analysis/README.md&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/image-analysis/README.md&#34;&gt;image&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For more information about test cases ,please check &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/README.md&#34;&gt;tests info&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_001_registry.py&#34;&gt;test_001_registry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_003_server_manage_cpu.py&#34;&gt;test_003_server_manage_cpu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_010_generator.py&#34;&gt;test_010_generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_011_generator_cpu.py&#34;&gt;test_011_generator_cpu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_012_generator_calculator.py&#34;&gt;test_012_generator_calculator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_015_generator_azureai.py&#34;&gt;test_015_generator_azureai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_020_server_manage.py&#34;&gt;test_020_server_manage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;tests/test_server_cms_cpu.py&#34;&gt;test_server_cms_cpu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that there a many more tests that you can explore.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/add-float/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/add-float/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;readme&#34;&gt;README&lt;/h1&gt;
+&lt;p&gt;please see the README in the root dir of this repository&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/add-json/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/add-json/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;readme&#34;&gt;README&lt;/h1&gt;
+&lt;p&gt;please see the README in the root dir of this repository&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/generator-natural-lang/googlecloudvmset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/generator-natural-lang/googlecloudvmset/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;steps&#34;&gt;Steps:&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Setup a google account with Google Cloud&lt;/li&gt;
+&lt;li&gt;Create a project&lt;/li&gt;
+&lt;li&gt;Set permission for create on compute engine in the project&lt;/li&gt;
+&lt;li&gt;create a service account file and link to json in cloudmesh yaml file
+&lt;a href=&#34;https://cloud.google.com/docs/authentication/production?hl=en_US&#34;&gt;https://cloud.google.com/docs/authentication/production?hl=en_US&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create a storage location using google storage
+&lt;a href=&#34;https://cloud.google.com/storage/docs/creating-buckets#storage-create-bucket-code_samples&#34;&gt;https://cloud.google.com/storage/docs/creating-buckets#storage-create-bucket-code_samples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install the google cloud sdk
+&lt;a href=&#34;https://cloud.google.com/compute/docs/tutorials/python-guide&#34;&gt;https://cloud.google.com/compute/docs/tutorials/python-guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install the google cloud api client library
+&lt;a href=&#34;https://cloud.google.com/apis/docs/client-libraries-explained&#34;&gt;https://cloud.google.com/apis/docs/client-libraries-explained&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Write a startup script for your vm&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;azure&#34;&gt;Azure&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal&#34;&gt;https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal&lt;/a&gt;
+Credentials:
+app-name: vm-creation-example
+auth url:https://andyvmcreateexample.com/auth&lt;/p&gt;
+&lt;p&gt;app (client) ID: 8db85342-7efd-433c-aeba-d175ae4d4404
+directory (tenant) id: 398e5475-e850-4239-ba0d-62ddc3e644ff
+object ID: 38224a7e-79e0-4642-b765-2bf731d296ad
+client-secret: w[f7o=[dKKeSn?VxF3iNoZDW3ctMmd3G
+subscription id:4513afc9-4159-49d0-aa1d-0a2a0ab9933c&lt;/p&gt;
+&lt;p&gt;when creating a vm in the portal the network interface is set up for you
+but if you do it programmatically you have to set it up.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/gregor/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/gregor/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;test-it-yourself&#34;&gt;Test it yourself&lt;/h1&gt;
+&lt;p&gt;cd to &lt;code&gt;cloudmesh-openapi&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Start the service&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapii server start ./tests/server-cpu.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Stop the service&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapii3 server stop cpu
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;urls&lt;/p&gt;
+&lt;p&gt;cloudmesh/ui&lt;/p&gt;
+&lt;p&gt;cloudmesh/cpu&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/image-analysis/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/image-analysis/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;test-it-yourself&#34;&gt;Test it yourself&lt;/h1&gt;
+&lt;h2 id=&#34;in-cloudmesh-openapi&#34;&gt;In cloudmesh-openapi&lt;/h2&gt;
+&lt;p&gt;Start server&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cms openapi server start ./tests/image-analysis/image.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Get Response Google Vision&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -sL http://127.0.0.1:8080/cloudmesh/image/detect_text_google
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Get Response AWS Rekognition&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -sL http://127.0.0.1:8080/cloudmesh/image/detect_text_aws
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Stop server&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cms openapi server stop image
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;urls&lt;/p&gt;
+&lt;p&gt;cloudmesh/image/detect_text_google&lt;/p&gt;
+&lt;p&gt;cloudmesh/image/detect_text_aws&lt;/p&gt;
+&lt;h2 id=&#34;image_testpy&#34;&gt;image_test.py&lt;/h2&gt;
+&lt;p&gt;How to run test&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/image-analysis/image_test.py 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;image_test.py has 7 tests&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Uses generate command to generate new yaml file&lt;/li&gt;
+&lt;li&gt;Check yaml syntax&lt;/li&gt;
+&lt;li&gt;Starts server&lt;/li&gt;
+&lt;li&gt;Does a curl call for google vision api response&lt;/li&gt;
+&lt;li&gt;Does a curl call for aws rekognition api response&lt;/li&gt;
+&lt;li&gt;Stops the server&lt;/li&gt;
+&lt;li&gt;Prints benchmark&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;how-to-write-and-run-test-case-for-openapi&#34;&gt;How to write and run test case for OpenAPI&lt;/h1&gt;
+&lt;h2 id=&#34;this-document-will-explain-how-to-validate-if-openapi-is-generated-correctly-and-server-start-and-stop-working-correctly&#34;&gt;This document will explain how to validate if openapi is generated correctly and server start and stop working correctly&lt;/h2&gt;
+&lt;h3 id=&#34;we-have-create-a-framework-class-which-has-below-basic-test-case-functions&#34;&gt;We have create a framework class which has below basic test case functions&lt;/h3&gt;
+&lt;p&gt;Framework file is present under tests/lib named as generator_test.py&lt;/p&gt;
+&lt;h4 id=&#34;below-test-cases-are-related-to-generator-api&#34;&gt;Below test cases are related to generator API&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a build folder and copy py file into it. Build sub folder will created where test py file present.&lt;/li&gt;
+&lt;li&gt;It will call generator generate function to generate Yaml file inside build folder&lt;/li&gt;
+&lt;li&gt;It will check if generated YMAL file syntax is correct or not.&lt;/li&gt;
+&lt;li&gt;It will check if number of function generated in YMAL is same as py file.&lt;/li&gt;
+&lt;li&gt;Delete the build folder.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;two-test-cases-are-related-to-server-api&#34;&gt;Two test cases are related to server API&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;It will start server&lt;/li&gt;
+&lt;li&gt;It will stop server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;how-to-create-test-case&#34;&gt;How to create test case&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;If you creating new Open API , then inside tests folder you have to commit your working py and yaml files.&lt;/li&gt;
+&lt;li&gt;Create new function for test case where py and yaml located. Example (test_01_generator)&lt;/li&gt;
+&lt;li&gt;We have already created test cases function file for generator-calculator name as test_01_generator.py. Please check this file.&lt;/li&gt;
+&lt;li&gt;Copy the contains of test_01_generator.py and paste inside your test py file.&lt;/li&gt;
+&lt;li&gt;Change startservercommand and filename variables value accordingly to your use case.&lt;/li&gt;
+&lt;li&gt;Change some of parameters of constructor of GeneratorBaseTest class.&lt;/li&gt;
+&lt;li&gt;if your py file has a class then.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#000&#34;&gt;gen&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; GeneratorBaseTest&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;filename,False,True&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;if your py file has functions then&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#000&#34;&gt;gen&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; GeneratorBaseTest&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;filename,True,False&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;First boolean flag in GeneratorBaseTest for &amp;ndash;all_functions and second flag is for &amp;ndash;import_class&lt;/li&gt;
+&lt;li&gt;If you need to write more test cases based on your requirement, check order of test case and write accordingly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;how-to-run-test-case&#34;&gt;How to run test case&lt;/h3&gt;
+&lt;p&gt;Below command can use to run your case. Make sure your current directory is cloudmesh-openapi.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ how &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;do&lt;/span&gt; you call this you can add -x to stop pytest when first &lt;span style=&#34;color:#204a87&#34;&gt;test&lt;/span&gt; failed
+pytest -v  --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/generator-calculator/test_01_generator.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;run-test-case-with-csv-command-enabled&#34;&gt;Run test case with CSV command enabled&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ how &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;do&lt;/span&gt; you call this , you can add -x to stop pytest when first &lt;span style=&#34;color:#204a87&#34;&gt;test&lt;/span&gt; failed
+pytest -v  --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/generator-calculator/test_01_generator.py  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; fgrep &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;# cvs&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;below-are-test-case-files&#34;&gt;Below are test case files&lt;/h2&gt;
+&lt;p&gt;Generator-calculator and file name is test_01_generator.py&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pytest -v  --capture=no tests/generator-calculator/test_01_generator.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Generator-testclass and file name is test_02_generator.py&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pytest -v --capture=no tests/generator-testclass/test_02_generator
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Server-cpu and file name is test_03_generator.py&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pytest -v  --capture=no tests/server-cpu/test_03_generator
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Server-cms and file name is test_04_generator.py&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pytest -v  --capture=no tests/server-cms/test_04_generator
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Generator and file name is test_05_generator.py&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pytest -v --capture=no tests/generator/test_05_generator
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Azure AI Image Function is test_06_generator.py&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/generator_azureai/test_06_generator
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Azure AI Text Function is test_07_generator.py&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/generator_azureai/test_07_generator
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Natural Language Analysis Generator Tests are run from test_generator_natural_language.py&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no  ./tests/test_generator_natural_language.py::TestGenerator
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This test will generate an OpenAPI spec for the natural-lang-analysis.py file located in the generator-natural-lang
+directory. If the above command is copied and pasted to run in the terminal it will do the following.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Generate a yaml file&lt;/li&gt;
+&lt;li&gt;Verify the spec has all the functions that are available in the natural-lang-analysis.py file&lt;/li&gt;
+&lt;li&gt;Start a server hosting the openAPI spec&lt;/li&gt;
+&lt;li&gt;Run a call against the sentiment analysis and translation endpoint for each available cloud service (Google/Azure) and verify it was successful.&lt;/li&gt;
+&lt;li&gt;Stop the service&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Results for Natural Language Tests&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;cpu_count&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.active&lt;/td&gt;
+&lt;td&gt;2.0 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.available&lt;/td&gt;
+&lt;td&gt;2.1 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.free&lt;/td&gt;
+&lt;td&gt;148.8 MiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.inactive&lt;/td&gt;
+&lt;td&gt;2.0 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.percent&lt;/td&gt;
+&lt;td&gt;73.2 %&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.total&lt;/td&gt;
+&lt;td&gt;8.0 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.used&lt;/td&gt;
+&lt;td&gt;4.8 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.wired&lt;/td&gt;
+&lt;td&gt;2.8 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;platform.version&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;python&lt;/td&gt;
+&lt;td&gt;3.8.1 (v3.8.1:1b293b6006, Dec 18 2019, 14:08:53)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;[Clang 6.0 (clang-600.0.57)]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;python.pip&lt;/td&gt;
+&lt;td&gt;20.0.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;python.version&lt;/td&gt;
+&lt;td&gt;3.8.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sys.platform&lt;/td&gt;
+&lt;td&gt;darwin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.machine&lt;/td&gt;
+&lt;td&gt;x86_64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.node&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.processor&lt;/td&gt;
+&lt;td&gt;i386&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.release&lt;/td&gt;
+&lt;td&gt;18.2.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.system&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.version&lt;/td&gt;
+&lt;td&gt;Darwin Kernel Version 18.2.0: Fri Oct  5 19:41:49 PDT 2018; root:xnu-4903.221.2~2/RELEASE_X86_64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;user&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;th&gt;Start&lt;/th&gt;
+&lt;th&gt;tag&lt;/th&gt;
+&lt;th&gt;Node&lt;/th&gt;
+&lt;th&gt;User&lt;/th&gt;
+&lt;th&gt;OS&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;generator_test/copy_py_file&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;0.003&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:47&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;generator_test/generate&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;2.601&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:47&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;generator_test/read_spec&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;0.012&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:49&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;generator_test/start_service&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;1.864&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:49&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;test_generator_natural_language/test_run_analyze_google&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;0.67&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:51&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;test_generator_natural_language/test_run_analyze_azure&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;0.58&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:52&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;generator_test/stop_server&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;2.095&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:52&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;generator_test/delete_file&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;0.002&lt;/td&gt;
+&lt;td&gt;2020-05-09 06:33:54&lt;/td&gt;
+&lt;td&gt;openapi&lt;/td&gt;
+&lt;td&gt;Andrews-MacBook-Pro.local&lt;/td&gt;
+&lt;td&gt;andrewgoldfarb&lt;/td&gt;
+&lt;td&gt;Darwin&lt;/td&gt;
+&lt;td&gt;10.14.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;todo-describe-what-they-do&#34;&gt;TODO DESCRIBE WHAT THEY DO&lt;/h2&gt;
+&lt;p&gt;cache-scikitlearn
+deprecated
+examples
+generator
+generator-azureai
+generator-calculator
+generator-printerclass
+generator-testclass
+generator-upload
+image-analysis
+lib
+Scikit-learntestfiles
+Scikitlearn_tests
+server-cms
+server-cms-simple
+server-cpu
+server-sample
+server-sampleFunction
+test_mlperf
+textanalysis-example-text
+&lt;strong&gt;init&lt;/strong&gt;.py
+README.md
+test_001_registry.py
+test_03_generator.py
+test_010_generator.py
+test_011_generator_cpu.py
+test_012_generator_calculator.py
+test_015_generator_azureai.py
+test_020_server_manage.py
+test_server_cms_cpu.py
+util.py&lt;/p&gt;
+&lt;p&gt;THIS WAS HERE BEFORE&lt;/p&gt;
+&lt;h2 id=&#34;test_001_registrypy&#34;&gt;test_001_registry.py&lt;/h2&gt;
+&lt;p&gt;This test has 5 test functions&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;test_registry_add&lt;/li&gt;
+&lt;li&gt;test_registry_list_name&lt;/li&gt;
+&lt;li&gt;test_registry_list&lt;/li&gt;
+&lt;li&gt;test_registry_delete&lt;/li&gt;
+&lt;li&gt;test_benchmark&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Test 1 calls registry and adds to the registry. If successful prints &amp;lsquo;PASSED&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Test 2 calls registry and prints ONLY the server specified in filename.&lt;/p&gt;
+&lt;p&gt;Test 3 calls registry and print list for ALL servers in registry.&lt;/p&gt;
+&lt;p&gt;Test 4 calls registry and deletes entry for filename.&lt;/p&gt;
+&lt;p&gt;Test 5 runs benchmark test on registry.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-call-this&#34;&gt;How to call this&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cms &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;filename&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;./tests/server-cpu/cpu.yaml&amp;#34;&lt;/span&gt;
+pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/test_001_registry.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;deprecated
+examples
+generator
+generator-calculator
+generator-printerclass
+generator-testclass
+server-class
+server-cms
+server-cms-simple
+server-cpu
+server-sample
+server-sampleFunction
+textanalysis-example-text
+&lt;strong&gt;init&lt;/strong&gt;.py
+README.md
+test_001_registry.py  Falconi
+test_03_generator.py  jonthan
+test_010_generator.py jonthan
+test_011_generator_cpu.py prateek
+test_012_generator_calculator.py prateek
+test_020_server_manage.py ishan
+test_server_cms_cpu.py andrew&amp;ndash;&amp;gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/server-cpu/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/server-cpu/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;test-it-yourself&#34;&gt;Test it yourself&lt;/h1&gt;
+&lt;p&gt;cd to &lt;code&gt;cloudmesh-openapi&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Start the service&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapii server start ./tests/server-cpu.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Stop the service&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapii3 server stop cpu
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;urls&lt;/p&gt;
+&lt;p&gt;cloudmesh/ui&lt;/p&gt;
+&lt;p&gt;cloudmesh/cpu&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/test_mlperf/readme-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/test_mlperf/readme-source/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;mlperf-tests&#34;&gt;MLPerf Tests&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;http://mlperf.org&#34;&gt;MLperf&lt;/a&gt; [@www-mlperf] provides &amp;ldquo;fair and useful benchmarks for measuring
+training and inference performance of ML hardware, software, and
+services&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;In this benchmark we will&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Deploy MLPerf on the system&lt;/li&gt;
+&lt;li&gt;Use functions that run a number of tests as inout to the OpenAPI Gnerator&lt;/li&gt;
+&lt;li&gt;From these functions we run our OpenAPI generator to create a service
+that allows to run the MLperf examples through a Web service with
+http calls&lt;/li&gt;
+&lt;li&gt;Test out the created functions by running selected example invocations&lt;/li&gt;
+&lt;li&gt;Report the time it takes to run these examples&lt;/li&gt;
+&lt;li&gt;Provide a Makefile or python script that allows us to conveniently
+cun these tests&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
+&lt;p&gt;Describe how to deploy&lt;/p&gt;
+&lt;h3 id=&#34;reports-for-running-the-tests-on-machines&#34;&gt;Reports for running the tests on Machines&lt;/h3&gt;
+&lt;p&gt;Provide summary information about teh runtime
+Provide details do checked in results in the &lt;a href=&#34;results&#34;&gt;results&lt;/a&gt; directory&lt;/p&gt;
+&lt;h3 id=&#34;local-output&#34;&gt;Local Output&lt;/h3&gt;
+&lt;p&gt;All output is written into a &lt;code&gt;~/.cloudmesh/dest/benchmark/mlperf&lt;/code&gt; folder
+which can be removed after the test is completed. In the results folder
+we also find a copy of the OpenAPI YAML file that is generated with the
+cenerator. This file can also be used to compare the generated output.&lt;/p&gt;
+&lt;h2 id=&#34;selected-benchmarks&#34;&gt;Selected Benchmarks&lt;/h2&gt;
+&lt;p&gt;Describe which benchmarks were selected&lt;/p&gt;
+&lt;h2 id=&#34;functions&#34;&gt;Functions&lt;/h2&gt;
+&lt;p&gt;Short description aboutthe functions that have been defined&lt;/p&gt;
+&lt;h2 id=&#34;opeanapi&#34;&gt;OpeanAPI&lt;/h2&gt;
+&lt;p&gt;Describe where to find the generated functions
+Link th=o wher ethe open api is created in the&lt;/p&gt;
+&lt;h2 id=&#34;how-to-run-individual-tests&#34;&gt;How to run individual tests&lt;/h2&gt;
+&lt;p&gt;Describe how to run indific=dual Tests&lt;/p&gt;
+&lt;h2 id=&#34;benchmarks&#34;&gt;Benchmarks&lt;/h2&gt;
+&lt;p&gt;Links to benchmarks that are listed in the &lt;a href=&#34;results&#34;&gt;results&lt;/a&gt; directory&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/test_mlperf/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/test_mlperf/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;mlperf-tests&#34;&gt;MLPerf Tests&lt;/h1&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://mlperf.org/&#34;&gt;https://mlperf.org/&lt;/a&gt; MLPerf provides &amp;quot; Fair and useful
+benchmarks for measuring training and inference performance of ML
+hardware, software, and services&amp;rdquo; [@www-mlperf]&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/test_mlperf/results/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/test_mlperf/results/readme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;put your result files here&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/tests/timeseries-example/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/tests/timeseries-example/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;time-series-forecast-using-multi-cloud-ai-services&#34;&gt;Time Series Forecast using Multi Cloud AI Services&lt;/h1&gt;
+&lt;p&gt;Prafull Porwal, &lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/blob/master/Cloudmesh-OpenAPI/Readme.md&#34;&gt;sp20-516-255&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/graphs/contributors&#34;&gt;Contributors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/fa19-516-147/pulse&#34;&gt;Insights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/tree/master/Cloudmesh-OpenAPI/AWSForecast&#34;&gt;Project Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Develop Open API for time series forecasting on multiple clouds&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Many cloud providers have introduced machine learning capabilities on their infrastructure. The project aims to provide an open API for timeseries forecasting for AWS using Forecast Services and S3&lt;/p&gt;
+&lt;h3 id=&#34;aws-ai-service--forecast-open-api-service-features&#34;&gt;AWS AI Service : Forecast Open API Service Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Upload the data file to ./cloudmesh/upload-file location&lt;/li&gt;
+&lt;li&gt;Upload the json schema file to ./cloudmesh/upload-file location&lt;/li&gt;
+&lt;li&gt;Validate the data for missing and less than 0 values&lt;/li&gt;
+&lt;li&gt;Split the dataset into Train and test by specifying split percentge.&lt;/li&gt;
+&lt;li&gt;Provide list of Multi Cloud supported for Timeseries Forecasting&lt;/li&gt;
+&lt;li&gt;Initialize the cloud service&lt;/li&gt;
+&lt;li&gt;Create a Dataset Group&lt;/li&gt;
+&lt;li&gt;Create a Target Time Series Dataset&lt;/li&gt;
+&lt;li&gt;Import data into Forecast from AWS Storage S3&lt;/li&gt;
+&lt;li&gt;Create a Predictor&lt;/li&gt;
+&lt;li&gt;Generate Forecast&lt;/li&gt;
+&lt;li&gt;Query the Forecast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;additional-features&#34;&gt;Additional Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Multiple instance of the process supported&lt;/li&gt;
+&lt;li&gt;Data Validation and missing values checks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;environment-configuration&#34;&gt;Environment Configuration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Python 3.8.2 Python or newer.&lt;/li&gt;
+&lt;li&gt;Use a venv (see developer install)&lt;/li&gt;
+&lt;li&gt;MongoDB installed as regular program not as service&lt;/li&gt;
+&lt;li&gt;AWS boto3 library&lt;/li&gt;
+&lt;li&gt;Open API package installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Make sure that cloudmesh is properly installed on your machine and you have mongodb setup to work with cloudmesh.
+More details can be found in the &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;Cloudmesh Manual&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;openapi-package-installation&#34;&gt;OpenAPI package installation&lt;/h3&gt;
+&lt;p&gt;Make sure you use a python venv before installing. Users can install the code with&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ pip install cloudmesh-openapi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pre-requisites-&#34;&gt;Pre Requisites :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;add below parameter to cloudmesh.yaml for forecast service to work&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bucket_name : awsforecastassignnment&lt;/li&gt;
+&lt;li&gt;region_name : us-east-1&lt;/li&gt;
+&lt;li&gt;forecast_srv : forecast&lt;/li&gt;
+&lt;li&gt;forecastquery_srv : forecastquery&lt;/li&gt;
+&lt;li&gt;s3_srv : s3&lt;/li&gt;
+&lt;li&gt;iam_role_arn: XXXXXX&lt;/li&gt;
+&lt;li&gt;algorithmArn: arn:aws:forecast:::algorithm/Deep_AR_Plus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Format : The data should be in csv file format and must have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item_id : reference column for which time series forecast is required&lt;/li&gt;
+&lt;li&gt;target_value : the column which need to be predicted, data type integer&lt;/li&gt;
+&lt;li&gt;timestamp : timestamp of data samples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDataset.html&#34;&gt;AWS Time Series Forecast&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Json Schema : Json Schema file with name schema.json&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;quick-forecast-api-reference-commands&#34;&gt;Quick Forecast API reference Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Start the open API server for the forecast service&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cms openapi server start .//forecast.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check for supported AI services&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://localhost:8080/cloudmesh/forecast
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;e.g. output:
+&amp;ldquo;model&amp;rdquo;: &amp;ldquo;Supported Time Series Forecast Services AWS : Forecast &amp;quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upload file to the server from location (
+File path should be the location on server where file is located.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://localhost:8080/cloudmesh/forecast/upload&amp;#34;&lt;/span&gt; -F &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;upload=@&amp;lt;file_path&amp;gt;\countries-aggregated.csv&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;e.g. output:
+countries-aggregated.csv uploaded successfully&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Validate data file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://localhost:8080/cloudmesh/forecast/validate_data&amp;#34;&lt;/span&gt; -F &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;upload=@&amp;lt;file_path&amp;gt;\countries-aggregated.csv&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;e.g. output:
+countries-aggregated.csv validated successfully&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Split the data into test and train. Data should be validated first before splitting&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://localhost:8080/cloudmesh/forecast/split_data?split_pct&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;20&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output: &amp;ldquo;Please validate the data first&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://localhost:8080/cloudmesh/forecast/split_data?split_pct&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;20&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output: &amp;ldquo;Data split successfully&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Initialize aws parameters&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://localhost:8080/cloudmesh/forecast/aws&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;e.g. output:
+{&amp;ldquo;model&amp;rdquo;:&amp;ldquo;AWS AI Service initialized successfully&amp;rdquo;}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create Forecast, this is a multistep process, it cretes datasetgroup, dataset, import job, predictor and forecast&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://localhost:8080/cloudmesh/forecast/create_forecast?country&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;Austrailia
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This api expects cloud services to be already initialized if not it will request to initialize
+output:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Please initialize cloud service&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;output: &amp;ldquo;Forecast generated successfully&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lookup a Forecast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://localhost:8080/cloudmesh/forecast/lookupForecast?countryName&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;Austrailia
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output :
+shows &lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/blob/master/Cloudmesh-OpenAPI/AWSForecast/sampleOutput&#34;&gt;ouput&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Delete Data Stack for the current project
+This API should be executed at the end of the session to delete all the resources created for the analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://localhost:8080/cloudmesh/forecast/deletestack&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;algorithm-details&#34;&gt;Algorithm details&lt;/h2&gt;
+&lt;p&gt;The AWS Forecast service supports following pre-defined algortithms&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Autoregressive Integrated Moving Average (ARIMA) Algorithm - arn:aws:forecast:::algorithm/ARIMA&lt;/li&gt;
+&lt;li&gt;DeepAR+ Algorithm - arn:aws:forecast:::algorithm/Deep_AR_Plus&lt;/li&gt;
+&lt;li&gt;Exponential Smoothing (ETS) - arn:aws:forecast:::algorithm/ETS&lt;/li&gt;
+&lt;li&gt;Non-Parametric Time Series (NPTS) Algorithm - arn:aws:forecast:::algorithm/NPTS&lt;/li&gt;
+&lt;li&gt;Prophet Algorithm - arn:aws:forecast:::algorithm/Prophet&lt;/li&gt;
+&lt;li&gt;Supports hyperparameter optimization (HPO)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.aws.amazon.com/forecast/latest/dg/forecast.dg.pdf&#34;&gt;AWS Time Series Forecast&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Requires data file with mandatory colums item_id, target_value and timestamp&lt;/li&gt;
+&lt;li&gt;Requires a schema file schema.json to be provided by the user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.aws.amazon.com/forecast/latest/dg/forecast.dg.pdf&#34;&gt;https://docs.aws.amazon.com/forecast/latest/dg/forecast.dg.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/aws-samples/amazon-forecast-samples&#34;&gt;https://github.com/aws-samples/amazon-forecast-samples&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-301/project/misc_files/blank/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1325,10 +3584,28 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
         
         
         &lt;h1 id=&#34;benchmarking-multi-cloud-auto-generated-ai-services&#34;&gt;Benchmarking Multi-Cloud Auto Generated AI Services&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The location of this paper is a temporary location. These notes will be at one point integrated into&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/paper/_index.md&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/paper/_index.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The branch in which the documentation is done is going to be the master. During the development the code is
+managed in a branch &lt;code&gt;benchmark&lt;/code&gt;. However, the team members must frequently stay in sync with &lt;code&gt;master&lt;/code&gt; as new
+developments are integrated there frequently. We want to make sure that a merge with master is
+any time possible.&lt;/p&gt;
+&lt;p&gt;At this time a draft with additional information is available at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/benchmark/paper/_index.md&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/benchmark/paper/_index.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The team has yet to merge the main document into a single document to avoid that 3 documents are used.&lt;/p&gt;
+&lt;p&gt;At this time the plan is to have the document always in the master branch&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://laszewski.github.io&#34;&gt;Gregor von Laszewski&lt;/a&gt;,
+Richard Otten,
 Anthony Orlowski, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-310/&#34;&gt;fa20-523-310&lt;/a&gt;,
 Caleb Wilson, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-348/&#34;&gt;fa20-523-348&lt;/a&gt;,
-Vishwanadham Mandala, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-325/&#34;&gt;fa20-523-325&lt;/a&gt;,&lt;/p&gt;
+Vishwanadham Mandala, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-325/&#34;&gt;fa20-523-325&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-348/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
@@ -1367,21 +3644,21 @@ Vishwanadham Mandala, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-
 &lt;/ul&gt;
 &lt;p&gt;Examples in this paper came from the cloudmesh openapi manual which is located here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt; [^3].&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Information about cloudmesh can be found here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; [^4]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Various cloudmesh installations for various needs can be found here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;algorithms-and-datasets&#34;&gt;Algorithms and Datasets&lt;/h2&gt;
 &lt;p&gt;This project uses a number of simple example algorithms and datasets. We have chosen to use the once included in Scikit Learn as they are widel known and can be used by others to replicate our benchmarks easily. Nevertheless, it will be possible to integrate easily other data sources, as well as algorithms due to the generative nature of our base code for creating REST services.&lt;/p&gt;
 &lt;p&gt;Within Skikit Learn we have chosen the following examples:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Pipelined ANOVA SVM&lt;/strong&gt;: A code thet shows a pipeline running successively a univariate feature selection with anova and then a SVM of the selected features &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pipelined ANOVA SVM&lt;/strong&gt;: A code thet shows a pipeline running successively a univariate feature selection with anova and then a SVM of the selected features &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;aSklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.&lt;/p&gt;
 &lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
@@ -1505,33 +3782,22 @@ cms set cloud=azure
 &lt;p&gt;Cloudmesh Manual, &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Cloudmesh Repositories, &lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt;
-[^3] Cloudmesh OpenAPI Repository for automatically generated REST services from Python functions &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt;.
-[^4] Cloudmesh Manaual Preface for cloudmesh,  &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cloudmesh Repositories, &lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Cloudmesh Manual, Instalation instryctions for cloudmesh &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cloudmesh OpenAPI Repository for automatically generated REST services from Python functions &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt;. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit Learn, Pipeline Anova SVM, &lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&#34;&gt;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cloudmesh Manaual Preface for cloudmesh,  &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Manual, Instalation instryctions for cloudmesh &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit Learn, Pipeline Anova SVM, &lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&#34;&gt;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-348/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-348/test/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;test&#34;&gt;TEST&lt;/h1&gt;
-&lt;p&gt;This is Caleb Wilson verifying I have write access to the project fa20-523-348.&lt;/p&gt;
 
       </description>
     </item>

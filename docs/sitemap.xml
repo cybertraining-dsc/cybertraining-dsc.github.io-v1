@@ -578,6 +578,90 @@
   </url>
   
   <url>
+    <loc>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/cloudmesh/openapi/scikitlearn/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/deprecated/openapi/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/docker/ubuntu19.10/todo/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/docker/ubuntu20.04-sklearn/todo/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/docker/ubuntu20.04/todo/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/paper/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/project_review/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/readme-scikitlearn/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/add-float/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/add-json/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/generator-natural-lang/googlecloudvmset/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/gregor/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/image-analysis/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/server-cpu/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/test_mlperf/readme-source/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/test_mlperf/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/test_mlperf/results/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/tests/timeseries-example/readme/</loc>
+  </url>
+  
+  <url>
     <loc>/report/fa20-523-301/project/misc_files/blank/</loc>
   </url>
   

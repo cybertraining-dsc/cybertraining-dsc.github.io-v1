@@ -2,6 +2,7 @@ draft:
 	hugo server -D
 
 update:
+	cd content/en/report/cloudmesh-openapi; git pull
 	cd content/en/report/fa20-523-301; git pull
 	cd content/en/report/fa20-523-304; git pull
 	cd content/en/report/fa20-523-305; git pull
