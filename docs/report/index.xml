@@ -1253,7 +1253,40 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
       <description>
         
         
-        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
+        &lt;p&gt;Hany Boles, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-342/&#34;&gt;fa20-523-342&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-342/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;By the end of 2019, healthcare across the world started to see a new type of Flu and they called it Coronavirus or Covid-19. This new type of Flu developed across the world and it appeared there is no one treatment could be used to treat it yet, scientists found different treatments that apply to different age ranges. In this project, We will try to work on some analysis on areas that the virus did spread and what factors played big roles in this spread.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-data-sets&#34;&gt;2. Data-Sets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-methodology&#34;&gt;3. Methodology&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-references&#34;&gt;4. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;        While the world is ready to start 2020 we heard about a new type of the Flu that it appears to be started in China and from there it went to the entire world. It appeared to affect all ages but its severity did depend on other factors that related to age, health conditions if the patient is a smoker or not?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This new disease attacked aggressively the respiratory system for the patient and then all the human body causing death. The recovery from this disease appeared to vary from area to area across the globe, Also the death percentage as well was and still vary from area to area.&lt;/p&gt;
+&lt;h2 id=&#34;2-data-sets&#34;&gt;2. Data-Sets&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;We will use http://datatopics.worldbank.org/universal-health-coverage/coronavirus/  also https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge as data sets, we will try to observe more data sets so we can get a better understanding of what relates between the coronavirus spread and the most affected areas. Currently looks like we are getting a second wave of coronavirus and so we will try to get the most recent data.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We will collect the data and extract it from its sources and datasets, Also we will look for the most recent data as well and we will compare and do analysis on the founding and get the best conclusion accordingly.&lt;/p&gt;
+&lt;h2 id=&#34;3-methodology&#34;&gt;3. Methodology&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;We will be utilizing the Indiana University system to process the collected data as it will need a strong system to process it. Also, we will utilize Python, Collab, and Jupyter notebook as programming software.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;4-references&#34;&gt;4. References&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
 
       </description>
     </item>
@@ -1291,103 +1324,199 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
       <description>
         
         
-        &lt;p&gt;Team:
-Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, Vishwanadh Mandala&lt;/p&gt;
-&lt;p&gt;Project:
-Cloudmesh Benchmarking&lt;/p&gt;
-&lt;p&gt;Topic:
-Benchmarking Cloud service performance with cloudmesh openapi rest services and sklearn algorithms replicated as pytests.&lt;/p&gt;
-&lt;p&gt;Dataset:
-Sklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.&lt;/p&gt;
-&lt;p&gt;For the final project, the Cloudmesh Benchmarking team will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs. The team will obtain cloud service accounts from AWS, Azure, Google, and OpenStack. To deploy the pytests, the team will use Cloudmesh and its Openapi based REST services to benchmark the performance on different cloud services. Benchmarks will include components like data transfer time, model train time, model prediction time, and more. The final project will include scripts and code for others to use and replicate our tests. The team will also make a report consisting of research and findings. So far, we have installed the Cloudmesh OpenAPI Service Generator on our local machines. We have tested some microservices, and even replicated a Pipeline Anova SVM example on our local machines. We will repeat these processes, but with pytests that we build and with cloud accounts.&lt;/p&gt;
-&lt;p&gt;Here is the installation process for Cloudmesh OpenAPI:
-python -m venv ~/ENV3
-source ~/ENV3/bin/activate
+        &lt;h1 id=&#34;benchmarking-multi-cloud-auto-generated-ai-services&#34;&gt;Benchmarking Multi-Cloud Auto Generated AI Services&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://laszewski.github.io&#34;&gt;Gregor von Laszewski&lt;/a&gt;,
+Anthony Orlowski, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-310/&#34;&gt;fa20-523-310&lt;/a&gt;,
+Caleb Wilson, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-348/&#34;&gt;fa20-523-348&lt;/a&gt;,
+Vishwanadham Mandala, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-325/&#34;&gt;fa20-523-325&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-348/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;In this wor we are benchmarking auto generated cloud REST services on various clouds. In todays application scientist want to share their services with a wide number of collegues while not only offereing the services as bare metal programs, but exposing the functionality as a software as a service. For this reason a tool has been debveloped that takes a regular python function and converts it automatically into a secure REST service. We will create a number of AI REST services while using examples from ScikitLearn and benchmark the execution of the resulting REST services on various clouds. The code will be accompanied by benchmark enhanced unit tests as to allow replication of the test on the users computer. A comparative study of the results is included in our evaluation.&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#cloudmesh&#34;&gt;Cloudmesh&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#algorithms-and-datasets&#34;&gt;Algorithms and Datasets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#deployment&#34;&gt;Deployment&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#pipiline-anova-svm&#34;&gt;Pipiline ANOVA SVM&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#using-unit-tests-for-benchmarking&#34;&gt;Using unit tests for Benchmarking&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#limitations&#34;&gt;Limitations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; cloudmesh, AI service, REST, multi-cloud&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;We will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs. The team will obtain cloud service accounts from AWS, Azure, Google, and OpenStack. To deploy the pytests, the team will use Cloudmesh and its Openapi based REST services to benchmark the performance on different cloud services. Benchmarks will include components like data transfer time, model train time, model prediction time, and more. The final project will include scripts and code for others to use and replicate our tests. The team will also make a report consisting of research and findings. So far, we have installed the Cloudmesh OpenAPI Service Generator on our local machines. We have tested some microservices, and even replicated a Pipeline Anova SVM example on our local machines. We will repeat these processes, but with pytests that we build and with cloud accounts.&lt;/p&gt;
+&lt;h2 id=&#34;cloudmesh&#34;&gt;Cloudmesh&lt;/h2&gt;
+&lt;p&gt;Cloudmesh is a service that enables users to access multi-cloud environments easily. Cloudmesh is an evolution of previous tools that have been used by thousands of users. Cloudmesh makes interacting with clouds easy by creating a service mashup to access common cloud services across numerous cloud platforms. Documentation for Cloudmesh can be found at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code for cloud mesh can be found at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples in this paper came from the cloudmesh openapi manual which is located here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt; [^3].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Information about cloudmesh can be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; [^4]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Various cloudmesh installations for various needs can be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;algorithms-and-datasets&#34;&gt;Algorithms and Datasets&lt;/h2&gt;
+&lt;p&gt;This project uses a number of simple example algorithms and datasets. We have chosen to use the once included in Scikit Learn as they are widel known and can be used by others to replicate our benchmarks easily. Nevertheless, it will be possible to integrate easily other data sources, as well as algorithms due to the generative nature of our base code for creating REST services.&lt;/p&gt;
+&lt;p&gt;Within Skikit Learn we have chosen the following examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pipelined ANOVA SVM&lt;/strong&gt;: A code thet shows a pipeline running successively a univariate feature selection with anova and then a SVM of the selected features &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;aSklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.&lt;/p&gt;
+&lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
+&lt;p&gt;The project is easy to replicate with our detailed instructions. First you must install Cloudmesh OpenAPI whihch can be done by the follwoing steps:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python -m venv ~/ENV3
+source ~/ENV3/bin/activate 
 mkdir cm
 cd cm
 pip install cloudmesh-installer
-cloudmesh-installer get openapi
+cloudmesh-installer get openapi 
 cms help
 cms gui quick
 #fill out mongo variables
 #make sure autinstall is True
 cms config set cloudmesh.data.mongo.MONGO_AUTOINSTALL=True
-cms admin mongo install &amp;ndash;force
+cms admin mongo install --force
 #Restart a new terminal to make sure mongod is in your path
-cms init&lt;/p&gt;
-&lt;p&gt;Here is the quickstart that we worked through:
-cd ~/cm/cloudmesh-openapi&lt;/p&gt;
-&lt;p&gt;cms openapi generate get_processor_name&lt;br&gt;
-&amp;ndash;filename=./tests/server-cpu/cpu.py&lt;/p&gt;
-&lt;p&gt;cms openapi server start ./tests/server-cpu/cpu.yaml&lt;/p&gt;
-&lt;p&gt;curl -X GET &amp;ldquo;http://localhost:8080/cloudmesh/get_processor_name&amp;rdquo;&lt;br&gt;
--H &amp;ldquo;accept: text/plain&amp;rdquo;
-cms openapi server list&lt;/p&gt;
-&lt;p&gt;cms openapi server stop cpu&lt;/p&gt;
-&lt;p&gt;Here is an example of the return a float and return a Json object microservices we tested:
-def add(x: float, y: float) -&amp;gt; float:
-&amp;quot;&amp;rdquo;&amp;rdquo;
-adding float and float.
-:param x: x value
-:type x: float
-:param y: y value
-:type y: float
-:return: result
-:return type: float
-&amp;quot;&amp;rdquo;&amp;rdquo;
-result = x + y&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;return result
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;cms openapi generate add &amp;ndash;filename=./tests/add-float/add.py
-cms openapi server start ./tests/add-float/add.yaml
-curl -X GET &amp;ldquo;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;rdquo; -H  &amp;ldquo;accept: text/plain&amp;rdquo;
-#This command returns&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;3.0
-cms openapi server stop add&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;from flask import jsonify&lt;/p&gt;
-&lt;p&gt;def add(x: float, y: float) -&amp;gt; str:
-&amp;quot;&amp;rdquo;&amp;rdquo;
-adding float and float.
-:param x: x value
-:type x: float
-:param y: y value
-:type y: float
-:return: result
-:return type: float
-&amp;quot;&amp;rdquo;&amp;rdquo;
-result = {&amp;ldquo;result&amp;rdquo;: x + y}&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;return jsonify(result)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;cms openapi generate add &amp;ndash;filename=./tests/add-json/add.py
-cms openapi server start ./tests/add-json/add.yaml
-curl -X GET &amp;ldquo;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;rdquo; -H  &amp;ldquo;accept: text/plain&amp;rdquo;
-#This command returns&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;{&amp;ldquo;result&amp;rdquo;:3.0}
-cms openapi server stop add&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here is the Pipeline Anova SVM example we replicated:&lt;/p&gt;
-&lt;p&gt;$ pwd
-~/cm/cloudmesh-openapi&lt;/p&gt;
-&lt;p&gt;$ cms openapi generate PipelineAnovaSVM&lt;br&gt;
-&amp;ndash;filename=./tests/Scikitlearn-experimental/sklearn_svm.py&lt;br&gt;
-&amp;ndash;import_class &amp;ndash;enable_upload&lt;/p&gt;
-&lt;p&gt;$ cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml&lt;/p&gt;
-&lt;p&gt;After running these commands, we opened a web user interface. In the user interface, we uploaded the file iris data located in ~/cm/cloudmesh-openapi/tests/ Scikitlearn-experimental/iris.data&lt;/p&gt;
-&lt;p&gt;We then trained the model on this data set by inserting the name of the file we uploaded “iris.data”. Next, we tested the model by clicking on make_prediction and giving it the name of the file iris.data and the parameters 5.1, 3.5, 1.4, 0.2&lt;/p&gt;
-&lt;p&gt;The response we received was &amp;ldquo;Classification: [&amp;lsquo;Iris-setosa&amp;rsquo;]&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;Lastly, we closed the server:
-$ cms openapi server stop sklearn_svm&lt;/p&gt;
-&lt;p&gt;We will replicate this process with pytests that we create ourselves from sklearn examples. We will then benchmark test our pytests on various cloud services.&lt;/p&gt;
-&lt;p&gt;Cloudmesh is a service that enables users to access multi-cloud environments easily. Cloudmesh is an evolution of previous tools that have been used by thousands of users. Cloudmesh makes interacting with clouds easy by creating a service mashup to access common cloud services across numerous cloud platforms. Documentation for Cloudmesh can be found at: &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/&lt;/a&gt;
-Code for cloud mesh can be found at: &lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt;
-Examples in this paper came from the cloudmesh openapi manual which is located here: &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt;.
-Information about cloudmesh can be found here: &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt;
-Various cloudmesh installations for various needs can be found here: &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Thanks to Dr. Gregor von Laszewski for all the work he has put into the cloudmesh project  and for setting up and facilitating the benchmark team this semester.&lt;/p&gt;
+cms init
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As a first example we like to test if the deployment works by using a number of simple commands we execute in a terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/cm/cloudmesh-openapi
+
+cms openapi generate get_processor_name \
+    --filename=./tests/server-cpu/cpu.py
+
+cms openapi server start ./tests/server-cpu/cpu.yaml
+
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/get_processor_name&amp;quot; \
+     -H &amp;quot;accept: text/plain&amp;quot;
+cms openapi server list
+
+cms openapi server stop cpu
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The output will be a string containing your computer.&lt;/p&gt;
+&lt;p&gt;TODO: how does the string look like&lt;/p&gt;
+&lt;p&gt;Next you can test a more sophiticated example. Here we generate from a python function a rest servive. We consider the following function definition in which a float is returned as a simple integer&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def add(x: float, y: float) -&amp;gt; float:
+    &amp;quot;&amp;quot;&amp;quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &amp;quot;&amp;quot;&amp;quot;
+    result = x + y
+
+    return result
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Once we execute the following lines in a terminal, the result of the addition will be calculated in the REST service and it is returned as a string.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate add --filename=./tests/add-float/add.py
+cms openapi server start ./tests/add-float/add.yaml 
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+#This command returns
+&amp;gt; 3.0
+cms openapi server stop add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As we often also need the information as a REST service, we provide in our next example a jsonified object specification.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from flask import jsonify
+
+def add(x: float, y: float) -&amp;gt; str:
+    &amp;quot;&amp;quot;&amp;quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &amp;quot;&amp;quot;&amp;quot;
+    result = {&amp;quot;result&amp;quot;: x + y}
+
+    return jsonify(result)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The result will include a json string returned by the service.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate add --filename=./tests/add-json/add.py
+cms openapi server start ./tests/add-json/add.yaml 
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+#This command returns
+&amp;gt; {&amp;quot;result&amp;quot;:3.0}
+cms openapi server stop add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;These examples are used to demonstrate the ease of use as well as the functionality for those that want to replicate our work.&lt;/p&gt;
+&lt;h2 id=&#34;pipiline-anova-svm&#34;&gt;Pipiline ANOVA SVM&lt;/h2&gt;
+&lt;p&gt;Next we demonstrate how oto run the Pipeline ANOVA example.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pwd
+~/cm/cloudmesh-openapi
+
+$ cms openapi generate PipelineAnovaSVM \
+      --filename=./tests/Scikitlearn-experimental/sklearn_svm.py \
+      --import_class --enable_upload
+
+$ cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After running these commands, we opened a web user interface. In the user interface, we uploaded the file iris data located in ~/cm/cloudmesh-openapi/tests/ Scikitlearn-experimental/iris.data&lt;/p&gt;
+&lt;p&gt;We then trained the model on this data set by inserting the name of the file we uploaded &lt;code&gt;iris.data&lt;/code&gt;. Next, we tested the model by clicking on make_prediction and giving it the name of the file iris.data and the parameters &lt;code&gt;5.1&lt;/code&gt;, &lt;code&gt;3.5&lt;/code&gt;, &lt;code&gt;1.4&lt;/code&gt;, &lt;code&gt;0.2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The response we received was &lt;code&gt;Classification: [&#39;Iris-setosa&#39;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Lastly, we close the server:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms openapi server stop sklearn_svm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This process can easily be replicated when we create more service examples that we derive from existing sklearn examples. We benchmark these tests while wrapping them into pytests and run them on various cloud services.&lt;/p&gt;
+&lt;h2 id=&#34;using-unit-tests-for-benchmarking&#34;&gt;Using unit tests for Benchmarking&lt;/h2&gt;
+&lt;p&gt;TODO: This section will be expanded upon&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Describe why we can unit tests&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Describe how we access multiple clouds&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms set cloud=aws
+# run test
+cms set cloud=azure
+# run test
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Describe the Benchmark class from cloudmesh in one sentence and how we use it&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+&lt;p&gt;Azure has updated their libraries and discontinued the version 4.0 Azure libraries. We have not yet identified if code changes in Azure need to be conducted to execute our  code on Azure&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;p&gt; &lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Manual, &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Repositories, &lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt;
+[^3] Cloudmesh OpenAPI Repository for automatically generated REST services from Python functions &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt;.
+[^4] Cloudmesh Manaual Preface for cloudmesh,  &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Manual, Instalation instryctions for cloudmesh &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit Learn, Pipeline Anova SVM, &lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&#34;&gt;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>

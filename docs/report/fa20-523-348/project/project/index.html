@@ -21,33 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Team: Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, Vishwanadh Mandala
-Project: Cloudmesh Benchmarking
-Topic: Benchmarking Cloud service performance with cloudmesh openapi rest services and sklearn algorithms replicated as pytests.
-Dataset: Sklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.
-For the final project, the Cloudmesh Benchmarking team will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs." />
+<meta property="og:description" content="Benchmarking Multi-Cloud Auto Generated AI Services Gregor von Laszewski, Anthony Orlowski, fa20-523-310, Caleb Wilson, fa20-523-348, Vishwanadham Mandala, fa20-523-325,
+Edit
+Abstract In this wor we are benchmarking auto generated cloud REST services on various clouds. In todays application scientist want to share their services with a wide number of collegues while not only offereing the services as bare metal programs, but exposing the functionality as a software as a service. For this reason a tool has been debveloped that takes a regular python function and converts it automatically into a secure REST service." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-348/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Team: Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, Vishwanadh Mandala
-Project: Cloudmesh Benchmarking
-Topic: Benchmarking Cloud service performance with cloudmesh openapi rest services and sklearn algorithms replicated as pytests.
-Dataset: Sklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.
-For the final project, the Cloudmesh Benchmarking team will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs.">
+<meta itemprop="description" content="Benchmarking Multi-Cloud Auto Generated AI Services Gregor von Laszewski, Anthony Orlowski, fa20-523-310, Caleb Wilson, fa20-523-348, Vishwanadham Mandala, fa20-523-325,
+Edit
+Abstract In this wor we are benchmarking auto generated cloud REST services on various clouds. In todays application scientist want to share their services with a wide number of collegues while not only offereing the services as bare metal programs, but exposing the functionality as a software as a service. For this reason a tool has been debveloped that takes a regular python function and converts it automatically into a secure REST service.">
 
-<meta itemprop="wordCount" content="725">
+<meta itemprop="wordCount" content="1240">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Team: Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, Vishwanadh Mandala
-Project: Cloudmesh Benchmarking
-Topic: Benchmarking Cloud service performance with cloudmesh openapi rest services and sklearn algorithms replicated as pytests.
-Dataset: Sklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.
-For the final project, the Cloudmesh Benchmarking team will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs."/>
+<meta name="twitter:description" content="Benchmarking Multi-Cloud Auto Generated AI Services Gregor von Laszewski, Anthony Orlowski, fa20-523-310, Caleb Wilson, fa20-523-348, Vishwanadham Mandala, fa20-523-325,
+Edit
+Abstract In this wor we are benchmarking auto generated cloud REST services on various clouds. In todays application scientist want to share their services with a wide number of collegues while not only offereing the services as bare metal programs, but exposing the functionality as a software as a service. For this reason a tool has been debveloped that takes a regular python function and converts it automatically into a secure REST service."/>
 
 
 
@@ -405,6 +399,19 @@ For the final project, the Cloudmesh Benchmarking team will develop benchmark te
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#cloudmesh">Cloudmesh</a></li>
+    <li><a href="#algorithms-and-datasets">Algorithms and Datasets</a></li>
+    <li><a href="#deployment">Deployment</a></li>
+    <li><a href="#pipiline-anova-svm">Pipiline ANOVA SVM</a></li>
+    <li><a href="#using-unit-tests-for-benchmarking">Using unit tests for Benchmarking</a></li>
+    <li><a href="#limitations">Limitations</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
 
 
 
@@ -442,103 +449,199 @@ For the final project, the Cloudmesh Benchmarking team will develop benchmark te
 	<h1></h1>
     
 	       
-	<p>Team:
-Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, Vishwanadh Mandala</p>
-<p>Project:
-Cloudmesh Benchmarking</p>
-<p>Topic:
-Benchmarking Cloud service performance with cloudmesh openapi rest services and sklearn algorithms replicated as pytests.</p>
-<p>Dataset:
-Sklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.</p>
-<p>For the final project, the Cloudmesh Benchmarking team will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs. The team will obtain cloud service accounts from AWS, Azure, Google, and OpenStack. To deploy the pytests, the team will use Cloudmesh and its Openapi based REST services to benchmark the performance on different cloud services. Benchmarks will include components like data transfer time, model train time, model prediction time, and more. The final project will include scripts and code for others to use and replicate our tests. The team will also make a report consisting of research and findings. So far, we have installed the Cloudmesh OpenAPI Service Generator on our local machines. We have tested some microservices, and even replicated a Pipeline Anova SVM example on our local machines. We will repeat these processes, but with pytests that we build and with cloud accounts.</p>
-<p>Here is the installation process for Cloudmesh OpenAPI:
-python -m venv ~/ENV3
-source ~/ENV3/bin/activate
+	<h1 id="benchmarking-multi-cloud-auto-generated-ai-services">Benchmarking Multi-Cloud Auto Generated AI Services</h1>
+<p><a href="https://laszewski.github.io">Gregor von Laszewski</a>,
+Anthony Orlowski, <a href="https://github.com/cybertraining-dsc/fa20-523-310/">fa20-523-310</a>,
+Caleb Wilson, <a href="https://github.com/cybertraining-dsc/fa20-523-348/">fa20-523-348</a>,
+Vishwanadham Mandala, <a href="https://github.com/cybertraining-dsc/fa20-523-325/">fa20-523-325</a>,</p>
+<p><a href="https://github.com/cybertraining-dsc/fa20-523-348/blob/master/project/project.md">Edit</a></p>
+
+
+<div class="pageinfo pageinfo-primary">
+<h2 id="abstract">Abstract</h2>
+<p>In this wor we are benchmarking auto generated cloud REST services on various clouds. In todays application scientist want to share their services with a wide number of collegues while not only offereing the services as bare metal programs, but exposing the functionality as a software as a service. For this reason a tool has been debveloped that takes a regular python function and converts it automatically into a secure REST service. We will create a number of AI REST services while using examples from ScikitLearn and benchmark the execution of the resulting REST services on various clouds. The code will be accompanied by benchmark enhanced unit tests as to allow replication of the test on the users computer. A comparative study of the results is included in our evaluation.</p>
+<p>Contents</p>
+<div class="toc">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#cloudmesh">Cloudmesh</a></li>
+    <li><a href="#algorithms-and-datasets">Algorithms and Datasets</a></li>
+    <li><a href="#deployment">Deployment</a></li>
+    <li><a href="#pipiline-anova-svm">Pipiline ANOVA SVM</a></li>
+    <li><a href="#using-unit-tests-for-benchmarking">Using unit tests for Benchmarking</a></li>
+    <li><a href="#limitations">Limitations</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+
+</div>
+
+<p><strong>Keywords:</strong> cloudmesh, AI service, REST, multi-cloud</p>
+<h2 id="introduction">Introduction</h2>
+<p>We will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs. The team will obtain cloud service accounts from AWS, Azure, Google, and OpenStack. To deploy the pytests, the team will use Cloudmesh and its Openapi based REST services to benchmark the performance on different cloud services. Benchmarks will include components like data transfer time, model train time, model prediction time, and more. The final project will include scripts and code for others to use and replicate our tests. The team will also make a report consisting of research and findings. So far, we have installed the Cloudmesh OpenAPI Service Generator on our local machines. We have tested some microservices, and even replicated a Pipeline Anova SVM example on our local machines. We will repeat these processes, but with pytests that we build and with cloud accounts.</p>
+<h2 id="cloudmesh">Cloudmesh</h2>
+<p>Cloudmesh is a service that enables users to access multi-cloud environments easily. Cloudmesh is an evolution of previous tools that have been used by thousands of users. Cloudmesh makes interacting with clouds easy by creating a service mashup to access common cloud services across numerous cloud platforms. Documentation for Cloudmesh can be found at:</p>
+<ul>
+<li><a href="https://cloudmesh.github.io/cloudmesh-manual/">https://cloudmesh.github.io/cloudmesh-manual/</a> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+</ul>
+<p>Code for cloud mesh can be found at:</p>
+<ul>
+<li><a href="https://github.com/cloudmesh/">https://github.com/cloudmesh/</a> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+</ul>
+<p>Examples in this paper came from the cloudmesh openapi manual which is located here:</p>
+<ul>
+<li><a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> [^3].</li>
+</ul>
+<p>Information about cloudmesh can be found here:</p>
+<ul>
+<li><a href="https://cloudmesh.github.io/cloudmesh-manual/preface/about.html">https://cloudmesh.github.io/cloudmesh-manual/preface/about.html</a> [^4]</li>
+</ul>
+<p>Various cloudmesh installations for various needs can be found here:</p>
+<ul>
+<li><a href="https://cloudmesh.github.io/cloudmesh-manual/installation/install.html">https://cloudmesh.github.io/cloudmesh-manual/installation/install.html</a> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ul>
+<h2 id="algorithms-and-datasets">Algorithms and Datasets</h2>
+<p>This project uses a number of simple example algorithms and datasets. We have chosen to use the once included in Scikit Learn as they are widel known and can be used by others to replicate our benchmarks easily. Nevertheless, it will be possible to integrate easily other data sources, as well as algorithms due to the generative nature of our base code for creating REST services.</p>
+<p>Within Skikit Learn we have chosen the following examples:</p>
+<ul>
+<li><strong>Pipelined ANOVA SVM</strong>: A code thet shows a pipeline running successively a univariate feature selection with anova and then a SVM of the selected features <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</li>
+</ul>
+<p>aSklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.</p>
+<h2 id="deployment">Deployment</h2>
+<p>The project is easy to replicate with our detailed instructions. First you must install Cloudmesh OpenAPI whihch can be done by the follwoing steps:</p>
+<pre><code>python -m venv ~/ENV3
+source ~/ENV3/bin/activate 
 mkdir cm
 cd cm
 pip install cloudmesh-installer
-cloudmesh-installer get openapi
+cloudmesh-installer get openapi 
 cms help
 cms gui quick
 #fill out mongo variables
 #make sure autinstall is True
 cms config set cloudmesh.data.mongo.MONGO_AUTOINSTALL=True
-cms admin mongo install &ndash;force
+cms admin mongo install --force
 #Restart a new terminal to make sure mongod is in your path
-cms init</p>
-<p>Here is the quickstart that we worked through:
-cd ~/cm/cloudmesh-openapi</p>
-<p>cms openapi generate get_processor_name<br>
-&ndash;filename=./tests/server-cpu/cpu.py</p>
-<p>cms openapi server start ./tests/server-cpu/cpu.yaml</p>
-<p>curl -X GET &ldquo;http://localhost:8080/cloudmesh/get_processor_name&rdquo;<br>
--H &ldquo;accept: text/plain&rdquo;
-cms openapi server list</p>
-<p>cms openapi server stop cpu</p>
-<p>Here is an example of the return a float and return a Json object microservices we tested:
-def add(x: float, y: float) -&gt; float:
-&quot;&rdquo;&rdquo;
-adding float and float.
-:param x: x value
-:type x: float
-:param y: y value
-:type y: float
-:return: result
-:return type: float
-&quot;&rdquo;&rdquo;
-result = x + y</p>
-<pre><code>return result
-</code></pre>
-<p>cms openapi generate add &ndash;filename=./tests/add-float/add.py
-cms openapi server start ./tests/add-float/add.yaml
-curl -X GET &ldquo;http://localhost:8080/cloudmesh/add?x=1&amp;y=2&rdquo; -H  &ldquo;accept: text/plain&rdquo;
-#This command returns</p>
-<blockquote>
-<p>3.0
-cms openapi server stop add</p>
-</blockquote>
-<p>from flask import jsonify</p>
-<p>def add(x: float, y: float) -&gt; str:
-&quot;&rdquo;&rdquo;
-adding float and float.
-:param x: x value
-:type x: float
-:param y: y value
-:type y: float
-:return: result
-:return type: float
-&quot;&rdquo;&rdquo;
-result = {&ldquo;result&rdquo;: x + y}</p>
-<pre><code>return jsonify(result)
-</code></pre>
-<p>cms openapi generate add &ndash;filename=./tests/add-json/add.py
-cms openapi server start ./tests/add-json/add.yaml
-curl -X GET &ldquo;http://localhost:8080/cloudmesh/add?x=1&amp;y=2&rdquo; -H  &ldquo;accept: text/plain&rdquo;
-#This command returns</p>
-<blockquote>
-<p>{&ldquo;result&rdquo;:3.0}
-cms openapi server stop add</p>
-</blockquote>
-<p>Here is the Pipeline Anova SVM example we replicated:</p>
-<p>$ pwd
-~/cm/cloudmesh-openapi</p>
-<p>$ cms openapi generate PipelineAnovaSVM<br>
-&ndash;filename=./tests/Scikitlearn-experimental/sklearn_svm.py<br>
-&ndash;import_class &ndash;enable_upload</p>
-<p>$ cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml</p>
-<p>After running these commands, we opened a web user interface. In the user interface, we uploaded the file iris data located in ~/cm/cloudmesh-openapi/tests/ Scikitlearn-experimental/iris.data</p>
-<p>We then trained the model on this data set by inserting the name of the file we uploaded “iris.data”. Next, we tested the model by clicking on make_prediction and giving it the name of the file iris.data and the parameters 5.1, 3.5, 1.4, 0.2</p>
-<p>The response we received was &ldquo;Classification: [&lsquo;Iris-setosa&rsquo;]&rdquo;</p>
-<p>Lastly, we closed the server:
-$ cms openapi server stop sklearn_svm</p>
-<p>We will replicate this process with pytests that we create ourselves from sklearn examples. We will then benchmark test our pytests on various cloud services.</p>
-<p>Cloudmesh is a service that enables users to access multi-cloud environments easily. Cloudmesh is an evolution of previous tools that have been used by thousands of users. Cloudmesh makes interacting with clouds easy by creating a service mashup to access common cloud services across numerous cloud platforms. Documentation for Cloudmesh can be found at: <a href="https://cloudmesh.github.io/cloudmesh-manual/">https://cloudmesh.github.io/cloudmesh-manual/</a>
-Code for cloud mesh can be found at: <a href="https://github.com/cloudmesh/">https://github.com/cloudmesh/</a>
-Examples in this paper came from the cloudmesh openapi manual which is located here: <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a>.
-Information about cloudmesh can be found here: <a href="https://cloudmesh.github.io/cloudmesh-manual/preface/about.html">https://cloudmesh.github.io/cloudmesh-manual/preface/about.html</a>
-Various cloudmesh installations for various needs can be found here: <a href="https://cloudmesh.github.io/cloudmesh-manual/installation/install.html">https://cloudmesh.github.io/cloudmesh-manual/installation/install.html</a></p>
-<p>Thanks to Dr. Gregor von Laszewski for all the work he has put into the cloudmesh project  and for setting up and facilitating the benchmark team this semester.</p>
+cms init
+</code></pre><p>As a first example we like to test if the deployment works by using a number of simple commands we execute in a terminal.</p>
+<pre><code>cd ~/cm/cloudmesh-openapi
+
+cms openapi generate get_processor_name \
+    --filename=./tests/server-cpu/cpu.py
+
+cms openapi server start ./tests/server-cpu/cpu.yaml
+
+curl -X GET &quot;http://localhost:8080/cloudmesh/get_processor_name&quot; \
+     -H &quot;accept: text/plain&quot;
+cms openapi server list
+
+cms openapi server stop cpu
+</code></pre><p>The output will be a string containing your computer.</p>
+<p>TODO: how does the string look like</p>
+<p>Next you can test a more sophiticated example. Here we generate from a python function a rest servive. We consider the following function definition in which a float is returned as a simple integer</p>
+<pre><code>def add(x: float, y: float) -&gt; float:
+    &quot;&quot;&quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &quot;&quot;&quot;
+    result = x + y
+
+    return result
+</code></pre><p>Once we execute the following lines in a terminal, the result of the addition will be calculated in the REST service and it is returned as a string.</p>
+<pre><code>cms openapi generate add --filename=./tests/add-float/add.py
+cms openapi server start ./tests/add-float/add.yaml 
+curl -X GET &quot;http://localhost:8080/cloudmesh/add?x=1&amp;y=2&quot; -H  &quot;accept: text/plain&quot;
+#This command returns
+&gt; 3.0
+cms openapi server stop add
+</code></pre><p>As we often also need the information as a REST service, we provide in our next example a jsonified object specification.</p>
+<pre><code>from flask import jsonify
+
+def add(x: float, y: float) -&gt; str:
+    &quot;&quot;&quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &quot;&quot;&quot;
+    result = {&quot;result&quot;: x + y}
+
+    return jsonify(result)
+
+</code></pre><p>The result will include a json string returned by the service.</p>
+<pre><code>cms openapi generate add --filename=./tests/add-json/add.py
+cms openapi server start ./tests/add-json/add.yaml 
+curl -X GET &quot;http://localhost:8080/cloudmesh/add?x=1&amp;y=2&quot; -H  &quot;accept: text/plain&quot;
+#This command returns
+&gt; {&quot;result&quot;:3.0}
+cms openapi server stop add
+</code></pre><p>These examples are used to demonstrate the ease of use as well as the functionality for those that want to replicate our work.</p>
+<h2 id="pipiline-anova-svm">Pipiline ANOVA SVM</h2>
+<p>Next we demonstrate how oto run the Pipeline ANOVA example.</p>
+<pre><code>$ pwd
+~/cm/cloudmesh-openapi
+
+$ cms openapi generate PipelineAnovaSVM \
+      --filename=./tests/Scikitlearn-experimental/sklearn_svm.py \
+      --import_class --enable_upload
+
+$ cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+</code></pre><p>After running these commands, we opened a web user interface. In the user interface, we uploaded the file iris data located in ~/cm/cloudmesh-openapi/tests/ Scikitlearn-experimental/iris.data</p>
+<p>We then trained the model on this data set by inserting the name of the file we uploaded <code>iris.data</code>. Next, we tested the model by clicking on make_prediction and giving it the name of the file iris.data and the parameters <code>5.1</code>, <code>3.5</code>, <code>1.4</code>, <code>0.2</code></p>
+<p>The response we received was <code>Classification: ['Iris-setosa']</code></p>
+<p>Lastly, we close the server:</p>
+<pre><code>$ cms openapi server stop sklearn_svm
+</code></pre><p>This process can easily be replicated when we create more service examples that we derive from existing sklearn examples. We benchmark these tests while wrapping them into pytests and run them on various cloud services.</p>
+<h2 id="using-unit-tests-for-benchmarking">Using unit tests for Benchmarking</h2>
+<p>TODO: This section will be expanded upon</p>
+<ul>
+<li>
+<p>Describe why we can unit tests</p>
+</li>
+<li>
+<p>Describe how we access multiple clouds</p>
+<pre><code>cms set cloud=aws
+# run test
+cms set cloud=azure
+# run test
+</code></pre></li>
+<li>
+<p>Describe the Benchmark class from cloudmesh in one sentence and how we use it</p>
+</li>
+</ul>
+<h2 id="limitations">Limitations</h2>
+<p>Azure has updated their libraries and discontinued the version 4.0 Azure libraries. We have not yet identified if code changes in Azure need to be conducted to execute our  code on Azure</p>
+<h2 id="references">References</h2>
 <p> </p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Cloudmesh Manual, <a href="https://cloudmesh.github.io/cloudmesh-manual/">https://cloudmesh.github.io/cloudmesh-manual/</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Cloudmesh Repositories, <a href="https://github.com/cloudmesh/">https://github.com/cloudmesh/</a>
+[^3] Cloudmesh OpenAPI Repository for automatically generated REST services from Python functions <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a>.
+[^4] Cloudmesh Manaual Preface for cloudmesh,  <a href="https://cloudmesh.github.io/cloudmesh-manual/preface/about.html">https://cloudmesh.github.io/cloudmesh-manual/preface/about.html</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Cloudmesh Manual, Instalation instryctions for cloudmesh <a href="https://cloudmesh.github.io/cloudmesh-manual/installation/install.html">https://cloudmesh.github.io/cloudmesh-manual/installation/install.html</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Scikit Learn, Pipeline Anova SVM, <a href="https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html">https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
 	
 	
