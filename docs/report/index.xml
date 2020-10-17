@@ -523,7 +523,7 @@ A project this large and versatile requires the use of many software tools. Thes
         
         
         &lt;h1 id=&#34;aquatic-toxicity-analysis-with-the-aid-of-autonomous-surface-vehicle-asv&#34;&gt;Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)&lt;/h1&gt;
-&lt;p&gt;Saptarshi Sinha, fa20-523-312, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Saptarshi Sinha, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/&#34;&gt;fa20-523-312&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
@@ -1291,7 +1291,118 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
       <description>
         
         
-        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
+        &lt;p&gt;Team:
+Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, Vishwanadh Mandala&lt;/p&gt;
+&lt;p&gt;Project:
+Cloudmesh Benchmarking&lt;/p&gt;
+&lt;p&gt;Topic:
+Benchmarking Cloud service performance with cloudmesh openapi rest services and sklearn algorithms replicated as pytests.&lt;/p&gt;
+&lt;p&gt;Dataset:
+Sklearn algorithms replicated and pytests. How the pytests perform on various cloud environments.&lt;/p&gt;
+&lt;p&gt;For the final project, the Cloudmesh Benchmarking team will develop benchmark tests that are pytest replications of Sklearn artificial intelligent alogrithms. These pytests will then be ran on different cloud services to benchmark different statistics on how they run and how the cloud performs. The team will obtain cloud service accounts from AWS, Azure, Google, and OpenStack. To deploy the pytests, the team will use Cloudmesh and its Openapi based REST services to benchmark the performance on different cloud services. Benchmarks will include components like data transfer time, model train time, model prediction time, and more. The final project will include scripts and code for others to use and replicate our tests. The team will also make a report consisting of research and findings. So far, we have installed the Cloudmesh OpenAPI Service Generator on our local machines. We have tested some microservices, and even replicated a Pipeline Anova SVM example on our local machines. We will repeat these processes, but with pytests that we build and with cloud accounts.&lt;/p&gt;
+&lt;p&gt;Here is the installation process for Cloudmesh OpenAPI:
+python -m venv ~/ENV3
+source ~/ENV3/bin/activate
+mkdir cm
+cd cm
+pip install cloudmesh-installer
+cloudmesh-installer get openapi
+cms help
+cms gui quick
+#fill out mongo variables
+#make sure autinstall is True
+cms config set cloudmesh.data.mongo.MONGO_AUTOINSTALL=True
+cms admin mongo install &amp;ndash;force
+#Restart a new terminal to make sure mongod is in your path
+cms init&lt;/p&gt;
+&lt;p&gt;Here is the quickstart that we worked through:
+cd ~/cm/cloudmesh-openapi&lt;/p&gt;
+&lt;p&gt;cms openapi generate get_processor_name&lt;br&gt;
+&amp;ndash;filename=./tests/server-cpu/cpu.py&lt;/p&gt;
+&lt;p&gt;cms openapi server start ./tests/server-cpu/cpu.yaml&lt;/p&gt;
+&lt;p&gt;curl -X GET &amp;ldquo;http://localhost:8080/cloudmesh/get_processor_name&amp;rdquo;&lt;br&gt;
+-H &amp;ldquo;accept: text/plain&amp;rdquo;
+cms openapi server list&lt;/p&gt;
+&lt;p&gt;cms openapi server stop cpu&lt;/p&gt;
+&lt;p&gt;Here is an example of the return a float and return a Json object microservices we tested:
+def add(x: float, y: float) -&amp;gt; float:
+&amp;quot;&amp;rdquo;&amp;rdquo;
+adding float and float.
+:param x: x value
+:type x: float
+:param y: y value
+:type y: float
+:return: result
+:return type: float
+&amp;quot;&amp;rdquo;&amp;rdquo;
+result = x + y&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;return result
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;cms openapi generate add &amp;ndash;filename=./tests/add-float/add.py
+cms openapi server start ./tests/add-float/add.yaml
+curl -X GET &amp;ldquo;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;rdquo; -H  &amp;ldquo;accept: text/plain&amp;rdquo;
+#This command returns&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;3.0
+cms openapi server stop add&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;from flask import jsonify&lt;/p&gt;
+&lt;p&gt;def add(x: float, y: float) -&amp;gt; str:
+&amp;quot;&amp;rdquo;&amp;rdquo;
+adding float and float.
+:param x: x value
+:type x: float
+:param y: y value
+:type y: float
+:return: result
+:return type: float
+&amp;quot;&amp;rdquo;&amp;rdquo;
+result = {&amp;ldquo;result&amp;rdquo;: x + y}&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;return jsonify(result)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;cms openapi generate add &amp;ndash;filename=./tests/add-json/add.py
+cms openapi server start ./tests/add-json/add.yaml
+curl -X GET &amp;ldquo;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;rdquo; -H  &amp;ldquo;accept: text/plain&amp;rdquo;
+#This command returns&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;{&amp;ldquo;result&amp;rdquo;:3.0}
+cms openapi server stop add&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here is the Pipeline Anova SVM example we replicated:&lt;/p&gt;
+&lt;p&gt;$ pwd
+~/cm/cloudmesh-openapi&lt;/p&gt;
+&lt;p&gt;$ cms openapi generate PipelineAnovaSVM&lt;br&gt;
+&amp;ndash;filename=./tests/Scikitlearn-experimental/sklearn_svm.py&lt;br&gt;
+&amp;ndash;import_class &amp;ndash;enable_upload&lt;/p&gt;
+&lt;p&gt;$ cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml&lt;/p&gt;
+&lt;p&gt;After running these commands, we opened a web user interface. In the user interface, we uploaded the file iris data located in ~/cm/cloudmesh-openapi/tests/ Scikitlearn-experimental/iris.data&lt;/p&gt;
+&lt;p&gt;We then trained the model on this data set by inserting the name of the file we uploaded “iris.data”. Next, we tested the model by clicking on make_prediction and giving it the name of the file iris.data and the parameters 5.1, 3.5, 1.4, 0.2&lt;/p&gt;
+&lt;p&gt;The response we received was &amp;ldquo;Classification: [&amp;lsquo;Iris-setosa&amp;rsquo;]&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Lastly, we closed the server:
+$ cms openapi server stop sklearn_svm&lt;/p&gt;
+&lt;p&gt;We will replicate this process with pytests that we create ourselves from sklearn examples. We will then benchmark test our pytests on various cloud services.&lt;/p&gt;
+&lt;p&gt;Cloudmesh is a service that enables users to access multi-cloud environments easily. Cloudmesh is an evolution of previous tools that have been used by thousands of users. Cloudmesh makes interacting with clouds easy by creating a service mashup to access common cloud services across numerous cloud platforms. Documentation for Cloudmesh can be found at: &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/&lt;/a&gt;
+Code for cloud mesh can be found at: &lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt;
+Examples in this paper came from the cloudmesh openapi manual which is located here: &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt;.
+Information about cloudmesh can be found here: &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt;
+Various cloudmesh installations for various needs can be found here: &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thanks to Dr. Gregor von Laszewski for all the work he has put into the cloudmesh project  and for setting up and facilitating the benchmark team this semester.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-348/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-348/test/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;test&#34;&gt;TEST&lt;/h1&gt;
+&lt;p&gt;This is Caleb Wilson verifying I have write access to the project fa20-523-348.&lt;/p&gt;
 
       </description>
     </item>
