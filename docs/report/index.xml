@@ -2285,34 +2285,19 @@ This API should be executed at the end of the session to delete all the resource
 &lt;h1 id=&#34;health-and-medicine--artificial-intelligence-influence-on-ischemic-stroke-imaging&#34;&gt;Health and Medicine – Artificial Intelligence Influence on Ischemic Stroke Imaging&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Gavin Hemmerlein, fa20-523-301&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-301/blob/master/report/report_Assignment6.md&#34;&gt;Edit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-301/blob/master/assignment6/assignment6.md&#34;&gt;Edit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-assisting-researchers-with-artificial-intelligence&#34;&gt;2. Assisting Researchers with Artificial Intelligence&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-future-work&#34;&gt;3. Future Work&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-references&#34;&gt;4. References&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; convolutional neural network, random forest learning, Computer Tomography Scan, CT Scan, stroke, artificial intelligence, deep learning, machine learning, large vessel occlusions&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;The Computer Tomography Scan (CT Scan) is a medical procedure that involves multiple x-rays analyzed using computer aided techniques. The CT Scan’s creation was credited to Allan M. Cormack and Godfrey N. Hounsfield for which both individuals were awarded the 1979 Nobel Prize in Physiology or Medicine &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. The OECD estimates that there are a total of 42.64 million scanners located in the United States; the fourth most of any country &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This prevalence is extremely important when discussing a diagnosis for stroke victims. In the 1980s, the identification techniques were generally done through a process called computer-aided diagnosis (CAD). “CAD usually relies on a combination of interpretation of medical images through computational algorithms and the physicians’ evaluation of the medical images &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;”.&lt;/p&gt;
 &lt;p&gt;The goal of researchers and medical practitioners is to improve upon detection rates to ensure that more lives are saved by early detection. According to Johns Hopkins Medical Department the faster medical precautions can be given to a victim, the better the prognosis is for the individual &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. The brain requires a constant supply of blood and oxygen. When it is starved of these nutrients, the brain tissue begins to die.&lt;/p&gt;
 &lt;h2 id=&#34;2-assisting-researchers-with-artificial-intelligence&#34;&gt;2. Assisting Researchers with Artificial Intelligence&lt;/h2&gt;
 &lt;p&gt;According to an article in Radiology Business, automated detection of stroke anomalies is improving. As stated in a review in the article, “the team found convolutional neural networks beat random forest learning (RFL) on sensitivity, 85% to 68% &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.” This improvement is an excellent improvement by switching the algorithm that is used to train the model. A convolutional neural network (CNN) is a deep learning technique while a random forest is a modified decision tree. By modifying approaches from a decision tree to a deep learning technique, there is a very high likelihood that more lives could be saved. Strokes account for nearly 140,000 deaths a year and are one of the leading causes of permanent disability in the United States &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;A RFL algorithm is a form of decision tree supervised learning. Decision trees are unique because they can also be used to solve regression and classification problems; which is unique to supervised learning methods. The RFL uses many decision trees that build upon one another. Where the CNN algorithm differs is that it is a form of deep learning that performs unsupervised learning. Each layer in the CNN understands its inputs and outputs while passing the output on to the next layer. A CNN can pass this information forward through a number of layers, but there is also a diminishing return given the amount of processing needed for each layer.&lt;/p&gt;
 &lt;p&gt;After reviewing the literature from the Radiology Business article, the most common avenue for early detection appears to be the RFL as stated above. A meta analysis reviewing PubMed articles from January 2014 to February 2019 found that the RFL was the highest performer for predictive measures &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. For large vessel occlusions (LVO), the best approach was to use a CNN. CNN’s use little pre-processing and rely moreso on the filters with the data. This results in a more dynamic approach to the data as opposed to the harder developed structure of a decision tree.&lt;/p&gt;
 &lt;h2 id=&#34;3-future-work&#34;&gt;3. Future Work&lt;/h2&gt;
-&lt;p&gt;After reviewing the cited sources, there are some future areas to look research. To improve on current understanding, a standardization of metrics for to evaluate the fidelity of the models &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, continued development of automative image analysis software &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, and leveraging emerging techniques to develop even more effective algorithms to detect large vessel occlusion &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. These areas are only a few of the many improvements that could be made in the world of stroke detection. It is not a far stretch to imagine detecting vessels that are becoming clogged or brittle. If detection of these medical issues could become prevalent, even more lives could be saved by predicting strokes before they even occur.&lt;/p&gt;
+&lt;p&gt;Upon examining the cited sources, there are some future areas to look research. To improve on current understanding, a standardization of metrics for to evaluate the fidelity of the models &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, continued development of automative image analysis software &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, and leveraging emerging techniques to develop even more effective algorithms to detect large vessel occlusion &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. As of 2019, the advantage of CNN’s over conventional detection methods was only 7.6% &lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;. The percentage may seem marginal, but when expanded out to the 140,000 strokes per year the amount of strokes identified could be as much as 10,000 individuals.&lt;/p&gt;
+&lt;p&gt;These areas are only a few of the many improvements that could be made in the world of stroke detection. It is not a far stretch to imagine detecting vessels that are becoming clogged or brittle. If detection of these medical issues could become prevalent, even more lives could be saved by predicting strokes before they even occur.&lt;/p&gt;
 &lt;h2 id=&#34;4-references&#34;&gt;4. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -2344,6 +2329,9 @@ This API should be executed at the end of the session to delete all the resource
 &lt;/li&gt;
 &lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;M. Stib, J. Vasquez, M. Dong, Y. Kim, S. Subzwari, H. Triedman, A. Wang, H. Wang, A. Yao, M. Jayaraman, J. Boxerman, C. Eickhoff, U. Cetintemel, G. Baird, and R. McTaggart, &amp;ldquo;Detecting Large Vessel Occlusion at Multiphase CT Angiography by Using a Deep Convolutional Neural Network&amp;rdquo;, &lt;em&gt;Original Research Neuroradiology&lt;/em&gt;, Sep 29, 2020. [Online serial]. Available: &lt;a href=&#34;https://pubs.rsna.org/doi/full/10.1148/radiol.2020200334&#34;&gt;https://pubs.rsna.org/doi/full/10.1148/radiol.2020200334&lt;/a&gt; [Accessed Oct. 13, 2020]. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;J. Tuan, &amp;ldquo;How AI is able to Predict and Detect a Stroke&amp;rdquo;, &lt;em&gt;Referral MD&lt;/em&gt;. [Online]. Available: &lt;a href=&#34;https://getreferralmd.com/2019/10/how-ai-is-able-to-predict-and-detect-a-stroke/&#34;&gt;https://getreferralmd.com/2019/10/how-ai-is-able-to-predict-and-detect-a-stroke/&lt;/a&gt; [Accessed Oct. 13, 2020]. &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -2637,6 +2625,31 @@ A project this large and versatile requires the use of many software tools. Thes
         
         
         &lt;p&gt;Testing if I have write access to this repo.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-307/homework/homework6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-307/homework/homework6/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;ai-in-precision-medicine&#34;&gt;AI in Precision Medicine&lt;/h1&gt;
+&lt;p&gt;In recent years, precision medicine has started to become the new standard when it comes to healthcare. This is moving us from a one size fits all approach to a more personal, data-driven approach that allows hospitals and treatment centers to spend more efficiently and have a higher patient outcome. Precision medicine is using knowledge that is specific to one patient, such as biomarkers, rather than the generic approach to an issue. The overall goal is to &amp;quot;design and optimize the pathway for diagnosis and prognosis through the use of large multidimensional biological datasets that capture different variables such as genes&amp;quot; [1].&lt;/p&gt;
+&lt;p&gt;Artificial intelligence (AI) has been increasingly growing in business, society and now is emerging in healthcare. The potential that AI has can completely transform patient care. These technologies can perform to or exceed human capability when it comes to different medical tasks such as cancer diagnosis or disease diagnosis as well as patient engagement and administration tasks. AI has the potential to offer automated care to individuals by providing precision medicine.&lt;/p&gt;
+&lt;p&gt;Precision medicine enables patients to not only recover from illnesses faster but to also stay healthy longer. However, with the increased use of precision medicine new challenges arise such as the increasing amount of data, a lack of specialists and ever increasing drug development costs. &amp;quot;Healthcare data is projected to grow by 43 percent by 2020, to roughly 2.3 zettabytes. The size of the data is not the only problem; it&#39;s the kind of data as well. Eighty percent of it is unstructured and mostly unlabeled, making it hard to extract value from the datasets&amp;quot; [2].&lt;/p&gt;
+&lt;p&gt;Artificial intelligence (AI) has helped reshape how precision medicine is distributed. AI is able to solve many of the problems that have arisen. For big data challenges, AI methods are able to clear up obstacles that large and unstructured data present. In medical imaging, machine learning can be introduced to help classify what type of issue is present by training a model over thousands of images and predicting on the patient&#39;s image. Neural networks have also been able to make predictions when it comes to precision medicine.&lt;/p&gt;
+&lt;p&gt;Neural networks are a more advanced form of AI. The uses in precision medicine is for categorisation applications such as the likelihood of a patient developing a disease. Neural networks look at problems from inputs, outputs, and weights of features to try and associate inputs with the corresponding outputs. &amp;quot;It has been likened to the way that neurons process signals, but the analogy to the brain&#39;s function is relatively weak&amp;quot; [3].&lt;/p&gt;
+&lt;p&gt;Deep learning is one of the most complex forms of AI. This involves hundreds or thousands of models with numerous levels of features that are needed to predict the outcomes. Precision medicine takes advantage of this technology through the &amp;quot;recognition of potentially cancerous lesions in radiology images&amp;quot; [4]. Deep learning is able to be applied to fields such as radiomics. This is the practice of detecting features in image data that cannot be detected with the human eye. &amp;quot;Their combination appears to promise greater accuracy in diagnosis than the previous generation of automated tools for image analysis, known as computer-aided detection or CAD&amp;quot; [4].&lt;/p&gt;
+&lt;p&gt;AI plays a pivotal role in the future of healthcare. In the development of precision medicine, it is one of the primary components in order to advance care for patients. Efforts to help classify medical imagery more quickly and accurately have proven more effective with the amount of data used to train such models. A big challenge that AI is facing in precision medicine is whether or not this technology will be widely adopted. These systems will need to have some regulations in order to have a universal standard. This will allow doctors and medical personnel to train with this technology so they will be able to provide the care their patients deserve. AI will never replace the human aspect of precision medicine but over time AI will be able to make the jobs and lives of the doctors and patients better and healthier.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;[1] M. Uddin, Y. Wang, and M. Woodbury-Smith, &amp;quot;Artificial intelligence for precision medicine in neurodevelopmental disorders,&amp;quot; &lt;em&gt;Nature News&lt;/em&gt;, 21-Nov-2019. [Online]. Available: &lt;a href=&#34;https://www.nature.com/articles/s41746-019-0191-0&#34;&gt;https://www.nature.com/articles/s41746-019-0191-0&lt;/a&gt;. [Accessed: 11-Oct-2020].&lt;/p&gt;
+&lt;p&gt;[2] H. Chamraj, &amp;quot;Powering Precision Medicine with Artificial Intelligence,&amp;quot; &lt;em&gt;Intel&lt;/em&gt;. [Online]. Available: &lt;a href=&#34;https://www.intel.com/content/www/us/en/artificial-intelligence/posts/powering-precision-medicine-artificial-intelligence.html&#34;&gt;https://www.intel.com/content/www/us/en/artificial-intelligence/posts/powering-precision-medicine-artificial-intelligence.html&lt;/a&gt;. [Accessed: 12-Oct-2020].&lt;/p&gt;
+&lt;p&gt;[3] T. Davenport and R. Kalakota, &amp;quot;The potential for artificial intelligence in healthcare,&amp;quot; &lt;em&gt;Future healthcare journal&lt;/em&gt;, Jun-2019. [Online]. Available: &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6616181/&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6616181/&lt;/a&gt;. [Accessed: 12-Oct-2020].&lt;/p&gt;
 
       </description>
     </item>
@@ -3564,6 +3577,23 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-331/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-331/project/project/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; follow our template&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-333/assignment6/assignment6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3584,10 +3614,10 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-333/final_project_plan_invalid/</link>
+      <link>/report/fa20-523-333/final_project_plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-333/final_project_plan_invalid/</guid>
+      <guid>/report/fa20-523-333/final_project_plan/</guid>
       <description>
         
         
@@ -3633,10 +3663,9 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow our template&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please remove first person&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; do not use I&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
-&lt;p&gt;For this final project I will be working alone.&lt;/p&gt;
-&lt;h2 id=&#34;topic&#34;&gt;Topic&lt;/h2&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I will be looking at Spotify data, a music streaming service, to answer my research question, &amp;ldquo;Do popular modern-day songs lack uniqueness compared to popular songs before the year 2000?&amp;rdquo; Music has always been a way to express oneself. Before the new era of music began most songs seemed to have a unique sound and feel that brought the listener back for more. However, nowadays it seems that most songs that become popular have similar characteristics. The goal of this research is to study whether popular modern-day songs lack the uniqueness that songs had before January 1, 2001.&lt;/p&gt;
 &lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
 &lt;p&gt;The dataset that I will be using was created by Yamaç Eren Ay. He is a data scientist at EYU from İstanbul, İstanbul, Turkey. This data set was collected from Spotify&amp;rsquo;s web API. It contains data on songs from 1921-2019.&lt;/p&gt;
@@ -3646,77 +3675,6 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
 &lt;p&gt;Categorical [&lt;strong&gt;key&lt;/strong&gt;  (All keys on octave encoded as values ranging from 0 to 11, starting on C as 0, C# as 1 and so on…),  &lt;strong&gt;artists&lt;/strong&gt;  (List of artists mentioned),  &lt;strong&gt;release_date&lt;/strong&gt;  (Date of release mostly in yyyy-mm-dd format, however precision of date may vary),  &lt;strong&gt;name&lt;/strong&gt;  (Name of the song)]&lt;/p&gt;
 &lt;h2 id=&#34;what-needs-to-be-done-to-get-a-great-grade&#34;&gt;What needs to be done to get a great grade&lt;/h2&gt;
 &lt;p&gt;In order to complete the project and receive a good grade I will need complete a couple steps. First, I will import my data set through Google collab or Jupyter Notebook and create code to visualize and analyze the data. Next I will create markdown cells to explain the code and data used throughout the project. Lastly, I will create a paper report explaining my findings from the software component of my project. The most important part of this project is stating my hypothesis and answering my research question. My hypothesis is that songs after 2012 that have a popular score greater than x will have similar features such as, liveliness, loudness, tempo, and key. Whereas I suspect that popular songs before the 21st century are more differentiable among these features.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-337/assignment/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-337/assignment/readme/</guid>
-      <description>
-        
-        
-        &lt;p&gt;&lt;strong&gt;Project Title:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Online Store Customer Revenue Prediction&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Project Abstract:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The dataset for this project is obtained from Kaggle. The link to the dataset is provided below:
-&lt;a href=&#34;https://www.kaggle.com/c/ga-customer-revenue-prediction&#34;&gt;https://www.kaggle.com/c/ga-customer-revenue-prediction&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Problem Statement:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies.&lt;/li&gt;
-&lt;li&gt;In this competition, you’re challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer. Hopefully, the outcome will be more actionable operational changes and a better use of marketing budgets for those companies who choose to use data analysis on top of GA data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dataset Explanation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Two datasets are provided (train.csv and test.csv)&lt;/li&gt;
-&lt;li&gt;Train.csv  User transactions from August 1st, 2016 to August 1st, 2017&lt;/li&gt;
-&lt;li&gt;Test.csv   User transactions from August 2nd, 2017 to April 30th, 2018&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Team Members:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Anantha Janakiraman – Machine Learning Engineer&lt;/li&gt;
-&lt;li&gt;Balaji Dhamodharan – Data Scientist - Github Repo Owner&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Problem Setting and Model Development&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Our objective is to predict the natural log of total revenue per customer which is a real valued continuous output and linear regression would be an ideal algorithm in such a setting to predict the response variable that is continuous using a set of predictor variables given the basic assumption that there is a linear relationship between the predictor and response variables.&lt;/p&gt;
-&lt;p&gt;The training dataset contains 872214 records and considering the size of the training dataset, we will plan to use mini-batch or stochastic gradient descent methods to obtain optimized estimates of the coefficients for our linear function that best describes the input variables. After cleaning and pre-processing the data, we will build a basic linear regression model using basic parameter setting and based on outcome of this initial model, we will perform further experimentation to tune the hyper-parameters including regularization and additional feature engineering to derive more features from the provided input data to improve the parameter estimates for our model and reduce the error.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Metrics&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different “number of iterations” value and other hyper-parameters (e.g. learning rate).&lt;/p&gt;
-&lt;p&gt;RMSE is defined as:&lt;/p&gt;
-&lt;img src=&#34;Images-and-plots/Loss_Func.png&#34;&gt;
-&lt;p&gt;where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Model Pipeline Steps&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The  high-level representation of the implementation steps is shown below. The below steps are subject to change as we understand more about the data and various pre-processing, feature engineering or model development steps may vary accordingly.&lt;/p&gt;
-&lt;img src=&#34;Images-and-plots/Plot_Part1.png&#34;&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-337/project/nextsteps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-337/project/nextsteps/</guid>
-      <description>
-        
-        
-        &lt;p&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The dataset we identified has ~903.6k records. Based on our initial analysis, we identifed ~19% of the dataset contains NULL Values. So, we are planning to perform data cleaning, data pre-processing to check for Outliers, distributions etc. Based on the findings we will decide on the features that needs to be used for the models.THe anove mentioned steps are mostly the immediate next steps.&lt;/p&gt;
-&lt;p&gt;Overall, from the project perspective, we would be exploring different models, check for the RMSE errors. Pick the best performing model and check the predicted RMSE scores and report accordingly.&lt;/p&gt;
 
       </description>
     </item>

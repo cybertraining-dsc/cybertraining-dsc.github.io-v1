@@ -16,6 +16,7 @@ pull:
 	cd content/en/report/fa20-523-317; git pull
 	cd content/en/report/fa20-523-326; git pull
 	cd content/en/report/fa20-523-329; git pull
+	cd content/en/report/fa20-523-331; git pull
 	cd content/en/report/fa20-523-333; git pull
 	cd content/en/report/fa20-523-337; git pull
 	cd content/en/report/fa20-523-342; git pull

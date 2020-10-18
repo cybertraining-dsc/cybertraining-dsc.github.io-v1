@@ -55,3 +55,6 @@
 [submodule "content/en/report/cloudmesh-openapi"]
 	path = content/en/report/cloudmesh-openapi
 	url = git@github.com:cloudmesh/cloudmesh-openapi.git
+[submodule "content/en/report/fa20-523-331"]
+	path = content/en/report/fa20-523-331
+	url = git@github.com:cybertraining-dsc/fa20-523-331.git
