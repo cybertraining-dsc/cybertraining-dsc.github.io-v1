@@ -6,7 +6,12 @@ owner:
   community: "534"
   semester: "fa20"
 project:
-  title: TBD
-  url: TBD
+  title: Benchmarking Multi-Cloud Auto Generated AI Services
+  url: https://github.com/cloudmesh/cloudmesh-openapi/blob/master/paper/_index.md
+  proceedings: https://cybertraining-dsc.github.io/report/cloudmesh-openapi/paper/
   author:
-    - fa20-523-348
+    - Gregor von Laszewski
+    - Richard Otten
+    - Anthony Orlowski, fa20-523-310
+    - Caleb Wilson, fa20-523-348
+    - Vishwanadham Mandala, fa20-523-325

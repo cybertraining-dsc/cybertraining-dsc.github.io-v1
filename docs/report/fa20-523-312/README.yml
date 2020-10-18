@@ -7,6 +7,7 @@ owner:
   semester: "fa20"
 project:
   title: Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)
-  url: https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md
+  url: https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md
+  proceedings: https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/
   author:
-    - fa20-523-312, Saptarshi Sinha
+    - Saptarshi Sinha, fa20-523-312 

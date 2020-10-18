@@ -1,7 +1,7 @@
 draft:
 	hugo server -D
 
-update:
+pull:
 	cd content/en/report/cloudmesh-openapi; git pull
 	cd content/en/report/fa20-523-301; git pull
 	cd content/en/report/fa20-523-304; git pull
@@ -9,7 +9,7 @@ update:
 	cd content/en/report/fa20-523-307; git pull
 	cd content/en/report/fa20-523-308; git pull
 	cd content/en/report/fa20-523-309; git pull
-	cd content/en/report/fa20-523-312; git pull
+	cd content/en/report/fa20-523-312; git pull git@github.com:cybertraining-dsc/fa20-523-312.git master
 	cd content/en/report/fa20-523-313; git pull
 	cd content/en/report/fa20-523-314; git pull
 	cd content/en/report/fa20-523-316; git pull

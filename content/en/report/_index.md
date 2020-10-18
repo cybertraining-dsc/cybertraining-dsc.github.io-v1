@@ -24,7 +24,6 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 #### Twitter
 
-* {{% addreport title="Analysis of Financial Markets based on President Trump's Tweets" author="Alex Baker" hid="fa20-523-307" %}}
 * {{% addreport title="Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election" author="Sudheer Alluri, Vishwanadham Mandala" hid="fa20-523-316" %}}
 
 #### Sports
@@ -41,6 +40,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 #### Health
 
 * {{% addreport title="Detecting Heart Disease using Machine Learning Classification Techniques" author="Ethan Nguyen" hid="fa20-523-309" %}}
+* {{% addreport title="Covid-19 Analysis" author="Hany Boles" hid="fa20-523-342" %}}
 
 #### Energy
 
@@ -50,26 +50,30 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
 
+#### Commerce
+
+* {{% addreport title="Analysis of Financial Markets based on President Trump's Tweets" author="Alex Baker" hid="fa20-523-307" %}}
+* {{% addreport title="Online Store Customer Revenue Prediction" author="Balaji Dhamodharan" hid="fa20-523-337" %}}
+* {{% addreport title="Predicting Stock Market Recovery in Indonesia after COVID-19 Crash" author="" hid="fa20-523-313" %}}
+
+
 #### Technology
 
 * [Benchmarking Multi-Cloud Auto Generated AI Services](/report/cloudmesh-openapi/paper/), [Gregor von Laszewski](https://laszewski.github.io),  Richard Otten, [Anthony Orlowski](https://github.com/aporlowski), [fa20-523-310](https://github.com/cybertraining-dsc/fa20-523-310/), [Caleb Wilson](https://github.com/calewils), [fa20-523-348](https://github.com/cybertraining-dsc/fa20-523-348/), Vishwanadham Mandala, [fa20-523-325](https://github.com/cybertraining-dsc/fa20-523-325/) [[Edit]](https://github.com/cloudmesh/cloudmesh-openapi/blob/master/paper/_index.md)
 
-## Reports not uploaded when this page was created
 
+## Reports that are incomplete and are not reviewed
 
-* {{% addreport title="TBD" author="Hany Boles" hid="fa20-523-342" %}}
+The following hids, unfortunately do not follow yet our template, so
+we can not review them.
 
-
-The following hids, unfortunately do not follow yet our template, so we can not review them.
 
 * fa20-523-329
-* fa20-523-337
 * fa20-523-317
 * fa20-523-304
 * fa20-523-308
 * fa20-523-343
-* fa20-523-313
-
+* fa20-523-313 
 
 
 ### Reports without Project, Fall 2020
