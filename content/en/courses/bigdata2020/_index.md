@@ -258,6 +258,19 @@ virtualization and parallel computing are some of the key aspects of cloud compu
 
 {{< /view_module >}}
 
+### Commerce
+
+{{< view_module
+	alt="Commerce"
+	src="/images/commerce.png"
+	url="/modules/bigdataapplications/2020/commerce"
+>}}
+
+Commerce is a field which is reinforced with AI and technologies to provide a better service to the clients. 
+Amazon is one of the leading companies in e-commerce. The recommendation engines play a major role in e-commerce. 
+
+{{< /view_module >}}
+
 
 ## Complementary Material
 
