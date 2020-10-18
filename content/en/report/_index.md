@@ -73,7 +73,6 @@ we can not review them.
 * fa20-523-304
 * fa20-523-308
 * fa20-523-343
-* fa20-523-313 
 
 
 ### Reports without Project, Fall 2020

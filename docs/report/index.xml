@@ -3008,19 +3008,19 @@ give a more accurate prediction.&lt;/p&gt;
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-313/broken/project/</link>
+      <link>/report/fa20-523-313/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-313/broken/project/</guid>
+      <guid>/report/fa20-523-313/project/project/</guid>
       <description>
         
         
-        &lt;h1 id=&#34;homework-5&#34;&gt;Homework 5&lt;/h1&gt;
-&lt;h2 id=&#34;student-name-fauzan-isnaini&#34;&gt;Student Name: Fauzan Isnaini&lt;/h2&gt;
-&lt;h1 id=&#34;predicting-stock-market-recovery-in-indonesia-after-covid-19-crash&#34;&gt;Predicting Stock Market Recovery in Indonesia after COVID-19 Crash&lt;/h1&gt;
-&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
-&lt;p&gt;I will conduct this study by myself.&lt;/p&gt;
-&lt;h2 id=&#34;topic&#34;&gt;Topic&lt;/h2&gt;
+        &lt;h1 id=&#34;predicting-stock-market-recovery-in-indonesia-after-covid-19-crash&#34;&gt;Predicting Stock Market Recovery in Indonesia after COVID-19 Crash&lt;/h1&gt;
+&lt;p&gt;Fauzan Isnaini&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use our template, see piazza&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The COVID-19 Pandemic is not just a crisis in the public health sector.
 It also impacts unemployment rates, business revenues, and mass
 psychology, which in the end lead to crashes in global stock markets.
@@ -3056,7 +3056,7 @@ content analysis to compare positive and negative news in Indonesia. 4.
 Third party stock data feeder. There are some third parties who provide
 more comprehensive stock data on a subscription basis. This is another
 option if the above datasets are not sufficient&lt;/p&gt;
-&lt;h2 id=&#34;what-needs-to-be-done-to-get-a-great-grade&#34;&gt;What needs to be done to get a great grade&lt;/h2&gt;
+&lt;h2 id=&#34;plan&#34;&gt;Plan&lt;/h2&gt;
 &lt;p&gt;I will build a Python program to learn these data and generate a
 prediction on when the IDX Composite will recover. I will also consider
 the recovery rate of each of these sectors: 1. Mining 2. Agriculture 3.
@@ -3070,23 +3070,6 @@ property sector might be the most impacted sector in this pandemic, thus
 resulting in a long time to recover. The program will be able to learn
 continuously, so if new data is available, it can renew the analysis and
 give a more accurate prediction.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-313/project/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-313/project/project/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;this-is-testmd&#34;&gt;This is test.md&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow our example. See piazza&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>
@@ -3718,6 +3701,22 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
 &lt;p&gt;&lt;strong&gt;Model Pipeline Steps&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The  high-level representation of the implementation steps is shown below. The below steps are subject to change as we understand more about the data and various pre-processing, feature engineering or model development steps may vary accordingly.&lt;/p&gt;
 &lt;img src=&#34;Images-and-plots/Plot_Part1.png&#34;&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-337/project/nextsteps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-337/project/nextsteps/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The dataset we identified has ~903.6k records. Based on our initial analysis, we identifed ~19% of the dataset contains NULL Values. So, we are planning to perform data cleaning, data pre-processing to check for Outliers, distributions etc. Based on the findings we will decide on the features that needs to be used for the models.THe anove mentioned steps are mostly the immediate next steps.&lt;/p&gt;
+&lt;p&gt;Overall, from the project perspective, we would be exploring different models, check for the RMSE errors. Pick the best performing model and check the predicted RMSE scores and report accordingly.&lt;/p&gt;
 
       </description>
     </item>
