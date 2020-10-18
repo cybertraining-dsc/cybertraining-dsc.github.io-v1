@@ -39,7 +39,7 @@ description: >
   
   1. Amazon sellers
   2. Rise of Shopify 
-  3. Indiana University Products
+  3. Selling Products on Amazon
 
 {{< youtube "kaZaxn5aHaE" >}}
 
