@@ -1,7 +1,7 @@
 ---
 title: Cloud Computing
 draft: false
-weight: 20
+weight: 11
 description: >
   Cloud Computing
 ---
