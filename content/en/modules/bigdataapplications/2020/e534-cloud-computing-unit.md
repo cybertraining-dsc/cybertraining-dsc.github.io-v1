@@ -9,183 +9,131 @@ description: >
 
 # E534 Cloud Computing Unit
 
+[Full Slide Deck](https://docs.google.com/presentation/d/1CfdQW02IE7skOdQoJy899pozKYSx7Rcplwi9y75RwqM/edit?usp=sharing)
+
 ## Overall Summary
 
-  Video: {{< youtube "bd9KXMUsQGM" >}}
+  Video: {{< youtube "FV0r-Yf6zNk" >}}
   
-  [Slides](https://drive.google.com/file/d/1or3WcK_Db2JK4hfZEOkvQq5Ev1i53ky1/view?usp=sharing)
 
+## Defining Clouds I: Basic definition of cloud and two very simple examples of why virtualization is important 
 
-## Defining Clouds I:
+  1. How clouds are situated wrt HPC and supercomputers
+  2. Why multicore chips are important
+  3. Typical data center
 
   Video: {{< youtube "8OE3oOVDmlQ" >}}
 
-  [Slides](https://drive.google.com/file/d/1WRZif4my1QUbhjnEYENmpK9Naq_Js09I/view?usp=sharing)
+## Defining Clouds II: Service-oriented architectures: Software services as Message-linked computing capabilities
 
-  1. Basic definition of cloud and two very simple examples of why virtualization is important.
-  2. How clouds are situated wrt HPC and supercomputers
-  3. Why multicore chips are important
-  4. Typical data center
+  1. The different aaS’s: Network, Infrastructure, Platform, Software
+  2. The amazing services that Amazon AWS and Microsoft Azure have
+  3. Initial Gartner comments on clouds (they are now the norm) and evolution of servers; serverless and microservices
+  4. Gartner hypecycle and priority matrix on Infrastructure Strategies
 
+  Video: {{< youtube "mzkFZApl_-4" >}}
 
-## Defining Clouds II:
+## Defining Clouds III: Cloud Market Share
 
-  Video: {{< youtube "LnYbJYzmJ0I" >}}
+  1. How important are they?
+  2. How much money do they make?
 
-  [Slides](https://drive.google.com/file/d/1RFREyzdv4dvERzcdSKbw04_TgO_19RfU/view?usp=sharing)
-  
-  1. Service-oriented architectures: Software services as Message-linked computing capabilities
-  2. The different aaS’s: Network, Infrastructure, Platform, Software
-  3. The amazing services that Amazon AWS and Microsoft Azure have
-  4. Initial Gartner comments on clouds (they are now the norm) and evolution of servers; serverless and microservices
+  Video: {{< youtube "jYfoNxlROqU" >}}
 
+## Virtualization: Virtualization Technologies, Hypervisors and the different approaches
 
-## Defining Clouds III:
-
-  Video: {{< youtube "X1HwKJ7yBEk" >}}
-
-  [Slides](https://drive.google.com/file/d/1JlBjkMfpmaKEwyZphfyQSWDG5PdzeJ5c/view?usp=sharing)
-
-  1. Cloud Market Share
-  2. How important are they?
-  3. How much money do they make?
-
-
-## Virtualization: E
+  1. KVM Xen, Docker and Openstack
   
   Video: {{< youtube "Tqsx-sEPY6M" >}}
 
-  [Slides](https://drive.google.com/file/d/1ezNAmxozgPVTC26BMN_c9-H5sN7wSzjW/view?usp=sharing)
+## Cloud Infrastructure I: Comments on trends in the data center and its technologies
 
-  1. Virtualization Technologies, Hypervisors and the different approaches
-  2. KVM Xen, Docker and Openstack
+  1. Clouds physically across the world
+  2. Green computing
+  3. Fraction of world’s computing ecosystem in clouds and associated sizes
+  4. An analysis from Cisco of size of cloud computing
 
+  Video: {{< youtube "6ncp-UTYk-4" >}}
 
-## Cloud Infrastructure I:
+## Cloud Infrastructure II: Gartner hypecycle and priority matrix on Compute Infrastructure
 
-  Video: {{< youtube "KTNx2SEe2Jo" >}}
-    
-  [Slides](https://drive.google.com/file/d/1Bv7nmTuLr3XUwaY7SSyN-KIgyc0YQcUv/view?usp=sharing)
-
-  1. Comments on trends in the data center and its technologies
-  2. Clouds physically across the world
-  3. Green computing
-  4. Amount of world’s computing ecosystem in clouds
-
-
-## Cloud Infrastructure II: G
+  1. Containers compared to virtual machines
+  2. The emergence of artificial intelligence as a dominant force
 
   Video: {{< youtube "R0Sk1rAS20M" >}}
-
-  [Slides](https://drive.google.com/file/d/1u-k-M-Yk2ovstYeFrpHE-zA2wwSaosCa/view?usp=sharing)
-
-  1. Gartner hypecycle and priority matrix on Infrastructure Strategies and
-  Compute Infrastructure
-  2. Containers compared to virtual machines
-  3. The emergence of artificial intelligence as a dominant force
-
-
-## Cloud Software:
-
-  Video: {{< youtube "MZrlX8fj48o" >}}
-
-  [Slides](https://drive.google.com/file/d/1bmeh_bigk2ojf8-l9eczypNvTOXLMRVU/view?usp=sharing)
-
-  1. HPC-ABDS with over 350 software packages and how to use each of 21 layers
-  2. Google’s software innovations
-  3. MapReduce in pictures
-  4. Cloud and HPC software stacks compared
-  5. Components need to support cloud/distributed system programming
-
-
-## Cloud Applications I: Research applications
   
-  Video: {{< youtube "sAbYkZHD81U" >}}
+## Cloud Software: HPC-ABDS with over 350 software packages and how to use each of 21 layers
 
-  [Slides](https://drive.google.com/file/d/1Rg_u_pVIvhyJ9H2nRl9ZSZfNLs6Ppgym/view?usp=sharing)
+  1. Google’s software innovations
+  2. MapReduce in pictures
+  3. Cloud and HPC software stacks compared
+  4. Components need to support cloud/distributed system programming
 
-  1. Clouds in science where the area called cyberinfrastructure
+  Video: {{< youtube "gMAA9y8khMM" >}} 
 
+## Cloud Applications I: Clouds in science where area called cyberinfrastructure; the science usage pattern from NIST
 
-## Cloud Applications II: Few key types
+  1. Artificial Intelligence from Gartner
   
-  Video: {{< youtube "YaPg-OOlkdw" >}}
-  
-  [Slides](https://drive.google.com/file/d/1k72Haok2n4crsFjOZmqKpjHoVloOzHwt/view?usp=sharing)
+  Video: {{< youtube "sAbYkZHD81U" >}} 
+
+## Cloud Applications II: Characterize Applications using NIST approach
 
   1. Internet of Things
   2. Different types of MapReduce
-
-
-##  Parallel Computing in Pictures
   
-  Video: {{< youtube "SzRQ8HSsuvQ" >}}
-  
-  [Slides](https://drive.google.com/file/d/18yzOQvFiyfcu_JjHQF1qhFflARWtU5wb/view?usp=sharing)
+  Video: {{< youtube "YaPg-OOlkdw" >}}
+
+## Parallel Computing Analogies: Parallel Computing in pictures
 
   1. Some useful analogies and principles
-  2. Society and Building Hadrian’s wall
-
-
-## Parallel Computing in real world
   
-  Video: {{< youtube "C7OBEfyDE8c" >}}
+  Video: {{< youtube "iqVHvQg851s" >}} 
+
+## Real Parallel Computing: Single Program/Instruction Multiple Data SIMD SPMD
   
-  [Slides](https://drive.google.com/file/d/1KTJQENaymH6WB09yZPeXRiDMGCNYkXbr/view?usp=sharing)
+  1. Big Data and Simulations Compared
+  2. What is hard to do?
+  
+  Video: {{< youtube "7gD2yyTKatM" >}}  
 
-  1. Single Program/Instruction Multiple Data SIMD SPMD
-  2. Parallel Computing in general
-  3. Big Data and Simulations Compared
-  4. What is hard to do?
+## Storage: Cloud data approaches
 
-
-## Cloud Storage:
+  1. Repositories, File Systems, Data lakes
 
   Video: {{< youtube "NcIbKQ-AChA" >}}
 
-  [Slides](https://drive.google.com/file/d/1pm24uinfQ6UdbpNsLXeZusF1oIcK6I7Q/view?usp=sharing)
-
-  1. Cloud data approaches
-  2. Repositories, File Systems, Data lakes
-
-
 ## HPC and Clouds: The Branscomb Pyramid
-  
-  Video: {{< youtube "QTxYKhpVtDw" >}}
-
-  [Slides](https://drive.google.com/file/d/1F85YOQmXTLMLuK8XBGmFa1GoKnlcr676/view?usp=sharing)
 
   1. Supercomputers versus clouds
   2. Science Computing Environments
-
-
-## Comparison of Data Analytics with Simulation:
-
-  Video: {{< youtube "6WmWE_7iB3w" >}} 
-
-  [Slides](https://drive.google.com/file/d/1z_Crt1R0C94ksH4N5nrkiJXqN41HFF-4/view?usp=sharing)
-
-  1. Structure of different applications for simulations and Big Data
-  2. Software implications
-  3. Languages
-
-
-## The Future:
-
-  1. Future I [Slides](https://drive.google.com/file/d/1HyfRKf7G3Jn7lGaahTzi-zG-7APXv9CY/view?usp=sharing)
   
+  Video: {{< youtube "QTxYKhpVtDw" >}}
+
+## Comparison of Data Analytics with Simulation: Structure of different applications for simulations and Big Data
+
+  1. Software implications
+  2. Languages
+  
+  Video: {{< youtube "6WmWE_7iB3w" >}}
+
+## The Future I: The Future I: Gartner cloud computing hypecycle and priority matrix 2017 and 2019
+   
+   1. Hyperscale computing
+   2. Serverless and FaaS
+   3. Cloud Native
+   4. Microservices
+   5. Update to 2019 Hypecycle 
+
   Video: {{< youtube "1xH5ow5kOhc" >}}
   
-  2. Future and Other Issues II [Slides](https://drive.google.com/file/d/1o5KKlY2o5m3KySVp9O-YjQDfPipLBDx7/view?usp=sharing)
+## Future and Other Issues II: Security
+   
+   1. Blockchain
   
-  Video: {{< youtube "9AmVHEXv7gY" >}}
+  Video: {{< youtube "9AmVHEXv7gY" >}} 
   
-  3. Future and Other Issues III [Slides](https://drive.google.com/file/d/1CYu2T9m8yLmmmJbwvDDP_2l9q2pOIOaD/view?usp=sharing)
+## Future and Other Issues III: Fault Tolerance
   
-  Video: {{< youtube "VnkkCix3yEE" >}}
-  
-  1. Gartner cloud computing hypecycle and priority matrix
-  2. Hyperscale computing
-  3. Serverless and FaaS
-  4. Cloud Native
-  5. Microservices
+  Video: {{< youtube "VnkkCix3yEE" >}}   
+ 
