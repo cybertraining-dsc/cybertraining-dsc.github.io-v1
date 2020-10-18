@@ -245,6 +245,20 @@ have already moved towards AI to power the vehicles and provide new features for
 {{< /view_module >}}
 
 
+### Cloud Computing
+
+{{< view_module
+	alt="Cloud Computing"
+	src="/images/cloud_computing.jpg"
+	url="/modules/bigdataapplications/2020/cloud_computing"
+>}}
+
+Cloud computing is a major component of Today's service infrastructures. Artificial intelligence, micro-services, storage, 
+virtualization and parallel computing are some of the key aspects of cloud computing. 
+
+{{< /view_module >}}
+
+
 ## Complementary Material
 
 * When working with books, ePubs typically display better than PDF.  For ePub, we recommend using iBooks on macOS and calibre on all
