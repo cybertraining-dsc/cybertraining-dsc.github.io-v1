@@ -2636,7 +2636,9 @@ A project this large and versatile requires the use of many software tools. Thes
         
         
         &lt;h1 id=&#34;estimating-soil-moisture-content-using-sensor-and-weather-data&#34;&gt;Estimating Soil Moisture Content Using Sensor and Weather Data&lt;/h1&gt;
-&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use proper image inclusion and not img&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Cody Harris, &lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305&#34;&gt;fa20-523-305&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/edit/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
@@ -2647,7 +2649,6 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#team&#34;&gt;Team&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#topic-discussion&#34;&gt;Topic Discussion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#datasets&#34;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#data-cleaning-and-aggregation&#34;&gt;Data Cleaning and Aggregation&lt;/a&gt;&lt;/li&gt;
@@ -2675,7 +2676,8 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;This project specifically seeks to see the effect of weather on a particular piece of land in Washington state. This process could be done all over the world to obtain benchmarks. These benchmarks could be a cheap option for a farmer that does not have the funds to support a full study of water usage on their land. Instead, they could look for a model that has land that has similar soil and or geographical features, and then use their own weather data to estimate their soil moisture content.&lt;/p&gt;
 &lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
 &lt;p&gt;The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/resources/distance_map.png&#34; data-canonical-src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/resources/distance_map.png&#34; width=&#34;350&#34; height=&#34;350&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/resources/distance_map.png&#34; alt=&#34;Figure 1: Caption missing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Caption missing&lt;/p&gt;
 &lt;p&gt;The second dataset comes from the USDA. This dataset consits of &amp;ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&amp;rdquo; at a farm in Washington state &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.&lt;/p&gt;
 &lt;p&gt;Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the sattelite image.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/resources/sensor_locations.png&#34; data-canonical-src=&#34;https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/resources/sensor_locations.png&#34; width=&#34;651&#34; height=&#34;280&#34; /&gt;&lt;/p&gt;
@@ -2863,7 +2865,8 @@ A project this large and versatile requires the use of many software tools. Thes
         
         &lt;h1 id=&#34;nfl-regular-season-skilled-position-player-performance-as-a-predictor-of-playoff-appearance&#34;&gt;NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;[I have updated to follow the template ] please follow our template&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use pageinfo compare template carefully&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; do not use sup&lt;/li&gt;
 &lt;li&gt;[I have attempted to match the markdwon of the template ] improve markdown skills&lt;/li&gt;
 &lt;li&gt;[again attempted to match the template ] use footnotes as refernces, learn how to do this, read our piaza posts&lt;/li&gt;
 &lt;/ul&gt;
@@ -3715,136 +3718,40 @@ Pyro etc [4].&lt;/p&gt;
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-326/assignments/assignment_6_gangaprsad_shahapurkar/</link>
+      <link>/report/fa20-523-323/assignments/assignment-1/atugman-assignment1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-326/assignments/assignment_6_gangaprsad_shahapurkar/</guid>
+      <guid>/report/fa20-523-323/assignments/assignment-1/atugman-assignment1/</guid>
       <description>
         
         
-        &lt;h1 id=&#34;report-on-nursing-robots&#34;&gt;Report on Nursing Robots&lt;/h1&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Robotic technology has gradually penetrated both personal and
-professional life of human lives. This is very extensive field. Robotics
-is an interdisciplinary branch of engineering and science that includes
-mechanical engineering, electrical engineering, and computer science.
-Artificial intelligence (AI) is playing fundamental role in robotics as
-this technological advanced field is dealing with connecting perception
-to action.&lt;/p&gt;
-&lt;p&gt;Robots are already being used in industries like manufacturing, places
-were dangerous work needs to be carried out not possible by human, or
-some places where human cannot survive. Robotics currently has lot of
-professional and non-professional applications. They are being used in
-non-professional applications like room cleaning, food preservation,
-lawn mowing, playing with kids. Professional applications are mainly
-public transport systems including the undergrounds, over grounds, and
-metro services.&lt;/p&gt;
-&lt;p&gt;At present, there are rising incidences of lifestyle diseases and
-growing demand for affordable healthcare. There has been increased role
-of government in healthcare investment space and emergence of
-technologies such as artificial learning (AI), machine learning (ML) and
-robotics have been driving healthcare industry across the world. AI &amp;amp; ML
-is becoming increasingly sophisticated at doing what humans do, but more
-efficiently, quickly and at a lower cost&lt;/p&gt;
-&lt;p&gt;Japan is currently leading the world in advanced robotics, where usage
-of service robot has been recently growing in nursing or care homes.
-Many Japanese corporations are planning to exploit the great potentials
-of nursing-care robots manufacturing especially where aimed at taking
-care of older adults. There are about 5,000 nursing-care homes testing
-robots for use in nursing care due to declining number of human nurses
-to care for aged people (above 65 years of age) who are more than a
-quarter of the population (the highest in OECD countries).&lt;/p&gt;
-&lt;h2 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h2&gt;
-&lt;p&gt;Census bureau estimates that nearly 25 % of population will be aged 65
-or older by 2060. According to the World Bank population estimates and
-projections, whilst Japan currently has some 126.3 million inhabitants
-of which 34.7 million are aged 65 and above, representing 27.38% of the
-overall population, in 2050 the total population of Japan will shrink to
-108 million with 39 million people that will be aged 65 and above, which
-will represent 36% of the overall population. There will be more demand
-on care. This could cause a significant shortage of nurses in health
-care to care for elderly.&lt;/p&gt;
-&lt;p&gt;Nurses spends time in doing multiple every day routine activities which
-can be delegated to a different person. Researches around the globe have
-observed and are of opinion that certain nursing function such as
-ambulation services, patient vital signs measurement, medication
-administration, infectious diseases protocols can be delegated to
-robots. As robots learn to perform these duties role of nurses in
-delivery care will change.&lt;/p&gt;
-&lt;p&gt;Research suggests that 8% to 16% nursing time is spent on non-nursing
-activities. As robots learns to perform non-nursing activities, nurses
-with robot support will have ability to take back the time spent on
-non-nursing activities and spend more of it with patients. The robots
-are being viewed as assistants to help nurses at bedside or in
-community.&lt;/p&gt;
-&lt;h2 id=&#34;current-status-of-ai-solution&#34;&gt;Current Status of AI solution&lt;/h2&gt;
-&lt;p&gt;Robotics is well on its way in many roles and procedure in health care.
-Robotic engineers are advancing what robots can do and how they
-emotionally respond to circumstances. Below are some of the AI solutions
-used in nursing profession and carries out non-nursing activities&lt;/p&gt;
-&lt;h3 id=&#34;1-patients-vital-sign-measurement-and-repetitive-tasks&#34;&gt;1. Patients vital sign measurement and repetitive task(s)&lt;/h3&gt;
-&lt;p&gt;While every country is fighting with COVID situation, front line
-works are being under tremendous pressure, especially
-doctors/nurses. AI solution has come to rescue, with a robot-based
-solution that helps to collect samples for testing.&lt;/p&gt;
-&lt;h3 id=&#34;2-humanoid-robot&#34;&gt;2. Humanoid Robot&lt;/h3&gt;
-&lt;p&gt;PALRO is a humanoid type robot which can communicate with human
-&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It has ability to remember up to 100 faces and communicate
-through voice. It has proven effective when applied with some senior
-patients with Dementia.&lt;/p&gt;
-&lt;h3 id=&#34;3-patient-caretaker&#34;&gt;3. Patient Caretaker&lt;/h3&gt;
-&lt;p&gt;Japan introduced an experimental robot in 2015 &amp;ldquo;ROBEAR&amp;rdquo; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. With
-its rapidly increasing elderly population, Japan faces an urgent need
-for new approaches to assist care-giving personnel. One of the most
-strenuous tasks for such personnel, carried out an average of 40 times
-every day, is that of lifting a patient from a bed into a wheelchair,
-and this is a major cause of lower back pain. Robots are well-suited
-to this task, yet none have yet been deployed in care-giving
-facilities &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;improvement-opportunities&#34;&gt;Improvement opportunities&lt;/h2&gt;
-&lt;h3 id=&#34;communication&#34;&gt;Communication&lt;/h3&gt;
-&lt;p&gt;Humans are known to be intelligent creatures and has ability to adapt,
-behave, and respond to any situation. Though Robots are developed by
-humans they are still far away to mimic these human features. Studies
-have shown that communication between human and robot has resulted in
-worse outcomes when robots were involved in area like surgery. These are
-high stress situation like operation room where we need to improvise
-robots in terms of behavior, communication, and response&lt;/p&gt;
-&lt;h3 id=&#34;movement&#34;&gt;Movement&lt;/h3&gt;
-&lt;p&gt;Technology is moving fast paced where devices have started transitioning
-from smart speakers to robots with ability to move. Articulation and
-mobility will be the key features to personal/social robots that can
-move and face the home user. Adding robotic functions to existing voice
-control front-end devices will deliver confirmation of activation and
-engagement through physical movement or simulated facial expressions.
-Aging-in-place or Ambient Assisted Living (AAL) end-users may be one
-consumer segment that would welcome greater robotic capabilities in a
-voice control device.&lt;/p&gt;
-&lt;h3 id=&#34;human-bot-interaction&#34;&gt;Human-Bot Interaction&lt;/h3&gt;
-&lt;p&gt;Today&amp;rsquo;s robots available can perform basic tasks that require no
-emotional decision-making or empathy. In addition to ability to perform
-basic task, they need to be able to interact with human co-workers
-better so that they help to alleviate staff shortages.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+        &lt;p&gt;Anthony Tugman&lt;br&gt;
+E534&lt;br&gt;
+9/7/20&lt;br&gt;
+Assignment 1&lt;/p&gt;
+&lt;p&gt;America is an incredibly diverse community, a vast pool of individuals from various
+backgrounds, experiences, and beliefs striving towards the elusive American dream. In stark
+contrast, the cities of America are one in the same. Not in the sense of architecture, food, and culture but rather in the way that they are run. Policy makers always seem to be playing “catch up” whether it be in reacting to environmental disasters, managing services for ever shifting populations, or even attempting to respond to crime. What if our cities were smarter? Imagine being alerted in real time to hotspots of pollution, being able to visualize traffic patterns throughout the day, and being able to identify large gatherings calling for an increase in police presence. By implementing big data and analytics into our cities this, and more, is possible.&lt;/p&gt;
+&lt;p&gt;By definition a smart city is “an urban area that uses different types of electronic sensors
+to collect data” [1]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This data is then analyzed and insights gained from the analysis are used to manage the city more efficiently, or to recognize patterns that would not be realized by typical human observation. This application relies on big data although physical in nature at its heart. What I mean by this is that the sensors themselves are physical, and a wide variety must be used to truly understand what is occurring in the environment. The data itself is a side effect of the sensors, but this is where the heart of the benefit is held. With the technology readily available, and the potential benefit from the investment of deployment unlimited, it is surprising to me that we do not see such systems deployed across cities around the world. One such project, The
+Array of Things, has slowly been implemented across parts of Chicago over the last four years.&lt;/p&gt;
+&lt;p&gt;The Array of Things is self described as an experimental urban measurement project
+comprising a network of interactive, modular devices, to collect real-time data on the city’s
+environment, infrastructure, and activity [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. With the goal of providing this data to the public as well as various engineers, policy makers, and residents, The Array of Things now features a network of 150 sensor locations strategically placed across the city [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. It is important to note that the creators of this project claim this to be an experiment, which answers my earlier question of why more cities do not follow suit. It seems that many issues arise from collecting such data including integrity, privacy, and usability. This seems to be a common concern across all areas of big data and finding solutions to these concerns will make individuals use the technology more often. If The Array of Things is able to ultimately solve the above problems, I do not see why this technology would not be a template for applying across the world.&lt;/p&gt;
+&lt;p&gt;Although the hardware behind the nodes is fascinating, it is more applicable to focus on
+the data they produce for the scope of this course. At the current iteration the devices collect information on pollution, traffic, and other ambient information. The collected information is publicly available and the team behind The Array of things has done its best to mitigate privacy concerns.&lt;/p&gt;
+&lt;p&gt;In reflection, I believe that The Array of Things has immense potential to become life
+changing in the way our cities are managed. However, this does not come without its downfalls.  The way collected data is currently being published is not appropriate for the target audience. In fact, it seems that an advanced degree would be required to make sense of any of the data. For The Array of Things to gain the public’s trust as well as be used by various industries it must become more user friendly. For widespread adoption I propose the information be available in two forms. Firstly in a way that the technically inclined can analyze the data in ways the creators did not imagine possible. Second, the data should be available in an easy to digest, visual format that the common man can decipher. In any case, I see The Array of Things as the forefront of implementing big data into cities around the world and will continue to monitor updates to the project in hopes of sifting through the data myself one day and informing policy decision with my results.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Inoue K., Sakuma N., Okada M., Sasaki C., Nakamura M., Wada K.
-(2014) Effective Application of PALRO: A Humanoid Type Robot for People
-with Dementia. In: Miesenberger K., Fels D., Archambault D., Peňáz P.,
-Zagler W. (eds) Computers Helping People with Special Needs. ICCHP 2014.
-Lecture Notes in Computer Science, vol 8547. Springer, Cham.
-&lt;a href=&#34;https://doi.org/10.1007/978-3-319-08596-8_70&#34;&gt;https://doi.org/10.1007/978-3-319-08596-8_70&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“Smart city” Wikipedia, 11-Sep-2020. [Online]. Available:
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Smart_city&#34;&gt;https://en.wikipedia.org/wiki/Smart_city&lt;/a&gt;. [Accessed: 12-Sep-2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Ohio University. The Rise of the Robot Nurse.[Online].
-&lt;a href=&#34;https://onlinemasters.ohio.edu/blog/the-rise-of-the-robot-nurse/%3E&#34;&gt;https://onlinemasters.ohio.edu/blog/the-rise-of-the-robot-nurse/&amp;gt;&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Jens Wilkinson. (Feb. 23, 2015). The strong robot with the
-gentle touch. [Online].
-&lt;a href=&#34;https://www.riken.jp/en/news_pubs/research_news/pr/2015/20150223_2/&#34;&gt;https://www.riken.jp/en/news_pubs/research_news/pr/2015/20150223_2/&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Array of Things. [Online]. Available: &lt;a href=&#34;https://arrayofthings.github.io/index.html&#34;&gt;https://arrayofthings.github.io/index.html&lt;/a&gt;.
+[Accessed: 12-Sep-2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -3854,130 +3761,63 @@ gentle touch. [Online].
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-326/project/project/</link>
+      <link>/report/fa20-523-323/assignments/assignment-3/atugman-assignment3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-326/project/project/</guid>
+      <guid>/report/fa20-523-323/assignments/assignment-3/atugman-assignment3/</guid>
       <description>
         
         
-        &lt;h1 id=&#34;analysis-of-future-of-buffalo-breeds-and-milk-production-growth-in-india&#34;&gt;Analysis of Future of Buffalo Breeds and Milk Production Growth in India&lt;/h1&gt;
-&lt;p&gt;Gangaprasad Shahapurkar, fa20-523-326, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-326/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; include a small abstract here. Abstracts can not have references.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. Datasets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-software-component&#34;&gt;3. Software Component&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-references&#34;&gt;4. References&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; buffalo, milk production, livestock , argriculture, india&lt;/p&gt;
-&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;Indian Agriculture sector has been playing a vital role in overall
-contribution to Indian Economy. Most of the rural community in the
-nation still make their livelihood on Dairy Framing or Agriculture
-farming. Dairy framing itself has been on its progressive stage from
-past few years and it is contributing to almost more than 25% of
-agriculture GDP &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;Livestock rearing has been integral part of rural community of the
-nation. Livestock production plays major role in life of farmers. It
-provides food, income, employment. It also does other contributions to
-the overall rural development of the nation. The output of livestock
-rearing such as milk, egg, meat, and wool provides everyday income to
-the farmers on daily basis, it provides nutrition to consumers and
-indirectly it helps in contributing to overall national economy and
-socio-economic development of the country. Livestock rearing sector is
-leveraging the economy in big way considering the growth we can see.&lt;/p&gt;
-&lt;p&gt;Livestock population comprises of different species by age, sex and
-uses. This project takes a closer look and focus on the Buffalo breed in
-India and will attempt to estimate milk production for year 2020 based
-on the various features available in the dataset &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The reason for
-focusing on milk production because of various aspect came across based
-on the past and current research seen in this area&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The production of milk and meat from buffaloes in Asian countries
-over the last decades has shown a varying pattern: in countries such
-as India, Sri Lanka, Pakistan and China&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Buffaloes are known to be better at converting poor-quality roughage
-into milk and meat. They are reported to have a 5 percent higher
-digestibility of crude fibre than high-yielding cows; and a 4-5
-percent higher efficiency of utilization of metabolic energy for
-milk production (Mudgal, 1988)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;India is the highest buffalo milk producer in the world&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The world buffalo population is estimated at 185.29 million, spread
-in some 42 countries, of which 179.75 million (97%) are in Asia
-(Source: Fao.org/stat 2008). India has 105.1 million and they
-comprise approximately 56.7 percent of the total world buffalo
-population. During the last 10 years, the world buffalo population
-increased by approximately 1.49% annually, by 1.53% in India, 1.45%
-in Asia and 2.67% in the rest of the world.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-datasets&#34;&gt;2. Datasets&lt;/h2&gt;
-&lt;p&gt;The Animal Husbandry Statistics Division of the Department of Animal
-Husbandry &amp;amp; Dairying division (DAHD) is responsible for generation of
-Animal Husbandry Statistics through the schemes of Livestock Census and
-Integrated Sample Surveys &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;It is mandate for this division&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Conducting quinquennial livestock census.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Conducting annual sample survey through Integrated Sample Survey.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Publishing of Annual estimates of production of milk, eggs, meat,
-wool and other related Animal Husbandry Statistics based on
-Integrated Sample Survey conducted through State and Union
-Territories.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The Survey methodology of Integrated Sample Survey is defined by Indian
-Agriculture Statistics Research Institute (IASRI). This is the only
-scheme through which considerable data, particularly on the production
-estimate of major livestock products, is being generated for policy
-formulation in the livestock sector&lt;/p&gt;
-&lt;p&gt;Apart from vital census data published by this group no other
-competitive data source was found.&lt;/p&gt;
-&lt;h2 id=&#34;3-software-component&#34;&gt;3. Software Component&lt;/h2&gt;
-&lt;p&gt;Based on features available in survey dataset, supervized machine learning algorithm will be devised and applied to get the predicted out labels being looked at as part of this project&lt;/p&gt;
-&lt;h2 id=&#34;4-references&#34;&gt;4. References&lt;/h2&gt;
+        &lt;p&gt;Anthony Tugman&lt;br&gt;
+E534&lt;br&gt;
+9/21/20&lt;br&gt;
+Assignment 3&lt;/p&gt;
+&lt;p&gt;The Square Kilometer Array (SKA) is a global, cross-disciplinary partnership striving to
+produce the world’s largest radio telescope. As the name correctly describes, the field of sensors will stretch across a full square kilometer and be located across western Australia and south Africa which are considered to be some of the most remote areas in the world [1]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. As proposed in 2018 the SKA’s goals include studying the various types of energy that exist in the universe, deepening the understanding of gravitational waves, studying the birth of the universe, and searching for extraterrestrial communication. The developers of SKA have also made clear that this radio telescope will not only be larger than any in existence, it will also collect, analyze, and store data in speed and quantity that has not been seen before. The project is in the design phase and is constantly evolving to overcome technological and legislative barriers. As of September 2020 the SKA had received final approval and is preparing to enter the construction phase [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The future achievement of this project is highlighted by the amount of the data processed,
+as well as how the data is being processed. While still in the design phase the global
+collaboration is attempting to predict any problems that may occur and plan accordingly. SKA
+must use custom designed hardware to handle the amount and speed of data processing necessary
+for this project to be successful. The matter in which this data is to be processed is entirely different then existing systems. Instead of storing the data collected for processing, the SKA will process data in real time and only store the results. In doing so, the intermediate data is disposed of after the processing process has been completed. Even in doing so the SKA will produce 700PB of usable data annually between the two telescope arrays. This scale processing will require 2 supercomputers each 25% more powerful than what was available in 2019, as well as broadband capabilities 100,000 times faster than what is expected to be available in 2022 [1]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;In the scope of this course the big data challenges this systems construction creates is
+most important to focus on. Undoubtedly a custom software and computing system must be
+developed. Although the data storage pipeline was previously described, it is important to note that small research stations across the globe will communicate with the large data center for each field of telescopes. To accomplish this task the designers expect to use various computer systems including custom PCBs, FPGAs, and commodity servers. The SKA team hopes to piggyback on existing infrastructure in the host countries to avoid starting from the ground up [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The first big data challenge stems from the volume of the data that will be collected and stored. In the use case data was to be collected at 700 petabytes per year, stored indefinitely (approximately 50 years) [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The velocity of the data being transferred is staggering as well. In this application the data is time dependent and needed at a constant pace for computation and refining. As proposed, data will be transferred at approximately 1TB/sec [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. According to the use case, there is not much variety in the type of data that will be transferred. In most cases the data will be in the form of images produced by the telescope with attached time data. If the researchers at the satellite office need access to other types of data, or more raw data, they will be able to do so through a virtual protocol as the data will not be stored on site [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The project designers seemed less sure in the variability of the data. In this case variability differs from variety as it refers to variation in the rate and nature of the data gathered. Here the variability was described as occasional, most often in the case when the telescope is changing the type of observation it is performing. It is also noted that there may be variability when the system is subject to certain strains, such as during system maintenance [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Additionally, the project designers stressed maintaining the quality of the data as well as
+building a troubleshooting pipeline for when errors occurred. All systems of the SKA will store remnants of data and proper logs to insure the integrity of the data. This concept is true not only for the raw data being collected, but also for all other processes including the telescope equipment, sensors, and transmission equipment. Overall, the data will be verified by a combination of physical human checks and automated checks by the computer [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Unlike the previous sections the project designers did not make entirely clear the type of data they expect to receive after all collection and processing has been complete. Out of curiosity I did a quick web search to see what data is typically generated by radio telescopes and it is a variety. In any case, the project designers are confident that their system will be able to handle any requests/queries the researchers make. As a final consideration, the quality and security of the data must be preserved. In this situation the SKA governing board seems most likely and appropriate to manage the data generated. The project designers point out that the data is initially available only to member agencies for the first 18 months, after the data is released to the general science community. In certain situations or countries however, the data is subject to ruling by the local governing board, and the SKA governing board will comply appropriately [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. In conclusion of the analysis of big data problems faced by the SKA project, it seems apparent that they are common to most projects involving big data. Primary concerns arise from data collection, storage, integrity, and security. Through analysis of the provided use case it is clear that the SKA project understands many of the roadblocks that they must overcome, however in many situations they did not spell out a clear plan or solution. Many of their provided responses were vague but I am confident that with a coalition of scientists across the international community in support, the team will be able to reach their goals.&lt;/p&gt;
+&lt;p&gt;The science goals of the SKA project were briefly mentioned, but it is worth looking into
+each in more detail. The first use case is research into the evolution of the galaxy, dark energy, and the rapid acceleration in size of the universe. To accomplish this goal, the SKA will monitor hydrogen distribution throughout the galaxy, specifically at the edge of the known galaxy in hopes of watching new ones be born. Initially discovered in 1930 by Karl Jansky, hydrogen can be monitored as it returns a specific frequency back to the radio telescope. The SKA has the added feature of being able to see further and more precisely to gather a better understanding of what is occurring in the galaxy [4]&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. In this section, the project designers make a careful clarification into what is meant by the sensitivity and resolution of the SKA. Sensitivity is defined as the measure of the minimum signal that a telescope can distinguish above background noise. The SKA sensitivity comes from the combination of radio receivers at the low, mid, and high range frequencies combined to effectively create a single radio telescope 1km wide. Resolution is the measure of the minimum size that a telescope can distinguish, or the cutoff when the telescope produces a blurry image compared to a clear image. The receivers of the SKA are relatively spread out which helps to increase the telescope&amp;rsquo;s resolution [4]&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The second use case is further exploring the magnetic field that exists in our galaxy.
+Magnetic fields are entirely invisible, even to the largest telescopes, so instead the researchers look at various concentrations of radiation. In this section the researchers make an interesting note, they can anticipate the performance of the telescope in studying the known world however they expect that the SKA will open new research questions never before considered. As in the previous use case, the SKA’s resolution will allow researchers a view not previously achieved. The overall goal is to develop a map of the magnetic field through the known universe [5]&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The third use case is to study the cosmic dawn. With our current technology, such as the
+hubble telescope, researchers have only been able to study the first 300,000 years after the big bang. By studying the cosmic microwave background of this time period they are able to get a better understanding of how the universe developed. However the next half billion years gives an even better insight into the scale of the structures created as well as how they began to form and collapse under gravity. The SKA will allow researchers to see into this time period. For this use case, the sensitivity of the SKA is most important [6]&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Department of Animal Husbandry and Dairying.
-&lt;a href=&#34;http://dahd.nic.in/about-us/divisions/statistics&#34;&gt;http://dahd.nic.in/about-us/divisions/statistics&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;]&amp;ldquo;The SKA Project - Public Website&amp;rdquo;, Public Website, 2020. [Online]. Available:
+&lt;a href=&#34;https://www.skatelescope.org/the-ska-project/&#34;&gt;https://www.skatelescope.org/the-ska-project/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Alessandro, Nardone. (2010). &amp;ldquo;Buffalo Production and Research&amp;rdquo;.
-Italian Journal of Animal Science. 5. 10.4081/ijas.2006.203. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;SKA completes final reviews ahead of construction - Public Website&amp;rdquo;, Public Website, 2020.
+[Online]. Available:
+&lt;a href=&#34;https://www.skatelescope.org/news/ska-completes-final-reviews-ahead-of-construction/&#34;&gt;https://www.skatelescope.org/news/ska-completes-final-reviews-ahead-of-construction/&lt;/a&gt;.
+[Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;PIB Delhi. (2019). &amp;ldquo;Department of Animal Husbandry &amp;amp; Dairying
-releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
-&lt;a href=&#34;https://pib.gov.in/PressReleasePage.aspx?PRID=1588304&#34;&gt;https://pib.gov.in/PressReleasePage.aspx?PRID=1588304&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Use Case Survey_SKA&amp;rdquo;, Google Docs, 2020. [Online]. Available:
+&lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit&#34;&gt;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Galaxy Evolution, Cosmology and Dark Energy - Public Website&amp;rdquo;, Public Website, 2020.
+[Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/galaxyevolution/&#34;&gt;https://www.skatelescope.org/galaxyevolution/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Cosmic Magnetism - Public Website&amp;rdquo;, Public Website, 2020. [Online]. Available:
+&lt;a href=&#34;https://www.skatelescope.org/magnetism/&#34;&gt;https://www.skatelescope.org/magnetism/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Probing the Cosmic Dawn - Public Website&amp;rdquo;, Public Website, 2020. [Online]. Available:
+&lt;a href=&#34;https://www.skatelescope.org/cosmicdawn/&#34;&gt;https://www.skatelescope.org/cosmicdawn/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -3987,14 +3827,36 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-326/test/</link>
+      <link>/report/fa20-523-323/assignments/assignment-6/atugman-assignment6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-326/test/</guid>
+      <guid>/report/fa20-523-323/assignments/assignment-6/atugman-assignment6/</guid>
       <description>
         
         
-        &lt;p&gt;Test Data 1&lt;/p&gt;
+        &lt;p&gt;Anthony Tugman&lt;br&gt;
+E534&lt;br&gt;
+9/30/20&lt;br&gt;
+Assignment 6&lt;/p&gt;
+&lt;p&gt;The Covid-19 pandemic has brought a focus to tele-health due to its ability to promote social distancing as well as its ability to handle the sheer number of patients.  The focus on tele-health is most often in its use of connecting patients virtually with healthcare providers.  While this task is accomplished successfully, largely due to the high quality cameras and internet that are widely available, the increased use of tele-health and implementation of big data can bring further benefits.  In fact, it is already making large contributions in the healthcare industry improving care, accuracy, and efficiency for both patients and healthcare providers.  Prior to Covid-19 tele-health adoption was at 11%, increasing to 45% during the pandemic[1]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The increase in adoption has led to a flood in big data.  Through the use of AI analytics, this data can provide countless meaningful insights.&lt;/p&gt;
+&lt;p&gt;The technology surrounding tele-health has been under development and deployment for many years, however the pandemic increased adoption and provided a catalyst for this industry.  The overall goal of tele-health is to provide healthcare to underserved individuals through increased connectivity.  With the increase in connectivity comes the increase in big data and connected monitoring devices.  The information and insights produced by these monitoring devices is an untapped trove of medical patterns, statistics, and associated information that can inform healthcare and policymakers in their decisions.  The most important outcome from this is the newly sourced data that can be used in a variety of ways.&lt;/p&gt;
+&lt;p&gt;To explore how this technology is being applied to tele-health an example use case of photo recognition for skin conditions will be described.  In itself, the creation of an algorithm to detect skin conditions is nothing novel.  But when the algorithm is making potentially life or death decisions there are some additional intricacies built in.  Google has created an algorithm that is able to identify 26 skin conditions with as much accuracy as trained dermatologists [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.  To achieve such accuracy the AI system was designed to mimic human dermatologist behaviors.  This means using associated metadata such as region, race, gender, health history, etc. as well as the image itself to make an informed list of possible conditions, just as a dermatologist would.  That is, an actual diagnosis is not being made, but rather suggestions as to how to narrow down lab tests for result determination [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.  And while the success rate is impressive, this system has drawbacks predicting rare or undertrained conditions.  These drawbacks arise from the limited training datasets available.  In fact HIPAA and additional privacy protections have made it difficult for tele-health with AI to become more mainstream [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;It seems that the patient privacy protections laws are standing in the way between tele-health and its true potential.  While the technology is ready to go, as it has been developed for other fields and would be easy to transfer, time needs to be taken to stand back and establish trust with the public.  To establish public trust, especially concerning sensitive health information, standards, transparency, and accountability must be established.  With the increased adoption of tele-health, now is a better time than ever to gain the public&amp;rsquo;s trust.  Once this has been accomplished it will be possible to amass larger, more organic datasets that contain even the rarest ailments making diagnoses more accurate.&lt;/p&gt;
+&lt;p&gt;Although not a goal of the discussed algorithm, one of the most interesting facets of this form of data collection is the patterns that can be observed.  If suddenly all health information was available to researchers it would be possible to see where certain diseases are concentrated, what factors may be contributing, as well as how resources should be distributed.  With the addition of an exponential amount of datasets, these AI systems could even become predictive in use.  That is, they could be used to monitor conditions against a standard to alert of certain abnormalities in the healthcare system such as an incoming pandemic.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;How intelligent data transforms health in the time of COVID-19&amp;rdquo;, MobiHealthNews, 2020. [Online]. Available: &lt;a href=&#34;https://www.mobihealthnews.com/news/how-intelligent-data-transforms-health-time-covid&#34;&gt;https://www.mobihealthnews.com/news/how-intelligent-data-transforms-health-time-covid&lt;/a&gt;. [Accessed: 15- Oct- 2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;K. Wiggers, &amp;ldquo;Google says its AI detects 26 skin conditions as accurately as dermatologists&amp;rdquo;, VentureBeat, 2020. [Online]. Available: &lt;a href=&#34;https://venturebeat.com/2019/09/13/googles-ai-detects-26-skin-conditions-as-accurately-as-dermatologists/&#34;&gt;https://venturebeat.com/2019/09/13/googles-ai-detects-26-skin-conditions-as-accurately-as-dermatologists/&lt;/a&gt;. [Accessed: 15- Oct- 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;How HIPAA Is Undermining IT and AI’s Potential To Make Healthcare Better - Electronic Health Reporter&amp;rdquo;, Electronichealthreporter.com, 2020. [Online]. Available: &lt;a href=&#34;https://electronichealthreporter.com/how-hipaa-is-undermining-it-and-ais-potential-to-make-healthcare-better/&#34;&gt;https://electronichealthreporter.com/how-hipaa-is-undermining-it-and-ais-potential-to-make-healthcare-better/&lt;/a&gt;. [Accessed: 19- Oct- 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>
