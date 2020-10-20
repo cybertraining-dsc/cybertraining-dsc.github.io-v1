@@ -1,6 +1,11 @@
 draft:
 	hugo server -D
 
+setup:
+	npm install autoprefixer
+	npm install postcss
+
+
 pull:
 	cd content/en/report/cloudmesh-openapi; git pull
 	cd content/en/report/fa20-523-301; git pull

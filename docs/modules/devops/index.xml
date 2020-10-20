@@ -187,7 +187,7 @@ portable across clouds.&lt;/p&gt;
 &lt;p&gt;IaC solves the problem of &lt;em&gt;environment drift&lt;/em&gt;, that used to lead to the
 infamous “but it works on my machine” kind of errors that are difficult
 to trace. According to &lt;span class=&#34;citeproc-not-found&#34;
-data-reference-id=&#34;WhatisIaC002&#34;&gt;**???**&lt;/span&gt;&lt;/p&gt;
+data-reference-id=&#34;WhatisIaC002&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;IaC guarantees Idempotence – known/predictable end state –
 irrespective of starting state. Idempotency is achieved by either
@@ -284,7 +284,7 @@ absolutely believe it should be applied system wide. Create a file
 &lt;pre&gt;&lt;code&gt;[defaults]
 hostfile = hosts.txt
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This local configuration file tells that the target machines&amp;rsquo; names
+&lt;p&gt;This local configuration file tells that the target machines&#39; names
 are given in a file named &lt;code&gt;hosts.txt&lt;/code&gt;. Next we will specify hosts in
 the file.&lt;/p&gt;
 &lt;p&gt;You should have ssh login accesses to all VMs listed in this file as
@@ -467,7 +467,7 @@ Double curly brackets like in &lt;code&gt;roles/r/tasks/main.yml&lt;/code&gt;:&l
     - make
     - make install
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, just edit the &lt;code&gt;hosts.txt&lt;/code&gt; file with your target VMs&amp;rsquo; IP addresses and
+&lt;p&gt;Now, just edit the &lt;code&gt;hosts.txt&lt;/code&gt; file with your target VMs&#39; IP addresses and
 execute the playbook.&lt;/p&gt;
 &lt;p&gt;You should be able to extend the Ansible playbook for your
 needs. Configuration tools like Ansible are important components to

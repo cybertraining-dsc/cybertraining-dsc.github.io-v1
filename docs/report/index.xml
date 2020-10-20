@@ -2092,7 +2092,7 @@ Link th=o wher ethe open api is created in the&lt;/p&gt;
         &lt;h1 id=&#34;mlperf-tests&#34;&gt;MLPerf Tests&lt;/h1&gt;
 &lt;p&gt;According to &lt;a href=&#34;https://mlperf.org/&#34;&gt;https://mlperf.org/&lt;/a&gt; MLPerf provides &amp;quot; Fair and useful
 benchmarks for measuring training and inference performance of ML
-hardware, software, and services&amp;rdquo; [@www-mlperf]&lt;/p&gt;
+hardware, software, and services&amp;quot; [@www-mlperf]&lt;/p&gt;
 
       </description>
     </item>
@@ -3154,7 +3154,7 @@ option if the above datasets are not sufficient&lt;/p&gt;
 &lt;p&gt;I will build a Python program to learn these data and generate a
 prediction on when the IDX Composite will recover. I will also consider
 the recovery rate of each of these sectors: 1. Mining 2. Agriculture 3.
-Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&amp;rsquo;
+Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&#39;
 Goods 7. Property 8. Trading 9. Basic Industry While they are
 incorporated in the IDX Composite, the recovery rate of each sector may
 be different because of their respective nature of the industry. For
@@ -3267,7 +3267,7 @@ option if the above datasets are not sufficient&lt;/p&gt;
 &lt;p&gt;I will build a Python program to learn these data and generate a
 prediction on when the IDX Composite will recover. I will also consider
 the recovery rate of each of these sectors: 1. Mining 2. Agriculture 3.
-Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&amp;rsquo;
+Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&#39;
 Goods 7. Property 8. Trading 9. Basic Industry While they are
 incorporated in the IDX Composite, the recovery rate of each sector may
 be different because of their respective nature of the industry. For
@@ -3335,7 +3335,7 @@ option if the above datasets are not sufficient&lt;/p&gt;
 &lt;p&gt;I will build a Python program to learn these data and generate a
 prediction on when the IDX Composite will recover. I will also consider
 the recovery rate of each of these sectors: 1. Mining 2. Agriculture 3.
-Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&amp;rsquo;
+Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&#39;
 Goods 7. Property 8. Trading 9. Basic Industry While they are
 incorporated in the IDX Composite, the recovery rate of each sector may
 be different because of their respective nature of the industry. For

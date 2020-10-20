@@ -40,8 +40,9 @@ See hugo
 If you have not yet cloned the repo you can do this with
 
 ```bash
-git clone https://github.com/cybertraining-dsc/cybertraining-dsc.github.io.git
+git clone --recurse-submodules -j8 git@github.com:cybertraining-dsc/cybertraining-dsc.github.io.git
 cd cybertraining-dsc.github.io
+make setup
 ```
 
 ## Compile
@@ -49,6 +50,7 @@ cd cybertraining-dsc.github.io
 The web page can be compiled and run with
 
 ```bash
+make pull # pulls new info from the submodules
 hugo serve
 ```
 
