@@ -58,3 +58,30 @@
 [submodule "content/en/report/fa20-523-331"]
 	path = content/en/report/fa20-523-331
 	url = git@github.com:cybertraining-dsc/fa20-523-331.git
+[submodule "content/en/report/fa20-523-328"]
+	path = content/en/report/fa20-523-328
+	url = git@github.com:cybertraining-dsc/fa20-523-328.git
+[submodule "content/en/report/fa20-523-349"]
+	path = content/en/report/fa20-523-349
+	url = git@github.com:cybertraining-dsc/fa20-523-349.git
+[submodule "content/en/report/fa20-523-332"]
+	path = content/en/report/fa20-523-332
+	url = git@github.com:cybertraining-dsc/fa20-523-332.git
+[submodule "content/en/report/fa20-523-319"]
+	path = content/en/report/fa20-523-319
+	url = git@github.com:cybertraining-dsc/fa20-523-319.git
+[submodule "content/en/report/fa20-523-327"]
+	path = content/en/report/fa20-523-327
+	url = git@github.com:cybertraining-dsc/fa20-523-327.git
+[submodule "content/en/report/fa20-523-339"]
+	path = content/en/report/fa20-523-339
+	url = git@github.com:cybertraining-dsc/fa20-523-339.git
+[submodule "content/en/report/fa20-523-330"]
+	path = content/en/report/fa20-523-330
+	url = git@github.com:cybertraining-dsc/fa20-523-330.git
+[submodule "content/en/report/fa20-523-336"]
+	path = content/en/report/fa20-523-336
+	url = git@github.com:cybertraining-dsc/fa20-523-336.git
+[submodule "content/en/report/fa20-523-341"]
+	path = content/en/report/fa20-523-341
+	url = git@github.com:cybertraining-dsc/fa20-523-341.git

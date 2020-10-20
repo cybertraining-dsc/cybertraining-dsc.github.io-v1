@@ -2378,9 +2378,10 @@ This API should be executed at the end of the session to delete all the resource
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-dataset&#34;&gt;2. Dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-objective&#34;&gt;3. Objective&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-references&#34;&gt;4. References&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-objective&#34;&gt;2. Objective&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-dataset&#34;&gt;3. Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-work-breakdown&#34;&gt;4. Work Breakdown&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
@@ -2389,16 +2390,19 @@ This API should be executed at the end of the session to delete all the resource
 
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; please add keywords&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;The topic to be investigated is basketball player performance as it relates to injury. The topic of injury and recovery is a multi-billion dollar industry.  The Sports Medicine field is expected to reach $7.2 billion dollars by 2025 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The scope of this effort is to explore National Basketball Association(NBA) teams, but the additional uses of a topic such as this could expand into other realms such as the National Football League, Major League Baseball, the Olympic Committees, and many other avenues.  For leagues with salaries, projecting an expected return on the investment can assist in contract negotiations and cater expectations.&lt;/p&gt;
-&lt;h2 id=&#34;2-dataset&#34;&gt;2. Dataset&lt;/h2&gt;
+&lt;p&gt;The topic to be investigated is basketball player performance as it relates to injury. The topic of injury and recovery is a multi-billion dollar industry.  The Sports Medicine field is expected to reach $7.2 billion dollars by 2025 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The scope of this effort is to explore National Basketball Association(NBA) teams, but the additional uses of a topic such as this could expand into other realms such as the National Football League, Major League Baseball, the Olympic Committees, and many other avenues.  For leagues with salaries, projecting an expected return on the investment can assist in contract negotiations and cater expectations.  Competing at such a high level of intensity puts these players at a greater risk to injury than the average athlete because of the intense and constant strain on their bodies.  The overall valuation of the NBA in recent years is over 2 billion dollars, meaning each team is spending millions of dollars in the pursuit of a championship every season.  Injuries to players can cost teams not only wins but also significant profits.  Ticket sales alone for a single NBA finals game have reported greater than 10 million dollars in profit for the home team, if a team&amp;rsquo;s star player gets injured just before the playoffs and the team does not succeed, that is a lot of money lost.  These injuries can have an effect no matter the time of year, regular season ticket sales have been known to fluctuate with injuries from the team&amp;rsquo;s top performers.  Besides ticket sales these injuries can also influence viewrship, TV or streaming, and potentially lead to a greater loss in profits.  With the health of the players and so much money at stake NBA team organizations as a whole do their best to take care of their players and keep them injury free.&lt;/p&gt;
+&lt;h2 id=&#34;2-objective&#34;&gt;2. Objective&lt;/h2&gt;
+&lt;p&gt;The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyse this information from the datasets, a predictive model will need to be created using a large set of the data to train.&lt;/p&gt;
+&lt;p&gt;From this point, a test run will be used to gauge the validity and accuracy of the model compared to some of the data set aside.  The model created will be able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance.  Feature engineering will be performed prior to training the model in order to improve the chances of higher accuracy from the predictions.  This model could be used to keep an eye out for how a player&amp;rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.&lt;/p&gt;
+&lt;h2 id=&#34;3-dataset&#34;&gt;3. Dataset&lt;/h2&gt;
 &lt;p&gt;To compare performance and injury, a minimum of two datasets will be needed. The first is a dataset of injuries for players &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This dataset will create the samples necessary for review.&lt;/p&gt;
 &lt;p&gt;Once the controls for injuries are established, the next requirement will be to establish  pre-injury performance parameters and post-injury parameters.  These areas will be where the feature engineering will take place.  The datasets needed must dive into appropriate basketball performance stats to establish a metric to encompass a player’s performance. One example that ESPN has tried in the past is the Player Efficiency Rating (PER).  To accomplish this, it will be important to review player performance within games such as in the “NBA games data” &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; dataset.  There is a potential to pull more data from other datasets such as the “NBA Enhanced Box Score and Standings (2012 - 2018)” &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.  It is important to use the in depth data from the “NBA games data” &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. dataset because of how it will allow us to see how the player was performing throughout the season, and not just their average stats across the year.  With in depth information about each game of the season, and not just the teams and players aggregated stats, added to the data provided from the injury dataset &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; we will be able to compose new metrics to understand how these injuries are actually affecting the players performance.&lt;/p&gt;
 &lt;p&gt;Along the way we look forward to discovering if there is also a causal relationship to the severity of some of the injuries, based on how the player was performing just before the injury.  The term “load management” has become popular in recent years to describe players taking rest periodically throughout the season in order to prevent injury from overplaying.  This new practice has received both support for the player safety it provides and also criticism around players taking too much time off.  Of course not all injuries are entirely based on the recent strain under the players body, but a better understanding about how that affects the injury as a whole could give better insight into avoiding more injuries.  It is important to remember though that any pattern identification would not lead to an elimination of all injuries, any contact sport will continue to have injuries, especially one as high impact as the NBA.  There is value to learn from why some players are able to return from certain injuries more quickly and why some return to almost equivalent or better playing performance than before the injury.  This comparison of performance will be made by deriving metrics based on varying ranges of games immediately leading up to injury and then immediately after returning from injury.  In addition to that we will perform comparisons to the players known peak performance to better understand how the injury affected them.  Another factor it will be important to include is the length of time recovering from the injury. Different players take differing amounts of time off, sometimes even with similar injuries.  Something will be said about the player’s dedication to recovery and determination to remain at peak performance, even through injury, when looking at how severe their injury was, how much time was taken for recovery, and how they performed upon returning.&lt;/p&gt;
 &lt;p&gt;These datasets were chosen because they allow for a review of individual game performance, for each team, throughout each season in the recent decade.  Aggregate statistics such as points per game (ppg) can be deceptive because duration of the metric is such a large period of time.  The large sample of 82 games can lead to a perception issue when reviewing the data.  These datasets include more variables to help us determine effects to player injury, such as minutes per game (mpg) to understand how strenuous the pre-injury performance or how fatigue may have played a factor in the injury.  Understanding more of the variables such as fouls given or drawn can help determine if the player or other team seemed to be the primary aggressor before any injury.&lt;/p&gt;
-&lt;h2 id=&#34;3-objective&#34;&gt;3. Objective&lt;/h2&gt;
-&lt;p&gt;The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyse this information from the datasets, a predictive model will need to be created using a large set of the data to train.&lt;/p&gt;
-&lt;p&gt;From this point, a test run will be used to gauge the validity and accuracy of the model compared to some of the data set aside.  The model created will be able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance.  Feature engineering will be performed prior to training the model in order to improve the chances of higher accuracy from the predictions.  This model could be used to keep an eye out for how a player&amp;rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.&lt;/p&gt;
-&lt;h2 id=&#34;4-references&#34;&gt;4. References&lt;/h2&gt;
+&lt;h2 id=&#34;4-work-breakdown&#34;&gt;4. Work Breakdown&lt;/h2&gt;
+&lt;p&gt;Initial Project Report - Gorius, Hemmerlein
+Predictive Model - breakdown udetermined at this time&lt;/p&gt;
+&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -2490,10 +2494,10 @@ This API should be executed at the end of the session to delete all the resource
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-305/homework-3/cody_harris_hw3/</link>
+      <link>/report/fa20-523-305/homework3/cody_harris_hw3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-305/homework-3/cody_harris_hw3/</guid>
+      <guid>/report/fa20-523-305/homework3/cody_harris_hw3/</guid>
       <description>
         
         
@@ -2554,14 +2558,17 @@ A project this large and versatile requires the use of many software tools. Thes
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-305/project/project/</link>
+      <link>/report/fa20-523-305/project/old_project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-305/project/project/</guid>
+      <guid>/report/fa20-523-305/project/old_project/</guid>
       <description>
         
         
         &lt;h1 id=&#34;how-big-data-technologies-can-improve-indoor-agriculture&#34;&gt;How Big Data Technologies Can Improve Indoor Agriculture&lt;/h1&gt;
+&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
+&lt;h1 id=&#34;harrcodyiuedu&#34;&gt;Cody Harris
+&lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Cody Harris, &lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;, fa20-523-305&lt;/p&gt;
 
 
@@ -2571,6 +2578,10 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#team&#34;&gt;Team&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#topic-discussion&#34;&gt;Topic Discussion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#dataset&#34;&gt;Dataset&lt;/a&gt;&lt;/li&gt;
@@ -2617,6 +2628,116 @@ A project this large and versatile requires the use of many software tools. Thes
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-305/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-305/project/project/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;estimating-soil-moisture-content-using-sensor-and-weather-data&#34;&gt;Estimating Soil Moisture Content Using Sensor and Weather Data&lt;/h1&gt;
+&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
+&lt;p&gt;Cody Harris, &lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305&#34;&gt;fa20-523-305&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/edit/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on on weather data. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term. A solution would be to allow farmers to contract out a limited study of their land using sensors and then this model would be able to predict soil moistures from weather data.&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#team&#34;&gt;Team&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#topic-discussion&#34;&gt;Topic Discussion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#datasets&#34;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#data-cleaning-and-aggregation&#34;&gt;Data Cleaning and Aggregation&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#preliminary-analysis-and-eda&#34;&gt;Preliminary Analysis and EDA&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#plan-for-the-rest-of-the-semseter&#34;&gt;Plan for the rest of the Semseter&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#october-26&#34;&gt;October 26&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#november-2&#34;&gt;November 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#november-9&#34;&gt;November 9&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#november-16&#34;&gt;November 16&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; agriculture, soil moisture, IoT&lt;/p&gt;
+&lt;h2 id=&#34;topic-discussion&#34;&gt;Topic Discussion&lt;/h2&gt;
+&lt;p&gt;Maintaining correct soil moisture throughout the plant growing process can result in better yeilds, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligable effects&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.&lt;/p&gt;
+&lt;p&gt;For hundreds of years, farmers have done something similar to this model. The difference is the precision that we can gain by using real data. For the past few hundred years, farmers had to rely on mostly experience and touch to know the moisture of their soil. While many farmers were successful, in the sense that they produced crops, there were ways they could have better optimized their crops to produce better. The water avaliable to the plants is not the only variable that effects yeilds, but this project seeks to create an accessible model to which farmers can have predicted values of soil moisture without needing to buy and deploy expensive sensors.&lt;/p&gt;
+&lt;p&gt;The model created could be used in various ways. The first main use is to be able to monitor what is currently happening in the soil so that changes can be made to correct the issue if there is one. Secondly, a farmer could evaluate historical data and compare it to yeilds or other results of the harvest and use this analytical information to inform future descions.&lt;/p&gt;
+&lt;p&gt;This project specifically seeks to see the effect of weather on a particular piece of land in Washington state. This process could be done all over the world to obtain benchmarks. These benchmarks could be a cheap option for a farmer that does not have the funds to support a full study of water usage on their land. Instead, they could look for a model that has land that has similar soil and or geographical features, and then use their own weather data to estimate their soil moisture content.&lt;/p&gt;
+&lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
+&lt;p&gt;The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/resources/distance_map.png&#34; data-canonical-src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/resources/distance_map.png&#34; width=&#34;350&#34; height=&#34;350&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The second dataset comes from the USDA. This dataset consits of &amp;ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&amp;rdquo; at a farm in Washington state &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.&lt;/p&gt;
+&lt;p&gt;Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the sattelite image.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/resources/sensor_locations.png&#34; data-canonical-src=&#34;https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/resources/sensor_locations.png&#34; width=&#34;651&#34; height=&#34;280&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-cleaning-and-aggregation&#34;&gt;Data Cleaning and Aggregation&lt;/h2&gt;
+&lt;p&gt;The first step is to get the soil moisture data into a combined format, currently it is in one file per sensor, and there are 42 sensors. See the data_cleaning_aggregation.ipynb file to see how this was done. After aggregation, some basic information can be checked about the data. For instance, there is quite a bit of NAs in the data. These NAs are just instances where there was no measurement on that day. There is about 45% NAs in the measurement columns. To further clean the data, any row that has only NAs for the measurements will be removed.&lt;/p&gt;
+&lt;p&gt;Next, the weather data needs some small adjustments. This is mostly in the form of removing columns that either are empty or have redundant data such as elevation.&lt;/p&gt;
+&lt;p&gt;Once the data is sufficiently clean, some choices have to be made on joining the data. The simplist route would be to join the weather measurements directly with the same day the soil measurement, however, the previous days weather is likely to also have an impact on the moisture. In the same fashion, the weather for the 5 previous days might all have a large impact on the moisture. So simply joining the two data sets right now is likely not the correct course of action until further analysis is made.&lt;/p&gt;
+&lt;h2 id=&#34;preliminary-analysis-and-eda&#34;&gt;Preliminary Analysis and EDA&lt;/h2&gt;
+&lt;p&gt;Before building a machine learning model, it is important to get a general idea of how the data looks, to see if any insights can be made right away.&lt;/p&gt;
+&lt;p&gt;The first two visualizations are grids that show the entire distribution of measurements across each sensor. The first grid is the volume of water at 30 cm, and the second grid is the water volume at 150 cm. Each chart could be looked at and examined on it&amp;rsquo;s own, but what is most important to note is the variability of the measures from location to location. These different sensors are not that far away, but show that different areas of the farm do retain water in different ways.&lt;/p&gt;
+&lt;p&gt;The third and fourth grid shows the temperature at 150 cm, the results are what would logically be expected. The different sensors do not show much variance from location to location.&lt;/p&gt;
+&lt;p&gt;A simple bar chart is used to get a quick overview of the percipitation values over the same time period to see the overall trends. The most interesting part of this analysis is from the end of 2009 to nearly 2012. There is very little percipitation in this time period. Which initially looks like an issue with the data, but when it is compared to the water volume charts, a correlation can be seen. It isn&amp;rsquo;t perfect, but in many of the sensors that have data in this period, the moisture seems rather constant.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: After doing this analysis using the Altair library in python, the notebook became way too big due to the size of the data. As a quick remedy for this, I saved the visualizations as PNG and saved them in the resources folder. They are named: one, two, three, and four, for the order that they are mentioned in the above section. I will remove the eda notebook from the repo.&lt;/p&gt;
+&lt;h2 id=&#34;plan-for-the-rest-of-the-semseter&#34;&gt;Plan for the rest of the Semseter&lt;/h2&gt;
+&lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates&lt;/p&gt;
+&lt;h3 id=&#34;october-26&#34;&gt;October 26&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Further EDA (make charts more presentable)&lt;/li&gt;
+&lt;li&gt;Create multiple data sets that allow for the training data to include the past N days of weather&lt;/li&gt;
+&lt;li&gt;Brainstorm ideas for feature engineering and build features&lt;/li&gt;
+&lt;li&gt;Test various ML methods using scikit-learn to get an early idea of possible models, and to have a baseline for comparison&lt;/li&gt;
+&lt;li&gt;Update report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;november-2&#34;&gt;November 2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Tune hyperparameters for selected ML model&lt;/li&gt;
+&lt;li&gt;Evalutate deep learning frameworks (Keras, PyTorch, scikit-learn also has NN functionalities)&lt;/li&gt;
+&lt;li&gt;Try to implement simple deep learning model&lt;/li&gt;
+&lt;li&gt;Update report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;november-9&#34;&gt;November 9&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Further tune and tweak models&lt;/li&gt;
+&lt;li&gt;Start analyzing various models and techniques to find the most accurate model&lt;/li&gt;
+&lt;li&gt;Update report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;november-16&#34;&gt;November 16&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Build a library/program that can pull weather data from NOAA and takes sensor input and outputs predictions of soil moisture by area&lt;/li&gt;
+&lt;li&gt;Finalize report and findings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;O. Denmead and R. Shaw, &amp;ldquo;The Effects of Soil Moisture Stress at Different Stages of Growth on the Development and Yield of Corn 1&amp;rdquo;, Agronomy Journal, vol. 52, no. 5, pp. 272-274, 1960. Available: 10.2134/agronj1960.00021962005200050010x. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;N. (NCEI), &amp;ldquo;Climate Data Online (CDO) - The National Climatic Data Center&amp;rsquo;s (NCDC) Climate Data Online (CDO) provides free access to NCDC&amp;rsquo;s archive of historical weather and climate data in addition to station history information. | National Climatic Data Center (NCDC)&amp;rdquo;, Ncdc.noaa.gov, 2020. [Online]. Available: &lt;a href=&#34;https://www.ncdc.noaa.gov/cdo-web/&#34;&gt;https://www.ncdc.noaa.gov/cdo-web/&lt;/a&gt;. [Accessed: 19- Oct- 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Data from: A field-scale sensor network data set for monitoring and modeling the spatial and temporal variation of soil moisture in a dryland agricultural field&amp;rdquo;, USDA: Ag Data Commons, 2020. [Online]. Available: &lt;a href=&#34;https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field&#34;&gt;https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field&lt;/a&gt;. [Accessed: 19- Oct- 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-305/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2631,10 +2752,10 @@ A project this large and versatile requires the use of many software tools. Thes
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-307/homework/homework6/</link>
+      <link>/report/fa20-523-307/assignment6/assignment6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-307/homework/homework6/</guid>
+      <guid>/report/fa20-523-307/assignment6/assignment6/</guid>
       <description>
         
         
@@ -2677,6 +2798,7 @@ A project this large and versatile requires the use of many software tools. Thes
     &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. DataSets&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#outline-of-plan&#34;&gt;Outline of plan&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#4-technologies-used&#34;&gt;4. Technologies used&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
@@ -2699,10 +2821,33 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;li&gt;Data cleaning and extraction.&lt;/li&gt;
 &lt;li&gt;New data will be updated to keep up with the current time.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;outline-of-plan&#34;&gt;Outline of plan&lt;/h2&gt;
+&lt;p&gt;In the next seven weeks, these are the tasks that need to be accomplished.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Week 9 - Week 10: Clean and preprocess the data needed for the project&lt;/li&gt;
+&lt;li&gt;Week 10 - Week 11: Research what methods that should be used&lt;/li&gt;
+&lt;li&gt;Week 11 - Week 13: Preform sentiment analysis to find features and see if any correlation exists&lt;/li&gt;
+&lt;li&gt;Week 13 - Week 16: Build out NLP model&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;4-technologies-used&#34;&gt;4. Technologies used&lt;/h2&gt;
 &lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, Tensorflow/PyTorch&lt;/p&gt;
 &lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-308/hw7/task_3_next_steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-308/hw7/task_3_next_steps/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h1&gt;
+&lt;p&gt;I am still not 100% that this is the project I want to complete. As the instructions for HW 5 laid out, we do not have to fully commit at this point to the project. I may try to work on a basic deep learning project that can introduce me to that type of work. Next steps for the project I have started here would be to complete the basic descriptive data modeling in charts. Then would be to model the data and pull in the playoff teams from 2009-2019 to compare the model output with the playoff team that qualified for the playoffs. I want to work on this over the next month before moving onto the writing portion of the project.&lt;/p&gt;
 
       </description>
     </item>
@@ -2718,37 +2863,49 @@ A project this large and versatile requires the use of many software tools. Thes
         
         &lt;h1 id=&#34;nfl-regular-season-skilled-position-player-performance-as-a-predictor-of-playoff-appearance&#34;&gt;NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow our template&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; improve markdown skills&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; use footnotes as refernces, learn how to do this, read our piaza posts&lt;/li&gt;
+&lt;li&gt;[I have updated to follow the template ] please follow our template&lt;/li&gt;
+&lt;li&gt;[I have attempted to match the markdwon of the template ] improve markdown skills&lt;/li&gt;
+&lt;li&gt;[again attempted to match the template ] use footnotes as refernces, learn how to do this, read our piaza posts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Travis Whitaker &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-308&#34;&gt;fa20-523-308&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
-&lt;p&gt;The dataset we will be using is in a github folder that holds nflscrapR-data that originates from NFL.com [1]. The folder includes play-by-play data, including performance measures, for all regular season games from 2009 to 2019. This file will be paired with week-by-week regular season roster data for each team in the NFL. This will allow me to track skilled position player performance during the regular season and then compare this regular season file with the files that contain playoff teams for each year from 2009-2019. Supplemental data may be pulled from Pro-Football-Reference.com or other sources depending on what preliminary data analysis presents [2].&lt;/p&gt;
-&lt;h2 id=&#34;what-needs-to-be-done-to-get-a-great-grade&#34;&gt;What needs to be done to get a great grade&lt;/h2&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;(To be written)&lt;/p&gt;
+&lt;p&gt;Contents
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#abstract&#34;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-methodology&#34;&gt;4. Methodology&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-inference&#34;&gt;5. Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-conclusion&#34;&gt;6. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#8-references&#34;&gt;8. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;(Content to be entered from proposal and additional material written)&lt;/p&gt;
+&lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
+&lt;p&gt;The dataset we will be using is in a github folder that holds nflscrapR-data that originates from NFL.com [&lt;sup&gt;1&lt;/sup&gt;]. The folder includes play-by-play data, including performance measures, for all regular season games from 2009 to 2019. This file will be paired with week-by-week regular season roster data for each team in the NFL. This will allow me to track skilled position player performance during the regular season and then compare this regular season file with the files that contain playoff teams for each year from 2009-2019. Supplemental data may be pulled from Pro-Football-Reference.com or other sources depending on what preliminary data analysis presents [&lt;sup&gt;2&lt;/sup&gt;].&lt;/p&gt;
+&lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
 &lt;p&gt;The first step we am planning to take in understanding the data will be to use various slices of the data put into scatterplots and bar charts to find correlations and trends, as well as various time series charts. This will be an exploratory step in understanding the data. we may also deploy area charts to observe any interesting trends or segments of our data that may warrant additional analysis.&lt;/p&gt;
 &lt;p&gt;Then each metric from player performance during the regular season will be included in the analysis or algorithm that will be built to predict playoff appearance. Playoff appearance is a designation for a team qualifying for the post-season or playoffs. We am thinking it may be important to engineer some new features to potentially provide insights.  For instance, it is possible to determine whether a play was during the final two minutes of a half and if a play was in the red zone. During these critical points of a game a win or lose is often determined. So my thought is by weighing these moments and performance metrics with more importance in an algorithm the machine will better predict a team’s likelihood of making the playoffs. Another secondary metric that may strengthen the predictive ability of the algorithm would be to use Football Outsider’s Success Rate, which is a determination of a play’s success rate for the offense that is on the field [2]. This can also provide me with the down and distance to go for the offense and players that are on the field. We will also use college position designations as way to normalize the positions performance across teams. Many NFL teams utilize different player sets. Thus, it is important to use a standard, which college football uses across all teams. Since we am only interested in skill position players this will include Wide Receiver (WR), Running Back (RB), Full Back (FB), Quarterback (QB), and Tight End (TE). These designations will allow the algorithm to compare, if needed, the skill position performance across teams and by designation of players on that team for each metric utilized.&lt;/p&gt;
 &lt;p&gt;After breaking down the data into key categorical variables to see if there was an impact for these performance variables in making the playoffs for the NFL teams. These individual position statistics will need to be paired with their teammate’s performance metrics so that each team is represented by all of their skill position players. It is often debated as to which position is most important in football and whether a QB is critical to a successful post-season appearance. My hope is that by combining each skill position player onto their respective team we will be able to better determine the importance of success at each position by whether or not that team made the playoffs. Further, it will be important to see whether roster makeup across teams varies by position. If roster makeup is stable than we will not need to combining positions. However, if roster makeup varies, we will need to combine positions into a larger group instead of two subgroups. The concern here is the deployment of WR over TE. Some teams may carry more TE than others and fewer WR. Therefor we would need to combine WR and TE into a group called Designated Receiver (DR).&lt;/p&gt;
 &lt;p&gt;Metric measurement needs to be consistent across years. A comparison of year-to-year metrics will need to be done comparing each years measurements from 2009-2019 in order to make sure that the measurement techniques are stable and do not vary across time. If there are changes in the way metrics are measured than either that year will need to be dropped from the model or adjustments will need to be made to the metric to balance it with the other years included in the model.&lt;/p&gt;
 &lt;p&gt;Finally, once all metrics have been balanced and the team performance metrics have been aggregated. The algorithm will need to be implemented to identify the eight best teams from each NFL division and the two best other teams in the conference that would constitute the wild card playoff teams from each conference. Once this analysis is run, we will be able to look at retroactive NFL post-season designated teams from 2009-2019 to see how accurate the playoff prediction machine was at identifying NFL post-season teams for each year.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;p&gt;[1] Ryurko. Ryurko/NflscrapR-Data. 2 Mar. 2020, github.com/ryurko/nflscrapR-data.
-[2] Sports Reference, LLC. “Pro Football Statistics and History.”  Retrieved October 09, 2020. &lt;a href=&#34;https://www.pro-football-reference.com/&#34;&gt;https://www.pro-football-reference.com/&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-308/project/task_3_next_steps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-308/project/task_3_next_steps/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h1&gt;
-&lt;p&gt;I am still not 100% that this is the project I want to complete. As the instructions for HW 5 laid out, we do not have to fully commit at this point to the project. I may try to work on a basic deep learning project that can introduce me to that type of work. Next steps for the project I have started here would be to complete the basic descriptive data modeling in charts. Then would be to model the data and pull in the playoff teams from 2009-2019 to compare the model output with the playoff team that qualified for the playoffs. I want to work on this over the next month before moving onto the writing portion of the project.&lt;/p&gt;
+&lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
+&lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
+&lt;p&gt;[&lt;sup&gt;1&lt;/sup&gt;] Ryurko. Ryurko/NflscrapR-Data. 2 Mar. 2020, github.com/ryurko/nflscrapR-data.&lt;/p&gt;
+&lt;p&gt;[&lt;sup&gt;2&lt;/sup&gt;] Sports Reference, LLC. “Pro Football Statistics and History.”  Retrieved October 09, 2020. &lt;a href=&#34;https://www.pro-football-reference.com/&#34;&gt;https://www.pro-football-reference.com/&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2792,6 +2949,59 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;li&gt;Further analysis of the datasets to see if the age between the creation/release date reveal any shifts over time&lt;/li&gt;
 &lt;li&gt;What occurs when the data set is normalized based on creation/release date to the newest set and if they reveal any other interesting trends&lt;/li&gt;
 &lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-312/assignment6/assignment6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-312/assignment6/assignment6/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;engr-e-534-assignment-6-ai-in-health-and-medicine&#34;&gt;ENGR-E 534 Assignment 6: AI in Health and Medicine&lt;/h1&gt;
+&lt;h1 id=&#34;ai-enabled-covid-19-diagnostic-framework-utilizing-smartphone-based-embedded-sensors&#34;&gt;AI-enabled COVID-19 diagnostic framework utilizing Smartphone-based Embedded Sensors&lt;/h1&gt;
+&lt;p&gt;Saptarshi Sinha, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/&#34;&gt;fa20-523-312&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; smartphone, neural networks, CNN, RNN, embedded sensors, symptom detection, cloud computing&lt;/p&gt;
+&lt;h2 id=&#34;1-background-the-need-for-smarter-and-more-pervasive-covid-19-monitoring&#34;&gt;1. Background: The need for smarter and more pervasive COVID-19 monitoring&lt;/h2&gt;
+&lt;p&gt;As mankind grapples with the menacing threat of an ongoing pandemic involving the novel COVID-19 (coronavirus infection), researchers and clinicians across the board have tirelessly involved themselves in myriad efforts for controlling the relentless proliferation of this virus so as to check the viral-driven casualties across the globe. It might seem that for the very first time, science and technology have been put to its greatest test ever. It seems that only time can tell if our scientific valor is indeed powerful enough to succeed in such a test, or if the virus would instead claim a major portion of the world’s population as its unfortunate casualty.&lt;/p&gt;
+&lt;p&gt;Numerous scientific approaches have been fielded in a relatively short amount of time to deal with the current problem. Many approaches involve novel technologies such as remote video surveillance using assistive robots that monitor virus-inflicted patients, while also protecting those healthcare workers by not involving them in such in-person diagnostic processes. Other approaches involve using machine learning based methodologies for sorting out patents with the virus from those without it simply by using an efficient algorithmic procedure of analyzing different aspects of patients’ CT scans. Major companies have also stepped in to assist in a war-footing format. As an example, Amazon Care is providing pick-up and delivery-based services of test-kits in particular virus-prone locations. Apple’s Siri is now able to provide symptom-based guidance in relation to COVID-19. Microsoft helped creating the Adaptive Biotechnologies platform that studies how our immune system responds to the virus which can provide insights for establishing drug development procedures. Finally, various biotechnological companies all across the world have started conducting extensive research into vaccine development and drug development procedures to combat this novel strain of the virus.&lt;/p&gt;
+&lt;p&gt;As amazing these techniques might seem at a superficial glance, the major setback the world is suffering from is with the extent of the viral spread that is amplified due to the lack of testing capabilities. They are either inadequate or cannot handle an entire nation’s population. Although proactive actions have been employed in many nations, testing kits are still being produced slowly. This gives the virus an unfair advantage as time is of the essence. People (esp. asymptomatic individuals) with the virus remain undiagnosed for a greater length of time during which they can inadvertently aid with the proliferation of the viral disease. In this particular context, a very novel strategy for COVID-19 testing and diagnosis will be discussed that utilizes something that we all possess – a smartphone device.&lt;/p&gt;
+&lt;h2 id=&#34;2-design--working-principle-ai-based-diagnostic-framework-for-covid-19-utilizing-smartphone-based-embedded-sensors-and-artificial-neural-networks&#34;&gt;2. Design &amp;amp; Working Principle: AI-based diagnostic framework for COVID-19 utilizing Smartphone-based Embedded Sensors and Artificial Neural Networks&lt;/h2&gt;
+&lt;p&gt;Cornell University’s archive on Human Computer Interaction (HCI) features a recent article that discusses a strategy involving COVID-19 diagnosis with smartphone-based sensors. In its simplest form, the framework includes the smartphone, and its accompanying sensors and algorithms. External hardware accessories with high-power consumption, or access to specialized equipment is not required for this design &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Since the application framework involves something that common people use on a daily basis, no tutorials or expert assistance is required to work with such an application. To understand the framework better, we must first note the various symptom types that are exhibited by COVID-19 patients which include high fever, tiredness, dry cough, intense headache, shortness of breath, nausea, etc. To efficiently capture the symptoms, an essential piece of information to keep in mind here is that modern smartphone devices come equipped with various in-built sensors viz. camera sensor, inertial sensor, temperature sensor, accelerometer sensor, microphones, etc. Many previous endeavors utilized such sensors to detect symptoms for other diseases &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. For instance, temperature-fingerprint sensor was used previously for measuring fever-levels; camera sensors (with accelerometers) were utilized earlier to analyze fatigue levels via pattern-recognition algorithms for human-gait analysis; camera sensor (with inertial sensor) were also used for analyzing neck posture to evaluate the headache severities; and, even the microphone was utilized previously for analyzing a patient’s cough-noise in a diagnostic process &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The research article describes a strategy which uses these various smartphone sensors and their respective algorithms. This is followed up by creating a dataset record comprising predicted levels of the different symptoms which are collected from different patients and studied using deep learning approaches &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Chiefly, it uses Convolutional Neural Networks (CNN) to analyze spatial data (viz. imaging data from the camera sensor), and Recurrent Neural Networks (RNN) for temporal data (viz. signal or text-based measurements) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. The entire prediction-based framework can be summarized as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/Picture1.png&#34; alt=&#34;Smartphone-based framework for COVID-19 testing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;path_to_image&#34; alt&gt;
+    &lt;em&gt;Figure 1: Smartphone-based framework for COVID-19 testing; Source: Adapted from [^1]&lt;/em&gt;
+&lt;/p&gt;
+&lt;p&gt;The above framework can be sub-divided into four important layers which provides further insights into the different procedures going on in the background while the system makes the disease predictions.&lt;/p&gt;
+&lt;h3 id=&#34;i-reading&#34;&gt;i. Reading&lt;/h3&gt;
+&lt;p&gt;The first layer involves reading based functionalities for the data coming from different smartphone sensors. This could refer to arrays of different types of data coming from different sources (viz. CT scan imageries, accelerometer readings, microphone sound signals, etc.).&lt;/p&gt;
+&lt;h3 id=&#34;ii-configurations&#34;&gt;ii. Configurations&lt;/h3&gt;
+&lt;p&gt;The second layer deals with configuring onboard sensors for varied metrics such as time intervals, image resolution, etc. Readings from these first two steps are fed as inputs for the “symptoms algorithm” that can be executed as a smartphone application.&lt;/p&gt;
+&lt;h3 id=&#34;iii-symptoms-prediction&#34;&gt;iii. Symptoms Prediction&lt;/h3&gt;
+&lt;p&gt;The third layer deals with symptoms-level evaluation. The result is stored as a record that can be fed as an input for the next layer.&lt;/p&gt;
+&lt;h3 id=&#34;iv-covid-19-prediction&#34;&gt;iv. COVID-19 Prediction&lt;/h3&gt;
+&lt;p&gt;Finally, the last layer involves the application of deep learning (DL) based algorithms to the input data for predicting whether the patient has been afflicted with the virus. A CNN and RNN based combined process is utilized here such that the system can analyze both the spatial data (viz. image pixels) as well as the temporal data (viz. text/signal information) [1].&lt;/p&gt;
+&lt;h2 id=&#34;3-discussions-augmentation-with-cloud-comuputing-capabilities&#34;&gt;3. Discussions: Augmentation with Cloud-Comuputing capabilities&lt;/h2&gt;
+&lt;p&gt;To enhance the performance of this framework, the recorded data and predicted results can be uploaded to cloud-computing servers. This can help researchers and medical professionals from all around the globe in exchanging information and insights involving accurate patient diagnosis. Such applications are already developing. For instance, IBM recently launched the COVID-19 High Performance Computing Consortium &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. As the name suggests, this consortium has been explicitly designed to tackle the threat of COVID-19 by harnessing enormous computing power for streamlining the search for more information, aiding the hunt of possible treatment paths, and creating drug-and-disease based informational repositories that are made available to appropriate and eligible researchers and institutions strewn all across the globe &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;All in all, it is indeed very commendable on the part of these researchers to facilitate the design of such a low-cost yet effective method of diagnosing COVID-19 when testing capacities are severely limited. If used appropriately, it can stem the spread of this virus by making it possible to diagnose patients sooner and quarantining them. Of course, the strategy does not focus on the treatment itself. But in the current scenario, where we have arrived at a breaking point with this disease, it would greatly assist healthcare personnel with locating and quarantining patients, that would indirectly help saving scores of other lives.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Maghdid, Halgurd S., et al. “A Novel AI-Enabled Framework to Diagnose Coronavirus COVID 19 Using Smartphone Embedded Sensors: Design Study.” ArXiv:2003.07434 [Cs, q-Bio], May 2020. arXiv.org, &lt;a href=&#34;http://arxiv.org/abs/2003.07434&#34;&gt;http://arxiv.org/abs/2003.07434&lt;/a&gt; &lt;/br&gt; &lt;/br&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;D. Gil, “IBM Releases Novel AI-Powered Technologies to Help Health and Research Community Accelerate the Discovery of Medical Insights and Treatments for COVID-19”, ibm.com, Apr. 3, 2020. [Online]. Available: &lt;a href=&#34;https://www.ibm.com/blogs/research/2020/04/ai-powered-technologies-accelerate-discovery-covid-19/&#34;&gt;https://www.ibm.com/blogs/research/2020/04/ai-powered-technologies-accelerate-discovery-covid-19/&lt;/a&gt; [Accessed Oct. 17, 2020] &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>
@@ -2851,13 +3061,19 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;To answer the questions involving existence of multiple data-sets and motivation of using multiple data-sets, we must keep in mind that the very nature of this study is based on historical trends of the nature of water-quality in a particular region from the past and how it relates to the current situation. Because of these reasons, multiple data-sets will be referred to from multiple sources so as to achieve robust data-analytical results. This would ensure that too much focus is not given on outlier cases, that may be relevant to just a particular geographical region or an aberration in the data that may only have arisen due to an unknown underlying phenomenon or some form of cataclysmic event from the past. Using multiple datasets from different sources would help to get a resultant data structure that is more likely to converge towards an approximate level of historical thresholds and which can then be used to find out how the current observed data deviates from such previous patterns.&lt;/p&gt;
 &lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
 &lt;h3 id=&#34;41-hardware-component&#34;&gt;4.1 Hardware Component&lt;/h3&gt;
-&lt;p&gt;A very rough outline of the autonomous surface vehicle (ASV) in question has been preceived in the Autodesk Fusion 360 software model. A preliminary model has been designed in this software so as to 3D print the system. It will then be interfaced with the appropriate sensors in question. Then system will be driven by an Arduino-Uno based microcontroller, and it will have different types of environmental sensors that will collect and log data. These sensors have been purchased from the vendor, &amp;ldquo;Atlas Scientific&amp;rdquo;. As of now, the sensors that have been chosen for this ASV are as follows:&lt;/p&gt;
+&lt;p&gt;The rough outline of the autonomous surface vehicle (ASV) in question has been perceived in the Autodesk Fusion 360 software model. A preliminary model has been designed in this software so as to 3D print the system. It will then be interfaced with the appropriate sensors in question. Then system will be driven by an Arduino-Uno based microcontroller, and it will have different types of environmental sensors that will collect and log data. These sensors have been purchased from the vendor, &amp;ldquo;Atlas Scientific&amp;rdquo;. As of now, the sensors that have been chosen for this ASV are as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;PT-1000 Temperature sensor kit - &lt;a href=&#34;https://atlas-scientific.com/kits/pt-1000-temperature-kit/&#34;&gt;https://atlas-scientific.com/kits/pt-1000-temperature-kit/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Potential of Hydrogen (pH) sensor kit - &lt;a href=&#34;https://atlas-scientific.com/kits/ph-kit/&#34;&gt;https://atlas-scientific.com/kits/ph-kit/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Dissolved Oxygen (DO) sensor kit - &lt;a href=&#34;https://atlas-scientific.com/kits/dissolved-oxygen-kit/&#34;&gt;https://atlas-scientific.com/kits/dissolved-oxygen-kit/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Conductivity K 1.0 sensor kit - &lt;a href=&#34;https://atlas-scientific.com/kits/conductivity-k-1-0-kit/&#34;&gt;https://atlas-scientific.com/kits/conductivity-k-1-0-kit/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;A very rudimentary framework of the system has been realized in the Autodesk Fusion 360 software architecture as shown below. The design provided below is a very simplistic platform but which will lay the foundation of the final structure of the system.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/ASVSS1.png&#34; alt=&#34;ASV from Fusion 360&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;path_to_image&#34; alt&gt;
+    &lt;em&gt;Figure 1: Nascent framework of the ASV system in Fusion 360&lt;/em&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;42-software-component&#34;&gt;4.2 Software Component&lt;/h3&gt;
 &lt;p&gt;After the data has been collected by the ASV either on a temporal scale (over a period of time) or a spatial scale (over a geographical area), it will then be analyzed to decipher the median convergent values of the water body for the four different parameters that have been measured (i.e. Temperature, pH, DO, and Conductivity). The results of this data analysis task will then be used to find out if such water quality parametric values manifested by the aquatic ecosystem in question deviates by a large proportion from the other result that is obtained after analyzing the historical data from USGS and EPA for a nearby and unpolluted source of water. The USGS and EPA websites make it easier to find data from a nearby geographical region by making it possible to enter the desired location prior to searching for water quality data in their huge databases. In this way, it can be figured out if the water quality parameters of the particular ecological system varies wildly from a neighboring system that has almost the same geographical and ecological attributes.&lt;/p&gt;
 &lt;p&gt;The establishment of the degree of variance of the data from the historical data will be carried out by documenting the particular quartile range that the current data lies in with respect to the median data that is obtained from the past/historical datasets. For instance, if the current data resides in the second quartile, it can be demarcated as being more or less consistent with previously established values. However, if it resides in the first or third quartile then it might will that the system has aberrant aspects which might need to be investigated for possible levels of outside pollutants (viz. industrial effluents, agricultural wash-off, etc.), or presence of harmful invasive species that might be altering the delicate natural balance of the ecosystem in question.&lt;/p&gt;
@@ -2947,6 +3163,51 @@ property sector might be the most impacted sector in this pandemic, thus
 resulting in a long time to recover. The program will be able to learn
 continuously, so if new data is available, it can renew the analysis and
 give a more accurate prediction.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-313/assignment6/assignment6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-313/assignment6/assignment6/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;homework-6&#34;&gt;Homework 6&lt;/h1&gt;
+&lt;p&gt;Student Name: Fauzan Isnaini&lt;/p&gt;
+&lt;h1 id=&#34;how-ai-helps-diagnosis-and-decision-making-in-health-care-facilities&#34;&gt;How AI Helps Diagnosis and Decision Making in Health Care Facilities&lt;/h1&gt;
+&lt;h2 id=&#34;radiology-assistant&#34;&gt;Radiology Assistant&lt;/h2&gt;
+&lt;p&gt;Radiology is a branch of medicine that uses imaging technology to diagnose and treat disease. Diagnostic radiology helps health care providers see structures inside your body. Using the diagnostic images, the radiologist or other physicians can often [3]:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Diagnose the cause of your symptoms&lt;/li&gt;
+&lt;li&gt;Monitor how well your body is responding to a treatment you are receiving for your disease or condition&lt;/li&gt;
+&lt;li&gt;Screen for different illnesses, such as breast cancer, colon cancer, or heart disease
+Within radiology, trained physicians visually assess medical images and report findings to detect, characterize and monitor diseases. Such assessment is often based on education and experience and can be, at times, subjective. In contrast to such qualitative reasoning, AI excels at recognizing complex patterns in imaging data and can provide a quantitative assessment in an automated fashion. More accurate and reproducible radiology assessments can then be made when AI is integrated into the clinical workflow as a tool to assist physicians.[1]
+Some examples of AI’s clinical application in radiology are [1]:&lt;/li&gt;
+&lt;li&gt;Thoracic imaging
+AI can help in identifying pulmonary nodules, which can be applied in early detection of lung cancer&lt;/li&gt;
+&lt;li&gt;Abdominal and pelvic imaging
+AI can help in detecting lesions in abdominal and pelvic. For example, AI can analyze data from computed topography (CT) and magnetic resonance imaging (MRI) to detect liver lesions, and characterize these lesions as benign or malignant. Furthermore, AI can also help in suggesting the follow-up actions for the patient.&lt;/li&gt;
+&lt;li&gt;Colonoscopy
+Colonic polyps that are undetected or misclassified pose a potential risk of colorectal cancer. AI can help in making an early detection and consistent monitoring of this risk.&lt;/li&gt;
+&lt;li&gt;Mammography
+Analyzing mammography is technically challenging, even for a trained expert. AI can assist in interpreting the image. For example, AI can identify and characterize microcalcifications. Microcalcifications are tiny deposits of calcium salts that are too small to be felt but can be detected by imaging, and can be an early sign of breast cancer. They can be scattered throughout the mammary gland, or occur in clusters. [4]&lt;/li&gt;
+&lt;li&gt;Brain imaging
+AI can help in making diagnostic prediction of brain tumors, which are characterized by abnormal growth of brain tissue.&lt;/li&gt;
+&lt;li&gt;Radiation oncology
+Radiation treatment planning can be automated by segmenting tumours for radiation dose optimization. Furthermore, assessing response to treatment by monitoring over time is essential for evaluating the success of radiation therapy efforts. AI is able to perform these assessments, thereby improving accuracy and speed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;ai-in-clinical-decision-support&#34;&gt;AI in Clinical Decision Support&lt;/h2&gt;
+&lt;p&gt;Other than analyzing radiology images, AI can also digest data from blood tests, electrocardiogram (EKG), genomics, and patient medical history do give a better treatment to the patient. AI-enabled clinical decision support includes diagnosis and prognosis, and involves classification or regression algorithms that can predict the probability of a medical outcome or the risk for a certain disease.[5]
+Here are some examples of how AI helps clinical decision [6]:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Accumulation of medical histories from birth alongside linked maternal electronic health record (HER) information in a healthcare facility, enabled the prediction of high obesity risk children as early as two years after birth, possibly allowing life-altering preventative interventions.&lt;/li&gt;
+&lt;li&gt;The Advanced Alert Monitoring system developed and deployed by Kaiser Permanente uses Intensive Care Unit (ICU) data to predict fatally deteriorating cases and alert staff to the need of life-saving interventions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 
       </description>
     </item>
@@ -3083,6 +3344,7 @@ property sector might be the most impacted sector in this pandemic, thus
 resulting in a long time to recover. The program will be able to learn
 continuously, so if new data is available, it can renew the analysis and
 give a more accurate prediction.&lt;/p&gt;
+&lt;p&gt;asassasa&lt;/p&gt;
 
       </description>
     </item>
@@ -3113,15 +3375,15 @@ give a more accurate prediction.&lt;/p&gt;
         &lt;h1 id=&#34;residential-power-usage-prediction&#34;&gt;Residential Power Usage Prediction&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use our trivial template posted in piazza&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please never use sapces in image names&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please never use sapces in image names&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use footnotes for refernces, you must cite them&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; figure numbers are inconsitent, you have 3 figures&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; figure numbers are inconsitent, you have 3 figures&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; document not checked on content graders will do that&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Siny P Raphel&lt;/p&gt;
+&lt;p&gt;Siny P Raphel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/&#34;&gt;fa20-523-314&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.&lt;/p&gt;
-&lt;p&gt;This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets. The dataset contains data of hourly power consumption of a 2 storied house in Houston,Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.
+&lt;p&gt;This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. The dataset contains data of hourly power consumption of a 2 storied house in Houston,Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.
 Data is spread across two csv files.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;power_usage_2016_to_2020.csv&lt;/code&gt;&lt;/li&gt;
@@ -3129,12 +3391,12 @@ Data is spread across two csv files.&lt;/p&gt;
 &lt;p&gt;This file contains basic details of the data like startdate with hour, value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-1.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Day of the week is an integer value with 0 being Monday. Notes gives us details like whether that day is weekend, weekday, covid lockdown or vacation. The Figure 1 shows retrieval and first few rows of the data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-2.png&#34; alt=&#34;Notes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-2.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;weather_2016_2020_daily.csv&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 2 shows retrieval and first few rows and columns of this file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-3.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 3 shows retrieval and first few rows and columns of this file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-3.png&#34; alt=&#34;Figure 3&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Units of features are given as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Temperature    - F deg&lt;/li&gt;
@@ -3161,9 +3423,14 @@ The data spread across two files will have to be merged according to date. For t
 &lt;li&gt;It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for prediction.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&#34;&gt;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&#34;&gt;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>
@@ -3244,6 +3511,204 @@ Our data-gathering and preparation methodology is composed of the following step
 &lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, PyTorch,&lt;/p&gt;
 &lt;h2 id=&#34;5-refernces&#34;&gt;5. Refernces&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-319/assignments/rama_asuri_hw3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-319/assignments/rama_asuri_hw3/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;rama-asuri---homework-3-choice-1-square-kilometre-array-ska-usecase&#34;&gt;Rama Asuri - Homework 3 (choice 1): Square Kilometre Array (SKA) usecase&lt;/h1&gt;
+&lt;h2 id=&#34;science-goals&#34;&gt;Science goals&lt;/h2&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;, here are the science goals -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Galaxy Evolution, Cosmology And Dark Energy&lt;/li&gt;
+&lt;li&gt;Strong-field tests of gravity using pulsars and black holes&lt;/li&gt;
+&lt;li&gt;Probing the Cosmic Dawn&lt;/li&gt;
+&lt;li&gt;The cradle of life&lt;/li&gt;
+&lt;li&gt;Flexible design to enable exploration of the unknown&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;galaxy-evolution-cosmology-and-dark-energy&#34;&gt;Galaxy Evolution, Cosmology And Dark Energy&lt;/h3&gt;
+&lt;p&gt;Universe is expanding but not at a constant rate. It is accelerating. We don&amp;rsquo;t know the reason why it is expanding in
+the first place. We could understand the reasons for this expansion, if we can learn more about Hydrogen and dark
+matter.&lt;/p&gt;
+&lt;p&gt;Hydrogen is abundant throughout the Universe. It is considered to be the fuel for a star formation inside a galaxy.
+Seventy percent of the Sun is Hydrogen and Hydrogen atoms emit radio waves which makes the Sun and other stars some of
+the brightest objects in the cosmos.&lt;/p&gt;
+&lt;p&gt;SKA will help understand how galaxies form and evolve by detecting the Hydrogen across the Universe. As of today, we
+don&amp;rsquo;t have this kind of technology to detect farthest distance like edge of the Universe. SKA can detect new galaxy
+formations at the edge of the Universe &lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;strong-field-tests-of-gravity-using-pulsars-and-black-holes&#34;&gt;Strong-field tests of gravity using pulsars and black holes&lt;/h3&gt;
+&lt;p&gt;Einstein&amp;rsquo;s theory of relativity still holds true. SKA will test relativity principles where no exiting technology has
+ever accessed the regions of the Universe that is dark and far &lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;. Astronomers found quasars with the help of
+radio data &lt;a href=&#34;https://science.nasa.gov/ems/05_radiowaves&#34;&gt;6&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;the-origin-and-evolution-of-cosmic-magnetism&#34;&gt;The origin and evolution of cosmic magnetism&lt;/h3&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://phys.org/news/2020-09-strongest-magnetic-field-universe-x-ray.html&#34;&gt;3&lt;/a&gt;, cosmic magnetism is everywhere in the Space. Learning about magnetic fields help us understand the
+electric fields. The question is, where does the cosmic magnetism come from? We don&amp;rsquo;t know this but understanding
+cosmic magnetism definitely helps us learn more about the Universe from the time of Big Bang. Besides gravity,
+magnetism shapes the massive structures in the Universe &lt;a href=&#34;https://www.youtube.com/watch?v=QBsBUypc1VE&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;probing-the-cosmic-dawn&#34;&gt;Probing the Cosmic Dawn&lt;/h3&gt;
+&lt;p&gt;SKA is the most sensitive radio telescope. It will go beyond the distance of 13 billion light years.
+Optical and infrared telescopes captured galaxies at a distance of 13 billion light years from earth.
+Even before that, there was a time where the Universe was dark up until the formation of the first galaxy.
+Radio Telescopes reach even when there is no light or light is being blocked&lt;a href=&#34;https://www.space.com/39837-first-stars-universe-fingerprints-dark-matter.html&#34;&gt;9&lt;/a&gt;.
+SKA will provide insight into this early Universe before the formation of the first galaxy &lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;the-cradle-of-life&#34;&gt;The cradle of life&lt;/h3&gt;
+&lt;p&gt;There are two ways SKA can help find the extraterrestrial life. One way is to detect weak extraterrestrial
+radio signals if they were to exist. This will expand on the capabilities of projects such as
+search for extraterrestrial intelligence (SETI). Other way is to search for organic molecules in the
+outer space &lt;a href=&#34;https://en.wikipedia.org/wiki/Search_for_extraterrestrial_intelligence&#34;&gt;5&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;flexible-design-to-enable-exploration-of-the-unknown&#34;&gt;Flexible design to enable exploration of the unknown&lt;/h3&gt;
+&lt;p&gt;We don&amp;rsquo;t know what we will be stumbling on while exploring the space. SKA is a high sensitivity radio detection.
+Optical and infrared has limitations due to dust or poor visibility. But Radio waves can be detected even without the
+light. Astronomers stumbled on asteroids hunting grounds in archived Hubble images &lt;a href=&#34;https://hubblesite.org/contents/news-releases/1998/news-1998-10.html&#34;&gt;10&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;current-status&#34;&gt;Current status&lt;/h2&gt;
+&lt;p&gt;There are 3 phases. Phase 1 provides ~10% of the total collecting area at low
+and mid frequencies by 2023 (SKA1). Phase 2 provides full array (SKA2) at low and mid frequencies by 2030 and
+Phase 3 will extend the frequency range up to 50Ghz [&lt;a href=&#34;https://en.wikipedia.org/wiki/Square_Kilometre_Array&#34;&gt;7&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Late last year, SKA successfully completed its System Critical Design Review. It also under went two additional reviews
+related to Operations and Management &lt;a href=&#34;http://www.jodrellbank.manchester.ac.uk/research/research-centres/ska-project/&#34;&gt;8&lt;/a&gt;. At the of reviews, there were 250 observations and questions raised which
+resulted in 40 recommendations. SKAO accepted all 40 of those recommendations
+and currently being implemented. SKAO team fully understand the issues and
+challenges. It helped them quickly move to implementation stage. After
+successful completion of the reviews, decision makers approved the construction
+to start later this year(2020). Initially, COVID-19 threatened the review
+process but the reviews have completed on time as planned. This puts the SKA
+project on track with no delays. Based on the reviews outcome, SKAO team
+finalized the  SKA’s Construction Proposal and Observatory Establishment and
+Delivery Plan [&lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;SKAO team is putting together new governance structure and planning for the
+establishment of the Observatory later this year and for the commencement of
+SKA1 construction activities as early in 2021 as possible. According to
+Philip Diamond (SKA Director-General), they are taking various risk mitigation
+steps as a precautionary measure by laying down various failure scenarios. He
+also mentioned that this world&amp;rsquo;s major scientific endeavor will bring
+employment, innovation and scientific exploration to benefit partner
+countries [&lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
+&lt;h2 id=&#34;big-data-challenges-of-the-ska&#34;&gt;Big data challenges of the SKA&lt;/h2&gt;
+&lt;p&gt;The data is huge and storage will be a problem. To tackle this problem, data size must be reduced in real time.
+Only capture or filter relevant data and save it. Raw data generated would be around an exabyte a day and after
+compression, it will reduce to 10 petabytes per day. An Tao, head of the SKA group of the Shanghai Astronomical
+Observatory stated, &amp;ldquo;It will generate data streams far beyond the total Internet traffic worldwide.&amp;rdquo; [&lt;a href=&#34;https://en.wikipedia.org/wiki/Square_Kilometre_Array&#34;&gt;7&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Raw data is coming from everything that is being observed by SKA. This data is collected by an array of dish receivers
+located across different geographical locations around the world. In case of pulsars, this data is reduced to form
+astronomical images or temporal data [&lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;p&gt;Initially, the data is ran through quality checks and good data, free of radio frequency interference,  is stored in the
+long term preservation system. Multiple copies of this data is save at different location as a backup. Later,
+post processing and data analysis is performed. Once the data analysis is done, it can be visualized.
+All of this data is also preserved for the long term. Every year, it is expected to generate 600 PB and store this
+data for the observatory lifetime which is projected to be 50 years. This is just for the phase 1 of the project.
+Phase 2 and phase 3 will increase the size of the day to even bigger scale. As the data gets processed, the velocity
+of the data goes down from Petabytes to Terabytes. There is also data that is coming from logs, calibrations,
+configurations, managing archival, simulation models related to the SKA itself. This data is used to run the SKA
+without failures or downtime. Images are stored into databases of sources and time series data [&lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-319/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-319/project/project/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;detect-and-classify-pathologies-in-chest-x-rays-using-pytorch-library&#34;&gt;Detect and classify pathologies in chest X-rays using PyTorch library&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use oure template as posted in piazza&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please improve citations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;| Rama Asuri
+| &lt;a href=&#34;mailto:asurirk@gmail.com&#34;&gt;asurirk@gmail.com&lt;/a&gt;, &lt;a href=&#34;mailto:rasuri@indiana.edu&#34;&gt;rasuri@indiana.edu&lt;/a&gt;
+| Indiana University
+| hid: fa20-523-319&lt;/p&gt;
+&lt;p&gt;Keywords: PyTorch, CheXpert&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Deep learning gains expert level performance by training on large datasets.  Our project uses chest x-rays dataset 
+called CheXpert and apply deep  learning to detect and diagnose a condition based on image data. CheXpert dataset 
+contain 224,316 chest radiographs of 65,240 patients. There are 14 observations in a radiology report and labels are 
+mapped to these 14 observations. We train our models to use the labels that corresponds to different diseases. Our 
+deep learning models are based on PyTorch library.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Deep learning methods are becoming very reliable at achieving expert level performance using large labeled datasets. 
+CheXpert is a large dataset that contains 224,316 chest radiographs of 65,240 patients. This dataset contains
+14 observations in radiology reports and also capturing uncertainties inherent in radiograph interpretation using
+uncertainty labels. There is also a validation set of 200 chest radiographic studies which were manually annotated 
+by 3 board-certified radiologists. Deep learning model should detect different pathologies. CheXpert is a public 
+dataset [3] and has a strong radiologist-annotated ground truth and expert scores against which we can compare 
+the model [1].&lt;/p&gt;
+&lt;p&gt;We will use PyTorch library which is an open source machine learning library based on the Torch library [2]. It is 
+used for applications such as computer vision and natural language processing which is primarily developed by 
+Facebook&amp;rsquo;s AI Research lab (FAIR). It is free and open-source software released under the Modified BSD license.
+Although the Python interface is more polished and the primary focus of development, PyTorch also has a C++ interface. 
+There are number of Deep Learning applications that are built on top of PyTorch, including Tesla Autopilot, Uber&amp;rsquo;s 
+Pyro etc [4].&lt;/p&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Work in progress&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;we develop the Deep Learning Software using PyTorch library to perform the following.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Load raw Chest X-rays and put raw data into PyTorch&lt;/li&gt;
+&lt;li&gt;Identify the one of the five pathologies&lt;/li&gt;
+&lt;li&gt;Group the Pathologies&lt;/li&gt;
+&lt;li&gt;Classify the pathology&lt;/li&gt;
+&lt;li&gt;Diagnose the patient&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Missing design&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
+&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
+&lt;h2 id=&#34;benchmark&#34;&gt;Benchmark&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TBD - Other deep learning models data is available online for benchmarking.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h2&gt;
+&lt;h2 id=&#34;project-plan&#34;&gt;Project plan&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Missing - Adding detailed project plan&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This project has following deliverables&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Design documents&lt;/li&gt;
+&lt;li&gt;Final Project report&lt;/li&gt;
+&lt;li&gt;Working Software demo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;refernces&#34;&gt;Refernces&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;a href=&#34;https://stanfordmlgroup.github.io/competitions/chexpert/&#34;&gt;https://stanfordmlgroup.github.io/competitions/chexpert/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[2] &lt;a href=&#34;https://pytorch.org/deep-learning-with-pytorch&#34;&gt;https://pytorch.org/deep-learning-with-pytorch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[3] &lt;a href=&#34;https://arxiv.org/pdf/1901.07031.pdf&#34;&gt;https://arxiv.org/pdf/1901.07031.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[4] &lt;a href=&#34;https://en.wikipedia.org/wiki/PyTorch&#34;&gt;https://en.wikipedia.org/wiki/PyTorch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-319/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-319/test/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;test&#34;&gt;Test&lt;/h1&gt;
+&lt;h2 id=&#34;rama-asuri&#34;&gt;Rama Asuri&lt;/h2&gt;
 
       </description>
     </item>
@@ -3530,151 +3995,6 @@ releases 20th Livestock Census&amp;rdquo;, 16 (Oct 2019).
         
         
         &lt;p&gt;Test Data 1&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-329/report/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-329/report/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Wanru Li&lt;/p&gt;
-&lt;p&gt;INFO-I423&lt;/p&gt;
-&lt;p&gt;Geoffrey Fox&lt;/p&gt;
-&lt;p&gt;Oct 9, 2020&lt;/p&gt;
-&lt;p&gt;Get Started in Final Project Plan&lt;/p&gt;
-&lt;p&gt;&amp;ndash;Big Data in E-Commerce&lt;/p&gt;
-&lt;p&gt;This is an individual project, I plan to accomplish the report by myself. The topic of my report is big data in e-commerce. In my life, e-commerce is a big part of my life. During the shopping online, the recommend commodities are fitter and fitter for my liking and willingness to buy. This is the merit of big data. Big data use my purchase history and browsing history to analyze my liking and recommend the goods for me.&lt;/p&gt;
-&lt;p&gt;For the dataset, I will use the source website provided in the project requirements, if there needs more information, I will search for data and information on the web.&lt;/p&gt;
-&lt;p&gt;As Artur Olechowski wrote, &amp;quot;According to the IDC, the digital universe of data will grow by 61% to reach a smashing 175 zettabytes worldwide by 2025. There&#39;s no denying that a large chunk of the digital world belongs to e-commerce, which takes advantage of customer social media activity, web browser history, geolocation, and data about abandoned online shopping carts. Most e-commerce businesses are able to collect and process data at scale today. Many of them leverage data analytics to understand their customers&#39; purchasing behaviors, follow the changing market trends, gain insights that allow them to become more proactive, deliver more personalized experiences to customers. The global Big Data in the e-commerce industry is expected to grow at the CAGR of 13.27% between 2019 and 2028. But what exactly is Big Data? And how can e-commerce businesses capture this powerful technology trend to their advantage? In this article, we take a closer look at the key trends in the usage of Big Data technologies by e-commerce companies and offer you some tips to help you get started in this game-changing field (Olechowski, para 1-4)&amp;quot;.&lt;/p&gt;
-&lt;p&gt;The most common and widely used application of big data is in e-commerce. Nowadays, the application of big data in e-commerce is relatively mature. As Artur Olechowski wrote, &amp;quot;As businesses scale up, they also collect an increasing amount of data. They need to get interested in data and its processing; this is just inevitable. That&#39;s why a data-driven e-commerce company should regularly measure and improve upon: shopper analysis, customer service personalization, customer experience, the security of online payment processing, targeted advertising （para11)&amp;quot;.&lt;/p&gt;
-&lt;p&gt;There are also some disadvantages of the big data, or to say more need to do after getting the data. Artur Olechowski wrote, &amp;quot;Understand the problem of security — Big Data tools gather a lot of data about every single customer who visits your site. This is a lot of sensitive information. If your security is compromised, you could lose your reputation. That&#39;s why before adopting the data technology, make sure to hire a cybersecurity expert to keep all of your data private and secure (para 41)&amp;quot;. Security is always a big problem with big data. This is one of the components I will analyze in my report. He also wrote, &amp;quot;Lack of analytics will become a bigger problem — Big Data is all about gathering information, but to make use of it, your system should also be able to process it. High-quality Big Data solutions can do that and then visualize insights in a simple manner. That&#39;s how you can make this valuable information useful to everyone, from managers to customer service reps (para 41)&amp;quot;. The analysis is also an important part of the big data. Only collecting data cannot help e-commerce anything. Security and analytics will be talked in my report.&lt;/p&gt;
-&lt;p&gt;For a good report, I will look for some examples of big data in e-commerce and analyze the advantages and disadvantages of the influence of big data in e-commerce. I will do more research on the pros and cons of big data in e-commerce. I will also study in the course to know more about big data.&lt;/p&gt;
-&lt;p&gt;Work Cited&lt;/p&gt;
-&lt;p&gt;Olechowski, Artur. &amp;quot;Big Data in E-Commerce: Key Trends and Tips for Beginners: Codete Blog.&amp;quot; &lt;em&gt;Codete Blog - We Share Knowledge for IT Professionals&lt;/em&gt;, CODETE, 8 Sept. 2020, codete.com/blog/big-data-in-ecommerce/.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-329/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-329/test/</guid>
-      <description>
-        
-        
-        &lt;p&gt;test&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-331/project/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-331/project/project/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;tbd&#34;&gt;TBD&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; follow our template&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-333/assignment6/assignment6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-333/assignment6/assignment6/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Raymond Adams&lt;/p&gt;
-&lt;p&gt;Using AI to Efficiently Diagnose and Reduce Error&lt;/p&gt;
-&lt;p&gt;Artificial intelligence is taking over the healthcare industry. Although it is known that AI will take many jobs away from workers in many different fields, healthcare is one field where it may be most beneficial. AI has been able to efficiently diagnose and reduce error. An article from Managed Healthcare Executive states, “Human error is the determining factor in 70% to 80% of industrial accidents, as well as in a large percentage of errors and adverse events experienced in healthcare.” In fact, according to built-in, misdiagnosing patients and medical error “accounted for 10% of all US deaths” in 2015.&lt;/p&gt;
-&lt;p&gt;There are several factors for why human error occurs in healthcare. The first factor is that workers in the industry cannot keep up with the vast amount of new research and recommendations that are regularly being released. According to Managed Healthcare Executive, “In 2010, a new journal article was published to the National Library of Medicine every 40 seconds” and this rate has probably increased since then. The issue here is that no healthcare provider can keep up with the new information that is continuously being written and discovered. Another factor is that humans are prone to cognitive biases that affect the way we solve problems accurately, efficiently, and reliably. Humans also are susceptible to factors such as stress, distraction, and sleep deprivation which all can contribute to human errors.&lt;/p&gt;
-&lt;p&gt;Artificial intelligence can reduce all of these issues and can efficiently diagnose patients with diseases at rates that humans could never. For example, built-in states, “an AI model using algorithms and deep learning diagnosed breast cancer at a higher rate than 11 pathologists.” Many existing and new companies have begun creating AI software to help resolve these issues that humans just aren’t capable of fixing. PathAI is a company that is developing algorithms to help pathologists produce more accurate diagnoses. Buoy Health is another company that is using AI to check people’s symptoms and provide cures. Buoy has become so useful and reliable that Harvard Medical School is one of the many hospitals that use the AI-based symptom and cure checker.&lt;/p&gt;
-&lt;p&gt;Zebra Medical Vision is an AI-powered radiology assistant that according to Zebra, “is empowering radiologists with its revolutionary AI1 offering which helps health providers manage the ever increasing workload without compromising quality.” Their goal is to provide radiologists with the tools they need to make the next big improvement in patient care. The need for medical imaging services is constantly growing. Like most fields in healthcare, humans just can’t keep up. The number of radiology reports is out numbering the workers that are able to analyze the reports.&lt;/p&gt;
-&lt;p&gt;Zebra Medical Vision is solving this problem by having their imagining analytics engine take-in imaging scans from numerous approaches and automatically analyzes the images for multitude of clinical findings. Zebra-Med works by using a large database that contains millions of imaging scans as well as machine learning and deep learning to develop software that according to Zebra-Med, “analyzes data in real time with human level accuracy.”&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-333/final_project_plan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-333/final_project_plan/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;not-a-valid-md-file-all-md-files-mus-have-ad-least-on-section-heading&#34;&gt;Not a valid md file, all md files mus have ad least on section heading&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow markdown template we posted in piazza&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow tips we posted in piazza&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; decalring that a report will include 3000-4000 words is not needed.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use proper markdown swith sections&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please do not use  : in section titles&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please convert this from &amp;ldquo;I&amp;rdquo; to a formal report.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Raymond Adams&lt;/p&gt;
-&lt;p&gt;09 October 2020&lt;/p&gt;
-&lt;p&gt;Geoffrey Fox&lt;/p&gt;
-&lt;p&gt;Final Project Plan&lt;/p&gt;
-&lt;p&gt;Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Topic&lt;/strong&gt; :&lt;/p&gt;
-&lt;p&gt;I will be looking at Spotify data, a music streaming service, to answer my research question, &amp;quot;Do popular modern-day songs lack uniqueness compared to popular songs before the year 2000?&amp;quot; Music has always been a way to express oneself. Before the new era of music began most songs seemed to have a unique sound and feel that brought the listener back for more. However, nowadays it seems that most songs that become popular have similar characteristics. The goal of this research is to study whether popular modern-day songs lack the uniqueness that songs had before January 1, 2001.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt; :&lt;/p&gt;
-&lt;p&gt;The dataset that I will be using was created by Yamaç Eren Ay. He is a data scientist at EYU from İstanbul, İstanbul, Turkey. This data set was collected from Spotify&#39;s web API. It contains data on songs from 1921-2019.&lt;/p&gt;
-&lt;p&gt;The variables include:&lt;/p&gt;
-&lt;p&gt;Numerical values [&lt;strong&gt;acousticness&lt;/strong&gt; (Ranges from 0 to 1), &lt;strong&gt;danceability&lt;/strong&gt; (Ranges from 0 to 1), energy (Ranges from 0 to 1), &lt;strong&gt;duration_ms&lt;/strong&gt; (Integer typically ranging from 200k to 300k), &lt;strong&gt;instrumentalness&lt;/strong&gt; (Ranges from 0 to 1), &lt;strong&gt;valence&lt;/strong&gt; (Ranges from 0 to 1), &lt;strong&gt;popularity&lt;/strong&gt; (Ranges from 0 to 100), &lt;strong&gt;tempo&lt;/strong&gt; (Float typically ranging from 50 to 150), &lt;strong&gt;liveness&lt;/strong&gt; (Ranges from 0 to 1), &lt;strong&gt;loudness&lt;/strong&gt; (Float typically ranging from -60 to 0), &lt;strong&gt;speechiness&lt;/strong&gt; (Ranges from 0 to 1), &lt;strong&gt;year&lt;/strong&gt; (Ranges from 1921 to 2020)]&lt;/p&gt;
-&lt;p&gt;Dummy values [&lt;strong&gt;mode&lt;/strong&gt; (0 = Minor, 1 = Major), &lt;strong&gt;explicit&lt;/strong&gt; (0 = No explicit content, 1 = Explicit content)]&lt;/p&gt;
-&lt;p&gt;Categorical [&lt;strong&gt;key&lt;/strong&gt; (All keys on octave encoded as values ranging from 0 to 11, starting on C as 0, C# as 1 and so on…), &lt;strong&gt;artists&lt;/strong&gt; (List of artists mentioned), &lt;strong&gt;release_date&lt;/strong&gt; (Date of release mostly in yyyy-mm-dd format, however precision of date may vary), &lt;strong&gt;name&lt;/strong&gt; (Name of the song)]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;What needs to be done to get a great grade&lt;/strong&gt; :&lt;/p&gt;
-&lt;p&gt;In order to complete the project and receive a good grade I will need complete a couple steps. First, I will import my data set through Google collab or Jupyter Notebook and create code to visualize and analyze the data. Next I will create markdown cells to explain the code and data used throughout the project. Lastly, I will create a paper report explaining my findings from the software component of my project. This report will be 3000-4000 words long. The most important part of this project is stating my hypothesis and answering my research question. My hypothesis is that songs after 2012 that have a popular score greater than x will have similar features such as, liveliness, loudness, tempo, and key. Whereas I suspect that popular songs before the 21st century are more differentiable.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-333/project/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-333/project/project/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;using-spotify-data-to-determine-if-popular-modern-day-songs-lack-uniqueness-compared-to-popular-songs-before-the-21st-century&#34;&gt;Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century&lt;/h1&gt;
-&lt;p&gt;Raymond Adams, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-333/project/project&#34;&gt;fa20-523-333&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow our template&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please remove first person&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; do not use I&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;I will be looking at Spotify data, a music streaming service, to answer my research question, &amp;ldquo;Do popular modern-day songs lack uniqueness compared to popular songs before the year 2000?&amp;rdquo; Music has always been a way to express oneself. Before the new era of music began most songs seemed to have a unique sound and feel that brought the listener back for more. However, nowadays it seems that most songs that become popular have similar characteristics. The goal of this research is to study whether popular modern-day songs lack the uniqueness that songs had before January 1, 2001.&lt;/p&gt;
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-&lt;p&gt;The dataset that I will be using was created by Yamaç Eren Ay. He is a data scientist at EYU from İstanbul, İstanbul, Turkey. This data set was collected from Spotify&amp;rsquo;s web API. It contains data on songs from 1921-2019.&lt;/p&gt;
-&lt;p&gt;The variables include:&lt;/p&gt;
-&lt;p&gt;Numerical values [&lt;strong&gt;acousticness&lt;/strong&gt;  (Ranges from 0 to 1),  &lt;strong&gt;danceability&lt;/strong&gt;  (Ranges from 0 to 1), energy (Ranges from 0 to 1),  &lt;strong&gt;duration_ms&lt;/strong&gt;  (Integer typically ranging from 200k to 300k),  &lt;strong&gt;instrumentalness&lt;/strong&gt;  (Ranges from 0 to 1),  &lt;strong&gt;valence&lt;/strong&gt;  (Ranges from 0 to 1),  &lt;strong&gt;popularity&lt;/strong&gt;  (Ranges from 0 to 100),  &lt;strong&gt;tempo&lt;/strong&gt;  (Float typically ranging from 50 to 150),  &lt;strong&gt;liveness&lt;/strong&gt;  (Ranges from 0 to 1),  &lt;strong&gt;loudness&lt;/strong&gt;  (Float typically ranging from -60 to 0),  &lt;strong&gt;speechiness&lt;/strong&gt;  (Ranges from 0 to 1),  &lt;strong&gt;year&lt;/strong&gt;  (Ranges from 1921 to 2020)]&lt;/p&gt;
-&lt;p&gt;Dummy values [&lt;strong&gt;mode&lt;/strong&gt;  (0 = Minor, 1 = Major),  &lt;strong&gt;explicit&lt;/strong&gt;  (0 = No explicit content, 1 = Explicit content)]&lt;/p&gt;
-&lt;p&gt;Categorical [&lt;strong&gt;key&lt;/strong&gt;  (All keys on octave encoded as values ranging from 0 to 11, starting on C as 0, C# as 1 and so on…),  &lt;strong&gt;artists&lt;/strong&gt;  (List of artists mentioned),  &lt;strong&gt;release_date&lt;/strong&gt;  (Date of release mostly in yyyy-mm-dd format, however precision of date may vary),  &lt;strong&gt;name&lt;/strong&gt;  (Name of the song)]&lt;/p&gt;
-&lt;h2 id=&#34;what-needs-to-be-done-to-get-a-great-grade&#34;&gt;What needs to be done to get a great grade&lt;/h2&gt;
-&lt;p&gt;In order to complete the project and receive a good grade I will need complete a couple steps. First, I will import my data set through Google collab or Jupyter Notebook and create code to visualize and analyze the data. Next I will create markdown cells to explain the code and data used throughout the project. Lastly, I will create a paper report explaining my findings from the software component of my project. The most important part of this project is stating my hypothesis and answering my research question. My hypothesis is that songs after 2012 that have a popular score greater than x will have similar features such as, liveliness, loudness, tempo, and key. Whereas I suspect that popular songs before the 21st century are more differentiable among these features.&lt;/p&gt;
 
       </description>
     </item>

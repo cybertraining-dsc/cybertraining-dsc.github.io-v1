@@ -30,6 +30,8 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 * {{% addreport title="NBA Performance and Injury" author="Gavin Hemmerlein, Chelsea Gorius" hid="fa20-523-301" %}}
 * {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
+* {{% addreport title="Rank Forecasting in Car Racing" author="Jiayu Li" hid="fa20-523-349" %}}
+* {{% addreport title="Predictive Model For Pitches Thrown By Major League Baseball Pitchers" author="Bryce Wieczorek" hid="fa20-523-343" %}}
 
 #### Environment
 
@@ -41,6 +43,8 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 * {{% addreport title="Detecting Heart Disease using Machine Learning Classification Techniques" author="Ethan Nguyen" hid="fa20-523-309" %}}
 * {{% addreport title="Covid-19 Analysis" author="Hany Boles" hid="fa20-523-342" %}}
+* {{% addreport title="Detect and classify pathologies in chest X-rays using PyTorch library" author="Rama Asuri" hid="fa20-523-319" %}}
+
 
 #### Energy
 
@@ -49,12 +53,19 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 #### Lifestyle
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
+* {{% addreport title="Music Mood Classification" author="Kunaal Shah" hid="fa20-523-341" %}}
 
 #### Commerce
 
 * {{% addreport title="Analysis of Financial Markets based on President Trump's Tweets" author="Alex Baker" hid="fa20-523-307" %}}
 * {{% addreport title="Online Store Customer Revenue Prediction" author="Balaji Dhamodharan" hid="fa20-523-337" %}}
-* {{% addreport title="Predicting Stock Market Recovery in Indonesia after COVID-19 Crash" author="" hid="fa20-523-313" %}}
+* {{% addreport title="Predicting Stock Market Recovery in Indonesia after COVID-19 Crash" author="Fauzan Isnaini" hid="fa20-523-313" %}}
+* {{% addreport title="Analyzing the Relationship of Cryptocurrencies with Foriegn Exchange Rates and Global Stock Market Indices" author="Krish Hemant Mhatre" hid="fa20-523-332" %}}
+* {{% addreport title="Big Data Application in E-commerce" author="Liu Tao" hid="fa20-523-339" %}}
+* {{% addreport title="Big Data Analytics in Brazilian E-Commerce" author="Oluwatobi Bolarin" hid="fa20-523-330" %}}
+* {{% addreport title="Stock Market Earnings to Price Change Project" author="Matthew Frechette" hid="fa20-523-336" %}}
+* {{% addreport title="Predicting Hotel Prices Using Linear Regression" author="Anthony Tugman" hid="fa20-523-323" %}}
+
 
 
 #### Technology
@@ -62,19 +73,18 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * [Benchmarking Multi-Cloud Auto Generated AI Services](/report/cloudmesh-openapi/paper/), [Gregor von Laszewski](https://laszewski.github.io),  Richard Otten, [Anthony Orlowski](https://github.com/aporlowski), [fa20-523-310](https://github.com/cybertraining-dsc/fa20-523-310/), [Caleb Wilson](https://github.com/calewils), [fa20-523-348](https://github.com/cybertraining-dsc/fa20-523-348/), Vishwanadham Mandala, [fa20-523-325](https://github.com/cybertraining-dsc/fa20-523-325/) [[Edit]](https://github.com/cloudmesh/cloudmesh-openapi/blob/master/paper/_index.md)
 
 
-## Reports that are incomplete and are not reviewed
-
-The following hids, unfortunately do not follow yet our template, so
-we can not review them.
-
-* {{% addreport title="TBD" author="Mansukh Kandhari" hid="fa20-523-331" %}}
-* fa20-523-329
-* fa20-523-317
-* fa20-523-304
-* fa20-523-308
-* fa20-523-343
-
 
 ### Reports without Project, Fall 2020
 
-* None reported to us.
+* {{% addreportonly title="TBD" author="Hunter Holder" hid="fa20-523-328" %}}
+* {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
+
+## Reports that are incomplete and are not yet reviewed
+
+The following hids, unfortunately do not follow yet our template, so
+we can not review them further as vital information is not yet included.
+
+* {{% addreport title="TBD" author="Mansukh Kandhari" hid="fa20-523-331" %}}
+* {{% addreport title="TBD" author="Adam Chai" hid="fa20-523-327" %}}
+* fa20-523-304
+* fa20-523-317

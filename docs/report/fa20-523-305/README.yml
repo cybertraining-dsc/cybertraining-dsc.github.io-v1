@@ -6,7 +6,7 @@ owner:
   community: "534"
   semester: "fa20"
 project:
-  title: TBD
-  url: TBD
+  title: Estimating Soil Moisture Content Using Sensor and Weather Data
+  url: https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/project.md
   author:
     - fa20-523-305

@@ -14,14 +14,23 @@ pull:
 	cd content/en/report/fa20-523-314; git pull
 	cd content/en/report/fa20-523-316; git pull
 	cd content/en/report/fa20-523-317; git pull
+	cd content/en/report/fa20-523-319; git pull
+	cd content/en/report/fa20-523-323; git pull
 	cd content/en/report/fa20-523-326; git pull
+	cd content/en/report/fa20-523-327; git pull
+	cd content/en/report/fa20-523-328; git pull
 	cd content/en/report/fa20-523-329; git pull
+	cd content/en/report/fa20-523-330; git pull
 	cd content/en/report/fa20-523-331; git pull
+	cd content/en/report/fa20-523-332; git pull
 	cd content/en/report/fa20-523-333; git pull
+	cd content/en/report/fa20-523-336; git pull
 	cd content/en/report/fa20-523-337; git pull
+	cd content/en/report/fa20-523-339; git pull
 	cd content/en/report/fa20-523-342; git pull
 	cd content/en/report/fa20-523-343; git pull
 	cd content/en/report/fa20-523-348; git pull
+	cd content/en/report/fa20-523-349; git pull
 
 view:
 	gopen http://localhost:1313/ 
