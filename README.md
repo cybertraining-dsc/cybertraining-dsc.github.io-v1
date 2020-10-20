@@ -61,7 +61,13 @@ The web page can be viewed with your browser at
 
 * <http://localhost:1313/>
 
+## Pull request
+
+To change things, simply do a pull request. 
+
 ## Commit
+
+Direct commits can be made by those who have write access others need to do a pull request.
 
 Content is loacted in "./content./en"
 
