@@ -21,23 +21,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Residential Power Usage Prediction  please use our trivial template posted in piazza please never use sapces in image names please use footnotes for refernces, you must cite them figure numbers are inconsitent, you have 3 figures document not checked on content graders will do that  Siny P Raphel, fa20-523-314, Edit
+<meta property="og:description" content="Residential Power Usage Prediction  please use our trivial template posted in piazza please never use sapces in image names please use footnotes for refernces, you must cite them figure numbers are inconsitent, you have 3 figures document not checked on content graders will do that  Siny P Raphel, fa20-523-314, sinypr@gmail.com
 Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-314/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Residential Power Usage Prediction  please use our trivial template posted in piazza please never use sapces in image names please use footnotes for refernces, you must cite them figure numbers are inconsitent, you have 3 figures document not checked on content graders will do that  Siny P Raphel, fa20-523-314, Edit
+<meta itemprop="description" content="Residential Power Usage Prediction  please use our trivial template posted in piazza please never use sapces in image names please use footnotes for refernces, you must cite them figure numbers are inconsitent, you have 3 figures document not checked on content graders will do that  Siny P Raphel, fa20-523-314, sinypr@gmail.com
 Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages.">
 
-<meta itemprop="wordCount" content="539">
+<meta itemprop="wordCount" content="556">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Residential Power Usage Prediction  please use our trivial template posted in piazza please never use sapces in image names please use footnotes for refernces, you must cite them figure numbers are inconsitent, you have 3 figures document not checked on content graders will do that  Siny P Raphel, fa20-523-314, Edit
+<meta name="twitter:description" content="Residential Power Usage Prediction  please use our trivial template posted in piazza please never use sapces in image names please use footnotes for refernces, you must cite them figure numbers are inconsitent, you have 3 figures document not checked on content graders will do that  Siny P Raphel, fa20-523-314, sinypr@gmail.com
 Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages."/>
 
 
@@ -510,6 +510,16 @@ Introduction Electricity is an inevitable part of our day today life. Most of th
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#datasets">Datasets</a></li>
+    <li><a href="#planning">Planning</a></li>
+    <li><a href="#reason-to-choose-this-dataset">Reason to choose this dataset</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
 
 
 
@@ -555,26 +565,27 @@ Introduction Electricity is an inevitable part of our day today life. Most of th
 <li><input checked="" disabled="" type="checkbox"> figure numbers are inconsitent, you have 3 figures</li>
 <li><input disabled="" type="checkbox"> document not checked on content graders will do that</li>
 </ul>
-<p>Siny P Raphel, <a href="https://github.com/cybertraining-dsc/fa20-523-314/">fa20-523-314</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md">Edit</a></p>
+<p>Siny P Raphel, <a href="https://github.com/cybertraining-dsc/fa20-523-314/">fa20-523-314</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md">sinypr@gmail.com</a></p>
 <h2 id="introduction">Introduction</h2>
 <p>Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.</p>
-<p>This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. The dataset contains data of hourly power consumption of a 2 storied house in Houston,Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.
-Data is spread across two csv files.</p>
+<p>This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. The dataset contains data of hourly power consumption of a 2 storied house in Houston,Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.</p>
+<h2 id="datasets">Datasets</h2>
+<p>Data is spread across two csv files.</p>
 <ul>
 <li><code>power_usage_2016_to_2020.csv</code></li>
 </ul>
 <p>This file contains basic details of the data like startdate with hour, value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-1.png" alt="Figure 1"></p>
-<p><strong>Figure 1:</strong> Caption missing</p>
+<p><strong>Figure 1:</strong> First five rows of power_usage_2016_to_2020 data</p>
 <p>Day of the week is an integer value with 0 being Monday. Notes gives us details like whether that day is weekend, weekday, covid lockdown or vacation. The Figure 1 shows retrieval and first few rows of the data.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-2.png" alt="Figure 2"></p>
-<p><strong>Figure 2:</strong> Caption missing</p>
+<p><strong>Figure 2:</strong> Details in &ldquo;notes&rdquo; column</p>
 <ul>
 <li>weather_2016_2020_daily.csv</li>
 </ul>
 <p>This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 3 shows retrieval and first few rows and columns of this file.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/fig-3.png" alt="Figure 3"></p>
-<p><strong>Figure 3:</strong> Caption missing</p>
+<p><strong>Figure 3:</strong> First few rows of weather_2016_2020_daily data</p>
 <p>Units of features are given as follows:</p>
 <ul>
 <li>Temperature    - F deg</li>
@@ -584,6 +595,7 @@ Data is spread across two csv files.</p>
 <li>Pressure       - Hg</li>
 <li>Precipitation  – inch</li>
 </ul>
+<h2 id="planning">Planning</h2>
 <p>We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
 The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.</p>
 <p>In this project we will be planning the following steps:</p>
@@ -595,6 +607,7 @@ The data spread across two files will have to be merged according to date. For t
 <li>Calculate accuracy of each model</li>
 <li>Conclusion on which algorithm will be best suited to use and the reason for it.</li>
 </ol>
+<h2 id="reason-to-choose-this-dataset">Reason to choose this dataset</h2>
 <p>This dataset is chosen because,</p>
 <ol>
 <li>There were datasets similar to this one. But this one has latest power usage data till August this year.</li>
