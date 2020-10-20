@@ -1,0 +1,3 @@
+To download data please visit https://www.kaggle.com/jessemostipak/hotel-booking-demand
+After the download is complete please unzip and place the csv in your local drive.
+When running the colab notebook you will be prompted to upload the csv from your local storage.
