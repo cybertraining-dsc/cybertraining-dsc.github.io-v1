@@ -6,7 +6,7 @@ owner:
   community: "534"
   semester: "fa20"
 project:
-  title: TBD
-  url: TBD
+  title: Predictive Model For Pitches Thrown By MLB Pitchers
+  url: https://github.com/cybertraining-dsc/fa20-523-343/blob/master/project/project.md
   author:
     - fa20-523-343

@@ -1,9 +1,10 @@
-import folium
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 19 14:33:58 2020
+
+@author: tobi
+"""
 import pandas as pd
-import json
-from folium import plugins
-
 df = pd.read_csv('olist_customers_dataset.csv')
-
-with open('laMap.geojson') as f:
-    laArea = json.load(f)
+hist = df.hist
