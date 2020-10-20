@@ -124,7 +124,7 @@ gap analysis through the materials gathered from all other NBD
 subgroups. This includes setting standardization and adoption priorities
 through an understanding of what standards are available or under
 development as part of the recommendations. Tasks are gather input from
-NBD subgroups and study the taxonomies for the actors&#39; roles and
+NBD subgroups and study the taxonomies for the actors&amp;rsquo; roles and
 responsibility, use cases and requirements, and secure reference
 architecture; gain understanding of what standards are available or
 under development for Big Data; perform a thorough gap analysis and
@@ -4201,7 +4201,7 @@ For Definitions: Compile terms used from all stakeholders regarding the meaning 
 &lt;/div&gt;
 
 &lt;h3 id=&#34;use-case-1-5-technology-roadmap-subgroup&#34;&gt;Use Case 1-5 Technology Roadmap Subgroup&lt;/h3&gt;
-&lt;p&gt;The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus vision with recommendations on how Big Data should move forward by performing a good gap analysis through the materials gathered from all other NBD subgroups. This includes setting standardization and adoption priorities through an understanding of what standards are available or under development as part of the recommendations. Tasks are gathered input from NBD subgroups and study the taxonomies for the actors&#39; roles and responsibility, use cases and requirements, and secure reference architecture; gain an understanding of what standards are available or under development for Big Data; perform a thorough gap analysis and document the findings; identify what possible barriers may delay or prevent the adoption of Big Data; and document vision and recommendations.&lt;/p&gt;
+&lt;p&gt;The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus vision with recommendations on how Big Data should move forward by performing a good gap analysis through the materials gathered from all other NBD subgroups. This includes setting standardization and adoption priorities through an understanding of what standards are available or under development as part of the recommendations. Tasks are gathered input from NBD subgroups and study the taxonomies for the actors&amp;rsquo; roles and responsibility, use cases and requirements, and secure reference architecture; gain an understanding of what standards are available or under development for Big Data; perform a thorough gap analysis and document the findings; identify what possible barriers may delay or prevent the adoption of Big Data; and document vision and recommendations.&lt;/p&gt;
 &lt;p&gt;Technology (4:14)&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -5191,7 +5191,7 @@ portable across clouds.&lt;/p&gt;
 &lt;p&gt;IaC solves the problem of &lt;em&gt;environment drift&lt;/em&gt;, that used to lead to the
 infamous “but it works on my machine” kind of errors that are difficult
 to trace. According to &lt;span class=&#34;citeproc-not-found&#34;
-data-reference-id=&#34;WhatisIaC002&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+data-reference-id=&#34;WhatisIaC002&#34;&gt;**???**&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;IaC guarantees Idempotence – known/predictable end state –
 irrespective of starting state. Idempotency is achieved by either
@@ -6940,7 +6940,7 @@ absolutely believe it should be applied system wide. Create a file
 &lt;pre&gt;&lt;code&gt;[defaults]
 hostfile = hosts.txt
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This local configuration file tells that the target machines&#39; names
+&lt;p&gt;This local configuration file tells that the target machines&amp;rsquo; names
 are given in a file named &lt;code&gt;hosts.txt&lt;/code&gt;. Next we will specify hosts in
 the file.&lt;/p&gt;
 &lt;p&gt;You should have ssh login accesses to all VMs listed in this file as
@@ -7123,7 +7123,7 @@ Double curly brackets like in &lt;code&gt;roles/r/tasks/main.yml&lt;/code&gt;:&l
     - make
     - make install
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, just edit the &lt;code&gt;hosts.txt&lt;/code&gt; file with your target VMs&#39; IP addresses and
+&lt;p&gt;Now, just edit the &lt;code&gt;hosts.txt&lt;/code&gt; file with your target VMs&amp;rsquo; IP addresses and
 execute the playbook.&lt;/p&gt;
 &lt;p&gt;You should be able to extend the Ansible playbook for your
 needs. Configuration tools like Ansible are important components to
