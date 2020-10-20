@@ -6,7 +6,8 @@ owner:
   community: "534"
   semester: "fa20"
 project:
-  title: TBD
-  url: TBD
+  title: Residential Power Usage Prediction
+  url: https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md
+  proceedings: https://github.com/cybertraining-dsc/fa20-523-314/tree/master/project
   author:
-    - fa20-523-314
+    - Siny P Raphel, fa20-523-314
