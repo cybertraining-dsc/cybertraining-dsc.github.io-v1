@@ -54,7 +54,9 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 #### Lifestyle
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
-* {{% addreport title="Music Mood Classification" author="Kunaal Shah" hid="fa20-523-341" %}}
+* {{% addreport title="Music Mood Classification" author="Kunaal Shah"
+hid="fa20-523-341" %}}
+* {{% addreport title="Trending Youtube Videos Analysis" author="Adam Chai" hid="fa20-523-327" %}}
 
 #### Commerce
 
@@ -86,9 +88,12 @@ The following hids, unfortunately do not follow yet our template, so
 we can not review them further as vital information is not yet included.
 
 * {{% addreport title="TBD" author="Mansukh Kandhari" hid="fa20-523-331" %}}
-* {{% addreport title="TBD" author="Adam Chai" hid="fa20-523-327" %}}
 * fa20-523-304
 * fa20-523-317
+* fa20-523-347 - also  use "project" and not Project as dir
+* fa20-523-302 
+
+
 
 * {{% addreport title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
 
