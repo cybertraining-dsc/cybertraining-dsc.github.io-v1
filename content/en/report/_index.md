@@ -89,3 +89,8 @@ we can not review them further as vital information is not yet included.
 * {{% addreport title="TBD" author="Adam Chai" hid="fa20-523-327" %}}
 * fa20-523-304
 * fa20-523-317
+
+* {{% addreport title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
+
+
+

@@ -2470,6 +2470,20 @@ Predictive Model - breakdown udetermined at this time&lt;/p&gt;
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-304/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-304/project/project/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;project-report&#34;&gt;Project Report&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-304/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2552,6 +2566,37 @@ A project this large and versatile requires the use of many software tools. Thes
 [10] Square Kilometre Array, Building a giant telescope in the outback - part 2. 2020.&lt;br&gt;
 [11] &amp;ldquo;Australia - Public Website&amp;rdquo;, SQUARE KILOMETRE ARRAY, 2020. [Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/australia/&#34;&gt;https://www.skatelescope.org/australia/&lt;/a&gt;. [Accessed: 24- Sep- 2020].&lt;br&gt;
 [12] Filled in Use Case Survey for SKA&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-305/homework6/cody_harris_hw6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-305/homework6/cody_harris_hw6/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;applying-computer-vision-to-medical-imaging&#34;&gt;Applying Computer Vision to Medical Imaging&lt;/h1&gt;
+&lt;p&gt;Computer vision technology has made great strides in the past decade. The most obvious proof of this statement comes from looking at early consumer image classification programs. Early programs from the early 2010s struggled to find the difference between a cat and a person. Now, consumer image classification programs can accurately tell the difference between two cats. With these improvements, there are great applications for computer vision to aid with radiology.&lt;/p&gt;
+&lt;h2 id=&#34;specific-application-areas&#34;&gt;Specific Application Areas&lt;/h2&gt;
+&lt;p&gt;The five most common modalities of medical imaging are: X-Rays, CT scans, MRI, ultrasound, and PET scan [1]. Within these major modalities, there are various special types of each imaging technique such as an fMRI, which is called a functional MRI. Then there are the more niche imaging techniques that are used. For example, Diffusion Tensor Imaging (DTI) is a technique that allows visualization of the white matter in the brain. One application of this imaging technique is coming up with a way to diagnose certain mental illness from imaging [2]. Seeing as mental health issues are typically tougher to diagnose, this would be a major breakthrough.&lt;/p&gt;
+&lt;p&gt;Oncology seems to be a major area of study for computer vision in medical imaging. Logically this makes sense as cancers seems to create anomalies that can be seen in medical imaging. Thoracic imaging focuses on looking at the lungs, and computer vision could aid with finding anomalies that could lead to the early detection of cancer which in turn creates a better prognosis. An application that is only based on analyzing normal images or video, is analyzing a colonoscopy. Certain structures in the colon can create colorectal cancer if not correctly identified and classified as benign or malignant. Another imaging technique that can be rather difficult to analyze correctly are mammograms, and correctly identifying the various anomalies that are present as either malignant or benign [3].&lt;/p&gt;
+&lt;h2 id=&#34;how-computer-vision-can-be-used-in-medical-imaging&#34;&gt;How Computer Vision can be used in Medical Imaging&lt;/h2&gt;
+&lt;p&gt;In a perfect world, a sufficiently advanced AI could be the only entity to ever examine a certain medical image before providing a prognosis. In reality our technology is far from achieving this lofty goal. In the meantime, AI can still be used to improve radiologist workflows. In some studies, it was found that a radiologist would have to look at one image every three to four seconds to stay caught up with their workload in an 8-hour day. It is obvious why this could cause issues with accuracy. Now think about having the same time to look at an image, but instead of a raw image, the image comes with suggestions of diagnosis, and points to specific areas for the radiologist to focus on. This would improve the effectiveness of radiologists without relying completely on the AI model to be 100% accurate [3].&lt;/p&gt;
+&lt;h2 id=&#34;modeling-techniques&#34;&gt;Modeling Techniques&lt;/h2&gt;
+&lt;p&gt;There are two main techniques that are currently being employed to work with computer vision and medical imaging. The first technique is extra certain features from the image based on qualifications that are input to the system. For example, the user of the system might put in to extract the texture and shape of anomalies in the lower left lobe of the lungs as one of the features. Once all of these features are collected, they are fed into an expert system that selects the most promising features that could help with diagnosis. These selected features are fed into a machine learning classifier system that then sends its insights along with the image to the radiologist [3]. This system has it’s draw backs that are typical of expert systems. First off, setting the system up and giving it the parameters for the expert system is extremely complicated, and incorrect parameters in the system could heavily affect the output.&lt;/p&gt;
+&lt;p&gt;The second technique employs deep learning. Over the years, deep learning has become a widely used method to gain insights from data, and computer vision is no exception. The deep learning models have the benefit of not requiring any setup or expert systems. Really the biggest challenge is getting a good enough training data such that the deep learning model accurately predicts in the same way that a radiologist would. Some studies have been done on testing the accuracy of such methods and they found that “deep learning technologies are on par with radiologists’ performance for both detection and segmentation tasks in ultrasonography and MRI, respectively” [3].&lt;/p&gt;
+&lt;h2 id=&#34;special-considerations&#34;&gt;Special Considerations&lt;/h2&gt;
+&lt;p&gt;While deep learning seems to be the best method to create these systems, experts still need to be involved with the creation of these systems. One example of this is having expert radiologists evaluate training data. Just because there might be 30 years worth of data, that doesn’t mean it all can be used. The medical field is constantly evolving and making sure that the data you train your model is relevant is an important part of creating any model. Also using radiologists to shape the software that is used by radiologists would always improve the end product [4]. Too often software is built by software engineers and data scientists and doesn’t use enough advice from experts in the field, and this almost always is a detriment to the software.&lt;/p&gt;
+&lt;p&gt;Radiologists using these deep learning tools, will require a great deal of training with these tools. They know that the AI model is not always going to be correct, and it is important that the radiologists understand how the software works so that they can make a determination of whether their opinion should be trusted over the output from the software, especially early on with newer technology [4].&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;[1] &amp;ldquo;Different Imaging Tests Explained | UVA Radiology&amp;rdquo;, UVA Radiology and Medical Imaging Blog for Patients, 2019. [Online]. Available: &lt;a href=&#34;https://blog.radiology.virginia.edu/different-imaging-tests-explained/&#34;&gt;https://blog.radiology.virginia.edu/different-imaging-tests-explained/&lt;/a&gt;. [Accessed: 20- Oct- 2020].&lt;/p&gt;
+&lt;p&gt;[2] &amp;ldquo;Diffusion Tensor Imaging (DTI) | Psychiatry Neuroimaging Laboratory&amp;rdquo;, Pnl.bwh.harvard.edu, 2020. [Online]. Available: &lt;a href=&#34;http://pnl.bwh.harvard.edu/portfolio-item/diffusion-tensor-imaging-dti/&#34;&gt;http://pnl.bwh.harvard.edu/portfolio-item/diffusion-tensor-imaging-dti/&lt;/a&gt;. [Accessed: 20- Oct- 2020].&lt;/p&gt;
+&lt;p&gt;[3] A. Hosny, C. Parmar, J. Quackenbush, L. Schwartz and H. Aerts, &amp;ldquo;Artificial intelligence in radiology&amp;rdquo;, Nature Reviews Cancer, vol. 18, no. 8, pp. 500-510, 2018. Available: 10.1038/s41568-018-0016-5 [Accessed 20 October 2020].&lt;/p&gt;
+&lt;p&gt;[4] &amp;ldquo;AI and the Future of Radiology&amp;rdquo;, Diagnostic Imaging, 2020. [Online]. Available: &lt;a href=&#34;https://www.diagnosticimaging.com/view/ai-and-future-radiology&#34;&gt;https://www.diagnosticimaging.com/view/ai-and-future-radiology&lt;/a&gt;. [Accessed: 20- Oct- 2020].&lt;/p&gt;
 
       </description>
     </item>
@@ -2920,36 +2965,117 @@ A project this large and versatile requires the use of many software tools. Thes
       <description>
         
         
-        &lt;h1 id=&#34;detecting-heart-disease-using-machine-learning-classification-techniques&#34;&gt;Detecting Heart Disease using Machine Learning Classification Techniques&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow our template&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ethan Nguyen&lt;/p&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+        &lt;h1 id=&#34;analysis-of-various-machine-learning-classification-techniques-in-detecting-heart-disease&#34;&gt;Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease&lt;/h1&gt;
+&lt;p&gt;Ethan Nguyen, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-309&#34;&gt;fa20-523-309&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-309/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This section will be addressed as the project nears completion&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. Datasets&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#21-dataset-cleaning&#34;&gt;2.1 Dataset Cleaning&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#22-dataset-analysis&#34;&gt;2.2 Dataset Analysis&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#project-timeline&#34;&gt;Project Timeline&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#october-26&#34;&gt;October 26&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#november-2&#34;&gt;November 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#november-9&#34;&gt;November 9&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#november-16&#34;&gt;November 16&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; health, healthcare, cardiovascular disease, data analysis&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;Since cardiovascular diseases are the number 1 cause of death globally, early prevention could help in extending one’s life span and possibly quality of life. Since there are cases where patients do not show any signs of cardiovascular trouble until an event occurs, having an algorithm predict from their medical history would help in picking up on early warning signs a physician may overlook. Or could also reveal additional risk factors and patterns for research on prevention and treatment.&lt;/p&gt;
-&lt;p&gt;It has been decided for this project to take a high-level overview of the common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, Logistic Regression, K-Nearest Neighbors, and Support Vector Machines.&lt;/p&gt;
-&lt;p&gt;Additionally, a variety of data sets that contain common information types will be used to increase the training and test pool for evaluation. As it is known that a large set of data is required to reduce the possibility of the algorithm’s overfitting.&lt;/p&gt;
-&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+&lt;p&gt;This project will take a high-level overview of common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, Logistic Regression, K-Nearest Neighbors, and Support Vector Machines.&lt;/p&gt;
+&lt;p&gt;Additionally, two data sets that contain common features will be used to increase the training and test pool for evaluation. As well as to explore if additional feature types contribute to a better prediction. As it is known that a large set of data is required to reduce the possibility of the algorithm’s overfitting.&lt;/p&gt;
+&lt;h2 id=&#34;2-datasets&#34;&gt;2. Datasets&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/andrewmvd/heart-failure-clinical-data&#34;&gt;https://www.kaggle.com/andrewmvd/heart-failure-clinical-data&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/johnsmith88/heart-disease-dataset&#34;&gt;https://www.kaggle.com/johnsmith88/heart-disease-dataset&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/ronitf/heart-disease-uci&#34;&gt;https://www.kaggle.com/ronitf/heart-disease-uci&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/sulianova/cardiovascular-disease-dataset&#34;&gt;https://www.kaggle.com/sulianova/cardiovascular-disease-dataset&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The range of creation dates vary from as late as 2 years to as recent of 4 months. This does bring up a small hiccup in preprocessing to consider. Namely the possibility of changing diet and culture trends resulting in significantly different trends/patterns within the same age group.&lt;/p&gt;
+&lt;p&gt;The range of creation dates are 1988 and 2019 respectively with different features of which 4 are common between. This does bring up a small hiccup in preprocessing to consider. Namely the possibility of changing diet and culture trends resulting in significantly different trends/patterns within the same age group. As well as possible differences in measurement accuracy. However this large gap is within the scope of the project in exploring which features can help provide an accurate prediction.&lt;/p&gt;
 &lt;p&gt;This possible phenomenon may be of interest to explore closely if time allows. Whether a trend itself is even present or there is an overarching trend across different cultures and time periods. Or to consider if this difference is significant enough that the data from the various sets needs to be adjusted to normalize the ages to present day.&lt;/p&gt;
-&lt;h2 id=&#34;what-needs-to-be-done-to-achieve-a-great-grade&#34;&gt;What needs to be done to achieve a great grade&lt;/h2&gt;
+&lt;h3 id=&#34;21-dataset-cleaning&#34;&gt;2.1 Dataset Cleaning&lt;/h3&gt;
+&lt;p&gt;The datasets used have already been significantly cleaned from the raw data and has been provided as a csv file. These files were then imported into the python notebook as pandas dataframes for easy manipulation.&lt;/p&gt;
+&lt;p&gt;An initial check was made to ensure the integrity of the data matched the description from the source websites. Then some preprocessing was completed to normalize the common features between the datasets. These features were gender, age, and cholesterol levels. The first two adjustments were trivial in conversion however, in the case of cholesterol levels, the 2019 set is on a 1-3 scale while the 1988 dataset provided them as real measurements. A conversion of the 1988 dataset was done based on guidelines found online for the age range of the dataset &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;22-dataset-analysis&#34;&gt;2.2 Dataset Analysis&lt;/h3&gt;
+&lt;p&gt;From this point on, the 1988 dataset will be referred to as &lt;code&gt;dav_set&lt;/code&gt; and 2019 data set will be referred to as &lt;code&gt;sav_set&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To provide further insight on what to expect and how a model would be applied, the population of the datasets was analysed first. As depicted in Figure 2.1 the population samples of both datasets of gender vs age show the majority of the data is centered around 60 years of age with a growing slope from 30 onwards.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/agevssex.jpg&#34; alt=&#34;Figure 2.1&#34;&gt;&lt;br&gt;
+&lt;strong&gt;Figure 2.1&lt;/strong&gt;: Age vs Gender distributions of the dav_set and sav_set.&lt;/p&gt;
+&lt;p&gt;This trend appears to signify that the datasets focused solely on an older population or general trend in society of not monitoring heart conditions as closely in the younger generation.&lt;/p&gt;
+&lt;p&gt;Moving on to Figure 2.2, we see an interesting trend with a significant growing trend in the sav_set in older population having more cardiovascular issues compared to the dav_set. While this cannot be seen in the dav_set. This may be caused by the additional life expectancy or a change in diet as noted in the introduction.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/agevstarget.jpg&#34; alt=&#34;Figure 2.2&#34;&gt;&lt;br&gt;
+&lt;strong&gt;Figure 2.2&lt;/strong&gt;: Age vs Target distributions of the dav_set and sav_set.&lt;/p&gt;
+&lt;p&gt;In Figure 2.3, the probability of having cardiovascular issues between the sets are interesting. In the dav_set the inequality of higher probability could be attributed to the larger female samples in the dataset. With the sav_set having a more equal probability between the genders.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/gendervsprobability.jpg&#34; alt=&#34;Figure 2.3&#34;&gt;&lt;br&gt;
+&lt;strong&gt;Figure 2.3&lt;/strong&gt;: Gender vs Probability of cardiovascular issues of the dav_set and sav_set.&lt;/p&gt;
+&lt;p&gt;Finally, in Figure 2.4 is the probability vs cholesterol levels. This one is very interesting between the two datasets in terms of trend levels. With the dav_set having a higher risk at normal levels compared to the sav_set. This could be another hint of a societal change across the years or may in fact be due to the low sample size. Especially since the sav_set matches the general consensus of higher cholesterol levels increasing risk of cardiovascular issues &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/cholesterolvsprobability.jpg&#34; alt=&#34;Figure 2.4&#34;&gt;&lt;br&gt;
+&lt;strong&gt;Figure 2.4&lt;/strong&gt;: Cholesterol levels vs Probability of cardiovascular issues of the dav_set and sav_set.&lt;/p&gt;
+&lt;p&gt;To close out this initial analysis is the correlation map of each of the features. From Figure 2.5 and 2.6 it can be concluded that both of these datasets are viable to conduct machine learning as the correlation factor is below the recommended value of 0.8 &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Although we do see the signs of a low sample amount in the dav_set with a higher correlation factor compared to the sav_set.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/davsetcorrelation.jpg&#34; alt=&#34;Figure 2.5&#34;&gt;&lt;br&gt;
+&lt;strong&gt;Figure 2.5&lt;/strong&gt;: dav_set correlation matrix.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/savsetcorrelation.jpg&#34; alt=&#34;Figure 2.6&#34;&gt;&lt;br&gt;
+&lt;strong&gt;Figure 2.6&lt;/strong&gt;: sav_set correlation matrix.&lt;/p&gt;
+&lt;h2 id=&#34;project-timeline&#34;&gt;Project Timeline&lt;/h2&gt;
+&lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates.&lt;/p&gt;
+&lt;h3 id=&#34;october-26&#34;&gt;October 26&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Explore options on normalizing or conversion of the features to connect between the datasets and determine if they are viable to add to the project.&lt;/li&gt;
+&lt;li&gt;Explore ML models and frameworks and determine viability for the project.&lt;/li&gt;
+&lt;li&gt;Update Report.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;november-2&#34;&gt;November 2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Commence build out of ML models.
+&lt;ul&gt;
+&lt;li&gt;Tuning of hyperparameters as necessary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Update Report.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;november-9&#34;&gt;November 9&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ML Models should be complete.&lt;/li&gt;
+&lt;li&gt;Start analysis of the various models and their viability.
+&lt;ul&gt;
+&lt;li&gt;Additional tuning of hyperparameters as necessary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Update Report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;november-16&#34;&gt;November 16&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Finalize Report and findings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li&gt;A report analyzing the results and outlining the procedure of the project.&lt;/li&gt;
-&lt;li&gt;The report satisfies the minimum length requirement and complies with the additional requirements outlined in the project pdf&lt;/li&gt;
-&lt;li&gt;Searching and curating a large data set on heart disease&lt;/li&gt;
-&lt;li&gt;A software component that preprocesses and trains various machine learning algorithms on the chosen dataset&lt;/li&gt;
-&lt;li&gt;The trained algorithms are tuned to a reasonable degree to obtain the maximum performance possible within the project timeframe&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;WebMD. 2020. Understanding Your Cholesterol Report. [online] Available at: &lt;a href=&#34;https://www.webmd.com/cholesterol-management/understanding-your-cholesterol-report&#34;&gt;https://www.webmd.com/cholesterol-management/understanding-your-cholesterol-report&lt;/a&gt; [Accessed 21 October 2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;R, V., 2020. Feature Selection — Correlation And P-Value. [online] Medium. Available at: &lt;a href=&#34;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&#34;&gt;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&lt;/a&gt; [Accessed 21 October 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;strech-goals-for-the-project&#34;&gt;Strech goals for the project&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Further analysis of the datasets to see if the age between the creation/release date reveal any shifts over time&lt;/li&gt;
-&lt;li&gt;What occurs when the data set is normalized based on creation/release date to the newest set and if they reveal any other interesting trends&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>
@@ -3290,62 +3416,49 @@ give a more accurate prediction.&lt;/p&gt;
       <description>
         
         
-        &lt;h1 id=&#34;predicting-stock-market-recovery-in-indonesia-after-covid-19-crash&#34;&gt;Predicting Stock Market Recovery in Indonesia after COVID-19 Crash&lt;/h1&gt;
-&lt;p&gt;Fauzan Isnaini&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use our template, see piazza&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;The COVID-19 Pandemic is not just a crisis in the public health sector.
-It also impacts unemployment rates, business revenues, and mass
-psychology, which in the end lead to crashes in global stock markets.
-While some stock indexes like the Dow Jones Industrial Average (DJIA)
-and NASDAQ Composite already recovered, the Indonesian Stock Market
-Index (IDX Composite) is still far below its price before the pandemic.
-Some of the possible causes are: 1. Foreign investments represent about
-50% of the total fund in the IDX stock exchange. In a pandemic
-situation, foreign investors might choose to withdraw their stocks and
-find another safer country to invest in. 2. Unpredictability of the
-pandemic situation drives investors to reallocate their funds in safer
-assets, such as cash, gold, or USD. 3. Changes in the macroeconomic
-situation, such as unemployment rate, Indonesian Rupiah (IDR) exchange
-rate, and interest rate. 4. Changes in the consumer buying power also
-change the business revenues, thus changing fundamental data. 5. Mass
-psychology of investors that the stock market is not safe in this
-pandemic situation, holding them from returning to the stock market To
-predict the time needed for IDX Composite to recover, there are two
-indicators that can be utilized: 1. Fundamental indicators, which
-represent the financial aspect. This can be in the form of macroeconomic
-data and a company financial report 2. Technical indicators, which
-represent the mass psychology of investors. This can be obtained from
-news, social media, or statistical analysis of how the stock market
-moves&lt;/p&gt;
-&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
-&lt;p&gt;In predicting the outcome, I will utilize these datasets: 1. Yahoo
-Finance (finance.yahoo.com). Yahoo Finance contains a lot of both
-fundamental and technical data, and they are free of charge. 2. Twitter
-(twitter.com). I can conduct a content analysis on Twitter to represent
-the mass psychology regarding the economic condition in Indonesia 3.
-News channel. I can also utilize data crawler software to conduct
-content analysis to compare positive and negative news in Indonesia. 4.
-Third party stock data feeder. There are some third parties who provide
-more comprehensive stock data on a subscription basis. This is another
-option if the above datasets are not sufficient&lt;/p&gt;
-&lt;h2 id=&#34;plan&#34;&gt;Plan&lt;/h2&gt;
-&lt;p&gt;I will build a Python program to learn these data and generate a
-prediction on when the IDX Composite will recover. I will also consider
-the recovery rate of each of these sectors: 1. Mining 2. Agriculture 3.
-Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&amp;rsquo;
-Goods 7. Property 8. Trading 9. Basic Industry While they are
-incorporated in the IDX Composite, the recovery rate of each sector may
-be different because of their respective nature of the industry. For
-example, consumer&amp;rsquo;s goods may be impacted less in this COVID-19
-pandemic, thus resulting in a faster recovery. On the other hand, the
-property sector might be the most impacted sector in this pandemic, thus
-resulting in a long time to recover. The program will be able to learn
-continuously, so if new data is available, it can renew the analysis and
-give a more accurate prediction.&lt;/p&gt;
-&lt;p&gt;asassasa&lt;/p&gt;
+        &lt;h1 id=&#34;predicting-stock-market-recovery-after-pandemic&#34;&gt;Predicting Stock Market Recovery After Pandemic&lt;/h1&gt;
+&lt;p&gt;Fauzan Isnaini, fa20-523-313&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Predicting the stock market is a complex task with lots of different variables comes into play. While it is difficult to predict the short-term volatility, there are several approaches to forecast the stock market in the long term.  In this paper, we will analyze multiple methods to forecast the Indonesian Stock Exchange (IDX) recovery after the Covid-19 pandemic. The forecast will be based on technical analysis, fundamental analysis, and sentiment analysis.
+Keywords: stock, market, predictive analytics, LSTM, random forest, regression, fundamental analysis, technical analysis, sentiment analysis, pandemic&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;The COVID-19 Pandemic is not just a crisis in the public health sector. It also impacts unemployment rates, business revenues, and mass psychology, which in the end lead to crashes in global stock markets. While some stock indexes like the Dow Jones Industrial Average (DJIA) and NASDAQ Composite have already recovered, the Indonesian Stock Market Index (IDX Composite) is still far below its price before the pandemic.
+Some of the possible causes are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Foreign investments represent about 50% of the total fund in the IDX stock exchange. In a pandemic situation, foreign investors might choose to withdraw their stocks and find another safer country to invest in.&lt;/li&gt;
+&lt;li&gt;Unpredictability of the pandemic situation drives investors to reallocate their funds in safer assets, such as cash, gold, or USD.&lt;/li&gt;
+&lt;li&gt;Changes in the macroeconomic situation, such as unemployment rate, Indonesian Rupiah (IDR) exchange rate, and interest rate.&lt;/li&gt;
+&lt;li&gt;Changes in the consumer buying power also change the business revenues, thus changing fundamental data.&lt;/li&gt;
+&lt;li&gt;Mass psychology of investors that the stock market is not safe in this pandemic situation, holding them from returning to the stock market&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To predict the time needed for IDX Composite to recover, two indicators can be utilized:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Fundamental indicators, which represent the financial aspect. This can be in the form of macroeconomic data and a company financial report&lt;/li&gt;
+&lt;li&gt;Technical indicators, which represent the mass psychology of investors. This can be obtained from statistical analysis of how the stock market moves&lt;/li&gt;
+&lt;li&gt;Sentiment analysis, which represents the mass psychology of Indonesian people. This can be obtained from Twitter and Google Trends&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
+&lt;p&gt;Predicting the stock market offers great profit, thus it is a widely popular research area. While there is no specific paper addressing how to predict market recovery, there are some researches related to this area that can be utilized in this study.&lt;/p&gt;
+&lt;h3 id=&#34;21-predicting-long-term-stock-price-movement-using-the-random-forest-algorithm&#34;&gt;2.1 Predicting Long Term Stock Price Movement using the Random Forest Algorithm&lt;/h3&gt;
+&lt;p&gt;Milosevic [6] uses some machine learning algorithms to predict whether some company’s value will be 10% higher or not over the period of one year. He evaluated the companies’ financial indicators and found out that the Random Forest algorithm can get 0.765 precision, which is an amazing performance in the stock market.&lt;/p&gt;
+&lt;h3 id=&#34;22-predicting-the-next-recession-using-long-short-term-memory-lstm-algorithm&#34;&gt;2.2 Predicting the Next Recession using Long Short-term Memory (LSTM) Algorithm&lt;/h3&gt;
+&lt;p&gt;Another long term prediction in this area is from Khedkar [7]. He used LSTM in predicting the next recession in India. In this study, the stock closing price data is used, instead of financial data – which is technical analysis. LSTM networks are well-suited to classifying, processing, and making predictions based on time series data, since there can be lags of unknown duration between important events in a time series. The study managed to predict the stock market crash in 2020.&lt;/p&gt;
+&lt;h3 id=&#34;23-stock-market-prediction-using-text-mining&#34;&gt;2.3 Stock Market Prediction Using Text Mining&lt;/h3&gt;
+&lt;p&gt;Text mining usually accompanies the technical analysis method. We can conduct sentiment analysis on news and social media to predict whether the stock market goes up or down. Sentiments on Twitter usually indicate market volatility and volume, while sentiments on news are a better predictor of stock movement [4].&lt;/p&gt;
+&lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
+&lt;p&gt;In predicting the outcome, these datasets will be utilized:
+Yahoo Finance (finance.yahoo.com). Yahoo Finance contains a lot of both fundamental and technical data, and they are free of charge.
+Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to represent the mass psychology regarding the economic condition in Indonesia&lt;/p&gt;
+&lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
+&lt;p&gt;In this study, we will predict market movement in the next two years using two approaches, which are the fundamental approach, and technical approach accompanied by sentiment analysis. The fundamental approach will utilize the random forest algorithm, while the technical approach will utilize the bidirectional gated recurrent unit (BGRU), which is considered a variant of LSTM. In the second approach, we will use news from Twitter&amp;rsquo;s official accounts and historical stock prices to predict the market.&lt;/p&gt;
+&lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The author would like to thank Dr. Geoffrey Fox, Dr. Gregor Von Laszewski, and the associate instructors in the FA20-BL-ENGR-E534-11530: Big Data Applications course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions concerning exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
+&lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
+&lt;p&gt;[^4] F. S. Alzazah and X. Cheng, “Recent Advances in Stock Market Prediction Using Text Mining: A Survey,” E-Business [Working Title], 2020.&lt;/p&gt;
 
       </description>
     </item>
@@ -3505,7 +3618,8 @@ The data spread across two files will have to be merged according to date. For t
     &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. DataSets&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#4-technologies-used&#34;&gt;4. Technologies used&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-refernces&#34;&gt;5. Refernces&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-plan-for-the-rest-of-the-semseter&#34;&gt;5. Plan for the rest of the Semseter&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-refernces&#34;&gt;6. Refernces&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
@@ -3536,9 +3650,64 @@ Our data-gathering and preparation methodology is composed of the following step
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4-technologies-used&#34;&gt;4. Technologies used&lt;/h2&gt;
-&lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, PyTorch,&lt;/p&gt;
-&lt;h2 id=&#34;5-refernces&#34;&gt;5. Refernces&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, PyTorch&lt;/p&gt;
+&lt;h2 id=&#34;5-plan-for-the-rest-of-the-semseter&#34;&gt;5. Plan for the rest of the Semseter&lt;/h2&gt;
+&lt;p&gt;October 26:
+. Furthur looking into new datasets and getting new twitter data.
+. Brainstrom ideas for future engineering and build features
+. update the report.&lt;/p&gt;
+&lt;p&gt;November 2:
+. Evalute deep learning frameworks (Kears, Pytorch, skict-learn)&lt;/p&gt;
+&lt;p&gt;November 9:
+TBD&lt;/p&gt;
+&lt;p&gt;November 16:
+TBD&lt;/p&gt;
+&lt;h2 id=&#34;6-refernces&#34;&gt;6. Refernces&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a&#34;&gt;https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a&lt;/a&gt;
+&lt;a href=&#34;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&#34;&gt;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-317/assignments/assignment-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-317/assignments/assignment-6/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;robotic-nurses&#34;&gt;Robotic Nurses&lt;/h1&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Throughout history, innovation and technology has drastically changed the way humans have lived their lives and how long humans live as well. This can be shown in innovations like the plow and what it did for agriculture, electricity and what it did for way of life, or even something like automobiles which defined how humans travel and interact. These examples show how a creation not only betters the lives of the individual but helps evolves our species in its totality.&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Introduction&lt;/li&gt;
+&lt;li&gt;Robotic Nurse&lt;/li&gt;
+&lt;li&gt;Nursing Homes&lt;/li&gt;
+&lt;li&gt;Ethics&lt;/li&gt;
+&lt;li&gt;References&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;In accordance to advancing changes in technology and medicine, we’ve seen life expectancy improve as a parallel. This is directly due to improvements in technologies such as MRI, ECG, X-Rays and a wide range of detection tools that can either prevent or slow diseases, broken bones or cancers which are commonly known to cause chronic issues or even kill people on a frequent basis.&lt;/p&gt;
+&lt;p&gt;Now as we continue to improve on technologies more and more issues are getting solved ever faster and more efficient. Robotic Nurses are a development to improve the speed at which tasks such as these are accomplished. Even now, getting tests or care from healthcare providers take a lot of time and is a long process. So, things like robotic nurses can be a gamechanger in healthcare treatments.&lt;/p&gt;
+&lt;h2 id=&#34;2-robotic-nurse&#34;&gt;2. Robotic Nurse&lt;/h2&gt;
+&lt;p&gt;There was a clinical trial that was performed to measure how a robot was able to perform drawing blood samples from humans. This would be equivalent to someone getting blood drawn to check their cholesterol. The difficult part of this would be finding the vein on an individual and accurately placing the needle to draw the blood.  The robots in use would theoretically be controlled utilizing ultrasound imaging in order to understand where to go and place the needle.&lt;/p&gt;
+&lt;p&gt;According to Rutgers University (where the first clinical trial was done), “the ultrasound image-guided robot had an overall success rate of 87% for the 31 participants who had their blood drawn, while the success rate was 97% among the 25 participants with easy-to-locate veins, according to Forbes.” Through this data, the success overall is extremely high and very encouraging. If there is concern for the 13% that didn’t work, most human nurses aren’t able to draw blood from most individuals because of the lack of the vein showing up. So, in that sense the difference in performance from human to robot is not huge and doesn’t create a discrepancy in that sense. [2]&lt;/p&gt;
+&lt;h2 id=&#34;3-nursing-homes&#34;&gt;3. Nursing Homes&lt;/h2&gt;
+&lt;p&gt;In addition to using robotic nurses to perform tasks such as blood work and administration, there could also be a market for robotic nurses caring for the elderly. In places in regions such as Japan where the life expectancy is high and birth rate is low, this could be especially useful. According to Stanford, over 30% of the Japanese population is over the age of 65 years old and there is an average of 1.2 births per woman. [1] Consequently, the number of caretakers for this older generation is limited and is in need of a boost. That’s where our previous need for robotic nurses would come in. When it comes to situations where there is a need for a home caretaker, if the robotic nurse experiment were to work, these robots could be assigned to certain homes or can aid in health treatments where there aren’t enough nurses to undertake a particular task. This not only applies for Japan but can be said here as well. There are many individuals who are reluctant to go to a nursing home or even have to wait long hours for healthcare treatment. So, adding these nurses would enhance efficiency of time and work for patients involved.&lt;/p&gt;
+&lt;h2 id=&#34;4-ethics&#34;&gt;4. Ethics&lt;/h2&gt;
+&lt;p&gt;With anything involving robots, there will always almost be a question of ethicality in terms of actions and decision making by that particular AI powered system. In order to install a robot to a particular healthcare or homecare function, that robot would have to make daily decisions on things to do in terms of situations or actions performed by the patient that would warrant a response. As pointed out by Stanford an example is if there was a situation where the robot engages in conversation with a patient by asking them to take their medication. In the case that the patient refuses the robot would need to first show the patient respect but also deduce why the patient refused the medication [1]. This grey area is ultimately the difference between the human and robotic nurse. A human nurse would find ways to understand the reason behind the patient’s refusal and they could empathize with that patient as well. As Stanford points out, there is no morally just or empathetical gesture to a robot’s thinking or responses so for now that is the issue that lies with them [1]. Another thing is privacy issues that could occur especially when in situations that involve homecare tasks. Having the robot understand when or when not to invade privacy during certain times is an issue that would have to be resolved as well.&lt;/p&gt;
+&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
+&lt;p&gt;[1]: Cs.stanford.edu. 2020. Robotic Nurses | Computers And Robots: Decision-Makers In An Automated World. [online] Available at: &lt;a href=&#34;https://cs.stanford.edu/people/eroberts/cs201/projects/2010-11/ComputersMakingDecisions/robotic-nurses/index.html#:~:text=Today%2C%20robotic%20nurses%20are%20robots,distances%20to%20communicate%20with%20patients.&#34;&gt;https://cs.stanford.edu/people/eroberts/cs201/projects/2010-11/ComputersMakingDecisions/robotic-nurses/index.html#:~:text=Today%2C%20robotic%20nurses%20are%20robots,distances%20to%20communicate%20with%20patients.&lt;/a&gt; [Accessed 20 October 2020].&lt;/p&gt;
+&lt;p&gt;[2]: Class Slides&lt;/p&gt;
 
       </description>
     </item>
@@ -3693,209 +3862,45 @@ without failures or downtime. Images are stored into databases of sources and ti
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-319/project/project/</link>
+      <link>/report/fa20-523-319/assignments/rama_asuri_hw6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-319/project/project/</guid>
+      <guid>/report/fa20-523-319/assignments/rama_asuri_hw6/</guid>
       <description>
         
         
-        &lt;h1 id=&#34;detect-and-classify-pathologies-in-chest-x-rays-using-pytorch-library&#34;&gt;Detect and classify pathologies in chest X-rays using PyTorch library&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use oure template as posted in piazza&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please improve citations&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;| Rama Asuri
-| &lt;a href=&#34;mailto:asurirk@gmail.com&#34;&gt;asurirk@gmail.com&lt;/a&gt;, &lt;a href=&#34;mailto:rasuri@indiana.edu&#34;&gt;rasuri@indiana.edu&lt;/a&gt;
-| Indiana University
-| hid: fa20-523-319&lt;/p&gt;
-&lt;p&gt;Keywords: PyTorch, CheXpert&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Deep learning gains expert level performance by training on large datasets.  Our project uses chest x-rays dataset 
-called CheXpert and apply deep  learning to detect and diagnose a condition based on image data. CheXpert dataset 
-contain 224,316 chest radiographs of 65,240 patients. There are 14 observations in a radiology report and labels are 
-mapped to these 14 observations. We train our models to use the labels that corresponds to different diseases. Our 
-deep learning models are based on PyTorch library.&lt;/p&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Deep learning methods are becoming very reliable at achieving expert level performance using large labeled datasets. 
-CheXpert is a large dataset that contains 224,316 chest radiographs of 65,240 patients. This dataset contains
-14 observations in radiology reports and also capturing uncertainties inherent in radiograph interpretation using
-uncertainty labels. There is also a validation set of 200 chest radiographic studies which were manually annotated 
-by 3 board-certified radiologists. Deep learning model should detect different pathologies. CheXpert is a public 
-dataset [3] and has a strong radiologist-annotated ground truth and expert scores against which we can compare 
-the model [1].&lt;/p&gt;
-&lt;p&gt;We will use PyTorch library which is an open source machine learning library based on the Torch library [2]. It is 
-used for applications such as computer vision and natural language processing which is primarily developed by 
-Facebook&amp;rsquo;s AI Research lab (FAIR). It is free and open-source software released under the Modified BSD license.
-Although the Python interface is more polished and the primary focus of development, PyTorch also has a C++ interface. 
-There are number of Deep Learning applications that are built on top of PyTorch, including Tesla Autopilot, Uber&amp;rsquo;s 
-Pyro etc [4].&lt;/p&gt;
-&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Work in progress&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;we develop the Deep Learning Software using PyTorch library to perform the following.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Load raw Chest X-rays and put raw data into PyTorch&lt;/li&gt;
-&lt;li&gt;Identify the one of the five pathologies&lt;/li&gt;
-&lt;li&gt;Group the Pathologies&lt;/li&gt;
-&lt;li&gt;Classify the pathology&lt;/li&gt;
-&lt;li&gt;Diagnose the patient&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Missing design&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
-&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-&lt;h2 id=&#34;benchmark&#34;&gt;Benchmark&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;TBD - Other deep learning models data is available online for benchmarking.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;h2 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h2&gt;
-&lt;h2 id=&#34;project-plan&#34;&gt;Project plan&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Missing - Adding detailed project plan&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This project has following deliverables&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Design documents&lt;/li&gt;
-&lt;li&gt;Final Project report&lt;/li&gt;
-&lt;li&gt;Working Software demo&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;refernces&#34;&gt;Refernces&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[1] &lt;a href=&#34;https://stanfordmlgroup.github.io/competitions/chexpert/&#34;&gt;https://stanfordmlgroup.github.io/competitions/chexpert/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[2] &lt;a href=&#34;https://pytorch.org/deep-learning-with-pytorch&#34;&gt;https://pytorch.org/deep-learning-with-pytorch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[3] &lt;a href=&#34;https://arxiv.org/pdf/1901.07031.pdf&#34;&gt;https://arxiv.org/pdf/1901.07031.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[4] &lt;a href=&#34;https://en.wikipedia.org/wiki/PyTorch&#34;&gt;https://en.wikipedia.org/wiki/PyTorch&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-319/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-319/test/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;test&#34;&gt;Test&lt;/h1&gt;
-&lt;h2 id=&#34;rama-asuri&#34;&gt;Rama Asuri&lt;/h2&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-323/assignments/assignment-1/atugman-assignment1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-323/assignments/assignment-1/atugman-assignment1/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Anthony Tugman&lt;br&gt;
-E534&lt;br&gt;
-9/7/20&lt;br&gt;
-Assignment 1&lt;/p&gt;
-&lt;p&gt;America is an incredibly diverse community, a vast pool of individuals from various
-backgrounds, experiences, and beliefs striving towards the elusive American dream. In stark
-contrast, the cities of America are one in the same. Not in the sense of architecture, food, and culture but rather in the way that they are run. Policy makers always seem to be playing “catch up” whether it be in reacting to environmental disasters, managing services for ever shifting populations, or even attempting to respond to crime. What if our cities were smarter? Imagine being alerted in real time to hotspots of pollution, being able to visualize traffic patterns throughout the day, and being able to identify large gatherings calling for an increase in police presence. By implementing big data and analytics into our cities this, and more, is possible.&lt;/p&gt;
-&lt;p&gt;By definition a smart city is “an urban area that uses different types of electronic sensors
-to collect data” [1]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This data is then analyzed and insights gained from the analysis are used to manage the city more efficiently, or to recognize patterns that would not be realized by typical human observation. This application relies on big data although physical in nature at its heart. What I mean by this is that the sensors themselves are physical, and a wide variety must be used to truly understand what is occurring in the environment. The data itself is a side effect of the sensors, but this is where the heart of the benefit is held. With the technology readily available, and the potential benefit from the investment of deployment unlimited, it is surprising to me that we do not see such systems deployed across cities around the world. One such project, The
-Array of Things, has slowly been implemented across parts of Chicago over the last four years.&lt;/p&gt;
-&lt;p&gt;The Array of Things is self described as an experimental urban measurement project
-comprising a network of interactive, modular devices, to collect real-time data on the city’s
-environment, infrastructure, and activity [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. With the goal of providing this data to the public as well as various engineers, policy makers, and residents, The Array of Things now features a network of 150 sensor locations strategically placed across the city [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. It is important to note that the creators of this project claim this to be an experiment, which answers my earlier question of why more cities do not follow suit. It seems that many issues arise from collecting such data including integrity, privacy, and usability. This seems to be a common concern across all areas of big data and finding solutions to these concerns will make individuals use the technology more often. If The Array of Things is able to ultimately solve the above problems, I do not see why this technology would not be a template for applying across the world.&lt;/p&gt;
-&lt;p&gt;Although the hardware behind the nodes is fascinating, it is more applicable to focus on
-the data they produce for the scope of this course. At the current iteration the devices collect information on pollution, traffic, and other ambient information. The collected information is publicly available and the team behind The Array of things has done its best to mitigate privacy concerns.&lt;/p&gt;
-&lt;p&gt;In reflection, I believe that The Array of Things has immense potential to become life
-changing in the way our cities are managed. However, this does not come without its downfalls.  The way collected data is currently being published is not appropriate for the target audience. In fact, it seems that an advanced degree would be required to make sense of any of the data. For The Array of Things to gain the public’s trust as well as be used by various industries it must become more user friendly. For widespread adoption I propose the information be available in two forms. Firstly in a way that the technically inclined can analyze the data in ways the creators did not imagine possible. Second, the data should be available in an easy to digest, visual format that the common man can decipher. In any case, I see The Array of Things as the forefront of implementing big data into cities around the world and will continue to monitor updates to the project in hopes of sifting through the data myself one day and informing policy decision with my results.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;“Smart city” Wikipedia, 11-Sep-2020. [Online]. Available:
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Smart_city&#34;&gt;https://en.wikipedia.org/wiki/Smart_city&lt;/a&gt;. [Accessed: 12-Sep-2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Array of Things. [Online]. Available: &lt;a href=&#34;https://arrayofthings.github.io/index.html&#34;&gt;https://arrayofthings.github.io/index.html&lt;/a&gt;.
-[Accessed: 12-Sep-2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-323/assignments/assignment-3/atugman-assignment3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-323/assignments/assignment-3/atugman-assignment3/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Anthony Tugman&lt;br&gt;
-E534&lt;br&gt;
-9/21/20&lt;br&gt;
-Assignment 3&lt;/p&gt;
-&lt;p&gt;The Square Kilometer Array (SKA) is a global, cross-disciplinary partnership striving to
-produce the world’s largest radio telescope. As the name correctly describes, the field of sensors will stretch across a full square kilometer and be located across western Australia and south Africa which are considered to be some of the most remote areas in the world [1]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. As proposed in 2018 the SKA’s goals include studying the various types of energy that exist in the universe, deepening the understanding of gravitational waves, studying the birth of the universe, and searching for extraterrestrial communication. The developers of SKA have also made clear that this radio telescope will not only be larger than any in existence, it will also collect, analyze, and store data in speed and quantity that has not been seen before. The project is in the design phase and is constantly evolving to overcome technological and legislative barriers. As of September 2020 the SKA had received final approval and is preparing to enter the construction phase [2]&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;The future achievement of this project is highlighted by the amount of the data processed,
-as well as how the data is being processed. While still in the design phase the global
-collaboration is attempting to predict any problems that may occur and plan accordingly. SKA
-must use custom designed hardware to handle the amount and speed of data processing necessary
-for this project to be successful. The matter in which this data is to be processed is entirely different then existing systems. Instead of storing the data collected for processing, the SKA will process data in real time and only store the results. In doing so, the intermediate data is disposed of after the processing process has been completed. Even in doing so the SKA will produce 700PB of usable data annually between the two telescope arrays. This scale processing will require 2 supercomputers each 25% more powerful than what was available in 2019, as well as broadband capabilities 100,000 times faster than what is expected to be available in 2022 [1]&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;In the scope of this course the big data challenges this systems construction creates is
-most important to focus on. Undoubtedly a custom software and computing system must be
-developed. Although the data storage pipeline was previously described, it is important to note that small research stations across the globe will communicate with the large data center for each field of telescopes. To accomplish this task the designers expect to use various computer systems including custom PCBs, FPGAs, and commodity servers. The SKA team hopes to piggyback on existing infrastructure in the host countries to avoid starting from the ground up [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The first big data challenge stems from the volume of the data that will be collected and stored. In the use case data was to be collected at 700 petabytes per year, stored indefinitely (approximately 50 years) [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The velocity of the data being transferred is staggering as well. In this application the data is time dependent and needed at a constant pace for computation and refining. As proposed, data will be transferred at approximately 1TB/sec [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. According to the use case, there is not much variety in the type of data that will be transferred. In most cases the data will be in the form of images produced by the telescope with attached time data. If the researchers at the satellite office need access to other types of data, or more raw data, they will be able to do so through a virtual protocol as the data will not be stored on site [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The project designers seemed less sure in the variability of the data. In this case variability differs from variety as it refers to variation in the rate and nature of the data gathered. Here the variability was described as occasional, most often in the case when the telescope is changing the type of observation it is performing. It is also noted that there may be variability when the system is subject to certain strains, such as during system maintenance [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;Additionally, the project designers stressed maintaining the quality of the data as well as
-building a troubleshooting pipeline for when errors occurred. All systems of the SKA will store remnants of data and proper logs to insure the integrity of the data. This concept is true not only for the raw data being collected, but also for all other processes including the telescope equipment, sensors, and transmission equipment. Overall, the data will be verified by a combination of physical human checks and automated checks by the computer [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Unlike the previous sections the project designers did not make entirely clear the type of data they expect to receive after all collection and processing has been complete. Out of curiosity I did a quick web search to see what data is typically generated by radio telescopes and it is a variety. In any case, the project designers are confident that their system will be able to handle any requests/queries the researchers make. As a final consideration, the quality and security of the data must be preserved. In this situation the SKA governing board seems most likely and appropriate to manage the data generated. The project designers point out that the data is initially available only to member agencies for the first 18 months, after the data is released to the general science community. In certain situations or countries however, the data is subject to ruling by the local governing board, and the SKA governing board will comply appropriately [3]&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. In conclusion of the analysis of big data problems faced by the SKA project, it seems apparent that they are common to most projects involving big data. Primary concerns arise from data collection, storage, integrity, and security. Through analysis of the provided use case it is clear that the SKA project understands many of the roadblocks that they must overcome, however in many situations they did not spell out a clear plan or solution. Many of their provided responses were vague but I am confident that with a coalition of scientists across the international community in support, the team will be able to reach their goals.&lt;/p&gt;
-&lt;p&gt;The science goals of the SKA project were briefly mentioned, but it is worth looking into
-each in more detail. The first use case is research into the evolution of the galaxy, dark energy, and the rapid acceleration in size of the universe. To accomplish this goal, the SKA will monitor hydrogen distribution throughout the galaxy, specifically at the edge of the known galaxy in hopes of watching new ones be born. Initially discovered in 1930 by Karl Jansky, hydrogen can be monitored as it returns a specific frequency back to the radio telescope. The SKA has the added feature of being able to see further and more precisely to gather a better understanding of what is occurring in the galaxy [4]&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. In this section, the project designers make a careful clarification into what is meant by the sensitivity and resolution of the SKA. Sensitivity is defined as the measure of the minimum signal that a telescope can distinguish above background noise. The SKA sensitivity comes from the combination of radio receivers at the low, mid, and high range frequencies combined to effectively create a single radio telescope 1km wide. Resolution is the measure of the minimum size that a telescope can distinguish, or the cutoff when the telescope produces a blurry image compared to a clear image. The receivers of the SKA are relatively spread out which helps to increase the telescope&amp;rsquo;s resolution [4]&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;The second use case is further exploring the magnetic field that exists in our galaxy.
-Magnetic fields are entirely invisible, even to the largest telescopes, so instead the researchers look at various concentrations of radiation. In this section the researchers make an interesting note, they can anticipate the performance of the telescope in studying the known world however they expect that the SKA will open new research questions never before considered. As in the previous use case, the SKA’s resolution will allow researchers a view not previously achieved. The overall goal is to develop a map of the magnetic field through the known universe [5]&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;The third use case is to study the cosmic dawn. With our current technology, such as the
-hubble telescope, researchers have only been able to study the first 300,000 years after the big bang. By studying the cosmic microwave background of this time period they are able to get a better understanding of how the universe developed. However the next half billion years gives an even better insight into the scale of the structures created as well as how they began to form and collapse under gravity. The SKA will allow researchers to see into this time period. For this use case, the sensitivity of the SKA is most important [6]&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;]&amp;ldquo;The SKA Project - Public Website&amp;rdquo;, Public Website, 2020. [Online]. Available:
-&lt;a href=&#34;https://www.skatelescope.org/the-ska-project/&#34;&gt;https://www.skatelescope.org/the-ska-project/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&amp;ldquo;SKA completes final reviews ahead of construction - Public Website&amp;rdquo;, Public Website, 2020.
-[Online]. Available:
-&lt;a href=&#34;https://www.skatelescope.org/news/ska-completes-final-reviews-ahead-of-construction/&#34;&gt;https://www.skatelescope.org/news/ska-completes-final-reviews-ahead-of-construction/&lt;/a&gt;.
-[Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&amp;ldquo;Use Case Survey_SKA&amp;rdquo;, Google Docs, 2020. [Online]. Available:
-&lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit&#34;&gt;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&amp;ldquo;Galaxy Evolution, Cosmology and Dark Energy - Public Website&amp;rdquo;, Public Website, 2020.
-[Online]. Available: &lt;a href=&#34;https://www.skatelescope.org/galaxyevolution/&#34;&gt;https://www.skatelescope.org/galaxyevolution/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&amp;ldquo;Cosmic Magnetism - Public Website&amp;rdquo;, Public Website, 2020. [Online]. Available:
-&lt;a href=&#34;https://www.skatelescope.org/magnetism/&#34;&gt;https://www.skatelescope.org/magnetism/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&amp;ldquo;Probing the Cosmic Dawn - Public Website&amp;rdquo;, Public Website, 2020. [Online]. Available:
-&lt;a href=&#34;https://www.skatelescope.org/cosmicdawn/&#34;&gt;https://www.skatelescope.org/cosmicdawn/&lt;/a&gt;. [Accessed: 24- Sep- 2020]. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
+        &lt;h1 id=&#34;rama-asuri---homework-6-ai-in-health-and-medicine&#34;&gt;Rama Asuri - Homework 6 AI in Health and Medicine&lt;/h1&gt;
+&lt;p&gt;AI in health and medicine is achieving expert level performance. In this paper, we examine two different examples where
+AI was able to detect cancer and explore current status of AI in cancer diagnosis &lt;a href=&#34;https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the first example, we will cover Cervical cancer. Cervical cancer kills more women in India than in any other 
+country. It is a preventable disease which kills 67000 women in India. Screening and detection can help reduce 
+the number of deaths but the challenge is the testing process which takes enormous time. SRL diagnostics partnered 
+with Microsoft to co create an AI Network of Pathology to reduce the burden of cytopathologists and histopathologists. 
+Cytopathologists at SRL Diagnostics manually marked their observations. These observations were used as training data 
+for Cervical Cancer Image Detection. But there was a different challenge, the way cytopathologists examine different 
+elements are very unique even though they all have come to the same conclusion. This was because of these experts 
+may approach a problem from a different direction. The AI model able to differentiate between normal and abnormal 
+smear slides with accuracy &lt;a href=&#34;https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The second example is about detecting lung cancer. The survival rate is really high if lung cancer is detected during 
+the early stages. but the problem is that is difficult to do it manually when there millions of 3D X-rays.
+Reviewing scans is done by highly trained specialist and majority of the reviews results in no detection.
+Moreover this is also monotonous work which might lead to errors by the reviewers. The LUNA Grand Challenge is an 
+open dataset with high-quality labels of patient CT scans. The gLUNA Grand Challenge encourages improvements in 
+nodule detection by making it easy for teams to compete for high positions on the leader board. A project team can 
+test the efficacy of their detection methods against standardized criteria &lt;a href=&#34;https://pytorch.org/deep-learning-with-pytorch&#34;&gt;3&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;emerging-ai-applications-in-oncology&#34;&gt;Emerging AI Applications in Oncology&lt;/h2&gt;
+&lt;h3 id=&#34;improving-cancer-screening-and-diagnosis&#34;&gt;Improving Cancer Screening and Diagnosis&lt;/h3&gt;
+&lt;p&gt;The MRI-guided biopsy was developed by National Cancer Institute (NCI) researchers works without a need for clinics 
+because of the AI tool &lt;a href=&#34;https://www.cancer.gov/research/areas/diagnosis/artificial-intelligence&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;aiding-the-genomic-characterization-of-tumors&#34;&gt;Aiding the Genomic Characterization of Tumors&lt;/h3&gt;
+&lt;p&gt;Identifying mutations using noninvasive techniques is a particularly challenging problem when it comes to brain
+tumors &lt;a href=&#34;https://www.cancer.gov/research/areas/diagnosis/artificial-intelligence&#34;&gt;4&lt;/a&gt;. NCI and other partners concluded that AI could help identify gene mutations in innovative ways.&lt;/p&gt;
+&lt;h3 id=&#34;accelerating-drug-discovery&#34;&gt;Accelerating Drug Discovery&lt;/h3&gt;
+&lt;p&gt;Using AI, scientists were able to target mutations in the KRAS gene, one of the most frequently mutated 
+oncogenes in tumors &lt;a href=&#34;https://www.cancer.gov/research/areas/diagnosis/artificial-intelligence&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;improving-cancer-surveillance&#34;&gt;Improving Cancer Surveillance&lt;/h3&gt;
+&lt;p&gt;AI will help predicting treatment response, recurrence and survival based on the detection from the images.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 
       </description>
     </item>

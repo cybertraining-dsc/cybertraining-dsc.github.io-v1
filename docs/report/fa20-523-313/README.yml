@@ -6,7 +6,8 @@ owner:
   community: "534"
   semester: "fa20"
 project:
-  title: TBD
-  url: TBD
+  title: Predicting Stock Market Recovery After Pandemic
+  url: https://github.com/cybertraining-dsc/fa20-523-313/blob/master/project/project.md
   author:
-    - fa20-523-313
+    - Fauzan Isnaini, fa20-523-313
+
