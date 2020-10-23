@@ -164,3 +164,15 @@ This week's video class recorded the first part of [Google Slides](https://docs.
 
 Module on [Cloud Computing](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/e534-cloud-computing-unit/)
 
+## Week 9
+
+We discussed use of GitHub for projects (recording missed small part of this) and continued discussion of cloud computing but  did not finish  the slides yet.
+
+This week's video class recorded the second part of [Google Slides](https://docs.google.com/presentation/d/1mH5DW_qSH2KdagLSKAPD5QfKMV9AhuXQZz7TdHCFuAc/edit?usp=sharing).
+
+{{< youtube "MIpG-tIWWls" >}}.
+
+### Videos for Week 9
+
+Continue work on project and complete study of videos already assigned. If interesting to you, please review videos on AI in Banking, Space and Energy, Transportation Systems, Mobility (Industry), and Commerce. Don't forget the participation grade from GitHub activity each week
+
