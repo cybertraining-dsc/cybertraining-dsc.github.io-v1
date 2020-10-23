@@ -1,12 +1,12 @@
 [submodule "content/en/report/fa20-523-312"]
 	path = content/en/report/fa20-523-312
-	url = https://github.com/cybertraining-dsc/fa20-523-312.git
+	url = git@github.com:cybertraining-dsc/fa20-523-312.git
 [submodule "content/en/report/fa20-523-326"]
 	path = content/en/report/fa20-523-326
-	url = https://github.com/cybertraining-dsc/fa20-523-326.git
+	url = git@github.com:cybertraining-dsc/fa20-523-326.git
 [submodule "content/en/report/fa20-523-301"]
 	path = content/en/report/fa20-523-301
-	url = https://github.com/cybertraining-dsc/fa20-523-301.git
+	url = git@github.com:cybertraining-dsc/fa20-523-301.git
 [submodule "content/en/report/fa20-523-316"]
 	path = content/en/report/fa20-523-316
 	url = git@github.com:cybertraining-dsc/fa20-523-316.git
