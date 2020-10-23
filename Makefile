@@ -7,35 +7,35 @@ setup:
 
 
 pull:
-	cd content/en/report/cloudmesh-openapi; git pull
-	cd content/en/report/fa20-523-301; git pull
-	cd content/en/report/fa20-523-304; git pull
-	cd content/en/report/fa20-523-305; git pull
-	cd content/en/report/fa20-523-307; git pull
-	cd content/en/report/fa20-523-308; git pull
-	cd content/en/report/fa20-523-309; git pull
-	cd content/en/report/fa20-523-312; git pull
-	cd content/en/report/fa20-523-313; git pull
-	cd content/en/report/fa20-523-314; git pull
-	cd content/en/report/fa20-523-316; git pull
-	cd content/en/report/fa20-523-317; git pull
-	cd content/en/report/fa20-523-319; git pull
-	cd content/en/report/fa20-523-323; git pull
-	cd content/en/report/fa20-523-326; git pull
-	cd content/en/report/fa20-523-327; git pull
-	cd content/en/report/fa20-523-328; git pull
-	cd content/en/report/fa20-523-329; git pull
-	cd content/en/report/fa20-523-330; git pull
-	cd content/en/report/fa20-523-331; git pull
-	cd content/en/report/fa20-523-332; git pull
-	cd content/en/report/fa20-523-333; git pull
-	cd content/en/report/fa20-523-336; git pull
-	cd content/en/report/fa20-523-337; git pull
-	cd content/en/report/fa20-523-339; git pull
-	cd content/en/report/fa20-523-342; git pull
-	cd content/en/report/fa20-523-343; git pull
-	cd content/en/report/fa20-523-348; git pull
-	cd content/en/report/fa20-523-349; git pull
+	cd content/en/report/cloudmesh-openapi; git checkout master; git pull
+	cd content/en/report/fa20-523-301; git checkout master; git pull
+	cd content/en/report/fa20-523-304; git checkout master; git pull
+	cd content/en/report/fa20-523-305; git checkout master; git pull
+	cd content/en/report/fa20-523-307; git checkout master; git pull
+	cd content/en/report/fa20-523-308; git checkout master; git pull
+	cd content/en/report/fa20-523-309; git checkout master; git pull
+	cd content/en/report/fa20-523-312; git checkout master; git pull
+	cd content/en/report/fa20-523-313; git checkout master; git pull
+	cd content/en/report/fa20-523-314; git checkout master; git pull
+	cd content/en/report/fa20-523-316; git checkout master; git pull
+	cd content/en/report/fa20-523-317; git checkout master; git pull
+	cd content/en/report/fa20-523-319; git checkout master; git pull
+	cd content/en/report/fa20-523-323; git checkout master; git pull
+	cd content/en/report/fa20-523-326; git checkout master; git pull
+	cd content/en/report/fa20-523-327; git checkout master; git pull
+	cd content/en/report/fa20-523-328; git checkout master; git pull
+	cd content/en/report/fa20-523-329; git checkout master; git pull
+	cd content/en/report/fa20-523-330; git checkout master; git pull
+	cd content/en/report/fa20-523-331; git checkout main; git pull
+	cd content/en/report/fa20-523-332; git checkout master; git pull
+	cd content/en/report/fa20-523-333; git checkout master; git pull
+	cd content/en/report/fa20-523-336; git checkout master; git pull
+	cd content/en/report/fa20-523-337; git checkout master; git pull
+	cd content/en/report/fa20-523-339; git checkout master; git pull
+	cd content/en/report/fa20-523-342; git checkout master; git pull
+	cd content/en/report/fa20-523-343; git checkout master; git pull
+	cd content/en/report/fa20-523-348; git checkout main; git pull
+	cd content/en/report/fa20-523-349; git checkout main; git pull
 
 view:
 	gopen http://localhost:1313/ 

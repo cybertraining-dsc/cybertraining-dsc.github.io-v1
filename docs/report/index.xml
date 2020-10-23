@@ -3203,11 +3203,8 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;li&gt;Conductivity K 1.0 sensor kit - &lt;a href=&#34;https://atlas-scientific.com/kits/conductivity-k-1-0-kit/&#34;&gt;https://atlas-scientific.com/kits/conductivity-k-1-0-kit/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A very rudimentary framework of the system has been realized in the Autodesk Fusion 360 software architecture as shown below. The design provided below is a very simplistic platform but which will lay the foundation of the final structure of the system.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;images/ASVSS1.png&#34; alt=&#34;ASV from Fusion 360&#34;&gt;&lt;/p&gt;
-&lt;p&gt;
-    &lt;img src=&#34;path_to_image&#34; alt&gt;
-    &lt;em&gt;Figure 1: Nascent framework of the ASV system in Fusion 360&lt;/em&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/ASVSS1.png&#34; alt=&#34;ASV from Fusion 360&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Nascent framework of the ASV system in Fusion 360&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;42-software-component&#34;&gt;4.2 Software Component&lt;/h3&gt;
 &lt;p&gt;After the data has been collected by the ASV either on a temporal scale (over a period of time) or a spatial scale (over a geographical area), it will then be analyzed to decipher the median convergent values of the water body for the four different parameters that have been measured (i.e. Temperature, pH, DO, and Conductivity). The results of this data analysis task will then be used to find out if such water quality parametric values manifested by the aquatic ecosystem in question deviates by a large proportion from the other result that is obtained after analyzing the historical data from USGS and EPA for a nearby and unpolluted source of water. The USGS and EPA websites make it easier to find data from a nearby geographical region by making it possible to enter the desired location prior to searching for water quality data in their huge databases. In this way, it can be figured out if the water quality parameters of the particular ecological system varies wildly from a neighboring system that has almost the same geographical and ecological attributes.&lt;/p&gt;
 &lt;p&gt;The establishment of the degree of variance of the data from the historical data will be carried out by documenting the particular quartile range that the current data lies in with respect to the median data that is obtained from the past/historical datasets. For instance, if the current data resides in the second quartile, it can be demarcated as being more or less consistent with previously established values. However, if it resides in the first or third quartile then it might will that the system has aberrant aspects which might need to be investigated for possible levels of outside pollutants (viz. industrial effluents, agricultural wash-off, etc.), or presence of harmful invasive species that might be altering the delicate natural balance of the ecosystem in question.&lt;/p&gt;
@@ -3424,6 +3421,11 @@ give a more accurate prediction.&lt;/p&gt;
         
         
         &lt;h1 id=&#34;predicting-stock-market-recovery-after-pandemic&#34;&gt;Predicting Stock Market Recovery After Pandemic&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use empty lines after each context change&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please learn markdown&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; refernces must be cited&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Fauzan Isnaini, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-313/&#34;&gt;fa20-523-313&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-313/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
@@ -3456,12 +3458,6 @@ Keywords: stock, market, predictive analytics, LSTM, random forest, regression, 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; TBD&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please use our template&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use empty lines after each context change&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please learn markdown&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; refernces must be cited&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;The COVID-19 Pandemic is not just a crisis in the public health sector. It also impacts unemployment rates, business revenues, and mass psychology, which in the end lead to crashes in global stock markets. While some stock indexes like the Dow Jones Industrial Average (DJIA) and NASDAQ Composite have already recovered, the Indonesian Stock Market Index (IDX Composite) is still far below its price before the pandemic.
 Some of the possible causes are:&lt;/p&gt;
@@ -3483,7 +3479,7 @@ Some of the possible causes are:&lt;/p&gt;
 &lt;h3 id=&#34;21-predicting-long-term-stock-price-movement-using-the-random-forest-algorithm&#34;&gt;2.1 Predicting Long Term Stock Price Movement using the Random Forest Algorithm&lt;/h3&gt;
 &lt;p&gt;Milosevic &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; uses some machine learning algorithms to predict whether some company’s value will be 10% higher or not over the period of one year. He evaluated the companies’ financial indicators and found out that the Random Forest algorithm can get 0.765 precision, which is an amazing performance in the stock market.&lt;/p&gt;
 &lt;h3 id=&#34;22-predicting-the-next-recession-using-long-short-term-memory-lstm-algorithm&#34;&gt;2.2 Predicting the Next Recession using Long Short-term Memory (LSTM) Algorithm&lt;/h3&gt;
-&lt;p&gt;Another long term prediction in this area is from Khedkar [7]. He used LSTM in predicting the next recession in India. In this study, the stock closing price data is used, instead of financial data – which is technical analysis. LSTM networks are well-suited to classifying, processing, and making predictions based on time series data, since there can be lags of unknown duration between important events in a time series. The study managed to predict the stock market crash in 2020.&lt;/p&gt;
+&lt;p&gt;Another long term prediction in this area is from Khedkar &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. He used LSTM in predicting the next recession in India. In this study, the stock closing price data is used, instead of financial data – which is technical analysis. LSTM networks are well-suited to classifying, processing, and making predictions based on time series data, since there can be lags of unknown duration between important events in a time series. The study managed to predict the stock market crash in 2020.&lt;/p&gt;
 &lt;h3 id=&#34;23-stock-market-prediction-using-text-mining&#34;&gt;2.3 Stock Market Prediction Using Text Mining&lt;/h3&gt;
 &lt;p&gt;Text mining usually accompanies the technical analysis method. We can conduct sentiment analysis on news and social media to predict whether the stock market goes up or down. Sentiments on Twitter usually indicate market volatility and volume, while sentiments on news are a better predictor of stock movement [4].&lt;/p&gt;
 &lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
@@ -3505,6 +3501,9 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;N. Milosevic, “Equity forecast: Predicting long term stock price movement using machine learning,” 2018. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;S. Khedkar, “Stock Market Prediction Using Deep Learning and Python,” Medium, 27-Sep-2019. [Online]. Available: &lt;a href=&#34;https://medium.com/analytics-vidhya/stock-market-prediction-using-python-article-4-the-next-recession-923185a2736f&#34;&gt;https://medium.com/analytics-vidhya/stock-market-prediction-using-python-article-4-the-next-recession-923185a2736f&lt;/a&gt;. [Accessed: 20-Oct-2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
