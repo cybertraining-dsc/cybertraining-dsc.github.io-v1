@@ -61,7 +61,8 @@ hid="fa20-523-341" %}}
 #### Commerce
 
 * {{% addreport title="Analysis of Financial Markets based on President Trump's Tweets" author="Alex Baker" hid="fa20-523-307" %}}
-* {{% addreport title="Online Store Customer Revenue Prediction" author="Balaji Dhamodharan" hid="fa20-523-337" %}}
+* {{% addreport title="Online Store Customer Revenue Prediction"
+  author="Balaji Dhamodharan and Anantha Janakiraman" hid="fa20-523-337" %}}
 * {{% addreport title="Predicting Stock Market Recovery in Indonesia after COVID-19 Crash" author="Fauzan Isnaini" hid="fa20-523-313" %}}
 * {{% addreport title="Analyzing the Relationship of Cryptocurrencies with Foriegn Exchange Rates and Global Stock Market Indices" author="Krish Hemant Mhatre" hid="fa20-523-332" %}}
 * {{% addreport title="Big Data Application in E-commerce" author="Liu Tao" hid="fa20-523-339" %}}
