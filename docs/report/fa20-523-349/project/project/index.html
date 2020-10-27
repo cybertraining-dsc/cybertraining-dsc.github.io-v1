@@ -22,15 +22,15 @@
 
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Rank Forecasting in Car Racing  please use our template as posted in piazza please leanr markdown please add refernces  Jiayu Li
-Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the IndyCar series. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps. The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively." />
+Abstract Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem. Existing methods, including statistical models, machine learning regression models, and several state-of-the-art deep forecasting models all perform not well on this problem." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-349/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Rank Forecasting in Car Racing  please use our template as posted in piazza please leanr markdown please add refernces  Jiayu Li
-Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the IndyCar series. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps. The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively.">
+Abstract Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem. Existing methods, including statistical models, machine learning regression models, and several state-of-the-art deep forecasting models all perform not well on this problem.">
 
-<meta itemprop="wordCount" content="236">
+<meta itemprop="wordCount" content="485">
 
 
 
@@ -38,7 +38,7 @@ Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Rank Forecasting in Car Racing  please use our template as posted in piazza please leanr markdown please add refernces  Jiayu Li
-Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the IndyCar series. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps. The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively."/>
+Abstract Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem. Existing methods, including statistical models, machine learning regression models, and several state-of-the-art deep forecasting models all perform not well on this problem."/>
 
 
 
@@ -433,6 +433,12 @@ Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314assignment_6assignment_6" href="/report/fa20-523-314/assignment_6/assignment_6/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
       
       
@@ -464,12 +470,6 @@ Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw3" href="/report/fa20-523-319/assignments/rama_asuri_hw3/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw6" href="/report/fa20-523-319/assignments/rama_asuri_hw6/"></a>
       
       
     </li>
@@ -512,10 +512,15 @@ Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#dataset">Dataset</a></li>
-    <li><a href="#plan">Plan</a></li>
-    <li><a href="#refernces">Refernces</a></li>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work</a></li>
+    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
+    <li><a href="#4-methodology">4. Methodology</a></li>
+    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
+    <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 
@@ -563,20 +568,29 @@ Introduction Rank Forecasting in Car Racing. Indy500 is the premier event of the
 <li><input disabled="" type="checkbox"> please add refernces</li>
 </ul>
 <p>Jiayu Li</p>
-<h2 id="introduction">Introduction</h2>
+<h2 id="abstract">Abstract</h2>
+<p>Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem. Existing methods, including statistical models, machine learning regression models, and several state-of-the-art deep forecasting models all perform not well on this problem. By elaborative analysis of pit stops events, we find it is critical to decompose the cause effects and model them, the rank position and pit stop events, separately. We propose RankNet, a combination of encoder-decoder network and separate MLP network that capable of delivering probabilistic forecasting to model the pit stop events and rank position in car racing. Further with the help of feature optimizations, RankNet demonstrates a significant performance improvement over the baselines.</p>
+<h2 id="1-introduction">1. Introduction</h2>
 <p>Rank Forecasting in Car Racing.
 Indy500 is the premier event of the IndyCar series. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps.
 The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively.
 A local communication network broadcasts race information to all the teams, following a general data exchange protocol\cite{IndyCar_Understanding_nodate}.</p>
-<h2 id="dataset">Dataset</h2>
+<h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
+<h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
 <p>We select races of superspeedway after 2013 with at least 5 years data each, and after removing corrupted data, get a dataset of 25 races from four events.
 Among all the events, Indy500 is the most dynamic one which has both the largest PitLapsRatio and RankChangesRatio, Iowa is the least.</p>
 <p>We will train models separately for each event. Races of the first five years are used as the training dataset, the remains are used as testing data. Since Pocono has only five years of data in total, its training set uses four of them.
 First, we start from Indy500 and use Indy500-2018 as validation set. Then we investigate the generalization capability of the model on data of the other events.</p>
-<h2 id="plan">Plan</h2>
-<p>We will use a variety of time series forecasting models to make forecasts and compare the differences between different models.</p>
-<h2 id="refernces">Refernces</h2>
-<p>TBD</p>
+<h2 id="4-methodology">4. Methodology</h2>
+<h2 id="5-inference">5. Inference</h2>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<h2 id="7-acknowledgements">7. Acknowledgements</h2>
+<p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
+<h2 id="8-references">8. References</h2>
+<p>[1]: IndyCar Dataset.https://racetools.com/logfiles/IndyCar/. visited  on 04/15/2020</p>
+<p>[2]: M4 Competition.https://forecasters.org/resources/time-series-data/m4-competition/.</p>
+<p>[3]: Ding,  M.  Zhang,  X.  Pan,  M.  Yang,  and  X.  He.  Modeling  extremeevents  in  time  series  prediction.InProceedings  of  the  25th  ACMSIGKDD, pages 1114–1122, New York, NY, USA, 2019.</p>
+<p>[4]: N.  Oreshkin,  D.  Carpov,  N.  Chapados,  and  Y.  Bengio.   N-BEATS:Neural basis expansion analysis for interpretable time series forecasting.InProceedings  of  International  Conference  on  Learning  Representa-tions(ICLR), 2020.</p>
 
 	
 	

@@ -2372,37 +2372,59 @@ This API should be executed at the end of the session to delete all the resource
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;please add abstract&lt;/p&gt;
+&lt;p&gt;Abstract to be added when content is finalized.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-objective&#34;&gt;2. Objective&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#3-dataset&#34;&gt;3. Dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-work-breakdown&#34;&gt;4. Work Breakdown&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-methodology&#34;&gt;4. Methodology&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#41-development-of-models&#34;&gt;4.1 Development of Models&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-inference&#34;&gt;5. Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-conclusion&#34;&gt;6. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#8-references&#34;&gt;8. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; please add keywords&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; basketball, NBA, injury, performance, salary, rehabilitation, artificial intelligence, convolutional neural network, CNN,&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;The topic to be investigated is basketball player performance as it relates to injury. The topic of injury and recovery is a multi-billion dollar industry.  The Sports Medicine field is expected to reach $7.2 billion dollars by 2025 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The scope of this effort is to explore National Basketball Association(NBA) teams, but the additional uses of a topic such as this could expand into other realms such as the National Football League, Major League Baseball, the Olympic Committees, and many other avenues.  For leagues with salaries, projecting an expected return on the investment can assist in contract negotiations and cater expectations.  Competing at such a high level of intensity puts these players at a greater risk to injury than the average athlete because of the intense and constant strain on their bodies.  The overall valuation of the NBA in recent years is over 2 billion dollars, meaning each team is spending millions of dollars in the pursuit of a championship every season.  Injuries to players can cost teams not only wins but also significant profits.  Ticket sales alone for a single NBA finals game have reported greater than 10 million dollars in profit for the home team, if a team&amp;rsquo;s star player gets injured just before the playoffs and the team does not succeed, that is a lot of money lost.  These injuries can have an effect no matter the time of year, regular season ticket sales have been known to fluctuate with injuries from the team&amp;rsquo;s top performers.  Besides ticket sales these injuries can also influence viewrship, TV or streaming, and potentially lead to a greater loss in profits.  With the health of the players and so much money at stake NBA team organizations as a whole do their best to take care of their players and keep them injury free.&lt;/p&gt;
-&lt;h2 id=&#34;2-objective&#34;&gt;2. Objective&lt;/h2&gt;
-&lt;p&gt;The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyse this information from the datasets, a predictive model will need to be created using a large set of the data to train.&lt;/p&gt;
-&lt;p&gt;From this point, a test run will be used to gauge the validity and accuracy of the model compared to some of the data set aside.  The model created will be able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance.  Feature engineering will be performed prior to training the model in order to improve the chances of higher accuracy from the predictions.  This model could be used to keep an eye out for how a player&amp;rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.&lt;/p&gt;
+&lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
+&lt;p&gt;The assumptions were made based on current literature as well. The injury return and limitations upon return of Anterior Cruciate Ligament (ACL) rupture (ACLR) are well documented and known. Interesting enough, forty percent of the players in the study occured during the fourth quarter &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This leads some credence to the idea that fatigue is a major factor in the occurrence of these injuries.&lt;/p&gt;
+&lt;p&gt;The current literature also shows that a second or third injury can occur more frequently due to minor injuries. &amp;ldquo;When an athlete is recovering from an injury or surgery, tissue is already compromised and thus requires far more attention despite the recovery of joint motion and strength. Moreover, injuries and surgical procedures can create detraining issues that increase the likelihood of further injury&amp;rdquo; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;3-dataset&#34;&gt;3. Dataset&lt;/h2&gt;
-&lt;p&gt;To compare performance and injury, a minimum of two datasets will be needed. The first is a dataset of injuries for players &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This dataset will create the samples necessary for review.&lt;/p&gt;
-&lt;p&gt;Once the controls for injuries are established, the next requirement will be to establish  pre-injury performance parameters and post-injury parameters.  These areas will be where the feature engineering will take place.  The datasets needed must dive into appropriate basketball performance stats to establish a metric to encompass a player’s performance. One example that ESPN has tried in the past is the Player Efficiency Rating (PER).  To accomplish this, it will be important to review player performance within games such as in the “NBA games data” &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; dataset.  There is a potential to pull more data from other datasets such as the “NBA Enhanced Box Score and Standings (2012 - 2018)” &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.  It is important to use the in depth data from the “NBA games data” &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. dataset because of how it will allow us to see how the player was performing throughout the season, and not just their average stats across the year.  With in depth information about each game of the season, and not just the teams and players aggregated stats, added to the data provided from the injury dataset &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; we will be able to compose new metrics to understand how these injuries are actually affecting the players performance.&lt;/p&gt;
+&lt;p&gt;To compare performance and injury, a minimum of two datasets will be needed. The first is a dataset of injuries for players &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. This dataset will create the samples necessary for review.&lt;/p&gt;
+&lt;p&gt;Once the controls for injuries are established, the next requirement will be to establish  pre-injury performance parameters and post-injury parameters.  These areas will be where the feature engineering will take place.  The datasets needed must dive into appropriate basketball performance stats to establish a metric to encompass a player’s performance. One example that ESPN has tried in the past is the Player Efficiency Rating (PER).  To accomplish this, it will be important to review player performance within games such as in the “NBA games data” &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; dataset.  There is a potential to pull more data from other datasets such as the “NBA Enhanced Box Score and Standings (2012 - 2018)” &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.  It is important to use the in depth data from the “NBA games data” &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. dataset because of how it will allow us to see how the player was performing throughout the season, and not just their average stats across the year.  With in depth information about each game of the season, and not just the teams and players aggregated stats, added to the data provided from the injury dataset &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; we will be able to compose new metrics to understand how these injuries are actually affecting the players performance.&lt;/p&gt;
 &lt;p&gt;Along the way we look forward to discovering if there is also a causal relationship to the severity of some of the injuries, based on how the player was performing just before the injury.  The term “load management” has become popular in recent years to describe players taking rest periodically throughout the season in order to prevent injury from overplaying.  This new practice has received both support for the player safety it provides and also criticism around players taking too much time off.  Of course not all injuries are entirely based on the recent strain under the players body, but a better understanding about how that affects the injury as a whole could give better insight into avoiding more injuries.  It is important to remember though that any pattern identification would not lead to an elimination of all injuries, any contact sport will continue to have injuries, especially one as high impact as the NBA.  There is value to learn from why some players are able to return from certain injuries more quickly and why some return to almost equivalent or better playing performance than before the injury.  This comparison of performance will be made by deriving metrics based on varying ranges of games immediately leading up to injury and then immediately after returning from injury.  In addition to that we will perform comparisons to the players known peak performance to better understand how the injury affected them.  Another factor it will be important to include is the length of time recovering from the injury. Different players take differing amounts of time off, sometimes even with similar injuries.  Something will be said about the player’s dedication to recovery and determination to remain at peak performance, even through injury, when looking at how severe their injury was, how much time was taken for recovery, and how they performed upon returning.&lt;/p&gt;
 &lt;p&gt;These datasets were chosen because they allow for a review of individual game performance, for each team, throughout each season in the recent decade.  Aggregate statistics such as points per game (ppg) can be deceptive because duration of the metric is such a large period of time.  The large sample of 82 games can lead to a perception issue when reviewing the data.  These datasets include more variables to help us determine effects to player injury, such as minutes per game (mpg) to understand how strenuous the pre-injury performance or how fatigue may have played a factor in the injury.  Understanding more of the variables such as fouls given or drawn can help determine if the player or other team seemed to be the primary aggressor before any injury.&lt;/p&gt;
-&lt;h2 id=&#34;4-work-breakdown&#34;&gt;4. Work Breakdown&lt;/h2&gt;
+&lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
+&lt;p&gt;The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyse this information from the datasets, a predictive model will need to be created using a large set of the data to train.&lt;/p&gt;
+&lt;p&gt;From this point, a test run will be used to gauge the validity and accuracy of the model compared to some of the data set aside.  The model created will be able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance.  Feature engineering will be performed prior to training the model in order to improve the chances of higher accuracy from the predictions.  This model could be used to keep an eye out for how a player&amp;rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.&lt;/p&gt;
+&lt;h3 id=&#34;41-development-of-models&#34;&gt;4.1 Development of Models&lt;/h3&gt;
+&lt;p&gt;The initial model that was used was a Logistic Regression model. This model produced results of &lt;em&gt;X&lt;/em&gt;. These results&lt;/p&gt;
+&lt;p&gt;After running a Logistic Regression model, the decision was made to try multiple models to see what gives the best results. The team decided to use a Linear Regression model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Any other models, LightGBM? Any Decision Trees?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The final model attempted was a Keras model. A few runs of different layers and epochs were chosen. The models sequentially ran through the test layers to refine the model. When this is done, each predecessor layer acts as an input to the next layer&amp;rsquo;s model. The results can produce accurate results while using unsupervised learning.&lt;/p&gt;
+&lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;p&gt;After reviewing the results, performance does indeed appear to degrade over time.&lt;/p&gt;
+&lt;p&gt;These results are consistent with the current scientific literature &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Initial Project Report - Gorius, Hemmerlein
 Predictive Model - breakdown udetermined at this time&lt;/p&gt;
-&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
+&lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
+&lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -2411,13 +2433,21 @@ Predictive Model - breakdown udetermined at this time&lt;/p&gt;
 &lt;a href=&#34;https://www.marketsandmarkets.com/PressReleases/sports-medicine-devices.asp&#34;&gt;https://www.marketsandmarkets.com/PressReleases/sports-medicine-devices.asp&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;R. Hopkins, &lt;em&gt;NBA Injuries from 2010-2020&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/ghopkins/nba-injuries-2010-2018&#34;&gt;https://www.kaggle.com/ghopkins/nba-injuries-2010-2018&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;J. Harris, B. Erickson, B. Bach Jr, G. Abrams, G. Cvetanovich, B. Forsythe, F. McCormick, A. Gupta, B. Cole,
+&lt;em&gt;Return-to-Sport and Performance After Anterior Cruciate Ligament Reconstruction in National Basketball Association Players&lt;/em&gt;, Sports Health. 2013 Nov;5(6):562-8. doi: 10.1177/1941738113495788. [Online serial]. Available: &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/24427434/&#34;&gt;https://pubmed.ncbi.nlm.nih.gov/24427434/&lt;/a&gt;  [Accessed Oct. 24, 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;N. Lauga, &lt;em&gt;NBA games data&lt;/em&gt;, Kaggle.  &lt;a href=&#34;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&#34;&gt;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;W. Kraemer, C. Denegar, and S. Flanagan, &lt;em&gt;Recovery From Injury in Sport: Considerations in the Transition From Medical Care to Performance Care&lt;/em&gt;, Sports Health. 
+2009 Sep; 1(5): 392–395.[Online serial]. Available: &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3445177/&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3445177/&lt;/a&gt;   [Accessed Oct. 24, 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;P. Rossotti, &lt;em&gt;NBA Enhanced Box Score and Standings (2012 - 2018)&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/pablote/nba-enhanced-stats&#34;&gt;https://www.kaggle.com/pablote/nba-enhanced-stats&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;R. Hopkins, &lt;em&gt;NBA Injuries from 2010-2020&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/ghopkins/nba-injuries-2010-2018&#34;&gt;https://www.kaggle.com/ghopkins/nba-injuries-2010-2018&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;N. Lauga, &lt;em&gt;NBA games data&lt;/em&gt;, Kaggle.  &lt;a href=&#34;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&#34;&gt;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;P. Rossotti, &lt;em&gt;NBA Enhanced Box Score and Standings (2012 - 2018)&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/pablote/nba-enhanced-stats&#34;&gt;https://www.kaggle.com/pablote/nba-enhanced-stats&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -2694,10 +2724,17 @@ A project this large and versatile requires the use of many software tools. Thes
     &lt;li&gt;&lt;a href=&#34;#topic-discussion&#34;&gt;Topic Discussion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#datasets&#34;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#data-cleaning-and-aggregation&#34;&gt;Data Cleaning and Aggregation&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#pipeline-for-preprocessing&#34;&gt;Pipeline for Preprocessing&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#loading-and-joining-data&#34;&gt;Loading and Joining Data&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#feature-engineering&#34;&gt;Feature Engineering&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#generic-pipeline&#34;&gt;Generic Pipeline&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#splitting-data-into-train-and-test&#34;&gt;Splitting Data into Train and Test&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#preliminary-analysis-and-eda&#34;&gt;Preliminary Analysis and EDA&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#plan-for-the-rest-of-the-semseter&#34;&gt;Plan for the rest of the Semseter&lt;/a&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#october-26&#34;&gt;October 26&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#november-2&#34;&gt;November 2&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#november-9&#34;&gt;November 9&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#november-16&#34;&gt;November 16&lt;/a&gt;&lt;/li&gt;
@@ -2719,15 +2756,29 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
 &lt;p&gt;The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format (see Figure 1).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/distance_map.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Caption missing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Estimated distance from weather reports to the crop fields. Distance is calculated using Google Maps&lt;/p&gt;
 &lt;p&gt;The second dataset comes from the USDA. This dataset consits of &amp;ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&amp;rdquo; at a farm in Washington state &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.&lt;/p&gt;
 &lt;p&gt;Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the sattelite image (see Figure 2).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/sensor_locations.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Caption missing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Location of sensors within the test field&lt;/p&gt;
 &lt;h2 id=&#34;data-cleaning-and-aggregation&#34;&gt;Data Cleaning and Aggregation&lt;/h2&gt;
 &lt;p&gt;The first step is to get the soil moisture data into a combined format, currently it is in one file per sensor, and there are 42 sensors. See the data_cleaning_aggregation.ipynb file to see how this was done. After aggregation, some basic information can be checked about the data. For instance, there is quite a bit of NAs in the data. These NAs are just instances where there was no measurement on that day. There is about 45% NAs in the measurement columns. To further clean the data, any row that has only NAs for the measurements will be removed.&lt;/p&gt;
 &lt;p&gt;Next, the weather data needs some small adjustments. This is mostly in the form of removing columns that either are empty or have redundant data such as elevation.&lt;/p&gt;
 &lt;p&gt;Once the data is sufficiently clean, some choices have to be made on joining the data. The simplist route would be to join the weather measurements directly with the same day the soil measurement, however, the previous days weather is likely to also have an impact on the moisture. In the same fashion, the weather for the 5 previous days might all have a large impact on the moisture. So simply joining the two data sets right now is likely not the correct course of action until further analysis is made.&lt;/p&gt;
+&lt;h2 id=&#34;pipeline-for-preprocessing&#34;&gt;Pipeline for Preprocessing&lt;/h2&gt;
+&lt;p&gt;Before feeding the data through a machine learning algorithm, the data needs to be manipulated in such a way that it is ready to be directly fed into an algorithm. This includes joining the two data sets, feature engineering, and other tasks that prepare the data. This will need to be done every time a new dataset is being used, so this must be built in a repeatable way. The machine learning library scikit-learn incoroporates something called &amp;ldquo;pipelines&amp;rdquo; that can allow processed to be sequentially done to a dataframe. For purposes of this project two pipelines will be built, one will be used for feature engineering and joining the data, the other will be used to handle preparation of numerical, categorical, and date data.&lt;/p&gt;
+&lt;h3 id=&#34;loading-and-joining-data&#34;&gt;Loading and Joining Data&lt;/h3&gt;
+&lt;p&gt;This is the first step of the entire pipeline. This is where both the weather, and the soil moisture data are read in from csv files in their raw fromat. The soil moisture data is found in many different files, and these all need to be combined. After combining the fies, any lines that are full of NAs for the measurements are dropped. Next the weather data is loaded in. Both files have a date field which is the field they will be joined on. To make things consistent, both of these fields need to set be date format.&lt;/p&gt;
+&lt;p&gt;When it comes to joining the data, each row should include the moisture content at various depths, as well as the weather information from the past ten days. While this creates a great deal of redundant data, the data is small enough that this is not an issue. Experiments will be done to evaluate just how many days of prior weather data are needed to form accurate results, while trying to minimize the number of the days.&lt;/p&gt;
+&lt;h3 id=&#34;feature-engineering&#34;&gt;Feature Engineering&lt;/h3&gt;
+&lt;p&gt;Currently only one feature is added, and this is a boolean flag that says whether it rained or not on a certain day. The thought behind this is, that for some days prior to the current measurement, the amount of rain might be needed, but for other days, such as 10 days prior, it might be more important to just know if there was rain or not. This feature is engineered within the pipeline.&lt;/p&gt;
+&lt;p&gt;A future feature will be to use the months as categorical variables. While the date might be helpful, it probably is more accurate to consider the month then the specific day.&lt;/p&gt;
+&lt;h3 id=&#34;generic-pipeline&#34;&gt;Generic Pipeline&lt;/h3&gt;
+&lt;p&gt;After doing operations that are specific to the current dataset, some built in processors from sk-learn are used to make sure the data can be used in a machine learning model. This means that for numerical data types, the pipeline will fill in missing values with 0 instead of leaving them as NaN. There might be experiements to decide how to deal with missing measurements. Also the various numerical fields must be standardized, this is important for models such as linear regression so one large variable isn&amp;rsquo;t dominating the model.&lt;/p&gt;
+&lt;p&gt;As far as text and categorical features, the imputer will be used to fill in missing data as well. Then a process called one hot encoding will be used to handle the categorical variables so that they can be read into sk-learns estimators.&lt;/p&gt;
+&lt;p&gt;Lastly the date pipeline will take datetimes and convert them to integers that represent how many seconds it has been since 1970. This will allow dates to be handled as numerical values if they are used as an estimator instead of being used as a categorical feature as there would be many categories.&lt;/p&gt;
+&lt;h2 id=&#34;splitting-data-into-train-and-test&#34;&gt;Splitting Data into Train and Test&lt;/h2&gt;
+&lt;p&gt;In order to test any model created, there must be a split between test and training data. This is done by using a function in sk-learn. In this case, there are about 76k rows in the data set. For the training data, 80% of the total data will be used, or about 60.8k records. The split is done after shuffling the rows so that it does not just pick the top 80% everytime. Lastly the data is split using a stratified method. As we want to have models that take the specific area of the field into account, that means that we need to have the different areas of the field represented equally in both the training and testing dataset. This means that if 10% of the data came from sensor CAF0003, then roughly 10% of the training data will come from CAF0003 as well as 10% of the test data will be from this location.&lt;/p&gt;
 &lt;h2 id=&#34;preliminary-analysis-and-eda&#34;&gt;Preliminary Analysis and EDA&lt;/h2&gt;
 &lt;p&gt;Before building a machine learning model, it is important to get a general idea of how the data looks, to see if any insights can be made right away.&lt;/p&gt;
 &lt;p&gt;The first two visualizations are grids that show the entire distribution of measurements across each sensor. The first grid is the volume of water at 30 cm, and the second grid is the water volume at 150 cm. Each chart could be looked at and examined on it&amp;rsquo;s own, but what is most important to note is the variability of the measures from location to location. These different sensors are not that far away, but show that different areas of the farm do retain water in different ways.&lt;/p&gt;
@@ -2736,15 +2787,6 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: After doing this analysis using the Altair library in python, the notebook became way too big due to the size of the data. As a quick remedy for this, I saved the visualizations as PNG and saved them in the images folder. They are named: one, two, three, and four, for the order that they are mentioned in the above section. I will remove the eda notebook from the repo.&lt;/p&gt;
 &lt;h2 id=&#34;plan-for-the-rest-of-the-semseter&#34;&gt;Plan for the rest of the Semseter&lt;/h2&gt;
 &lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates&lt;/p&gt;
-&lt;h3 id=&#34;october-26&#34;&gt;October 26&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Further EDA (make charts more presentable)&lt;/li&gt;
-&lt;li&gt;Create pipeline to clean and manipulate data from raw&lt;/li&gt;
-&lt;li&gt;Create multiple data sets that allow for the training data to include the past N days of weather&lt;/li&gt;
-&lt;li&gt;Brainstorm ideas for feature engineering and build features&lt;/li&gt;
-&lt;li&gt;Test various ML methods using scikit-learn to get an early idea of possible models, and to have a baseline for comparison&lt;/li&gt;
-&lt;li&gt;Update report&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h3 id=&#34;november-2&#34;&gt;November 2&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Tune hyperparameters for selected ML model&lt;/li&gt;
@@ -2836,7 +2878,7 @@ A project this large and versatile requires the use of many software tools. Thes
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Financial markets can be unpredictable as is but this unpredictability is increased by one man&amp;rsquo;s Twitter account, President Trump. My goal is to use Twitter and finance datasets to see how these tweets affect the market.&lt;/p&gt;
+&lt;p&gt;In behavioral economics, it is said that emotions have an effect on individual&amp;rsquo;s behavior and their chocie in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&amp;rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ). The applications of sentiment analysis and machine learning methods will help find the correlation that we are looking for. President Trump&amp;rsquo;s tweets will be used to predict the mood and the NASDAQ movements.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -2855,12 +2897,13 @@ A project this large and versatile requires the use of many software tools. Thes
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; analysis, finance, stock markets, politics&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; analysis, finance, stock markets prediction, twitter, politics&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;For the final project, my focus will be on financial market reactions through the President&amp;rsquo;s tweets. The plan is to utilize President Trump&amp;rsquo;s tweets and stock market data to predict the market reaction based on what is going to be published. A feature that is being introduced is a way to craft tweets based on historical data to see how the markets will react if a tweet such as that is published. This can be useful to see how news from the president can cause an increase or decline in markets.&lt;/p&gt;
+&lt;p&gt;Financial markets have been an area of research in both academia and business. Predictions of the market has been growing in its accuracy with an every increasing amount of data used to test these models. &amp;ldquo;The Efficient Market Hypothesis (EMH) states that stock market prices are largely driven by &lt;em&gt;new&lt;/em&gt; information and follow a random walk pattern&amp;rdquo;[1]. This shows that prices will follow news rather than previous and present prices. Information is unpredictable in terms of its release/publication showing market prices will follow a random walk pattern and the prediction can not be high.&lt;/p&gt;
+&lt;p&gt;There are some problems that arrise with EMH. One problem is that &amp;ldquo;stock prices does not follow a random walk pattern and can be predicted to a certain degree&amp;rdquo;[2]. Another problem associated with EMH is with the information&amp;rsquo;s unpreidctability, the unpredictability is called into question with the introduction of social media (Facebook, Twitter, blogs). The rise of social media can be a early indicator for news before it is released/published.&lt;/p&gt;
 &lt;h2 id=&#34;2-datasets&#34;&gt;2. DataSets&lt;/h2&gt;
-&lt;p&gt;The datasets that will be used are the tweets from President Trump&amp;rsquo;s personal account as well as Yahoo fiance data. These will be gathered from their respected APIs. If needed, the following dataset from Kaggle (&lt;a href=&#34;https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv&#34;&gt;https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv&lt;/a&gt;) can be used in replace of Twitter&amp;rsquo;s API for President Trump&amp;rsquo;s tweets but are only available up to June 2020. Which leads to the objective for the project, based on the data collected, the program should be able to visualize and predict how the market will react when President Trump send out a tweet.&lt;/p&gt;
-&lt;p&gt;The data will span from President Trumps inauguration to the current day. To strengthen the prediction, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&amp;rsquo;s rallies. In order to have a realistic and strong prediction, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.&lt;/p&gt;
+&lt;p&gt;The datasets that will be used are the tweets from President Trump&amp;rsquo;s personal account as well as Yahoo Fiance data. Financial data will be gathered from Yahoo Finance&amp;rsquo;s API. President Trump&amp;rsquo;s twitter data will be from the following dataset available on Kaggle (&lt;a href=&#34;https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv)&#34;&gt;https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The data will span from President Trumps inauguration to January 2020. To strengthen the prediction, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&amp;rsquo;s rallies. In order to have a realistic and strong prediction, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.&lt;/p&gt;
 &lt;h2 id=&#34;3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/h2&gt;
 &lt;p&gt;The collection of finance and Twitter data will be used to visualize and predict the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:&lt;/p&gt;
 &lt;ul&gt;
@@ -2884,7 +2927,8 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;h2 id=&#34;4-technologies-used&#34;&gt;4. Technologies used&lt;/h2&gt;
 &lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, Tensorflow/PyTorch&lt;/p&gt;
 &lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;[1] Goel, A. and Mittal, A., 2011. Stock Prediction Using Twitter Sentiment Analysis. [online] cs229.stanford.edu. Available at: &lt;a href=&#34;http://cs229.stanford.edu/proj2011/GoelMittal-StockMarketPredictionUsingTwitterSentimentAnalysis.pdf&#34;&gt;http://cs229.stanford.edu/proj2011/GoelMittal-StockMarketPredictionUsingTwitterSentimentAnalysis.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;[2] J. Bollen, H. Mao, and X. Zeng, “Twitter mood predicts the stock market,” Journal of Computational Science, vol. 2, no. 1, pp. 1–8, 2011.&lt;/p&gt;
 
       </description>
     </item>
@@ -2990,6 +3034,13 @@ A project this large and versatile requires the use of many software tools. Thes
         &lt;li&gt;&lt;a href=&#34;#22-dataset-analysis&#34;&gt;2.2 Dataset Analysis&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-machine-learning-algorithms&#34;&gt;3. Machine Learning Algorithms&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#31-scikit-learn-and-algorithm-types&#34;&gt;3.1 Scikit-Learn and Algorithm Types&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#32-classification-algorithms&#34;&gt;3.2 Classification Algorithms&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#33-clustering-algorithms&#34;&gt;3.3 Clustering Algorithms&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#project-timeline&#34;&gt;Project Timeline&lt;/a&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&#34;#october-26&#34;&gt;October 26&lt;/a&gt;&lt;/li&gt;
@@ -3008,7 +3059,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; health, healthcare, cardiovascular disease, data analysis&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;Since cardiovascular diseases are the number 1 cause of death globally, early prevention could help in extending one’s life span and possibly quality of life. Since there are cases where patients do not show any signs of cardiovascular trouble until an event occurs, having an algorithm predict from their medical history would help in picking up on early warning signs a physician may overlook. Or could also reveal additional risk factors and patterns for research on prevention and treatment.&lt;/p&gt;
-&lt;p&gt;This project will take a high-level overview of common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, Logistic Regression, K-Nearest Neighbors, and Support Vector Machines.&lt;/p&gt;
+&lt;p&gt;This project will take a high-level overview of common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, K-Nearest Neighbors, and Support Vector Machines.&lt;/p&gt;
 &lt;p&gt;Additionally, two data sets that contain common features will be used to increase the training and test pool for evaluation. As well as to explore if additional feature types contribute to a better prediction. As it is known that a large set of data is required to reduce the possibility of the algorithm’s overfitting.&lt;/p&gt;
 &lt;h2 id=&#34;2-datasets&#34;&gt;2. Datasets&lt;/h2&gt;
 &lt;ul&gt;
@@ -3023,29 +3074,91 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;h3 id=&#34;22-dataset-analysis&#34;&gt;2.2 Dataset Analysis&lt;/h3&gt;
 &lt;p&gt;From this point on, the 1988 dataset will be referred to as &lt;code&gt;dav_set&lt;/code&gt; and 2019 data set will be referred to as &lt;code&gt;sav_set&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;To provide further insight on what to expect and how a model would be applied, the population of the datasets was analysed first. As depicted in Figure 2.1 the population samples of both datasets of gender vs age show the majority of the data is centered around 60 years of age with a growing slope from 30 onwards.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/agevssex.jpg&#34; alt=&#34;Figure 2.1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/agevssex.jpg&#34; alt=&#34;Figure 2.1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.1&lt;/strong&gt;: Age vs Gender distributions of the dav_set and sav_set.&lt;/p&gt;
 &lt;p&gt;This trend appears to signify that the datasets focused solely on an older population or general trend in society of not monitoring heart conditions as closely in the younger generation.&lt;/p&gt;
 &lt;p&gt;Moving on to Figure 2.2, we see an interesting trend with a significant growing trend in the sav_set in older population having more cardiovascular issues compared to the dav_set. While this cannot be seen in the dav_set. This may be caused by the additional life expectancy or a change in diet as noted in the introduction.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/agevstarget.jpg&#34; alt=&#34;Figure 2.2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/agevstarget.jpg&#34; alt=&#34;Figure 2.2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.2&lt;/strong&gt;: Age vs Target distributions of the dav_set and sav_set.&lt;/p&gt;
 &lt;p&gt;In Figure 2.3, the probability of having cardiovascular issues between the sets are interesting. In the dav_set the inequality of higher probability could be attributed to the larger female samples in the dataset. With the sav_set having a more equal probability between the genders.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/gendervsprobability.jpg&#34; alt=&#34;Figure 2.3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/gendervsprobability.jpg&#34; alt=&#34;Figure 2.3&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.3&lt;/strong&gt;: Gender vs Probability of cardiovascular issues of the dav_set and sav_set.&lt;/p&gt;
 &lt;p&gt;Finally, in Figure 2.4 is the probability vs cholesterol levels. This one is very interesting between the two datasets in terms of trend levels. With the dav_set having a higher risk at normal levels compared to the sav_set. This could be another hint of a societal change across the years or may in fact be due to the low sample size. Especially since the sav_set matches the general consensus of higher cholesterol levels increasing risk of cardiovascular issues &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/cholesterolvsprobability.jpg&#34; alt=&#34;Figure 2.4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/cholesterolvsprobability.jpg&#34; alt=&#34;Figure 2.4&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.4&lt;/strong&gt;: Cholesterol levels vs Probability of cardiovascular issues of the dav_set and sav_set.&lt;/p&gt;
 &lt;p&gt;To close out this initial analysis is the correlation map of each of the features. From Figure 2.5 and 2.6 it can be concluded that both of these datasets are viable to conduct machine learning as the correlation factor is below the recommended value of 0.8 &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Although we do see the signs of a low sample amount in the dav_set with a higher correlation factor compared to the sav_set.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/davsetcorrelation.jpg&#34; alt=&#34;Figure 2.5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/davsetcorrelation.jpg&#34; alt=&#34;Figure 2.5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.5&lt;/strong&gt;: dav_set correlation matrix.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/savsetcorrelation.jpg&#34; alt=&#34;Figure 2.6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/savsetcorrelation.jpg&#34; alt=&#34;Figure 2.6&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.6&lt;/strong&gt;: sav_set correlation matrix.&lt;/p&gt;
+&lt;h2 id=&#34;3-machine-learning-algorithms&#34;&gt;3. Machine Learning Algorithms&lt;/h2&gt;
+&lt;p&gt;With many machine learning algorithms already available and many more in development. Selecting the optimal one for an application can be a challenging balance since each algorithm has both its advantages and disadvantages. As mentioned in the introduction, we will explore applying the most common and established algorithms available to the public.&lt;/p&gt;
+&lt;p&gt;Starting off, is selecting a library from the most popular ones available. Namely Keras, Pytorch, Tensorflow, and Scikit-Learn. Upon further investigation it was determined that Scikit-Learn would be used for this project. The reason being Scikit-Learn is a great general machine learning library that also includes pre and post processing functions. While Keras, Pytorch, and Tensorflow are targeted for neural networks and other higher-level deep learning algorithms which are outside of the scope of this project at this time &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;31-scikit-learn-and-algorithm-types&#34;&gt;3.1 Scikit-Learn and Algorithm Types&lt;/h3&gt;
+&lt;p&gt;Diving further into the Scikit-Learn library, its key strength appears to be the variety of algorithms available that are relatively easy to implement against a dataset. Of those available, they are classified under three different categories based on the approach each takes. They are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Classification
+&lt;ul&gt;
+&lt;li&gt;Applied to problems that require identifying the category an object belongs to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Regression
+&lt;ul&gt;
+&lt;li&gt;For predicting or modeling continuous values.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clustering
+&lt;ul&gt;
+&lt;li&gt;Grouping similar objects into groups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For this project, we will be investigating the Classification and Clustering algorithms offered by the library due to the nature of our dataset. Since it is a binary answer, the continuous prediction capability of regression algorithms will not fair well. Compared to classification type algorithms which are well suited for determining binary and multi-class classification on datasets &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. Along with Clustering algorithms being capable of grouping unlabeled data which is one of the key problem points mentioned in the introduction &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;32-classification-algorithms&#34;&gt;3.2 Classification Algorithms&lt;/h3&gt;
+&lt;p&gt;The following algorithms were determined to be candidates for this project based on the documentation available on the Scikit-learn for supervised learning &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;321-support-vector-machines&#34;&gt;3.2.1 Support Vector Machines&lt;/h4&gt;
+&lt;p&gt;This algorithm was chosen because classification is one of the target types and has a decent list of advantages that appear to be applicable to this dataset &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Effective in high dimensional spaces as well as if the number dimensions out number samples.&lt;/li&gt;
+&lt;li&gt;Is very versatile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;322-k-nearest-neighbors&#34;&gt;3.2.2 K-Nearest Neighbors&lt;/h4&gt;
+&lt;p&gt;This algorithm was selected due to being a non-parametric method that has been successful in classification applications &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. From the dataset analysis, it is appears that the decision boundary may be very irregular which is a strong point of this type of method.&lt;/p&gt;
+&lt;h4 id=&#34;323-gaussian-naive-bayes&#34;&gt;3.2.3 Gaussian Naive Bayes&lt;/h4&gt;
+&lt;p&gt;Is an implementation of the Naive Bayes theorem that has been targeted for classification. The advantages of this algorithm is its speed and requires a small training set compared to more advanced algorithms &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;324-decision-trees&#34;&gt;3.2.4 Decision Trees&lt;/h4&gt;
+&lt;p&gt;This algorithm was chosen to investigate another non-parametric method to determine their efficacy against this dataset application. This algorithm also has some advantages over K-Nearest namely &lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple to interpret and visualize&lt;/li&gt;
+&lt;li&gt;Requires little data preparation
+&lt;ul&gt;
+&lt;li&gt;Handles numerical and categorical data instead of needing to normalize&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Can validate the model and is possible to audit from a liability standpoint.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;33-clustering-algorithms&#34;&gt;3.3 Clustering Algorithms&lt;/h3&gt;
+&lt;p&gt;The following algorithms were determined to be candidates for this project based on the table of clustering algorithms available on the Scikit-learn &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;331-k-means&#34;&gt;3.3.1 K-Means&lt;/h4&gt;
+&lt;p&gt;The usecase for this algorithm is general purpose with even and low number of clusters &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Of which the sav_set appears to have with the even distribution across most of the features.&lt;/p&gt;
+&lt;h4 id=&#34;332-mean-shift&#34;&gt;3.3.2 Mean-shift&lt;/h4&gt;
+&lt;p&gt;This algorithm was chosen for its strength in dealing with uneven cluster sizes and non-flat geometry &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Though it is not easily scalable the application of our small dataset size might be of interest.&lt;/p&gt;
+&lt;h4 id=&#34;333-spectral-clustering&#34;&gt;3.3.3 Spectral Clustering&lt;/h4&gt;
+&lt;p&gt;As an inverse, this algorithm was chosen for its strength with fewer uneven clusters &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. In comparison to Mean-shift, this maybe the better algorithm for this application.&lt;/p&gt;
 &lt;h2 id=&#34;project-timeline&#34;&gt;Project Timeline&lt;/h2&gt;
 &lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates.&lt;/p&gt;
 &lt;h3 id=&#34;october-26&#34;&gt;October 26&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Explore options on normalizing or conversion of the features to connect between the datasets and determine if they are viable to add to the project.&lt;/li&gt;
-&lt;li&gt;Explore ML models and frameworks and determine viability for the project.&lt;/li&gt;
+&lt;li&gt;Explore options on normalizing or conversion of the features to connect between the datasets and determine if they are viable to add to the project.
+&lt;ul&gt;
+&lt;li&gt;A large portion of time was dedicated to researching this point. Unfortunately, nothing of note was discovered to realize this aspect of the plan.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Explore ML models and frameworks and determine viability for the project.
+&lt;ul&gt;
+&lt;li&gt;Additional information on the algorithms selected. Mainly the underlying calculation, theory, and disadvantages to compensate for has been added to the Nov 2nd milestone date.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Update Report.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;november-2&#34;&gt;November 2&lt;/h3&gt;
@@ -3080,6 +3193,30 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;R, V., 2020. Feature Selection — Correlation And P-Value. [online] Medium. Available at: &lt;a href=&#34;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&#34;&gt;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&lt;/a&gt; [Accessed 21 October 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Stack Overflow. 2020. Differences In Scikit Learn, Keras, Or Pytorch. [online] Available at: &lt;a href=&#34;https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch&#34;&gt;https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.4. Support Vector Machines — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/svm.html#classification&#34;&gt;https://scikit-learn.org/stable/modules/svm.html#classification&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/clustering.html#clustering&#34;&gt;https://scikit-learn.org/stable/modules/clustering.html#clustering&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1. Supervised Learning — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/supervised_learning.html#supervised-learning&#34;&gt;https://scikit-learn.org/stable/supervised_learning.html#supervised-learning&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.6. Nearest Neighbors — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/neighbors.html&#34;&gt;https://scikit-learn.org/stable/modules/neighbors.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.9. Naive Bayes — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/naive_bayes.html&#34;&gt;https://scikit-learn.org/stable/modules/naive_bayes.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.10. Decision Trees — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/tree.html&#34;&gt;https://scikit-learn.org/stable/modules/tree.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/clustering.html#clustering&#34;&gt;https://scikit-learn.org/stable/modules/clustering.html#clustering&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -3205,6 +3342,11 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;A very rudimentary framework of the system has been realized in the Autodesk Fusion 360 software architecture as shown below. The design provided below is a very simplistic platform but which will lay the foundation of the final structure of the system (see Figure 1).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/ASVSS1.png&#34; alt=&#34;ASV from Fusion 360&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Nascent framework of the ASV system in Fusion 360&lt;/p&gt;
+&lt;p&gt;With the chassis framework out of the way, a careful analysis was conducted towards the successful developmental work to be done to complete the build process for a fully functional prototype ASV. In essence, an ASV can be thought of being composed of certain key sub-elements. From a broad perspective, they comprise the hardware makeup, a suitable propulsion system, a sensing system, a communication system, and an appropriate source of onboard power source. The hardware makeup being out of the way, the other aspects can now be elaborated as follows:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Propulsion System:&lt;/strong&gt; The two possibilities that was considered in this regard involve using either a single servo motor with an assortment of rudders and propellers for appropriate steering, or using two separate servo motors, one of which will drive the left-hand side of the system and the other would drive the right-hand side. The second arrangement is preferred in this regard as it provides with better maneuverability and control of the system. For instance, to move forward in a rectilinear fashion, both the motors would be given the same level of power. Whereas for steering the system in a particular direction, one of the motors would be assigned a lower power level than the other, thereby enabling the system to curve inwards on the side which has the motor with a lower power level. Of course, there will always be perturbations and natural disturbances that will deter the system from making these correct path changes. For this reason, a Proportional-Integral-Derivative (PID) controlled response would be augmented for the locomotion algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sensing System:&lt;/strong&gt; As discussed previously, an arrangement involving four different sensors will be integrated in the ASV. This way, when the entire ASV system is deployed in an aquatic environment, it will be able to simultaneously provide readings for all four water-quality parameters in this case. Precisely, these water-quality parameters would be temperature, potential of hydrogen (pH), dissolved oxygen level, and specific conductance value. It should be noted in this perspective that it is possible to include even more sensors in this ASV system. However, the reason why it was not necessary to go beyond these four sensor types is primarily because of two reasons. Firstly, these parameters are important to most toxicological analysis studies &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and the readings provided by such a sensory system could be considered as a foundation which could provide future directions (including adding more sensors, if needed). Secondly, we should also keep in mind that the hardware system has certain constraints. In this scenario, it involves a sensory shield (that can be integrated with the Arduino microcontroller) that is being used but which has a maximum of four ports for four different sensors only. Though it is possible to add another layer of shield on top of the current one (thereby raising the capability of integrating the number of sensors to eight), it adds unnecessary bandwidth issues, memory depletion possibilities, along with an increased demand of higher power supply. These issues will especially be more consequential in this case as we are dealing with a microcontroller that has limited memory and power, unlike a microprocessor. Hence, the decision to stick with four sensors only was made.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Communication System:&lt;/strong&gt; This is possibly the most important part of the ASV system as we need to device a technique to offload the data that is collected by the vehicle back to a remote computer/server that would likely be located at a considerable distance away from the ASV. There are different options that have been considered in this regard for establishing a proper communicative functionality between the ASV and the remote computer. Some options that have been considered involved Bluetooth, IR signals, RF signals, GPS-based system, satellite communication, etc. There are both pros and cons when it comes to using any of these different communication systems for the ASV. However, the most important metric in this case involves the maximum range the communication system could span over. Obviously, some of the options (viz. Bluetooth) would not be possible in this regard as they have a very limited communication range. Some others (viz. satellite communication systems) have a very high range but were nevertheless found unsuitable for this endeavor as they required too much onboard processing power to even carry out their most basic operations. Hence, a balanced approach was followed in this scenario and a GPS/RF-based system was eventually chosen as the most appropriate candidate for carrying out the proposed tasks of the ASV.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Power Source:&lt;/strong&gt; Finally, we need an onboard processing power system that can provide the required amount of power to all the functional entities housed in the ASV system. The characteristic of such a desired power source would be that it would not require charging often and can sustain proper ASV operations for at least five to six hours. Additionally, the weight of the power source should also not be too clumsy that might put the stability of the entire ASV system in jeopardy. It must have a suitable weight, and should also come in an appropriate shape and size such that the weight of the entire system is evenly distributed over a large area, thereby further reinforcing the stability of the system.&lt;/p&gt;
 &lt;h3 id=&#34;42-software-component&#34;&gt;4.2 Software Component&lt;/h3&gt;
 &lt;p&gt;After the data has been collected by the ASV either on a temporal scale (over a period of time) or a spatial scale (over a geographical area), it will then be analyzed to decipher the median convergent values of the water body for the four different parameters that have been measured (i.e. Temperature, pH, DO, and Conductivity). The results of this data analysis task will then be used to find out if such water quality parametric values manifested by the aquatic ecosystem in question deviates by a large proportion from the other result that is obtained after analyzing the historical data from USGS and EPA for a nearby and unpolluted source of water. The USGS and EPA websites make it easier to find data from a nearby geographical region by making it possible to enter the desired location prior to searching for water quality data in their huge databases. In this way, it can be figured out if the water quality parameters of the particular ecological system varies wildly from a neighboring system that has almost the same geographical and ecological attributes.&lt;/p&gt;
 &lt;p&gt;The establishment of the degree of variance of the data from the historical data will be carried out by documenting the particular quartile range that the current data lies in with respect to the median data that is obtained from the past/historical datasets. For instance, if the current data resides in the second quartile, it can be demarcated as being more or less consistent with previously established values. However, if it resides in the first or third quartile then it might will that the system has aberrant aspects which might need to be investigated for possible levels of outside pollutants (viz. industrial effluents, agricultural wash-off, etc.), or presence of harmful invasive species that might be altering the delicate natural balance of the ecosystem in question.&lt;/p&gt;
@@ -3527,6 +3669,37 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-314/assignment_6/assignment_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-314/assignment_6/assignment_6/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;artificial-intelligence-in-health&#34;&gt;Artificial Intelligence in Health&lt;/h1&gt;
+&lt;p&gt;Artificial Intelligence has influenced most of the sectors in the world like health, agriculture, sports and so much more. In the last decade, one of the most influenced sector is healthcare. In the beginning, AI was considered only a technology to help in the medical decision-making. Little were we aware that it will bring a tremendous transition in the healthcare industry. From simple decision-making, it advanced to autonomous surgical robots, image diagnosis, virtual nursing assistants etc. Most of the websites/apps are now offering symptom checkers which enable the patients to reduce the number of hospital visits drastically.&lt;/p&gt;
+&lt;h2 id=&#34;ai-in-cancer-prognosis-and-diagnosis&#34;&gt;AI in Cancer Prognosis and Diagnosis&lt;/h2&gt;
+&lt;p&gt;Chronic health conditions like cancer, diabetics, heart diseases etc. are mostly benefited from artificial intelligence as shown in Figure 1.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/assignment_6/images/ai_1.jpg&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Chronic health conditions that benefit most from AI/ML&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Cancer is an aggressive disease with high mortality rate. But if the disease is diagnosed in early stages some of the cancers like lung cancer, breast cancer, thyroid cancer etc can be cured or controlled. A decade ago, doctors spent hours just for diagnosing cancer but still lacked accuracy. Now with the introduction of AI, the time for diagnosis has reduced considerably with much more precision.&lt;/p&gt;
+&lt;p&gt;AI model can be trained with vast amount of image data from tests like Ultrasound scanning, sonography, Endoscopy etc. Integrative processing and extraction  of these images will result in more efficient diagnosis. A set of computer algorithms used to process medical images and extract details are refered to as DL. It can be used to inform doctors on prognosis, molecular status or treatment sensitivity.&lt;/p&gt;
+&lt;p&gt;Integration of AI technology in cancer care has increased the survival rate of patients. Research is being conducted on introducing AI to provide a customized care to people according to their genes and history.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.healthcareitnews.com/news/3-charts-show-where-artificial-intelligence-making-impact-healthcare-right-now&#34;&gt;https://www.healthcareitnews.com/news/3-charts-show-where-artificial-intelligence-making-impact-healthcare-right-now&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-314/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3535,13 +3708,6 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
         
         
         &lt;h1 id=&#34;residential-power-usage-prediction&#34;&gt;Residential Power Usage Prediction&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use our trivial template posted in piazza&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please never use sapces in image names&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use footnotes for refernces, you must cite them&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; figure numbers are inconsitent, you have 3 figures&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; document not checked on content graders will do that&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;Siny P Raphel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/&#34;&gt;fa20-523-314&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md&#34;&gt;sinypr@gmail.com&lt;/a&gt;&lt;/p&gt;
 
 
@@ -3769,10 +3935,38 @@ TBD&lt;/p&gt;
       <description>
         
         
-        &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use our template&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;h1 id=&#34;big-data-analytics-in-the-national-basketball-association&#34;&gt;Big Data Analytics in the National Basketball Association&lt;/h1&gt;
+&lt;p&gt;Igue Khaleel[fa20-523-317] (&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/),&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/),&lt;/a&gt; &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&lt;/a&gt;)&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2--dataset&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-inference&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-conclusion&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction-1&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2--dataset-1&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action-1&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-inference-1&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-conclusion-1&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment-1&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; toxicology, pollution, autonomous systems, surface vehicle, sensors, arduino, water quality, data analysis, environment, big data, ecosystem&lt;/p&gt;
 &lt;p&gt;Final Project Plan&lt;/p&gt;
 &lt;p&gt;•	Title: Big Data Analytics in the National Basketball Association&lt;/p&gt;
 &lt;p&gt;•	Team: Working Alone on Project&lt;/p&gt;
@@ -3780,32 +3974,101 @@ TBD&lt;/p&gt;
 &lt;p&gt;•	Dataset: &lt;a href=&#34;https://www.kaggle.com/drgilermo/nba-players-stats#&#34;&gt;https://www.kaggle.com/drgilermo/nba-players-stats#&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Team&lt;/p&gt;
 &lt;p&gt;In terms of choosing teams, I think working alone is the best option for me at this moment. Going through the NBA statistics is something that I think one person should be able to reasonably accomplish.&lt;/p&gt;
-&lt;h2 id=&#34;1-plan-of-action&#34;&gt;1. Plan of Action&lt;/h2&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;Topic&lt;/p&gt;
+&lt;p&gt;For now, the topic that I’m going with revolves around the National Basketball Association and the deciding factors in understanding how certain awards such as the MVP (Most Valuable Player) and DPOY (Defensive Player of the Year) are awarded. There has been a lot of controversy surrounding this topic as many individuals feel as if storylines and politics are the determinant of who wins these respective awards.&lt;/p&gt;
+&lt;p&gt;In addition to the above another interesting topic that can be investigated is the leagues implementation of analytics to determine the way basketball has been played. Countless examples could be shown through small-ball lineups and the transition to heavy amounts of three-point shot attempts that occurred in the league the past five years. The results have been shown as seemingly every year the league breaks their scoring records and a team always breaks offensive records on a yearly basis.&lt;/p&gt;
+&lt;p&gt;Many individuals attribute Stephen Curry, a 6-3 NBA point guard, to the change in analytics. The year Steph Curry broke through as an All-Star. This was the year that his team the Golden State Warriors broke the former Chicago Bulls record of 72-9. This in big part was due to Steph Curry breaking the 3pt record as well as Golden State adopting the small ball philosophy. This particular year gave birth to the era of analytics because of how dominate those two approaches were.&lt;/p&gt;
+&lt;h2 id=&#34;2--dataset&#34;&gt;2.  Dataset&lt;/h2&gt;
+&lt;p&gt;The National Basketball Association was first created in the year of 1946 with the name of BAA (Basketball Association of America). However, in 1949 the name was changed to the NBA with a total of 17 teams.[^3] As time progressed the league started picking up steam and more and more teams began to join and it wasn’t until the 90’s that we see the total amount of NBA teams be produced.&lt;/p&gt;
+&lt;p&gt;To better understand the basis of analysis, the game of basketball needs to be understood first. The National Basketball Association builds its organizations on the backs of mostly 20-year-old individuals who are standouts at their respective regions of the United States. Making the NBA is nearly an impossible feat as only a minor 60 players get drafted on a yearly basis. In terms of the draft, most individuals are screened and selected from college. Previously, the NBA allowed individuals to come straight from high school, however, the rule changed so that there was a one year of college eligibility status that had to be met.&lt;/p&gt;
+&lt;p&gt;When it comes to on-court play, there are a total of five positions: point guard, shooting guard, small forward, power forward and center. Each takes up a specific spot on the floor with the guards at around the three-point line and the forwards and center inside or surrounding the paint.&lt;/p&gt;
+&lt;p&gt;At this moment the current dataset that I’m utilizing consists of all NBA players and certain statistics of theirs dating back to 1950’s when stats were starting to get recorded. However, I feel as if another data set would be necessary to quantify the impacts of what the three-pointer and positional basketball has done for basketball.&lt;/p&gt;
+&lt;p&gt;My plan is to take the data and demonstrate through bars and graphs the impacts of these changes from the modern NBA to the classic NBA and the differences that were shown through that. Using Notebook might be needed to get all the data visualized for the report.&lt;/p&gt;
+&lt;h2 id=&#34;3-plan-of-action&#34;&gt;3. Plan of Action&lt;/h2&gt;
 &lt;p&gt;•	Describing the NBA game&lt;/p&gt;
 &lt;p&gt;There are many individuals who may be aware of basketball but not knowledgeable enough to understand my report. So, I’ll give a little background on the NBA game and how things have transpired in generations.&lt;/p&gt;
 &lt;p&gt;•	Describing Analytics Impacts&lt;/p&gt;
 &lt;p&gt;As stated earlier above, I talked about certain points in how certain changes due to analytics have enhanced the game of basketball and how this was spurred through the Golden State Warriors.&lt;/p&gt;
 &lt;p&gt;•	Demonstrating the Data&lt;/p&gt;
 &lt;p&gt;To show the impacts of the data, I was planning to compile the data from the different datasets and demonstrate them in graphs and bars for readers to better understand the message I’m trying to display.&lt;/p&gt;
-&lt;h2 id=&#34;2-topic&#34;&gt;2. Topic&lt;/h2&gt;
+&lt;h2 id=&#34;4-inference&#34;&gt;4. Inference&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;6-acknowledgment&#34;&gt;6. Acknowledgment&lt;/h2&gt;
+&lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
+&lt;p&gt;##7. References&lt;/p&gt;
+&lt;p&gt;[^1] : Piyush, NBA Top Players + Deep Learning, Kaggle. &lt;a href=&#34;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&#34;&gt;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&lt;/a&gt;
+[^2] Justinas Cirtautas, NBA Players, Kaggle. &lt;a href=&#34;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&#34;&gt;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&lt;/a&gt;
+[^3] : Online, N., 2020. NBA History. [online] Nbahoopsonline.com. Available at: &lt;a href=&#34;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&#34;&gt;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&lt;/a&gt;. [ Accessed 20 October 2020].&lt;/p&gt;
+&lt;h1 id=&#34;big-data-analytics-in-the-national-basketball-association-1&#34;&gt;Big Data Analytics in the National Basketball Association&lt;/h1&gt;
+&lt;p&gt;Igue Khaleel[fa20-523-317] (&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/),&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/),&lt;/a&gt; &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&lt;/a&gt;)&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2--dataset&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-inference&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-conclusion&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction-1&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2--dataset-1&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action-1&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-inference-1&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-conclusion-1&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment-1&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; toxicology, pollution, autonomous systems, surface vehicle, sensors, arduino, water quality, data analysis, environment, big data, ecosystem&lt;/p&gt;
+&lt;p&gt;Final Project Plan&lt;/p&gt;
+&lt;p&gt;•	Title: Big Data Analytics in the National Basketball Association&lt;/p&gt;
+&lt;p&gt;•	Team: Working Alone on Project&lt;/p&gt;
+&lt;p&gt;•	Topic: NBA Basketball and Metrics for MVP (Most Valuable Player)&lt;/p&gt;
+&lt;p&gt;•	Dataset: &lt;a href=&#34;https://www.kaggle.com/drgilermo/nba-players-stats#&#34;&gt;https://www.kaggle.com/drgilermo/nba-players-stats#&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Team&lt;/p&gt;
+&lt;p&gt;In terms of choosing teams, I think working alone is the best option for me at this moment. Going through the NBA statistics is something that I think one person should be able to reasonably accomplish.&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction-1&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;Topic&lt;/p&gt;
 &lt;p&gt;For now, the topic that I’m going with revolves around the National Basketball Association and the deciding factors in understanding how certain awards such as the MVP (Most Valuable Player) and DPOY (Defensive Player of the Year) are awarded. There has been a lot of controversy surrounding this topic as many individuals feel as if storylines and politics are the determinant of who wins these respective awards.&lt;/p&gt;
 &lt;p&gt;In addition to the above another interesting topic that can be investigated is the leagues implementation of analytics to determine the way basketball has been played. Countless examples could be shown through small-ball lineups and the transition to heavy amounts of three-point shot attempts that occurred in the league the past five years. The results have been shown as seemingly every year the league breaks their scoring records and a team always breaks offensive records on a yearly basis.&lt;/p&gt;
 &lt;p&gt;Many individuals attribute Stephen Curry, a 6-3 NBA point guard, to the change in analytics. The year Steph Curry broke through as an All-Star. This was the year that his team the Golden State Warriors broke the former Chicago Bulls record of 72-9. This in big part was due to Steph Curry breaking the 3pt record as well as Golden State adopting the small ball philosophy. This particular year gave birth to the era of analytics because of how dominate those two approaches were.&lt;/p&gt;
-&lt;h2 id=&#34;3-introduction&#34;&gt;3. Introduction&lt;/h2&gt;
+&lt;h2 id=&#34;2--dataset-1&#34;&gt;2.  Dataset&lt;/h2&gt;
 &lt;p&gt;The National Basketball Association was first created in the year of 1946 with the name of BAA (Basketball Association of America). However, in 1949 the name was changed to the NBA with a total of 17 teams.[^3] As time progressed the league started picking up steam and more and more teams began to join and it wasn’t until the 90’s that we see the total amount of NBA teams be produced.&lt;/p&gt;
 &lt;p&gt;To better understand the basis of analysis, the game of basketball needs to be understood first. The National Basketball Association builds its organizations on the backs of mostly 20-year-old individuals who are standouts at their respective regions of the United States. Making the NBA is nearly an impossible feat as only a minor 60 players get drafted on a yearly basis. In terms of the draft, most individuals are screened and selected from college. Previously, the NBA allowed individuals to come straight from high school, however, the rule changed so that there was a one year of college eligibility status that had to be met.&lt;/p&gt;
 &lt;p&gt;When it comes to on-court play, there are a total of five positions: point guard, shooting guard, small forward, power forward and center. Each takes up a specific spot on the floor with the guards at around the three-point line and the forwards and center inside or surrounding the paint.&lt;/p&gt;
-&lt;h2 id=&#34;4-dataset&#34;&gt;4. Dataset&lt;/h2&gt;
 &lt;p&gt;At this moment the current dataset that I’m utilizing consists of all NBA players and certain statistics of theirs dating back to 1950’s when stats were starting to get recorded. However, I feel as if another data set would be necessary to quantify the impacts of what the three-pointer and positional basketball has done for basketball.&lt;/p&gt;
-&lt;p&gt;My plan is to take the data and demonstrate through bars and graphs the impacts of these changes from the modern NBA to the classic NBA and the differences that were shown through that. Using Notebook might be needed to get all the data visualized for the report. Another option is to take a look at a datasets and determine how MVP’s are decided and see what criteria is normally met for this. I will look at things such as position and statistics within items such as : assists, points, and rebounds and determine what is normally needed. In addition to this, we plan on using other datasets to confirm the analytical aspect of basketball in comparison to how MVP&amp;rsquo;s win their respective awards.&lt;/p&gt;
-&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
-&lt;p&gt;[^1] : Piyush, NBA Top Players + Deep Learning, Kaggle.
-&lt;a href=&#34;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&#34;&gt;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[^2] Justinas Cirtautas, NBA Players, Kaggle.
-&lt;a href=&#34;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&#34;&gt;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[^3] : Online, N., 2020. NBA History. [online] Nbahoopsonline.com.
-Available at: &lt;a href=&#34;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season.&#34;&gt;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season.&lt;/a&gt; [
-Accessed 20 October 2020].&lt;/p&gt;
+&lt;p&gt;My plan is to take the data and demonstrate through bars and graphs the impacts of these changes from the modern NBA to the classic NBA and the differences that were shown through that. Using Notebook might be needed to get all the data visualized for the report.&lt;/p&gt;
+&lt;h2 id=&#34;3-plan-of-action-1&#34;&gt;3. Plan of Action&lt;/h2&gt;
+&lt;p&gt;•	Describing the NBA game&lt;/p&gt;
+&lt;p&gt;There are many individuals who may be aware of basketball but not knowledgeable enough to understand my report. So, I’ll give a little background on the NBA game and how things have transpired in generations.&lt;/p&gt;
+&lt;p&gt;•	Describing Analytics Impacts&lt;/p&gt;
+&lt;p&gt;As stated earlier above, I talked about certain points in how certain changes due to analytics have enhanced the game of basketball and how this was spurred through the Golden State Warriors.&lt;/p&gt;
+&lt;p&gt;•	Demonstrating the Data&lt;/p&gt;
+&lt;p&gt;To show the impacts of the data, I was planning to compile the data from the different datasets and demonstrate them in graphs and bars for readers to better understand the message I’m trying to display.&lt;/p&gt;
+&lt;h2 id=&#34;4-inference-1&#34;&gt;4. Inference&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;5-conclusion-1&#34;&gt;5. Conclusion&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;6-acknowledgment-1&#34;&gt;6. Acknowledgment&lt;/h2&gt;
+&lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
+&lt;p&gt;##7. References&lt;/p&gt;
+&lt;p&gt;[^1] : Piyush, NBA Top Players + Deep Learning, Kaggle. &lt;a href=&#34;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&#34;&gt;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&lt;/a&gt;
+[^2] Justinas Cirtautas, NBA Players, Kaggle. &lt;a href=&#34;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&#34;&gt;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&lt;/a&gt;
+[^3] : Online, N., 2020. NBA History. [online] Nbahoopsonline.com. Available at: &lt;a href=&#34;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&#34;&gt;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&lt;/a&gt;. [ Accessed 20 October 2020].&lt;/p&gt;
 
       </description>
     </item>
@@ -3904,51 +4167,6 @@ of the data goes down from Petabytes to Terabytes. There is also data that is co
 configurations, managing archival, simulation models related to the SKA itself. This data is used to run the SKA
 without failures or downtime. Images are stored into databases of sources and time series data [&lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
 &lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-319/assignments/rama_asuri_hw6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-319/assignments/rama_asuri_hw6/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;rama-asuri---homework-6-ai-in-health-and-medicine&#34;&gt;Rama Asuri - Homework 6 AI in Health and Medicine&lt;/h1&gt;
-&lt;p&gt;AI in health and medicine is achieving expert level performance. In this paper, we examine two different examples where
-AI was able to detect cancer and explore current status of AI in cancer diagnosis &lt;a href=&#34;https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In the first example, we will cover Cervical cancer. Cervical cancer kills more women in India than in any other 
-country. It is a preventable disease which kills 67000 women in India. Screening and detection can help reduce 
-the number of deaths but the challenge is the testing process which takes enormous time. SRL diagnostics partnered 
-with Microsoft to co create an AI Network of Pathology to reduce the burden of cytopathologists and histopathologists. 
-Cytopathologists at SRL Diagnostics manually marked their observations. These observations were used as training data 
-for Cervical Cancer Image Detection. But there was a different challenge, the way cytopathologists examine different 
-elements are very unique even though they all have come to the same conclusion. This was because of these experts 
-may approach a problem from a different direction. The AI model able to differentiate between normal and abnormal 
-smear slides with accuracy &lt;a href=&#34;https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The second example is about detecting lung cancer. The survival rate is really high if lung cancer is detected during 
-the early stages. but the problem is that is difficult to do it manually when there millions of 3D X-rays.
-Reviewing scans is done by highly trained specialist and majority of the reviews results in no detection.
-Moreover this is also monotonous work which might lead to errors by the reviewers. The LUNA Grand Challenge is an 
-open dataset with high-quality labels of patient CT scans. The gLUNA Grand Challenge encourages improvements in 
-nodule detection by making it easy for teams to compete for high positions on the leader board. A project team can 
-test the efficacy of their detection methods against standardized criteria &lt;a href=&#34;https://pytorch.org/deep-learning-with-pytorch&#34;&gt;3&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;emerging-ai-applications-in-oncology&#34;&gt;Emerging AI Applications in Oncology&lt;/h2&gt;
-&lt;h3 id=&#34;improving-cancer-screening-and-diagnosis&#34;&gt;Improving Cancer Screening and Diagnosis&lt;/h3&gt;
-&lt;p&gt;The MRI-guided biopsy was developed by National Cancer Institute (NCI) researchers works without a need for clinics 
-because of the AI tool &lt;a href=&#34;https://www.cancer.gov/research/areas/diagnosis/artificial-intelligence&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;aiding-the-genomic-characterization-of-tumors&#34;&gt;Aiding the Genomic Characterization of Tumors&lt;/h3&gt;
-&lt;p&gt;Identifying mutations using noninvasive techniques is a particularly challenging problem when it comes to brain
-tumors &lt;a href=&#34;https://www.cancer.gov/research/areas/diagnosis/artificial-intelligence&#34;&gt;4&lt;/a&gt;. NCI and other partners concluded that AI could help identify gene mutations in innovative ways.&lt;/p&gt;
-&lt;h3 id=&#34;accelerating-drug-discovery&#34;&gt;Accelerating Drug Discovery&lt;/h3&gt;
-&lt;p&gt;Using AI, scientists were able to target mutations in the KRAS gene, one of the most frequently mutated 
-oncogenes in tumors &lt;a href=&#34;https://www.cancer.gov/research/areas/diagnosis/artificial-intelligence&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;improving-cancer-surveillance&#34;&gt;Improving Cancer Surveillance&lt;/h3&gt;
-&lt;p&gt;AI will help predicting treatment response, recurrence and survival based on the detection from the images.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 
       </description>
     </item>

@@ -24,8 +24,7 @@
 <meta property="og:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease Ethan Nguyen, fa20-523-309, Edit
 Abstract This section will be addressed as the project nears completion
 Contents
- 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis
-1. Introduction Since cardiovascular diseases are the number 1 cause of death globally, early prevention could help in extending one’s life span and possibly quality of life." />
+ 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-309/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
@@ -33,10 +32,9 @@ Contents
 <meta itemprop="description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease Ethan Nguyen, fa20-523-309, Edit
 Abstract This section will be addressed as the project nears completion
 Contents
- 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis
-1. Introduction Since cardiovascular diseases are the number 1 cause of death globally, early prevention could help in extending one’s life span and possibly quality of life.">
+ 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis">
 
-<meta itemprop="wordCount" content="1063">
+<meta itemprop="wordCount" content="1911">
 
 
 
@@ -46,8 +44,7 @@ Contents
 <meta name="twitter:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease Ethan Nguyen, fa20-523-309, Edit
 Abstract This section will be addressed as the project nears completion
 Contents
- 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis
-1. Introduction Since cardiovascular diseases are the number 1 cause of death globally, early prevention could help in extending one’s life span and possibly quality of life."/>
+ 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis"/>
 
 
 
@@ -442,6 +439,12 @@ Contents
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314assignment_6assignment_6" href="/report/fa20-523-314/assignment_6/assignment_6/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
       
       
@@ -473,12 +476,6 @@ Contents
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw3" href="/report/fa20-523-319/assignments/rama_asuri_hw3/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw6" href="/report/fa20-523-319/assignments/rama_asuri_hw6/"></a>
       
       
     </li>
@@ -526,6 +523,13 @@ Contents
       <ul>
         <li><a href="#21-dataset-cleaning">2.1 Dataset Cleaning</a></li>
         <li><a href="#22-dataset-analysis">2.2 Dataset Analysis</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-machine-learning-algorithms">3. Machine Learning Algorithms</a>
+      <ul>
+        <li><a href="#31-scikit-learn-and-algorithm-types">3.1 Scikit-Learn and Algorithm Types</a></li>
+        <li><a href="#32-classification-algorithms">3.2 Classification Algorithms</a></li>
+        <li><a href="#33-clustering-algorithms">3.3 Clustering Algorithms</a></li>
       </ul>
     </li>
     <li><a href="#project-timeline">Project Timeline</a>
@@ -595,6 +599,13 @@ Contents
         <li><a href="#22-dataset-analysis">2.2 Dataset Analysis</a></li>
       </ul>
     </li>
+    <li><a href="#3-machine-learning-algorithms">3. Machine Learning Algorithms</a>
+      <ul>
+        <li><a href="#31-scikit-learn-and-algorithm-types">3.1 Scikit-Learn and Algorithm Types</a></li>
+        <li><a href="#32-classification-algorithms">3.2 Classification Algorithms</a></li>
+        <li><a href="#33-clustering-algorithms">3.3 Clustering Algorithms</a></li>
+      </ul>
+    </li>
     <li><a href="#project-timeline">Project Timeline</a>
       <ul>
         <li><a href="#october-26">October 26</a></li>
@@ -613,7 +624,7 @@ Contents
 <p><strong>Keywords:</strong> health, healthcare, cardiovascular disease, data analysis</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Since cardiovascular diseases are the number 1 cause of death globally, early prevention could help in extending one’s life span and possibly quality of life. Since there are cases where patients do not show any signs of cardiovascular trouble until an event occurs, having an algorithm predict from their medical history would help in picking up on early warning signs a physician may overlook. Or could also reveal additional risk factors and patterns for research on prevention and treatment.</p>
-<p>This project will take a high-level overview of common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, Logistic Regression, K-Nearest Neighbors, and Support Vector Machines.</p>
+<p>This project will take a high-level overview of common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, K-Nearest Neighbors, and Support Vector Machines.</p>
 <p>Additionally, two data sets that contain common features will be used to increase the training and test pool for evaluation. As well as to explore if additional feature types contribute to a better prediction. As it is known that a large set of data is required to reduce the possibility of the algorithm’s overfitting.</p>
 <h2 id="2-datasets">2. Datasets</h2>
 <ul>
@@ -628,29 +639,91 @@ Contents
 <h3 id="22-dataset-analysis">2.2 Dataset Analysis</h3>
 <p>From this point on, the 1988 dataset will be referred to as <code>dav_set</code> and 2019 data set will be referred to as <code>sav_set</code>.</p>
 <p>To provide further insight on what to expect and how a model would be applied, the population of the datasets was analysed first. As depicted in Figure 2.1 the population samples of both datasets of gender vs age show the majority of the data is centered around 60 years of age with a growing slope from 30 onwards.</p>
-<p><img src="./images/agevssex.jpg" alt="Figure 2.1"></p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/agevssex.jpg" alt="Figure 2.1"></p>
 <p><strong>Figure 2.1</strong>: Age vs Gender distributions of the dav_set and sav_set.</p>
 <p>This trend appears to signify that the datasets focused solely on an older population or general trend in society of not monitoring heart conditions as closely in the younger generation.</p>
 <p>Moving on to Figure 2.2, we see an interesting trend with a significant growing trend in the sav_set in older population having more cardiovascular issues compared to the dav_set. While this cannot be seen in the dav_set. This may be caused by the additional life expectancy or a change in diet as noted in the introduction.</p>
-<p><img src="./images/agevstarget.jpg" alt="Figure 2.2"></p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/agevstarget.jpg" alt="Figure 2.2"></p>
 <p><strong>Figure 2.2</strong>: Age vs Target distributions of the dav_set and sav_set.</p>
 <p>In Figure 2.3, the probability of having cardiovascular issues between the sets are interesting. In the dav_set the inequality of higher probability could be attributed to the larger female samples in the dataset. With the sav_set having a more equal probability between the genders.</p>
-<p><img src="./images/gendervsprobability.jpg" alt="Figure 2.3"></p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/gendervsprobability.jpg" alt="Figure 2.3"></p>
 <p><strong>Figure 2.3</strong>: Gender vs Probability of cardiovascular issues of the dav_set and sav_set.</p>
 <p>Finally, in Figure 2.4 is the probability vs cholesterol levels. This one is very interesting between the two datasets in terms of trend levels. With the dav_set having a higher risk at normal levels compared to the sav_set. This could be another hint of a societal change across the years or may in fact be due to the low sample size. Especially since the sav_set matches the general consensus of higher cholesterol levels increasing risk of cardiovascular issues <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<p><img src="./images/cholesterolvsprobability.jpg" alt="Figure 2.4"></p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/cholesterolvsprobability.jpg" alt="Figure 2.4"></p>
 <p><strong>Figure 2.4</strong>: Cholesterol levels vs Probability of cardiovascular issues of the dav_set and sav_set.</p>
 <p>To close out this initial analysis is the correlation map of each of the features. From Figure 2.5 and 2.6 it can be concluded that both of these datasets are viable to conduct machine learning as the correlation factor is below the recommended value of 0.8 <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Although we do see the signs of a low sample amount in the dav_set with a higher correlation factor compared to the sav_set.</p>
-<p><img src="./images/davsetcorrelation.jpg" alt="Figure 2.5"></p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/davsetcorrelation.jpg" alt="Figure 2.5"></p>
 <p><strong>Figure 2.5</strong>: dav_set correlation matrix.</p>
-<p><img src="./images/savsetcorrelation.jpg" alt="Figure 2.6"></p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/savsetcorrelation.jpg" alt="Figure 2.6"></p>
 <p><strong>Figure 2.6</strong>: sav_set correlation matrix.</p>
+<h2 id="3-machine-learning-algorithms">3. Machine Learning Algorithms</h2>
+<p>With many machine learning algorithms already available and many more in development. Selecting the optimal one for an application can be a challenging balance since each algorithm has both its advantages and disadvantages. As mentioned in the introduction, we will explore applying the most common and established algorithms available to the public.</p>
+<p>Starting off, is selecting a library from the most popular ones available. Namely Keras, Pytorch, Tensorflow, and Scikit-Learn. Upon further investigation it was determined that Scikit-Learn would be used for this project. The reason being Scikit-Learn is a great general machine learning library that also includes pre and post processing functions. While Keras, Pytorch, and Tensorflow are targeted for neural networks and other higher-level deep learning algorithms which are outside of the scope of this project at this time <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<h3 id="31-scikit-learn-and-algorithm-types">3.1 Scikit-Learn and Algorithm Types</h3>
+<p>Diving further into the Scikit-Learn library, its key strength appears to be the variety of algorithms available that are relatively easy to implement against a dataset. Of those available, they are classified under three different categories based on the approach each takes. They are as follows:</p>
+<ul>
+<li>Classification
+<ul>
+<li>Applied to problems that require identifying the category an object belongs to.</li>
+</ul>
+</li>
+<li>Regression
+<ul>
+<li>For predicting or modeling continuous values.</li>
+</ul>
+</li>
+<li>Clustering
+<ul>
+<li>Grouping similar objects into groups.</li>
+</ul>
+</li>
+</ul>
+<p>For this project, we will be investigating the Classification and Clustering algorithms offered by the library due to the nature of our dataset. Since it is a binary answer, the continuous prediction capability of regression algorithms will not fair well. Compared to classification type algorithms which are well suited for determining binary and multi-class classification on datasets <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Along with Clustering algorithms being capable of grouping unlabeled data which is one of the key problem points mentioned in the introduction <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<h3 id="32-classification-algorithms">3.2 Classification Algorithms</h3>
+<p>The following algorithms were determined to be candidates for this project based on the documentation available on the Scikit-learn for supervised learning <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+<h4 id="321-support-vector-machines">3.2.1 Support Vector Machines</h4>
+<p>This algorithm was chosen because classification is one of the target types and has a decent list of advantages that appear to be applicable to this dataset <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<ul>
+<li>Effective in high dimensional spaces as well as if the number dimensions out number samples.</li>
+<li>Is very versatile.</li>
+</ul>
+<h4 id="322-k-nearest-neighbors">3.2.2 K-Nearest Neighbors</h4>
+<p>This algorithm was selected due to being a non-parametric method that has been successful in classification applications <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. From the dataset analysis, it is appears that the decision boundary may be very irregular which is a strong point of this type of method.</p>
+<h4 id="323-gaussian-naive-bayes">3.2.3 Gaussian Naive Bayes</h4>
+<p>Is an implementation of the Naive Bayes theorem that has been targeted for classification. The advantages of this algorithm is its speed and requires a small training set compared to more advanced algorithms <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
+<h4 id="324-decision-trees">3.2.4 Decision Trees</h4>
+<p>This algorithm was chosen to investigate another non-parametric method to determine their efficacy against this dataset application. This algorithm also has some advantages over K-Nearest namely <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
+<ul>
+<li>Simple to interpret and visualize</li>
+<li>Requires little data preparation
+<ul>
+<li>Handles numerical and categorical data instead of needing to normalize</li>
+</ul>
+</li>
+<li>Can validate the model and is possible to audit from a liability standpoint.</li>
+</ul>
+<h3 id="33-clustering-algorithms">3.3 Clustering Algorithms</h3>
+<p>The following algorithms were determined to be candidates for this project based on the table of clustering algorithms available on the Scikit-learn <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>.</p>
+<h4 id="331-k-means">3.3.1 K-Means</h4>
+<p>The usecase for this algorithm is general purpose with even and low number of clusters <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Of which the sav_set appears to have with the even distribution across most of the features.</p>
+<h4 id="332-mean-shift">3.3.2 Mean-shift</h4>
+<p>This algorithm was chosen for its strength in dealing with uneven cluster sizes and non-flat geometry <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Though it is not easily scalable the application of our small dataset size might be of interest.</p>
+<h4 id="333-spectral-clustering">3.3.3 Spectral Clustering</h4>
+<p>As an inverse, this algorithm was chosen for its strength with fewer uneven clusters <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. In comparison to Mean-shift, this maybe the better algorithm for this application.</p>
 <h2 id="project-timeline">Project Timeline</h2>
 <p>The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates.</p>
 <h3 id="october-26">October 26</h3>
 <ul>
-<li>Explore options on normalizing or conversion of the features to connect between the datasets and determine if they are viable to add to the project.</li>
-<li>Explore ML models and frameworks and determine viability for the project.</li>
+<li>Explore options on normalizing or conversion of the features to connect between the datasets and determine if they are viable to add to the project.
+<ul>
+<li>A large portion of time was dedicated to researching this point. Unfortunately, nothing of note was discovered to realize this aspect of the plan.</li>
+</ul>
+</li>
+<li>Explore ML models and frameworks and determine viability for the project.
+<ul>
+<li>Additional information on the algorithms selected. Mainly the underlying calculation, theory, and disadvantages to compensate for has been added to the Nov 2nd milestone date.</li>
+</ul>
+</li>
 <li>Update Report.</li>
 </ul>
 <h3 id="november-2">November 2</h3>
@@ -685,6 +758,30 @@ Contents
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>R, V., 2020. Feature Selection — Correlation And P-Value. [online] Medium. Available at: <a href="https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf">https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf</a> [Accessed 21 October 2020]. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Stack Overflow. 2020. Differences In Scikit Learn, Keras, Or Pytorch. [online] Available at: <a href="https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch">https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch</a> [Accessed 27 October 2020]. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Scikit-learn.org. 2020. 1.4. Support Vector Machines — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/modules/svm.html#classification">https://scikit-learn.org/stable/modules/svm.html#classification</a> [Accessed 27 October 2020]. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/modules/clustering.html#clustering">https://scikit-learn.org/stable/modules/clustering.html#clustering</a> [Accessed 27 October 2020]. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Scikit-learn.org. 2020. 1. Supervised Learning — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/supervised_learning.html#supervised-learning">https://scikit-learn.org/stable/supervised_learning.html#supervised-learning</a> [Accessed 27 October 2020]. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Scikit-learn.org. 2020. 1.6. Nearest Neighbors — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/modules/neighbors.html">https://scikit-learn.org/stable/modules/neighbors.html</a> [Accessed 27 October 2020]. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Scikit-learn.org. 2020. 1.9. Naive Bayes — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/modules/naive_bayes.html">https://scikit-learn.org/stable/modules/naive_bayes.html</a> [Accessed 27 October 2020]. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Scikit-learn.org. 2020. 1.10. Decision Trees — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/modules/tree.html">https://scikit-learn.org/stable/modules/tree.html</a> [Accessed 27 October 2020]. <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/modules/clustering.html#clustering">https://scikit-learn.org/stable/modules/clustering.html#clustering</a> [Accessed 27 October 2020]. <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

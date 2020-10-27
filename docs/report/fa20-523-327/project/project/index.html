@@ -23,18 +23,18 @@
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Trending Youtube Videos Analysis  Adam Chai, fa20-523-327 Edit  Abstract need to add abstract
 Contents
- 1. Introduction 2. Objective 3. Dataset 4. Work Breakdown 5. References     Keywords: youtube, videos, trending
-1. Introduction The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube." />
+ 1. Introduction 2. Background Research and Previous Work 3. Choice of Data-sets 4. Methodology  4.1. Hardware Component 4.2 Software Component   5. Inference 6. Conclusion 7. Acknowledgments 8. References     Keywords: youtube, videos, trending, popular
+1. Introduction The final project for this class will be focused on trending Youtube videos." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-327/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Trending Youtube Videos Analysis  Adam Chai, fa20-523-327 Edit  Abstract need to add abstract
 Contents
- 1. Introduction 2. Objective 3. Dataset 4. Work Breakdown 5. References     Keywords: youtube, videos, trending
-1. Introduction The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube.">
+ 1. Introduction 2. Background Research and Previous Work 3. Choice of Data-sets 4. Methodology  4.1. Hardware Component 4.2 Software Component   5. Inference 6. Conclusion 7. Acknowledgments 8. References     Keywords: youtube, videos, trending, popular
+1. Introduction The final project for this class will be focused on trending Youtube videos.">
 
-<meta itemprop="wordCount" content="535">
+<meta itemprop="wordCount" content="620">
 
 
 
@@ -43,8 +43,8 @@ Contents
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Trending Youtube Videos Analysis  Adam Chai, fa20-523-327 Edit  Abstract need to add abstract
 Contents
- 1. Introduction 2. Objective 3. Dataset 4. Work Breakdown 5. References     Keywords: youtube, videos, trending
-1. Introduction The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube."/>
+ 1. Introduction 2. Background Research and Previous Work 3. Choice of Data-sets 4. Methodology  4.1. Hardware Component 4.2 Software Component   5. Inference 6. Conclusion 7. Acknowledgments 8. References     Keywords: youtube, videos, trending, popular
+1. Introduction The final project for this class will be focused on trending Youtube videos."/>
 
 
 
@@ -439,6 +439,12 @@ Contents
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314assignment_6assignment_6" href="/report/fa20-523-314/assignment_6/assignment_6/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
       
       
@@ -470,12 +476,6 @@ Contents
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw3" href="/report/fa20-523-319/assignments/rama_asuri_hw3/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw6" href="/report/fa20-523-319/assignments/rama_asuri_hw6/"></a>
       
       
     </li>
@@ -519,10 +519,18 @@ Contents
 <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-objective">2. Objective</a></li>
-    <li><a href="#3-dataset">3. Dataset</a></li>
-    <li><a href="#4-work-breakdown">4. Work Breakdown</a></li>
-    <li><a href="#5-references">5. References</a></li>
+    <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work</a></li>
+    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
+    <li><a href="#4-methodology">4. Methodology</a>
+      <ul>
+        <li><a href="#41-hardware-component">4.1. Hardware Component</a></li>
+        <li><a href="#42-software-component">4.2 Software Component</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#7-acknowledgments">7. Acknowledgments</a></li>
+    <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 
@@ -578,29 +586,51 @@ Contents
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-objective">2. Objective</a></li>
-    <li><a href="#3-dataset">3. Dataset</a></li>
-    <li><a href="#4-work-breakdown">4. Work Breakdown</a></li>
-    <li><a href="#5-references">5. References</a></li>
+    <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work</a></li>
+    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
+    <li><a href="#4-methodology">4. Methodology</a>
+      <ul>
+        <li><a href="#41-hardware-component">4.1. Hardware Component</a></li>
+        <li><a href="#42-software-component">4.2 Software Component</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#7-acknowledgments">7. Acknowledgments</a></li>
+    <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 </div>
 
 </div>
 
-<p><strong>Keywords:</strong> youtube, videos, trending</p>
+<p><strong>Keywords:</strong> youtube, videos, trending, popular</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience whom find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, but there is no concrete proof or findings that can validate these thoughts. Additionally, Youtube content creators are constantly evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.</p>
-<h2 id="2-objective">2. Objective</h2>
-<p>The objective of this project is to develop a model to predict if a Youtube video will trend. Content creators, companies, or even one time users aim for their videos to reach the trending section on Youtube. Only 50 videos a day can reach the trending section on Youtube so it makes it very unlikely even a good video will reach the section. As stated earlier, the purpose of the trending section is to attract a wide range of audience but what if there is an easier way for a video to reach the section. For my model to predict if a video will trend I will be training my model on the trending youtube videos and after will be applied to all youtube videos. While training my model I will be constantly evaluating the validity of its findings and the accuracy. If this model is successful it can be used to increase the chances a video will trend on Youtube.</p>
-<h2 id="3-dataset">3. Dataset</h2>
-<p>To understand what determines if a video will trend on Youtube the datasets chosen for this project are a trending Youtube videos (US) and a dataset of public Youtube videos.</p>
-<p>The model being built for this project will try to find commonalities within the trending youtube videos dataset. Some examples of commonalities this model can find are keywords within the title of videos, popular tags, likes:dislikes ratios, etc. This model will find the importance of what determines if a video will trend on Youtube. By understanding the ranking of importance of what makes or breaks a video to trend will allow the model to accurately assess the probability the video will trend.
-Afterwards, a confident model is built wihtin the trending dataset it will be applied onto the data set of public Youtube videos and will be evaluate how accurate the model is at predicting a trending Youtube video. To test if this works the datasets can be compared to find which video trended and if the dataset was able to predict the trending videos on the public videos dataset then it will be successful.</p>
-<h2 id="4-work-breakdown">4. Work Breakdown</h2>
-<p>Initial Project Report - completed
-Predictive Model - undertermined, need to visit office hours, look into model again</p>
-<h2 id="5-references">5. References</h2>
+<p>The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience whom find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,</p>
+<p>Are appealing to a wide range of viewers</p>
+<p>Are not misleading, cickbaity, or sensational</p>
+<p>Capture the breadth of what&rsquo;s happening on YouTube and in the world</p>
+<p>Showcase a diversity of creators</p>
+<p>Ideally, are suprising or novel</p>
+<p>but these criterians Youtube has set are not defined[1]. Meaning, the determinants for how a Youtube video trends are not clearly defined. Youtube content creators are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.</p>
+<h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
+<p>After reviewing other background literature and works from other authors witin this field, most people have not really ventured into how a video will trend on Youtube. Most findings online are analysis or unique findings of popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will trend on Youtube. These findings can still be helpful and lead this research into the right direction, however; the analysis done for this project will be new.</p>
+<h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
+<p>To understand what determines if a video will trend on Youtube the datasets chosen for this project are a trending Youtube videos (US) and a dataset of public Youtube videos[2][3].</p>
+<p>The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].</p>
+<p>Afterwards, the model is built wihtin the trending dataset it will be applied onto the data set of public Youtube videos and will be evaluate how accurate the model is at predicting a trending Youtube video. To test if this works the datasets can be compared to find which video trended and if the dataset was able to predict the trending videos on the public videos dataset then it will be successful.</p>
+<h2 id="4-methodology">4. Methodology</h2>
+<h3 id="41-hardware-component">4.1. Hardware Component</h3>
+<p>This section will be addressed once I go to office hours</p>
+<h3 id="42-software-component">4.2 Software Component</h3>
+<p>This section will be addressed once I go to office hours</p>
+<h2 id="5-inference">5. Inference</h2>
+<p>This section will be addressed upon completion</p>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<p>This section will be addressed upon completion</p>
+<h2 id="7-acknowledgments">7. Acknowledgments</h2>
+<p>Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
+<h2 id="8-references">8. References</h2>
 
 	
 	

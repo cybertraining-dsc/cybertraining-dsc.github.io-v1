@@ -30,7 +30,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <meta itemprop="description" content="Estimating Soil Moisture Content Using Sensor and Weather Data Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
 Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on on weather data. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term.">
 
-<meta itemprop="wordCount" content="1590">
+<meta itemprop="wordCount" content="2321">
 
 
 
@@ -433,6 +433,12 @@ Abstract As the world is gripped with finding solutions to problems such as food
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314assignment_6assignment_6" href="/report/fa20-523-314/assignment_6/assignment_6/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
       
       
@@ -464,12 +470,6 @@ Abstract As the world is gripped with finding solutions to problems such as food
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw3" href="/report/fa20-523-319/assignments/rama_asuri_hw3/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-319assignmentsrama_asuri_hw6" href="/report/fa20-523-319/assignments/rama_asuri_hw6/"></a>
       
       
     </li>
@@ -515,10 +515,17 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#topic-discussion">Topic Discussion</a></li>
     <li><a href="#datasets">Datasets</a></li>
     <li><a href="#data-cleaning-and-aggregation">Data Cleaning and Aggregation</a></li>
+    <li><a href="#pipeline-for-preprocessing">Pipeline for Preprocessing</a>
+      <ul>
+        <li><a href="#loading-and-joining-data">Loading and Joining Data</a></li>
+        <li><a href="#feature-engineering">Feature Engineering</a></li>
+        <li><a href="#generic-pipeline">Generic Pipeline</a></li>
+      </ul>
+    </li>
+    <li><a href="#splitting-data-into-train-and-test">Splitting Data into Train and Test</a></li>
     <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a></li>
     <li><a href="#plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</a>
       <ul>
-        <li><a href="#october-26">October 26</a></li>
         <li><a href="#november-2">November 2</a></li>
         <li><a href="#november-9">November 9</a></li>
         <li><a href="#november-16">November 16</a></li>
@@ -579,10 +586,17 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#topic-discussion">Topic Discussion</a></li>
     <li><a href="#datasets">Datasets</a></li>
     <li><a href="#data-cleaning-and-aggregation">Data Cleaning and Aggregation</a></li>
+    <li><a href="#pipeline-for-preprocessing">Pipeline for Preprocessing</a>
+      <ul>
+        <li><a href="#loading-and-joining-data">Loading and Joining Data</a></li>
+        <li><a href="#feature-engineering">Feature Engineering</a></li>
+        <li><a href="#generic-pipeline">Generic Pipeline</a></li>
+      </ul>
+    </li>
+    <li><a href="#splitting-data-into-train-and-test">Splitting Data into Train and Test</a></li>
     <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a></li>
     <li><a href="#plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</a>
       <ul>
-        <li><a href="#october-26">October 26</a></li>
         <li><a href="#november-2">November 2</a></li>
         <li><a href="#november-9">November 9</a></li>
         <li><a href="#november-16">November 16</a></li>
@@ -604,15 +618,29 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <h2 id="datasets">Datasets</h2>
 <p>The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format (see Figure 1).</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/distance_map.png" alt="Figure 1"></p>
-<p><strong>Figure 1:</strong> Caption missing</p>
+<p><strong>Figure 1:</strong> Estimated distance from weather reports to the crop fields. Distance is calculated using Google Maps</p>
 <p>The second dataset comes from the USDA. This dataset consits of &ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&rdquo; at a farm in Washington state <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.</p>
 <p>Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the sattelite image (see Figure 2).</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/sensor_locations.png" alt="Figure 2"></p>
-<p><strong>Figure 2:</strong> Caption missing</p>
+<p><strong>Figure 2:</strong> Location of sensors within the test field</p>
 <h2 id="data-cleaning-and-aggregation">Data Cleaning and Aggregation</h2>
 <p>The first step is to get the soil moisture data into a combined format, currently it is in one file per sensor, and there are 42 sensors. See the data_cleaning_aggregation.ipynb file to see how this was done. After aggregation, some basic information can be checked about the data. For instance, there is quite a bit of NAs in the data. These NAs are just instances where there was no measurement on that day. There is about 45% NAs in the measurement columns. To further clean the data, any row that has only NAs for the measurements will be removed.</p>
 <p>Next, the weather data needs some small adjustments. This is mostly in the form of removing columns that either are empty or have redundant data such as elevation.</p>
 <p>Once the data is sufficiently clean, some choices have to be made on joining the data. The simplist route would be to join the weather measurements directly with the same day the soil measurement, however, the previous days weather is likely to also have an impact on the moisture. In the same fashion, the weather for the 5 previous days might all have a large impact on the moisture. So simply joining the two data sets right now is likely not the correct course of action until further analysis is made.</p>
+<h2 id="pipeline-for-preprocessing">Pipeline for Preprocessing</h2>
+<p>Before feeding the data through a machine learning algorithm, the data needs to be manipulated in such a way that it is ready to be directly fed into an algorithm. This includes joining the two data sets, feature engineering, and other tasks that prepare the data. This will need to be done every time a new dataset is being used, so this must be built in a repeatable way. The machine learning library scikit-learn incoroporates something called &ldquo;pipelines&rdquo; that can allow processed to be sequentially done to a dataframe. For purposes of this project two pipelines will be built, one will be used for feature engineering and joining the data, the other will be used to handle preparation of numerical, categorical, and date data.</p>
+<h3 id="loading-and-joining-data">Loading and Joining Data</h3>
+<p>This is the first step of the entire pipeline. This is where both the weather, and the soil moisture data are read in from csv files in their raw fromat. The soil moisture data is found in many different files, and these all need to be combined. After combining the fies, any lines that are full of NAs for the measurements are dropped. Next the weather data is loaded in. Both files have a date field which is the field they will be joined on. To make things consistent, both of these fields need to set be date format.</p>
+<p>When it comes to joining the data, each row should include the moisture content at various depths, as well as the weather information from the past ten days. While this creates a great deal of redundant data, the data is small enough that this is not an issue. Experiments will be done to evaluate just how many days of prior weather data are needed to form accurate results, while trying to minimize the number of the days.</p>
+<h3 id="feature-engineering">Feature Engineering</h3>
+<p>Currently only one feature is added, and this is a boolean flag that says whether it rained or not on a certain day. The thought behind this is, that for some days prior to the current measurement, the amount of rain might be needed, but for other days, such as 10 days prior, it might be more important to just know if there was rain or not. This feature is engineered within the pipeline.</p>
+<p>A future feature will be to use the months as categorical variables. While the date might be helpful, it probably is more accurate to consider the month then the specific day.</p>
+<h3 id="generic-pipeline">Generic Pipeline</h3>
+<p>After doing operations that are specific to the current dataset, some built in processors from sk-learn are used to make sure the data can be used in a machine learning model. This means that for numerical data types, the pipeline will fill in missing values with 0 instead of leaving them as NaN. There might be experiements to decide how to deal with missing measurements. Also the various numerical fields must be standardized, this is important for models such as linear regression so one large variable isn&rsquo;t dominating the model.</p>
+<p>As far as text and categorical features, the imputer will be used to fill in missing data as well. Then a process called one hot encoding will be used to handle the categorical variables so that they can be read into sk-learns estimators.</p>
+<p>Lastly the date pipeline will take datetimes and convert them to integers that represent how many seconds it has been since 1970. This will allow dates to be handled as numerical values if they are used as an estimator instead of being used as a categorical feature as there would be many categories.</p>
+<h2 id="splitting-data-into-train-and-test">Splitting Data into Train and Test</h2>
+<p>In order to test any model created, there must be a split between test and training data. This is done by using a function in sk-learn. In this case, there are about 76k rows in the data set. For the training data, 80% of the total data will be used, or about 60.8k records. The split is done after shuffling the rows so that it does not just pick the top 80% everytime. Lastly the data is split using a stratified method. As we want to have models that take the specific area of the field into account, that means that we need to have the different areas of the field represented equally in both the training and testing dataset. This means that if 10% of the data came from sensor CAF0003, then roughly 10% of the training data will come from CAF0003 as well as 10% of the test data will be from this location.</p>
 <h2 id="preliminary-analysis-and-eda">Preliminary Analysis and EDA</h2>
 <p>Before building a machine learning model, it is important to get a general idea of how the data looks, to see if any insights can be made right away.</p>
 <p>The first two visualizations are grids that show the entire distribution of measurements across each sensor. The first grid is the volume of water at 30 cm, and the second grid is the water volume at 150 cm. Each chart could be looked at and examined on it&rsquo;s own, but what is most important to note is the variability of the measures from location to location. These different sensors are not that far away, but show that different areas of the farm do retain water in different ways.</p>
@@ -621,15 +649,6 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <p><em>Note</em>: After doing this analysis using the Altair library in python, the notebook became way too big due to the size of the data. As a quick remedy for this, I saved the visualizations as PNG and saved them in the images folder. They are named: one, two, three, and four, for the order that they are mentioned in the above section. I will remove the eda notebook from the repo.</p>
 <h2 id="plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</h2>
 <p>The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates</p>
-<h3 id="october-26">October 26</h3>
-<ul>
-<li>Further EDA (make charts more presentable)</li>
-<li>Create pipeline to clean and manipulate data from raw</li>
-<li>Create multiple data sets that allow for the training data to include the past N days of weather</li>
-<li>Brainstorm ideas for feature engineering and build features</li>
-<li>Test various ML methods using scikit-learn to get an early idea of possible models, and to have a baseline for comparison</li>
-<li>Update report</li>
-</ul>
 <h3 id="november-2">November 2</h3>
 <ul>
 <li>Tune hyperparameters for selected ML model</li>
