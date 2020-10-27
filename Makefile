@@ -7,7 +7,7 @@ setup:
 
 
 pull:
-	cd content/en/report/cloudmesh-openapi; git checkout master; git pull
+	cd content/en/report/cloudmesh-openapi; git checkout main; git pull
 	cd content/en/report/fa20-523-301; git checkout master; git pull
 	cd content/en/report/fa20-523-304; git checkout master; git pull
 	cd content/en/report/fa20-523-305; git checkout master; git pull
@@ -36,6 +36,7 @@ pull:
 	cd content/en/report/fa20-523-343; git checkout master; git pull
 	cd content/en/report/fa20-523-348; git checkout main; git pull
 	cd content/en/report/fa20-523-349; git checkout main; git pull
+	cd content/en/report/fa20-523-350; git checkout main; git pull
 
 view:
 	gopen http://localhost:1313/ 

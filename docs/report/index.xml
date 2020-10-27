@@ -60,7 +60,7 @@ start/stop and how to tie into registry functionality.&lt;/li&gt;
 &lt;li&gt;Edited the stop function to take process PID and use os.kill to
 stop the process based on the name of the python file. However,
 according to Ishan this is still not working.&lt;/li&gt;
-&lt;li&gt;Resolved conflicts between master and our working branch&lt;/li&gt;
+&lt;li&gt;Resolved conflicts between main and our working branch&lt;/li&gt;
 &lt;li&gt;Began work on assigning a default name if the user does not provide
 one for server start. Potetially, a function to assign an alias
 name to the whole process to amke it easier to reference.&lt;/li&gt;
@@ -78,7 +78,7 @@ pip install -e .
 &lt;/ul&gt;
 &lt;h3 id=&#34;basic-function-generator&#34;&gt;Basic Function Generator&lt;/h3&gt;
 &lt;h4 id=&#34;prateek-shaw----code-link&#34;&gt;Prateek Shaw -  code link.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-229/tree/main/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh-community/sp20-516-229/tree/main/cloudmesh-openapi&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;created a basic function that will return the OpenAPI YAML file
 of given python function including parameters.&lt;/li&gt;
@@ -92,12 +92,12 @@ sample function for testing purposes. I also included the parameters
 as was requested. I also ran my output yaml through the swagger
 validator (&lt;a href=&#34;https://editor.swagger.io/&#34;&gt;https://editor.swagger.io/&lt;/a&gt;) to make sure it was compliant
 and it was.&lt;br&gt;
-&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-237/tree/master/projectAI/generateOpenAPI&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-237/tree/main/projectAI/generateOpenAPI&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;sp20-516-231---brian-kegerreis&#34;&gt;sp20-516-231 - Brian Kegerreis&lt;/h4&gt;
 &lt;p&gt;I created a function to generate an OpenAPI spec including a rough
 attempt at response types (only supports text/plain media types at
 this point)
-&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/main/openapi-exercises/example_echo.py&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/main/openapi-exercises/example_echo.py&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;server-start&#34;&gt;Server Start&lt;/h3&gt;
 &lt;h4 id=&#34;andrew-goldfarb---sp20-516-234&#34;&gt;Andrew Goldfarb - SP20-516-234&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&#34;&gt;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&lt;/a&gt;
@@ -152,12 +152,12 @@ return type&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;The below pytest generates the .py file used by generator to do a OPENAPI specification.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/Scikitlearn-tests/test_06c_sklearngeneratortest.py&#34;&gt;Pytestcode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/Scikitlearn-tests/test_06c_sklearngeneratortest.py&#34;&gt;Pytestcode&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/Scikitlearn_tests/test_06c_sklearngeneratortest.py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The below pytest tests the methods generated .&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/Scikitlearn-tests/test_06d_sklearngeneratortest.py&#34;&gt;Pytestcode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/Scikitlearn-tests/test_06d_sklearngeneratortest.py&#34;&gt;Pytestcode&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pytest -v --capture&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;no tests/Scikitlearn_tests/test_06d_sklearngeneratortest.py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -212,7 +212,7 @@ start/stop and how to tie into registry functionality.&lt;/li&gt;
 &lt;li&gt;Edited the stop function to take process PID and use os.kill to
 stop the process based on the name of the python file. However,
 according to Ishan this is still not working.&lt;/li&gt;
-&lt;li&gt;Resolved conflicts between master and our working branch&lt;/li&gt;
+&lt;li&gt;Resolved conflicts between main and our working branch&lt;/li&gt;
 &lt;li&gt;Began work on assigning a default name if the user does not provide
 one for server start. Potetially, a function to assign an alias
 name to the whole process to amke it easier to reference.&lt;/li&gt;
@@ -230,7 +230,7 @@ pip install -e .
 &lt;/ul&gt;
 &lt;h3 id=&#34;basic-function-generator&#34;&gt;Basic Function Generator&lt;/h3&gt;
 &lt;h4 id=&#34;prateek-shaw----code-link&#34;&gt;Prateek Shaw -  code link.&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh-community/sp20-516-229/tree/master/cloudmesh-openapi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-229/tree/main/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh-community/sp20-516-229/tree/main/cloudmesh-openapi&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;created a basic function that will return the OpenAPI YAML file
 of given python function including parameters.&lt;/li&gt;
@@ -244,12 +244,12 @@ sample function for testing purposes. I also included the parameters
 as was requested. I also ran my output yaml through the swagger
 validator (&lt;a href=&#34;https://editor.swagger.io/&#34;&gt;https://editor.swagger.io/&lt;/a&gt;) to make sure it was compliant
 and it was.
-&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-237/tree/master/projectAI/generateOpenAPI&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-237/tree/main/projectAI/generateOpenAPI&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;sp20-516-231---brian-kegerreis&#34;&gt;sp20-516-231 - Brian Kegerreis&lt;/h4&gt;
 &lt;p&gt;I created a function to generate an OpenAPI spec including a rough
 attempt at response types (only supports text/plain media types at
 this point)
-&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/master/openapi-exercises/example_echo.py&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/main/openapi-exercises/example_echo.py&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/main/openapi-exercises/example_echo.py&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;server-start&#34;&gt;Server Start&lt;/h3&gt;
 &lt;h4 id=&#34;andrew-goldfarb---sp20-516-234&#34;&gt;Andrew Goldfarb - SP20-516-234&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&#34;&gt;https://github.com/cloudmesh-community/sp20-516-234/tree/open-api-exercise/openAPI&lt;/a&gt;
@@ -404,7 +404,7 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;cms command:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/command/openapi.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/command/openapi.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/command/openapi.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/command/openapi.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; all team&lt;/p&gt;
 &lt;hr&gt;
 &lt;/li&gt;
@@ -413,12 +413,12 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;executor&lt;/strong&gt; that parses parameters and calls generator:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/executor.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/executor.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/function/executor.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/function/executor.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Brian, Professor&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;generator&lt;/strong&gt; that generates the server yaml:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/generator.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/generator.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/function/generator.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/function/generator.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Brian, Jonathan, Prateek&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -426,7 +426,7 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;cms server - to start and stop server&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/server.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/function/server.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/function/server.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/function/server.py&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Jonathan, Andrew, Prateek, Ishan&lt;/li&gt;
 &lt;/ul&gt;
@@ -437,17 +437,17 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt; - registers server&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/Registry.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/Registry.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/registry/Registry.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/registry/Registry.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Falconi, Praful, Professor&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;cache&lt;/strong&gt; - cache serialized model locally&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/cache.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/cache.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/registry/cache.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/registry/cache.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jonathan&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;fileoperation&lt;/strong&gt; - upload input files&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/fileoperation.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/registry/fileoperation.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/registry/fileoperation.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/registry/fileoperation.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Prateek, Brian&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -455,7 +455,7 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;cms scikitlearn - generate sklearn functions&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/scikitlearn/SklearnGeneratorFile.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/cloudmesh/openapi/scikitlearn/SklearnGeneratorFile.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/scikitlearn/SklearnGeneratorFile.py&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/cloudmesh/openapi/scikitlearn/SklearnGeneratorFile.py&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jagadeesh&lt;/p&gt;
 &lt;hr&gt;
 &lt;/li&gt;
@@ -466,7 +466,7 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;cms text analysis&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contirbutor:&lt;/strong&gt; Andrew Goldfarb&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/generator-natural-lang&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/generator-natural-lang&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/main/tests/generator-natural-lang&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/tree/main/tests/generator-natural-lang&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
@@ -482,7 +482,7 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Integration of openapi with cms allows for running locally only.  Cloud integration was not fully completed although team did create a way to setup openapi in a VM using a remote script for &lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/ubuntu18.04/index.html&#34;&gt;openstack&lt;/a&gt; and &lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/google/index.html&#34;&gt;google&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Integration of openapi with cms allows for running locally only.  Cloud integration was not fully completed although team did create a way to setup openapi in a VM using a remote script for &lt;a href=&#34;https://github.com/cloudmesh/get/blob/main/openapi/ubuntu18.04/index.html&#34;&gt;openstack&lt;/a&gt; and &lt;a href=&#34;https://github.com/cloudmesh/get/blob/main/openapi/google/index.html&#34;&gt;google&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The generator only supports creating arrays of number data type.  This limitation is due to the bug documented below in &lt;em&gt;&lt;strong&gt;Bugs&lt;/strong&gt;&lt;/em&gt; section.  So manual changes are required to the output yaml to allow for other data types until another work around is found or the bug is resolved.&lt;/p&gt;
@@ -499,19 +499,19 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
 &lt;h3 id=&#34;openstack-vm-set-up-script&#34;&gt;Openstack VM set up script&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/ubuntu18.04/index.html&#34;&gt;OPENSTACK&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/get/blob/main/openapi/ubuntu18.04/index.html&#34;&gt;OPENSTACK&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/get/blob/master/openapi/google/index.html&#34;&gt;GOOGLE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/get/blob/main/openapi/google/index.html&#34;&gt;GOOGLE&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jonathan Beckford, Andrew Goldfarb&lt;/p&gt;
 &lt;h3 id=&#34;openapi-project-readme-generator&#34;&gt;Openapi project readme generator&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/sphinx&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/sphinx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/main/sphinx&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/tree/main/sphinx&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt; Jonathan Beckford, Professor&lt;/p&gt;
 &lt;h3 id=&#34;chapters&#34;&gt;Chapters&lt;/h3&gt;
 &lt;h5 id=&#34;kubernetes&#34;&gt;Kubernetes&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/master/chapter/k8s-kubernetes-scheduler.md&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/master/chapter/k8s-kubernetes-scheduler.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-231/blob/main/chapter/k8s-kubernetes-scheduler.md&#34;&gt;https://github.com/cloudmesh-community/sp20-516-231/blob/main/chapter/k8s-kubernetes-scheduler.md&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Contributors:&lt;/strong&gt;  Jonathan Beckford, Brian Kegerreis, Ashok Singam&lt;/p&gt;
 
       </description>
@@ -579,7 +579,7 @@ which will used to generate OpenAPI spec&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;cms openapi sklearnreadfile sklearn.linear_model.LinearRegression Linregpytest
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The sample generated file can be viewed at
-&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/generator&#34;&gt;tests/generator&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/main/tests/generator&#34;&gt;tests/generator&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Utilize the generate command to generate OpenAPI spec with upload functionality enabled&lt;/p&gt;
@@ -601,7 +601,7 @@ which will used to generate OpenAPI spec&lt;/p&gt;
 &lt;p&gt;Run a curl command against the newly running server to upload the
 testfiles.&lt;/p&gt;
 &lt;p&gt;Place your test files in
-&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/master/tests/Scikitlearn-data&#34;&gt;Scikitlearn-data&lt;/a&gt;
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/tree/main/tests/Scikitlearn-data&#34;&gt;Scikitlearn-data&lt;/a&gt;
 We are testing with X_SAT.csv(SAT Scores of students),y_GPA(GPA of
 students)&lt;/p&gt;
 &lt;p&gt;.. code:: bash&lt;/p&gt;
@@ -661,15 +661,15 @@ Predict method.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The README.md page is outomatically generated, do not edit it.
 To modify  change the content in
-&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/README-source.md&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/README-source.md&lt;/a&gt;
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/README-source.md&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/README-source.md&lt;/a&gt;
 Curley brackets must use two in README-source.md&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://pypi.org/project/cloudmesh-openapi/&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/v/cloudmesh-openapi.svg&#34; alt=&#34;image&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/pyversions/cloudmesh-openapi.svg&#34; alt=&#34;Python&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/LICENSE&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/License-Apache%202.0-blue.svg&#34; alt=&#34;License&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/LICENSE&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/License-Apache%202.0-blue.svg&#34; alt=&#34;License&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/format/cloudmesh-openapi.svg&#34; alt=&#34;Format&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/status/cloudmesh-openapi.svg&#34; alt=&#34;Status&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi.svg?branch=master&#34; alt=&#34;Travis&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi.svg?branch=main&#34; alt=&#34;Travis&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;We recommend Python 3.8.2 Python or newer.&lt;/li&gt;
@@ -1473,36 +1473,36 @@ are provided below the table&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;Generator-calculator&lt;/td&gt;
 &lt;td&gt;Test to check if calculator api is generated correctly. This is to test multiple function in one python file&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/generator-calculator/test_01_generator.py&#34;&gt;test_01_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/generator-calculator/test_01_generator.py&#34;&gt;test_01_generator.py&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Generator-testclass&lt;/td&gt;
 &lt;td&gt;Test to check if calculator api is generated correctly. This is to test multiple function in one python class file&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/generator-testclass/test_02_generator.py&#34;&gt;test_02_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/generator-testclass/test_02_generator.py&#34;&gt;test_02_generator.py&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Server-cpu&lt;/td&gt;
 &lt;td&gt;Test to check if cpu api is generated correctly. This is to test single function in one python file and function name is different than file name&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/server-cpu/test_03_generator.py&#34;&gt;test_03_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/server-cpu/test_03_generator.py&#34;&gt;test_03_generator.py&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Server-cms&lt;/td&gt;
 &lt;td&gt;Test to check if cms api is generated correctly. This is to test multiple function in one python file.&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/server-cms/test_04_generator.py&#34;&gt;test_04_generator.py&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/server-cms/test_04_generator.py&#34;&gt;test_04_generator.py&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Registry&lt;/td&gt;
 &lt;td&gt;test_001_registry.py - Runs tests for registry. Description is in tests/README.md&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/README.md&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/README.md&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Image-Analysis&lt;/td&gt;
 &lt;td&gt;image_test.py - Runs benchmark for text detection for Google Vision API and AWS Rekognition. Description in image-analysis/README.md&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/image-analysis/README.md&#34;&gt;image&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/image-analysis/README.md&#34;&gt;image&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;For more information about test cases ,please check &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/master/tests/README.md&#34;&gt;tests info&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more information about test cases ,please check &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/tests/README.md&#34;&gt;tests info&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;tests/test_001_registry.py&#34;&gt;test_001_registry&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;tests/test_003_server_manage_cpu.py&#34;&gt;test_003_server_manage_cpu&lt;/a&gt;&lt;/li&gt;
@@ -2121,11 +2121,11 @@ hardware, software, and services&amp;rdquo; [@www-mlperf]&lt;/p&gt;
         
         
         &lt;h1 id=&#34;time-series-forecast-using-multi-cloud-ai-services&#34;&gt;Time Series Forecast using Multi Cloud AI Services&lt;/h1&gt;
-&lt;p&gt;Prafull Porwal, &lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/blob/master/Cloudmesh-OpenAPI/Readme.md&#34;&gt;sp20-516-255&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Prafull Porwal, &lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/blob/main/Cloudmesh-OpenAPI/Readme.md&#34;&gt;sp20-516-255&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/graphs/contributors&#34;&gt;Contributors&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/fa19-516-147/pulse&#34;&gt;Insights&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/tree/master/Cloudmesh-OpenAPI/AWSForecast&#34;&gt;Project Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/tree/main/Cloudmesh-OpenAPI/AWSForecast&#34;&gt;Project Code&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
 &lt;p&gt;Develop Open API for time series forecasting on multiple clouds&lt;/p&gt;
@@ -2243,7 +2243,7 @@ output:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl http://localhost:8080/cloudmesh/forecast/lookupForecast?countryName&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;Austrailia
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output :
-shows &lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/blob/master/Cloudmesh-OpenAPI/AWSForecast/sampleOutput&#34;&gt;ouput&lt;/a&gt;&lt;/p&gt;
+shows &lt;a href=&#34;https://github.com/cloudmesh-community/sp20-516-255/blob/main/Cloudmesh-OpenAPI/AWSForecast/sampleOutput&#34;&gt;ouput&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Delete Data Stack for the current project
 This API should be executed at the end of the session to delete all the resources created for the analysis&lt;/li&gt;
@@ -2387,7 +2387,11 @@ This API should be executed at the end of the session to delete all the resource
     &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#5-inference&#34;&gt;5. Inference&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#6-conclusion&#34;&gt;6. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#71-work-breakdown&#34;&gt;7.1 Work Breakdown&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#8-references&#34;&gt;8. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
@@ -2424,6 +2428,27 @@ This API should be executed at the end of the session to delete all the resource
 Predictive Model - breakdown udetermined at this time&lt;/p&gt;
 &lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
 &lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
+&lt;h3 id=&#34;71-work-breakdown&#34;&gt;7.1 Work Breakdown&lt;/h3&gt;
+&lt;p&gt;For the effort developed, the team split tasks between each other to cover more ground. The requirements for the investigation required a more extensive effort for the teams in the ENGR-E 534 class. To accomplish the requirements, the task was expanded by addressing multiple datasets within the semester and building in multiple models to display the results. The team members were responsible for committing in Github multiple times throughout the semester. The tasks were divided as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Chelsea Gorius
+&lt;ul&gt;
+&lt;li&gt;Exploratory Data Analysis&lt;/li&gt;
+&lt;li&gt;Feature Engineering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gavin Hemmerlein
+&lt;ul&gt;
+&lt;li&gt;Organization of items&lt;/li&gt;
+&lt;li&gt;Model Development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Both
+&lt;ul&gt;
+&lt;li&gt;All outstanding items&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -3936,140 +3961,88 @@ TBD&lt;/p&gt;
         
         
         &lt;h1 id=&#34;big-data-analytics-in-the-national-basketball-association&#34;&gt;Big Data Analytics in the National Basketball Association&lt;/h1&gt;
-&lt;p&gt;Igue Khaleel[fa20-523-317] (&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/),&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/),&lt;/a&gt; &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow our template, edit button is wrong&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; your report is included twice in this document&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Igue Khaleel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/&#34;&gt;fa20-523-317&lt;/a&gt;,&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2--dataset&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-inference&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-conclusion&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;In the process of adding in report
+Contents
 
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction-1&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2--dataset-1&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action-1&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-inference-1&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-conclusion-1&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment-1&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
+&amp;lt;div class=&amp;quot;toc&amp;quot;&amp;gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; basketball, sports, team, mvp, statistics&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+## 1. Introduction
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; toxicology, pollution, autonomous systems, surface vehicle, sensors, arduino, water quality, data analysis, environment, big data, ecosystem&lt;/p&gt;
-&lt;p&gt;Final Project Plan&lt;/p&gt;
-&lt;p&gt;•	Title: Big Data Analytics in the National Basketball Association&lt;/p&gt;
-&lt;p&gt;•	Team: Working Alone on Project&lt;/p&gt;
-&lt;p&gt;•	Topic: NBA Basketball and Metrics for MVP (Most Valuable Player)&lt;/p&gt;
-&lt;p&gt;•	Dataset: &lt;a href=&#34;https://www.kaggle.com/drgilermo/nba-players-stats#&#34;&gt;https://www.kaggle.com/drgilermo/nba-players-stats#&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Team&lt;/p&gt;
-&lt;p&gt;In terms of choosing teams, I think working alone is the best option for me at this moment. Going through the NBA statistics is something that I think one person should be able to reasonably accomplish.&lt;/p&gt;
-&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;Topic&lt;/p&gt;
-&lt;p&gt;For now, the topic that I’m going with revolves around the National Basketball Association and the deciding factors in understanding how certain awards such as the MVP (Most Valuable Player) and DPOY (Defensive Player of the Year) are awarded. There has been a lot of controversy surrounding this topic as many individuals feel as if storylines and politics are the determinant of who wins these respective awards.&lt;/p&gt;
-&lt;p&gt;In addition to the above another interesting topic that can be investigated is the leagues implementation of analytics to determine the way basketball has been played. Countless examples could be shown through small-ball lineups and the transition to heavy amounts of three-point shot attempts that occurred in the league the past five years. The results have been shown as seemingly every year the league breaks their scoring records and a team always breaks offensive records on a yearly basis.&lt;/p&gt;
-&lt;p&gt;Many individuals attribute Stephen Curry, a 6-3 NBA point guard, to the change in analytics. The year Steph Curry broke through as an All-Star. This was the year that his team the Golden State Warriors broke the former Chicago Bulls record of 72-9. This in big part was due to Steph Curry breaking the 3pt record as well as Golden State adopting the small ball philosophy. This particular year gave birth to the era of analytics because of how dominate those two approaches were.&lt;/p&gt;
-&lt;h2 id=&#34;2--dataset&#34;&gt;2.  Dataset&lt;/h2&gt;
-&lt;p&gt;The National Basketball Association was first created in the year of 1946 with the name of BAA (Basketball Association of America). However, in 1949 the name was changed to the NBA with a total of 17 teams.[^3] As time progressed the league started picking up steam and more and more teams began to join and it wasn’t until the 90’s that we see the total amount of NBA teams be produced.&lt;/p&gt;
-&lt;p&gt;To better understand the basis of analysis, the game of basketball needs to be understood first. The National Basketball Association builds its organizations on the backs of mostly 20-year-old individuals who are standouts at their respective regions of the United States. Making the NBA is nearly an impossible feat as only a minor 60 players get drafted on a yearly basis. In terms of the draft, most individuals are screened and selected from college. Previously, the NBA allowed individuals to come straight from high school, however, the rule changed so that there was a one year of college eligibility status that had to be met.&lt;/p&gt;
-&lt;p&gt;When it comes to on-court play, there are a total of five positions: point guard, shooting guard, small forward, power forward and center. Each takes up a specific spot on the floor with the guards at around the three-point line and the forwards and center inside or surrounding the paint.&lt;/p&gt;
-&lt;p&gt;At this moment the current dataset that I’m utilizing consists of all NBA players and certain statistics of theirs dating back to 1950’s when stats were starting to get recorded. However, I feel as if another data set would be necessary to quantify the impacts of what the three-pointer and positional basketball has done for basketball.&lt;/p&gt;
-&lt;p&gt;My plan is to take the data and demonstrate through bars and graphs the impacts of these changes from the modern NBA to the classic NBA and the differences that were shown through that. Using Notebook might be needed to get all the data visualized for the report.&lt;/p&gt;
-&lt;h2 id=&#34;3-plan-of-action&#34;&gt;3. Plan of Action&lt;/h2&gt;
-&lt;p&gt;•	Describing the NBA game&lt;/p&gt;
-&lt;p&gt;There are many individuals who may be aware of basketball but not knowledgeable enough to understand my report. So, I’ll give a little background on the NBA game and how things have transpired in generations.&lt;/p&gt;
-&lt;p&gt;•	Describing Analytics Impacts&lt;/p&gt;
-&lt;p&gt;As stated earlier above, I talked about certain points in how certain changes due to analytics have enhanced the game of basketball and how this was spurred through the Golden State Warriors.&lt;/p&gt;
-&lt;p&gt;•	Demonstrating the Data&lt;/p&gt;
-&lt;p&gt;To show the impacts of the data, I was planning to compile the data from the different datasets and demonstrate them in graphs and bars for readers to better understand the message I’m trying to display.&lt;/p&gt;
-&lt;h2 id=&#34;4-inference&#34;&gt;4. Inference&lt;/h2&gt;
-&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
-&lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
-&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
-&lt;h2 id=&#34;6-acknowledgment&#34;&gt;6. Acknowledgment&lt;/h2&gt;
-&lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
-&lt;p&gt;##7. References&lt;/p&gt;
-&lt;p&gt;[^1] : Piyush, NBA Top Players + Deep Learning, Kaggle. &lt;a href=&#34;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&#34;&gt;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&lt;/a&gt;
-[^2] Justinas Cirtautas, NBA Players, Kaggle. &lt;a href=&#34;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&#34;&gt;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&lt;/a&gt;
-[^3] : Online, N., 2020. NBA History. [online] Nbahoopsonline.com. Available at: &lt;a href=&#34;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&#34;&gt;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&lt;/a&gt;. [ Accessed 20 October 2020].&lt;/p&gt;
-&lt;h1 id=&#34;big-data-analytics-in-the-national-basketball-association-1&#34;&gt;Big Data Analytics in the National Basketball Association&lt;/h1&gt;
-&lt;p&gt;Igue Khaleel[fa20-523-317] (&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/),&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/),&lt;/a&gt; &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&lt;/a&gt;)&lt;/p&gt;
+Topic
+
+For now, the topic that I’m going with revolves around the National Basketball Association and the deciding factors in understanding how certain awards such as the MVP (Most Valuable Player) and DPOY (Defensive Player of the Year) are awarded. There has been a lot of controversy surrounding this topic as many individuals feel as if storylines and politics are the determinant of who wins these respective awards. 
+
+In addition to the above another interesting topic that can be investigated is the leagues implementation of analytics to determine the way basketball has been played. Countless examples could be shown through small-ball lineups and the transition to heavy amounts of three-point shot attempts that occurred in the league the past five years. The results have been shown as seemingly every year the league breaks their scoring records and a team always breaks offensive records on a yearly basis.
+
+Many individuals attribute Stephen Curry, a 6-3 NBA point guard, to the change in analytics. The year Steph Curry broke through as an All-Star. This was the year that his team the Golden State Warriors broke the former Chicago Bulls record of 72-9. This in big part was due to Steph Curry breaking the 3pt record as well as Golden State adopting the small ball philosophy. This particular year gave birth to the era of analytics because of how dominate those two approaches were.
+
+## 2.  Dataset
+
+The National Basketball Association was first created in the year of 1946 with the name of BAA (Basketball Association of America). However, in 1949 the name was changed to the NBA with a total of 17 teams.[^3] As time progressed the league started picking up steam and more and more teams began to join and it wasn’t until the 90’s that we see the total amount of NBA teams be produced.
+
+To better understand the basis of analysis, the game of basketball needs to be understood first. The National Basketball Association builds its organizations on the backs of mostly 20-year-old individuals who are standouts at their respective regions of the United States. Making the NBA is nearly an impossible feat as only a minor 60 players get drafted on a yearly basis. In terms of the draft, most individuals are screened and selected from college. Previously, the NBA allowed individuals to come straight from high school, however, the rule changed so that there was a one year of college eligibility status that had to be met.
+
+When it comes to on-court play, there are a total of five positions: point guard, shooting guard, small forward, power forward and center. Each takes up a specific spot on the floor with the guards at around the three-point line and the forwards and center inside or surrounding the paint.
+
+At this moment the current dataset that I’m utilizing consists of all NBA players and certain statistics of theirs dating back to 1950’s when stats were starting to get recorded. However, I feel as if another data set would be necessary to quantify the impacts of what the three-pointer and positional basketball has done for basketball. 
+
+My plan is to take the data and demonstrate through bars and graphs the impacts of these changes from the modern NBA to the classic NBA and the differences that were shown through that. Using Notebook might be needed to get all the data visualized for the report.
 
 
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2--dataset&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-inference&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-conclusion&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+## 3. Plan of Action
 
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction-1&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2--dataset-1&#34;&gt;2.  Dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-plan-of-action-1&#34;&gt;3. Plan of Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-inference-1&#34;&gt;4. Inference&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-conclusion-1&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-acknowledgment-1&#34;&gt;6. Acknowledgment&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
+•	Describing the NBA game
 
-&lt;/div&gt;
+There are many individuals who may be aware of basketball but not knowledgeable enough to understand my report. So, I’ll give a little background on the NBA game and how things have transpired in generations.
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; toxicology, pollution, autonomous systems, surface vehicle, sensors, arduino, water quality, data analysis, environment, big data, ecosystem&lt;/p&gt;
-&lt;p&gt;Final Project Plan&lt;/p&gt;
-&lt;p&gt;•	Title: Big Data Analytics in the National Basketball Association&lt;/p&gt;
-&lt;p&gt;•	Team: Working Alone on Project&lt;/p&gt;
-&lt;p&gt;•	Topic: NBA Basketball and Metrics for MVP (Most Valuable Player)&lt;/p&gt;
-&lt;p&gt;•	Dataset: &lt;a href=&#34;https://www.kaggle.com/drgilermo/nba-players-stats#&#34;&gt;https://www.kaggle.com/drgilermo/nba-players-stats#&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Team&lt;/p&gt;
-&lt;p&gt;In terms of choosing teams, I think working alone is the best option for me at this moment. Going through the NBA statistics is something that I think one person should be able to reasonably accomplish.&lt;/p&gt;
-&lt;h2 id=&#34;1-introduction-1&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;Topic&lt;/p&gt;
-&lt;p&gt;For now, the topic that I’m going with revolves around the National Basketball Association and the deciding factors in understanding how certain awards such as the MVP (Most Valuable Player) and DPOY (Defensive Player of the Year) are awarded. There has been a lot of controversy surrounding this topic as many individuals feel as if storylines and politics are the determinant of who wins these respective awards.&lt;/p&gt;
-&lt;p&gt;In addition to the above another interesting topic that can be investigated is the leagues implementation of analytics to determine the way basketball has been played. Countless examples could be shown through small-ball lineups and the transition to heavy amounts of three-point shot attempts that occurred in the league the past five years. The results have been shown as seemingly every year the league breaks their scoring records and a team always breaks offensive records on a yearly basis.&lt;/p&gt;
-&lt;p&gt;Many individuals attribute Stephen Curry, a 6-3 NBA point guard, to the change in analytics. The year Steph Curry broke through as an All-Star. This was the year that his team the Golden State Warriors broke the former Chicago Bulls record of 72-9. This in big part was due to Steph Curry breaking the 3pt record as well as Golden State adopting the small ball philosophy. This particular year gave birth to the era of analytics because of how dominate those two approaches were.&lt;/p&gt;
-&lt;h2 id=&#34;2--dataset-1&#34;&gt;2.  Dataset&lt;/h2&gt;
-&lt;p&gt;The National Basketball Association was first created in the year of 1946 with the name of BAA (Basketball Association of America). However, in 1949 the name was changed to the NBA with a total of 17 teams.[^3] As time progressed the league started picking up steam and more and more teams began to join and it wasn’t until the 90’s that we see the total amount of NBA teams be produced.&lt;/p&gt;
-&lt;p&gt;To better understand the basis of analysis, the game of basketball needs to be understood first. The National Basketball Association builds its organizations on the backs of mostly 20-year-old individuals who are standouts at their respective regions of the United States. Making the NBA is nearly an impossible feat as only a minor 60 players get drafted on a yearly basis. In terms of the draft, most individuals are screened and selected from college. Previously, the NBA allowed individuals to come straight from high school, however, the rule changed so that there was a one year of college eligibility status that had to be met.&lt;/p&gt;
-&lt;p&gt;When it comes to on-court play, there are a total of five positions: point guard, shooting guard, small forward, power forward and center. Each takes up a specific spot on the floor with the guards at around the three-point line and the forwards and center inside or surrounding the paint.&lt;/p&gt;
-&lt;p&gt;At this moment the current dataset that I’m utilizing consists of all NBA players and certain statistics of theirs dating back to 1950’s when stats were starting to get recorded. However, I feel as if another data set would be necessary to quantify the impacts of what the three-pointer and positional basketball has done for basketball.&lt;/p&gt;
-&lt;p&gt;My plan is to take the data and demonstrate through bars and graphs the impacts of these changes from the modern NBA to the classic NBA and the differences that were shown through that. Using Notebook might be needed to get all the data visualized for the report.&lt;/p&gt;
-&lt;h2 id=&#34;3-plan-of-action-1&#34;&gt;3. Plan of Action&lt;/h2&gt;
-&lt;p&gt;•	Describing the NBA game&lt;/p&gt;
-&lt;p&gt;There are many individuals who may be aware of basketball but not knowledgeable enough to understand my report. So, I’ll give a little background on the NBA game and how things have transpired in generations.&lt;/p&gt;
-&lt;p&gt;•	Describing Analytics Impacts&lt;/p&gt;
-&lt;p&gt;As stated earlier above, I talked about certain points in how certain changes due to analytics have enhanced the game of basketball and how this was spurred through the Golden State Warriors.&lt;/p&gt;
-&lt;p&gt;•	Demonstrating the Data&lt;/p&gt;
-&lt;p&gt;To show the impacts of the data, I was planning to compile the data from the different datasets and demonstrate them in graphs and bars for readers to better understand the message I’m trying to display.&lt;/p&gt;
-&lt;h2 id=&#34;4-inference-1&#34;&gt;4. Inference&lt;/h2&gt;
-&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
-&lt;h2 id=&#34;5-conclusion-1&#34;&gt;5. Conclusion&lt;/h2&gt;
-&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
-&lt;h2 id=&#34;6-acknowledgment-1&#34;&gt;6. Acknowledgment&lt;/h2&gt;
-&lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
-&lt;p&gt;##7. References&lt;/p&gt;
-&lt;p&gt;[^1] : Piyush, NBA Top Players + Deep Learning, Kaggle. &lt;a href=&#34;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&#34;&gt;https://www.kaggle.com/piyush1912/nba-top-players-deep-learning&lt;/a&gt;
-[^2] Justinas Cirtautas, NBA Players, Kaggle. &lt;a href=&#34;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&#34;&gt;https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv&lt;/a&gt;
-[^3] : Online, N., 2020. NBA History. [online] Nbahoopsonline.com. Available at: &lt;a href=&#34;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&#34;&gt;https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season&lt;/a&gt;. [ Accessed 20 October 2020].&lt;/p&gt;
+•	Describing Analytics Impacts
 
+As stated earlier above, I talked about certain points in how certain changes due to analytics have enhanced the game of basketball and how this was spurred through the Golden State Warriors.
+
+•	Demonstrating the Data
+
+To show the impacts of the data, I was planning to compile the data from the different datasets and demonstrate them in graphs and bars for readers to better understand the message I’m trying to display.
+
+## 4. Inference
+
+This section will be addressed upon project completion.
+
+## 5. Conclusion
+
+This section will be addressed upon project completion.
+
+## 6. Acknowledgment
+
+The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
+
+
+## 7. References
+
+[^1] : Piyush, NBA Top Players + Deep Learning, Kaggle. https://www.kaggle.com/piyush1912/nba-top-players-deep-learning
+[^2] Justinas Cirtautas, NBA Players, Kaggle. https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv
+[^3] : Online, N., 2020. NBA History. [online] Nbahoopsonline.com. Available at: https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season. [ Accessed 20 October 2020].
+
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     
