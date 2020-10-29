@@ -33,6 +33,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
 * {{% addreport title="Rank Forecasting in Car Racing" author="Jiayu Li" hid="fa20-523-349" %}}
 * {{% addreport title="Predictive Model For Pitches Thrown By Major League Baseball Pitchers" author="Bryce Wieczorek" hid="fa20-523-343" %}}
+* {{% addreport title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
 
 #### Environment
 
@@ -89,7 +90,6 @@ hid="fa20-523-341" %}}
 The following hids, unfortunately do not follow yet our template, so
 we can not review them further as vital information is not yet included.
 
-* {{% addreport title="TBD" author="Mansukh Kandhari" hid="fa20-523-331" %}}
 * fa20-523-304
 * fa20-523-317
 * fa20-523-347 - also  use "project" and not Project as dir
