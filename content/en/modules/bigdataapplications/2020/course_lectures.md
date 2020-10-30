@@ -176,3 +176,15 @@ This week's video class recorded the second part of [Google Slides](https://docs
 
 Continue work on project and complete study of videos already assigned. If interesting to you, please review videos on AI in Banking, Space and Energy, Transportation Systems, Mobility (Industry), and Commerce. Don't forget the participation grade from GitHub activity each week
 
+## Week 10
+
+We discussed use of GitHub for projects and finished summary of cloud computing.
+
+This week's video class recorded the last part of [Google Slides](https://docs.google.com/presentation/d/1mH5DW_qSH2KdagLSKAPD5QfKMV9AhuXQZz7TdHCFuAc/edit?usp=sharing).
+
+{{< youtube "5TyGkCkBl6E" >}}.
+
+### Videos for Week 10
+
+Continue work on project and complete study of videos already assigned. If interesting to you, please review videos on AI in Banking, Space and Energy, Transportation Systems, Mobility (Industry), and Commerce. Don't forget the participation grade from GitHub activity each week
+
