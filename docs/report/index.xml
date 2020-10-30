@@ -2984,19 +2984,20 @@ A project this large and versatile requires the use of many software tools. Thes
         
         &lt;h1 id=&#34;nfl-regular-season-skilled-position-player-performance-as-a-predictor-of-playoff-appearance&#34;&gt;NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use pageinfo compare template carefully&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; do not use sup&lt;/li&gt;
-&lt;li&gt;[I have attempted to match the markdwon of the template ] improve markdown skills&lt;/li&gt;
-&lt;li&gt;[again attempted to match the template ] use footnotes as refernces, learn how to do this, read our piaza posts&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; you reppeatedly copy our template wrong, please use our template precisely&lt;/li&gt;
+&lt;li&gt;gregor, below is the template I am referencing. If you have HELPFUL feedback on my report and exactly where my mistakes are then please let me know. If the template I am referencing below is wrong then direct me to the right template. The files for this course being piled on piazza is not helpful and makes for a clutered referencing process: &lt;a href=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&#34;&gt;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Travis Whitaker &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-308&#34;&gt;fa20-523-308&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;(To be written)&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;(Content to be entered from proposal and additional material written)&lt;/p&gt;
 &lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
 &lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
 &lt;p&gt;The dataset we will be using is in a github folder that holds nflscrapR-data that originates from NFL.com [^1]. The folder includes play-by-play data, including performance measures, for all regular season games from 2009 to 2019. This file will be paired with week-by-week regular season roster data for each team in the NFL. This will allow me to track skilled position player performance during the regular season and then compare this regular season file with the files that contain playoff teams for each year from 2009-2019. Supplemental data may be pulled from Pro-Football-Reference.com or other sources depending on what preliminary data analysis presents [^2].&lt;/p&gt;
@@ -3014,6 +3015,10 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
 &lt;p&gt;[^1] Ryurko. Ryurko/NflscrapR-Data. 2 Mar. 2020, github.com/ryurko/nflscrapR-data.&lt;/p&gt;
 &lt;p&gt;[^2] Sports Reference, LLC. “Pro Football Statistics and History.”  Retrieved October 09, 2020. &lt;a href=&#34;https://www.pro-football-reference.com/&#34;&gt;https://www.pro-football-reference.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
 
       </description>
     </item>
