@@ -2399,7 +2399,7 @@ This API should be executed at the end of the session to delete all the resource
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; basketball, NBA, injury, performance, salary, rehabilitation, artificial intelligence, convolutional neural network, CNN,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; basketball, NBA, injury, performance, salary, rehabilitation, artificial intelligence, convolutional neural network.&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;The topic to be investigated is basketball player performance as it relates to injury. The topic of injury and recovery is a multi-billion dollar industry.  The Sports Medicine field is expected to reach $7.2 billion dollars by 2025 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The scope of this effort is to explore National Basketball Association(NBA) teams, but the additional uses of a topic such as this could expand into other realms such as the National Football League, Major League Baseball, the Olympic Committees, and many other avenues.  For leagues with salaries, projecting an expected return on the investment can assist in contract negotiations and cater expectations.  Competing at such a high level of intensity puts these players at a greater risk to injury than the average athlete because of the intense and constant strain on their bodies.  The overall valuation of the NBA in recent years is over 2 billion dollars, meaning each team is spending millions of dollars in the pursuit of a championship every season.  Injuries to players can cost teams not only wins but also significant profits.  Ticket sales alone for a single NBA finals game have reported greater than 10 million dollars in profit for the home team, if a team&amp;rsquo;s star player gets injured just before the playoffs and the team does not succeed, that is a lot of money lost.  These injuries can have an effect no matter the time of year, regular season ticket sales have been known to fluctuate with injuries from the team&amp;rsquo;s top performers.  Besides ticket sales these injuries can also influence viewrship, TV or streaming, and potentially lead to a greater loss in profits.  With the health of the players and so much money at stake NBA team organizations as a whole do their best to take care of their players and keep them injury free.&lt;/p&gt;
 &lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
@@ -2416,10 +2416,12 @@ This API should be executed at the end of the session to delete all the resource
 &lt;h3 id=&#34;41-development-of-models&#34;&gt;4.1 Development of Models&lt;/h3&gt;
 &lt;p&gt;The initial model that was used was a Logistic Regression model. This model produced results of &lt;em&gt;X&lt;/em&gt;. These results&lt;/p&gt;
 &lt;p&gt;After running a Logistic Regression model, the decision was made to try multiple models to see what gives the best results. The team decided to use a Linear Regression model.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Any other models, LightGBM? Any Decision Trees?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Another algorithm chosen was a Light Gradient Boost Machine (LightGBM) model. LightGBM is known for it&amp;rsquo;s lightweight and resource sparse abilities. The model is built from decision tree algorithms and used for ranking, classification, and other machine learning tasks. By choosing LightGBM data scientists are able to analyze larger data a faster approach. LightGBM  can often over fit a model if the data is too small, but fortunately for the purpose of this assignment the data available for NBA injuries and stats is extremely large. Availability of data allowed for smooth operation of the LightGBM model.&lt;/p&gt;
 &lt;p&gt;The final model attempted was a Keras model. A few runs of different layers and epochs were chosen. The models sequentially ran through the test layers to refine the model. When this is done, each predecessor layer acts as an input to the next layer&amp;rsquo;s model. The results can produce accurate results while using unsupervised learning.&lt;/p&gt;
 &lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
-&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;p&gt;With the data available, some conclusions can be made. Not all injuries are of the same severity. By treating an ACL tear in the same manner as a bruise, the team doctors would take terrible approaches to rehab. The severity of the injury is a part of the approach to therapy.&lt;/p&gt;
+&lt;p&gt;Another aspect to come to a conclusion is that not every player recovers in the same timetable as another. Genetics, diet, and mental health can all harm or reinforce the efforts from the medical staff. These areas are hard to capture in the data and cannot be appropriately reviewed.&lt;/p&gt;
+&lt;p&gt;It is also difficult to indicate where a previous injury may have contributed to a current injury. The kinetic chain is a structure of the musculoskeletal system that moves the body using the muscles and bones. If one portion of the chain is compromised, the entire chain will need to be modified to continue movement. This modification can result in more injuries. The data cannot provide this information.&lt;/p&gt;
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
 &lt;p&gt;After reviewing the results, performance does indeed appear to degrade over time.&lt;/p&gt;
@@ -2532,7 +2534,27 @@ Predictive Model - breakdown udetermined at this time&lt;/p&gt;
       <description>
         
         
-        &lt;h2 id=&#34;project-report&#34;&gt;Project Report&lt;/h2&gt;
+        &lt;h1 id=&#34;using-big-data-to-eliminate-racial-bias-in-healthcare&#34;&gt;Using Big Data to Eliminate Racial Bias in Healthcare&lt;/h1&gt;
+&lt;p&gt;Robert Neubauer, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-304/&#34;&gt;fa20-523-304&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-304/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Missing&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; Missing&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;Missing&lt;/p&gt;
 
       </description>
     </item>
@@ -2983,24 +3005,30 @@ A project this large and versatile requires the use of many software tools. Thes
         
         
         &lt;h1 id=&#34;nfl-regular-season-skilled-position-player-performance-as-a-predictor-of-playoff-appearance&#34;&gt;NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;the template is now correct&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The files for this course being piled on piazza is not helpful and makes for a clutered referencing process: &lt;a href=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&#34;&gt;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Travis Whitaker &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-308&#34;&gt;fa20-523-308&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Travis Whitaker, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-308&#34;&gt;fa20-523-308&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-308/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-methodology&#34;&gt;4. Methodology&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-inference&#34;&gt;5. Inference&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-conclusion&#34;&gt;6. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#project-plan&#34;&gt;Project Plan&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#8-references&#34;&gt;8. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
 &lt;/div&gt;
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+
+&lt;/div&gt;
+
 &lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
@@ -3017,6 +3045,31 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
 &lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
+&lt;h2 id=&#34;project-plan&#34;&gt;Project Plan&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; will be deleted in final submission&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; can not be after Refernce section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nov. 02, 2020
+-Complete a draft of the introduction section and the inferences section&lt;/p&gt;
+&lt;p&gt;Nov. 09, 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;build a functioning read in for all csv files needed using curl or another python function. Complete descriptive statistic analysis on regular season variables. (Model should look at player performance and whether that player made the nfl postseason the year of their recorded performance metrics).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nov. 16, 2020
+-complete background and previous work section. Work on building prediction model for players making the postseason, train the machine to predict based on variables.&lt;/p&gt;
+&lt;p&gt;Nov. 23, 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finish model to see how accurate the machine or model is at predicting players making the post-season. Write a conclusion section to based on model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dec. 1, 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Polish paper, write abstract and table of contents sections.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dec. 8, 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make any changes requested by TA&amp;rsquo;s&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -3029,10 +3082,6 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
 
       </description>
     </item>
@@ -3838,6 +3887,163 @@ The data spread across two files will have to be merged according to date. For t
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-315/assignment6/assignment-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-315/assignment6/assignment-6/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sunny Xu&lt;/p&gt;
+&lt;p&gt;Geoffrey Fox&lt;/p&gt;
+&lt;p&gt;INFO-I423, Section 11530&lt;/p&gt;
+&lt;p&gt;October 20, 2020&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;                            Assignment 6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The topic I chose regarding artificial intelligence in Health and Medicine is artificial intelligence medical devices. In recent years, with the advancement of science and technology, there have been many successful cases of artificial intelligence in the medical and health field. More and more hospitals have also begun testing and using artificial intelligence medical devices. The popularity of artificial intelligence has also greatly facilitated and improved human life. Even though artificial intelligence brings great convenience to people&amp;rsquo;s lives, many people are still struggling with the question of whether such artificial intelligence brings people good or bad.&lt;/p&gt;
+&lt;p&gt;The benefits of artificial intelligence medical devices:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drug development
+&lt;ul&gt;
+&lt;li&gt;The development of drugs has always been a big problem for scientists. Many times the success rate is too low, causing people to spend a lot of money but get nothing. Artificial intelligence has played a great role in this regard. It can quickly discover the effects of drugs and accurately predict the safety and side effects of drugs. In this way, artificial intelligence has made great progress in drug research for many diseases that have not been breakthroughs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Diagnosis of disease
+&lt;ul&gt;
+&lt;li&gt;In diagnosing disease conditions, humans have been transmitting various disease conditions and data to artificial intelligence, which also makes a large amount of information in the artificial intelligence database. Usually, doctors make their own judgments by understanding the condition, but sometimes there are cases of wrong judgments. At this time, artificial intelligence will be more accurate and precise in the diagnosis of the disease than human beings. Artificial intelligence has been instilled with data on various conditions and changes in the human body when it is being developed so that they can analyze the conditions through machine learning and make their judgments more accurate than normal people.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Adjuvant therapy process
+&lt;ul&gt;
+&lt;li&gt;Artificial intelligence technology is also used to assist clinical doctors and nurses. In many cases, they can effectively help doctors to determine and formulate appropriate treatment plans and drug use. For the adjuvant therapy process, the best example is the application of IBM Watson in tumor research. Watson provided decision-making after learning many studies in the oncology treatment plan. Although it was not perfect yet, it was very useful for the medical team studying at the time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Arrange health management
+&lt;ul&gt;
+&lt;li&gt;Artificial intelligence can form health management that is most suitable for the user through the data from the user&amp;rsquo;s mobile phone. At the same time, through the current advanced technology, many smartphones already have a certain judgment on the heartbeat and the length of time they look at the phone and the user&amp;rsquo;s physical habits. In this way, artificial intelligence can give users a healthy diet plan through the judgment of data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internet medical consultation
+&lt;ul&gt;
+&lt;li&gt;In recent years, the place where artificial intelligence has been used most is the intelligent answering system to users on various websites. In many cases, it is not an easy task for people to contact their family doctor or a nearby hospital when they want. In this case, if there is something unexpected, people don&amp;rsquo;t know how to deal with it. At this time, artificial intelligence also reflects its convenience and usefulness. They can use some keywords in people&amp;rsquo;s questions to judge the knowledge points people want to know in order to answer people&amp;rsquo;s questions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Biomedical Research
+&lt;ul&gt;
+&lt;li&gt;For medical research, artificial intelligence has also contributed a lot of important knowledge points. The artificial intelligence system can tell scientists important points and establish many hypotheses by reading various research articles. At the same time, scientists can also use artificial intelligence to test the possibilities of various hypotheses. In this way, the research of scientists will become much more convenient.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The disadvantages of artificial intelligence medical devices:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Although artificial intelligence brings various conveniences to human beings, it still has some potential and needs to be improved. For example, some artificial intelligence ventilators, so far, artificial intelligence ventilators cannot fully sense people&amp;rsquo;s breathing. Therefore, there will be a situation that when the person has regained the ability to breathe, the ventilator does not accurately sense it, and thus continues to provide breathing to the patient. Such a situation may be fatal. There are also some artificial intelligence. When they absorb information and data, there will be some studies that have not been 100% confirmed, and they may be absorbed by artificial intelligence. Such misinformation may also lead to artificial intelligence&amp;rsquo;s misjudgment of the condition, leading to the misdiagnosis of the patient.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In general, artificial intelligence medical devices have both good and bad aspects. In the future, if artificial intelligence will be better improved and improved, its impact on medicine will become greater and greater. In this way, people will be better diagnosed and treated. When using artificial intelligence, it can also reduce people&amp;rsquo;s medical expenses, so that people can be treated.&lt;/p&gt;
+&lt;p&gt;Reference:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Johner, Christian. &amp;ldquo;Artificial Intelligence in Medical Devices.&amp;rdquo; Johner Institut, 1 Feb. 2019, &lt;a href=&#34;http://www.johner-institute.com/articles/software-iec-62304/and-more/artificial-intelligence/&#34;&gt;www.johner-institute.com/articles/software-iec-62304/and-more/artificial-intelligence/&lt;/a&gt;. Accessed 20 Oct. 2020.&lt;/li&gt;
+&lt;li&gt;Suarez, Anna. &amp;ldquo;How IBM Watson Is Revolutionizing Cancer Research.&amp;rdquo; Healthcare Technology, 14 Aug. 2018, &lt;a href=&#34;http://www.healthtechzone.com/topics/healthcare/articles/2018/08/14/439124-how-ibm-watson-revolutionizing-cancer-research.htm&#34;&gt;www.healthtechzone.com/topics/healthcare/articles/2018/08/14/439124-how-ibm-watson-revolutionizing-cancer-research.htm&lt;/a&gt;. Accessed 20 Oct. 2020.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-315/project/project-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-315/project/project-plan/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Team member: Peiran Zhao, Sunny Xu, Kris Zhang&lt;/p&gt;
+&lt;p&gt;Geoffrey Fox&lt;/p&gt;
+&lt;p&gt;INFO-I423, Section 11530&lt;/p&gt;
+&lt;p&gt;October 09, 2020&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;                            **Project Plan**
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Team&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;We are a three members team all having informatics majors.&lt;/li&gt;
+&lt;li&gt;Peiran Zhao:
+&lt;ul&gt;
+&lt;li&gt;I am currently a senior with an informatics major and a game design minor. I have a great interest in big data and deep learning, I think it is going to be a field with great potential and lots of opportunities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sunny Xu:
+&lt;ul&gt;
+&lt;li&gt;I am a senior majoring in Informatics and having a cognate which is Computer Art. I have three dogs, they are all Pomeranian. I usually like to walk the dog, listen to music, and play computer games.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Kris Zhang:
+&lt;ul&gt;
+&lt;li&gt;I am a senior student who is majoring in Informatics with a cognate of game design. My hobbies are playing video games and having fun with my friends when I have free time. I believe that technology can change the lifestyle of people and society, that’s why I think this class is important.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Topic&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Gesture recognition and machine learning.&lt;/li&gt;
+&lt;li&gt;Machine learning and especially deep learning has been really hot these years. With the help of technology, our lives are more and convenient and much easier than before. In this way, machine learning and deep learning has been a really hot topic and is undoubtedly our future. Gesture Recognition is also very trendy and has been working on for many years. However, it is not even close to its peak. And because gesture recognition is so useful in all fields, we are thinking about doing projects on this topic. We are going to cover some major features of gesture recognition as our research goes on. In this way, we are going to do lots of research on this area and use the dataset we get from online resources to demonstrate the effectiveness and efficiency of gesture recognition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Dataset&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;We are planning to search and collect some datasets on the website.&lt;/li&gt;
+&lt;li&gt;Our current dataset is directly coming from IBM Research and it is a really trustworthy dataset website. We are planning on using this dataset for our gesture recognition project. However, it is possible that we might change our mind as our project goes through. In that case, if the dataset we plan on using right is not working the best with our project, we will find some other related dataset later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;What needs to be done to get a great grade&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;We need to unite and cooperate friendly.&lt;/li&gt;
+&lt;li&gt;We set up a chatting room for us to chat with each other, therefore if there is any problem that one of us wants to discuss with, we get the chat room to communicate with the team.&lt;/li&gt;
+&lt;li&gt;We set up a google drive folder that is shared with the whole team. In this way, we can do the work together and check each other’s works.&lt;/li&gt;
+&lt;li&gt;If a team member has any questions or comments on the team or project, he or she should say that out honestly.&lt;/li&gt;
+&lt;li&gt;All team members should do some research and share it with everyone.&lt;/li&gt;
+&lt;li&gt;We need to set up a specific meeting time every week in order for all the people in our group to not fall behind.&lt;/li&gt;
+&lt;li&gt;We need to check the rubric as we move on and make sure that we meet all the requirements for the project.&lt;/li&gt;
+&lt;li&gt;Go to office hours for the class and check with the AI and professor about our project details to ensure that everything is running smoothly.&lt;/li&gt;
+&lt;li&gt;We can check other team members’ works and correct them if any of us find out the problem with it. In this way, we can also know what we get wrong and how we can make it better.&lt;/li&gt;
+&lt;li&gt;We will need to practice the ability to use Github and open resources programs since we don’t have much past experience of it.&lt;/li&gt;
+&lt;li&gt;We will follow directions on the rubric about writing project reports with the IEEE format, this is something we haven’t tried before, but we will try our best to make sure we are doing it correctly.&lt;/li&gt;
+&lt;li&gt;Processing data is also a sort of new field for all of us, but we are going to do lots of research, and watching some tutorials online to get the result we want.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-315/project/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-315/project/project/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;project-on-gesture-recognition-and-machine-learning&#34;&gt;Project on Gesture recognition and machine learning&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; progress uncluear&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; learn markdown&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; learn what a ulr is and how to do one in markdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Peiran Zhao, Sunny Xu, Kris Zhang&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;Since our technology is more and more advanced as time goes by, traditional human-computer interaction has become increasingly difficult to meet people&amp;rsquo;s demands. In this digital era, people need faster and more efficient methods to obtain information and data. Traditional and single input and output devices are not fast and convenient enough, it also requires users to learn their own methods of use, which is extremely inefficient and completely a waste of time. Therefore, artificial intelligence comes out, and its rise has followed the changeover times, and it satisfied people&amp;rsquo;s needs. At the same time, gesture is one of the most important way for human to deliver information. It is simple, efficient, convenient, and universally acceptable. Therefore, gesture recognition has become an emerging field in intelligent human-computer interaction field, with great potential and future. Gesture recognition is mainly divided into two categories, one is based on external device recognition, the specific application is data gloves, wearing it on user&amp;rsquo;s hand, to obtain and analysis information through sensors. This method has obvious shortcomings, though it is accurate and has excellent response speed, but it is costly and is not good for large-scale promotion. The other one is the use of computer vision. People do not need to wear gloves. As its name implies, this method collects and analyzes information through a computer. It is convenient, comfortable, and not so limited based on external device identification. In contrast, it has greater potential and is more in line with the trend of the times. Of course, this method needs more effective and accurate algorithms to support, because the gestures made by different people at different times, in different environments and at different angles also represent different meanings. So, if we want more accurate information feedback. Then the advancement of algorithms and technology is inevitable. The development of gesture recognition is also the development of artificial intelligence, a process of the development of various algorithms from data gloves to the development of computer vision-based optical technology plays a role in promoting it.&lt;/p&gt;
+&lt;h2 id=&#34;2-references&#34;&gt;2. References&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-316/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3880,6 +4086,10 @@ One might argue that these kinds of predictions will only be helping organizatio
 &lt;p&gt;All of the data will be location-based and if required we will download realtime campaigning and debate analysis data, giving us a live and updated prediction every time increment. To strengthen the prediction, even more, we may reuse some code from the 2016 election’s analysis, however, our main focus will be using the latest data we readily acquire during the time leading up to the 2020 election.
 In conclusion, to make our predictions as realistic and as strong as we can get, we will be going to choose multiple data sets to integrate between the previous election and twitter data to predict the number of votes each candidate will acquire. Therefore, we will be predicting the winner of the 2020 presidential elections.&lt;/p&gt;
 &lt;h2 id=&#34;3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/h2&gt;
+&lt;p&gt;Our project has two main sections of data sets in it. The first and primary one containing candidate information and previous presidential election data and the second containing twitter data. We believed the second needed more time because the first dataset contained straightforward facts while the twitter dataset is more susceptible to different perspectives and viewpoints.
+In this project we are analyzing twitter data of key presidential candidates and other key supporters.We gathered the data from kaggle datasets. Data is mainly divided into 3 sub categories. Tweets made by key personnel.Twitter profiles of the two candidates(all info including followers, following, # of tweets,etc.).The final category involves graphs for visualization purposes.A problem with twitter data is the fact that it is huge. We are using google drive and with it comes the problem of storage. To combat this we are only using 4 twitter data sets. The datasets of Donald J. Trump, Joe Biden, Kamala Harris, and Mike Pence. We also downloaded these data sets to use them locally.There are mainly 3 types of formats used in everyday twitter use: images, text, and video. Only text will be used in this project because the others are not useful for the purpose of the
+experiment. Our project mostly uses twitter data as support to the primary dataset.It is there to strengthen the already predicted result. The reason why we cannot make the twitter data set our primary data set is because the data(tweets) are mostly opinion based with only some exceptions. So we cannot predict with the twitter data,however, it
+can be used to show public support which will be vital in supporting the prediction derived from the primary data set.So, we found many twitter data sets on keggle and used certain parts from each to make our final four. The difference between the background sets and our final four datasets is the fact that their primary dataset was the twitter data while we used twitter data as our secondary dataset. We realized that twitter data is best used as secondary data that supports the primary dataset, which is more fact based.We can use three of the four OSoMe tools available: trends, networking, and maps. Trends and networking can be combined to find a group that involves every user that is taking part in the elections in some way. Mapping can show these users and their location. Giving us the area based result that we seek. However this method is already a part of our project .Due to the fact that all this data is in keggle in a wider array. Which gave us the option to condense into four large data sets.&lt;/p&gt;
 &lt;p&gt;We will collect election data and twitter information and integrate both to predict the results. A lot of twitter or dataset data will be trimmed and parsed to build the model. We will calculate
 Our data-gathering and preparation methodology is composed of the following steps:&lt;/p&gt;
 &lt;ul&gt;
@@ -3909,242 +4119,6 @@ TBD&lt;/p&gt;
 &lt;h2 id=&#34;6-refernces&#34;&gt;6. Refernces&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a&#34;&gt;https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a&lt;/a&gt;
 &lt;a href=&#34;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&#34;&gt;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-317/assignments/assignment-6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-317/assignments/assignment-6/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;robotic-nurses&#34;&gt;Robotic Nurses&lt;/h1&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Throughout history, innovation and technology has drastically changed the way humans have lived their lives and how long humans live as well. This can be shown in innovations like the plow and what it did for agriculture, electricity and what it did for way of life, or even something like automobiles which defined how humans travel and interact. These examples show how a creation not only betters the lives of the individual but helps evolves our species in its totality.&lt;/p&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Introduction&lt;/li&gt;
-&lt;li&gt;Robotic Nurse&lt;/li&gt;
-&lt;li&gt;Nursing Homes&lt;/li&gt;
-&lt;li&gt;Ethics&lt;/li&gt;
-&lt;li&gt;References&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;In accordance to advancing changes in technology and medicine, we’ve seen life expectancy improve as a parallel. This is directly due to improvements in technologies such as MRI, ECG, X-Rays and a wide range of detection tools that can either prevent or slow diseases, broken bones or cancers which are commonly known to cause chronic issues or even kill people on a frequent basis.&lt;/p&gt;
-&lt;p&gt;Now as we continue to improve on technologies more and more issues are getting solved ever faster and more efficient. Robotic Nurses are a development to improve the speed at which tasks such as these are accomplished. Even now, getting tests or care from healthcare providers take a lot of time and is a long process. So, things like robotic nurses can be a gamechanger in healthcare treatments.&lt;/p&gt;
-&lt;h2 id=&#34;2-robotic-nurse&#34;&gt;2. Robotic Nurse&lt;/h2&gt;
-&lt;p&gt;There was a clinical trial that was performed to measure how a robot was able to perform drawing blood samples from humans. This would be equivalent to someone getting blood drawn to check their cholesterol. The difficult part of this would be finding the vein on an individual and accurately placing the needle to draw the blood.  The robots in use would theoretically be controlled utilizing ultrasound imaging in order to understand where to go and place the needle.&lt;/p&gt;
-&lt;p&gt;According to Rutgers University (where the first clinical trial was done), “the ultrasound image-guided robot had an overall success rate of 87% for the 31 participants who had their blood drawn, while the success rate was 97% among the 25 participants with easy-to-locate veins, according to Forbes.” Through this data, the success overall is extremely high and very encouraging. If there is concern for the 13% that didn’t work, most human nurses aren’t able to draw blood from most individuals because of the lack of the vein showing up. So, in that sense the difference in performance from human to robot is not huge and doesn’t create a discrepancy in that sense. [2]&lt;/p&gt;
-&lt;h2 id=&#34;3-nursing-homes&#34;&gt;3. Nursing Homes&lt;/h2&gt;
-&lt;p&gt;In addition to using robotic nurses to perform tasks such as blood work and administration, there could also be a market for robotic nurses caring for the elderly. In places in regions such as Japan where the life expectancy is high and birth rate is low, this could be especially useful. According to Stanford, over 30% of the Japanese population is over the age of 65 years old and there is an average of 1.2 births per woman. [1] Consequently, the number of caretakers for this older generation is limited and is in need of a boost. That’s where our previous need for robotic nurses would come in. When it comes to situations where there is a need for a home caretaker, if the robotic nurse experiment were to work, these robots could be assigned to certain homes or can aid in health treatments where there aren’t enough nurses to undertake a particular task. This not only applies for Japan but can be said here as well. There are many individuals who are reluctant to go to a nursing home or even have to wait long hours for healthcare treatment. So, adding these nurses would enhance efficiency of time and work for patients involved.&lt;/p&gt;
-&lt;h2 id=&#34;4-ethics&#34;&gt;4. Ethics&lt;/h2&gt;
-&lt;p&gt;With anything involving robots, there will always almost be a question of ethicality in terms of actions and decision making by that particular AI powered system. In order to install a robot to a particular healthcare or homecare function, that robot would have to make daily decisions on things to do in terms of situations or actions performed by the patient that would warrant a response. As pointed out by Stanford an example is if there was a situation where the robot engages in conversation with a patient by asking them to take their medication. In the case that the patient refuses the robot would need to first show the patient respect but also deduce why the patient refused the medication [1]. This grey area is ultimately the difference between the human and robotic nurse. A human nurse would find ways to understand the reason behind the patient’s refusal and they could empathize with that patient as well. As Stanford points out, there is no morally just or empathetical gesture to a robot’s thinking or responses so for now that is the issue that lies with them [1]. Another thing is privacy issues that could occur especially when in situations that involve homecare tasks. Having the robot understand when or when not to invade privacy during certain times is an issue that would have to be resolved as well.&lt;/p&gt;
-&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
-&lt;p&gt;[1]: Cs.stanford.edu. 2020. Robotic Nurses | Computers And Robots: Decision-Makers In An Automated World. [online] Available at: &lt;a href=&#34;https://cs.stanford.edu/people/eroberts/cs201/projects/2010-11/ComputersMakingDecisions/robotic-nurses/index.html#:~:text=Today%2C%20robotic%20nurses%20are%20robots,distances%20to%20communicate%20with%20patients.&#34;&gt;https://cs.stanford.edu/people/eroberts/cs201/projects/2010-11/ComputersMakingDecisions/robotic-nurses/index.html#:~:text=Today%2C%20robotic%20nurses%20are%20robots,distances%20to%20communicate%20with%20patients.&lt;/a&gt; [Accessed 20 October 2020].&lt;/p&gt;
-&lt;p&gt;[2]: Class Slides&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-317/report/report/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-317/report/report/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;big-data-analytics-in-the-national-basketball-association&#34;&gt;Big Data Analytics in the National Basketball Association&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please follow our template, edit button is wrong&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; your report is included twice in this document&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Igue Khaleel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/&#34;&gt;fa20-523-317&lt;/a&gt;,&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-317/blob/master/report/report.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;In the process of adding in report
-Contents
-
-&amp;lt;div class=&amp;quot;toc&amp;quot;&amp;gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
-&amp;lt;/div&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; basketball, sports, team, mvp, statistics&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-## 1. Introduction
-
-Topic
-
-For now, the topic that I’m going with revolves around the National Basketball Association and the deciding factors in understanding how certain awards such as the MVP (Most Valuable Player) and DPOY (Defensive Player of the Year) are awarded. There has been a lot of controversy surrounding this topic as many individuals feel as if storylines and politics are the determinant of who wins these respective awards. 
-
-In addition to the above another interesting topic that can be investigated is the leagues implementation of analytics to determine the way basketball has been played. Countless examples could be shown through small-ball lineups and the transition to heavy amounts of three-point shot attempts that occurred in the league the past five years. The results have been shown as seemingly every year the league breaks their scoring records and a team always breaks offensive records on a yearly basis.
-
-Many individuals attribute Stephen Curry, a 6-3 NBA point guard, to the change in analytics. The year Steph Curry broke through as an All-Star. This was the year that his team the Golden State Warriors broke the former Chicago Bulls record of 72-9. This in big part was due to Steph Curry breaking the 3pt record as well as Golden State adopting the small ball philosophy. This particular year gave birth to the era of analytics because of how dominate those two approaches were.
-
-## 2.  Dataset
-
-The National Basketball Association was first created in the year of 1946 with the name of BAA (Basketball Association of America). However, in 1949 the name was changed to the NBA with a total of 17 teams.[^3] As time progressed the league started picking up steam and more and more teams began to join and it wasn’t until the 90’s that we see the total amount of NBA teams be produced.
-
-To better understand the basis of analysis, the game of basketball needs to be understood first. The National Basketball Association builds its organizations on the backs of mostly 20-year-old individuals who are standouts at their respective regions of the United States. Making the NBA is nearly an impossible feat as only a minor 60 players get drafted on a yearly basis. In terms of the draft, most individuals are screened and selected from college. Previously, the NBA allowed individuals to come straight from high school, however, the rule changed so that there was a one year of college eligibility status that had to be met.
-
-When it comes to on-court play, there are a total of five positions: point guard, shooting guard, small forward, power forward and center. Each takes up a specific spot on the floor with the guards at around the three-point line and the forwards and center inside or surrounding the paint.
-
-At this moment the current dataset that I’m utilizing consists of all NBA players and certain statistics of theirs dating back to 1950’s when stats were starting to get recorded. However, I feel as if another data set would be necessary to quantify the impacts of what the three-pointer and positional basketball has done for basketball. 
-
-My plan is to take the data and demonstrate through bars and graphs the impacts of these changes from the modern NBA to the classic NBA and the differences that were shown through that. Using Notebook might be needed to get all the data visualized for the report.
-
-
-## 3. Plan of Action
-
-•	Describing the NBA game
-
-There are many individuals who may be aware of basketball but not knowledgeable enough to understand my report. So, I’ll give a little background on the NBA game and how things have transpired in generations.
-
-•	Describing Analytics Impacts
-
-As stated earlier above, I talked about certain points in how certain changes due to analytics have enhanced the game of basketball and how this was spurred through the Golden State Warriors.
-
-•	Demonstrating the Data
-
-To show the impacts of the data, I was planning to compile the data from the different datasets and demonstrate them in graphs and bars for readers to better understand the message I’m trying to display.
-
-## 4. Inference
-
-This section will be addressed upon project completion.
-
-## 5. Conclusion
-
-This section will be addressed upon project completion.
-
-## 6. Acknowledgment
-
-The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
-
-
-## 7. References
-
-[^1] : Piyush, NBA Top Players + Deep Learning, Kaggle. https://www.kaggle.com/piyush1912/nba-top-players-deep-learning
-[^2] Justinas Cirtautas, NBA Players, Kaggle. https://www.kaggle.com/justinas/nba-players-data?select=all_seasons.csv
-[^3] : Online, N., 2020. NBA History. [online] Nbahoopsonline.com. Available at: https://nbahoopsonline.com/History/#:~:text=The%20NBA%20began%20life%20as,start%20of%20the%20next%20season. [ Accessed 20 October 2020].
-
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-319/assignments/rama_asuri_hw3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-319/assignments/rama_asuri_hw3/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;rama-asuri---homework-3-choice-1-square-kilometre-array-ska-usecase&#34;&gt;Rama Asuri - Homework 3 (choice 1): Square Kilometre Array (SKA) usecase&lt;/h1&gt;
-&lt;h2 id=&#34;science-goals&#34;&gt;Science goals&lt;/h2&gt;
-&lt;p&gt;According to &lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;, here are the science goals -&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Galaxy Evolution, Cosmology And Dark Energy&lt;/li&gt;
-&lt;li&gt;Strong-field tests of gravity using pulsars and black holes&lt;/li&gt;
-&lt;li&gt;Probing the Cosmic Dawn&lt;/li&gt;
-&lt;li&gt;The cradle of life&lt;/li&gt;
-&lt;li&gt;Flexible design to enable exploration of the unknown&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;galaxy-evolution-cosmology-and-dark-energy&#34;&gt;Galaxy Evolution, Cosmology And Dark Energy&lt;/h3&gt;
-&lt;p&gt;Universe is expanding but not at a constant rate. It is accelerating. We don&amp;rsquo;t know the reason why it is expanding in
-the first place. We could understand the reasons for this expansion, if we can learn more about Hydrogen and dark
-matter.&lt;/p&gt;
-&lt;p&gt;Hydrogen is abundant throughout the Universe. It is considered to be the fuel for a star formation inside a galaxy.
-Seventy percent of the Sun is Hydrogen and Hydrogen atoms emit radio waves which makes the Sun and other stars some of
-the brightest objects in the cosmos.&lt;/p&gt;
-&lt;p&gt;SKA will help understand how galaxies form and evolve by detecting the Hydrogen across the Universe. As of today, we
-don&amp;rsquo;t have this kind of technology to detect farthest distance like edge of the Universe. SKA can detect new galaxy
-formations at the edge of the Universe &lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;strong-field-tests-of-gravity-using-pulsars-and-black-holes&#34;&gt;Strong-field tests of gravity using pulsars and black holes&lt;/h3&gt;
-&lt;p&gt;Einstein&amp;rsquo;s theory of relativity still holds true. SKA will test relativity principles where no exiting technology has
-ever accessed the regions of the Universe that is dark and far &lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;. Astronomers found quasars with the help of
-radio data &lt;a href=&#34;https://science.nasa.gov/ems/05_radiowaves&#34;&gt;6&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;the-origin-and-evolution-of-cosmic-magnetism&#34;&gt;The origin and evolution of cosmic magnetism&lt;/h3&gt;
-&lt;p&gt;According to &lt;a href=&#34;https://phys.org/news/2020-09-strongest-magnetic-field-universe-x-ray.html&#34;&gt;3&lt;/a&gt;, cosmic magnetism is everywhere in the Space. Learning about magnetic fields help us understand the
-electric fields. The question is, where does the cosmic magnetism come from? We don&amp;rsquo;t know this but understanding
-cosmic magnetism definitely helps us learn more about the Universe from the time of Big Bang. Besides gravity,
-magnetism shapes the massive structures in the Universe &lt;a href=&#34;https://www.youtube.com/watch?v=QBsBUypc1VE&#34;&gt;4&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;probing-the-cosmic-dawn&#34;&gt;Probing the Cosmic Dawn&lt;/h3&gt;
-&lt;p&gt;SKA is the most sensitive radio telescope. It will go beyond the distance of 13 billion light years.
-Optical and infrared telescopes captured galaxies at a distance of 13 billion light years from earth.
-Even before that, there was a time where the Universe was dark up until the formation of the first galaxy.
-Radio Telescopes reach even when there is no light or light is being blocked&lt;a href=&#34;https://www.space.com/39837-first-stars-universe-fingerprints-dark-matter.html&#34;&gt;9&lt;/a&gt;.
-SKA will provide insight into this early Universe before the formation of the first galaxy &lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;the-cradle-of-life&#34;&gt;The cradle of life&lt;/h3&gt;
-&lt;p&gt;There are two ways SKA can help find the extraterrestrial life. One way is to detect weak extraterrestrial
-radio signals if they were to exist. This will expand on the capabilities of projects such as
-search for extraterrestrial intelligence (SETI). Other way is to search for organic molecules in the
-outer space &lt;a href=&#34;https://en.wikipedia.org/wiki/Search_for_extraterrestrial_intelligence&#34;&gt;5&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;flexible-design-to-enable-exploration-of-the-unknown&#34;&gt;Flexible design to enable exploration of the unknown&lt;/h3&gt;
-&lt;p&gt;We don&amp;rsquo;t know what we will be stumbling on while exploring the space. SKA is a high sensitivity radio detection.
-Optical and infrared has limitations due to dust or poor visibility. But Radio waves can be detected even without the
-light. Astronomers stumbled on asteroids hunting grounds in archived Hubble images &lt;a href=&#34;https://hubblesite.org/contents/news-releases/1998/news-1998-10.html&#34;&gt;10&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;current-status&#34;&gt;Current status&lt;/h2&gt;
-&lt;p&gt;There are 3 phases. Phase 1 provides ~10% of the total collecting area at low
-and mid frequencies by 2023 (SKA1). Phase 2 provides full array (SKA2) at low and mid frequencies by 2030 and
-Phase 3 will extend the frequency range up to 50Ghz [&lt;a href=&#34;https://en.wikipedia.org/wiki/Square_Kilometre_Array&#34;&gt;7&lt;/a&gt;].&lt;/p&gt;
-&lt;p&gt;Late last year, SKA successfully completed its System Critical Design Review. It also under went two additional reviews
-related to Operations and Management &lt;a href=&#34;http://www.jodrellbank.manchester.ac.uk/research/research-centres/ska-project/&#34;&gt;8&lt;/a&gt;. At the of reviews, there were 250 observations and questions raised which
-resulted in 40 recommendations. SKAO accepted all 40 of those recommendations
-and currently being implemented. SKAO team fully understand the issues and
-challenges. It helped them quickly move to implementation stage. After
-successful completion of the reviews, decision makers approved the construction
-to start later this year(2020). Initially, COVID-19 threatened the review
-process but the reviews have completed on time as planned. This puts the SKA
-project on track with no delays. Based on the reviews outcome, SKAO team
-finalized the  SKA’s Construction Proposal and Observatory Establishment and
-Delivery Plan [&lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
-&lt;p&gt;SKAO team is putting together new governance structure and planning for the
-establishment of the Observatory later this year and for the commencement of
-SKA1 construction activities as early in 2021 as possible. According to
-Philip Diamond (SKA Director-General), they are taking various risk mitigation
-steps as a precautionary measure by laying down various failure scenarios. He
-also mentioned that this world&amp;rsquo;s major scientific endeavor will bring
-employment, innovation and scientific exploration to benefit partner
-countries [&lt;a href=&#34;https://www.skatelescope.org&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;
-&lt;h2 id=&#34;big-data-challenges-of-the-ska&#34;&gt;Big data challenges of the SKA&lt;/h2&gt;
-&lt;p&gt;The data is huge and storage will be a problem. To tackle this problem, data size must be reduced in real time.
-Only capture or filter relevant data and save it. Raw data generated would be around an exabyte a day and after
-compression, it will reduce to 10 petabytes per day. An Tao, head of the SKA group of the Shanghai Astronomical
-Observatory stated, &amp;ldquo;It will generate data streams far beyond the total Internet traffic worldwide.&amp;rdquo; [&lt;a href=&#34;https://en.wikipedia.org/wiki/Square_Kilometre_Array&#34;&gt;7&lt;/a&gt;].&lt;/p&gt;
-&lt;p&gt;Raw data is coming from everything that is being observed by SKA. This data is collected by an array of dish receivers
-located across different geographical locations around the world. In case of pulsars, this data is reduced to form
-astronomical images or temporal data [&lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
-&lt;p&gt;Initially, the data is ran through quality checks and good data, free of radio frequency interference,  is stored in the
-long term preservation system. Multiple copies of this data is save at different location as a backup. Later,
-post processing and data analysis is performed. Once the data analysis is done, it can be visualized.
-All of this data is also preserved for the long term. Every year, it is expected to generate 600 PB and store this
-data for the observatory lifetime which is projected to be 50 years. This is just for the phase 1 of the project.
-Phase 2 and phase 3 will increase the size of the day to even bigger scale. As the data gets processed, the velocity
-of the data goes down from Petabytes to Terabytes. There is also data that is coming from logs, calibrations,
-configurations, managing archival, simulation models related to the SKA itself. This data is used to run the SKA
-without failures or downtime. Images are stored into databases of sources and time series data [&lt;a href=&#34;https://docs.google.com/document/d/1ZMrga5R_idBcFlhvvhlcOP9aX--bpqhJg4XSS3Qi3ws/edit#&#34; title=&#34;use case template&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;
-&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
 
       </description>
     </item>

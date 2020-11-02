@@ -32,7 +32,6 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * {{% addreport title="NBA Performance and Injury" author="Gavin Hemmerlein, Chelsea Gorius" hid="fa20-523-301" %}}
 * {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
 * {{% addreport title="Rank Forecasting in Car Racing" author="Jiayu Li" hid="fa20-523-349" %}}
-* {{% addreport title="Predictive Model For Pitches Thrown By Major League Baseball Pitchers" author="Bryce Wieczorek" hid="fa20-523-343" %}}
 * {{% addreport title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
 
 #### Environment
@@ -69,7 +68,6 @@ hid="fa20-523-341" %}}
 * {{% addreport title="Analyzing the Relationship of Cryptocurrencies with Foriegn Exchange Rates and Global Stock Market Indices" author="Krish Hemant Mhatre" hid="fa20-523-332" %}}
 * {{% addreport title="Big Data Application in E-commerce" author="Liu Tao" hid="fa20-523-339" %}}
 * {{% addreport title="Big Data Analytics in Brazilian E-Commerce" author="Oluwatobi Bolarin" hid="fa20-523-330" %}}
-* {{% addreport title="Stock Market Earnings to Price Change Project" author="Matthew Frechette" hid="fa20-523-336" %}}
 * {{% addreport title="Predicting Hotel Prices Using Linear Regression" author="Anthony Tugman" hid="fa20-523-323" %}}
 
 
@@ -82,21 +80,21 @@ hid="fa20-523-341" %}}
 
 ### Reports without Project, Fall 2020
 
-* {{% addreportonly title="TBD" author="Hunter Holder" hid="fa20-523-328" %}}
 * {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
-
-## Reports that are incomplete and are not yet reviewed
-
-The following hids, unfortunately do not follow yet our template, so
-we can not review them further as vital information is not yet included.
-
-* fa20-523-304
-* fa20-523-317
-* fa20-523-347 - also  use "project" and not Project as dir
-* fa20-523-302 
+* {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
 
 
+## Reports that can not be reviewed
 
+The following reports need to update them in github
 
+* {{% addreport title="Using Big Data to Eliminate Racial Bias in Healthcare" author="Robert Neubauer" hid="fa20-523-304" %}}
 
+* {{% addreport title="Stock Market Earnings to Price Change Project" author="Matthew Frechette" hid="fa20-523-336" %}}
+* {{% addreportonly title="Predictive Model For Pitches Thrown By Major League Baseball Pitchers" author="Bryce Wieczorek" hid="fa20-523-343" %}}
+* {{% addreportonly title="How Big Data has Affected Statisicts in Baseball" author="Hunter Holder" hid="fa20-523-328" %}}
+* {{% addreport title="Correlation between game genere and national sales, as well as general analysis of the video games industry " author="Linde Aleksandr" hid="fa20-523-340" %}}
+* {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
+* fa20-523-302
+* {{% addreport title="Peiran Zhao, Sunny Xu, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
 
