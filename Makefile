@@ -30,6 +30,7 @@ pull:
 	cd content/en/report/fa20-523-331; git checkout main; git pull
 	cd content/en/report/fa20-523-332; git checkout master; git pull
 	cd content/en/report/fa20-523-333; git checkout master; git pull
+	cd content/en/report/fa20-523-334; git checkout master; git pull
 	cd content/en/report/fa20-523-336; git checkout master; git pull
 	cd content/en/report/fa20-523-337; git checkout master; git pull
 	cd content/en/report/fa20-523-339; git checkout master; git pull
