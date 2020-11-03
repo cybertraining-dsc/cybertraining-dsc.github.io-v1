@@ -21,21 +21,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Music Mood Classification  please use our template  Introduction The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. I know from my own experience that often I have listened to a seemingly uplifting song. Then later when reading the lyrics, I realize its quite depressing." />
+<meta property="og:description" content="Music Mood Classification Kunaal Shah, fa20-523-341, Edit
+  Introduction The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. This can be attributed to varying interpretations of tone and lyrics in song between different listeners. In this project we study both the audio and lyrical patterns of a song through machine learning and natural language processing (NLP) tools in order to create a &lsquo;mood sort algorithm&rsquo;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-341/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Music Mood Classification  please use our template  Introduction The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. I know from my own experience that often I have listened to a seemingly uplifting song. Then later when reading the lyrics, I realize its quite depressing.">
+<meta itemprop="description" content="Music Mood Classification Kunaal Shah, fa20-523-341, Edit
+  Introduction The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. This can be attributed to varying interpretations of tone and lyrics in song between different listeners. In this project we study both the audio and lyrical patterns of a song through machine learning and natural language processing (NLP) tools in order to create a &lsquo;mood sort algorithm&rsquo;.">
 
-<meta itemprop="wordCount" content="141">
+<meta itemprop="wordCount" content="649">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Music Mood Classification  please use our template  Introduction The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. I know from my own experience that often I have listened to a seemingly uplifting song. Then later when reading the lyrics, I realize its quite depressing."/>
+<meta name="twitter:description" content="Music Mood Classification Kunaal Shah, fa20-523-341, Edit
+  Introduction The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. This can be attributed to varying interpretations of tone and lyrics in song between different listeners. In this project we study both the audio and lyrical patterns of a song through machine learning and natural language processing (NLP) tools in order to create a &lsquo;mood sort algorithm&rsquo;."/>
 
 
 
@@ -507,15 +510,6 @@
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#related-work">Related Work</a></li>
-    <li><a href="#datasets">Datasets</a></li>
-    <li><a href="#refernces">Refernces</a></li>
-  </ul>
-</nav>
-
 
 
 
@@ -554,14 +548,57 @@
     
 	       
 	<h1 id="music-mood-classification">Music Mood Classification</h1>
-<ul>
-<li><input disabled="" type="checkbox"> please use our template</li>
-</ul>
+<p>Kunaal Shah, <a href="https://github.com/cybertraining-dsc/fa20-523-312/">fa20-523-341</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-341/blob/master/project/project.md">Edit</a></p>
+
+
+<div class="pageinfo pageinfo-primary">
+<div class="toc">
+  <nav id="TableOfContents"></nav>
+</div>
+<div class="pageinfo pageinfo-primary">
 <h2 id="introduction">Introduction</h2>
+<p>The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. This can be attributed to varying interpretations of tone and lyrics in song between different listeners. In this project we study both the audio and lyrical patterns of a song through machine learning and natural language processing (NLP) tools in order to create a &lsquo;mood sort algorithm&rsquo;.</p>
+<h2 id="introduction-1">Introduction</h2>
 <p>The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. I know from my own experience that often I have listened to a seemingly uplifting song. Then later when reading the lyrics, I realize its quite depressing. As a result, previous studies take three different ways in classifying the mood of a song according to various mood models by analyzing audio, analyzing lyrics, and analyzing lyrics and audio. Most of these studies have been successful in their goals but have use a limited collection of songs/words for their analysis[1][2]. Seemingly obvious, the best results come when combining audio and lyrics.</p>
 <h2 id="related-work">Related Work</h2>
+<p>Previous studies take three different ways in classifying the mood of a song according to various mood models by analyzing audio, analyzing lyrics, and analyzing lyrics and audio. Most of these studies have been successful in their goals but have uses a limited collection of songs/words for their analysis<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Perhaps obviously, the best results come when combining audio and lyrics.</p>
+<p>When researching existing work, we found two applications that approach music recommendations based on mood, one is called &lsquo;moooodify&rsquo;, a free web application developed by an independent music enthusiast, Siddharth Ahuja<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Another website, Organize Your Music, aims to organize a Spotify user&rsquo;s music library based on mood, genre, popularity, style, and other categories <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. However, both of these applications do not seem to take into account any lyrical analysis of a song.</p>
+<p>Lyrics of a song can be used to learn a lot about music from lexical pattern analysis to gender, genre, and mood analyses. For example, in an individual study a researcher found that female artists tend to mention girls, women, and friends a lot, while male artists sing about late Saturday Nights, play and love <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Another popular project, SongSim, used repetition to visualize the parts of a song <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Findings such as these can be used to uncover the gender of an artist based on their lyrics. Similarly, by use of NLP tools, lyrical text can be analyzed to elicit the mood and emotion of a song.</p>
+<p>A simple weighting is given by a study from the University of Illinois to categorize moods of a song by audio and lyrical content analysis.
+<code>phybrid = \alpha plyrics + (1 - \alpha )paudio</code>
+Where a is the probability weight given by the lyrical classifier<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="datasets">Datasets</h2>
-<h2 id="refernces">Refernces</h2>
+<p>For the audio content analysis portion of this project, we use Spotify&rsquo;s Web API, which provides a great amount audio data for every song in Spotify&rsquo;s song collection, including valence, energy, and danceability.</p>
+<p>For the lyrical analysis portion of this project, we use Genius&rsquo;s API to pull lyrics information for a song. Genius is a website which contains lyrics to several popular songs. We will then use WordNet, which is large collection of English lexicon, used to classify words and phrases with features such as valence, arousal, dominance.</p>
+<h2 id="project-goals">Project Goals</h2>
+<h2 id="references">References</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://dl.acm.org/doi/10.1145/1816123.1816146">Improving Mood Classification in Music Digital Libraries by Combining Lyrics and Audio</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://www.researchgate.net/publication/220723046_Lyric_Text_Mining_in_Music_Mood_Classification">Lyric Text Mining in Mood Classification</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab">Sort your music by any mood — Introducing moooodify</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="http://organizeyourmusic.playlistmachinery.com/">Organize Your Music</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a href="https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829">What Songs Tell Us About: Text Mining with Lyrics</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><a href="https://colinmorris.github.io/SongSim/#/">SongSim</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+
+</div>
+
 
 	
 	

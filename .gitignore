@@ -14,3 +14,4 @@ docs/report/*/*.ipynb
 docs/report/*/project/data_*
 docs/report/*/project/code/
 docs/report/*/project/colabnotebook/
+docs/report/*/README.yml
