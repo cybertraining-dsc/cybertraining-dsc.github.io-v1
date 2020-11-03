@@ -95,6 +95,7 @@ The following reports need to update them in github
 * {{% addreportonly title="How Big Data has Affected Statisicts in Baseball" author="Hunter Holder" hid="fa20-523-328" %}}
 * {{% addreport title="Correlation between game genere and national sales, as well as general analysis of the video games industry " author="Linde Aleksandr" hid="fa20-523-340" %}}
 * {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
-* fa20-523-302
+
 * {{% addreport title="Peiran Zhao, Sunny Xu, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
 
+* fa20-523-302  [Adam Martin](https://github.com/cybertraining-dsc/fa20-523-302)
