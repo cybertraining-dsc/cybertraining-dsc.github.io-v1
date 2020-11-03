@@ -30,7 +30,7 @@ Abstract The water buffalo (Bubalus bubalis), also called domestic water buffalo
 <meta itemprop="description" content="Analysis of Future of Buffalo Breeds and Milk Production Growth in India Gangaprasad Shahapurkar, fa20-523-326, Edit
 Abstract The water buffalo (Bubalus bubalis), also called domestic water buffalo or Asian water buffalo is a large bovid originating in the Indian subcontinent, Southeast Asia, and China. Today, it is also found in Europe, Australia, North America, South America and some African countries. Two extant types of water buffalo are recognized, based on morphological and behavioural criteria – the river buffalo of the Indian subcontinent and further west to the Balkans, Egypt, and Italy, and the swamp buffalo, found from Assam in the west through Southeast Asia to the Yangtze valley of China in the east.">
 
-<meta itemprop="wordCount" content="818">
+<meta itemprop="wordCount" content="951">
 
 
 
@@ -514,7 +514,12 @@ Abstract The water buffalo (Bubalus bubalis), also called domestic water buffalo
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-dataset">2. Dataset</a></li>
-    <li><a href="#3-software-component">3. Software Component</a></li>
+    <li><a href="#3-methods">3. Methods</a>
+      <ul>
+        <li><a href="#31-software-components">3.1 Software Components</a></li>
+        <li><a href="#32-benchmarking">3.2 Benchmarking</a></li>
+      </ul>
+    </li>
     <li><a href="#4-results">4. Results</a></li>
     <li><a href="#5-discussion">5. Discussion</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -573,7 +578,12 @@ Abstract The water buffalo (Bubalus bubalis), also called domestic water buffalo
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-dataset">2. Dataset</a></li>
-    <li><a href="#3-software-component">3. Software Component</a></li>
+    <li><a href="#3-methods">3. Methods</a>
+      <ul>
+        <li><a href="#31-software-components">3.1 Software Components</a></li>
+        <li><a href="#32-benchmarking">3.2 Benchmarking</a></li>
+      </ul>
+    </li>
     <li><a href="#4-results">4. Results</a></li>
     <li><a href="#5-discussion">5. Discussion</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -658,11 +668,14 @@ Territories.</p>
 Agriculture Statistics Research Institute (IASRI). This is the only
 scheme through which considerable data, particularly on the production
 estimate of major livestock products, is being generated for policy
-formulation in the livestock sector</p>
-<p>Apart from vital census data published by this group no other
+formulation in the livestock sector.Apart from vital census data published by this group no other
 competitive data source was found.</p>
-<h2 id="3-software-component">3. Software Component</h2>
-<p>Based on features available in survey dataset, supervized machine learning algorithm will be devised and applied to get the predicted out labels being looked at as part of this project</p>
+<h2 id="3-methods">3. Methods</h2>
+<p>Based on features available in survey dataset below software components and approach was taken into consideration for processing the data.</p>
+<h3 id="31-software-components">3.1 Software Components</h3>
+<p>Python is the primarly language used for processing the data part of the project.Data processing was taken from various phases like importing, EDA, Feature Engineering, Modelling and finally performing anaylysis of results</p>
+<h3 id="32-benchmarking">3.2 Benchmarking</h3>
+<p>This is a simple modelling method and it is one of the two dominant approach of economic modelling to estimate the production behaviour <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. This method was used to estimate the potential of increase in milk yeild. In this approach milk yeild data of past 6 years was averaged. Top 10 states most yeild reported were compared with average of the whole sample and used to estimate the yeild for year 2020</p>
 <h2 id="4-results">4. Results</h2>
 <p>TBD</p>
 <h2 id="5-discussion">5. Discussion</h2>
@@ -687,6 +700,9 @@ Italian Journal of Animal Science. 5. 10.4081/ijas.2006.203. <a href="#fnref:2" 
 <p>PIB Delhi. (2019). &ldquo;Department of Animal Husbandry &amp; Dairying
 releases 20th Livestock Census&rdquo;, 16 (Oct 2019).
 <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1588304">https://pib.gov.in/PressReleasePage.aspx?PRID=1588304</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Bogetoft P., Otto L. (2011) Stochastic Frontier Analysis SFA. In: Benchmarking with DEA, SFA, and R. International Series in Operations Research &amp; Management Science, vol 157. Springer, New York, NY. <a href="https://doi.org/10.1007/978-1-4419-7961-2_7">https://doi.org/10.1007/978-1-4419-7961-2_7</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

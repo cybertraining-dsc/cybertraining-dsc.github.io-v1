@@ -3,4 +3,14 @@
 *#
 node_modules
 package-lock.json
-docs/report/fa20-523-349/project/LSTM/*.csv
+docs/report/fa20-523-349/project/LSTM
+docs/report/fa20-523-350/project/broken-report/
+docs/report/*/project/project_*
+docs/report/*/project/*.py
+docs/report/*/project/*.ipynb
+docs/report/*/project/data
+docs/report/*/project/data
+docs/report/*/*.ipynb
+docs/report/*/project/data_*
+docs/report/*/project/code/
+docs/report/*/project/colabnotebook/

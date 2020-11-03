@@ -34,7 +34,7 @@ fa20-523-332, Edit
 krishmhatre@icloud.com
 Abstract The project involves analyzing the relationships of various cryptocurrencies with Foreign Exchange Rates and Stock Market Indices. Apart from analyzing the relationships, the objective of the project is also to estimate the trend of the cryptocurrencies based on Foreign Exchange Rates and Stock Market Indices.">
 
-<meta itemprop="wordCount" content="498">
+<meta itemprop="wordCount" content="671">
 
 
 
@@ -519,7 +519,12 @@ Abstract The project involves analyzing the relationships of various cryptocurre
 <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-dataset">2. Dataset</a></li>
+    <li><a href="#2-background">2. Background</a></li>
+    <li><a href="#3-dataset">3. Dataset</a></li>
+    <li><a href="#4-data-storage">4. Data Storage</a></li>
+    <li><a href="#5-methodology">5. Methodology</a></li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#plan">Plan</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
@@ -578,7 +583,12 @@ Abstract The project involves analyzing the relationships of various cryptocurre
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-dataset">2. Dataset</a></li>
+    <li><a href="#2-background">2. Background</a></li>
+    <li><a href="#3-dataset">3. Dataset</a></li>
+    <li><a href="#4-data-storage">4. Data Storage</a></li>
+    <li><a href="#5-methodology">5. Methodology</a></li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#plan">Plan</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
@@ -589,9 +599,21 @@ Abstract The project involves analyzing the relationships of various cryptocurre
 <p><strong>Keywords:</strong> cryptocurrency, stocks, foreign exchange rates</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>One of the latest global medium of exchange is Cryptocurrency. The total market capitalizations of all cryptocurrencies added up to $237.1 Billion as of 2019<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Cryptocurrency systems do not require a central authority, its state is maintained through distributed consensus<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Therefore, determine the factors affecting the prices of cryptocurrencies becomes difficult. There are many factors affecting cryptocurrency like transaction cost, reward system, hash rate, coins circulation, forks, popularity of cryptomarket, speculations, stock markets, exchange rates, gold price, interest rate, legalization and restriction<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. This project involves analysis of relationships of various cryptocurrencies with Foreign Exchange Rates and Stock Market Indices.</p>
-<h2 id="2-dataset">2. Dataset</h2>
+<h2 id="2-background">2. Background</h2>
+<p>TBD</p>
+<h2 id="3-dataset">3. Dataset</h2>
 <p>The project will use the historic data of Stock Market Indices - NASDAQ 100, S&amp;P 500, Dow Jones, DAX, BEL 20, AEX, S&amp;P/TSX 60, IGPA, Merval 25, SMI, IBEX 35, FTSE Italia A, CAC 40, EURO STOXX 50, FTSE 100, RTS, Shanghai Comp, NIKKEI 225, Hang Seng, S&amp;P ASX 20 and Foreign Exhange Rates with USD of currencies - Australian Dollar, Euro, New Zealand Dollar, British Pound, Brazilian Real, Canadian Dollar, Chinese Yuan, Hong Kong Dollar, Indian Rupee, Korean Won, Mexican Peso, South African Rand, Singapore Dollar, Danish Krone, Japanese Yen, Malaysian Ringgit, Norwegian Krone, Swedish Krona, Sri Lankan Rupee, Swiss Franc, New Taiwan Dollar and Thai Baht. This data will be used to analyze its relationships with various cryptocurrencies - Bitcoin, Bitcoin Cash, Bitconnect, Dash, Ethereum, Ethereum Classic, Iota, Litecoin, Monero, Nem, Neo, Numeraire, Omisego, Qtum, Ripple, Stratis and Waves.</p>
-<p>Cryptocurrency dataset <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and Foriegn Exchange Rate dataset<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>, both, available on Kaggle will be used for this project. The historic data for various stock market indices will be taken from multiple sources and are still to be decided.</p>
+<p>Cryptocurrency dataset <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and Foriegn Exchange Rate dataset<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>, both, available on Kaggle will be used for this project. The historic data for various stock market indices will be taken from multiple sources and are still to be decided. All the datasets will be updated daily using a web app on Heroku.</p>
+<h2 id="4-data-storage">4. Data Storage</h2>
+<p>The project stores all of its data in NoSQL databases using MongoDB. There are total 3 databases used in the project - crypto, forex and stock. Crypto database contains 17 collections whereas forex database contains only 1 collection. The third database - stock - is yet to be built.</p>
+<h2 id="5-methodology">5. Methodology</h2>
+<p>The project uses all of its historic data to train a machine learning model for each cryptocurrency. In order to predict/estimate, all the models will use the opening rates of the selected cryptocurrency and related stock indices and foreign exchange. The models will be able to predict the closing rate for that day for the respective cryptocurrency.</p>
+<p>To be updated with details.</p>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<p>TBD</p>
+<h2 id="plan">Plan</h2>
+<p>Nov 3 - Nov 7: Building final dataset and development of web-app to update the database daily.
+Nov 8 - Nov 15: Development of Machine Learning Models.</p>
 <h2 id="references">References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>

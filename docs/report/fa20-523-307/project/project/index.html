@@ -22,15 +22,15 @@
 
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets Alex Baker, fa20-523-307, Edit
-Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their chocie in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)." />
+Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-307/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets Alex Baker, fa20-523-307, Edit
-Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their chocie in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ).">
+Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ).">
 
-<meta itemprop="wordCount" content="732">
+<meta itemprop="wordCount" content="1264">
 
 
 
@@ -38,7 +38,7 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets Alex Baker, fa20-523-307, Edit
-Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their chocie in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)."/>
+Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)."/>
 
 
 
@@ -514,9 +514,19 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-datasets">2. DataSets</a></li>
+    <li><a href="#data-cleaning-and-preprocessing">Data Cleaning and Preprocessing</a>
+      <ul>
+        <li><a href="#twitter-data">Twitter Data</a></li>
+        <li><a href="#stock-data">Stock Data</a></li>
+      </ul>
+    </li>
     <li><a href="#3-methodologyprocess">3. Methodology/Process</a></li>
-    <li><a href="#data-cleaning-and-aggregation">Data Cleaning and Aggregation</a></li>
-    <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a></li>
+    <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a>
+      <ul>
+        <li><a href="#twitter-data-1">Twitter Data</a></li>
+        <li><a href="#stock-data-1">Stock Data</a></li>
+      </ul>
+    </li>
     <li><a href="#outline-of-plan">Outline of plan</a></li>
     <li><a href="#4-technologies-used">4. Technologies used</a></li>
     <li><a href="#5-references">5. References</a></li>
@@ -566,16 +576,26 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their chocie in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ). The applications of sentiment analysis and machine learning methods will help find the correlation that we are looking for. President Trump&rsquo;s tweets will be used to predict the mood and the NASDAQ movements.</p>
+<p>In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ). The applications of sentiment analysis and machine learning methods will help find the correlation that we are looking for. President Trump&rsquo;s tweets will be used to predict the mood and the NASDAQ movements.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-datasets">2. DataSets</a></li>
+    <li><a href="#data-cleaning-and-preprocessing">Data Cleaning and Preprocessing</a>
+      <ul>
+        <li><a href="#twitter-data">Twitter Data</a></li>
+        <li><a href="#stock-data">Stock Data</a></li>
+      </ul>
+    </li>
     <li><a href="#3-methodologyprocess">3. Methodology/Process</a></li>
-    <li><a href="#data-cleaning-and-aggregation">Data Cleaning and Aggregation</a></li>
-    <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a></li>
+    <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a>
+      <ul>
+        <li><a href="#twitter-data-1">Twitter Data</a></li>
+        <li><a href="#stock-data-1">Stock Data</a></li>
+      </ul>
+    </li>
     <li><a href="#outline-of-plan">Outline of plan</a></li>
     <li><a href="#4-technologies-used">4. Technologies used</a></li>
     <li><a href="#5-references">5. References</a></li>
@@ -588,10 +608,25 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <p><strong>Keywords:</strong> analysis, finance, stock markets prediction, twitter, politics</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Financial markets have been an area of research in both academia and business. Predictions of the market has been growing in its accuracy with an every increasing amount of data used to test these models. &ldquo;The Efficient Market Hypothesis (EMH) states that stock market prices are largely driven by <em>new</em> information and follow a random walk pattern&rdquo;[1]. This shows that prices will follow news rather than previous and present prices. Information is unpredictable in terms of its release/publication showing market prices will follow a random walk pattern and the prediction can not be high.</p>
-<p>There are some problems that arrise with EMH. One problem is that &ldquo;stock prices does not follow a random walk pattern and can be predicted to a certain degree&rdquo;[2]. Another problem associated with EMH is with the information&rsquo;s unpreidctability, the unpredictability is called into question with the introduction of social media (Facebook, Twitter, blogs). The rise of social media can be a early indicator for news before it is released/published.</p>
+<p>There are some problems that arise with EMH. One problem is that &ldquo;stock prices does not follow a random walk pattern and can be predicted to a certain degree&rdquo;[2]. Another problem associated with EMH is with the information&rsquo;s unpredictability, the unpredictability is called into question with the introduction of social media (Facebook, Twitter, blogs). The rise of social media can be a early indicator for news before it is released/published. This project is attempting to predict the market based on how the President tweets. This currently has not been done according to my research.</p>
 <h2 id="2-datasets">2. DataSets</h2>
-<p>The datasets that will be used are the tweets from President Trump&rsquo;s personal account as well as Yahoo Fiance data. Financial data will be gathered from Yahoo Finance&rsquo;s API. President Trump&rsquo;s twitter data will be from the following dataset available on Kaggle (<a href="https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv)">https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv)</a>.</p>
-<p>The data will span from President Trumps inauguration to January 2020. To strengthen the prediction, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&rsquo;s rallies. In order to have a realistic and strong prediction, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.</p>
+<p>In this project, two datasets will be used -</p>
+<ul>
+<li>
+<p>The NASDAQ values from November 2016 to January 2020. This data was obtained through Yahoo! Finance and includes Date, Open, High, Low, Close, Adj Close, and Volume for a given day.</p>
+</li>
+<li>
+<p>President Trump&rsquo;s tweets during the periods of November 2016 to January 2020 is over 41,000 tweets. The data includes id, link, content, date, retweets, favorites, mentions, hashtags, and geo for every tweet in the time frame. Since the performance of the prediction is on a daily basis, tweets will be split up by Date. This data is available on Kaggle (<a href="https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv)">https://www.kaggle.com/austinreese/trump-tweets?select=trumptweets.csv)</a>.</p>
+</li>
+</ul>
+<p>To strengthen the prediction, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&rsquo;s rallies. In order to have a realistic and strong prediction, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.</p>
+<h2 id="data-cleaning-and-preprocessing">Data Cleaning and Preprocessing</h2>
+<p>The data obtained needs to be cleaned and pre-processed in order to make it reliable for analysis.</p>
+<h3 id="twitter-data">Twitter Data</h3>
+<p>When importing the Twitter data, there are several things that are noticed when printing the first five rows. Three of the columns mention, hashtags, and geo are currently showing NaN. After calculating the missing values, all the values in these columns are missing or are zero so we can drop these columns from the dataframe.</p>
+<p>The tweets are one of the last columns needed to be cleaned. The text of the tweets needs to be uniformed in order to conduct analysis. Removing punctuations was the first step followed by removing content specifically seen in tweets. These could be the word retweet, the hashtag symbol(#), the @ symbol followed by a username, and any hyperlinks that could be in a tweet.</p>
+<h3 id="stock-data">Stock Data</h3>
+<p>Stock data has a unique set of challenges when it comes to cleaning. Unlike tweets, stock data is only available Monday through Friday and is not available for holidays that the market is closed. In order to have a complete dataset, several options are available. One option is to drop the tweets that fall on a weekend. This would not be useful since markets can react to news that happens on the weekend. Another option is to approximate the missing values in the stock data. This has not been conducted yet.</p>
 <h2 id="3-methodologyprocess">3. Methodology/Process</h2>
 <p>The collection of finance and Twitter data will be used to visualize and predict the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:</p>
 <ul>
@@ -600,10 +635,14 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <li>Data cleaning and extraction.</li>
 <li>New data will be updated to keep up with the current time.</li>
 </ul>
-<h2 id="data-cleaning-and-aggregation">Data Cleaning and Aggregation</h2>
-<p>The first step is to clean the twitter and market data. Twitter&rsquo;s data is clean but in order to conduct the analysis needed, some of the columns need to be cleaned further. See the Data Cleaning section to see how this was accomplished.</p>
 <h2 id="preliminary-analysis-and-eda">Preliminary Analysis and EDA</h2>
-<p>Currently being conducted.</p>
+<h3 id="twitter-data-1">Twitter Data</h3>
+<p>When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.</p>
+<p>The date column is a column that is needed to track the amount of tweets per month and year. In the column, the timestamp and the date are combined so this need to be separated in several ways. The first being separating the date from the timestamp into its own column. This is followed up by separating the date into 4 columns for day, month, year and month-year in order to track tweets based on specified criteria.</p>
+<p>After graphing the amount of tweets per year, the observation is that 2016 and 2020 have a low tweet count. The reminder is that the data starts in November 2016 making 2016 have two months of data compared to 2020 with only one month being January. From 2017 through 2019, we can see that the amount of tweets increases by almost a thousand every year. The tweets per month tell a different story. The amount varies greatly over the years with the greatest amount being near the end of 2016 and the beginning of 2017.</p>
+<h3 id="stock-data-1">Stock Data</h3>
+<p>Similar to the twitter data, checking for null values is important but since the data is from Yahoo! Finance there are no missing values on the days that the markets are opened.</p>
+<p>Once graphing the open and closed prices of the NASDAQ, there seems to be an general upwards trend in the market over the time period.</p>
 <h2 id="outline-of-plan">Outline of plan</h2>
 <p>In the next seven weeks, these are the tasks that need to be accomplished.</p>
 <ul>
