@@ -3043,9 +3043,15 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.&lt;/p&gt;
 &lt;p&gt;The date column is a column that is needed to track the amount of tweets per month and year. In the column, the timestamp and the date are combined so this need to be separated in several ways. The first being separating the date from the timestamp into its own column. This is followed up by separating the date into 4 columns for day, month, year and month-year in order to track tweets based on specified criteria.&lt;/p&gt;
 &lt;p&gt;After graphing the amount of tweets per year, the observation is that 2016 and 2020 have a low tweet count. The reminder is that the data starts in November 2016 making 2016 have two months of data compared to 2020 with only one month being January. From 2017 through 2019, we can see that the amount of tweets increases by almost a thousand every year. The tweets per month tell a different story. The amount varies greatly over the years with the greatest amount being near the end of 2016 and the beginning of 2017.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/year_tweets.png&#34; alt=&#34;Figure 1: Caption missing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Caption missing&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/month_tweets.png&#34; alt=&#34;Figure 2: Caption missing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Caption missing&lt;/p&gt;
 &lt;h3 id=&#34;stock-data-1&#34;&gt;Stock Data&lt;/h3&gt;
 &lt;p&gt;Similar to the twitter data, checking for null values is important but since the data is from Yahoo! Finance there are no missing values on the days that the markets are opened.&lt;/p&gt;
 &lt;p&gt;Once graphing the open and closed prices of the NASDAQ, there seems to be an general upwards trend in the market over the time period.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/market.png&#34; alt=&#34;Figure 3 Caption missing&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Caption missing&lt;/p&gt;
 &lt;h2 id=&#34;outline-of-plan&#34;&gt;Outline of plan&lt;/h2&gt;
 &lt;p&gt;In the next seven weeks, these are the tasks that need to be accomplished.&lt;/p&gt;
 &lt;ul&gt;
@@ -4172,7 +4178,7 @@ The data spread across two files will have to be merged according to date. For t
       <description>
         
         
-        &lt;h1 id=&#34;report-on-gesture-recognition-and-machine-learning&#34;&gt;Report on Gesture recognition and machine learning&lt;/h1&gt;
+        &lt;h1 id=&#34;big-data-on-gesture-recognition-and-machine-learning&#34;&gt;Big Data on Gesture Recognition and Machine Learning&lt;/h1&gt;
 &lt;p&gt;Sunny Xu, Peiran Zhao, Kris Zhang, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/&#34;&gt;fa20-523-315&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
@@ -4187,6 +4193,7 @@ The data spread across two files will have to be merged according to date. For t
     &lt;li&gt;&lt;a href=&#34;#2-background&#34;&gt;2. Background&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#3-gesture-recognition&#34;&gt;3. Gesture recognition&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#4-conclusion&#34;&gt;4. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#plan&#34;&gt;Plan&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
@@ -4202,6 +4209,16 @@ The data spread across two files will have to be merged according to date. For t
 &lt;h2 id=&#34;3-gesture-recognition&#34;&gt;3. Gesture recognition&lt;/h2&gt;
 &lt;p&gt;Gesture recognition is mainly divided into two categories, one is based on external device recognition, the specific application is data gloves, wearing it on user&amp;rsquo;s hand, to obtain and analysis information through sensors. This method has obvious shortcomings, though it is accurate and has excellent response speed, but it is costly and is not good for large-scale promotion. The other one is the use of computer vision. People do not need to wear gloves. As its name implies, this method collects and analyzes information through a computer. It is convenient, comfortable, and not so limited based on external device identification. In contrast, it has greater potential and is more in line with the trend of the times. Of course, this method needs more effective and accurate algorithms to support, because the gestures made by different people at different times, in different environments and at different angles also represent different meanings. So, if we want more accurate information feedback. Then the advancement of algorithms and technology is inevitable. The development of gesture recognition is also the development of artificial intelligence, a process of the development of various algorithms from data gloves to the development of computer vision-based optical technology plays a role in promoting it.&lt;/p&gt;
 &lt;h2 id=&#34;4-conclusion&#34;&gt;4. Conclusion&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;plan&#34;&gt;Plan&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction: Kris&lt;/li&gt;
+&lt;li&gt;Background: Sunny&lt;/li&gt;
+&lt;li&gt;Gesture: divided into several parts and each works at one part&lt;/li&gt;
+&lt;li&gt;Conclusion: Peiran&lt;/li&gt;
+&lt;li&gt;catch up to do more on the report&lt;/li&gt;
+&lt;li&gt;each of us should do more research and put more time to the project&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
 
       </description>
