@@ -96,6 +96,6 @@ The following reports need to update them in github
 * {{% addreport title="Correlation between game genere and national sales, as well as general analysis of the video games industry " author="Linde Aleksandr" hid="fa20-523-340" %}}
 * {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
-* {{% addreport title="Peiran Zhao, Sunny Xu, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
+* {{% addreportonly title="Sunny Xu, Peiran Zhao, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
 
 * fa20-523-302  [Adam Martin](https://github.com/cybertraining-dsc/fa20-523-302)
