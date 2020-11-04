@@ -30,7 +30,7 @@ Abstract With the passage of time, human activities have created and contributed
 <meta itemprop="description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV) Saptarshi Sinha, fa20-523-312, Edit
 Abstract With the passage of time, human activities have created and contributed much to the aggrandizing problems of various forms of environmental pollution. Massive amounts of industrial effluents and agricultural waste wash-offs, that often comprise pesticides and other forms of agricultural chemicals, find their way to fresh water bodies, to lakes, and eventually to the oceanic systems.">
 
-<meta itemprop="wordCount" content="3053">
+<meta itemprop="wordCount" content="3071">
 
 
 
@@ -457,13 +457,13 @@ Abstract With the passage of time, human activities have created and contributed
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315projectproject-plan" href="/report/fa20-523-315/project/project-plan/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportproject-plan" href="/report/fa20-523-315/report/project-plan/"></a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315projectproject" href="/report/fa20-523-315/project/project/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
       
       
       
@@ -603,12 +603,12 @@ Abstract With the passage of time, human activities have created and contributed
 <p>After reviewing the necessary background literture and previous work that has been done in this field, it can be stated that most of such endeavors focussed majorly on continuous environmental data collection with the help of sensors attached to a stationary buoy in a particular location of a water-body. Some of the other endeavors did involve deploying a non-stationary vehicle that collected data from large swaths of geographical areas in various water bodies <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Other research attempts focussed on niche areas such as study of the migration pattern exhibited by zooplanktons upon natural and aritifical irradiance <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, and detection and monitoring of marine fauna <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. However, neither did such attempts focus much on the data analysis portion for multiple sensory input(s) nor did it involve an intricate procedure to compare the collected data with historical trends so as to arrive at a suitable conclusion regarding the extent of environmental degradation.</p>
 <p>As mentioned in the previous section, this research project will exhaustively focus not just on the data-collection portion by a non-stationary vehicle, but it will also involve employing deeper study towards the subject of big-data analysis of both the current data of the system in question and the past data obtained for similar aquatic profiles. In this way, it would be possible to learn more about the toxicological aspects of the ecosystem in question.</p>
 <h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
-<p>Upon exploring a wide array of available datasets, the following data repositories were chosen to get the required water quality based data over a particular period of time and for a particular geographical region.</p>
+<p>Upon exploring a wide array of available datasets, the following data repositories were chosen to get the required water quality based data over a particular period of time and for a particular geographical region:</p>
 <ol>
-<li>USGS Water Quality Data: <a href="https://waterdata.usgs.gov/nwis/qw">https://waterdata.usgs.gov/nwis/qw</a></li>
-<li>EPA Water Quality Data: <a href="https://www.epa.gov/waterdata/water-quality-data-download">https://www.epa.gov/waterdata/water-quality-data-download</a></li>
+<li><a href="https://waterdata.usgs.gov/nwis/qw">USGS Water Quality Data</a> <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
+<li><a href="https://www.epa.gov/waterdata/water-quality-data-download">EPA Water Quality Data</a> <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></li>
 </ol>
-<p>The USGS dataset is very commensurate with the research goal of this endeavor and hence, focus will be put more on the USGS dataset over the EPA dataset. Some previous work was conducted on this USGS dataset by a particular research team <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. However, the emphasis of such work was done from a very broad perspective so as to create an overview of how to use and visualize the data from the USGS water quality portal. Besides, such a work emphasizes on characterizing the seasonal variation of lake water clarity in different regions throughout the continental US, something that is very deviant from what would be addressed in this particular article which majorly involves environmental degradation and toxicology analysis using an autonomous surface vehicle.</p>
+<p>The USGS dataset is very commensurate with the research goal of this endeavor and hence, focus will be put more on the USGS dataset over the EPA dataset. Some previous work was conducted on this USGS dataset by a particular research team <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. However, the emphasis of such work was done from a very broad perspective so as to create an overview of how to use and visualize the data from the USGS water quality portal. Besides, such a work emphasizes on characterizing the seasonal variation of lake water clarity in different regions throughout the continental US, something that is very deviant from what would be addressed in this particular article which majorly involves environmental degradation and toxicology analysis using an autonomous surface vehicle.</p>
 <p>To address the questions involving existence of multiple data-sets and motivation of using multiple data-sets, we must keep in mind that the very nature of this study is based on historical trends of the nature of water-quality in a particular region from the past and how it relates to the current situation. Because of these reasons, multiple data-sets will be referred to from multiple sources so as to achieve robust data-analytical results. This would ensure that too much focus is not given on outlier cases, that may be relevant to just a particular geographical region or an aberration in the data that may only have arisen due to an unknown underlying phenomenon or some form of cataclysmic event from the past. Using multiple datasets from different sources would help to get a resultant data structure that is more likely to converge towards an approximate level of historical thresholds and which can then be used to find out how the current observed data deviates from such previous patterns.</p>
 <h2 id="4-methodology">4. Methodology</h2>
 <h3 id="41-hardware-component">4.1 Hardware Component</h3>
@@ -678,7 +678,13 @@ Abstract With the passage of time, human activities have created and contributed
 <p>Verfuss U., et al., (2019, March). A review of unmanned vehicles for the detection and monitoring of marine fauna. Marine Pollution Bulletin, Volume 140, Pages 17-29. Retrieved from <a href="https://doi.org/10.1016/j.marpolbul.2019.01.009">https://doi.org/10.1016/j.marpolbul.2019.01.009</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>Read, E. K., Carr, L., De Cicco, L., Dugan, H. A., Hanson, P. C., Hart, J. A., Kreft, J., Read, J. S., and Winslow, L. A. (2017), Water quality data for national‐scale aquatic research: The Water Quality Portal, Water Resour. Res., 53, 1735– 1745, doi:10.1002/2016WR019993. <a href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993">https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>USGS Water Quality Data, Accessed: Nov. 2020, <a href="https://waterdata.usgs.gov/nwis/qw">https://waterdata.usgs.gov/nwis/qw</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>EPA Water Quality Data, Accessed Nov. 2020, <a href="https://www.epa.gov/waterdata/water-quality-data-download">https://www.epa.gov/waterdata/water-quality-data-download</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Read, E. K., Carr, L., De Cicco, L., Dugan, H. A., Hanson, P. C., Hart, J. A., Kreft, J., Read, J. S., and Winslow, L. A. (2017), Water quality data for national‐scale aquatic research: The Water Quality Portal, Water Resour. Res., 53, 1735– 1745, doi:10.1002/2016WR019993. <a href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993">https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

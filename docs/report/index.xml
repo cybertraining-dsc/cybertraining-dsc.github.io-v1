@@ -3513,12 +3513,12 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;After reviewing the necessary background literture and previous work that has been done in this field, it can be stated that most of such endeavors focussed majorly on continuous environmental data collection with the help of sensors attached to a stationary buoy in a particular location of a water-body. Some of the other endeavors did involve deploying a non-stationary vehicle that collected data from large swaths of geographical areas in various water bodies &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Other research attempts focussed on niche areas such as study of the migration pattern exhibited by zooplanktons upon natural and aritifical irradiance &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, and detection and monitoring of marine fauna &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. However, neither did such attempts focus much on the data analysis portion for multiple sensory input(s) nor did it involve an intricate procedure to compare the collected data with historical trends so as to arrive at a suitable conclusion regarding the extent of environmental degradation.&lt;/p&gt;
 &lt;p&gt;As mentioned in the previous section, this research project will exhaustively focus not just on the data-collection portion by a non-stationary vehicle, but it will also involve employing deeper study towards the subject of big-data analysis of both the current data of the system in question and the past data obtained for similar aquatic profiles. In this way, it would be possible to learn more about the toxicological aspects of the ecosystem in question.&lt;/p&gt;
 &lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
-&lt;p&gt;Upon exploring a wide array of available datasets, the following data repositories were chosen to get the required water quality based data over a particular period of time and for a particular geographical region.&lt;/p&gt;
+&lt;p&gt;Upon exploring a wide array of available datasets, the following data repositories were chosen to get the required water quality based data over a particular period of time and for a particular geographical region:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;USGS Water Quality Data: &lt;a href=&#34;https://waterdata.usgs.gov/nwis/qw&#34;&gt;https://waterdata.usgs.gov/nwis/qw&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;EPA Water Quality Data: &lt;a href=&#34;https://www.epa.gov/waterdata/water-quality-data-download&#34;&gt;https://www.epa.gov/waterdata/water-quality-data-download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://waterdata.usgs.gov/nwis/qw&#34;&gt;USGS Water Quality Data&lt;/a&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.epa.gov/waterdata/water-quality-data-download&#34;&gt;EPA Water Quality Data&lt;/a&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The USGS dataset is very commensurate with the research goal of this endeavor and hence, focus will be put more on the USGS dataset over the EPA dataset. Some previous work was conducted on this USGS dataset by a particular research team &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. However, the emphasis of such work was done from a very broad perspective so as to create an overview of how to use and visualize the data from the USGS water quality portal. Besides, such a work emphasizes on characterizing the seasonal variation of lake water clarity in different regions throughout the continental US, something that is very deviant from what would be addressed in this particular article which majorly involves environmental degradation and toxicology analysis using an autonomous surface vehicle.&lt;/p&gt;
+&lt;p&gt;The USGS dataset is very commensurate with the research goal of this endeavor and hence, focus will be put more on the USGS dataset over the EPA dataset. Some previous work was conducted on this USGS dataset by a particular research team &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. However, the emphasis of such work was done from a very broad perspective so as to create an overview of how to use and visualize the data from the USGS water quality portal. Besides, such a work emphasizes on characterizing the seasonal variation of lake water clarity in different regions throughout the continental US, something that is very deviant from what would be addressed in this particular article which majorly involves environmental degradation and toxicology analysis using an autonomous surface vehicle.&lt;/p&gt;
 &lt;p&gt;To address the questions involving existence of multiple data-sets and motivation of using multiple data-sets, we must keep in mind that the very nature of this study is based on historical trends of the nature of water-quality in a particular region from the past and how it relates to the current situation. Because of these reasons, multiple data-sets will be referred to from multiple sources so as to achieve robust data-analytical results. This would ensure that too much focus is not given on outlier cases, that may be relevant to just a particular geographical region or an aberration in the data that may only have arisen due to an unknown underlying phenomenon or some form of cataclysmic event from the past. Using multiple datasets from different sources would help to get a resultant data structure that is more likely to converge towards an approximate level of historical thresholds and which can then be used to find out how the current observed data deviates from such previous patterns.&lt;/p&gt;
 &lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
 &lt;h3 id=&#34;41-hardware-component&#34;&gt;4.1 Hardware Component&lt;/h3&gt;
@@ -3588,7 +3588,13 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;Verfuss U., et al., (2019, March). A review of unmanned vehicles for the detection and monitoring of marine fauna. Marine Pollution Bulletin, Volume 140, Pages 17-29. Retrieved from &lt;a href=&#34;https://doi.org/10.1016/j.marpolbul.2019.01.009&#34;&gt;https://doi.org/10.1016/j.marpolbul.2019.01.009&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Read, E. K., Carr, L., De Cicco, L., Dugan, H. A., Hanson, P. C., Hart, J. A., Kreft, J., Read, J. S., and Winslow, L. A. (2017), Water quality data for national‐scale aquatic research: The Water Quality Portal, Water Resour. Res., 53, 1735– 1745, doi:10.1002/2016WR019993. &lt;a href=&#34;https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993&#34;&gt;https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;USGS Water Quality Data, Accessed: Nov. 2020, &lt;a href=&#34;https://waterdata.usgs.gov/nwis/qw&#34;&gt;https://waterdata.usgs.gov/nwis/qw&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;EPA Water Quality Data, Accessed Nov. 2020, &lt;a href=&#34;https://www.epa.gov/waterdata/water-quality-data-download&#34;&gt;https://www.epa.gov/waterdata/water-quality-data-download&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Read, E. K., Carr, L., De Cicco, L., Dugan, H. A., Hanson, P. C., Hart, J. A., Kreft, J., Read, J. S., and Winslow, L. A. (2017), Water quality data for national‐scale aquatic research: The Water Quality Portal, Water Resour. Res., 53, 1735– 1745, doi:10.1002/2016WR019993. &lt;a href=&#34;https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993&#34;&gt;https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2016WR019993&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -4088,10 +4094,10 @@ The data spread across two files will have to be merged according to date. For t
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-315/project/project-plan/</link>
+      <link>/report/fa20-523-315/report/project-plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-315/project/project-plan/</guid>
+      <guid>/report/fa20-523-315/report/project-plan/</guid>
       <description>
         
         
@@ -4159,38 +4165,44 @@ The data spread across two files will have to be merged according to date. For t
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-315/project/project/</link>
+      <link>/report/fa20-523-315/report/report/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-315/project/project/</guid>
+      <guid>/report/fa20-523-315/report/report/</guid>
       <description>
         
         
-        &lt;h1 id=&#34;project-on-gesture-recognition-and-machine-learning&#34;&gt;Project on Gesture recognition and machine learning&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; does no follow our template&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; overwrote our. template&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; can not be reviewed before template is not fixed&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;h1 id=&#34;report-on-gesture-recognition-and-machine-learning&#34;&gt;Report on Gesture recognition and machine learning&lt;/h1&gt;
 &lt;p&gt;Sunny Xu, Peiran Zhao, Kris Zhang, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/&#34;&gt;fa20-523-315&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Since our technology is more and more advanced as time goes by, traditional human-computer interaction has become increasingly difficult to meet people&amp;rsquo;s demands. In this digital era, people need faster and more efficient methods to obtain information and data. Traditional and single input and output devices are not fast and convenient enough, it also requires users to learn their own methods of use, which is extremely inefficient and completely a waste of time. Therefore, artificial intelligence comes out, and its rise has followed the changeover times, and it satisfied people&amp;rsquo;s needs. At the same time, gesture is one of the most important way for human to deliver information. It is simple, efficient, convenient, and universally acceptable. Therefore, gesture recognition has become an emerging field in intelligent human-computer interaction field, with great potential and future.&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-background&#34;&gt;2. Background&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-gesture-recognition&#34;&gt;3. Gesture recognition&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-conclusion&#34;&gt;4. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; gesture recognition, human, technology, future&lt;/p&gt;
-&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Introduction&lt;/li&gt;
-&lt;li&gt;Background&lt;/li&gt;
-&lt;li&gt;Gesture recognition&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;As of today, since technology is improving so fast, there are many things that can be related to AI and machine learning. Hand gestures will be one of the most important ways to understand people. As we often notice, when people are doing speech, they often use hand gestures to collaborate with their words. And studying hand gestures will often reveal what the people who are giving the speech are thinking about. For example, when someone is lying, they tend to touch their nose with their hand, etc. So studying hand gestures will not only help people understand much more about human beings and it can also help our technology grow. For example, in AI and machine learning. Studying hand gestures will make or improve AI and machine learning to better understand humans and be more human-like.&lt;/p&gt;
-&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;h2 id=&#34;2-background&#34;&gt;2. Background&lt;/h2&gt;
 &lt;p&gt;Nowadays, people are doing more and more research on high-tech, which also makes various high-tech products appear in the society. For people, electricity is as important as water and air. It is impossible to imagine a life without electricity. We can realize that technology is changing everything about people from various aspects. People living in this high-tech era are also forced to learn and understand the usage of various high-tech products. As a representative of high technology, artificial intelligence has also attracted a lot of attention in society. Because of the emergence of artificial intelligence, people have also begun to realize that preserving the characteristics of the people is also a very important point in high technology. Therefore, scientists thought of gestures, one of the most commonly used body language.&lt;/p&gt;
-&lt;h2 id=&#34;gesture-recognition&#34;&gt;Gesture recognition&lt;/h2&gt;
+&lt;h2 id=&#34;3-gesture-recognition&#34;&gt;3. Gesture recognition&lt;/h2&gt;
 &lt;p&gt;Gesture recognition is mainly divided into two categories, one is based on external device recognition, the specific application is data gloves, wearing it on user&amp;rsquo;s hand, to obtain and analysis information through sensors. This method has obvious shortcomings, though it is accurate and has excellent response speed, but it is costly and is not good for large-scale promotion. The other one is the use of computer vision. People do not need to wear gloves. As its name implies, this method collects and analyzes information through a computer. It is convenient, comfortable, and not so limited based on external device identification. In contrast, it has greater potential and is more in line with the trend of the times. Of course, this method needs more effective and accurate algorithms to support, because the gestures made by different people at different times, in different environments and at different angles also represent different meanings. So, if we want more accurate information feedback. Then the advancement of algorithms and technology is inevitable. The development of gesture recognition is also the development of artificial intelligence, a process of the development of various algorithms from data gloves to the development of computer vision-based optical technology plays a role in promoting it.&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;h2 id=&#34;4-conclusion&#34;&gt;4. Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
 
       </description>
     </item>
