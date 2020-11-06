@@ -67,7 +67,7 @@ provide an analysis of the data. You may choose a topic that is only
 explained later on in class. In this case, you can explore the topic
 ahead of time before it is explained in class. Previous class material
 is posted for all topics. If you have a question, work with the TA's
-and nstructors.
+and instructors.
 
 Please remember this is not just an AI class to demonstrate a specific
 AI method. Your project must have a section or an explanation of how your
@@ -83,7 +83,7 @@ if you have enough qualifications and can succeed in the project.
 
 The following is the best structure for your project
 
-* `project/project.md` # your project report
+* `project/project.md` # your project report. This is a must.
 * `project/project.bib` # your project bib file if you use jabref
 * `project/plan.md` # for final submission move your Plan section here
 * `project/images` # place all images in this directory
@@ -161,7 +161,7 @@ typically much more in reports due to the nature of it.
 
 In case you chose a report, your directory structure will look like this
 
-* report/report.md # your project report
+* report/report.md # your project report. This is a must.
 * report/report.bib # your project bib file
 * report/plan.md # for final submission move your Plan section here
 * report/images # place all images in thsi directory
