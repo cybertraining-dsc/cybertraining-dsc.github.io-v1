@@ -18,7 +18,9 @@ This page conatins the list of the reports and projects.
 * [Sample Report Markdown](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md). Please
 do not use any HTML tags, use markdown. Make sure to add abstract,
 keywords, and refernces. Use footnotes for refernces. Do not use br.
-* [Sample image inclusion](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/project.md). 
+
+* See the [Checklist](checklist) for a summary of information we
+  posted and obtained from reviewing your projects.
 
 
 ### Reports with Projects, Fall 2020

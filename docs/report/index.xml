@@ -15,6 +15,292 @@
     
     <item>
       <title>Report: </title>
+      <link>/report/checklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/checklist/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;project-faq&#34;&gt;Project FAQ&lt;/h1&gt;
+&lt;h2 id=&#34;ta-hours&#34;&gt;TA hours&lt;/h2&gt;
+&lt;p&gt;We often use the term TA instead of AI as AI in this class has a
+specific meaning related to class content.&lt;/p&gt;
+&lt;p&gt;TA hours are posted at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=179&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=179&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If a TA is not available during that time, you have the right to ask
+for an alternative time.&lt;/p&gt;
+&lt;h2 id=&#34;time-commitment&#34;&gt;Time commitment&lt;/h2&gt;
+&lt;p&gt;Please plan to set aside a &lt;strong&gt;significant&lt;/strong&gt; time every week for
+your project. We include your weekly progress in the grade. This is because you will fail if you do not set sufficient time
+aside and start your project in the week before the deadline.&lt;/p&gt;
+&lt;h2 id=&#34;when-are-updates-due&#34;&gt;When are updates due?&lt;/h2&gt;
+&lt;p&gt;Updates are due every week from the time that the project has been
+announced. The updates will be committed by you to github.com. TAs
+will be reviewing your updates and make commitments to your
+repository. It is your responsibility to make sure to stay in sync
+with the content in the repo. Best is to use a tool such as a
+command line tool or a GUI tool to stay in sync with the repo.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-i-define-a-project&#34;&gt;How do I define a project?&lt;/h2&gt;
+&lt;p&gt;Please take a look at the class content and select a topic that
+interests you. Your project needs to be related to &lt;em&gt;big data&lt;/em&gt; and
+provide an analysis of the data. You may choose a
+topic that is only explained later on in class. In this case, you can
+explore the topic ahead of time before it is explained in
+class. Previous class material is posted for all topics. If you have a
+question, work with the TA&amp;rsquo;s and nstructors.&lt;/p&gt;
+&lt;p&gt;Please remember this is not just an AI class to demonstrate a specific
+AI method. Your project must have a section or an explanation of how your
+project relates or could relate to big data.&lt;/p&gt;
+&lt;p&gt;However, it is &lt;strong&gt;not&lt;/strong&gt; required to use a huge dataset for this class.&lt;/p&gt;
+&lt;h2 id=&#34;project-directory&#34;&gt;Project Directory&lt;/h2&gt;
+&lt;p&gt;The following is the best structure for your project&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;project/project.md # your project report&lt;/li&gt;
+&lt;li&gt;project/project.bib # your project bib file if you use jabref&lt;/li&gt;
+&lt;li&gt;project/plan.md # for final submission move your Plan section here&lt;/li&gt;
+&lt;li&gt;project/images # place all images in this directory&lt;/li&gt;
+&lt;li&gt;project/code/
+move your python code or notebooks here.&lt;/li&gt;
+&lt;li&gt;project/data
+your project must not have (large) data in GitHub, instead you must have
+a program that downloads the data.
+best is to add project/data to your .gitignore file
+See more information on the data section.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Make sure you create in your paper citations and references to your own
+code and GitHub directory.&lt;/p&gt;
+&lt;h2 id=&#34;filenames&#34;&gt;Filenames&lt;/h2&gt;
+&lt;p&gt;Filenames must be precise, and we recommend using lower case file names
+in most cases (some Python class files may also contain capital
+letters). Filenames must not have spaces included in them. We will not
+review any information included in a file that contains spaces or
+characters that are not in [a-Z0-9] and the _ and - characters. We will
+return your project without review and assign an &amp;ldquo;F&amp;rdquo; as those files
+cause issues.&lt;/p&gt;
+&lt;p&gt;All image file names must be lower case.&lt;/p&gt;
+&lt;p&gt;Her an example of an image file name that is wrong in many ways:
+project/images/THIS IS Gregor&amp;rsquo;s Image.PNG
+contains spaces
+contains capital letres
+contains &#39; which is not allowed ever
+has an ending with capital letters
+see also: &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=240&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=240&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;project-proposal&#34;&gt;Project Proposal&lt;/h2&gt;
+&lt;p&gt;This is a snapshot of your final project. You do not have to use the
+words &lt;em&gt;I&lt;/em&gt; or &lt;em&gt;plan&lt;/em&gt; simply write it as if you already decided to do
+the project and make it look like a final paper&amp;rsquo;s snapshot. Your
+paper must follow a typical research paper outline. The project
+ideally provides a novel feature that has not been presented by
+others. Just replication what others in the community did may not be
+lead to the best result. If you have not researched if others have
+done your project, It also will not lead to your best result.&lt;/p&gt;
+&lt;p&gt;A sample of a report is provided at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Raw:
+&lt;a href=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&#34;&gt;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/&#34;&gt;https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sections that must be included&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract&lt;/li&gt;
+&lt;li&gt;Introduction&lt;/li&gt;
+&lt;li&gt;Related Research
+Identify similar projects and describe what you do differently&lt;/li&gt;
+&lt;li&gt;Data
+Write about which data you choose&lt;/li&gt;
+&lt;li&gt;Analysis
+Write about your intended analysis&lt;/li&gt;
+&lt;li&gt;Plan
+Provide a plan that lists what you do every week.(This plan is to be removed before the final submission at the end of the semester. You can move it into a file called project/plan.md
+in case you like to preserve it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reports-without-programming&#34;&gt;Reports without programming&lt;/h2&gt;
+&lt;p&gt;It is possible for undergraduates, but not for graduate students to do
+a report that does not include programming. You will automatically get
+a half grade point deduction, and the best grade achievable will be an
+A-. The report will typically be 25% to 50% longer than a project
+with programming. It must be comprehensive and have a more in-depth background
+section. Proper citations are a must. Citations are
+typically much more in reports due to the nature of it.&lt;/p&gt;
+&lt;p&gt;In case you chose a report, your directory structure will look like this&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;report/report.md # your project report&lt;/li&gt;
+&lt;li&gt;report/report.bib # your project bib file&lt;/li&gt;
+&lt;li&gt;report/plan.md # for final submission move your Plan section here&lt;/li&gt;
+&lt;li&gt;report/images # place all images in thsi directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is our &lt;strong&gt;strong&lt;/strong&gt; recommendation that you use jabref for assisting you
+with the management of your references! You will save a lot of time
+while using it and assure that the format will be correct, which is
+important for reports!&lt;/p&gt;
+&lt;h2 id=&#34;formal-writing&#34;&gt;Formal writing&lt;/h2&gt;
+&lt;p&gt;They shall not use the word &amp;ldquo;I&amp;rdquo; in the report.&lt;/p&gt;
+&lt;p&gt;see also: &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=181&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=181&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We do allow, however, the words &lt;em&gt;we&lt;/em&gt;, &lt;em&gt;you&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In general:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do not use first-person pronouns (&amp;ldquo;I&amp;rdquo;, &amp;ldquo;me&amp;rdquo;, &amp;ldquo;my&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, etc.). &amp;hellip;&lt;/li&gt;
+&lt;li&gt;You must not use contractions such as don&amp;rsquo;t or &amp;rsquo;ve &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Avoid colloquialism and slang expressions. &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Avoid nonstandard diction. &amp;hellip;&lt;/li&gt;
+&lt;li&gt;When using an abbreviation, it must be defined before its first use
+in brackets): Artificial Intelligence (AI) &amp;hellip; Avoid the creation of unnecessary abbreviations. It is better to say big data instead of BD&lt;/li&gt;
+&lt;li&gt;Avoid the overuse of short and simple sentences.&lt;/li&gt;
+&lt;li&gt;Avoid the overuse of very long and complex sentences.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;colons&#34;&gt;colons&lt;/h3&gt;
+&lt;p&gt;A colon is :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They shall not use a space before a colon ever.&lt;/li&gt;
+&lt;li&gt;They shall not use colons in section headers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;quotes&#34;&gt;Quotes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;They shall not use &amp;ldquo;quoted quotes&amp;rdquo; to highlight.&lt;/li&gt;
+&lt;li&gt;They shall use &lt;em&gt;italic&lt;/em&gt; to highlight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quotes are reserved for citations and must be followed by a citation
+that is included in your reference section.&lt;/p&gt;
+&lt;h2 id=&#34;update-and-check-the-submission&#34;&gt;Update and check the submission&lt;/h2&gt;
+&lt;p&gt;Once you submit your paper, you need to dow the following.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;modify the README.yaml file and update the information of your project in it. Keep it up to date in case authors or title changes. We use this information to mine all Gitrepos, and thus it must be up to date all the time.
+In case you are in a group, make sure you preserve the authors&amp;rsquo; order in the list among all group members. The person that has the repo for the project must be the first author.&lt;/p&gt;
+&lt;p&gt;Example for single author: &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/README.yaml&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-312/README.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check every week if your report renders correctly and if your
+report is listed at &lt;a href=&#34;https://cybertraining-dsc.github.io/report/&#34;&gt;https://cybertraining-dsc.github.io/report/&lt;/a&gt;
+Click on your paper link, your student link, and your edit link to ensure they all work correctly. If not, please correct them via a
+pull request (you can edit that page and see how we do it for other students).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;using-markdown&#34;&gt;Using Markdown&lt;/h2&gt;
+&lt;p&gt;We no longer accept any document format that is not markdown. We use
+proper markdown that must not include any HTML tags. submissions with
+HTML tags will be rejected without reviews. You must look at our
+template in raw format to see what features of markdown we use. Your
+file may not be properly rendered in GitHub (e.g., abstract and table
+of content, as well as references look differently), but it will be on our Web
+site.&lt;/p&gt;
+&lt;h2 id=&#34;references-and-citations&#34;&gt;References and citations&lt;/h2&gt;
+&lt;p&gt;You must have a reference section from the get-go. We use
+footnotes to showcase the references as GitHub does not support proper
+references in markdown. However, we use footnotes in a straightforward and
+specific way that requires you to be careful with the dot at the end of
+the sentence. The footnotes must not be after the dot, but they must
+be within the dot. The reason is that at one point, we will
+automatically replace your footnotes with a [number] theme. You do not
+have to do this; we will do this. This is simpler than it sounds for
+you, so we give an example:&lt;/p&gt;
+&lt;p&gt;When you use the citations, you MUST for us do them before the dot that
+closes the sentence that you cite in or refers to. They do require you
+do the &lt;code&gt;[^1]&lt;/code&gt; before the dot&lt;/p&gt;
+&lt;p&gt;wrong: &lt;code&gt;This is a sentence with reference.[^1]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;correct: &lt;code&gt;This is a sentence with reference [^1]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;wrong: &lt;code&gt;Simon says &amp;quot;Hallo&amp;quot;.[^1]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The reference section must be the last section in your report&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## 8. Refernces
+
+[^1]:  This is where you put the citation information. See, there is no space before the :
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;see also &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=45&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=45&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;format-of-references&#34;&gt;Format of References&lt;/h3&gt;
+&lt;p&gt;Although we use footnotes in markdown, we will use the propper IEEE
+format style for citations. Please google it. The easiest way for you
+to get IEEE references is to use jabref and manage your references there
+and just copy the rendered content from jabrefs display window into
+your markdown reference section. Make sure to remove all HTML tags.
+If you use jabref, please submit your references as project.bib file&lt;/p&gt;
+&lt;h3 id=&#34;urls-in-the-text&#34;&gt;URLs in the text&lt;/h3&gt;
+&lt;p&gt;In case you use URLs in the text, they must be followed by a citation
+with it being referenced in the reference section by a label.&lt;/p&gt;
+&lt;h3 id=&#34;references-that-are-not-cited-in-the-text&#34;&gt;References that are not cited in the text&lt;/h3&gt;
+&lt;p&gt;You must not have any references that you have not cited in the text&lt;/p&gt;
+&lt;h3 id=&#34;images-that-you-copied&#34;&gt;Images that you copied&lt;/h3&gt;
+&lt;p&gt;In case you copied an image from the internet, it must have a citation
+in the caption and be referenced in the reference section.&lt;/p&gt;
+&lt;p&gt;If you use figures, check carefully with our template, do not invent
+your own method. We will reject your paper without review if you do it
+wrong.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-include-images&#34;&gt;How to include images&lt;/h3&gt;
+&lt;p&gt;We have provided a clear example. Do not invent your own method or use
+relative links. Images must be cited with a link to the raw image in
+GitHub. See our example!&lt;/p&gt;
+&lt;h2 id=&#34;programs&#34;&gt;Programs&lt;/h2&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
+&lt;p&gt;You are allowed to use python notebooks or python programs. All of
+which must be checked into GitHub in your assigned repo. Sometimes notebooks have a cache
+that is too big for GitHub, this you need to make sure to always clear
+the cache before you check it into GitHub.&lt;/p&gt;
+&lt;h3 id=&#34;otherprogramming-langauges&#34;&gt;Otherprogramming langauges&lt;/h3&gt;
+&lt;p&gt;Use python.&lt;/p&gt;
+&lt;h3 id=&#34;data&#34;&gt;Data&lt;/h3&gt;
+&lt;p&gt;Please add a &amp;ldquo;download&amp;rdquo; data function that downloads the data from the
+source. Do not store the actual data in Github.
+The download function must have a logic that does not download the
+data when it is already downloaded. Python makes this easy with
+&lt;code&gt;os.path&lt;/code&gt; and &lt;code&gt;python requests&lt;/code&gt;. We recommend you use python requests
+and not &lt;code&gt;urllib&lt;/code&gt;. You can share the download function openly with each
+other.&lt;/p&gt;
+&lt;p&gt;In case of questions discuss on piazza.&lt;/p&gt;
+&lt;p&gt;See also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=227&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=227&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=142&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=142&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;images-from-programs&#34;&gt;Images from Programs&lt;/h3&gt;
+&lt;p&gt;You can create png files of graphics so you can include them in your
+project.md. Make sure you add a save image function and do not just
+create screenshots. Matplotlib and other graphics frameworks have an
+API call for this.&lt;/p&gt;
+&lt;p&gt;There are many good and even specialized graphics libraries that you
+can use, examples are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;matplotlib&lt;/li&gt;
+&lt;li&gt;bokeh&lt;/li&gt;
+&lt;li&gt;seaborn&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See also: &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=226&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=226&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;bechmark&#34;&gt;Bechmark&lt;/h3&gt;
+&lt;p&gt;Your program must use cloudmesh benchmark. It includes a convenient
+StopWatch and benchmark print function.&lt;/p&gt;
+&lt;p&gt;see: &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=103&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=103&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;template-links&#34;&gt;Template Links&lt;/h2&gt;
+&lt;p&gt;Here are the relevant URLs to them, which you naturally can find from
+our report web page. But as some of you have not visited the web page
+at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/report/&#34;&gt;https://cybertraining-dsc.github.io/report/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/&#34;&gt;https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&#34;&gt;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See that githib does not quite render it properly, but it will by ok
+for a superficial view and editing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Make sure to check your report at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/report/&#34;&gt;https://cybertraining-dsc.github.io/report/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;which will be updated weekly&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4179,7 +4465,7 @@ The data spread across two files will have to be merged according to date. For t
         
         
         &lt;h1 id=&#34;big-data-on-gesture-recognition-and-machine-learning&#34;&gt;Big Data on Gesture Recognition and Machine Learning&lt;/h1&gt;
-&lt;p&gt;Sunny Xu, Peiran Zhao, Kris Zhang, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/&#34;&gt;fa20-523-315&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sunny Xu, Peiran Zhao, Kris Zhang, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/&#34;&gt;fa20-523-315&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/blob/master/report/report.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
@@ -4220,87 +4506,6 @@ The data spread across two files will have to be merged according to date. For t
 &lt;li&gt;each of us should do more research and put more time to the project&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-316/project/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-316/project/project/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;sentiment-analysis-and-visualization-using-an-us-election-dataset-for-the-2020-election&#34;&gt;Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election&lt;/h1&gt;
-&lt;p&gt;Sudheer Alluri, Indiana University, fa20-523-316, &lt;a href=&#34;mailto:ngsudheer@gmail.com&#34;&gt;ngsudheer@gmail.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Vishwanadham Mandala, Indiana University, fa20-523-325, &lt;a href=&#34;mailto:vishwandh.mandala@gmail.com&#34;&gt;vishwandh.mandala@gmail.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-316/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Sentiment analysis is an evaluation of the opinion of the speaker, writer or other subject with regard to some topic.We are going to use US-elections dataset and combining the tweets of people opninon for leading presidential candidates. We have various datasets from kallage and combining tweets and NY times datasets, by combining all data predication will be dervied.&lt;/p&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. DataSets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-technologies-used&#34;&gt;4. Technologies used&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-plan-for-the-rest-of-the-semseter&#34;&gt;5. Plan for the rest of the Semseter&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-refernces&#34;&gt;6. Refernces&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; sentiment,  US-election&lt;/p&gt;
-&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;For our final project, we will be focusing on the upcoming U.S. presidential elections. We plan to use a US-elections dataset to predict the votes each contestant will attain, by area. With growing data, the prediction will be changing constantly. We are making the difference by selecting the latest dataset available and previous election data to predict the number of votes each contestant will get to the closest figure. A feature we are introducing to enhance the quality is predicting various area types like counties, towns, and/or big cities.
-One might argue that these kinds of predictions will only be helping organizations and not individuals. We assure you that this project will be helping the general public in many ways. The most evident being, an individual knowing which contestant his/her community or the general public around him/her prefer. This project is strictly statistical and does not have a goal to sway the elections in any way or to pressure an individual&lt;/p&gt;
-&lt;p&gt;into picking a candidate. Overall, this is just a small step towards a future that might hold an environment where the next president of the United States of America could be accurately guessed based on previous data and innovative Big Data Technologies.&lt;/p&gt;
-&lt;h2 id=&#34;2-datasets&#34;&gt;2. DataSets&lt;/h2&gt;
-&lt;p&gt;We will be going to use the dataset, &lt;a href=&#34;https://www.kaggle.com/tunguz/us-elections-dataset,&#34;&gt;https://www.kaggle.com/tunguz/us-elections-dataset,&lt;/a&gt; and we will create the filets based on location. If needed, we may download Twitter data from posts on and by Donald Trump, Joe Biden, and their associates. Which leads us to our objective for the project, based on the data we collected, we should be able to predict the winner of the 2020 United States of America’s presidential elections.&lt;/p&gt;
-&lt;p&gt;All of the data will be location-based and if required we will download realtime campaigning and debate analysis data, giving us a live and updated prediction every time increment. To strengthen the prediction, even more, we may reuse some code from the 2016 election’s analysis, however, our main focus will be using the latest data we readily acquire during the time leading up to the 2020 election.
-In conclusion, to make our predictions as realistic and as strong as we can get, we will be going to choose multiple data sets to integrate between the previous election and twitter data to predict the number of votes each candidate will acquire. Therefore, we will be predicting the winner of the 2020 presidential elections.&lt;/p&gt;
-&lt;h2 id=&#34;3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/h2&gt;
-&lt;p&gt;Our project has two main sections of data sets in it. The first and primary one containing candidate information and previous presidential election data and the second containing twitter data. We believed the second needed more time because the first dataset contained straightforward facts while the twitter dataset is more susceptible to different perspectives and viewpoints.
-In this project we are analyzing twitter data of key presidential candidates and other key supporters.We gathered the data from kaggle datasets. Data is mainly divided into 3 sub categories. Tweets made by key personnel.Twitter profiles of the two candidates(all info including followers, following, # of tweets,etc.).The final category involves graphs for visualization purposes.A problem with twitter data is the fact that it is huge. We are using google drive and with it comes the problem of storage. To combat this we are only using 4 twitter data sets. The datasets of Donald J. Trump, Joe Biden, Kamala Harris, and Mike Pence. We also downloaded these data sets to use them locally.There are mainly 3 types of formats used in everyday twitter use: images, text, and video. Only text will be used in this project because the others are not useful for the purpose of the
-experiment. Our project mostly uses twitter data as support to the primary dataset.It is there to strengthen the already predicted result. The reason why we cannot make the twitter data set our primary data set is because the data(tweets) are mostly opinion based with only some exceptions. So we cannot predict with the twitter data,however, it
-can be used to show public support which will be vital in supporting the prediction derived from the primary data set.So, we found many twitter data sets on keggle and used certain parts from each to make our final four. The difference between the background sets and our final four datasets is the fact that their primary dataset was the twitter data while we used twitter data as our secondary dataset. We realized that twitter data is best used as secondary data that supports the primary dataset, which is more fact based.We can use three of the four OSoMe tools available: trends, networking, and maps. Trends and networking can be combined to find a group that involves every user that is taking part in the elections in some way. Mapping can show these users and their location. Giving us the area based result that we seek. However this method is already a part of our project .Due to the fact that all this data is in keggle in a wider array. Which gave us the option to condense into four large data sets.&lt;/p&gt;
-&lt;p&gt;We will collect election data and twitter information and integrate both to predict the results. A lot of twitter or dataset data will be trimmed and parsed to build the model. We will calculate
-Our data-gathering and preparation methodology is composed of the following steps:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Use the latest election dataset-2020, we will be creating the model.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Data cleaning and extraction.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;We will try to download the latest data from twitter and campaigning.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-technologies-used&#34;&gt;4. Technologies used&lt;/h2&gt;
-&lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, PyTorch&lt;/p&gt;
-&lt;h2 id=&#34;5-plan-for-the-rest-of-the-semseter&#34;&gt;5. Plan for the rest of the Semseter&lt;/h2&gt;
-&lt;p&gt;October 26:
-. Furthur looking into new datasets and getting new twitter data.
-. Brainstrom ideas for future engineering and build features
-. update the report.&lt;/p&gt;
-&lt;p&gt;November 2:
-. Working on creating function to download the content. Remove the spaces in the project.&lt;/p&gt;
-&lt;p&gt;November 9:
-TBD&lt;/p&gt;
-&lt;p&gt;November 16:
-TBD&lt;/p&gt;
-&lt;h2 id=&#34;6-refernces&#34;&gt;6. Refernces&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a&#34;&gt;https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a&lt;/a&gt;
-&lt;a href=&#34;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&#34;&gt;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
