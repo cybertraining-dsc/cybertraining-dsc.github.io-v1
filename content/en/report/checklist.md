@@ -1,6 +1,19 @@
 # Project FAQ
 
-## TA hours
+{{% pageinfo %}}
+
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
+
+## I see something mssing or wrong in this FAQ. How can I correct or add it?
+
+If you see something missing that we shoudl add, please edit this web
+page and create a pull request with your changes:
+
+[Edit here](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/edit/master/content/en/report/checklist.md)
+
+## Where to get help?
 
 We often use the term TA instead of AI as AI in this class has a
 specific meaning related to class content. 
@@ -12,30 +25,37 @@ TA hours are posted at
 If a TA is not available during that time, you have the right to ask
 for an alternative time.
 
-## Time commitment
+## Do I have to work weekly on the project?
 
-Please plan to set aside a **significant** time every week for
-your project. We include your weekly progress in the grade. This is because you will fail if you do not set sufficient time
-aside and start your project in the week before the deadline.
+Yes.
+
+Please plan to set aside a **significant** time every week for your
+project. We include your weekly progress in the grade. This is because
+you will fail if you do not set sufficient time aside and start your
+project in the week before the deadline.
+
 
 ## When are updates due?
 
 Updates are due every week from the time that the project has been
 announced. The updates will be committed by you to github.com. TAs
-will be reviewing your updates and make commitments to your
-repository. It is your responsibility to make sure to stay in sync
-with the content in the repo. Best is to use a tool such as a
-command line tool or a GUI tool to stay in sync with the repo.
+will be reviewing your updates The weekly progress will be check by
+the TA's while looking at the GitHub insights page.
+
+TAs or instructors may make comments to your repository. It is your
+responsibility to make sure to stay in sync with the content in the
+repo. Best is to use a tool such as a command line tool or a GUI tool
+to stay in sync with the repo.
 
 ## How do I define a project?
 
 Please take a look at the class content and select a topic that
 interests you. Your project needs to be related to *big data* and
-provide an analysis of the data. You may choose a
-topic that is only explained later on in class. In this case, you can
-explore the topic ahead of time before it is explained in
-class. Previous class material is posted for all topics. If you have a
-question, work with the TA's and nstructors.
+provide an analysis of the data. You may choose a topic that is only
+explained later on in class. In this case, you can explore the topic
+ahead of time before it is explained in class. Previous class material
+is posted for all topics. If you have a question, work with the TA's
+and nstructors.
 
 Please remember this is not just an AI class to demonstrate a specific
 AI method. Your project must have a section or an explanation of how your
@@ -43,21 +63,27 @@ project relates or could relate to big data.
 
 However, it is **not** required to use a huge dataset for this class. 
 
+The class has also the ability to do projects related to cloud
+infrastructure. In that case, please contact Gregor directly to assess
+if you have enough qualifications and can succeed in the project. 
+
 ## Project Directory
 
 The following is the best structure for your project
 
-* project/project.md # your project report
-* project/project.bib # your project bib file if you use jabref
-* project/plan.md # for final submission move your Plan section here
-* project/images # place all images in this directory
-* project/code/
-  move your python code or notebooks here.
-* project/data
-  your project must not have (large) data in GitHub, instead you must have
-  a program that downloads the data.
-  best is to add project/data to your .gitignore file
-  See more information on the data section.
+* `project/project.md` # your project report
+* `project/project.bib` # your project bib file if you use jabref
+* `project/plan.md` # for final submission move your Plan section here
+* `project/images` # place all images in this directory
+* `project/code/`
+
+   Move your python code or notebooks here.
+
+* `project/data`
+
+  Your project must not have (large) data in GitHub, instead you must
+  have a program that downloads the data.  best is to add project/data
+  to your .gitignore file See more information on the data section.
 
 Make sure you create in your paper citations and references to your own
 code and GitHub directory.
@@ -75,12 +101,10 @@ cause issues.
 All image file names must be lower case.
 
 Her an example of an image file name that is wrong in many ways:
- project/images/THIS IS Gregor's Image.PNG
-contains spaces
-contains capital letres
-contains ' which is not allowed ever
-has an ending with capital letters
-see also: <https://piazza.com/class/kedccsbsthm5sc?cid=240>
+ project/images/THIS IS Gregor's Image.PNG contains spaces contains
+ capital letres contains ' which is not allowed ever has an ending
+ with capital letters see also:
+ <https://piazza.com/class/kedccsbsthm5sc?cid=240>
 
 ## Project Proposal
 
@@ -96,8 +120,8 @@ done your project, It also will not lead to your best result.
 A sample of a report is provided at
 
 * Raw:
-https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md
-* https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/
+<https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md>
+* <https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/>
 
 Sections that must be included
 
@@ -220,8 +244,10 @@ The reference section must be the last section in your report
 ```
 ## 8. Refernces
 
-[^1]:  This is where you put the citation information. See, there is no space before the :
+[^1]:  This is where you put the citation information. 
 ```
+
+See, there is no space before the :
 
 see also https://piazza.com/class/kedccsbsthm5sc?cid=45
 

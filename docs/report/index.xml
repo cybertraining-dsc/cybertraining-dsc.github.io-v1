@@ -23,7 +23,59 @@
         
         
         &lt;h1 id=&#34;project-faq&#34;&gt;Project FAQ&lt;/h1&gt;
-&lt;h2 id=&#34;ta-hours&#34;&gt;TA hours&lt;/h2&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#i-see-something-mssing-or-wrong-in-this-faq-how-can-i-correct-or-add-it&#34;&gt;I see something mssing or wrong in this FAQ. How can I correct or add it?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#where-to-get-help&#34;&gt;Where to get help?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#do-i-have-to-work-weekly-on-the-project&#34;&gt;Do I have to work weekly on the project?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#when-are-updates-due&#34;&gt;When are updates due?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#how-do-i-define-a-project&#34;&gt;How do I define a project?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#project-directory&#34;&gt;Project Directory&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#filenames&#34;&gt;Filenames&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#project-proposal&#34;&gt;Project Proposal&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#reports-without-programming&#34;&gt;Reports without programming&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#formal-writing&#34;&gt;Formal writing&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#colons&#34;&gt;colons&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#quotes&#34;&gt;Quotes&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#update-and-check-the-submission&#34;&gt;Update and check the submission&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#using-markdown&#34;&gt;Using Markdown&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references-and-citations&#34;&gt;References and citations&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#format-of-references&#34;&gt;Format of References&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#urls-in-the-text&#34;&gt;URLs in the text&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#references-that-are-not-cited-in-the-text&#34;&gt;References that are not cited in the text&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#images-that-you-copied&#34;&gt;Images that you copied&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#how-to-include-images&#34;&gt;How to include images&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#programs&#34;&gt;Programs&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#python&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#otherprogramming-langauges&#34;&gt;Otherprogramming langauges&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#data&#34;&gt;Data&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#images-from-programs&#34;&gt;Images from Programs&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#bechmark&#34;&gt;Bechmark&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#template-links&#34;&gt;Template Links&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;i-see-something-mssing-or-wrong-in-this-faq-how-can-i-correct-or-add-it&#34;&gt;I see something mssing or wrong in this FAQ. How can I correct or add it?&lt;/h2&gt;
+&lt;p&gt;If you see something missing that we shoudl add, please edit this web
+page and create a pull request with your changes:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/edit/master/content/en/report/checklist.md&#34;&gt;Edit here&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;where-to-get-help&#34;&gt;Where to get help?&lt;/h2&gt;
 &lt;p&gt;We often use the term TA instead of AI as AI in this class has a
 specific meaning related to class content.&lt;/p&gt;
 &lt;p&gt;TA hours are posted at&lt;/p&gt;
@@ -32,43 +84,61 @@ specific meaning related to class content.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;If a TA is not available during that time, you have the right to ask
 for an alternative time.&lt;/p&gt;
-&lt;h2 id=&#34;time-commitment&#34;&gt;Time commitment&lt;/h2&gt;
-&lt;p&gt;Please plan to set aside a &lt;strong&gt;significant&lt;/strong&gt; time every week for
-your project. We include your weekly progress in the grade. This is because you will fail if you do not set sufficient time
-aside and start your project in the week before the deadline.&lt;/p&gt;
+&lt;h2 id=&#34;do-i-have-to-work-weekly-on-the-project&#34;&gt;Do I have to work weekly on the project?&lt;/h2&gt;
+&lt;p&gt;Yes.&lt;/p&gt;
+&lt;p&gt;Please plan to set aside a &lt;strong&gt;significant&lt;/strong&gt; time every week for your
+project. We include your weekly progress in the grade. This is because
+you will fail if you do not set sufficient time aside and start your
+project in the week before the deadline.&lt;/p&gt;
 &lt;h2 id=&#34;when-are-updates-due&#34;&gt;When are updates due?&lt;/h2&gt;
 &lt;p&gt;Updates are due every week from the time that the project has been
 announced. The updates will be committed by you to github.com. TAs
-will be reviewing your updates and make commitments to your
-repository. It is your responsibility to make sure to stay in sync
-with the content in the repo. Best is to use a tool such as a
-command line tool or a GUI tool to stay in sync with the repo.&lt;/p&gt;
+will be reviewing your updates The weekly progress will be check by
+the TA&amp;rsquo;s while looking at the GitHub insights page.&lt;/p&gt;
+&lt;p&gt;TAs or instructors may make comments to your repository. It is your
+responsibility to make sure to stay in sync with the content in the
+repo. Best is to use a tool such as a command line tool or a GUI tool
+to stay in sync with the repo.&lt;/p&gt;
 &lt;h2 id=&#34;how-do-i-define-a-project&#34;&gt;How do I define a project?&lt;/h2&gt;
 &lt;p&gt;Please take a look at the class content and select a topic that
 interests you. Your project needs to be related to &lt;em&gt;big data&lt;/em&gt; and
-provide an analysis of the data. You may choose a
-topic that is only explained later on in class. In this case, you can
-explore the topic ahead of time before it is explained in
-class. Previous class material is posted for all topics. If you have a
-question, work with the TA&amp;rsquo;s and nstructors.&lt;/p&gt;
+provide an analysis of the data. You may choose a topic that is only
+explained later on in class. In this case, you can explore the topic
+ahead of time before it is explained in class. Previous class material
+is posted for all topics. If you have a question, work with the TA&amp;rsquo;s
+and nstructors.&lt;/p&gt;
 &lt;p&gt;Please remember this is not just an AI class to demonstrate a specific
 AI method. Your project must have a section or an explanation of how your
 project relates or could relate to big data.&lt;/p&gt;
 &lt;p&gt;However, it is &lt;strong&gt;not&lt;/strong&gt; required to use a huge dataset for this class.&lt;/p&gt;
+&lt;p&gt;The class has also the ability to do projects related to cloud
+infrastructure. In that case, please contact Gregor directly to assess
+if you have enough qualifications and can succeed in the project.&lt;/p&gt;
 &lt;h2 id=&#34;project-directory&#34;&gt;Project Directory&lt;/h2&gt;
 &lt;p&gt;The following is the best structure for your project&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;project/project.md # your project report&lt;/li&gt;
-&lt;li&gt;project/project.bib # your project bib file if you use jabref&lt;/li&gt;
-&lt;li&gt;project/plan.md # for final submission move your Plan section here&lt;/li&gt;
-&lt;li&gt;project/images # place all images in this directory&lt;/li&gt;
-&lt;li&gt;project/code/
-move your python code or notebooks here.&lt;/li&gt;
-&lt;li&gt;project/data
-your project must not have (large) data in GitHub, instead you must have
-a program that downloads the data.
-best is to add project/data to your .gitignore file
-See more information on the data section.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;project/project.md&lt;/code&gt; # your project report&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;project/project.bib&lt;/code&gt; # your project bib file if you use jabref&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;project/plan.md&lt;/code&gt; # for final submission move your Plan section here&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;project/images&lt;/code&gt; # place all images in this directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;project/code/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Move your python code or notebooks here.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;project/data&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Your project must not have (large) data in GitHub, instead you must
+have a program that downloads the data.  best is to add project/data
+to your .gitignore file See more information on the data section.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Make sure you create in your paper citations and references to your own
 code and GitHub directory.&lt;/p&gt;
@@ -82,12 +152,10 @@ return your project without review and assign an &amp;ldquo;F&amp;rdquo; as thos
 cause issues.&lt;/p&gt;
 &lt;p&gt;All image file names must be lower case.&lt;/p&gt;
 &lt;p&gt;Her an example of an image file name that is wrong in many ways:
-project/images/THIS IS Gregor&amp;rsquo;s Image.PNG
-contains spaces
-contains capital letres
-contains &#39; which is not allowed ever
-has an ending with capital letters
-see also: &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=240&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=240&lt;/a&gt;&lt;/p&gt;
+project/images/THIS IS Gregor&amp;rsquo;s Image.PNG contains spaces contains
+capital letres contains &#39; which is not allowed ever has an ending
+with capital letters see also:
+&lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=240&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=240&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;project-proposal&#34;&gt;Project Proposal&lt;/h2&gt;
 &lt;p&gt;This is a snapshot of your final project. You do not have to use the
 words &lt;em&gt;I&lt;/em&gt; or &lt;em&gt;plan&lt;/em&gt; simply write it as if you already decided to do
@@ -206,8 +274,9 @@ do the &lt;code&gt;[^1]&lt;/code&gt; before the dot&lt;/p&gt;
 &lt;p&gt;The reference section must be the last section in your report&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## 8. Refernces
 
-[^1]:  This is where you put the citation information. See, there is no space before the :
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;see also &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=45&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=45&lt;/a&gt;&lt;/p&gt;
+[^1]:  This is where you put the citation information. 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;See, there is no space before the :&lt;/p&gt;
+&lt;p&gt;see also &lt;a href=&#34;https://piazza.com/class/kedccsbsthm5sc?cid=45&#34;&gt;https://piazza.com/class/kedccsbsthm5sc?cid=45&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;format-of-references&#34;&gt;Format of References&lt;/h3&gt;
 &lt;p&gt;Although we use footnotes in markdown, we will use the propper IEEE
 format style for citations. Please google it. The easiest way for you
