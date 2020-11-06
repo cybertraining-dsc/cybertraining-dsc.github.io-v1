@@ -113,10 +113,15 @@ cause issues.
 All image file names must be lower case.
 
 Her an example of an image file name that is wrong in many ways:
- project/images/THIS IS Gregor's Image.PNG contains spaces contains
- capital letres contains ' which is not allowed ever has an ending
- with capital letters see also:
- <https://piazza.com/class/kedccsbsthm5sc?cid=240>
+
+* `project/images/THIS IS Gregor's Image.PNG`
+
+Wrong because
+
+1. contains spaces contains
+2. capital letters
+3. contains ' which is not allowed ever
+4. has an ending with capital letters
 
 ## Project Proposal
 
