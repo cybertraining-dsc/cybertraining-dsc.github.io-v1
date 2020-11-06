@@ -12,8 +12,8 @@ Yes.
 
 There are very view posts in Piazza, typically much less than 10 per
 week. If you were taking a live class I am sure you get also 10+ tips
-and comments form the instructors. Piazza is a mechanism fo use to
-communicate to the entire class as this class is an online class.
+and comments from the instructors. Piazza is a mechanism for us to
+communicate to the entire online class.
 
 Use piazza to discuss things. You can also use it to discuss issues in
 your projects with other class mates openly.
