@@ -6,6 +6,18 @@
 
 {{% /pageinfo %}}
 
+## Do I have to read every Piazza post?
+
+Yes.
+
+There are very view posts in Piazza, typically much less than 10 per
+week. If you were taking a live class I am sure you get also 10+ tips
+and comments form the instructors. Piazza is a mechanism fo use to
+communicate to the entire class as this class is an online class.
+
+Use piazza to discuss things. You can also use it to discuss issues in
+your projects with other class mates openly.
+
 ## I see something mssing or wrong in this FAQ. How can I correct or add it?
 
 If you see something missing that we shoudl add, please edit this web
