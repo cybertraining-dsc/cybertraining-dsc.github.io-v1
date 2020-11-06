@@ -583,11 +583,6 @@
   </url>
   
   <url>
-    <loc>/report/checklist/</loc>
-    <lastmod>2020-11-06T08:17:13-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</loc>
   </url>
   
@@ -1001,6 +996,10 @@
   
   <url>
     <loc>/report/fa20-523-350/project/project/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/project-faq/</loc>
   </url>
   
   <url>

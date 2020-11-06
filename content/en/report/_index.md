@@ -19,7 +19,7 @@ This page conatins the list of the reports and projects.
 do not use any HTML tags, use markdown. Make sure to add abstract,
 keywords, and refernces. Use footnotes for refernces. Do not use br.
 
-* See the [Checklist](checklist) for a summary of information we
+* See the [Project FAQ](project-faq) for a summary of information we
   posted and obtained from reviewing your projects.
 
 
