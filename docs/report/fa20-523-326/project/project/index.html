@@ -30,7 +30,7 @@ Abstract Water buffalo (Bubalus bubalis), also called domestic water buffalo or 
 <meta itemprop="description" content="Analysis of Future of Buffalo Breeds and Milk Production Growth in India Gangaprasad Shahapurkar, fa20-523-326, Edit
 Abstract Water buffalo (Bubalus bubalis), also called domestic water buffalo or Asian water buffalo is a large bovid originating in the Indian subcontinent, Southeast Asia, and China. Today, it is also found in Europe, Australia, North America, South America and some African countries. Two extant types of water buffalo are recognized, based on morphological and behavioural criteria – the river buffalo of the Indian subcontinent and further west to the Balkans, Egypt, and Italy, and the swamp buffalo, found from Assam in the west through Southeast Asia to the Yangtze valley of China in the east.">
 
-<meta itemprop="wordCount" content="1319">
+<meta itemprop="wordCount" content="1248">
 
 
 
@@ -519,10 +519,6 @@ Abstract Water buffalo (Bubalus bubalis), also called domestic water buffalo or 
       <ul>
         <li><a href="#41-software-components">4.1 Software Components</a></li>
         <li><a href="#42-data-procesing">4.2 Data Procesing</a></li>
-      </ul>
-    </li>
-    <li><a href="#-state-name--murrah-buffalo-count--total-buffalo-count---murrah-breed-">| State Name | Murrah Buffalo Count | Total Buffalo Count | % Murrah Breed |</a>
-      <ul>
         <li><a href="#43-modelling">4.3 Modelling</a></li>
       </ul>
     </li>
@@ -589,10 +585,6 @@ Abstract Water buffalo (Bubalus bubalis), also called domestic water buffalo or 
       <ul>
         <li><a href="#41-software-components">4.1 Software Components</a></li>
         <li><a href="#42-data-procesing">4.2 Data Procesing</a></li>
-      </ul>
-    </li>
-    <li><a href="#-state-name--murrah-buffalo-count--total-buffalo-count---murrah-breed-">| State Name | Murrah Buffalo Count | Total Buffalo Count | % Murrah Breed |</a>
-      <ul>
         <li><a href="#43-modelling">4.3 Modelling</a></li>
       </ul>
     </li>
@@ -610,9 +602,9 @@ Abstract Water buffalo (Bubalus bubalis), also called domestic water buffalo or 
 <p><strong>Keywords:</strong> hid 326, i532, buffalo, milk production, livestock, benchmarking, in-milk yield, argriculture, india, analysis.</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Indian Agriculture sector has been playing a vital role in overall contribution to Indian Economy. Most of the rural community in the nation still make their livelihood on Dairy Framing or Agriculture farming. Dairy framing itself has been on its progressive stage from past few years and it is contributing to almost more than 25% of agriculture GDP <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Livestock rearing has been integral part of rural community of the nation and this sector is leveraging the economy in big way considering the growth we can see. Livestock production plays major role in life of farmers. It provides food, income, employment. It also does other contributions to the overall rural development of the nation. The output of livestock rearing such as milk, egg, meat, and wool provides everyday income to the farmers on daily basis, it provides nutrition to consumers and indirectly it helps in contributing to overall national economy and socio-economic development of the country.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-326/tree/master/project/images/milk_production_world.png" alt="Milk Production World"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/master/project/images/milk_production_world.png" alt="Milk Production World"></p>
 <p><strong>Figure 1:</strong> Production of Milk, whole fresh buffalo in World + (Total), Average 2013 - 2018</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-326/tree/master/project/images/milk_production_by_region.png" alt="Milk Production Share"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/master/project/images/milk_production_by_region.png" alt="Milk Production Share"></p>
 <p><strong>Figure 2:</strong> Production share of Milk, whole fresh buffalo by region, Average 2013 - 2018</p>
 <p>India is the highest buffalo milk producer in the world. The world buffalo population is estimated at 185.29 million, spread in some 42 countries, of which 179.75 million (97%) are in Asia (Source: Fao.org/stat 2008). India has 105.1 million and they comprise approximately 56.7 percent of the total world buffalo population. During the last 10 years, the world buffalo population increased by approximately 1.49% annually, by 1.53% in India, 1.45% in Asia and 2.67% in the rest of the world.</p>
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
@@ -647,17 +639,78 @@ competitive data source was found.</p>
 <h3 id="41-software-components">4.1 Software Components</h3>
 <p>This project has been implemented in Python 3.7 version. Jupyter Notebook Application was used to develop the code and produce a notebook document. Jupyter Notebook is a client server architecture based application which allows modification and execution of code through web browser. Jupyter Notebook can be installed locally and accessed through localhost brower or it can be installed on a remote machine and accessed via Internet <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <h3 id="42-data-procesing">4.2 Data Procesing</h3>
-<h2 id="-state-name--murrah-buffalo-count--total-buffalo-count---murrah-breed-">| State Name | Murrah Buffalo Count | Total Buffalo Count | % Murrah Breed |</h2>
-<p>| UTTAR PRADESH |	20110852 | 30625334 | 65.67 |
-| RAJASTHAN | 6448563 | 12976095 | 49.70 |
-| ANDHRA PRADESH | 5227270 | 10622790 | 49.21 |
-| HARYANA | 5011145 | 6085312 | 82.35 |
-| PUNJAB | 4116508 | 5159734 | 79.78 |
-| BIHAR | 2419952 | 7567233 | 31.98 |
-| MADHYA PRADESH | 1446078 | 8187989 | 17.66 |
-| MAHARASHTRA | 986981 | 5594392 | 17.64 |
-| TAMIL NADU | 435634 | 780431 | 55.82 |
-| UTTARAKHAND | 378917 | 987775 | 38.36 |</p>
+<table>
+<thead>
+<tr>
+<th>State Name</th>
+<th>Murrah Buffalo Count</th>
+<th>Total Buffalo Count</th>
+<th>% Murrah Breed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UTTAR PRADESH</td>
+<td>20110852</td>
+<td>30625334</td>
+<td>65.67</td>
+</tr>
+<tr>
+<td>RAJASTHAN</td>
+<td>6448563</td>
+<td>12976095</td>
+<td>49.70</td>
+</tr>
+<tr>
+<td>ANDHRA PRADESH</td>
+<td>5227270</td>
+<td>10622790</td>
+<td>49.21</td>
+</tr>
+<tr>
+<td>HARYANA</td>
+<td>5011145</td>
+<td>6085312</td>
+<td>82.35</td>
+</tr>
+<tr>
+<td>PUNJAB</td>
+<td>4116508</td>
+<td>5159734</td>
+<td>79.78</td>
+</tr>
+<tr>
+<td>BIHAR</td>
+<td>2419952</td>
+<td>7567233</td>
+<td>31.98</td>
+</tr>
+<tr>
+<td>MADHYA PRADESH</td>
+<td>1446078</td>
+<td>8187989</td>
+<td>17.66</td>
+</tr>
+<tr>
+<td>MAHARASHTRA</td>
+<td>986981</td>
+<td>5594392</td>
+<td>17.64</td>
+</tr>
+<tr>
+<td>TAMIL NADU</td>
+<td>435634</td>
+<td>780431</td>
+<td>55.82</td>
+</tr>
+<tr>
+<td>UTTARAKHAND</td>
+<td>378917</td>
+<td>987775</td>
+<td>38.36</td>
+</tr>
+</tbody>
+</table>
 <h3 id="43-modelling">4.3 Modelling</h3>
 <h4 id="431-benchmarking">4.3.1 Benchmarking</h4>
 <p>This is a simple modelling method and it is one of the two dominant approach of economic modelling to estimate the production behaviour <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. This method was used to estimate the potential of increase in milk yeild. In this approach milk yeild data of past 6 years was averaged. Top 10 states most yeild reported were compared with average of the whole sample and used to estimate the yeild for year 2020</p>
