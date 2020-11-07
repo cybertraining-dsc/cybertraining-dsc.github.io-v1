@@ -16,4 +16,5 @@ docs/report/*/project/code/
 docs/report/*/project/colabnotebook/
 docs/report/*/README.yml
 docs/report/*/LICENSE
-docs/project/RankNet
+docs/report/cloudmesh-openapi/tests
+docs/report/fa20-523-349/project/RankNet
