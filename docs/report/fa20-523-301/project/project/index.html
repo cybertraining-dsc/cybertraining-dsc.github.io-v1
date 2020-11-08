@@ -32,7 +32,7 @@ Contents
 Contents
  1. Introduction 2. Background Research and Previous Work 3. Dataset 4. Methodology  4.1 Development of Models   5. Inference 6. Conclusion 7. Acknowledgements  7.1 Work Breakdown   8. References    Keywords: basketball, NBA, injury, performance, salary, rehabilitation, artificial intelligence, convolutional neural network.">
 
-<meta itemprop="wordCount" content="2121">
+<meta itemprop="wordCount" content="2307">
 
 
 
@@ -623,10 +623,64 @@ Contents
 <p>The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyse this information from the datasets, a predictive model will need to be created using a large set of the data to train.</p>
 <p>From this point, a test run will be used to gauge the validity and accuracy of the model compared to some of the data set aside.  The model created will be able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance.  Feature engineering will be performed prior to training the model in order to improve the chances of higher accuracy from the predictions.  This model could be used to keep an eye out for how a player&rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.</p>
 <h3 id="41-development-of-models">4.1 Development of Models</h3>
+<p>To help with review of the data, conditioned data was used to save resources on Google Colab. By conditioning the data and saving the files as a .CSV, the team was able to create a streamlined process. Additionally, the team found benefit by uploading these files to Google Drive to quickly import data near realtime. The files saved were the following:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Dataframe</th>
+<th align="center">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1.</td>
+<td align="center">df_Injury_End</td>
+</tr>
+<tr>
+<td align="left">2.</td>
+<td align="center">df_Injury_length</td>
+</tr>
+<tr>
+<td align="left">3.</td>
+<td align="center">df_Injury_Start</td>
+</tr>
+<tr>
+<td align="left">4.</td>
+<td align="center">games</td>
+</tr>
+<tr>
+<td align="left">5.</td>
+<td align="center">games_details</td>
+</tr>
+<tr>
+<td align="left">6.</td>
+<td align="center">injuries_2010-2018</td>
+</tr>
+<tr>
+<td align="left">7.</td>
+<td align="center">players</td>
+</tr>
+<tr>
+<td align="left">8.</td>
+<td align="center">ranking</td>
+</tr>
+<tr>
+<td align="left">9.</td>
+<td align="center">teams</td>
+</tr>
+</tbody>
+</table>
+<p>Everytime Google Colab loades data, it takes time and resources. The team was able to utilize the crossplatform connectivity of the Google utilities. The team could then focus on building models as opposed to conditioning data every time the code was ran.</p>
+<h4 id="411-logistics-regression">4.1.1 Logistics Regression</h4>
 <p>The initial model that was used was a Logistic Regression model. This model produced results of <em>X</em>. These results</p>
 <p>After running a Logistic Regression model, the decision was made to try multiple models to see what gives the best results. The team decided to use a Linear Regression model.</p>
+<h4 id="412-lightgbm-regression">4.1.2 LightGBM Regression</h4>
 <p>Another algorithm chosen was a Light Gradient Boost Machine (LightGBM) model. LightGBM is known for it&rsquo;s lightweight and resource sparse abilities. The model is built from decision tree algorithms and used for ranking, classification, and other machine learning tasks. By choosing LightGBM data scientists are able to analyze larger data a faster approach. LightGBM  can often over fit a model if the data is too small, but fortunately for the purpose of this assignment the data available for NBA injuries and stats is extremely large. Availability of data allowed for smooth operation of the LightGBM model.</p>
-<p>The final model attempted was a Keras model. A few runs of different layers and epochs were chosen. The models sequentially ran through the test layers to refine the model. When this is done, each predecessor layer acts as an input to the next layer&rsquo;s model. The results can produce accurate results while using unsupervised learning.</p>
+<h4 id="413-keras-deep-learning-models">4.1.3 Keras Deep Learning Models</h4>
+<p>The final model attempted was a Deep Learning model. A few runs of different layers and epochs were chosen. The models sequentially ran through the test layers to refine the model. When this is done, each predecessor layer acts as an input to the next layer&rsquo;s model. The results can produce accurate results while using unsupervised learning. The visualization for this model can be seen in the following figure:</p>
+<p><img src="https://img.securityinfowatch.com/files/base/cygnus/siw/image/2019/02/Figure_01.5c7712513151e.png?auto=format&amp;h=553&amp;w=1280" alt="Neural Network"></p>
+<p><em>Figure 1: Neural Network</em></p>
+<p>When the team ran the Neural Networks, the data went through three layers. Each layer was built upon the previous similarly to the figure. This allowed for the team to capture information from the processing.</p>
 <h2 id="5-inference">5. Inference</h2>
 <p>With the data available, some conclusions can be made. Not all injuries are of the same severity. By treating an ACL tear in the same manner as a bruise, the team doctors would take terrible approaches to rehab. The severity of the injury is a part of the approach to therapy.</p>
 <p>Another aspect to come to a conclusion is that not every player recovers in the same timetable as another. Genetics, diet, and mental health can all harm or reinforce the efforts from the medical staff. These areas are hard to capture in the data and cannot be appropriately reviewed.</p>
