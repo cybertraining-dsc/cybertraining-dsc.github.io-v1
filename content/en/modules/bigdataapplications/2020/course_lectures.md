@@ -188,3 +188,12 @@ This week's video class recorded the last part of [Google Slides](https://docs.g
 
 Continue work on project and complete study of videos already assigned. If interesting to you, please review videos on AI in Banking, Space and Energy, Transportation Systems, Mobility (Industry), and Commerce. Don't forget the participation grade from GitHub activity each week
 
+## Week 11
+
+This weeks video class went through project questions.
+
+{{< youtube "zkAsLUSCTGg" >}}.
+
+### Videos for Week 11
+
+Continue work on project and complete study of videos already assigned. If interesting to you, please review videos on AI in Banking, Space and Energy, Transportation Systems, Mobility (Industry), and Commerce. Don't forget the participation grade from GitHub activity each week
