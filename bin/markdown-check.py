@@ -48,10 +48,10 @@ for line in content.splitlines():
 # check for numbers
 
 if "## 1." not in content:
-    error("You mut use numbered subsections")
+    error("Use numbered section headers.")
 
 if "## 2." not in content or "## 3." not in content:
-    error("To few subsections in the report")
+    error("To few sections in the report.")
 
 
 if "## Abstract" not in content:
@@ -69,19 +69,19 @@ toc = """Contents
 
 for section in ["Conclusion", "Abstract", "Introduction"]:
     if section not in content:
-        error(f"Could not find section {section}")
+        error(f"Could not find section {section}.")
     
 if toc not in content or "{{% pageinfo %}}" not in content:
-    error("pageinfo with Contents template is not properly used")
+    error("pageinfo with Contents template is not properly used.")
 
 if "] :" in content:
-    error ("spaces not allowed in front of :")
+    error ("Spaces not allowed in front of :")
 
 if ".[^" in content or ". [^" in content:
-    error ("citation after a . not allowed")
+    error ("Citation after a . not allowed.")
 
 if "[^" not in content or "]:" not in content:
-    error("refernces are missing")
+    error("Refernces are missing")
     
 #check image inclusion
 
@@ -91,11 +91,11 @@ for line in content.splitlines():
     counter = counter + 1 
     if line.startswith("!["):
         if "raw" not in line:
-            error(f"{counter}: image must be included from raw, url wrong")
+            error(f"{counter}: Image must be included from raw. URL wrong.")
 
         ending = line.rsplit(".")[-1][:-1]
         if ending not in ["png", "jpg", "jpeg"]:
-            error(f"{counter}: Image ending must be one of png, jpg, jpeg")
+            error(f"{counter}: Image ending must be one of png, jpg, jpeg.")
         if "/images/" not in line:
             error(f"{counter}: Image must be in an images folder")
 
@@ -103,7 +103,7 @@ if "[Edit](https://github.com/cybertraining-dsc/" not in content:
     error("no edit link found")
 
 if "**Keywords:**" not in content:
-    error("Keywords not found")
+    error("Keywords not found.")
 
 titles = 0
 code = False    
@@ -116,13 +116,13 @@ for line in content.splitlines():
         code = not code
     if not code:
         if section and not line == "":
-            error(f"{counter}: line after heading must be empty")        
+            error(f"{counter}: Line after heading must be empty.")        
         section = line.startswith("#")
 
         if line.startswith("# "):
             titles = titles + 1
         if " http://" in line or " https://" in line:
-            error(f"{counter}: http link is not enclosed in < >")
+            error(f"{counter}: http link is not enclosed in < >.")
     
 
 if titles > 1:
@@ -138,11 +138,11 @@ for line in content.splitlines():
     for tag in ["h1", "h2", "h3", "h4", "th", "td",
                 "ul", "img", "p", "b", "li"]:
         if f"<{tag}>" in line:
-            error(f"{counter}: html tag <{tag}> not allowed in project")
+            error(f"{counter}: HTML tag <{tag}> not allowed in project.")
         if f"</{tag}>" in line:
-            error(f"{counter}: html tag </{tag}> not allowed in project")
+            error(f"{counter}: HTML tag </{tag}> not allowed in project.")
     if "“" in line or "”" in line:
-        error(f"{counter}: illeagal quote use \" instead")
+        error(f"{counter}: Illeagal quote use \" instead")
 
 # Check README
 
