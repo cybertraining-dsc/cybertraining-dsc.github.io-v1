@@ -119,14 +119,19 @@ if "[Edit](https://github.com/cybertraining-dsc/" not in content:
 if "**Keywords:**" not in content:
     error("Keywords not found")
 
+
+code = False    
 counter = 0
 section = False
 for line in content.splitlines():
-    line = line.strip()
     counter = counter + 1     
-    if section and not line == "":
-        error(f"{counter}: line after heading must be empty")        
-    section = line.startswith("#")
+    line = line.strip()
+    if line.startswith("```"):
+        code = not code
+    if not code:
+        if section and not line == "":
+            error(f"{counter}: line after heading must be empty")        
+        section = line.startswith("#")
 
 counter = 0
 # check for html
