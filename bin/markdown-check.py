@@ -42,9 +42,6 @@ for line in content.splitlines():
         line = ""
     words = words + len(line.split(" "))
 
-print ("Lines:", lines)
-print ("Words:", words)
-print()
   
 #print (content)
 
@@ -145,9 +142,12 @@ for line in content.splitlines():
             error(f"{counter}: html tag </{tag}> not allowed in project")
     if "“" or "”" in line:
         error(f"{counter}: illeagal quote use \" instead")
-            
+
+print()
+print ("Lines:", lines)
+print ("Words:", words)
+print()
     
-print()     
 if wrong:
     print (f"{errors} Errors found")
     print("This is not a valid report")
