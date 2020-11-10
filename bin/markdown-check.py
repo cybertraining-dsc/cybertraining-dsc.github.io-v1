@@ -153,7 +153,7 @@ try:
         readme = f.read()
 
     if "TBD" in readme:
-        error("Your README.yml is not set up properly." 
+        error("Your README.yml is not set up properly.")
   
 print()
 print ("Lines:", lines)

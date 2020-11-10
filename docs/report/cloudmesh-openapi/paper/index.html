@@ -688,7 +688,7 @@ introduces <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-note
 <ul>
 <li>
 <p><strong>Collection of resources</strong> <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>: Assume the URI,
-http://&hellip;/resources/, identifies a collection of resources. The
+<code>http://.../resources/</code>, identifies a collection of resources. The
 following CRUD functions would be implemented:</p>
 <ul>
 <li><strong>GET</strong>: List the URIs and details about the collection’s items.</li>
@@ -700,7 +700,7 @@ new entry’s URI and assigns it automatically.</li>
 </li>
 <li>
 <p><strong>Single Resource</strong> <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>: Assume the URI,
-http://&hellip;/resources/item58, identifies a single resource in a
+<code>http://.../resources/item58</code>, identifies a single resource in a
 collection. The following CRUD functions would be implemented:</p>
 <ul>
 <li><strong>GET</strong>: Fetch a representation of the item in the collection,
@@ -744,7 +744,7 @@ providers include Amazon Web Services, Microsoft Azure, Google Cloud
 Platform, Oracle’s OpenStack based providers, and more.  Cloud
 providers offer these resources in multiple service models including
 infrastructure as a service, platform as a service, software as a
-service, and, recently, function as a service. <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>.
+service, and, recently, function as a service <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>.
 These providers are rapidly offering new platforms and services
 ranging from bare-metal machines to AI development platforms like
 Google’s TensorFlow Enterprise platform <sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup>, and
@@ -804,11 +804,11 @@ pip install cloudmesh-installer
 cloudmesh-installer get openapi 
 cms help
 cms gui quick
-#fill out mongo variables
-#make sure autinstall is True
+# fill out mongo variables
+# make sure autinstall is True
 cms config set cloudmesh.data.mongo.MONGO_AUTOINSTALL=True
 cms admin mongo install --force
-#Restart a new terminal to make sure mongod is in your path
+# Restart a new terminal to make sure mongod is in your path
 cms init
 </code></pre><p>As a first example we like to test if the deployment works by using a
 number of simple commands we execute in a terminal.</p>
@@ -848,7 +848,7 @@ a string.</p>
 <pre><code>cms openapi generate add --filename=./tests/add-float/add.py
 cms openapi server start ./tests/add-float/add.yaml 
 curl -X GET &quot;http://localhost:8080/cloudmesh/add?x=1&amp;y=2&quot; -H  &quot;accept: text/plain&quot;
-#This command returns
+# This command returns
 &gt; 3.0
 cms openapi server stop add
 </code></pre><p>As we often also need the information as a REST service, we provide in
@@ -873,7 +873,7 @@ def add(x: float, y: float) -&gt; str:
 <pre><code>cms openapi generate add --filename=./tests/add-json/add.py
 cms openapi server start ./tests/add-json/add.yaml 
 curl -X GET &quot;http://localhost:8080/cloudmesh/add?x=1&amp;y=2&quot; -H  &quot;accept: text/plain&quot;
-#This command returns
+# This command returns
 &gt; {&quot;result&quot;:3.0}
 cms openapi server stop add
 </code></pre><p>These examples are used to demonstrate the ease of use as well as the
@@ -956,9 +956,10 @@ Cloudmesh-Openapi by recreating example services on our local
 machines, setup a git branch of the source project on which we will
 collaborate, contributed to the paper’s background section, and
 started looking for example AI analytics, like those provided at
-SciKitLearn’s website. We obtained cloud service accounts from AWS, Azure,
-GCP, and Chameleon Cloud, and verified Cloudmesh documentation while
-applying for the cloud accounts. We registered our accounts with the Cloudmesh shell and executed VM operations using Cloudmesh.</p>
+SciKitLearn’s website. We obtained cloud service accounts from AWS,
+Azure, GCP, and Chameleon Cloud, and verified Cloudmesh documentation
+while applying for the cloud accounts. We registered our accounts with
+the Cloudmesh shell and executed VM operations using Cloudmesh.</p>
 <p>Moving forward, we will develop benchmark tests in the
 form of pytests that replicate the AI analytic examples.  We will each
 use Cloudmesh to deploy these tests as an Openapi based REST service
@@ -972,10 +973,24 @@ others can replicate our work.</p>
 replicate may be the faces recognition example using eigenfaces and
 SVMs
 <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py">https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py</a>.</p>
-<p>Last week we created the first draft of the eigenfaces-svm example that is found in the &ldquo;benchmark&rdquo; branch.
-It outputs the example and prints benchmark information. We are making progress on manually running this example on a cloud VM using the Cloudmesh shell, which will generate the requirements for our final script.</p>
-<p>This week we successfully ran the eigenfaces-svm example on Goolge Cloud, Amazon Web Services, and Microsoft Azure. We created a script eigenfaces-svm-script that can deploy the OpenAPI service on a fresh VM on a cloud and run the eigenfaces-svm example. We also created the eigenfaces-svm-full example which breaks the workflow into a functions that download remote data, train and tests the model, provide a image upload function, and a prediction function. We also created a pytest that automatically run those four functions and print benchark information.</p>
-<p>Next week we will create a script to run the eigenfaces-svm-full example on each cloud multiple times, and them summarize and plot benchmark information to compare the clouds. Additionally, we will finish the report.</p>
+<p>Last week we created the first draft of the eigenfaces-svm example
+that is found in the &ldquo;benchmark&rdquo; branch.  It outputs the example and
+prints benchmark information. We are making progress on manually
+running this example on a cloud VM using the Cloudmesh shell, which
+will generate the requirements for our final script.</p>
+<p>This week we successfully ran the eigenfaces-svm example on Goolge
+Cloud, Amazon Web Services, and Microsoft Azure. We created a script
+eigenfaces-svm-script that can deploy the OpenAPI service on a fresh
+VM on a cloud and run the eigenfaces-svm example. We also created the
+eigenfaces-svm-full example which breaks the workflow into a functions
+that download remote data, train and tests the model, provide a image
+upload function, and a prediction function. We also created a pytest
+that automatically run those four functions and print benchark
+information.</p>
+<p>Next week we will create a script to run the eigenfaces-svm-full
+example on each cloud multiple times, and them summarize and plot
+benchmark information to compare the clouds. Additionally, we will
+finish the report.</p>
 <h2 id="references">References</h2>
 <p><em>NOTE:</em></p>
 <blockquote>
@@ -1004,33 +1019,33 @@ also be in refernces. No exception.</p>
 <li id="fn:6" role="doc-endnote">
  <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
 <li id="fn:7" role="doc-endnote">
-<p>OpenAPI Initiative, “The openapi specification.” Web Page [Online]. Available: &lt;https://github.com/OAI/OpenAPI- Specification/blob/main/versions/2.0.md&gt; <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>OpenAPI Initiative, &ldquo;The openapi specification.&rdquo; Web Page [Online]. Available: &lt;https://github.com/OAI/OpenAPI- Specification/blob/main/versions/2.0.md&gt; <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
-<p>OpenAPI Initiative, “The openapi specification.” Web Page [Online]. Available: <a href="https://github.com/OAI/OpenAPI-Specification">https://github.com/OAI/OpenAPI-Specification</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>OpenAPI Initiative, &ldquo;The openapi specification.&rdquo; Web Page [Online]. Available: <a href="https://github.com/OAI/OpenAPI-Specification">https://github.com/OAI/OpenAPI-Specification</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:9" role="doc-endnote">
-<p>RAML, “RAML version 1.0: RESTful api modeling language.” Web Page [Online]. Available: <a href="https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md">https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>RAML, &ldquo;RAML version 1.0: RESTful api modeling language.&rdquo; Web Page [Online]. Available: <a href="https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md">https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:10" role="doc-endnote">
-<p>R. H. Kevin Burke Kyle Conroy, “Flask-restful.” Web Page [Online]. Available: <a href="https://flask-restful.readthedocs.io/en/latest/">https://flask-restful.readthedocs.io/en/latest/</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>R. H. Kevin Burke Kyle Conroy, &ldquo;Flask-restful.&rdquo; Web Page [Online]. Available: <a href="https://flask-restful.readthedocs.io/en/latest/">https://flask-restful.readthedocs.io/en/latest/</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:11" role="doc-endnote">
-<p>E. O. Ltd, “Django rest framework.” Web Page [Online]. Available:
+<p>E. O. Ltd, &ldquo;Django rest framework.&rdquo; Web Page [Online]. Available:
 <a href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/</a> <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:12" role="doc-endnote">
-<p>S. Software, “API development for everyone.” Web Page [Online]. Available: <a href="https://swagger.io">https://swagger.io</a> <a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>S. Software, &ldquo;API development for everyone.&rdquo; Web Page [Online]. Available: <a href="https://swagger.io">https://swagger.io</a> <a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:13" role="doc-endnote">
-<p>A. Y. W. Hate, “OpenAPI.Tools.” Web Page [Online]. Available:
+<p>A. Y. W. Hate, &ldquo;OpenAPI.Tools.&rdquo; Web Page [Online]. Available:
 <a href="https://openapi.tools/">https://openapi.tools/</a> <a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:14" role="doc-endnote">
-<p>S. Software, “Swagger codegen documentation.” Web Page [Online]. Available: <a href="https://swagger.io/docs/open-source-tools/swagger-codegen/">https://swagger.io/docs/open-source-tools/swagger-codegen/</a> <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>S. Software, &ldquo;Swagger codegen documentation.&rdquo; Web Page [Online]. Available: <a href="https://swagger.io/docs/open-source-tools/swagger-codegen/">https://swagger.io/docs/open-source-tools/swagger-codegen/</a> <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:15" role="doc-endnote">
-<p>NIST SP 800-145 Webpage &lt; <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf%3E">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf&gt;</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>NIST SP 800-145 Webpage <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:16" role="doc-endnote">
 <p>Google Tensorflow Enterprise website <a href="https://cloud.google.com/tensorflow-enterprise">https://cloud.google.com/tensorflow-enterprise</a> <a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>

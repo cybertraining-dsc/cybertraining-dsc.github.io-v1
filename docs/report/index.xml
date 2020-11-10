@@ -3326,6 +3326,7 @@ A project this large and versatile requires the use of many software tools. Thes
         &lt;li&gt;&lt;a href=&#34;#41-algorithm-metrics&#34;&gt;4.1 Algorithm Metrics&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-conclusion&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#project-timeline&#34;&gt;Project Timeline&lt;/a&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&#34;#october-26&#34;&gt;October 26&lt;/a&gt;&lt;/li&gt;
@@ -3504,6 +3505,8 @@ A project this large and versatile requires the use of many software tools. Thes
 |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
 | No Disease  | 0.56      | 0.57   | 0.57     |
 | Has Disease | 0.56      | 0.56   | 0.56     |&lt;/p&gt;
+&lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
+&lt;p&gt;be addressed as the project nears completion&lt;/p&gt;
 &lt;h2 id=&#34;project-timeline&#34;&gt;Project Timeline&lt;/h2&gt;
 &lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates.&lt;/p&gt;
 &lt;h3 id=&#34;october-26&#34;&gt;October 26&lt;/h3&gt;
@@ -4148,6 +4151,9 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
         
         
         &lt;h1 id=&#34;residential-power-usage-prediction&#34;&gt;Residential Power Usage Prediction&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; watch video for image inclusion&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Siny P Raphel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/&#34;&gt;fa20-523-314&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md&#34;&gt;sinypr@gmail.com&lt;/a&gt;&lt;/p&gt;
 
 
