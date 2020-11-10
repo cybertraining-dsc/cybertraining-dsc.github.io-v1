@@ -53,11 +53,6 @@ if "## 1." not in content:
 if "## 2." not in content or "## 3." not in content:
     error("To few subsections in the report")
 
-if " http://" in content or " https://" in content:
-    error("http link is not enclosed in < >")
-    
-if " <http://" in content or " https://" in content:
-    error("http link is not enclosed in < >")
 
 if "## Abstract" not in content:
     error("Abstract missing")
@@ -125,6 +120,9 @@ for line in content.splitlines():
 
         if line.startswith("# "):
             titles = titles + 1
+        if " http://" in line or " https://" in line:
+            error(f"{counter}: http link is not enclosed in < >")
+    
 
 if titles > 1:
     error("you used multiple titles")
