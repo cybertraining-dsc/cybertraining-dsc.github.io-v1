@@ -335,7 +335,13 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_project" href="/report/fa20-523-305/project/old_project/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_infoold_project" href="/report/fa20-523-305/project/old_info/old_project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectplan" href="/report/fa20-523-305/project/plan/"></a>
       
       
       
@@ -456,12 +462,6 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-316projectproject" href="/report/fa20-523-316/project/project/"></a>
       
       
     </li>
@@ -972,8 +972,10 @@ others can replicate our work.</p>
 replicate may be the faces recognition example using eigenfaces and
 SVMs
 <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py">https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py</a>.</p>
-<p>This week we created the first draft of the eigenfaces-svm example that is found in the &ldquo;benchmark&rdquo; branch.
+<p>Last week we created the first draft of the eigenfaces-svm example that is found in the &ldquo;benchmark&rdquo; branch.
 It outputs the example and prints benchmark information. We are making progress on manually running this example on a cloud VM using the Cloudmesh shell, which will generate the requirements for our final script.</p>
+<p>This week we successfully ran the eigenfaces-svm example on Goolge Cloud, Amazon Web Services, and Microsoft Azure. We created a script eigenfaces-svm-script that can deploy the OpenAPI service on a fresh VM on a cloud and run the eigenfaces-svm example. We also created the eigenfaces-svm-full example which breaks the workflow into a functions that download remote data, train and tests the model, provide a image upload function, and a prediction function. We also created a pytest that automatically run those four functions and print benchark information.</p>
+<p>Next week we will create a script to run the eigenfaces-svm-full example on each cloud multiple times, and them summarize and plot benchmark information to compare the clouds. Additionally, we will finish the report.</p>
 <h2 id="references">References</h2>
 <p><em>NOTE:</em></p>
 <blockquote>
@@ -1051,6 +1053,10 @@ also be in refernces. No exception.</p>
     
     
     <hr class="panel-line">
+        
+            
+        
+            
         
             
         

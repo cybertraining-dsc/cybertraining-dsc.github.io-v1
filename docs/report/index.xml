@@ -2399,22 +2399,26 @@ This API should be executed at the end of the session to delete all the resource
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; basketball, NBA, injury, performance, salary, rehabilitation, artificial intelligence, convolutional neural network.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; basketball, NBA, injury, performance, salary, rehabilitation, artificial intelligence, convolutional neural network, Logistic Regressor, LightGBM.&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;The topic to be investigated is basketball player performance as it relates to injury. The topic of injury and recovery is a multi-billion dollar industry.  The Sports Medicine field is expected to reach $7.2 billion dollars by 2025 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The scope of this effort is to explore National Basketball Association(NBA) teams, but the additional uses of a topic such as this could expand into other realms such as the National Football League, Major League Baseball, the Olympic Committees, and many other avenues.  For leagues with salaries, projecting an expected return on the investment can assist in contract negotiations and cater expectations.  Competing at such a high level of intensity puts these players at a greater risk to injury than the average athlete because of the intense and constant strain on their bodies.  The overall valuation of the NBA in recent years is over 2 billion dollars, meaning each team is spending millions of dollars in the pursuit of a championship every season.  Injuries to players can cost teams not only wins but also significant profits.  Ticket sales alone for a single NBA finals game have reported greater than 10 million dollars in profit for the home team, if a team&amp;rsquo;s star player gets injured just before the playoffs and the team does not succeed, that is a lot of money lost.  These injuries can have an effect no matter the time of year, regular season ticket sales have been known to fluctuate with injuries from the team&amp;rsquo;s top performers.  Besides ticket sales these injuries can also influence viewrship, TV or streaming, and potentially lead to a greater loss in profits.  With the health of the players and so much money at stake NBA team organizations as a whole do their best to take care of their players and keep them injury free.&lt;/p&gt;
+&lt;p&gt;The topic to be investigated is basketball player performance as it relates to injury. The topic of injury and recovery is a multi-billion dollar industry.  The Sports Medicine field is expected to reach $7.2 billion dollars by 2025 &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.  The scope of this effort is to explore National Basketball Association(NBA) teams, but the additional uses of a topic such as this could expand into other realms such as the National Football League, Major League Baseball, the Olympic Committees, and many other avenues.  For leagues with salaries, projecting an expected return on the investment can assist in contract negotiations and cater expectations.  Competing at such a high level of intensity puts these players at a greater risk to injury than the average athlete because of the intense and constant strain on their bodies.  The overall valuation of the NBA in recent years is over 2 billion dollars, meaning each team is spending millions of dollars in the pursuit of a championship every season.  Injuries to players can cost teams not only wins but also significant profits.  Ticket sales alone for a single NBA finals game have reported greater than 10 million dollars in profit for the home team, if a team&amp;rsquo;s star player gets injured just before the playoffs and the team does not succeed, that is a lot of money lost.  These injuries can have an effect no matter the time of year, regular season ticket sales have been known to fluctuate with injuries from the team&amp;rsquo;s top performers.  Besides ticket sales these injuries can also influence viewership, TV or streaming, and potentially lead to a greater loss in profits.  With the health of the players and so much money at stake NBA team organizations as a whole do their best to take care of their players and keep them injury free.&lt;/p&gt;
 &lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
-&lt;p&gt;The assumptions were made based on current literature as well. The injury return and limitations upon return of Anterior Cruciate Ligament (ACL) rupture (ACLR) are well documented and known. Interesting enough, forty percent of the players in the study occured during the fourth quarter &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This leads some credence to the idea that fatigue is a major factor in the occurrence of these injuries.&lt;/p&gt;
+&lt;p&gt;The assumptions were made based on current literature as well. The injury return and limitations upon return of Anterior Cruciate Ligament (ACL) rupture (ACLR) are well documented and known. Interesting enough, forty percent of the players in the study occurred during the fourth quarter &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This leads some credence to the idea that fatigue is a major factor in the occurrence of these injuries.&lt;/p&gt;
 &lt;p&gt;The current literature also shows that a second or third injury can occur more frequently due to minor injuries. &amp;ldquo;When an athlete is recovering from an injury or surgery, tissue is already compromised and thus requires far more attention despite the recovery of joint motion and strength. Moreover, injuries and surgical procedures can create detraining issues that increase the likelihood of further injury&amp;rdquo; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;3-dataset&#34;&gt;3. Dataset&lt;/h2&gt;
 &lt;p&gt;To compare performance and injury, a minimum of two datasets will be needed. The first is a dataset of injuries for players &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. This dataset will create the samples necessary for review.&lt;/p&gt;
-&lt;p&gt;Once the controls for injuries are established, the next requirement will be to establish  pre-injury performance parameters and post-injury parameters.  These areas will be where the feature engineering will take place.  The datasets needed must dive into appropriate basketball performance stats to establish a metric to encompass a player’s performance. One example that ESPN has tried in the past is the Player Efficiency Rating (PER).  To accomplish this, it will be important to review player performance within games such as in the “NBA games data” &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; dataset.  There is a potential to pull more data from other datasets such as the “NBA Enhanced Box Score and Standings (2012 - 2018)” &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.  It is important to use the in depth data from the “NBA games data” &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. dataset because of how it will allow us to see how the player was performing throughout the season, and not just their average stats across the year.  With in depth information about each game of the season, and not just the teams and players aggregated stats, added to the data provided from the injury dataset &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; we will be able to compose new metrics to understand how these injuries are actually affecting the players performance.&lt;/p&gt;
+&lt;p&gt;Once the controls for injuries are established, the next requirement will be to establish  pre-injury performance parameters and post-injury parameters.  These areas will be where the feature engineering will take place.  The datasets needed must dive into appropriate basketball performance stats to establish a metric to encompass a player’s performance. One example that ESPN has tried in the past is the Player Efficiency Rating (PER).  To accomplish this, it will be important to review player performance within games such as in the “NBA games data” &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; dataset because of how it will allow us to see how the player was performing throughout the season, and not just their average stats across the year..  In addition to that the data from the “NBA games data” &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; dataset will be valuable in order to compare the calculated performance metrics just before an injury or after recovery to their overall performance that season or in seasons prior.  That comparison will provide a solid baseline to understand how injuries can effect a player’s performance. With in depth information about each game of the season, and not just the teams and players aggregated stats, added to the data provided from the injury dataset &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; we will be able to compose new metrics to understand how these injuries are actually affecting the players performance.&lt;/p&gt;
 &lt;p&gt;Along the way we look forward to discovering if there is also a causal relationship to the severity of some of the injuries, based on how the player was performing just before the injury.  The term “load management” has become popular in recent years to describe players taking rest periodically throughout the season in order to prevent injury from overplaying.  This new practice has received both support for the player safety it provides and also criticism around players taking too much time off.  Of course not all injuries are entirely based on the recent strain under the players body, but a better understanding about how that affects the injury as a whole could give better insight into avoiding more injuries.  It is important to remember though that any pattern identification would not lead to an elimination of all injuries, any contact sport will continue to have injuries, especially one as high impact as the NBA.  There is value to learn from why some players are able to return from certain injuries more quickly and why some return to almost equivalent or better playing performance than before the injury.  This comparison of performance will be made by deriving metrics based on varying ranges of games immediately leading up to injury and then immediately after returning from injury.  In addition to that we will perform comparisons to the players known peak performance to better understand how the injury affected them.  Another factor it will be important to include is the length of time recovering from the injury. Different players take differing amounts of time off, sometimes even with similar injuries.  Something will be said about the player’s dedication to recovery and determination to remain at peak performance, even through injury, when looking at how severe their injury was, how much time was taken for recovery, and how they performed upon returning.&lt;/p&gt;
 &lt;p&gt;These datasets were chosen because they allow for a review of individual game performance, for each team, throughout each season in the recent decade.  Aggregate statistics such as points per game (ppg) can be deceptive because duration of the metric is such a large period of time.  The large sample of 82 games can lead to a perception issue when reviewing the data.  These datasets include more variables to help us determine effects to player injury, such as minutes per game (mpg) to understand how strenuous the pre-injury performance or how fatigue may have played a factor in the injury.  Understanding more of the variables such as fouls given or drawn can help determine if the player or other team seemed to be the primary aggressor before any injury.&lt;/p&gt;
+&lt;p&gt;###3.1 Data Transformations and Calculations
+Using the Kaggle package the datasets are downloaded direct from the website and unzipped to a directory accessible by the ‘project_dateEngineering.ipynb’ notebook.  The 7 unzipped datasets are then loaded into the notebook as pandas data frames using the ‘.read_csv()’ function.  The data engineering performed in the notebook includes removal of excess data and data type transformations across almost all the data frames loaded. This data transformation includes transforming the games details column ‘MIN’, meaning minutes played, from a timestamp format to a numerical format that could have calculations like summation or average performed on it. This was a crucial transformation since minutes played have a direct correlation to player fatigue, which can increase a player’s chance of injury.
+One of the more difficult tasks was transforming the Injury dataset into something that would provide more information through machine learning and analysis.  The dataset is loaded as one data set where 2 columns ‘Relinquished’ and ‘Acquired’ defined if the row in questions was a player leaving the roster due to injury or returning from injury, respectively.   In this case for each for one of those two columns contained a players name and the other was blank. Besides that the data frame contained information like the date, notes, and the team name.  In order to appropriately understand each injury as whole the data frame needs to be transformed into one where each row contains the player, the start date of the injury, and the end date of the injury.  In order to do this first the original Injury dataset was separated into rows marking the start of an injury and those marking the end of an injury. Data frames from the &lt;em&gt;NBA games data&lt;/em&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; data set were used to join TeamID and PlayerID columns to the Injury datasets. An ‘iterrows():’ loop was then used on the data frame marking the start of an injury to specifically locate the corresponding row in the Injury End data frame with the same PlayerID and where the return date was the closest date after the injury date.  As this new data frame was being transformed, it was noted that sometimes a Player would have multiple rows with the same Injury ending date but different injury start dates, this can happen if an injury worsens or the player did not play due to last minute decision. In order to solve this the table was grouped by the PlayerID and InjuryEnd Date while keeping the oldest Injury Start date, since the model will want to see the full length of the injury.  From there it was simple to calculate the difference in days for each row between the Injury start and end dates. This data frame is called ‘df_Injury_length’ in the notebook and is much easier to use for improved understanding of NBA injuries than the original format of the Injury data set.
+Once created, the ‘df_Injury_length’ data frame was copied and built upon.  Using ‘iterrows():’ loop again to filter down the games details data frame rows with the same PlayerId, over 60 calculated columns are created to produce the ‘df_Injury_stats’ data frame.  The data frame includes performance statistics specifically from the game the player was injured and the game the player returned from that injury.  In addition to this aggregate performance metrics were calculated based on the 5 games prior to the injury and the 5 games post returning from injury.  At this time the season of when the injury occurred and when the player returned is also stored in the dataframe. This will allow comparisons between the ‘df_Injury_stats’ data frame and the ‘df_Season_stats’ data frame which contains the players average performance metrics for entire seasons.&lt;/p&gt;
 &lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
-&lt;p&gt;The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyse this information from the datasets, a predictive model will need to be created using a large set of the data to train.&lt;/p&gt;
+&lt;p&gt;The objective of this project is to develop performance indicators for injured players returning to basketball in the NBA.  It is unreasonable to expect a player to return to the same level of play post injury immediately upon starting back up after recovery.  It often takes a player months if not years to return to the same level of play as pre-injury, especially considering the severity of the injuries.  In order to successfully analyze this information from the datasets, a predictive model will need to be created using a large set of the data to train.&lt;/p&gt;
 &lt;p&gt;From this point, a test run will be used to gauge the validity and accuracy of the model compared to some of the data set aside.  The model created will be able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance.  Feature engineering will be performed prior to training the model in order to improve the chances of higher accuracy from the predictions.  This model could be used to keep an eye out for how a player&amp;rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.&lt;/p&gt;
 &lt;h3 id=&#34;41-development-of-models&#34;&gt;4.1 Development of Models&lt;/h3&gt;
-&lt;p&gt;To help with review of the data, conditioned data was used to save resources on Google Colab. By conditioning the data and saving the files as a .CSV, the team was able to create a streamlined process. Additionally, the team found benefit by uploading these files to Google Drive to quickly import data near realtime. The files saved were the following:&lt;/p&gt;
+&lt;p&gt;To help with review of the data, conditioned data was used to save resources on Google Colab. By conditioning the data and saving the files as a .CSV, the team was able to create a streamlined process. Additionally, the team found benefit by uploading these files to Google Drive to quickly import data near real time. The files saved were the following:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2425,7 +2429,7 @@ This API should be executed at the end of the session to delete all the resource
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;1.&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;df_Injury_End&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;df_Injury_stats&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;2.&lt;/td&gt;
@@ -2433,7 +2437,7 @@ This API should be executed at the end of the session to delete all the resource
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;3.&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;df_Injury_Start&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;df_Season_stats&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;4.&lt;/td&gt;
@@ -2441,7 +2445,7 @@ This API should be executed at the end of the session to delete all the resource
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;5.&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;games_details&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;df_Games_gamesDetails&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;6.&lt;/td&gt;
@@ -2461,16 +2465,21 @@ This API should be executed at the end of the session to delete all the resource
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Everytime Google Colab loades data, it takes time and resources. The team was able to utilize the crossplatform connectivity of the Google utilities. The team could then focus on building models as opposed to conditioning data every time the code was ran.&lt;/p&gt;
+&lt;p&gt;Every time Google Colab loads data, it takes time and resources. The team was able to utilize the cross platform connectivity of the Google utilities. The team could then focus on building models as opposed to conditioning data every time the code was ran.&lt;/p&gt;
 &lt;h4 id=&#34;411-logistics-regression&#34;&gt;4.1.1 Logistics Regression&lt;/h4&gt;
 &lt;p&gt;The initial model that was used was a Logistic Regression model. This model produced results of &lt;em&gt;X&lt;/em&gt;. These results&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://helloacm.com/wp-content/uploads/2016/03/logistic-regression-example.jpg&#34; alt=&#34;Logistic Regressor&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 1: Logistic Regressor&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;After running a Logistic Regression model, the decision was made to try multiple models to see what gives the best results. The team decided to use a Linear Regression model.&lt;/p&gt;
 &lt;h4 id=&#34;412-lightgbm-regression&#34;&gt;4.1.2 LightGBM Regression&lt;/h4&gt;
-&lt;p&gt;Another algorithm chosen was a Light Gradient Boost Machine (LightGBM) model. LightGBM is known for it&amp;rsquo;s lightweight and resource sparse abilities. The model is built from decision tree algorithms and used for ranking, classification, and other machine learning tasks. By choosing LightGBM data scientists are able to analyze larger data a faster approach. LightGBM  can often over fit a model if the data is too small, but fortunately for the purpose of this assignment the data available for NBA injuries and stats is extremely large. Availability of data allowed for smooth operation of the LightGBM model.&lt;/p&gt;
+&lt;p&gt;Another algorithm chosen was a Light Gradient Boost Machine (LightGBM) model. LightGBM is known for its lightweight and resource sparse abilities. The model is built from decision tree algorithms and used for ranking, classification, and other machine learning tasks. By choosing LightGBM data scientists are able to analyze larger data a faster approach. LightGBM  can often over fit a model if the data is too small, but fortunately for the purpose of this assignment the data available for NBA injuries and stats is extremely large. Availability of data allowed for smooth operation of the LightGBM model. Mandot explains the model really well in The Medium. Mandot said, &amp;ldquo;Light GBM can handle the large size of data and takes lower memory to run. Another reason of why Light GBM is popular is because it focuses on accuracy of results. LGBM also supports GPU learning and thus data scientists are widely using LGBM for data science application development.&amp;rdquo; &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. There are a lot of benefits available to this algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1050/1*AZsSoXb8lc5N6mnhqX5JCg.png&#34; alt=&#34;LightGBM Algorithm: Leafwise searching&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 2: LightGBM Algorithm: Leafwise searching&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When running the model, we saw promising results.&lt;/p&gt;
 &lt;h4 id=&#34;413-keras-deep-learning-models&#34;&gt;4.1.3 Keras Deep Learning Models&lt;/h4&gt;
 &lt;p&gt;The final model attempted was a Deep Learning model. A few runs of different layers and epochs were chosen. The models sequentially ran through the test layers to refine the model. When this is done, each predecessor layer acts as an input to the next layer&amp;rsquo;s model. The results can produce accurate results while using unsupervised learning. The visualization for this model can be seen in the following figure:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://img.securityinfowatch.com/files/base/cygnus/siw/image/2019/02/Figure_01.5c7712513151e.png?auto=format&amp;amp;h=553&amp;amp;w=1280&#34; alt=&#34;Neural Network&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Figure 1: Neural Network&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 3: Neural Network&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;When the team ran the Neural Networks, the data went through three layers. Each layer was built upon the previous similarly to the figure. This allowed for the team to capture information from the processing.&lt;/p&gt;
 &lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
 &lt;p&gt;With the data available, some conclusions can be made. Not all injuries are of the same severity. By treating an ACL tear in the same manner as a bruise, the team doctors would take terrible approaches to rehab. The severity of the injury is a part of the approach to therapy.&lt;/p&gt;
@@ -2481,7 +2490,7 @@ This API should be executed at the end of the session to delete all the resource
 &lt;p&gt;After reviewing the results, performance does indeed appear to degrade over time.&lt;/p&gt;
 &lt;p&gt;These results are consistent with the current scientific literature &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Initial Project Report - Gorius, Hemmerlein
-Predictive Model - breakdown udetermined at this time&lt;/p&gt;
+Predictive Model - breakdown undetermined at this time&lt;/p&gt;
 &lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
 &lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
 &lt;h3 id=&#34;71-work-breakdown&#34;&gt;7.1 Work Breakdown&lt;/h3&gt;
@@ -2528,7 +2537,10 @@ Predictive Model - breakdown udetermined at this time&lt;/p&gt;
 &lt;p&gt;N. Lauga, &lt;em&gt;NBA games data&lt;/em&gt;, Kaggle.  &lt;a href=&#34;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&#34;&gt;https://www.kaggle.com/nathanlauga/nba-games?select=games_details.csv&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;P. Rossotti, &lt;em&gt;NBA Enhanced Box Score and Standings (2012 - 2018)&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/pablote/nba-enhanced-stats&#34;&gt;https://www.kaggle.com/pablote/nba-enhanced-stats&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;J. Cirtautas, &lt;em&gt;NBA Players&lt;/em&gt;, Kaggle. &lt;a href=&#34;https://www.kaggle.com/justinas/nba-players-data&#34;&gt;https://www.kaggle.com/justinas/nba-players-data&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;P. Mandon, &lt;em&gt;What is LightGBM, How to implement it? How to fine tune the parameters?&lt;/em&gt;, Medium. &lt;a href=&#34;https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc&#34;&gt;https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc&lt;/a&gt; &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -2734,10 +2746,10 @@ A project this large and versatile requires the use of many software tools. Thes
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-305/project/old_project/</link>
+      <link>/report/fa20-523-305/project/old_info/old_project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/fa20-523-305/project/old_project/</guid>
+      <guid>/report/fa20-523-305/project/old_info/old_project/</guid>
       <description>
         
         
@@ -2804,6 +2816,20 @@ A project this large and versatile requires the use of many software tools. Thes
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-305/project/plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-305/project/plan/</guid>
+      <description>
+        
+        
+        &lt;p&gt;TBD&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-305/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2822,6 +2848,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#topic-discussion&#34;&gt;Topic Discussion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#datasets&#34;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#data-cleaning-and-aggregation&#34;&gt;Data Cleaning and Aggregation&lt;/a&gt;&lt;/li&gt;
@@ -2839,7 +2866,6 @@ A project this large and versatile requires the use of many software tools. Thes
     &lt;li&gt;&lt;a href=&#34;#model-testing-classifier&#34;&gt;Model Testing (Classifier)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#plan-for-the-rest-of-the-semseter&#34;&gt;Plan for the rest of the Semseter&lt;/a&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#november-9&#34;&gt;November 9&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#november-16&#34;&gt;November 16&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
@@ -2851,16 +2877,26 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; agriculture, soil moisture, IoT&lt;/p&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;Understanding how weather impacts soil moisture is something that has been studied in various ways, all because it is a driving factor in crop success. Multiple studies have sought to apply a deterministic approach to calculating soil moisture based on observational weather data.&lt;/p&gt;
+&lt;p&gt;One such study, was motivated by trying to predict dust storms in China, in which soil moisture plays a large role in. This prediction used multiple-linear regression, and focused on predictions that dealt with the top 10 cm of soil. Two key takeaways can be derived from this work that are beneficial for carrying out this project.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;The influence of precipitation on surface soil moisture content does not last more than 16 days.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;The compound effect of the ratio of precipitation to evaporation, which is nonlinearly summed, can be used to calculate the surface soil moisture content in China&amp;rdquo; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Moving forward, this project will assume that percipitation from the prior 16 days is relavent. In the case that for the specific data being fit, less days are relavent, then their coefficients in the model will likely become small enough to not effect the model. Secondly, soil moisture is influenced by a ratio or precipitation to evaporation. While this project might not seek to evaluate this relationship directly, it will seek to include data that would influence these ratios such as temperature and wind speeds.&lt;/p&gt;
+&lt;p&gt;Multiple publidcations have sought to come up with complete hydrological models to determine soil moisture from a variety of factors. These models are generally stochastic in nature, and are reliable predictors when many parameters of the model are avaliable. One such cited model requires a minimum or 19 variables or measured coeefficients &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The authors of another study note the aformentioned study, as well as other similar studies, and make a point that these methods might not be the best models when it comes to practical applications. Their solution was to create a generalize model that relied mostly on soil moisture as &amp;ldquo;a function of the time-weighted average of previous cumulative rainfall over a period&amp;rdquo; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Such a model is closer in terms to simplicity and generalization to what is hoped to be accomplished in this project.&lt;/p&gt;
+&lt;p&gt;The relationship between soil moisture and weather patterns is one with a rich history of study. Both of these measures effect each other in various ways. Most studies that sought to quantify this relationship were conducted at a time in which large scale sensor arrays could not have been implemented in a field. With the prevalance of IoT and improved sensing technologies, it seems as though there might not be a need to use predictive models for soil moisture, but instead just use sensor data. While this could be true in some applications, a wide array of challenges occur when trying to maintain these sensor arrays. Problems such as charging or replacing batteries, sensor and relay equipment not working if completely buried, but are in the way of farming if mounted above ground, sensors failing, etc. These were real challenges faced by the farm in which the soil moisture data was collected &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. The objective of this project is to create predictive models based on limited training data so that farmers would not need to deal with sensor arrays indefinitely.&lt;/p&gt;
 &lt;h2 id=&#34;topic-discussion&#34;&gt;Topic Discussion&lt;/h2&gt;
-&lt;p&gt;Maintaining correct soil moisture throughout the plant growing process can result in better yeilds, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligable effects&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.&lt;/p&gt;
+&lt;p&gt;Maintaining correct soil moisture throughout the plant growing process can result in better yeilds, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligable effects&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.&lt;/p&gt;
 &lt;p&gt;For hundreds of years, farmers have done something similar to this model. The difference is the precision that we can gain by using real data. For the past few hundred years, farmers had to rely on mostly experience and touch to know the moisture of their soil. While many farmers were successful, in the sense that they produced crops, there were ways they could have better optimized their crops to produce better. The water avaliable to the plants is not the only variable that effects yeilds, but this project seeks to create an accessible model to which farmers can have predicted values of soil moisture without needing to buy and deploy expensive sensors.&lt;/p&gt;
 &lt;p&gt;The model created could be used in various ways. The first main use is to be able to monitor what is currently happening in the soil so that changes can be made to correct the issue if there is one. Secondly, a farmer could evaluate historical data and compare it to yeilds or other results of the harvest and use this analytical information to inform future descions.&lt;/p&gt;
 &lt;p&gt;This project specifically seeks to see the effect of weather on a particular piece of land in Washington state. This process could be done all over the world to obtain benchmarks. These benchmarks could be a cheap option for a farmer that does not have the funds to support a full study of water usage on their land. Instead, they could look for a model that has land that has similar soil and or geographical features, and then use their own weather data to estimate their soil moisture content.&lt;/p&gt;
 &lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
-&lt;p&gt;The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format (see Figure 1).&lt;/p&gt;
+&lt;p&gt;The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format (see Figure 1).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/distance_map.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Estimated distance from weather reports to the crop fields. Distance is calculated using Google Maps&lt;/p&gt;
-&lt;p&gt;The second dataset comes from the USDA. This dataset consits of &amp;ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&amp;rdquo; at a farm in Washington state &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.&lt;/p&gt;
+&lt;p&gt;The second dataset comes from the USDA. This dataset consits of &amp;ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&amp;rdquo; at a farm in Washington state &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.&lt;/p&gt;
 &lt;p&gt;Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the sattelite image (see Figure 2).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/sensor_locations.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Location of sensors within the test field&lt;/p&gt;
@@ -2947,7 +2983,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;Further experimentation will be required to decide if this is truly the best route for the model. This idea seems promising as predicting the exact moisture content is not as important as understanding the toleraable ranges.&lt;/p&gt;
 &lt;h2 id=&#34;plan-for-the-rest-of-the-semseter&#34;&gt;Plan for the rest of the Semseter&lt;/h2&gt;
 &lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates&lt;/p&gt;
-&lt;h3 id=&#34;november-9&#34;&gt;November 9&lt;/h3&gt;
+&lt;h3 id=&#34;november-16&#34;&gt;November 16&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Tune Hyper-parameters&lt;/li&gt;
 &lt;li&gt;Test various models&lt;/li&gt;
@@ -2955,23 +2991,30 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;li&gt;Start analyzing various models and techniques to find the most accurate model&lt;/li&gt;
 &lt;li&gt;Update report&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;november-16&#34;&gt;November 16&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Build a library/program that can pull weather data from NOAA and takes sensor input and outputs predictions of soil moisture by area&lt;/li&gt;
-&lt;li&gt;Finalize report and findings&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;O. Denmead and R. Shaw, &amp;ldquo;The Effects of Soil Moisture Stress at Different Stages of Growth on the Development and Yield of Corn 1&amp;rdquo;, Agronomy Journal, vol. 52, no. 5, pp. 272-274, 1960. Available: 10.2134/agronj1960.00021962005200050010x. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;K. Shang, S. Wang, Y. Ma, Z. Zhou, J. Wang, H. Liu and Y. Wang, &amp;ldquo;A scheme for calculating soil moisture content by using routine weather data&amp;rdquo;, Atmospheric Chemistry and Physics, vol. 7, no. 19, pp. 5197-5206, 2007 [Online]. Available: &lt;a href=&#34;https://hal.archives-ouvertes.fr/hal-00302825/document&#34;&gt;https://hal.archives-ouvertes.fr/hal-00302825/document&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;N. (NCEI), &amp;ldquo;Climate Data Online (CDO) - The National Climatic Data Center&amp;rsquo;s (NCDC) Climate Data Online (CDO) provides free access to NCDC&amp;rsquo;s archive of historical weather and climate data in addition to station history information. | National Climatic Data Center (NCDC)&amp;rdquo;, Ncdc.noaa.gov, 2020. [Online]. Available: &lt;a href=&#34;https://www.ncdc.noaa.gov/cdo-web/&#34;&gt;https://www.ncdc.noaa.gov/cdo-web/&lt;/a&gt;. [Accessed: 19- Oct- 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;W. Capehart and T. Carlson, &amp;ldquo;Estimating near-surface soil moisture availability using a meteorologically driven soil-water profile model&amp;rdquo;, Journal of Hydrology, vol. 160, no. 1-4, pp. 1-20, 1994 [Online]. Available: &lt;a href=&#34;https://d1wqtxts1xzle7.cloudfront.net/49029293/0022-1694_2894_2990031-020160922-30744-s4bk3h.pdf?1474528332=&amp;amp;response-content-disposition=inline%3B+filename%3DEstimating_near_surface_soil_moisture_av.pdf&amp;amp;Expires=1604966715&amp;amp;Signature=Q~p9g74lgChE6c7AfnE~Ep8179QUW~5HV0wpxotbyYtYONk-ns8Jku6oT9mTmKEw4wnix1Uol~zwOyxLObjdi8Cjg~LclJBo6CjFcxALrU1lpBnyzOML4hGOa9yiqEqwvrn3tG4tpsmysnOSznmj8kVTl2GGtMpblfyFl~x5QdwhcbVxvQrJDKRsdUsYOqfBeEiQahM7zgi8Gikrreh0AaLzM2GGpVcfXl8QD84XkbxdDJEinDAtWxW8yNKqrfNBnBqODCo9VusCXy-VJvJ9syFy5fTld~enjQfqHQtKyjszbXcNr1o~20uG78D8RlJyBnEECBh~M5miatLhhgig3Q__&amp;amp;Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA&#34;&gt;https://d1wqtxts1xzle7.cloudfront.net/49029293/0022-1694_2894_2990031-020160922-30744-s4bk3h.pdf?1474528332=&amp;amp;response-content-disposition=inline%3B+filename%3DEstimating_near_surface_soil_moisture_av.pdf&amp;amp;Expires=1604966715&amp;amp;Signature=Q~p9g74lgChE6c7AfnE~Ep8179QUW~5HV0wpxotbyYtYONk-ns8Jku6oT9mTmKEw4wnix1Uol~zwOyxLObjdi8Cjg~LclJBo6CjFcxALrU1lpBnyzOML4hGOa9yiqEqwvrn3tG4tpsmysnOSznmj8kVTl2GGtMpblfyFl~x5QdwhcbVxvQrJDKRsdUsYOqfBeEiQahM7zgi8Gikrreh0AaLzM2GGpVcfXl8QD84XkbxdDJEinDAtWxW8yNKqrfNBnBqODCo9VusCXy-VJvJ9syFy5fTld~enjQfqHQtKyjszbXcNr1o~20uG78D8RlJyBnEECBh~M5miatLhhgig3Q__&amp;amp;Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&amp;ldquo;Data from: A field-scale sensor network data set for monitoring and modeling the spatial and temporal variation of soil moisture in a dryland agricultural field&amp;rdquo;, USDA: Ag Data Commons, 2020. [Online]. Available: &lt;a href=&#34;https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field&#34;&gt;https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field&lt;/a&gt;. [Accessed: 19- Oct- 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;F. Pan, C. Peters-Lidard and M. Sale, &amp;ldquo;An analytical method for predicting surface soil moisture from rainfall observations&amp;rdquo;, Water Resources Research, vol. 39, no. 11, 2003 [Online]. Available: &lt;a href=&#34;https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2003WR002142&#34;&gt;https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2003WR002142&lt;/a&gt;. [Accessed: 08- Nov- 2020] &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;C. Gasch, D. Brown, C. Campbell, D. Cobos, E. Brooks, M. Chahal and M. Poggio, &amp;ldquo;A Field-Scale Sensor Network Data Set for Monitoring and Modeling the Spatial and Temporal Variation of Soil Water Content in a Dryland Agricultural Field&amp;rdquo;, Water Resources Research, vol. 53, no. 12, pp. 10878-10887, 2017 [Online]. Available: &lt;a href=&#34;https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017WR021307&#34;&gt;https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017WR021307&lt;/a&gt;. [Accessed: 08- Nov- 2020] &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;O. Denmead and R. Shaw, &amp;ldquo;The Effects of Soil Moisture Stress at Different Stages of Growth on the Development and Yield of Corn 1&amp;rdquo;, Agronomy Journal, vol. 52, no. 5, pp. 272-274, 1960. Available: 10.2134/agronj1960.00021962005200050010x. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;N. (NCEI), &amp;ldquo;Climate Data Online (CDO) - The National Climatic Data Center&amp;rsquo;s (NCDC) Climate Data Online (CDO) provides free access to NCDC&amp;rsquo;s archive of historical weather and climate data in addition to station history information. | National Climatic Data Center (NCDC)&amp;rdquo;, Ncdc.noaa.gov, 2020. [Online]. Available: &lt;a href=&#34;https://www.ncdc.noaa.gov/cdo-web/&#34;&gt;https://www.ncdc.noaa.gov/cdo-web/&lt;/a&gt;. [Accessed: 19- Oct- 2020]. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Data from: A field-scale sensor network data set for monitoring and modeling the spatial and temporal variation of soil moisture in a dryland agricultural field&amp;rdquo;, USDA: Ag Data Commons, 2020. [Online]. Available: &lt;a href=&#34;https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field&#34;&gt;https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field&lt;/a&gt;. [Accessed: 19- Oct- 2020]. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -3100,15 +3143,15 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.&lt;/p&gt;
 &lt;p&gt;The date column is a column that is needed to track the amount of tweets per month and year. In the column, the timestamp and the date are combined so this need to be separated in several ways. The first being separating the date from the timestamp into its own column. This is followed up by separating the date into 4 columns for day, month, year and month-year in order to track tweets based on specified criteria.&lt;/p&gt;
 &lt;p&gt;After graphing the amount of tweets per year, the observation is that 2016 and 2020 have a low tweet count. The reminder is that the data starts in November 2016 making 2016 have two months of data compared to 2020 with only one month being January. From 2017 through 2019, we can see that the amount of tweets increases by almost a thousand every year. The tweets per month tell a different story. The amount varies greatly over the years with the greatest amount being near the end of 2016 and the beginning of 2017.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/year_tweets.png&#34; alt=&#34;Figure 1: Caption missing&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Caption missing&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/month_tweets.png&#34; alt=&#34;Figure 2: Caption missing&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Caption missing&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/year_tweets.png&#34; alt=&#34;Figure 1: Number of Tweets per Year&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Number of Tweets per Year&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/month_tweets.png&#34; alt=&#34;Figure 2: Number of Tweets per Month&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Number of Tweets per Month&lt;/p&gt;
 &lt;h3 id=&#34;stock-data-1&#34;&gt;Stock Data&lt;/h3&gt;
 &lt;p&gt;Similar to the twitter data, checking for null values is important but since the data is from Yahoo! Finance there are no missing values on the days that the markets are opened.&lt;/p&gt;
 &lt;p&gt;Once graphing the open and closed prices of the NASDAQ, there seems to be an general upwards trend in the market over the time period.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/market.png&#34; alt=&#34;Figure 3 Caption missing&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Caption missing&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/market.png&#34; alt=&#34;Figure 3 Open and Close Price of the NASDAQ&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Open and Close Price of the NASDAQ&lt;/p&gt;
 &lt;h2 id=&#34;the-impeachment-of-president-trump&#34;&gt;The Impeachment of President Trump&lt;/h2&gt;
 &lt;h2 id=&#34;the-dakota-access-and-keystone-xl-pipelines-approval&#34;&gt;The Dakota Access and Keystone XL pipelines approval&lt;/h2&gt;
 &lt;h2 id=&#34;the-government-shutdown&#34;&gt;The Government Shutdown&lt;/h2&gt;
@@ -3153,7 +3196,7 @@ A project this large and versatile requires the use of many software tools. Thes
       <description>
         
         
-        &lt;h1 id=&#34;nfl-regular-season-skilled-position-player-performance-as-a-predictor-of-playoff-appearance&#34;&gt;NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance&lt;/h1&gt;
+        &lt;h1 id=&#34;nfl-regular-season-skilled-position-player-performance-as-a-predictor-of-playoff-appearance-overtime&#34;&gt;NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance Overtime&lt;/h1&gt;
 &lt;p&gt;Travis Whitaker, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-308&#34;&gt;fa20-523-308&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-308/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
@@ -3182,7 +3225,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;In the modern NFL the biggest negotiating tools for players in signing a new contract is their on-field performance. Many players choose to &amp;ldquo;hold-out&amp;rdquo; of pre-season practice or regular season games as a negotiating tool in their attempt to sign a more lucrative contract. Players often feel as though their exceptional performance on the field is not reflected in the monetary compensation structure of their contract. This is most often reflected in skill position players such as wide receivers or running backs whose play on the field is most often celebrated (e.g., touchdowns) and discussed by fans of the game. While these positions are no doubt important to a team’s success, the question remains how important is one players contribution to a team’s overall success? Our project will attempt to evaluate the importance of the individual skill position players&amp;rsquo; (i.e., Quarterback (QB), Wide Receiver (WR), Running Back (RB), and Tight End (TE)) performance during the regular season and use in-game performance metrics as a predictive factor for their team making the playoffs. This is an attempt to answer the question does individual player’s performance lead to a team qualifying for post-season play?&lt;/p&gt;
 &lt;p&gt;There are many playoff predictor models that focus on team performance or team wins vs losses as a predictor of making the playoffs &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. However, few take into consideration individual player performance as an indicator of their team making the post-season playoffs in the NFL. The most famous model that takes into consideration player performance is ELO rating &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The first ELO rating was a straightforward model that took head-to-head results and player-vs-team model in order to predict win probability in an NFL game. However, in 2019 Silver and his team at FiveThirtyEight updated their ELO model to give a value rating to the quarterback position for each team. This quarterback value included metrics such as pass attempts, completions, passing yards, passing touchdowns, interceptions, sacks, rush attempts, rushing yards, and rushing touchdowns. Taking these metrics along with the defensive quality metrics, which is an adjustment of quarterback value based on the opposing defense ranking, gives you an overall value for your quarterback. Thus, this widely accepted model takes head-to-head team comparisons on a week-to-week basis and includes the quarterback value in predicting these head-to-head matchup. However, no model has taken just player performance and tried to predict team success based on each of their individual players. These previous models primarily look at offensive vs. defensive units and try to predict win/loss records based off each of these units.&lt;/p&gt;
-&lt;p&gt;The goal of the present research is not to compare our model vs previous models, as these standing models are not meant for playoff prediction, rather a game-by-game matchup comparison. The present research investigates whether looking at top 12 position players at each of the skilled positions maps onto predicting the playoff teams. The reason top 12 players at each position were chosen is because only 12 teams make the post-season each year in the NFL. We will look at player performance between 2009-2019 in order to predict post-season qualification and then compare the playoff predicted players (i.e., top 12 players at their position) with the actual playoff teams that qualified for the playoffs each year between 2009- 2019.&lt;/p&gt;
+&lt;p&gt;The goal of the present research is not to compare our model vs previous models, as these standing models are not meant for playoff prediction, rather a game-by-game matchup comparison. The present research investigates whether looking at position players at each of the skilled positions maps onto predicting the playoff teams. Further, how does this prediction change over time? Looking at 2009-2011 NFL skill player peroformance vs 2016-2018 skill player performance we will investigate if there are differences in metrics that predict playoff appearance. This will show us whether there are shifts in the positions that are most important for predicting playoff appearance (i.e., QB, WR, TE, RB) then this model will show us if there are specific metrics at each position that are important for predicting success. For example, if the wide receiver position is important, what is most important about that position, yards-after-catch or number of receptions. Further, how might the importance of those metrics shift over time. We hope to explore and understand better the impact of skill players and the metrics that they are measured on in terms of making the playoffs.&lt;/p&gt;
 &lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
 &lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
 &lt;p&gt;The dataset we will be using is in a github folder that holds nflscrapR-data that originates from NFL.com &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. The folder includes play-by-play data, including performance measures, for all regular season games from 2009 to 2019. This file will be paired with week-by-week regular season roster data for each team in the NFL. This will allow me to track skilled position player performance during the regular season and then compare this regular season file with the files that contain playoff teams for each year from 2009-2019. Supplemental data may be pulled from Pro-Football-Reference.com or other sources depending on what preliminary data analysis presents &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -3193,7 +3236,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;Metric measurement needs to be consistent across years. A comparison of year-to-year metrics will need to be done comparing each years measurements from 2009-2019 in order to make sure that the measurement techniques are stable and do not vary across time. If there are changes in the way metrics are measured than either that year will need to be dropped from the model or adjustments will need to be made to the metric to balance it with the other years included in the model.&lt;/p&gt;
 &lt;p&gt;Finally, once all metrics have been balanced and the team performance metrics have been aggregated. The algorithm will need to be implemented to identify the eight best teams from each NFL division and the two best other teams in the conference that would constitute the wild card playoff teams from each conference. Once this analysis is run, we will be able to look at retroactive NFL post-season designated teams from 2009-2019 to see how accurate the playoff prediction machine was at identifying NFL post-season teams for each year.&lt;/p&gt;
 &lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
-&lt;p&gt;An individual player-performance model for NFL skill position players (i.e., quarterback, wide receiver, tight end, and running back) will perform better than chance level (50%) of identifying playoff teams from the NFL during the season&amp;rsquo;s of 2009-2019.&lt;/p&gt;
+&lt;p&gt;An individual player-performance model for NFL skill position players (i.e., quarterback, wide receiver, tight end, and running back) will perform better than chance level (50%) of identifying playoff teams from the NFL during the season&amp;rsquo;s of 2009-2019. Further, an exploratory analysis of time periods (2009-2011 vs 2016-2018) will expose differences in the key metrics that are used to predict playoff appearance over time. This will give us a better understanding of the shifts in perfromance in the NFL at each skill position.&lt;/p&gt;
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
 &lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
@@ -3271,11 +3314,16 @@ A project this large and versatile requires the use of many software tools. Thes
         &lt;li&gt;&lt;a href=&#34;#22-dataset-analysis&#34;&gt;2.2 Dataset Analysis&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-machine-learning-algorithms&#34;&gt;3. Machine Learning Algorithms&lt;/a&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-machine-learning-algorithms-and-implementation&#34;&gt;3. Machine Learning Algorithms and Implementation&lt;/a&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&#34;#31-scikit-learn-and-algorithm-types&#34;&gt;3.1 Scikit-Learn and Algorithm Types&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#32-classification-algorithms&#34;&gt;3.2 Classification Algorithms&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#33-clustering-algorithms&#34;&gt;3.3 Clustering Algorithms&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-results--discussion&#34;&gt;4. Results &amp;amp; Discussion&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#41-algorithm-metrics&#34;&gt;4.1 Algorithm Metrics&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#project-timeline&#34;&gt;Project Timeline&lt;/a&gt;
@@ -3328,7 +3376,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;&lt;strong&gt;Figure 2.5&lt;/strong&gt;: dav_set correlation matrix.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/savsetcorrelation.jpg&#34; alt=&#34;Figure 2.6&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.6&lt;/strong&gt;: sav_set correlation matrix.&lt;/p&gt;
-&lt;h2 id=&#34;3-machine-learning-algorithms&#34;&gt;3. Machine Learning Algorithms&lt;/h2&gt;
+&lt;h2 id=&#34;3-machine-learning-algorithms-and-implementation&#34;&gt;3. Machine Learning Algorithms and Implementation&lt;/h2&gt;
 &lt;p&gt;With many machine learning algorithms already available and many more in development. Selecting the optimal one for an application can be a challenging balance since each algorithm has both its advantages and disadvantages. As mentioned in the introduction, we will explore applying the most common and established algorithms available to the public.&lt;/p&gt;
 &lt;p&gt;Starting off, is selecting a library from the most popular ones available. Namely Keras, Pytorch, Tensorflow, and Scikit-Learn. Upon further investigation it was determined that Scikit-Learn would be used for this project. The reason being Scikit-Learn is a great general machine learning library that also includes pre and post processing functions. While Keras, Pytorch, and Tensorflow are targeted for neural networks and other higher-level deep learning algorithms which are outside of the scope of this project at this time &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;31-scikit-learn-and-algorithm-types&#34;&gt;3.1 Scikit-Learn and Algorithm Types&lt;/h3&gt;
@@ -3382,6 +3430,80 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;This algorithm was chosen for its strength in dealing with uneven cluster sizes and non-flat geometry &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Though it is not easily scalable the application of our small dataset size might be of interest.&lt;/p&gt;
 &lt;h4 id=&#34;333-spectral-clustering&#34;&gt;3.3.3 Spectral Clustering&lt;/h4&gt;
 &lt;p&gt;As an inverse, this algorithm was chosen for its strength with fewer uneven clusters &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. In comparison to Mean-shift, this maybe the better algorithm for this application.&lt;/p&gt;
+&lt;h2 id=&#34;4-results--discussion&#34;&gt;4. Results &amp;amp; Discussion&lt;/h2&gt;
+&lt;h3 id=&#34;41-algorithm-metrics&#34;&gt;4.1 Algorithm Metrics&lt;/h3&gt;
+&lt;p&gt;The metrics used to determine the viability of each of the algorithms are precision, recall, and f1-score. These are simple metrics based on the values from a confusion matrix which is a visualization of the False and True Positives and Negatives. Precision is essentially how accurate was the algorithm in classifying each data point. This however, is not a good metric to solely base performance as precision does not account for imbalanced distributions within a dataset &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;This is where the recall metric comes in which is defined as how many samples were accurately classified by the algorithm. This is a more versatile metric as it can compensate for imbalanced datasets. While it may not be in our case as seen in the dataset analysis where we have a relatively balanced ratio. It still gives great insight on the performance for our application.&lt;/p&gt;
+&lt;p&gt;Finally is the f1-score which is the harmonic mean of the precision and recall metric &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;. This will be the key metric we will mainly focus on as it strikes a good balance between the two more primitive metrics. Since one may think in medical applications one would want to maximize recall, it is at the cost of precision which ends up in more false predictions which is essentially an overfitting scenario &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;. Something that reduces the viability of the model to the application especially since we have a relatively balanced dataset, more customized weighting is not as necessary.&lt;/p&gt;
+&lt;p&gt;The metrics for each algorithm implementation is as follows.&lt;/p&gt;
+&lt;h4 id=&#34;411-support-vector-machines&#34;&gt;4.1.1 Support Vector Machines&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.1:&lt;/strong&gt; dav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.99      | 0.94   | 0.96     |
+| Has Disease | 0.95      | 0.99   | 0.97     |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.2:&lt;/strong&gt; sav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.99      | 0.94   | 0.96     |
+| Has Disease | 0.95      | 0.99   | 0.97     |&lt;/p&gt;
+&lt;h4 id=&#34;412-k-nearest-neighbors&#34;&gt;4.1.2 K-Nearest Neighbors&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.3:&lt;/strong&gt; dav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.88      | 0.86   | 0.87     |
+| Has Disease | 0.87      | 0.90   | 0.88     |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.4:&lt;/strong&gt; sav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.62      | 0.74   | 0.67     |
+| Has Disease | 0.67      | 0.54   | 0.60     |&lt;/p&gt;
+&lt;h4 id=&#34;413-gaussian-naive-bayes&#34;&gt;4.1.3 Gaussian Naive Bayes&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.5:&lt;/strong&gt; dav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.88      | 0.81   | 0.84     |
+| Has Disease | 0.83      | 0.90   | 0.86     |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.6:&lt;/strong&gt; sav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.56      | 0.90   | 0.69     |
+| Has Disease | 0.72      | 0.28   | 0.40     |&lt;/p&gt;
+&lt;h4 id=&#34;414-decision-trees&#34;&gt;4.1.4 Decision Trees&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.7:&lt;/strong&gt; dav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.92      | 0.97   | 0.95     |
+| Has Disease | 0.97      | 0.93   | 0.95     |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.8:&lt;/strong&gt; sav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.71      | 0.80   | 0.75     |
+| Has Disease | 0.76      | 0.66   | 0.71     |&lt;/p&gt;
+&lt;h4 id=&#34;415-k-means&#34;&gt;4.1.5 K-Means&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.7:&lt;/strong&gt; dav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.22      | 0.29   | 0.25     |
+| Has Disease | 0.12      | 0.09   | 0.10     |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.8:&lt;/strong&gt; sav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.51      | 0.69   | 0.59     |
+| Has Disease | 0.52      | 0.34   | 0.41     |&lt;/p&gt;
+&lt;h4 id=&#34;416-mean-shift&#34;&gt;4.1.6 Mean-shift&lt;/h4&gt;
+&lt;p&gt;Algorithm is still being implemented&lt;/p&gt;
+&lt;h4 id=&#34;417-spectral-clustering&#34;&gt;4.1.7 Spectral Clustering&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.7:&lt;/strong&gt; dav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.86      | 0.74   | 0.79     |
+| Has Disease | 0.79      | 0.89   | 0.84     |&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 4.8:&lt;/strong&gt; sav_set metrics
+|             | Precision | Recall | f1-score |
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;&amp;mdash;-|
+| No Disease  | 0.56      | 0.57   | 0.57     |
+| Has Disease | 0.56      | 0.56   | 0.56     |&lt;/p&gt;
 &lt;h2 id=&#34;project-timeline&#34;&gt;Project Timeline&lt;/h2&gt;
 &lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates.&lt;/p&gt;
 &lt;h3 id=&#34;october-26&#34;&gt;October 26&lt;/h3&gt;
@@ -3434,6 +3556,20 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Update Report&lt;/li&gt;
+&lt;li&gt;Milestone Update
+&lt;ul&gt;
+&lt;li&gt;Additional delays were encountered due to external classes.
+&lt;ul&gt;
+&lt;li&gt;It is expected to have a surplus of time between this milestone and the deadline to catch up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;All but one algorithm has been implemented.
+&lt;ul&gt;
+&lt;li&gt;Some light tuning was conducted however, results did not significantly improve.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;november-16&#34;&gt;November 16&lt;/h3&gt;
 &lt;ul&gt;
@@ -3472,6 +3608,9 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/li&gt;
 &lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/clustering.html#clustering&#34;&gt;https://scikit-learn.org/stable/modules/clustering.html#clustering&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:11&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Mianaee, S., 2020. 20 Popular Machine Learning Metrics. Part 1: Classification &amp;amp; Regression Evaluation Metrics. [online] Medium. Available at: &lt;a href=&#34;https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce&#34;&gt;https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce&lt;/a&gt; [Accessed 10 November 2020]. &lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -3615,26 +3754,31 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;Furthermore, the code has been appropriately commented and documented in such a way that it can be easily reproduced. Important instructions and vital information about different aspects of the code have been properly written down wherever necessary.&lt;/p&gt;
 &lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
 &lt;p&gt;NOTE: This section will continue to be updated until project completion.&lt;/p&gt;
-&lt;p&gt;The first preliminary set of results are displayed below. Here, the content of the dataset, after it is processed in a software architecture, is shown and it displays the alteration of the values (expressed in line plots, scatter plots, and histograms) of the four main water-quality parameters (viz. Temperature, Specific Conductance, pH, and Dissolved Oxygen) over the period of time that starts from October 9, 2020 to October 16, 2020.&lt;/p&gt;
+&lt;p&gt;The first preliminary set of results are displayed below. To get a better idea, the processed data (viewed as a data-frame in python) was first analyzed to understand the four primary water-quality parameters that are being worked upon. The data-frame for one of the big data sets is shown below, along with the median values that were evalauted for the respective parameters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/prelimresults.png&#34; alt=&#34;Preliminary results&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; First set of preliminary output results (in python data-frame) and median values for the four water-quality parameters&lt;/p&gt;
+&lt;p&gt;In the above set of results, it should be worthwhile to note that temperature is measured in the celsius scale, specific conductance is measured in microsiemens per centimeter at 25 degree celsius, pH is measured in the usual standard range (between 0-14), and the level of dissolved oxygen is measured in milligrams per liter.&lt;/p&gt;
+&lt;p&gt;Next, the content of the dataset, after it is processed in a software architecture, is shown and it displays the alteration of the values (expressed in line plots, scatter plots, and histograms) of the four main water-quality parameters (viz. Temperature, Specific Conductance, pH, and Dissolved Oxygen) over the period of time that starts from October 9, 2020 to October 16, 2020.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/L_temp.png&#34; alt=&#34;Temperature plots&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/S_temp.png&#34; alt=&#34;Temperature plots&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/H_temp.png&#34; alt=&#34;Temperature plots&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;Temperature&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;Temperature&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/L_cond.png&#34; alt=&#34;Specific Conductance plots&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/S_cond.png&#34; alt=&#34;Specific Conductance plots&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/H_cond.png&#34; alt=&#34;Specific Conductance plots&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;Specific Conductance&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;Specific Conductance&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/L_pH.png&#34; alt=&#34;pH plots&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/S_pH.png&#34; alt=&#34;pH plots&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/H_pH.png&#34; alt=&#34;pH plots&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;pH&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;pH&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/L_dO2.png&#34; alt=&#34;Dissolved Oxygen level&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/S_dO2.png&#34; alt=&#34;Dissolved Oxygen level&#34;&gt;
 &lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/master/project/images/H_dO2.png&#34; alt=&#34;Dissolved Oxygen level&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;Dissolved Oxygen level&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Line, Scatter, and Histogram plots for the water-quality parameter involving &amp;ldquo;Dissolved Oxygen level&amp;rdquo;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;First Benchmark results (Expected - November 11)&lt;/p&gt;
+&lt;p&gt;First Benchmark results (Expected - November 11)
+NOTE: The first set of benchmark results have already been obtained in the trial run (refer to code). However, this will be further enriched and replaced by a future version.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Second Benchmark results (Expected - November 13)&lt;/p&gt;
@@ -4016,8 +4160,11 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#datasets&#34;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#merge-datasets&#34;&gt;Merge datasets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#exploratory-data-analysis&#34;&gt;Exploratory Data Analysis&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#planning&#34;&gt;Planning&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#reason-to-choose-this-dataset&#34;&gt;Reason to choose this dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#project-timeline&#34;&gt;Project Timeline:&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
@@ -4054,6 +4201,14 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
 &lt;li&gt;Pressure       - Hg&lt;/li&gt;
 &lt;li&gt;Precipitation  – inch&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;merge-datasets&#34;&gt;Merge datasets&lt;/h2&gt;
+&lt;p&gt;The &amp;lsquo;StartDate&amp;rsquo; fearure of power_usage dataset and &amp;lsquo;Date&amp;rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features are different. StartDate feature is the combination of date and hour. Whereas, &amp;lsquo;Date&amp;rsquo; feature of weather is just the date. So first &amp;lsquo;StartDate&amp;rsquo; column is splitted into &amp;lsquo;Date&amp;rsquo; and &amp;lsquo;Hour&amp;rsquo; columns. Since the &amp;lsquo;StartDate&amp;rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.&lt;/p&gt;
+&lt;h2 id=&#34;exploratory-data-analysis&#34;&gt;Exploratory Data Analysis&lt;/h2&gt;
+&lt;p&gt;Here we analyse different features, their relation with each other and target.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/dow.png&#34; alt=&#34;Figure 4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Average power usage by day of the week&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/tod.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Average power usage by type of the day&lt;/p&gt;
 &lt;h2 id=&#34;planning&#34;&gt;Planning&lt;/h2&gt;
 &lt;p&gt;We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
 The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.&lt;/p&gt;
@@ -4072,12 +4227,18 @@ The data spread across two files will have to be merged according to date. For t
 &lt;li&gt;There were datasets similar to this one. But this one has latest power usage data till August this year.&lt;/li&gt;
 &lt;li&gt;It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for prediction.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;project-timeline&#34;&gt;Project Timeline:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EDA and preprocessing - 11/09/2020&lt;/li&gt;
+&lt;li&gt;First set of result    - 11/11/2020&lt;/li&gt;
+&lt;li&gt;Hyperparameter tuning, pipelines/ final setup - 11/15/2020&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&#34;&gt;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Residential Power Usage dataset &lt;a href=&#34;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&#34;&gt;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -4258,7 +4419,13 @@ The data spread across two files will have to be merged according to date. For t
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#2-background&#34;&gt;2. Background&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-gesture-recognition&#34;&gt;3. Gesture recognition&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-gesture-recognition&#34;&gt;3. Gesture Recognition&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#31-hand-gesture&#34;&gt;3.1 Hand Gesture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#32-body-gesture&#34;&gt;3.2 Body Gesture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#33-face-gesture&#34;&gt;3.3 Face Gesture&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#4-conclusion&#34;&gt;4. Conclusion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#plan&#34;&gt;Plan&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
@@ -4268,108 +4435,60 @@ The data spread across two files will have to be merged according to date. For t
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; gesture recognition, human, technology, future&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; gesture recognition, human, technology, big data, artificial intelligence, body language, facial expression&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;As of today, since technology is improving so fast, there are many things that can be related to AI and machine learning. Hand gestures will be one of the most important ways to understand people. As we often notice, when people are doing speech, they often use hand gestures to collaborate with their words. And studying hand gestures will often reveal what the people who are giving the speech are thinking about. For example, when someone is lying, they tend to touch their nose with their hand, etc. So studying hand gestures will not only help people understand much more about human beings and it can also help our technology grow. For example, in AI and machine learning. Studying hand gestures will make or improve AI and machine learning to better understand humans and be more human-like.&lt;/p&gt;
 &lt;h2 id=&#34;2-background&#34;&gt;2. Background&lt;/h2&gt;
-&lt;p&gt;Nowadays, people are doing more and more research on high-tech, which also makes various high-tech products appear in the society. For people, electricity is as important as water and air. It is impossible to imagine a life without electricity. We can realize that technology is changing everything about people from various aspects. People living in this high-tech era are also forced to learn and understand the usage of various high-tech products. As a representative of high technology, artificial intelligence has also attracted a lot of attention in society. Because of the emergence of artificial intelligence, people have also begun to realize that preserving the characteristics of the people is also a very important point in high technology. Therefore, scientists thought of gestures, one of the most commonly used body language.&lt;/p&gt;
-&lt;h2 id=&#34;3-gesture-recognition&#34;&gt;3. Gesture recognition&lt;/h2&gt;
+&lt;p&gt;Nowadays, people are doing more and more research on high-tech, which also makes various high-tech products appear in the society. For people, electricity is as important as water and air. It is impossible to imagine a life without electricity. We can realize that technology is changing everything about people from various aspects. People living in this high-tech era are also forced to learn and understand the usage of various high-tech products. As a representative of high technology, artificial intelligence has also attracted a lot of attention in society. Because of the emergence of artificial intelligence, people have also begun to realize that preserving the characteristics of the people is also a very important point in high technology. Therefore, scientists thought of gestures, one of the most commonly used body language.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-gesture-recognition&#34;&gt;3. Gesture Recognition&lt;/h2&gt;
 &lt;p&gt;Gesture recognition is mainly divided into two categories, one is based on external device recognition, the specific application is data gloves, wearing it on user&amp;rsquo;s hand, to obtain and analysis information through sensors. This method has obvious shortcomings, though it is accurate and has excellent response speed, but it is costly and is not good for large-scale promotion. The other one is the use of computer vision. People do not need to wear gloves. As its name implies, this method collects and analyzes information through a computer. It is convenient, comfortable, and not so limited based on external device identification. In contrast, it has greater potential and is more in line with the trend of the times. Of course, this method needs more effective and accurate algorithms to support, because the gestures made by different people at different times, in different environments and at different angles also represent different meanings. So, if we want more accurate information feedback. Then the advancement of algorithms and technology is inevitable. The development of gesture recognition is also the development of artificial intelligence, a process of the development of various algorithms from data gloves to the development of computer vision-based optical technology plays a role in promoting it.&lt;/p&gt;
+&lt;h3 id=&#34;31-hand-gesture&#34;&gt;3.1 Hand Gesture&lt;/h3&gt;
+&lt;h4 id=&#34;311-hand-gesture-recognition-and-big-data&#34;&gt;3.1.1 Hand Gesture Recognition and Big Data&lt;/h4&gt;
+&lt;p&gt;Hand gesture recognition is commonly used in gesture recognition because fingers are the most flexible and it is able to create different angles that will represent different meanings. The hand gesture itself is also an easy but efficient way for us human beings to communicate and send messages to each other. The existence of hand gestures can be considered easy but powerful. However, if we are using the application of hand gesture recognition, it is a much more complicated process. In real life, we can just ben our finger or simply make a fist so that other people will understand our message. But when using hand gesture recognition there are many processes that are being involved. Hand gesture is commonly used in geesture recoginitaion As we did our research and based on our life experiences, hand gesture recognition is a very hot topic and has all the potential to be the next wave. Hand gesture recognition has recently achieved big success in many fields. The advancement and development of hand gesture recognition is also the development of other technology such as the advancement of computer chips, the advancement of algorithms, the advancement of machine learning even advancement of deep learning, and the advancement of cameras from 2D to 3D. The most important part of hand gesture recognition is big data and machine learning. Because of the development of big data and machine learning, data scientists are able to have better datasets, build a more accurate and successful model and be able to process the information and predict the most accurate results. Hand gesture recognition is a significant link in Gesture recognition.However gesture recognition is also not only about hand gesture recognition, it also includes other body parts such as facial expression recognition and body gesture recognition. With the help of the whole system of different gesture recognitions, the data can be recorded and processed by AIs. The results or predictions can be used currently or later on for different purposes in different areas.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h4 id=&#34;312-principles-of-hand-gesture-recognition&#34;&gt;3.1.2 Principles of Hand Gesture Recognition&lt;/h4&gt;
+&lt;p&gt;Hand gesture recognition is a complicated process involving many steps. And in order to get the most accurate result, it will need a large amount of quality data and a scientific model with high performance. Hand gesture recognition is also at a developing stage simply because there are so many possible factors that can influence the result. Possible factors include skin color, background color, hand gesture angle, and Bending angle, etc. To simplify the process of gesture recognition, AIs will use 3-D cameras to capture images. After that, the data of the image will be collected and processed by programs and built models.  And lastly, AIs will be able to use that model to get an accurate result in order to have a corresponding response or predict future actions. To explain all processes of hand gesture recognition in detail, it includes graphic gathering, retreatment, skin color segmentation, hand gesture segmentation, and finally hand gesture recognition. Hand Gesture Recognition can not achieve the best accuracy without all any of these steps. Within all these steps, skin color segmentation is the most crucial step in order to increase accuracy and this process will be explained in the next session. &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32-body-gesture&#34;&gt;3.2 Body Gesture&lt;/h3&gt;
+&lt;h4 id=&#34;321-introduction-to-body-gesture&#34;&gt;3.2.1 Introduction to Body Gesture&lt;/h4&gt;
+&lt;p&gt;Body gestures, which can also be called body language, refer to humans expressing their ideas through the coordinated activities of various body parts. In our lives, body language is ubiquitous. It is like a bridge for our human communication. Through body language expression, it is often easier for us to understand what the other person wants to express. At the same time, we can express ourselves better. The profession of an actor is a good example of body language. This is a compulsory course for every actor because actors can only use their performances to let us know what they are expressing.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; At this time, body language becomes extremely important. Different characters have different body movements in different situations, and actors need to make the right body language at a specific time to let the audience know their inner feelings. Yes, the most important point of body language is to convey mood through movement.&lt;/p&gt;
+&lt;p&gt;In many cases, certain actions will make people feel emotions. For us who communicate with all kinds of people every day, there are also many body languages that we are more familiar with. For example, when a person hangs his head, it means that he is unhappy, walking back and forth is a sign of a person&amp;rsquo;s anxiety, and body shaking is caused by nervousness, etc.&lt;/p&gt;
+&lt;h4 id=&#34;322-body-gesture-and-big-data&#34;&gt;3.2.2 Body Gesture and Big Data&lt;/h4&gt;
+&lt;p&gt;As a piece of big data, body language requires data collected by studying human movements. Scientists found that when a person wants to convey a complete message, body language accounts for half. And because body language belongs to a person&amp;rsquo;s actions subconsciously, it is rarely deceptive. This also explains why scientists want to collect data to let artificial intelligence understand human behavior.&lt;/p&gt;
+&lt;h3 id=&#34;33-face-gesture&#34;&gt;3.3 Face Gesture&lt;/h3&gt;
+&lt;h4 id=&#34;331-introduction-to-face-gesturefacial-expression&#34;&gt;3.3.1 Introduction to Face Gesture(Facial Expression)&lt;/h4&gt;
+&lt;p&gt;Body language is one of the ways that we can express ourselves without saying any words. According to expert, body language is used everyday for us to communicate with each other. During our communication, we not only use words but also use body gestures, hand gestures and most importantly, we use facial expression most. The reason why we use facial expression more than any other body gestures is that when we have certain emotion, it is express in our face automatically. Facial expression is often not under our control. That is why people often say that the word that come out of mouth cannot always be true, but their facial expression will reveal what those people are thinking about. Some example of common facial expression will be: Happiness, Sadness, Anger, Surprise, Disgust, Fear, etc. &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; Each facial expression will have some deep meaning behind it. For example, A simple facial expression like smiling can be translated into a sign of approval, or it can be translated into a sign of friendly. If we put all those emotion into big data, it will help us to understand ourselves much better.&lt;/p&gt;
+&lt;h4 id=&#34;332-facial-expression-and-big-data&#34;&gt;3.3.2 Facial Expression and Big Data&lt;/h4&gt;
+&lt;p&gt;Nowadays, since technology is so advance, everything around us can be turn into data and everything can be related to data. Facial expression is often study by different scientist in research because it allows us to understand more about human and communication between different people. The organ on the face that can be used to deliver expressions are the eyes, nose, mouth. Sometime, eyebrow can also deliver facial expression. The section is still not complete yet. It will be completed before 11/15/2020.&lt;/p&gt;
 &lt;h2 id=&#34;4-conclusion&#34;&gt;4. Conclusion&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
 &lt;h2 id=&#34;plan&#34;&gt;Plan&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Introduction: Kris&lt;/li&gt;
 &lt;li&gt;Background: Sunny&lt;/li&gt;
-&lt;li&gt;Gesture: divided into several parts and each works at one part&lt;/li&gt;
+&lt;li&gt;Hand Gesture: Peiran&lt;/li&gt;
+&lt;li&gt;Body Gesture: Sunny&lt;/li&gt;
+&lt;li&gt;Facial Expression: Kris&lt;/li&gt;
 &lt;li&gt;Conclusion: Peiran&lt;/li&gt;
 &lt;li&gt;catch up to do more on the report&lt;/li&gt;
 &lt;li&gt;each of us should do more research and put more time to the project&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-316/project/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-316/project/project/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;sentiment-analysis-and-visualization-using-an-us-election-dataset-for-the-2020-election&#34;&gt;Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; please use proper refernce citations, they must be cited in text&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Sudheer Alluri, Indiana University, fa20-523-316, &lt;a href=&#34;mailto:ngsudheer@gmail.com&#34;&gt;ngsudheer@gmail.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Vishwanadham Mandala, Indiana University, fa20-523-325, &lt;a href=&#34;mailto:vishwandh.mandala@gmail.com&#34;&gt;vishwandh.mandala@gmail.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-316/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Sentiment analysis is an evaluation of the opinion of the speaker, writer or other subject with regard to some topic.We are going to use US-elections dataset and combining the tweets of people opninon for leading presidential candidates. We have various datasets from kallage and combining tweets and NY times datasets, by combining all data predication will be dervied.&lt;/p&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. DataSets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-technologies-used&#34;&gt;4. Technologies used&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-plan-for-the-rest-of-the-semseter&#34;&gt;5. Plan for the rest of the Semseter&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-refernces&#34;&gt;6. Refernces&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; sentiment,  US-election&lt;/p&gt;
-&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;For our final project, we will be focusing on the upcoming U.S. presidential elections. We plan to use a US-elections dataset to predict the votes each contestant will attain, by area. With growing data, the prediction will be changing constantly. We are making the difference by selecting the latest dataset available and previous election data to predict the number of votes each contestant will get to the closest figure. A feature we are introducing to enhance the quality is predicting various area types like counties, towns, and/or big cities.
-One might argue that these kinds of predictions will only be helping organizations and not individuals. We assure you that this project will be helping the general public in many ways. The most evident being, an individual knowing which contestant his/her community or the general public around him/her prefer. This project is strictly statistical and does not have a goal to sway the elections in any way or to pressure an individual&lt;/p&gt;
-&lt;p&gt;into picking a candidate. Overall, this is just a small step towards a future that might hold an environment where the next president of the United States of America could be accurately guessed based on previous data and innovative Big Data Technologies.&lt;/p&gt;
-&lt;h2 id=&#34;2-datasets&#34;&gt;2. DataSets&lt;/h2&gt;
-&lt;p&gt;We will be going to use the dataset, &lt;a href=&#34;https://www.kaggle.com/tunguz/us-elections-dataset,&#34;&gt;https://www.kaggle.com/tunguz/us-elections-dataset,&lt;/a&gt; and we will create the filets based on location. If needed, we may download Twitter data from posts on and by Donald Trump, Joe Biden, and their associates. Which leads us to our objective for the project, based on the data we collected, we should be able to predict the winner of the 2020 United States of America’s presidential elections.&lt;/p&gt;
-&lt;p&gt;All of the data will be location-based and if required we will download realtime campaigning and debate analysis data, giving us a live and updated prediction every time increment. To strengthen the prediction, even more, we may reuse some code from the 2016 election’s analysis, however, our main focus will be using the latest data we readily acquire during the time leading up to the 2020 election.
-In conclusion, to make our predictions as realistic and as strong as we can get, we will be going to choose multiple data sets to integrate between the previous election and twitter data to predict the number of votes each candidate will acquire. Therefore, we will be predicting the winner of the 2020 presidential elections.&lt;/p&gt;
-&lt;h2 id=&#34;3-methodologyprocess&#34;&gt;3. Methodology/Process&lt;/h2&gt;
-&lt;p&gt;Our project has two main sections of data sets in it. The first and primary one containing candidate information and previous presidential election data and the second containing twitter data. We believed the second needed more time because the first dataset contained straightforward facts while the twitter dataset is more susceptible to different perspectives and viewpoints.
-In this project we are analyzing twitter data of key presidential candidates and other key supporters.We gathered the data from kaggle datasets. Data is mainly divided into 3 sub categories. Tweets made by key personnel.Twitter profiles of the two candidates(all info including followers, following, # of tweets,etc.).The final category involves graphs for visualization purposes.A problem with twitter data is the fact that it is huge. We are using google drive and with it comes the problem of storage. To combat this we are only using 4 twitter data sets. The datasets of Donald J. Trump, Joe Biden, Kamala Harris, and Mike Pence. We also downloaded these data sets to use them locally.There are mainly 3 types of formats used in everyday twitter use: images, text, and video. Only text will be used in this project because the others are not useful for the purpose of the
-experiment. Our project mostly uses twitter data as support to the primary dataset.It is there to strengthen the already predicted result. The reason why we cannot make the twitter data set our primary data set is because the data(tweets) are mostly opinion based with only some exceptions. So we cannot predict with the twitter data,however, it
-can be used to show public support which will be vital in supporting the prediction derived from the primary data set.So, we found many twitter data sets on keggle and used certain parts from each to make our final four. The difference between the background sets and our final four datasets is the fact that their primary dataset was the twitter data while we used twitter data as our secondary dataset. We realized that twitter data is best used as secondary data that supports the primary dataset, which is more fact based.We can use three of the four OSoMe tools available: trends, networking, and maps. Trends and networking can be combined to find a group that involves every user that is taking part in the elections in some way. Mapping can show these users and their location. Giving us the area based result that we seek. However this method is already a part of our project .Due to the fact that all this data is in keggle in a wider array. Which gave us the option to condense into four large data sets.&lt;/p&gt;
-&lt;p&gt;We will collect election data and twitter information and integrate both to predict the results. A lot of twitter or dataset data will be trimmed and parsed to build the model. We will calculate
-Our data-gathering and preparation methodology is composed of the following steps:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Use the latest election dataset-2020, we will be creating the model.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Srilatha, Poluka, and Tiruveedhula Saranya. “Advancements in Gesture Recognition Technology.” IOSR Journal of VLSI and Signal Processing, vol. 4, no. 4, 2014, pp. 01–07, iosrjournals.org/iosr-jvlsi/papers/vol4-issue4/Version-1/A04410107.pdf, 10.9790/4200-04410107. Accessed 25 Oct. 2020. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Data cleaning and extraction.&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;F. Zhan, &amp;ldquo;Hand Gesture Recognition with Convolution Neural Networks,&amp;rdquo; 2019 IEEE 20th International Conference on Information Reuse and Integration for Data Science (IRI), Los Angeles, CA, USA, 2019, pp. 295-298, doi: 10.1109/IRI.2019.00054. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;We will try to download the latest data from twitter and campaigning.&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Di Zhang, DZ.(2019) Research on Hand Gesture Recognition Technology Based on Machine Learning, Nanjing University of Posts and Telecommunications. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-technologies-used&#34;&gt;4. Technologies used&lt;/h2&gt;
-&lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, PyTorch&lt;/p&gt;
-&lt;h2 id=&#34;5-plan-for-the-rest-of-the-semseter&#34;&gt;5. Plan for the rest of the Semseter&lt;/h2&gt;
-&lt;p&gt;October 26:
-. Furthur looking into new datasets and getting new twitter data.
-. Brainstrom ideas for future engineering and build features
-. update the report.&lt;/p&gt;
-&lt;p&gt;November 2:
-. Working on creating function to download the content. Remove the spaces in the project.&lt;/p&gt;
-&lt;p&gt;November 9:
-TBD&lt;/p&gt;
-&lt;p&gt;November 16:
-TBD&lt;/p&gt;
-&lt;h2 id=&#34;6-refernces&#34;&gt;6. Refernces&lt;/h2&gt;
-&lt;p&gt;[^2[: &lt;a href=&#34;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&#34;&gt;https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cherry, K. (2019, September 28). How to Read Body Language and Facial Expressions. Verywell Mind. Retrieved November 8, 2020, from &lt;a href=&#34;https://www.verywellmind.com/understand-body-language-and-facial-expressions-4147228&#34;&gt;https://www.verywellmind.com/understand-body-language-and-facial-expressions-4147228&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>

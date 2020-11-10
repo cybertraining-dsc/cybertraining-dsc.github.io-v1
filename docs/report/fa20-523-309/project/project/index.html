@@ -24,7 +24,7 @@
 <meta property="og:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease Ethan Nguyen, fa20-523-309, Edit
 Abstract This section will be addressed as the project nears completion
 Contents
- 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis" />
+ 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms and Implementation  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   4. Results &amp; Discussion  4.1 Algorithm Metrics   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-309/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
@@ -32,9 +32,9 @@ Contents
 <meta itemprop="description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease Ethan Nguyen, fa20-523-309, Edit
 Abstract This section will be addressed as the project nears completion
 Contents
- 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis">
+ 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms and Implementation  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   4. Results &amp; Discussion  4.1 Algorithm Metrics   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis">
 
-<meta itemprop="wordCount" content="2041">
+<meta itemprop="wordCount" content="2803">
 
 
 
@@ -44,7 +44,7 @@ Contents
 <meta name="twitter:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease Ethan Nguyen, fa20-523-309, Edit
 Abstract This section will be addressed as the project nears completion
 Contents
- 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis"/>
+ 1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms and Implementation  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   4. Results &amp; Discussion  4.1 Algorithm Metrics   Project Timeline  October 26 November 2 November 9 November 16   References     Keywords: health, healthcare, cardiovascular disease, data analysis"/>
 
 
 
@@ -349,7 +349,13 @@ Contents
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_project" href="/report/fa20-523-305/project/old_project/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_infoold_project" href="/report/fa20-523-305/project/old_info/old_project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectplan" href="/report/fa20-523-305/project/plan/"></a>
       
       
       
@@ -472,12 +478,6 @@ Contents
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-316projectproject" href="/report/fa20-523-316/project/project/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -525,11 +525,16 @@ Contents
         <li><a href="#22-dataset-analysis">2.2 Dataset Analysis</a></li>
       </ul>
     </li>
-    <li><a href="#3-machine-learning-algorithms">3. Machine Learning Algorithms</a>
+    <li><a href="#3-machine-learning-algorithms-and-implementation">3. Machine Learning Algorithms and Implementation</a>
       <ul>
         <li><a href="#31-scikit-learn-and-algorithm-types">3.1 Scikit-Learn and Algorithm Types</a></li>
         <li><a href="#32-classification-algorithms">3.2 Classification Algorithms</a></li>
         <li><a href="#33-clustering-algorithms">3.3 Clustering Algorithms</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-results--discussion">4. Results &amp; Discussion</a>
+      <ul>
+        <li><a href="#41-algorithm-metrics">4.1 Algorithm Metrics</a></li>
       </ul>
     </li>
     <li><a href="#project-timeline">Project Timeline</a>
@@ -599,11 +604,16 @@ Contents
         <li><a href="#22-dataset-analysis">2.2 Dataset Analysis</a></li>
       </ul>
     </li>
-    <li><a href="#3-machine-learning-algorithms">3. Machine Learning Algorithms</a>
+    <li><a href="#3-machine-learning-algorithms-and-implementation">3. Machine Learning Algorithms and Implementation</a>
       <ul>
         <li><a href="#31-scikit-learn-and-algorithm-types">3.1 Scikit-Learn and Algorithm Types</a></li>
         <li><a href="#32-classification-algorithms">3.2 Classification Algorithms</a></li>
         <li><a href="#33-clustering-algorithms">3.3 Clustering Algorithms</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-results--discussion">4. Results &amp; Discussion</a>
+      <ul>
+        <li><a href="#41-algorithm-metrics">4.1 Algorithm Metrics</a></li>
       </ul>
     </li>
     <li><a href="#project-timeline">Project Timeline</a>
@@ -656,7 +666,7 @@ Contents
 <p><strong>Figure 2.5</strong>: dav_set correlation matrix.</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/master/project/images/savsetcorrelation.jpg" alt="Figure 2.6"></p>
 <p><strong>Figure 2.6</strong>: sav_set correlation matrix.</p>
-<h2 id="3-machine-learning-algorithms">3. Machine Learning Algorithms</h2>
+<h2 id="3-machine-learning-algorithms-and-implementation">3. Machine Learning Algorithms and Implementation</h2>
 <p>With many machine learning algorithms already available and many more in development. Selecting the optimal one for an application can be a challenging balance since each algorithm has both its advantages and disadvantages. As mentioned in the introduction, we will explore applying the most common and established algorithms available to the public.</p>
 <p>Starting off, is selecting a library from the most popular ones available. Namely Keras, Pytorch, Tensorflow, and Scikit-Learn. Upon further investigation it was determined that Scikit-Learn would be used for this project. The reason being Scikit-Learn is a great general machine learning library that also includes pre and post processing functions. While Keras, Pytorch, and Tensorflow are targeted for neural networks and other higher-level deep learning algorithms which are outside of the scope of this project at this time <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
 <h3 id="31-scikit-learn-and-algorithm-types">3.1 Scikit-Learn and Algorithm Types</h3>
@@ -710,6 +720,80 @@ Contents
 <p>This algorithm was chosen for its strength in dealing with uneven cluster sizes and non-flat geometry <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Though it is not easily scalable the application of our small dataset size might be of interest.</p>
 <h4 id="333-spectral-clustering">3.3.3 Spectral Clustering</h4>
 <p>As an inverse, this algorithm was chosen for its strength with fewer uneven clusters <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. In comparison to Mean-shift, this maybe the better algorithm for this application.</p>
+<h2 id="4-results--discussion">4. Results &amp; Discussion</h2>
+<h3 id="41-algorithm-metrics">4.1 Algorithm Metrics</h3>
+<p>The metrics used to determine the viability of each of the algorithms are precision, recall, and f1-score. These are simple metrics based on the values from a confusion matrix which is a visualization of the False and True Positives and Negatives. Precision is essentially how accurate was the algorithm in classifying each data point. This however, is not a good metric to solely base performance as precision does not account for imbalanced distributions within a dataset <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>.</p>
+<p>This is where the recall metric comes in which is defined as how many samples were accurately classified by the algorithm. This is a more versatile metric as it can compensate for imbalanced datasets. While it may not be in our case as seen in the dataset analysis where we have a relatively balanced ratio. It still gives great insight on the performance for our application.</p>
+<p>Finally is the f1-score which is the harmonic mean of the precision and recall metric <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>. This will be the key metric we will mainly focus on as it strikes a good balance between the two more primitive metrics. Since one may think in medical applications one would want to maximize recall, it is at the cost of precision which ends up in more false predictions which is essentially an overfitting scenario <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>. Something that reduces the viability of the model to the application especially since we have a relatively balanced dataset, more customized weighting is not as necessary.</p>
+<p>The metrics for each algorithm implementation is as follows.</p>
+<h4 id="411-support-vector-machines">4.1.1 Support Vector Machines</h4>
+<p><strong>Table 4.1:</strong> dav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.99      | 0.94   | 0.96     |
+| Has Disease | 0.95      | 0.99   | 0.97     |</p>
+<p><strong>Table 4.2:</strong> sav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.99      | 0.94   | 0.96     |
+| Has Disease | 0.95      | 0.99   | 0.97     |</p>
+<h4 id="412-k-nearest-neighbors">4.1.2 K-Nearest Neighbors</h4>
+<p><strong>Table 4.3:</strong> dav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.88      | 0.86   | 0.87     |
+| Has Disease | 0.87      | 0.90   | 0.88     |</p>
+<p><strong>Table 4.4:</strong> sav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.62      | 0.74   | 0.67     |
+| Has Disease | 0.67      | 0.54   | 0.60     |</p>
+<h4 id="413-gaussian-naive-bayes">4.1.3 Gaussian Naive Bayes</h4>
+<p><strong>Table 4.5:</strong> dav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.88      | 0.81   | 0.84     |
+| Has Disease | 0.83      | 0.90   | 0.86     |</p>
+<p><strong>Table 4.6:</strong> sav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.56      | 0.90   | 0.69     |
+| Has Disease | 0.72      | 0.28   | 0.40     |</p>
+<h4 id="414-decision-trees">4.1.4 Decision Trees</h4>
+<p><strong>Table 4.7:</strong> dav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.92      | 0.97   | 0.95     |
+| Has Disease | 0.97      | 0.93   | 0.95     |</p>
+<p><strong>Table 4.8:</strong> sav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.71      | 0.80   | 0.75     |
+| Has Disease | 0.76      | 0.66   | 0.71     |</p>
+<h4 id="415-k-means">4.1.5 K-Means</h4>
+<p><strong>Table 4.7:</strong> dav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.22      | 0.29   | 0.25     |
+| Has Disease | 0.12      | 0.09   | 0.10     |</p>
+<p><strong>Table 4.8:</strong> sav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.51      | 0.69   | 0.59     |
+| Has Disease | 0.52      | 0.34   | 0.41     |</p>
+<h4 id="416-mean-shift">4.1.6 Mean-shift</h4>
+<p>Algorithm is still being implemented</p>
+<h4 id="417-spectral-clustering">4.1.7 Spectral Clustering</h4>
+<p><strong>Table 4.7:</strong> dav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.86      | 0.74   | 0.79     |
+| Has Disease | 0.79      | 0.89   | 0.84     |</p>
+<p><strong>Table 4.8:</strong> sav_set metrics
+|             | Precision | Recall | f1-score |
+|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
+| No Disease  | 0.56      | 0.57   | 0.57     |
+| Has Disease | 0.56      | 0.56   | 0.56     |</p>
 <h2 id="project-timeline">Project Timeline</h2>
 <p>The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates.</p>
 <h3 id="october-26">October 26</h3>
@@ -762,6 +846,20 @@ Contents
 </ul>
 </li>
 <li>Update Report</li>
+<li>Milestone Update
+<ul>
+<li>Additional delays were encountered due to external classes.
+<ul>
+<li>It is expected to have a surplus of time between this milestone and the deadline to catch up.</li>
+</ul>
+</li>
+<li>All but one algorithm has been implemented.
+<ul>
+<li>Some light tuning was conducted however, results did not significantly improve.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="november-16">November 16</h3>
 <ul>
@@ -800,6 +898,9 @@ Contents
 </li>
 <li id="fn:10" role="doc-endnote">
 <p>Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: <a href="https://scikit-learn.org/stable/modules/clustering.html#clustering">https://scikit-learn.org/stable/modules/clustering.html#clustering</a> [Accessed 27 October 2020]. <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>Mianaee, S., 2020. 20 Popular Machine Learning Metrics. Part 1: Classification &amp; Regression Evaluation Metrics. [online] Medium. Available at: <a href="https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce">https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce</a> [Accessed 10 November 2020]. <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

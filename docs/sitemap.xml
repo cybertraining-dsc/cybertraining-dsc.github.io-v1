@@ -699,7 +699,11 @@
   </url>
   
   <url>
-    <loc>/report/fa20-523-305/project/old_project/</loc>
+    <loc>/report/fa20-523-305/project/old_info/old_project/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/fa20-523-305/project/plan/</loc>
   </url>
   
   <url>
@@ -900,6 +904,10 @@
   
   <url>
     <loc>/report/fa20-523-333/report/report/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/fa20-523-333/untitled/</loc>
   </url>
   
   <url>

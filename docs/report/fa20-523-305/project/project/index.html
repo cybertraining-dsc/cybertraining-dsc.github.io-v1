@@ -30,7 +30,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <meta itemprop="description" content="Estimating Soil Moisture Content Using Sensor and Weather Data Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
 Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on on weather data. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term.">
 
-<meta itemprop="wordCount" content="2786">
+<meta itemprop="wordCount" content="3467">
 
 
 
@@ -343,7 +343,13 @@ Abstract As the world is gripped with finding solutions to problems such as food
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_project" href="/report/fa20-523-305/project/old_project/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_infoold_project" href="/report/fa20-523-305/project/old_info/old_project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectplan" href="/report/fa20-523-305/project/plan/"></a>
       
       
       
@@ -466,12 +472,6 @@ Abstract As the world is gripped with finding solutions to problems such as food
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-316projectproject" href="/report/fa20-523-316/project/project/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -512,6 +512,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#background">Background</a></li>
     <li><a href="#topic-discussion">Topic Discussion</a></li>
     <li><a href="#datasets">Datasets</a></li>
     <li><a href="#data-cleaning-and-aggregation">Data Cleaning and Aggregation</a></li>
@@ -529,7 +530,6 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#model-testing-classifier">Model Testing (Classifier)</a></li>
     <li><a href="#plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</a>
       <ul>
-        <li><a href="#november-9">November 9</a></li>
         <li><a href="#november-16">November 16</a></li>
       </ul>
     </li>
@@ -585,6 +585,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <div class="toc">
   <nav id="TableOfContents">
   <ul>
+    <li><a href="#background">Background</a></li>
     <li><a href="#topic-discussion">Topic Discussion</a></li>
     <li><a href="#datasets">Datasets</a></li>
     <li><a href="#data-cleaning-and-aggregation">Data Cleaning and Aggregation</a></li>
@@ -602,7 +603,6 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#model-testing-classifier">Model Testing (Classifier)</a></li>
     <li><a href="#plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</a>
       <ul>
-        <li><a href="#november-9">November 9</a></li>
         <li><a href="#november-16">November 16</a></li>
       </ul>
     </li>
@@ -614,16 +614,26 @@ Abstract As the world is gripped with finding solutions to problems such as food
 </div>
 
 <p><strong>Keywords:</strong> agriculture, soil moisture, IoT</p>
+<h2 id="background">Background</h2>
+<p>Understanding how weather impacts soil moisture is something that has been studied in various ways, all because it is a driving factor in crop success. Multiple studies have sought to apply a deterministic approach to calculating soil moisture based on observational weather data.</p>
+<p>One such study, was motivated by trying to predict dust storms in China, in which soil moisture plays a large role in. This prediction used multiple-linear regression, and focused on predictions that dealt with the top 10 cm of soil. Two key takeaways can be derived from this work that are beneficial for carrying out this project.</p>
+<ul>
+<li>&ldquo;The influence of precipitation on surface soil moisture content does not last more than 16 days.&rdquo;</li>
+<li>&ldquo;The compound effect of the ratio of precipitation to evaporation, which is nonlinearly summed, can be used to calculate the surface soil moisture content in China&rdquo; <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
+</ul>
+<p>Moving forward, this project will assume that percipitation from the prior 16 days is relavent. In the case that for the specific data being fit, less days are relavent, then their coefficients in the model will likely become small enough to not effect the model. Secondly, soil moisture is influenced by a ratio or precipitation to evaporation. While this project might not seek to evaluate this relationship directly, it will seek to include data that would influence these ratios such as temperature and wind speeds.</p>
+<p>Multiple publidcations have sought to come up with complete hydrological models to determine soil moisture from a variety of factors. These models are generally stochastic in nature, and are reliable predictors when many parameters of the model are avaliable. One such cited model requires a minimum or 19 variables or measured coeefficients <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. The authors of another study note the aformentioned study, as well as other similar studies, and make a point that these methods might not be the best models when it comes to practical applications. Their solution was to create a generalize model that relied mostly on soil moisture as &ldquo;a function of the time-weighted average of previous cumulative rainfall over a period&rdquo; <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Such a model is closer in terms to simplicity and generalization to what is hoped to be accomplished in this project.</p>
+<p>The relationship between soil moisture and weather patterns is one with a rich history of study. Both of these measures effect each other in various ways. Most studies that sought to quantify this relationship were conducted at a time in which large scale sensor arrays could not have been implemented in a field. With the prevalance of IoT and improved sensing technologies, it seems as though there might not be a need to use predictive models for soil moisture, but instead just use sensor data. While this could be true in some applications, a wide array of challenges occur when trying to maintain these sensor arrays. Problems such as charging or replacing batteries, sensor and relay equipment not working if completely buried, but are in the way of farming if mounted above ground, sensors failing, etc. These were real challenges faced by the farm in which the soil moisture data was collected <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. The objective of this project is to create predictive models based on limited training data so that farmers would not need to deal with sensor arrays indefinitely.</p>
 <h2 id="topic-discussion">Topic Discussion</h2>
-<p>Maintaining correct soil moisture throughout the plant growing process can result in better yeilds, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligable effects<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.</p>
+<p>Maintaining correct soil moisture throughout the plant growing process can result in better yeilds, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligable effects<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.</p>
 <p>For hundreds of years, farmers have done something similar to this model. The difference is the precision that we can gain by using real data. For the past few hundred years, farmers had to rely on mostly experience and touch to know the moisture of their soil. While many farmers were successful, in the sense that they produced crops, there were ways they could have better optimized their crops to produce better. The water avaliable to the plants is not the only variable that effects yeilds, but this project seeks to create an accessible model to which farmers can have predicted values of soil moisture without needing to buy and deploy expensive sensors.</p>
 <p>The model created could be used in various ways. The first main use is to be able to monitor what is currently happening in the soil so that changes can be made to correct the issue if there is one. Secondly, a farmer could evaluate historical data and compare it to yeilds or other results of the harvest and use this analytical information to inform future descions.</p>
 <p>This project specifically seeks to see the effect of weather on a particular piece of land in Washington state. This process could be done all over the world to obtain benchmarks. These benchmarks could be a cheap option for a farmer that does not have the funds to support a full study of water usage on their land. Instead, they could look for a model that has land that has similar soil and or geographical features, and then use their own weather data to estimate their soil moisture content.</p>
 <h2 id="datasets">Datasets</h2>
-<p>The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format (see Figure 1).</p>
+<p>The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format (see Figure 1).</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/distance_map.png" alt="Figure 1"></p>
 <p><strong>Figure 1:</strong> Estimated distance from weather reports to the crop fields. Distance is calculated using Google Maps</p>
-<p>The second dataset comes from the USDA. This dataset consits of &ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&rdquo; at a farm in Washington state <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.</p>
+<p>The second dataset comes from the USDA. This dataset consits of &ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&rdquo; at a farm in Washington state <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.</p>
 <p>Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the sattelite image (see Figure 2).</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/sensor_locations.png" alt="Figure 2"></p>
 <p><strong>Figure 2:</strong> Location of sensors within the test field</p>
@@ -710,7 +720,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <p>Further experimentation will be required to decide if this is truly the best route for the model. This idea seems promising as predicting the exact moisture content is not as important as understanding the toleraable ranges.</p>
 <h2 id="plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</h2>
 <p>The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates</p>
-<h3 id="november-9">November 9</h3>
+<h3 id="november-16">November 16</h3>
 <ul>
 <li>Tune Hyper-parameters</li>
 <li>Test various models</li>
@@ -718,23 +728,30 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <li>Start analyzing various models and techniques to find the most accurate model</li>
 <li>Update report</li>
 </ul>
-<h3 id="november-16">November 16</h3>
-<ul>
-<li>Build a library/program that can pull weather data from NOAA and takes sensor input and outputs predictions of soil moisture by area</li>
-<li>Finalize report and findings</li>
-</ul>
 <h2 id="references">References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>O. Denmead and R. Shaw, &ldquo;The Effects of Soil Moisture Stress at Different Stages of Growth on the Development and Yield of Corn 1&rdquo;, Agronomy Journal, vol. 52, no. 5, pp. 272-274, 1960. Available: 10.2134/agronj1960.00021962005200050010x. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>K. Shang, S. Wang, Y. Ma, Z. Zhou, J. Wang, H. Liu and Y. Wang, &ldquo;A scheme for calculating soil moisture content by using routine weather data&rdquo;, Atmospheric Chemistry and Physics, vol. 7, no. 19, pp. 5197-5206, 2007 [Online]. Available: <a href="https://hal.archives-ouvertes.fr/hal-00302825/document">https://hal.archives-ouvertes.fr/hal-00302825/document</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>N. (NCEI), &ldquo;Climate Data Online (CDO) - The National Climatic Data Center&rsquo;s (NCDC) Climate Data Online (CDO) provides free access to NCDC&rsquo;s archive of historical weather and climate data in addition to station history information. | National Climatic Data Center (NCDC)&rdquo;, Ncdc.noaa.gov, 2020. [Online]. Available: <a href="https://www.ncdc.noaa.gov/cdo-web/">https://www.ncdc.noaa.gov/cdo-web/</a>. [Accessed: 19- Oct- 2020]. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>W. Capehart and T. Carlson, &ldquo;Estimating near-surface soil moisture availability using a meteorologically driven soil-water profile model&rdquo;, Journal of Hydrology, vol. 160, no. 1-4, pp. 1-20, 1994 [Online]. Available: <a href="https://d1wqtxts1xzle7.cloudfront.net/49029293/0022-1694_2894_2990031-020160922-30744-s4bk3h.pdf?1474528332=&amp;response-content-disposition=inline%3B+filename%3DEstimating_near_surface_soil_moisture_av.pdf&amp;Expires=1604966715&amp;Signature=Q~p9g74lgChE6c7AfnE~Ep8179QUW~5HV0wpxotbyYtYONk-ns8Jku6oT9mTmKEw4wnix1Uol~zwOyxLObjdi8Cjg~LclJBo6CjFcxALrU1lpBnyzOML4hGOa9yiqEqwvrn3tG4tpsmysnOSznmj8kVTl2GGtMpblfyFl~x5QdwhcbVxvQrJDKRsdUsYOqfBeEiQahM7zgi8Gikrreh0AaLzM2GGpVcfXl8QD84XkbxdDJEinDAtWxW8yNKqrfNBnBqODCo9VusCXy-VJvJ9syFy5fTld~enjQfqHQtKyjszbXcNr1o~20uG78D8RlJyBnEECBh~M5miatLhhgig3Q__&amp;Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">https://d1wqtxts1xzle7.cloudfront.net/49029293/0022-1694_2894_2990031-020160922-30744-s4bk3h.pdf?1474528332=&amp;response-content-disposition=inline%3B+filename%3DEstimating_near_surface_soil_moisture_av.pdf&amp;Expires=1604966715&amp;Signature=Q~p9g74lgChE6c7AfnE~Ep8179QUW~5HV0wpxotbyYtYONk-ns8Jku6oT9mTmKEw4wnix1Uol~zwOyxLObjdi8Cjg~LclJBo6CjFcxALrU1lpBnyzOML4hGOa9yiqEqwvrn3tG4tpsmysnOSznmj8kVTl2GGtMpblfyFl~x5QdwhcbVxvQrJDKRsdUsYOqfBeEiQahM7zgi8Gikrreh0AaLzM2GGpVcfXl8QD84XkbxdDJEinDAtWxW8yNKqrfNBnBqODCo9VusCXy-VJvJ9syFy5fTld~enjQfqHQtKyjszbXcNr1o~20uG78D8RlJyBnEECBh~M5miatLhhgig3Q__&amp;Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>&ldquo;Data from: A field-scale sensor network data set for monitoring and modeling the spatial and temporal variation of soil moisture in a dryland agricultural field&rdquo;, USDA: Ag Data Commons, 2020. [Online]. Available: <a href="https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field">https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field</a>. [Accessed: 19- Oct- 2020]. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>F. Pan, C. Peters-Lidard and M. Sale, &ldquo;An analytical method for predicting surface soil moisture from rainfall observations&rdquo;, Water Resources Research, vol. 39, no. 11, 2003 [Online]. Available: <a href="https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2003WR002142">https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2003WR002142</a>. [Accessed: 08- Nov- 2020] <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>C. Gasch, D. Brown, C. Campbell, D. Cobos, E. Brooks, M. Chahal and M. Poggio, &ldquo;A Field-Scale Sensor Network Data Set for Monitoring and Modeling the Spatial and Temporal Variation of Soil Water Content in a Dryland Agricultural Field&rdquo;, Water Resources Research, vol. 53, no. 12, pp. 10878-10887, 2017 [Online]. Available: <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017WR021307">https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017WR021307</a>. [Accessed: 08- Nov- 2020] <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>O. Denmead and R. Shaw, &ldquo;The Effects of Soil Moisture Stress at Different Stages of Growth on the Development and Yield of Corn 1&rdquo;, Agronomy Journal, vol. 52, no. 5, pp. 272-274, 1960. Available: 10.2134/agronj1960.00021962005200050010x. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>N. (NCEI), &ldquo;Climate Data Online (CDO) - The National Climatic Data Center&rsquo;s (NCDC) Climate Data Online (CDO) provides free access to NCDC&rsquo;s archive of historical weather and climate data in addition to station history information. | National Climatic Data Center (NCDC)&rdquo;, Ncdc.noaa.gov, 2020. [Online]. Available: <a href="https://www.ncdc.noaa.gov/cdo-web/">https://www.ncdc.noaa.gov/cdo-web/</a>. [Accessed: 19- Oct- 2020]. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>&ldquo;Data from: A field-scale sensor network data set for monitoring and modeling the spatial and temporal variation of soil moisture in a dryland agricultural field&rdquo;, USDA: Ag Data Commons, 2020. [Online]. Available: <a href="https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field">https://data.nal.usda.gov/dataset/data-field-scale-sensor-network-data-set-monitoring-and-modeling-spatial-and-temporal-variation-soil-moisture-dryland-agricultural-field</a>. [Accessed: 19- Oct- 2020]. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

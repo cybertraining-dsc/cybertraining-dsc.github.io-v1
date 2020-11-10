@@ -24,7 +24,7 @@
 <meta property="og:description" content="Residential Power Usage Prediction Siny P Raphel, fa20-523-314, sinypr@gmail.com
 Abstract To be added
 Contents
- Introduction Datasets Planning Reason to choose this dataset References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared." />
+ Introduction Datasets Merge datasets Exploratory Data Analysis Planning Reason to choose this dataset Project Timeline: References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-314/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
@@ -32,9 +32,9 @@ Contents
 <meta itemprop="description" content="Residential Power Usage Prediction Siny P Raphel, fa20-523-314, sinypr@gmail.com
 Abstract To be added
 Contents
- Introduction Datasets Planning Reason to choose this dataset References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.">
+ Introduction Datasets Merge datasets Exploratory Data Analysis Planning Reason to choose this dataset Project Timeline: References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.">
 
-<meta itemprop="wordCount" content="529">
+<meta itemprop="wordCount" content="676">
 
 
 
@@ -44,7 +44,7 @@ Contents
 <meta name="twitter:description" content="Residential Power Usage Prediction Siny P Raphel, fa20-523-314, sinypr@gmail.com
 Abstract To be added
 Contents
- Introduction Datasets Planning Reason to choose this dataset References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared."/>
+ Introduction Datasets Merge datasets Exploratory Data Analysis Planning Reason to choose this dataset Project Timeline: References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared."/>
 
 
 
@@ -349,7 +349,13 @@ Contents
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_project" href="/report/fa20-523-305/project/old_project/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_infoold_project" href="/report/fa20-523-305/project/old_info/old_project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectplan" href="/report/fa20-523-305/project/plan/"></a>
       
       
       
@@ -472,12 +478,6 @@ Contents
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-316projectproject" href="/report/fa20-523-316/project/project/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -520,8 +520,11 @@ Contents
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#datasets">Datasets</a></li>
+    <li><a href="#merge-datasets">Merge datasets</a></li>
+    <li><a href="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
     <li><a href="#planning">Planning</a></li>
     <li><a href="#reason-to-choose-this-dataset">Reason to choose this dataset</a></li>
+    <li><a href="#project-timeline">Project Timeline:</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
@@ -576,8 +579,11 @@ Contents
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#datasets">Datasets</a></li>
+    <li><a href="#merge-datasets">Merge datasets</a></li>
+    <li><a href="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
     <li><a href="#planning">Planning</a></li>
     <li><a href="#reason-to-choose-this-dataset">Reason to choose this dataset</a></li>
+    <li><a href="#project-timeline">Project Timeline:</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
@@ -614,6 +620,14 @@ Contents
 <li>Pressure       - Hg</li>
 <li>Precipitation  – inch</li>
 </ul>
+<h2 id="merge-datasets">Merge datasets</h2>
+<p>The &lsquo;StartDate&rsquo; fearure of power_usage dataset and &lsquo;Date&rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features are different. StartDate feature is the combination of date and hour. Whereas, &lsquo;Date&rsquo; feature of weather is just the date. So first &lsquo;StartDate&rsquo; column is splitted into &lsquo;Date&rsquo; and &lsquo;Hour&rsquo; columns. Since the &lsquo;StartDate&rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.</p>
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<p>Here we analyse different features, their relation with each other and target.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/dow.png" alt="Figure 4"></p>
+<p><strong>Figure 4:</strong> Average power usage by day of the week</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/images/tod.png" alt="Figure 5"></p>
+<p><strong>Figure 5:</strong> Average power usage by type of the day</p>
 <h2 id="planning">Planning</h2>
 <p>We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
 The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.</p>
@@ -632,12 +646,18 @@ The data spread across two files will have to be merged according to date. For t
 <li>There were datasets similar to this one. But this one has latest power usage data till August this year.</li>
 <li>It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for prediction.</li>
 </ol>
+<h2 id="project-timeline">Project Timeline:</h2>
+<ul>
+<li>EDA and preprocessing - 11/09/2020</li>
+<li>First set of result    - 11/11/2020</li>
+<li>Hyperparameter tuning, pipelines/ final setup - 11/15/2020</li>
+</ul>
 <h2 id="references">References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries">https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Residential Power Usage dataset <a href="https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries">https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

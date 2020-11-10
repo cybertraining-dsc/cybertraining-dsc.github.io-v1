@@ -24,8 +24,7 @@
 <meta property="og:description" content="Big Data in Sports Game Predictions and How It is Used in Sports Gambling  see our sample template at https://cybertraining-dsc.github.io/report/ for an elaborate example  Mansukh Kandhari,, fa20-523-331, Edit
 Abstract *completed further along in project=
 Contents
- 1. Introduction 2. Plan 3. References     Keywords: sports, sportsbook, betting, gambling, data analysis, machine learning
-1. Introduction Big Data in sports has been used for years by various stakeholders in this inidustry to do everything from predicting game outcomes to injury prevention." />
+ 1. Introduction 2. Plan 3. How bookmakes Determine odds 5. Possion Model 6. AI Driven Prediction Algorithms Created by Gamblers 7. References     Keywords: sports, sportsbook, betting, gambling, data analysis, machine learning" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-331/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
@@ -33,10 +32,9 @@ Contents
 <meta itemprop="description" content="Big Data in Sports Game Predictions and How It is Used in Sports Gambling  see our sample template at https://cybertraining-dsc.github.io/report/ for an elaborate example  Mansukh Kandhari,, fa20-523-331, Edit
 Abstract *completed further along in project=
 Contents
- 1. Introduction 2. Plan 3. References     Keywords: sports, sportsbook, betting, gambling, data analysis, machine learning
-1. Introduction Big Data in sports has been used for years by various stakeholders in this inidustry to do everything from predicting game outcomes to injury prevention.">
+ 1. Introduction 2. Plan 3. How bookmakes Determine odds 5. Possion Model 6. AI Driven Prediction Algorithms Created by Gamblers 7. References     Keywords: sports, sportsbook, betting, gambling, data analysis, machine learning">
 
-<meta itemprop="wordCount" content="528">
+<meta itemprop="wordCount" content="1231">
 
 
 
@@ -46,8 +44,7 @@ Contents
 <meta name="twitter:description" content="Big Data in Sports Game Predictions and How It is Used in Sports Gambling  see our sample template at https://cybertraining-dsc.github.io/report/ for an elaborate example  Mansukh Kandhari,, fa20-523-331, Edit
 Abstract *completed further along in project=
 Contents
- 1. Introduction 2. Plan 3. References     Keywords: sports, sportsbook, betting, gambling, data analysis, machine learning
-1. Introduction Big Data in sports has been used for years by various stakeholders in this inidustry to do everything from predicting game outcomes to injury prevention."/>
+ 1. Introduction 2. Plan 3. How bookmakes Determine odds 5. Possion Model 6. AI Driven Prediction Algorithms Created by Gamblers 7. References     Keywords: sports, sportsbook, betting, gambling, data analysis, machine learning"/>
 
 
 
@@ -352,7 +349,13 @@ Contents
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_project" href="/report/fa20-523-305/project/old_project/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_infoold_project" href="/report/fa20-523-305/project/old_info/old_project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectplan" href="/report/fa20-523-305/project/plan/"></a>
       
       
       
@@ -475,12 +478,6 @@ Contents
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-316projectproject" href="/report/fa20-523-316/project/project/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -523,7 +520,10 @@ Contents
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-plan">2. Plan</a></li>
-    <li><a href="#3-references">3. References</a></li>
+    <li><a href="#3-how-bookmakes-determine-odds">3. How bookmakes Determine odds</a></li>
+    <li><a href="#5-possion-model">5. Possion Model</a></li>
+    <li><a href="#6-ai-driven-prediction-algorithms-created-by-gamblers">6. AI Driven Prediction Algorithms Created by Gamblers</a></li>
+    <li><a href="#7-references">7. References</a></li>
   </ul>
 </nav>
 
@@ -580,7 +580,10 @@ Contents
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-plan">2. Plan</a></li>
-    <li><a href="#3-references">3. References</a></li>
+    <li><a href="#3-how-bookmakes-determine-odds">3. How bookmakes Determine odds</a></li>
+    <li><a href="#5-possion-model">5. Possion Model</a></li>
+    <li><a href="#6-ai-driven-prediction-algorithms-created-by-gamblers">6. AI Driven Prediction Algorithms Created by Gamblers</a></li>
+    <li><a href="#7-references">7. References</a></li>
   </ul>
 </nav>
 </div>
@@ -592,7 +595,13 @@ Contents
 <p>Big Data in sports has been used for years by various stakeholders in this inidustry to do everything from predicting game outcomes to injury prevention. It is also becoming very prevelant in the area of sports gambling. Ever since the Supreme court decision in Murphy v. National Collegiate Athletic Association that overturned a ban on sports betting, the majorirty of states in the US have passed legislation to allow sports gambling<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. In 2019, the global sports betting market was valued at 85.047 US Dollars so this is an already very big industry that is expanding <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. There are various platforms that allow betting in this industry including tangible sports books, casinos, racetracks, and many online and mobile gambling apps. The interesting thing about big data in sports betting is that it is being used on both sides in this market. It is used by bookmakers to create game models and come up with different spreads and odds, but big data anlysis is also being used by gamblers to gain a competetive advantage and place more accurate bets. Various prediction models using Machine Learning have been created and one might wonder, if these models are even somewhat accurate, how people haven&rsquo;t taken millions from bookmakers? This report aims to analyize different prediction models made by people for various sports, and compare them to models used by Bookies to create the odds for each repsective sport. It aims to show what the most possible accuracy can be, and if there is a feasable way to get a consistent good return from betting.</p>
 <h2 id="2-plan">2. Plan</h2>
 <p>For this report, an examination of the different methods used by various bookmakers and data driven sports betters will occur. The plan is to compare the different stastistical models and examine which ones work the best and to see how good various sports betting models predict over/under and straight bet outcomes for a game, and also program game prediction models. Various data sets will be used from sites such as <a href="https://www.sportsbookreview.com/betting-odds/">https://www.sportsbookreview.com/betting-odds/</a> to get historical betting odds and <a href="https://www.basketball-reference.com/">https://www.basketball-reference.com/</a> for NBA basketball data, <a href="https://www.baseball-reference.com/">https://www.baseball-reference.com/</a> for MLB baseball data, and <a href="https://www.pro-football-reference.com/">https://www.pro-football-reference.com/</a> for American Football data. These will be used to program an example predicion model for this report. Since a programming aspect is not required for undergraduates, it is not certian that this will be able to be done in the timeframe; however, it is likley that a simple model can be made by the author. Various game prediction models that have been created will also be analyized as part of this report, in order to see how they compare to models used by bookmakers for each sport.</p>
-<h2 id="3-references">3. References</h2>
+<h2 id="3-how-bookmakes-determine-odds">3. How bookmakes Determine odds</h2>
+<p>It is no secret that bookmakers use a lot of data and apply various statistical techniques to come up with betting odds. The statistical techniques used and the data that bookmakers look at vary from sport to sport, for example, the most popular method for modeling soccer uses the poisson distribution since it can be very accurate but also because it makes it easy to add time decay to the inputs <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.Bookmakers employ various mathematicians to analyze historical sports data to come up with odds; however, sports data isn’t the only thing that bookmakers look at when determining how they will make odds for a game. At the end of the day, the gamlbing industry is a numbers game that thrives on ensuring the probability is in the houses favor. Bookmakers use various techniques involving big data in order to do so.</p>
+<p>Big data is being used more and more in various industries, and in the gambling industry, it isn&rsquo;t just used to come up with odds. One major way it is used is by gathering data about user demographics <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. When using an online sportsbook, the casino can gather data about a users age, location, gender, excetera which can provide valuable insights that can be used for product development and marketing purposes. By using user demographic data to provide targeted advertising, casinos and bookmakers can attract more betters which will increase revenue. As said by former odds compiler Matthew Trenhaile, “Their [bookmakers] product is entertainment and not the selling of an intellectual contest between punter and bookmaker. It is foolish to think this has ever been the product that bookmakers have sold.They sell an adrenaline rush and anyone who thinks great characters pitting themselves against the punters and taking anyone on in horse racing betting rings is what betting used to be about is kidding himself or herself.” Due to the probability of making money in sports betting, and really every type of gambling, being in the houses favor, online casinos and sportsbooks use big data to increase the number of bets placed by customers. Nevertheless, using models to come up with odds is the heart of this industry which makes it the most important way big data analytics is used by bookmakers.</p>
+<p>When odds are being made for a sports book, a lot of things are taken into consideration in the process. Bookmakers have teams of statisticians that analyze historical data of the teams in order to come up with game prediction models<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. When bookmakers are actually making the odds, these statistical models created from large amounts of data aren&rsquo;t the only thing they use. When bookmakers are creating odds, their goal is to have the lowest probability of paying out, so they will also use public opinion along with their statistical models to do this. For example, if a team has been on an unexpected winning streak the bookmakers will often overestimate their odds, even against a team that will statistically do better than them, since people will be more inclined to take that bet resulting in the bookmaker making more money if the team the models favored wins <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Furthermore, bookmakers will often “hedge” bets to cover potential losses if an unexpected outcome occurs. For example, if a large amount of people are betting on a team regardless of the odds, the bookmakers will have a large payout if that outcome occurs, so they will start offering more favorable odds on the opposite outcome so they can bring in bets that would cover their losses<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Although hedging reduces the risk for bookmakers, gamblers found a way to use hedging as a tool for AI models created in attempts to &ldquo;beat the bookies&rdquo;.</p>
+<h2 id="5-possion-model">5. Possion Model</h2>
+<h2 id="6-ai-driven-prediction-algorithms-created-by-gamblers">6. AI Driven Prediction Algorithms Created by Gamblers</h2>
+<h2 id="7-references">7. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -601,6 +610,18 @@ Contents
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>Unlisted Author, Global Sports Betting Market Worth $85 Billion in 2019 - Industry Assessment and Forecasts Throughout 2020-2025,  <a href="https://www.globenewswire.com/news-release/2020/08/31/2086041/0/en/Global-Sports-Betting-Market-Worth-85-Billion-in-2019-Industry-Assessment-and-Forecasts-Throughout-2020-2025.html#:~:text=31%2C%202020%20(GLOBE%20NEWSWIRE),US%2485.047%20billion%20in%202019">https://www.globenewswire.com/news-release/2020/08/31/2086041/0/en/Global-Sports-Betting-Market-Worth-85-Billion-in-2019-Industry-Assessment-and-Forecasts-Throughout-2020-2025.html#:~:text=31%2C%202020%20(GLOBE%20NEWSWIRE),US%2485.047%20billion%20in%202019</a>. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Mathew Trenhaile, How Bookmakers Create their Odds, from a Former Odds Compiler, <a href="https://medium.com/@TrademateSports/how-bookmakers-create-their-odds-from-a-former-odds-compiler-5b36b4937439">https://medium.com/@TrademateSports/how-bookmakers-create-their-odds-from-a-former-odds-compiler-5b36b4937439</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Unlisted Author,How Big Data Analytics are Transforming the Global Gambling Industry <a href="https://www.analyticsinsight.net/how-big-data-analytics-are-transforming-the-global-gambling-industry/">https://www.analyticsinsight.net/how-big-data-analytics-are-transforming-the-global-gambling-industry/</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Unlisted Author, The Secret Betting Strategy that Beats Online Bookmakers <a href="https://www.technologyreview.com/2017/10/19/67760/the-secret-betting-strategy-that-beats-online-bookmakers/">https://www.technologyreview.com/2017/10/19/67760/the-secret-betting-strategy-that-beats-online-bookmakers/</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Andre Dorr, How to Provide Predictive Analytics to Premiership Football to Beat The Bookies, <a href="https://dataconomy.com/2019/03/how-to-apply-predictive-analytics-to-premiership-football-to-beat-the-bookies%EF%BB%BF/">https://dataconomy.com/2019/03/how-to-apply-predictive-analytics-to-premiership-football-to-beat-the-bookies%EF%BB%BF/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
