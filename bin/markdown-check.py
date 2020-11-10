@@ -4,11 +4,15 @@
 # markdown-check.py content/en/report/fa20-523-350/report/report.md
 # markdown-check.py content/en/report/fa20-523-312/project/project.md
 
+errors = 0
 wrong = False
 
 def error(msg):
+    global errors
+    global wrong
     print ("ERROR:", msg)
     wrong = True
+    errors = errors + 1
     
 import sys
 filename = sys.argv[1]
@@ -29,9 +33,6 @@ if "## 2." not in content or "## 3." not in content:
 if " http://" in content or " https://" in content:
     error("http link is not enclosed in < >")
 
-for tag in ["ul", "img", "p", "b", "li"]:
-    if f"<{tag}>" in content or f"<//{tag}>" in content: 
-        error(f"html tag <{tag}> not allowed in project")
     
 if " <http://" in content or " https://" in content:
     error("http link is not enclosed in < >")
@@ -78,6 +79,7 @@ for line in content.splitlines():
         if ending not in ["png", "jpg", "jpeg"]:
             error(f"{counter}: Image ending must be one of png, jpg, jpeg")
 
+    
 # check for multiple single hash
 
 count = 0
@@ -102,10 +104,25 @@ for line in content.splitlines():
         error(f"{counter}: line after heading must be empty")        
     section = line.startswith("#")
 
+# check for html
+for line in content.splitlines():
+    line = line.strip()
+    counter = counter + 1     
+
+    for tag in ["h1", "h2", "h3", "h4", "th", "td",
+                "ul", "img", "p", "b", "li"]:
+        if f"<{tag}>" in line:
+            error(f"{counter}: html tag <{tag}> not allowed in project")
+        if f"</{tag}>" in line:
+            error(f"{counter}: html tag </{tag}> not allowed in project")
+    
+    
     
 print()     
 if wrong:
-    raise("This is not a valid report")
+    print (f"{errors} Errors found")
+    print("This is not a valid report")
+    sys.exit(1)
 else:
     print("OK. No errors found. But there could be some as we do not test everything.")
 print()
