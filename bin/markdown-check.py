@@ -144,6 +144,17 @@ for line in content.splitlines():
     if "“" in line or "”" in line:
         error(f"{counter}: illeagal quote use \" instead")
 
+# Check README
+
+try:
+    filename = "README.yml"
+
+    with open(filename, 'r') as f:
+        readme = f.read()
+
+    if "TBD" in readme:
+        error("Your README.yml is not set up properly." 
+  
 print()
 print ("Lines:", lines)
 print ("Words:", words)
