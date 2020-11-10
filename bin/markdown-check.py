@@ -154,7 +154,9 @@ try:
 
     if "TBD" in readme:
         error("Your README.yml is not set up properly.")
-  
+except:
+    pass
+        
 print()
 print ("Lines:", lines)
 print ("Words:", words)
