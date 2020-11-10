@@ -20,6 +20,21 @@ filename = sys.argv[1]
 with open(filename, 'r') as f:
   content = f.read()
 
+
+# block above, bellow previous next figures and tables  
+oneline = " ".join(content.split()).lower()
+
+for form in ["figure", "table"]:
+    for word in ["next", "previous",        
+                 "above", "below",
+                 "above the", "below the"]:
+
+        if f"{word} {form}" in oneline:
+            error(f"Refer to the {form} by numbered {form}. Found {word} {form}") 
+        if f"{form} {word}" in oneline:
+            error(f"Refer to the {form} by numbered {form}. Found {form} {word}")
+
+
 # word count
 
 lines = 0
