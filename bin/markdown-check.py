@@ -37,7 +37,7 @@ for line in content.splitlines():
     
     
     line = line.strip()
-    print (line)
+    # print (line)
     if "![" in line:
         line = ""
     words = words + len(line.split(" "))
