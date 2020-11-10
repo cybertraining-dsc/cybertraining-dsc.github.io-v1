@@ -109,7 +109,7 @@ if "[Edit](https://github.com/cybertraining-dsc/" not in content:
 if "**Keywords:**" not in content:
     error("Keywords not found")
 
-titles = 1
+titles = 0
 code = False    
 counter = 0
 section = False
