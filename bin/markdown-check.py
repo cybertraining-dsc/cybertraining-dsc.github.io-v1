@@ -169,6 +169,7 @@ try:
 
     if "TBD" in readme:
         error("Your README.yml is not set up properly.")
+        print("See example at: https://github.com/cybertraining-dsc/fa20-523-312/blob/master/README.yml")
 except:
     pass
         
