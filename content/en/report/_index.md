@@ -59,7 +59,6 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * {{% addreport title="Music Mood Classification" author="Kunaal Shah"
 hid="fa20-523-341" %}}
 * {{% addreport title="Trending Youtube Videos Analysis" author="Adam Chai" hid="fa20-523-327" %}}
-* {{% addreport title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
 
 #### Commerce
 
@@ -84,6 +83,7 @@ hid="fa20-523-341" %}}
 
 * {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
 * {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
+* {{% addreportonly title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
 
 
 ## Reports that can not be reviewed
