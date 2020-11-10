@@ -55,7 +55,6 @@ if "## 2." not in content or "## 3." not in content:
 
 if " http://" in content or " https://" in content:
     error("http link is not enclosed in < >")
-
     
 if " <http://" in content or " https://" in content:
     error("http link is not enclosed in < >")
@@ -103,15 +102,6 @@ for line in content.splitlines():
             error(f"{counter}: Image ending must be one of png, jpg, jpeg")
 
     
-# check for multiple single hash
-
-count = 0
-for line in content.splitlines():
-    line = line.strip()
-    if line.startswith("# "):
-        count = count + 1
-if count > 1:
-    error("you used multiple titles")
 
 if "[Edit](https://github.com/cybertraining-dsc/" not in content:
     error("no edit link found")
@@ -119,7 +109,7 @@ if "[Edit](https://github.com/cybertraining-dsc/" not in content:
 if "**Keywords:**" not in content:
     error("Keywords not found")
 
-
+titles = 1
 code = False    
 counter = 0
 section = False
@@ -133,6 +123,13 @@ for line in content.splitlines():
             error(f"{counter}: line after heading must be empty")        
         section = line.startswith("#")
 
+        if line.startswith("# "):
+            titles = titles + 1
+
+if titles > 1:
+    error("you used multiple titles")
+
+        
 counter = 0
 # check for html
 for line in content.splitlines():
