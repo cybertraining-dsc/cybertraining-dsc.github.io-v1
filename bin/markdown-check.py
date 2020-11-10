@@ -91,7 +91,7 @@ for line in content.splitlines():
     counter = counter + 1 
     if line.startswith("!["):
         if "raw" not in line:
-            error("{counter}: image must be included from raw, url wrong")
+            error(f"{counter}: image must be included from raw, url wrong")
 
         ending = line.rsplit(".")[-1][:-1]
         if ending not in ["png", "jpg", "jpeg"]:
