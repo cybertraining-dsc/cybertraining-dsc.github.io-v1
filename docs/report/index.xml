@@ -2593,6 +2593,29 @@ Predictive Model - breakdown undetermined at this time&lt;/p&gt;
     
     <item>
       <title>Report: </title>
+      <link>/report/fa20-523-302/assignment6/wearables_and_ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-302/assignment6/wearables_and_ai/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Wearables and Personalized Medicine&lt;br&gt;
+Adam Martin&lt;/p&gt;
+&lt;p&gt;Wearables have been on the market for years now, gradually improving and providing increasingly insightful data on user health metrics.  Most wearables contain an array of sensors allowing the user to track aspects of their physical health.  This includes heart rate, motion, calories burned, and some devices now support ECG and BMI measurements.  This vast trove of data is valuable to consumers, as it allows for the measurement and gamification of key health metrics.  But can this data also be useful for health professionals in determining a patient’s activity levels and tracing important events in their health history?&lt;/p&gt;
+&lt;p&gt;Many wearable devices, predominantly smartwatches, provide high-granularity data to the various apps that consume it.  The Apple Watch Core Motion API provides accelerometer, gyroscope, pedometer, magnetometer, altitude, and other measurements at a rate of 50hz.  This is in addition to the heart rate data that is sampled throughout the day.  Apple also provides a Movement Disorder Manager interface for the analysis of Parkinson’s disease symptoms.  FitBit and Pebble devices provide similar tracking capabilities.  Beyond existing consumer smartwatches, there is hope for smart tattoos, VR displays, footwear, and fabrics.  These wearables could measure a user’s electrolyte and metabolite levels in their perspiration.  They could measure abnormal gaits or detect bacteria (Yetisen, 2018).&lt;/p&gt;
+&lt;p&gt;This high-fidelity data describing a wide variety of user activities could be invaluable to a healthcare professional hoping to find some insight in a patient’s condition.  However, the process for extraction, transformation, and transfer of this data is unclear.  With different device protocols and APIs providing information of varying quality and quantity, there is a need for a centralized, structured database for collection and analysis.  Along with this, there is a potential for the application of AI on the analysis of wearable data.  Raw sensor values will likely be incomprehensible to most analysts, so clustering of movement types and fuzzy logic on various parameters can allow a healthcare professional to better understand the meaning behind the data.  Furthermore, this data can be used to feed into a system of “predictive preventative diagnosis”.  Patients suffering from a variety of psychological or physical ailments can provide valuable data that highlights periods of symptom expression and also predicts prognosis (Piwek, 2016). When something is measured, it is easier to begin to act towards fixing it.&lt;/p&gt;
+&lt;p&gt;The artificial intelligence algorithms employed in the processing of collected data can be as diverse and complex as the systems they attempt to understand.  Time series analysis for oscillating signals involving Fourier transforms.  Feature extraction analysis through PCA.  Noise reduction and motion clustering.  These applications ignore the extra layer of abstraction, which involves the diagnosis and prediction aspects of wearable data.  The field of wearables devices is growing, along with the promise of better digital representations, or ‘digital twins’, of patients.  While there are still are matters to consider, including patient well-being and data privacy, the prognosis of wearables changing the healthcare industry looks good.&lt;/p&gt;
+&lt;p&gt; 
+Works Cited&lt;br&gt;
+Piwek, L. (2016). The Rise of Consumer Health Wearables: Promises and Barriers. PLOS MEDICINE.&lt;br&gt;
+Yetisen, A. K. (2018). Wearables in Medicine. Wiley Online Library.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/fa20-523-304/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4399,102 +4422,6 @@ The data spread across two files will have to be merged according to date. For t
 &lt;li&gt;We will follow directions on the rubric about writing project reports with the IEEE format, this is something we haven’t tried before, but we will try our best to make sure we are doing it correctly.&lt;/li&gt;
 &lt;li&gt;Processing data is also a sort of new field for all of us, but we are going to do lots of research, and watching some tutorials online to get the result we want.&lt;/li&gt;
 &lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-315/report/report/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-315/report/report/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;big-data-on-gesture-recognition-and-machine-learning&#34;&gt;Big Data on Gesture Recognition and Machine Learning&lt;/h1&gt;
-&lt;p&gt;Sunny Xu, Peiran Zhao, Kris Zhang, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/&#34;&gt;fa20-523-315&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/blob/master/report/report.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Since our technology is more and more advanced as time goes by, traditional human-computer interaction has become increasingly difficult to meet people&amp;rsquo;s demands. In this digital era, people need faster and more efficient methods to obtain information and data. Traditional and single input and output devices are not fast and convenient enough, it also requires users to learn their own methods of use, which is extremely inefficient and completely a waste of time. Therefore, artificial intelligence comes out, and its rise has followed the changeover times, and it satisfied people&amp;rsquo;s needs. At the same time, gesture is one of the most important way for human to deliver information. It is simple, efficient, convenient, and universally acceptable. Therefore, gesture recognition has become an emerging field in intelligent human-computer interaction field, with great potential and future.&lt;/p&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-background&#34;&gt;2. Background&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-gesture-recognition&#34;&gt;3. Gesture Recognition&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#31-hand-gesture&#34;&gt;3.1 Hand Gesture&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#32-body-gesture&#34;&gt;3.2 Body Gesture&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#33-face-gesture&#34;&gt;3.3 Face Gesture&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-conclusion&#34;&gt;4. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#plan&#34;&gt;Plan&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; gesture recognition, human, technology, big data, artificial intelligence, body language, facial expression&lt;/p&gt;
-&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;As of today, since technology is improving so fast, there are many things that can be related to AI and machine learning. Hand gestures will be one of the most important ways to understand people. As we often notice, when people are doing speech, they often use hand gestures to collaborate with their words. And studying hand gestures will often reveal what the people who are giving the speech are thinking about. For example, when someone is lying, they tend to touch their nose with their hand, etc. So studying hand gestures will not only help people understand much more about human beings and it can also help our technology grow. For example, in AI and machine learning. Studying hand gestures will make or improve AI and machine learning to better understand humans and be more human-like.&lt;/p&gt;
-&lt;h2 id=&#34;2-background&#34;&gt;2. Background&lt;/h2&gt;
-&lt;p&gt;Nowadays, people are doing more and more research on high-tech, which also makes various high-tech products appear in the society. For people, electricity is as important as water and air. It is impossible to imagine a life without electricity. We can realize that technology is changing everything about people from various aspects. People living in this high-tech era are also forced to learn and understand the usage of various high-tech products. As a representative of high technology, artificial intelligence has also attracted a lot of attention in society. Because of the emergence of artificial intelligence, people have also begun to realize that preserving the characteristics of the people is also a very important point in high technology. Therefore, scientists thought of gestures, one of the most commonly used body language.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;h2 id=&#34;3-gesture-recognition&#34;&gt;3. Gesture Recognition&lt;/h2&gt;
-&lt;p&gt;Gesture recognition is mainly divided into two categories, one is based on external device recognition, the specific application is data gloves, wearing it on user&amp;rsquo;s hand, to obtain and analysis information through sensors. This method has obvious shortcomings, though it is accurate and has excellent response speed, but it is costly and is not good for large-scale promotion. The other one is the use of computer vision. People do not need to wear gloves. As its name implies, this method collects and analyzes information through a computer. It is convenient, comfortable, and not so limited based on external device identification. In contrast, it has greater potential and is more in line with the trend of the times. Of course, this method needs more effective and accurate algorithms to support, because the gestures made by different people at different times, in different environments and at different angles also represent different meanings. So, if we want more accurate information feedback. Then the advancement of algorithms and technology is inevitable. The development of gesture recognition is also the development of artificial intelligence, a process of the development of various algorithms from data gloves to the development of computer vision-based optical technology plays a role in promoting it.&lt;/p&gt;
-&lt;h3 id=&#34;31-hand-gesture&#34;&gt;3.1 Hand Gesture&lt;/h3&gt;
-&lt;h4 id=&#34;311-hand-gesture-recognition-and-big-data&#34;&gt;3.1.1 Hand Gesture Recognition and Big Data&lt;/h4&gt;
-&lt;p&gt;Hand gesture recognition is commonly used in gesture recognition because fingers are the most flexible and it is able to create different angles that will represent different meanings. The hand gesture itself is also an easy but efficient way for us human beings to communicate and send messages to each other. The existence of hand gestures can be considered easy but powerful. However, if we are using the application of hand gesture recognition, it is a much more complicated process. In real life, we can just ben our finger or simply make a fist so that other people will understand our message. But when using hand gesture recognition there are many processes that are being involved. Hand gesture is commonly used in geesture recoginitaion As we did our research and based on our life experiences, hand gesture recognition is a very hot topic and has all the potential to be the next wave. Hand gesture recognition has recently achieved big success in many fields. The advancement and development of hand gesture recognition is also the development of other technology such as the advancement of computer chips, the advancement of algorithms, the advancement of machine learning even advancement of deep learning, and the advancement of cameras from 2D to 3D. The most important part of hand gesture recognition is big data and machine learning. Because of the development of big data and machine learning, data scientists are able to have better datasets, build a more accurate and successful model and be able to process the information and predict the most accurate results. Hand gesture recognition is a significant link in Gesture recognition.However gesture recognition is also not only about hand gesture recognition, it also includes other body parts such as facial expression recognition and body gesture recognition. With the help of the whole system of different gesture recognitions, the data can be recorded and processed by AIs. The results or predictions can be used currently or later on for different purposes in different areas.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;h4 id=&#34;312-principles-of-hand-gesture-recognition&#34;&gt;3.1.2 Principles of Hand Gesture Recognition&lt;/h4&gt;
-&lt;p&gt;Hand gesture recognition is a complicated process involving many steps. And in order to get the most accurate result, it will need a large amount of quality data and a scientific model with high performance. Hand gesture recognition is also at a developing stage simply because there are so many possible factors that can influence the result. Possible factors include skin color, background color, hand gesture angle, and Bending angle, etc. To simplify the process of gesture recognition, AIs will use 3-D cameras to capture images. After that, the data of the image will be collected and processed by programs and built models.  And lastly, AIs will be able to use that model to get an accurate result in order to have a corresponding response or predict future actions. To explain all processes of hand gesture recognition in detail, it includes graphic gathering, retreatment, skin color segmentation, hand gesture segmentation, and finally hand gesture recognition. Hand Gesture Recognition can not achieve the best accuracy without all any of these steps. Within all these steps, skin color segmentation is the most crucial step in order to increase accuracy and this process will be explained in the next session. &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;h3 id=&#34;32-body-gesture&#34;&gt;3.2 Body Gesture&lt;/h3&gt;
-&lt;h4 id=&#34;321-introduction-to-body-gesture&#34;&gt;3.2.1 Introduction to Body Gesture&lt;/h4&gt;
-&lt;p&gt;Body gestures, which can also be called body language, refer to humans expressing their ideas through the coordinated activities of various body parts. In our lives, body language is ubiquitous. It is like a bridge for our human communication. Through body language expression, it is often easier for us to understand what the other person wants to express. At the same time, we can express ourselves better. The profession of an actor is a good example of body language. This is a compulsory course for every actor because actors can only use their performances to let us know what they are expressing.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; At this time, body language becomes extremely important. Different characters have different body movements in different situations, and actors need to make the right body language at a specific time to let the audience know their inner feelings. Yes, the most important point of body language is to convey mood through movement.&lt;/p&gt;
-&lt;p&gt;In many cases, certain actions will make people feel emotions. For us who communicate with all kinds of people every day, there are also many body languages that we are more familiar with. For example, when a person hangs his head, it means that he is unhappy, walking back and forth is a sign of a person&amp;rsquo;s anxiety, and body shaking is caused by nervousness, etc.&lt;/p&gt;
-&lt;h4 id=&#34;322-body-gesture-and-big-data&#34;&gt;3.2.2 Body Gesture and Big Data&lt;/h4&gt;
-&lt;p&gt;As a piece of big data, body language requires data collected by studying human movements. Scientists found that when a person wants to convey a complete message, body language accounts for half. And because body language belongs to a person&amp;rsquo;s actions subconsciously, it is rarely deceptive. This also explains why scientists want to collect data to let artificial intelligence understand human behavior.&lt;/p&gt;
-&lt;h3 id=&#34;33-face-gesture&#34;&gt;3.3 Face Gesture&lt;/h3&gt;
-&lt;h4 id=&#34;331-introduction-to-face-gesturefacial-expression&#34;&gt;3.3.1 Introduction to Face Gesture(Facial Expression)&lt;/h4&gt;
-&lt;p&gt;Body language is one of the ways that we can express ourselves without saying any words. According to expert, body language is used everyday for us to communicate with each other. During our communication, we not only use words but also use body gestures, hand gestures and most importantly, we use facial expression most. The reason why we use facial expression more than any other body gestures is that when we have certain emotion, it is express in our face automatically. Facial expression is often not under our control. That is why people often say that the word that come out of mouth cannot always be true, but their facial expression will reveal what those people are thinking about. Some example of common facial expression will be: Happiness, Sadness, Anger, Surprise, Disgust, Fear, etc. &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; Each facial expression will have some deep meaning behind it. For example, A simple facial expression like smiling can be translated into a sign of approval, or it can be translated into a sign of friendly. If we put all those emotion into big data, it will help us to understand ourselves much better.&lt;/p&gt;
-&lt;h4 id=&#34;332-facial-expression-and-big-data&#34;&gt;3.3.2 Facial Expression and Big Data&lt;/h4&gt;
-&lt;p&gt;Nowadays, since technology is so advance, everything around us can be turn into data and everything can be related to data. Facial expression is often study by different scientist in research because it allows us to understand more about human and communication between different people. The organ on the face that can be used to deliver expressions are the eyes, nose, mouth. Sometime, eyebrow can also deliver facial expression. The section is still not complete yet. It will be completed before 11/15/2020.&lt;/p&gt;
-&lt;h2 id=&#34;4-conclusion&#34;&gt;4. Conclusion&lt;/h2&gt;
-&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
-&lt;h2 id=&#34;plan&#34;&gt;Plan&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Introduction: Kris&lt;/li&gt;
-&lt;li&gt;Background: Sunny&lt;/li&gt;
-&lt;li&gt;Hand Gesture: Peiran&lt;/li&gt;
-&lt;li&gt;Body Gesture: Sunny&lt;/li&gt;
-&lt;li&gt;Facial Expression: Kris&lt;/li&gt;
-&lt;li&gt;Conclusion: Peiran&lt;/li&gt;
-&lt;li&gt;catch up to do more on the report&lt;/li&gt;
-&lt;li&gt;each of us should do more research and put more time to the project&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Srilatha, Poluka, and Tiruveedhula Saranya. “Advancements in Gesture Recognition Technology.” IOSR Journal of VLSI and Signal Processing, vol. 4, no. 4, 2014, pp. 01–07, iosrjournals.org/iosr-jvlsi/papers/vol4-issue4/Version-1/A04410107.pdf, 10.9790/4200-04410107. Accessed 25 Oct. 2020. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;F. Zhan, &amp;ldquo;Hand Gesture Recognition with Convolution Neural Networks,&amp;rdquo; 2019 IEEE 20th International Conference on Information Reuse and Integration for Data Science (IRI), Los Angeles, CA, USA, 2019, pp. 295-298, doi: 10.1109/IRI.2019.00054. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Di Zhang, DZ.(2019) Research on Hand Gesture Recognition Technology Based on Machine Learning, Nanjing University of Posts and Telecommunications. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Cherry, K. (2019, September 28). How to Read Body Language and Facial Expressions. Verywell Mind. Retrieved November 8, 2020, from &lt;a href=&#34;https://www.verywellmind.com/understand-body-language-and-facial-expressions-4147228&#34;&gt;https://www.verywellmind.com/understand-body-language-and-facial-expressions-4147228&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
 
       </description>
     </item>

@@ -100,3 +100,12 @@
 [submodule "content/en/report/fa20-523-334"]
 	path = content/en/report/fa20-523-334
 	url = git@github.com:cybertraining-dsc/fa20-523-334.git
+[submodule "content/en/report/fa20-523-345"]
+	path = content/en/report/fa20-523-345
+	url = git@github.com:cybertraining-dsc/fa20-523-345.git
+[submodule "content/en/report/fa20-523-347"]
+	path = content/en/report/fa20-523-347
+	url = git@github.com:cybertraining-dsc/fa20-523-347.git
+[submodule "content/en/report/fa20-523-302"]
+	path = content/en/report/fa20-523-302
+	url = git@github.com:cybertraining-dsc/fa20-523-302.git

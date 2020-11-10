@@ -35,6 +35,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
 * {{% addreport title="Rank Forecasting in Car Racing" author="Jiayu Li" hid="fa20-523-349" %}}
 * {{% addreport title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
+* {{% addreport title="Analysis of 2020 MLB Season Statistics" author="Edward Hribal" hid="fa20-523-345" %}}
 
 #### Environment
 
