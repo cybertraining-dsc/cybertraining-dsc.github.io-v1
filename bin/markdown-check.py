@@ -20,6 +20,32 @@ filename = sys.argv[1]
 with open(filename, 'r') as f:
   content = f.read()
 
+# word count
+
+lines = 0
+words = 0
+for line in content.splitlines():
+    lines = lines + 1
+    if "##" in line and "References" in line:
+        break
+    
+    line = line.replace("*", "")
+    line = line.replace("#", "")
+    line = line.replace("-", "")
+    line = line.replace("{{% pageinfo %}}", "")
+    line = line.replace("{{% /pageinfo %}}", "")
+    
+    
+    line = line.strip()
+    print (line)
+    if "![" in line:
+        line = ""
+    words = words + len(line.split(" "))
+
+print ("Lines:", lines)
+print ("Words:", words)
+print()
+  
 #print (content)
 
 # check for numbers
@@ -96,6 +122,7 @@ if "[Edit](https://github.com/cybertraining-dsc/" not in content:
 if "**Keywords:**" not in content:
     error("Keywords not found")
 
+counter = 0
 section = False
 for line in content.splitlines():
     line = line.strip()
@@ -104,6 +131,7 @@ for line in content.splitlines():
         error(f"{counter}: line after heading must be empty")        
     section = line.startswith("#")
 
+counter = 0
 # check for html
 for line in content.splitlines():
     line = line.strip()
@@ -115,8 +143,9 @@ for line in content.splitlines():
             error(f"{counter}: html tag <{tag}> not allowed in project")
         if f"</{tag}>" in line:
             error(f"{counter}: html tag </{tag}> not allowed in project")
-    
-    
+    if "“" or "”" in line:
+        error(f"{counter}: illeagal quote use \" instead")
+            
     
 print()     
 if wrong:
