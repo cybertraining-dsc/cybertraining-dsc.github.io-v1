@@ -1,5 +1,9 @@
 #! /usr/bin/env python
 
+# usage:
+# markdown-check.py content/en/report/fa20-523-350/report/report.md
+# markdown-check.py content/en/report/fa20-523-312/project/project.md
+
 wrong = False
 
 def error(msg):
