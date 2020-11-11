@@ -138,10 +138,10 @@ for line in content.splitlines():
             titles = titles + 1
         if " http://" in line or " https://" in line:
             error(f"{counter}: http link is not enclosed in < >.")
-        if ("http://" in line or "https://" in line) and " >":
-            error("Clocing > has a space in front of it")
-        if ("http://" in line or "https://" in line) and "\>":
-            error("Clocing > has a \ in front of it")
+        if ("http://" in line or "https://" in line) and " >" in line:
+            error(f"{counter}: Closing > has a space in front of it")
+        if ("http://" in line or "https://" in line) and "\\>" in line:
+            error(f"{counter}: Closing > has a \ in front of it")
 
 if titles > 1:
     error("you used multiple titles")
