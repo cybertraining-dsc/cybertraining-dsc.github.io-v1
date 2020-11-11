@@ -14,7 +14,7 @@ pull:
 	cd content/en/report/fa20-523-305; git checkout master; git pull
 	cd content/en/report/fa20-523-307; git checkout master; git pull
 	cd content/en/report/fa20-523-308; git checkout master; git pull
-	cd content/en/report/fa20-523-309; git checkout master; git pull
+	cd content/en/report/fa20-523-309; git checkout main; git pull
 	cd content/en/report/fa20-523-312; git checkout main; git pull
 	cd content/en/report/fa20-523-313; git checkout master; git pull
 	cd content/en/report/fa20-523-314; git checkout master; git pull
