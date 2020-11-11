@@ -22,17 +22,17 @@
 
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Detect and classify pathologies in chest X-rays using PyTorch library 
- please fix refernces  Rama Asuri, fa20-523-319, Edit
+Rama Asuri, fa20-523-319, Edit
 Abstract Deep learning gains expert level performance by training on large datasets. Our project uses chest x-rays dataset called CheXpert and apply deep learning to detect and diagnose a condition based on image data. CheXpert dataset contain 224,316 chest radiographs of 65,240 patients. There are 14 observations in a radiology report and labels are mapped to these 14 observations." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-319/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Detect and classify pathologies in chest X-rays using PyTorch library 
- please fix refernces  Rama Asuri, fa20-523-319, Edit
+Rama Asuri, fa20-523-319, Edit
 Abstract Deep learning gains expert level performance by training on large datasets. Our project uses chest x-rays dataset called CheXpert and apply deep learning to detect and diagnose a condition based on image data. CheXpert dataset contain 224,316 chest radiographs of 65,240 patients. There are 14 observations in a radiology report and labels are mapped to these 14 observations.">
 
-<meta itemprop="wordCount" content="1116">
+<meta itemprop="wordCount" content="1113">
 
 
 
@@ -40,7 +40,7 @@ Abstract Deep learning gains expert level performance by training on large datas
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Detect and classify pathologies in chest X-rays using PyTorch library 
- please fix refernces  Rama Asuri, fa20-523-319, Edit
+Rama Asuri, fa20-523-319, Edit
 Abstract Deep learning gains expert level performance by training on large datasets. Our project uses chest x-rays dataset called CheXpert and apply deep learning to detect and diagnose a condition based on image data. CheXpert dataset contain 224,316 chest radiographs of 65,240 patients. There are 14 observations in a radiology report and labels are mapped to these 14 observations."/>
 
 
@@ -574,9 +574,6 @@ Abstract Deep learning gains expert level performance by training on large datas
 	       
 	<h1 id="detect-and-classify-pathologies-in-chest-x-rays-using-pytorch-library">Detect and classify pathologies in chest X-rays using PyTorch library</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-319/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-319/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
-<ul>
-<li><input disabled="" type="checkbox"> please fix refernces</li>
-</ul>
 <p>Rama Asuri, <a href="https://github.com/cybertraining-dsc/fa20-523-319/">fa20-523-319</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-319/blob/master/project/project.md">Edit</a></p>
 
 
@@ -647,9 +644,9 @@ of 65,240 patients labeled for the presence of 14 observations as positive, nega
 2002 and July 2017 in both inpatient and outpatient centers, along with their associated radiology reports. 
 From these, created a sampled set of 1000 reports for manual review by a boardcertified radiologist to determine
 feasibility for extraction of observations. The final set consist of 14 observations based on the prevalence in the 
-reports and clinical relevance, conforming to the Fleischner Society’s recommended glossary. “Pneumonia”, despite 
+reports and clinical relevance, conforming to the Fleischner Society’s recommended glossary. <em>Pneumonia</em>, despite 
 being a clinical diagnosis, was included as a label in order to represent the images that suggested primary 
-infection as the diagnosis. The “No Finding” observation was intended to capture the absence of all pathologies <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+infection as the diagnosis. The <em>No Finding</em> observation was intended to capture the absence of all pathologies <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h3 id="32-data-labelling">3.2 Data Labelling</h3>
 <p>Labels were developed using an automated rule-based labeler to extract observations from the free text radiology 
 reports to be used as structured labels for the images <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
@@ -666,11 +663,11 @@ match is found, then the mention is classified accordingly . If a mention is not
 classified as positive <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h3 id="35-label-aggregation">3.5 Label Aggregation</h3>
 <p>CheXpert use the classification for each mention of observations to arrive at a final label for 14 observations that 
-consist of 12 pathologies as well as the “Support Devices” and “No Finding” observations. Observations with at least 
+consist of 12 pathologies as well as the <em>Support Devices</em> and <em>No Finding</em> observations. Observations with at least 
 one mention that is positively classified in the report is assigned a positive (1) label. An observation is assigned 
 an uncertain (u) label if it has no positively classified mentions and at least one uncertain mention, and a negative
 label if there is at least one negatively classified mention. Assign (blank) if there is no mention of an observation.
-The “No Finding” observation is assigned a positive label (1) if there is no pathology classified as positive 
+The <em>No Finding</em> observation is assigned a positive label (1) if there is no pathology classified as positive 
 or uncertain <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="4-use-case-and-deep-learning-model">4. Use case and deep learning model</h2>
 <p>Our Deep Learning model loads and process the raw data files and implement a Python class to represent data by 
