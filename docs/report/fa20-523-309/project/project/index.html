@@ -36,7 +36,7 @@ Abstract This section will be addressed as the project nears completion
 Contents
  1. Introduction 2. Datasets  2.1 Dataset Cleaning 2.2 Dataset Analysis   3. Machine Learning Algorithms and Implementation  3.1 Scikit-Learn and Algorithm Types 3.2 Classification Algorithms 3.3 Clustering Algorithms   4. Results &amp; Discussion  4.1 Algorithm Metrics   5.">
 
-<meta itemprop="wordCount" content="2814">
+<meta itemprop="wordCount" content="2622">
 
 
 
@@ -310,12 +310,6 @@ Contents
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-301projectdatablank" href="/report/fa20-523-301/project/data/blank/"></a>
-      
-      
-      
-      
-      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-301projectimagesblank" href="/report/fa20-523-301/project/images/blank/"></a>
       
       
@@ -479,6 +473,12 @@ Contents
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314test" href="/report/fa20-523-314/test/"></a>
       
       
     </li>
@@ -733,73 +733,313 @@ Contents
 <p>Finally is the f1-score which is the harmonic mean of the precision and recall metric <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>. This will be the key metric we will mainly focus on as it strikes a good balance between the two more primitive metrics. Since one may think in medical applications one would want to maximize recall, it is at the cost of precision which ends up in more false predictions which is essentially an overfitting scenario <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>. Something that reduces the viability of the model to the application especially since we have a relatively balanced dataset, more customized weighting is not as necessary.</p>
 <p>The metrics for each algorithm implementation is as follows.</p>
 <h4 id="411-support-vector-machines">4.1.1 Support Vector Machines</h4>
-<p><strong>Table 4.1:</strong> dav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.99      | 0.94   | 0.96     |
-| Has Disease | 0.95      | 0.99   | 0.97     |</p>
-<p><strong>Table 4.2:</strong> sav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.99      | 0.94   | 0.96     |
-| Has Disease | 0.95      | 0.99   | 0.97     |</p>
+<p><strong>Table 4.1:</strong> dav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.99</td>
+<td>0.94</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.95</td>
+<td>0.99</td>
+<td>0.97</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.2:</strong> sav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.99</td>
+<td>0.94</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.95</td>
+<td>0.99</td>
+<td>0.97</td>
+</tr>
+</tbody>
+</table>
 <h4 id="412-k-nearest-neighbors">4.1.2 K-Nearest Neighbors</h4>
-<p><strong>Table 4.3:</strong> dav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.88      | 0.86   | 0.87     |
-| Has Disease | 0.87      | 0.90   | 0.88     |</p>
-<p><strong>Table 4.4:</strong> sav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.62      | 0.74   | 0.67     |
-| Has Disease | 0.67      | 0.54   | 0.60     |</p>
+<p><strong>Table 4.3:</strong> dav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.88</td>
+<td>0.86</td>
+<td>0.87</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.87</td>
+<td>0.90</td>
+<td>0.88</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.4:</strong> sav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.62</td>
+<td>0.74</td>
+<td>0.67</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.67</td>
+<td>0.54</td>
+<td>0.60</td>
+</tr>
+</tbody>
+</table>
 <h4 id="413-gaussian-naive-bayes">4.1.3 Gaussian Naive Bayes</h4>
-<p><strong>Table 4.5:</strong> dav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.88      | 0.81   | 0.84     |
-| Has Disease | 0.83      | 0.90   | 0.86     |</p>
-<p><strong>Table 4.6:</strong> sav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.56      | 0.90   | 0.69     |
-| Has Disease | 0.72      | 0.28   | 0.40     |</p>
+<p><strong>Table 4.5:</strong> dav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.88</td>
+<td>0.81</td>
+<td>0.84</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.83</td>
+<td>0.90</td>
+<td>0.86</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.6:</strong> sav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.56</td>
+<td>0.90</td>
+<td>0.69</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.72</td>
+<td>0.28</td>
+<td>0.40</td>
+</tr>
+</tbody>
+</table>
 <h4 id="414-decision-trees">4.1.4 Decision Trees</h4>
-<p><strong>Table 4.7:</strong> dav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.92      | 0.97   | 0.95     |
-| Has Disease | 0.97      | 0.93   | 0.95     |</p>
-<p><strong>Table 4.8:</strong> sav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.71      | 0.80   | 0.75     |
-| Has Disease | 0.76      | 0.66   | 0.71     |</p>
+<p><strong>Table 4.7:</strong> dav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.92</td>
+<td>0.97</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.97</td>
+<td>0.93</td>
+<td>0.95</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.8:</strong> sav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.71</td>
+<td>0.80</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.76</td>
+<td>0.66</td>
+<td>0.71</td>
+</tr>
+</tbody>
+</table>
 <h4 id="415-k-means">4.1.5 K-Means</h4>
-<p><strong>Table 4.7:</strong> dav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.22      | 0.29   | 0.25     |
-| Has Disease | 0.12      | 0.09   | 0.10     |</p>
-<p><strong>Table 4.8:</strong> sav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.51      | 0.69   | 0.59     |
-| Has Disease | 0.52      | 0.34   | 0.41     |</p>
+<p><strong>Table 4.7:</strong> dav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.22</td>
+<td>0.29</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.12</td>
+<td>0.09</td>
+<td>0.10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.8:</strong> sav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.51</td>
+<td>0.69</td>
+<td>0.59</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.52</td>
+<td>0.34</td>
+<td>0.41</td>
+</tr>
+</tbody>
+</table>
 <h4 id="416-mean-shift">4.1.6 Mean-shift</h4>
 <p>Algorithm is still being implemented</p>
 <h4 id="417-spectral-clustering">4.1.7 Spectral Clustering</h4>
-<p><strong>Table 4.7:</strong> dav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.86      | 0.74   | 0.79     |
-| Has Disease | 0.79      | 0.89   | 0.84     |</p>
-<p><strong>Table 4.8:</strong> sav_set metrics
-|             | Precision | Recall | f1-score |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;-|
-| No Disease  | 0.56      | 0.57   | 0.57     |
-| Has Disease | 0.56      | 0.56   | 0.56     |</p>
+<p><strong>Table 4.7:</strong> dav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.86</td>
+<td>0.74</td>
+<td>0.79</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.79</td>
+<td>0.89</td>
+<td>0.84</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4.8:</strong> sav_set metrics</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Precision</th>
+<th>Recall</th>
+<th>f1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Disease</td>
+<td>0.56</td>
+<td>0.57</td>
+<td>0.57</td>
+</tr>
+<tr>
+<td>Has Disease</td>
+<td>0.56</td>
+<td>0.56</td>
+<td>0.56</td>
+</tr>
+</tbody>
+</table>
 <h2 id="5-conclusion">5. Conclusion</h2>
 <p>be addressed as the project nears completion</p>
 <h2 id="project-timeline">Project Timeline</h2>
