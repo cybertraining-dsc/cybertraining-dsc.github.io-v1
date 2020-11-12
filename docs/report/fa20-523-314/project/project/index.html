@@ -21,30 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Residential Power Usage Prediction Siny P Raphel, fa20-523-314, sinypr@gmail.com
-Abstract To be added
-Contents
- Introduction Datasets Merge datasets Exploratory Data Analysis Planning Reason to choose this dataset Project Timeline: References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared." />
+<meta property="og:description" content="Residential Power Usage Prediction 
+Siny P Raphel, fa20-523-314, sinypr@gmail.com
+Abstract Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared. This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets[^1]." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-314/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Residential Power Usage Prediction Siny P Raphel, fa20-523-314, sinypr@gmail.com
-Abstract To be added
-Contents
- Introduction Datasets Merge datasets Exploratory Data Analysis Planning Reason to choose this dataset Project Timeline: References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.">
+<meta itemprop="description" content="Residential Power Usage Prediction 
+Siny P Raphel, fa20-523-314, sinypr@gmail.com
+Abstract Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared. This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets[^1].">
 
-<meta itemprop="wordCount" content="676">
+<meta itemprop="wordCount" content="739">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Residential Power Usage Prediction Siny P Raphel, fa20-523-314, sinypr@gmail.com
-Abstract To be added
-Contents
- Introduction Datasets Merge datasets Exploratory Data Analysis Planning Reason to choose this dataset Project Timeline: References     Introduction Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared."/>
+<meta name="twitter:description" content="Residential Power Usage Prediction 
+Siny P Raphel, fa20-523-314, sinypr@gmail.com
+Abstract Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared. This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets[^1]."/>
 
 
 
@@ -567,12 +564,13 @@ Contents
     
 	       
 	<h1 id="residential-power-usage-prediction">Residential Power Usage Prediction</h1>
+<p><a href="https://github.com/cybertraining-dsc/fa20-523-314/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-314/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
 <p>Siny P Raphel, <a href="https://github.com/cybertraining-dsc/fa20-523-314/">fa20-523-314</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md">sinypr@gmail.com</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>To be added</p>
+<p>Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared. This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets[^1]. The dataset contains data of hourly power consumption of a 2 storied house in Houston, Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -591,26 +589,28 @@ Contents
 
 </div>
 
+<p><strong>Keywords:</strong> power usage, big data, regression</p>
 <h2 id="introduction">Introduction</h2>
-<p>Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.</p>
-<p>This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. The dataset contains data of hourly power consumption of a 2 storied house in Houston,Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.</p>
+<p>Most of the houses in USA are equipped with lightings and refrigerators using electricity. The usage of air conditioners is also increasing. From Figure 1, we can see that top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/chart.png" alt="Figure 1"></p>
+<p><strong>Figure 1:</strong> Residential electricity consumption by end use, 2015<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="datasets">Datasets</h2>
 <p>Data is spread across two csv files.</p>
 <ul>
 <li><code>power_usage_2016_to_2020.csv</code></li>
 </ul>
 <p>This file contains basic details of the data like startdate with hour, value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-1.png" alt="Figure 1"></p>
-<p><strong>Figure 1:</strong> First five rows of power_usage_2016_to_2020 data</p>
-<p>Day of the week is an integer value with 0 being Monday. Notes gives us details like whether that day is weekend, weekday, covid lockdown or vacation. The Figure 1 shows retrieval and first few rows of the data.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-2.png" alt="Figure 2"></p>
-<p><strong>Figure 2:</strong> Details in &ldquo;notes&rdquo; column</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-1.png" alt="Figure 2"></p>
+<p><strong>Figure 2:</strong> First five rows of power_usage_2016_to_2020 data</p>
+<p>Day of the week is an integer value with 0 being Monday. Notes gives us details like whether that day is weekend, weekday, covid lockdown or vacation. The Figure 2 shows retrieval and first few rows of the data.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-2.png" alt="Figure 3"></p>
+<p><strong>Figure 3:</strong> Details in &ldquo;notes&rdquo; column</p>
 <ul>
 <li>weather_2016_2020_daily.csv</li>
 </ul>
-<p>This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 3 shows retrieval and first few rows and columns of this file.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-3.png" alt="Figure 3"></p>
-<p><strong>Figure 3:</strong> First few rows of weather_2016_2020_daily data</p>
+<p>This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 4 shows retrieval and first few rows and columns of this file.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-3.png" alt="Figure 4"></p>
+<p><strong>Figure 4:</strong> First few rows of weather_2016_2020_daily data</p>
 <p>Units of features are given as follows:</p>
 <ul>
 <li>Temperature    - F deg</li>
@@ -621,13 +621,13 @@ Contents
 <li>Precipitation  – inch</li>
 </ul>
 <h2 id="merge-datasets">Merge datasets</h2>
-<p>The &lsquo;StartDate&rsquo; fearure of power_usage dataset and &lsquo;Date&rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features are different. StartDate feature is the combination of date and hour. Whereas, &lsquo;Date&rsquo; feature of weather is just the date. So first &lsquo;StartDate&rsquo; column is splitted into &lsquo;Date&rsquo; and &lsquo;Hour&rsquo; columns. Since the &lsquo;StartDate&rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.</p>
+<p>The &lsquo;StartDate&rsquo; feature of power_usage dataset and &lsquo;Date&rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features is different. StartDate feature is the combination of date and hour. Whereas, &lsquo;Date&rsquo; feature of weather is just the date. So first &lsquo;StartDate&rsquo; column is split into &lsquo;Date&rsquo; and &lsquo;Hour&rsquo; columns. Since the &lsquo;StartDate&rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.</p>
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <p>Here we analyse different features, their relation with each other and target.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/dow.png" alt="Figure 4"></p>
-<p><strong>Figure 4:</strong> Average power usage by day of the week</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/tod.png" alt="Figure 5"></p>
-<p><strong>Figure 5:</strong> Average power usage by type of the day</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/dow.png" alt="Figure 5"></p>
+<p><strong>Figure 5:</strong> Average power usage by day of the week</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/tod.png" alt="Figure 6"></p>
+<p><strong>Figure 6:</strong> Average power usage by type of the day</p>
 <h2 id="planning">Planning</h2>
 <p>We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
 The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.</p>
@@ -657,7 +657,7 @@ The data spread across two files will have to be merged according to date. For t
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Residential Power Usage dataset <a href="https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries">https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Use of energy explained - Energy use in homes, <a href="https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php">https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

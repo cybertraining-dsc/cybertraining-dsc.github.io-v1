@@ -4526,12 +4526,13 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
         
         
         &lt;h1 id=&#34;residential-power-usage-prediction&#34;&gt;Residential Power Usage Prediction&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/workflows/Check%20Report/badge.svg&#34; alt=&#34;Check Report&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Siny P Raphel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/&#34;&gt;fa20-523-314&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md&#34;&gt;sinypr@gmail.com&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;To be added&lt;/p&gt;
+&lt;p&gt;Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared. This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets[^1]. The dataset contains data of hourly power consumption of a 2 storied house in Houston, Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -4550,26 +4551,28 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
 
 &lt;/div&gt;
 
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; power usage, big data, regression&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.&lt;/p&gt;
-&lt;p&gt;This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. The dataset contains data of hourly power consumption of a 2 storied house in Houston,Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.&lt;/p&gt;
+&lt;p&gt;Most of the houses in USA are equipped with lightings and refrigerators using electricity. The usage of air conditioners is also increasing. From Figure 1, we can see that top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/chart.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Residential electricity consumption by end use, 2015&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
 &lt;p&gt;Data is spread across two csv files.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;power_usage_2016_to_2020.csv&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This file contains basic details of the data like startdate with hour, value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-1.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; First five rows of power_usage_2016_to_2020 data&lt;/p&gt;
-&lt;p&gt;Day of the week is an integer value with 0 being Monday. Notes gives us details like whether that day is weekend, weekday, covid lockdown or vacation. The Figure 1 shows retrieval and first few rows of the data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-2.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Details in &amp;ldquo;notes&amp;rdquo; column&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-1.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; First five rows of power_usage_2016_to_2020 data&lt;/p&gt;
+&lt;p&gt;Day of the week is an integer value with 0 being Monday. Notes gives us details like whether that day is weekend, weekday, covid lockdown or vacation. The Figure 2 shows retrieval and first few rows of the data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-2.png&#34; alt=&#34;Figure 3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Details in &amp;ldquo;notes&amp;rdquo; column&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;weather_2016_2020_daily.csv&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 3 shows retrieval and first few rows and columns of this file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-3.png&#34; alt=&#34;Figure 3&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; First few rows of weather_2016_2020_daily data&lt;/p&gt;
+&lt;p&gt;This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 4 shows retrieval and first few rows and columns of this file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-3.png&#34; alt=&#34;Figure 4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; First few rows of weather_2016_2020_daily data&lt;/p&gt;
 &lt;p&gt;Units of features are given as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Temperature    - F deg&lt;/li&gt;
@@ -4580,13 +4583,13 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
 &lt;li&gt;Precipitation  – inch&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;merge-datasets&#34;&gt;Merge datasets&lt;/h2&gt;
-&lt;p&gt;The &amp;lsquo;StartDate&amp;rsquo; fearure of power_usage dataset and &amp;lsquo;Date&amp;rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features are different. StartDate feature is the combination of date and hour. Whereas, &amp;lsquo;Date&amp;rsquo; feature of weather is just the date. So first &amp;lsquo;StartDate&amp;rsquo; column is splitted into &amp;lsquo;Date&amp;rsquo; and &amp;lsquo;Hour&amp;rsquo; columns. Since the &amp;lsquo;StartDate&amp;rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.&lt;/p&gt;
+&lt;p&gt;The &amp;lsquo;StartDate&amp;rsquo; feature of power_usage dataset and &amp;lsquo;Date&amp;rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features is different. StartDate feature is the combination of date and hour. Whereas, &amp;lsquo;Date&amp;rsquo; feature of weather is just the date. So first &amp;lsquo;StartDate&amp;rsquo; column is split into &amp;lsquo;Date&amp;rsquo; and &amp;lsquo;Hour&amp;rsquo; columns. Since the &amp;lsquo;StartDate&amp;rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.&lt;/p&gt;
 &lt;h2 id=&#34;exploratory-data-analysis&#34;&gt;Exploratory Data Analysis&lt;/h2&gt;
 &lt;p&gt;Here we analyse different features, their relation with each other and target.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/dow.png&#34; alt=&#34;Figure 4&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Average power usage by day of the week&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/tod.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Average power usage by type of the day&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/dow.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Average power usage by day of the week&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/tod.png&#34; alt=&#34;Figure 6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Average power usage by type of the day&lt;/p&gt;
 &lt;h2 id=&#34;planning&#34;&gt;Planning&lt;/h2&gt;
 &lt;p&gt;We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
 The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.&lt;/p&gt;
@@ -4616,7 +4619,7 @@ The data spread across two files will have to be merged according to date. For t
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Residential Power Usage dataset &lt;a href=&#34;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&#34;&gt;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Use of energy explained - Energy use in homes, &lt;a href=&#34;https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php&#34;&gt;https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
