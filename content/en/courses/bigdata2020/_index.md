@@ -202,7 +202,7 @@ reinforced with novel AI techniques to migrate business models with technology.
 
 {{< view_module
 	alt="Transportation Systems"
-	src="/images/transportation_systems.jpg"
+	src="/images/transportation_system.jpg"
 	url="/modules/bigdataapplications/2020/transportation_systems"
 >}}
 
