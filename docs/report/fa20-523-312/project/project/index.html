@@ -21,27 +21,21 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work.  
-Saptarshi Sinha, fa20-523-312, Edit
-Abstract With the passage of time, human activities have created and contributed much to the aggrandizing problems of various forms of environmental pollution. Massive amounts of industrial effluents and agricultural waste wash-offs, that often comprise pesticides and other forms of agricultural chemicals, find their way to fresh water bodies, to lakes, and eventually to the oceanic systems." />
+<meta property="og:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. Benchmark the separate parts of your analysis verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, some plots seem only to be distinguished by the plotstyle but may not be content different." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-312/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work.  
-Saptarshi Sinha, fa20-523-312, Edit
-Abstract With the passage of time, human activities have created and contributed much to the aggrandizing problems of various forms of environmental pollution. Massive amounts of industrial effluents and agricultural waste wash-offs, that often comprise pesticides and other forms of agricultural chemicals, find their way to fresh water bodies, to lakes, and eventually to the oceanic systems.">
+<meta itemprop="description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. Benchmark the separate parts of your analysis verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, some plots seem only to be distinguished by the plotstyle but may not be content different.">
 
-<meta itemprop="wordCount" content="3381">
+<meta itemprop="wordCount" content="3468">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work.  
-Saptarshi Sinha, fa20-523-312, Edit
-Abstract With the passage of time, human activities have created and contributed much to the aggrandizing problems of various forms of environmental pollution. Massive amounts of industrial effluents and agricultural waste wash-offs, that often comprise pesticides and other forms of agricultural chemicals, find their way to fresh water bodies, to lakes, and eventually to the oceanic systems."/>
+<meta name="twitter:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. Benchmark the separate parts of your analysis verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, some plots seem only to be distinguished by the plotstyle but may not be content different."/>
 
 
 
@@ -524,7 +518,11 @@ Abstract With the passage of time, human activities have created and contributed
         <li><a href="#42-software-component">4.2 Software Component</a></li>
       </ul>
     </li>
-    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#5-inference">5. Inference</a>
+      <ul>
+        <li><a href="#benchmark-results">Benchmark Results</a></li>
+      </ul>
+    </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-references">8. References</a></li>
@@ -571,6 +569,11 @@ Abstract With the passage of time, human activities have created and contributed
 	<h1 id="aquatic-toxicity-analysis-with-the-aid-of-autonomous-surface-vehicle-asv">Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)</h1>
 <ul>
 <li><input disabled="" type="checkbox"> Please use references instead of using URLs to cite the work.</li>
+<li><input disabled="" type="checkbox"> Benchmark the separate parts of your analysis</li>
+<li><input disabled="" type="checkbox"> verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data,</li>
+<li><input disabled="" type="checkbox"> some plots seem only to be distinguished by the plotstyle but may not be content different. PLease verify</li>
+<li><input disabled="" type="checkbox"> Extension for project granted till last day of regular semester in December</li>
+<li><input disabled="" type="checkbox"> modification of report beyond that granted and expected according to author</li>
 </ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-312/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-312/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
 <p>Saptarshi Sinha, <a href="https://github.com/cybertraining-dsc/fa20-523-312/">fa20-523-312</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-312/blob/main/project/project.md">Edit</a></p>
@@ -592,7 +595,11 @@ Abstract With the passage of time, human activities have created and contributed
         <li><a href="#42-software-component">4.2 Software Component</a></li>
       </ul>
     </li>
-    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#5-inference">5. Inference</a>
+      <ul>
+        <li><a href="#benchmark-results">Benchmark Results</a></li>
+      </ul>
+    </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-references">8. References</a></li>
@@ -667,6 +674,7 @@ Abstract With the passage of time, human activities have created and contributed
 <img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/S_dO2.png" alt="Dissolved Oxygen level">
 <img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/H_dO2.png" alt="Dissolved Oxygen level"></p>
 <p><strong>Figure 6:</strong> Line, Scatter, and Histogram plots for the water-quality parameter involving &ldquo;Dissolved Oxygen level&rdquo;</p>
+<h3 id="benchmark-results">Benchmark Results</h3>
 <ul>
 <li>First Benchmark results (To be updated further)</li>
 </ul>

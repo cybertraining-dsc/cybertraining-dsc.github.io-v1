@@ -202,7 +202,7 @@ Continue work on project and complete study of videos already assigned. If inter
 
 This weeks video class discussed deep learning for Time Series
 
-{{< youtube teXeAdX6_Cg" >}}.
+{{< youtube "teXeAdX6_Cg" >}}.
 
 ### Videos for Week 12
 

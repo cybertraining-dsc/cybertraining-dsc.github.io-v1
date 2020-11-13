@@ -21,25 +21,25 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references and table of content.  
+<meta property="og:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references  
 Alex Baker, fa20-523-307, Edit
 Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-307/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references and table of content.  
+<meta itemprop="description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references  
 Alex Baker, fa20-523-307, Edit
 Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ).">
 
-<meta itemprop="wordCount" content="1335">
+<meta itemprop="wordCount" content="1413">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references and table of content.  
+<meta name="twitter:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references  
 Alex Baker, fa20-523-307, Edit
 Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)."/>
 
@@ -517,30 +517,30 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-datasets">2. DataSets</a></li>
-    <li><a href="#data-cleaning-and-preprocessing">Data Cleaning and Preprocessing</a>
+    <li><a href="#3-data-cleaning-and-preprocessing">3. Data Cleaning and Preprocessing</a>
       <ul>
-        <li><a href="#twitter-data">Twitter Data</a></li>
-        <li><a href="#stock-data">Stock Data</a></li>
+        <li><a href="#31-twitter-data">3.1 Twitter Data</a></li>
+        <li><a href="#32-stock-data">3.2 Stock Data</a></li>
       </ul>
     </li>
-    <li><a href="#3-methodologyprocess">3. Methodology/Process</a></li>
-    <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a>
+    <li><a href="#4-methodologyprocess">4. Methodology/Process</a></li>
+    <li><a href="#5-preliminary-analysis-and-eda">5. Preliminary Analysis and EDA</a>
       <ul>
-        <li><a href="#twitter-data-1">Twitter Data</a></li>
-        <li><a href="#stock-data-1">Stock Data</a></li>
+        <li><a href="#51-twitter-data">5.1 Twitter Data</a></li>
+        <li><a href="#52-stock-data">5.2 Stock Data</a></li>
       </ul>
     </li>
-    <li><a href="#defining-events-during-trumps-presidency">Defining events during Trump&rsquo;s presidency</a>
+    <li><a href="#6-defining-events-during-trumps-presidency">6. Defining events during Trump&rsquo;s presidency</a>
       <ul>
-        <li><a href="#the-impeachment-of-president-trump">The Impeachment of President Trump</a></li>
-        <li><a href="#the-dakota-access-and-keystone-xl-pipelines-approval">The Dakota Access and Keystone XL pipelines approval</a></li>
-        <li><a href="#the-government-shutdown">The Government Shutdown</a></li>
+        <li><a href="#61-the-impeachment-of-president-trump">6.1 The Impeachment of President Trump</a></li>
+        <li><a href="#62-the-dakota-access-and-keystone-xl-pipelines-approval">6.2 The Dakota Access and Keystone XL pipelines approval</a></li>
+        <li><a href="#63-the-government-shutdown">6.3 The Government Shutdown</a></li>
       </ul>
     </li>
-    <li><a href="#outline-of-plan">Outline of plan</a></li>
-    <li><a href="#4-technologies-used">4. Technologies used</a></li>
-    <li><a href="#5-conclusion">5. Conclusion</a></li>
-    <li><a href="#5-references">5. References</a></li>
+    <li><a href="#7-outline-of-plan">7. Outline of plan</a></li>
+    <li><a href="#8-technologies-used">8. Technologies used</a></li>
+    <li><a href="#9-conclusion">9. Conclusion</a></li>
+    <li><a href="#10-references">10. References</a></li>
   </ul>
 </nav>
 
@@ -583,7 +583,7 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 	       
 	<h1 id="analysis-of-financial-markets-based-on-president-trumps-tweets">Analysis of Financial Markets based on President Trump&rsquo;s Tweets</h1>
 <ul>
-<li><input disabled="" type="checkbox"> Please add references and table of content.</li>
+<li><input disabled="" type="checkbox"> Please add references</li>
 </ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-307/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-307/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
 <p>Alex Baker, fa20-523-307, <a href="https://github.com/cybertraining-dsc/fa20-523-307/blob/master/project/project.md">Edit</a></p>
@@ -598,37 +598,37 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-datasets">2. DataSets</a></li>
-    <li><a href="#data-cleaning-and-preprocessing">Data Cleaning and Preprocessing</a>
+    <li><a href="#3-data-cleaning-and-preprocessing">3. Data Cleaning and Preprocessing</a>
       <ul>
-        <li><a href="#twitter-data">Twitter Data</a></li>
-        <li><a href="#stock-data">Stock Data</a></li>
+        <li><a href="#31-twitter-data">3.1 Twitter Data</a></li>
+        <li><a href="#32-stock-data">3.2 Stock Data</a></li>
       </ul>
     </li>
-    <li><a href="#3-methodologyprocess">3. Methodology/Process</a></li>
-    <li><a href="#preliminary-analysis-and-eda">Preliminary Analysis and EDA</a>
+    <li><a href="#4-methodologyprocess">4. Methodology/Process</a></li>
+    <li><a href="#5-preliminary-analysis-and-eda">5. Preliminary Analysis and EDA</a>
       <ul>
-        <li><a href="#twitter-data-1">Twitter Data</a></li>
-        <li><a href="#stock-data-1">Stock Data</a></li>
+        <li><a href="#51-twitter-data">5.1 Twitter Data</a></li>
+        <li><a href="#52-stock-data">5.2 Stock Data</a></li>
       </ul>
     </li>
-    <li><a href="#defining-events-during-trumps-presidency">Defining events during Trump&rsquo;s presidency</a>
+    <li><a href="#6-defining-events-during-trumps-presidency">6. Defining events during Trump&rsquo;s presidency</a>
       <ul>
-        <li><a href="#the-impeachment-of-president-trump">The Impeachment of President Trump</a></li>
-        <li><a href="#the-dakota-access-and-keystone-xl-pipelines-approval">The Dakota Access and Keystone XL pipelines approval</a></li>
-        <li><a href="#the-government-shutdown">The Government Shutdown</a></li>
+        <li><a href="#61-the-impeachment-of-president-trump">6.1 The Impeachment of President Trump</a></li>
+        <li><a href="#62-the-dakota-access-and-keystone-xl-pipelines-approval">6.2 The Dakota Access and Keystone XL pipelines approval</a></li>
+        <li><a href="#63-the-government-shutdown">6.3 The Government Shutdown</a></li>
       </ul>
     </li>
-    <li><a href="#outline-of-plan">Outline of plan</a></li>
-    <li><a href="#4-technologies-used">4. Technologies used</a></li>
-    <li><a href="#5-conclusion">5. Conclusion</a></li>
-    <li><a href="#5-references">5. References</a></li>
+    <li><a href="#7-outline-of-plan">7. Outline of plan</a></li>
+    <li><a href="#8-technologies-used">8. Technologies used</a></li>
+    <li><a href="#9-conclusion">9. Conclusion</a></li>
+    <li><a href="#10-references">10. References</a></li>
   </ul>
 </nav>
 </div>
 
 </div>
 
-<p><strong>Keywords:</strong> analysis, finance, stock markets prediction, twitter, politics</p>
+<p><strong>Keywords:</strong> analysis, finance, stock markets, twitter, politics</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Financial markets have been an area of research in both academia and business. Predictions of the market has been growing in its accuracy with an every increasing amount of data used to test these models. &ldquo;The Efficient Market Hypothesis (EMH) states that stock market prices are largely driven by <em>new</em> information and follow a random walk pattern&rdquo;[1]. This shows that prices will follow news rather than previous and present prices. Information is unpredictable in terms of its release/publication showing market prices will follow a random walk pattern and the prediction can not be high.</p>
 <p>There are some problems that arise with EMH. One problem is that &ldquo;stock prices does not follow a random walk pattern and can be predicted to a certain degree&rdquo;[2]. Another problem associated with EMH is with the information&rsquo;s unpredictability, the unpredictability is called into question with the introduction of social media (Facebook, Twitter, blogs). The rise of social media can be a early indicator for news before it is released/published. This project is attempting to predict the market based on how the President tweets. This currently has not been done according to my research.</p>
@@ -643,14 +643,14 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 </li>
 </ul>
 <p>To strengthen the prediction, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&rsquo;s rallies. In order to have a realistic and strong prediction, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.</p>
-<h2 id="data-cleaning-and-preprocessing">Data Cleaning and Preprocessing</h2>
+<h2 id="3-data-cleaning-and-preprocessing">3. Data Cleaning and Preprocessing</h2>
 <p>The data obtained needs to be cleaned and pre-processed in order to make it reliable for analysis.</p>
-<h3 id="twitter-data">Twitter Data</h3>
+<h3 id="31-twitter-data">3.1 Twitter Data</h3>
 <p>When importing the Twitter data, there are several things that are noticed when printing the first five rows. Three of the columns mention, hashtags, and geo are currently showing NaN. After calculating the missing values, all the values in these columns are missing or are zero so we can drop these columns from the dataframe.</p>
 <p>The tweets are one of the last columns needed to be cleaned. The text of the tweets needs to be uniformed in order to conduct analysis. Removing punctuations was the first step followed by removing content specifically seen in tweets. These could be the word retweet, the hashtag symbol(#), the @ symbol followed by a username, and any hyperlinks that could be in a tweet.</p>
-<h3 id="stock-data">Stock Data</h3>
+<h3 id="32-stock-data">3.2 Stock Data</h3>
 <p>Stock data has a unique set of challenges when it comes to cleaning. Unlike tweets, stock data is only available Monday through Friday and is not available for holidays that the market is closed. In order to have a complete dataset, several options are available. One option is to drop the tweets that fall on a weekend. This would not be useful since markets can react to news that happens on the weekend. Another option is to approximate the missing values in the stock data. This has not been conducted yet.</p>
-<h2 id="3-methodologyprocess">3. Methodology/Process</h2>
+<h2 id="4-methodologyprocess">4. Methodology/Process</h2>
 <p>The collection of finance and Twitter data will be used to visualize and predict the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:</p>
 <ul>
 <li>Use data from President Trump&rsquo;s personal twitter to help visualize and create the model</li>
@@ -658,8 +658,8 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <li>Data cleaning and extraction.</li>
 <li>New data will be updated to keep up with the current time.</li>
 </ul>
-<h2 id="preliminary-analysis-and-eda">Preliminary Analysis and EDA</h2>
-<h3 id="twitter-data-1">Twitter Data</h3>
+<h2 id="5-preliminary-analysis-and-eda">5. Preliminary Analysis and EDA</h2>
+<h3 id="51-twitter-data">5.1 Twitter Data</h3>
 <p>When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.</p>
 <p>The date column is a column that is needed to track the amount of tweets per month and year. In the column, the timestamp and the date are combined so this need to be separated in several ways. The first being separating the date from the timestamp into its own column. This is followed up by separating the date into 4 columns for day, month, year and month-year in order to track tweets based on specified criteria.</p>
 <p>After graphing the amount of tweets per year, the observation is that 2016 and 2020 have a low tweet count. The reminder is that the data starts in November 2016 making 2016 have two months of data compared to 2020 with only one month being January. From 2017 through 2019, we can see that the amount of tweets increases by almost a thousand every year. The tweets per month tell a different story. The amount varies greatly over the years with the greatest amount being near the end of 2016 and the beginning of 2017.</p>
@@ -667,17 +667,17 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <p><strong>Figure 1:</strong> Number of Tweets per Year</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/month_tweets.png" alt="Figure 2: Number of Tweets per Month"></p>
 <p><strong>Figure 2:</strong> Number of Tweets per Month</p>
-<h3 id="stock-data-1">Stock Data</h3>
+<h3 id="52-stock-data">5.2 Stock Data</h3>
 <p>Similar to the twitter data, checking for null values is important but since the data is from Yahoo! Finance there are no missing values on the days that the markets are opened.</p>
 <p>Once graphing the open and closed prices of the NASDAQ, there seems to be an general upwards trend in the market over the time period.</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/master/project/images/market.png" alt="Figure 3 Open and Close Price of the NASDAQ"></p>
 <p><strong>Figure 3:</strong> Open and Close Price of the NASDAQ</p>
-<h2 id="defining-events-during-trumps-presidency">Defining events during Trump&rsquo;s presidency</h2>
-<h3 id="the-impeachment-of-president-trump">The Impeachment of President Trump</h3>
-<p>Since the country&rsquo;s founding in 1776, only three presidents have faced impeachment from Congress: Andrew Johnson, Bill Clinton and more recently Donald Trump. The impeachment of Trump was an event that many have seen coming since his inauguration.</p>
-<h3 id="the-dakota-access-and-keystone-xl-pipelines-approval">The Dakota Access and Keystone XL pipelines approval</h3>
-<h3 id="the-government-shutdown">The Government Shutdown</h3>
-<h2 id="outline-of-plan">Outline of plan</h2>
+<h2 id="6-defining-events-during-trumps-presidency">6. Defining events during Trump&rsquo;s presidency</h2>
+<h3 id="61-the-impeachment-of-president-trump">6.1 The Impeachment of President Trump</h3>
+<p>After weeks of talks among Congress, the House of Representatives have voted to impeach President Trump on two charges: abuse of power and obstruction of Congress on December 18, 2019. Since the country&rsquo;s founding in 1776, only three presidents have faced impeachment from Congress: Andrew Johnson, Bill Clinton and now Donald Trump. This move has been widely advocated for since his election in 2016. In September 2019, news leaked of a phone call between President Trump and Ukrainian President Volodymyr Zelensky regarding an investigation into Hunter Biden, son of then Democratic candidate Joe Biden, for his dealings in Ukraine.</p>
+<h3 id="62-the-dakota-access-and-keystone-xl-pipelines-approval">6.2 The Dakota Access and Keystone XL pipelines approval</h3>
+<h3 id="63-the-government-shutdown">6.3 The Government Shutdown</h3>
+<h2 id="7-outline-of-plan">7. Outline of plan</h2>
 <p>In the next seven weeks, these are the tasks that need to be accomplished.</p>
 <ul>
 <li>Week 9 - Week 10: Clean and preprocess the data needed for the project</li>
@@ -685,10 +685,10 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <li>Week 11 - Week 13: Preform sentiment analysis to find features and see if any correlation exists</li>
 <li>Week 13 - Week 16: Build out NLP model</li>
 </ul>
-<h2 id="4-technologies-used">4. Technologies used</h2>
+<h2 id="8-technologies-used">8. Technologies used</h2>
 <p>Python, Jupyter notebook or collab, Pandas, Scikit-learn, Tensorflow/PyTorch</p>
-<h2 id="5-conclusion">5. Conclusion</h2>
-<h2 id="5-references">5. References</h2>
+<h2 id="9-conclusion">9. Conclusion</h2>
+<h2 id="10-references">10. References</h2>
 
 	
 	
