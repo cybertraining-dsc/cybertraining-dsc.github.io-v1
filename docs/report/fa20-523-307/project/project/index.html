@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references  
+<meta property="og:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references Please explain how technologies are used in the project.  
 Alex Baker, fa20-523-307, Edit
-Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)." />
+Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-307/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references  
+<meta itemprop="description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references Please explain how technologies are used in the project.  
 Alex Baker, fa20-523-307, Edit
-Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ).">
+Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world?">
 
-<meta itemprop="wordCount" content="1413">
+<meta itemprop="wordCount" content="1478">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references  
+<meta name="twitter:description" content="Analysis of Financial Markets based on President Trump&rsquo;s Tweets  Please add references Please explain how technologies are used in the project.  
 Alex Baker, fa20-523-307, Edit
-Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ)."/>
+Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world?"/>
 
 
 
@@ -584,6 +584,7 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 	<h1 id="analysis-of-financial-markets-based-on-president-trumps-tweets">Analysis of Financial Markets based on President Trump&rsquo;s Tweets</h1>
 <ul>
 <li><input disabled="" type="checkbox"> Please add references</li>
+<li><input disabled="" type="checkbox"> Please explain how technologies are used in the project.</li>
 </ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-307/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-307/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
 <p>Alex Baker, fa20-523-307, <a href="https://github.com/cybertraining-dsc/fa20-523-307/blob/master/project/project.md">Edit</a></p>
@@ -649,7 +650,7 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <p>When importing the Twitter data, there are several things that are noticed when printing the first five rows. Three of the columns mention, hashtags, and geo are currently showing NaN. After calculating the missing values, all the values in these columns are missing or are zero so we can drop these columns from the dataframe.</p>
 <p>The tweets are one of the last columns needed to be cleaned. The text of the tweets needs to be uniformed in order to conduct analysis. Removing punctuations was the first step followed by removing content specifically seen in tweets. These could be the word retweet, the hashtag symbol(#), the @ symbol followed by a username, and any hyperlinks that could be in a tweet.</p>
 <h3 id="32-stock-data">3.2 Stock Data</h3>
-<p>Stock data has a unique set of challenges when it comes to cleaning. Unlike tweets, stock data is only available Monday through Friday and is not available for holidays that the market is closed. In order to have a complete dataset, several options are available. One option is to drop the tweets that fall on a weekend. This would not be useful since markets can react to news that happens on the weekend. Another option is to approximate the missing values in the stock data. This has not been conducted yet.</p>
+<p>Stock data has a unique set of challenges when it comes to cleaning. Unlike tweets, stock data is only available Monday through Friday and is not available for holidays that the market is closed. In order to have a complete dataset, several options are available. One option is to drop the tweets that fall on a weekend. This would not be useful since markets can react to news that happens on the weekend. Another option is that &ldquo;if the NASDAQ value on a given day is x and the next available data point is y with n days missing in between, we approximate the missing data by estimating the first day after x to be (y+x)/2 and then following the same method recursively till all gaps are filled&rdquo; <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="4-methodologyprocess">4. Methodology/Process</h2>
 <p>The collection of finance and Twitter data will be used to visualize and predict the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:</p>
 <ul>
@@ -689,6 +690,14 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 <p>Python, Jupyter notebook or collab, Pandas, Scikit-learn, Tensorflow/PyTorch</p>
 <h2 id="9-conclusion">9. Conclusion</h2>
 <h2 id="10-references">10. References</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Goel, A. and Mittal, A., 2011. Stock Prediction Using Twitter Sentiment Analysis. [online] cs229.stanford.edu. Available at: <a href="http://cs229.stanford.edu/proj2011/GoelMittal-StockMarketPredictionUsingTwitterSentimentAnalysis.pdf">http://cs229.stanford.edu/proj2011/GoelMittal-StockMarketPredictionUsingTwitterSentimentAnalysis.pdf</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
 	
 	

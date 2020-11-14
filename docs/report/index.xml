@@ -3185,6 +3185,7 @@ A project this large and versatile requires the use of many software tools. Thes
         &lt;h1 id=&#34;analysis-of-financial-markets-based-on-president-trumps-tweets&#34;&gt;Analysis of Financial Markets based on President Trump&amp;rsquo;s Tweets&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please add references&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please explain how technologies are used in the project.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-307/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-307/workflows/Check%20Report/badge.svg&#34; alt=&#34;Check Report&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Alex Baker, fa20-523-307, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-307/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
@@ -3250,7 +3251,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;When importing the Twitter data, there are several things that are noticed when printing the first five rows. Three of the columns mention, hashtags, and geo are currently showing NaN. After calculating the missing values, all the values in these columns are missing or are zero so we can drop these columns from the dataframe.&lt;/p&gt;
 &lt;p&gt;The tweets are one of the last columns needed to be cleaned. The text of the tweets needs to be uniformed in order to conduct analysis. Removing punctuations was the first step followed by removing content specifically seen in tweets. These could be the word retweet, the hashtag symbol(#), the @ symbol followed by a username, and any hyperlinks that could be in a tweet.&lt;/p&gt;
 &lt;h3 id=&#34;32-stock-data&#34;&gt;3.2 Stock Data&lt;/h3&gt;
-&lt;p&gt;Stock data has a unique set of challenges when it comes to cleaning. Unlike tweets, stock data is only available Monday through Friday and is not available for holidays that the market is closed. In order to have a complete dataset, several options are available. One option is to drop the tweets that fall on a weekend. This would not be useful since markets can react to news that happens on the weekend. Another option is to approximate the missing values in the stock data. This has not been conducted yet.&lt;/p&gt;
+&lt;p&gt;Stock data has a unique set of challenges when it comes to cleaning. Unlike tweets, stock data is only available Monday through Friday and is not available for holidays that the market is closed. In order to have a complete dataset, several options are available. One option is to drop the tweets that fall on a weekend. This would not be useful since markets can react to news that happens on the weekend. Another option is that &amp;ldquo;if the NASDAQ value on a given day is x and the next available data point is y with n days missing in between, we approximate the missing data by estimating the first day after x to be (y+x)/2 and then following the same method recursively till all gaps are filled&amp;rdquo; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;4-methodologyprocess&#34;&gt;4. Methodology/Process&lt;/h2&gt;
 &lt;p&gt;The collection of finance and Twitter data will be used to visualize and predict the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:&lt;/p&gt;
 &lt;ul&gt;
@@ -3290,6 +3291,14 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;Python, Jupyter notebook or collab, Pandas, Scikit-learn, Tensorflow/PyTorch&lt;/p&gt;
 &lt;h2 id=&#34;9-conclusion&#34;&gt;9. Conclusion&lt;/h2&gt;
 &lt;h2 id=&#34;10-references&#34;&gt;10. References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Goel, A. and Mittal, A., 2011. Stock Prediction Using Twitter Sentiment Analysis. [online] cs229.stanford.edu. Available at: &lt;a href=&#34;http://cs229.stanford.edu/proj2011/GoelMittal-StockMarketPredictionUsingTwitterSentimentAnalysis.pdf&#34;&gt;http://cs229.stanford.edu/proj2011/GoelMittal-StockMarketPredictionUsingTwitterSentimentAnalysis.pdf&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>
@@ -4162,12 +4171,8 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/firstbnmk.png&#34; alt=&#34;First Benchmark results&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; First Benchmark results for the created data analysis framework&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Second Benchmark results (Expected - November 13)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Third Benchmark results (Expected - November 15)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Second Benchmark results (Will be updated soon)&lt;/li&gt;
+&lt;li&gt;Third Benchmark results (Will be updated soon)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
 &lt;p&gt;NOTE: This section will be addressed upon project completion.&lt;/p&gt;
@@ -4532,10 +4537,11 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
         
         &lt;h1 id=&#34;residential-power-usage-prediction&#34;&gt;Residential Power Usage Prediction&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please add an empty line after the title or subtitle headings. I fixed this for you.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please improve the reference section with a couple more references.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please complete the conclusion section&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/workflows/Check%20Report/badge.svg&#34; alt=&#34;Check Report&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Siny P Raphel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/&#34;&gt;fa20-523-314&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md&#34;&gt;sinypr@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Siny P Raphel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/&#34;&gt;fa20-523-314&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
@@ -4545,14 +4551,15 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#datasets&#34;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#merge-datasets&#34;&gt;Merge datasets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#exploratory-data-analysis&#34;&gt;Exploratory Data Analysis&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#planning&#34;&gt;Planning&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#reason-to-choose-this-dataset&#34;&gt;Reason to choose this dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#project-timeline&#34;&gt;Project Timeline:&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-datasets&#34;&gt;2. Datasets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-merge-datasets&#34;&gt;3. Merge datasets&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-exploratory-data-analysis&#34;&gt;4. Exploratory Data Analysis&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-planning&#34;&gt;5. Planning&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-reason-to-choose-this-dataset&#34;&gt;6. Reason to choose this dataset&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#7-project-timeline&#34;&gt;7. Project Timeline:&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#8-conclusion&#34;&gt;8. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#9-references&#34;&gt;9. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
@@ -4560,11 +4567,11 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; power usage, big data, regression&lt;/p&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;Most of the houses in USA are equipped with lightings and refrigerators using electricity. The usage of air conditioners is also increasing. From Figure 1, we can see that top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/chart.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Residential electricity consumption by end use, 2015&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
+&lt;h2 id=&#34;2-datasets&#34;&gt;2. Datasets&lt;/h2&gt;
 &lt;p&gt;Data is spread across two csv files.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;power_usage_2016_to_2020.csv&lt;/code&gt;&lt;/li&gt;
@@ -4590,15 +4597,15 @@ Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to repres
 &lt;li&gt;Pressure       - Hg&lt;/li&gt;
 &lt;li&gt;Precipitation  – inch&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;merge-datasets&#34;&gt;Merge datasets&lt;/h2&gt;
+&lt;h2 id=&#34;3-merge-datasets&#34;&gt;3. Merge datasets&lt;/h2&gt;
 &lt;p&gt;The &amp;lsquo;StartDate&amp;rsquo; feature of power_usage dataset and &amp;lsquo;Date&amp;rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features is different. StartDate feature is the combination of date and hour. Whereas, &amp;lsquo;Date&amp;rsquo; feature of weather is just the date. So first &amp;lsquo;StartDate&amp;rsquo; column is split into &amp;lsquo;Date&amp;rsquo; and &amp;lsquo;Hour&amp;rsquo; columns. Since the &amp;lsquo;StartDate&amp;rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.&lt;/p&gt;
-&lt;h2 id=&#34;exploratory-data-analysis&#34;&gt;Exploratory Data Analysis&lt;/h2&gt;
+&lt;h2 id=&#34;4-exploratory-data-analysis&#34;&gt;4. Exploratory Data Analysis&lt;/h2&gt;
 &lt;p&gt;Here we analyse different features, their relation with each other and target.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/dow.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Average power usage by day of the week&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/tod.png&#34; alt=&#34;Figure 6&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Average power usage by type of the day&lt;/p&gt;
-&lt;h2 id=&#34;planning&#34;&gt;Planning&lt;/h2&gt;
+&lt;h2 id=&#34;5-planning&#34;&gt;5. Planning&lt;/h2&gt;
 &lt;p&gt;We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
 The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.&lt;/p&gt;
 &lt;p&gt;In this project we will be planning the following steps:&lt;/p&gt;
@@ -4610,19 +4617,21 @@ The data spread across two files will have to be merged according to date. For t
 &lt;li&gt;Calculate accuracy of each model&lt;/li&gt;
 &lt;li&gt;Conclusion on which algorithm will be best suited to use and the reason for it.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;reason-to-choose-this-dataset&#34;&gt;Reason to choose this dataset&lt;/h2&gt;
+&lt;h2 id=&#34;6-reason-to-choose-this-dataset&#34;&gt;6. Reason to choose this dataset&lt;/h2&gt;
 &lt;p&gt;This dataset is chosen because,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;There were datasets similar to this one. But this one has latest power usage data till August this year.&lt;/li&gt;
 &lt;li&gt;It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for prediction.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;project-timeline&#34;&gt;Project Timeline:&lt;/h2&gt;
+&lt;h2 id=&#34;7-project-timeline&#34;&gt;7. Project Timeline:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;EDA and preprocessing - 11/09/2020&lt;/li&gt;
 &lt;li&gt;First set of result    - 11/11/2020&lt;/li&gt;
 &lt;li&gt;Hyperparameter tuning, pipelines/ final setup - 11/15/2020&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;h2 id=&#34;8-conclusion&#34;&gt;8. Conclusion&lt;/h2&gt;
+&lt;p&gt;Will be added on completion&lt;/p&gt;
+&lt;h2 id=&#34;9-references&#34;&gt;9. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
