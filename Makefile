@@ -13,17 +13,17 @@ pull:
 	cd content/en/report/fa20-523-304; git checkout master; git pull
 	cd content/en/report/fa20-523-305; git checkout master; git pull
 	cd content/en/report/fa20-523-307; git checkout master; git pull
-	cd content/en/report/fa20-523-308; git checkout master; git pull
+	cd content/en/report/fa20-523-308; git checkout main; git pull
 	cd content/en/report/fa20-523-309; git checkout main; git pull
 	cd content/en/report/fa20-523-312; git checkout main; git pull
-	cd content/en/report/fa20-523-313; git checkout master; git pull
+	cd content/en/report/fa20-523-313; git checkout main; git pull
 	cd content/en/report/fa20-523-314; git checkout master; git pull
 	cd content/en/report/fa20-523-315; git checkout master; git pull
 	cd content/en/report/fa20-523-316; git checkout master; git pull
 	cd content/en/report/fa20-523-317; git checkout master; git pull
 	cd content/en/report/fa20-523-319; git checkout master; git pull
 	cd content/en/report/fa20-523-323; git checkout master; git pull
-	cd content/en/report/fa20-523-326; git checkout master; git pull
+	cd content/en/report/fa20-523-326; git checkout main; git pull
 	cd content/en/report/fa20-523-327; git checkout master; git pull
 	cd content/en/report/fa20-523-328; git checkout master; git pull
 	cd content/en/report/fa20-523-329; git checkout master; git pull
