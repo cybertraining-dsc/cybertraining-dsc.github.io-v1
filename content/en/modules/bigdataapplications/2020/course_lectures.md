@@ -200,7 +200,7 @@ Continue work on project and complete study of videos already assigned. If inter
 
 ## Week 12
 
-This weeks video class discussed deep learning for Time Series
+This weeks video class discussed deep learning for Time Series. There are [Google Slides](https://docs.google.com/presentation/d/1ddAsHq-uikjPnomnSE21E0R0y7xBIrLGvaP_b6CM0dw/edit?usp=sharing) for this
 
 {{< youtube "teXeAdX6_Cg" >}}.
 
