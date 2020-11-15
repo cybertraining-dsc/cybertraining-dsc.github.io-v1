@@ -570,7 +570,7 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <li><input disabled="" type="checkbox"> Please complete the conclusion section</li>
 </ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-314/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-314/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
-<p>Siny P Raphel, <a href="https://github.com/cybertraining-dsc/fa20-523-314/">fa20-523-314</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/master/project/project.md">Edit</a></p>
+<p>Siny P Raphel, <a href="https://github.com/cybertraining-dsc/fa20-523-314/">fa20-523-314</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/project.md">Edit</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
@@ -598,7 +598,7 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <p><strong>Keywords:</strong> power usage, big data, regression</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Most of the houses in USA are equipped with lightings and refrigerators using electricity. The usage of air conditioners is also increasing. From Figure 1, we can see that top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/chart.png" alt="Figure 1"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/chart.png" alt="Figure 1"></p>
 <p><strong>Figure 1:</strong> Residential electricity consumption by end use, 2015<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="2-datasets">2. Datasets</h2>
 <p>Data is spread across two csv files.</p>
@@ -606,16 +606,16 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <li><code>power_usage_2016_to_2020.csv</code></li>
 </ul>
 <p>This file contains basic details of the data like startdate with hour, value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-1.png" alt="Figure 2"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-1.png" alt="Figure 2"></p>
 <p><strong>Figure 2:</strong> First five rows of power_usage_2016_to_2020 data</p>
 <p>Day of the week is an integer value with 0 being Monday. Notes gives us details like whether that day is weekend, weekday, covid lockdown or vacation. The Figure 2 shows retrieval and first few rows of the data.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-2.png" alt="Figure 3"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-2.png" alt="Figure 3"></p>
 <p><strong>Figure 3:</strong> Details in &ldquo;notes&rdquo; column</p>
 <ul>
 <li>weather_2016_2020_daily.csv</li>
 </ul>
 <p>This file contains the weather conditions of that particular day. It has 19 features and 1553 instances. Figure 4 shows retrieval and first few rows and columns of this file.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/fig-3.png" alt="Figure 4"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-3.png" alt="Figure 4"></p>
 <p><strong>Figure 4:</strong> First few rows of weather_2016_2020_daily data</p>
 <p>Units of features are given as follows:</p>
 <ul>
@@ -630,9 +630,9 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <p>The &lsquo;StartDate&rsquo; feature of power_usage dataset and &lsquo;Date&rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features is different. StartDate feature is the combination of date and hour. Whereas, &lsquo;Date&rsquo; feature of weather is just the date. So first &lsquo;StartDate&rsquo; column is split into &lsquo;Date&rsquo; and &lsquo;Hour&rsquo; columns. Since the &lsquo;StartDate&rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.</p>
 <h2 id="4-exploratory-data-analysis">4. Exploratory Data Analysis</h2>
 <p>Here we analyse different features, their relation with each other and target.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/dow.png" alt="Figure 5"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/dow.png" alt="Figure 5"></p>
 <p><strong>Figure 5:</strong> Average power usage by day of the week</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/master/project/images/tod.png" alt="Figure 6"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/tod.png" alt="Figure 6"></p>
 <p><strong>Figure 6:</strong> Average power usage by type of the day</p>
 <h2 id="5-planning">5. Planning</h2>
 <p>We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.

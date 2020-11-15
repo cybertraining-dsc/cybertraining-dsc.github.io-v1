@@ -30,7 +30,7 @@ Abstract As a result of the Covid-19 pandemic all segments of the travel industr
 <meta itemprop="description" content="Predicting Hotel Reservation Cancellation Rates  Please fix the reference section. It is not properly organized. One line should only have a single reference.  Anthony Tugman, fa20-523-323, Edit
 Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem. Since the beginning of 2019, the lodging segment has seen reservation cancellation rates near 40%.">
 
-<meta itemprop="wordCount" content="2606">
+<meta itemprop="wordCount" content="2581">
 
 
 
@@ -780,17 +780,46 @@ Abstract As a result of the Covid-19 pandemic all segments of the travel industr
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/master/project/images/figure1.png" alt="Data Snapshot"><br>
 <strong>Figure 1:</strong> Snapshot of Data Set after Preprocessing</p>
 <h2 id="5-model-creation">5. Model Creation</h2>
-<p>To form the predictive model a Random Forest Classifier will be used.  With the use of the sklearn package, the Random Forest Classifier is simple to implement.  The Random Forest Classifier is based on the concept of a decision tree.  A decision tree is a series of yes/no question asked about the data which eventually leads to a predicted class or value <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.  To start the creation of the model, the data must first be split into a training and testing set.  Typically, this is a ratio that must be adjusted to determine which will result in the higher accuracy.  Here are the accuracy outcomes for various ratios:<br>
-| Train/Test Ratio | Accuracy |
-|:&mdash;&mdash;&mdash;&mdash;&mdash;-:|:&mdash;&mdash;&ndash;:|
-|       80/20      |  77.64%  |
-|       70/30      |  77.66%  |
-|       60/40      |  79.56%  |
-|       50/50      |  77.92%  |
-|       40/60      |  75.73%  |
-|       30/70      |  74.71%  |
-|       20/80      |  73.13%  |<br>
-The train/test ratio of 60/40 had the best initial accuracy of 79.56% so this ratio will be used in the creation of the final model.  For the initial test, all remaining features will be used to train the reservation cancellation outcome.  To determine the accuracy of the resulting model, the number of predicted cancellations is compared to the number of actual cancellations.  As the model stands, the accuracy is at 79.56%.<br>
+<p>To form the predictive model a Random Forest Classifier will be used.  With the use of the sklearn package, the Random Forest Classifier is simple to implement.  The Random Forest Classifier is based on the concept of a decision tree.  A decision tree is a series of yes/no question asked about the data which eventually leads to a predicted class or value <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.  To start the creation of the model, the data must first be split into a training and testing set.  Typically, this is a ratio that must be adjusted to determine which will result in the higher accuracy.  Here are the accuracy outcomes for various ratios:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Train/Test Ratio</th>
+<th align="center">Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">80/20</td>
+<td align="center">77.64%</td>
+</tr>
+<tr>
+<td align="center">70/30</td>
+<td align="center">77.66%</td>
+</tr>
+<tr>
+<td align="center">60/40</td>
+<td align="center">79.56%</td>
+</tr>
+<tr>
+<td align="center">50/50</td>
+<td align="center">77.92%</td>
+</tr>
+<tr>
+<td align="center">40/60</td>
+<td align="center">75.73%</td>
+</tr>
+<tr>
+<td align="center">30/70</td>
+<td align="center">74.71%</td>
+</tr>
+<tr>
+<td align="center">20/80</td>
+<td align="center">73.13%</td>
+</tr>
+</tbody>
+</table>
+<p>The train/test ratio of 60/40 had the best initial accuracy of 79.56% so this ratio will be used in the creation of the final model.  For the initial test, all remaining features will be used to train the reservation cancellation outcome.  To determine the accuracy of the resulting model, the number of predicted cancellations is compared to the number of actual cancellations.  As the model stands, the accuracy is at 79.56%.<br>
 This model relies on 23 features for the prediction.  With this many features it is possible that some features have no effect on the cancellation outcome. It is also possible that some features are so closely related that calculating each individually hinders performance while having little effect on outcome.  To evaluate the importance of features, Pearson&rsquo;s correlation coefficent can be used.  Correlation coefficients are used in statistics to measure how strong the relationship is between two variables.  The calculation formula returns a value between -1 and 1 where a value of 1 indicates a strong positive relationship, -1 indicates a strong negative relationship, and 0 indicates that there is no relationship at all <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.  Figure 2 shows the correlation between the remaining features.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/master/project/images/figure2.png" alt="Initial Model Correlation"><br>
 <strong>Figure 2:</strong> Pearson&rsquo;s Correlation Graph of Remaining Features</p>
@@ -817,7 +846,7 @@ This model relies on 23 features for the prediction.  With this many features it
 <p>&ldquo;Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python&rdquo;, Linkedin.com, 2020. [Online]. Available: <a href="https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/">https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/</a>. [Accessed: 08- Nov- 2020]. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>&ldquo;(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue&rdquo;, ResearchGate, 2020. [Online]. Available: <a href="https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue">https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue</a>. [Accessed: 08- Nov- 2020]. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue&rdquo;, ResearchGate, 2020. [Online]. Available: <a href="https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue">https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue</a>. [Accessed: 08- Nov- 2020. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>&ldquo;Predicting Hotel Cancellations with Machine Learning&rdquo;, Medium, 2020. [Online]. Available: <a href="https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794">https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794</a>. [Accessed: 08- Nov- 2020]. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
@@ -829,7 +858,7 @@ This model relies on 23 features for the prediction.  With this many features it
 <p>&ldquo;Global Cancellation Rate of Hotel Reservations Reaches 40% on Average&rdquo;, Hospitality Technology, 2020. [Online]. Available: <a href="https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average">https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average</a>. [Accessed: 08- Nov- 2020]. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p><a href="https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb">https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb">https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb</a>. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
 <p>&ldquo;An Implementation and Explanation of the Random Forest in Python&rdquo;, Medium, 2020. [Online]. Available: <a href="https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76">https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76</a>. [Accessed: 12- Nov- 2020]. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
