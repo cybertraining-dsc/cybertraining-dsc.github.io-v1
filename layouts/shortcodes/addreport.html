@@ -1,3 +1,1 @@
-[![Check Report](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/actions)
-{{.Get "hid"}}: [{{ .Get "title"}}, {{.Get "author"}}](/report/{{ .Get "hid"}}/project/project/),  [[Edit]](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/blob/main/project/project.md)
-
+{{ $icon := .Get "icon" | default "fa-edit" }} [![Check Report](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/actions)  [<i class="{{ if not (or (hasPrefix $icon "fas ")  (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/blob/main/project/project.md) {{.Get "hid"}}: [{{ .Get "title"}}, {{.Get "author"}}](/report/{{ .Get "hid"}}/project/project/) 
