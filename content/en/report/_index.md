@@ -87,7 +87,7 @@ Sport:
 * {{% addreport title="Analysis of 2020 MLB Season Statistics" author="Edward Hribal" hid="fa20-523-345" %}}
 * {{% addreportonly title="Predictive Model For Pitches Thrown By Major League Baseball Pitchers" author="Bryce Wieczorek" hid="fa20-523-343" %}}
 * {{% addreportonly title="How Big Data has Affected Statisicts in Baseball" author="Hunter Holder" hid="fa20-523-328" %}}
-* {{% addreport title="Correlation between game genere and national sales, as well as general analysis of the video games industry " author="Linde Aleksandr" hid="fa20-523-340" %}}
+* {{% addreportonly title="Correlation between game genere and national sales, as well as general analysis of the video games industry " author="Linde Aleksandr" hid="fa20-523-340" %}}
 
 Finance:
 
