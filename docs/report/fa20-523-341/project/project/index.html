@@ -36,7 +36,7 @@ Abstract Missing
  1. Introduction 2. Related Work 3. Datasets Project Goals References     Keywords: music, mood classification, audio, audio content analysis, lyrics, lyrical analysis, big data, spotify, emotion
 1. Introduction The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music.">
 
-<meta itemprop="wordCount" content="567">
+<meta itemprop="wordCount" content="668">
 
 
 
@@ -607,6 +607,27 @@ Abstract Missing
 <p>For the audio content analysis portion of this project, we use Spotify&rsquo;s Web API, which provides a great amount audio data for every song in Spotify&rsquo;s song collection, including valence, energy, and danceability.</p>
 <p>For the lyrical analysis portion of this project, we use Genius&rsquo;s API to pull lyrics information for a song. Genius is a website which contains lyrics to several popular songs. We will then use WordNet, which is large collection of English lexicon, used to classify words and phrases with features such as valence, arousal, dominance.</p>
 <h2 id="project-goals">Project Goals</h2>
+<ul>
+<li>make dataset of collected song information from spotify and genius api</li>
+<li>Analyze audio and lyrical data of top songs on spotify
+<ul>
+<li>graphs and statistics of data fields like valence, danceability, word count, etc</li>
+<li>note current trends in song types</li>
+</ul>
+</li>
+<li>determine a song&rsquo;s overall positivity - postive / negative lyrics
+<ul>
+<li>potential simple rating system : (positive_words - negative_words / total_words )</li>
+<li><strong>Note: words can be neutral</strong></li>
+</ul>
+</li>
+<li>Make sense of emotions portrayed by the songs based off of audio/lyrical data</li>
+<li>generate ability to generate list of songs relevant to input mood
+<ul>
+<li>user enters mood on scale from 0-1, receives a list of songs</li>
+</ul>
+</li>
+</ul>
 <h2 id="references">References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>

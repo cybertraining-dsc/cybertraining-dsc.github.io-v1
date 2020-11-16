@@ -38,7 +38,7 @@ Vishwanadham Mandala, Indiana University, fa20-523-325, vishwandh.mandala@gmail.
 Edit
 Abstract Sentiment analysis is an evaluation of the opinion of the speaker, writer or other subject with regard to some topic.">
 
-<meta itemprop="wordCount" content="1390">
+<meta itemprop="wordCount" content="1613">
 
 
 
@@ -530,8 +530,9 @@ Abstract Sentiment analysis is an evaluation of the opinion of the speaker, writ
     <li><a href="#4-development-of-models">4. Development of Models</a></li>
     <li><a href="#5-technologies-used">5. Technologies used</a></li>
     <li><a href="#6-results">6. Results</a></li>
-    <li><a href="#7-plan-for-the-rest-of-the-semseter">7. Plan for the rest of the Semseter</a></li>
-    <li><a href="#8-refernces">8. Refernces</a></li>
+    <li><a href="#7conclusion">7.Conclusion</a></li>
+    <li><a href="#8-plan-for-the-rest-of-the-semseter">8. Plan for the rest of the Semseter</a></li>
+    <li><a href="#9-refernces">9. Refernces</a></li>
   </ul>
 </nav>
 
@@ -597,8 +598,9 @@ Abstract Sentiment analysis is an evaluation of the opinion of the speaker, writ
     <li><a href="#4-development-of-models">4. Development of Models</a></li>
     <li><a href="#5-technologies-used">5. Technologies used</a></li>
     <li><a href="#6-results">6. Results</a></li>
-    <li><a href="#7-plan-for-the-rest-of-the-semseter">7. Plan for the rest of the Semseter</a></li>
-    <li><a href="#8-refernces">8. Refernces</a></li>
+    <li><a href="#7conclusion">7.Conclusion</a></li>
+    <li><a href="#8-plan-for-the-rest-of-the-semseter">8. Plan for the rest of the Semseter</a></li>
+    <li><a href="#9-refernces">9. Refernces</a></li>
   </ul>
 </nav>
 </div>
@@ -611,7 +613,10 @@ Abstract Sentiment analysis is an evaluation of the opinion of the speaker, writ
 One might argue that these kinds of predictions will only be helping organizations and not individuals. We assure you that this project will be helping the general public in many ways. The most evident being, an individual knowing which contestant his/her community or the general public around him/her prefer. This project is strictly statistical and does not have a goal to sway the elections in any way or to pressure an individual</p>
 <p>into picking a candidate. Overall, this is just a small step towards a future that might hold an environment where the next president of the United States of America could be accurately guessed based on previous data and innovative Big Data Technologies.</p>
 <h2 id="2-datasets">2. DataSets</h2>
-<p>We will be going to use the dataset, <a href="https://www.kaggle.com/tunguz/us-elections-dataset">https://www.kaggle.com/tunguz/us-elections-dataset</a> [citation missing], and we will create the filets based on location. If needed, we may download Twitter data from posts on and by Donald Trump, Joe Biden, and their associates. Which leads us to our objective for the project, based on the data we collected, we should be able to predict the winner of the 2020 United States of America’s presidential elections.</p>
+<p>We will be going to use the dataset,
+<a href="https://www.kaggle.com/tunguz/us-elections-dataset">https://www.kaggle.com/tunguz/us-elections-dataset</a>
+<a href="https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election">https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election</a>
+Will create the filets based on location. If needed, we may download Twitter data from posts on and by Donald Trump, Joe Biden, and their associates. Which leads us to our objective for the project, based on the data we collected, we should be able to predict the winner of the 2020 United States of America’s presidential elections.</p>
 <p>All of the data will be location-based and if required we will download realtime campaigning and debate analysis data, giving us a live and updated prediction every time increment. To strengthen the prediction, even more, we may reuse some code from the 2016 election’s analysis, however, our main focus will be using the latest data we readily acquire during the time leading up to the 2020 election.
 In conclusion, to make our predictions as realistic and as strong as we can get, we will be going to choose multiple data sets to integrate between the previous election and twitter data to predict the number of votes each candidate will acquire. Therefore, we will be predicting the winner of the 2020 presidential elections.</p>
 <h2 id="3-methodologyprocess">3. Methodology/Process</h2>
@@ -640,15 +645,28 @@ For some candidates it is very important to mention Women, but not for all. Adde
 Where are the Democratic Candidates coming from
 Twitter Engagement, likes and retweets¶
 Buzzwords for each candidate
+
+Pandas: 
+Used to extract the data and clean the tweets.
+Seaboarn and matlab, used to represent the status of elections in the graphs.
 </code></pre>
 <h2 id="5-technologies-used">5. Technologies used</h2>
 <p>Python, Jupyter notebook or collab, Pandas, seaborn</p>
 <h2 id="6-results">6. Results</h2>
 <p>After all the data was collected, we ran the data analysis and arrived at these results. The analysis’ prediction favored Joe Biden to win this year’s election. However, President Trump was close behind. The predicted race included a very tight race, ending with Joe Biden breaking through. The actual presidential race this November seemed to be following the predicted trend, with Joe Biden taking a lead at the start and President Trump catching up by the first day’s end. The race continued to be tight for a couple of days, matching the general trend of the prediction. However, on November 7th, Biden broke through the stalemate and secured the elections. The prediction was close for most of the race, but the trend broke when Joe Biden won by a convincing lead.</p>
-<p>![Predicted results of US Elections 2020] (<a href="https://github.com/cybertraining-dsc/fa20-523-316/blob/master/project/images/Electionresults.png">https://github.com/cybertraining-dsc/fa20-523-316/blob/master/project/images/Electionresults.png</a>)</p>
+<p><img src="https://raw.github.com/cybertraining-dsc/fa20-523-316/blob/master/project/images/Electionresults.png" alt="Predicted results of US Elections 2020"></p>
 <p><strong>Figure 1:</strong> Predicted results of US Elections 2020</p>
+<p><img src="https://raw.github.com/cybertraining-dsc/fa20-523-316/blob/master/project/images/likedtweets.png" alt="Liked Tweets of US Elections 2020"></p>
+<p><strong>Figure 2:</strong> Liked Tweets of US Elections 2020</p>
 <p>Reference image: <a href="https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks">https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks</a> and edited it form our program.</p>
-<h2 id="7-plan-for-the-rest-of-the-semseter">7. Plan for the rest of the Semseter</h2>
+<p>Below is the example of extracing tweets and forming into graph to represent the data.
+Among the most frequent words in tweets dedicated to Donald Trump (excluding candidates&rsquo; proper nouns) occur both popular election words: &ldquo;vote&rdquo;, &ldquo;election&rdquo;, &ldquo;president&rdquo;,&ldquo;people&rdquo;, &ldquo;Election Day&rdquo;, etc., and specific, like &ldquo;MAGA&rdquo; (Trump&rsquo;s tagline &ldquo;Make America Great Again&rdquo;) or &ldquo;die&rdquo; (a word with negative sense). Specific words of tweets dedicated to Joe Biden: &ldquo;Kamala Harris&rdquo; (Vice President-elect of the United States), &ldquo;BidenHarris&rdquo;, &ldquo;win&rdquo; (a word that is more frequent regarding Joe Biden than Donald Trump). Let&rsquo;s look at Bi and Tri n-grams of words.</p>
+<p><img src="https://raw.github.com/cybertraining-dsc/fa20-523-316/blob/master/project/images/__results___53_0.png" alt="Words used in  US Elections 2020"></p>
+<p><strong>Figure 3:</strong> Words used in US Elections 2020</p>
+<p>Reference image: <a href="https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks">https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks</a></p>
+<h2 id="7conclusion">7.Conclusion</h2>
+<p>So, we&rsquo;ve taken a quick look at the sentiment of tweets. There are a lot of analysis variants. It looks great to study the tweets by each twitter account, for instance, but these features have a lot of NaN values, and therefore don&rsquo;t cover the actual situation. Based on the analysis from the twitter the predicted winner is projected.The sentiment analysis was performed only on data that had geo-data originating from the &ldquo;United States of America&rdquo; to try to ascertain the sentiment in each respective dataset and therefore each presidential candidate.</p>
+<h2 id="8-plan-for-the-rest-of-the-semseter">8. Plan for the rest of the Semseter</h2>
 <p>October 26:</p>
 <ul>
 <li>Furthur looking into new datasets and getting new twitter data.</li>
@@ -665,15 +683,15 @@ Completed major part of the notebook, uploaded only neccessary files and modifie
 <ul>
 <li>Theoretical results were derived and compared with actual results, posted at sub section 6.</li>
 </ul>
-<h2 id="8-refernces">8. Refernces</h2>
+<h2 id="9-refernces">9. Refernces</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>missing text <a href="https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a">https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Taken election dataset <a href="https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a">https://www.kaggle.com/kerneler/starter-2020-united-states-e6a4facf-a</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>missing text <a href="https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks">https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>referred notebook <a href="https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks">https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
