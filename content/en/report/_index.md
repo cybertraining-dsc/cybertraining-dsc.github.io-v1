@@ -15,7 +15,7 @@ This page conatins the list of the reports and projects.
 
 ### Sample
 
-* [Sample Report Markdown](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md). Please
+* [Sample Report Markdown](https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/main/project/project.md). Please
 do not use any HTML tags, use markdown. Make sure to add abstract,
 keywords, and refernces. Use footnotes for refernces. Do not use br.
 
