@@ -34,7 +34,7 @@ Abstract The 80/20 rule has proven true for many businesses–only a small perce
 Edit
 Abstract The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies. We&rsquo;re challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer.">
 
-<meta itemprop="wordCount" content="570">
+<meta itemprop="wordCount" content="598">
 
 
 
@@ -520,10 +520,17 @@ Abstract The 80/20 rule has proven true for many businesses–only a small perce
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-datasets">2. Datasets</a></li>
-    <li><a href="#3-metrics">3. Metrics</a></li>
-    <li><a href="#4-methodology">4. Methodology</a></li>
+    <li><a href="#3-machine-learning-algorithm-and-implementation">3. Machine Learning Algorithm and Implementation</a></li>
     <li><a href="#5-technologies">5. Technologies</a></li>
-    <li><a href="#6-references">6. References</a></li>
+    <li><a href="#6-project-timeline">6. Project Timeline</a>
+      <ul>
+        <li><a href="#october-16">October 16</a></li>
+        <li><a href="#november-2">November 2</a></li>
+        <li><a href="#november-9">November 9</a></li>
+        <li><a href="#november-16">November 16</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-references">7. References</a></li>
   </ul>
 </nav>
 
@@ -585,10 +592,17 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-datasets">2. Datasets</a></li>
-    <li><a href="#3-metrics">3. Metrics</a></li>
-    <li><a href="#4-methodology">4. Methodology</a></li>
+    <li><a href="#3-machine-learning-algorithm-and-implementation">3. Machine Learning Algorithm and Implementation</a></li>
     <li><a href="#5-technologies">5. Technologies</a></li>
-    <li><a href="#6-references">6. References</a></li>
+    <li><a href="#6-project-timeline">6. Project Timeline</a>
+      <ul>
+        <li><a href="#october-16">October 16</a></li>
+        <li><a href="#november-2">November 2</a></li>
+        <li><a href="#november-9">November 9</a></li>
+        <li><a href="#november-16">November 16</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-references">7. References</a></li>
   </ul>
 </nav>
 </div>
@@ -599,59 +613,79 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Our objective is to predict the natural log of total revenue per customer which is a real valued continuous output and linear regression would be an ideal algorithm in such a setting to predict the response variable that is continuous using a set of predictor variables given the basic assumption that there is a linear relationship between the predictor and response variables.</p>
 <h2 id="2-datasets">2. Datasets</h2>
-<p>The dataset for this project is obtained from Kaggle. The link to the dataset is provided below:
-<a href="https://www.kaggle.com/c/ga-customer-revenue-prediction">https://www.kaggle.com/c/ga-customer-revenue-prediction</a></p>
 <ul>
-<li>
-<p>Dataset Explanation:</p>
+<li><a href="https://www.kaggle.com/c/ga-customer-revenue-prediction">https://www.kaggle.com/c/ga-customer-revenue-prediction</a></li>
+</ul>
+<p>The dataset we used is from the Kaggle Competition. The dataset contains two csv files.</p>
 <ul>
-<li>Two datasets are provided (train.csv and test.csv)</li>
-<li>Train.csv  User transactions from August 1st, 2016 to August 1st, 2017</li>
-<li>Test.csv   User transactions from August 2nd, 2017 to April 30th, 2018</li>
+<li>Train.csv, User transactions from August 1st, 2016 to August 1st, 2017, 903.6K records</li>
+<li>Test.csv, User transactions from August 2nd, 2017 to April 30th, 2018, 804.6K records</li>
 </ul>
-</li>
-<li>
-<p>The training dataset contains 872214 records and considering the size of the training dataset, we will plan to use mini-batch or stochastic gradient descent methods to obtain optimized estimates of the coefficients for our linear function that best describes the input variables. After cleaning and pre-processing the data, we will build a basic linear regression model using basic parameter setting and based on outcome of this initial model, we will perform further experimentation to tune the hyper-parameters including regularization and additional feature engineering to derive more features from the provided input data to improve the parameter estimates for our model and reduce the error.</p>
-</li>
-</ul>
-<h2 id="3-metrics">3. Metrics</h2>
 <p>The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different “number of iterations” value and other hyper-parameters (e.g. learning rate).</p>
 <p>RMSE is defined as:</p>
-<img src="Images-and-plots/Loss_Func.png">
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/blob/master/project/Images-and-plots/Loss_Func.png" alt="Figure 2.1"></p>
 <p>where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.</p>
-<h2 id="4-methodology">4. Methodology</h2>
-<p>The  high-level representation of the implementation steps is shown below. The below steps are subject to change as we understand more about the data and various pre-processing, feature engineering or model development steps may vary accordingly.</p>
-<img src="Images-and-plots/Plot_Part1.png">
+<h2 id="3-machine-learning-algorithm-and-implementation">3. Machine Learning Algorithm and Implementation</h2>
+<p>We used CRISP-DM process methodology for this project. The  high-level representation of the implementation steps explained in detail below:</p>
 <ul>
-<li>Data Exploration</li>
-<li>Data Pre-Processing</li>
-<li>Feature Engineering</li>
-<li>Build the data pipeline</li>
-<li>Model Algorithms and Optimization Methods
-We are planning to explore different algorithms as shown below:
-<ul>
-<li>Linear Regression Model</li>
-<li>Random Forest Regressor</li>
-<li>XGBoost Regressor</li>
-<li>XGBoost Regressor</li>
-<li>LightGBM Regressor</li>
-<li>Lasso Regression</li>
-<li>Ridge Regressor</li>
-<li>Keras Deep Learning Model</li>
+<li>Get Data</li>
 </ul>
-</li>
-<li>Feature Importance
+<p>The data was obtained from Kaggle Competition. Please find the details of the dataset in the above section</p>
 <ul>
-<li>Random Forest Regressor</li>
+<li>
+<p>Load Data</p>
+<ul>
+<li><a href="https://storage.googleapis.com/gstoretrain/train.csv">https://storage.googleapis.com/gstoretrain/train.csv</a></li>
+<li><a href="https://storage.googleapis.com/gstoretrain/test.csv">https://storage.googleapis.com/gstoretrain/test.csv</a></li>
+</ul>
+<p>The data we obtained from Kaggle was over 2.6 GB (for Train and Test). As the size of the dataset was large, I have created a bucket in Google Store where the data can be downloaded. The URL is provided here for your reference:</p>
+</li>
+<li>
+<p>Data Exploration
+The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is &ldquo;totals.transactionRevenue&rdquo;. The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.</p>
+</li>
+<li>
+<p>Data Pre-Processing</p>
+</li>
+<li>
+<p>Feature Engineering</p>
+</li>
+<li>
+<p>Build the data pipeline</p>
+</li>
+<li>
+<p>Model Algorithms and Optimization Methods</p>
+</li>
+</ul>
+<p>We are planning to explore different algorithms as shown below:</p>
+<ul>
+<li>
+<p>Linear Regression Model</p>
+</li>
+<li>
+<p>XGBoost Regressor</p>
+</li>
+<li>
+<p>LightGBM Regressor</p>
+</li>
+<li>
+<p>Lasso Regression</p>
+</li>
+<li>
+<p>Ridge Regressor</p>
+</li>
+<li>
+<p>Feature Importance</p>
+<ul>
 <li>Xgboost Regressor</li>
 <li>LightGBM Regressor</li>
 <li>Lasso Regressor Regressor</li>
 <li>Ridge Regressor</li>
 </ul>
 </li>
-<li>Significance Test</li>
-<li>Results Validation</li>
-<li>Summary</li>
+<li>
+<p>Results Validation</p>
+</li>
 </ul>
 <h2 id="5-technologies">5. Technologies</h2>
 <ul>
@@ -659,11 +693,29 @@ We are planning to explore different algorithms as shown below:
 <li>Jupyter Notebook (Google Colab)</li>
 <li>Packages: Pandas, Numpy, Matplotlib, sklearn</li>
 </ul>
-<h2 id="6-references">6. References</h2>
-<ol>
-<li><a href="https://www.kaggle.com/c/ga-customer-revenue-prediction/rules">https://www.kaggle.com/c/ga-customer-revenue-prediction/rules</a></li>
-<li><a href="https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue">https://www.kaggle.com/sudalairajkumar/simple-exploration-baseline-ga-customer-revenue</a></li>
-</ol>
+<h2 id="6-project-timeline">6. Project Timeline</h2>
+<h3 id="october-16">October 16</h3>
+<ul>
+<li>Explore the data set</li>
+<li>Explore ML Framework</li>
+<li>Perform Basic EDA</li>
+</ul>
+<h3 id="november-2">November 2</h3>
+<ul>
+<li>The dataset was large. Identified the problem was a regression problem</li>
+<li>Explored different variables and their distributions</li>
+<li>Build base line model</li>
+</ul>
+<h3 id="november-9">November 9</h3>
+<ul>
+<li>Build ML models using LR, XGBoost, LightGBM</li>
+<li>Review Results</li>
+</ul>
+<h3 id="november-16">November 16</h3>
+<ul>
+<li>Report and document findings</li>
+</ul>
+<h2 id="7-references">7. References</h2>
 
 	
 	
