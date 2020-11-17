@@ -3405,6 +3405,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Further Linear Regression Experiment Results&lt;/p&gt;
+&lt;p&gt;The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm.&lt;/p&gt;
 &lt;h2 id=&#34;11-conclusion&#34;&gt;11. Conclusion&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;11-references&#34;&gt;11. References&lt;/h2&gt;

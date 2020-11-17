@@ -594,11 +594,11 @@ Richard Otten,
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>In this wor we are benchmarking auto generated cloud REST services on
-various clouds. In todays application scientist want to share their
-services with a wide number of collegues while not only offereing the
+<p>In this work we are benchmarking auto generated cloud REST services on
+various clouds. In today&rsquo;s application scientist want to share their
+services with a wide number of colleagues while not only offering the
 services as bare metal programs, but exposing the functionality as a
-software as a service. For this reason a tool has been debveloped that
+software as a service. For this reason a tool has been developed that
 takes a regular python function and converts it automatically into a
 secure REST service. We will create a number of AI REST services while
 using examples from ScikitLearn and benchmark the execution of the
@@ -650,7 +650,7 @@ is included in our evaluation.</p>
 <p><strong>Keywords:</strong> cloudmesh, AI service, REST, multi-cloud</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>We will develop benchmark tests that are pytest replications of
-Sklearn artificial intelligent alogrithms. These pytests will then be
+Sklearn artificial intelligent algorithms. These pytests will then be
 ran on different cloud services to benchmark different statistics on
 how they run and how the cloud performs. The team will obtain cloud
 service accounts from AWS, Azure, Google, and OpenStack. To deploy the
@@ -660,30 +660,26 @@ services. Benchmarks will include components like data transfer time,
 model train time, model prediction time, and more. The final project
 will include scripts and code for others to use and replicate our
 tests. The team will also make a report consisting of research and
-findings. So far, we have installed the Cloudmesh OpenAPI Service
-Generator on our local machines. We have tested some microservices,
-and even replicated a Pipeline Anova SVM example on our local
-machines. We will repeat these processes, but with pytests that we
-build and with cloud accounts.</p>
+findings.</p>
 <h2 id="2-background-and-related-research">2. Background and Related Research</h2>
 <h3 id="21-cloudmesh">2.1 Cloudmesh</h3>
 <p>Cloudmesh <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> is a service that enables users to access multi-cloud
 environments easily. Cloudmesh is an evolution of previous tools that
-have been used by many of users. Cloudmesh makes interacting with
+have been used by many users. Cloudmesh makes interacting with
 clouds easy by creating a service mashup to access common cloud
 services across numerous cloud platforms. Cloudmesh contains a
 sophisticated command shell, a database to store jason objects
 representing virtual machines, storage and a registry of REST
-services <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. CLoudmesh has a sophisticated plugin concept that is easy to
-use and leveraged python namespaces while being able to integrate
-plugins form different source code directories <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Instalation of
-cloudmesh is available for macOS, Linux, Windows, and Rasbian <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+services <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Cloudmesh has a sophisticated plugin concept that is easy to
+use and leverages python namespaces while being able to integrate
+plugins from different source code directories <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Installation of
+Cloudmesh is available for macOS, Linux, Windows, and Rasbian <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <h3 id="22-rest">2.2 REST</h3>
 <p>REST is an acronym for representational state transfer. REST often
 uses the HTTP protocol for the CRUD functions which create, read,
 update, and delete resources. It is important to note that REST is not
 a standard, but it is a software architectural style for building
-network services. When a part of the HTTP protocol, REST has the
+network services. When referred to as a part of the HTTP protocol, REST has the
 methods of GET, PUT, POST, and DELETE. These methods are used to
 implement the CRUD functions on collections and items that REST
 introduces <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
@@ -761,7 +757,7 @@ competing cloud providers leads to situations where service
 availability, performance, and cost may vary greatly. Customer’s must
 navigate these heterogeneous solutions to meet their business needs
 while avoiding provider lock-in and managing organizational risk. This
-may require utilizing multiple cloud providers to meet various
+may require comparing or utilizing multiple cloud providers to meet various
 objectives.</p>
 <h3 id="24-containers-and-microservices">2.4 Containers and Microservices</h3>
 <p>TBD</p>
@@ -770,16 +766,21 @@ objectives.</p>
 <h2 id="4-benchmarks">4. Benchmarks</h2>
 <h3 id="41-algorithms-and-datasets">4.1. Algorithms and Datasets</h3>
 <p>This project uses a number of simple example algorithms and
-datasets. We have chosen to use the once included in Scikit Learn as
-they are widel known and can be used by others to replicate our
+datasets. We have chosen to use the examples included in Scikit Learn as
+they are widely known and can be used by others to replicate our
 benchmarks easily. Nevertheless, it will be possible to integrate
 easily other data sources, as well as algorithms due to the generative
 nature of our base code for creating REST services.</p>
 <p>Within Skikit Learn we have chosen the following examples:</p>
 <ul>
-<li><strong>Pipelined ANOVA SVM</strong>: A code thet shows a pipeline running
+<li>
+<p><strong>Pipelined ANOVA SVM</strong>: An example code that shows a pipeline running
 successively a univariate feature selection with anova and then a
-SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup>.</li>
+SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup>.</p>
+</li>
+<li>
+<p><strong>Eigenfaces SVM Facial Recognition</strong>: A facial recognition example that first  utilizes principle component analysis (PCA) to generate eigenfaces from the training image data, and then trains and tests a SVM model <sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup>. This example uses the real world &ldquo;Labeled Faces in the Wild&rdquo; dataset consisting of labeled images of famous individuals gathered from the internet <sup id="fnref:20"><a href="#fn:20" class="footnote-ref" role="doc-noteref">20</a></sup>     .</p>
+</li>
 </ul>
 <h3 id="42-cloud-providers">4.2. Cloud Providers</h3>
 <h4 id="aws">AWS</h4>
@@ -789,20 +790,101 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 <h4 id="oracle">Oracle</h4>
 <h4 id="raspberry-pi-cluster">Raspberry Pi Cluster</h4>
 <h3 id="43-result-comparision">4.3. Result Comparision</h3>
+<h4 id="eigenfaces-svm-example">Eigenfaces-SVM Example</h4>
+<p>The Eigenfaces-SVM benchmark script utilizes Cloudmesh to create virtual machines and setup an Cloudmesh OpenAPI environment sequentially across the three measured clouds including Amazon, Azure, and Google. After the environment is setup, a series of pytests are run that generate and launch the Eigenfaces-SVM OpenAPI service, and then conduct runtime measurements of various service functions.</p>
+<p>The pytest is run in two configurations. After the benchmark script sets up a virtual machine environment, it runs the first pytest locally on the OpenAPI machine and measures five runtimes:</p>
+<ol>
+<li>Downdload and extraction of remote image data from ndownloader.figshare.com/files/5976015</li>
+<li>The model training time when run as an OpenAPI service</li>
+<li>The model training time when run as the scikit-learn example without OpenAPI involvement</li>
+<li>The time to upload an image from the server to itself</li>
+<li>The time to predict and return the target label of the uploaded image</li>
+</ol>
+<p>The second run is conducted on the remote client and interacts with the deployed OpenAPI service over the internet. It tests two runtimes:</p>
+<ol>
+<li>The time to upload an image to the remote OpenAPI server</li>
+<li>The time to run the predict function on the remote OpenAPI server, and return the target label  of the uploaded image</li>
+</ol>
+<p>When benchmarking cloud performance it is important to identify and control deployment parameters that can affect the performance results. This enables one to analyze comparable services or identify opportunities for service improvement due to varying deployment features such as machine size, location, network, or storage hardware. This example aimed to create similar machines across all three clouds and measure service performance. See Table 1 for a summary of the parameters controlled in this benchmark example.</p>
+<p>One key components is the virtual machine size, which determine the number of vCPUs, the amount of memory, attached storage types, and resource sharing policies. Resource sharing policies include shared core machine varieties which are offered at less expensive rates, and allow the virtual machine to opportunistically burst over its base clock rate in exchange for credits or the machines inherent bursting factor [^awsimages] <sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup>. For this example we chose three similar machine sizes that had comparable vCPUs, comparable underlying processors, memory, price, and were not a shared core variety. Additionally, we installed the same Ubuntu 20.04 operating system on all three clouds.</p>
+<p>Another factor that can affect performance, particularly in network latency, is the zone and region selected. We choose to deploy all benchmark machines to zones located on the east coast of the United States. This helps control variations caused by network routing latency and provide more insight into the inherent network performance of the individual cloud services.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>AWS</th>
+<th>Azure</th>
+<th>Google</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VM size (flavor)</td>
+<td>m4.large</td>
+<td>Standard_D2s_v3</td>
+<td>n1-standard-2</td>
+</tr>
+<tr>
+<td>VM vCPU</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>VM memory (GB)</td>
+<td>8</td>
+<td>8</td>
+<td>7.5</td>
+</tr>
+<tr>
+<td>VM Image</td>
+<td>ami-0dba2cb6798deb6d8</td>
+<td>Canonical:0001-com-ubuntu-server-focal:20_04-lts:20.04.202006100</td>
+<td>ubuntu-2004-lts</td>
+</tr>
+<tr>
+<td>Region</td>
+<td>us-east-1</td>
+<td>eastus</td>
+<td>us-east1</td>
+</tr>
+<tr>
+<td>Zone</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>us-east1-b</td>
+</tr>
+<tr>
+<td>Price ($/hr)</td>
+<td>0.1</td>
+<td>0.096</td>
+<td>0.0949995</td>
+</tr>
+<tr>
+<td>Runs/Test</td>
+<td>90</td>
+<td>60*</td>
+<td>90</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 1:</strong> Eigenfaces-SVM benchmark parameters. Clouds were tested at least twice, and were run sequentially between the hours of approximately 0745 EST and 0330 EST starting with Google and ending with Azure. *Only 60 runs were conducted on Azure due to a failed VM deployment from factors outside of the benchnmark scripts control.</p>
+<p>In Figure 1 we compare the download and extraction time of the labeled faces in the wild dataset. This data set is approximately 233MBs compressed, which allows us to measure a non-trivial data transfer. Lower transfer times imply the cloud has less routing latency to the data server, or that it provides access to a higher performing internal network. The standard deviation is displayed to compare the variation in the download times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_1.png" alt="Sample Graph 1"></p>
-<p><strong>Figure 1:</strong> Sample Graph 1</p>
+<p><strong>Figure 1:</strong> Donwload (233MB) and extraction (~275MB) of remote image data from ndownloader.figshare.com/files/5976015</p>
+<p>In Figure 2 we measure the training time of the Eigenfaces-SVM model both as a OpenAPI service and as the basic Scikit-learn example. This allows us to measure runtime overhead added by OpenAPI compared to the source example. In this case the two functions are identical except that the OpenAPI train function makes an additional store_model function call to store the model to disk using joblib. This is necessary to share the model across the train and predict functions. The standard deviation is displayed to compare the variation in the training times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_2.png" alt="Sample Graph 2"></p>
-<p><strong>Figure 2:</strong> Sample Graph 2</p>
+<p><strong>Figure 2:</strong> Compares the eigenfaces-svm model training time running both as an OpenAPI service, and as the raw Scikit-learn example</p>
+<p>In Figure 3 we measure the time to upload an image to the server both from itself, and from a remote client. This allows us to compare the function runtime as experienced by the server, and as experienced by a remote client. The difference helps determine the network latency between the benchmark client and the cloud service. The standard deviation is displayed to compare the variation in the upload times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_3.png" alt="Sample Graph 3"></p>
-<p><strong>Figure 3:</strong> Sample Graph 3</p>
+<p><strong>Figure 3:</strong> Runtime of the upload function when run locally from the OpenAPI server and from a remote client</p>
+<p>In Figure 4 we measure the time to call the predict function on the uploaded image. Again we run this once from the local server itself, and a second time from a remote client to determine as experienced runtimes. The standard deviation is displayed to compare the variation in the predict times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_4.png" alt="Sample Graph 4"></p>
-<p><strong>Figure 4:</strong> Sample Graph 4</p>
+<p><strong>Figure 4:</strong> Runtime of the predict function when run locally from the OpenAPI server and from a remote client</p>
 <h2 id="5-conclusion">5. Conclusion</h2>
 <h2 id="6-limitations">6. Limitations</h2>
 <p>Azure has updated their libraries and discontinued the version 4.0
-Azure libraries. We have not yet identified if code changes in Azure
-need to be conducted to execute our code on Azure</p>
-<p>Idially this project will modify the code to use the new Azure library.</p>
+Azure libraries. We updated Cloudmesh to use the new library, but not all features, such as virtual machine delete, are implemented or verified.</p>
 <h2 id="appendix-a---setup">APPENDIX A. - Setup</h2>
 <h3 id="a1-deployment">A.1. Deployment</h3>
 <p>The project is easy to replicate with our detailed instructions. First you must install Cloudmesh OpenAPI whihch can be done by the follwoing steps:</p>
@@ -934,7 +1016,7 @@ we use it</p>
 <p>This is temporary and will in final be moved elsewhere. Its
 conveniently for now placed on top so we can easier locate it</p>
 <ul>
-<li>github: <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup></li>
+<li>github: <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup></li>
 <li>branch: benchmark (not yet created)</li>
 </ul>
 <h2 id="appendix-c---cloudmesh-links">APPENDIX C. - Cloudmesh Links</h2>
@@ -1052,19 +1134,28 @@ finish the report.</p>
 <p>S. Software, &ldquo;Swagger codegen documentation.&rdquo; Web Page [Online]. Available: <a href="https://swagger.io/docs/open-source-tools/swagger-codegen/">https://swagger.io/docs/open-source-tools/swagger-codegen/</a> <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:15" role="doc-endnote">
-<p>NIST SP 800-145 Webpage <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;NIST SP 800-145&rdquo; Web page [Online]. Available: <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:16" role="doc-endnote">
-<p>Google Tensorflow Enterprise website <a href="https://cloud.google.com/tensorflow-enterprise">https://cloud.google.com/tensorflow-enterprise</a> <a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;TensorFlow Enterprise.&rdquo; Web page [Online]. Available: <a href="https://cloud.google.com/tensorflow-enterprise">https://cloud.google.com/tensorflow-enterprise</a> <a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:17" role="doc-endnote">
-<p>Amazon Polly text-to-speech service website <a href="https://aws.amazon.com/polly/?c=ml&amp;sec=srv">https://aws.amazon.com/polly/?c=ml&amp;sec=srv</a> <a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Amazon Polly. Turn text into lifelike speech using deep learning.&rdquo; Web page [Online]. Available: <a href="https://aws.amazon.com/polly/?c=ml&amp;sec=srv">https://aws.amazon.com/polly/?c=ml&amp;sec=srv</a> <a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:18" role="doc-endnote">
 <p>Scikit Learn, Pipeline Anova SVM, <a href="https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html">https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html</a> <a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:19" role="doc-endnote">
-<p>Cloudmesh Openapi Web page <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Faces recognition example using eigenfaces and SVMs.&rdquo; Web Page [Online]. Available: <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py">https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py</a> <a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:20" role="doc-endnote">
+<p>Huang, Gary &amp; Jain, Vidit &amp; Learned-Miller, Erik. (2007). Unsupervised Joint Alignment of Complex Images. ICCV. 1-8. 10.1109/ICCV.2007.4408858. Available: <a href="http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf">http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf</a> <a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:21" role="doc-endnote">
+<p>&ldquo;Machine Types&rdquo; Web page [Online]. Available: <a href="https://cloud.google.com/compute/docs/machine-types">https://cloud.google.com/compute/docs/machine-types</a> <a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:22" role="doc-endnote">
+<p>Cloudmesh Openapi Web page <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
