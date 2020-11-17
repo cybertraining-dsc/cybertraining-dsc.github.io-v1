@@ -2927,76 +2927,6 @@ A project this large and versatile requires the use of many software tools. Thes
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-305/project/old_info/old_project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-305/project/old_info/old_project/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;how-big-data-technologies-can-improve-indoor-agriculture&#34;&gt;How Big Data Technologies Can Improve Indoor Agriculture&lt;/h1&gt;
-&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
-&lt;h1 id=&#34;harrcodyiuedu&#34;&gt;Cody Harris
-&lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Cody Harris, &lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;, fa20-523-305&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#team&#34;&gt;Team&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#topic-discussion&#34;&gt;Topic Discussion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#dataset&#34;&gt;Dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#getting-a-good-grade&#34;&gt;Getting a Good Grade&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#data-storage-and-streaming&#34;&gt;Data Storage and Streaming&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#analytics&#34;&gt;Analytics&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#hardware&#34;&gt;Hardware&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#novel-ideas&#34;&gt;Novel Ideas&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#extensions&#34;&gt;Extensions&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; agriculture&lt;/p&gt;
-&lt;h2 id=&#34;topic-discussion&#34;&gt;Topic Discussion&lt;/h2&gt;
-&lt;p&gt;The overall topic of the project will include investigating how a host of Big Data technologies could be leveraged to improve multiple facets of the growing and distribution process for indoor farmers. One of the biggest benefits of growing indoors is the ability to precisely control the growing environment. From the light intensity and spectrum, to the nutrients given to the plant, there is an optimal combination of variables that produce the best results. Each farmer has priorities, whether those are yield, produce quality or a combination of various factors, it is a complex system that requires experimentation and robust tools to see the best results. There are a host of IoT sensors and controllers that can be employed to help monitor and control the growing environment, these all produce vast amounts of data that must be sifted through to extract insights. For sizeable farms, this produces big data problems that must be overcome.&lt;/p&gt;
-&lt;p&gt;While some insights from the data can come during or directly after the growing “season”, some requires the produce to hit the shelves or to be used to create various food products. This means monitoring continues through the logistics process, and this data is integral when it comes to the end result of the produce. All this data allows for traceability in the food supply chain as well, in which big data technologies are perfect to handle.&lt;/p&gt;
-&lt;p&gt;The end goal is to investigate and implement a scalable solution that follows the farmers crops from seed to consumers tables and optimizes the process along the way. Although indoor farms allow for great control, it is important to understand that there are many costs that are not associated with traditional farms. This means that to make the farming endeavor sustainable, optimization is important.&lt;/p&gt;
-&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
-&lt;p&gt;There are not any publicly available data sources that meet the needs of this project. In order to accomplish the goal of building an analytics platform for an indoor farm and the related logistics, simulation data will be created. The simulation data will encompass many different situations that could be encountered and labeled by these issues. Along with possible issues, the data will include mostly satisfactory situations, as this is what the farmer is most likely to encounter.&lt;/p&gt;
-&lt;p&gt;The majority of the data being worked with will be streaming sensor data. The sensors will include: PAR (Photosynthetically Active Radiation), temperature, humidity, pH of grow medium, and CO2. Along with these streaming measurements, other data points about the specific grow area will be taken. A grow area could be as small as a row of ten plants, all the way to thousands of plants. These datapoints could be things such as phenotype, light spectrum, light cycle, feeding schedule, or any other labels that could be beneficial in determining the end attributes of the given produce.&lt;/p&gt;
-&lt;p&gt;Variance in the data will come in a variety of forms. As completely identical data is not analogous to real life, it can be for certain measurements. For example, in an indoor growing environment equipped with HVAC, the temperature might only fluctuate a few percent all day, and then have a rapid change as the lights are turned off. With this in mind, certain simulation measurements should not have a great deal of noise in them unless trying to simulate an adverse event.&lt;/p&gt;
-&lt;p&gt;As this data is streaming, the dataset will be a time series that needs to be handled in the sense of streaming as well as in a postmortem capacity. The size of the data should be large enough to properly simulate a large farm over the course of a grow cycle. This data set will simulate an experiment, in which a variety of conditions or phenotypes will be compared to a control. Within the realm of the experiment the simulation data might include adverse events, such as a power outage, that could actually occur during an experiment and these adverse events must be accounted for in the end conclusion.&lt;/p&gt;
-&lt;h2 id=&#34;getting-a-good-grade&#34;&gt;Getting a Good Grade&lt;/h2&gt;
-&lt;p&gt;As I am a graduate student, I am expected to not only write a report, but also create a software component. For the software, it will be a proof of concept to show that a scalable solution could be built to use open source big data technologies. The report will detail the work done in the solution being built, as well as exploring ideas that cannot be built but are required for the full solution to be implemented.&lt;/p&gt;
-&lt;h3 id=&#34;data-storage-and-streaming&#34;&gt;Data Storage and Streaming&lt;/h3&gt;
-&lt;p&gt;With a focus on open source platforms, Apache has solutions that can be leveraged to handle many aspects of big data streaming and storage in a distributed computing environment. While more investigation needs to be done on the exact software that will be used, Hadoop, Spark, or the combination of the two will be used to handle the large amount of data, whether that is for longer term storage or real time streaming. Another Apache system that will be evaluated is Kafka, but again, there are many possibly solutions to be used. The goal is to stay within the Apache environment as it is widely used in industry as well as is an open source platform.&lt;/p&gt;
-&lt;h3 id=&#34;analytics&#34;&gt;Analytics&lt;/h3&gt;
-&lt;p&gt;The analytics component of this project is diverse. While all goals might not be able to be achieved in the proof of work, all of the data needs that are required for the growing and logistics processes of an indoor farm will be evaluated and explained in the final report. There are two main components to the analytics: real time analytics and historic data analysis. While some models are being fine tuned for the specific farm, the real time analytics will likely be mostly monitoring at the beginning. As grow seasons go by and metrics are collected on the harvest, the real time analytics will be informed by the historic data using some sort of machine learning processes. These analytic goals can likely be completed using tools within Spark, using MLlib. If this cannot be accomplished, then another library will be used such as sci-kit learn.&lt;/p&gt;
-&lt;h3 id=&#34;hardware&#34;&gt;Hardware&lt;/h3&gt;
-&lt;p&gt;It is important that the proof of concept is designed for a distributed computing environment. The goal is to create open source software that can be used by small farms that sell solely at farmers markets, all the way to large commercial operations. When designing in this way, growing pains in the future can be minimized. For the hardware being used, multiple solutions are being evaluated. The first possible idea is using a commercial cloud application such as AWS, Azure, Google Cloud, etc. Secondly, personal local hardware could be used to create a virtual distributed computing environment. There are two options for local hardware. Either a personal computer with multiple virtual machines, or an array of Raspberry Pi’s will be used.&lt;/p&gt;
-&lt;h3 id=&#34;novel-ideas&#34;&gt;Novel Ideas&lt;/h3&gt;
-&lt;p&gt;Everything that has already been explained has more or less been attempted or implemented successfully. The innovation comes by trying to implement some ideas that are fresh by borrowing ideas and implementing them in the context of an indoor produce farm. The first big deviation from the norm is using a blockchain backbone to store immutable data. This idea is used in some niche farming scenarios but is yet to be adopted by produce farmers. Blockchain could be used to hold the logistical data to establish immutable custody data, but also to store the data from the growing process, pesticides tests, chemical makeup tests, genetic markers and more. Next, in the spirit of providing transparency there will be a public blockchain that could be explored by consumers or businesses that buy the farmers produce. In today’s world, we always wonder if we are paying some premium for products in order to just have a special label on that product. For this example, the label is: organic, GMO free, pesticide free, etc. Transparency goes a long way to prove to consumers that you are doing more for them to provide a good product, which allows for a greater amount that people are willing to spend. Some data might be proprietary, such as the exact genome of the phenotypes being used, or the specific growing protocols, so this information must stay off the blockchain.&lt;/p&gt;
-&lt;h3 id=&#34;extensions&#34;&gt;Extensions&lt;/h3&gt;
-&lt;p&gt;Not everything can be built or examined completely within the time constraints. Part of the project will be planning future updates or technologies that could improve the solution. One immediate future plan would be to incorporate cameras and computer vision to monitor the crops. Using images of plants, certain diseases, pests, or nutrient deficiencies can be seen as soon as they start to develop, giving the farmer the best odds at reversing the issue without effecting the harvest. Many of these issues cannot be greatly noticed with sensor data alone, which requires a farmer to constantly visually inspect crops. While this might not be terribly hard in some cases, some vertical grows might require large ladders to see all levels of the crop. This improvement could lead to less staff being required, which can allow more farmers to grow more for less money.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
       <link>/report/fa20-523-305/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3093,7 +3023,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;As far as text and categorical features, the imputer will be used to fill in missing data as well. Then a process called one hot encoding will be used to handle the categorical variables so that they can be read into sklearns estimators. Lastly, these two main processes will be put together to make a single pipeline step. Then this pipeline step will be added to a regressor of some sort to create the entire process.&lt;/p&gt;
 &lt;h2 id=&#34;6-multiple-models-for-multiple-soil-depths&#34;&gt;6. Multiple Models for Multiple Soil Depths&lt;/h2&gt;
 &lt;p&gt;There are a few different approaches for modeling for this particular problem. The issue is that we have multiple things we would like to predict with the same predictors. It is unlikely that the model that predicts for a depth of 30 cm, would accurately predict for a depth of 150 cm. In order to adjust the models, a separate model will be created for each depth, with that said, the predictors are all the same for each depth, but the trained output is different. To accomplish this, five different datasets were constructed, each one representing a depth. All rows in which the predicted value is not available for that depth were pruned from the dataset.&lt;/p&gt;
-&lt;p&gt;In each experiment, there will be 5 different models created. Initially, these 5 models will use the same hyper-parameters for all the depths. It might turn out that all the models will need the same hyper-parameters, or each soil depth could be different. This will be examine through experimentation.&lt;/p&gt;
+&lt;p&gt;In each experiment, there will be 5 different models created. Initially, these 5 models will use the same hyper-parameters for all the depths. It might turn out that all the models will need the same hyper-parameters, or each soil depth could be different. This will be examined through experimentation.&lt;/p&gt;
 &lt;h2 id=&#34;7-splitting-data-into-train-and-test&#34;&gt;7. Splitting Data into Train and Test&lt;/h2&gt;
 &lt;p&gt;In order to test any model created, there must be a split between test and training data. This is done by using a function in sklearn. In this case, there are about 76k rows in the data set. For the training data, 80% of the total data will be used, or about 60.8k records. The split is done after shuffling the rows so that it does not just pick the top 80% every time. Lastly the data is split using a stratified method. As we want to have models that take the specific area of the field into account, that means that we need to have the different areas of the field represented equally in both the training and testing dataset. This means that if 10% of the data came from sensor CAF0003, then roughly 10% of the training data will come from CAF0003 as well as 10% of the test data will be from this location.&lt;/p&gt;
 &lt;h2 id=&#34;8-preliminary-analysis-and-eda&#34;&gt;8. Preliminary Analysis and EDA&lt;/h2&gt;
@@ -3104,9 +3034,8 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;The third and fourth grid shows the temperature at 150 cm, the results are what would logically be expected. The different sensors do not show much variance from location to location.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/four_small.png&#34; alt=&#34;Figure 4&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Six locations soil temperature over time at 150 cm depth&lt;/p&gt;
-&lt;p&gt;A simple bar chart is used to get a quick overview of the percipitation values over the same time period to see the overall trends. The most interesting part of this analysis is from the end of 2009 to nearly 2012. There is very little percipitation in this time period. Which initially looks like an issue with the data, but when it is compared to the water volume charts, a correlation can be seen. It isn&amp;rsquo;t perfect, but in many of the sensors that have data in this period, the moisture seems rather constant.&lt;/p&gt;
 &lt;h2 id=&#34;9-initial-model-testing-regressor&#34;&gt;9. Initial Model Testing (Regressor)&lt;/h2&gt;
-&lt;p&gt;Once the pipelines were setup, the first model could be tested for accuracy. As the output data is continuous in nature, the easiest machine learning algoritm to test to make sure everything is correct, was a linear regression model. It seems fairly likely that a linear regression model would do rather well with this data. The weather is the driving factor in soil moisture in a non-irrigated field, so this test is a litmus test to make sure that the data is good and provide a baseline measurment for future models. The experiment log below shows the returned values from the test that was run. Over the course of experimentation, a log such as this will be kept.&lt;/p&gt;
+&lt;p&gt;Once the pipelines were setup, the first model could be tested for accuracy. As the output data is continuous in nature, the easiest machine learning algorithm to test to make sure everything is correct, was a linear regression model. It seems fairly likely that a linear regression model would do rather well with this data. The weather is the driving factor in soil moisture in a non-irrigated field, so this test is a litmus test to make sure that the data is good and provide a baseline measurement for future models. The experiment log below shows the returned values from the test that was run. Over the course of experimentation, a log such as this will be kept.&lt;/p&gt;
 &lt;p&gt;The results are as follows:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -3159,8 +3088,8 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Baseline experiment results&lt;/p&gt;
 &lt;p&gt;These results show that the data is pretty well correlated and that there is reason to believe that we could predict soil moisture from weather alone. Although an r^2 of around 0.916-0.949 are pretty good, with such highly related predictors, there is definitely room for model improvement. Also for a depth of 60 cm, something is not predicting correctly and is resulting in a small negative r^2&lt;/p&gt;
 &lt;h2 id=&#34;10-classifier-vs-regressor&#34;&gt;10. Classifier vs. Regressor&lt;/h2&gt;
-&lt;p&gt;While the output is continuous, there is an argument to use a categorical classifier model. For a specific plant, an optimal moisture range could be studied. For examples sake, the range could be 0.2-0.4 units. Then it would not matter if the soil is 0.2 or 0.3, both would be in the acceptable range. With this in mind, certain levels could be created to alert the farmer of which category they could be experienecing. For example there might be five levels: too dry, acceptable dryness, optimal, acceptable wetness, and too wet. The training data could be adjusted to fit into these categories.&lt;/p&gt;
-&lt;p&gt;Code to create a categorical variable for each of the depth measurments can be found in the section &amp;ldquo;Make Classifier Label&amp;rdquo; in the file: &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb&#34;&gt;ml_pipeline.ipynb&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;While the output is continuous, there is an argument to use a categorical classifier model. For a specific plant, an optimal moisture range could be studied. For examples sake, the range could be 0.2-0.4 units. Then it would not matter if the soil is 0.2 or 0.3, both would be in the acceptable range. With this in mind, certain levels could be created to alert the farmer of which category they could be experiencing. For example there might be five levels: too dry, acceptable dryness, optimal, acceptable wetness, and too wet. The training data could be adjusted to fit into these categories.&lt;/p&gt;
+&lt;p&gt;Code to create a categorical variable for each of the depth measurements can be found in the section &amp;ldquo;Make Classifier Label&amp;rdquo; in the file: &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb&#34;&gt;ml_pipeline.ipynb&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In the end, the decision to not use classifier methods was made. After using a regressor, the output could be converted to a categorical feature if the user or application so desired this. As our output is continuous in nature, precision would be lost.&lt;/p&gt;
 &lt;h2 id=&#34;11-various-other-linear-regression-model-experiments&#34;&gt;11. Various Other Linear Regression Model Experiments&lt;/h2&gt;
 &lt;p&gt;The next set of experiments came up with the results in the following table. This was a test to see if baseline Lasso or Ridge Regression would improve on the basic linear regression model. Results and code for this portion can be found in &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb&#34;&gt;ml_pipeline.ipynb&lt;/a&gt; under the &amp;ldquo;Linear Regression Tests&amp;rdquo; section.&lt;/p&gt;
@@ -3283,7 +3212,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Further Linear Regression Experiment Results&lt;/p&gt;
-&lt;p&gt;For the first two experiements, an alpha of 1 was used for both ridge and lasso regression. The third experiment used a special regressor that uses cross validation to try to find the best alpha value and then fit the model based on that. The best alpha value seemed to not have much effect at all on the results. Still the ridge regression so far was the best performing model.&lt;/p&gt;
+&lt;p&gt;For the first two experiments, an alpha of 1 was used for both ridge and lasso regression. The third experiment used a special regressor that uses cross validation to try to find the best alpha value and then fit the model based on that. The best alpha value seemed to not have much effect at all on the results. Still the ridge regression so far was the best performing model.&lt;/p&gt;
 &lt;h2 id=&#34;12-other-models&#34;&gt;12. Other Models&lt;/h2&gt;
 &lt;p&gt;While there were great results in the different linear regression models, other models should be evaluated to make sure that something is not missed. Three models were chosen to check, Stochastic Gradient Descent, Support Vector Machine, and Random Forest. All of these models were tested with default parameters and their results are shown below in Figure 7, and the code can be found in the section called &amp;ldquo;Other Regressors Tests&amp;rdquo;.&lt;/p&gt;
 &lt;table&gt;
@@ -3407,7 +3336,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Further Linear Regression Experiment Results&lt;/p&gt;
 &lt;p&gt;The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm. As random forests performed so well out of the box, some attempts were made to tune the hyperparameters, but most experiments turned out to be computationally expensive.&lt;/p&gt;
 &lt;h2 id=&#34;13-conclusion&#34;&gt;13. Conclusion&lt;/h2&gt;
-&lt;p&gt;The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.&lt;/p&gt;
+&lt;p&gt;The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively, this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.&lt;/p&gt;
 &lt;h2 id=&#34;11-references&#34;&gt;11. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -3747,7 +3676,7 @@ A project this large and versatile requires the use of many software tools. Thes
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;This section will be addressed as the project nears completion&lt;/p&gt;
+&lt;p&gt;As cardiovascular diseases are the number 1 cause of death in the United States, the study of the factors and early detection and treatment could improve quality of life and lifespans. From investigating how the variety of factors related to cardiovascular health relate to a general trend, it has resulted in general guidelines to reduce the risk of experiencing a cardiovascular disease. However, this is a rudimentary way of preventative care that allows for those who do not fall into these risk categories to fall through. By applying machine learning, one could develop a flexible solution to actively monitor, find trends, and flag patients at risk to be treated immediately. Solving not only the risk categories but has the potential to be expanded to annual checkup data revolutionizing health care.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -3764,23 +3693,16 @@ A project this large and versatile requires the use of many software tools. Thes
         &lt;li&gt;&lt;a href=&#34;#31-scikit-learn-and-algorithm-types&#34;&gt;3.1 Scikit-Learn and Algorithm Types&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#32-classification-algorithms&#34;&gt;3.2 Classification Algorithms&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#33-clustering-algorithms&#34;&gt;3.3 Clustering Algorithms&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#34-implementation&#34;&gt;3.4 Implementation&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#4-results--discussion&#34;&gt;4. Results &amp;amp; Discussion&lt;/a&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&#34;#41-algorithm-metrics&#34;&gt;4.1 Algorithm Metrics&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#42-algorithm-discussion&#34;&gt;4.2 Algorithm Discussion&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#42-discussion&#34;&gt;4.2 Discussion&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#5-conclusion&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#project-timeline&#34;&gt;Project Timeline&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#october-26&#34;&gt;October 26&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#november-2&#34;&gt;November 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#november-9&#34;&gt;November 9&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#november-16&#34;&gt;November 16&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
@@ -3790,9 +3712,8 @@ A project this large and versatile requires the use of many software tools. Thes
 
 &lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; health, healthcare, cardiovascular disease, data analysis&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;Since cardiovascular diseases are the number 1 cause of death globally, early prevention could help in extending one’s life span and possibly quality of life. Since there are cases where patients do not show any signs of cardiovascular trouble until an event occurs, having an algorithm predict from their medical history would help in picking up on early warning signs a physician may overlook. Or could also reveal additional risk factors and patterns for research on prevention and treatment.&lt;/p&gt;
-&lt;p&gt;This project will take a high-level overview of common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, K-Nearest Neighbors, and Support Vector Machines.&lt;/p&gt;
-&lt;p&gt;Additionally, two data sets that contain common features will be used to increase the training and test pool for evaluation. As well as to explore if additional feature types contribute to a better prediction. As it is known that a large set of data is required to reduce the possibility of the algorithm’s overfitting.&lt;/p&gt;
+&lt;p&gt;Since cardiovascular diseases are the number 1 cause of death in the United States, early prevention could help in extending one’s life span and possibly quality of life &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Since there are cases where patients do not show any signs of cardiovascular trouble until an event occurs, having an algorithm predict from their medical history would help in picking up on early warning signs a physician may overlook. Or could also reveal additional risk factors and patterns for research on prevention and treatment. In turn this would be a great tool to apply in preventive care, which is the type of healthcare policy that focuses in diagnosing and preventing health issues that would otherwise require specialized treatment or is not treatable &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. This also has the potential to trickle down and increase the quality of life and lifespan of populations at a reduced cost as catching issues early most likely results in cheaper treatments &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;This project will take a high-level overview of common, widely available classification algorithms and analyze their effectiveness for this specific use case. Notable ones include, Gaussian Naive Bayes, K-Nearest Neighbors, and Support Vector Machines. Additionally, two data sets that contain common features will be used to increase the training and test pool for evaluation. As well as to explore if additional feature types contribute to a better prediction. The goal of this project being a gateway to further research in data preprocessing, tuning, or development of specialized algorithms as well as further ideas on what data could be provided.&lt;/p&gt;
 &lt;h2 id=&#34;2-datasets&#34;&gt;2. Datasets&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/johnsmith88/heart-disease-dataset&#34;&gt;https://www.kaggle.com/johnsmith88/heart-disease-dataset&lt;/a&gt;&lt;/li&gt;
@@ -3802,7 +3723,7 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;This possible phenomenon may be of interest to explore closely if time allows. Whether a trend itself is even present or there is an overarching trend across different cultures and time periods. Or to consider if this difference is significant enough that the data from the various sets needs to be adjusted to normalize the ages to present day.&lt;/p&gt;
 &lt;h3 id=&#34;21-dataset-cleaning&#34;&gt;2.1 Dataset Cleaning&lt;/h3&gt;
 &lt;p&gt;The datasets used have already been significantly cleaned from the raw data and has been provided as a csv file. These files were then imported into the python notebook as pandas dataframes for easy manipulation.&lt;/p&gt;
-&lt;p&gt;An initial check was made to ensure the integrity of the data matched the description from the source websites. Then some preprocessing was completed to normalize the common features between the datasets. These features were gender, age, and cholesterol levels. The first two adjustments were trivial in conversion however, in the case of cholesterol levels, the 2019 set is on a 1-3 scale while the 1988 dataset provided them as real measurements. A conversion of the 1988 dataset was done based on guidelines found online for the age range of the dataset &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;An initial check was made to ensure the integrity of the data matched the description from the source websites. Then some preprocessing was completed to normalize the common features between the datasets. These features were gender, age, and cholesterol levels. The first two adjustments were trivial in conversion however, in the case of cholesterol levels, the 2019 set is on a 1-3 scale while the 1988 dataset provided them as real measurements. A conversion of the 1988 dataset was done based on guidelines found online for the age range of the dataset &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;22-dataset-analysis&#34;&gt;2.2 Dataset Analysis&lt;/h3&gt;
 &lt;p&gt;From this point on, the 1988 dataset will be referred to as &lt;code&gt;dav_set&lt;/code&gt; and 2019 data set will be referred to as &lt;code&gt;sav_set&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;To provide further insight on what to expect and how a model would be applied, the population of the datasets was analysed first. As depicted in Figure 2.1 the population samples of both datasets of gender vs age show the majority of the data is centered around 60 years of age with a growing slope from 30 onwards.&lt;/p&gt;
@@ -3815,17 +3736,17 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;In Figure 2.3, the probability of having cardiovascular issues between the sets are interesting. In the dav_set the inequality of higher probability could be attributed to the larger female samples in the dataset. With the sav_set having a more equal probability between the genders.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/gendervsprobability.jpg&#34; alt=&#34;Figure 2.3&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.3&lt;/strong&gt;: Gender vs Probability of cardiovascular issues of the dav_set and sav_set.&lt;/p&gt;
-&lt;p&gt;Finally, in Figure 2.4 is the probability vs cholesterol levels. This one is very interesting between the two datasets in terms of trend levels. With the dav_set having a higher risk at normal levels compared to the sav_set. This could be another hint of a societal change across the years or may in fact be due to the low sample size. Especially since the sav_set matches the general consensus of higher cholesterol levels increasing risk of cardiovascular issues &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, in Figure 2.4 is the probability vs cholesterol levels. This one is very interesting between the two datasets in terms of trend levels. With the dav_set having a higher risk at normal levels compared to the sav_set. This could be another hint of a societal change across the years or may in fact be due to the low sample size. Especially since the sav_set matches the general consensus of higher cholesterol levels increasing risk of cardiovascular issues &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/cholesterolvsprobability.jpg&#34; alt=&#34;Figure 2.4&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.4&lt;/strong&gt;: Cholesterol levels vs Probability of cardiovascular issues of the dav_set and sav_set.&lt;/p&gt;
-&lt;p&gt;To close out this initial analysis is the correlation map of each of the features. From Figure 2.5 and 2.6 it can be concluded that both of these datasets are viable to conduct machine learning as the correlation factor is below the recommended value of 0.8 &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Although we do see the signs of a low sample amount in the dav_set with a higher correlation factor compared to the sav_set.&lt;/p&gt;
+&lt;p&gt;To close out this initial analysis is the correlation map of each of the features. From Figure 2.5 and 2.6 it can be concluded that both of these datasets are viable to conduct machine learning as the correlation factor is below the recommended value of 0.8 &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. Although we do see the signs of a low sample amount in the dav_set with a higher correlation factor compared to the sav_set.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/davsetcorrelation.jpg&#34; alt=&#34;Figure 2.5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.5&lt;/strong&gt;: dav_set correlation matrix.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/savsetcorrelation.jpg&#34; alt=&#34;Figure 2.6&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2.6&lt;/strong&gt;: sav_set correlation matrix.&lt;/p&gt;
 &lt;h2 id=&#34;3-machine-learning-algorithms-and-implementation&#34;&gt;3. Machine Learning Algorithms and Implementation&lt;/h2&gt;
 &lt;p&gt;With many machine learning algorithms already available and many more in development. Selecting the optimal one for an application can be a challenging balance since each algorithm has both its advantages and disadvantages. As mentioned in the introduction, we will explore applying the most common and established algorithms available to the public.&lt;/p&gt;
-&lt;p&gt;Starting off, is selecting a library from the most popular ones available. Namely Keras, Pytorch, Tensorflow, and Scikit-Learn. Upon further investigation it was determined that Scikit-Learn would be used for this project. The reason being Scikit-Learn is a great general machine learning library that also includes pre and post processing functions. While Keras, Pytorch, and Tensorflow are targeted for neural networks and other higher-level deep learning algorithms which are outside of the scope of this project at this time &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Starting off, is selecting a library from the most popular ones available. Namely Keras, Pytorch, Tensorflow, and Scikit-Learn. Upon further investigation it was determined that Scikit-Learn would be used for this project. The reason being Scikit-Learn is a great general machine learning library that also includes pre and post processing functions. While Keras, Pytorch, and Tensorflow are targeted for neural networks and other higher-level deep learning algorithms which are outside of the scope of this project at this time &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;31-scikit-learn-and-algorithm-types&#34;&gt;3.1 Scikit-Learn and Algorithm Types&lt;/h3&gt;
 &lt;p&gt;Diving further into the Scikit-Learn library, its key strength appears to be the variety of algorithms available that are relatively easy to implement against a dataset. Of those available, they are classified under three different categories based on the approach each takes. They are as follows:&lt;/p&gt;
 &lt;ul&gt;
@@ -3845,21 +3766,21 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For this project, we will be investigating the Classification and Clustering algorithms offered by the library due to the nature of our dataset. Since it is a binary answer, the continuous prediction capability of regression algorithms will not fair well. Compared to classification type algorithms which are well suited for determining binary and multi-class classification on datasets &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. Along with Clustering algorithms being capable of grouping unlabeled data which is one of the key problem points mentioned in the introduction &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;For this project, we will be investigating the Classification and Clustering algorithms offered by the library due to the nature of our dataset. Since it is a binary answer, the continuous prediction capability of regression algorithms will not fair well. Compared to classification type algorithms which are well suited for determining binary and multi-class classification on datasets &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. Along with Clustering algorithms being capable of grouping unlabeled data which is one of the key problem points mentioned in the introduction &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;32-classification-algorithms&#34;&gt;3.2 Classification Algorithms&lt;/h3&gt;
-&lt;p&gt;The following algorithms were determined to be candidates for this project based on the documentation available on the Scikit-learn for supervised learning &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The following algorithms were determined to be candidates for this project based on the documentation available on the Scikit-learn for supervised learning &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;321-support-vector-machines&#34;&gt;3.2.1 Support Vector Machines&lt;/h4&gt;
-&lt;p&gt;This algorithm was chosen because classification is one of the target types and has a decent list of advantages that appear to be applicable to this dataset &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;This algorithm was chosen because classification is one of the target types and has a decent list of advantages that appear to be applicable to this dataset &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Effective in high dimensional spaces as well as if the number dimensions out number samples.&lt;/li&gt;
 &lt;li&gt;Is very versatile.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;322-k-nearest-neighbors&#34;&gt;3.2.2 K-Nearest Neighbors&lt;/h4&gt;
-&lt;p&gt;This algorithm was selected due to being a non-parametric method that has been successful in classification applications &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. From the dataset analysis, it is appears that the decision boundary may be very irregular which is a strong point of this type of method.&lt;/p&gt;
+&lt;p&gt;This algorithm was selected due to being a non-parametric method that has been successful in classification applications &lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;. From the dataset analysis, it is appears that the decision boundary may be very irregular which is a strong point of this type of method.&lt;/p&gt;
 &lt;h4 id=&#34;323-gaussian-naive-bayes&#34;&gt;3.2.3 Gaussian Naive Bayes&lt;/h4&gt;
-&lt;p&gt;Is an implementation of the Naive Bayes theorem that has been targeted for classification. The advantages of this algorithm is its speed and requires a small training set compared to more advanced algorithms &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Is an implementation of the Naive Bayes theorem that has been targeted for classification. The advantages of this algorithm is its speed and requires a small training set compared to more advanced algorithms &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;324-decision-trees&#34;&gt;3.2.4 Decision Trees&lt;/h4&gt;
-&lt;p&gt;This algorithm was chosen to investigate another non-parametric method to determine their efficacy against this dataset application. This algorithm also has some advantages over K-Nearest namely &lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;This algorithm was chosen to investigate another non-parametric method to determine their efficacy against this dataset application. This algorithm also has some advantages over K-Nearest namely &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Simple to interpret and visualize&lt;/li&gt;
 &lt;li&gt;Requires little data preparation
@@ -3870,19 +3791,24 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;li&gt;Can validate the model and is possible to audit from a liability standpoint.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;33-clustering-algorithms&#34;&gt;3.3 Clustering Algorithms&lt;/h3&gt;
-&lt;p&gt;The following algorithms were determined to be candidates for this project based on the table of clustering algorithms available on the Scikit-learn &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The following algorithms were determined to be candidates for this project based on the table of clustering algorithms available on the Scikit-learn &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;331-k-means&#34;&gt;3.3.1 K-Means&lt;/h4&gt;
-&lt;p&gt;The usecase for this algorithm is general purpose with even and low number of clusters &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Of which the sav_set appears to have with the even distribution across most of the features.&lt;/p&gt;
+&lt;p&gt;The usecase for this algorithm is general purpose with even and low number of clusters &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. Of which the sav_set appears to have with the even distribution across most of the features.&lt;/p&gt;
 &lt;h4 id=&#34;332-mean-shift&#34;&gt;3.3.2 Mean-shift&lt;/h4&gt;
-&lt;p&gt;This algorithm was chosen for its strength in dealing with uneven cluster sizes and non-flat geometry &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Though it is not easily scalable the application of our small dataset size might be of interest.&lt;/p&gt;
+&lt;p&gt;This algorithm was chosen for its strength in dealing with uneven cluster sizes and non-flat geometry &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. Though it is not easily scalable the application of our small dataset size might be of interest.&lt;/p&gt;
 &lt;h4 id=&#34;333-spectral-clustering&#34;&gt;3.3.3 Spectral Clustering&lt;/h4&gt;
-&lt;p&gt;As an inverse, this algorithm was chosen for its strength with fewer uneven clusters &lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. In comparison to Mean-shift, this maybe the better algorithm for this application.&lt;/p&gt;
+&lt;p&gt;As an inverse, this algorithm was chosen for its strength with fewer uneven clusters &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. In comparison to Mean-shift, this maybe the better algorithm for this application.&lt;/p&gt;
+&lt;h3 id=&#34;34-implementation&#34;&gt;3.4 Implementation&lt;/h3&gt;
+&lt;p&gt;The implementation of these algorithms were done under the direction of the documentation page for each respective algorithm. The jupyter notebook used for this project is available at &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-309/blob/main/project/data_analysis/ml_algorithms.ipynb&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-309/blob/main/project/data_analysis/ml_algorithms.ipynb&lt;/a&gt; with each algorithm having a corresponding cell. A benchmarking library is also included to determine the efficiency of each algorithm in processing time. One thing of note is the lack of functions used for the classification compared to the clustering algorithms. The justification for this discrepancy is due to inexperience in creating optimal implementations as well as determining that not being implemented in a function would not have a significant impact on performance. Additionally, graphs representing the test data were included to help visualize the performance of the clustering algorithms utilizing example code from the documentation &lt;sup id=&#34;fnref:12&#34;&gt;&lt;a href=&#34;#fn:12&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;12&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;341-dataset-preprocessing&#34;&gt;3.4.1 Dataset Preprocessing&lt;/h4&gt;
+&lt;p&gt;Pre-processing of the cleaned datasets for the classification algorithms was done under guidance of the scikit learn documentation &lt;sup id=&#34;fnref:13&#34;&gt;&lt;a href=&#34;#fn:13&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;13&lt;/a&gt;&lt;/sup&gt;. Overall, each algorithm was trained and tested with the same split for each run. While the split data could have been passed directly to the algorithms, they were normalized further using the built-in fit_transform function for the best results possible.&lt;/p&gt;
+&lt;p&gt;Pre-processing of the cleaned datasets for the clustering algorithms was done under guidance of the scikit learn documentation &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. Compared to the classification algorithms, a dimensionality reduction was conducted using Principal component analysis (PCA). This step condenses the multiple features into a 2 feature array which the clustering algorithms were optimized for, increasing the odds for the best results possible. Another note is the dataset split was conducted during execution of the algorithm. Upon further investigation, it was determined that this does not have an effect on the ending results as the randomization was disabled due to setting the same random_state parameter for each call.&lt;/p&gt;
 &lt;h2 id=&#34;4-results--discussion&#34;&gt;4. Results &amp;amp; Discussion&lt;/h2&gt;
 &lt;h3 id=&#34;41-algorithm-metrics&#34;&gt;4.1 Algorithm Metrics&lt;/h3&gt;
-&lt;p&gt;The metrics used to determine the viability of each of the algorithms are precision, recall, and f1-score. These are simple metrics based on the values from a confusion matrix which is a visualization of the False and True Positives and Negatives. Precision is essentially how accurate was the algorithm in classifying each data point. This however, is not a good metric to solely base performance as precision does not account for imbalanced distributions within a dataset &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The metrics used to determine the viability of each of the algorithms are precision, recall, and f1-score. These are simple metrics based on the values from a confusion matrix which is a visualization of the False and True Positives and Negatives. Precision is essentially how accurate was the algorithm in classifying each data point. This however, is not a good metric to solely base performance as precision does not account for imbalanced distributions within a dataset &lt;sup id=&#34;fnref:14&#34;&gt;&lt;a href=&#34;#fn:14&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;14&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;This is where the recall metric comes in which is defined as how many samples were accurately classified by the algorithm. This is a more versatile metric as it can compensate for imbalanced datasets. While it may not be in our case as seen in the dataset analysis where we have a relatively balanced ratio. It still gives great insight on the performance for our application.&lt;/p&gt;
-&lt;p&gt;Finally is the f1-score which is the harmonic mean of the precision and recall metric &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;. This will be the key metric we will mainly focus on as it strikes a good balance between the two more primitive metrics. Since one may think in medical applications one would want to maximize recall, it is at the cost of precision which ends up in more false predictions which is essentially an overfitting scenario &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;. Something that reduces the viability of the model to the application especially since we have a relatively balanced dataset, more customized weighting is not as necessary.&lt;/p&gt;
-&lt;p&gt;The metrics for each algorithm implementation is as follows.&lt;/p&gt;
+&lt;p&gt;Finally is the f1-score which is the harmonic mean of the precision and recall metric &lt;sup id=&#34;fnref:14&#34;&gt;&lt;a href=&#34;#fn:14&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;14&lt;/a&gt;&lt;/sup&gt;. This will be the key metric we will mainly focus on as it strikes a good balance between the two more primitive metrics. Since one may think in medical applications one would want to maximize recall, it is at the cost of precision which ends up in more false predictions which is essentially an overfitting scenario &lt;sup id=&#34;fnref:14&#34;&gt;&lt;a href=&#34;#fn:14&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;14&lt;/a&gt;&lt;/sup&gt;. Something that reduces the viability of the model to the application especially since we have a relatively balanced dataset, more customized weighting is not as necessary.&lt;/p&gt;
+&lt;p&gt;The metrics for each algorithm implementation are as follows.&lt;/p&gt;
 &lt;h4 id=&#34;411-support-vector-machines&#34;&gt;4.1.1 Support Vector Machines&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Table 4.1:&lt;/strong&gt; dav_set metrics&lt;/p&gt;
 &lt;table&gt;
@@ -4324,116 +4250,61 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;42-algorithm-discussion&#34;&gt;4.2 Algorithm Discussion&lt;/h3&gt;
+&lt;h3 id=&#34;42-discussion&#34;&gt;4.2 Discussion&lt;/h3&gt;
+&lt;p&gt;In analyzing the resulting metrics in section 4.1, two major trends between the algorithms are apparent.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The classification algorithms perform significantly better than the clustering algorithms.&lt;/li&gt;
+&lt;li&gt;Significant signs of overfitting for the dav_set.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Addressing the first point, it is obvious from the metric performance where on average the classification algorithms were higher than the clustering algorithms. At a lower training time cost as well, which indicates that classification algorithms are well suited for this application than clustering. Especially when looking at the results for Mean-Shift in section 4.1.6 where the algorithm failed to identify any patient with a disease. This also illustrates the discussion on the metrics used to determine performance as the recall was 100% at the cost of missing every patient that would have required treatment.&lt;/p&gt;
+&lt;p&gt;Moving on to the next point, it can be seen that overfitting is occurring for the dav_set in comparing the performance to the sav_set for the same algorithm which can be seen in the corresponding tables in sections 4.1.2, 4.1.3, and 4.1.4. Here the performance gap is at least 20% between the two compared to what one would assume should be relatively close to each other. While this could also illustrate the affect the various features have on the algorithm, it was determined that this is most likely due to the small dataset size having a larger influence than anticipated.&lt;/p&gt;
 &lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
 &lt;p&gt;be addressed as the project nears completion&lt;/p&gt;
-&lt;h2 id=&#34;project-timeline&#34;&gt;Project Timeline&lt;/h2&gt;
-&lt;p&gt;The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates.&lt;/p&gt;
-&lt;h3 id=&#34;october-26&#34;&gt;October 26&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Explore options on normalizing or conversion of the features to connect between the datasets and determine if they are viable to add to the project.
-&lt;ul&gt;
-&lt;li&gt;A large portion of time was dedicated to researching this point. Unfortunately, nothing of note was discovered to realize this aspect of the plan.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Explore ML models and frameworks and determine viability for the project.
-&lt;ul&gt;
-&lt;li&gt;Additional information on the algorithms selected. Mainly the underlying calculation, theory, and disadvantages to compensate for has been added to the Nov 2nd milestone date.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Update Report.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;november-2&#34;&gt;November 2&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Commence build out of ML models.
-&lt;ul&gt;
-&lt;li&gt;Tuning of hyperparameters as necessary.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Update Report.&lt;/li&gt;
-&lt;li&gt;Milestone Update
-&lt;ul&gt;
-&lt;li&gt;Delays were encountered due to external events.&lt;/li&gt;
-&lt;li&gt;Underestimated the amount of time needed to building the ML models.
-&lt;ul&gt;
-&lt;li&gt;Task of adding additional information on algorithms selected has been pushed back further due to above.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Initial implementations do not look very promising
-&lt;ul&gt;
-&lt;li&gt;It is suspected that over fitting is occurring with the base line hyperparameters for the dav_set.&lt;/li&gt;
-&lt;li&gt;Accuracy results for the sav_set are not as high as expected for the selected algorithms.&lt;/li&gt;
-&lt;li&gt;Further investigation and experimentation is required to implement the clustering type algorithms. Suspect would need to look into dimensionality reduction in order to obtain better accuracy results.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;A general download function appears to not be possible. The website that hosts the datasets used requires an API key for script interactions that is unique to each user.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;november-9&#34;&gt;November 9&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ML Models should be complete.&lt;/li&gt;
-&lt;li&gt;Start analysis of the various models and their viability.
-&lt;ul&gt;
-&lt;li&gt;Additional tuning of hyperparameters as necessary.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Update Report&lt;/li&gt;
-&lt;li&gt;Milestone Update
-&lt;ul&gt;
-&lt;li&gt;Additional delays were encountered due to external classes.
-&lt;ul&gt;
-&lt;li&gt;It is expected to have a surplus of time between this milestone and the deadline to catch up.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;All but one algorithm has been implemented.
-&lt;ul&gt;
-&lt;li&gt;Some light tuning was conducted however, results did not significantly improve.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;november-16&#34;&gt;November 16&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Finalize Report and findings.&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;WebMD. 2020. Understanding Your Cholesterol Report. [online] Available at: &lt;a href=&#34;https://www.webmd.com/cholesterol-management/understanding-your-cholesterol-report&#34;&gt;https://www.webmd.com/cholesterol-management/understanding-your-cholesterol-report&lt;/a&gt; [Accessed 21 October 2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Centers for Disease Control and Prevention. 2020. Heart Disease Facts | Cdc.Gov. [online] Available at: &lt;a href=&#34;https://www.cdc.gov/heartdisease/facts.htm&#34;&gt;https://www.cdc.gov/heartdisease/facts.htm&lt;/a&gt; [Accessed 16 November 2020]. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;R, V., 2020. Feature Selection — Correlation And P-Value. [online] Medium. Available at: &lt;a href=&#34;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&#34;&gt;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&lt;/a&gt; [Accessed 21 October 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Amadeo, K., 2020. Preventive Care: How It Lowers Healthcare Costs In America. [online] The Balance. Available at: &lt;a href=&#34;https://www.thebalance.com/preventive-care-how-it-lowers-aca-costs-3306074&#34;&gt;https://www.thebalance.com/preventive-care-how-it-lowers-aca-costs-3306074&lt;/a&gt; [Accessed 16 November 2020]. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Stack Overflow. 2020. Differences In Scikit Learn, Keras, Or Pytorch. [online] Available at: &lt;a href=&#34;https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch&#34;&gt;https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WebMD. 2020. Understanding Your Cholesterol Report. [online] Available at: &lt;a href=&#34;https://www.webmd.com/cholesterol-management/understanding-your-cholesterol-report&#34;&gt;https://www.webmd.com/cholesterol-management/understanding-your-cholesterol-report&lt;/a&gt; [Accessed 21 October 2020]. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit-learn.org. 2020. 1.4. Support Vector Machines — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/svm.html#classification&#34;&gt;https://scikit-learn.org/stable/modules/svm.html#classification&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;R, V., 2020. Feature Selection — Correlation And P-Value. [online] Medium. Available at: &lt;a href=&#34;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&#34;&gt;https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf&lt;/a&gt; [Accessed 21 October 2020]. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/clustering.html#clustering&#34;&gt;https://scikit-learn.org/stable/modules/clustering.html#clustering&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stack Overflow. 2020. Differences In Scikit Learn, Keras, Or Pytorch. [online] Available at: &lt;a href=&#34;https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch&#34;&gt;https://stackoverflow.com/questions/54527439/differences-in-scikit-learn-keras-or-pytorch&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit-learn.org. 2020. 1. Supervised Learning — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/supervised_learning.html#supervised-learning&#34;&gt;https://scikit-learn.org/stable/supervised_learning.html#supervised-learning&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.4. Support Vector Machines — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/svm.html#classification&#34;&gt;https://scikit-learn.org/stable/modules/svm.html#classification&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit-learn.org. 2020. 1.6. Nearest Neighbors — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/neighbors.html&#34;&gt;https://scikit-learn.org/stable/modules/neighbors.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/clustering.html#clustering&#34;&gt;https://scikit-learn.org/stable/modules/clustering.html#clustering&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit-learn.org. 2020. 1.9. Naive Bayes — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/naive_bayes.html&#34;&gt;https://scikit-learn.org/stable/modules/naive_bayes.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1. Supervised Learning — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/supervised_learning.html#supervised-learning&#34;&gt;https://scikit-learn.org/stable/supervised_learning.html#supervised-learning&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit-learn.org. 2020. 1.10. Decision Trees — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/tree.html&#34;&gt;https://scikit-learn.org/stable/modules/tree.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.6. Nearest Neighbors — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/neighbors.html&#34;&gt;https://scikit-learn.org/stable/modules/neighbors.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scikit-learn.org. 2020. 2.3. Clustering — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/clustering.html#clustering&#34;&gt;https://scikit-learn.org/stable/modules/clustering.html#clustering&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.9. Naive Bayes — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/naive_bayes.html&#34;&gt;https://scikit-learn.org/stable/modules/naive_bayes.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:11&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Mianaee, S., 2020. 20 Popular Machine Learning Metrics. Part 1: Classification &amp;amp; Regression Evaluation Metrics. [online] Medium. Available at: &lt;a href=&#34;https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce&#34;&gt;https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce&lt;/a&gt; [Accessed 10 November 2020]. &lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 1.10. Decision Trees — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/tree.html&#34;&gt;https://scikit-learn.org/stable/modules/tree.html&lt;/a&gt; [Accessed 27 October 2020]. &lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:12&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. A Demo Of K-Means Clustering On The Handwritten Digits Data — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_digits.html#sphx-glr-auto-examples-cluster-plot-kmeans-digits-py&#34;&gt;https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_digits.html#sphx-glr-auto-examples-cluster-plot-kmeans-digits-py&lt;/a&gt; [Accessed 17 November 2020]. &lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:13&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit-learn.org. 2020. 6.3. Preprocessing Data — Scikit-Learn 0.23.2 Documentation. [online] Available at: &lt;a href=&#34;https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing&#34;&gt;https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing&lt;/a&gt; [Accessed 17 November 2020]. &lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:14&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Mianaee, S., 2020. 20 Popular Machine Learning Metrics. Part 1: Classification &amp;amp; Regression Evaluation Metrics. [online] Medium. Available at: &lt;a href=&#34;https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce&#34;&gt;https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce&lt;/a&gt; [Accessed 10 November 2020]. &lt;a href=&#34;#fnref:14&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -5242,6 +5113,112 @@ The data spread across two files will have to be merged according to date. For t
 &lt;li&gt;We will follow directions on the rubric about writing project reports with the IEEE format, this is something we haven’t tried before, but we will try our best to make sure we are doing it correctly.&lt;/li&gt;
 &lt;li&gt;Processing data is also a sort of new field for all of us, but we are going to do lots of research, and watching some tutorials online to get the result we want.&lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-315/report/report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-315/report/report/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;big-data-on-gesture-recognition-and-machine-learning&#34;&gt;Big Data on Gesture Recognition and Machine Learning&lt;/h1&gt;
+&lt;p&gt;Sunny Xu, Peiran Zhao, Kris Zhang, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/&#34;&gt;fa20-523-315&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-315/blob/master/report/report.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Since our technology is more and more advanced as time goes by, traditional human-computer interaction has become increasingly difficult to meet people&amp;rsquo;s demands. In this digital era, people need faster and more efficient methods to obtain information and data. Traditional and single input and output devices are not fast and convenient enough, it also requires users to learn their own methods of use, which is extremely inefficient and completely a waste of time. Therefore, artificial intelligence comes out, and its rise has followed the changeover times, and it satisfied people&amp;rsquo;s needs. At the same time, gesture is one of the most important way for human to deliver information. It is simple, efficient, convenient, and universally acceptable. Therefore, gesture recognition has become an emerging field in intelligent human-computer interaction field, with great potential and future.&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-background&#34;&gt;2. Background&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-gesture-recognition&#34;&gt;3. Gesture Recognition&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#31-hand-gesture&#34;&gt;3.1 Hand Gesture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#32-body-gesture&#34;&gt;3.2 Body Gesture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#33-face-gesture&#34;&gt;3.3 Face Gesture&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-conclusion&#34;&gt;4. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-references&#34;&gt;5. References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; gesture recognition, human, technology, big data, artificial intelligence, body language, facial expression&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;As of today, since technology is improving so fast, there are many things that can be related to AI and machine learning. Hand gestures will be one of the most important ways to understand people. As we often notice, when people are doing speech, they often use hand gestures to collaborate with their words. And studying hand gestures will often reveal what the people who are giving the speech are thinking about. For example, when someone is lying, they tend to touch their nose with their hand, etc. So studying hand gestures will not only help people understand much more about human beings and it can also help our technology grow. For example, in AI and machine learning. Studying hand gestures will make or improve AI and machine learning to better understand humans and be more human-like.&lt;/p&gt;
+&lt;h2 id=&#34;2-background&#34;&gt;2. Background&lt;/h2&gt;
+&lt;p&gt;Nowadays, people are doing more and more research on high-tech, which also makes various high-tech products appear in the society. For people, electricity is as important as water and air. It is impossible to imagine a life without electricity. We can realize that technology is changing everything about people from various aspects. People living in this high-tech era are also forced to learn and understand the usage of various high-tech products. As a representative of high technology, artificial intelligence has also attracted a lot of attention in society. Because of the emergence of artificial intelligence, people have also begun to realize that preserving the characteristics of the people is also a very important point in high technology. Therefore, scientists thought of gestures, one of the most commonly used body language.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-gesture-recognition&#34;&gt;3. Gesture Recognition&lt;/h2&gt;
+&lt;p&gt;Gesture recognition is mainly divided into two categories, one is based on external device recognition, the specific application is data gloves, wearing it on user&amp;rsquo;s hand, to obtain and analysis information through sensors. This method has obvious shortcomings, though it is accurate and has excellent response speed, but it is costly and is not good for large-scale promotion. The other one is the use of computer vision. People do not need to wear gloves. As its name implies, this method collects and analyzes information through a computer. It is convenient, comfortable, and not so limited based on external device identification. In contrast, it has greater potential and is more in line with the trend of the times. Of course, this method needs more effective and accurate algorithms to support, because the gestures made by different people at different times, in different environments and at different angles also represent different meanings. So, if we want more accurate information feedback. Then the advancement of algorithms and technology is inevitable. The development of gesture recognition is also the development of artificial intelligence, a process of the development of various algorithms from data gloves to the development of computer vision-based optical technology plays a role in promoting it.&lt;/p&gt;
+&lt;h3 id=&#34;31-hand-gesture&#34;&gt;3.1 Hand Gesture&lt;/h3&gt;
+&lt;h4 id=&#34;311-hand-gesture-recognition-and-big-data&#34;&gt;3.1.1 Hand Gesture Recognition and Big Data&lt;/h4&gt;
+&lt;p&gt;Hand gesture recognition is commonly used in gesture recognition because fingers are the most flexible and it is able to create different angles that will represent different meanings. The hand gesture itself is also an easy but efficient way for us human beings to communicate and send messages to each other. The existence of hand gestures can be considered easy but powerful. However, if we are using the application of hand gesture recognition, it is a much more complicated process. In real life, we can just ben our finger or simply make a fist so that other people will understand our message. But when using hand gesture recognition there are many processes that are being involved. Hand gesture is commonly used in geesture recoginitaion As we did our research and based on our life experiences, hand gesture recognition is a very hot topic and has all the potential to be the next wave. Hand gesture recognition has recently achieved big success in many fields. The advancement and development of hand gesture recognition is also the development of other technology such as the advancement of computer chips, the advancement of algorithms, the advancement of machine learning even advancement of deep learning, and the advancement of cameras from 2D to 3D. The most important part of hand gesture recognition is big data and machine learning. Because of the development of big data and machine learning, data scientists are able to have better datasets, build a more accurate and successful model and be able to process the information and predict the most accurate results. Hand gesture recognition is a significant link in Gesture recognition.However gesture recognition is also not only about hand gesture recognition, it also includes other body parts such as facial expression recognition and body gesture recognition. With the help of the whole system of different gesture recognitions, the data can be recorded and processed by AIs. The results or predictions can be used currently or later on for different purposes in different areas.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h4 id=&#34;312-principles-of-hand-gesture-recognition&#34;&gt;3.1.2 Principles of Hand Gesture Recognition&lt;/h4&gt;
+&lt;p&gt;Hand gesture recognition is a complicated process involving many steps. And in order to get the most accurate result, it will need a large amount of quality data and a scientific model with high performance. Hand gesture recognition is also at a developing stage simply because there are so many possible factors that can influence the result. Possible factors include skin color, background color, hand gesture angle, and Bending angle, etc. To simplify the process of gesture recognition, AIs will use 3-D cameras to capture images. After that, the data of the image will be collected and processed by programs and built models.  And lastly, AIs will be able to use that model to get an accurate result in order to have a corresponding response or predict future actions. To explain all processes of hand gesture recognition in detail, it includes graphic gathering, retreatment, skin color segmentation, hand gesture segmentation, and finally hand gesture recognition. Hand Gesture Recognition can not achieve the best accuracy without all any of these steps. Within all these steps, skin color segmentation is the most crucial step in order to increase accuracy and this process will be explained in the next session. &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h4 id=&#34;313-gesture-segmentation-the-importance-of-its-algorithm&#34;&gt;3.1.3 Gesture Segmentation The Importance of Its Algorithm&lt;/h4&gt;
+&lt;h3 id=&#34;32-body-gesture&#34;&gt;3.2 Body Gesture&lt;/h3&gt;
+&lt;h4 id=&#34;321-introduction-to-body-gesture&#34;&gt;3.2.1 Introduction to Body Gesture&lt;/h4&gt;
+&lt;p&gt;Body gestures, which can also be called body language, refer to humans expressing their ideas through the coordinated activities of various body parts. In our lives, body language is ubiquitous. It is like a bridge for our human communication. Through body language expression, it is often easier for us to understand what the other person wants to express. At the same time, we can express ourselves better. The profession of an actor is a good example of body language. This is a compulsory course for every actor because actors can only use their performances to let us know what they are expressing.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; At this time, body language becomes extremely important. Different characters have different body movements in different situations, and actors need to make the right body language at a specific time to let the audience know their inner feelings. Yes, the most important point of body language is to convey mood through movement.&lt;/p&gt;
+&lt;p&gt;In many cases, certain actions will make people feel emotions. For us who communicate with all kinds of people every day, there are also many body languages that we are more familiar with. For example, when a person hangs his head, it means that he is unhappy, walking back and forth is a sign of a person&amp;rsquo;s anxiety, and body shaking is caused by nervousness, etc.&lt;/p&gt;
+&lt;h4 id=&#34;322-body-gesture-and-big-data&#34;&gt;3.2.2 Body Gesture and Big Data&lt;/h4&gt;
+&lt;p&gt;As a piece of big data, body language requires data collected by studying human movements. Scientists found that when a person wants to convey a complete message, body language accounts for half. And because body language belongs to a person&amp;rsquo;s actions subconsciously, it is rarely deceptive. All of your nonverbal behaviors—the gestures you make, your posture, your tone of voice, how much eye contact you make—send strong messages.&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; In many cases, these unconscious messages from our bodies allow the people who communicate with us to feel our intentions. Even when we stop talking, these messages will not stop. This also explains why scientists want to collect data to let artificial intelligence understand human behavior. In order for artificial intelligence to understand human mood or intention from people&amp;rsquo;s body postures and actions, scientists have collected a lot of human body actions that show intentions in different situations through research. The music gesture artificial intelligence developed by MIT-IBM Watson AI Lab is a good example.&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; The music gesture artificial intelligence developed by MIT-IBM Watson AI Lab can enable artificial intelligence to judge and isolate the sounds of individual instruments through body and gesture movements. This success is undoubtedly created by the big data of the entire body and gestures. The research room collects a large number of human structure actions to provide artificial intelligence with a large amount of information, so that the artificial intelligence can judge what melody the musician is playing through body gestures and key points of the face. This can improve its ability to distinguish and separate sounds when the artificial intelligence listens to the entire piece of music.&lt;/p&gt;
+&lt;h3 id=&#34;33-face-gesture&#34;&gt;3.3 Face Gesture&lt;/h3&gt;
+&lt;h4 id=&#34;331-introduction-to-face-gesture-facial-expression&#34;&gt;3.3.1 Introduction to Face Gesture (Facial Expression)&lt;/h4&gt;
+&lt;p&gt;Body language is one of the ways that we can express ourselves without saying any words. It has been suggested that body language may account for between 60 to 65% of all communication.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; According to expert, body language is used every day for us to communicate with each other. During our communication, we not only use words but also use body gestures, hand gestures and most importantly, we use facial expression most. During communication with different people, our face communicate different thoughts, idea, and emotion and the reason why we use facial expression more than any other body gestures is that when we have certain emotion, it is express in our face automatically. Facial expression is often not under our control. That is why people often say that the word that come out of mouth cannot always be true, but their facial expression will reveal what those people are thinking about. So, what is facial expression exactly? According to Jason Matthew Harley, Facial expressions are configurations of different micromotor movements in the face that are used to infer a person’s discrete emotional state.&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt; Some example of common facial expression will be: Happiness, Sadness, Anger, Surprise, Disgust, Fear, etc. &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; Each facial expression will have some deep meaning behind it. For example, A simple facial expression like smiling can be translated into a sign of approval, or it can be translated into a sign of friendly. If we put all those emotion into big data, it will help us to understand ourselves much better.&lt;/p&gt;
+&lt;h4 id=&#34;332-sense-organs-on-the-face&#34;&gt;3.3.2 Sense Organs On The Face&lt;/h4&gt;
+&lt;p&gt;The facial expression expresses our emotion during the communication by micro movement of our sense organs. The most used organs are the eyes and mouth and sometimes, the eyebrows.&lt;/p&gt;
+&lt;h5 id=&#34;3321-eye&#34;&gt;3.3.2.1 Eye&lt;/h5&gt;
+&lt;p&gt;The eyes are one of the most important communication tools in our ways of communication with each other. When we communicate with each other, the eye contact will be inevitable. The signal in your eye will tell people what you are think. 
+Eye gaze is a sample of paying attention when communicating with others. When you are talking to a person and if his eye is directly on you and both of you keep having eye contact. In this situation, this mean that he is interested in what you say and is paying attention to what you say. On the other hand, if the action of breaking eye contact happens very frequently, it means that he is not interested, distracted, or not paying attention to you and what you are saying.&lt;/p&gt;
+&lt;p&gt;Blinking is another eye signal that is very often and will happen in communicating with other people. When talking to other people, blinking is very usual and will happen every time when you are going to communicate with different people. But the frequency of blanking can give away what are you feeling right now. People often blink more rapidly when they are feeling distressed or uncomfortable. Infrequent blinking may indicate that a person is intentionally trying to control his or her eye movements. &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt; For example, when A person is lying, he might try to control his blinking frequency to make other people feel like he is calm and saying the truth. In order to persuade other people that he is calm and telling the truth, he will need to blink less frequently.&lt;/p&gt;
+&lt;p&gt;Pupil size is a very important facial expression. Pupil size can be a very subtle nonverbal communication signal. While light levels in the environment control pupil dilation, sometimes emotions can also cause small changes in pupil size. &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; For example, when you are surprised by something, your pupil size will become noticeably larger than before. When having a communication, dilated eyes can also mean that the person is interesting in the communication.&lt;/p&gt;
+&lt;h5 id=&#34;3322-mouth&#34;&gt;3.3.2.2 Mouth&lt;/h5&gt;
+&lt;h4 id=&#34;333-facial-expression-and-big-data&#34;&gt;3.3.3 Facial Expression and Big Data&lt;/h4&gt;
+&lt;p&gt;Nowadays, since technology is so advance, everything around us can be turn into data and everything can be related to data. Facial expression is often study by different scientist in research because it allows us to understand more about human and communication between different people. The organ on the face that can be used to deliver expressions are the eyes, nose, mouth. Sometime, eyebrow can also deliver facial expression. The section is still not complete yet. It will be completed before 11/15/2020.&lt;/p&gt;
+&lt;h4 id=&#34;334-the-problem-with-detecting-emotion-for-technology-nowadays&#34;&gt;3.3.4 The Problem with Detecting Emotion for Technology Nowadays&lt;/h4&gt;
+&lt;h2 id=&#34;4-conclusion&#34;&gt;4. Conclusion&lt;/h2&gt;
+&lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
+&lt;h2 id=&#34;5-references&#34;&gt;5. References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Srilatha, Poluka, and Tiruveedhula Saranya. &amp;ldquo;Advancements in Gesture Recognition Technology.&amp;rdquo; IOSR Journal of VLSI and Signal Processing, vol. 4, no. 4, 2014, pp. 01–07, iosrjournals.org/iosr-jvlsi/papers/vol4-issue4/Version-1/A04410107.pdf, 10.9790/4200-04410107. Accessed 25 Oct. 2020. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;F. Zhan, &amp;ldquo;Hand Gesture Recognition with Convolution Neural Networks,&amp;rdquo; 2019 IEEE 20th International Conference on Information Reuse and Integration for Data Science (IRI), Los Angeles, CA, USA, 2019, pp. 295-298, doi: 10.1109/IRI.2019.00054. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Di Zhang, DZ.(2019) Research on Hand Gesture Recognition Technology Based on Machine Learning, Nanjing University of Posts and Telecommunications. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cherry, K. (2019, September 28). How to Read Body Language and Facial Expressions. Verywell Mind. Retrieved November 8, 2020, from &lt;a href=&#34;https://www.verywellmind.com/understand-body-language-and-facial-expressions-4147228&#34;&gt;https://www.verywellmind.com/understand-body-language-and-facial-expressions-4147228&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Segal, J., Smith, M., Robinson, L., &amp;amp; Boose, G. (2020, October). Nonverbal Communication and Body Language. HelpGuide.org. &lt;a href=&#34;https://www.helpguide.org/articles/relationships-communication/nonverbal-communication.htm&#34;&gt;https://www.helpguide.org/articles/relationships-communication/nonverbal-communication.htm&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Martineau, K. (2020, June 25). Identifying a melody by studying a musician’s body language. MIT News | Massachusetts Institute of Technology. &lt;a href=&#34;https://news.mit.edu/2020/music-gesture-artificial-intelligence-identifies-melody-by-musician-body-language-0625&#34;&gt;https://news.mit.edu/2020/music-gesture-artificial-intelligence-identifies-melody-by-musician-body-language-0625&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Harley, J. M. (2016). Facial Expression. ScienceDirect. &lt;a href=&#34;https://www.sciencedirect.com/topics/computer-science/facial-expression&#34;&gt;https://www.sciencedirect.com/topics/computer-science/facial-expression&lt;/a&gt; &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;A. Choudhury, A. K. Talukdar and K. K. Sarma, &amp;ldquo;A novel hand segmentation method for multiple-hand gesture recognition system under complex background,&amp;rdquo; 2014 International Conference on Signal Processing and Integrated Networks (SPIN), Noida, 2014, pp. 136-140, doi: 10.1109/SPIN.2014.6776936. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 
       </description>
     </item>

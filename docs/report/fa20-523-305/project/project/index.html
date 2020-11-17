@@ -32,7 +32,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
 Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term.">
 
-<meta itemprop="wordCount" content="4419">
+<meta itemprop="wordCount" content="4325">
 
 
 
@@ -358,12 +358,6 @@ Abstract As the world is gripped with finding solutions to problems such as food
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_infoold_project" href="/report/fa20-523-305/project/old_info/old_project/"></a>
-      
-      
-      
-      
-      
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-reportfa20-523-305projectproject" href="/report/fa20-523-305/project/project/"></a>
       
       
@@ -473,6 +467,12 @@ Abstract As the world is gripped with finding solutions to problems such as food
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportproject-plan" href="/report/fa20-523-315/report/project-plan/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
       
       
     </li>
@@ -664,7 +664,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <p>As far as text and categorical features, the imputer will be used to fill in missing data as well. Then a process called one hot encoding will be used to handle the categorical variables so that they can be read into sklearns estimators. Lastly, these two main processes will be put together to make a single pipeline step. Then this pipeline step will be added to a regressor of some sort to create the entire process.</p>
 <h2 id="6-multiple-models-for-multiple-soil-depths">6. Multiple Models for Multiple Soil Depths</h2>
 <p>There are a few different approaches for modeling for this particular problem. The issue is that we have multiple things we would like to predict with the same predictors. It is unlikely that the model that predicts for a depth of 30 cm, would accurately predict for a depth of 150 cm. In order to adjust the models, a separate model will be created for each depth, with that said, the predictors are all the same for each depth, but the trained output is different. To accomplish this, five different datasets were constructed, each one representing a depth. All rows in which the predicted value is not available for that depth were pruned from the dataset.</p>
-<p>In each experiment, there will be 5 different models created. Initially, these 5 models will use the same hyper-parameters for all the depths. It might turn out that all the models will need the same hyper-parameters, or each soil depth could be different. This will be examine through experimentation.</p>
+<p>In each experiment, there will be 5 different models created. Initially, these 5 models will use the same hyper-parameters for all the depths. It might turn out that all the models will need the same hyper-parameters, or each soil depth could be different. This will be examined through experimentation.</p>
 <h2 id="7-splitting-data-into-train-and-test">7. Splitting Data into Train and Test</h2>
 <p>In order to test any model created, there must be a split between test and training data. This is done by using a function in sklearn. In this case, there are about 76k rows in the data set. For the training data, 80% of the total data will be used, or about 60.8k records. The split is done after shuffling the rows so that it does not just pick the top 80% every time. Lastly the data is split using a stratified method. As we want to have models that take the specific area of the field into account, that means that we need to have the different areas of the field represented equally in both the training and testing dataset. This means that if 10% of the data came from sensor CAF0003, then roughly 10% of the training data will come from CAF0003 as well as 10% of the test data will be from this location.</p>
 <h2 id="8-preliminary-analysis-and-eda">8. Preliminary Analysis and EDA</h2>
@@ -675,9 +675,8 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <p>The third and fourth grid shows the temperature at 150 cm, the results are what would logically be expected. The different sensors do not show much variance from location to location.</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/four_small.png" alt="Figure 4"></p>
 <p><strong>Figure 4:</strong> Six locations soil temperature over time at 150 cm depth</p>
-<p>A simple bar chart is used to get a quick overview of the percipitation values over the same time period to see the overall trends. The most interesting part of this analysis is from the end of 2009 to nearly 2012. There is very little percipitation in this time period. Which initially looks like an issue with the data, but when it is compared to the water volume charts, a correlation can be seen. It isn&rsquo;t perfect, but in many of the sensors that have data in this period, the moisture seems rather constant.</p>
 <h2 id="9-initial-model-testing-regressor">9. Initial Model Testing (Regressor)</h2>
-<p>Once the pipelines were setup, the first model could be tested for accuracy. As the output data is continuous in nature, the easiest machine learning algoritm to test to make sure everything is correct, was a linear regression model. It seems fairly likely that a linear regression model would do rather well with this data. The weather is the driving factor in soil moisture in a non-irrigated field, so this test is a litmus test to make sure that the data is good and provide a baseline measurment for future models. The experiment log below shows the returned values from the test that was run. Over the course of experimentation, a log such as this will be kept.</p>
+<p>Once the pipelines were setup, the first model could be tested for accuracy. As the output data is continuous in nature, the easiest machine learning algorithm to test to make sure everything is correct, was a linear regression model. It seems fairly likely that a linear regression model would do rather well with this data. The weather is the driving factor in soil moisture in a non-irrigated field, so this test is a litmus test to make sure that the data is good and provide a baseline measurement for future models. The experiment log below shows the returned values from the test that was run. Over the course of experimentation, a log such as this will be kept.</p>
 <p>The results are as follows:</p>
 <table>
 <thead>
@@ -730,8 +729,8 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <p><strong>Figure 5:</strong> Baseline experiment results</p>
 <p>These results show that the data is pretty well correlated and that there is reason to believe that we could predict soil moisture from weather alone. Although an r^2 of around 0.916-0.949 are pretty good, with such highly related predictors, there is definitely room for model improvement. Also for a depth of 60 cm, something is not predicting correctly and is resulting in a small negative r^2</p>
 <h2 id="10-classifier-vs-regressor">10. Classifier vs. Regressor</h2>
-<p>While the output is continuous, there is an argument to use a categorical classifier model. For a specific plant, an optimal moisture range could be studied. For examples sake, the range could be 0.2-0.4 units. Then it would not matter if the soil is 0.2 or 0.3, both would be in the acceptable range. With this in mind, certain levels could be created to alert the farmer of which category they could be experienecing. For example there might be five levels: too dry, acceptable dryness, optimal, acceptable wetness, and too wet. The training data could be adjusted to fit into these categories.</p>
-<p>Code to create a categorical variable for each of the depth measurments can be found in the section &ldquo;Make Classifier Label&rdquo; in the file: <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a>.</p>
+<p>While the output is continuous, there is an argument to use a categorical classifier model. For a specific plant, an optimal moisture range could be studied. For examples sake, the range could be 0.2-0.4 units. Then it would not matter if the soil is 0.2 or 0.3, both would be in the acceptable range. With this in mind, certain levels could be created to alert the farmer of which category they could be experiencing. For example there might be five levels: too dry, acceptable dryness, optimal, acceptable wetness, and too wet. The training data could be adjusted to fit into these categories.</p>
+<p>Code to create a categorical variable for each of the depth measurements can be found in the section &ldquo;Make Classifier Label&rdquo; in the file: <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a>.</p>
 <p>In the end, the decision to not use classifier methods was made. After using a regressor, the output could be converted to a categorical feature if the user or application so desired this. As our output is continuous in nature, precision would be lost.</p>
 <h2 id="11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</h2>
 <p>The next set of experiments came up with the results in the following table. This was a test to see if baseline Lasso or Ridge Regression would improve on the basic linear regression model. Results and code for this portion can be found in <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a> under the &ldquo;Linear Regression Tests&rdquo; section.</p>
@@ -854,7 +853,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 </tbody>
 </table>
 <p><strong>Figure 6:</strong> Further Linear Regression Experiment Results</p>
-<p>For the first two experiements, an alpha of 1 was used for both ridge and lasso regression. The third experiment used a special regressor that uses cross validation to try to find the best alpha value and then fit the model based on that. The best alpha value seemed to not have much effect at all on the results. Still the ridge regression so far was the best performing model.</p>
+<p>For the first two experiments, an alpha of 1 was used for both ridge and lasso regression. The third experiment used a special regressor that uses cross validation to try to find the best alpha value and then fit the model based on that. The best alpha value seemed to not have much effect at all on the results. Still the ridge regression so far was the best performing model.</p>
 <h2 id="12-other-models">12. Other Models</h2>
 <p>While there were great results in the different linear regression models, other models should be evaluated to make sure that something is not missed. Three models were chosen to check, Stochastic Gradient Descent, Support Vector Machine, and Random Forest. All of these models were tested with default parameters and their results are shown below in Figure 7, and the code can be found in the section called &ldquo;Other Regressors Tests&rdquo;.</p>
 <table>
@@ -978,7 +977,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <p><strong>Figure 7:</strong> Further Linear Regression Experiment Results</p>
 <p>The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm. As random forests performed so well out of the box, some attempts were made to tune the hyperparameters, but most experiments turned out to be computationally expensive.</p>
 <h2 id="13-conclusion">13. Conclusion</h2>
-<p>The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.</p>
+<p>The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively, this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.</p>
 <h2 id="11-references">11. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>

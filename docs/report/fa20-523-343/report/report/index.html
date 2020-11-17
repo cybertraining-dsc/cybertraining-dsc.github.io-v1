@@ -30,7 +30,7 @@ Abstract With the introduciton of technology into sports, data scientists are sl
 <meta itemprop="description" content="Predictive Model For Pitches Thrown By Major League Baseball Pitchers Bryce Wieczorek, fa20-523-343, Edit
 Abstract With the introduciton of technology into sports, data scientists are sliding headfirst into Major League Baseball. With the introduction of Statcast in 2015, The MLB has been looking at different ways to use technology in the game. In 2020 alone, the MLB introduce several different types of technologies to keep the fans engaged with the games while not being able to attend them.">
 
-<meta itemprop="wordCount" content="797">
+<meta itemprop="wordCount" content="1053">
 
 
 
@@ -355,12 +355,6 @@ Abstract With the introduciton of technology into sports, data scientists are sl
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectold_infoold_project" href="/report/fa20-523-305/project/old_info/old_project/"></a>
-      
-      
-      
-      
-      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectproject" href="/report/fa20-523-305/project/project/"></a>
       
       
@@ -472,6 +466,12 @@ Abstract With the introduciton of technology into sports, data scientists are sl
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportproject-plan" href="/report/fa20-523-315/report/project-plan/"></a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportreport" href="/report/fa20-523-315/report/report/"></a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -512,19 +512,18 @@ Abstract With the introduciton of technology into sports, data scientists are sl
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-introduction">1 Introduction</a></li>
-    <li><a href="#2-previous-work">2 Previous Work</a>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-previous-work">2. Previous Work</a>
       <ul>
         <li><a href="#21">2.1</a></li>
         <li><a href="#22">2.2</a></li>
         <li><a href="#23">2.3</a></li>
       </ul>
     </li>
-    <li><a href="#3-dataset">3 Dataset</a></li>
-    <li><a href="#4-methodology">4 Methodology</a></li>
-    <li><a href="#5-evaluation">5 Evaluation</a></li>
-    <li><a href="#6-conclusion">6 Conclusion</a></li>
-    <li><a href="#7-acknowledgements">7 Acknowledgements</a></li>
+    <li><a href="#3-dataset">3. Dataset</a></li>
+    <li><a href="#4-methodology">4. Methodology</a></li>
+    <li><a href="#5-conclusion">5. Conclusion</a></li>
+    <li><a href="#6-acknowledgements">6. Acknowledgements</a></li>
     <li><a href="#8-references">8 References</a></li>
   </ul>
 </nav>
@@ -577,19 +576,18 @@ Abstract With the introduciton of technology into sports, data scientists are sl
 <div class="toc">
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-introduction">1 Introduction</a></li>
-    <li><a href="#2-previous-work">2 Previous Work</a>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-previous-work">2. Previous Work</a>
       <ul>
         <li><a href="#21">2.1</a></li>
         <li><a href="#22">2.2</a></li>
         <li><a href="#23">2.3</a></li>
       </ul>
     </li>
-    <li><a href="#3-dataset">3 Dataset</a></li>
-    <li><a href="#4-methodology">4 Methodology</a></li>
-    <li><a href="#5-evaluation">5 Evaluation</a></li>
-    <li><a href="#6-conclusion">6 Conclusion</a></li>
-    <li><a href="#7-acknowledgements">7 Acknowledgements</a></li>
+    <li><a href="#3-dataset">3. Dataset</a></li>
+    <li><a href="#4-methodology">4. Methodology</a></li>
+    <li><a href="#5-conclusion">5. Conclusion</a></li>
+    <li><a href="#6-acknowledgements">6. Acknowledgements</a></li>
     <li><a href="#8-references">8 References</a></li>
   </ul>
 </nav>
@@ -598,10 +596,10 @@ Abstract With the introduciton of technology into sports, data scientists are sl
 </div>
 
 <p><strong>Keywords:</strong> Pitch type, release speed, release spin, baseball, pitchers, MLB</p>
-<h2 id="1-introduction">1 Introduction</h2>
+<h2 id="1-introduction">1. Introduction</h2>
 <p>Big data is everywhere and has been used in sports for years. Especially in Major League Baseball, where big data has been analyzed for various things. For example, in the movie Moneyball (which is based on true events), the general manager of the Oakland A’s uses analytics to find players that will win them games that other teams overlook. They used many different statistics; batting average, batting average with runners on base, fielding percentage, etc., to find these players. Not only do teams use big data to find the right players for them, the MLB also uses it for their Statcast technology. Statcast was implemented in 2015 and is an automated tool that analyzes data to deliver accurate statistics in real time <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.  This technology tracks many different aspects of the game, including many different pitching statistics.</p>
 <p>While there is a lot of data about pitching, we will only be focusing on release speed, release spin, pitch type, and the pitcher for our model.  And while there is a lot of data about these different pitches and the pitchers, it can still be difficult to predict exactly what type of pitch is thrown according to the pitcher. For instance, the difference between different types of fastballs, a four-seam and two-seam, can be different by less than a mile per hour and forty rotations per minute (as thrown by Aaron Nola of the Philadelphia Phillies). In our model that we try to create, we are use these variables, along with the last three pitches thrown for each pitch type, to try to predict what pitch was just thrown.</p>
-<h2 id="2-previous-work">2 Previous Work</h2>
+<h2 id="2-previous-work">2. Previous Work</h2>
 <p>In order to create our model, we examined several other models that were similar to ours. This allowed us to simplify our problem of predicting pitches and develop a blueprint to solve the matter. We compared several existing models to determine the types of data and methods that were most commonly used to implement into our own model.</p>
 <h3 id="21">2.1</h3>
 <p>Plan to talk about the Harvard Model</p>
@@ -609,16 +607,16 @@ Abstract With the introduciton of technology into sports, data scientists are sl
 <p>Plan to talk about the NCSU Model</p>
 <h3 id="23">2.3</h3>
 <p>Plan to talk about Statcast</p>
-<h2 id="3-dataset">3 Dataset</h2>
+<h2 id="3-dataset">3. Dataset</h2>
 <p>Major League Baseball first started using Statcast in 2015, after a successful trial run in 2014. Statcast <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> provided the MLB with a way to collect and analyze huge amounts of data in real time. Some of the data it collects, which relates to our model, includes the pitcher’s name, pitch type, release spin, and release speed. While it does look at many other aspects of the game, we are focusing primarily on these statistics to draw our conclusions.</p>
 <p>Since we do not need all the data Statcast collects, we found a dataset with the datatypes listed above <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. This dataset contains the average statistics for each pitch thrown by every player who had pitched in any MLB game in 2019. However, we feel as if we need to include Statcast data from the year before and possibly the year before that. This way we can account for players who had to sit out the 2019 season due to injury and/or suspension.</p>
-<h2 id="4-methodology">4 Methodology</h2>
-<p>report about what we expect our project to do</p>
-<h2 id="5-evaluation">5 Evaluation</h2>
+<h2 id="4-methodology">4. Methodology</h2>
+<p>In order to build an accurate model to predict which pitch was just thrown. By examining the models mentioned in section 3, we determined that the best predictive model for us to use was to use a similarity analysis model. This model allows us to take old data and compare it to the live data of the pitch. By comparing the live data to the older data, we should be able to determine which pitch type was just thrown. We then can compare our results to the results from Statcast to determine the efficiency of our model.</p>
+<p>Since our dataset has the average of each statistic, we plan on comparing, we determined that our predictive model would be much different than the models used in the work we studied. The models we studied, were more advanced statistical models that looked at many different aspects of the game of baseball. We decided to stay away from these types of approach and look at a way to determine the pitch type in an easy to understand model.</p>
+<p>While our dataset contained statistics to every player who threw a pitch in the 2019 season, we first decided to narrow the amount of data down to only look at the player who was pitching at the time. This will allow our algorithm to work faster and more efficiently as it will not be determining who the pitcher is. The next thing that our model would be doing, is using the data collected from live Statcast reporting and comparing that data to the data in our dataset. This will then predict what type of pitch was just thrown by the pitcher.</p>
+<h2 id="5-conclusion">5. Conclusion</h2>
 <p>This will be completed after part 4</p>
-<h2 id="6-conclusion">6 Conclusion</h2>
-<p>This will be completed after part 4</p>
-<h2 id="7-acknowledgements">7 Acknowledgements</h2>
+<h2 id="6-acknowledgements">6. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8 References</h2>
 <section class="footnotes" role="doc-endnotes">
