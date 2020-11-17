@@ -23,16 +23,16 @@
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Big Data Application in E-commerce  please use refernces Please add an empty line after a heading  
 Tao Liu, fa20-523-339, Edit
-Abstract With the passage of time, the online shopping and E-commerce have now become one of the most popular events for citizen&rsquo;s life and society. Millions of goods are now sale online to the customers all over the world. With the 5G technology&rsquo;s implementation is inevitable. These activities will create millions of data about customer&rsquo;s behaviors like how they value products, how they purchase or sale the products and how they review for the goods purchase." />
+Abstract As a result of last twenty year&rsquo;s Internet development in the global, E-commerce industry is getting stronger and stronger. While customers enjoyed their convenient online purchase environment, the E-commerce see the potential for the data and information customer left during their online-shopping process. One fundamental usage for this information is to perform Recommendation Strategy to give customer potential products they would also like to purchase." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-339/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Big Data Application in E-commerce  please use refernces Please add an empty line after a heading  
 Tao Liu, fa20-523-339, Edit
-Abstract With the passage of time, the online shopping and E-commerce have now become one of the most popular events for citizen&rsquo;s life and society. Millions of goods are now sale online to the customers all over the world. With the 5G technology&rsquo;s implementation is inevitable. These activities will create millions of data about customer&rsquo;s behaviors like how they value products, how they purchase or sale the products and how they review for the goods purchase.">
+Abstract As a result of last twenty year&rsquo;s Internet development in the global, E-commerce industry is getting stronger and stronger. While customers enjoyed their convenient online purchase environment, the E-commerce see the potential for the data and information customer left during their online-shopping process. One fundamental usage for this information is to perform Recommendation Strategy to give customer potential products they would also like to purchase.">
 
-<meta itemprop="wordCount" content="758">
+<meta itemprop="wordCount" content="718">
 
 
 
@@ -41,7 +41,7 @@ Abstract With the passage of time, the online shopping and E-commerce have now b
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Big Data Application in E-commerce  please use refernces Please add an empty line after a heading  
 Tao Liu, fa20-523-339, Edit
-Abstract With the passage of time, the online shopping and E-commerce have now become one of the most popular events for citizen&rsquo;s life and society. Millions of goods are now sale online to the customers all over the world. With the 5G technology&rsquo;s implementation is inevitable. These activities will create millions of data about customer&rsquo;s behaviors like how they value products, how they purchase or sale the products and how they review for the goods purchase."/>
+Abstract As a result of last twenty year&rsquo;s Internet development in the global, E-commerce industry is getting stronger and stronger. While customers enjoyed their convenient online purchase environment, the E-commerce see the potential for the data and information customer left during their online-shopping process. One fundamental usage for this information is to perform Recommendation Strategy to give customer potential products they would also like to purchase."/>
 
 
 
@@ -521,7 +521,6 @@ Abstract With the passage of time, the online shopping and E-commerce have now b
     <li><a href="#5-inference">5. Inference</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
-    <li><a href="#plan">Plan</a></li>
     <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
@@ -574,7 +573,7 @@ Abstract With the passage of time, the online shopping and E-commerce have now b
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>With the passage of time, the online shopping and E-commerce have now become one of the most popular events for citizen&rsquo;s life and society. Millions of goods are now sale online to the customers all over the world. With the 5G technology&rsquo;s implementation is inevitable. These activities will create millions of data about customer&rsquo;s behaviors like how they value products, how they purchase or sale the products and how they review for the goods purchase. These data will have a tremendous contribution for corporations to analyze. These data can not only help convince the current strategies of the E-commerce is on a right track, but also a potential way to see which step E-commerce can make up for attracting more customers to buy the goods. At the same time, these data can also be implemented as a way for recommendation strategies for E-commerce. It will help customers find the next products they like in a short period by implementing machine learning technology on Big Data. The corporations can also enjoy the increase of sale and potential of more attraction for recommendation strategies. A better recommendation strategy as well as better data analysis strategies on E-commerce are now the new trend for massive data scientists and researchers’ target. Therefore, this field is now one the most popular research area in the data science fields.</p>
+<p>As a result of last twenty year&rsquo;s Internet development in the global, E-commerce industry is getting stronger and stronger. While customers enjoyed their convenient online purchase environment, the E-commerce see the potential for the data and information customer left during their online-shopping process. One fundamental usage for this information is to perform Recommendation Strategy to give customer potential products they would also like to purchase.  This report will try to build a User-Based Collaborative Filtering strategy to give customer recommendation products based on the database of previous customer purchase records. This report will start with an overview for the background and then an expansion for the dataset it chosen <em>Amazon Review Data</em> [^1]. After that each step for the code and step made in a corresponding file <em>Big_tata_Application_in_E_commense.ipynb</em> will be illustrated and the User-Based Collaborative Filtering strategy will be presented step by step.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -585,18 +584,20 @@ Abstract With the passage of time, the online shopping and E-commerce have now b
     <li><a href="#5-inference">5. Inference</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
-    <li><a href="#plan">Plan</a></li>
     <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 </div>
+1. Introduction
+2. Background
+3. Choice of Dataset
 
 </div>
 
-<p><strong>Keywords:</strong> data analysis, business, big data, E-commerce, customer behavior</p>
+<p><strong>Keywords:</strong> recommendation strategy,collaborative filtering, business, big data, E-commerce, customer behavior</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Big data have many applications in the scientific research and business, from those in the hardware perspective like Higgs Discovery to the software perspective like E-commence. In these aspects, I am mostly interested in big data application in the business especially in the area where using big data to analysis customer behavior and then make a recommendation strategy to induce customers purchase the best fit-in goods. The recommendation strategies and customer behavior analysis are now playing the key role for all E-commerce competitiveness and be highly valued and researched by scientists around the world. It could be quite difficult to make a breakthrough in this area. However, I still would like to make a taste on it by using Amazon’s multiple datasets to see what the strategies will be. The project will be finished by myself with a couple Datasets provided by Amazon stated following.</p>
-<p>In the final project, I will focus on use the customer review data to perform data analysis technology and then use different machine learning methods to give customers&rsquo; recommendation products based on the data. A feature is that this work will try to use different machine learning technologies which can be able to see how exactly a recommendation will be make in E-commerce area</p>
+<p>Big data have many applications in the scientific research and business, from those in the hardware perspective like Higgs Discovery to the software perspective like E-commence. However, with the passage of time, the online shopping and E-commerce have now become one of the most popular events for citizen&rsquo;s life and society. Millions of goods are now sale online to the customers all over the world. With the 5G technology&rsquo;s implementation is inevitable. These activities will create millions of data about customer&rsquo;s behaviors like how they value products, how they purchase or sale the products and how they review for the goods purchase. These data will have a tremendous contribution for corporations to analyze. These data can not only help convince the current strategies of the E-commerce is on a right track, but also a potential way to see which step E-commerce can make up for attracting more customers to buy the goods. At the same time, these data can also be implemented as a way for recommendation strategies for E-commerce. It will help customers find the next products they like in a short period by implementing machine learning technology on Big Data. The corporations also can enjoy the increase of sale and potential of more attraction for recommendation strategies. A better recommendation strategy on E-commerce is now the new trend for massive data scientists and researchers’ target. Therefore, this field is now one the most popular research area in the data science fields.
+In this final project, An User-Based Collaborative Filtering will be implemented to get a taste on the recommendation strategy based on Customer&rsquo;s Gift card purchase record and the item they also viewed and bought.</p>
 <h2 id="2-choice-of-data-sets">2. Choice of Data-sets</h2>
 <p>The dataset for this study is called <em>Amazon Review Data</em> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Particularly, since the dataset is now reach billions of amount,the subcategery gift card will be used as an example, since the overall product type is closed to 2000 and the amount of data retrieved is currently in the right amount of training and testing. This fact can help to see if the machine learning strategies work in the cases.</p>
 <h2 id="3-methodology">3. Methodology</h2>
@@ -607,12 +608,6 @@ Abstract With the passage of time, the online shopping and E-commerce have now b
 <p>This section will be addressed upon project completion.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
-<h2 id="plan">Plan</h2>
-<ul>
-<li>Week 9-Week 10 Clean and process the data for the project -finished</li>
-<li>Week 10-Week 11 Implement Machine Learning Methods - KNN implemented and waiting for the useage</li>
-<li>Week 11- Week 12 Build the recommendation strategies</li>
-</ul>
 <h2 id="8-references">8. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
