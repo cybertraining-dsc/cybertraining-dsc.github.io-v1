@@ -7,9 +7,6 @@
 [submodule "content/en/report/fa20-523-301"]
 	path = content/en/report/fa20-523-301
 	url = git@github.com:cybertraining-dsc/fa20-523-301.git
-[submodule "content/en/report/fa20-523-316"]
-	path = content/en/report/fa20-523-316
-	url = git@github.com:cybertraining-dsc/fa20-523-316.git
 [submodule "content/en/report/fa20-523-348"]
 	path = content/en/report/fa20-523-348
 	url = git@github.com:cybertraining-dsc/fa20-523-348.git
