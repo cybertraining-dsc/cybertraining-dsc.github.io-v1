@@ -3034,7 +3034,7 @@ A project this large and versatile requires the use of many software tools. Thes
     &lt;li&gt;&lt;a href=&#34;#10-classifier-vs-regressor&#34;&gt;10. Classifier vs. Regressor&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#11-various-other-linear-regression-model-experiments&#34;&gt;11. Various Other Linear Regression Model Experiments&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#12-other-models&#34;&gt;12. Other Models&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#11-conclusion&#34;&gt;11. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#13-conclusion&#34;&gt;13. Conclusion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#11-references&#34;&gt;11. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
@@ -3405,9 +3405,9 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Further Linear Regression Experiment Results&lt;/p&gt;
-&lt;p&gt;The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm.&lt;/p&gt;
-&lt;h2 id=&#34;11-conclusion&#34;&gt;11. Conclusion&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm. As random forests performed so well out of the box, some attempts were made to tune the hyperparameters, but most experiments turned out to be computationally expensive.&lt;/p&gt;
+&lt;h2 id=&#34;13-conclusion&#34;&gt;13. Conclusion&lt;/h2&gt;
+&lt;p&gt;The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.&lt;/p&gt;
 &lt;h2 id=&#34;11-references&#34;&gt;11. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;

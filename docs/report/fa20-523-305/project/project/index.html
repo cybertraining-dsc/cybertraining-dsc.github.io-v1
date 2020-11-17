@@ -32,7 +32,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
 Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term.">
 
-<meta itemprop="wordCount" content="4191">
+<meta itemprop="wordCount" content="4419">
 
 
 
@@ -533,7 +533,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#10-classifier-vs-regressor">10. Classifier vs. Regressor</a></li>
     <li><a href="#11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</a></li>
     <li><a href="#12-other-models">12. Other Models</a></li>
-    <li><a href="#11-conclusion">11. Conclusion</a></li>
+    <li><a href="#13-conclusion">13. Conclusion</a></li>
     <li><a href="#11-references">11. References</a></li>
   </ul>
 </nav>
@@ -605,7 +605,7 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#10-classifier-vs-regressor">10. Classifier vs. Regressor</a></li>
     <li><a href="#11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</a></li>
     <li><a href="#12-other-models">12. Other Models</a></li>
-    <li><a href="#11-conclusion">11. Conclusion</a></li>
+    <li><a href="#13-conclusion">13. Conclusion</a></li>
     <li><a href="#11-references">11. References</a></li>
   </ul>
 </nav>
@@ -976,9 +976,9 @@ Abstract As the world is gripped with finding solutions to problems such as food
 </tbody>
 </table>
 <p><strong>Figure 7:</strong> Further Linear Regression Experiment Results</p>
-<p>The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm.</p>
-<h2 id="11-conclusion">11. Conclusion</h2>
-<p>TBD</p>
+<p>The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm. As random forests performed so well out of the box, some attempts were made to tune the hyperparameters, but most experiments turned out to be computationally expensive.</p>
+<h2 id="13-conclusion">13. Conclusion</h2>
+<p>The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.</p>
 <h2 id="11-references">11. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
