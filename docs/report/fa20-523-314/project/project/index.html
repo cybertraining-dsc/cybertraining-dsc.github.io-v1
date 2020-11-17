@@ -32,7 +32,7 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 Siny P Raphel, fa20-523-314, Edit
 Abstract Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.">
 
-<meta itemprop="wordCount" content="906">
+<meta itemprop="wordCount" content="1074">
 
 
 
@@ -516,14 +516,20 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-datasets">2. Datasets</a></li>
-    <li><a href="#3-merge-datasets">3. Merge datasets</a></li>
-    <li><a href="#4-exploratory-data-analysis">4. Exploratory Data Analysis</a></li>
-    <li><a href="#5-planning">5. Planning</a></li>
-    <li><a href="#6-reason-to-choose-this-dataset">6. Reason to choose this dataset</a></li>
-    <li><a href="#7-project-timeline">7. Project Timeline:</a></li>
-    <li><a href="#8-conclusion">8. Conclusion</a></li>
-    <li><a href="#9-references">9. References</a></li>
+    <li><a href="#2-planning">2. Planning</a></li>
+    <li><a href="#3-reason-to-choose-this-dataset">3. Reason to choose this dataset</a></li>
+    <li><a href="#4-datasets">4. Datasets</a></li>
+    <li><a href="#5-merge-datasets">5. Merge datasets</a></li>
+    <li><a href="#6-exploratory-data-analysis">6. Exploratory Data Analysis</a></li>
+    <li><a href="#7-modelling">7. Modelling</a>
+      <ul>
+        <li><a href="#71-split-data">7.1 Split Data</a></li>
+        <li><a href="#72-pipelines">7.2 Pipelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-project-timeline">8. Project Timeline</a></li>
+    <li><a href="#9-conclusion">9. Conclusion</a></li>
+    <li><a href="#10-references">10. References</a></li>
   </ul>
 </nav>
 
@@ -581,14 +587,20 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-datasets">2. Datasets</a></li>
-    <li><a href="#3-merge-datasets">3. Merge datasets</a></li>
-    <li><a href="#4-exploratory-data-analysis">4. Exploratory Data Analysis</a></li>
-    <li><a href="#5-planning">5. Planning</a></li>
-    <li><a href="#6-reason-to-choose-this-dataset">6. Reason to choose this dataset</a></li>
-    <li><a href="#7-project-timeline">7. Project Timeline:</a></li>
-    <li><a href="#8-conclusion">8. Conclusion</a></li>
-    <li><a href="#9-references">9. References</a></li>
+    <li><a href="#2-planning">2. Planning</a></li>
+    <li><a href="#3-reason-to-choose-this-dataset">3. Reason to choose this dataset</a></li>
+    <li><a href="#4-datasets">4. Datasets</a></li>
+    <li><a href="#5-merge-datasets">5. Merge datasets</a></li>
+    <li><a href="#6-exploratory-data-analysis">6. Exploratory Data Analysis</a></li>
+    <li><a href="#7-modelling">7. Modelling</a>
+      <ul>
+        <li><a href="#71-split-data">7.1 Split Data</a></li>
+        <li><a href="#72-pipelines">7.2 Pipelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-project-timeline">8. Project Timeline</a></li>
+    <li><a href="#9-conclusion">9. Conclusion</a></li>
+    <li><a href="#10-references">10. References</a></li>
   </ul>
 </nav>
 </div>
@@ -600,7 +612,25 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <p>Most of the houses in USA are equipped with lightings and refrigerators using electricity. The usage of air conditioners is also increasing. From Figure 1, we can see that top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/chart.png" alt="Figure 1"></p>
 <p><strong>Figure 1:</strong> Residential electricity consumption by end use, 2015<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<h2 id="2-datasets">2. Datasets</h2>
+<h2 id="2-planning">2. Planning</h2>
+<p>We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
+The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.</p>
+<p>In this project we will be planning the following steps:</p>
+<ol>
+<li>Analyze and clean the data</li>
+<li>Visualize the data- study the relationships between features etc.</li>
+<li>Plan one or two algorithms that can be used to model</li>
+<li>Optimize or feature selection of features</li>
+<li>Calculate accuracy of each model</li>
+<li>Conclusion on which algorithm will be best suited to use and the reason for it.</li>
+</ol>
+<h2 id="3-reason-to-choose-this-dataset">3. Reason to choose this dataset</h2>
+<p>This dataset is chosen because,</p>
+<ol>
+<li>There were datasets similar to this one. But this one has latest power usage data till August this year.</li>
+<li>It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for prediction.</li>
+</ol>
+<h2 id="4-datasets">4. Datasets</h2>
 <p>Data is spread across two csv files.</p>
 <ul>
 <li><code>power_usage_2016_to_2020.csv</code></li>
@@ -626,9 +656,9 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <li>Pressure       - Hg</li>
 <li>Precipitation  – inch</li>
 </ul>
-<h2 id="3-merge-datasets">3. Merge datasets</h2>
+<h2 id="5-merge-datasets">5. Merge datasets</h2>
 <p>The &lsquo;StartDate&rsquo; feature of power_usage dataset and &lsquo;Date&rsquo; feature of the weather dataset are used as key to merge the two datasets. But the format of both features is different. StartDate feature is the combination of date and hour. Whereas, &lsquo;Date&rsquo; feature of weather is just the date. So first &lsquo;StartDate&rsquo; column is split into &lsquo;Date&rsquo; and &lsquo;Hour&rsquo; columns. Since the &lsquo;StartDate&rsquo; column is in Pandas Period type, the function strftime() is used for converting to the required format.</p>
-<h2 id="4-exploratory-data-analysis">4. Exploratory Data Analysis</h2>
+<h2 id="6-exploratory-data-analysis">6. Exploratory Data Analysis</h2>
 <p>Here we analyse different features, their relation with each other and target.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/dow.png" alt="Figure 5"></p>
 <p><strong>Figure 5:</strong> Average power usage by day of the week</p>
@@ -638,33 +668,21 @@ Abstract Electricity is an inevitable part of our day today life. Most of the el
 <p>In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/monthly_power.png" alt="Figure 7"></p>
 <p><strong>Figure 7:</strong> Average power usage per month for three years</p>
-<h2 id="5-planning">5. Planning</h2>
-<p>We will be using python to develop the model. Since the expected outputs are real numbers(power consumption in kWh) we might be using linear regression or similar ones. We will try using gradient descent for optimization. Since the weather data has 19 features we might use feature selection methods to select best features that increase the accuracy of the model.
-The data spread across two files will have to be merged according to date. For that the StartDate feature will have to be first split to date and time. Then the two datasets will have to be merged according to the date only. From the initial inspection of the data, the date feature of datasets have some date format issues which will have to be resolved before starting cleaning.</p>
-<p>In this project we will be planning the following steps:</p>
-<ol>
-<li>Analyze and clean the data</li>
-<li>Visualize the data- study the relationships between features etc.</li>
-<li>Plan one or two algorithms that can be used to model</li>
-<li>Optimize or feature selection of features</li>
-<li>Calculate accuracy of each model</li>
-<li>Conclusion on which algorithm will be best suited to use and the reason for it.</li>
-</ol>
-<h2 id="6-reason-to-choose-this-dataset">6. Reason to choose this dataset</h2>
-<p>This dataset is chosen because,</p>
-<ol>
-<li>There were datasets similar to this one. But this one has latest power usage data till August this year.</li>
-<li>It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for prediction.</li>
-</ol>
-<h2 id="7-project-timeline">7. Project Timeline:</h2>
+<h2 id="7-modelling">7. Modelling</h2>
+<h3 id="71-split-data">7.1 Split Data</h3>
+<p>For measuring the accuracy of the model, the main data is split into train and test. 20% of data is selected as test data and the remaining 80% is the train data. The proportion of notes(vacation, week day, weekend and covide lockdown) are different. Therefore, we stratify the data according to notes column. After split, train data has 28761 rows and test data has 7191 rows.</p>
+<h3 id="72-pipelines">7.2 Pipelines</h3>
+<p>Categorical variables and numeric variables are separated and processed in pipelines separately. Later these two pipelines are joined and modelled used Linear regression.</p>
+<h2 id="8-project-timeline">8. Project Timeline</h2>
 <ul>
 <li>EDA and preprocessing - 11/09/2020</li>
 <li>First set of result    - 11/11/2020</li>
 <li>Hyperparameter tuning, pipelines/ final setup - 11/15/2020</li>
 </ul>
-<h2 id="8-conclusion">8. Conclusion</h2>
-<p>Will be added on completion</p>
-<h2 id="9-references">9. References</h2>
+<h2 id="9-conclusion">9. Conclusion</h2>
+<p>As importance of electricity is increasing, the need to know how or where the power usage increase should also be understood. The model helps to predict the power usage when a set of parameters like weather conditions, weekdays, type of days etc are provided.
+Since the output is power consumption in kWh, we selected linear regression for modelling. In the initial setup the model produced a test accuracy of 44.6%.</p>
+<h2 id="10-references">10. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
