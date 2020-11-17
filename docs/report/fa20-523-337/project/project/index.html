@@ -34,7 +34,7 @@ Abstract The 80/20 rule has proven true for many businesses–only a small perce
 Edit
 Abstract The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies. We&rsquo;re challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer.">
 
-<meta itemprop="wordCount" content="603">
+<meta itemprop="wordCount" content="723">
 
 
 
@@ -625,7 +625,7 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
 </ul>
 <p>The metrics we will use for this project is root mean squared error (RMSE). The root mean squared error function forms our objective/cost function which will be minimized to estimate the optimal parameters for our linear function through Gradient Descent. We will conduct multiple experiments to obtain convergence using different &ldquo;number of iterations&rdquo; value and other hyper-parameters (e.g. learning rate).</p>
 <p>RMSE is defined as:</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png" alt="Figure 2.1"></p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/master/project/images/loss.png" alt="Figure 2.1"></p>
 <p>where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen below.</p>
 <h2 id="3-machine-learning-algorithm-and-implementation">3. Machine Learning Algorithm and Implementation</h2>
 <p>We used CRISP-DM process methodology for this project. The  high-level representation of the implementation steps explained in detail below:</p>
@@ -648,20 +648,17 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
 </ul>
 <p>The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.</p>
 <ul>
-<li>
-<p>Data Pre-Processing</p>
-</li>
-<li>
-<p>Feature Engineering</p>
-</li>
-<li>
-<p>Build the data pipeline</p>
-</li>
-<li>
-<p>Model Algorithms and Optimization Methods</p>
-</li>
+<li>Data Pre-Processing</li>
 </ul>
-<p>We are planning to explore different algorithms as shown below:</p>
+<p>The dataset obtained for this project is large. It certainly contained over 900k records in just the training set. Also some of the columns contained null values as well. So, we first visualized the target variable and identified the target variable was a skewed variable. So applied log transformations to get the data to be distributed normally. The variables such as &ldquo;totals_newVisits&rdquo;, &ldquo;totals_bounces&rdquo;, &ldquo;trafficSource_adwordsClickInfo_page&rdquo;, &ldquo;trafficSource_isTrueDirect&rdquo;, &ldquo;totals_bounces&rdquo;, &ldquo;totals_newVisits&rdquo; had missing values. We applied zeroes to all the missing values.</p>
+<ul>
+<li>Feature Engineering</li>
+</ul>
+<p>Created sophisticated functions to encode categorical variables. As this is regression problem, we need the dataset to be encoded categorically, so all the categories can be converted as numeric fields. We also created other functions to process date time, extract sum, count and mean from numeric variables such as &ldquo;geoNetwork_networkDomain&rdquo;, &ldquo;totals_hits&rdquo;</p>
+<ul>
+<li>Model Algorithms and Optimization Methods</li>
+</ul>
+<p>I tested the following algorithms</p>
 <ul>
 <li>
 <p>Linear Regression Model</p>
@@ -679,18 +676,10 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
 <p>Ridge Regressor</p>
 </li>
 <li>
-<p>Feature Importance</p>
-<ul>
-<li>Xgboost Regressor</li>
-<li>LightGBM Regressor</li>
-<li>Lasso Regressor Regressor</li>
-<li>Ridge Regressor</li>
-</ul>
-</li>
-<li>
 <p>Results Validation</p>
 </li>
 </ul>
+<p>I found the XGBoost Method to have the lowest RMSE error.</p>
 <h2 id="5-technologies">5. Technologies</h2>
 <ul>
 <li>Python</li>

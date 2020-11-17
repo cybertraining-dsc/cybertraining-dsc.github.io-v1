@@ -32,7 +32,7 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 Ethan Nguyen, fa20-523-309, Edit
 Abstract As cardiovascular diseases are the number 1 cause of death in the United States, the study of the factors and early detection and treatment could improve quality of life and lifespans. From investigating how the variety of factors related to cardiovascular health relate to a general trend, it has resulted in general guidelines to reduce the risk of experiencing a cardiovascular disease.">
 
-<meta itemprop="wordCount" content="3170">
+<meta itemprop="wordCount" content="3590">
 
 
 
@@ -537,6 +537,7 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
       </ul>
     </li>
     <li><a href="#5-conclusion">5. Conclusion</a></li>
+    <li><a href="#6-acknowledgements">6. Acknowledgements</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
@@ -612,6 +613,7 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
       </ul>
     </li>
     <li><a href="#5-conclusion">5. Conclusion</a></li>
+    <li><a href="#6-acknowledgements">6. Acknowledgements</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
@@ -971,6 +973,8 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 </tbody>
 </table>
 <h4 id="415-k-means">4.1.5 K-Means</h4>
+<p><strong>Figure 4.1:</strong> dav_set algorithm visualization. The axis have no corresponding unit due to the PCA operation.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/davkmeans.jpg" alt="Figure 4.1"></p>
 <p><strong>Table 4.9:</strong> dav_set metrics</p>
 <table>
 <thead>
@@ -1002,6 +1006,8 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 </tr>
 </tbody>
 </table>
+<p><strong>Figure 4.2:</strong> sav_set algorithm visualization. The axis have no corresponding unit due to the PCA operation.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/savkmeans.jpg" alt="Figure 4.2"></p>
 <p><strong>Table 4.10:</strong> sav_set metrics</p>
 <table>
 <thead>
@@ -1034,6 +1040,8 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 </tbody>
 </table>
 <h4 id="416-mean-shift">4.1.6 Mean-shift</h4>
+<p><strong>Figure 4.3:</strong> dav_set algorithm visualization. The axis have no corresponding unit due to the PCA operation.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/davmeanshift.jpg" alt="Figure 4.3"></p>
 <p><strong>Table 4.11:</strong> dav_set metrics</p>
 <table>
 <thead>
@@ -1065,6 +1073,8 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 </tr>
 </tbody>
 </table>
+<p><strong>Figure 4.4:</strong> sav_set algorithm visualization. The axis have no corresponding unit due to the PCA operation.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/savmeanshift.jpg" alt="Figure 4.4"></p>
 <p><strong>Table 4.12:</strong> sav_set metrics</p>
 <table>
 <thead>
@@ -1097,6 +1107,8 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 </tbody>
 </table>
 <h4 id="417-spectral-clustering">4.1.7 Spectral Clustering</h4>
+<p><strong>Figure 4.5:</strong> dav_set algorithm visualization. The axis have no corresponding unit due to the PCA operation.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/davspectral.jpg" alt="Figure 4.5"></p>
 <p><strong>Table 4.13:</strong> dav_set metrics</p>
 <table>
 <thead>
@@ -1128,6 +1140,8 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 </tr>
 </tbody>
 </table>
+<p><strong>Figure 4.6:</strong> sav_set algorithm visualization. The axis have no corresponding unit due to the PCA operation.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-309/main/project/images/savspectral.jpg" alt="Figure 4.6"></p>
 <p><strong>Table 4.14:</strong> sav_set metrics</p>
 <table>
 <thead>
@@ -1165,10 +1179,13 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 <li>The classification algorithms perform significantly better than the clustering algorithms.</li>
 <li>Significant signs of overfitting for the dav_set.</li>
 </ol>
-<p>Addressing the first point, it is obvious from the metric performance where on average the classification algorithms were higher than the clustering algorithms. At a lower training time cost as well, which indicates that classification algorithms are well suited for this application than clustering. Especially when looking at the results for Mean-Shift in section 4.1.6 where the algorithm failed to identify any patient with a disease. This also illustrates the discussion on the metrics used to determine performance as the recall was 100% at the cost of missing every patient that would have required treatment.</p>
+<p>Addressing the first point, it is obvious from the metric performance where on average the classification algorithms were higher than the clustering algorithms. At a lower training time cost as well, which indicates that classification algorithms are well suited for this application than clustering. Especially when looking at the results for Mean-Shift in section 4.1.6 where the algorithm failed to identify any patient with a disease. This also illustrates the discussion on the metrics used to determine performance as the recall was 100% at the cost of missing every patient that would have required treatment illustrated by Figure 4.3 and 4.4. On this topic, comparing the actual data graphs for each of the clustering algorithms and comparing them to the example clustering figures within the scikit documentation, it solidifies that this is not the correct algorithm type for this dataset <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
 <p>Moving on to the next point, it can be seen that overfitting is occurring for the dav_set in comparing the performance to the sav_set for the same algorithm which can be seen in the corresponding tables in sections 4.1.2, 4.1.3, and 4.1.4. Here the performance gap is at least 20% between the two compared to what one would assume should be relatively close to each other. While this could also illustrate the affect the various features have on the algorithm, it was determined that this is most likely due to the small dataset size having a larger influence than anticipated.</p>
 <h2 id="5-conclusion">5. Conclusion</h2>
-<p>be addressed as the project nears completion</p>
+<p>Reviewing these results, a clear conclusion cannot be accurately be determined due to the considerable amount of variables involved that were not able to be isolated to a desirable level. Namely the  compromises that were mentioned in section 2.1 and general dataset availability. However, it was determined that the main goal of this project was accomplished where the Support Vector Machine algorithm was narrowed down as a viable candidate for future work. Due in part to the overall f1-score performance for both datasets, providing confidence that overfitting may not occur. While there is a downside in scalability due to the significant increase in training time between the smaller dav_set and larger sav_set. This could indicate that further research should be focused on either improving this algorithm or creating a new one based on the underlying mechanism.</p>
+<p>In relation to the types of features, it could be interpreted from this project that further efforts require a more expansive and modern dataset to perform to a level suitable for real world applications. As possible factors affecting the performance are in the accuracy and granularity of the measurements and factors available to learn from. This however, is seen to be a difficult challenge due to the nature of privacy laws on health data but, as proposed in the introduction. It would be very interesting to apply this project&rsquo;s findings on more general health data that is retrieved in annual visits.</p>
+<h2 id="6-acknowledgements">6. Acknowledgements</h2>
+<p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their assistance and suggestions with regard to this project.</p>
 <h2 id="references">References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>

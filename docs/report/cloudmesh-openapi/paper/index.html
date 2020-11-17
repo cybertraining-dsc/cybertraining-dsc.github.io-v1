@@ -806,7 +806,7 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 <li>The time to run the predict function on the remote OpenAPI server, and return the target label  of the uploaded image</li>
 </ol>
 <p>When benchmarking cloud performance it is important to identify and control deployment parameters that can affect the performance results. This enables one to analyze comparable services or identify opportunities for service improvement due to varying deployment features such as machine size, location, network, or storage hardware. This example aimed to create similar machines across all three clouds and measure service performance. See Table 1 for a summary of the parameters controlled in this benchmark example.</p>
-<p>One key components is the virtual machine size, which determine the number of vCPUs, the amount of memory, attached storage types, and resource sharing policies. Resource sharing policies include shared core machine varieties which are offered at less expensive rates, and allow the virtual machine to opportunistically burst over its base clock rate in exchange for credits or the machines inherent bursting factor [^awsimages] <sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup>. For this example we chose three similar machine sizes that had comparable vCPUs, comparable underlying processors, memory, price, and were not a shared core variety. Additionally, we installed the same Ubuntu 20.04 operating system on all three clouds.</p>
+<p>One key components is the virtual machine size, which determine the number of vCPUs, the amount of memory, attached storage types, and resource sharing policies. Resource sharing policies include shared core machine varieties which are offered at less expensive rates, and allow the virtual machine to opportunistically burst over its base clock rate in exchange for credits or the machines inherent bursting factor <sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup> <sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup>. For this example we chose three similar machine sizes that had comparable vCPUs, comparable underlying processors, memory, price, and were not a shared core variety. Additionally, we installed the same Ubuntu 20.04 operating system on all three clouds.</p>
 <p>Another factor that can affect performance, particularly in network latency, is the zone and region selected. We choose to deploy all benchmark machines to zones located on the east coast of the United States. This helps control variations caused by network routing latency and provide more insight into the inherent network performance of the individual cloud services.</p>
 <table>
 <thead>
@@ -868,8 +868,8 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 </tr>
 </tbody>
 </table>
-<p><strong>Table 1:</strong> Eigenfaces-SVM benchmark parameters. Clouds were tested at least twice, and were run sequentially between the hours of approximately 0745 EST and 0330 EST starting with Google and ending with Azure. *Only 60 runs were conducted on Azure due to a failed VM deployment from factors outside of the benchnmark scripts control.</p>
-<p>In Figure 1 we compare the download and extraction time of the labeled faces in the wild dataset. This data set is approximately 233MBs compressed, which allows us to measure a non-trivial data transfer. Lower transfer times imply the cloud has less routing latency to the data server, or that it provides access to a higher performing internal network. The standard deviation is displayed to compare the variation in the download times.</p>
+<p><strong>Table 1:</strong> Eigenfaces-SVM benchmark parameters. Clouds were tested at least twice, and were run sequentially between the hours of approximately 1945 EST and 0330 EST starting with Google and ending with Azure. *Only 60 runs were conducted on Azure due to a failed VM deployment from factors outside of the benchnmark scripts control.</p>
+<p>In Figure 1 we compare the download and extraction time of the labeled faces in the wild dataset. This data set is approximately 233 MBs compressed, which allows us to measure a non-trivial data transfer. Lower transfer times imply the cloud has higher throughput from the data server, less latency to the data server, or that it provides access to a higher performing internal network. The standard deviation is displayed to compare the variation in the download times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_1.png" alt="Sample Graph 1"></p>
 <p><strong>Figure 1:</strong> Donwload (233MB) and extraction (~275MB) of remote image data from ndownloader.figshare.com/files/5976015</p>
 <p>In Figure 2 we measure the training time of the Eigenfaces-SVM model both as a OpenAPI service and as the basic Scikit-learn example. This allows us to measure runtime overhead added by OpenAPI compared to the source example. In this case the two functions are identical except that the OpenAPI train function makes an additional store_model function call to store the model to disk using joblib. This is necessary to share the model across the train and predict functions. The standard deviation is displayed to compare the variation in the training times.</p>
@@ -1016,7 +1016,7 @@ we use it</p>
 <p>This is temporary and will in final be moved elsewhere. Its
 conveniently for now placed on top so we can easier locate it</p>
 <ul>
-<li>github: <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup></li>
+<li>github: <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <sup id="fnref:23"><a href="#fn:23" class="footnote-ref" role="doc-noteref">23</a></sup></li>
 <li>branch: benchmark (not yet created)</li>
 </ul>
 <h2 id="appendix-c---cloudmesh-links">APPENDIX C. - Cloudmesh Links</h2>
@@ -1152,10 +1152,13 @@ finish the report.</p>
 <p>Huang, Gary &amp; Jain, Vidit &amp; Learned-Miller, Erik. (2007). Unsupervised Joint Alignment of Complex Images. ICCV. 1-8. 10.1109/ICCV.2007.4408858. Available: <a href="http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf">http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf</a> <a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:21" role="doc-endnote">
-<p>&ldquo;Machine Types&rdquo; Web page [Online]. Available: <a href="https://cloud.google.com/compute/docs/machine-types">https://cloud.google.com/compute/docs/machine-types</a> <a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Amazon EC2 Instance Types&rdquo; Web page [Online]. Available: <a href="https://aws.amazon.com/ec2/instance-types/">https://aws.amazon.com/ec2/instance-types/</a> <a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:22" role="doc-endnote">
-<p>Cloudmesh Openapi Web page <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Machine Types&rdquo; Web page [Online]. Available: <a href="https://cloud.google.com/compute/docs/machine-types">https://cloud.google.com/compute/docs/machine-types</a> <a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:23" role="doc-endnote">
+<p>Cloudmesh Openapi Web page <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <a href="#fnref:23" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -1166,6 +1169,8 @@ finish the report.</p>
     
     
     <hr class="panel-line">
+        
+            
         
             
         
