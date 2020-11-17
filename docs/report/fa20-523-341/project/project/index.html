@@ -32,7 +32,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to create an algorithm to recommend songs to a user based on their mood.">
 
-<meta itemprop="wordCount" content="913">
+<meta itemprop="wordCount" content="1385">
 
 
 
@@ -519,9 +519,14 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     <li><a href="#2-related-work">2. Related Work</a></li>
     <li><a href="#3-datasets">3. Datasets</a></li>
     <li><a href="#4-project-goals">4. Project Goals</a></li>
-    <li><a href="#5-analysis">5. Analysis</a></li>
+    <li><a href="#5-analysis">5. Analysis</a>
+      <ul>
+        <li><a href="#data-sample">Data Sample</a></li>
+        <li><a href="#key-terms">Key Terms</a></li>
+      </ul>
+    </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#references">References</a></li>
+    <li><a href="#7-references">7. References</a></li>
   </ul>
 </nav>
 
@@ -578,9 +583,14 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     <li><a href="#2-related-work">2. Related Work</a></li>
     <li><a href="#3-datasets">3. Datasets</a></li>
     <li><a href="#4-project-goals">4. Project Goals</a></li>
-    <li><a href="#5-analysis">5. Analysis</a></li>
+    <li><a href="#5-analysis">5. Analysis</a>
+      <ul>
+        <li><a href="#data-sample">Data Sample</a></li>
+        <li><a href="#key-terms">Key Terms</a></li>
+      </ul>
+    </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#references">References</a></li>
+    <li><a href="#7-references">7. References</a></li>
   </ul>
 </nav>
 </div>
@@ -591,12 +601,12 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 <h2 id="1-introduction">1. Introduction</h2>
 <p>The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. This can be attributed to varying interpretations of tone and lyrics in song between different listeners. In this project we study both the audio and lyrical patterns of a song through machine learning and natural language processing (NLP) tools in order to create a &lsquo;mood sort algorithm&rsquo;.</p>
 <h2 id="2-related-work">2. Related Work</h2>
-<p>Previous studies take three different ways in classifying the mood of a song according to various mood models by analyzing audio, analyzing lyrics, and analyzing lyrics and audio. Most of these studies have been successful in their goals but have uses a limited collection of songs/words for their analysis<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Perhaps obviously, the best results come when combining audio and lyrics.</p>
-<p>When researching existing work, we found two applications that approach music recommendations based on mood, one is called &lsquo;moooodify&rsquo;, a free web application developed by an independent music enthusiast, Siddharth Ahuja<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Another website, Organize Your Music, aims to organize a Spotify user&rsquo;s music library based on mood, genre, popularity, style, and other categories <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. However, both of these applications do not seem to take into account any lyrical analysis of a song.</p>
+<p>Previous studies take three different ways in classifying the mood of a song according to various mood models by analyzing audio, analyzing lyrics, and analyzing lyrics and audio. Most of these studies have been successful in their goals but have uses a limited collection of songs/words for their analysis <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Perhaps obviously, the best results come when combining audio and lyrics.</p>
+<p>When researching existing work, we found two applications that approach music recommendations based on mood, one is called &lsquo;moooodify&rsquo;, a free web application developed by an independent music enthusiast, Siddharth Ahuja <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Another website, Organize Your Music, aims to organize a Spotify user&rsquo;s music library based on mood, genre, popularity, style, and other categories <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. However, both of these applications do not seem to take into account any lyrical analysis of a song.</p>
 <p>Lyrics of a song can be used to learn a lot about music from lexical pattern analysis to gender, genre, and mood analyses. For example, in an individual study a researcher found that female artists tend to mention girls, women, and friends a lot, while male artists sing about late Saturday Nights, play and love <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Another popular project, SongSim, used repetition to visualize the parts of a song <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Findings such as these can be used to uncover the gender of an artist based on their lyrics. Similarly, by use of NLP tools, lyrical text can be analyzed to elicit the mood and emotion of a song.</p>
 <p>A simple weighting is given by a study from the University of Illinois to categorize moods of a song by audio and lyrical content analysis.</p>
 <p><code>phybrid = \alpha plyrics + (1 - \alpha )paudio</code></p>
-<p>where a is the probability weight given by the lyrical classifier<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>where a is the probability weight given by the lyrical classifier <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="3-datasets">3. Datasets</h2>
 <p>For the audio content analysis portion of this project, we use Spotify&rsquo;s Web API, which provides a great amount audio data for every song in Spotify&rsquo;s song collection, including valence, energy, and danceability.</p>
 <p>For the lyrical analysis portion of this project, we use Genius&rsquo;s API to pull lyrics information for a song. Genius is a website which contains lyrics to several popular songs. We will then use WordNet, which is large collection of English lexicon, used to classify words and phrases with features such as valence, arousal, dominance.</p>
@@ -623,31 +633,293 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 </li>
 </ul>
 <h2 id="5-analysis">5. Analysis</h2>
-<p>From our data sources, we collected data for roughly 8000 songs released between 2017 and 2020</p>
+<p>From our data sources, we collected data for roughly 8000 songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. Below is a a sample view of the data from seven tracks released in 2020.</p>
+<h3 id="data-sample">Data Sample</h3>
+<table>
+<thead>
+<tr>
+<th>danceability</th>
+<th>energy</th>
+<th>key</th>
+<th>loudness</th>
+<th>mode</th>
+<th>speechiness</th>
+<th>acousticness</th>
+<th>instrumentalness</th>
+<th>liveness</th>
+<th>valence</th>
+<th>tempo</th>
+<th>type</th>
+<th>id</th>
+<th>uri</th>
+<th>track_href</th>
+<th>analysis_url</th>
+<th>duration_ms</th>
+<th>time_signature</th>
+<th>name</th>
+<th>artist</th>
+<th>num_positive</th>
+<th>num_negative</th>
+<th>num_neutral</th>
+<th>positivity</th>
+<th>negativity</th>
+<th>neutrality</th>
+<th>word_count</th>
+<th>unique_word_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.709</td>
+<td>0.548</td>
+<td>10</td>
+<td>-8.493</td>
+<td>1</td>
+<td>0.353</td>
+<td>0.65</td>
+<td>1.59E-06</td>
+<td>0.133</td>
+<td>0.543</td>
+<td>83.995</td>
+<td>audio_features</td>
+<td>1tkg4EHVoqnhR6iFEXb60y</td>
+<td>spotify:track:1tkg4EHVoqnhR6iFEXb60y</td>
+<td><a href="https://api.spotify.com/v1/tracks/1tkg4EHVoqnhR6iFEXb60y">https://api.spotify.com/v1/tracks/1tkg4EHVoqnhR6iFEXb60y</a></td>
+<td><a href="https://api.spotify.com/v1/audio-analysis/1tkg4EHVoqnhR6iFEXb60y">https://api.spotify.com/v1/audio-analysis/1tkg4EHVoqnhR6iFEXb60y</a></td>
+<td>160000</td>
+<td>4</td>
+<td>What You Know Bout Love</td>
+<td>Pop Smoke</td>
+<td>7</td>
+<td>2</td>
+<td>33</td>
+<td>0.166666667</td>
+<td>0.047619048</td>
+<td>0.785714286</td>
+<td>209</td>
+<td>130</td>
+</tr>
+<tr>
+<td>0.799</td>
+<td>0.66</td>
+<td>1</td>
+<td>-6.153</td>
+<td>0</td>
+<td>0.079</td>
+<td>0.256</td>
+<td>0</td>
+<td>0.111</td>
+<td>0.471</td>
+<td>140.04</td>
+<td>audio_features</td>
+<td>02kDW379Yfd5PzW5A6vuGt</td>
+<td>spotify:track:02kDW379Yfd5PzW5A6vuGt</td>
+<td><a href="https://api.spotify.com/v1/tracks/02kDW379Yfd5PzW5A6vuGt">https://api.spotify.com/v1/tracks/02kDW379Yfd5PzW5A6vuGt</a></td>
+<td><a href="https://api.spotify.com/v1/audio-analysis/02kDW379Yfd5PzW5A6vuGt">https://api.spotify.com/v1/audio-analysis/02kDW379Yfd5PzW5A6vuGt</a></td>
+<td>195429</td>
+<td>4</td>
+<td>Lemonade</td>
+<td>Internet Money</td>
+<td>8</td>
+<td>15</td>
+<td>34</td>
+<td>0.140350877</td>
+<td>0.263157895</td>
+<td>0.596491228</td>
+<td>307</td>
+<td>177</td>
+</tr>
+<tr>
+<td>0.514</td>
+<td>0.73</td>
+<td>1</td>
+<td>-5.934</td>
+<td>1</td>
+<td>0.0598</td>
+<td>0.00146</td>
+<td>9.54E-05</td>
+<td>0.0897</td>
+<td>0.334</td>
+<td>171.005</td>
+<td>audio_features</td>
+<td>0VjIjW4GlUZAMYd2vXMi3b</td>
+<td>spotify:track:0VjIjW4GlUZAMYd2vXMi3b</td>
+<td><a href="https://api.spotify.com/v1/tracks/0VjIjW4GlUZAMYd2vXMi3b">https://api.spotify.com/v1/tracks/0VjIjW4GlUZAMYd2vXMi3b</a></td>
+<td><a href="https://api.spotify.com/v1/audio-analysis/0VjIjW4GlUZAMYd2vXMi3b">https://api.spotify.com/v1/audio-analysis/0VjIjW4GlUZAMYd2vXMi3b</a></td>
+<td>200040</td>
+<td>4</td>
+<td>Blinding Lights</td>
+<td>The Weeknd</td>
+<td>3</td>
+<td>10</td>
+<td>22</td>
+<td>0.085714286</td>
+<td>0.285714286</td>
+<td>0.628571429</td>
+<td>150</td>
+<td>75</td>
+</tr>
+<tr>
+<td>0.65</td>
+<td>0.613</td>
+<td>9</td>
+<td>-6.13</td>
+<td>0</td>
+<td>0.128</td>
+<td>0.00336</td>
+<td>0</td>
+<td>0.267</td>
+<td>0.0804</td>
+<td>149.972</td>
+<td>audio_features</td>
+<td>2U5WueTLIK5WJLD7mvDODv</td>
+<td>spotify:track:2U5WueTLIK5WJLD7mvDODv</td>
+<td><a href="https://api.spotify.com/v1/tracks/2U5WueTLIK5WJLD7mvDODv">https://api.spotify.com/v1/tracks/2U5WueTLIK5WJLD7mvDODv</a></td>
+<td><a href="https://api.spotify.com/v1/audio-analysis/2U5WueTLIK5WJLD7mvDODv">https://api.spotify.com/v1/audio-analysis/2U5WueTLIK5WJLD7mvDODv</a></td>
+<td>194621</td>
+<td>4</td>
+<td>Wishing Well</td>
+<td>Juice WRLD</td>
+<td>0</td>
+<td>22</td>
+<td>30</td>
+<td>0</td>
+<td>0.423076923</td>
+<td>0.576923077</td>
+<td>238</td>
+<td>104</td>
+</tr>
+<tr>
+<td>0.737</td>
+<td>0.802</td>
+<td>0</td>
+<td>-4.771</td>
+<td>1</td>
+<td>0.0878</td>
+<td>0.468</td>
+<td>0</td>
+<td>0.0931</td>
+<td>0.682</td>
+<td>144.015</td>
+<td>audio_features</td>
+<td>35mvY5S1H3J2QZyna3TFe0</td>
+<td>spotify:track:35mvY5S1H3J2QZyna3TFe0</td>
+<td><a href="https://api.spotify.com/v1/tracks/35mvY5S1H3J2QZyna3TFe0">https://api.spotify.com/v1/tracks/35mvY5S1H3J2QZyna3TFe0</a></td>
+<td><a href="https://api.spotify.com/v1/audio-analysis/35mvY5S1H3J2QZyna3TFe0">https://api.spotify.com/v1/audio-analysis/35mvY5S1H3J2QZyna3TFe0</a></td>
+<td>172325</td>
+<td>4</td>
+<td>positions</td>
+<td>Ariana Grande</td>
+<td>10</td>
+<td>5</td>
+<td>33</td>
+<td>0.208333333</td>
+<td>0.104166667</td>
+<td>0.6875</td>
+<td>178</td>
+<td>73</td>
+</tr>
+<tr>
+<td>0.357</td>
+<td>0.425</td>
+<td>5</td>
+<td>-7.301</td>
+<td>1</td>
+<td>0.0333</td>
+<td>0.584</td>
+<td>0</td>
+<td>0.322</td>
+<td>0.27</td>
+<td>102.078</td>
+<td>audio_features</td>
+<td>4xqrdfXkTW4T0RauPLv3WA</td>
+<td>spotify:track:4xqrdfXkTW4T0RauPLv3WA</td>
+<td><a href="https://api.spotify.com/v1/tracks/4xqrdfXkTW4T0RauPLv3WA">https://api.spotify.com/v1/tracks/4xqrdfXkTW4T0RauPLv3WA</a></td>
+<td><a href="https://api.spotify.com/v1/audio-analysis/4xqrdfXkTW4T0RauPLv3WA">https://api.spotify.com/v1/audio-analysis/4xqrdfXkTW4T0RauPLv3WA</a></td>
+<td>198040</td>
+<td>3</td>
+<td>Heather</td>
+<td>Conan Gray</td>
+<td>3</td>
+<td>4</td>
+<td>22</td>
+<td>0.103448276</td>
+<td>0.137931034</td>
+<td>0.75862069</td>
+<td>114</td>
+<td>66</td>
+</tr>
+<tr>
+<td>0.83</td>
+<td>0.585</td>
+<td>0</td>
+<td>-6.476</td>
+<td>1</td>
+<td>0.094</td>
+<td>0.237</td>
+<td>0</td>
+<td>0.248</td>
+<td>0.485</td>
+<td>109.978</td>
+<td>audio_features</td>
+<td>6Im9k8u9iIzKMrmV7BWtlF</td>
+<td>spotify:track:6Im9k8u9iIzKMrmV7BWtlF</td>
+<td><a href="https://api.spotify.com/v1/tracks/6Im9k8u9iIzKMrmV7BWtlF">https://api.spotify.com/v1/tracks/6Im9k8u9iIzKMrmV7BWtlF</a></td>
+<td><a href="https://api.spotify.com/v1/audio-analysis/6Im9k8u9iIzKMrmV7BWtlF">https://api.spotify.com/v1/audio-analysis/6Im9k8u9iIzKMrmV7BWtlF</a></td>
+<td>173711</td>
+<td>4</td>
+<td>34+35</td>
+<td>Ariana Grande</td>
+<td>3</td>
+<td>13</td>
+<td>52</td>
+<td>0.044117647</td>
+<td>0.191176471</td>
+<td>0.764705882</td>
+<td>249</td>
+<td>127</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Figure 1:</strong> Snapshot of dataset containing tracks released in 2020</p>
+<h3 id="key-terms">Key Terms</h3>
+<p>The following terms defined are important in our analyses. In our data set most terms contain are represented by a  value between 0 and 1, indicating least to most. For example, looking at the first two rows in Figure 1, we can see that the track by the artist, Pop Smoke, has a greater speechiness score, indicating a greater percentage of that song contains spoken word.</p>
+<ul>
+<li><strong>Danceability:</strong> uses several musical elements (tempo, stability, beat strength, regularity) to determine how suitable a given track is for dancing</li>
+<li><strong>Energy:</strong></li>
+<li><strong>Loudness:</strong></li>
+<li><strong>Mode:</strong></li>
+<li><strong>Speechiness:</strong></li>
+<li><strong>Acousticness:</strong></li>
+<li><strong>instrumentalness:</strong></li>
+<li><strong>liveness:</strong></li>
+<li><strong>valence:</strong></li>
+<li><strong>tempo:</strong></li>
+</ul>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>There are several aspects that could be improved upon in future iterations of our study. In this project we only worked with songs released after 2017, but obviously, people would still enjoy listening to songs from previous years. The Spotiy API contains audio features data for every song in its library, so it would be worth collecting that data on every song for usage in the generation of song recommendations. Secondly, our data set excluded songs on Spotify, whose lyrics could not be found easily on Genius.com. We should have handled these cases by attempting to find the lyrics from other popular websites which store music lyrics. And lastly, we worked with a very small dataset relative to the total amount of songs that exist, or that are available by Spotify.</p>
 <p>This section will be expanded upon after completion of analyses</p>
-<h2 id="references">References</h2>
+<h2 id="7-references">7. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://dl.acm.org/doi/10.1145/1816123.1816146">Improving Mood Classification in Music Digital Libraries by Combining Lyrics and Audio</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Hu, X., &amp; Downie, J. S. (2010). Improving mood classification in music digital libraries by combining lyrics and audio. Proceedings of the 10th Annual Joint Conference on Digital Libraries - JCDL &lsquo;10. doi:10.1145/1816123.1816146 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p><a href="https://www.researchgate.net/publication/220723046_Lyric_Text_Mining_in_Music_Mood_Classification">Lyric Text Mining in Mood Classification</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Kashyap, N., Choudhury, T., Chaudhary, D. K., &amp; Lal, R. (2016). Mood Based Classification of Music by Analyzing Lyrical Data Using Text Mining. 2016 International Conference on Micro-Electronics and Telecommunication Engineering (ICMETE). doi:10.1109/icmete.2016.65 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p><a href="https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab">Sort your music by any mood — Introducing moooodify</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Ahuja, S. (2019, September 25). Sort your music by any mood - Introducing moooodify. Retrieved November 17, 2020, from <a href="https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab">https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p><a href="http://organizeyourmusic.playlistmachinery.com/">Organize Your Music</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Lamere, P. (2016, August 6). Organize Your Music. Retrieved November 17, 2020, from <a href="http://organizeyourmusic.playlistmachinery.com/">http://organizeyourmusic.playlistmachinery.com/</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p><a href="https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829">What Songs Tell Us About: Text Mining with Lyrics</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Jeong, J. (2019, January 19). What Songs Tell Us About: Text Mining with Lyrics. Retrieved November 17, 2020, from <a href="https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829">https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p><a href="https://colinmorris.github.io/SongSim/#/">SongSim</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Morris, C. (2016). SongSim. Retrieved November 17, 2020, from <a href="https://colinmorris.github.io/SongSim/">https://colinmorris.github.io/SongSim/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

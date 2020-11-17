@@ -34,7 +34,7 @@ Abstract The 80/20 rule has proven true for many businesses–only a small perce
 Edit
 Abstract The 80/20 rule has proven true for many businesses–only a small percentage of customers produce most of the revenue. As such, marketing teams are challenged to make appropriate investments in promotional strategies. We&rsquo;re challenged to analyze a Google Merchandise Store (also known as GStore, where Google swag is sold) customer dataset to predict revenue per customer.">
 
-<meta itemprop="wordCount" content="723">
+<meta itemprop="wordCount" content="931">
 
 
 
@@ -646,11 +646,64 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
 <p>Data Exploration</p>
 </li>
 </ul>
-<p>The dataset we obtained contained 54 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.</p>
+<p>The dataset obtained for this project is large.  It had contained over 900k records. The dataset also contained 12 Independent Variable and 1 Dependent variable. The Dependent Variable is totals.transactionRevenue. 
+The end goal of this project is to predict the revenue of the Online Store Customer as close as possible.</p>
 <ul>
-<li>Data Pre-Processing</li>
+<li>Target Variable</li>
 </ul>
-<p>The dataset obtained for this project is large. It certainly contained over 900k records in just the training set. Also some of the columns contained null values as well. So, we first visualized the target variable and identified the target variable was a skewed variable. So applied log transformations to get the data to be distributed normally. The variables such as &ldquo;totals_newVisits&rdquo;, &ldquo;totals_bounces&rdquo;, &ldquo;trafficSource_adwordsClickInfo_page&rdquo;, &ldquo;trafficSource_isTrueDirect&rdquo;, &ldquo;totals_bounces&rdquo;, &ldquo;totals_newVisits&rdquo; had missing values. We applied zeroes to all the missing values.</p>
+<p>The Target Variable is totals.transactionRevenue has the transaction value of each visit. But, this column contains 98.72% of missing values for revenue (no purchase). The Target variable had a skewed distribution, we performed a lognormal distribution, so the target variable has normal distribution.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/y_after_transformation.png" alt="Target Variable"></p>
+<ul>
+<li>
+<p>Exploratory Data Analysis</p>
+<ul>
+<li>
+<p>Browser</p>
+<p>The most popular browser is Google Chrome. Also, we noticed second best users were using safari browser and firefox was placed third</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_browser.png" alt="Browser Variable"></p>
+</li>
+<li>
+<p>Device Category</p>
+<p>About 70% of users were accessing online store via desktop</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_category.png" alt="Device Category Variable"></p>
+</li>
+<li>
+<p>OperatingSystem</p>
+<p>Windows is still the popular operating system among the Google Store visitors among the desktop users. However, among the mobile users, what&rsquo;s interesting is, almost equal number of ios users (slightly lower) as android users access google play store.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/device_operating_system.png" alt="Device Category Variable"></p>
+</li>
+<li>
+<p>GeoNetwork-City</p>
+<p>Mountainview, California tops the cities list. However in the top 10 cities, 4 cities are from California.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_city.png" alt="GeoNetwork-City"></p>
+</li>
+<li>
+<p>GeoNetwork-Country</p>
+<p>Customers from US are way ahead of other customers from different countries. May be this could be due to the Online Store data that was provided to us was pulled from US Google Play Store (Possible BIAS!!!)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_country.png" alt="GeoNetwork-Country"></p>
+</li>
+<li>
+<p>GeoNetwork-Region</p>
+<p>No surprise here, as we are already aware that majority of the customers are from US, so America region tops the list</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_continent.png" alt="GeoNetwork-Region"></p>
+</li>
+<li>
+<p>GeoNetwork-Metro</p>
+<p>SFO tops the list for all metro cities, followed by New York and then London</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/geo_network_metro.png" alt="GeoNetwork-Metro"></p>
+</li>
+<li>
+<p>Ad Sources</p>
+<p>Google Merchandise and Google Online Store are the top sources where the traffic is coming from to the Online Store.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/traffic_source_adcontent.png" alt="GeoNetwork-Metro"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Data Pre-Processing</p>
+</li>
+</ul>
+<p>We identified some of the columns contained null values including the target variable. The variables such as &ldquo;totals_newVisits&rdquo;, &ldquo;totals_bounces&rdquo;, &ldquo;trafficSource_adwordsClickInfo_page&rdquo;, &ldquo;trafficSource_isTrueDirect&rdquo;, &ldquo;totals_bounces&rdquo;, &ldquo;totals_newVisits&rdquo; had missing values. We filled the missing values with &ldquo;Zeroes&rdquo;.</p>
 <ul>
 <li>Feature Engineering</li>
 </ul>

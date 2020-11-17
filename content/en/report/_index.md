@@ -81,8 +81,7 @@ Health and society:
 * {{% addreport title="Covid-19 Analysis" author="Hany Boles" hid="fa20-523-342" %}}
 * {{% addreport title="Using Big Data to Eliminate Racial Bias in Healthcare" author="Robert Neubauer" hid="fa20-523-304" %}}
 * {{% addreportonly title="Sunny Xu, Peiran Zhao, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
-* {{% addreport title="How Wearable Devices Can Impact Health and
-Productivity" author="Adam Martin" hid="fa20-523-302" %}}
+* {{% addreport title="How Wearable Devices Can Impact Health and Productivity" author="Adam Martin" hid="fa20-523-302" %}}
 
 Sport:
 
