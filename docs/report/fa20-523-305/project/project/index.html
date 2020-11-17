@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Estimating Soil Moisture Content Using Sensor and Weather Data  Please complete the missing content and complete the report.  
+<meta property="og:description" content="Estimating Soil Moisture Content Using Sensor and Weather Data 
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
-Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on on weather data." />
+Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-305/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Estimating Soil Moisture Content Using Sensor and Weather Data  Please complete the missing content and complete the report.  
+<meta itemprop="description" content="Estimating Soil Moisture Content Using Sensor and Weather Data 
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
-Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on on weather data.">
+Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term.">
 
-<meta itemprop="wordCount" content="3507">
+<meta itemprop="wordCount" content="4165">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Estimating Soil Moisture Content Using Sensor and Weather Data  Please complete the missing content and complete the report.  
+<meta name="twitter:description" content="Estimating Soil Moisture Content Using Sensor and Weather Data 
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
-Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on on weather data."/>
+Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term."/>
 
 
 
@@ -364,12 +364,6 @@ Abstract As the world is gripped with finding solutions to problems such as food
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-305projectplan" href="/report/fa20-523-305/project/plan/"></a>
-      
-      
-      
-      
-      
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-reportfa20-523-305projectproject" href="/report/fa20-523-305/project/project/"></a>
       
       
@@ -475,6 +469,12 @@ Abstract As the world is gripped with finding solutions to problems such as food
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315assignment6assignment-6" href="/report/fa20-523-315/assignment6/assignment-6/"></a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315reportproject-plan" href="/report/fa20-523-315/report/project-plan/"></a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -530,13 +530,10 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#7-splitting-data-into-train-and-test">7. Splitting Data into Train and Test</a></li>
     <li><a href="#8-preliminary-analysis-and-eda">8. Preliminary Analysis and EDA</a></li>
     <li><a href="#9-initial-model-testing-regressor">9. Initial Model Testing (Regressor)</a></li>
-    <li><a href="#10-model-testing-classifier">10. Model Testing (Classifier)</a></li>
+    <li><a href="#10-classifier-vs-regressor">10. Classifier vs. Regressor</a></li>
+    <li><a href="#11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</a></li>
+    <li><a href="#12-other-models">12. Other Models</a></li>
     <li><a href="#11-conclusion">11. Conclusion</a></li>
-    <li><a href="#plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</a>
-      <ul>
-        <li><a href="#november-16">November 16</a></li>
-      </ul>
-    </li>
     <li><a href="#11-references">11. References</a></li>
   </ul>
 </nav>
@@ -579,16 +576,13 @@ Abstract As the world is gripped with finding solutions to problems such as food
     
 	       
 	<h1 id="estimating-soil-moisture-content-using-sensor-and-weather-data">Estimating Soil Moisture Content Using Sensor and Weather Data</h1>
-<ul>
-<li><input disabled="" type="checkbox"> Please complete the missing content and complete the report.</li>
-</ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-305/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-305/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
 <p>Cody Harris, <a href="mailto:harrcody@iu.edu">harrcody@iu.edu</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-305">fa20-523-305</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-305/edit/master/project/project.md">Edit</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on on weather data. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term. A solution would be to allow farmers to contract out a limited study of their land using sensors and then this model would be able to predict soil moistures from weather data.</p>
+<p>As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term. A solution would be to allow farmers to contract out a limited study of their land using sensors and then this model would be able to predict soil moistures from weather data. This collection of data, and predictions could be used on their own or as a part of a larger agricultural solution.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -608,13 +602,10 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#7-splitting-data-into-train-and-test">7. Splitting Data into Train and Test</a></li>
     <li><a href="#8-preliminary-analysis-and-eda">8. Preliminary Analysis and EDA</a></li>
     <li><a href="#9-initial-model-testing-regressor">9. Initial Model Testing (Regressor)</a></li>
-    <li><a href="#10-model-testing-classifier">10. Model Testing (Classifier)</a></li>
+    <li><a href="#10-classifier-vs-regressor">10. Classifier vs. Regressor</a></li>
+    <li><a href="#11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</a></li>
+    <li><a href="#12-other-models">12. Other Models</a></li>
     <li><a href="#11-conclusion">11. Conclusion</a></li>
-    <li><a href="#plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</a>
-      <ul>
-        <li><a href="#november-16">November 16</a></li>
-      </ul>
-    </li>
     <li><a href="#11-references">11. References</a></li>
   </ul>
 </nav>
@@ -622,12 +613,12 @@ Abstract As the world is gripped with finding solutions to problems such as food
 
 </div>
 
-<p><strong>Keywords:</strong> agriculture, soil moisture, IoT</p>
+<p><strong>Keywords:</strong> agriculture, soil moisture, IoT, machine learning, regression</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Maintaining correct soil moisture throughout the plant growing process can result in better yeilds, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligable effects<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.</p>
-<p>For hundreds of years, farmers have done something similar to this model. The difference is the precision that we can gain by using real data. For the past few hundred years, farmers had to rely on mostly experience and touch to know the moisture of their soil. While many farmers were successful, in the sense that they produced crops, there were ways they could have better optimized their crops to produce better. The water avaliable to the plants is not the only variable that effects yeilds, but this project seeks to create an accessible model to which farmers can have predicted values of soil moisture without needing to buy and deploy expensive sensors.</p>
-<p>The model created could be used in various ways. The first main use is to be able to monitor what is currently happening in the soil so that changes can be made to correct the issue if there is one. Secondly, a farmer could evaluate historical data and compare it to yeilds or other results of the harvest and use this analytical information to inform future descions.</p>
-<p>This project specifically seeks to see the effect of weather on a particular piece of land in Washington state. This process could be done all over the world to obtain benchmarks. These benchmarks could be a cheap option for a farmer that does not have the funds to support a full study of water usage on their land. Instead, they could look for a model that has land that has similar soil and or geographical features, and then use their own weather data to estimate their soil moisture content.</p>
+<p>Maintaining correct soil moisture throughout the plant growing process can result in better yields, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligible effects <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.</p>
+<p>For hundreds of years, farmers have done something similar to this model. The difference is the precision that we can gain by using real data. For the past few hundred years, farmers had to rely on mostly experience and touch to know the moisture of their soil. While many farmers were successful, in the sense that they produced crops, there were ways they could have better optimized their crops to produce better. The water available to the plants is not the only variable that effects yields, but this project seeks to create an accessible model to which farmers can have predicted values of soil moisture without needing to buy and deploy expensive sensors.</p>
+<p>The model created could be used in various ways. The first main use is to be able to monitor what is currently happening in the soil so that changes can be made to correct the issue if there is one. Secondly, a farmer could evaluate historical data and compare it to yields or other results of the harvest and use this analytical information to inform future decisions. For example, a corn farmer might only care about the predicted conditions to make sure that they are within reasonable ranges. A grape farmer in a wine vineyard might use this data, along with other data, to predict the quality of wine or even the recipe of wine that would best used grapes farmed under these conditions. Again, this model is just the starting point of a theoretical complex agricultural data analysis suite.</p>
+<p>This project specifically seeks to see the effect of weather on a particular piece of land in Washington state. This process could be done all over the world to obtain benchmarks. These benchmarks could be a cheap option for a farmer that does not have the funds to support a full study of water usage on their land to use as training data. Instead, they could look for a model that has land that has similar soil and or geographical features, and then use their own weather data to estimate their soil moisture content. A major goal of this project is to create the best tool that is cheap enough for widespread adoption.</p>
 <h2 id="2-background">2. Background</h2>
 <p>Understanding how weather impacts soil moisture is something that has been studied in various ways, all because it is a driving factor in crop success. Multiple studies have sought to apply a deterministic approach to calculating soil moisture based on observational weather data.</p>
 <p>One such study, was motivated by trying to predict dust storms in China, in which soil moisture plays a large role in. This prediction used multiple-linear regression, and focused on predictions that dealt with the top 10 cm of soil. Two key takeaways can be derived from this work that are beneficial for carrying out this project.</p>
@@ -635,43 +626,56 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <li>&ldquo;The influence of precipitation on surface soil moisture content does not last more than 16 days.&rdquo;</li>
 <li>&ldquo;The compound effect of the ratio of precipitation to evaporation, which is nonlinearly summed, can be used to calculate the surface soil moisture content in China&rdquo; <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</li>
 </ul>
-<p>Moving forward, this project will assume that percipitation from the prior 16 days is relavent. In the case that for the specific data being fit, less days are relavent, then their coefficients in the model will likely become small enough to not effect the model. Secondly, soil moisture is influenced by a ratio or precipitation to evaporation. While this project might not seek to evaluate this relationship directly, it will seek to include data that would influence these ratios such as temperature and wind speeds.</p>
-<p>Multiple publidcations have sought to come up with complete hydrological models to determine soil moisture from a variety of factors. These models are generally stochastic in nature, and are reliable predictors when many parameters of the model are avaliable. One such cited model requires a minimum or 19 variables or measured coeefficients <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. The authors of another study note the aformentioned study, as well as other similar studies, and make a point that these methods might not be the best models when it comes to practical applications. Their solution was to create a generalize model that relied mostly on soil moisture as &ldquo;a function of the time-weighted average of previous cumulative rainfall over a period&rdquo; <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Such a model is closer in terms to simplicity and generalization to what is hoped to be accomplished in this project.</p>
-<p>The relationship between soil moisture and weather patterns is one with a rich history of study. Both of these measures effect each other in various ways. Most studies that sought to quantify this relationship were conducted at a time in which large scale sensor arrays could not have been implemented in a field. With the prevalance of IoT and improved sensing technologies, it seems as though there might not be a need to use predictive models for soil moisture, but instead just use sensor data. While this could be true in some applications, a wide array of challenges occur when trying to maintain these sensor arrays. Problems such as charging or replacing batteries, sensor and relay equipment not working if completely buried, but are in the way of farming if mounted above ground, sensors failing, etc. These were real challenges faced by the farm in which the soil moisture data was collected <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. The objective of this project is to create predictive models based on limited training data so that farmers would not need to deal with sensor arrays indefinitely.</p>
+<p>Moving forward, this project will assume that precipitation from the prior 16 days is relevant. In the case that for the specific data being fit, less days are relevant, then their coefficients in the model will likely become small enough to not affect the model. Secondly, soil moisture is influenced by a ratio or precipitation to evaporation. While this project might not seek to evaluate this relationship directly, it will seek to include data that would influence these ratios such as temperature, time of year, and wind speeds.</p>
+<p>Multiple publications have sought to come up with complete hydrological models to determine soil moisture from a variety of factors. These models are generally stochastic in nature and are reliable predictors when many parameters of the model are available. One such cited model requires a minimum or 19 variables or measured coefficients <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. The authors of another study note the aforementioned study, as well as other similar studies, and make a point that these methods might not be the best models when it comes to practical applications. Their solution was to create a generalize model that relied mostly on soil moisture as &ldquo;a function of the time-weighted average of previous cumulative rainfall over a period&rdquo; <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Such a model is closer in terms to simplicity and generalization to what is hoped to be accomplished in this project.</p>
+<p>The relationship between soil moisture and weather patterns is one with a rich history of study. Both of these measures affect each other in various ways. Most studies that sought to quantify this relationship were conducted at a time in which large scale sensor arrays could not have been implemented in the field. With the prevalence of IoT and improved sensing technologies, it seems as though there might not be a need to use predictive models for soil moisture, but instead just use sensor data. While this could be true in some applications, a wide array of challenges occur when trying to maintain these sensor arrays. Problems such as charging or replacing batteries, sensor and relay equipment not working if completely buried, but are in the way of farming if mounted above ground, sensors failing, etc. These were real challenges faced by the farm in which the soil moisture data was collected <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. The objective of this project is to create predictive models based on limited training data so that farmers would not need to deal with sensor arrays indefinitely.</p>
 <h2 id="3-datasets">3. Datasets</h2>
-<p>The first data set comes from NOAA and contains daily summary data in regards to various measurments such as temperature, percipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and lattitude of one of the sensors in the field. This data is in csv format (see Figure 1).</p>
+<p>The first data set comes from NOAA and contains daily summary data in regards to various measurements such as temperature, precipitation, wind speed, etc. For this project, only data that came from the closest station to the field will be used <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. In this case, that is the Pullman station at the Pullman-Moscow airport. Below is an image showing the weather data collection location, and the red pin is at the longitude and latitude of one of the sensors in the field. This data is in csv format (see Figure 1).</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/distance_map.png" alt="Figure 1"></p>
 <p><strong>Figure 1:</strong> Estimated distance from weather reports to the crop fields. Distance is calculated using Google Maps</p>
-<p>The second dataset comes from the USDA. This dataset consits of &ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&rdquo; at a farm in Washington state <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. Mainly, the daily temperature and water conent are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the make up of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.</p>
-<p>Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the sattelite image (see Figure 2).</p>
+<p>The second dataset comes from the USDA. This dataset consists of &ldquo;hourly and daily measurements of volumetric water content, soil temperature, and bulk electrical conductivity, collected at 42 monitoring locations and 5 depths (30, 60, 90, 120, and 150 cm)&rdquo; at a farm in Washington state <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. Mainly, the daily temperature and water content are the measurements of interest. There are multiple files that have data that corresponds to what plants are being grown in specific places, and the makeup of the soil at each sensor cite. This auxilary information could be used in later models once the base model has been completed. This data is in tab delimited files.</p>
+<p>Within the data, there are GIS file types that can be imported into Google Maps desktop to visualize the locations of the sensors and other geographical information. Below is an example of the sensor locations plotted on the satellite image (see Figure 2).</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/sensor_locations.png" alt="Figure 2"></p>
 <p><strong>Figure 2:</strong> Location of sensors within the test field</p>
 <h2 id="4-data-cleaning-and-aggregation">4. Data Cleaning and Aggregation</h2>
-<p>The first step is to get the soil moisture data into a combined format, currently it is in one file per sensor, and there are 42 sensors. See the data_cleaning_aggregation.ipynb file to see how this was done. After aggregation, some basic information can be checked about the data. For instance, there is quite a bit of NAs in the data. These NAs are just instances where there was no measurement on that day. There is about 45% NAs in the measurement columns. To further clean the data, any row that has only NAs for the measurements will be removed.</p>
-<p>Next, the weather data needs some small adjustments. This is mostly in the form of removing columns that either are empty or have redundant data such as elevation.</p>
-<p>Once the data is sufficiently clean, some choices have to be made on joining the data. The simplist route would be to join the weather measurements directly with the same day the soil measurement, however, the previous days weather is likely to also have an impact on the moisture. In the same fashion, the weather for the 5 previous days might all have a large impact on the moisture. So simply joining the two data sets right now is likely not the correct course of action until further analysis is made.</p>
+<p>The first step is to get the soil moisture data into a combined format, currently it is in one file per sensor, and there are 42 sensors. See the <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a> file to see how this was done, specifically the section titled &ldquo;Data Processing&rdquo;. After aggregation, some basic information can be checked about the data. For instance, there is quite a bit of NAs in the data. These NAs are just instances where there was no measurement on that day. There is about 45% NAs in the measurement columns. To further clean the data, any row that has only NAs for the measurements will be removed.</p>
+<p>Next, the weather data needs some small adjustments. This is mostly in the form of removing columns that either are empty or have redundant data such as elevation, which is the same for every row.</p>
+<p>Once the data is sufficiently clean, some choices have to be made on joining the data. The simplest route would be to join the weather measurements directly with the same day the soil measurement, however, the previous days weather is likely to also have an impact on the moisture. As evaluated in section 2 above, it is believed that the prior 16 days weather data is what is needed for a good prediction.</p>
 <h2 id="5-pipeline-for-preprocessing">5. Pipeline for Preprocessing</h2>
-<p>Before feeding the data through a machine learning algorithm, the data needs to be manipulated in such a way that it is ready to be directly fed into an algorithm. This includes joining the two data sets, feature engineering, and other tasks that prepare the data. This will need to be done every time a new dataset is being used, so this must be built in a repeatable way. The machine learning library scikit-learn incoroporates something called &ldquo;pipelines&rdquo; that can allow processed to be sequentially done to a dataframe. For purposes of this project two pipelines will be built, one will be used for feature engineering and joining the data, the other will be used to handle preparation of numerical, categorical, and date data.</p>
+<p>Before feeding the data through a machine learning algorithm, the data needs to be manipulated in such a way that it is ready to be directly fed into an algorithm. This includes joining the two data sets, feature engineering, and other tasks that prepare the data. This will need to be done every time a new dataset is being used, so this must be built in a repeatable way. The machine learning library scikit-learn incorporates something called &ldquo;pipelines&rdquo; that can allow processed to be sequentially done to a dataframe. For purposes of this project two pipelines will be built, one will be used for feature engineering and joining the data, the other will be used to handle preparation of numerical, categorical, and date data. See sections: &ldquo;Data Processing Pipeline&rdquo; in <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a>.</p>
 <h3 id="51-loading-and-joining-data">5.1 Loading and Joining Data</h3>
-<p>This is the first step of the entire pipeline. This is where both the weather, and the soil moisture data are read in from csv files in their raw fromat. The soil moisture data is found in many different files, and these all need to be combined. After combining the fies, any lines that are full of NAs for the measurements are dropped. Next the weather data is loaded in. Both files have a date field which is the field they will be joined on. To make things consistent, both of these fields need to set be date format.</p>
+<p>This is the first step of the entire pipeline. This is where both the weather, and the soil moisture data are read in from csv files in their raw format. The soil moisture data is found in many different files, and these all need to be combined. After combining the files, any lines that are full of NAs for the measurements are dropped. Next the weather data is loaded in. Both files have a date field which is the field they will be joined on. To make things consistent, both of these fields need to set be date format.</p>
 <p>When it comes to joining the data, each row should include the moisture content at various depths, as well as the weather information from the past ten days. While this creates a great deal of redundant data, the data is small enough that this is not an issue. Experiments will be done to evaluate just how many days of prior weather data are needed to form accurate results, while trying to minimize the number of the days.</p>
 <h3 id="52-feature-engineering">5.2 Feature Engineering</h3>
-<p>Currently only one feature is added, and this is a boolean flag that says whether it rained or not on a certain day. The thought behind this is, that for some days prior to the current measurement, the amount of rain might be needed, but for other days, such as 10 days prior, it might be more important to just know if there was rain or not. This feature is engineered within the pipeline.</p>
-<p>A future feature will be to use the months as categorical variables. While the date might be helpful, it probably is more accurate to consider the month then the specific day.</p>
-<h3 id="53-generic-pipeline">5.3 Generic Pipeline</h3>
-<p>After doing operations that are specific to the current dataset, some built in processors from sk-learn are used to make sure the data can be used in a machine learning model. This means that for numerical data types, the pipeline will fill in missing values with 0 instead of leaving them as NaN. There might be experiements to decide how to deal with missing measurements. Also the various numerical fields must be standardized, this is important for models such as linear regression so one large variable isn&rsquo;t dominating the model.</p>
-<p>As far as text and categorical features, the imputer will be used to fill in missing data as well. Then a process called one hot encoding will be used to handle the categorical variables so that they can be read into sk-learns estimators.</p>
-<p>Lastly the date pipeline will take datetimes and convert them to integers that represent how many seconds it has been since 1970. This will allow dates to be handled as numerical values if they are used as an estimator instead of being used as a categorical feature as there would be many categories.</p>
+<p>Currently only two features are added, the first is a boolean flag that says whether it rained or not on a certain day. The thought behind this is, that for some days prior to the current measurement, the amount of rain might be needed, but for other days, such as 10 days prior, it might be more important to just know if there was rain or not. This feature is engineered within the pipeline.</p>
+<p>The next feature is a categorical feature that is the month of the year. It isn&rsquo;t very import to know the exact date of a measurement, but the month might be helpful in a model. This simplifies the model by not using date as a predictor, while still being able to capture this potentially important feature.</p>
+<p>An excerpt of the code used to create these two features, this comes from <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a>.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">soil</span><span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;Month&#39;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pd</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">DatetimeIndex</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">soil</span><span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;Date&#39;</span><span style="color:#000;font-weight:bold">])</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">month</span>
+
+<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#204a87">range</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">17</span><span style="color:#000;font-weight:bold">):</span>
+    <span style="color:#000">col_name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;PRCP_&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000">rain_y_n_name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;RAIN_Y_N_&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000">X</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">rain_y_n_name</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">np</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">nan</span>
+    <span style="color:#000">X</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">rain_y_n_name</span><span style="color:#000;font-weight:bold">]</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">loc</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">X</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">col_name</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span>
+    <span style="color:#000">X</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">rain_y_n_name</span><span style="color:#000;font-weight:bold">]</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">loc</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">X</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">col_name</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span>
+    <span style="color:#000">X</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">rain_y_n_name</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">X</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">rain_y_n_name</span><span style="color:#000;font-weight:bold">]</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">astype</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;object&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</code></pre></div><h3 id="53-generic-pipeline">5.3 Generic Pipeline</h3>
+<p>After doing operations that are specific to the current dataset, some built in processors from sklearn are used to make sure the data can be used in a machine learning model. This means that for numerical data types, the pipeline will fill in missing values with 0 instead of leaving them as NaN. Also, the various numerical fields must be standardized, this is important for models such as linear regression so one large variable isn&rsquo;t dominating the model.</p>
+<p>As far as text and categorical features, the imputer will be used to fill in missing data as well. Then a process called one hot encoding will be used to handle the categorical variables so that they can be read into sklearns estimators. Lastly, these two main processes will be put together to make a single pipeline step. Then this pipeline step will be added to a regressor of some sort to create the entire process.</p>
 <h2 id="6-multiple-models-for-multiple-soil-depths">6. Multiple Models for Multiple Soil Depths</h2>
-<p>There are a few different approaches for modeling for this particular problem. The issue is that we have multiple things we would like to predict with the same predictors. It is unlikely that the model that predicts for a depth of 30 cm, would accurately predict for a depth of 150 cm. In order to adjust the models, a seperate model will be created for each depth, with that said, the predictors are all the same for each depth, but the trained output is different. To accomplish this, five different datasets were constructed, each one representing a depth. All rows in which the predicted value is not avaliable for that depth were pruned from the dataset.</p>
+<p>There are a few different approaches for modeling for this particular problem. The issue is that we have multiple things we would like to predict with the same predictors. It is unlikely that the model that predicts for a depth of 30 cm, would accurately predict for a depth of 150 cm. In order to adjust the models, a separate model will be created for each depth, with that said, the predictors are all the same for each depth, but the trained output is different. To accomplish this, five different datasets were constructed, each one representing a depth. All rows in which the predicted value is not available for that depth were pruned from the dataset.</p>
+<p>In each experiment, there will be 5 different models created. Initially, these 5 models will use the same hyper-parameters for all the depths. It might turn out that all the models will need the same hyper-parameters, or each soil depth could be different. This will be examine through experimentation.</p>
 <h2 id="7-splitting-data-into-train-and-test">7. Splitting Data into Train and Test</h2>
-<p>In order to test any model created, there must be a split between test and training data. This is done by using a function in sk-learn. In this case, there are about 76k rows in the data set. For the training data, 80% of the total data will be used, or about 60.8k records. The split is done after shuffling the rows so that it does not just pick the top 80% everytime. Lastly the data is split using a stratified method. As we want to have models that take the specific area of the field into account, that means that we need to have the different areas of the field represented equally in both the training and testing dataset. This means that if 10% of the data came from sensor CAF0003, then roughly 10% of the training data will come from CAF0003 as well as 10% of the test data will be from this location.</p>
+<p>In order to test any model created, there must be a split between test and training data. This is done by using a function in sklearn. In this case, there are about 76k rows in the data set. For the training data, 80% of the total data will be used, or about 60.8k records. The split is done after shuffling the rows so that it does not just pick the top 80% every time. Lastly the data is split using a stratified method. As we want to have models that take the specific area of the field into account, that means that we need to have the different areas of the field represented equally in both the training and testing dataset. This means that if 10% of the data came from sensor CAF0003, then roughly 10% of the training data will come from CAF0003 as well as 10% of the test data will be from this location.</p>
 <h2 id="8-preliminary-analysis-and-eda">8. Preliminary Analysis and EDA</h2>
-<p>Before building a machine learning model, it is important to get a general idea of how the data looks, to see if any insights can be made right away.</p>
-<p>The first two visualizations are grids that show the entire distribution of measurements across each sensor. The first grid is the volume of water at 30 cm, and the second grid is the water volume at 150 cm. Each chart could be looked at and examined on it&rsquo;s own, but what is most important to note is the variability of the measures from location to location. These different sensors are not that far away, but show that different areas of the farm do retain water in different ways.</p>
+<p>Before building a machine learning model, it is important to get a general idea of how the data looks, to see if any insights can be made right away. The actual visualizations were built using a python package called Altair. This created the visualizations well, but the actual notebook that would contain these images was too large to include in their entirety.</p>
+<p>The first two visualizations (<a href="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/one.png">viz_1</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/images/two.png">viz_2</a>) are grids that show the entire distribution of measurements across each sensor. The first grid is the volume of water at 30 cm, and the second grid is the water volume at 150 cm. Each chart could be looked at and examined on it&rsquo;s own, but what is most important to note is the variability of the measures from location to location. These different sensors are not that far away, but show that different areas of the farm do retain water in different ways. See Figure 3 for a small section of the grid from the visualization on the sensors at 30cm.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/one_small.png" alt="Figure 3"></p>
+<p><strong>Figure 3:</strong> Six locations soil moisture level over time at 30 cm depth</p>
 <p>The third and fourth grid shows the temperature at 150 cm, the results are what would logically be expected. The different sensors do not show much variance from location to location.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-305/master/project/images/four_small.png" alt="Figure 4"></p>
+<p><strong>Figure 4:</strong> Six locations soil temperature over time at 150 cm depth</p>
 <p>A simple bar chart is used to get a quick overview of the percipitation values over the same time period to see the overall trends. The most interesting part of this analysis is from the end of 2009 to nearly 2012. There is very little percipitation in this time period. Which initially looks like an issue with the data, but when it is compared to the water volume charts, a correlation can be seen. It isn&rsquo;t perfect, but in many of the sensors that have data in this period, the moisture seems rather constant.</p>
-<p><em>Note</em>: After doing this analysis using the Altair library in python, the notebook became way too big due to the size of the data. As a quick remedy for this, I saved the visualizations as PNG and saved them in the images folder. They are named: one, two, three, and four, for the order that they are mentioned in the above section. I will remove the eda notebook from the repo.</p>
 <h2 id="9-initial-model-testing-regressor">9. Initial Model Testing (Regressor)</h2>
 <p>Once the pipelines were setup, the first model could be tested for accuracy. As the output data is continuous in nature, the easiest machine learning algoritm to test to make sure everything is correct, was a linear regression model. It seems fairly likely that a linear regression model would do rather well with this data. The weather is the driving factor in soil moisture in a non-irrigated field, so this test is a litmus test to make sure that the data is good and provide a baseline measurment for future models. The experiment log below shows the returned values from the test that was run. Over the course of experimentation, a log such as this will be kept.</p>
 <p>The results are as follows:</p>
@@ -689,56 +693,291 @@ Abstract As the world is gripped with finding solutions to problems such as food
 <tr>
 <td>First Linear Reg</td>
 <td>30cm</td>
-<td>58.701572</td>
-<td>0.238179</td>
-<td>0.890208</td>
+<td>2.029387</td>
+<td>0.169824</td>
+<td>9.16E-01</td>
 </tr>
 <tr>
 <td>First Linear Reg</td>
 <td>60cm</td>
-<td>58.847758</td>
-<td>0.169551</td>
-<td>0.898520</td>
+<td>2.002373</td>
+<td>0.17377</td>
+<td>-1.42E+15</td>
 </tr>
 <tr>
 <td>First Linear Reg</td>
 <td>90cm</td>
-<td>54.927837</td>
-<td>0.172255</td>
-<td>0.882179</td>
+<td>2.080393</td>
+<td>0.162992</td>
+<td>9.49E-01</td>
 </tr>
 <tr>
 <td>First Linear Reg</td>
 <td>120cm</td>
-<td>64.877650</td>
-<td>0.197685</td>
-<td>0.884033</td>
+<td>2.299457</td>
+<td>0.18056</td>
+<td>9.46E-01</td>
 </tr>
 <tr>
 <td>First Linear Reg</td>
 <td>150cm</td>
-<td>63.256277</td>
-<td>0.170247</td>
-<td>0.876900</td>
+<td>2.573193</td>
+<td>0.186042</td>
+<td>9.43E-01</td>
 </tr>
 </tbody>
 </table>
-<p>These results show that the data is pretty well correlated and that there is reason to believe that we could predict soil moisture from weather alone. Although an r^2 of around 0.87-0.89 are pretty good, with such highly related predictors, there is definitely room for model improvement.</p>
-<h2 id="10-model-testing-classifier">10. Model Testing (Classifier)</h2>
-<p>While the output is continuous, there is an argument to use a categorical classifier model. For a specific plant, an optimal moisture range could be studied. For example sake, the range could be 0.2-0.4 units. Then it would not matter if the soil is 0.2 or 0.3, both would be in the acceptable range. With this in mind, certain levels could be created to alert the farmer of which category they could be experienecing. For example there might be five levels: too dry, acceptable dryness, optimal, acceptable wetness, and too wet. The training data could be adjusted to fit into these categories.</p>
-<p>Further experimentation will be required to decide if this is truly the best route for the model. This idea seems promising as predicting the exact moisture content is not as important as understanding the toleraable ranges.</p>
+<p><strong>Figure 5:</strong> Baseline experiment results</p>
+<p>These results show that the data is pretty well correlated and that there is reason to believe that we could predict soil moisture from weather alone. Although an r^2 of around 0.916-0.949 are pretty good, with such highly related predictors, there is definitely room for model improvement. Also for a depth of 60 cm, something is not predicting correctly and is resulting in a small negative r^2</p>
+<h2 id="10-classifier-vs-regressor">10. Classifier vs. Regressor</h2>
+<p>While the output is continuous, there is an argument to use a categorical classifier model. For a specific plant, an optimal moisture range could be studied. For examples sake, the range could be 0.2-0.4 units. Then it would not matter if the soil is 0.2 or 0.3, both would be in the acceptable range. With this in mind, certain levels could be created to alert the farmer of which category they could be experienecing. For example there might be five levels: too dry, acceptable dryness, optimal, acceptable wetness, and too wet. The training data could be adjusted to fit into these categories.</p>
+<p>Code to create a categorical variable for each of the depth measurments can be found in the section &ldquo;Make Classifier Label&rdquo; in the file: <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a>.</p>
+<p>In the end, the decision to not use classifier methods was made. After using a regressor, the output could be converted to a categorical feature if the user or application so desired this. As our output is continuous in nature, precision would be lost.</p>
+<h2 id="11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</h2>
+<p>The next set of experiments came up with the results in the following table. This was a test to see if baseline Lasso or Ridge Regression would improve on the basic linear regression model. Results and code for this portion can be found in <a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/master/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb</a> under the &ldquo;Linear Regression Tests&rdquo; section.</p>
+<table>
+<thead>
+<tr>
+<th>Experiment</th>
+<th>Depth</th>
+<th>Fit_Time</th>
+<th>Pred_Time</th>
+<th>r2_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ridge Reg, Alpha = 1</td>
+<td>30cm</td>
+<td>1.321553</td>
+<td>0.173714</td>
+<td>0.916211</td>
+</tr>
+<tr>
+<td>Ridge Reg, Alpha = 1</td>
+<td>60cm</td>
+<td>1.29167</td>
+<td>0.187392</td>
+<td>0.942757</td>
+</tr>
+<tr>
+<td>Ridge Reg, Alpha = 1</td>
+<td>90cm</td>
+<td>1.393526</td>
+<td>0.197152</td>
+<td>0.94879</td>
+</tr>
+<tr>
+<td>Ridge Reg, Alpha = 1</td>
+<td>120cm</td>
+<td>1.307926</td>
+<td>0.176656</td>
+<td>0.946032</td>
+</tr>
+<tr>
+<td>Ridge Reg, Alpha = 1</td>
+<td>150cm</td>
+<td>1.33738</td>
+<td>0.179585</td>
+<td>0.94332</td>
+</tr>
+<tr>
+<td>Lasso Reg, Alpha = 1</td>
+<td>30cm</td>
+<td>1.45102</td>
+<td>0.170752</td>
+<td>-0.00018</td>
+</tr>
+<tr>
+<td>Lasso Reg, Alpha = 1</td>
+<td>60cm</td>
+<td>1.419546</td>
+<td>0.174177</td>
+<td>-4.6E-05</td>
+</tr>
+<tr>
+<td>Lasso Reg, Alpha = 1</td>
+<td>90cm</td>
+<td>1.4632</td>
+<td>0.176657</td>
+<td>-5.7E-06</td>
+</tr>
+<tr>
+<td>Lasso Reg, Alpha = 1</td>
+<td>120cm</td>
+<td>1.553091</td>
+<td>0.182349</td>
+<td>-1.1E-06</td>
+</tr>
+<tr>
+<td>Lasso Reg, Alpha = 1</td>
+<td>150cm</td>
+<td>1.437419</td>
+<td>0.163967</td>
+<td>-0.00018</td>
+</tr>
+<tr>
+<td>Ridge Reg - GSCV</td>
+<td>30cm</td>
+<td>3.914718</td>
+<td>0.203007</td>
+<td>0.916235</td>
+</tr>
+<tr>
+<td>Ridge Reg - GSCV</td>
+<td>60cm</td>
+<td>3.726651</td>
+<td>0.172752</td>
+<td>0.942757</td>
+</tr>
+<tr>
+<td>Ridge Reg - GSCV</td>
+<td>90cm</td>
+<td>4.135154</td>
+<td>0.200589</td>
+<td>0.948796</td>
+</tr>
+<tr>
+<td>Ridge Reg - GSCV</td>
+<td>120cm</td>
+<td>4.03203</td>
+<td>0.193512</td>
+<td>0.946032</td>
+</tr>
+<tr>
+<td>Ridge Reg - GSCV</td>
+<td>150cm</td>
+<td>4.361977</td>
+<td>0.191296</td>
+<td>0.943328</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Figure 6:</strong> Further Linear Regression Experiment Results</p>
+<p>For the first two experiements, an alpha of 1 was used for both ridge and lasso regression. The third experiment used a special regressor that uses cross validation to try to find the best alpha value and then fit the model based on that. The best alpha value seemed to not have much effect at all on the results. Still the ridge regression so far was the best performing model.</p>
+<h2 id="12-other-models">12. Other Models</h2>
+<p>While there were great results in the different linear regression models, other models should be evaluated to make sure that something is not missed. Three models were chosen to check, Stochastic Gradient Descent, Support Vector Machine, and Random Forest. All of these models were tested with default parameters and their results are shown below in Figure 7, and the code can be found in the section called &ldquo;Other Regressors Tests&rdquo;.</p>
+<table>
+<thead>
+<tr>
+<th>Experiment</th>
+<th>Depth</th>
+<th>Fit_Time</th>
+<th>Pred_Time</th>
+<th>r2_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random Forest</td>
+<td>30cm</td>
+<td>60.06952</td>
+<td>0.250543</td>
+<td>0.977118</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>60cm</td>
+<td>62.17435</td>
+<td>0.216641</td>
+<td>0.989113</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>90cm</td>
+<td>62.29475</td>
+<td>0.243051</td>
+<td>0.99158</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>120cm</td>
+<td>64.48227</td>
+<td>0.256666</td>
+<td>0.991274</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>150cm</td>
+<td>68.47001</td>
+<td>0.240149</td>
+<td>0.991748</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>30cm</td>
+<td>38.83822</td>
+<td>5.712513</td>
+<td>0.676934</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>60cm</td>
+<td>106.2816</td>
+<td>7.897556</td>
+<td>0.766008</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>90cm</td>
+<td>102.9438</td>
+<td>7.763206</td>
+<td>0.788833</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>120cm</td>
+<td>79.76476</td>
+<td>6.985236</td>
+<td>0.760895</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td>150cm</td>
+<td>96.46352</td>
+<td>7.548365</td>
+<td>0.760936</td>
+</tr>
+<tr>
+<td>SGD</td>
+<td>30cm</td>
+<td>1.382992</td>
+<td>0.171777</td>
+<td>0.89019</td>
+</tr>
+<tr>
+<td>SGD</td>
+<td>60cm</td>
+<td>1.392753</td>
+<td>0.15128</td>
+<td>0.931394</td>
+</tr>
+<tr>
+<td>SGD</td>
+<td>90cm</td>
+<td>1.399587</td>
+<td>0.142493</td>
+<td>0.941092</td>
+</tr>
+<tr>
+<td>SGD</td>
+<td>120cm</td>
+<td>1.438626</td>
+<td>0.150302</td>
+<td>0.936692</td>
+</tr>
+<tr>
+<td>SGD</td>
+<td>150cm</td>
+<td>1.403488</td>
+<td>0.14933</td>
+<td>0.92957</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Figure 7:</strong> Further Linear Regression Experiment Results</p>
 <h2 id="11-conclusion">11. Conclusion</h2>
 <p>TBD</p>
-<h2 id="plan-for-the-rest-of-the-semseter">Plan for the rest of the Semseter</h2>
-<p>The following is a plan for the rest of the semester, using the due dates for Assignments 8-11 as milestone dates</p>
-<h3 id="november-16">November 16</h3>
-<ul>
-<li>Tune Hyper-parameters</li>
-<li>Test various models</li>
-<li>Further tune and tweak models</li>
-<li>Start analyzing various models and techniques to find the most accurate model</li>
-<li>Update report</li>
-</ul>
 <h2 id="11-references">11. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
