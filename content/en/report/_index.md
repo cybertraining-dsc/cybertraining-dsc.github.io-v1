@@ -81,6 +81,8 @@ Health and society:
 * {{% addreport title="Covid-19 Analysis" author="Hany Boles" hid="fa20-523-342" %}}
 * {{% addreport title="Using Big Data to Eliminate Racial Bias in Healthcare" author="Robert Neubauer" hid="fa20-523-304" %}}
 * {{% addreportonly title="Sunny Xu, Peiran Zhao, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
+* {{% addreport title="How Wearable Devices Can Impact Health and
+Productivity" author="Adam Martin" hid="fa20-523-302" %}}
 
 Sport:
 
@@ -97,9 +99,7 @@ Finance:
 * {{% addreport title="Stock Market Earnings to Price Change Project" author="Matthew Frechette" hid="fa20-523-336" %}}
 * {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
-Unkown:
 
-* fa20-523-302  [Adam Martin](https://github.com/cybertraining-dsc/fa20-523-302)
 
 #### Lifestyle, will not be reviewed due errors or progress
 
