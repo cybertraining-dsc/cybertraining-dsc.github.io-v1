@@ -39,6 +39,7 @@ for form in ["figure", "table"]:
 
 lines = 0
 words = 0
+refernces = False
 for line in content.splitlines():
     lines = lines + 1
     if "##" in line and "References" in line:
@@ -53,8 +54,12 @@ for line in content.splitlines():
     
     line = line.strip()
     # print (line)
-    if "![" in line:
+    refernces = refrences or ("##" in line and "References" in line)
+    table = "|" in line
+    image = "![" in line
+    if refernces or table or image:
         line = ""
+
     words = words + len(line.split(" "))
 
   
