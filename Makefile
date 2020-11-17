@@ -5,7 +5,7 @@ setup:
 	npm install autoprefixer
 	npm install postcss
 
-
+# 316
 pull:
 	git pull
 	cd content/en/report/cloudmesh-openapi; git checkout main; git pull
@@ -19,27 +19,27 @@ pull:
 	cd content/en/report/fa20-523-313; git checkout main; git pull
 	cd content/en/report/fa20-523-314; git checkout main; git pull
 	cd content/en/report/fa20-523-315; git checkout main; git pull
-	cd content/en/report/fa20-523-316; git checkout master; git pull
+	cd content/en/report/fa20-523-316; git checkout main; git pull
 	cd content/en/report/fa20-523-317; git checkout main; git pull
-	cd content/en/report/fa20-523-319; git checkout master; git pull
-	cd content/en/report/fa20-523-323; git checkout master; git pull
+	cd content/en/report/fa20-523-319; git checkout main; git pull
+	cd content/en/report/fa20-523-323; git checkout main; git pull
 	cd content/en/report/fa20-523-326; git checkout main; git pull
-	cd content/en/report/fa20-523-327; git checkout master; git pull
+	cd content/en/report/fa20-523-327; git checkout main; git pull
 	cd content/en/report/fa20-523-328; git checkout main; git pull
-	cd content/en/report/fa20-523-329; git checkout master; git pull
-	cd content/en/report/fa20-523-330; git checkout master; git pull
+	cd content/en/report/fa20-523-329; git checkout main; git pull
+	cd content/en/report/fa20-523-330; git checkout main; git pull
 	cd content/en/report/fa20-523-331; git checkout main; git pull
-	cd content/en/report/fa20-523-332; git checkout master; git pull
-	cd content/en/report/fa20-523-333; git checkout master; git pull
-	cd content/en/report/fa20-523-334; git checkout master; git pull
-	cd content/en/report/fa20-523-336; git checkout master; git pull
-	cd content/en/report/fa20-523-337; git checkout master; git pull
-	cd content/en/report/fa20-523-339; git checkout master; git pull
+	cd content/en/report/fa20-523-332; git checkout main; git pull
+	cd content/en/report/fa20-523-333; git checkout main; git pull
+	cd content/en/report/fa20-523-334; git checkout main; git pull
+	cd content/en/report/fa20-523-336; git checkout main; git pull
+	cd content/en/report/fa20-523-337; git checkout main; git pull
+	cd content/en/report/fa20-523-339; git checkout main; git pull
 	cd content/en/report/fa20-523-340; git checkout main; git pull
-	cd content/en/report/fa20-523-341; git checkout master; git pull
-	cd content/en/report/fa20-523-342; git checkout master; git pull
-	cd content/en/report/fa20-523-343; git checkout master; git pull
-	cd content/en/report/fa20-523-345; git checkout master; git pull
+	cd content/en/report/fa20-523-341; git checkout main; git pull
+	cd content/en/report/fa20-523-342; git checkout main; git pull
+	cd content/en/report/fa20-523-343; git checkout main; git pull
+	cd content/en/report/fa20-523-345; git checkout main; git pull
 	cd content/en/report/fa20-523-346; git checkout main; git pull
 	cd content/en/report/fa20-523-347; git checkout main; git pull
 	cd content/en/report/fa20-523-348; git checkout main; git pull
