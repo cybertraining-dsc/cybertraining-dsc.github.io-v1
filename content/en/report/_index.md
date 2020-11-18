@@ -33,7 +33,6 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 * {{% addreport title="NBA Performance and Injury" author="Gavin Hemmerlein, Chelsea Gorius" hid="fa20-523-301" %}}
 * {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
-* {{% addreport title="Rank Forecasting in Car Racing" author="Jiayu Li" hid="fa20-523-349" %}}
 * {{% addreport title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
 
 #### Environment
@@ -89,6 +88,7 @@ Sport:
 * {{% addreportonly title="Predictive Model For Pitches Thrown By Major League Baseball Pitchers" author="Bryce Wieczorek" hid="fa20-523-343" %}}
 * {{% addreportonly title="How Big Data has Affected Statisicts in Baseball" author="Hunter Holder" hid="fa20-523-328" %}}
 * {{% addreportonly title="Correlation between game genere and national sales, as well as general analysis of the video games industry " author="Linde Aleksandr" hid="fa20-523-340" %}}
+* {{% addreport title="Rank Forecasting in Car Racing" author="Jiayu Li" hid="fa20-523-349" %}}
 
 Finance:
 
@@ -99,7 +99,6 @@ Finance:
 * {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 
-
 #### Lifestyle, will not be reviewed due errors or progress
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
@@ -107,8 +106,7 @@ Finance:
 hid="fa20-523-341" %}}
 * {{% addreport title="Trending Youtube Videos Analysis" author="Adam Chai" hid="fa20-523-327" %}}
 
-### Reports without Project, Fall 2020, will not be reviewed due to
-    errors or progress
+### Reports without Project, Fall 2020, will not be reviewed due to errors or progress
 
 * {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
 * {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
