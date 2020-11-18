@@ -130,7 +130,11 @@ code = False
 counter = 0
 section = False
 for line in content.splitlines():
-    counter = counter + 1     
+    counter = counter + 1
+
+    if line.endswith("  "):
+        error(f"Line {counter}: Line ends with spaces. please remove them.")        
+        
     line = line.strip()
     if line.startswith("```"):
         code = not code
