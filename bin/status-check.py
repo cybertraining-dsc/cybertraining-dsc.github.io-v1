@@ -20,12 +20,6 @@ filename = sys.argv[1]
 with open(filename, 'r') as f:
   content = f.read()
 
-for line in content.splitlines():
-    lines = lines + 1
-    if "- [ ]" in line:
-        error("")
-
-  
 code = False    
 counter = 0
 section = False
