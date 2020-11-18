@@ -32,7 +32,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to create an algorithm to recommend songs to a user based on their mood.">
 
-<meta itemprop="wordCount" content="1385">
+<meta itemprop="wordCount" content="1441">
 
 
 
@@ -886,15 +886,13 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 <p>The following terms defined are important in our analyses. In our data set most terms contain are represented by a  value between 0 and 1, indicating least to most. For example, looking at the first two rows in Figure 1, we can see that the track by the artist, Pop Smoke, has a greater speechiness score, indicating a greater percentage of that song contains spoken word.</p>
 <ul>
 <li><strong>Danceability:</strong> uses several musical elements (tempo, stability, beat strength, regularity) to determine how suitable a given track is for dancing</li>
-<li><strong>Energy:</strong></li>
-<li><strong>Loudness:</strong></li>
-<li><strong>Mode:</strong></li>
-<li><strong>Speechiness:</strong></li>
-<li><strong>Acousticness:</strong></li>
-<li><strong>instrumentalness:</strong></li>
-<li><strong>liveness:</strong></li>
-<li><strong>valence:</strong></li>
-<li><strong>tempo:</strong></li>
+<li><strong>Energy:</strong>  measures intensity of a song</li>
+<li><strong>Loudness:</strong> average loudness (in decibels) of a track</li>
+<li><strong>Mode:</strong> indicates whether track uses major(0) or minor (1) scale</li>
+<li><strong>Speechiness:</strong> identifies how much of a track contains spoken word</li>
+<li><strong>Instrumentalness:</strong> confidence value on a track having no vocal content</li>
+<li><strong>Valence:</strong> predicts the overall happiness, or positivity of a track based on its musical features</li>
+<li><strong>Tempo:</strong> average tempo of a track</li>
 </ul>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>There are several aspects that could be improved upon in future iterations of our study. In this project we only worked with songs released after 2017, but obviously, people would still enjoy listening to songs from previous years. The Spotiy API contains audio features data for every song in its library, so it would be worth collecting that data on every song for usage in the generation of song recommendations. Secondly, our data set excluded songs on Spotify, whose lyrics could not be found easily on Genius.com. We should have handled these cases by attempting to find the lyrics from other popular websites which store music lyrics. And lastly, we worked with a very small dataset relative to the total amount of songs that exist, or that are available by Spotify.</p>

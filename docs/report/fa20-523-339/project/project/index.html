@@ -32,7 +32,7 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
 Tao Liu, fa20-523-339, Edit
 Abstract As a result of last twenty year&rsquo;s Internet development in the global, E-commerce industry is getting stronger and stronger. While customers enjoyed their convenient online purchase environment, the E-commerce see the potential for the data and information customer left during their online-shopping process. One fundamental usage for this information is to perform Recommendation Strategy to give customer potential products they would also like to purchase.">
 
-<meta itemprop="wordCount" content="718">
+<meta itemprop="wordCount" content="842">
 
 
 
@@ -516,9 +516,10 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
 <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-choice-of-data-sets">2. Choice of Data-sets</a></li>
-    <li><a href="#3-methodology">3. Methodology</a></li>
-    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#2-background">2. Background</a></li>
+    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
+    <li><a href="#4-data-preprocessing-and-cleaning">4. Data Preprocessing and cleaning</a></li>
+    <li><a href="#5-recommendation-rate-calculation">5. Recommendation Rate Calculation</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-references">8. References</a></li>
@@ -579,18 +580,16 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-choice-of-data-sets">2. Choice of Data-sets</a></li>
-    <li><a href="#3-methodology">3. Methodology</a></li>
-    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#2-background">2. Background</a></li>
+    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
+    <li><a href="#4-data-preprocessing-and-cleaning">4. Data Preprocessing and cleaning</a></li>
+    <li><a href="#5-recommendation-rate-calculation">5. Recommendation Rate Calculation</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 </div>
-1. Introduction
-2. Background
-3. Choice of Dataset
 
 </div>
 
@@ -598,11 +597,13 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Big data have many applications in the scientific research and business, from those in the hardware perspective like Higgs Discovery to the software perspective like E-commence. However, with the passage of time, the online shopping and E-commerce have now become one of the most popular events for citizen&rsquo;s life and society. Millions of goods are now sale online to the customers all over the world. With the 5G technology&rsquo;s implementation is inevitable. These activities will create millions of data about customer&rsquo;s behaviors like how they value products, how they purchase or sale the products and how they review for the goods purchase. These data will have a tremendous contribution for corporations to analyze. These data can not only help convince the current strategies of the E-commerce is on a right track, but also a potential way to see which step E-commerce can make up for attracting more customers to buy the goods. At the same time, these data can also be implemented as a way for recommendation strategies for E-commerce. It will help customers find the next products they like in a short period by implementing machine learning technology on Big Data. The corporations also can enjoy the increase of sale and potential of more attraction for recommendation strategies. A better recommendation strategy on E-commerce is now the new trend for massive data scientists and researchers’ target. Therefore, this field is now one the most popular research area in the data science fields.
 In this final project, An User-Based Collaborative Filtering will be implemented to get a taste on the recommendation strategy based on Customer&rsquo;s Gift card purchase record and the item they also viewed and bought.</p>
-<h2 id="2-choice-of-data-sets">2. Choice of Data-sets</h2>
-<p>The dataset for this study is called <em>Amazon Review Data</em> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Particularly, since the dataset is now reach billions of amount,the subcategery gift card will be used as an example, since the overall product type is closed to 2000 and the amount of data retrieved is currently in the right amount of training and testing. This fact can help to see if the machine learning strategies work in the cases.</p>
-<h2 id="3-methodology">3. Methodology</h2>
-<p>The first step will data collection and data cleaning. The second step will be use data to perform machine learning methods and strech several visualizations based on that. The final step is using the data to mimic a real-world recommendations products within a random-selected dataset. The final result and overall correctness will be recorded for the conclusion.</p>
-<h2 id="5-inference">5. Inference</h2>
+<h2 id="2-background">2. Background</h2>
+<p>Recommendation Strategy is a quite popular research area in recent years with a strong real-world influence. Therefore, It is obvious that there are plenty of recommendation strategy have been done. The most poplular techique for recommendation systems is called Collaborative Filtering, it is a techique that can filter out items that a user might like on the basis of reactions by similar users.During which, the memory-based method is considered in this report since it used dataset to calculate the prediction by using statistical techniques and that demands the requirement for the dataset. There are two kinds of memory-based method available: <em>User-Based Collaborative Filtering</em>, <em>Item-Based Collaborative Filtering</em>. Only User-BasedCollaborative is considered and implemented in the report since Item-Based Collaborative Filtering requires a customer review rate for evalution. This attribute is unavailable in the given dataset. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
+<p>The dataset for this study is called <em>Amazon Review Data</em> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Particularly, since the dataset is now reach billions of amount,the subcategery gift card will be used as an example, since the overall product type is closed to 2000 and the amount of data retrieved is currently in the right amount of training and testing. This fact can help to perform User-Based Collaborative Filtering in a control timeline.</p>
+<h2 id="4-data-preprocessing-and-cleaning">4. Data Preprocessing and cleaning</h2>
+<p>The first step will be data collection and data cleaning. The raw data-set is imported directly from data-set contributors&rsquo; online storage <em>meta_Gift_Cards.json.gz</em> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to Google Colab notebook</p>
+<h2 id="5-recommendation-rate-calculation">5. Recommendation Rate Calculation</h2>
 <p>This section will be addressed upon project completion.</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>This section will be addressed upon project completion.</p>
@@ -613,7 +614,13 @@ In this final project, An User-Based Collaborative Filtering will be implemented
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Justifying recommendations using distantly-labeled reviews and fined-grained aspects. Jianmo Ni, Jiacheng Li, Julian McAuley. Empirical Methods in Natural Language Processing (EMNLP), 2019.. <a href="http://jmcauley.ucsd.edu/data/amazon/">http://jmcauley.ucsd.edu/data/amazon/</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Build a Recommendation Engine With Collaborative Filtering. Ajitsaria, A. 2020.. <a href="https://realpython.com/build-recommendation-engine-collaborative-filtering/">https://realpython.com/build-recommendation-engine-collaborative-filtering/</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Justifying recommendations using distantly-labeled reviews and fined-grained aspects. Jianmo Ni, Jiacheng Li, Julian McAuley. Empirical Methods in Natural Language Processing (EMNLP), 2019.. <a href="http://jmcauley.ucsd.edu/data/amazon/">http://jmcauley.ucsd.edu/data/amazon/</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>meta_Gift_Cards.json.gz.. <a href="http://deepyeti.ucsd.edu/jianmo/amazon/metaFiles/meta_Gift_Cards.json.gz">http://deepyeti.ucsd.edu/jianmo/amazon/metaFiles/meta_Gift_Cards.json.gz</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

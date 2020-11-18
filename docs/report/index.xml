@@ -3731,8 +3731,24 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;p&gt;An individual player-performance model for NFL skill position players (i.e., quarterback, wide receiver, tight end, and running back) will perform better than chance level (50%) of identifying playoff teams from the NFL during the season&amp;rsquo;s of 2009-2019. Further, an exploratory analysis of time periods (2009-2011 vs 2016-2018) will expose differences in the key metrics that are used to predict playoff appearance over time. This will give us a better understanding of the shifts in perfromance in the NFL at each skill position.&lt;/p&gt;
 &lt;h3 id=&#34;preliminary-results&#34;&gt;Preliminary Results&lt;/h3&gt;
 &lt;h4 id=&#34;2009-2011-skill-position-player-performance-as-playoff-predictor&#34;&gt;2009-2011 Skill Position Player Performance as Playoff Predictor&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Breakdown of Players by Skill Position That Qualified for Post-Season Play (2009-2011)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Player_summary_2009_2011.png&#34; alt=&#34;Player Qualifying for Post-Season&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Count of Play-type by Post-Season Qualification category (2009-2011)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Play_count_position_2009.png&#34; alt=&#34;Count of Play-type by Post-Season Qualification category&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; ANOVA Table for Metrics Measured as Predictors for Teams Qualifying for Post-Season Play (2009-2011)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Anova_metric_importance_2009.png&#34; alt=&#34;ANOVA for Metric Importance in Model&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;2016-2018-skill-position-player-performance-as-playoff-predictor&#34;&gt;2016-2018 Skill Position Player Performance as Playoff Predictor&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Breakdown of Players by Skill Position That Qualified for Post-Season Play (2016-2018)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Player_summary_2016-2018.png&#34; alt=&#34;Player Qualifying for Post-Season&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Count of Play-type by Post-Season Qualification category (20016-2018)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Play_Count_Position_2016.png&#34; alt=&#34;Count of Play-type by Post-Season Qualification category&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; ANOVA Table for Metrics Measured as Predictors for Teams Qualifying for Post-Season Play (2016-2018)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Anova_Metric_importance_2016.png&#34; alt=&#34;ANOVA for Metric Importance in Model&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;comparative-results&#34;&gt;Comparative Results&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; ANOVA Chart for Metrics Measured as Predictors for Teams Qualifying for Post-Season Play (2009-2011)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Anova_sig_features_2009.png&#34; alt=&#34;ANOVA Chart for Metric Importance in Model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt; ANOVA Chart for Metrics Measured as Predictors for Teams Qualifying for Post-Season Play (2016-2018)
+&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Anova_sig_features_2016.png&#34; alt=&#34;ANOVA Chart for Metric Importance in Model&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
 &lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;

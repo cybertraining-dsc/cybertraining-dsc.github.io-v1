@@ -527,7 +527,8 @@
       <ul>
         <li><a href="#a1-deployment">A.1. Deployment</a></li>
         <li><a href="#a2--pipiline-anova-svm">A.2.  Pipiline ANOVA SVM</a></li>
-        <li><a href="#a3-using-unit-tests-for-benchmarking">A.3. Using unit tests for Benchmarking</a></li>
+        <li><a href="#a3--eigenfaces-svm-facial-recognition">A.3.  Eigenfaces SVM Facial Recognition</a></li>
+        <li><a href="#a4-using-unit-tests-for-benchmarking">A.4. Using unit tests for Benchmarking</a></li>
       </ul>
     </li>
     <li><a href="#appendix-b---code-location">APPENDIX B. - Code Location</a></li>
@@ -633,7 +634,8 @@ is included in our evaluation.</p>
       <ul>
         <li><a href="#a1-deployment">A.1. Deployment</a></li>
         <li><a href="#a2--pipiline-anova-svm">A.2.  Pipiline ANOVA SVM</a></li>
-        <li><a href="#a3-using-unit-tests-for-benchmarking">A.3. Using unit tests for Benchmarking</a></li>
+        <li><a href="#a3--eigenfaces-svm-facial-recognition">A.3.  Eigenfaces SVM Facial Recognition</a></li>
+        <li><a href="#a4-using-unit-tests-for-benchmarking">A.4. Using unit tests for Benchmarking</a></li>
       </ul>
     </li>
     <li><a href="#appendix-b---code-location">APPENDIX B. - Code Location</a></li>
@@ -994,7 +996,61 @@ iris.data and the parameters <code>5.1</code>, <code>3.5</code>, <code>1.4</code
 examples that we derive from existing sklearn examples. We benchmark
 these tests while wrapping them into pytests and run them on various
 cloud services.</p>
-<h3 id="a3-using-unit-tests-for-benchmarking">A.3. Using unit tests for Benchmarking</h3>
+<h3 id="a3--eigenfaces-svm-facial-recognition">A.3.  Eigenfaces SVM Facial Recognition</h3>
+<p>Next we demonstrate how to locally run the Eigenfaces SVM example, and
+then how to run its associated benchmark script.</p>
+<pre><code>$ pwd
+~/cm/cloudmesh-openapi
+
+$ git checkout benchmark # todo required until merged into main
+
+$ cms openapi generate EigenfacesSVM \
+      --filename=./tests/generator-eigenfaces-svm/eigenfaces-svm-full.py \
+      --import_class --enable_upload
+
+$ cms openapi server start ./tests/generator-eigenfaces-svm/eigenfaces-svm-full.yaml
+</code></pre><p>After running these commands, we opened a web user interface at <a href="http://localhost:8080/cloudmesh/ui">http://localhost:8080/cloudmesh/ui</a>.In the user interface, we run the download_data function with the default arguments. This downloads and extracts the labeled faces in the wild data set to the ~/scikit_learn_data/lfw_home directory.</p>
+<p>Next, we run the train function to train the model. The train function performs a 50/50 train/test split on the input data, and returns performance statistics of the trained model.</p>
+<p>Next, we use the upload function to upload an example image using <code>~./tests/generator-eigenfaces-svm/example_image.jpg</code> as the function argument. This puts the example image in the ~/.cloudmesh/upload-file/ directory.</p>
+<p>Finally, we run the predict function with the uploaded file path as an argument, <code>~/.cloudmesh/upload-file/example_image.jpg</code>, and recieve the classification as a response <code>['George W. Bush']</code></p>
+<p>Lastly, we close the server:</p>
+<pre><code>$ cms openapi server stop EigenfacesSVM
+</code></pre><p>Next, we benchmark these tests while wrapping them into pytests and run them on various cloud services.</p>
+<p><strong>Before continuing you must have successfully registered AWS, Azure, and Google clouds in your yaml file and be able to boot virtual machines on Google, AWS, and Azure. This example currently should work on Linux and macOS</strong></p>
+<p>First we must change to a git branch that includes Azure provider fixes, and setup our ~./cloudmesh/cloudmesh.yaml file to replicate the parameters set for the benchmark results above.</p>
+<pre><code>$ cd ~/cm/cloudmesh-azure 
+$ git checkout benchmark # required until changes merged to main
+
+$ cd ~/cm/cloudmesh-openapi
+
+$ cp ~/.cloudmesh/cloudmesh.yaml ~/.cloudmesh/cloudmesh.bak.1 # to revert reverse the cp
+
+$ cms config set cloudmesh.cloud.azure.default.image=&quot;Canonical:0001-com-ubuntu-server-focal:20_04-lts:20.04.202006100&quot;
+$ cms config set cloudmesh.cloud.azure.default.size=&quot;Standard_D2s_v3&quot;
+$ cms config set cloudmesh.cloud.azure.credentials.AZURE_REGION=&quot;eastus&quot;
+
+$ cms config set cloudmesh.cloud.aws.default.image=&quot;ami-0dba2cb6798deb6d8&quot;
+$ cms config set cloudmesh.cloud.aws.default.size=&quot;m4.large&quot;
+$ cms config set cloudmesh.cloud.aws.default.username=&quot;ubuntu&quot;
+$ cms config set cloudmesh.cloud.aws.credentials.region=&quot;us-east-1&quot;
+
+$ cms config set cloudmesh.cloud.google.default.image=&quot;ubuntu-2004-lts&quot;
+$ cms config set cloudmesh.cloud.google.default.image_project=&quot;ubuntu-os-cloud&quot;
+$ cms config set cloudmesh.cloud.google.default.zone=&quot;us-east1-b&quot;
+$ cms config set cloudmesh.cloud.google.default.region=&quot;us-east1&quot;
+$ cms config set cloudmesh.cloud.google.default.flavor=&quot;n1-standard-2&quot;
+</code></pre><p>Next we will modify the default security group to open the flask server port 8080 for OpenAPI service testing.</p>
+<pre><code>$ cms sec rule add openapi 8080 8080 tcp 0.0.0.0/0
+$ cms sec group add default openapi for_openapi_demo
+# the above two command should allow aws and azure to work
+# sec group load is broken for google and it does not use the default sec group, so you have to manually add the openapi rule to google cloud for now
+# console.cloud.google.com &gt; VPC network &gt; firewall &gt; create firewall rule
+# name: openapi, targets:  all instances in network, Source IP ranges: 0.0.0.0 /0, specified protocols and ports: tcp 8080 &gt; create
+</code></pre><p>Next we will run the benchmarking script, ~./tests/generator-eigenfaces-svm/benchmark-eigenfaces.py. This script utilizes the Cloudmesh shell and the Bash script, ~/.tests/generator-eigenfaces-svm/eigenfaces-svm-full-script, to sequentially deploy a VM on each of the clouds, install Cloudmesh-openapi and the example dependencies, and then us the pytest, ./tests/test_030_generator_eigenfaces_svm.py, twice to benchmark the EigenfacesSVM service functions both locally from the server, and from the remote client running the benchmark script. Finally, it prints and plots performance statistics.</p>
+<pre><code>$ ./tests/generator/eigenfaces-svm/benchmark-eigenfaces.py run
+</code></pre><p>If the command line argument <code>run</code> is passed to the script, then it will start up the virtual machines on each cloud. Output and benchmark results from each of the virtual machines will be store in the ~/.cloudmesh/eigenfaces-svm/vm_script_output/ directory. The benchmark results are scraped from the script outputs and stored in the ~/.cloudmesh/eigenfaces-svm/benchmark_output directory. If the <code>run</code> argument is <strong>not</strong> provided, it will only print statistics from script output already stored in the vm_script_output directory.</p>
+<p>Statistics will be printed to the commandline, and graphs will be displayed using plt.show() function calls as well as saved to the ~./tests/generator-eigenfaces-svm/ directory.</p>
+<h3 id="a4-using-unit-tests-for-benchmarking">A.4. Using unit tests for Benchmarking</h3>
 <p>TODO: This section will be expanded upon</p>
 <ul>
 <li>
@@ -1086,7 +1142,6 @@ finish the report.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <p>We like to thank <a href="https://github.com/cybertraining-dsc/fa20-523-325/">Vishwanadham Mandala</a> to participate in helping write an earlier version of this document.</p>
 <h2 id="references">References</h2>
-<p> </p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -1108,36 +1163,36 @@ finish the report.</p>
 <li id="fn:6" role="doc-endnote">
  <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
 <li id="fn:7" role="doc-endnote">
-<p>OpenAPI Initiative, &ldquo;The openapi specification.&rdquo; Web Page [Online]. Available: &lt;https://github.com/OAI/OpenAPI- Specification/blob/main/versions/2.0.md&gt; <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>OpenAPI Initiative, &ldquo;The openapi specification&rdquo;, Web Page [Online]. Available: &lt;https://github.com/OAI/OpenAPI- Specification/blob/main/versions/2.0.md&gt; <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
 <p>OpenAPI Initiative, &ldquo;The openapi specification.&rdquo; Web Page [Online]. Available: <a href="https://github.com/OAI/OpenAPI-Specification">https://github.com/OAI/OpenAPI-Specification</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:9" role="doc-endnote">
-<p>RAML, &ldquo;RAML version 1.0: RESTful api modeling language.&rdquo; Web Page [Online]. Available: <a href="https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md">https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>RAML, &ldquo;RAML version 1.0: RESTful api modeling language&rdquo;, Web Page [Online]. Available: <a href="https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md">https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:10" role="doc-endnote">
-<p>R. H. Kevin Burke Kyle Conroy, &ldquo;Flask-restful.&rdquo; Web Page [Online]. Available: <a href="https://flask-restful.readthedocs.io/en/latest/">https://flask-restful.readthedocs.io/en/latest/</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>R. H. Kevin Burke Kyle Conroy, &ldquo;Flask-restful&rdquo;, Web Page [Online]. Available: <a href="https://flask-restful.readthedocs.io/en/latest/">https://flask-restful.readthedocs.io/en/latest/</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:11" role="doc-endnote">
-<p>E. O. Ltd, &ldquo;Django rest framework.&rdquo; Web Page [Online]. Available:
+<p>E. O. Ltd, &ldquo;Django rest framework&rdquo;, Web Page [Online]. Available:
 <a href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/</a> <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:12" role="doc-endnote">
-<p>S. Software, &ldquo;API development for everyone.&rdquo; Web Page [Online]. Available: <a href="https://swagger.io">https://swagger.io</a> <a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>S. Software, &ldquo;API development for everyone&rdquo;, Web Page [Online]. Available: <a href="https://swagger.io">https://swagger.io</a> <a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:13" role="doc-endnote">
-<p>A. Y. W. Hate, &ldquo;OpenAPI.Tools.&rdquo; Web Page [Online]. Available:
+<p>A. Y. W. Hate, &ldquo;OpenAPI.Tools&rdquo;, Web Page [Online]. Available:
 <a href="https://openapi.tools/">https://openapi.tools/</a> <a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:14" role="doc-endnote">
-<p>S. Software, &ldquo;Swagger codegen documentation.&rdquo; Web Page [Online]. Available: <a href="https://swagger.io/docs/open-source-tools/swagger-codegen/">https://swagger.io/docs/open-source-tools/swagger-codegen/</a> <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>S. Software, &ldquo;Swagger codegen documentation&rdquo;, Web Page [Online]. Available: <a href="https://swagger.io/docs/open-source-tools/swagger-codegen/">https://swagger.io/docs/open-source-tools/swagger-codegen/</a> <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:15" role="doc-endnote">
-<p>&ldquo;NIST SP 800-145&rdquo; Web page [Online]. Available: <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;NIST SP 800-145&rdquo;, Web page [Online]. Available: <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:16" role="doc-endnote">
-<p>&ldquo;TensorFlow Enterprise.&rdquo; Web page [Online]. Available: <a href="https://cloud.google.com/tensorflow-enterprise">https://cloud.google.com/tensorflow-enterprise</a> <a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;TensorFlow Enterprise&rdquo;, Web page [Online]. Available: <a href="https://cloud.google.com/tensorflow-enterprise">https://cloud.google.com/tensorflow-enterprise</a> <a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:17" role="doc-endnote">
 <p>&ldquo;Amazon Polly. Turn text into lifelike speech using deep learning.&rdquo; Web page [Online]. Available: <a href="https://aws.amazon.com/polly/?c=ml&amp;sec=srv">https://aws.amazon.com/polly/?c=ml&amp;sec=srv</a> <a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
@@ -1146,16 +1201,16 @@ finish the report.</p>
 <p>Scikit Learn, Pipeline Anova SVM, <a href="https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html">https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html</a> <a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:19" role="doc-endnote">
-<p>&ldquo;Faces recognition example using eigenfaces and SVMs.&rdquo; Web Page [Online]. Available: <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py">https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py</a> <a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Faces recognition example using eigenfaces and SVMs&rdquo;, Web Page [Online]. Available: <a href="https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py">https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py</a> <a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:20" role="doc-endnote">
 <p>Huang, Gary &amp; Jain, Vidit &amp; Learned-Miller, Erik. (2007). Unsupervised Joint Alignment of Complex Images. ICCV. 1-8. 10.1109/ICCV.2007.4408858. Available: <a href="http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf">http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf</a> <a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:21" role="doc-endnote">
-<p>&ldquo;Amazon EC2 Instance Types&rdquo; Web page [Online]. Available: <a href="https://aws.amazon.com/ec2/instance-types/">https://aws.amazon.com/ec2/instance-types/</a> <a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Amazon EC2 Instance Types&rdquo;, Web page [Online]. Available: <a href="https://aws.amazon.com/ec2/instance-types/">https://aws.amazon.com/ec2/instance-types/</a> <a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:22" role="doc-endnote">
-<p>&ldquo;Machine Types&rdquo; Web page [Online]. Available: <a href="https://cloud.google.com/compute/docs/machine-types">https://cloud.google.com/compute/docs/machine-types</a> <a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Machine Types&rdquo;, Web page [Online]. Available: <a href="https://cloud.google.com/compute/docs/machine-types">https://cloud.google.com/compute/docs/machine-types</a> <a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:23" role="doc-endnote">
 <p>Cloudmesh Openapi Web page <a href="https://github.com/cloudmesh/cloudmesh-openapi">https://github.com/cloudmesh/cloudmesh-openapi</a> <a href="#fnref:23" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
