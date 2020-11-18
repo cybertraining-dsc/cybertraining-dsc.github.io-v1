@@ -34,7 +34,7 @@ for line in content.splitlines():
             print (line)
 
 if  "Status: final" not in content: 
-    error("Please indicate final submission with Status: final after the CHeck Report Icon")
+    error("Please indicate final submission with `Status: final` after the Check Report Icon. Please see https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/main/project/project.md for an example where to place the Status: flag")
     
 if wrong:
     print (f"{errors} Errors found")
