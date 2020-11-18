@@ -513,7 +513,12 @@
         <li><a href="#24-containers-and-microservices">2.4 Containers and Microservices</a></li>
       </ul>
     </li>
-    <li><a href="#3-architecture">3. Architecture</a></li>
+    <li><a href="#3-architecture">3. Architecture</a>
+      <ul>
+        <li><a href="#31-basic-auth-security">3.1 Basic Auth Security</a></li>
+        <li><a href="#32-utilizing-pickle-as-an-alternative-to-mongodb-for-out-of-the-box-functionality">3.2 Utilizing Pickle as an alternative to MongoDB for &ldquo;out-of-the-box&rdquo; functionality</a></li>
+      </ul>
+    </li>
     <li><a href="#4-benchmarks">4. Benchmarks</a>
       <ul>
         <li><a href="#41-algorithms-and-datasets">4.1. Algorithms and Datasets</a></li>
@@ -529,6 +534,8 @@
         <li><a href="#a2--pipiline-anova-svm">A.2.  Pipiline ANOVA SVM</a></li>
         <li><a href="#a3--eigenfaces-svm-facial-recognition">A.3.  Eigenfaces SVM Facial Recognition</a></li>
         <li><a href="#a4-using-unit-tests-for-benchmarking">A.4. Using unit tests for Benchmarking</a></li>
+        <li><a href="#a5-basic-auth-example">A.5. Basic Auth Example</a></li>
+        <li><a href="#a6-switching-between-pickledb-and-mongodb">A.6 Switching between PickleDB and MongoDB</a></li>
       </ul>
     </li>
     <li><a href="#appendix-b---code-location">APPENDIX B. - Code Location</a></li>
@@ -620,7 +627,12 @@ is included in our evaluation.</p>
         <li><a href="#24-containers-and-microservices">2.4 Containers and Microservices</a></li>
       </ul>
     </li>
-    <li><a href="#3-architecture">3. Architecture</a></li>
+    <li><a href="#3-architecture">3. Architecture</a>
+      <ul>
+        <li><a href="#31-basic-auth-security">3.1 Basic Auth Security</a></li>
+        <li><a href="#32-utilizing-pickle-as-an-alternative-to-mongodb-for-out-of-the-box-functionality">3.2 Utilizing Pickle as an alternative to MongoDB for &ldquo;out-of-the-box&rdquo; functionality</a></li>
+      </ul>
+    </li>
     <li><a href="#4-benchmarks">4. Benchmarks</a>
       <ul>
         <li><a href="#41-algorithms-and-datasets">4.1. Algorithms and Datasets</a></li>
@@ -636,6 +648,8 @@ is included in our evaluation.</p>
         <li><a href="#a2--pipiline-anova-svm">A.2.  Pipiline ANOVA SVM</a></li>
         <li><a href="#a3--eigenfaces-svm-facial-recognition">A.3.  Eigenfaces SVM Facial Recognition</a></li>
         <li><a href="#a4-using-unit-tests-for-benchmarking">A.4. Using unit tests for Benchmarking</a></li>
+        <li><a href="#a5-basic-auth-example">A.5. Basic Auth Example</a></li>
+        <li><a href="#a6-switching-between-pickledb-and-mongodb">A.6 Switching between PickleDB and MongoDB</a></li>
       </ul>
     </li>
     <li><a href="#appendix-b---code-location">APPENDIX B. - Code Location</a></li>
@@ -764,7 +778,26 @@ objectives.</p>
 <h3 id="24-containers-and-microservices">2.4 Containers and Microservices</h3>
 <p>TBD</p>
 <h2 id="3-architecture">3. Architecture</h2>
-<p>TBD</p>
+<h3 id="31-basic-auth-security">3.1 Basic Auth Security</h3>
+<p>Cloudmesh OpenAPI supports configuration of a single authorized user through
+basic authentication. Basic authentication is a simple authentication scheme built
+into the HTTP protocol. The client sends HTTP requests with the <code>Authorization</code>
+header that contains the word <code>Basic</code> followed by a space and a base64-encoded
+string of the format <code>username:password</code>.</p>
+<p>From wikipedia, basic auth is &ldquo;a method for an HTTP user agent (e.g. a web browser) to provide a user name and password when making a request&rdquo;. (<a href="https://github.com/cloudmesh/cloudmesh-openapi">more on this</a>)</p>
+<p>A cloudmesh user can create an OpenAPI server whose endpoints are only accessible
+as an authorized user. Currently, when basic auth is used as the authentication mechanism,
+all endpoints are secured with this method. While this can be benficial to lock down an API,
+it is limited in the sense that is is &ldquo;all or nothing&rdquo;: either all endpoints are secured or none at all.
+This is something that can be improved upon in the future.</p>
+<p>For an example of basic auth usage, see <a href="#a5-basic-auth-example">Appendix A.5.</a></p>
+<p>Read more about Basic Auth usage with OpenAPI <a href="https://swagger.io/docs/specification/authentication/basic-authentication/">here</a></p>
+<h3 id="32-utilizing-pickle-as-an-alternative-to-mongodb-for-out-of-the-box-functionality">3.2 Utilizing Pickle as an alternative to MongoDB for &ldquo;out-of-the-box&rdquo; functionality</h3>
+<p>Currently, the installation and setup of cloudmesh openapi involves the installation of MongoDB and the configuration of mongo variables. This is documented <a href="https://github.com/cloudmesh/cloudmesh-openapi#installation">here.</a></p>
+<p>There have been serveral recent cloudmesh projects involving Raspberry Pis. Unfortunately, the minimum version of MongoDB required for openapi is not available to the Raspberry Pi. Thus cloudmesh-openapi is not available to Pi users with MongoDB.</p>
+<p>In an effort to provide this software to all those that are interested regardless of OS/machine, we have added a new default storage mechanism that functions &ldquo;out-of-the-box&rdquo; with cloudmesh-openapi. This storage mechanism is implemented with python&rsquo;s native Pickle at the heart. All interfaces associated with MongoDB interactions have been extended to support switching to PickleDB. Thus, this addition is backwards compatible with previous versions of cloudmesh-openapi and requires little changes in the existing code base to support. Since Pickle is native to python, it is supported on any platform running python.</p>
+<p>It is important to note that there are essentially no security mechanisms with Pickle. We provide this option for users to test their APIs on different machines with little to no setup, but we do not recommend its usage in a production server.</p>
+<p>See <a href="#a6-switching-between-pickledb-and-mongodb">Appendix A.6</a> to see how to switch between DB protocols.</p>
 <h2 id="4-benchmarks">4. Benchmarks</h2>
 <h3 id="41-algorithms-and-datasets">4.1. Algorithms and Datasets</h3>
 <p>This project uses a number of simple example algorithms and
@@ -973,7 +1006,10 @@ cms openapi server stop add
 </code></pre><p>These examples are used to demonstrate the ease of use as well as the
 functionality for those that want to replicate our work.</p>
 <h3 id="a2--pipiline-anova-svm">A.2.  Pipiline ANOVA SVM</h3>
-<p>Next we demonstrate how oto run the Pipeline ANOVA example.</p>
+<p>This example demonstrates how to deploy a simple machine learning example onto a server using cloudmesh-openapi. The specific implementation details that this example is based on can be found <a href="https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html">here.</a></p>
+<p>The model being implemented is, in essence, an SVM with extra features to improve the model.  An SVM (support vector machine) is a supervised learning model with associated learning algorithms used for classification and regression analysis. This model has become one of the most robust prediction methods widely used in problems conerning classification and the like.</p>
+<p>The Pipeline and ANOVA aspects are extensions to the SVM to improve the overall model. The purpose of the pipeline is to assemble several steps that can be cross-validated together while setting different parameters. ANOVA on the other hand is an acronym for Analysis of Variance. It is an omnibus test, meaning it tests for a difference overall between all groups. In the context of an SVM, this information is useful as an SVM mainly classifies data into separate groups.</p>
+<p>We can now proceed as follows:</p>
 <pre><code>$ pwd
 ~/cm/cloudmesh-openapi
 
@@ -1066,9 +1102,28 @@ cms set cloud=azure
 <li>
 <p>Describe the Benchmark class from cloudmesh in one sentence and how
 we use it</p>
+<h3 id="a5-basic-auth-example">A.5. Basic Auth Example</h3>
+<p>Basic Auth in cloudmesh openapi can be enabled with the following flag</p>
+<pre><code>--basic_auth=&lt;username&gt;:&lt;password&gt;
+</code></pre><p>flag. As such, this example will be an extension of a previously existing example. To follow with this example, navigate to the <code>cloudmesh-openapi</code> directory.</p>
+<p>We will use the <code>server-cpu</code> example which tells the user the CPU of the machine running the API.</p>
+<p>For this example, let&rsquo;s create a user with username <code>admin</code> and password <code>secret</code>.</p>
+<pre><code>cms openapi generate get_processor_name \
+  --filename=./tests/server-cpu/cpu.py \
+  --basic_auth=admin:secret
+</code></pre><p>We can start the server as follows:</p>
+<pre><code>cms openapi server start ./tests/server-cpu/cpu.yaml
+</code></pre><p>The user will now be required to authenticate as the registered user in order to access the API. This can be done by specifying the Basic Auth credentials in the header as done <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization">here</a>. Alternatively, the user can login via the <a href="http://localhost:8080/cloudmesh/u">swagger UI</a> when the server is started.</p>
 </li>
 </ul>
-<h2 id="appendix-b---code-location">APPENDIX B. - Code Location</h2>
+<h3 id="a6-switching-between-pickledb-and-mongodb">A.6 Switching between PickleDB and MongoDB</h3>
+<p>The default &ldquo;out-of-the-box&rdquo; storage mechanism of cloudmesh-openapi is Pickle. This requires no setup of the DB on the user&rsquo;s end.</p>
+<p>To switch to MongoDB, the user must first change their config option as follows:</p>
+<pre><code>cms openapi register protocol mongo
+</code></pre><p>Note that by switching to mongo, certain mongo variables need to be filled out. Mongo may need to be installed as well. Refer to <a href="https://github.com/cloudmesh/cloudmesh-openapi/#installation">this</a> documentation to see how this process can be done.</p>
+<p>One may switch back to pickle with the same command:</p>
+<pre><code>cms openapi register protocol pickle
+</code></pre><h2 id="appendix-b---code-location">APPENDIX B. - Code Location</h2>
 <p>This is temporary and will in final be moved elsewhere. Its
 conveniently for now placed on top so we can easier locate it</p>
 <ul>

@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Estimating Soil Moisture Content Using Sensor and Weather Data   Status: in progress
+<meta property="og:description" content="Estimating Soil Moisture Content Using Weather Data   Status: final
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
-Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible." />
+Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-305/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Estimating Soil Moisture Content Using Sensor and Weather Data   Status: in progress
+<meta itemprop="description" content="Estimating Soil Moisture Content Using Weather Data   Status: final
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
-Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible.">
+Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term.">
 
-<meta itemprop="wordCount" content="4328">
+<meta itemprop="wordCount" content="4389">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Estimating Soil Moisture Content Using Sensor and Weather Data   Status: in progress
+<meta name="twitter:description" content="Estimating Soil Moisture Content Using Weather Data   Status: final
 Cody Harris, harrcody@iu.edu, fa20-523-305, Edit
-Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible."/>
+Abstract As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term."/>
 
 
 
@@ -534,7 +534,8 @@ Abstract As the world is gripped with finding solutions to problems such as food
     <li><a href="#11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</a></li>
     <li><a href="#12-other-models">12. Other Models</a></li>
     <li><a href="#13-conclusion">13. Conclusion</a></li>
-    <li><a href="#11-references">11. References</a></li>
+    <li><a href="#14-acknowledgements">14. Acknowledgements</a></li>
+    <li><a href="#15-references">15. References</a></li>
   </ul>
 </nav>
 
@@ -575,11 +576,11 @@ Abstract As the world is gripped with finding solutions to problems such as food
 	<h1></h1>
     
 	       
-	<h1 id="estimating-soil-moisture-content-using-sensor-and-weather-data">Estimating Soil Moisture Content Using Sensor and Weather Data</h1>
+	<h1 id="estimating-soil-moisture-content-using-weather-data">Estimating Soil Moisture Content Using Weather Data</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-305/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-305/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-305/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-305/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress</p>
-<p>Cody Harris, <a href="mailto:harrcody@iu.edu">harrcody@iu.edu</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-305">fa20-523-305</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-305/edit/master/project/project.md">Edit</a></p>
+Status: final</p>
+<p>Cody Harris, <a href="mailto:harrcody@iu.edu">harrcody@iu.edu</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-305">fa20-523-305</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-305/edit/main/project/project.md">Edit</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
@@ -608,14 +609,15 @@ Status: in progress</p>
     <li><a href="#11-various-other-linear-regression-model-experiments">11. Various Other Linear Regression Model Experiments</a></li>
     <li><a href="#12-other-models">12. Other Models</a></li>
     <li><a href="#13-conclusion">13. Conclusion</a></li>
-    <li><a href="#11-references">11. References</a></li>
+    <li><a href="#14-acknowledgements">14. Acknowledgements</a></li>
+    <li><a href="#15-references">15. References</a></li>
   </ul>
 </nav>
 </div>
 
 </div>
 
-<p><strong>Keywords:</strong> agriculture, soil moisture, IoT, machine learning, regression</p>
+<p><strong>Keywords:</strong> agriculture, soil moisture, IoT, machine learning, regression, sklearn</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Maintaining correct soil moisture throughout the plant growing process can result in better yields, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligible effects <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.</p>
 <p>For hundreds of years, farmers have done something similar to this model. The difference is the precision that we can gain by using real data. For the past few hundred years, farmers had to rely on mostly experience and touch to know the moisture of their soil. While many farmers were successful, in the sense that they produced crops, there were ways they could have better optimized their crops to produce better. The water available to the plants is not the only variable that effects yields, but this project seeks to create an accessible model to which farmers can have predicted values of soil moisture without needing to buy and deploy expensive sensors.</p>
@@ -980,7 +982,9 @@ Status: in progress</p>
 <p>The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm. As random forests performed so well out of the box, some attempts were made to tune the hyperparameters, but most experiments turned out to be computationally expensive.</p>
 <h2 id="13-conclusion">13. Conclusion</h2>
 <p>The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively, this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.</p>
-<h2 id="11-references">11. References</h2>
+<h2 id="14-acknowledgements">14. Acknowledgements</h2>
+<p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
+<h2 id="15-references">15. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

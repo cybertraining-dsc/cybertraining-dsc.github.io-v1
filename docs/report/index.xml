@@ -3046,11 +3046,11 @@ A project this large and versatile requires the use of many software tools. Thes
       <description>
         
         
-        &lt;h1 id=&#34;estimating-soil-moisture-content-using-sensor-and-weather-data&#34;&gt;Estimating Soil Moisture Content Using Sensor and Weather Data&lt;/h1&gt;
+        &lt;h1 id=&#34;estimating-soil-moisture-content-using-weather-data&#34;&gt;Estimating Soil Moisture Content Using Weather Data&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-305/workflows/Check%20Report/badge.svg&#34; alt=&#34;Check Report&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-305/workflows/Status/badge.svg&#34; alt=&#34;Status&#34;&gt;&lt;/a&gt;
-Status: in progress&lt;/p&gt;
-&lt;p&gt;Cody Harris, &lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305&#34;&gt;fa20-523-305&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/edit/master/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+Status: final&lt;/p&gt;
+&lt;p&gt;Cody Harris, &lt;a href=&#34;mailto:harrcody@iu.edu&#34;&gt;harrcody@iu.edu&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305&#34;&gt;fa20-523-305&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-305/edit/main/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
@@ -3079,14 +3079,15 @@ Status: in progress&lt;/p&gt;
     &lt;li&gt;&lt;a href=&#34;#11-various-other-linear-regression-model-experiments&#34;&gt;11. Various Other Linear Regression Model Experiments&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#12-other-models&#34;&gt;12. Other Models&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#13-conclusion&#34;&gt;13. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#11-references&#34;&gt;11. References&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#14-acknowledgements&#34;&gt;14. Acknowledgements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#15-references&#34;&gt;15. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; agriculture, soil moisture, IoT, machine learning, regression&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; agriculture, soil moisture, IoT, machine learning, regression, sklearn&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;Maintaining correct soil moisture throughout the plant growing process can result in better yields, and less overall problems with the crop. Water deficiencies or surplus at various stages of growth have different effects, or even negligible effects &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It is important to have an idea of how your land consumes and stores water, which could be very different based on the plants being used, and variation of elevation and geography.&lt;/p&gt;
 &lt;p&gt;For hundreds of years, farmers have done something similar to this model. The difference is the precision that we can gain by using real data. For the past few hundred years, farmers had to rely on mostly experience and touch to know the moisture of their soil. While many farmers were successful, in the sense that they produced crops, there were ways they could have better optimized their crops to produce better. The water available to the plants is not the only variable that effects yields, but this project seeks to create an accessible model to which farmers can have predicted values of soil moisture without needing to buy and deploy expensive sensors.&lt;/p&gt;
@@ -3451,7 +3452,9 @@ Status: in progress&lt;/p&gt;
 &lt;p&gt;The random forest regressor performed amazingly in predicting the soil moisture. While the lower depths of soil did perform better than the depth of 30 cm. As random forests performed so well out of the box, some attempts were made to tune the hyperparameters, but most experiments turned out to be computationally expensive.&lt;/p&gt;
 &lt;h2 id=&#34;13-conclusion&#34;&gt;13. Conclusion&lt;/h2&gt;
 &lt;p&gt;The end results of all experimentation was a process in which two datasets could be joined and fed into a model to predict the soil moisture with great accuracy, an r^2 score of between 0.977 and 0.991 depending on the depth using a Random Forest Regressor with default settings. This process could be a repeatable process in which a farmer contracts a company to gather training data on their land specifically for a growing season. As the collection of the sensor data could be cumbersome and expensive to deal with as a farmer, so this is an alternative that is cheaper and still gives nearly the same results as having sensors constantly running. Alternatively, this process could be a subprocess in a larger suite of software that farmers could use for predictive analysis or even to have data on soil moisture from a grow season to use in post season analysis of their crop produced. As long as large scale AI programs are still expensive and cumbersome for farmers to deal with, there will be a low rate of adoption. This project has shown that a solution for large scale soil moisture prediction software could be done with relatively low computational cost.&lt;/p&gt;
-&lt;h2 id=&#34;11-references&#34;&gt;11. References&lt;/h2&gt;
+&lt;h2 id=&#34;14-acknowledgements&#34;&gt;14. Acknowledgements&lt;/h2&gt;
+&lt;p&gt;The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the &lt;em&gt;FA20-BL-ENGR-E534-11530: Big Data Applications&lt;/em&gt; course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.&lt;/p&gt;
+&lt;h2 id=&#34;15-references&#34;&gt;15. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
