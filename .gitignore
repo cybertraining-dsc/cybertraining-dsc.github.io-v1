@@ -34,3 +34,5 @@ docs/report/*/backup/
 docs/report/*/project/images/*.PNG
 docs/report/fa20-523-316/project/images/AllImages 
 docs/report/fa20-523-316/project/backup_project/
+docs/report/*/project/figures
+docs/report/*/project/figure
