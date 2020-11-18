@@ -30,7 +30,7 @@ for line in content.splitlines():
         code = not code
     if not code:
         if "- [ ]" in line:
-            error(f"{counter}: Please address comment.")        
+            error(f"Line {counter}: Please address comment.")        
             print (line)
 
 if  "Status: final" not in content: 

@@ -111,13 +111,13 @@ for line in content.splitlines():
     counter = counter + 1 
     if line.startswith("!["):
         if "raw" not in line:
-            error(f"{counter}: Image must be included from raw. URL wrong.")
+            error(f"Line {counter}: Image must be included from raw. URL wrong.")
 
         ending = line.rsplit(".")[-1][:-1]
         if ending not in ["png", "jpg", "jpeg"]:
-            error(f"{counter}: Image ending must be one of png, jpg, jpeg.")
+            error(f"Line {counter}: Image ending must be one of png, jpg, jpeg.")
         if "/images/" not in line:
-            error(f"{counter}: Image must be in an images folder")
+            error(f"Line {counter}: Image must be in an images folder")
 
 if "[Edit](https://github.com/cybertraining-dsc/" not in content:
     error("no edit link found")
@@ -136,17 +136,17 @@ for line in content.splitlines():
         code = not code
     if not code:
         if section and not line == "":
-            error(f"{counter}: Line after heading must be empty.")        
+            error(f"Line {counter}: Line after heading must be empty.")        
         section = line.startswith("#")
 
         if line.startswith("# "):
             titles = titles + 1
         if " http://" in line or " https://" in line:
-            error(f"{counter}: http link is not enclosed in < >.")
+            error(f"Line {counter}: http link is not enclosed in < >.")
         if ("http://" in line or "https://" in line) and " >" in line:
-            error(f"{counter}: Closing > has a space in front of it")
+            error(f"Line {counter}: Closing > has a space in front of it")
         if ("http://" in line or "https://" in line) and "\\>" in line:
-            error(f"{counter}: Closing > has a \ in front of it")
+            error(f"Line {counter}: Closing > has a \ in front of it")
 
 if titles > 1:
     error("you used multiple titles")
@@ -161,11 +161,11 @@ for line in content.splitlines():
     for tag in ["h1", "h2", "h3", "h4", "th", "td",
                 "ul", "img", "p", "b", "li"]:
         if f"<{tag}>" in line:
-            error(f"{counter}: HTML tag <{tag}> not allowed in project.")
+            error(f"Line {counter}: HTML tag <{tag}> not allowed in project.")
         if f"</{tag}>" in line:
-            error(f"{counter}: HTML tag </{tag}> not allowed in project.")
+            error(f"Line {counter}: HTML tag </{tag}> not allowed in project.")
     if "“" in line or "”" in line:
-        error(f"{counter}: Illeagal quote use \" instead")
+        error(f"Line {counter}: Illeagal quotes are “ ”. Instead use \" ")
 
 # Check README
 
