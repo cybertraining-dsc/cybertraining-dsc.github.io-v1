@@ -151,8 +151,15 @@ Sections that must be included
 * Analysis
   Write about your intended analysis 
 * Plan 
-  Provide a plan that lists what you do every week.(This plan is to be removed before the final submission at the end of the semester. You can move it into a file called project/plan.md
+  Provide a plan that lists what you do every week.(This plan is to be
+  removed before the final submission at the end of the semester.
+  You can move it into a file called project/plan.md
   in case you like to preserve it
+* Refernces
+
+Please make sure that the refernce section is the last section in the document.
+
+
 
 ## Reports without programming
 
@@ -267,6 +274,9 @@ The reference section must be the last section in your report
 See, there is no space before the :
 
 see also https://piazza.com/class/kedccsbsthm5sc?cid=45
+
+Please make sure that different refernces are separated by an empty
+line.
 
 ### Format of References
 
