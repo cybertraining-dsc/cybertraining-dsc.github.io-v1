@@ -5049,7 +5049,7 @@ Status: in progress&lt;/p&gt;
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared. This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets[^1]. The dataset contains data of hourly power consumption of a 2 storied house in Houston, Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.&lt;/p&gt;
+&lt;p&gt;Electricity is an inevitable part of our day today life. Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared. This project is based on the dataset Residential Power Usage 3 years data in Kaggle datasets. The dataset contains data of hourly power consumption of a 2 storied house in Houston, Texas from 01-06-2016 to August 2020. It includes data during the Covid-19 lockdown and are marked as well. We are planning to build a model to predict future usage from available data.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -5099,7 +5099,7 @@ The data spread across two files will have to be merged according to date. For t
 &lt;li&gt;It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for prediction.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;4-datasets&#34;&gt;4. Datasets&lt;/h2&gt;
-&lt;p&gt;Data is spread across two csv files.&lt;/p&gt;
+&lt;p&gt;Data is spread across two csv files&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;power_usage_2016_to_2020.csv&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -5130,10 +5130,10 @@ The data spread across two files will have to be merged according to date. For t
 &lt;p&gt;Here we analyse different features, their relation with each other and target.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/dow.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Average power usage by day of the week&lt;/p&gt;
-&lt;p&gt;In Figure 5, the average power usage by the day of the week is plotted. It is analyzed that Saturday and Friday has the most usage compared to other days of the week. Similarly, from Figure 6, there is a huge dip in power usage during vacation. Other three occasions like covid lockdown, weekend and weekdays have almost same power usage, even though consumption during weekends outweigh.&lt;/p&gt;
+&lt;p&gt;In Figure 5, the average power usage by the day of the week is plotted&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. It is analyzed that Saturday and Friday has the most usage compared to other days of the week. Similarly, from Figure 6, there is a huge dip in power usage during vacation. Other three occasions like covid lockdown, weekend and weekdays have almost same power usage, even though consumption during weekends outweigh.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/tod.png&#34; alt=&#34;Figure 6&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Average power usage by type of the day&lt;/p&gt;
-&lt;p&gt;In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.&lt;/p&gt;
+&lt;p&gt;In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/monthly_power.png&#34; alt=&#34;Figure 7&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Average power usage per month for three years&lt;/p&gt;
 &lt;h2 id=&#34;7-modelling&#34;&gt;7. Modelling&lt;/h2&gt;
@@ -5156,6 +5156,15 @@ Since the output is power consumption in kWh, we selected linear regression for 
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Use of energy explained - Energy use in homes, &lt;a href=&#34;https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php&#34;&gt;https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Residential Power Usage dataset, &lt;a href=&#34;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&#34;&gt;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;seaborn: statistical data visualization, &lt;a href=&#34;https://seaborn.pydata.org/index.html&#34;&gt;https://seaborn.pydata.org/index.html&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Group by: split-apply-combine, &lt;a href=&#34;https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html&#34;&gt;https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
