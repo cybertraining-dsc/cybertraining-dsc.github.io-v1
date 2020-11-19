@@ -178,7 +178,23 @@ for line in content.splitlines():
     for c in ["©", "®", "¯", "±", "·", "¼", "½", "½", "…", "′", "″"]:
         if c in line:
             error(f"Line {counter}: {c} is not allowed.")
-        
+    
+    for word in ["prefer",
+                     "will",
+                     "chose",
+                     "thought",
+                     "have",
+                     "want",
+                     "did",
+                     "wish",
+                     "was",
+                     "am",
+                     "refer",
+                     "need",
+                     "figured",
+                     "pick"]:
+        if f"I {word}" in line:
+            error(f"Line {counter}: we found I in your report, please do not use I {word}.")
         
 # Check README
 
