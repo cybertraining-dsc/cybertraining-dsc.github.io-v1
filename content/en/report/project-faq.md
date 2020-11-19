@@ -23,7 +23,7 @@ your projects with other class mates openly.
 If you see something missing that we shoudl add, please edit this web
 page and create a pull request with your changes:
 
-[Edit here](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/edit/master/content/en/report/checklist.md)
+[Edit here](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/edit/main/content/en/report/checklist.md)
 
 ## Where to get help?
 
@@ -137,7 +137,7 @@ done your project, It also will not lead to your best result.
 A sample of a report is provided at
 
 * Raw:
-<https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md>
+<https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/main/project/project.md>
 * <https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/>
 
 Sections that must be included
@@ -367,12 +367,12 @@ at
 * <https://cybertraining-dsc.github.io/report/>
 
 * <https://cybertraining-dsc.github.io/report/fa20-523-312/project/project/>
-* <https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/master/project/project.md>
+* <https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-312/main/project/project.md>
 
 See that githib does not quite render it properly, but it will by ok
 for a superficial view and editing.
 
-* <https://github.com/cybertraining-dsc/fa20-523-312/blob/master/project/project.md>
+* <https://github.com/cybertraining-dsc/fa20-523-312/blob/main/project/project.md>
 
 Make sure to check your report at
 
