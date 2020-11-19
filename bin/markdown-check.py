@@ -162,6 +162,7 @@ for line in content.splitlines():
     line = line.strip()
     counter = counter + 1     
 
+
     for tag in ["h1", "h2", "h3", "h4", "th", "td",
                 "ul", "img", "p", "b", "li"]:
         if f"<{tag}>" in line:
@@ -171,6 +172,14 @@ for line in content.splitlines():
     if "“" in line or "”" in line:
         error(f"Line {counter}: Illeagal quotes are “ ”. Instead use \" ")
 
+    if "•" in line:
+        error(f"Line {counter}: illeagal bullet •, please use *")
+
+    for c in ["©", "®", "¯", "±", "·", "¼", "½", "½", "…", "′", "″"]:
+        if c in line:
+            error(f"Line {counter}: {c} is not allowed.")
+        
+        
 # Check README
 
 try:
