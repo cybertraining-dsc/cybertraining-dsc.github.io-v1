@@ -207,3 +207,11 @@ This weeks video class discussed deep learning for Time Series. There are [Googl
 ### Videos for Week 12
 
 Continue work on project and complete study of videos already assigned. If interesting to you, please review videos on AI in Banking, Space and Energy, Transportation Systems, Mobility (Industry), and Commerce. Don't forget the participation grade from GitHub activity each week.
+
+## Week 13
+
+This weeks video class went through project questions.
+
+{{< youtube "dVjn_FShMqY" >}}.
+
+The class is formally finished. Please submit your homework and project.
