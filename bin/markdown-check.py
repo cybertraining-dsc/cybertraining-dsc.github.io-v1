@@ -178,6 +178,8 @@ for line in content.splitlines():
     for c in ["¶", "©", "®", "¯", "±", "·", "¼", "½", "½", "…", "′", "″"]:
         if c in line:
             error(f"Line {counter}: {c} is not allowed.")
+
+    # Check for I
     
     for word in ["prefer",
                      "will",
@@ -195,7 +197,14 @@ for line in content.splitlines():
                      "pick"]:
         if f"I {word}" in line:
             error(f"Line {counter}: we found I in your report, please do not use I {word}.")
-        
+
+    # Check for contractions
+    
+    for word in ["'t", "'re", "'d", "'s", "'m"]:
+        if f"I {word}" in line:
+            error(f"Line {counter}: please do not use contractions in formal papers. Found {word}.")
+
+            
 # Check README
 
 try:
