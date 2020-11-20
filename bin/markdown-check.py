@@ -175,7 +175,7 @@ for line in content.splitlines():
     if "•" in line:
         error(f"Line {counter}: illeagal bullet •, please use *")
 
-    for c in ["©", "®", "¯", "±", "·", "¼", "½", "½", "…", "′", "″"]:
+    for c in ["¶", "©", "®", "¯", "±", "·", "¼", "½", "½", "…", "′", "″"]:
         if c in line:
             error(f"Line {counter}: {c} is not allowed.")
     
