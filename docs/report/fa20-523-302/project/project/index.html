@@ -34,7 +34,7 @@ Abstract Contents
 Abstract Contents
  1. Introduction 2. Background Research and Previous Work 3. Choice of Data-sets 4. Methodology 5. Discussion 6. Conclusion 7. Acknowledgements 8. References     Keywords: Wearables, Classification, Descriptive Analysis, Healthcare, Movement Tracking, Precision Health">
 
-<meta itemprop="wordCount" content="898">
+<meta itemprop="wordCount" content="905">
 
 
 
@@ -610,14 +610,12 @@ It is often asserted that a person&rsquo;s environmental factors are better pred
 <p>If successful, this will establish that wearables have a high potential for providing relevant information beyond exercise metrics.</p>
 <h2 id="4-methodology">4. Methodology</h2>
 <p>The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (K-nearest neighbors, random forest).</p>
-<p>First, the data has to be downloaded from the MotionSense project GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.</p>
+<p>First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.</p>
 <p>A SciKit pipeline is set up for each classifier.  After obtaining a train/test split the pipeline applies a standard scaler to normalize the data, and then fits the classifier on the training data.  Each classifier is then scored using the testing dataset.</p>
 <p>If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient&rsquo;s medical history.</p>
 <p>Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.  Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.</p>
 <h2 id="5-discussion">5. Discussion</h2>
-<p>The dataset is comprised of six discrete classes of movement.  Below is a sample of the dataset.</p>
-<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/dataframe.png" alt="Figure 1"></p>
-<p><strong>Figure 1:</strong> Pandas data frame snippet</p>
+<p>The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  The six movement classes are one-hot encoded.</p>
 <p>There is an imbalance in the number of datapoints for each class, which could lead to classification errors.</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/occurence.png" alt="Figure 2"></p>
 <p><strong>Figure 2:</strong> Data distribution per movement class.</p>

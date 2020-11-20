@@ -32,7 +32,7 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 Alex Baker, fa20-523-307, Edit
 Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ) during certain events during his presidency.">
 
-<meta itemprop="wordCount" content="2209">
+<meta itemprop="wordCount" content="2214">
 
 
 
@@ -537,9 +537,8 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
         <li><a href="#63-the-government-shutdown">6.3 The Government Shutdown</a></li>
       </ul>
     </li>
-    <li><a href="#7-outline-of-plan">7. Outline of plan</a></li>
-    <li><a href="#8-conclusion">8. Conclusion</a></li>
-    <li><a href="#9-references">9. References</a></li>
+    <li><a href="#7-conclusion">7. Conclusion</a></li>
+    <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 
@@ -616,9 +615,8 @@ Status: in progress</p>
         <li><a href="#63-the-government-shutdown">6.3 The Government Shutdown</a></li>
       </ul>
     </li>
-    <li><a href="#7-outline-of-plan">7. Outline of plan</a></li>
-    <li><a href="#8-conclusion">8. Conclusion</a></li>
-    <li><a href="#9-references">9. References</a></li>
+    <li><a href="#7-conclusion">7. Conclusion</a></li>
+    <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 </div>
@@ -641,7 +639,7 @@ Status: in progress</p>
 </ul>
 <p>To strengthen the analysis, even more, some code from the 2016 election’s analysis of markets may be utilized but the focus will be on the markets during the Trump administration. Rally data maybe introduced in order to have a deeper sense of some of the tweets when it comes to important news that is announces at President Trump&rsquo;s rallies. In order to have a realistic and strong analysis, the financial data needs to be aligned with the timing of tweets but news that has already started to affect the markets before a tweet has been sent out needs to be taken into account.</p>
 <h2 id="3-data-cleaning-and-preprocessing">3. Data Cleaning and Preprocessing</h2>
-<p>The data obtained needs to be cleaned and pre-processed in order to make it reliable for analysis through the use of Pandas, Regex, and Matplotlib.</p>
+<p>The data required for this project is stock market data and Twitter data from President Trump. Stock market data was collected from Yahoo Finance&rsquo;s API. This data was saved to a CSV file then imported using Pandas. The Twitter data was collected by a Kaggle user and is imported though Kaggle&rsquo;s API or through the use of a local copy saved from the site. The data obtained needs to be cleaned and pre-processed in order to make it reliable for analysis through the use of Pandas, Regex, and Matplotlib.</p>
 <h3 id="31-twitter-data">3.1 Twitter Data</h3>
 <p>When importing the Twitter data, there are several things that are noticed when printing the first five rows. Three of the columns mention, hashtags, and geo are currently showing NaN. After calculating the missing values, all the values in these columns are missing or are zero so we can drop these columns from the dataframe.</p>
 <p>The tweets are one of the last columns needed to be cleaned. The text of the tweets needs to be uniformed in order to conduct analysis. Removing punctuations was the first step followed by removing content specifically seen in tweets. These could be the word retweet, the hashtag symbol(#), the @ symbol followed by a username, and any hyperlinks that could be in a tweet.</p>
@@ -690,16 +688,9 @@ Status: in progress</p>
 <p><strong>Figure 9:</strong> Sentiment Analysis during the Government Shutdown</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/shutdown_stock.png" alt="Figure 10: Open and Close Price during the Government Shutdown"></p>
 <p><strong>Figure 10:</strong> Open and Close Price during the Government Shutdown</p>
-<h2 id="7-outline-of-plan">7. Outline of plan</h2>
-<p>In the next seven weeks, these are the tasks that need to be accomplished.</p>
-<ul>
-<li>Week 9 - Week 10: Clean and preprocess the data needed for the project</li>
-<li>Week 10 - Week 11: Research what methods that should be used</li>
-<li>Week 11 - Week 13: Preform sentiment analysis on certain events.</li>
-</ul>
-<h2 id="8-conclusion">8. Conclusion</h2>
+<h2 id="7-conclusion">7. Conclusion</h2>
 <p>The investigation into the relation between President Trump&rsquo;s tweets and the NASDAQ during certain events. The results showed that a majority of tweets were positive in polarity with subjectivity being higher or sometimes lower depending on the event. The NASDAQ had some interesting reactions based on the events. In highly important events, the stock price tended to have an upward trajectory but leading up to the event the price would go down. These results show that the content of the President&rsquo;s tweets have some impact in terms of the market movements, but many factors go into the price of the market such as foreign relations and how companies are preforming. Finally, its worth s worth mentioning that the analysis doesn’t take into account some factors. Weekends were a factor that was not included into the stock market data. Tweets from the President&rsquo;s official account were not taken into account in this analysis. All of these remaining areas can be added in future research.</p>
-<h2 id="9-references">9. References</h2>
+<h2 id="8-references">8. References</h2>
 <p>[^3] President Donald Trump impeached, History.com, 05-Feb-2020. [online]. Available at: <a href="https://www.history.com/this-day-in-history/president-trump-impeached-house-of-representatives">https://www.history.com/this-day-in-history/president-trump-impeached-house-of-representatives</a>.</p>
 <p>[^4] D. Smith and A. Kassam, Trump orders revival of Keystone XL and Dakota Access pipelines, The Guardian, 24-Jan-2017. [online]. Available at: <a href="https://www.theguardian.com/us-news/2017/jan/24/keystone-xl-dakota-access-pipelines-revived-trump-administration">https://www.theguardian.com/us-news/2017/jan/24/keystone-xl-dakota-access-pipelines-revived-trump-administration</a>.</p>
 <p>[^5] Bryan, B., The government shutdown is now the longest on record and the fight between Trump and Democrats is only getting uglier. Here&rsquo;s everything you missed. 21-Jan-2019. [online]. Available at: <a href="https://www.businessinsider.com/government-shutdown-timeline-deadline-trump-democrats-2019-1">https://www.businessinsider.com/government-shutdown-timeline-deadline-trump-democrats-2019-1</a>.</p>
