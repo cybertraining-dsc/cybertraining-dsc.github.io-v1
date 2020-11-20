@@ -59,6 +59,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * {{% addreport title="Analyzing the Relationship of Cryptocurrencies with Foriegn Exchange Rates and Global Stock Market Indices" author="Krish Hemant Mhatre" hid="fa20-523-332" %}}
 * {{% addreport title="Big Data Application in E-commerce" author="Liu Tao" hid="fa20-523-339" %}}
 * {{% addreport title="Predicting Hotel Prices Using Linear Regression" author="Anthony Tugman" hid="fa20-523-323" %}}
+* {{% addreport title="Stock Market Earnings to Price Change Project" author="Matthew Frechette" hid="fa20-523-336" %}}
 
 
 
@@ -95,7 +96,6 @@ Finance:
 * {{% addreport title="Online Store Customer Revenue Prediction"
   author="Balaji Dhamodharan and Anantha Janakiraman" hid="fa20-523-337" %}}
 * {{% addreport title="Big Data Analytics in Brazilian E-Commerce" author="Oluwatobi Bolarin" hid="fa20-523-330" %}}
-* {{% addreport title="Stock Market Earnings to Price Change Project" author="Matthew Frechette" hid="fa20-523-336" %}}
 * {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 
