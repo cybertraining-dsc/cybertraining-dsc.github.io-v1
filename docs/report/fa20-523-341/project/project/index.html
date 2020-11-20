@@ -32,7 +32,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to create an algorithm to recommend songs to a user based on their mood.">
 
-<meta itemprop="wordCount" content="2280">
+<meta itemprop="wordCount" content="2285">
 
 
 
@@ -521,7 +521,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     <li><a href="#4-project-goals">4. Project Goals</a></li>
     <li><a href="#5-analysis">5. Analysis</a>
       <ul>
-        <li><a href="#data-collection">Data Collection</a></li>
+        <li><a href="#51-data-collection">5.1 Data Collection</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -586,7 +586,7 @@ Status: in progress</p>
     <li><a href="#4-project-goals">4. Project Goals</a></li>
     <li><a href="#5-analysis">5. Analysis</a>
       <ul>
-        <li><a href="#data-collection">Data Collection</a></li>
+        <li><a href="#51-data-collection">5.1 Data Collection</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -633,13 +633,18 @@ Status: in progress</p>
 </li>
 </ul>
 <h2 id="5-analysis">5. Analysis</h2>
-<h3 id="data-collection">Data Collection</h3>
-<h4 id="accumulating-lyrics">Accumulating lyrics</h4>
+<h3 id="51-data-collection">5.1 Data Collection</h3>
+<h4 id="511-accumulating-lyrics">5.1.1 Accumulating lyrics</h4>
 <p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSOup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered a little over 6000 Spotify tracks</p>
 <h4 id="performance-of-sentiment-analysis-on-lyrics">Performance of sentiment analysis on lyrics</h4>
 <p>With a song&rsquo;s lyrics in hand, we used NLTK&rsquo;s sentiment module, Vader, to read each line in the lyrics. NLTK Vader reads a line of text and gives a scores on positivity, negativity, neutrality, and and overall compound score. We marked lines with a compound score greater than 0.5 as positive, less than -0.1 as negative, and anything in between as neutral. We then found the percentages of positive, negative, and neutral lines in a song&rsquo;s composition and saved them to our data set.</p>
 <p>We performed a brief analysis of the legibility of the Vader module in determining sentiment on four separate strings. &ldquo;I&rsquo;m happy&rdquo; and &ldquo;I&rsquo;m so happy&rdquo; were used to compare two positive lines, &ldquo;I&rsquo;m happy&rdquo; was expected to have a positive compound score, but slightly less positive than &ldquo;I&rsquo;m so happy&rdquo;. Similarly, we used two negative lines &ldquo;I&rsquo;m sad&rdquo; and the slightly more extreme, &ldquo;I&rsquo;m so sad&rdquo; which were expected to result in negative compound scores with &ldquo;I&rsquo;m sad&rdquo; being less negative than &ldquo;I&rsquo;m so sad&rdquo;.</p>
-<pre><code>Scores for 'I'm happy': {'neg': 0.0, 'neu': 0.213, 'pos': 0.787, 'compound': 0.5719}
+<pre><code>Scores for 'I'm happy': {
+   'neg': 0.0, 
+   'neu': 0.213, 
+   'pos': 0.787, 
+   'compound': 0.5719
+}
 
 Scores for 'I'm so happy': {'neg': 0.0, 'neu': 0.334, 'pos': 0.666, 'compound': 0.6115}
 
