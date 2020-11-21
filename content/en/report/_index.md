@@ -63,12 +63,12 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 #### Technology
 
-* [![Check Report](https://github.com/cloudmesh/cloudmesh-openapi/workflows/Check%20Report/badge.svg)](https://github.com/cloudmesh/cloudmesh-openapi/actions)
-[Benchmarking Multi-Cloud Auto Generated AI Services](/report/cloudmesh-openapi/paper/), [Gregor von Laszewski](https://laszewski.github.io),  Richard Otten, [Anthony Orlowski](https://github.com/aporlowski), [fa20-523-310](https://github.com/cybertraining-dsc/fa20-523-310/), [Caleb Wilson](https://github.com/calewils), [fa20-523-348](https://github.com/cybertraining-dsc/fa20-523-348/), Vishwanadham Mandala, [fa20-523-325](https://github.com/cybertraining-dsc/fa20-523-325/) [[Edit]](https://github.com/cloudmesh/cloudmesh-openapi/blob/master/paper/_index.md)
-
-
-
-
+* {{% cloudmesh-project
+      title="Benchmarking Multi-Cloud Auto Generated AI Services"
+      author="Gregor von Laszewski, Richard Otten, Anthony Orlowski, Caleb Wilson"
+      org="cloudmesh"
+	  repo="cloudmesh-openapi"
+	  doc="paper/_index.md" %}}
 
 ## Reports that will not be reviewed due to errors or progress
 
