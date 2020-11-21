@@ -10,8 +10,6 @@ menu:
 {{% pageinfo %}}
 This page conatins the list of the reports and projects.
 
-**Please note thet the edit icon only works if your repo is in main**
-
 {{% /pageinfo %}}
 
 ## List
