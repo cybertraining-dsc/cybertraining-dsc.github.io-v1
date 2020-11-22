@@ -40,3 +40,4 @@ docs/report/*/*.csv
 docs/report/*/project/*.csv
 docs/report/*/report/*.csv
 docs/report/fa20-523-316/project/cookies.txt
+docs/report/*/assignments
