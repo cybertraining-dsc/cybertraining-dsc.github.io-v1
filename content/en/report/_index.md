@@ -10,6 +10,11 @@ menu:
 {{% pageinfo %}}
 This page conatins the list of the reports and projects.
 
+Any report with a tag ![](../report/failed-check.png) will no longer
+be reviewed or commented on. Fixing this is trivial. PLease watch the
+class lecture about this. Click on the icon to find out what the
+errors are.
+
 {{% /pageinfo %}}
 
 ## List
@@ -70,9 +75,12 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 	  repo="cloudmesh-openapi"
 	  doc="paper/_index.md" %}}
 
-## Reports that will not be reviewed due to errors or progress
+## Other Reports and Projects
 
-The following reports need to be updated to be considered for review
+The following reports need to be updated to be considered for
+additional review. Make sure you make significant progress.
+They are listed here as it makes it easier fu us to monitor them
+seperately.
 
 Health and society:
 
@@ -97,20 +105,20 @@ Finance:
 * {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 
-#### Lifestyle, will not be reviewed due errors or progress
+#### Lifestyle
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
 * {{% addreport title="Music Mood Classification" author="Kunaal Shah"
 hid="fa20-523-341" %}}
 * {{% addreport title="Trending Youtube Videos Analysis" author="Adam Chai" hid="fa20-523-327" %}}
 
-### Reports without Project, Fall 2020, will not be reviewed due to errors or progress
+### Reports without Project
 
 * {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
 * {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
 * {{% addreportonly title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
 
-#### Twitter, will not be reviewed due to errors or progress
+#### Twitter
 
 * {{% addreport title="Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election" author="Sudheer Alluri, Vishwanadham Mandala" hid="fa20-523-316" %}}
 

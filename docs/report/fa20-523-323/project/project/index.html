@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Predicting Hotel Reservation Cancellation Rates   Status: final
+<meta property="og:description" content="Predicting Hotel Reservation Cancellation Rates  you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb    Status: final
 Anthony Tugman, fa20-523-323, Edit
-Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem. Since the beginning of 2019, the lodging segment has seen reservation cancellation rates near 40%. At the directive of business and marketing experts, hotels have previously attempted to solve the problem through an increased focus on reservation retention, flexible booking policies, and targeted marketing." />
+Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-323/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Predicting Hotel Reservation Cancellation Rates   Status: final
+<meta itemprop="description" content="Predicting Hotel Reservation Cancellation Rates  you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb    Status: final
 Anthony Tugman, fa20-523-323, Edit
-Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem. Since the beginning of 2019, the lodging segment has seen reservation cancellation rates near 40%. At the directive of business and marketing experts, hotels have previously attempted to solve the problem through an increased focus on reservation retention, flexible booking policies, and targeted marketing.">
+Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem.">
 
-<meta itemprop="wordCount" content="2565">
+<meta itemprop="wordCount" content="2625">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Predicting Hotel Reservation Cancellation Rates   Status: final
+<meta name="twitter:description" content="Predicting Hotel Reservation Cancellation Rates  you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb    Status: final
 Anthony Tugman, fa20-523-323, Edit
-Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem. Since the beginning of 2019, the lodging segment has seen reservation cancellation rates near 40%. At the directive of business and marketing experts, hotels have previously attempted to solve the problem through an increased focus on reservation retention, flexible booking policies, and targeted marketing."/>
+Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem."/>
 
 
 
@@ -564,6 +564,9 @@ Abstract As a result of the Covid-19 pandemic all segments of the travel industr
     
 	       
 	<h1 id="predicting-hotel-reservation-cancellation-rates">Predicting Hotel Reservation Cancellation Rates</h1>
+<ul>
+<li><input disabled="" type="checkbox"> you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb</li>
+</ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-323/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-323/workflows/Check%20Report/badge.svg" alt="Check Report"></a> 
 <a href="https://github.com/cybertraining-dsc/fa20-523-323/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-323/workflows/Status/badge.svg" alt="Status"></a>
 Status: final</p>
@@ -780,8 +783,8 @@ Status: final</p>
 <li>shape:  (84938, 25)</li>
 <li>duplicate entries:  0</li>
 </ul>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure1.png" alt="Data Snapshot">
-<strong>Figure 1:</strong> Snapshot of Data Set after Preprocessing</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure1.png" alt="Data Snapshot"></p>
+<p><strong>Figure 1:</strong> Snapshot of Data Set after Preprocessing</p>
 <h2 id="5-model-creation">5. Model Creation</h2>
 <p>To form the predictive model a Random Forest Classifier will be used.  With the use of the sklearn package, the Random Forest Classifier is simple to implement.  The Random Forest Classifier is based on the concept of a decision tree.  A decision tree is a series of yes/no question asked about the data which eventually leads to a predicted class or value <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.  To start the creation of the model, the data must first be split into a training and testing set.  Typically, this is a ratio that must be adjusted to determine which will result in the higher accuracy.  Here are the accuracy outcomes for various ratios:</p>
 <table>
@@ -824,18 +827,18 @@ Status: final</p>
 </table>
 <p>The train/test ratio of 60/40 had the best initial accuracy of 79.56% so this ratio will be used in the creation of the final model.  For the initial test, all remaining features will be used to train the reservation cancellation outcome.  To determine the accuracy of the resulting model, the number of predicted cancellations is compared to the number of actual cancellations.  As the model stands, the accuracy is at 79.56%.
 This model relies on 23 features for the prediction.  With this many features it is possible that some features have no effect on the cancellation outcome. It is also possible that some features are so closely related that calculating each individually hinders performance while having little effect on outcome.  To evaluate the importance of features, Pearson&rsquo;s correlation coefficent can be used.  Correlation coefficients are used in statistics to measure how strong the relationship is between two variables.  The calculation formula returns a value between -1 and 1 where a value of 1 indicates a strong positive relationship, -1 indicates a strong negative relationship, and 0 indicates that there is no relationship at all <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.  Figure 2 shows the correlation between the remaining features.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure2.png" alt="Initial Model Correlation">
-<strong>Figure 2:</strong> Pearson&rsquo;s Correlation Graph of Remaining Features</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure2.png" alt="Initial Model Correlation"></p>
+<p><strong>Figure 2:</strong> Pearson&rsquo;s Correlation Graph of Remaining Features</p>
 <p>In Figure 2 it is straightforward to identify the correlation between the target variable &lsquo;is_canceled&rsquo; and the remaining features.  It does not appear than any variable has a strong positive or negative correlation, returning a value close to positive or negative 1.  There does however appear to be a dominant correlation between &lsquo;is_canceled&rsquo; and three features: &lsquo;lead_time&rsquo;, &lsquo;adr&rsquo;, and &lsquo;room_correct&rsquo;.  The train/test ratio is again 60/40 and the baseline accuracy of the model is 79.56%.  The remaining features &lsquo;lead_time&rsquo;, &lsquo;adr&rsquo;, and &lsquo;room_correct&rsquo; are used to develop the new model.  Accuracy is again determined by comparing the number of predicted cancellations to the number of actual cancellations.  The updated model has an accuracy of 85.18%.  Figure 3 shows the correlation between the remaining features.  It is important to note that the relationship between the remaining features and target value does not appear to be strong, however there is a correlation nonetheless.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure3.png" alt="Updated Model Correlation">
-<strong>Figure 3:</strong> Pearson&rsquo;s Correlation Graph of Updated Remaining Features</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure3.png" alt="Updated Model Correlation"></p>
+<p><strong>Figure 3:</strong> Pearson&rsquo;s Correlation Graph of Updated Remaining Features</p>
 <p>As a final visualization, Figure 4 shows a comparison between the predicted and actual cancellation instances.  The graph reveals an interesting pattern, the model is over predicting early in the data set and under predicting as it proceeds through the data set. Further inspection and manipulation of the Random Forest parameters were unable to eliminate this pattern.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure4.png" alt="Results Predicted vs. Actual">
-<strong>Figure 4:</strong> Model Results Predicted vs. Actual</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure4.png" alt="Results Predicted vs. Actual"></p>
+<p><strong>Figure 4:</strong> Model Results Predicted vs. Actual</p>
 <h2 id="6-benchmark">6. Benchmark</h2>
-<p>A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure5.png" alt="Benchmark Results">
-<strong>Figure 5:</strong> Cloudmesh Benchmark Results</p>
+<p>A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned. Cloudmesh Comon <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> was used to create the benchmark.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure5.png" alt="Benchmark Results"></p>
+<p><strong>Figure 5:</strong> Cloudmesh Benchmark Results</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
 <p>From the results of the updated predictive model, it is apparent that the lodging industry should invest focus into the Big Data they keep on their customers.  As each hotel chain is unique, it would be necessary for each to develop their own predictive model however it has been demonstrated that such a model would be effective in reducing the number of rooms going unoccupied from reservation cancellation.  As the model is predicting at 85% accuracy, this is a 35% increase in the amount of reservation cancellations that can be accounted for over the current predictive techniques.  To prevent further damage from reservation cancellations the hotel would have theoretically been able to overbook room reservations by 35% or less as they anticipated cancellations.</p>
 <h2 id="8-references">8. References</h2>
@@ -868,6 +871,9 @@ This model relies on 23 features for the prediction.  With this many features it
 </li>
 <li id="fn:9" role="doc-endnote">
 <p>&ldquo;Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps&rdquo;, Statistics How To, 2020. [Online]. Available: <a href="https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/">https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/</a>. [Accessed: 12- Nov- 2020]. <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <a href="https://github.com/cloudmesh/cloudmesh-common">https://github.com/cloudmesh/cloudmesh-common</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

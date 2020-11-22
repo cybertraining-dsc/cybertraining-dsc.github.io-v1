@@ -8,13 +8,13 @@ description: >
 
 {{% pageinfo %}}
 
+This describes weekly meeting and overall videos and homeworks
+
 Contents
 
 {{< table_of_contents >}}
 
 {{% /pageinfo %}}
-
-This describes weekly meeting and overall videos and homeworks
 
 ## Week 1
 This first class discussed overall issues and did the first ~40% of the introductory slides. This presentation is also available as 8 recorded presentations under [Introduction to AI-Driven Digital Transformation](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/introduction/)
