@@ -6,6 +6,14 @@ description: >
   Updated On an ongoing Basis
 ---
 
+{{% pageinfo %}}
+
+Contents
+
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
+
 This describes weekly meeting and overall videos and homeworks
 
 ## Week 1
