@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Predicting Hotel Reservation Cancellation Rates  you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb    Status: final
+<meta property="og:description" content="Predicting Hotel Reservation Cancellation Rates   Status: final
 Anthony Tugman, fa20-523-323, Edit
-Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem." />
+Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem. Since the beginning of 2019, the lodging segment has seen reservation cancellation rates near 40%. At the directive of business and marketing experts, hotels have previously attempted to solve the problem through an increased focus on reservation retention, flexible booking policies, and targeted marketing." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-323/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Predicting Hotel Reservation Cancellation Rates  you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb    Status: final
+<meta itemprop="description" content="Predicting Hotel Reservation Cancellation Rates   Status: final
 Anthony Tugman, fa20-523-323, Edit
-Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem.">
+Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem. Since the beginning of 2019, the lodging segment has seen reservation cancellation rates near 40%. At the directive of business and marketing experts, hotels have previously attempted to solve the problem through an increased focus on reservation retention, flexible booking policies, and targeted marketing.">
 
-<meta itemprop="wordCount" content="2625">
+<meta itemprop="wordCount" content="2672">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Predicting Hotel Reservation Cancellation Rates  you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb    Status: final
+<meta name="twitter:description" content="Predicting Hotel Reservation Cancellation Rates   Status: final
 Anthony Tugman, fa20-523-323, Edit
-Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem."/>
+Abstract As a result of the Covid-19 pandemic all segments of the travel industry face financial struggle. The lodging segment, in particular, has had the financial records scrutinized revealing a glaring problem. Since the beginning of 2019, the lodging segment has seen reservation cancellation rates near 40%. At the directive of business and marketing experts, hotels have previously attempted to solve the problem through an increased focus on reservation retention, flexible booking policies, and targeted marketing."/>
 
 
 
@@ -564,9 +564,6 @@ Abstract As a result of the Covid-19 pandemic all segments of the travel industr
     
 	       
 	<h1 id="predicting-hotel-reservation-cancellation-rates">Predicting Hotel Reservation Cancellation Rates</h1>
-<ul>
-<li><input disabled="" type="checkbox"> you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb</li>
-</ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-323/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-323/workflows/Check%20Report/badge.svg" alt="Check Report"></a> 
 <a href="https://github.com/cybertraining-dsc/fa20-523-323/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-323/workflows/Status/badge.svg" alt="Status"></a>
 Status: final</p>
@@ -836,8 +833,17 @@ This model relies on 23 features for the prediction.  With this many features it
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure4.png" alt="Results Predicted vs. Actual"></p>
 <p><strong>Figure 4:</strong> Model Results Predicted vs. Actual</p>
 <h2 id="6-benchmark">6. Benchmark</h2>
-<p>A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned. Cloudmesh Comon <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> was used to create the benchmark.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure5.png" alt="Benchmark Results"></p>
+<p>To measure program performance in the Google Colab notebook, Cloudmesh Common <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> was used to create a benchmark.  In this instance, performance was measured for overall code execution, data loading, preparation of the data, the creation of model one, and the creation of model two.  The most important increase in performance was between the creation of models one and two.  With 23 features, model one took 8.161 seconds to train while model 2, with 3 features, took 7.01 seconds to train.  By reducing the number of features between the two models there is a 5.62% increase in accuracy and a 14.10% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned.  Additionally, the table provides an analysis of computation time:
+| Train/Test Ratio | Accuracy |
+|:&mdash;&mdash;&mdash;&mdash;&mdash;-:|:&mdash;&mdash;&ndash;:|
+|       80/20      |  77.64%  |
+|       70/30      |  77.66%  |
+|       60/40      |  79.56%  |
+|       50/50      |  77.92%  |
+|       40/60      |  75.73%  |
+|       30/70      |  74.71%  |
+|       20/80      |  73.13%  |
+<img src="https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure5.png" alt="Benchmark Results"></p>
 <p><strong>Figure 5:</strong> Cloudmesh Benchmark Results</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
 <p>From the results of the updated predictive model, it is apparent that the lodging industry should invest focus into the Big Data they keep on their customers.  As each hotel chain is unique, it would be necessary for each to develop their own predictive model however it has been demonstrated that such a model would be effective in reducing the number of rooms going unoccupied from reservation cancellation.  As the model is predicting at 85% accuracy, this is a 35% increase in the amount of reservation cancellations that can be accounted for over the current predictive techniques.  To prevent further damage from reservation cancellations the hotel would have theoretically been able to overbook room reservations by 35% or less as they anticipated cancellations.</p>
