@@ -517,6 +517,8 @@
       <ul>
         <li><a href="#31-basic-auth-security">3.1 Basic Auth Security</a></li>
         <li><a href="#32-utilizing-pickle-as-an-alternative-to-mongodb-for-out-of-the-box-functionality">3.2 Utilizing Pickle as an alternative to MongoDB for &ldquo;out-of-the-box&rdquo; functionality</a></li>
+        <li><a href="#33-cloud-provider-hosted-ai-service">3.3 Cloud Provider Hosted AI Service</a></li>
+        <li><a href="#34-multi-cloud-hosted-ai-service">3.4 Multi-Cloud Hosted AI Service</a></li>
       </ul>
     </li>
     <li><a href="#4-benchmarks">4. Benchmarks</a>
@@ -534,7 +536,10 @@
         </li>
         <li><a href="#43-result-comparision">4.3. Result Comparision</a>
           <ul>
-            <li><a href="#eigenfaces-svm-example">Eigenfaces-SVM Example</a></li>
+            <li><a href="#431-vm-selection">4.3.1 VM Selection</a></li>
+            <li><a href="#432-eigenfaces-svm-example">4.3.2 Eigenfaces-SVM Example</a></li>
+            <li><a href="#433-pipelined-anova-svm-example">4.3.3 Pipelined Anova SVM Example</a></li>
+            <li><a href="#434-caleb-example">4.3.4 Caleb Example</a></li>
           </ul>
         </li>
       </ul>
@@ -644,6 +649,8 @@ is included in our evaluation.</p>
       <ul>
         <li><a href="#31-basic-auth-security">3.1 Basic Auth Security</a></li>
         <li><a href="#32-utilizing-pickle-as-an-alternative-to-mongodb-for-out-of-the-box-functionality">3.2 Utilizing Pickle as an alternative to MongoDB for &ldquo;out-of-the-box&rdquo; functionality</a></li>
+        <li><a href="#33-cloud-provider-hosted-ai-service">3.3 Cloud Provider Hosted AI Service</a></li>
+        <li><a href="#34-multi-cloud-hosted-ai-service">3.4 Multi-Cloud Hosted AI Service</a></li>
       </ul>
     </li>
     <li><a href="#4-benchmarks">4. Benchmarks</a>
@@ -661,7 +668,10 @@ is included in our evaluation.</p>
         </li>
         <li><a href="#43-result-comparision">4.3. Result Comparision</a>
           <ul>
-            <li><a href="#eigenfaces-svm-example">Eigenfaces-SVM Example</a></li>
+            <li><a href="#431-vm-selection">4.3.1 VM Selection</a></li>
+            <li><a href="#432-eigenfaces-svm-example">4.3.2 Eigenfaces-SVM Example</a></li>
+            <li><a href="#433-pipelined-anova-svm-example">4.3.3 Pipelined Anova SVM Example</a></li>
+            <li><a href="#434-caleb-example">4.3.4 Caleb Example</a></li>
           </ul>
         </li>
       </ul>
@@ -774,33 +784,9 @@ OpenAPI Tools <sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc
 specifications <sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup></li>
 </ul>
 <h3 id="23-vm-cloud-providers">2.3 VM Cloud providers</h3>
-<p>Cloud computing providers offer their customers on-demand self-service
-computing resources that are rapidly elastic and accessible via broad
-network access <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>. They accomplish this through the
-economies of scale achieved by resource pooling (serving multiple
-customers on the same hardware), and utilizing measured services for
-fine grained customer billing <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>. Examples of cloud
-providers include Amazon Web Services, Microsoft Azure, Google Cloud
-Platform, Oracle’s OpenStack based providers, and more.  Cloud
-providers offer these resources in multiple service models including
-infrastructure as a service, platform as a service, software as a
-service, and, recently, function as a service <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>.
-These providers are rapidly offering new platforms and services
-ranging from bare-metal machines to AI development platforms like
-Google’s TensorFlow Enterprise platform <sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup>, and
-AI services such as Amazon’s text-to-speech service <sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup>.</p>
-<p>Customers can take advantage of cloud computing to reduce overhead
-expenses, increase their speed and scale of service deployment, and
-reduce development requirements by utilizing providers’ platforms or
-services. For example, customers’ developing AI systems can utilize
-clouds to handle big data inputs for which private infrastructure
-would be too costly or slow to implement. However, having multiple
-competing cloud providers leads to situations where service
-availability, performance, and cost may vary greatly. Customer’s must
-navigate these heterogeneous solutions to meet their business needs
-while avoiding provider lock-in and managing organizational risk. This
-may require comparing or utilizing multiple cloud providers to meet various
-objectives.</p>
+<p>Cloud computing providers offer their customers on-demand self-service computing resources that are rapidly elastic and accessible via broad network access <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>. They accomplish this through the economies of scale achieved by resource pooling (serving multiple customers on the same hardware) and using measured services for fine grained customer billing <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>. Cloud providers offer these resources in multiple service models including infrastructure as a service, platform as a service, software as a service, and, recently, function as a service <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>. These providers are rapidly offering new platforms and services ranging from bare-metal machines to AI development platforms like Google’s TensorFlow Enterprise platform <sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup>, and AI services such as Amazon’s text-to-speech service <sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup>.</p>
+<p>Customers can take advantage of cloud computing to reduce overhead expenses, increase their speed and scale of service deployment, and reduce development requirements by using cloud providers’ platforms or services. For example, customers’ developing AI systems can utilize clouds to handle big data inputs for which private infrastructure would be too costly or slow to implement. However, having multiple competing cloud providers leads to situations where service availability, performance, and cost may vary. Customer’s must navigate these heterogeneous solutions to meet their business needs while avoiding provider lock-in and managing organizational risk. This may require comparing or using multiple cloud providers to meet various objectives.</p>
+<p>Cloudmesh works with a variety of cloud providers including Amazon Web Services, Microsoft Azure, Google Cloud Platform, and Oracle’s OpenStack based providers such as the academic research serving Chameleon Cloud.</p>
 <h3 id="24-containers-and-microservices">2.4 Containers and Microservices</h3>
 <p>TBD</p>
 <h2 id="3-architecture">3. Architecture</h2>
@@ -824,6 +810,14 @@ This is something that can be improved upon in the future.</p>
 <p>In an effort to provide this software to all those that are interested regardless of OS/machine, we have added a new default storage mechanism that functions &ldquo;out-of-the-box&rdquo; with cloudmesh-openapi. This storage mechanism is implemented with python&rsquo;s native Pickle at the heart. All interfaces associated with MongoDB interactions have been extended to support switching to PickleDB. Thus, this addition is backwards compatible with previous versions of cloudmesh-openapi and requires little changes in the existing code base to support. Since Pickle is native to python, it is supported on any platform running python.</p>
 <p>It is important to note that there are essentially no security mechanisms with Pickle. We provide this option for users to test their APIs on different machines with little to no setup, but we do not recommend its usage in a production server.</p>
 <p>See <a href="#a6-switching-between-pickledb-and-mongodb">Appendix A.6</a> to see how to switch between DB protocols.</p>
+<h3 id="33-cloud-provider-hosted-ai-service">3.3 Cloud Provider Hosted AI Service</h3>
+<p>A user deploys Cloudmesh OpenAPI on a virtual machine from a cloud provider, and uses it to host auto-generated, RESTful, AI services. A user constructs an AI service as a set of Python functions that implement a workflow, for example, downloading data from a remote server, training an AI model, uploading a new sample for prediction, and running a prediction on that sample. Cloudmesh OpenAPI hosts user provided Python functions on a web server that is accessible using standard HTTP request methods. In Figure 1 we show a remote client accessing a Cloudmesh OpenAPI server to execute an AI service workflow. In this example, the user deployed Cloudmesh OpenAPI on a virtual machine from a single cloud provider. Cloudmesh OpenAPI provides the choice of multiple supported providers to allow users to meet their specific administrative requirements.</p>
+<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/ai-service-workflow.png" alt="AI Service Workflow"></p>
+<p><strong>Figure 1:</strong> A client running an AI service workflow, generated and hosted by Cloudmesh OpenAPI, on a cloud provider virtual machine. Requests for each function invocation are made using standard HTTP request methods including function arguments.</p>
+<h3 id="34-multi-cloud-hosted-ai-service">3.4 Multi-Cloud Hosted AI Service</h3>
+<p>Cloudmesh with Cloudmesh OpenAPI provides a framework to deploy AI services to multiple clouds. One use case for a multi-cloud deployment is to benchmark cloud provider VM performance. A user can use these tools to script the deployment of virtual machines with different providers, virtual machine sizes, or operating systems.  In Figure 2, a user has deployed an AI service hosted by Cloudmesh OpenAPI on three separate cloud providers, AWS, Azure, and Google. The user makes standard HTTP method requests to access the services simultaneously, and gathers responses and benchmark statistics. With the Cloudmesh benchmark utility, the user can measure the runtime of each AI service function and collect key information such as virtual machine memory usage. This information provides the user key insight for future hosting decisions. We distinguish this example from Figure 1, where the AI service is deployed on a single cloud provider.</p>
+<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/multi-cloud-ai-service.png" alt="Mult-Cloud AI Services"></p>
+<p><strong>Figure 2:</strong> A client simultaneously accesses an AI service hosted on three seperate cloud providers, AWS, Azure, and Google to benchmark provider performance.</p>
 <h2 id="4-benchmarks">4. Benchmarks</h2>
 <h3 id="41-algorithms-and-datasets">4.1. Algorithms and Datasets</h3>
 <p>This project uses a number of simple example algorithms and
@@ -851,24 +845,12 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 <h4 id="oracle">Oracle</h4>
 <h4 id="raspberry-pi-cluster">Raspberry Pi Cluster</h4>
 <h3 id="43-result-comparision">4.3. Result Comparision</h3>
-<h4 id="eigenfaces-svm-example">Eigenfaces-SVM Example</h4>
-<p>The Eigenfaces-SVM benchmark script utilizes Cloudmesh to create virtual machines and setup an Cloudmesh OpenAPI environment sequentially across the three measured clouds including Amazon, Azure, and Google. After the environment is setup, a series of pytests are run that generate and launch the Eigenfaces-SVM OpenAPI service, and then conduct runtime measurements of various service functions.</p>
-<p>The pytest is run in two configurations. After the benchmark script sets up a virtual machine environment, it runs the first pytest locally on the OpenAPI machine and measures five runtimes:</p>
-<ol>
-<li>Downdload and extraction of remote image data from ndownloader.figshare.com/files/5976015</li>
-<li>The model training time when run as an OpenAPI service</li>
-<li>The model training time when run as the scikit-learn example without OpenAPI involvement</li>
-<li>The time to upload an image from the server to itself</li>
-<li>The time to predict and return the target label of the uploaded image</li>
-</ol>
-<p>The second run is conducted on the remote client and interacts with the deployed OpenAPI service over the internet. It tests two runtimes:</p>
-<ol>
-<li>The time to upload an image to the remote OpenAPI server</li>
-<li>The time to run the predict function on the remote OpenAPI server, and return the target label  of the uploaded image</li>
-</ol>
-<p>When benchmarking cloud performance it is important to identify and control deployment parameters that can affect the performance results. This enables one to analyze comparable services or identify opportunities for service improvement due to varying deployment features such as machine size, location, network, or storage hardware. This example aimed to create similar machines across all three clouds and measure service performance. See Table 1 for a summary of the parameters controlled in this benchmark example.</p>
-<p>One key components is the virtual machine size, which determine the number of vCPUs, the amount of memory, attached storage types, and resource sharing policies. Resource sharing policies include shared core machine varieties which are offered at less expensive rates, and allow the virtual machine to opportunistically burst over its base clock rate in exchange for credits or the machines inherent bursting factor <sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup> <sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup>. For this example we chose three similar machine sizes that had comparable vCPUs, comparable underlying processors, memory, price, and were not a shared core variety. Additionally, we installed the same Ubuntu 20.04 operating system on all three clouds.</p>
-<p>Another factor that can affect performance, particularly in network latency, is the zone and region selected. We choose to deploy all benchmark machines to zones located on the east coast of the United States. This helps control variations caused by network routing latency and provide more insight into the inherent network performance of the individual cloud services.</p>
+<p>In this section we will discuss the setup and execution of a benchmark for three example AI services.</p>
+<h4 id="431-vm-selection">4.3.1 VM Selection</h4>
+<p>When benchmarking cloud performance, it is important to identify and control deployment parameters that can affect the performance results. This enables one to analyze comparable services or identify opportunities for service improvement for varying deployment features such as machine size, location, network, or storage hardware. These examples aimed to create similar machines across all three clouds and measure service performance. See Table 1 for a summary of the parameters controlled in these benchmark examples.</p>
+<p>One key component is the virtual machine size, which determines the number of vCPUs, the amount of memory, attached storage types, and resource sharing policies. Resource sharing policies include shared core machine varieties which providers offer at less expensive rates and allow the virtual machines to burst over its base clock rate in exchange for credits or the machines inherent bursting factor <sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup> <sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup>. For this example, we chose three similar machine sizes that had comparable vCPUs, comparable underlying processors, memory, price, and were not a shared core variety. We installed the same Ubuntu 20.04 operating system on all three clouds.</p>
+<p>Another factor that can affect performance, particularly in network latency, is the zone and region selected. We deploy all benchmark machines to zones on the east coast of the United States. This helps control variations caused by network routing latency and provides more insight into the inherent network performance of the individual cloud services.</p>
+<p><strong>Table 1:</strong> Selected VM parameters for benchmark measurement. Clouds were tested at least twice, and were run sequentially between the hours of approximately 1945 EST and 0330 EST starting with Google and ending with Azure. * For the Eigenfaces SVM example, only 60 runs were conducted on Azure due to a failed VM deployment from factors outside of the benchnmark scripts control.</p>
 <table>
 <thead>
 <tr>
@@ -880,28 +862,34 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 </thead>
 <tbody>
 <tr>
-<td>VM size (flavor)</td>
+<td>Size (flavor)</td>
 <td>m4.large</td>
 <td>Standard_D2s_v3</td>
 <td>n1-standard-2</td>
 </tr>
 <tr>
-<td>VM vCPU</td>
+<td>vCPU</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 </tr>
 <tr>
-<td>VM memory (GB)</td>
+<td>Memory (GB)</td>
 <td>8</td>
 <td>8</td>
 <td>7.5</td>
 </tr>
 <tr>
-<td>VM Image</td>
+<td>Image</td>
 <td>ami-0dba2cb6798deb6d8</td>
 <td>Canonical:0001-com-ubuntu-server-focal:20_04-lts:20.04.202006100</td>
 <td>ubuntu-2004-lts</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Ubuntu 20.04 LTS</td>
+<td>Ubuntu 20.04 LTS</td>
+<td>Ubuntu 20.04 LTS</td>
 </tr>
 <tr>
 <td>Region</td>
@@ -929,19 +917,35 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 </tr>
 </tbody>
 </table>
-<p><strong>Table 1:</strong> Eigenfaces-SVM benchmark parameters. Clouds were tested at least twice, and were run sequentially between the hours of approximately 1945 EST and 0330 EST starting with Google and ending with Azure. *Only 60 runs were conducted on Azure due to a failed VM deployment from factors outside of the benchnmark scripts control.</p>
+<h4 id="432-eigenfaces-svm-example">4.3.2 Eigenfaces-SVM Example</h4>
+<p>The benchmark script for the Eigenfaces SVM example uses Cloudmesh to create virtual machines and setup a Cloudmesh OpenAPI environment sequentially across the three measured clouds including Amazon, Azure, and Google. After the script sets up the environment, it runs a series of pytests that generate and launch the Eigenfaces-SVM OpenAPI service, and then conduct runtime measurements of various service functions.</p>
+<p>The benchmark runs the pytest in two configurations. After the benchmark script sets up a virtual machine environment, it runs the first pytest locally on the OpenAPI server and measures five runtimes:</p>
+<ol>
+<li>Download and extraction of remote image data from ndownloader.figshare.com/files/5976015</li>
+<li>The model training time when run as an OpenAPI service</li>
+<li>The model training time when run as the Scikit-learn example without OpenAPI involvement</li>
+<li>The time to upload an image from the server to itself</li>
+<li>The time to predict and return the target label of the uploaded image</li>
+</ol>
+<p>The benchmark runs the second pytest iteration from the remote client it is running on and interacts with the deployed OpenAPI service over the internet. It tests two runtimes:</p>
+<ol>
+<li>The time to upload an image to the remote OpenAPI server</li>
+<li>The time to run the predict function on the remote OpenAPI server, and return the target label  of the uploaded image</li>
+</ol>
 <p>In Figure 1 we compare the download and extraction time of the labeled faces in the wild dataset. This data set is approximately 233 MBs compressed, which allows us to measure a non-trivial data transfer. Lower transfer times imply the cloud has higher throughput from the data server, less latency to the data server, or that it provides access to a higher performing internal network. The standard deviation is displayed to compare the variation in the download times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_1.png" alt="Sample Graph 1"></p>
-<p><strong>Figure 1:</strong> Donwload (233MB) and extraction (~275MB) of remote image data from ndownloader.figshare.com/files/5976015</p>
-<p>In Figure 2 we measure the training time of the Eigenfaces-SVM model both as a OpenAPI service and as the basic Scikit-learn example. This allows us to measure runtime overhead added by OpenAPI compared to the source example. In this case the two functions are identical except that the OpenAPI train function makes an additional store_model function call to store the model to disk using joblib. This is necessary to share the model across the train and predict functions. The standard deviation is displayed to compare the variation in the training times.</p>
+<p><strong>Figure 1:</strong> Donwnload (233MB) and extraction (~275MB) of remote image data from ndownloader.figshare.com/files/5976015.</p>
+<p>In Figure 2 we measure the training time of the Eigenfaces-SVM model both as an OpenAPI service and as the basic Scikit-learn example. This allows us to measure runtime overhead added by OpenAPI compared to the source example. Here the two functions are identical except that the OpenAPI train function makes an additional function call to store the model to disk using joblib. This is necessary to share the model across the train and predict functions. The standard deviation is displayed to compare the variation in the training times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_2.png" alt="Sample Graph 2"></p>
-<p><strong>Figure 2:</strong> Compares the eigenfaces-svm model training time running both as an OpenAPI service, and as the raw Scikit-learn example</p>
+<p><strong>Figure 2:</strong> Compares the eigenfaces-svm model training time running both as an OpenAPI service, and as the raw Scikit-learn example. There are two bars per cloud provider. The bold bars are the training time of the model when hosted as a Cloudmesh OpenAPI function. The pastel bars are the training time of the Scikit-learn example code without Cloudmesh OpenAPI involvement. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
 <p>In Figure 3 we measure the time to upload an image to the server both from itself, and from a remote client. This allows us to compare the function runtime as experienced by the server, and as experienced by a remote client. The difference helps determine the network latency between the benchmark client and the cloud service. The standard deviation is displayed to compare the variation in the upload times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_3.png" alt="Sample Graph 3"></p>
-<p><strong>Figure 3:</strong> Runtime of the upload function when run locally from the OpenAPI server and from a remote client</p>
+<p><strong>Figure 3:</strong> Runtime of the upload function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the upload function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
 <p>In Figure 4 we measure the time to call the predict function on the uploaded image. Again we run this once from the local server itself, and a second time from a remote client to determine as experienced runtimes. The standard deviation is displayed to compare the variation in the predict times.</p>
 <p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_4.png" alt="Sample Graph 4"></p>
-<p><strong>Figure 4:</strong> Runtime of the predict function when run locally from the OpenAPI server and from a remote client</p>
+<p><strong>Figure 4:</strong> Runtime of the predict function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the predict function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
+<h4 id="433-pipelined-anova-svm-example">4.3.3 Pipelined Anova SVM Example</h4>
+<h4 id="434-caleb-example">4.3.4 Caleb Example</h4>
 <h2 id="5-conclusion">5. Conclusion</h2>
 <h2 id="6-limitations">6. Limitations</h2>
 <p>Azure has updated their libraries and discontinued the version 4.0
