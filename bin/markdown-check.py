@@ -195,7 +195,7 @@ for line in content.splitlines():
                      "need",
                      "figured",
                      "pick"]:
-        if f"I {word}" in line:
+        if f" I {word}" in line:
             error(f"Line {counter}: we found I in your report, please do not use I {word}.")
 
     # Check for contractions
