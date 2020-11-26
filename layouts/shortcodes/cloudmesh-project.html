@@ -1,5 +1,5 @@
 {{ $icon := .Get "icon" | default "fa-edit" }} [<i class="{{ if not (or  (hasPrefix $icon "fas ")  (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>](https://github.com/{{.Get "org"}}/{{ .Get "repo"}}/blob/main/{{.Get "doc"}}):
-[{{ .Get "title"}}](https://github.com/{{.Get "org"}}/{{ .Get "repo"}}/blob/main/{{.Get "doc"}}) {{.Get "author"}}
+[{{ .Get "title"}}]({{ .Get "link"}}) {{.Get "author"}}
 
     * <!-- --> ![GitHub Repo stars](https://img.shields.io/github/stars/{{ .Get "org"}}/{{ .Get "repo"}}?style=social)
 <!-- --> [![Check Report](https://github.com/{{ .Get "org"}}/{{ .Get "repo"}}/workflows/Check%20Report/badge.svg)](https://github.com/{{ .Get "org"}}/{{ .Get "repo"}}/actions) {{ $icon := .Get "icon" | default "fa-edit" }}
