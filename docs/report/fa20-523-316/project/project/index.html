@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election   Status: in progress
  check spaces befor and after . please use proper refernce citations, they must be cited in text not cited see our template no real backgound section provided for a paper with two people having juts two references is highly unusual showcasing that the background needs to be reviewed. use proper grammer We will be going to use the dataset is $We use$ this is not a proposal use proper sentences.">
 
-<meta itemprop="wordCount" content="2696">
+<meta itemprop="wordCount" content="2830">
 
 
 
@@ -518,9 +518,14 @@
     <li><a href="#4-methodologyprocess">4. Methodology/Process</a></li>
     <li><a href="#5-development-of-models">5. Development of Models</a></li>
     <li><a href="#6-technologies-used">6. Technologies used</a></li>
-    <li><a href="#7-results">7. Results</a></li>
-    <li><a href="#8-conclusion">8. Conclusion</a></li>
-    <li><a href="#9-acknowledgements">9. Acknowledgements</a></li>
+    <li><a href="#7-analyses-of-us-presidential-elections-2020">7. ANALYSES OF US PRESIDENTIAL ELECTIONS 2020</a>
+      <ul>
+        <li><a href="#subjectivity-analysis">Subjectivity Analysis:</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-results">8. Results</a></li>
+    <li><a href="#9-conclusion">9. Conclusion</a></li>
+    <li><a href="#10-acknowledgements">10. Acknowledgements</a></li>
     <li><a href="#10-plan-for-the-rest-of-the-semseter">10. Plan for the rest of the Semseter</a></li>
     <li><a href="#11-references">11. References</a></li>
   </ul>
@@ -568,7 +573,7 @@
 <a href="https://github.com/cybertraining-dsc/fa20-523-316/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-316/workflows/Status/badge.svg" alt="Status"></a>
 Status: in progress</p>
 <ul>
-<li><input disabled="" type="checkbox"> check spaces befor and after .</li>
+<li><input checked="" disabled="" type="checkbox"> check spaces befor and after .</li>
 <li><input checked="" disabled="" type="checkbox"> please use proper refernce citations, they must be cited in text not cited see our template</li>
 <li><input checked="" disabled="" type="checkbox"> no real backgound section provided</li>
 <li><input checked="" disabled="" type="checkbox"> for a paper with two people having juts two references is highly unusual showcasing that the background needs to be reviewed.</li>
@@ -586,7 +591,7 @@ Status: in progress</p>
 <li><input checked="" disabled="" type="checkbox"> we do not understand what a reference image is that term is not explained in detail and is unclear: Reference image: <a href="https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks">https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks</a></li>
 <li><input disabled="" type="checkbox"> &ldquo;There are a lot of analysis variants. &quot; Which? where are they listed in detail?</li>
 <li><input checked="" disabled="" type="checkbox"> This sentence is unclear &ldquo;It looks great to study the tweets by each twitter account, for instance, but these features have a lot of NaN values, and therefore don’t cover the actual situation.&rdquo;</li>
-<li><input disabled="" type="checkbox"> Based on the analysis from the twitter the predicted winner is projected. What analysis?</li>
+<li><input checked="" disabled="" type="checkbox"> Based on the analysis from the twitter the predicted winner is projected. What analysis?</li>
 <li><input checked="" disabled="" type="checkbox"> &ldquo;The sentiment analysis was performed only on data that had geo-data originating from the &lsquo;United States of America&rsquo; to try to ascertain the sentiment in each respective dataset and therefore each presidential candidate.&rdquo; should go into data selection section, and coudl be repeated as part of the explanation with the conclusion. What consequence has this for your analysis, is your analysis now inaccurate, It also brings up the question what will happen if you include that data and why you have not included it or compared to.</li>
 <li><input checked="" disabled="" type="checkbox"> place cvs files into project/data</li>
 </ul>
@@ -608,9 +613,14 @@ Status: in progress</p>
     <li><a href="#4-methodologyprocess">4. Methodology/Process</a></li>
     <li><a href="#5-development-of-models">5. Development of Models</a></li>
     <li><a href="#6-technologies-used">6. Technologies used</a></li>
-    <li><a href="#7-results">7. Results</a></li>
-    <li><a href="#8-conclusion">8. Conclusion</a></li>
-    <li><a href="#9-acknowledgements">9. Acknowledgements</a></li>
+    <li><a href="#7-analyses-of-us-presidential-elections-2020">7. ANALYSES OF US PRESIDENTIAL ELECTIONS 2020</a>
+      <ul>
+        <li><a href="#subjectivity-analysis">Subjectivity Analysis:</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-results">8. Results</a></li>
+    <li><a href="#9-conclusion">9. Conclusion</a></li>
+    <li><a href="#10-acknowledgements">10. Acknowledgements</a></li>
     <li><a href="#10-plan-for-the-rest-of-the-semseter">10. Plan for the rest of the Semseter</a></li>
     <li><a href="#11-references">11. References</a></li>
   </ul>
@@ -667,7 +677,14 @@ Seaboarn and matlab, used to represent the status of elections in the graphs.</p
 <p>Python, Jupyter notebook or collab, Pandas, Scikit-learn, wget</p>
 <p>Used Pandas to extract details of candidate and wget to download data dynamically from kaggle.
 Scikit-learn used to for graphical representation of candidates along with liked tweets.</p>
-<h2 id="7-results">7. Results</h2>
+<h2 id="7-analyses-of-us-presidential-elections-2020">7. ANALYSES OF US PRESIDENTIAL ELECTIONS 2020</h2>
+<p>In this section of the article, we present the results of our data analysis for US elections of 2020. We will utilize our findings to corroborate the research questions we developed in the previous section.</p>
+<h3 id="subjectivity-analysis">Subjectivity Analysis:</h3>
+<p>We performed subjectivity analysis of Twitter messages during the 2020 US elections. Here, we used Twitter data to analyze which
+candidate was mentioned in more subjective tweets. Results of subjectivity analysis are shown in Figure 2.
+We can observe that tweets mentioning Joe Biden were more subjective than those mentioning Donald Trump. This phenomenon was observed across the board in all 10 states under study.
+We discovered a similar trend for all states of the US as shown in Figure 3.</p>
+<h2 id="8-results">8. Results</h2>
 <p>After all the data was collected, we have formatted the candidates information and cleaned the twitter data. After closely watching the twitter data
 with the graphical represenation we predicted the results.
 The analysis’ prediction favored Joe Biden to win this year’s election. However, President Trump was close behind. The predicted race included a very tight race, ending with Joe Biden breaking through. The actual presidential race this November seemed to be following the predicted trend, with Joe Biden taking a lead at the start and President Trump catching up by the first day’s end. The race continued to be tight for a couple of days, matching the general trend of the prediction. However, on November 7th, Biden broke through the stalemate and secured the elections. The prediction was close for most of the race, but the trend broke when Joe Biden won by a convincing lead.</p>
@@ -681,9 +698,9 @@ Among the most frequent words in tweets dedicated to Donald Trump (excluding can
 <img src="https://raw.github.com/cybertraining-dsc/fa20-523-316/main/project/images/__results___53_0.png" alt="Words used in  US Elections 2020">
 <strong>Figure 3:</strong> Words used in US Elections 2020
 Reference image: <a href="https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks">https://www.kaggle.com/radustoicescu/2020-united-states-presidential-election/notebooks</a></p>
-<h2 id="8-conclusion">8. Conclusion</h2>
+<h2 id="9-conclusion">9. Conclusion</h2>
 <p>So, we&rsquo;ve taken a quick look at the sentiment of tweets. There are a lot of analysis variants. It looks great to study the tweets by each twitter account, for instance, but these features have a lot of NaN values, and therefore don&rsquo;t cover the actual situation. Based on the analysis from the twitter the predicted winner is projected.The sentiment analysis was performed only on data that had geo-data originating from the &ldquo;United States of America&rdquo; to try to ascertain the sentiment in each respective dataset and therefore each presidential candidate.</p>
-<h2 id="9-acknowledgements">9. Acknowledgements</h2>
+<h2 id="10-acknowledgements">10. Acknowledgements</h2>
 <p>Would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors for providing continuous guidance and feedback for this final project.</p>
 <h2 id="10-plan-for-the-rest-of-the-semseter">10. Plan for the rest of the Semseter</h2>
 <p>October 26:</p>

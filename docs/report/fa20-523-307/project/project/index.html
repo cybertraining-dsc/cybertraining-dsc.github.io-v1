@@ -32,7 +32,7 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 Alex Baker, fa20-523-307, Edit
 Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ) during certain events during his presidency.">
 
-<meta itemprop="wordCount" content="2214">
+<meta itemprop="wordCount" content="2322">
 
 
 
@@ -648,11 +648,11 @@ Status: in progress</p>
 <h2 id="4-methodologyprocess">4. Methodology/Process</h2>
 <p>The collection of finance and Twitter data will be used to visualize the results. Some of Twitter or dataset data will need to be cleaned and classified to build the model. The methodology is composed of the following steps:</p>
 <ul>
-<li>Use data from President Trump&rsquo;s personal twitter to help visualize and create the model</li>
-<li>Use data from Yahoo finance API to help visualize and create the model</li>
-<li>Data cleaning and extraction.</li>
-<li>New data will be updated to keep up with the current time.</li>
+<li>Use data from President Trump&rsquo;s personal twitter and data from Yahoo Finance API to help visualize</li>
+<li>Data cleaning and extraction</li>
+<li>Sentiment Analysis</li>
 </ul>
+<p>Sentiment analysis is a key component to categorize President Trump&rsquo;s tweets.  Polarity and subjectivity are the two metrics that are used to classify each tweet. Polarity measures the opinion or emotion expressed in a piece of text; the value is returned as a float within the range of -1.0 to 1.0. Subjectivity, on the other hand, reflects the feelings or beliefs in a piece of text; the value is returned as a float within the range 0.0 to 1.0 where 0.0 is very objective and 1.0 is very subjective. TextBlob is the library utilized for processing the tweet&rsquo;s polarity and subjectivity. The sentiment method is called along with the methods for polarity and subjectivity in their own functions. The returned values are added into two columns in the dataframe.</p>
 <h2 id="5-preliminary-analysis-and-eda">5. Preliminary Analysis and EDA</h2>
 <h3 id="51-twitter-data">5.1 Twitter Data</h3>
 <p>When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.</p>

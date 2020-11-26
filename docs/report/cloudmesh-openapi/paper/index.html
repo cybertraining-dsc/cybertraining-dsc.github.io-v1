@@ -538,6 +538,8 @@
           <ul>
             <li><a href="#431-vm-selection">4.3.1 VM Selection</a></li>
             <li><a href="#432-eigenfaces-svm-example">4.3.2 Eigenfaces-SVM Example</a></li>
+            <li><a href="#4321-single-cloud-provider-service-benchmarking">4.3.2.1 Single Cloud Provider Service Benchmarking</a></li>
+            <li><a href="#4322-multi-cloud-service-benchmarking">4.3.2.2 Multi-Cloud Service Benchmarking</a></li>
             <li><a href="#433-pipelined-anova-svm-example">4.3.3 Pipelined Anova SVM Example</a></li>
             <li><a href="#434-caleb-example">4.3.4 Caleb Example</a></li>
           </ul>
@@ -670,6 +672,8 @@ is included in our evaluation.</p>
           <ul>
             <li><a href="#431-vm-selection">4.3.1 VM Selection</a></li>
             <li><a href="#432-eigenfaces-svm-example">4.3.2 Eigenfaces-SVM Example</a></li>
+            <li><a href="#4321-single-cloud-provider-service-benchmarking">4.3.2.1 Single Cloud Provider Service Benchmarking</a></li>
+            <li><a href="#4322-multi-cloud-service-benchmarking">4.3.2.2 Multi-Cloud Service Benchmarking</a></li>
             <li><a href="#433-pipelined-anova-svm-example">4.3.3 Pipelined Anova SVM Example</a></li>
             <li><a href="#434-caleb-example">4.3.4 Caleb Example</a></li>
           </ul>
@@ -788,7 +792,7 @@ specifications <sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="do
 <p>Customers can take advantage of cloud computing to reduce overhead expenses, increase their speed and scale of service deployment, and reduce development requirements by using cloud providers’ platforms or services. For example, customers’ developing AI systems can utilize clouds to handle big data inputs for which private infrastructure would be too costly or slow to implement. However, having multiple competing cloud providers leads to situations where service availability, performance, and cost may vary. Customer’s must navigate these heterogeneous solutions to meet their business needs while avoiding provider lock-in and managing organizational risk. This may require comparing or using multiple cloud providers to meet various objectives.</p>
 <p>Cloudmesh works with a variety of cloud providers including Amazon Web Services, Microsoft Azure, Google Cloud Platform, and Oracle’s OpenStack based providers such as the academic research serving Chameleon Cloud.</p>
 <h3 id="24-containers-and-microservices">2.4 Containers and Microservices</h3>
-<p>TBD</p>
+<p>Cloudmesh uses the internet architectures of microservices and containers to organize its functions and code. Microservice architecture is a variant of service oriented architecture. Cloudmesh uses microservices to arrange its app in loosley coupled services. These services are fine grained and protocals are lightweight. Containers are data structures whose instances are collections of other objects. Cloudmesh uses containers to store objects in an organized way that follows specific access rules. Containers are characterized by three properties: accessing objects in the container, storage of the objects, and traversal of the objects. Cloudmesh is designed to work on containers in docker, kubernetes, etc.</p>
 <h2 id="3-architecture">3. Architecture</h2>
 <h3 id="31-basic-auth-security">3.1 Basic Auth Security</h3>
 <p>Cloudmesh OpenAPI supports configuration of a single authorized user through
@@ -838,12 +842,18 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 </li>
 </ul>
 <h3 id="42-cloud-providers">4.2. Cloud Providers</h3>
+<p>Cloudmesh openapi works with virtual machine providers. It is necessary to select similar virtual machines for benchmarking.</p>
 <h4 id="aws">AWS</h4>
 <h4 id="azure">Azure</h4>
 <h4 id="google">Google</h4>
 <h4 id="openstack">OpenStack</h4>
 <h4 id="oracle">Oracle</h4>
 <h4 id="raspberry-pi-cluster">Raspberry Pi Cluster</h4>
+<h5 id="execution-on-raspbian">Execution on Raspbian</h5>
+<h5 id="execution-on-a-kubernetes-cluster">Execution on a Kubernetes Cluster</h5>
+<ul>
+<li><a href="https://opensource.com/article/20/3/kubernetes-raspberry-pi-k3s">https://opensource.com/article/20/3/kubernetes-raspberry-pi-k3s</a></li>
+</ul>
 <h3 id="43-result-comparision">4.3. Result Comparision</h3>
 <p>In this section we will discuss the setup and execution of a benchmark for three example AI services.</p>
 <h4 id="431-vm-selection">4.3.1 VM Selection</h4>
@@ -918,6 +928,8 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 </tbody>
 </table>
 <h4 id="432-eigenfaces-svm-example">4.3.2 Eigenfaces-SVM Example</h4>
+<p>We provide two example benchmarks for the Eigenfaces SVM example. The first deploys and measures the AI service on a single cloud provider at a time, and the second deploys a multi-cloud AI service, and then measures the service across the clouds in parallel.</p>
+<h4 id="4321-single-cloud-provider-service-benchmarking">4.3.2.1 Single Cloud Provider Service Benchmarking</h4>
 <p>The benchmark script for the Eigenfaces SVM example uses Cloudmesh to create virtual machines and setup a Cloudmesh OpenAPI environment sequentially across the three measured clouds including Amazon, Azure, and Google. After the script sets up the environment, it runs a series of pytests that generate and launch the Eigenfaces-SVM OpenAPI service, and then conduct runtime measurements of various service functions.</p>
 <p>The benchmark runs the pytest in two configurations. After the benchmark script sets up a virtual machine environment, it runs the first pytest locally on the OpenAPI server and measures five runtimes:</p>
 <ol>
@@ -933,17 +945,353 @@ SVM of the selected features <sup id="fnref:18"><a href="#fn:18" class="footnote
 <li>The time to run the predict function on the remote OpenAPI server, and return the target label  of the uploaded image</li>
 </ol>
 <p>In Figure 1 we compare the download and extraction time of the labeled faces in the wild dataset. This data set is approximately 233 MBs compressed, which allows us to measure a non-trivial data transfer. Lower transfer times imply the cloud has higher throughput from the data server, less latency to the data server, or that it provides access to a higher performing internal network. The standard deviation is displayed to compare the variation in the download times.</p>
-<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_1.png" alt="Sample Graph 1"></p>
-<p><strong>Figure 1:</strong> Donwnload (233MB) and extraction (~275MB) of remote image data from ndownloader.figshare.com/files/5976015.</p>
+<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_1.png" alt="Download Data Runtime"></p>
+<p><strong>Figure 3:</strong> Donwnload (233MB) and extraction (~275MB) of remote image data from ndownloader.figshare.com/files/5976015.</p>
 <p>In Figure 2 we measure the training time of the Eigenfaces-SVM model both as an OpenAPI service and as the basic Scikit-learn example. This allows us to measure runtime overhead added by OpenAPI compared to the source example. Here the two functions are identical except that the OpenAPI train function makes an additional function call to store the model to disk using joblib. This is necessary to share the model across the train and predict functions. The standard deviation is displayed to compare the variation in the training times.</p>
-<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_2.png" alt="Sample Graph 2"></p>
-<p><strong>Figure 2:</strong> Compares the eigenfaces-svm model training time running both as an OpenAPI service, and as the raw Scikit-learn example. There are two bars per cloud provider. The bold bars are the training time of the model when hosted as a Cloudmesh OpenAPI function. The pastel bars are the training time of the Scikit-learn example code without Cloudmesh OpenAPI involvement. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
+<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_2.png" alt="Train Runtime"></p>
+<p><strong>Figure 4:</strong> Compares the eigenfaces-svm model training time running both as an OpenAPI service, and as the raw Scikit-learn example. There are two bars per cloud provider. The bold bars are the training time of the model when hosted as a Cloudmesh OpenAPI function. The pastel bars are the training time of the Scikit-learn example code without Cloudmesh OpenAPI involvement. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
 <p>In Figure 3 we measure the time to upload an image to the server both from itself, and from a remote client. This allows us to compare the function runtime as experienced by the server, and as experienced by a remote client. The difference helps determine the network latency between the benchmark client and the cloud service. The standard deviation is displayed to compare the variation in the upload times.</p>
-<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_3.png" alt="Sample Graph 3"></p>
-<p><strong>Figure 3:</strong> Runtime of the upload function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the upload function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
+<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_3.png" alt="Upload Runtime"></p>
+<p><strong>Figure 5:</strong> Runtime of the upload function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the upload function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
 <p>In Figure 4 we measure the time to call the predict function on the uploaded image. Again we run this once from the local server itself, and a second time from a remote client to determine as experienced runtimes. The standard deviation is displayed to compare the variation in the predict times.</p>
-<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_4.png" alt="Sample Graph 4"></p>
-<p><strong>Figure 4:</strong> Runtime of the predict function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the predict function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
+<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_4.png" alt="Predict Runtime"></p>
+<p><strong>Figure 6:</strong> Runtime of the predict function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the predict function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.</p>
+<p>Table 2 presents a full listing of test results.</p>
+<p><strong>Table 2:</strong> Test results for the Eigenfaces SVM benchmark. Type &ldquo;local: denotes the test was run locally on the Cloudmesh Openapi server, and &ldquo;remote&rdquo; denotes a remote host interacted with the server using the python requets library.</p>
+<table>
+<thead>
+<tr>
+<th align="left">test</th>
+<th align="left">type</th>
+<th align="left">cloud</th>
+<th align="right">mean (s)</th>
+<th align="right">min (s)</th>
+<th align="right">max (s)</th>
+<th align="right">std (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">test_download_data</td>
+<td align="left">local</td>
+<td align="left">aws</td>
+<td align="right">20.583</td>
+<td align="right">17.233</td>
+<td align="right">31.798</td>
+<td align="right">2.76933</td>
+</tr>
+<tr>
+<td align="left">test_download_data</td>
+<td align="left">local</td>
+<td align="left">azure</td>
+<td align="right">20.8087</td>
+<td align="right">13.564</td>
+<td align="right">42.701</td>
+<td align="right">6.9407</td>
+</tr>
+<tr>
+<td align="left">test_download_data</td>
+<td align="left">local</td>
+<td align="left">google</td>
+<td align="right">18.0035</td>
+<td align="right">17.062</td>
+<td align="right">19.381</td>
+<td align="right">0.478574</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">local</td>
+<td align="left">aws</td>
+<td align="right">0.0299111</td>
+<td align="right">0.015</td>
+<td align="right">0.051</td>
+<td align="right">0.00401288</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">local</td>
+<td align="left">azure</td>
+<td align="right">0.0245333</td>
+<td align="right">0.013</td>
+<td align="right">0.029</td>
+<td align="right">0.00306848</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">local</td>
+<td align="left">google</td>
+<td align="right">0.0285889</td>
+<td align="right">0.014</td>
+<td align="right">0.058</td>
+<td align="right">0.00420554</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">remote</td>
+<td align="left">aws</td>
+<td align="right">0.401722</td>
+<td align="right">0.259</td>
+<td align="right">0.804</td>
+<td align="right">0.175369</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">remote</td>
+<td align="left">azure</td>
+<td align="right">0.358733</td>
+<td align="right">0.244</td>
+<td align="right">0.6</td>
+<td align="right">0.134117</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">remote</td>
+<td align="left">google</td>
+<td align="right">0.358189</td>
+<td align="right">0.27</td>
+<td align="right">0.815</td>
+<td align="right">0.158345</td>
+</tr>
+<tr>
+<td align="left">test_scikitlearn_train</td>
+<td align="left">local</td>
+<td align="left">aws</td>
+<td align="right">35.8861</td>
+<td align="right">35.113</td>
+<td align="right">46.451</td>
+<td align="right">1.7666</td>
+</tr>
+<tr>
+<td align="left">test_scikitlearn_train</td>
+<td align="left">local</td>
+<td align="left">azure</td>
+<td align="right">40.1319</td>
+<td align="right">34.946</td>
+<td align="right">43.961</td>
+<td align="right">3.28506</td>
+</tr>
+<tr>
+<td align="left">test_scikitlearn_train</td>
+<td align="left">local</td>
+<td align="left">google</td>
+<td align="right">42.1328</td>
+<td align="right">41.771</td>
+<td align="right">42.493</td>
+<td align="right">0.12829</td>
+</tr>
+<tr>
+<td align="left">test_train</td>
+<td align="left">local</td>
+<td align="left">aws</td>
+<td align="right">35.725</td>
+<td align="right">34.908</td>
+<td align="right">46.505</td>
+<td align="right">1.72603</td>
+</tr>
+<tr>
+<td align="left">test_train</td>
+<td align="left">local</td>
+<td align="left">azure</td>
+<td align="right">40.2847</td>
+<td align="right">35.302</td>
+<td align="right">47.5</td>
+<td align="right">3.31544</td>
+</tr>
+<tr>
+<td align="left">test_train</td>
+<td align="left">local</td>
+<td align="left">google</td>
+<td align="right">42.0448</td>
+<td align="right">41.516</td>
+<td align="right">45.932</td>
+<td align="right">0.709089</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">local</td>
+<td align="left">aws</td>
+<td align="right">0.00673333</td>
+<td align="right">0.006</td>
+<td align="right">0.012</td>
+<td align="right">0.000866667</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">local</td>
+<td align="left">azure</td>
+<td align="right">0.00575</td>
+<td align="right">0.005</td>
+<td align="right">0.007</td>
+<td align="right">0.000469929</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">local</td>
+<td align="left">google</td>
+<td align="right">0.00688889</td>
+<td align="right">0.006</td>
+<td align="right">0.009</td>
+<td align="right">0.000406733</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">remote</td>
+<td align="left">aws</td>
+<td align="right">0.428256</td>
+<td align="right">0.163</td>
+<td align="right">1.134</td>
+<td align="right">0.205095</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">remote</td>
+<td align="left">azure</td>
+<td align="right">0.322283</td>
+<td align="right">0.153</td>
+<td align="right">0.498</td>
+<td align="right">0.151721</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">remote</td>
+<td align="left">google</td>
+<td align="right">0.310822</td>
+<td align="right">0.184</td>
+<td align="right">0.729</td>
+<td align="right">0.180025</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4322-multi-cloud-service-benchmarking">4.3.2.2 Multi-Cloud Service Benchmarking</h4>
+<p>In this benchmark our script first acquires VMs, install Cloudmesh OpenAPI, and launch the Eigenfaces SVM AI service on three separate cloud providers. Because Cloudmesh has limited parallel computing support, the script deploys the VMs in a serial manner. After the services are running, we then run our tests in a parallel manner as depicted in Figure 2. Testing in parallel provides faster benchmark results, and better equalizes benchmark testing conditions. The benchmark conducts requests to each cloud in parallel, so they should experience similar network conditions. For example, in a serial testing model, the remote data server may experience varying loads resulting in different load times. Our parallel tests better equalize these conditions by having each cloud download the data at the same time.</p>
+<p>In Figure 7 we depict the combined runtime of our benchmark tests. This allows us to compare the complete execution time of an AI service workflow.</p>
+<p><img src="https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/ai_service_workflow_runtime.png" alt="AI Service Workflow Runtime"></p>
+<p><strong>Figure 7:</strong> Mean runtime of the Eigenfaces SVM workflow deployed as a multi-cloud service. We compute the means from 30 runs of a workflow that included 1 download data invocation, 1 train invocation, 30 upload invocations, and 30 predict invocations. We run the workflows in parallel on the separate clouds using a multiprocessing on an 8-core machine.</p>
+<p>In Table 3 we provide complete test results.</p>
+<p><strong>Table 3:</strong> Test results for the Eigenfaces SVM benchmark deployed as a mutli-cloud service.</p>
+<table>
+<thead>
+<tr>
+<th align="left">test</th>
+<th align="left">type</th>
+<th align="left">cloud</th>
+<th align="right">mean (s)</th>
+<th align="right">min (s)</th>
+<th align="right">max (s)</th>
+<th align="right">std (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">test_download_data</td>
+<td align="left">remote</td>
+<td align="left">aws</td>
+<td align="right">20.5102</td>
+<td align="right">17.566</td>
+<td align="right">34.42</td>
+<td align="right">3.82372</td>
+</tr>
+<tr>
+<td align="left">test_download_data</td>
+<td align="left">remote</td>
+<td align="left">azure</td>
+<td align="right">18.604</td>
+<td align="right">13.489</td>
+<td align="right">32.645</td>
+<td align="right">4.53201</td>
+</tr>
+<tr>
+<td align="left">test_download_data</td>
+<td align="left">remote</td>
+<td align="left">google</td>
+<td align="right">17.8976</td>
+<td align="right">17.133</td>
+<td align="right">21.861</td>
+<td align="right">0.853191</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">remote</td>
+<td align="left">aws</td>
+<td align="right">4.148</td>
+<td align="right">3.59</td>
+<td align="right">5.417</td>
+<td align="right">0.572103</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">remote</td>
+<td align="left">azure</td>
+<td align="right">3.9337</td>
+<td align="right">3.398</td>
+<td align="right">6.654</td>
+<td align="right">0.737981</td>
+</tr>
+<tr>
+<td align="left">test_predict</td>
+<td align="left">remote</td>
+<td align="left">google</td>
+<td align="right">4.13497</td>
+<td align="right">3.744</td>
+<td align="right">6.366</td>
+<td align="right">0.602431</td>
+</tr>
+<tr>
+<td align="left">test_train</td>
+<td align="left">remote</td>
+<td align="left">aws</td>
+<td align="right">35.6067</td>
+<td align="right">35.245</td>
+<td align="right">39.531</td>
+<td align="right">0.734663</td>
+</tr>
+<tr>
+<td align="left">test_train</td>
+<td align="left">remote</td>
+<td align="left">azure</td>
+<td align="right">35.8856</td>
+<td align="right">35.077</td>
+<td align="right">39.998</td>
+<td align="right">0.94563</td>
+</tr>
+<tr>
+<td align="left">test_train</td>
+<td align="left">remote</td>
+<td align="left">google</td>
+<td align="right">41.981</td>
+<td align="right">41.578</td>
+<td align="right">45.706</td>
+<td align="right">0.70646</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">remote</td>
+<td align="left">aws</td>
+<td align="right">10.0755</td>
+<td align="right">4.895</td>
+<td align="right">16.524</td>
+<td align="right">4.37981</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">remote</td>
+<td align="left">azure</td>
+<td align="right">8.45627</td>
+<td align="right">4.72</td>
+<td align="right">13.915</td>
+<td align="right">4.05165</td>
+</tr>
+<tr>
+<td align="left">test_upload</td>
+<td align="left">remote</td>
+<td align="left">google</td>
+<td align="right">8.8688</td>
+<td align="right">5.39</td>
+<td align="right">15.443</td>
+<td align="right">4.51598</td>
+</tr>
+</tbody>
+</table>
 <h4 id="433-pipelined-anova-svm-example">4.3.3 Pipelined Anova SVM Example</h4>
 <h4 id="434-caleb-example">4.3.4 Caleb Example</h4>
 <h2 id="5-conclusion">5. Conclusion</h2>
@@ -1063,7 +1411,7 @@ examples that we derive from existing sklearn examples. We benchmark
 these tests while wrapping them into pytests and run them on various
 cloud services.</p>
 <h3 id="a3--eigenfaces-svm-facial-recognition">A.3.  Eigenfaces SVM Facial Recognition</h3>
-<p>Next we demonstrate how to locally run the Eigenfaces SVM example, and
+<p>Next we demonstrate how to run the Eigenfaces SVM example locally, and
 then how to run its associated benchmark script.</p>
 <pre><code>$ pwd
 ~/cm/cloudmesh-openapi
@@ -1075,15 +1423,15 @@ $ cms openapi generate EigenfacesSVM \
       --import_class --enable_upload
 
 $ cms openapi server start ./tests/generator-eigenfaces-svm/eigenfaces-svm-full.yaml
-</code></pre><p>After running these commands, we opened a web user interface at <a href="http://localhost:8080/cloudmesh/ui">http://localhost:8080/cloudmesh/ui</a>.In the user interface, we run the download_data function with the default arguments. This downloads and extracts the labeled faces in the wild data set to the ~/scikit_learn_data/lfw_home directory.</p>
+</code></pre><p>After running these commands, we opened a web user interface at <a href="http://localhost:8080/cloudmesh/ui">http://localhost:8080/cloudmesh/ui</a>. In the user interface we run the download_data function with the default arguments. This downloads and extracts the labeled faces in the wild data set to the ~/scikit_learn_data/lfw_home directory.</p>
 <p>Next, we run the train function to train the model. The train function performs a 50/50 train/test split on the input data, and returns performance statistics of the trained model.</p>
 <p>Next, we use the upload function to upload an example image using <code>~./tests/generator-eigenfaces-svm/example_image.jpg</code> as the function argument. This puts the example image in the ~/.cloudmesh/upload-file/ directory.</p>
-<p>Finally, we run the predict function with the uploaded file path as an argument, <code>~/.cloudmesh/upload-file/example_image.jpg</code>, and recieve the classification as a response <code>['George W. Bush']</code></p>
-<p>Lastly, we close the server:</p>
+<p>Finally, we run the predict function with the uploaded file path as an argument, <code>~/.cloudmesh/upload-file/example_image.jpg</code>, and receive  the classification as a response <code>['George W. Bush']</code></p>
+<p>Last, we close the server:</p>
 <pre><code>$ cms openapi server stop EigenfacesSVM
 </code></pre><p>Next, we benchmark these tests while wrapping them into pytests and run them on various cloud services.</p>
 <p><strong>Before continuing you must have successfully registered AWS, Azure, and Google clouds in your yaml file and be able to boot virtual machines on Google, AWS, and Azure. This example currently should work on Linux and macOS</strong></p>
-<p>First we must change to a git branch that includes Azure provider fixes, and setup our ~./cloudmesh/cloudmesh.yaml file to replicate the parameters set for the benchmark results above.</p>
+<p>First, we must change to a git branch that includes Azure provider fixes, and setup our ~./cloudmesh/cloudmesh.yaml file to replicate the parameters set for the benchmark results above.</p>
 <pre><code>$ cd ~/cm/cloudmesh-azure 
 $ git checkout benchmark # required until changes merged to main
 
@@ -1105,17 +1453,21 @@ $ cms config set cloudmesh.cloud.google.default.image_project=&quot;ubuntu-os-cl
 $ cms config set cloudmesh.cloud.google.default.zone=&quot;us-east1-b&quot;
 $ cms config set cloudmesh.cloud.google.default.region=&quot;us-east1&quot;
 $ cms config set cloudmesh.cloud.google.default.flavor=&quot;n1-standard-2&quot;
-</code></pre><p>Next we will modify the default security group to open the flask server port 8080 for OpenAPI service testing.</p>
+</code></pre><p>Next, we will modify the default security group to open the flask server port 8080 for OpenAPI service testing.</p>
 <pre><code>$ cms sec rule add openapi 8080 8080 tcp 0.0.0.0/0
 $ cms sec group add default openapi for_openapi_demo
 # the above two command should allow aws and azure to work
 # sec group load is broken for google and it does not use the default sec group, so you have to manually add the openapi rule to google cloud for now
 # console.cloud.google.com &gt; VPC network &gt; firewall &gt; create firewall rule
 # name: openapi, targets:  all instances in network, Source IP ranges: 0.0.0.0 /0, specified protocols and ports: tcp 8080 &gt; create
-</code></pre><p>Next we will run the benchmarking script, ~./tests/generator-eigenfaces-svm/benchmark-eigenfaces.py. This script utilizes the Cloudmesh shell and the Bash script, ~/.tests/generator-eigenfaces-svm/eigenfaces-svm-full-script, to sequentially deploy a VM on each of the clouds, install Cloudmesh-openapi and the example dependencies, and then us the pytest, ./tests/test_030_generator_eigenfaces_svm.py, twice to benchmark the EigenfacesSVM service functions both locally from the server, and from the remote client running the benchmark script. Finally, it prints and plots performance statistics.</p>
+</code></pre><p>Next, we will run the benchmarking script, ~./tests/generator-eigenfaces-svm/benchmark-eigenfaces.py. This script utilizes the Cloudmesh shell and the Bash script, ~/.tests/generator-eigenfaces-svm/eigenfaces-svm-full-script, to sequentially deploy a VM on each of the clouds, install Cloudmesh-openapi and the example dependencies, and then us the pytest, ./tests/test_030_generator_eigenfaces_svm.py, twice to benchmark the EigenfacesSVM service functions both locally from the server, and from the remote client running the benchmark script. Finally, it prints and plots performance statistics.</p>
 <pre><code>$ ./tests/generator/eigenfaces-svm/benchmark-eigenfaces.py run
 </code></pre><p>If the command line argument <code>run</code> is passed to the script, then it will start up the virtual machines on each cloud. Output and benchmark results from each of the virtual machines will be store in the ~/.cloudmesh/eigenfaces-svm/vm_script_output/ directory. The benchmark results are scraped from the script outputs and stored in the ~/.cloudmesh/eigenfaces-svm/benchmark_output directory. If the <code>run</code> argument is <strong>not</strong> provided, it will only print statistics from script output already stored in the vm_script_output directory.</p>
-<p>Statistics will be printed to the commandline, and graphs will be displayed using plt.show() function calls as well as saved to the ~./tests/generator-eigenfaces-svm/ directory.</p>
+<p>Statistics will be printed to the command line, and graphs will be displayed using plt.show() function calls as well as saved to the ~./tests/generator-eigenfaces-svm/ directory.</p>
+<p>Next, we will run the multi-cloud benchmarking script, ~/.tests/generator-eigenfaces-svm/bencmark-eigenfaces-multi-cloud.py. This script uses the Cloudmesh shell and the Bash script, ~/.tests/generator-eigenfaces-svm/eigenfaces-svm-full-multi-script, to sequentially deploy a VM on each of the clouds, install Cloudmesh-OpenAPI and the example dependencies, and start the AI service. Next, it conducts HTTP requests in parallel to interact with the services to measure the runtime for data download, training, uploading, and prediction.</p>
+<pre><code>$ ./tests/generator/eigenfaces-svm/benchmark-eigenfaces-multi-cloud.py run
+</code></pre><p>As above the command line argument run is used to conduct actual tests, and the absence of that argument simply computes statistics on existing output from the ~/.cloudmesh/eigenfaces-svm/vm_script_output_multi/ directory.</p>
+<p>Statistics will be printed to the command line, and graphs will be displayed using plt.show() function calls as well as saved to the ~./tests/generator-eigenfaces-svm/ directory.</p>
 <h3 id="a4-using-unit-tests-for-benchmarking">A.4. Using unit tests for Benchmarking</h3>
 <p>TODO: This section will be expanded upon</p>
 <ul>
