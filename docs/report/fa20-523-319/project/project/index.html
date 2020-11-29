@@ -23,16 +23,16 @@
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: in progress
 Rama Asuri, fa20-523-319, Edit
-Abstract Chest X-rays reveal many diseases. Early detection of a disease often improves the survival chance for Patients. It is one of the important tool for Radiologists to detect and identify underlying health conditions. But they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors." />
+Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-319/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: in progress
 Rama Asuri, fa20-523-319, Edit
-Abstract Chest X-rays reveal many diseases. Early detection of a disease often improves the survival chance for Patients. It is one of the important tool for Radiologists to detect and identify underlying health conditions. But they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors.">
+Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life.">
 
-<meta itemprop="wordCount" content="1528">
+<meta itemprop="wordCount" content="1570">
 
 
 
@@ -41,7 +41,7 @@ Abstract Chest X-rays reveal many diseases. Early detection of a disease often i
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: in progress
 Rama Asuri, fa20-523-319, Edit
-Abstract Chest X-rays reveal many diseases. Early detection of a disease often improves the survival chance for Patients. It is one of the important tool for Radiologists to detect and identify underlying health conditions. But they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors."/>
+Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life."/>
 
 
 
@@ -581,7 +581,7 @@ Status: in progress</p>
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>Chest X-rays reveal many diseases. Early detection of a disease often improves the survival chance for Patients. It is one of the important tool for Radiologists to detect and identify underlying health conditions. But they are two major drawbacks. First, it takes time to analyze a radiograph. Second,  Radiologists make errors. Whether its an error in diagnosis or delay in diagnosis, both of these outcomes result in a loss of life. With the technological advances in AI, Deep Learning models address these drawbacks. The  Deep Learning models analyze the X-rays like a Radiologist and accurately predict much better than the Radiologists. In our project, first, we develop Deep Learning model and train our model to use the labels for Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion that corresponds to 5 different diseases respectively. Second, we test our model&rsquo;s performance, which is, how well our model predicts the diseases. Finally, we visualize our model&rsquo;s performance using the AUC-ROC curve.</p>
+<p>Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second,  Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life. With the technological advances in AI, Deep Learning models address these drawbacks. The  Deep Learning models analyze the X-rays like a Radiologist and accurately predict much better than the Radiologists. In our project, first, we develop a Deep Learning model and train our model to use the labels for Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion that corresponds to 5 different diseases, respectively. Second, we test our model&rsquo;s performance: how well our model predicts the diseases. Finally, we visualize our model&rsquo;s performance using the AUC-ROC curve.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -611,8 +611,18 @@ Status: in progress</p>
 
 <p><strong>Keywords:</strong> PyTorch, CheXpert</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Deep Learning methods are becoming very reliable at achieving expert level performance using large labeled datasets. In our project, we develop a Deep Learning model to use CheXpert dataset, which is a large dataset that contains 224,316 chest radiographs of 65,240 patients, to detect and classify the following 5 pathologies: Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion. The dataset has 14 observations in radiology reports and captures uncertainties inherent in radiograph interpretation using uncertainty labels. We impute uncertainty labels with randomly selected Boolean values. We develop our Deep Learning model using PyTorch library which is an open source machine learning library based on the Torch library <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It was primarily developed by Facebook&rsquo;s AI Research lab (FAIR) and used for applications such as Computer Vision and NLP applications. PyTorch supports Python and C++ interface. There are popular Deep Learning applications that are built using PyTorch which includes Tesla Autopilot, Uber&rsquo;s Pyro etc. <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
-<p>Deep learning is a technique to extract and transform data using multiple layers of neural networks. Each layer takes inputs from previous layers and incrementally refines it. An algorithm is used to train these layers to minimize errors and improve overall accuracy of these layers<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. It enables the network to learn to perform a specified task and gain an expert level performance by training on large datasets. Our project implements Deep learning models to detect and diagnose multiple conditions using image classification algorithm. Our dataset is called CheXpert which consists of Chest X-rays. CheXpert dataset contain 224,316 chest Radiographs of 65,240 patients. There are 14 observations in a radiology report and labels are mapped to these 14 observations.  Our Deep Learning models use PyTorch library which enables fast, flexible experimentation and efficient production through a user-friendly front-end, distributed training, and ecosystem of tools and libraries<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>Radiologists widely use chest X-Rays to identify and detect underlying conditions. However, analyzing Chest X-Rays takes much time, and accurately diagnosing requires much experience. On the one hand, if the analyzing process is expedited, it might result in misdiagnosis, but on the other hand, if it takes much time, even with the correct diagnosis, it might be too late to prescribe a treatment. Radiologists are up against time and experience. With the advances in AI, Deep Learning can easily help solve this problem.</p>
+<p>Deep Learning methods are becoming very reliable at achieving expert-level performance using large labeled datasets. Deep learning is a technique to extract and transform data using multiple layers of neural networks. Each layer takes inputs from previous layers and incrementally refines it. An algorithm is used to train these layers to minimize errors and improve these layers&rsquo; overall accuracy <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It enables the network to learn to perform a specified task and gain an expert level performance by training on large datasets. Our project implements Deep learning models to detect and diagnose multiple conditions using an image classification algorithm. Our dataset is called CheXpert, which consists of Chest X-rays. CheXpert dataset contains 224,316 chest Radiographs of 65,240 patients. to detect and classify the following 5 pathologies: Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion. The dataset has 14 observations in radiology reports and captures uncertainties inherent in radiograph interpretation using uncertainty labels. We impute uncertainty labels with randomly selected Boolean values.  Our Deep Learning models use the PyTorch library, enabling fast, flexible experimentation and efficient production through a user-friendly front-end, distributed training, and ecosystem of tools and libraries<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. It was primarily developed by Facebook&rsquo;s AI Research lab (FAIR) and used for Computer Vision and NLP applications. PyTorch supports Python and C++ interfaces. There are popular Deep Learning applications built using PyTorch, which includes Tesla Autopilot, Uber&rsquo;s Pyro, etc. <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>In this report, we will cover the following:</p>
+<ul>
+<li>Overview of PyTorch library</li>
+<li>Overview of CheXpert dataset</li>
+<li>Basics of AUC-ROC Curve</li>
+<li>Chest X-Rays - Multi-Image Classification Using Deep Learning Model</li>
+<li>Conclusion</li>
+<li>Acknowledgements</li>
+<li>References</li>
+</ul>
 <h2 id="2-pytorch-library">2. PyTorch Library</h2>
 <p>PyTorch library is based on Python and used for developing Python deep learning models. Many of the early adopters
 of the PyTorch are from research community. It grew into one of the most popular library for deep learning projects.
@@ -620,7 +630,7 @@ PyTorch provides great insight into Deep Learning. PyTorch is widely used in rea
 excellent choic for introducing deep learning because clear syntax, streamlined API and easy debugging. PyTorch
 provides a core data structure, the tensor, which is a multidimensional array similar to NumPy arrays. It perform
 accelerated mathematical operations on dedicated hardware, which makes it convenient to design neural network
-architectures and train them on individual machines or parallel computing resources <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+architectures and train them on individual machines or parallel computing resources <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <h2 id="3-dataset">3. Dataset</h2>
 <p>CheXpert is a large public dataset for chest radiograph interpretation, consisting of 224,316 chest radiographs
 of 65,240 patients labeled for the presence of 14 observations as positive, negative, or uncertain <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
@@ -722,16 +732,16 @@ Similarly, when we increase the threshold, we get more negative values thus we g
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Introduction to PyTorch and documentation  <a href="https://pytorch.org/deep-learning-with-pytorch">https://pytorch.org/deep-learning-with-pytorch</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Howard, Jeremy; Gugger, Sylvain. Deep Learning for Coders with fastai and PyTorch . O&rsquo;Reilly Media. Kindle Edition <a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527/ref=sr_1_5?dchild=1&amp;keywords=pytorch&amp;qid=1606487426&amp;sr=8-5">https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527/ref=sr_1_5?dchild=1&amp;keywords=pytorch&amp;qid=1606487426&amp;sr=8-5</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>Overview of PyTorch Library <a href="https://en.wikipedia.org/wiki/PyTorch">https://en.wikipedia.org/wiki/PyTorch</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>An open source machine learning framework that accelerates the path from research prototyping to production deployment <a href="https://pytorch.org/">https://pytorch.org/</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Howard, Jeremy; Gugger, Sylvain. Deep Learning for Coders with fastai and PyTorch . O&rsquo;Reilly Media. Kindle Edition <a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527/ref=sr_1_5?dchild=1&amp;keywords=pytorch&amp;qid=1606487426&amp;sr=8-5">https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527/ref=sr_1_5?dchild=1&amp;keywords=pytorch&amp;qid=1606487426&amp;sr=8-5</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Overview of PyTorch Library <a href="https://en.wikipedia.org/wiki/PyTorch">https://en.wikipedia.org/wiki/PyTorch</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>An open source machine learning framework that accelerates the path from research prototyping to production deployment <a href="https://pytorch.org/">https://pytorch.org/</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Introduction to PyTorch and documentation  <a href="https://pytorch.org/deep-learning-with-pytorch">https://pytorch.org/deep-learning-with-pytorch</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
 <p>Whitepaper - CheXpert Dataset and Labelling  <a href="https://arxiv.org/pdf/1901.07031.pdf">https://arxiv.org/pdf/1901.07031.pdf</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
