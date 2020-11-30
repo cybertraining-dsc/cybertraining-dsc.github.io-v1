@@ -30,7 +30,7 @@
 <meta itemprop="description" content="NBA Performance and Injury   Status: in progress
  Gavin Hemmerlein, fa20-523-301 Chelsea Gorius, fa20-523-344 Edit  Abstract Sports Medicine will be a $7.2 billion dollar industry by 2025. The NBA has a vested interest in predicting performance of players as they return from injury. The authors evaluated datasets available to the public within the 2010 decade to build machine and deep learning models to expect results. The team utilized Gradient Based Regressor, Light GBM, and Keras Deep Learning models.">
 
-<meta itemprop="wordCount" content="4808">
+<meta itemprop="wordCount" content="4854">
 
 
 
@@ -533,7 +533,7 @@
     </li>
     <li><a href="#5-inference">5. Inference</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#61-future-work">6.1 Future Work</a></li>
+    <li><a href="#61-limitations">6.1 Limitations</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a>
       <ul>
         <li><a href="#71-work-breakdown">7.1 Work Breakdown</a></li>
@@ -619,7 +619,7 @@ Status: in progress</p>
     </li>
     <li><a href="#5-inference">5. Inference</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#61-future-work">6.1 Future Work</a></li>
+    <li><a href="#61-limitations">6.1 Limitations</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a>
       <ul>
         <li><a href="#71-work-breakdown">7.1 Work Breakdown</a></li>
@@ -662,7 +662,7 @@ Status: in progress</p>
 <p><strong>Figure 5</strong> shows that in general the number of games played does not have a significant relationship to the length of the injury.  There is a darker cluster between 500-1000 days injured that exists over the 40-82 games played, this could suggest that as more games are played there is likeliness for more severe injury.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-301/raw/main/project/images/injurylength_gamesplayed.png" alt="Injury Length in Days over Player Games Played that Season"></p>
 <p><strong>Figure 5:</strong> Injury Length in Days over Player Games Played that Season</p>
-<p><strong>Figures 6,7,8</strong> attempt to demonstrate if any relationship exists visually between a player&rsquo;s injury length and their age, weight, or height.  For the most part <strong>Figure 6</strong> shows most severe injuries occurring to younger players, which could make sense considering they can perform more difficult moves or have more stamina than older players.  Some severe injuries still exist among the older players, this also makes sense considering their bodies have been under stress for many years and are more prone to injury. It should be noted that there are more players in the league that fall into the younger age bucket than the older ages. It is difficult to identify any pattern on <strong>Figure 7</strong>.  If anything the graph is somewhat normally shaped similar to the heights of players across the league. Suprisingly the injuries on <strong>Figure 8</strong> are clustered a bit towards the left, being the lighter players.  This could be explained through the fact that the lighter players are often more athletic and perform more strenuous moves than heavier players.  It is also somewhat surprising since the argument that heavier players are putting more strain on their bodies could be used as a reason why heavier players would have worse injuries. One possible explanation could be the musculature adding more of the dense body mass could add protection to weakened joints. More investigation would be needed to identify an exact reason.</p>
+<p><strong>Figures 6</strong>, <strong>Figure 7</strong>, and <strong>Figure 8</strong> attempt to demonstrate if any relationship exists visually between a player&rsquo;s injury length and their age, weight, or height.  For the most part <strong>Figure 6</strong> shows most severe injuries occurring to younger players, which could make sense considering they can perform more difficult moves or have more stamina than older players.  Some severe injuries still exist among the older players, this also makes sense considering their bodies have been under stress for many years and are more prone to injury. It should be noted that there are more players in the league that fall into the younger age bucket than the older ages. It is difficult to identify any pattern on <strong>Figure 7</strong>.  If anything the graph is somewhat normally shaped similar to the heights of players across the league. Suprisingly the injuries on <strong>Figure 8</strong> are clustered a bit towards the left, being the lighter players.  This could be explained through the fact that the lighter players are often more athletic and perform more strenuous moves than heavier players.  It is also somewhat surprising since the argument that heavier players are putting more strain on their bodies could be used as a reason why heavier players would have worse injuries. One possible explanation could be the musculature adding more of the dense body mass could add protection to weakened joints. More investigation would be needed to identify an exact reason.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-301/raw/main/project/images/injurylength_playerage.png" alt="Injury Length in Days over Player Age that Season"></p>
 <p><strong>Figure 6:</strong> Injury Length in Days over Player Age that Season</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-301/raw/main/project/images/injurylength_playerHeight.png" alt="Injury Length in Days over Player Height in Inches"></p>
@@ -675,7 +675,7 @@ Status: in progress</p>
 <p>From this point, a test run was used to gauge the validity and accuracy of the model compared to some of the data set aside. The model created was able to provide feature importance to give a better understanding of which specific features are the most crucial when it comes to determining how bad the effects of an injury may or may not be on player performance. Feature engineering was performed prior to training the model in order to improve the chances of higher accuracy from the predictions. This model could be used to keep an eye out for how a player&rsquo;s performance intensity and the engineered features could affect how long a player takes to recover from injury, if there are any warning signs prior to an injury, and even how well they perform when returning.</p>
 <h3 id="41-development-of-models">4.1 Development of Models</h3>
 <p>To help with review of the data, conditioned data was used to save resources on Google Colab. By conditioning the data and saving the files as a .CSV, the team was able to create a streamlined process. Additionally, the team found benefit by uploading these files to Google Drive to quickly import data near real time. After operating in this fashion for some time, the team was able to load the datasets into Github and utilize that feature. By loading the datasets up to Github, a url could be used to link the files directly to the files saved on Github without using a token like with Kaggle or Google Drive. The files saved were the following:</p>
-<p><strong>Table 1:</strong> Datasets imported</p>
+<p><strong>Table 1:</strong> Datasets Imported</p>
 <table>
 <thead>
 <tr>
@@ -731,7 +731,40 @@ Status: in progress</p>
 <p><strong>Figure 5:</strong> Gradient Boosting Regressor <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
 <p>The team saw a relationship given the data. <strong>Table 2</strong> shows the results of that model. The results were promising given the speed and utility of a GBR model. The team reviewed the data multiple times after multiple stages of conditioning the data.</p>
 <p><strong>Table 2:</strong> GBR Results</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-301/raw/main/project/images/gbr_results.png" alt="GBR Results"></p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Category</strong></th>
+<th align="center"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">MAE Mean</td>
+<td align="center">-10.787</td>
+</tr>
+<tr>
+<td align="left">MAE STD</td>
+<td align="center">0.687</td>
+</tr>
+<tr>
+<td align="left">RMSE Mean</td>
+<td align="center">-115.929</td>
+</tr>
+<tr>
+<td align="left">RMSE STD</td>
+<td align="center">96.64</td>
+</tr>
+<tr>
+<td align="left">EV Mean</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">EV STD</td>
+<td align="center">0.0</td>
+</tr>
+</tbody>
+</table>
 <p>After running a GBR model, the decision was made to try multiple models to see what gives the best results. The team settled on LightGBM and a Deep Learning model utilizing Keras built on the TensorFlow platform. These results will be seen in <em>4.1.2</em> and <em>4.1.3</em>.</p>
 <h4 id="412-lightgbm-regression">4.1.2 LightGBM Regression</h4>
 <p>Another algorithm chosen was a Light Gradient Boost Machine (LightGBM) model. LightGBM is known for its lightweight and resource sparse abilities. The model is built from decision tree algorithms and used for ranking, classification, and other machine learning tasks. By choosing LightGBM data scientists are able to analyze larger data a faster approach. LightGBM can often over fit a model if the data is too small, but fortunately for the purpose of this assignment the data available for NBA injuries and stats is extremely large. Availability of data allowed for smooth operation of the LightGBM model. Mandot explains the model really well in The Medium. Mandot said, <em>&ldquo;Light GBM can handle the large size of data and takes lower memory to run. Another reason of why Light GBM is popular is because it focuses on accuracy of results. LGBM also supports GPU learning and thus data scientists are widely using LGBM for data science application development&rdquo;</em> <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. There are a lot of benefits available to this algorithm.</p>
@@ -739,7 +772,40 @@ Status: in progress</p>
 <p><strong>Figure 6:</strong> LightGBM Algorithm: Leafwise searching <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
 <p>When running the model <strong>Table 3</strong> was generated. This table uses the same metrics as the GBR Results Table (<strong>Table 2</strong>). After reviewing the results, the GBR model still appeared to be a viable avenue. The Keras model will be evaluated next to see most optimal model to use for repeatable fresults.</p>
 <p><strong>Table 3:</strong> LightGBM Results</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-301/raw/main/project/images/lgbm_results.png" alt="LightGBM Results"></p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Category</strong></th>
+<th align="center"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">MAE Mean</td>
+<td align="center">-0.011</td>
+</tr>
+<tr>
+<td align="left">MAE STD</td>
+<td align="center">0.001</td>
+</tr>
+<tr>
+<td align="left">RMSE Mean</td>
+<td align="center">-0.128</td>
+</tr>
+<tr>
+<td align="left">RMSE STD</td>
+<td align="center">0.046</td>
+</tr>
+<tr>
+<td align="left">EV Mean</td>
+<td align="center">0.982</td>
+</tr>
+<tr>
+<td align="left">EV STD</td>
+<td align="center">0.013</td>
+</tr>
+</tbody>
+</table>
 <h4 id="413-keras-deep-learning-models">4.1.3 Keras Deep Learning Models</h4>
 <p>The final model attempted was a Deep Learning model. A few runs of different layers and epochs were chosen. They can be seen in <strong>Table 4</strong> (shown later). The model was sequentially ran through the test layers to refine the model. When this is done, each predecessor layer acts as an input to the next layer&rsquo;s input for the model. The results can produce accurate results while using unsupervised learning. The visualization for this model can be seen in the following figure:</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-301/raw/main/project/images/simple_neural_network_vs_deep_learning.jpg" alt="Neural Network"></p>
@@ -816,8 +882,8 @@ Status: in progress</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>After reviewing the results, the team created a robust model to predict the performance of a player after an injury. The coefficient of determination for the deep learning model shows a strong relationship between the training and test sets. After conditioning the data, the results can be seen in <strong>Table 2</strong>, <strong>Table 3</strong>, and <strong>Table 5</strong>. The team had an objective to find this correlation and build it to the point where injury and performance can be modeled. The team was able to accomplish this goal.</p>
 <p>Additionally, these results are consistent with the current scientific literature <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. The biological community has been able to record these results for decades. By leveraging this effort, the scientific community could move to a more proactive approach as opposed to reactive with respect to injury controls. This data will also allow for proper contract negotiations to take place in the NBA, considering potential decisions to avoid injury may include less playing time. The negotiations are pivotal to ensuring that expectations are met in the future seasons; especially when injury occurs in the final year of a player&rsquo;s contract. Teams with an improved understanding of how players can or will return from injury have an opportunity to make the best of scenarios where other teams may be hesitant to sign an injured player.  These different opportunities for a team&rsquo;s front office could be the difference between a championship ring and missing the playoffs entirely.</p>
-<h2 id="61-future-work">6.1 Future Work</h2>
-<p>In the future, the models could be continued to be refined. Currently the results are to the original intentions of the team, but improvements can be made. Feature Engineering is always an area where the models can improve. Some valuable features to be created in the future are the calculations for the player&rsquo;s efficiency overall, as well as offensinve and defensive efficiencies in each game. The team would also like to develop a model to use the stats of a player in pre-injury and apply that to the post-injury set of metrics. Also, the team would like to move to where the same could be applied given the length of the injury to the player while considering the severity of the injury. Longer and more severe injury will lead to different future results than say a long not severe injury, or a short injury that was somewhat severe.  The number of varaibles that could provide more valuable information to the model are endless.</p>
+<h2 id="61-limitations">6.1 Limitations</h2>
+<p>With respect to the current work, the models could be continued to be refined. Currently the results are to the original intentions of the team, but improvements can be made. Feature Engineering is always an area where the models can improve. Some valuable features to be created in the future are the calculations for the player&rsquo;s efficiency overall, as well as offensinve and defensive efficiencies in each game. The team would also like to develop a model to use the stats of a player in pre-injury and apply that to the post-injury set of metrics. Also, the team would like to move to where the same could be applied given the length of the injury to the player while considering the severity of the injury. Longer and more severe injury will lead to different future results than say a long not severe injury, or a short injury that was somewhat severe.  The number of varaibles that could provide more valuable information to the model are endless.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The authors would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article. In addition to that the community of students from the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course also deserve a thanks from the author for the support, continued engagement, and valuable discussions through Piazza.</p>
 <h3 id="71-work-breakdown">7.1 Work Breakdown</h3>
