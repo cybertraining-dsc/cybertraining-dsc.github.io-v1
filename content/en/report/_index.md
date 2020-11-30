@@ -73,7 +73,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
       author="Gregor von Laszewski, Richard Otten, Anthony Orlowski, Caleb Wilson"
       org="cloudmesh"
 	  repo="cloudmesh-openapi"
-	  doc="paper/_index.md"
+	  doc="paper"
 	  link="/report/cloudmesh-openapi/paper" %}}
 
 ## Other Reports and Projects
