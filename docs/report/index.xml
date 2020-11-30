@@ -375,6 +375,1070 @@ a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
     
     <item>
       <title>Report: </title>
+      <link>/report/cloudmesh-openapi/paper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/paper/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;benchmarking-multi-cloud-auto-generated-ai-services&#34;&gt;Benchmarking Multi-Cloud Auto Generated AI Services&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/actions&#34;&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/workflows/Check%20Report/badge.svg&#34; alt=&#34;Check Report&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NOTE:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This document is maintained at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/paper/_index.md&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi/blob/main/paper/_index.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://laszewski.github.io&#34;&gt;Gregor von Laszewski&lt;/a&gt;,
+Richard Otten,
+&lt;a href=&#34;https://github.com/aporlowski&#34;&gt;Anthony Orlowski&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-310/&#34;&gt;fa20-523-310&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/calewils&#34;&gt;Caleb Wilson&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-348/&#34;&gt;fa20-523-348&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Corresponding author: &lt;a href=&#34;mailto:laszewski@gmail.com&#34;&gt;laszewski@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-348/blob/main/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;In this work we are benchmarking auto generated cloud REST services on
+various clouds. In today&amp;rsquo;s application scientist want to share their
+services with a wide number of colleagues while not only offering the
+services as bare metal programs, but exposing the functionality as a
+software as a service. For this reason a tool has been developed that
+takes a regular python function and converts it automatically into a
+secure REST service. We will create a number of AI REST services while
+using examples from ScikitLearn and benchmark the execution of the
+resulting REST services on various clouds. The code will be
+accompanied by benchmark enhanced unit tests as to allow replication
+of the test on the users computer. A comparative study of the results
+is included in our evaluation.&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-background-and-related-research&#34;&gt;2. Background and Related Research&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#21-cloudmesh&#34;&gt;2.1 Cloudmesh&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#22-rest&#34;&gt;2.2 REST&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#23-vm-cloud-providers&#34;&gt;2.3 VM Cloud providers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#24-containers-and-microservices&#34;&gt;2.4 Containers and Microservices&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-architecture&#34;&gt;3. Architecture&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#31-basic-auth-security&#34;&gt;3.1 Basic Auth Security&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#32-utilizing-pickle-as-an-alternative-to-mongodb-for-out-of-the-box-functionality&#34;&gt;3.2 Utilizing Pickle as an alternative to MongoDB for &amp;ldquo;out-of-the-box&amp;rdquo; functionality&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#33-cloud-provider-hosted-ai-service&#34;&gt;3.3 Cloud Provider Hosted AI Service&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#34-multi-cloud-hosted-ai-service&#34;&gt;3.4 Multi-Cloud Hosted AI Service&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-benchmarks&#34;&gt;4. Benchmarks&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#41-algorithms-and-datasets&#34;&gt;4.1. Algorithms and Datasets&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#42-cloud-providers&#34;&gt;4.2. Cloud Providers&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#aws&#34;&gt;AWS&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#azure&#34;&gt;Azure&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#google&#34;&gt;Google&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#openstack&#34;&gt;OpenStack&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#oracle&#34;&gt;Oracle&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#raspberry-pi-cluster&#34;&gt;Raspberry Pi Cluster&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#43-result-comparision&#34;&gt;4.3. Result Comparision&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#431-vm-selection&#34;&gt;4.3.1 VM Selection&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#432-eigenfaces-svm-example&#34;&gt;4.3.2 Eigenfaces-SVM Example&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#4321-single-cloud-provider-service-benchmarking&#34;&gt;4.3.2.1 Single Cloud Provider Service Benchmarking&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#4322-multi-cloud-service-benchmarking&#34;&gt;4.3.2.2 Multi-Cloud Service Benchmarking&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#433-pipelined-anova-svm-example&#34;&gt;4.3.3 Pipelined Anova SVM Example&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#434-caleb-example&#34;&gt;4.3.4 Caleb Example&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#5-conclusion&#34;&gt;5. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-limitations&#34;&gt;6. Limitations&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#appendix-a---setup&#34;&gt;APPENDIX A. - Setup&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#a1-deployment&#34;&gt;A.1. Deployment&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#a2--pipiline-anova-svm&#34;&gt;A.2.  Pipiline ANOVA SVM&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#a3--eigenfaces-svm-facial-recognition&#34;&gt;A.3.  Eigenfaces SVM Facial Recognition&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#a4-using-unit-tests-for-benchmarking&#34;&gt;A.4. Using unit tests for Benchmarking&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#a5-basic-auth-example&#34;&gt;A.5. Basic Auth Example&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#a6-switching-between-pickledb-and-mongodb&#34;&gt;A.6 Switching between PickleDB and MongoDB&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#appendix-b---code-location&#34;&gt;APPENDIX B. - Code Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#appendix-c---cloudmesh-links&#34;&gt;APPENDIX C. - Cloudmesh Links&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#appendix-d---plan&#34;&gt;APPENDIX D. - Plan&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#acknowledgements&#34;&gt;Acknowledgements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; cloudmesh, AI service, REST, multi-cloud&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;We will develop benchmark tests that are pytest replications of
+Sklearn artificial intelligent algorithms. These pytests will then be
+ran on different cloud services to benchmark different statistics on
+how they run and how the cloud performs. The team will obtain cloud
+service accounts from AWS, Azure, Google, and OpenStack. To deploy the
+pytests, the team will use Cloudmesh and its Openapi based REST
+services to benchmark the performance on different cloud
+services. Benchmarks will include components like data transfer time,
+model train time, model prediction time, and more. The final project
+will include scripts and code for others to use and replicate our
+tests. The team will also make a report consisting of research and
+findings.&lt;/p&gt;
+&lt;h2 id=&#34;2-background-and-related-research&#34;&gt;2. Background and Related Research&lt;/h2&gt;
+&lt;h3 id=&#34;21-cloudmesh&#34;&gt;2.1 Cloudmesh&lt;/h3&gt;
+&lt;p&gt;Cloudmesh &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; is a service that enables users to access multi-cloud
+environments easily. Cloudmesh is an evolution of previous tools that
+have been used by many users. Cloudmesh makes interacting with
+clouds easy by creating a service mashup to access common cloud
+services across numerous cloud platforms. Cloudmesh contains a
+sophisticated command shell, a database to store jason objects
+representing virtual machines, storage and a registry of REST
+services &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Cloudmesh has a sophisticated plugin concept that is easy to
+use and leverages python namespaces while being able to integrate
+plugins from different source code directories &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. Installation of
+Cloudmesh is available for macOS, Linux, Windows, and Rasbian &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;22-rest&#34;&gt;2.2 REST&lt;/h3&gt;
+&lt;p&gt;REST is an acronym for representational state transfer. REST often
+uses the HTTP protocol for the CRUD functions which create, read,
+update, and delete resources. It is important to note that REST is not
+a standard, but it is a software architectural style for building
+network services. When referred to as a part of the HTTP protocol, REST has the
+methods of GET, PUT, POST, and DELETE. These methods are used to
+implement the CRUD functions on collections and items that REST
+introduces &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Collection of resources&lt;/strong&gt; &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;: Assume the URI,
+&lt;code&gt;http://.../resources/&lt;/code&gt;, identifies a collection of resources. The
+following CRUD functions would be implemented:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt;: List the URIs and details about the collection’s items.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PUT&lt;/strong&gt;: Replace the collection with a different collection.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;POST&lt;/strong&gt;: Make a new entry in the collection. The operation returns
+new entry’s URI and assigns it automatically.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DELETE&lt;/strong&gt;: Delete the collection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Single Resource&lt;/strong&gt; &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;: Assume the URI,
+&lt;code&gt;http://.../resources/item58&lt;/code&gt;, identifies a single resource in a
+collection. The following CRUD functions would be implemented:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt;: Fetch a representation of the item in the collection,
+extracted in the appropriate media type.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PUT&lt;/strong&gt;: Replace the item in the collection. If the item does not
+exist, then create the item.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;POST&lt;/strong&gt;: Typically, not used. Treat the item as a collection and
+make a new entry in it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DELETE&lt;/strong&gt;: Delete the item in the collection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Because REST has a defined structure, there are tools that manage
+programming to REST specifications.  Here are different categories&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;REST Specification Frameworks&lt;/strong&gt;: Frameworks to define REST service
+specifications for generating REST services in a language and
+framework independently, include: Swagger 2.0 &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;,
+OpenAPI 3.0 &lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;, and RAML &lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REST programming language support&lt;/strong&gt;: Tools and services for
+targeting specific programming languages, include: Flask Rest
+&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;, Django Rest Services &lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REST documentation-based tools&lt;/strong&gt;: These tools document REST
+specifications. One such tool is Swagger &lt;sup id=&#34;fnref:12&#34;&gt;&lt;a href=&#34;#fn:12&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;12&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REST design support tools&lt;/strong&gt;: These tools support the design
+process in developing REST services while extracting on top of the
+programming languages.  These tools also define reusable to create
+clients and servers for particular targets.These tools include
+Swagger &lt;sup id=&#34;fnref:12&#34;&gt;&lt;a href=&#34;#fn:12&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;12&lt;/a&gt;&lt;/sup&gt; , additional swagger tools are available at
+OpenAPI Tools &lt;sup id=&#34;fnref:13&#34;&gt;&lt;a href=&#34;#fn:13&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;13&lt;/a&gt;&lt;/sup&gt; to generate code from OpenAPI
+specifications &lt;sup id=&#34;fnref:14&#34;&gt;&lt;a href=&#34;#fn:14&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;14&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;23-vm-cloud-providers&#34;&gt;2.3 VM Cloud providers&lt;/h3&gt;
+&lt;p&gt;Cloud computing providers offer their customers on-demand self-service computing resources that are rapidly elastic and accessible via broad network access &lt;sup id=&#34;fnref:15&#34;&gt;&lt;a href=&#34;#fn:15&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;15&lt;/a&gt;&lt;/sup&gt;. They accomplish this through the economies of scale achieved by resource pooling (serving multiple customers on the same hardware) and using measured services for fine grained customer billing &lt;sup id=&#34;fnref:15&#34;&gt;&lt;a href=&#34;#fn:15&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;15&lt;/a&gt;&lt;/sup&gt;. Cloud providers offer these resources in multiple service models including infrastructure as a service, platform as a service, software as a service, and, recently, function as a service &lt;sup id=&#34;fnref:15&#34;&gt;&lt;a href=&#34;#fn:15&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;15&lt;/a&gt;&lt;/sup&gt;. These providers are rapidly offering new platforms and services ranging from bare-metal machines to AI development platforms like Google’s TensorFlow Enterprise platform &lt;sup id=&#34;fnref:16&#34;&gt;&lt;a href=&#34;#fn:16&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;16&lt;/a&gt;&lt;/sup&gt;, and AI services such as Amazon’s text-to-speech service &lt;sup id=&#34;fnref:17&#34;&gt;&lt;a href=&#34;#fn:17&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;17&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Customers can take advantage of cloud computing to reduce overhead expenses, increase their speed and scale of service deployment, and reduce development requirements by using cloud providers’ platforms or services. For example, customers’ developing AI systems can utilize clouds to handle big data inputs for which private infrastructure would be too costly or slow to implement. However, having multiple competing cloud providers leads to situations where service availability, performance, and cost may vary. Customer’s must navigate these heterogeneous solutions to meet their business needs while avoiding provider lock-in and managing organizational risk. This may require comparing or using multiple cloud providers to meet various objectives.&lt;/p&gt;
+&lt;p&gt;Cloudmesh works with a variety of cloud providers including Amazon Web Services, Microsoft Azure, Google Cloud Platform, and Oracle’s OpenStack based providers such as the academic research serving Chameleon Cloud.&lt;/p&gt;
+&lt;h3 id=&#34;24-containers-and-microservices&#34;&gt;2.4 Containers and Microservices&lt;/h3&gt;
+&lt;p&gt;Cloudmesh uses the internet architectures of microservices and containers to organize its functions and code. Microservice architecture is a variant of service oriented architecture. Cloudmesh uses microservices to arrange its app in loosley coupled services. These services are fine grained and protocals are lightweight. Containers are data structures whose instances are collections of other objects. Cloudmesh uses containers to store objects in an organized way that follows specific access rules. Containers are characterized by three properties: accessing objects in the container, storage of the objects, and traversal of the objects. Cloudmesh is designed to work on containers in docker, and kubernetes.&lt;/p&gt;
+&lt;h2 id=&#34;3-architecture&#34;&gt;3. Architecture&lt;/h2&gt;
+&lt;h3 id=&#34;31-basic-auth-security&#34;&gt;3.1 Basic Auth Security&lt;/h3&gt;
+&lt;p&gt;Cloudmesh OpenAPI supports configuration of a single authorized user through
+basic authentication. Basic authentication is a simple authentication scheme built
+into the HTTP protocol. The client sends HTTP requests with the &lt;code&gt;Authorization&lt;/code&gt;
+header that contains the word &lt;code&gt;Basic&lt;/code&gt; followed by a space and a base64-encoded
+string of the format &lt;code&gt;username:password&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;From wikipedia, basic auth is &amp;ldquo;a method for an HTTP user agent (e.g. a web browser) to provide a user name and password when making a request&amp;rdquo;. (&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;more on this&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;A cloudmesh user can create an OpenAPI server whose endpoints are only accessible
+as an authorized user. Currently, when basic auth is used as the authentication mechanism,
+all endpoints are secured with this method. While this can be benficial to lock down an API,
+it is limited in the sense that is is &amp;ldquo;all or nothing&amp;rdquo;: either all endpoints are secured or none at all.
+This is something that can be improved upon in the future.&lt;/p&gt;
+&lt;p&gt;For an example of basic auth usage, see &lt;a href=&#34;#a5-basic-auth-example&#34;&gt;Appendix A.5.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Read more about Basic Auth usage with OpenAPI &lt;a href=&#34;https://swagger.io/docs/specification/authentication/basic-authentication/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32-utilizing-pickle-as-an-alternative-to-mongodb-for-out-of-the-box-functionality&#34;&gt;3.2 Utilizing Pickle as an alternative to MongoDB for &amp;ldquo;out-of-the-box&amp;rdquo; functionality&lt;/h3&gt;
+&lt;p&gt;Currently, the installation and setup of cloudmesh openapi involves the installation of MongoDB and the configuration of mongo variables. This is documented &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi#installation&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There have been serveral recent cloudmesh projects involving Raspberry Pis. Unfortunately, the minimum version of MongoDB required for openapi is not available to the Raspberry Pi. Thus cloudmesh-openapi is not available to Pi users with MongoDB.&lt;/p&gt;
+&lt;p&gt;In an effort to provide this software to all those that are interested regardless of OS/machine, we have added a new default storage mechanism that functions &amp;ldquo;out-of-the-box&amp;rdquo; with cloudmesh-openapi. This storage mechanism is implemented with python&amp;rsquo;s native Pickle at the heart. All interfaces associated with MongoDB interactions have been extended to support switching to PickleDB. Thus, this addition is backwards compatible with previous versions of cloudmesh-openapi and requires little changes in the existing code base to support. Since Pickle is native to python, it is supported on any platform running python.&lt;/p&gt;
+&lt;p&gt;It is important to note that there are essentially no security mechanisms with Pickle. We provide this option for users to test their APIs on different machines with little to no setup, but we do not recommend its usage in a production server.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;#a6-switching-between-pickledb-and-mongodb&#34;&gt;Appendix A.6&lt;/a&gt; to see how to switch between DB protocols.&lt;/p&gt;
+&lt;h3 id=&#34;33-cloud-provider-hosted-ai-service&#34;&gt;3.3 Cloud Provider Hosted AI Service&lt;/h3&gt;
+&lt;p&gt;A user deploys Cloudmesh OpenAPI on a virtual machine from a cloud provider, and uses it to host auto-generated, RESTful, AI services. A user constructs an AI service as a set of Python functions that implement a workflow, for example, downloading data from a remote server, training an AI model, uploading a new sample for prediction, and running a prediction on that sample. Cloudmesh OpenAPI hosts user provided Python functions on a web server that is accessible using standard HTTP request methods. In Figure 1 we show a remote client accessing a Cloudmesh OpenAPI server to execute an AI service workflow. In this example, the user deployed Cloudmesh OpenAPI on a virtual machine from a single cloud provider. Cloudmesh OpenAPI provides the choice of multiple supported providers to allow users to meet their specific administrative requirements.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/ai-service-workflow.png&#34; alt=&#34;AI Service Workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; A client running an AI service workflow, generated and hosted by Cloudmesh OpenAPI, on a cloud provider virtual machine. Requests for each function invocation are made using standard HTTP request methods including function arguments.&lt;/p&gt;
+&lt;h3 id=&#34;34-multi-cloud-hosted-ai-service&#34;&gt;3.4 Multi-Cloud Hosted AI Service&lt;/h3&gt;
+&lt;p&gt;Cloudmesh with Cloudmesh OpenAPI provides a framework to deploy AI services to multiple clouds. One use case for a multi-cloud deployment is to benchmark cloud provider VM performance. A user can use these tools to script the deployment of virtual machines with different providers, virtual machine sizes, or operating systems.  In Figure 2, a user has deployed an AI service hosted by Cloudmesh OpenAPI on three separate cloud providers, AWS, Azure, and Google. The user makes standard HTTP method requests to access the services simultaneously, and gathers responses and benchmark statistics. With the Cloudmesh benchmark utility, the user can measure the runtime of each AI service function and collect key information such as virtual machine memory usage. This information provides the user key insight for future hosting decisions. We distinguish this example from Figure 1, where the AI service is deployed on a single cloud provider.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/multi-cloud-ai-service.png&#34; alt=&#34;Mult-Cloud AI Services&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; A client simultaneously accesses an AI service hosted on three seperate cloud providers, AWS, Azure, and Google to benchmark provider performance.&lt;/p&gt;
+&lt;h2 id=&#34;4-benchmarks&#34;&gt;4. Benchmarks&lt;/h2&gt;
+&lt;h3 id=&#34;41-algorithms-and-datasets&#34;&gt;4.1. Algorithms and Datasets&lt;/h3&gt;
+&lt;p&gt;This project uses a number of simple example algorithms and
+datasets. We have chosen to use the examples included in Scikit Learn as
+they are widely known and can be used by others to replicate our
+benchmarks easily. Nevertheless, it will be possible to integrate
+easily other data sources, as well as algorithms due to the generative
+nature of our base code for creating REST services.&lt;/p&gt;
+&lt;p&gt;Within Skikit Learn we have chosen the following examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Pipelined ANOVA SVM&lt;/strong&gt;: An example code that shows a pipeline running
+successively a univariate feature selection with anova and then a
+SVM of the selected features &lt;sup id=&#34;fnref:18&#34;&gt;&lt;a href=&#34;#fn:18&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;18&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Eigenfaces SVM Facial Recognition&lt;/strong&gt;: A facial recognition example that first  utilizes principle component analysis (PCA) to generate eigenfaces from the training image data, and then trains and tests a SVM model &lt;sup id=&#34;fnref:19&#34;&gt;&lt;a href=&#34;#fn:19&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;19&lt;/a&gt;&lt;/sup&gt;. This example uses the real world &amp;ldquo;Labeled Faces in the Wild&amp;rdquo; dataset consisting of labeled images of famous individuals gathered from the internet &lt;sup id=&#34;fnref:20&#34;&gt;&lt;a href=&#34;#fn:20&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;20&lt;/a&gt;&lt;/sup&gt;     .&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;42-cloud-providers&#34;&gt;4.2. Cloud Providers&lt;/h3&gt;
+&lt;p&gt;Cloudmesh openapi works with virtual machine providers. It is necessary to select similar virtual machines for benchmarking.&lt;/p&gt;
+&lt;h4 id=&#34;aws&#34;&gt;AWS&lt;/h4&gt;
+&lt;h4 id=&#34;azure&#34;&gt;Azure&lt;/h4&gt;
+&lt;h4 id=&#34;google&#34;&gt;Google&lt;/h4&gt;
+&lt;h4 id=&#34;openstack&#34;&gt;OpenStack&lt;/h4&gt;
+&lt;h4 id=&#34;oracle&#34;&gt;Oracle&lt;/h4&gt;
+&lt;h4 id=&#34;raspberry-pi-cluster&#34;&gt;Raspberry Pi Cluster&lt;/h4&gt;
+&lt;h5 id=&#34;execution-on-raspbian&#34;&gt;Execution on Raspbian&lt;/h5&gt;
+&lt;h5 id=&#34;execution-on-a-kubernetes-cluster&#34;&gt;Execution on a Kubernetes Cluster&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://opensource.com/article/20/3/kubernetes-raspberry-pi-k3s&#34;&gt;https://opensource.com/article/20/3/kubernetes-raspberry-pi-k3s&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;43-result-comparision&#34;&gt;4.3. Result Comparision&lt;/h3&gt;
+&lt;p&gt;In this section we will discuss the setup and execution of a benchmark for three example AI services.&lt;/p&gt;
+&lt;h4 id=&#34;431-vm-selection&#34;&gt;4.3.1 VM Selection&lt;/h4&gt;
+&lt;p&gt;When benchmarking cloud performance, it is important to identify and control deployment parameters that can affect the performance results. This enables one to analyze comparable services or identify opportunities for service improvement for varying deployment features such as machine size, location, network, or storage hardware. These examples aimed to create similar machines across all three clouds and measure service performance. See Table 1 for a summary of the parameters controlled in these benchmark examples.&lt;/p&gt;
+&lt;p&gt;One key component is the virtual machine size, which determines the number of vCPUs, the amount of memory, attached storage types, and resource sharing policies. Resource sharing policies include shared core machine varieties which providers offer at less expensive rates and allow the virtual machines to burst over its base clock rate in exchange for credits or the machines inherent bursting factor &lt;sup id=&#34;fnref:21&#34;&gt;&lt;a href=&#34;#fn:21&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;21&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:22&#34;&gt;&lt;a href=&#34;#fn:22&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;22&lt;/a&gt;&lt;/sup&gt;. For this example, we chose three similar machine sizes that had comparable vCPUs, comparable underlying processors, memory, price, and were not a shared core variety. We installed the same Ubuntu 20.04 operating system on all three clouds.&lt;/p&gt;
+&lt;p&gt;Another factor that can affect performance, particularly in network latency, is the zone and region selected. We deploy all benchmark machines to zones on the east coast of the United States. This helps control variations caused by network routing latency and provides more insight into the inherent network performance of the individual cloud services.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 1:&lt;/strong&gt; Selected VM parameters for benchmark measurement. Clouds were tested at least twice, and were run sequentially between the hours of approximately 1945 EST and 0330 EST starting with Google and ending with Azure. * For the Eigenfaces SVM example, only 60 runs were conducted on Azure due to a failed VM deployment from factors outside of the benchnmark scripts control.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;AWS&lt;/th&gt;
+&lt;th&gt;Azure&lt;/th&gt;
+&lt;th&gt;Google&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Size (flavor)&lt;/td&gt;
+&lt;td&gt;m4.large&lt;/td&gt;
+&lt;td&gt;Standard_D2s_v3&lt;/td&gt;
+&lt;td&gt;n1-standard-2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vCPU&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Memory (GB)&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;7.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;ami-0dba2cb6798deb6d8&lt;/td&gt;
+&lt;td&gt;Canonical:0001-com-ubuntu-server-focal:20_04-lts:20.04.202006100&lt;/td&gt;
+&lt;td&gt;ubuntu-2004-lts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OS&lt;/td&gt;
+&lt;td&gt;Ubuntu 20.04 LTS&lt;/td&gt;
+&lt;td&gt;Ubuntu 20.04 LTS&lt;/td&gt;
+&lt;td&gt;Ubuntu 20.04 LTS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Region&lt;/td&gt;
+&lt;td&gt;us-east-1&lt;/td&gt;
+&lt;td&gt;eastus&lt;/td&gt;
+&lt;td&gt;us-east1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Zone&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;us-east1-b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Price ($/hr)&lt;/td&gt;
+&lt;td&gt;0.1&lt;/td&gt;
+&lt;td&gt;0.096&lt;/td&gt;
+&lt;td&gt;0.0949995&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Runs/Test&lt;/td&gt;
+&lt;td&gt;90&lt;/td&gt;
+&lt;td&gt;60*&lt;/td&gt;
+&lt;td&gt;90&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;432-eigenfaces-svm-example&#34;&gt;4.3.2 Eigenfaces-SVM Example&lt;/h4&gt;
+&lt;p&gt;We provide two example benchmarks for the Eigenfaces SVM example. The first deploys and measures the AI service on a single cloud provider at a time, and the second deploys a multi-cloud AI service, and then measures the service across the clouds in parallel.&lt;/p&gt;
+&lt;h4 id=&#34;4321-single-cloud-provider-service-benchmarking&#34;&gt;4.3.2.1 Single Cloud Provider Service Benchmarking&lt;/h4&gt;
+&lt;p&gt;The benchmark script for the Eigenfaces SVM example uses Cloudmesh to create virtual machines and setup a Cloudmesh OpenAPI environment sequentially across the three measured clouds including Amazon, Azure, and Google. After the script sets up the environment, it runs a series of pytests that generate and launch the Eigenfaces-SVM OpenAPI service, and then conduct runtime measurements of various service functions.&lt;/p&gt;
+&lt;p&gt;The benchmark runs the pytest in two configurations. After the benchmark script sets up a virtual machine environment, it runs the first pytest locally on the OpenAPI server and measures five runtimes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and extraction of remote image data from ndownloader.figshare.com/files/5976015&lt;/li&gt;
+&lt;li&gt;The model training time when run as an OpenAPI service&lt;/li&gt;
+&lt;li&gt;The model training time when run as the Scikit-learn example without OpenAPI involvement&lt;/li&gt;
+&lt;li&gt;The time to upload an image from the server to itself&lt;/li&gt;
+&lt;li&gt;The time to predict and return the target label of the uploaded image&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The benchmark runs the second pytest iteration from the remote client it is running on and interacts with the deployed OpenAPI service over the internet. It tests two runtimes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The time to upload an image to the remote OpenAPI server&lt;/li&gt;
+&lt;li&gt;The time to run the predict function on the remote OpenAPI server, and return the target label  of the uploaded image&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In Figure 1 we compare the download and extraction time of the labeled faces in the wild dataset. This data set is approximately 233 MBs compressed, which allows us to measure a non-trivial data transfer. Lower transfer times imply the cloud has higher throughput from the data server, less latency to the data server, or that it provides access to a higher performing internal network. The standard deviation is displayed to compare the variation in the download times.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_1.png&#34; alt=&#34;Download Data Runtime&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Donwnload (233MB) and extraction (~275MB) of remote image data from ndownloader.figshare.com/files/5976015.&lt;/p&gt;
+&lt;p&gt;In Figure 2 we measure the training time of the Eigenfaces-SVM model both as an OpenAPI service and as the basic Scikit-learn example. This allows us to measure runtime overhead added by OpenAPI compared to the source example. Here the two functions are identical except that the OpenAPI train function makes an additional function call to store the model to disk using joblib. This is necessary to share the model across the train and predict functions. The standard deviation is displayed to compare the variation in the training times.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_2.png&#34; alt=&#34;Train Runtime&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Compares the eigenfaces-svm model training time running both as an OpenAPI service, and as the raw Scikit-learn example. There are two bars per cloud provider. The bold bars are the training time of the model when hosted as a Cloudmesh OpenAPI function. The pastel bars are the training time of the Scikit-learn example code without Cloudmesh OpenAPI involvement. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.&lt;/p&gt;
+&lt;p&gt;In Figure 3 we measure the time to upload an image to the server both from itself, and from a remote client. This allows us to compare the function runtime as experienced by the server, and as experienced by a remote client. The difference helps determine the network latency between the benchmark client and the cloud service. The standard deviation is displayed to compare the variation in the upload times.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_3.png&#34; alt=&#34;Upload Runtime&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Runtime of the upload function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the upload function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.&lt;/p&gt;
+&lt;p&gt;In Figure 4 we measure the time to call the predict function on the uploaded image. Again we run this once from the local server itself, and a second time from a remote client to determine as experienced runtimes. The standard deviation is displayed to compare the variation in the predict times.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/sample_graph_4.png&#34; alt=&#34;Predict Runtime&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Runtime of the predict function when run locally from the OpenAPI server and from a remote client. There are two bars per cloud provider. The bold bars are the runtime of the predict function as experienced by the server, and the pastel as experienced by the remote client. The bars plot mean runtimes and the error bar reflects the standard deviation of the runtimes.&lt;/p&gt;
+&lt;p&gt;Table 2 presents a full listing of test results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 2:&lt;/strong&gt; Test results for the Eigenfaces SVM benchmark. Type &amp;ldquo;local: denotes the test was run locally on the Cloudmesh Openapi server, and &amp;ldquo;remote&amp;rdquo; denotes a remote host interacted with the server using the python requets library.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;test&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;cloud&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mean (s)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;min (s)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;max (s)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;std (s)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_download_data&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;20.583&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.233&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;31.798&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.76933&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_download_data&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;20.8087&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13.564&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;42.701&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.9407&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_download_data&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.0035&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.062&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;19.381&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.478574&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.0299111&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.015&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.051&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.00401288&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.0245333&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.013&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.029&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.00306848&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.0285889&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.014&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.058&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.00420554&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.401722&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.259&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.804&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.175369&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.358733&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.244&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.134117&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.358189&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.27&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.815&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.158345&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_scikitlearn_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.8861&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.113&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;46.451&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.7666&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_scikitlearn_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;40.1319&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;34.946&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;43.961&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.28506&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_scikitlearn_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;42.1328&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;41.771&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;42.493&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.12829&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.725&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;34.908&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;46.505&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.72603&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;40.2847&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.302&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;47.5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.31544&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;42.0448&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;41.516&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;45.932&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.709089&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.00673333&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.006&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.012&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.000866667&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.00575&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.005&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.007&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.000469929&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;local&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.00688889&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.006&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.009&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.000406733&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.428256&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.163&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1.134&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.205095&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.322283&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.153&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.498&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.151721&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.310822&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.184&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.729&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.180025&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;4322-multi-cloud-service-benchmarking&#34;&gt;4.3.2.2 Multi-Cloud Service Benchmarking&lt;/h4&gt;
+&lt;p&gt;In this benchmark our script first acquires VMs, install Cloudmesh OpenAPI, and launch the Eigenfaces SVM AI service on three separate cloud providers. Because Cloudmesh has limited parallel computing support, the script deploys the VMs in a serial manner. After the services are running, we then run our tests in a parallel manner as depicted in Figure 2. Testing in parallel provides faster benchmark results, and better equalizes benchmark testing conditions. The benchmark conducts requests to each cloud in parallel, so they should experience similar network conditions. For example, in a serial testing model, the remote data server may experience varying loads resulting in different load times. Our parallel tests better equalize these conditions by having each cloud download the data at the same time.&lt;/p&gt;
+&lt;p&gt;In Figure 7 we depict the combined runtime of our benchmark tests. This allows us to compare the complete execution time of an AI service workflow.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cloudmesh/cloudmesh-openapi/raw/main/images/ai_service_workflow_runtime.png&#34; alt=&#34;AI Service Workflow Runtime&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Mean runtime of the Eigenfaces SVM workflow deployed as a multi-cloud service. We compute the means from 30 runs of a workflow that included 1 download data invocation, 1 train invocation, 30 upload invocations, and 30 predict invocations. We run the workflows in parallel on the separate clouds using a multiprocessing on an 8-core machine.&lt;/p&gt;
+&lt;p&gt;In Table 3 we provide complete test results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 3:&lt;/strong&gt; Test results for the Eigenfaces SVM benchmark deployed as a mutli-cloud service.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;test&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;cloud&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;mean (s)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;min (s)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;max (s)&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;std (s)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_download_data&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;20.5102&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.566&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;34.42&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.82372&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_download_data&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18.604&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13.489&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;32.645&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.53201&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_download_data&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.8976&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17.133&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;21.861&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.853191&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.148&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.59&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.417&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.572103&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.9337&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.398&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.654&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.737981&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_predict&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.13497&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.744&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.366&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.602431&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.6067&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.245&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;39.531&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.734663&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.8856&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;35.077&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;39.998&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.94563&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_train&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;41.981&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;41.578&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;45.706&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0.70646&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;aws&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10.0755&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.895&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16.524&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.37981&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;azure&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.45627&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.72&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;13.915&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.05165&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;test_upload&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;remote&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;google&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8.8688&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;5.39&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15.443&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.51598&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;433-pipelined-anova-svm-example&#34;&gt;4.3.3 Pipelined Anova SVM Example&lt;/h4&gt;
+&lt;h4 id=&#34;434-caleb-example&#34;&gt;4.3.4 Caleb Example&lt;/h4&gt;
+&lt;h2 id=&#34;5-conclusion&#34;&gt;5. Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;6-limitations&#34;&gt;6. Limitations&lt;/h2&gt;
+&lt;p&gt;Azure has updated their libraries and discontinued the version 4.0
+Azure libraries. We updated Cloudmesh to use the new library, but not all features, such as virtual machine delete, are implemented or verified.&lt;/p&gt;
+&lt;h2 id=&#34;appendix-a---setup&#34;&gt;APPENDIX A. - Setup&lt;/h2&gt;
+&lt;h3 id=&#34;a1-deployment&#34;&gt;A.1. Deployment&lt;/h3&gt;
+&lt;p&gt;The project is easy to replicate with our detailed instructions. First you must install Cloudmesh OpenAPI whihch can be done by the follwoing steps:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python -m venv ~/ENV3
+source ~/ENV3/bin/activate 
+mkdir cm
+cd cm
+pip install cloudmesh-installer
+cloudmesh-installer get openapi 
+cms help
+cms gui quick
+# fill out mongo variables
+# make sure autinstall is True
+cms config set cloudmesh.data.mongo.MONGO_AUTOINSTALL=True
+cms admin mongo install --force
+# Restart a new terminal to make sure mongod is in your path
+cms init
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As a first example we like to test if the deployment works by using a
+number of simple commands we execute in a terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/cm/cloudmesh-openapi
+
+cms openapi generate get_processor_name \
+    --filename=./tests/server-cpu/cpu.py
+
+cms openapi server start ./tests/server-cpu/cpu.yaml
+
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/get_processor_name&amp;quot; \
+     -H &amp;quot;accept: text/plain&amp;quot;
+cms openapi server list
+
+cms openapi server stop cpu
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The output will be a string containing your computer.&lt;/p&gt;
+&lt;p&gt;TODO: how does the string look like&lt;/p&gt;
+&lt;p&gt;Next you can test a more sophiticated example. Here we generate from a
+python function a rest servive. We consider the following function
+definition in which a float is returned as a simple integer&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;def add(x: float, y: float) -&amp;gt; float:
+    &amp;quot;&amp;quot;&amp;quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &amp;quot;&amp;quot;&amp;quot;
+    result = x + y
+
+    return result
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Once we execute the following lines in a terminal, the result of the
+addition will be calculated in the REST service and it is returned as
+a string.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate add --filename=./tests/add-float/add.py
+cms openapi server start ./tests/add-float/add.yaml 
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+# This command returns
+&amp;gt; 3.0
+cms openapi server stop add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As we often also need the information as a REST service, we provide in
+our next example a jsonified object specification.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from flask import jsonify
+
+def add(x: float, y: float) -&amp;gt; str:
+    &amp;quot;&amp;quot;&amp;quot;
+    adding float and float.
+    :param x: x value
+    :type x: float
+    :param y: y value
+    :type y: float
+    :return: result
+    :return type: float
+    &amp;quot;&amp;quot;&amp;quot;
+    result = {&amp;quot;result&amp;quot;: x + y}
+
+    return jsonify(result)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The result will include a json string returned by the service.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate add --filename=./tests/add-json/add.py
+cms openapi server start ./tests/add-json/add.yaml 
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/add?x=1&amp;amp;y=2&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+# This command returns
+&amp;gt; {&amp;quot;result&amp;quot;:3.0}
+cms openapi server stop add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;These examples are used to demonstrate the ease of use as well as the
+functionality for those that want to replicate our work.&lt;/p&gt;
+&lt;h3 id=&#34;a2--pipiline-anova-svm&#34;&gt;A.2.  Pipiline ANOVA SVM&lt;/h3&gt;
+&lt;p&gt;This example demonstrates how to deploy a simple machine learning example onto a server using cloudmesh-openapi. The specific implementation details that this example is based on can be found &lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The model being implemented is, in essence, an SVM with extra features to improve the model.  An SVM (support vector machine) is a supervised learning model with associated learning algorithms used for classification and regression analysis. This model has become one of the most robust prediction methods widely used in problems conerning classification and the like.&lt;/p&gt;
+&lt;p&gt;The Pipeline and ANOVA aspects are extensions to the SVM to improve the overall model. The purpose of the pipeline is to assemble several steps that can be cross-validated together while setting different parameters. ANOVA on the other hand is an acronym for Analysis of Variance. It is an omnibus test, meaning it tests for a difference overall between all groups. In the context of an SVM, this information is useful as an SVM mainly classifies data into separate groups.&lt;/p&gt;
+&lt;p&gt;We can now proceed as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pwd
+~/cm/cloudmesh-openapi
+
+$ cms openapi generate PipelineAnovaSVM \
+      --filename=./tests/Scikitlearn-experimental/sklearn_svm.py \
+      --import_class --enable_upload
+
+$ cms openapi server start ./tests/Scikitlearn-experimental/sklearn_svm.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After running these commands, we opened a web user interface. In the
+user interface, we uploaded the file iris data located in
+~/cm/cloudmesh-openapi/tests/ Scikitlearn-experimental/iris.data&lt;/p&gt;
+&lt;p&gt;We then trained the model on this data set by inserting the name of
+the file we uploaded &lt;code&gt;iris.data&lt;/code&gt;. Next, we tested the model by
+clicking on make_prediction and giving it the name of the file
+iris.data and the parameters &lt;code&gt;5.1&lt;/code&gt;, &lt;code&gt;3.5&lt;/code&gt;, &lt;code&gt;1.4&lt;/code&gt;, &lt;code&gt;0.2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The response we received was &lt;code&gt;Classification: [&#39;Iris-setosa&#39;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Lastly, we close the server:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms openapi server stop sklearn_svm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This process can easily be replicated when we create more service
+examples that we derive from existing sklearn examples. We benchmark
+these tests while wrapping them into pytests and run them on various
+cloud services.&lt;/p&gt;
+&lt;h3 id=&#34;a3--eigenfaces-svm-facial-recognition&#34;&gt;A.3.  Eigenfaces SVM Facial Recognition&lt;/h3&gt;
+&lt;p&gt;Next we demonstrate how to run the Eigenfaces SVM example locally, and
+then how to run its associated benchmark script.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ pwd
+~/cm/cloudmesh-openapi
+
+$ git checkout benchmark # todo required until merged into main
+
+$ cms openapi generate EigenfacesSVM \
+      --filename=./tests/generator-eigenfaces-svm/eigenfaces-svm-full.py \
+      --import_class --enable_upload
+
+$ cms openapi server start ./tests/generator-eigenfaces-svm/eigenfaces-svm-full.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After running these commands, we opened a web user interface at &lt;a href=&#34;http://localhost:8080/cloudmesh/ui&#34;&gt;http://localhost:8080/cloudmesh/ui&lt;/a&gt;. In the user interface we run the download_data function with the default arguments. This downloads and extracts the labeled faces in the wild data set to the ~/scikit_learn_data/lfw_home directory.&lt;/p&gt;
+&lt;p&gt;Next, we run the train function to train the model. The train function performs a 50/50 train/test split on the input data, and returns performance statistics of the trained model.&lt;/p&gt;
+&lt;p&gt;Next, we use the upload function to upload an example image using &lt;code&gt;~./tests/generator-eigenfaces-svm/example_image.jpg&lt;/code&gt; as the function argument. This puts the example image in the ~/.cloudmesh/upload-file/ directory.&lt;/p&gt;
+&lt;p&gt;Finally, we run the predict function with the uploaded file path as an argument, &lt;code&gt;~/.cloudmesh/upload-file/example_image.jpg&lt;/code&gt;, and receive  the classification as a response &lt;code&gt;[&#39;George W. Bush&#39;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Last, we close the server:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms openapi server stop EigenfacesSVM
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, we benchmark these tests while wrapping them into pytests and run them on various cloud services.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Before continuing you must have successfully registered AWS, Azure, and Google clouds in your yaml file and be able to boot virtual machines on Google, AWS, and Azure. This example currently should work on Linux and macOS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First, we must change to a git branch that includes Azure provider fixes, and setup our ~./cloudmesh/cloudmesh.yaml file to replicate the parameters set for the benchmark results above.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd ~/cm/cloudmesh-azure 
+$ git checkout benchmark # required until changes merged to main
+
+$ cd ~/cm/cloudmesh-openapi
+
+$ cp ~/.cloudmesh/cloudmesh.yaml ~/.cloudmesh/cloudmesh.bak.1 # to revert reverse the cp
+
+$ cms config set cloudmesh.cloud.azure.default.image=&amp;quot;Canonical:0001-com-ubuntu-server-focal:20_04-lts:20.04.202006100&amp;quot;
+$ cms config set cloudmesh.cloud.azure.default.size=&amp;quot;Standard_D2s_v3&amp;quot;
+$ cms config set cloudmesh.cloud.azure.credentials.AZURE_REGION=&amp;quot;eastus&amp;quot;
+
+$ cms config set cloudmesh.cloud.aws.default.image=&amp;quot;ami-0dba2cb6798deb6d8&amp;quot;
+$ cms config set cloudmesh.cloud.aws.default.size=&amp;quot;m4.large&amp;quot;
+$ cms config set cloudmesh.cloud.aws.default.username=&amp;quot;ubuntu&amp;quot;
+$ cms config set cloudmesh.cloud.aws.credentials.region=&amp;quot;us-east-1&amp;quot;
+
+$ cms config set cloudmesh.cloud.google.default.image=&amp;quot;ubuntu-2004-lts&amp;quot;
+$ cms config set cloudmesh.cloud.google.default.image_project=&amp;quot;ubuntu-os-cloud&amp;quot;
+$ cms config set cloudmesh.cloud.google.default.zone=&amp;quot;us-east1-b&amp;quot;
+$ cms config set cloudmesh.cloud.google.default.region=&amp;quot;us-east1&amp;quot;
+$ cms config set cloudmesh.cloud.google.default.flavor=&amp;quot;n1-standard-2&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, we will modify the default security group to open the flask server port 8080 for OpenAPI service testing.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cms sec rule add openapi 8080 8080 tcp 0.0.0.0/0
+$ cms sec group add default openapi for_openapi_demo
+# the above two command should allow aws and azure to work
+# sec group load is broken for google and it does not use the default sec group, so you have to manually add the openapi rule to google cloud for now
+# console.cloud.google.com &amp;gt; VPC network &amp;gt; firewall &amp;gt; create firewall rule
+# name: openapi, targets:  all instances in network, Source IP ranges: 0.0.0.0 /0, specified protocols and ports: tcp 8080 &amp;gt; create
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, we will run the benchmarking script, ~./tests/generator-eigenfaces-svm/benchmark-eigenfaces.py. This script utilizes the Cloudmesh shell and the Bash script, ~/.tests/generator-eigenfaces-svm/eigenfaces-svm-full-script, to sequentially deploy a VM on each of the clouds, install Cloudmesh-openapi and the example dependencies, and then us the pytest, ./tests/test_030_generator_eigenfaces_svm.py, twice to benchmark the EigenfacesSVM service functions both locally from the server, and from the remote client running the benchmark script. Finally, it prints and plots performance statistics.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./tests/generator/eigenfaces-svm/benchmark-eigenfaces.py run
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If the command line argument &lt;code&gt;run&lt;/code&gt; is passed to the script, then it will start up the virtual machines on each cloud. Output and benchmark results from each of the virtual machines will be store in the ~/.cloudmesh/eigenfaces-svm/vm_script_output/ directory. The benchmark results are scraped from the script outputs and stored in the ~/.cloudmesh/eigenfaces-svm/benchmark_output directory. If the &lt;code&gt;run&lt;/code&gt; argument is &lt;strong&gt;not&lt;/strong&gt; provided, it will only print statistics from script output already stored in the vm_script_output directory.&lt;/p&gt;
+&lt;p&gt;Statistics will be printed to the command line, and graphs will be displayed using plt.show() function calls as well as saved to the ~./tests/generator-eigenfaces-svm/ directory.&lt;/p&gt;
+&lt;p&gt;Next, we will run the multi-cloud benchmarking script, ~/.tests/generator-eigenfaces-svm/bencmark-eigenfaces-multi-cloud.py. This script uses the Cloudmesh shell and the Bash script, ~/.tests/generator-eigenfaces-svm/eigenfaces-svm-full-multi-script, to sequentially deploy a VM on each of the clouds, install Cloudmesh-OpenAPI and the example dependencies, and start the AI service. Next, it conducts HTTP requests in parallel to interact with the services to measure the runtime for data download, training, uploading, and prediction.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./tests/generator/eigenfaces-svm/benchmark-eigenfaces-multi-cloud.py run
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As above the command line argument run is used to conduct actual tests, and the absence of that argument simply computes statistics on existing output from the ~/.cloudmesh/eigenfaces-svm/vm_script_output_multi/ directory.&lt;/p&gt;
+&lt;p&gt;Statistics will be printed to the command line, and graphs will be displayed using plt.show() function calls as well as saved to the ~./tests/generator-eigenfaces-svm/ directory.&lt;/p&gt;
+&lt;h3 id=&#34;a4-using-unit-tests-for-benchmarking&#34;&gt;A.4. Using unit tests for Benchmarking&lt;/h3&gt;
+&lt;p&gt;TODO: This section will be expanded upon&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Describe why we can unit tests&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Describe how we access multiple clouds&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms set cloud=aws
+# run test
+cms set cloud=azure
+# run test
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Describe the Benchmark class from cloudmesh in one sentence and how
+we use it&lt;/p&gt;
+&lt;h3 id=&#34;a5-basic-auth-example&#34;&gt;A.5. Basic Auth Example&lt;/h3&gt;
+&lt;p&gt;Basic Auth in cloudmesh openapi can be enabled with the following flag&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--basic_auth=&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;flag. As such, this example will be an extension of a previously existing example. To follow with this example, navigate to the &lt;code&gt;cloudmesh-openapi&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;We will use the &lt;code&gt;server-cpu&lt;/code&gt; example which tells the user the CPU of the machine running the API.&lt;/p&gt;
+&lt;p&gt;For this example, let&amp;rsquo;s create a user with username &lt;code&gt;admin&lt;/code&gt; and password &lt;code&gt;secret&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi generate get_processor_name \
+  --filename=./tests/server-cpu/cpu.py \
+  --basic_auth=admin:secret
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can start the server as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi server start ./tests/server-cpu/cpu.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The user will now be required to authenticate as the registered user in order to access the API. This can be done by specifying the Basic Auth credentials in the header as done &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization&#34;&gt;here&lt;/a&gt;. Alternatively, the user can login via the &lt;a href=&#34;http://localhost:8080/cloudmesh/u&#34;&gt;swagger UI&lt;/a&gt; when the server is started.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;a6-switching-between-pickledb-and-mongodb&#34;&gt;A.6 Switching between PickleDB and MongoDB&lt;/h3&gt;
+&lt;p&gt;The default &amp;ldquo;out-of-the-box&amp;rdquo; storage mechanism of cloudmesh-openapi is Pickle. This requires no setup of the DB on the user&amp;rsquo;s end.&lt;/p&gt;
+&lt;p&gt;To switch to MongoDB, the user must first change their config option as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi register protocol mongo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that by switching to mongo, certain mongo variables need to be filled out. Mongo may need to be installed as well. Refer to &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi/#installation&#34;&gt;this&lt;/a&gt; documentation to see how this process can be done.&lt;/p&gt;
+&lt;p&gt;One may switch back to pickle with the same command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms openapi register protocol pickle
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;appendix-b---code-location&#34;&gt;APPENDIX B. - Code Location&lt;/h2&gt;
+&lt;p&gt;This is temporary and will in final be moved elsewhere. Its
+conveniently for now placed on top so we can easier locate it&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;github: &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt; &lt;sup id=&#34;fnref:23&#34;&gt;&lt;a href=&#34;#fn:23&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;23&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;branch: benchmark (not yet created)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;appendix-c---cloudmesh-links&#34;&gt;APPENDIX C. - Cloudmesh Links&lt;/h2&gt;
+&lt;p&gt;We added this section so the Reader can easily find some cloudmesh
+related information
+Documentation for Cloudmesh can be found at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code for cloud mesh can be found at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Examples in this paper came from the cloudmesh openapi manual which is located here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Information about cloudmesh can be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Various cloudmesh installations for various needs can be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;appendix-d---plan&#34;&gt;APPENDIX D. - Plan&lt;/h2&gt;
+&lt;p&gt;Thus far in the project we have familiarized ourselves with
+Cloudmesh-Openapi by recreating example services on our local
+machines, setup a git branch of the source project on which we will
+collaborate, contributed to the paper’s background section, and
+started looking for example AI analytics, like those provided at
+SciKitLearn’s website. We obtained cloud service accounts from AWS,
+Azure, GCP, and Chameleon Cloud, and verified Cloudmesh documentation
+while applying for the cloud accounts. We registered our accounts with
+the Cloudmesh shell and executed VM operations using Cloudmesh.&lt;/p&gt;
+&lt;p&gt;Moving forward, we will develop benchmark tests in the
+form of pytests that replicate the AI analytic examples.  We will each
+use Cloudmesh to deploy these tests as an Openapi based REST service
+and benchmark their performance on various cloud providers. Our
+benchmarks will measure various components such as data transfer time,
+model train time, model prediction time, etc. We will then consolidate
+and report on our findings. Our final project will include a script
+that utilizes the Cloudmesh shell to automate our benchmark tests so
+others can replicate our work.&lt;/p&gt;
+&lt;p&gt;For an AI analytic benchmark test, one intesresting example to
+replicate may be the faces recognition example using eigenfaces and
+SVMs
+&lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py&#34;&gt;https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Last week we created the first draft of the eigenfaces-svm example
+that is found in the &amp;ldquo;benchmark&amp;rdquo; branch.  It outputs the example and
+prints benchmark information. We are making progress on manually
+running this example on a cloud VM using the Cloudmesh shell, which
+will generate the requirements for our final script.&lt;/p&gt;
+&lt;p&gt;This week we successfully ran the eigenfaces-svm example on Goolge
+Cloud, Amazon Web Services, and Microsoft Azure. We created a script
+eigenfaces-svm-script that can deploy the OpenAPI service on a fresh
+VM on a cloud and run the eigenfaces-svm example. We also created the
+eigenfaces-svm-full example which breaks the workflow into a functions
+that download remote data, train and tests the model, provide a image
+upload function, and a prediction function. We also created a pytest
+that automatically run those four functions and print benchark
+information.&lt;/p&gt;
+&lt;p&gt;Next week we will create a script to run the eigenfaces-svm-full
+example on each cloud multiple times, and them summarize and plot
+benchmark information to compare the clouds. Additionally, we will
+finish the report.&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;We like to thank &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-325/&#34;&gt;Vishwanadham Mandala&lt;/a&gt; to participate in helping write an earlier version of this document.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Manual, &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Manaual Preface for cloudmesh,  &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/preface/about.html&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh OpenAPI Repository for automatically generated REST services from Python functions &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt;. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Repositories, &lt;a href=&#34;https://github.com/cloudmesh/&#34;&gt;https://github.com/cloudmesh/&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Manual, Instalation instryctions for cloudmesh &lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&#34;&gt;https://cloudmesh.github.io/cloudmesh-manual/installation/install.html&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+ &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;OpenAPI Initiative, &amp;ldquo;The openapi specification&amp;rdquo;, Web Page [Online]. Available: &amp;lt;https://github.com/OAI/OpenAPI- Specification/blob/main/versions/2.0.md&amp;gt; &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;OpenAPI Initiative, &amp;ldquo;The openapi specification.&amp;rdquo; Web Page [Online]. Available: &lt;a href=&#34;https://github.com/OAI/OpenAPI-Specification&#34;&gt;https://github.com/OAI/OpenAPI-Specification&lt;/a&gt; &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;RAML, &amp;ldquo;RAML version 1.0: RESTful api modeling language&amp;rdquo;, Web Page [Online]. Available: &lt;a href=&#34;https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md&#34;&gt;https://github.com/raml-org/raml-spec/blob/main/versions/raml-10/raml-10.md&lt;/a&gt; &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;R. H. Kevin Burke Kyle Conroy, &amp;ldquo;Flask-restful&amp;rdquo;, Web Page [Online]. Available: &lt;a href=&#34;https://flask-restful.readthedocs.io/en/latest/&#34;&gt;https://flask-restful.readthedocs.io/en/latest/&lt;/a&gt; &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:11&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;E. O. Ltd, &amp;ldquo;Django rest framework&amp;rdquo;, Web Page [Online]. Available:
+&lt;a href=&#34;https://www.django-rest-framework.org/&#34;&gt;https://www.django-rest-framework.org/&lt;/a&gt; &lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:12&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;S. Software, &amp;ldquo;API development for everyone&amp;rdquo;, Web Page [Online]. Available: &lt;a href=&#34;https://swagger.io&#34;&gt;https://swagger.io&lt;/a&gt; &lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:13&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;A. Y. W. Hate, &amp;ldquo;OpenAPI.Tools&amp;rdquo;, Web Page [Online]. Available:
+&lt;a href=&#34;https://openapi.tools/&#34;&gt;https://openapi.tools/&lt;/a&gt; &lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:14&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;S. Software, &amp;ldquo;Swagger codegen documentation&amp;rdquo;, Web Page [Online]. Available: &lt;a href=&#34;https://swagger.io/docs/open-source-tools/swagger-codegen/&#34;&gt;https://swagger.io/docs/open-source-tools/swagger-codegen/&lt;/a&gt; &lt;a href=&#34;#fnref:14&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:15&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;NIST SP 800-145&amp;rdquo;, Web page [Online]. Available: &lt;a href=&#34;https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf&#34;&gt;https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf&lt;/a&gt; &lt;a href=&#34;#fnref:15&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:16&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;TensorFlow Enterprise&amp;rdquo;, Web page [Online]. Available: &lt;a href=&#34;https://cloud.google.com/tensorflow-enterprise&#34;&gt;https://cloud.google.com/tensorflow-enterprise&lt;/a&gt; &lt;a href=&#34;#fnref:16&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:17&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Amazon Polly. Turn text into lifelike speech using deep learning.&amp;rdquo; Web page [Online]. Available: &lt;a href=&#34;https://aws.amazon.com/polly/?c=ml&amp;amp;sec=srv&#34;&gt;https://aws.amazon.com/polly/?c=ml&amp;amp;sec=srv&lt;/a&gt; &lt;a href=&#34;#fnref:17&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:18&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scikit Learn, Pipeline Anova SVM, &lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&#34;&gt;https://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection_pipeline.html&lt;/a&gt; &lt;a href=&#34;#fnref:18&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:19&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Faces recognition example using eigenfaces and SVMs&amp;rdquo;, Web Page [Online]. Available: &lt;a href=&#34;https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py&#34;&gt;https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py&lt;/a&gt; &lt;a href=&#34;#fnref:19&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:20&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Huang, Gary &amp;amp; Jain, Vidit &amp;amp; Learned-Miller, Erik. (2007). Unsupervised Joint Alignment of Complex Images. ICCV. 1-8. 10.1109/ICCV.2007.4408858. Available: &lt;a href=&#34;http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf&#34;&gt;http://vis-www.cs.umass.edu/papers/iccv07alignment.pdf&lt;/a&gt; &lt;a href=&#34;#fnref:20&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:21&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Amazon EC2 Instance Types&amp;rdquo;, Web page [Online]. Available: &lt;a href=&#34;https://aws.amazon.com/ec2/instance-types/&#34;&gt;https://aws.amazon.com/ec2/instance-types/&lt;/a&gt; &lt;a href=&#34;#fnref:21&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:22&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;Machine Types&amp;rdquo;, Web page [Online]. Available: &lt;a href=&#34;https://cloud.google.com/compute/docs/machine-types&#34;&gt;https://cloud.google.com/compute/docs/machine-types&lt;/a&gt; &lt;a href=&#34;#fnref:22&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:23&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cloudmesh Openapi Web page &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-openapi&#34;&gt;https://github.com/cloudmesh/cloudmesh-openapi&lt;/a&gt; &lt;a href=&#34;#fnref:23&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/cloudmesh-openapi/project_review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3625,7 +4689,7 @@ Status: in progress&lt;/p&gt;
 &lt;li&gt;Sentiment Analysis&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Sentiment analysis is a key component to categorize President Trump&amp;rsquo;s tweets.  Polarity and subjectivity are the two metrics that are used to classify each tweet. Polarity measures the opinion or emotion expressed in a piece of text; the value is returned as a float within the range of -1.0 to 1.0. Subjectivity, on the other hand, reflects the feelings or beliefs in a piece of text; the value is returned as a float within the range 0.0 to 1.0 where 0.0 is very objective and 1.0 is very subjective. TextBlob is the library utilized for processing the tweet&amp;rsquo;s polarity and subjectivity. The sentiment method is called along with the methods for polarity and subjectivity in their own functions. The returned values are added into two columns in the dataframe.&lt;/p&gt;
-&lt;p&gt;The plot for the sentiment is a scatter plot. This will allow for each tweet to be plotted with their respected polarity and subjectivity.&lt;/p&gt;
+&lt;p&gt;The plot used for the sentiment analysis is a scatter plot. This will allow for each tweet to be plotted with their respected polarity and subjectivity. A line plot is the best plot to used in order to easily visualize market price verses the sentiment of the tweets. In plotting the line for the sentiment of tweets, several issues arise. The first major issues is that multiple tweets are published on a given day with varying degrees of sentiment. The line graph will display a vertical line for all the points represented. One solution is to take the average of the days tweets and use this new value on the graph.&lt;/p&gt;
 &lt;h2 id=&#34;5-preliminary-analysis-and-eda&#34;&gt;5. Preliminary Analysis and EDA&lt;/h2&gt;
 &lt;h3 id=&#34;51-twitter-data&#34;&gt;5.1 Twitter Data&lt;/h3&gt;
 &lt;p&gt;When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.&lt;/p&gt;
@@ -5125,11 +6189,20 @@ Status: in progress&lt;/p&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&#34;#61-split-data&#34;&gt;6.1 Split Data&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&#34;#62-pipelines&#34;&gt;6.2 Pipelines&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#baseline-linear-regression-model&#34;&gt;Baseline Linear Regression model&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#63-metrics&#34;&gt;6.3 Metrics&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#631-mean-squared-errormse&#34;&gt;6.3.1 Mean squared error(MSE)&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#632-root-mean-squared-errorrmse&#34;&gt;6.3.2 Root mean squared error(RMSE)&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#633-r-squaredr2-score&#34;&gt;6.3.3 R-Squared(R2) Score&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#64-baseline-linear-regression-model&#34;&gt;6.4 Baseline Linear Regression model&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#65-other-regression-models&#34;&gt;6.5 Other regression models&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#66-results&#34;&gt;6.6 Results&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#linear-regression-model-with-predictors&#34;&gt;Linear Regression model with predictors&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#7-conclusion&#34;&gt;7. Conclusion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#8-acknowledments&#34;&gt;8. Acknowledments&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#8-references&#34;&gt;8. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
@@ -5222,11 +6295,11 @@ Status: in progress&lt;/p&gt;
 &lt;p&gt;Here we analyse different features, their relation with each other and target.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/dow.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Average power usage by day of the week&lt;/p&gt;
-&lt;p&gt;In Figure 5, the average power usage by the day of the week is plotted&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. It is analyzed that Saturday and Friday has the most usage compared to other days of the week. Since day of th week represents values Sunday-Saturday, we can consider it as a categorical feature.
+&lt;p&gt;In Figure 5, the average power usage by the day of the week is plotted&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. It is analyzed that Saturday and Friday has the most usage compared to other days of the week. Since day of th week represents values Sunday-Saturday, we can consider it as a categorical feature.
 Similarly, from Figure 6, there is a huge dip in power usage during vacation. Other three occasions like covid lockdown, weekend and weekdays have almost same power usage, even though consumption during weekends outweigh.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/tod.png&#34; alt=&#34;Figure 6&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Average power usage by type of the day&lt;/p&gt;
-&lt;p&gt;In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.&lt;/p&gt;
+&lt;p&gt;In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/monthly_power.png&#34; alt=&#34;Figure 7&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Average power usage per month for three years&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/corr_plot.png&#34; alt=&#34;Figure 8&#34;&gt;&lt;/p&gt;
@@ -5238,13 +6311,311 @@ Similarly, from Figure 6, there is a huge dip in power usage during vacation. Ot
 &lt;h3 id=&#34;62-pipelines&#34;&gt;6.2 Pipelines&lt;/h3&gt;
 &lt;p&gt;Categorical variables and numeric variables are separated and processed in pipelines separately.
 Categorical features are one hot encoded before feeding to the model. Similarly, numerical features are standardized before modelling. Later these two pipelines are joined and modelled used Linear regression and other models.&lt;/p&gt;
-&lt;h3 id=&#34;baseline-linear-regression-model&#34;&gt;Baseline Linear Regression model&lt;/h3&gt;
-&lt;p&gt;Since the expected target is a real number, we use linear regression as a baseline model. For baseline model, we are not hyperparameter tuning. The accuracy score of baseline model is 44.1% for training set and 44.6 for test set.&lt;/p&gt;
-&lt;h2 id=&#34;linear-regression-model-with-predictors&#34;&gt;Linear Regression model with predictors&lt;/h2&gt;
-&lt;p&gt;For this model we are implementing feature selection and hyperparameter tuning. As we analysed in exploratory data analysis, some features have strong inter-correlation and these features are dropped. The parameters for linear regression are hypertuned and modelled in GridsearchCV of sklearn package.&lt;/p&gt;
+&lt;h3 id=&#34;63-metrics&#34;&gt;6.3 Metrics&lt;/h3&gt;
+&lt;p&gt;Out target is a continous variable and hence we implement regression models for prediction. In order to determine how accurate a regression model is, we use the following metrics.&lt;/p&gt;
+&lt;h4 id=&#34;631-mean-squared-errormse&#34;&gt;6.3.1 Mean squared error(MSE)&lt;/h4&gt;
+&lt;p&gt;MSE is the average of squares of error. The larger the MSE score, the larger the errors are. Models with lower values of MSE is considered to perform well. But, since MSE is the squared value, the scale of target variable and MSE will be different. Therefore, we go for RMSE values.&lt;/p&gt;
+&lt;h4 id=&#34;632-root-mean-squared-errorrmse&#34;&gt;6.3.2 Root mean squared error(RMSE)&lt;/h4&gt;
+&lt;p&gt;RMSE is the square root of MSE scores. The square root is introduced to make scale of the errors to be the same as the scale of targets. Similar to MSE, the lower scores for RMSE means the better model performance. Therefore, in this project, the models with lower RMSE values will be monitored&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;633-r-squaredr2-score&#34;&gt;6.3.3 R-Squared(R2) Score&lt;/h4&gt;
+&lt;p&gt;R2 score is the goodness-of-fit measure. It&amp;rsquo;s a statistical measure that ranges between 0 and 1. R2 score helps the analyst to understand how similar the fitted line is to the data it is fitted to. The closer it is to one, the more likely the model predicts its variance. Similarly, if the score is zero, the model doesn&amp;rsquo;t predict any variance.
+In this project the R2 score of the test data is calculated. The model with highest R2 scores will be considered&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;64-baseline-linear-regression-model&#34;&gt;6.4 Baseline Linear Regression model&lt;/h3&gt;
+&lt;p&gt;Wwe use linear regression as our baseline model. For baseline model, we are not hyperparameter tuning. For baseline model, the train RMSE score was 0.6783 and R2 for test set was 0.4460. These values are then compared to other regression models with hyperparameter tuning.&lt;/p&gt;
+&lt;h3 id=&#34;65-other-regression-models&#34;&gt;6.5 Other regression models&lt;/h3&gt;
+&lt;p&gt;After developing a baseline model, we are developing four other regression models and comparing the results. We implement feature selection and hyperparameter tuning. As we analysed in exploratory data analysis, some features have strong inter-correlation and these features are dropped. The parameters for the regression models are hypertuned and modelled in GridsearchCV of sklearn package.&lt;/p&gt;
+&lt;p&gt;The models used for prediction are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linear regression with hyperparamter tuning&lt;/li&gt;
+&lt;li&gt;Gradient boosting&lt;/li&gt;
+&lt;li&gt;XGBoost&lt;/li&gt;
+&lt;li&gt;Light GBM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Similar to baseline model, the metrics like train RMSE, test RMSE and test R2 scores are calculated.&lt;/p&gt;
+&lt;h3 id=&#34;66-results&#34;&gt;6.6 Results&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/result.png&#34; alt=&#34;Figure 9&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 9:&lt;/strong&gt; Performance of all regression models&lt;/p&gt;
+&lt;p&gt;Figure 9 documents the performance of all the regression models used.&lt;/p&gt;
+&lt;p&gt;cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each steps in this project&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each models are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of best model. Benchmark also provides a detailed report on the system or device informations as shown in Table 2.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 2:&lt;/strong&gt; Benchmark results&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BUG_REPORT_URL&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/%22&#34;&gt;https://bugs.launchpad.net/ubuntu/&amp;quot;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DISTRIB_CODENAME&lt;/td&gt;
+&lt;td&gt;bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DISTRIB_DESCRIPTION&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;Ubuntu 18.04.5 LTS&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DISTRIB_ID&lt;/td&gt;
+&lt;td&gt;Ubuntu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DISTRIB_RELEASE&lt;/td&gt;
+&lt;td&gt;18.04&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;HOME_URL&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://www.ubuntu.com/%22&#34;&gt;https://www.ubuntu.com/&amp;quot;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ID&lt;/td&gt;
+&lt;td&gt;ubuntu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ID_LIKE&lt;/td&gt;
+&lt;td&gt;debian&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NAME&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;Ubuntu&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PRETTY_NAME&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;Ubuntu 18.04.5 LTS&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PRIVACY_POLICY_URL&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy%22&#34;&gt;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&amp;quot;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SUPPORT_URL&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://help.ubuntu.com/%22&#34;&gt;https://help.ubuntu.com/&amp;quot;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;UBUNTU_CODENAME&lt;/td&gt;
+&lt;td&gt;bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VERSION&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;18.04.5 LTS (Bionic Beaver)&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VERSION_CODENAME&lt;/td&gt;
+&lt;td&gt;bionic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VERSION_ID&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;18.04&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cpu_count&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.active&lt;/td&gt;
+&lt;td&gt;1.0 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.available&lt;/td&gt;
+&lt;td&gt;11.2 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.free&lt;/td&gt;
+&lt;td&gt;8.5 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.inactive&lt;/td&gt;
+&lt;td&gt;2.6 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.percent&lt;/td&gt;
+&lt;td&gt;11.6 %&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.total&lt;/td&gt;
+&lt;td&gt;12.7 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mem.used&lt;/td&gt;
+&lt;td&gt;1.9 GiB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;platform.version&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;python&lt;/td&gt;
+&lt;td&gt;3.6.9 (default, Oct  8 2020, 12:12:24)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;[GCC 8.4.0]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;python.pip&lt;/td&gt;
+&lt;td&gt;19.3.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;python.version&lt;/td&gt;
+&lt;td&gt;3.6.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sys.platform&lt;/td&gt;
+&lt;td&gt;linux&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.machine&lt;/td&gt;
+&lt;td&gt;x86_64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.node&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.processor&lt;/td&gt;
+&lt;td&gt;x86_64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.release&lt;/td&gt;
+&lt;td&gt;4.19.112+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.system&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uname.version&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;user&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;th&gt;Sum&lt;/th&gt;
+&lt;th&gt;Start&lt;/th&gt;
+&lt;th&gt;tag&lt;/th&gt;
+&lt;th&gt;Node&lt;/th&gt;
+&lt;th&gt;User&lt;/th&gt;
+&lt;th&gt;OS&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Data download&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;2.652&lt;/td&gt;
+&lt;td&gt;2.652&lt;/td&gt;
+&lt;td&gt;2020-11-30 12:43:50&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Data load&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;0.074&lt;/td&gt;
+&lt;td&gt;0.074&lt;/td&gt;
+&lt;td&gt;2020-11-30 12:43:53&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Data preprocessing&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;67.618&lt;/td&gt;
+&lt;td&gt;67.618&lt;/td&gt;
+&lt;td&gt;2020-11-30 12:43:53&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Baseline Linear Regression&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;2.814&lt;/td&gt;
+&lt;td&gt;2.814&lt;/td&gt;
+&lt;td&gt;2020-11-30 12:45:03&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Linear Regression&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;5.581&lt;/td&gt;
+&lt;td&gt;5.581&lt;/td&gt;
+&lt;td&gt;2020-11-30 12:45:06&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gradient Boosting&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;244.868&lt;/td&gt;
+&lt;td&gt;244.868&lt;/td&gt;
+&lt;td&gt;2020-11-30 12:45:12&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;XGBoost&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;2946.7&lt;/td&gt;
+&lt;td&gt;2946.7&lt;/td&gt;
+&lt;td&gt;2020-11-30 12:49:16&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Light GBM&lt;/td&gt;
+&lt;td&gt;ok&lt;/td&gt;
+&lt;td&gt;770.967&lt;/td&gt;
+&lt;td&gt;770.967&lt;/td&gt;
+&lt;td&gt;2020-11-30 13:38:23&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
+&lt;td&gt;collab&lt;/td&gt;
+&lt;td&gt;Linux&lt;/td&gt;
+&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For the baseline model, the RMSE values were high and R2 scores was small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to basline model. But other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which lead us to ignore its scores. Gradient boosting and Ligh GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.&lt;/p&gt;
+&lt;p&gt;The RMSE scores for Light GBM are .2896 for train and .2910 for test. The R2 score for test set is .6526.&lt;/p&gt;
 &lt;h2 id=&#34;7-conclusion&#34;&gt;7. Conclusion&lt;/h2&gt;
-&lt;p&gt;As importance of electricity is increasing, the need to know how or where the power usage increase should also be understood. The model helps to predict the power usage when a set of parameters like weather conditions, weekdays, type of days etc are provided.
-Since the output is power consumption in kWh, we selected linear regression for modelling. In the initial setup the model produced a test accuracy of 44.6%.&lt;/p&gt;
+&lt;p&gt;As the importance of electricity is increasing, the need to know how or where the power usage increase will be a life saver for the electricity consumers. In this project, the daily power consumption of a house is analyzed and modelled for a prediction of electricity usage for residences with similar environments. The model considered a set of parameters like weather conditions, weekdays, type of days etc. for prediction. Since the output is power consumption in kWh, we selected regression for modelling and prediction. Experiments are conducted on five regression models. After analyzing the experiment results, we concluded that the performance of Light GBM model is better and faster compared to all other models.&lt;/p&gt;
+&lt;h2 id=&#34;8-acknowledments&#34;&gt;8. Acknowledments&lt;/h2&gt;
+&lt;p&gt;The author would like to express special thanks to Dr. Geoffrey Fox, Dr. Gregor Von Laszewski and all the associate instructors of Big Data Applications course (FA20-BL-ENGR-E534-11530) offered by Indiana University, Bloomington for their continuous guidance and support throughout the project.&lt;/p&gt;
 &lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -5268,6 +6639,18 @@ Available: &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S01
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Residential Power Usage Prediction script, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;seaborn: statistical data visualization, &lt;a href=&#34;https://seaborn.pydata.org/index.html&#34;&gt;https://seaborn.pydata.org/index.html&lt;/a&gt; &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Group by: split-apply-combine, &lt;a href=&#34;https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html&#34;&gt;https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html&lt;/a&gt; &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Mean Square Error &amp;amp; R2 Score Clearly Explained, [Online resource] &lt;a href=&#34;https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/&#34;&gt;https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/&lt;/a&gt; &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-common&#34;&gt;https://github.com/cloudmesh/cloudmesh-common&lt;/a&gt; &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
 
@@ -5286,69 +6669,6 @@ Available: &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S01
         &lt;h1 id=&#34;this-is-to-test-markdown&#34;&gt;This is to test markdown&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;bullet&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-315/assignment6/assignment-6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-315/assignment6/assignment-6/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Sunny Xu&lt;/p&gt;
-&lt;p&gt;Geoffrey Fox&lt;/p&gt;
-&lt;p&gt;INFO-I423, Section 11530&lt;/p&gt;
-&lt;p&gt;October 20, 2020&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;                            Assignment 6
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The topic I chose regarding artificial intelligence in Health and Medicine is artificial intelligence medical devices. In recent years, with the advancement of science and technology, there have been many successful cases of artificial intelligence in the medical and health field. More and more hospitals have also begun testing and using artificial intelligence medical devices. The popularity of artificial intelligence has also greatly facilitated and improved human life. Even though artificial intelligence brings great convenience to people&amp;rsquo;s lives, many people are still struggling with the question of whether such artificial intelligence brings people good or bad.&lt;/p&gt;
-&lt;p&gt;The benefits of artificial intelligence medical devices:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Drug development
-&lt;ul&gt;
-&lt;li&gt;The development of drugs has always been a big problem for scientists. Many times the success rate is too low, causing people to spend a lot of money but get nothing. Artificial intelligence has played a great role in this regard. It can quickly discover the effects of drugs and accurately predict the safety and side effects of drugs. In this way, artificial intelligence has made great progress in drug research for many diseases that have not been breakthroughs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Diagnosis of disease
-&lt;ul&gt;
-&lt;li&gt;In diagnosing disease conditions, humans have been transmitting various disease conditions and data to artificial intelligence, which also makes a large amount of information in the artificial intelligence database. Usually, doctors make their own judgments by understanding the condition, but sometimes there are cases of wrong judgments. At this time, artificial intelligence will be more accurate and precise in the diagnosis of the disease than human beings. Artificial intelligence has been instilled with data on various conditions and changes in the human body when it is being developed so that they can analyze the conditions through machine learning and make their judgments more accurate than normal people.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Adjuvant therapy process
-&lt;ul&gt;
-&lt;li&gt;Artificial intelligence technology is also used to assist clinical doctors and nurses. In many cases, they can effectively help doctors to determine and formulate appropriate treatment plans and drug use. For the adjuvant therapy process, the best example is the application of IBM Watson in tumor research. Watson provided decision-making after learning many studies in the oncology treatment plan. Although it was not perfect yet, it was very useful for the medical team studying at the time.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Arrange health management
-&lt;ul&gt;
-&lt;li&gt;Artificial intelligence can form health management that is most suitable for the user through the data from the user&amp;rsquo;s mobile phone. At the same time, through the current advanced technology, many smartphones already have a certain judgment on the heartbeat and the length of time they look at the phone and the user&amp;rsquo;s physical habits. In this way, artificial intelligence can give users a healthy diet plan through the judgment of data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Internet medical consultation
-&lt;ul&gt;
-&lt;li&gt;In recent years, the place where artificial intelligence has been used most is the intelligent answering system to users on various websites. In many cases, it is not an easy task for people to contact their family doctor or a nearby hospital when they want. In this case, if there is something unexpected, people don&amp;rsquo;t know how to deal with it. At this time, artificial intelligence also reflects its convenience and usefulness. They can use some keywords in people&amp;rsquo;s questions to judge the knowledge points people want to know in order to answer people&amp;rsquo;s questions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Biomedical Research
-&lt;ul&gt;
-&lt;li&gt;For medical research, artificial intelligence has also contributed a lot of important knowledge points. The artificial intelligence system can tell scientists important points and establish many hypotheses by reading various research articles. At the same time, scientists can also use artificial intelligence to test the possibilities of various hypotheses. In this way, the research of scientists will become much more convenient.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The disadvantages of artificial intelligence medical devices:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Although artificial intelligence brings various conveniences to human beings, it still has some potential and needs to be improved. For example, some artificial intelligence ventilators, so far, artificial intelligence ventilators cannot fully sense people&amp;rsquo;s breathing. Therefore, there will be a situation that when the person has regained the ability to breathe, the ventilator does not accurately sense it, and thus continues to provide breathing to the patient. Such a situation may be fatal. There are also some artificial intelligence. When they absorb information and data, there will be some studies that have not been 100% confirmed, and they may be absorbed by artificial intelligence. Such misinformation may also lead to artificial intelligence&amp;rsquo;s misjudgment of the condition, leading to the misdiagnosis of the patient.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In general, artificial intelligence medical devices have both good and bad aspects. In the future, if artificial intelligence will be better improved and improved, its impact on medicine will become greater and greater. In this way, people will be better diagnosed and treated. When using artificial intelligence, it can also reduce people&amp;rsquo;s medical expenses, so that people can be treated.&lt;/p&gt;
-&lt;p&gt;Reference:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Johner, Christian. &amp;ldquo;Artificial Intelligence in Medical Devices.&amp;rdquo; Johner Institut, 1 Feb. 2019, &lt;a href=&#34;http://www.johner-institute.com/articles/software-iec-62304/and-more/artificial-intelligence/&#34;&gt;www.johner-institute.com/articles/software-iec-62304/and-more/artificial-intelligence/&lt;/a&gt;. Accessed 20 Oct. 2020.&lt;/li&gt;
-&lt;li&gt;Suarez, Anna. &amp;ldquo;How IBM Watson Is Revolutionizing Cancer Research.&amp;rdquo; Healthcare Technology, 14 Aug. 2018, &lt;a href=&#34;http://www.healthtechzone.com/topics/healthcare/articles/2018/08/14/439124-how-ibm-watson-revolutionizing-cancer-research.htm&#34;&gt;www.healthtechzone.com/topics/healthcare/articles/2018/08/14/439124-how-ibm-watson-revolutionizing-cancer-research.htm&lt;/a&gt;. Accessed 20 Oct. 2020.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>

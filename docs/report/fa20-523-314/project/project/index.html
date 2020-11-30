@@ -32,7 +32,7 @@ Abstract We are living in a technology-driven world. New innovations make human 
 Siny P. Raphel, fa20-523-314, Edit
 Abstract We are living in a technology-driven world. New innovations make human life easier. As the science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in the power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity driven appliances at homes.">
 
-<meta itemprop="wordCount" content="1887">
+<meta itemprop="wordCount" content="2848">
 
 
 
@@ -209,6 +209,12 @@ Abstract We are living in a technology-driven world. New innovations make human 
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapidockerubuntu2004todo" href="/report/cloudmesh-openapi/docker/ubuntu20.04/todo/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaper" href="/report/cloudmesh-openapi/paper/"></a>
       
       
       
@@ -469,12 +475,6 @@ Abstract We are living in a technology-driven world. New innovations make human 
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314test" href="/report/fa20-523-314/test/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315assignment6assignment-6" href="/report/fa20-523-315/assignment6/assignment-6/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -531,11 +531,20 @@ Abstract We are living in a technology-driven world. New innovations make human 
       <ul>
         <li><a href="#61-split-data">6.1 Split Data</a></li>
         <li><a href="#62-pipelines">6.2 Pipelines</a></li>
-        <li><a href="#baseline-linear-regression-model">Baseline Linear Regression model</a></li>
+        <li><a href="#63-metrics">6.3 Metrics</a>
+          <ul>
+            <li><a href="#631-mean-squared-errormse">6.3.1 Mean squared error(MSE)</a></li>
+            <li><a href="#632-root-mean-squared-errorrmse">6.3.2 Root mean squared error(RMSE)</a></li>
+            <li><a href="#633-r-squaredr2-score">6.3.3 R-Squared(R2) Score</a></li>
+          </ul>
+        </li>
+        <li><a href="#64-baseline-linear-regression-model">6.4 Baseline Linear Regression model</a></li>
+        <li><a href="#65-other-regression-models">6.5 Other regression models</a></li>
+        <li><a href="#66-results">6.6 Results</a></li>
       </ul>
     </li>
-    <li><a href="#linear-regression-model-with-predictors">Linear Regression model with predictors</a></li>
     <li><a href="#7-conclusion">7. Conclusion</a></li>
+    <li><a href="#8-acknowledments">8. Acknowledments</a></li>
     <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
@@ -607,11 +616,20 @@ Status: in progress</p>
       <ul>
         <li><a href="#61-split-data">6.1 Split Data</a></li>
         <li><a href="#62-pipelines">6.2 Pipelines</a></li>
-        <li><a href="#baseline-linear-regression-model">Baseline Linear Regression model</a></li>
+        <li><a href="#63-metrics">6.3 Metrics</a>
+          <ul>
+            <li><a href="#631-mean-squared-errormse">6.3.1 Mean squared error(MSE)</a></li>
+            <li><a href="#632-root-mean-squared-errorrmse">6.3.2 Root mean squared error(RMSE)</a></li>
+            <li><a href="#633-r-squaredr2-score">6.3.3 R-Squared(R2) Score</a></li>
+          </ul>
+        </li>
+        <li><a href="#64-baseline-linear-regression-model">6.4 Baseline Linear Regression model</a></li>
+        <li><a href="#65-other-regression-models">6.5 Other regression models</a></li>
+        <li><a href="#66-results">6.6 Results</a></li>
       </ul>
     </li>
-    <li><a href="#linear-regression-model-with-predictors">Linear Regression model with predictors</a></li>
     <li><a href="#7-conclusion">7. Conclusion</a></li>
+    <li><a href="#8-acknowledments">8. Acknowledments</a></li>
     <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
@@ -704,11 +722,11 @@ Status: in progress</p>
 <p>Here we analyse different features, their relation with each other and target.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/dow.png" alt="Figure 5"></p>
 <p><strong>Figure 5:</strong> Average power usage by day of the week</p>
-<p>In Figure 5, the average power usage by the day of the week is plotted<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. It is analyzed that Saturday and Friday has the most usage compared to other days of the week. Since day of th week represents values Sunday-Saturday, we can consider it as a categorical feature.
+<p>In Figure 5, the average power usage by the day of the week is plotted<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. It is analyzed that Saturday and Friday has the most usage compared to other days of the week. Since day of th week represents values Sunday-Saturday, we can consider it as a categorical feature.
 Similarly, from Figure 6, there is a huge dip in power usage during vacation. Other three occasions like covid lockdown, weekend and weekdays have almost same power usage, even though consumption during weekends outweigh.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/tod.png" alt="Figure 6"></p>
 <p><strong>Figure 6:</strong> Average power usage by type of the day</p>
-<p>In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.</p>
+<p>In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/monthly_power.png" alt="Figure 7"></p>
 <p><strong>Figure 7:</strong> Average power usage per month for three years</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/corr_plot.png" alt="Figure 8"></p>
@@ -720,13 +738,311 @@ Similarly, from Figure 6, there is a huge dip in power usage during vacation. Ot
 <h3 id="62-pipelines">6.2 Pipelines</h3>
 <p>Categorical variables and numeric variables are separated and processed in pipelines separately.
 Categorical features are one hot encoded before feeding to the model. Similarly, numerical features are standardized before modelling. Later these two pipelines are joined and modelled used Linear regression and other models.</p>
-<h3 id="baseline-linear-regression-model">Baseline Linear Regression model</h3>
-<p>Since the expected target is a real number, we use linear regression as a baseline model. For baseline model, we are not hyperparameter tuning. The accuracy score of baseline model is 44.1% for training set and 44.6 for test set.</p>
-<h2 id="linear-regression-model-with-predictors">Linear Regression model with predictors</h2>
-<p>For this model we are implementing feature selection and hyperparameter tuning. As we analysed in exploratory data analysis, some features have strong inter-correlation and these features are dropped. The parameters for linear regression are hypertuned and modelled in GridsearchCV of sklearn package.</p>
+<h3 id="63-metrics">6.3 Metrics</h3>
+<p>Out target is a continous variable and hence we implement regression models for prediction. In order to determine how accurate a regression model is, we use the following metrics.</p>
+<h4 id="631-mean-squared-errormse">6.3.1 Mean squared error(MSE)</h4>
+<p>MSE is the average of squares of error. The larger the MSE score, the larger the errors are. Models with lower values of MSE is considered to perform well. But, since MSE is the squared value, the scale of target variable and MSE will be different. Therefore, we go for RMSE values.</p>
+<h4 id="632-root-mean-squared-errorrmse">6.3.2 Root mean squared error(RMSE)</h4>
+<p>RMSE is the square root of MSE scores. The square root is introduced to make scale of the errors to be the same as the scale of targets. Similar to MSE, the lower scores for RMSE means the better model performance. Therefore, in this project, the models with lower RMSE values will be monitored<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
+<h4 id="633-r-squaredr2-score">6.3.3 R-Squared(R2) Score</h4>
+<p>R2 score is the goodness-of-fit measure. It&rsquo;s a statistical measure that ranges between 0 and 1. R2 score helps the analyst to understand how similar the fitted line is to the data it is fitted to. The closer it is to one, the more likely the model predicts its variance. Similarly, if the score is zero, the model doesn&rsquo;t predict any variance.
+In this project the R2 score of the test data is calculated. The model with highest R2 scores will be considered<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
+<h3 id="64-baseline-linear-regression-model">6.4 Baseline Linear Regression model</h3>
+<p>Wwe use linear regression as our baseline model. For baseline model, we are not hyperparameter tuning. For baseline model, the train RMSE score was 0.6783 and R2 for test set was 0.4460. These values are then compared to other regression models with hyperparameter tuning.</p>
+<h3 id="65-other-regression-models">6.5 Other regression models</h3>
+<p>After developing a baseline model, we are developing four other regression models and comparing the results. We implement feature selection and hyperparameter tuning. As we analysed in exploratory data analysis, some features have strong inter-correlation and these features are dropped. The parameters for the regression models are hypertuned and modelled in GridsearchCV of sklearn package.</p>
+<p>The models used for prediction are:</p>
+<ul>
+<li>Linear regression with hyperparamter tuning</li>
+<li>Gradient boosting</li>
+<li>XGBoost</li>
+<li>Light GBM</li>
+</ul>
+<p>Similar to baseline model, the metrics like train RMSE, test RMSE and test R2 scores are calculated.</p>
+<h3 id="66-results">6.6 Results</h3>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/result.png" alt="Figure 9"></p>
+<p><strong>Figure 9:</strong> Performance of all regression models</p>
+<p>Figure 9 documents the performance of all the regression models used.</p>
+<p>cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each steps in this project<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each models are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of best model. Benchmark also provides a detailed report on the system or device informations as shown in Table 2.</p>
+<p><strong>Table 2:</strong> Benchmark results</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BUG_REPORT_URL</td>
+<td>&ldquo;<a href="https://bugs.launchpad.net/ubuntu/%22">https://bugs.launchpad.net/ubuntu/&quot;</a></td>
+</tr>
+<tr>
+<td>DISTRIB_CODENAME</td>
+<td>bionic</td>
+</tr>
+<tr>
+<td>DISTRIB_DESCRIPTION</td>
+<td>&ldquo;Ubuntu 18.04.5 LTS&rdquo;</td>
+</tr>
+<tr>
+<td>DISTRIB_ID</td>
+<td>Ubuntu</td>
+</tr>
+<tr>
+<td>DISTRIB_RELEASE</td>
+<td>18.04</td>
+</tr>
+<tr>
+<td>HOME_URL</td>
+<td>&ldquo;<a href="https://www.ubuntu.com/%22">https://www.ubuntu.com/&quot;</a></td>
+</tr>
+<tr>
+<td>ID</td>
+<td>ubuntu</td>
+</tr>
+<tr>
+<td>ID_LIKE</td>
+<td>debian</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>&ldquo;Ubuntu&rdquo;</td>
+</tr>
+<tr>
+<td>PRETTY_NAME</td>
+<td>&ldquo;Ubuntu 18.04.5 LTS&rdquo;</td>
+</tr>
+<tr>
+<td>PRIVACY_POLICY_URL</td>
+<td>&ldquo;<a href="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy%22">https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&quot;</a></td>
+</tr>
+<tr>
+<td>SUPPORT_URL</td>
+<td>&ldquo;<a href="https://help.ubuntu.com/%22">https://help.ubuntu.com/&quot;</a></td>
+</tr>
+<tr>
+<td>UBUNTU_CODENAME</td>
+<td>bionic</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>&ldquo;18.04.5 LTS (Bionic Beaver)&rdquo;</td>
+</tr>
+<tr>
+<td>VERSION_CODENAME</td>
+<td>bionic</td>
+</tr>
+<tr>
+<td>VERSION_ID</td>
+<td>&ldquo;18.04&rdquo;</td>
+</tr>
+<tr>
+<td>cpu_count</td>
+<td>2</td>
+</tr>
+<tr>
+<td>mem.active</td>
+<td>1.0 GiB</td>
+</tr>
+<tr>
+<td>mem.available</td>
+<td>11.2 GiB</td>
+</tr>
+<tr>
+<td>mem.free</td>
+<td>8.5 GiB</td>
+</tr>
+<tr>
+<td>mem.inactive</td>
+<td>2.6 GiB</td>
+</tr>
+<tr>
+<td>mem.percent</td>
+<td>11.6 %</td>
+</tr>
+<tr>
+<td>mem.total</td>
+<td>12.7 GiB</td>
+</tr>
+<tr>
+<td>mem.used</td>
+<td>1.9 GiB</td>
+</tr>
+<tr>
+<td>platform.version</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>python</td>
+<td>3.6.9 (default, Oct  8 2020, 12:12:24)</td>
+</tr>
+<tr>
+<td></td>
+<td>[GCC 8.4.0]</td>
+</tr>
+<tr>
+<td>python.pip</td>
+<td>19.3.1</td>
+</tr>
+<tr>
+<td>python.version</td>
+<td>3.6.9</td>
+</tr>
+<tr>
+<td>sys.platform</td>
+<td>linux</td>
+</tr>
+<tr>
+<td>uname.machine</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>uname.node</td>
+<td>a1f46a7ed3c2</td>
+</tr>
+<tr>
+<td>uname.processor</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>uname.release</td>
+<td>4.19.112+</td>
+</tr>
+<tr>
+<td>uname.system</td>
+<td>Linux</td>
+</tr>
+<tr>
+<td>uname.version</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>user</td>
+<td>collab</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Status</th>
+<th>Time</th>
+<th>Sum</th>
+<th>Start</th>
+<th>tag</th>
+<th>Node</th>
+<th>User</th>
+<th>OS</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data download</td>
+<td>ok</td>
+<td>2.652</td>
+<td>2.652</td>
+<td>2020-11-30 12:43:50</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Data load</td>
+<td>ok</td>
+<td>0.074</td>
+<td>0.074</td>
+<td>2020-11-30 12:43:53</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Data preprocessing</td>
+<td>ok</td>
+<td>67.618</td>
+<td>67.618</td>
+<td>2020-11-30 12:43:53</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Baseline Linear Regression</td>
+<td>ok</td>
+<td>2.814</td>
+<td>2.814</td>
+<td>2020-11-30 12:45:03</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Linear Regression</td>
+<td>ok</td>
+<td>5.581</td>
+<td>5.581</td>
+<td>2020-11-30 12:45:06</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Gradient Boosting</td>
+<td>ok</td>
+<td>244.868</td>
+<td>244.868</td>
+<td>2020-11-30 12:45:12</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>ok</td>
+<td>2946.7</td>
+<td>2946.7</td>
+<td>2020-11-30 12:49:16</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Light GBM</td>
+<td>ok</td>
+<td>770.967</td>
+<td>770.967</td>
+<td>2020-11-30 13:38:23</td>
+<td></td>
+<td>a1f46a7ed3c2</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+</tbody>
+</table>
+<p>For the baseline model, the RMSE values were high and R2 scores was small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to basline model. But other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which lead us to ignore its scores. Gradient boosting and Ligh GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.</p>
+<p>The RMSE scores for Light GBM are .2896 for train and .2910 for test. The R2 score for test set is .6526.</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
-<p>As importance of electricity is increasing, the need to know how or where the power usage increase should also be understood. The model helps to predict the power usage when a set of parameters like weather conditions, weekdays, type of days etc are provided.
-Since the output is power consumption in kWh, we selected linear regression for modelling. In the initial setup the model produced a test accuracy of 44.6%.</p>
+<p>As the importance of electricity is increasing, the need to know how or where the power usage increase will be a life saver for the electricity consumers. In this project, the daily power consumption of a house is analyzed and modelled for a prediction of electricity usage for residences with similar environments. The model considered a set of parameters like weather conditions, weekdays, type of days etc. for prediction. Since the output is power consumption in kWh, we selected regression for modelling and prediction. Experiments are conducted on five regression models. After analyzing the experiment results, we concluded that the performance of Light GBM model is better and faster compared to all other models.</p>
+<h2 id="8-acknowledments">8. Acknowledments</h2>
+<p>The author would like to express special thanks to Dr. Geoffrey Fox, Dr. Gregor Von Laszewski and all the associate instructors of Big Data Applications course (FA20-BL-ENGR-E534-11530) offered by Indiana University, Bloomington for their continuous guidance and support throughout the project.</p>
 <h2 id="8-references">8. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -749,6 +1065,18 @@ Available: <a href="https://www.sciencedirect.com/science/article/pii/S014098831
 </li>
 <li id="fn:6" role="doc-endnote">
 <p>Residential Power Usage Prediction script, <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb">https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>seaborn: statistical data visualization, <a href="https://seaborn.pydata.org/index.html">https://seaborn.pydata.org/index.html</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Group by: split-apply-combine, <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html">https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Mean Square Error &amp; R2 Score Clearly Explained, [Online resource] <a href="https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/">https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <a href="https://github.com/cloudmesh/cloudmesh-common">https://github.com/cloudmesh/cloudmesh-common</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

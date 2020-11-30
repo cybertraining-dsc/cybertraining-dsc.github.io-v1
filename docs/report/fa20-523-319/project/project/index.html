@@ -32,7 +32,7 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
 Rama Asuri, fa20-523-319, Edit
 Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life.">
 
-<meta itemprop="wordCount" content="1579">
+<meta itemprop="wordCount" content="1645">
 
 
 
@@ -209,6 +209,12 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapidockerubuntu2004todo" href="/report/cloudmesh-openapi/docker/ubuntu20.04/todo/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaper" href="/report/cloudmesh-openapi/paper/"></a>
       
       
       
@@ -469,12 +475,6 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314test" href="/report/fa20-523-314/test/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315assignment6assignment-6" href="/report/fa20-523-315/assignment6/assignment-6/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -516,8 +516,8 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
 <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-pytorch-library">2. PyTorch Library</a></li>
-    <li><a href="#3-dataset">3. Dataset</a>
+    <li><a href="#2-overview-of-pytorch-library-and-densenet">2. Overview Of PyTorch Library And DenseNet</a></li>
+    <li><a href="#3-overview-of-chexpert-dataset">3. Overview of CheXpert Dataset</a>
       <ul>
         <li><a href="#31-data-collection">3.1 Data Collection</a></li>
         <li><a href="#32-data-labelling">3.2 Data Labelling</a></li>
@@ -526,8 +526,8 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
         <li><a href="#35-label-aggregation">3.5 Label Aggregation</a></li>
       </ul>
     </li>
-    <li><a href="#4-overview-of-auc-roc-curve">4. Overview Of AUC-ROC Curve</a></li>
-    <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi Image Classification Using Deep Learning Model</a></li>
+    <li><a href="#4-basics-of-auc-roc-curve">4. Basics Of AUC-ROC Curve</a></li>
+    <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-project-plan">8. Project plan</a></li>
@@ -587,8 +587,8 @@ Status: in progress</p>
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
-    <li><a href="#2-pytorch-library">2. PyTorch Library</a></li>
-    <li><a href="#3-dataset">3. Dataset</a>
+    <li><a href="#2-overview-of-pytorch-library-and-densenet">2. Overview Of PyTorch Library And DenseNet</a></li>
+    <li><a href="#3-overview-of-chexpert-dataset">3. Overview of CheXpert Dataset</a>
       <ul>
         <li><a href="#31-data-collection">3.1 Data Collection</a></li>
         <li><a href="#32-data-labelling">3.2 Data Labelling</a></li>
@@ -597,8 +597,8 @@ Status: in progress</p>
         <li><a href="#35-label-aggregation">3.5 Label Aggregation</a></li>
       </ul>
     </li>
-    <li><a href="#4-overview-of-auc-roc-curve">4. Overview Of AUC-ROC Curve</a></li>
-    <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi Image Classification Using Deep Learning Model</a></li>
+    <li><a href="#4-basics-of-auc-roc-curve">4. Basics Of AUC-ROC Curve</a></li>
+    <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-project-plan">8. Project plan</a></li>
@@ -611,11 +611,11 @@ Status: in progress</p>
 
 <p><strong>Keywords:</strong> PyTorch, CheXpert</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Radiologists widely use chest X-Rays to identify and detect underlying conditions. However, analyzing Chest X-Rays takes much time, and accurately diagnosing requires much experience. On the one hand, if the analyzing process is expedited, it might result in misdiagnosis, but on the other hand, if it takes too much time, even with the correct diagnosis, it might be too late to prescribe a treatment. Radiologists are up against time and experience. With the advances in AI, Deep Learning can easily help solve this problem.</p>
+<p>Radiologists widely use chest X-Rays to identify and detect underlying conditions. However, analyzing Chest X-Rays takes too much time, and accurately diagnosing without errors requires considerable experience. On the one hand, if the analyzing process is expedited, it might result in misdiagnosis, but on the other hand, lack of experience means long analysis time and/or errors; even with the correct diagnosis, it might be too late to prescribe a treatment. Radiologists are up against time and experience. With the advancements in AI, Deep Learning can easily solve this problem quickly and efficiently.</p>
 <p>Deep Learning methods are becoming very reliable at achieving expert-level performance using large labeled datasets. Deep learning is a technique to extract and transform data using multiple layers of neural networks. Each layer takes inputs from previous layers and incrementally refines it. An algorithm is used to train these layers to minimize errors and improve these layers&rsquo; overall accuracy <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It enables the network to learn to perform a specified task and gain an expert level performance by training on large datasets. The scope of this project is to identify and detect the following 5 pathologies using an image classification algorithm: Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion.  We use the CheXpert dataset, which consists of Chest X-rays. CheXpert dataset contains 224,316 chest Radiographs of 65,240 patients. The dataset has 14 observations in radiology reports and captures uncertainties inherent in radiograph interpretation using uncertainty labels. Our focus is on 5 observations (Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion). We impute uncertainty labels with randomly selected Boolean values.  Our Deep Learning models are developed using the PyTorch library, enabling fast, flexible experimentation and efficient production through a user-friendly front-end, distributed training, and ecosystem of tools and libraries<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. It was primarily developed by Facebook&rsquo;s AI Research lab (FAIR) and used for Computer Vision and NLP applications. PyTorch supports Python and C++ interfaces. There are popular Deep Learning applications built using PyTorch, including Tesla Autopilot, Uber&rsquo;s Pyro, etc. <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
 <p>In this report, we will cover the following:</p>
 <ul>
-<li>Overview of PyTorch library</li>
+<li>Overview of PyTorch library and DenseNet</li>
 <li>Overview of CheXpert dataset</li>
 <li>Basics of AUC-ROC Curve</li>
 <li>Chest X-Rays - Multi-Image Classification Using Deep Learning Model</li>
@@ -623,19 +623,17 @@ Status: in progress</p>
 <li>Acknowledgements</li>
 <li>References</li>
 </ul>
-<h2 id="2-pytorch-library">2. PyTorch Library</h2>
-<p>PyTorch library is based on Python and used for developing Python deep learning models. Many of the early adopters
-of the PyTorch are from research community. It grew into one of the most popular library for deep learning projects.
-PyTorch provides great insight into Deep Learning. PyTorch is widely used in real-world applications. PyTorch makes an
-excellent choic for introducing deep learning because clear syntax, streamlined API and easy debugging. PyTorch
-provides a core data structure, the tensor, which is a multidimensional array similar to NumPy arrays. It perform
-accelerated mathematical operations on dedicated hardware, which makes it convenient to design neural network
-architectures and train them on individual machines or parallel computing resources <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
-<h2 id="3-dataset">3. Dataset</h2>
+<h2 id="2-overview-of-pytorch-library-and-densenet">2. Overview Of PyTorch Library And DenseNet</h2>
+<p>The PyTorch library is based on Python and is used for developing Python deep learning models. Many of the early adopters of the PyTorch are from the research community. It grew into one of the most popular libraries for deep learning projects. PyTorch provides great insight into Deep Learning. PyTorch is widely used in real-world applications. PyTorch makes an excellent choice for introducing deep learning because of clear syntax, streamlined API, and easy debugging. PyTorch provides a core data structure, the tensor, a multidimensional array similar to NumPy arrays. It performs accelerated mathematical operations on dedicated hardware, making it convenient to design neural network architectures and train them on individual machines or parallel computing resources <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>We use a pre-trained DenseNet model, which classifies the images. DenseNet is efficient on image classification benchmarks as compared to ResNet <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>Figure 1 shows the DenseNet architecture.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/densetnet.png" alt="Figure 1"></p>
+<p><strong>Figure 1:</strong> DenseNet Architecture <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<h2 id="3-overview-of-chexpert-dataset">3. Overview of CheXpert Dataset</h2>
 <p>CheXpert is a large public dataset for chest radiograph interpretation, consisting of 224,316 chest radiographs
-of 65,240 patients labeled for the presence of 14 observations as positive, negative, or uncertain <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/chest_disease.png" alt="Figure 1"></p>
-<p><strong>Figure 1:</strong> Probability of different observations</p>
+of 65,240 patients labeled for the presence of 14 observations as positive, negative, or uncertain <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/chest_disease.png" alt="Figure 2"></p>
+<p><strong>Figure 2:</strong> Probability of different observations</p>
 <h3 id="31-data-collection">3.1 Data Collection</h3>
 <p>CheXpert&rsquo;s dataset is a collection of chest radiographic studies from Stanford Hospital, performed between October
 2002 and July 2017 in both inpatient and outpatient centers, along with their associated radiology reports.
@@ -643,21 +641,21 @@ From these, created a sampled set of 1000 reports for manual review by a board c
 feasibility for extraction of observations. The final set consist of 14 observations based on the prevalence in the
 reports and clinical relevance, conforming to the Fleischner Society’s recommended glossary. <em>Pneumonia</em>, despite
 being a clinical diagnosis, was included as a label in order to represent the images that suggested primary
-infection as the diagnosis. The <em>No Finding</em> observation was intended to capture the absence of all pathologies <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+infection as the diagnosis. The <em>No Finding</em> observation was intended to capture the absence of all pathologies <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
 <h3 id="32-data-labelling">3.2 Data Labelling</h3>
 <p>Labels were developed using an automated rule-based labeler to extract observations from the free text radiology
-reports to be used as structured labels for the images <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+reports to be used as structured labels for the images <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
 <h3 id="33-label-extraction">3.3 Label Extraction</h3>
 <p>The labeler extracts mentions from a list of observations from the Impression section of radiology reports, which
 summarizes the key findings in the radiographic study. A large list of phrases was manually curated by multiple
-board-certified radiologists to match various ways observations are mentioned in the reports <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+board-certified radiologists to match various ways observations are mentioned in the reports <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
 <h3 id="34-label-classification">3.4 Label Classification</h3>
 <p>After extracting mentions of observations, CheXpert Labler classify them as negative , uncertain or positive.
 The ‘uncertain’ label can capture both the uncertainty of a radiologist in the diagnosis as well as ambiguity
 inherent in the report. The mention classification stage is a 3-phase pipeline consisting of pre-negation uncertainty,
 negation, and post-negation uncertainty. Each phase consists of rules which are matched against the mention; if a
 match is found, then the mention is classified accordingly . If a mention is not matched in any of the phases, it is
-classified as positive <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+classified as positive <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
 <h3 id="35-label-aggregation">3.5 Label Aggregation</h3>
 <p>CheXpert use the classification for each mention of observations to arrive at a final label for 14 observations that
 consist of 12 pathologies as well as the <em>Support Devices</em> and <em>No Finding</em> observations. Observations with at least
@@ -665,11 +663,11 @@ one mention that is positively classified in the report is assigned a positive (
 an uncertain (u) label if it has no positively classified mentions and at least one uncertain mention, and a negative
 label if there is at least one negatively classified mention. Assign (blank) if there is no mention of an observation.
 The <em>No Finding</em> observation is assigned a positive label (1) if there is no pathology classified as positive
-or uncertain <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
-<h2 id="4-overview-of-auc-roc-curve">4. Overview Of AUC-ROC Curve</h2>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-319/blob/main/project/images/Confusion%20Matrix.png.png" alt="Figure 2"></p>
-<p><strong>Figure 2:</strong> Confusion Matrix</p>
-<h2 id="5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi Image Classification Using Deep Learning Model</h2>
+or uncertain <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
+<h2 id="4-basics-of-auc-roc-curve">4. Basics Of AUC-ROC Curve</h2>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/confusion_matrix.png" alt="Figure 3"></p>
+<p><strong>Figure 3:</strong> Confusion Matrix</p>
+<h2 id="5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</h2>
 <p>Our Deep Learning model loads and process the raw data files and implement a Python class to represent data by
 converting it into a format usable by PyTorch. We then, visualize the training and validation data.</p>
 <p>Our approach to detecting pathologies will have 5 steps.</p>
@@ -683,11 +681,11 @@ converting it into a format usable by PyTorch. We then, visualize the training a
 <p>AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s. By analogy, Higher the AUC, better the model is at distinguishing between patients with disease and no disease.</p>
 <p>AUCROC&rsquo;s Sensitivity and Specificity are inversely proportional to each other. So when we increase Sensitivity, Specificity decreases and vice versa.
 When we decrease the threshold, we get more positive values thus it increases the sensitivity and decreasing the specificity.
-Similarly, when we increase the threshold, we get more negative values thus we get higher specificity and lower sensitivity <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+Similarly, when we increase the threshold, we get more negative values thus we get higher specificity and lower sensitivity <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>Model was able to predict False Positives. Below is AUCROC table.
-<img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/roc.png" alt="Figure 3"></p>
-<p><strong>Figure 3:</strong> AUC - ROC Curve</p>
+<img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/roc.png" alt="Figure 4"></p>
+<p><strong>Figure 4:</strong> AUC - ROC Curve</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors for providing continuous guidance and feedback for this final project.</p>
 <h2 id="8-project-plan">8. Project plan</h2>
@@ -744,10 +742,16 @@ Similarly, when we increase the threshold, we get more negative values thus we g
 <p>Introduction to PyTorch and documentation  <a href="https://pytorch.org/deep-learning-with-pytorch">https://pytorch.org/deep-learning-with-pytorch</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Whitepaper - CheXpert Dataset and Labelling  <a href="https://arxiv.org/pdf/1901.07031.pdf">https://arxiv.org/pdf/1901.07031.pdf</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>The efficiency of densenet121 <a href="https://medium.com/@smallfishbigsea/densenet-2b0889854a92">https://medium.com/@smallfishbigsea/densenet-2b0889854a92</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>PyTorch Deep Learning Model for CheXpert Dataset <a href="https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121">https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Densetnet architecture <a href="https://miro.medium.com/max/1050/1*znemMaROmOd1CzMJlcI0aA.png">https://miro.medium.com/max/1050/1*znemMaROmOd1CzMJlcI0aA.png</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Whitepaper - CheXpert Dataset and Labelling  <a href="https://arxiv.org/pdf/1901.07031.pdf">https://arxiv.org/pdf/1901.07031.pdf</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>PyTorch Deep Learning Model for CheXpert Dataset <a href="https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121">https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

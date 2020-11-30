@@ -32,7 +32,7 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
 Alex Baker, fa20-523-307, Edit
 Abstract In behavioral economics, it is said that emotions have an effect on individual&rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ) during certain events during his presidency.">
 
-<meta itemprop="wordCount" content="2346">
+<meta itemprop="wordCount" content="2433">
 
 
 
@@ -209,6 +209,12 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapidockerubuntu2004todo" href="/report/cloudmesh-openapi/docker/ubuntu20.04/todo/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaper" href="/report/cloudmesh-openapi/paper/"></a>
       
       
       
@@ -469,12 +475,6 @@ Abstract In behavioral economics, it is said that emotions have an effect on ind
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314test" href="/report/fa20-523-314/test/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-315assignment6assignment-6" href="/report/fa20-523-315/assignment6/assignment-6/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -653,7 +653,7 @@ Status: in progress</p>
 <li>Sentiment Analysis</li>
 </ul>
 <p>Sentiment analysis is a key component to categorize President Trump&rsquo;s tweets.  Polarity and subjectivity are the two metrics that are used to classify each tweet. Polarity measures the opinion or emotion expressed in a piece of text; the value is returned as a float within the range of -1.0 to 1.0. Subjectivity, on the other hand, reflects the feelings or beliefs in a piece of text; the value is returned as a float within the range 0.0 to 1.0 where 0.0 is very objective and 1.0 is very subjective. TextBlob is the library utilized for processing the tweet&rsquo;s polarity and subjectivity. The sentiment method is called along with the methods for polarity and subjectivity in their own functions. The returned values are added into two columns in the dataframe.</p>
-<p>The plot for the sentiment is a scatter plot. This will allow for each tweet to be plotted with their respected polarity and subjectivity.</p>
+<p>The plot used for the sentiment analysis is a scatter plot. This will allow for each tweet to be plotted with their respected polarity and subjectivity. A line plot is the best plot to used in order to easily visualize market price verses the sentiment of the tweets. In plotting the line for the sentiment of tweets, several issues arise. The first major issues is that multiple tweets are published on a given day with varying degrees of sentiment. The line graph will display a vertical line for all the points represented. One solution is to take the average of the days tweets and use this new value on the graph.</p>
 <h2 id="5-preliminary-analysis-and-eda">5. Preliminary Analysis and EDA</h2>
 <h3 id="51-twitter-data">5.1 Twitter Data</h3>
 <p>When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.</p>
