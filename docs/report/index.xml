@@ -1583,6 +1583,41 @@ finish the report.&lt;/p&gt;
     
     <item>
       <title>Report: </title>
+      <link>/report/cloudmesh-openapi/readme-adam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/readme-adam/</guid>
+      <description>
+        
+        
+        &lt;p&gt;(ENV3) pi@red:~ $ sudo apt-get update
+Get:1 &lt;a href=&#34;http://archive.raspberrypi.org/debian&#34;&gt;http://archive.raspberrypi.org/debian&lt;/a&gt; buster InRelease [32.6 kB]
+Get:2 &lt;a href=&#34;http://raspbian.raspberrypi.org/raspbian&#34;&gt;http://raspbian.raspberrypi.org/raspbian&lt;/a&gt; buster InRelease [15.0 kB]
+Get:3 &lt;a href=&#34;http://raspbian.raspberrypi.org/raspbian&#34;&gt;http://raspbian.raspberrypi.org/raspbian&lt;/a&gt; buster/main armhf Packages [13.0 MB]
+Get:4 &lt;a href=&#34;http://archive.raspberrypi.org/debian&#34;&gt;http://archive.raspberrypi.org/debian&lt;/a&gt; buster/main armhf Packages [335 kB]
+Fetched 13.4 MB in 30s (450 kB/s)                                                                                 &lt;br&gt;
+Reading package lists&amp;hellip; Done&lt;/p&gt;
+&lt;p&gt;(ENV3) pi@red:~ $ sudo apt-get upgrade&lt;/p&gt;
+&lt;p&gt;(ENV3) pi@red:~ $ sudo cat /var/lib/rancher/k3s/server/node-token
+K10126aaacd0a2d1e093900147d64ff9fd68a1663c779c17811fbca9d6f1b31de30::server:c980296a842c92143b6b97d5368d65a9&lt;/p&gt;
+&lt;p&gt;(ENV3) pi@red:~ $ hostname -I
+169.254.144.52 10.6.0.186&lt;/p&gt;
+&lt;p&gt;(ENV3) pi@red:~ $ ssh &lt;a href=&#34;mailto:pi@red001.local&#34;&gt;pi@red001.local&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pi@red001:~ $ curl -sfL &lt;a href=&#34;https://get.k3s.io&#34;&gt;https://get.k3s.io&lt;/a&gt; |&lt;br&gt;
+K3S_URL=&amp;quot;https://169.254.144.52:6443&amp;rdquo;&lt;br&gt;
+K3S_TOKEN=K10126aaacd0a2d1e093900147d64ff9fd68a1663c779c17811fbca9d6f1b31de30::server:c980296a842c92143b6b97d5368d65a9&lt;br&gt;
+sh -&lt;/p&gt;
+&lt;p&gt;pi@red001:~ $ exit&lt;/p&gt;
+&lt;p&gt;(ENV3) pi@red:~ $ sudo kubectl get nodes&lt;/p&gt;
+&lt;p&gt;NAME   STATUS   ROLES    AGE   VERSION
+red    Ready    master   9d    v1.19.3+k3s3&lt;/p&gt;
+&lt;p&gt;worker nodes are not showing up&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/cloudmesh-openapi/readme-scikitlearn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4755,7 +4790,7 @@ Status: in progress&lt;/p&gt;
 &lt;li&gt;Sentiment Analysis&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Sentiment analysis is a key component to categorize President Trump&amp;rsquo;s tweets.  Polarity and subjectivity are the two metrics that are used to classify each tweet. Polarity measures the opinion or emotion expressed in a piece of text; the value is returned as a float within the range of -1.0 to 1.0. Subjectivity, on the other hand, reflects the feelings or beliefs in a piece of text; the value is returned as a float within the range 0.0 to 1.0 where 0.0 is very objective and 1.0 is very subjective. TextBlob is the library utilized for processing the tweet&amp;rsquo;s polarity and subjectivity. The sentiment method is called along with the methods for polarity and subjectivity in their own functions. The returned values are added into two columns in the dataframe.&lt;/p&gt;
-&lt;p&gt;The plot used for the sentiment analysis is a scatter plot. This will allow for each tweet to be plotted with their respected polarity and subjectivity. A line plot is the best plot to used in order to easily visualize market price verses the sentiment of the tweets. In plotting the line for the sentiment of tweets, several issues arise. The first major issues is that multiple tweets are published on a given day with varying degrees of sentiment. The line graph will display a vertical line for all the points represented. One solution is to take the average of the days tweets and use this new value on the graph.&lt;/p&gt;
+&lt;p&gt;The plot used for the sentiment analysis is a scatter plot. This will allow for each tweet to be plotted with their respected polarity and subjectivity. A line plot is the best plot to used in order to easily visualize market price verses the sentiment of the tweets. In plotting the line for the sentiment of tweets, several issues arise. The first major issues is that multiple tweets are published on a given day with varying degrees of sentiment. The line graph will display a vertical line for all the points represented. One solution is to take the average of the days tweets and use this new value on the graph. This method can be aligned on the same axes as the stock market data.&lt;/p&gt;
 &lt;h2 id=&#34;5-preliminary-analysis-and-eda&#34;&gt;5. Preliminary Analysis and EDA&lt;/h2&gt;
 &lt;h3 id=&#34;51-twitter-data&#34;&gt;5.1 Twitter Data&lt;/h3&gt;
 &lt;p&gt;When starting to conduct preliminary analysis and exploratory data analysis (EDA), it is helpful to first check for any null values in the data and there are no null values in the twitter data.&lt;/p&gt;
@@ -4870,10 +4905,13 @@ Status: in progress&lt;/p&gt;
         &lt;li&gt;&lt;a href=&#34;#comparative-results&#34;&gt;Comparative Results&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-discussion&#34;&gt;6. Discussion&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#6-discussion&#34;&gt;6. Discussion&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#limitations&#34;&gt;Limitations&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#7-conclusion&#34;&gt;7. Conclusion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#8-acknowledgements&#34;&gt;8. Acknowledgements&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#project-plan&#34;&gt;Project Plan&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#9-references&#34;&gt;9. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
@@ -4907,6 +4945,7 @@ Status: in progress&lt;/p&gt;
 &lt;p&gt;We also wanted to investigate whether play-count at each position was balanced across post-season players and players who did not qualify for the post-season. Figure 2 shows that players on teams who did qualify for the post-season were involved in more plays at their position than players at their position who did not qualify for the playoffs. Thinking about this finding as a result of the regular season, players in skilled positions on post-season qualifying teams play on offenses that won more games than teams who did not qualify for the playoffs. While we did not look at time of possesion for players by position, it seems fairly reasonable by logic and the results in figure 2 that play count is higher because these teams are more succesful and the players on post-season qualifying teams are on the field more than teams with more losses who did not qualify for the post-season.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Play_count_position_2009.png&#34; alt=&#34;Count of Play-type by Post-Season Qualification category&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Count of Play-type by Post-Season Qualification category (2009-2011)&lt;/p&gt;
+&lt;p&gt;Figure 3 below is a reference table for the features included in the ANOVA regression model determining the key features that predict post-season qualification. These features are used for reference in figures 4 and 7.&lt;/p&gt;
 &lt;p&gt;Using the player performance metrics for the regular season, an ANOVA was run to see if these metrics placed together would be a succesful predictor of post-season qualification. Figure 4 shows the top 10 metrics that had the highest f-values for predicting post-season qualification, all of which were all significant (p&amp;lt;.05) in the model. Reviewing the model, the most significant factors for predicting post-season qualification for teams in order were; 1. Succesful Reception (wide receiver or tight end), 2. Total Receiving Yards (Wide Receiver or Tight End), 3. Yards After Catch (wide receiver or tight end), 4. Total Receiving Touchdowns (Wide Receiver or Tight End), 5. Total Touchdowns (All positions), 6. Receiver Plays (Wide Receiver), 7. Redzone Plays (All positions), 8. Succesful Plays (All positions), 9. Yards Gained (All positions), 10. Total Offensive Plays in the 3rd Quarter (All positions). The model accounted for 78.2% of variance. The model succesfully accounted for predicting post-season qualifying teams in 78.2% of instances.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/figure_description_table.png&#34; alt=&#34;Feature Descriptions&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Description for top features included in ANOVA regression model&lt;/p&gt;
@@ -4916,45 +4955,27 @@ Status: in progress&lt;/p&gt;
 &lt;p&gt;We paralleled our analysis from the 2009-2011 analysis above in completing the 2016-2018 analysis represented in Figures 5-7. Figure 5 represents the player count that qualified for post-season play (orange) and the nonpost-season players (blue). Again, player count was compared to the roughly 37.5% rate that should be expected for 12 teams out of 32 qualifying for post-season play. However, the rates were a bit below the 37.5% rate. This can be explained by the number of injuries and roster changes that occur througout the season. Teams shuffle in-and-out players at each position  based on injury or performance. Teams will not have a static roster throughout the season, this includes post-season teams who cut players or put players on IR. These players, even tough they played for post-season qualifying teams, would be in blue because they are not on the post-season rosters for the teams who qualify for post-season play. This along with the roster structure described for figure 1 explains the lower than 1/3 rate of players qualifying for post-season play.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Player_summary_2016-2018.png&#34; alt=&#34;Player Qualifying for Post-Season&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Breakdown of Players by Skill Position That Qualified for Post-Season Play (2016-2018)&lt;/p&gt;
+&lt;p&gt;Figure 6 investigates play-count at each position like figure 2 but this time for the seasons of 2016-2018. Again, the analysis was balanced across post-season players and players who did not qualify for the post-season. Figure 6 shows that players on teams who did qualify for the post-season were involved in more plays at their position than players at their position who did not qualify for the playoffs. Figure 6 shows a consistent pattern with figure 2. Descriptive statistic comparison between the 2009-2011 seasons and the 2016-2018 seasons will be revisited in the discussion section.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Play_Count_Position_2016.png&#34; alt=&#34;Count of Play-type by Post-Season Qualification category&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Count of Play-type by Post-Season Qualification category (20016-2018)&lt;/p&gt;
+&lt;p&gt;Using the player performance metrics for the regular season, an ANOVA was run to see if these metrics placed together would be a successful predictor of post-season qualification. Figure 7 shows the top 10 metrics that had the highest f-values for predicting post-season qualification, all of which were all significant (p&amp;lt;.05) in the model. The model successfully accounted for predicting post-season qualifying teams in 77.8% of instances.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Anova_pvalue_table_2016.png&#34; alt=&#34;ANOVA for Metric Importance in Model&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; ANOVA Table for Metrics Measured as Predictors for Teams Qualifying for Post-Season Play (2016-2018)&lt;/p&gt;
 &lt;h3 id=&#34;comparative-results&#34;&gt;Comparative Results&lt;/h3&gt;
+&lt;p&gt;Comparing the 2016-2018 with the 2009-2011 season model, certain shifts have occurred from the 2009-2011 seasons model. Namely, yards-after-catch has become the strongest predictor of post-season qualification, flipping positions with successful reception in the 2009-2011 model. Another notable shift is the importance of number of plays run in the second quarter in the 2016-2018 model, overtaking number of plays run in the third quarter from the 2009-2011. The models themselves also shift in their strength of prediction. The 2009-2011 model shows stronger predictive capability, which is reflected in the f-values for the top 10 metrics of the model. The 2009-2011 model has four variables with f-values above 50 and one above 60. The 2016-2018 model only has one variable with an f-value above 50. These values represent the variance accounted for in the model by a variable. The higher the f-value the more variance accounted for in the model by that specific variable.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Anova_sig_features_2009.png&#34; alt=&#34;ANOVA Chart for Metric Importance in Model&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt; ANOVA Chart for Metrics Measured as Predictors for Teams Qualifying for Post-Season Play (2009-2011)&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-308/raw/main/project/images/Anova_sig_features_2016.png&#34; alt=&#34;ANOVA Chart for Metric Importance in Model&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 9:&lt;/strong&gt; ANOVA Chart for Metrics Measured as Predictors for Teams Qualifying for Post-Season Play (2016-2018)&lt;/p&gt;
 &lt;p&gt;Cloudmesh Comon &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; is used to create the benchmark.&lt;/p&gt;
 &lt;h2 id=&#34;6-discussion&#34;&gt;6. Discussion&lt;/h2&gt;
+&lt;p&gt;The first inference of this project was investigating the possibility of using in game performance metrics as a competent and better-than-chance predictor of selecting skill position players making the NFL post-season. Both the 2009-2011 and the 2016-2018 season models were able to predict player post-season qualification at 78.2% and 77.8% levels of success, both above chance level. This success highlights the critical nature of skill performance players and provides confidence to the modern metric model of NFL players as a useful and qualified tool to evaluate player performance as a measure of success. One area that was interesting to note was the p-values of the variables in each of the models. Since the f-values were so high for many of the top 10 variables listed in each model, the p-values showed highly significant far exceeding the p=.05 level that was needed. The f-values were high because they accounted for so much of the variance in the model, meaning the predictive nature of the model was due in large part to many of the variables in the top 10. Another way to state this is that each of these top 10 variables were significantly better at predicting post-season qualification than would be expected due to chance.
+Investigating the second inference regarding changes in the predictive model across time. In comparing the descriptive statistic models (figs. 1, 2 vs. 5, 6). There are some noticeable, but not significant differences in the two-time ranges. First, there are more receivers in the 2016-2018 time range, which reflects the NFL’s shift towards a more pass prone league. Since there was not an increase in roster size between the two-time ranges, the increase in receivers lead to a decrease in the number of quarterbacks and fullbacks on a roster, but these additional receivers carried probably took the roster spots of non-skill positions players that are not accounted for here. Both models show the importance of pass plays, successful pass plays, receiving touchdowns and yards, yards after catch, and other passing variables that highlight the importance of wide receivers and tight ends. The NFL has shifted towards a more pass-friendly league &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, and the models built here highlight the reasons why that occurred. Receiver plays are significantly more important in predicting post-season qualification than any other skill position metrics. It is likely that the shift towards receivers and away from running backs has taken place over time. It is possible that we have pulled two glimpses into this shift, and if we had pulled data from the 1990’s or 1980’s (unfortunately this data is not available in the needed metrics) we would see more running back heavy metrics at the tops of our models.&lt;/p&gt;
+&lt;h3 id=&#34;limitations&#34;&gt;Limitations&lt;/h3&gt;
+&lt;p&gt;Metrics are not provided for non-skill position players who could be critical in predicting playoff qualification. For instance, if we could include offensive linemen metrics, we would have a stronger model that would be better able to predict post-season qualification. Further, the NFL data we had access to does not measure defensive player metrics that we believe are critical in being able to predict post-season qualification for NFL teams. Future work should look to include defensive player metrics into their model, as well as non-skill position players to improve on this model.&lt;/p&gt;
 &lt;h2 id=&#34;7-conclusion&#34;&gt;7. Conclusion&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
 &lt;h2 id=&#34;8-acknowledgements&#34;&gt;8. Acknowledgements&lt;/h2&gt;
-&lt;h2 id=&#34;project-plan&#34;&gt;Project Plan&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; will be deleted in final submission&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; can not be after Refernce section&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nov. 02, 2020
--Complete a draft of the introduction section and the inferences section&lt;/p&gt;
-&lt;p&gt;Nov. 09, 2020&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;build a functioning read in for all csv files needed using curl or another python function. Complete descriptive statistic analysis on regular season variables. (Model should look at player performance and whether that player made the nfl postseason the year of their recorded performance metrics).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nov. 16, 2020
--complete background and previous work section. Work on building prediction model for players making the postseason, train the machine to predict based on variables.&lt;/p&gt;
-&lt;p&gt;Nov. 23, 2020&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Finish model to see how accurate the machine or model is at predicting players making the post-season. Write a conclusion section to based on model.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Dec. 1, 2020&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Polish paper, write abstract and table of contents sections.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Dec. 8, 2020&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Make any changes requested by TA&amp;rsquo;s&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&#34;9-references&#34;&gt;9. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -6148,7 +6169,8 @@ Some of the possible causes are:&lt;/p&gt;
 Yahoo Finance (finance.yahoo.com). Yahoo Finance contains a lot of both fundamental and technical data, and they are free of charge.
 Twitter (twitter.com). Sentiment analysis on Twitter will be conducted to represent the mass psychology regarding the economic condition in Indonesia&lt;/p&gt;
 &lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
-&lt;p&gt;In this study, we will predict market movement in the next two years using technical approach accompanied by sentiment analysis. While fundamental approach is a strong predictor of the long term stock price movement for an individual stock, it is very difficult to utilize it in an index like IDX composite because it will takes too many variables. The technical approach will utilize the bidirectional gated recurrent unit (BGRU), which is considered a variant of LSTM. In the second approach, we will use news from Twitter&amp;rsquo;s official accounts and historical stock prices to predict the market.&lt;/p&gt;
+&lt;p&gt;In this study, we will predict market movement in the next two years using technical approach accompanied by sentiment analysis. While fundamental approach is a strong predictor of the long term stock price movement for an individual stock, it is very difficult to utilize it in an index like IDX composite because it will takes too many variables. The technical approach will utilize LSTM, which has been widely used in time series analysis.
+While there are previous works on predicting stock markets, most of them are based on 60 days sliding windows to predict the price one day ahead. While this approach give a good result for a single time-step analysis, there is no evidence that this approach can work fine for multiple time-steps.&lt;/p&gt;
 &lt;h2 id=&#34;5-inference&#34;&gt;5. Inference&lt;/h2&gt;
 &lt;p&gt;This section will be addressed upon project completion.&lt;/p&gt;
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
@@ -6268,8 +6290,8 @@ Status: in progress&lt;/p&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#7-conclusion&#34;&gt;7. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#8-acknowledments&#34;&gt;8. Acknowledments&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#8-references&#34;&gt;8. References&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#8-acknowledgments&#34;&gt;8. Acknowledgments&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#9-references&#34;&gt;9. References&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
@@ -6402,7 +6424,7 @@ In this project the R2 score of the test data is calculated. The model with high
 &lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/result.png&#34; alt=&#34;Figure 9&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 9:&lt;/strong&gt; Performance of all regression models&lt;/p&gt;
 &lt;p&gt;Figure 9 documents the performance of all the regression models used.&lt;/p&gt;
-&lt;p&gt;cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each steps in this project&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each models are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of best model. Benchmark also provides a detailed report on the system or device informations as shown in Table 2.&lt;/p&gt;
+&lt;p&gt;cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each steps in this project&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each models are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of best model. Benchmark also provides a detailed report on the system or device information as shown in Table 2.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Table 2:&lt;/strong&gt; Benchmark results&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -6676,13 +6698,13 @@ In this project the R2 score of the test data is calculated. The model with high
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;For the baseline model, the RMSE values were high and R2 scores was small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to basline model. But other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which lead us to ignore its scores. Gradient boosting and Ligh GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.&lt;/p&gt;
+&lt;p&gt;For the baseline model, the RMSE values were high and R2 scores was small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to baseline model. But other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which lead us to ignore its scores. Gradient boosting and Light GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.&lt;/p&gt;
 &lt;p&gt;The RMSE scores for Light GBM are .2896 for train and .2910 for test. The R2 score for test set is .6526.&lt;/p&gt;
 &lt;h2 id=&#34;7-conclusion&#34;&gt;7. Conclusion&lt;/h2&gt;
 &lt;p&gt;As the importance of electricity is increasing, the need to know how or where the power usage increase will be a life saver for the electricity consumers. In this project, the daily power consumption of a house is analyzed and modelled for a prediction of electricity usage for residences with similar environments. The model considered a set of parameters like weather conditions, weekdays, type of days etc. for prediction. Since the output is power consumption in kWh, we selected regression for modelling and prediction. Experiments are conducted on five regression models. After analyzing the experiment results, we concluded that the performance of Light GBM model is better and faster compared to all other models.&lt;/p&gt;
-&lt;h2 id=&#34;8-acknowledments&#34;&gt;8. Acknowledments&lt;/h2&gt;
+&lt;h2 id=&#34;8-acknowledgments&#34;&gt;8. Acknowledgments&lt;/h2&gt;
 &lt;p&gt;The author would like to express special thanks to Dr. Geoffrey Fox, Dr. Gregor Von Laszewski and all the associate instructors of Big Data Applications course (FA20-BL-ENGR-E534-11530) offered by Indiana University, Bloomington for their continuous guidance and support throughout the project.&lt;/p&gt;
-&lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
+&lt;h2 id=&#34;9-references&#34;&gt;9. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -6719,23 +6741,6 @@ Available: &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S01
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-314/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-314/test/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;this-is-to-test-markdown&#34;&gt;This is to test markdown&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;bullet&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>

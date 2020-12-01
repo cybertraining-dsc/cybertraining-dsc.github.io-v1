@@ -226,6 +226,12 @@ Abstract We are living in a technology-driven world. New innovations make human 
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-adam" href="/report/cloudmesh-openapi/readme-adam/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-scikitlearn" href="/report/cloudmesh-openapi/readme-scikitlearn/"></a>
       
       
@@ -469,12 +475,6 @@ Abstract We are living in a technology-driven world. New innovations make human 
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314test" href="/report/fa20-523-314/test/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -544,8 +544,8 @@ Abstract We are living in a technology-driven world. New innovations make human 
       </ul>
     </li>
     <li><a href="#7-conclusion">7. Conclusion</a></li>
-    <li><a href="#8-acknowledments">8. Acknowledments</a></li>
-    <li><a href="#8-references">8. References</a></li>
+    <li><a href="#8-acknowledgments">8. Acknowledgments</a></li>
+    <li><a href="#9-references">9. References</a></li>
   </ul>
 </nav>
 
@@ -629,8 +629,8 @@ Status: in progress</p>
       </ul>
     </li>
     <li><a href="#7-conclusion">7. Conclusion</a></li>
-    <li><a href="#8-acknowledments">8. Acknowledments</a></li>
-    <li><a href="#8-references">8. References</a></li>
+    <li><a href="#8-acknowledgments">8. Acknowledgments</a></li>
+    <li><a href="#9-references">9. References</a></li>
   </ul>
 </nav>
 </div>
@@ -763,7 +763,7 @@ In this project the R2 score of the test data is calculated. The model with high
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/result.png" alt="Figure 9"></p>
 <p><strong>Figure 9:</strong> Performance of all regression models</p>
 <p>Figure 9 documents the performance of all the regression models used.</p>
-<p>cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each steps in this project<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each models are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of best model. Benchmark also provides a detailed report on the system or device informations as shown in Table 2.</p>
+<p>cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each steps in this project<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each models are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of best model. Benchmark also provides a detailed report on the system or device information as shown in Table 2.</p>
 <p><strong>Table 2:</strong> Benchmark results</p>
 <table>
 <thead>
@@ -1037,13 +1037,13 @@ In this project the R2 score of the test data is calculated. The model with high
 </tr>
 </tbody>
 </table>
-<p>For the baseline model, the RMSE values were high and R2 scores was small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to basline model. But other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which lead us to ignore its scores. Gradient boosting and Ligh GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.</p>
+<p>For the baseline model, the RMSE values were high and R2 scores was small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to baseline model. But other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which lead us to ignore its scores. Gradient boosting and Light GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.</p>
 <p>The RMSE scores for Light GBM are .2896 for train and .2910 for test. The R2 score for test set is .6526.</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
 <p>As the importance of electricity is increasing, the need to know how or where the power usage increase will be a life saver for the electricity consumers. In this project, the daily power consumption of a house is analyzed and modelled for a prediction of electricity usage for residences with similar environments. The model considered a set of parameters like weather conditions, weekdays, type of days etc. for prediction. Since the output is power consumption in kWh, we selected regression for modelling and prediction. Experiments are conducted on five regression models. After analyzing the experiment results, we concluded that the performance of Light GBM model is better and faster compared to all other models.</p>
-<h2 id="8-acknowledments">8. Acknowledments</h2>
+<h2 id="8-acknowledgments">8. Acknowledgments</h2>
 <p>The author would like to express special thanks to Dr. Geoffrey Fox, Dr. Gregor Von Laszewski and all the associate instructors of Big Data Applications course (FA20-BL-ENGR-E534-11530) offered by Indiana University, Bloomington for their continuous guidance and support throughout the project.</p>
-<h2 id="8-references">8. References</h2>
+<h2 id="9-references">9. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

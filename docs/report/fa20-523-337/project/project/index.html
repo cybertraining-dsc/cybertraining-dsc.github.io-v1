@@ -40,7 +40,7 @@
   wrong indentation level when doing lists, student does not do markdown
   wrong indentation while using paragraphs they must not be indented">
 
-<meta itemprop="wordCount" content="4537">
+<meta itemprop="wordCount" content="4569">
 
 
 
@@ -233,6 +233,12 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapiproject_review" href="/report/cloudmesh-openapi/project_review/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-adam" href="/report/cloudmesh-openapi/readme-adam/"></a>
       
       
       
@@ -481,12 +487,6 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314test" href="/report/fa20-523-314/test/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -531,6 +531,7 @@
     <li><a href="#2-datasets">2. Datasets</a>
       <ul>
         <li><a href="#21-metrics">2.1 Metrics</a></li>
+        <li><a href="#22-source-code">2.2 Source Code</a></li>
       </ul>
     </li>
     <li><a href="#3-methodology">3. Methodology</a>
@@ -543,7 +544,11 @@
         </li>
         <li><a href="#33-data-pre-processing">3.3 Data Pre-Processing</a></li>
         <li><a href="#34-feature-engineering">3.4 Feature Engineering</a></li>
-        <li><a href="#34-feature-selection">3.4 Feature Selection</a></li>
+        <li><a href="#34-feature-selection">3.4 Feature Selection</a>
+          <ul>
+            <li><a href="#341-data-preparation">3.4.1 Data Preparation</a></li>
+          </ul>
+        </li>
         <li><a href="#35-model-algorithms-and-optimization-methods">3.5 Model Algorithms and Optimization Methods</a>
           <ul>
             <li><a href="#351-linear-regression-model">3.5.1 Linear Regression Model</a></li>
@@ -555,6 +560,7 @@
         </li>
       </ul>
     </li>
+    <li><a href="#4-benchmark-results">4. Benchmark Results</a></li>
     <li><a href="#5-software-technologies">5. Software Technologies</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a>
       <ul>
@@ -695,6 +701,7 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
     <li><a href="#2-datasets">2. Datasets</a>
       <ul>
         <li><a href="#21-metrics">2.1 Metrics</a></li>
+        <li><a href="#22-source-code">2.2 Source Code</a></li>
       </ul>
     </li>
     <li><a href="#3-methodology">3. Methodology</a>
@@ -707,7 +714,11 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
         </li>
         <li><a href="#33-data-pre-processing">3.3 Data Pre-Processing</a></li>
         <li><a href="#34-feature-engineering">3.4 Feature Engineering</a></li>
-        <li><a href="#34-feature-selection">3.4 Feature Selection</a></li>
+        <li><a href="#34-feature-selection">3.4 Feature Selection</a>
+          <ul>
+            <li><a href="#341-data-preparation">3.4.1 Data Preparation</a></li>
+          </ul>
+        </li>
         <li><a href="#35-model-algorithms-and-optimization-methods">3.5 Model Algorithms and Optimization Methods</a>
           <ul>
             <li><a href="#351-linear-regression-model">3.5.1 Linear Regression Model</a></li>
@@ -719,6 +730,7 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
         </li>
       </ul>
     </li>
+    <li><a href="#4-benchmark-results">4. Benchmark Results</a></li>
     <li><a href="#5-software-technologies">5. Software Technologies</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a>
       <ul>
@@ -751,6 +763,8 @@ Anantha Janakiraman, <a href="mailto:ajanakir@iu.edu">ajanakir@iu.edu</a>, fa20-
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/loss.png" alt="Figure 1.1"></p>
 <p><strong>Figure 1:</strong> RMSE</p>
 <p>where y-hat is the natural log of the predicted revenue for a customer and y is the natural log of the actual summed revenue value plus one as seen in Figure-1.</p>
+<h3 id="22-source-code">2.2 Source Code</h3>
+<p>Follow this <a href="https://github.com/cybertraining-dsc/fa20-523-337/blob/main/project/code/project.ipynb">link</a> to the source code for subsequent sections in this report.</p>
 <h2 id="3-methodology">3. Methodology</h2>
 <p>The CRISP-DM process methodology was followed in this project. The high-level implementation steps are shown in Figure-2.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/methodology.png" alt="Methodology"></p>
@@ -796,36 +810,39 @@ For this project, a set of sophisticated functions to extract date related value
 <p>Feature Selection refers to selection of features in your data that would improve your machine learning model. There is subtle variation between Feature Selection and Feature Engineering. The Feature Engineering technique is designed to extract more feature from the dataset and the feature selection technique allows only relevant features into the dataset. Also, how does anyone know what are the relevant features? There are several methodologies and techniques that are developed over the years but there is no one-size-fits-all methodology.</p>
 <p>Feature Selection like Feature Engineering is more of an art than science. There are several iterative procedure that uses Information Gain, Entropy and Correlation scores to decide which feature gets into the model. There are also advanced Deep learning models that can be built or tree based models that can help observe variables of high importance after the model is built. Similar to Feature Engineering, Feature Selection should also require domain specific knowledge to develop festure selection strategies.</p>
 <p>In this project, the features that had constant variance in the data were dropped and also the features that had mostly null values with only one Non-null value were dropped too. These features do not possess any statistical significance and add very less value to the modeling process. Also, depending on the final result, different techniques and strategies can be explored to optimize and improve the performance of the model.</p>
-<p>Prepare the data</p>
+<h4 id="341-data-preparation">3.4.1 Data Preparation</h4>
 <p>Scikit learn has inbuilt libraries to handle Train/Test Split as part the model_selection package. The dataset was split randomly with 80% Training and 20% Testing datasets.</p>
 <h3 id="35-model-algorithms-and-optimization-methods">3.5 Model Algorithms and Optimization Methods</h3>
 <p>Different Machine Learning algorithms and techniques were explored in this project and the outcome of the exploration along with different parameter settings have been discussed in the following sections.</p>
 <h4 id="351-linear-regression-model">3.5.1 Linear Regression Model</h4>
-<p>Linear regression is a supervised learning model that follows a linear approach in that it assumes a linear relationship between one ore more predictor variables (x) and a single target or response variable (y). The target variable can be calculated as a linear combination of the predictors or in other words the target is the calculated by weighted sum of the inputs and bias where the weighted is estimated through different optimization techniques. Linear regression is referred to as simple linear regression when there is only one predictor variable involved and referred to as multiple linear regression when there is more than one predictor variable is involved. The error between the predicted output and the ground truth is generally calculated using RMSE (root mean squared error). This is one of the classic modeling techniques that will be explored in this project because the target variable (revenue per customer) is a real valued continuous output and exhibits a significant linear relationship with the independent variables or the input variables. <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>Linear regression is a supervised learning model that follows a linear approach in that it assumes a linear relationship between one ore more predictor variables (x) and a single target or response variable (y). The target variable can be calculated as a linear combination of the predictors or in other words the target is the calculated by weighted sum of the inputs and bias where the weighted is estimated through different optimization techniques. Linear regression is referred to as simple linear regression when there is only one predictor variable involved and referred to as multiple linear regression when there is more than one predictor variable is involved. The error between the predicted output and the ground truth is generally calculated using RMSE (root mean squared error). This is one of the classic modeling techniques that will be explored in this project because the target variable (revenue per customer) is a real valued continuous output and exhibits a significant linear relationship with the independent variables or the input variables <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
 <p>In the exploration, SKLearn Linear Regression performed well overall. A 5 fold cross validation was performed and the best RMSE Score for this model observed was: 1.89. As shown in the Figure-12, the training and test RMSE error values are very close indicating that there is no overfitting the data.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/linear_regression3.png" alt="Linear Regression"></p>
 <p><strong>Figure 12:</strong> Linear Regression Model</p>
 <h4 id="352-xgboost-regressor">3.5.2 XGBoost Regressor</h4>
-<p>XGBoost regression is a gradient boosting regression technique and one of the popular gradient boosting frameworks that exists today. It follows the ensemble principle where a collection of weak learners improves the prediction accuracy. The prediction in the current step S is weighed based on the outcomes from the previous step S-1. Weak learning is slightly better than random learning and that is one of the key strengths of gradient boosting technique. The XGBoost algorithm was explored for this project for several reasons including it offers built-in regularization that helps avoid overfitting, it can handle missing values effectively and it also does cross validation automatically. The feature space for the dataset being used is sparse and believe the potential to overfit the data is high which is one of the primary reasons for exploring XGBoost. <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<p>XGBoost regression is a gradient boosting regression technique and one of the popular gradient boosting frameworks that exists today. It follows the ensemble principle where a collection of weak learners improves the prediction accuracy. The prediction in the current step S is weighed based on the outcomes from the previous step S-1. Weak learning is slightly better than random learning and that is one of the key strengths of gradient boosting technique. The XGBoost algorithm was explored for this project for several reasons including it offers built-in regularization that helps avoid overfitting, it can handle missing values effectively and it also does cross validation automatically. The feature space for the dataset being used is sparse and believe the potential to overfit the data is high which is one of the primary reasons for exploring XGBoost <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
 <p>XGBoost Regressor performed very well. It was the best performing model with the lowest RMSE score of 1.619. Also the training and test scores are reasonably close and it doesn&rsquo;t look like there was the problem of over fitting the training data. Multiple training iterations of this model were explored with different parameters and most of the iterations resulted in significant error reduction compared to the other model making it the best performing model overall.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/xgboost3new.png" alt="XGBoost"></p>
 <p><strong>Figure 13:</strong> XGBoost Model</p>
 <h4 id="353-lightgbm-regressor">3.5.3 LightGBM Regressor</h4>
-<p>LightGBM is a popular gradient boosting framework similar to XGBoost and is gaining popularity in the recent days. The important difference between lightGBM and other gradient boosting frameworks is that LightGBM grows the tree vertically or in other words it grows the tree leafwise compared to other frameworks where the trees grow horizontally. In this project the lightGBM framework was experimented primarily because this framework works well on large dataset with more than 10K observations. The algorithm also has a high throughput while using reasonably less memory but there is one problem with overfitting the data which was controlled in our exploration using appropriate hyper parameter setting and achieved optimized performance. <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<p>LightGBM is a popular gradient boosting framework similar to XGBoost and is gaining popularity in the recent days. The important difference between lightGBM and other gradient boosting frameworks is that LightGBM grows the tree vertically or in other words it grows the tree leafwise compared to other frameworks where the trees grow horizontally. In this project the lightGBM framework was experimented primarily because this framework works well on large dataset with more than 10K observations. The algorithm also has a high throughput while using reasonably less memory but there is one problem with overfitting the data which was controlled in our exploration using appropriate hyper parameter setting and achieved optimized performance <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
 <p>LightGBM Regression was the second best performing model in terms of RMSE scores. Also the training and test scores observed were different indicating a potential problem of overfitting. Again, multiple training iterations of this model were explored with different parameter settings and although it achieved reasonable error reduction compared to most of the other models that were explored, it still did not outperform the XGBoost regressor making it the second best performing model.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lighgbm3new.png" alt="lightgbm"></p>
 <p><strong>Figure 14:</strong> LightGBM Model</p>
 <h4 id="354-lasso-regression">3.5.4 Lasso Regression</h4>
-<p>Lasso is a regression technique that uses L1 regularization. In statistics, lasso regression is a method to do automatic variable selection and regularization to improve prediction accuracy and performance of the statistical model. Lasso regression by nature makes the coefficient for some of the variables zero meaning these variables are automatically eliminated from the modeling process. The L1 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. When the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></p>
+<p>Lasso is a regression technique that uses L1 regularization. In statistics, lasso regression is a method to do automatic variable selection and regularization to improve prediction accuracy and performance of the statistical model. Lasso regression by nature makes the coefficient for some of the variables zero meaning these variables are automatically eliminated from the modeling process. The L1 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. When the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>.</p>
 <p>In this project, Lasso is one of the important techniques that was explored primarily because the problem being solved is a regression problem and there is possibility to overfit the data due to the number of observations and feature space. During the model training phase different ranges for regularization penalty were explored and the appropriate value that helped achieve maximum reduction in the total RMSE score was identified.</p>
 <p>Lasso performed a bit better than baseline model. However, it did not outperform lightGBM or XGBoost or tree based models in general.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/lasso3new.png" alt="lasso"></p>
 <p><strong>Figure 15:</strong> Lasso Model</p>
 <h4 id="355-ridge-regressor">3.5.5 Ridge Regressor</h4>
-<p>Ridge is a regression technique that uses L2 regularization. Ridge regression does not offer automatic variable selection in the sense that it is not make the weights zero on any of the variable used in the model and the regularization term in a ridge regression is slightly different than the lasso regression. The regularization term is the sum of the square of coefficients multiplied by the penalty whereas in lasso it is the sum of the absolute value of the coefficients. The regularization term is a gentle trade-off between fitting the model and overfitting the model and like in lasso it helps improve prediction accuracy as well as performance of the statistical model. The L2 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. The regularization parameter also helps reduce multicollinearity in the model. Similar to Lasso, when the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting. <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></p>
+<p>Ridge is a regression technique that uses L2 regularization. Ridge regression does not offer automatic variable selection in the sense that it is not make the weights zero on any of the variable used in the model and the regularization term in a ridge regression is slightly different than the lasso regression. The regularization term is the sum of the square of coefficients multiplied by the penalty whereas in lasso it is the sum of the absolute value of the coefficients. The regularization term is a gentle trade-off between fitting the model and overfitting the model and like in lasso it helps improve prediction accuracy as well as performance of the statistical model. The L2 regularization parameter helps control overfitting and will need to be explored for a range of values for the specific problem. The regularization parameter also helps reduce multicollinearity in the model. Similar to Lasso, when the regularization penalty tends to be zero there is no regularization, and the loss function is mostly influenced by the squared loss and in contrary if the regularization penalty tends to be closer to infinity then the objective function is mostly influenced by the regularization part. It is always ideal to explore a range of values for the regularization penalty to improve the accuracy and avoid overfitting <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>.</p>
 <p>In this project, Ridge regression is one of the important techniques that was explored again primarily because the problem being solved is a regression problem and there is possibility to overfit the data due to the number of observations and feature space. During the model training phase different ranges for regularization penalty were explored and the appropriate value that helped achieve maximum reduction in the total RMSE score was identified. Ridge performed a bit better than baseline model. However like Lasso, it did not outperform lightGBM or XGBoost or tree based models in general.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/ridge3new.png" alt="Ridge"></p>
 <p><strong>Figure 16:</strong> Ridge Model</p>
+<h2 id="4-benchmark-results">4. Benchmark Results</h2>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/benchmark1.png" alt="Benchmark"></p>
+<p><strong>Figure 17:</strong> Benchmark Results</p>
 <h2 id="5-software-technologies">5. Software Technologies</h2>
 <p>In this project tools like Python and Google Colab Jupyter Notebook were used. Also several Python packages were employed in this exploration such as Pandas, Numpy, Matplotlib, sklearn</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
@@ -838,7 +855,7 @@ For this project, a set of sophisticated functions to extract date related value
 <p>Multiple modeling techniques were explored as part of this project like Linear regression, gradient boosting algorithms and linear regression regularization techniques. The techniques were explored with basic parameter setting and based on the outcome of those experiments, the hyper parameters were tuned using grid search to obtain the best estimator evaluated on RMSE. Also, during grid search K-Fold cross validation of training data was used and the cross validated results were examined through a results table. The fit_intercept flag played a significant role resulting in an optimal error. As part of the different experimentations that were performed, random forest algorithm was also explored but it suffered performance issues and it seemed like it would require more iterations to converge which is why it was dropped from our results and further exploration. Although random forest was not explored, gradient boosting techniques were part of the experimentations and the best RMSE from XGBoost. The LightGBM regressor was also explored with different parameter settings but it did not produce better RMSE score than XGBoost.</p>
 <p>In the case of XGBoost, there was improvement to the RMSE score as different tree depths, feature fraction, learning rate, number of children, bagging fraction, sub-sample were explored. There was significant improvement to the error metric when these parameters were adjusted in an intuitive way. Also, linear regression with regularization techniques were explored and although there was some improvement to the error metric compared to the basic linear regression model they did not perform better than the gradient boosting method that was explored. So, based on different explorations and experimentations a reasonably conclusion can be made that gradient boosting technique performed better for the given problem setting and generated the best RMSE score. Based on the evaluation results of XGBoost on the dataset used, the recommendation would be to test the XGBoost model with real time data and the performance of the model can be evaluated in real-time scenario too and additionally, if needed, hyper parameter tuning can be performed on the XGBoost model specifically for the real-time scenario <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. The feature engineering process on the dataset helped derive features with additional predictive value and a pipeline was built to reuse the same process in different modeling techniques. Five different models were tested including Linear Regression, XGBoost, Light GBM, Lasso and Ridge. The summary of all the models can be seen in Figure-17.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-337/raw/main/project/images/model_results_new2new.png" alt="Model_Results"></p>
-<p><strong>Figure 17:</strong> Model Results Summary</p>
+<p><strong>Figure 18:</strong> Model Results Summary</p>
 <h3 id="64-limitations">6.4 Limitations</h3>
 <p>Due to the limited capacity of our Colab Notebook setup, there was difficulty in performing cross Validation for XGBoost and LightGBM. The KFold cross validation with different parameter settings would have helped identify the best estimator for these models, helped achieve even better rmse scores and potentially avoid overfitting, if any. The tree based models performed well in this dataset and it would be beneficial to explore other tree based models like Random Forest in the future and evaluate/compare the performance.</p>
 <h2 id="7-previous-explorations">7. Previous Explorations</h2>
