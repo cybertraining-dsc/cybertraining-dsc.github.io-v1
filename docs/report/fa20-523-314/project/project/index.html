@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Residential Power Usage Prediction   Status: in progress
+<meta property="og:description" content="Residential Power Usage Prediction   Status: final
 Siny P. Raphel, fa20-523-314, Edit
-Abstract We are living in a technology-driven world. New innovations make human life easier. As the science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in the power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity driven appliances at homes." />
+Abstract We are living in a technology-driven world. Innovations make human life easier. As science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity-driven appliances at homes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-314/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Residential Power Usage Prediction   Status: in progress
+<meta itemprop="description" content="Residential Power Usage Prediction   Status: final
 Siny P. Raphel, fa20-523-314, Edit
-Abstract We are living in a technology-driven world. New innovations make human life easier. As the science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in the power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity driven appliances at homes.">
+Abstract We are living in a technology-driven world. Innovations make human life easier. As science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity-driven appliances at homes.">
 
-<meta itemprop="wordCount" content="2848">
+<meta itemprop="wordCount" content="2901">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Residential Power Usage Prediction   Status: in progress
+<meta name="twitter:description" content="Residential Power Usage Prediction   Status: final
 Siny P. Raphel, fa20-523-314, Edit
-Abstract We are living in a technology-driven world. New innovations make human life easier. As the science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in the power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity driven appliances at homes."/>
+Abstract We are living in a technology-driven world. Innovations make human life easier. As science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity-driven appliances at homes."/>
 
 
 
@@ -527,7 +527,7 @@ Abstract We are living in a technology-driven world. New innovations make human 
       </ul>
     </li>
     <li><a href="#5-exploratory-data-analysis">5. Exploratory Data Analysis</a></li>
-    <li><a href="#6-modelling">6. Modelling</a>
+    <li><a href="#6-modeling">6. Modeling</a>
       <ul>
         <li><a href="#61-split-data">6.1 Split Data</a></li>
         <li><a href="#62-pipelines">6.2 Pipelines</a></li>
@@ -589,13 +589,13 @@ Abstract We are living in a technology-driven world. New innovations make human 
 	<h1 id="residential-power-usage-prediction">Residential Power Usage Prediction</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-314/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-314/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-314/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-314/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress</p>
+Status: final</p>
 <p>Siny P. Raphel, <a href="https://github.com/cybertraining-dsc/fa20-523-314/">fa20-523-314</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/project.md">Edit</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>We are living in a technology-driven world. New innovations make human life easier. As the science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in the power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity driven appliances at homes. Monitoring these factors and consolidating will result in humungous amount of data. But analyzing this data will help to keep track of power consumption. This system provides a prediction of usage of electric power at residences in the future and will enable people to plan ahead of time and not surprised by the monthly electricity bill.</p>
+<p>We are living in a technology-driven world. Innovations make human life easier. As science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity-driven appliances at homes. Monitoring these factors and consolidating them will result in a humungous amount of data. But analyzing this data will help to keep track of power consumption. This system provides a prediction of usage of electric power at residences in the future and will enable people to plan ahead of time and not be surprised by the monthly electricity bill.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -612,7 +612,7 @@ Status: in progress</p>
       </ul>
     </li>
     <li><a href="#5-exploratory-data-analysis">5. Exploratory Data Analysis</a></li>
-    <li><a href="#6-modelling">6. Modelling</a>
+    <li><a href="#6-modeling">6. Modeling</a>
       <ul>
         <li><a href="#61-split-data">6.1 Split Data</a></li>
         <li><a href="#62-pipelines">6.2 Pipelines</a></li>
@@ -639,12 +639,12 @@ Status: in progress</p>
 
 <p><strong>Keywords:</strong> power usage, big data, regression</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Electricity is an inevitable part of our day-to-day life. The residential power sector consumes about one-fifth of the total energy in the U.S. economy<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Most of the appliances in a household uses electricity for its working. The usage of electricity in a residence depends on the standard of living of the country, weather conditions, family size, type of the residence etc<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Most of the houses in USA are equipped with lightings and refrigerators using electric power. The usage of air conditioners is also increasing. From Figure 1, we can see that the top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.</p>
+<p>Electricity is an inevitable part of our day-to-day life. The residential power sector consumes about one-fifth of the total energy in the U.S. economy<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Most of the appliances in a household use electricity for its working. The usage of electricity in a residence depends on the standard of living of the country, weather conditions, family size, type of residence, etc<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Most of the houses in the USA are equipped with lightings and refrigerators using electric power. The usage of air conditioners is also increasing. From Figure 1, we can see that the top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/chart.png" alt="Figure 1"></p>
 <p><strong>Figure 1:</strong> Residential electricity consumption by end use, 2015<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
-<p>Climate change is one of the biggest challenges in our current time. As a result, temperatures are rising. Therefore, in order to analyze energy consumption, understanding weather variations are critical<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. As the temperature rises, use of air conditioners are also rising. As shown in Figure 1, air conditioning is the primary source of power consumer in households. Weather change has also resulted in drop of temperatures and variation in humidity. These results in secondary power consumers.</p>
-<p>Even though weather plays an important role in power usage, factors like household income, age of the residents, family type etc also influence consumption. During holidays many people tend to spend time outside which reduces power utilization at their homes. Similarly, during weekend, since most people have work off, the appliances will be frequently consumed compared to weekdays when they go to work. Our world is currently facing an epidemic. Most of the countries had months of lockdown periods. Schools and many work places were closed. People were not allowed to go out and so they were stuck at their homes. As a result, power expending reduced drastically everywhere other than residences. But during lockdown period the energy consumption of residences spiked.</p>
-<p>Most of the electric service providers like duke, dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.</p>
+<p>Climate change is one of the biggest challenges in our current time. As a result, temperatures are rising. Therefore, to analyze energy consumption, understanding weather variations are critical<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. As the temperature rises, the use of air conditioners is also rising. As shown in Figure 1, air conditioning is the primary source of power consumption in households. The weather change has also resulted in a drop in temperatures and variation in humidity. These results in secondary power consumers.</p>
+<p>Even though weather plays an important role in power usage, factors like household income, age of the residents, family type, etc also influence consumption. During the holidays&rsquo; many people tend to spend time outside which reduces power utilization at their homes. Similarly, during the weekend, since most people have work off, the appliances will be frequently consumed compared to weekdays when they go to work. Our world is currently facing an epidemic. Most of the countries had months of lockdown periods. Schools and many workplaces were closed. People were not allowed to go out and so they were stuck in their homes. As a result, power expending reduced drastically everywhere other than residences. But during the lockdown period, the energy consumption of residences spiked.</p>
+<p>Most of the electric service providers like Duke, Dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.</p>
 <h2 id="2-reason-to-choose-this-dataset">2. Reason to choose this dataset</h2>
 <p>There were many datasets on residential power usage analysis in Kaggle itself. But most of them were three or four years old. This dataset has the recent data of power consumptions together with weather data of each day. Since the pandemic hit the world in 2019-2020, the availability of recent data is considered to be significant for the analysis.</p>
 <p>This dataset is chosen because,</p>
@@ -654,15 +654,15 @@ Status: in progress</p>
 </ol>
 <h2 id="3-datasets">3. Datasets</h2>
 <p>This project is based on the dataset, <em>Residential Power Usage 3 years data</em> in Kaggle datasets<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. The dataset contains data of hourly power consumption of a 2 storied house in Houston, Texas from 01-06-2016 to August 2020 and also weather conditions of each day like temperatures, humidity wind etc of that area. Each day is marked whether it is a weekday, weekend, vacation or COVID-19 lockdown.</p>
-<p>The project is intending to build a model to predict future power consumption of a house with similar environments from the available data. Python<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> is used for the development and since the expected output is a continuous variable, linear regression is considered for baseline model. Later the performance of the base model is compared to one or two other models like tuned linear regression, gradient boosting, Light Gbm or random forest.</p>
+<p>The project is intending to build a model to predict the future power consumption of a house with similar environments from the available data. Python<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> is used for the development and since the expected output is a continuous variable, linear regression is considered for the baseline model. Later the performance of the base model is compared to one or two other models like tuned linear regression, gradient boosting, Light Gbm, or random forest.</p>
 <p>Data is spread across two csv files.</p>
 <ul>
 <li>power_usage_2016_to_2020.csv</li>
 </ul>
-<p>This file depicts the hourly electricity usage of the house for three years, from 2016 to 2020. It contains basic details like startdate with hour, value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.</p>
+<p>This file depicts the hourly electricity usage of the house for three years, from 2016 to 2020. It contains basic details like startdate with hour, the value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-1.png" alt="Figure 2"></p>
 <p><strong>Figure 2:</strong> First five rows of power_usage_2016_to_2020 data</p>
-<p>Figure 2 provides a snapshot of the first few rows of the data. Day of the week is an integer value with 0 being Monday. The column <em>notes</em> lay out details like whether that day was weekend, weekday, covid lockdown or vacation, as shown in Figure 3.</p>
+<p>Figure 2 provides a snapshot of the first few rows of the data. Day of the week is an integer value with 0 being Monday. The column <em>notes</em> layout details like whether that day was weekend, weekday, covid lockdown or vacation, as shown in Figure 3.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-2.png" alt="Figure 3"></p>
 <p><strong>Figure 3:</strong> Details in notes column</p>
 <ul>
@@ -713,57 +713,58 @@ Status: in progress</p>
 <h3 id="41-data-download-and-load">4.1 Data download and load</h3>
 <p>The data in this project is directly downloaded from <em>Kaggle</em>. The downloaded file is then unzipped and loaded to two dataframes using python codes. For more detailed explanation and codes for download and load of data, see <a href="https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb">python code</a> <em>Download datasets</em> and <em>Load datasets</em> sections.</p>
 <h3 id="42-data-descriptive-analysis">4.2 Data descriptive analysis</h3>
-<p>The data loaded has to be analysed properly before it can be preprocessed. Analysis is made on the existance of missing values, range of each features etc. On analysis, it is determined that there are no missing values and the date format in both tables are different. The <em>StartDate</em> feature of power_usage dataset and <em>Date</em> feature of the weather dataset are to be used as key to merge the two datasets. But the format of both features are different. StartDate feature is the combination of date and hour. Whereas, <em>Date</em> feature of weather is just the date. Hence, these issues will have to be taken care of before merging data.</p>
+<p>The data loaded has to be analyzed properly before it can be preprocessed. An analysis is made on the existence of missing values, the range of each feature, etc. On analysis, it is determined that there are no missing values and the date format in both tables is different. The <em>StartDate</em> feature of the power_usage dataset and <em>Date</em> feature of the weather dataset is to be used as a key to merge the two datasets. But the format of both features is different. StartDate feature is the combination of date and hour. Whereas, <em>Date</em> feature of weather is just the date. Hence, these issues will have to be taken care of before merging data.</p>
 <h3 id="43-preprocessing-data">4.3 Preprocessing data</h3>
-<p>In this step, the column name <em>Values (kWh)</em>  is renamed to <em>Value</em> and also date format issue is addressed. First StartDate column is split into Date and Hour columns. Since the StartDate column is in Pandas Period type, the function strftime() is used for converting to the required format.</p>
+<p>In this step, the column name <em>Values (kWh)</em>  is renamed to <em>Value</em> and also date format issue is addressed. Firstly, StartDate column is split into Date and Hour columns. Since the StartDate column is in Pandas Period type, the function strftime() is used for converting to the required format.</p>
 <h3 id="44-merge-datasets">4.4 Merge datasets</h3>
-<p>For proper analysis of data, it is critical that the analyst should be able to analyse the relationships of each features with respect to the target feature(Value in kWh in this project). Therefore, both power_usage and weather tables are merged with respect to Date column. The resulting table has a total of 35952 instances and 22 features.</p>
+<p>For proper analysis of data, it is critical that the analyst should be able to analyze the relationships of each feature concerning the target feature(Value in kWh in this project). Therefore, both power_usage and weather tables are merged with respect to the Date column. The resulting table has a total of 35952 instances and 22 features.</p>
 <h2 id="5-exploratory-data-analysis">5. Exploratory Data Analysis</h2>
-<p>Here we analyse different features, their relation with each other and target.</p>
+<p>Here we analyze different features, their relationship with each other, and with the target.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/dow.png" alt="Figure 5"></p>
 <p><strong>Figure 5:</strong> Average power usage by day of the week</p>
-<p>In Figure 5, the average power usage by the day of the week is plotted<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. It is analyzed that Saturday and Friday has the most usage compared to other days of the week. Since day of th week represents values Sunday-Saturday, we can consider it as a categorical feature.
-Similarly, from Figure 6, there is a huge dip in power usage during vacation. Other three occasions like covid lockdown, weekend and weekdays have almost same power usage, even though consumption during weekends outweigh.</p>
+<p>In Figure 5, the average power usage by the day of the week is plotted<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. It is analyzed that Saturday and Friday have the most usage compared to other days of the week. Since the day of the week represents values Sunday-Saturday, we can consider it as a categorical feature.
+Similarly, from Figure 6, there is a huge dip in power usage during vacation. Other three occasions like covid lockdown, weekend and weekdays have almost the same power usage, even though consumption during weekends outweigh.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/tod.png" alt="Figure 6"></p>
 <p><strong>Figure 6:</strong> Average power usage by type of the day</p>
-<p>In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumtion peaks in the months June, July and August.</p>
+<p>In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumption peaks in the months of June, July, and August.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/monthly_power.png" alt="Figure 7"></p>
 <p><strong>Figure 7:</strong> Average power usage per month for three years</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/corr_plot.png" alt="Figure 8"></p>
 <p><strong>Figure 8:</strong> Correlation plot between features</p>
-<p>The correlation plot in Figure 8, depicts the inter-correlation between features. We can see that features like temperature, dew and pressure has high correlation to our target feature. Also different temperatures and dew features are inter-correlated. Therefore, all the intercorrelated features except for temp_avg can be dropped during feature selection.</p>
-<h2 id="6-modelling">6. Modelling</h2>
+<p>The correlation plot in Figure 8, depicts the inter-correlation between features. We can see that features like temperature, dew and pressure has a high correlation to our target feature. Also, different temperatures and dew features are inter-correlated. Therefore, all the intercorrelated features except for temp_avg can be dropped during feature selection.</p>
+<h2 id="6-modeling">6. Modeling</h2>
+<p>Modeling of the data includes splitting data into train and test, include cross-validation, create pipelines, select metrics for measuring performance, run data in regression models, and discuss results.</p>
 <h3 id="61-split-data">6.1 Split Data</h3>
-<p>For measuring the accuracy of the model, the main data is split into train and test. 20% of data is selected as test data and the remaining 80% is the train data. The proportion of notes(vacation, week day, weekend and covide lockdown) are different. Therefore, we stratify the data according to notes column. After split, train data has 28761 rows and test data has 7191 rows.</p>
+<p>For measuring the accuracy of the model, the main data is split into train and test. 20% of data is selected as test data and the remaining 80% is the train data. The proportion of notes(vacation, weekday, weekend, and covid lockdown) are different. Therefore, we stratify the data according to the notes column. After the split, train data has 28761 rows and test data has 7191 rows.</p>
 <h3 id="62-pipelines">6.2 Pipelines</h3>
 <p>Categorical variables and numeric variables are separated and processed in pipelines separately.
-Categorical features are one hot encoded before feeding to the model. Similarly, numerical features are standardized before modelling. Later these two pipelines are joined and modelled used Linear regression and other models.</p>
+Categorical features are one hot encoded before feeding to the model. Similarly, numerical features are standardized before modeling. Later these two pipelines are joined and modeled used Linear regression and other models.</p>
 <h3 id="63-metrics">6.3 Metrics</h3>
-<p>Out target is a continous variable and hence we implement regression models for prediction. In order to determine how accurate a regression model is, we use the following metrics.</p>
+<p>Our target is a continuous variable and hence we implement regression models for prediction. To determine how accurate a regression model is, we use the following metrics.</p>
 <h4 id="631-mean-squared-errormse">6.3.1 Mean squared error(MSE)</h4>
-<p>MSE is the average of squares of error. The larger the MSE score, the larger the errors are. Models with lower values of MSE is considered to perform well. But, since MSE is the squared value, the scale of target variable and MSE will be different. Therefore, we go for RMSE values.</p>
+<p>MSE is the average of squares of error. The larger the MSE score, the larger the errors are. Models with lower values of MSE is considered to perform well. But, since MSE is the squared value, the scale of the target variable and MSE will be different. Therefore, we go for RMSE values.</p>
 <h4 id="632-root-mean-squared-errorrmse">6.3.2 Root mean squared error(RMSE)</h4>
-<p>RMSE is the square root of MSE scores. The square root is introduced to make scale of the errors to be the same as the scale of targets. Similar to MSE, the lower scores for RMSE means the better model performance. Therefore, in this project, the models with lower RMSE values will be monitored<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
+<p>RMSE is the square root of MSE scores. The square root is introduced to make the scale of the errors to be the same as the scale of targets. Similar to MSE, the lower scores for RMSE means better model performance. Therefore, in this project, the models with lower RMSE values will be monitored<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <h4 id="633-r-squaredr2-score">6.3.3 R-Squared(R2) Score</h4>
 <p>R2 score is the goodness-of-fit measure. It&rsquo;s a statistical measure that ranges between 0 and 1. R2 score helps the analyst to understand how similar the fitted line is to the data it is fitted to. The closer it is to one, the more likely the model predicts its variance. Similarly, if the score is zero, the model doesn&rsquo;t predict any variance.
-In this project the R2 score of the test data is calculated. The model with highest R2 scores will be considered<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
+In this project, the R2 score of the test data is calculated. The model with the highest R2 scores will be considered<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <h3 id="64-baseline-linear-regression-model">6.4 Baseline Linear Regression model</h3>
-<p>Wwe use linear regression as our baseline model. For baseline model, we are not hyperparameter tuning. For baseline model, the train RMSE score was 0.6783 and R2 for test set was 0.4460. These values are then compared to other regression models with hyperparameter tuning.</p>
+<p>We use linear regression as our baseline model. For the baseline model, we are not hyperparameter tuning. For the baseline model, the train RMSE score was 0.6783, and R2 for the test set was 0.4460. These values are then compared to other regression models with hyperparameter tuning.</p>
 <h3 id="65-other-regression-models">6.5 Other regression models</h3>
-<p>After developing a baseline model, we are developing four other regression models and comparing the results. We implement feature selection and hyperparameter tuning. As we analysed in exploratory data analysis, some features have strong inter-correlation and these features are dropped. The parameters for the regression models are hypertuned and modelled in GridsearchCV of sklearn package.</p>
+<p>After developing a baseline model, we are developing four other regression models and comparing the results. We implement feature selection and hyperparameter tuning. As we analyzed in exploratory data analysis, some features have strong inter-correlation and these features are dropped. The parameters for the regression models are hyper tuned and modeled in GridsearchCV of sklearn package.</p>
 <p>The models used for prediction are:</p>
 <ul>
-<li>Linear regression with hyperparamter tuning</li>
+<li>Linear regression with hyperparameter tuning</li>
 <li>Gradient boosting</li>
 <li>XGBoost</li>
 <li>Light GBM</li>
 </ul>
-<p>Similar to baseline model, the metrics like train RMSE, test RMSE and test R2 scores are calculated.</p>
+<p>Similar to the baseline model, the metrics like train RMSE, test RMSE, and test R2 scores are calculated.</p>
 <h3 id="66-results">6.6 Results</h3>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/result.png" alt="Figure 9"></p>
-<p><strong>Figure 9:</strong> Performance of all regression models</p>
+<p><strong>Figure 9:</strong> Performance of all the regression models</p>
 <p>Figure 9 documents the performance of all the regression models used.</p>
-<p>cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each steps in this project<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each models are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of best model. Benchmark also provides a detailed report on the system or device information as shown in Table 2.</p>
+<p>cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each step in this project<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each model are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of the best model. Benchmark also provides a detailed report on the system or device information as shown in Table 2.</p>
 <p><strong>Table 2:</strong> Benchmark results</p>
 <table>
 <thead>
@@ -1037,12 +1038,12 @@ In this project the R2 score of the test data is calculated. The model with high
 </tr>
 </tbody>
 </table>
-<p>For the baseline model, the RMSE values were high and R2 scores was small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to baseline model. But other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which lead us to ignore its scores. Gradient boosting and Light GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.</p>
-<p>The RMSE scores for Light GBM are .2896 for train and .2910 for test. The R2 score for test set is .6526.</p>
+<p>For the baseline model, the RMSE values were high and R2 scores were small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to the baseline model. But the other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which leads us to ignore its scores. Gradient boosting and Light GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.</p>
+<p>The RMSE scores for Light GBM are .2896 for train and .2910 for the test. The R2 score for the test set is .6526.</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
-<p>As the importance of electricity is increasing, the need to know how or where the power usage increase will be a life saver for the electricity consumers. In this project, the daily power consumption of a house is analyzed and modelled for a prediction of electricity usage for residences with similar environments. The model considered a set of parameters like weather conditions, weekdays, type of days etc. for prediction. Since the output is power consumption in kWh, we selected regression for modelling and prediction. Experiments are conducted on five regression models. After analyzing the experiment results, we concluded that the performance of Light GBM model is better and faster compared to all other models.</p>
+<p>As the importance of electricity is increasing, the need to know how or where the power usage increase will be a lifesaver for the electricity consumers. In this project, the daily power consumption of a house is analyzed and modeled for a prediction of electricity usage for residences with similar environments. The model considered a set of parameters like weather conditions, weekdays, type of days, etc. for prediction. Since the output is power consumption in kWh, we selected regression for modeling and prediction. Experiments are conducted on five regression models. After analyzing the experiment results, we concluded that the performance of the Light GBM model is better and faster compared to all other models.</p>
 <h2 id="8-acknowledgments">8. Acknowledgments</h2>
-<p>The author would like to express special thanks to Dr. Geoffrey Fox, Dr. Gregor Von Laszewski and all the associate instructors of Big Data Applications course (FA20-BL-ENGR-E534-11530) offered by Indiana University, Bloomington for their continuous guidance and support throughout the project.</p>
+<p>The author would like to express special thanks to Dr. Geoffrey Fox, Dr. Gregor Von Laszewski, and all the associate instructors of the Big Data Applications course (FA20-BL-ENGR-E534-11530) offered by Indiana University, Bloomington for their continuous guidance and support throughout the project.</p>
 <h2 id="9-references">9. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>

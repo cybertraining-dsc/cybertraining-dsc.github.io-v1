@@ -21,24 +21,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Predictive Model For Pitches Thrown By Major League Baseball Pitchers  Please use our template Progress is unclear. It is even unclear if this is a report or a project. For a report no deep analysis is done and it includes tstements that one can think this is a project. For a project refernces to programming are missing.  Bryce Wieczorek, fa20-523-343, Edit
-Abstract The topic of this review is how big data analysis is used in a predictive model for classifying what pitches are going to be thrown next." />
+<meta property="og:description" content="Predictive Model For Pitches Thrown By Major League Baseball Pitchers Bryce Wieczorek, fa20-523-343, Edit
+Abstract The topic of this review is how big data analysis is used in a predictive model for classifying what pitches are going to be thrown next. Baseball is a pitcher’s game, as they can control the tempo. Pitchers have to decide what type of pitch they want to throw to the batter based on how their statistics compare to that of the batters." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-343/report/report/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Predictive Model For Pitches Thrown By Major League Baseball Pitchers  Please use our template Progress is unclear. It is even unclear if this is a report or a project. For a report no deep analysis is done and it includes tstements that one can think this is a project. For a project refernces to programming are missing.  Bryce Wieczorek, fa20-523-343, Edit
-Abstract The topic of this review is how big data analysis is used in a predictive model for classifying what pitches are going to be thrown next.">
+<meta itemprop="description" content="Predictive Model For Pitches Thrown By Major League Baseball Pitchers Bryce Wieczorek, fa20-523-343, Edit
+Abstract The topic of this review is how big data analysis is used in a predictive model for classifying what pitches are going to be thrown next. Baseball is a pitcher’s game, as they can control the tempo. Pitchers have to decide what type of pitch they want to throw to the batter based on how their statistics compare to that of the batters.">
 
-<meta itemprop="wordCount" content="1743">
+<meta itemprop="wordCount" content="1920">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Predictive Model For Pitches Thrown By Major League Baseball Pitchers  Please use our template Progress is unclear. It is even unclear if this is a report or a project. For a report no deep analysis is done and it includes tstements that one can think this is a project. For a project refernces to programming are missing.  Bryce Wieczorek, fa20-523-343, Edit
-Abstract The topic of this review is how big data analysis is used in a predictive model for classifying what pitches are going to be thrown next."/>
+<meta name="twitter:description" content="Predictive Model For Pitches Thrown By Major League Baseball Pitchers Bryce Wieczorek, fa20-523-343, Edit
+Abstract The topic of this review is how big data analysis is used in a predictive model for classifying what pitches are going to be thrown next. Baseball is a pitcher’s game, as they can control the tempo. Pitchers have to decide what type of pitch they want to throw to the batter based on how their statistics compare to that of the batters."/>
 
 
 
@@ -520,9 +520,10 @@ Abstract The topic of this review is how big data analysis is used in a predicti
       </ul>
     </li>
     <li><a href="#3-dataset">3. Dataset</a></li>
-    <li><a href="#4-methodology">4. Methodology</a></li>
-    <li><a href="#5-conclusion">5. Conclusion</a></li>
-    <li><a href="#6-acknowledgements">6. Acknowledgements</a></li>
+    <li><a href="#4-search-and-analysis">4. Search and Analysis</a></li>
+    <li><a href="#5-limitations">5. Limitations</a></li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-references">8 References</a></li>
   </ul>
 </nav>
@@ -565,17 +566,13 @@ Abstract The topic of this review is how big data analysis is used in a predicti
     
 	       
 	<h1 id="predictive-model-for-pitches-thrown-by-major-league-baseball-pitchers">Predictive Model For Pitches Thrown By Major League Baseball Pitchers</h1>
-<ul>
-<li><input disabled="" type="checkbox"> Please use our template</li>
-<li><input disabled="" type="checkbox"> Progress is unclear. It is even unclear if this is a report or a project. For a report no deep analysis is done and it includes tstements that one can think this is a project. For a project refernces to programming are missing.</li>
-</ul>
 <p>Bryce Wieczorek, <a href="https://github.com/cybertraining-dsc/fa20-523-343">fa20-523-343</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-343/blob/main/report/report.md">Edit</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
 <p>The topic of this review is how big data analysis is used in a predictive model for classifying what pitches are going to be thrown next. Baseball is a pitcher’s game, as they can control the tempo. Pitchers have to decide what type of pitch they want to throw to the batter based on how their statistics compare to that of the batters. They need to know what the batter struggles to hit against, and where in the strike zone they struggle the most.</p>
-<p>With the introduction of technology into sports, data scientists are sliding headfirst into Major League Baseball. And with the introduction of Statcast in 2015, The MLB has been looking at different ways to use technology in the game. In 2020 alone, the MLB introduce several different types of technologies to keep the fans engaged with the games while not being able to attend them. In this paper, we will be exploring a predictive model to determine pitches thrown by each pitcher in the MLB. We will be reviewing several predictive models to understand how this can be done with the use of big data.</p>
+<p>With the introduction of technology into sports, data scientists are sliding headfirst into Major League Baseball. And with the introduction of Statcast in 2015, The MLB has been looking at different ways to use technology in the game. In 2020 alone, the MLB introduce several different types of technologies to keep the fans engaged with the games while not being able to attend them [^3]. In this paper, we will be exploring a predictive model to determine pitches thrown by each pitcher in the MLB. We will be reviewing several predictive models to understand how this can be done with the use of big data.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -588,9 +585,10 @@ Abstract The topic of this review is how big data analysis is used in a predicti
       </ul>
     </li>
     <li><a href="#3-dataset">3. Dataset</a></li>
-    <li><a href="#4-methodology">4. Methodology</a></li>
-    <li><a href="#5-conclusion">5. Conclusion</a></li>
-    <li><a href="#6-acknowledgements">6. Acknowledgements</a></li>
+    <li><a href="#4-search-and-analysis">4. Search and Analysis</a></li>
+    <li><a href="#5-limitations">5. Limitations</a></li>
+    <li><a href="#6-conclusion">6. Conclusion</a></li>
+    <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
     <li><a href="#8-references">8 References</a></li>
   </ul>
 </nav>
@@ -607,21 +605,22 @@ Abstract The topic of this review is how big data analysis is used in a predicti
 <p>Baseball players are always looking for a way to have an edge over their opponents. Whether that is through training, recovery, use of supplements, and by watching film or statistics to find what your opponent’s struggle with.</p>
 <p>There are several existing models that have been made to predict pitch type. We plan on examining them to determine how this can be done. We are looking for a general blueprint of which multiple models have used and/or have followed. This also allowed us to see what type of datasets would best be used for an analysis of this sort.</p>
 <h3 id="21-harvard-college-model">2.1 Harvard College Model</h3>
-<p>The first prediction model we studied was done through Harvard University <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. This prediction model was very complex and explored many different types of analysis. They first investigated doing a binary classification model. However, they ultimately decided against this because the label of pitches did not accurately represent what they actual were. This led them into multi-class predictive models in which they used. They used many different types of analysis, some of which included different types of trees, linear discriminant analysis, and vector machines. In this report, they recreated many different types of published work, but they failed at each one. So in the end, they attempted to create their own model that worked.</p>
-<p>We took this advice and decided that we would not try to replicate an already existing model. This way we would be able to use the data and models that we have selected and planned to use. Also, to determine if our model would work and if it would be reasonable to use in future works.</p>
+<p>The first prediction model we studied was done through Harvard University <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. This prediction model was very complex and explored many different types of analysis. They first investigated doing a binary classification model. However, they ultimately decided against this because the label of pitches did not accurately represent what they actual were. This led them into multi-class predictive models in which they used. The other types of analysis were boosted trees, classification trees, random forests, linear discriminant analysis, and vector machines. The main point of this report was to see if they could replicate previous work done, but they ultimately failed at each one. This resulted to them in trying to determine if one can correctly predict pitch type selection. There research showed that machine learning cannot correctly predict pitch type due to the many different aspects that need to be analyzed. They hoped that their work could be used as a reference for future work done.</p>
+<p>We found this article to be very useful in our work since it stands as a reference for future work. We found this to be helpful in our review of predictive models for pitch types due to the different models they tried to replicate.</p>
 <h3 id="22-north-carolina-state-university-model">2.2 North Carolina State University Model</h3>
-<p>The prediction model created by North Carolina State University <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> was creating to predict the next pitch that was going to be thrown. While this is predicting something different than what we are predicting, the model is similar to what we are trying to create.</p>
-<p>Their model compares old data to the current live data of a game, they are using many different types of data to predict the next type of pitch. They are trying to determine if the next pitch will be a fastball or an off-speed pitch. Like the previously mentioned model, this model is also using trees to give a classification output. The parent node is the first type of pitch thrown, which then leads to if the pitch was a strike or a ball, then it uses this information and compares it to their dataset to predict the next set of nodes.</p>
+<p>The prediction model created by North Carolina State University <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> was created to predict the next pitch that was going to be thrown. Their model compared old data to the current live data of a game, they are using many different types of data to predict the next type of pitch. They used a very large database that consisted of 287 MLB pitchers who had an average of 81 different pitch features (pitch type, ball rotation, speed, etc.). They are trying to determine if the next pitch will be a fastball or an off-speed pitch. Like the previously mentioned model, this model is also using trees to give a classification output. The parent node is the first type of pitch thrown, which then leads to if the pitch was a strike or a ball, then it uses this information and compares it to their dataset to predict the next set of nodes.</p>
+<p>We found this to be very useful for our review since their model worked correctly and it used current data from the game. With Statcast today, we find this to be very important since all of this information is recorded and logged as each pitch is thrown.</p>
 <h2 id="3-dataset">3. Dataset</h2>
-<p>Major League Baseball first started using Statcast in 2015, after a successful trial run in 2014. Statcast <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> provided the MLB with a way to collect and analyze huge amounts of data in real time. Some of the data it collects, which relates to our model, includes the pitcher’s name, pitch type, release spin, and release speed. While it does look at many other aspects of the game, we are focusing primarily on these statistics to draw our conclusions.</p>
-<p>Since we do not need all the data Statcast collects, we found a dataset with the datatypes listed above <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. This dataset contains the average statistics for each pitch thrown by every player who had pitched in any MLB game in 2019. However, we feel as if we need to include Statcast data from the year before and possibly the year before that. This way we can account for players who had to sit out the 2019 season due to injury and/or suspension.</p>
-<h2 id="4-methodology">4. Methodology</h2>
-<p>In order to build an accurate model to predict which pitch was just thrown. By examining the models mentioned in section 3, we determined that the best predictive model for us to use was to use a similarity analysis model. This model allows us to take old data and compare it to the live data of the pitch. By comparing the live data to the older data, we should be able to determine which pitch type was just thrown. We then can compare our results to the results from Statcast to determine the efficiency of our model.</p>
-<p>Since our dataset has the average of each statistic, we plan on comparing, we determined that our predictive model would be much different than the models used in the work we studied. The models we studied, were more advanced statistical models that looked at many different aspects of the game of baseball. We decided to stay away from these types of approach and look at a way to determine the pitch type in an easy to understand model.</p>
-<p>While our dataset contained statistics to every player who threw a pitch in the 2019 season, we first decided to narrow the amount of data down to only look at the player who was pitching at the time. This will allow our algorithm to work faster and more efficiently as it will not be determining who the pitcher is. The next thing that our model would be doing, is using the data collected from live Statcast reporting and comparing that data to the data in our dataset. This will then predict what type of pitch was just thrown by the pitcher.</p>
-<h2 id="5-conclusion">5. Conclusion</h2>
-<p>While our model is a very simple and noncomplex as the models we reviewed, we expect it to work. Even though we did not write a program to determine so. Statcast would be the biggest contributor to our work. Statcast has provided our dataset and the data we would need to make our prediction model work. Although it does already predict what our model is trying to do, we feel as if it is still important test if their model is 100% effect. For future work we plan on implementing our model into a program to test if it works. And if so, determine how accurate it is to Statcast in live situations.</p>
-<h2 id="6-acknowledgements">6. Acknowledgements</h2>
+<p>Major League Baseball first started using Statcast in 2015, after a successful trial run in 2014. Statcast <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> provided the MLB with a way to collect and analyze huge amounts of data in real time. Some of the data it collects, which is used in many different models, includes the pitcher’s name, pitch type, release spin, release speed, and the amount of times each pitch was thrown.</p>
+<p>Since we do not need all the data Statcast collects, we found a dataset with the datatypes listed above <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. We chose this dataset because it contains a significant amount of data that can be used for a prediction model. The dataset contains a lot of information about not only the pitchers, but about the batters. The database shows what each batter has done against every type of pitch they have faced, whether they hit the ball, fouled it, swung and missed, etc. We felt as if this data is very important as well since coaches and pitchers will want to know how the batter reacts to different pitches and the different locations of each pitch. This would be a vital part to any pitch prediction model as coaches signal to the pitchers what types of pitches to throw according the strengths and weaknesses of the batters.</p>
+<h2 id="4-search-and-analysis">4. Search and Analysis</h2>
+<p>After conducting our background research, we determined that in order to build an accurate model to predict which pitch was just thrown, you would need to use a similarity analysis tool model with classification trees. This model allows us to take old data and compare it to the live data of the pitch. By comparing the live data to the older data, it will give the most accurate results due to how the players are playing during that game. A batter may struggle with a certain type of pitch that day and not another.</p>
+<p>The similarity analysis tool model would best be used to find instances of the batter in certain pitch counts. For instance, this tool would analyze the different amount of times the batter has faced a count 1 – 2 (1 ball and two strikes), and then find what pitch they saw next and what the outcome was. This information would then be filtered to see what pitch will have the best outcome for the pitcher, it would tell them what pitch to throw and where to throw it. This is where the classification trees would then be used. The trees would classify the recommended pitches to throw and their location to the types of pitches that they throw.</p>
+<h2 id="5-limitations">5. Limitations</h2>
+<p>There are several limitations to predictive models for pitch types <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. he biggest is pitch classification itself. Pitchers ultimately pick what types of pitches they throw and as some pitches behave like others, different pitchers can classify the same pitch type as something else. For example, the traditional curve ball and a knuckle curve react the same. Other classification challenges that can be faced can be related to how the pitcher is playing. As the game goes on, pitcher’s velocities traditionally decrease due to their arms tiring, this could result in misidentification between different types of fastballs. The last limitation that could affect the pitch classification could be the PITCHf/x system malfunctioning or interference with the system.</p>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<p>This report discusses the use of predictive model in baseball and how they can be used to predict the next pitch thrown. By reviewing previous models down by Harvard <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and by North Carolina State University <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, we determined that the best way to build a predictive model would be by using a similarity analysis tool model with classification trees. With the Carolina State University’s successful model, we also concluded that there were limitations to it, as different pitchers classify their pitches differently and telling different pitches apart due to the similar behaviors. The use of predictive models in baseball could change the game as it gives the pitchers an advantage over the batters. We hope that this report can show how big analytics can affect the game of baseball.</p>
+<h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8 References</h2>
 <section class="footnotes" role="doc-endnotes">
@@ -640,7 +639,10 @@ Abstract The topic of this review is how big data analysis is used in a predicti
 <p>Sidle, Glenn. 2017. Using Multi-Class Classification Methods to Predict Baseball Pitch Types. North Carolina State University. <a href="https://projects.ncsu.edu/crsc/reports/ftp/pdf/crsc-tr17-10.pdf">https://projects.ncsu.edu/crsc/reports/ftp/pdf/crsc-tr17-10.pdf</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Layton, Wes. 2019. Statcast Pitching Summary. Kaggle. <a href="https://www.kaggle.com/weslayton/2019-statcast-pitching-summary?select=2019_statcast_summary_2.csv">https://www.kaggle.com/weslayton/2019-statcast-pitching-summary?select=2019_statcast_summary_2.csv</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Schale, Paul. 2020. MLB Pitch Data 2015-2018. Kaggle <a href="https://www.kaggle.com/pschale/mlb-pitch-data-20152018">https://www.kaggle.com/pschale/mlb-pitch-data-20152018</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Sharpe, Sam. 2020. MLB Pitch Classification. Medium. <a href="https://technology.mlblogs.com/mlb-pitch-classification-64a1e32ee079">https://technology.mlblogs.com/mlb-pitch-classification-64a1e32ee079</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
