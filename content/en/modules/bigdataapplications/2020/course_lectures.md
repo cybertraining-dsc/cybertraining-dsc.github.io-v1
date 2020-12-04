@@ -223,3 +223,11 @@ This weeks video class went through project questions.
 {{< youtube "dVjn_FShMqY" >}}.
 
 The class is formally finished. Please submit your homework and project.
+
+## Week 14
+
+This weeks video class went through project questions.
+
+{{< youtube "qycWtXja8O4" >}}.
+
+The class is formally finished. Please submit your homework and project.
