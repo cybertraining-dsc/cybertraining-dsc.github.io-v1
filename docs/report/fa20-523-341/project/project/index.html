@@ -32,7 +32,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy.">
 
-<meta itemprop="wordCount" content="2328">
+<meta itemprop="wordCount" content="2428">
 
 
 
@@ -521,14 +521,11 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     <li><a href="#4-project-goals">4. Project Goals</a></li>
     <li><a href="#5-analysis">5. Analysis</a>
       <ul>
-        <li><a href="#51-data-collection">5.1 Data Collection</a>
-          <ul>
-            <li><a href="#511-accumulating-lyrics">5.1.1 Accumulating lyrics</a></li>
-            <li><a href="#performance-of-sentiment-analysis-on-lyrics">Performance of sentiment analysis on lyrics</a></li>
-            <li><a href="#description-of-select-data-fields">Description of select data fields</a></li>
-            <li><a href="#preliminary-analysis-of-data">Preliminary Analysis of Data</a></li>
-          </ul>
-        </li>
+        <li><a href="#51-accumulation-of-lyrics">5.1 Accumulation of lyrics</a></li>
+        <li><a href="#52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</a></li>
+        <li><a href="#53-performance-of-sentiment-analysis-on-lyrics">5.3 Performance of sentiment analysis on lyrics</a></li>
+        <li><a href="#description-of-select-data-fields">Description of select data fields</a></li>
+        <li><a href="#preliminary-analysis-of-data">Preliminary Analysis of Data</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -597,14 +594,11 @@ Status: in progress</p>
     <li><a href="#4-project-goals">4. Project Goals</a></li>
     <li><a href="#5-analysis">5. Analysis</a>
       <ul>
-        <li><a href="#51-data-collection">5.1 Data Collection</a>
-          <ul>
-            <li><a href="#511-accumulating-lyrics">5.1.1 Accumulating lyrics</a></li>
-            <li><a href="#performance-of-sentiment-analysis-on-lyrics">Performance of sentiment analysis on lyrics</a></li>
-            <li><a href="#description-of-select-data-fields">Description of select data fields</a></li>
-            <li><a href="#preliminary-analysis-of-data">Preliminary Analysis of Data</a></li>
-          </ul>
-        </li>
+        <li><a href="#51-accumulation-of-lyrics">5.1 Accumulation of lyrics</a></li>
+        <li><a href="#52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</a></li>
+        <li><a href="#53-performance-of-sentiment-analysis-on-lyrics">5.3 Performance of sentiment analysis on lyrics</a></li>
+        <li><a href="#description-of-select-data-fields">Description of select data fields</a></li>
+        <li><a href="#preliminary-analysis-of-data">Preliminary Analysis of Data</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -651,31 +645,44 @@ Status: in progress</p>
 </li>
 </ul>
 <h2 id="5-analysis">5. Analysis</h2>
-<h3 id="51-data-collection">5.1 Data Collection</h3>
-<h4 id="511-accumulating-lyrics">5.1.1 Accumulating lyrics</h4>
+<h3 id="51-accumulation-of-lyrics">5.1 Accumulation of lyrics</h3>
 <p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSOup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered a little over 6000 Spotify tracks</p>
-<h4 id="performance-of-sentiment-analysis-on-lyrics">Performance of sentiment analysis on lyrics</h4>
+<h3 id="52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</h3>
+<p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSOup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered a little over 6000 Spotify tracks</p>
+<h3 id="53-performance-of-sentiment-analysis-on-lyrics">5.3 Performance of sentiment analysis on lyrics</h3>
 <p>With a song&rsquo;s lyrics in hand, we used NLTK&rsquo;s sentiment module, Vader, to read each line in the lyrics. NLTK Vader reads a line of text and gives a scores on positivity, negativity, neutrality, and and overall compound score. We marked lines with a compound score greater than 0.5 as positive, less than -0.1 as negative, and anything in between as neutral. We then found the percentages of positive, negative, and neutral lines in a song&rsquo;s composition and saved them to our data set.</p>
 <p>We performed a brief analysis of the legibility of the Vader module in determining sentiment on four separate strings. &ldquo;I&rsquo;m happy&rdquo; and &ldquo;I&rsquo;m so happy&rdquo; were used to compare two positive lines, &ldquo;I&rsquo;m happy&rdquo; was expected to have a positive compound score, but slightly less positive than &ldquo;I&rsquo;m so happy&rdquo;. Similarly, we used two negative lines &ldquo;I&rsquo;m sad&rdquo; and the slightly more extreme, &ldquo;I&rsquo;m so sad&rdquo; which were expected to result in negative compound scores with &ldquo;I&rsquo;m sad&rdquo; being less negative than &ldquo;I&rsquo;m so sad&rdquo;.</p>
 <pre><code>Scores for 'I'm happy': {
-   'neg': 0.0, 
-   'neu': 0.213, 
-   'pos': 0.787, 
-   'compound': 0.5719
+    'neg': 0.0, 
+    'neu': 0.213, 
+    'pos': 0.787, 
+    'compound': 0.5719
 }
 
 Scores for 'I'm so happy': {
- 'neg': 0.0, 
- 'neu': 0.334, 
- 'pos': 0.666, 
- 'compound': 0.6115}
+    'neg': 0.0, 
+    'neu': 0.334, 
+    'pos': 0.666, 
+    'compound': 0.6115
+}
 
-Scores for 'I'm sad': {'neg': 0.756, 'neu': 0.244, 'pos': 0.0, 'compound': -0.4767}
+Scores for 'I'm sad': {
+    'neg': 0.756, 
+    'neu': 0.244, 
+    'pos': 0.0, 
+    'compound': -0.4767
+}
 
-Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0.5256}
+Scores for 'I'm so sad': {
+    'neg': 0.629, 
+    'neu': 0.371, 
+    'pos': 0.0, 
+    'compound': -0.5256
+}
 </code></pre><p>While these results confirmed our expectations, one issue that comes to the table is that Vader takes into consideration additional string features such as punctuation in its determination of score, meaning &ldquo;I&rsquo;m so sad!&rdquo; will be more negative than &ldquo;I&rsquo;m so sad&rdquo;. Since lyrics on Genius are contributed by the community, in most cases there is a lack of consistency using accurate punctuation. Additionally in some cases there can be typos present in a line of lyrics, both of which can skew our data. However we determined that our method in using the Vader module is suitable for our project as we simply want to determine if a track is positive or negative without needing to be too specific.</p>
 <p>In addition to performing sentiment analysis on the lyrics, we tokenized the lyrics, removing common words such as &lsquo;a&rsquo;, &lsquo;the&rsquo;,&lsquo;for&rsquo;, etc. This was done to collect data on the number of meaningful and number of non-repeating words in each song. Albeit while this data was never used in our study, it could prove useful in future studies.</p>
 <p><em>Table 1</em> displays a snapshot of the data we collected from seven tracks released in 2020. The dataset contains 27 fields, 13 of which describe the audio content of a track, and 8 of which describe the lyrics of the track.</p>
+<p><strong>Table 1:</strong> Snapshot of dataset containing tracks released in 2020</p>
 <table>
 <thead>
 <tr>
@@ -683,18 +690,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <th>energy</th>
 <th>key</th>
 <th>loudness</th>
-<th>mode</th>
 <th>speechiness</th>
 <th>acousticness</th>
 <th>instrumentalness</th>
 <th>liveness</th>
 <th>valence</th>
 <th>tempo</th>
-<th>type</th>
-<th>id</th>
-<th>uri</th>
-<th>track_href</th>
-<th>analysis_url</th>
 <th>duration_ms</th>
 <th>time_signature</th>
 <th>name</th>
@@ -715,18 +716,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <td>0.548</td>
 <td>10</td>
 <td>-8.493</td>
-<td>1</td>
 <td>0.353</td>
 <td>0.65</td>
 <td>1.59E-06</td>
 <td>0.133</td>
 <td>0.543</td>
 <td>83.995</td>
-<td>audio_features</td>
-<td>1tkg4EHVoqnhR6iFEXb60y</td>
-<td>spotify:track:1tkg4EHVoqnhR6iFEXb60y</td>
-<td><a href="https://api.spotify.com/v1/tracks/1tkg4EHVoqnhR6iFEXb60y">https://api.spotify.com/v1/tracks/1tkg4EHVoqnhR6iFEXb60y</a></td>
-<td><a href="https://api.spotify.com/v1/audio-analysis/1tkg4EHVoqnhR6iFEXb60y">https://api.spotify.com/v1/audio-analysis/1tkg4EHVoqnhR6iFEXb60y</a></td>
 <td>160000</td>
 <td>4</td>
 <td>What You Know Bout Love</td>
@@ -745,18 +740,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <td>0.66</td>
 <td>1</td>
 <td>-6.153</td>
-<td>0</td>
 <td>0.079</td>
 <td>0.256</td>
 <td>0</td>
 <td>0.111</td>
 <td>0.471</td>
 <td>140.04</td>
-<td>audio_features</td>
-<td>02kDW379Yfd5PzW5A6vuGt</td>
-<td>spotify:track:02kDW379Yfd5PzW5A6vuGt</td>
-<td><a href="https://api.spotify.com/v1/tracks/02kDW379Yfd5PzW5A6vuGt">https://api.spotify.com/v1/tracks/02kDW379Yfd5PzW5A6vuGt</a></td>
-<td><a href="https://api.spotify.com/v1/audio-analysis/02kDW379Yfd5PzW5A6vuGt">https://api.spotify.com/v1/audio-analysis/02kDW379Yfd5PzW5A6vuGt</a></td>
 <td>195429</td>
 <td>4</td>
 <td>Lemonade</td>
@@ -775,18 +764,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <td>0.73</td>
 <td>1</td>
 <td>-5.934</td>
-<td>1</td>
 <td>0.0598</td>
 <td>0.00146</td>
 <td>9.54E-05</td>
 <td>0.0897</td>
 <td>0.334</td>
 <td>171.005</td>
-<td>audio_features</td>
-<td>0VjIjW4GlUZAMYd2vXMi3b</td>
-<td>spotify:track:0VjIjW4GlUZAMYd2vXMi3b</td>
-<td><a href="https://api.spotify.com/v1/tracks/0VjIjW4GlUZAMYd2vXMi3b">https://api.spotify.com/v1/tracks/0VjIjW4GlUZAMYd2vXMi3b</a></td>
-<td><a href="https://api.spotify.com/v1/audio-analysis/0VjIjW4GlUZAMYd2vXMi3b">https://api.spotify.com/v1/audio-analysis/0VjIjW4GlUZAMYd2vXMi3b</a></td>
 <td>200040</td>
 <td>4</td>
 <td>Blinding Lights</td>
@@ -805,18 +788,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <td>0.613</td>
 <td>9</td>
 <td>-6.13</td>
-<td>0</td>
 <td>0.128</td>
 <td>0.00336</td>
 <td>0</td>
 <td>0.267</td>
 <td>0.0804</td>
 <td>149.972</td>
-<td>audio_features</td>
-<td>2U5WueTLIK5WJLD7mvDODv</td>
-<td>spotify:track:2U5WueTLIK5WJLD7mvDODv</td>
-<td><a href="https://api.spotify.com/v1/tracks/2U5WueTLIK5WJLD7mvDODv">https://api.spotify.com/v1/tracks/2U5WueTLIK5WJLD7mvDODv</a></td>
-<td><a href="https://api.spotify.com/v1/audio-analysis/2U5WueTLIK5WJLD7mvDODv">https://api.spotify.com/v1/audio-analysis/2U5WueTLIK5WJLD7mvDODv</a></td>
 <td>194621</td>
 <td>4</td>
 <td>Wishing Well</td>
@@ -835,18 +812,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <td>0.802</td>
 <td>0</td>
 <td>-4.771</td>
-<td>1</td>
 <td>0.0878</td>
 <td>0.468</td>
 <td>0</td>
 <td>0.0931</td>
 <td>0.682</td>
 <td>144.015</td>
-<td>audio_features</td>
-<td>35mvY5S1H3J2QZyna3TFe0</td>
-<td>spotify:track:35mvY5S1H3J2QZyna3TFe0</td>
-<td><a href="https://api.spotify.com/v1/tracks/35mvY5S1H3J2QZyna3TFe0">https://api.spotify.com/v1/tracks/35mvY5S1H3J2QZyna3TFe0</a></td>
-<td><a href="https://api.spotify.com/v1/audio-analysis/35mvY5S1H3J2QZyna3TFe0">https://api.spotify.com/v1/audio-analysis/35mvY5S1H3J2QZyna3TFe0</a></td>
 <td>172325</td>
 <td>4</td>
 <td>positions</td>
@@ -865,18 +836,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <td>0.425</td>
 <td>5</td>
 <td>-7.301</td>
-<td>1</td>
 <td>0.0333</td>
 <td>0.584</td>
 <td>0</td>
 <td>0.322</td>
 <td>0.27</td>
 <td>102.078</td>
-<td>audio_features</td>
-<td>4xqrdfXkTW4T0RauPLv3WA</td>
-<td>spotify:track:4xqrdfXkTW4T0RauPLv3WA</td>
-<td><a href="https://api.spotify.com/v1/tracks/4xqrdfXkTW4T0RauPLv3WA">https://api.spotify.com/v1/tracks/4xqrdfXkTW4T0RauPLv3WA</a></td>
-<td><a href="https://api.spotify.com/v1/audio-analysis/4xqrdfXkTW4T0RauPLv3WA">https://api.spotify.com/v1/audio-analysis/4xqrdfXkTW4T0RauPLv3WA</a></td>
 <td>198040</td>
 <td>3</td>
 <td>Heather</td>
@@ -895,18 +860,12 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <td>0.585</td>
 <td>0</td>
 <td>-6.476</td>
-<td>1</td>
 <td>0.094</td>
 <td>0.237</td>
 <td>0</td>
 <td>0.248</td>
 <td>0.485</td>
 <td>109.978</td>
-<td>audio_features</td>
-<td>6Im9k8u9iIzKMrmV7BWtlF</td>
-<td>spotify:track:6Im9k8u9iIzKMrmV7BWtlF</td>
-<td><a href="https://api.spotify.com/v1/tracks/6Im9k8u9iIzKMrmV7BWtlF">https://api.spotify.com/v1/tracks/6Im9k8u9iIzKMrmV7BWtlF</a></td>
-<td><a href="https://api.spotify.com/v1/audio-analysis/6Im9k8u9iIzKMrmV7BWtlF">https://api.spotify.com/v1/audio-analysis/6Im9k8u9iIzKMrmV7BWtlF</a></td>
 <td>173711</td>
 <td>4</td>
 <td>34+35</td>
@@ -922,8 +881,7 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 </tr>
 </tbody>
 </table>
-<p><strong>Table 1:</strong> Snapshot of dataset containing tracks released in 2020</p>
-<h4 id="description-of-select-data-fields">Description of select data fields</h4>
+<h3 id="description-of-select-data-fields">Description of select data fields</h3>
 <p>The following terms defined are important in our analyses. In our data set most terms contain are represented by a  value between 0 and 1, indicating least to most. For example, looking at the first two rows in <em>Table 1</em>, we can see that the track by the artist, Pop Smoke, has a greater speechiness score, indicating a greater percentage of that song contains spoken word.</p>
 <ul>
 <li><strong>Danceability:</strong> uses several musical elements (tempo, stability, beat strength, regularity) to determine how suitable a given track is for dancing</li>
@@ -938,7 +896,7 @@ Scores for 'I'm so sad': {'neg': 0.629, 'neu': 0.371, 'pos': 0.0, 'compound': -0
 <li><strong>Negativity</strong> percentage of lines in a song&rsquo;s lyrics determined to have a negative sentiment score</li>
 </ul>
 <p>Out of these fields, we seek to find which audio features correlate to a song&rsquo;s valence and if our positivity and negativity scores of a song&rsquo;s lyrics provide any meaningfullness in determining a song&rsquo;s positivity. For the purpose of this study we mainly focus on valence, energy, danceability, positivity, and negativity.</p>
-<h4 id="preliminary-analysis-of-data">Preliminary Analysis of Data</h4>
+<h3 id="preliminary-analysis-of-data">Preliminary Analysis of Data</h3>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/all_tracks_heatmap.png" alt="Heatmap"></p>
 <p><strong>Figure 1:</strong> Heatmap of data with fields valence, energy, danceability, positivity, negativity</p>
 <p>Referring to <em>Figure 1</em>, we find that track lyrics tend to be more negative than positive. However for the most part, even with tracks with negative lyrics, the valence, or overall happiness of the audio features hovers around 0.5; indicating that most songs tend to have neutral audio features. Looking at tracks with lyrics that are highly positive we find that the valence rises to about 0.7 to 0.8 and that songs with extremely high negatively also cause the valence to drop to the 0.3 range. These observations indicate that only extremes in lyrical sentiment correlate significantly in a song&rsquo;s valence, as some songs with negative lyrics may also be fast-tempo and energetic, keeping the valence relatively high compared to lyrical composition. This is shown in our visualization, where both tracks with positive and negative lyricals have high energy and danceability values, indicating fast-tempos and high-pitches.</p>
