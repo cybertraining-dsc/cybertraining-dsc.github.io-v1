@@ -32,7 +32,7 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
 Rama Asuri, fa20-523-319, Edit
 Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life.">
 
-<meta itemprop="wordCount" content="1795">
+<meta itemprop="wordCount" content="1847">
 
 
 
@@ -536,9 +536,10 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
     </li>
     <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
-    <li><a href="#8-project-plan">8. Project plan</a></li>
+    <li><a href="#7-future-plans">7. Future Plans</a></li>
+    <li><a href="#8-acknowledgements">8. Acknowledgements</a></li>
     <li><a href="#9-references">9. References</a></li>
+    <li><a href="#10-appendix">10. Appendix</a></li>
   </ul>
 </nav>
 
@@ -614,9 +615,10 @@ Status: in progress</p>
     </li>
     <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
-    <li><a href="#8-project-plan">8. Project plan</a></li>
+    <li><a href="#7-future-plans">7. Future Plans</a></li>
+    <li><a href="#8-acknowledgements">8. Acknowledgements</a></li>
     <li><a href="#9-references">9. References</a></li>
+    <li><a href="#10-appendix">10. Appendix</a></li>
   </ul>
 </nav>
 </div>
@@ -627,16 +629,7 @@ Status: in progress</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Radiologists widely use chest X-Rays to identify and detect underlying conditions. However, analyzing Chest X-Rays takes too much time, and accurately diagnosing without errors requires considerable experience. On the one hand, if the analyzing process is expedited, it might result in misdiagnosis, but on the other hand, lack of experience means long analysis time and/or errors; even with the correct diagnosis, it might be too late to prescribe a treatment. Radiologists are up against time and experience. With the advancements in AI, Deep Learning can easily solve this problem quickly and efficiently.</p>
 <p>Deep Learning methods are becoming very reliable at achieving expert-level performance using large labeled datasets. Deep learning is a technique to extract and transform data using multiple layers of neural networks. Each layer takes inputs from previous layers and incrementally refines it. An algorithm is used to train these layers to minimize errors and improve these layers&rsquo; overall accuracy <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It enables the network to learn to perform a specified task and gain an expert level performance by training on large datasets. The scope of this project is to identify and detect the following 5 pathologies using an image classification algorithm: Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion.  We use the CheXpert dataset, which consists of Chest X-rays. CheXpert dataset contains 224,316 chest Radiographs of 65,240 patients. The dataset has 14 observations in radiology reports and captures uncertainties inherent in radiograph interpretation using uncertainty labels. Our focus is on 5 observations (Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion). We impute uncertainty labels with randomly selected Boolean values.  Our Deep Learning models are developed using the PyTorch library, enabling fast, flexible experimentation and efficient production through a user-friendly front-end, distributed training, and ecosystem of tools and libraries<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. It was primarily developed by Facebook&rsquo;s AI Research lab (FAIR) and used for Computer Vision and NLP applications. PyTorch supports Python and C++ interfaces. There are popular Deep Learning applications built using PyTorch, including Tesla Autopilot, Uber&rsquo;s Pyro, etc. <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
-<p>In this report, we will cover the following:</p>
-<ul>
-<li>Overview of PyTorch library and DenseNet</li>
-<li>Overview of CheXpert dataset</li>
-<li>Basics of AUC-ROC Curve</li>
-<li>Chest X-Rays - Multi-Image Classification Using Deep Learning Model</li>
-<li>Conclusion</li>
-<li>Acknowledgements</li>
-<li>References</li>
-</ul>
+<p>In this analysis, first, we begin with an overview of the PyTorch library and DenseNet. We cover DenseNet architecture and advantages over ResNet for Multi-Image classification problems. Second, we explain the CheXpert dataset and how the classifiers are labeled, including uncertainties. Next, we explain the basic definitions of the AUC-ROC curve and how it measures a model&rsquo;s performance. Finally, we cover how our Deep Learning model classifies pathologies and concludes with the model&rsquo;s performance and prediction of the pathologies.</p>
 <h2 id="2-overview-of-pytorch-library-and-densenet">2. Overview Of PyTorch Library And DenseNet</h2>
 <p>The PyTorch library is based on Python and is used for developing Python deep learning models. Many of the early adopters of the PyTorch are from the research community. It grew into one of the most popular libraries for deep learning projects. PyTorch provides great insight into Deep Learning. PyTorch is widely used in real-world applications. PyTorch makes an excellent choice for introducing deep learning because of clear syntax, streamlined API, and easy debugging. PyTorch provides a core data structure, the tensor, a multidimensional array similar to NumPy arrays. It performs accelerated mathematical operations on dedicated hardware, making it convenient to design neural network architectures and train them on individual machines or parallel computing resources <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <p>We use a pre-trained DenseNet model, which classifies the images. DenseNet is efficient on image classification benchmarks as compared to ResNet <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
@@ -713,9 +706,12 @@ Similarly, when we increase the threshold, we get more negative values thus we g
 <p>Model was able to predict False Positives. Below is AUCROC table.
 <img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/roc.png" alt="Figure 8"></p>
 <p><strong>Figure 8:</strong> AUC - ROC Curve</p>
-<h2 id="7-acknowledgements">7. Acknowledgements</h2>
+<h2 id="7-future-plans">7. Future Plans</h2>
+<h2 id="8-acknowledgements">8. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors for providing continuous guidance and feedback for this final project.</p>
-<h2 id="8-project-plan">8. Project plan</h2>
+<h2 id="9-references">9. References</h2>
+<h2 id="10-appendix">10. Appendix</h2>
+<p>###10.1 Project Plan</p>
 <ul>
 <li>October 26, 2020
 <ul>
@@ -752,7 +748,6 @@ Similarly, when we increase the threshold, we get more negative values thus we g
 </ul>
 </li>
 </ul>
-<h2 id="9-references">9. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
