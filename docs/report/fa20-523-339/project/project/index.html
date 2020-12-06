@@ -32,7 +32,7 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
 Tao Liu, fa20-523-339, Edit
 Abstract As a result of last twenty year&rsquo;s Internet development in the global, E-commerce industry is getting stronger and stronger. While customers enjoyed their convenient online purchase environment, the E-commerce see the potential for the data and information customer left during their online-shopping process.">
 
-<meta itemprop="wordCount" content="2862">
+<meta itemprop="wordCount" content="2963">
 
 
 
@@ -792,6 +792,9 @@ Item  8 :  [14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 290, 14.5, 14.5, 14.
 Item  9 :  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ...]
 Item  10 :  [1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 6, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ...]
 </code></pre><p><strong>Figure 8:</strong> The shortcut for recommenation rate matrix</p>
+<p>The first similarity method implemented is <em>Cosine Similarity</em> <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.It will use the cosine of the angle between vectors(see <strong>Figure 9</strong>) to address the similarity between different items. By implementing this method with <em>sklearn.metrics.pairwise</em> package, it will rephrase the whole recommendation similarity as <strong>table 2</strong>.</p>
+<p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d94e5903f7936d3c131e040ef2c51b473dd071d" alt="image info"></p>
+<p><strong>Figure 9:</strong> The cosine similarity</p>
 <table>
 <thead>
 <tr>
@@ -851,14 +854,15 @@ Item  10 :  [1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 6, 1.5, 1.5, 1.5,
 </tbody>
 </table>
 <p><strong>table 2:</strong> The shortcut for using consine similarity to address the recommendation result</p>
+<p>The second similarity method implemented is <em>Euclidean Distance Similarity</em><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. It will use Euclidean Distance to calculate the distance between each similarity</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>This section will be addressed upon project completion.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-339/raw/main/project/images/CosVSEuc.jpeg" alt="image info"></p>
-<p><strong>Figure 9:</strong> The Cosine similarity and Euclidean Distance Accuracy Comparison</p>
+<p><strong>Figure 10:</strong> The Cosine similarity and Euclidean Distance Accuracy Comparison</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-339/raw/main/project/images/bothrightandwrong.jpeg" alt="image info"></p>
-<p><strong>Figure 10:</strong> The bothright and bothwrong accuracy comparison</p>
+<p><strong>Figure 11:</strong> The bothright and bothwrong accuracy comparison</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-339/raw/main/project/images/timecompare.jpeg" alt="image info"></p>
-<p><strong>Figure 11:</strong> The Cosine Similarity and Euclidean Distance Time Comparison</p>
+<p><strong>Figure 12:</strong> The Cosine Similarity and Euclidean Distance Time Comparison</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8. References</h2>
@@ -866,7 +870,7 @@ Item  10 :  [1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 6, 1.5, 1.5, 1.5,
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Build a Recommendation Engine With Collaborative Filtering Ajitsaria, A 2020
+<p>Build a Recommendation Engine With Collaborative Filtering. Ajitsaria, A. 2020
 <a href="https://realpython.com/build-recommendation-engine-collaborative-filtering/">https://realpython.com/build-recommendation-engine-collaborative-filtering/</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
@@ -874,6 +878,14 @@ Item  10 :  [1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 6, 1.5, 1.5, 1.5,
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>meta_Gift_Cards.json.gz <a href="http://deepyeti.ucsd.edu/jianmo/amazon/metaFiles/meta_Gift_Cards.json.gz">http://deepyeti.ucsd.edu/jianmo/amazon/metaFiles/meta_Gift_Cards.json.gz</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Recommendation Systems : User-based Collaborative Filtering using N Nearest Neighbors. Ashay Pathak. 2019
+<a href="https://medium.com/sfu-cspmp/recommendation-systems-user-based-collaborative-filtering-using-n-nearest-neighbors-bf7361dc24e0">https://medium.com/sfu-cspmp/recommendation-systems-user-based-collaborative-filtering-using-n-nearest-neighbors-bf7361dc24e0</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Similarity and Distance Metrics for Data Science and Machine Learning. Gonzalo Ferreiro Volpi. 2019
+<a href="https://medium.com/dataseries/similarity-and-distance-metrics-for-data-science-and-machine-learning-e5121b3956f8">https://medium.com/dataseries/similarity-and-distance-metrics-for-data-science-and-machine-learning-e5121b3956f8</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
