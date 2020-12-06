@@ -184,6 +184,7 @@ for line in content.splitlines():
     for word in ["prefer",
                      "will",
                      "chose",
+                     "chose",
                      "thought",
                      "have",
                      "want",
@@ -195,7 +196,7 @@ for line in content.splitlines():
                      "need",
                      "figured",
                      "pick"]:
-        if f" I {word}" in line:
+        if f" I {word}" in line or line.strip().startswith("I "):
             error(f"Line {counter}: we found I in your report, please do not use I {word}.")
 
     # Check for contractions
