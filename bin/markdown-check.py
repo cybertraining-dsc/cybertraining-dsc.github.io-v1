@@ -196,10 +196,14 @@ for line in content.splitlines():
                      "need",
                      "figured",
                      "pick"]:
-        if f" I {word}" in line or line.strip().startswith("I "):
+        if f" I {word}" in line:
             error(f"Line {counter}: we found I in your report, please do not use I {word}.")
 
+     if line.strip().startswith("I "):
+            error(f"Line {counter}: we found I in your report, please do not start a sentence with I")
+
     # Check for contractions
+
     
     for word in ["'t", "'re", "'d", "'s", "'m"]:
         if f"I {word}" in line:
