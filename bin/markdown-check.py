@@ -110,7 +110,7 @@ for line in content.splitlines():
     line = line.strip()
     counter = counter + 1 
     if line.startswith("!["):
-        if if "https://github.com/cybertraining-dsc" in line and "raw" not in line:
+        if "https://github.com/cybertraining-dsc" in line and "raw" not in line:
             error(f"Line {counter}: Image must be included from raw. URL wrong.")
 
         ending = line.rsplit(".")[-1][:-1]
