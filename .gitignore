@@ -9,7 +9,7 @@ docs/report/*/README.yml
 docs/report/*/assignments
 docs/report/*/backup/
 docs/report/*/paper/*.bib
-docs/report/*/paper/*/bin
+docs/report/*/paper/bin
 docs/report/*/paper/*.cls
 docs/report/*/paper/*.csl
 docs/report/*/paper/*.latex
