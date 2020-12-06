@@ -619,7 +619,15 @@
   </url>
   
   <url>
+    <loc>/report/cloudmesh-openapi/readme-eigenfaces-test/</loc>
+  </url>
+  
+  <url>
     <loc>/report/cloudmesh-openapi/readme-scikitlearn/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/cloudmesh-openapi/readme-security/</loc>
   </url>
   
   <url>

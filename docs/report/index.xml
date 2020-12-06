@@ -1607,6 +1607,161 @@ red    Ready    master   9d    v1.19.3+k3s3&lt;/p&gt;
     
     <item>
       <title>Report: </title>
+      <link>/report/cloudmesh-openapi/readme-eigenfaces-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/readme-eigenfaces-test/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;run-instructions-for-the-eigenfaces-svm-example-by-os&#34;&gt;Run Instructions for the Eigenfaces SVM example by OS&lt;/h2&gt;
+&lt;h3 id=&#34;unbutu&#34;&gt;Unbutu&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;#INSATLL cloudmesh-openapi
+python -m venv ~/ENV3
+source ~/ENV3/bin/activate 
+mkdir cm
+cd cm
+pip install cloudmesh-installer
+cloudmesh-installer get openapi
+cms help
+
+# Configure cloudmesh DB
+# WARNING Don&#39;t run if mongo already configured for other cloudmesh use
+cms config set cloudmesh.data.mongo.MONGO_USERNAME=benchmark
+cms config set cloudmesh.data.mongo.MONGO_PASSWORD=benchmark
+cms config set cloudmesh.profile.user=benchmark
+cms config set cloudmesh.profile.firstname=benchmark
+cms config set cloudmesh.profile.lastname=benchmark
+#END WARNING
+cms openapi register protocol pickle
+
+# Generate SSH key
+# WARNING Don&#39;t Run if SSH key already exists
+ssh-keygen -t rsa -f ~/.ssh/id_rsa -P &amp;quot;benchmark&amp;quot;
+# END WARNING
+
+# Install dependencies
+pip install pillow
+pip install scikit-learn
+pip install pytest
+pip install dataclasses
+
+# Run EigenfacesSVM Example MANUALLY
+cd ~/cm/cloudmesh-openapi
+cms openapi generate EigenfacesSVM --filename=./tests/generator-eigenfaces-svm/eigenfaces-svm-full.py --import_class --enable_upload
+cms openapi server start ./tests/generator-eigenfaces-svm/eigenfaces-svm-full.yaml
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/download_data&amp;quot; -H  &amp;quot;accept: */*&amp;quot;
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/train&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+curl -X POST &amp;quot;http://localhost:8080/cloudmesh/upload&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot; -H  &amp;quot;Content-Type: multipart/form-data&amp;quot; -F &amp;quot;upload=@$HOME/cm/cloudmesh-openapi/tests/generator-eigenfaces-svm/example_image.jpg;type=image/jpeg&amp;quot;
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/predict?image_file_paths=$HOME%2F.cloudmesh%2Fupload-file%2Fexample_image.jpg&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+cms openapi server stop EigenfacesSVM
+
+# Run EigenfacesSVM Example AUTOMATICALLY as pytest
+cd ~/cm/cloudmesh-openapi
+pytest -v -s ./tests/test_030_generator_eigenfaces_svm.py
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;mac-os&#34;&gt;Mac OS&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;#INSATLL cloudmesh-openapi
+python -m venv ~/ENV3
+source ~/ENV3/bin/activate 
+mkdir cm
+cd cm
+pip install cloudmesh-installer
+cloudmesh-installer get openapi
+cms help
+
+# Configure cloudmesh DB
+# WARNING Don&#39;t run if mongo already configured for other cloudmesh use
+cms config set cloudmesh.data.mongo.MONGO_USERNAME=benchmark
+cms config set cloudmesh.data.mongo.MONGO_PASSWORD=benchmark
+cms config set cloudmesh.profile.user=benchmark
+cms config set cloudmesh.profile.firstname=benchmark
+cms config set cloudmesh.profile.lastname=benchmark
+#END WARNING
+cms openapi register protocol pickle
+
+# Generate SSH key
+# WARNING Don&#39;t Run if SSH key already exists
+ssh-keygen -t rsa -f ~/.ssh/id_rsa -P &amp;quot;benchmark&amp;quot;
+# END WARNING
+
+# Install dependencies
+pip install pillow
+pip install scikit-learn
+pip install pytest
+pip install dataclasses
+pip install --upgrade certifi   #testing to see if this fixes local cert issue
+cd /Applications/Python\ 3.9/   #testing to see if this fixes local cert issue
+./Install\ Certificates.command  #testing to see if this fixes local cert issue
+
+# Run EigenfacesSVM Example MANUALLY
+cd ~/cm/cloudmesh-openapi
+cms openapi generate EigenfacesSVM --filename=./tests/generator-eigenfaces-svm/eigenfaces-svm-full.py --import_class --enable_upload
+cms openapi server start ./tests/generator-eigenfaces-svm/eigenfaces-svm-full.yaml
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/download_data&amp;quot; -H  &amp;quot;accept: */*&amp;quot;
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/train&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+curl -X POST &amp;quot;http://localhost:8080/cloudmesh/upload&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot; -H  &amp;quot;Content-Type: multipart/form-data&amp;quot; -F &amp;quot;upload=@$HOME/cm/cloudmesh-openapi/tests/generator-eigenfaces-svm/example_image.jpg;type=image/jpeg&amp;quot;
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/predict?image_file_paths=$HOME%2F.cloudmesh%2Fupload-file%2Fexample_image.jpg&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+cms openapi server stop EigenfacesSVM
+
+# Run EigenfacesSVM Example AUTOMATICALLY as pytest
+cd ~/cm/cloudmesh-openapi
+pytest -v -s ./tests/test_030_generator_eigenfaces_svm.py
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;rasbian&#34;&gt;Rasbian:&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;#INSATLL cloudmesh-openapi
+python -m venv ~/ENV3
+source ~/ENV3/bin/activate 
+mkdir cm
+cd cm
+pip install cloudmesh-installer
+cloudmesh-installer get openapi 
+cms help
+
+# Configure cloudmesh DB
+# WARNING Don&#39;t run if mongo already configured for other cloudmesh use
+cms config set cloudmesh.data.mongo.MONGO_USERNAME=benchmark
+cms config set cloudmesh.data.mongo.MONGO_PASSWORD=benchmark
+cms config set cloudmesh.profile.user=benchmark
+cms config set cloudmesh.profile.firstname=benchmark
+cms config set cloudmesh.profile.lastname=benchmark
+#END WARNING
+cms openapi register protocol pickle
+
+# Generate SSH key
+# WARNING Don&#39;t Run if SSH key already exists
+ssh-keygen -t rsa -f ~/.ssh/id_rsa -P &amp;quot;benchmark&amp;quot;
+# END WARNING
+
+# Install dependencies
+sudo apt-get update
+sudo apt-get install libatlas-base-dev
+pip install pillow
+pip install scikit-learn
+pip install pytest
+pip install dataclasses
+
+# Run EigenfacesSVM Example MANUALLY
+cd ~/cm/cloudmesh-openapi
+cms openapi generate EigenfacesSVM --filename=./tests/generator-eigenfaces-svm/eigenfaces-svm-full.py --import_class --enable_upload
+cms openapi server start ./tests/generator-eigenfaces-svm/eigenfaces-svm-full.yaml
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/download_data&amp;quot; -H  &amp;quot;accept: */*&amp;quot;
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/train&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+curl -X POST &amp;quot;http://localhost:8080/cloudmesh/upload&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot; -H  &amp;quot;Content-Type: multipart/form-data&amp;quot; -F &amp;quot;upload=@$HOME/cm/cloudmesh-openapi/tests/generator-eigenfaces-svm/example_image.jpg;type=image/jpeg&amp;quot;
+curl -X GET &amp;quot;http://localhost:8080/cloudmesh/EigenfacesSVM/predict?image_file_paths=$HOME%2F.cloudmesh%2Fupload-file%2Fexample_image.jpg&amp;quot; -H  &amp;quot;accept: text/plain&amp;quot;
+
+# Run EigenfacesSVM Example AUTOMATICALLY as pytest
+cd ~/cm/cloudmesh-openapi
+pytest -v -s ./tests/test_030_generator_eigenfaces_svm.py
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;using-the-pytest-to-test-a-remote-server&#34;&gt;Using the pytest to test a remote server&lt;/h3&gt;
+&lt;p&gt;This assumes the remote server is already running the OpenAPI service.
+This will only run the test_upload and test_predict functions on the remote server. Used to measure function response times over the network.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cms set host=&amp;lt;ip&amp;gt;
+pytest -v -s ./tests/test_030_generator_eigenfaces_svm.py
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
       <link>/report/cloudmesh-openapi/readme-scikitlearn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1732,6 +1887,21 @@ Predict method.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/readme-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/readme-security/</guid>
+      <description>
+        
+        
+        &lt;p&gt;README-security is under development.
+It is cited in one of our draft papers&lt;/p&gt;
 
       </description>
     </item>
@@ -3971,13 +4141,8 @@ Yetisen, A. K. (2018). Wearables in Medicine. Wiley Online Library.&lt;/p&gt;
 &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-302/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-302/workflows/Status/badge.svg&#34; alt=&#34;Status&#34;&gt;&lt;/a&gt;
 Status: in progress&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Figure 1 does not provide useful information to the report. Please remove and use menaingful description of the data.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please do not use &amp;ldquo;Below is an&amp;rdquo; and use numbered figure references instead as provided in the template.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please provide for each type you classify an example so we can see the differences.&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The analysis does not tell how accurate it is&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Why are not resting periods such as sleep, light sleep or napping included&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Is it possible to distinguish between sitting and eating and sitting and working?&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The analysis does not include a benchmark&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Explain in more detail what you can do with the data after classification&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Adam Martin, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-302&#34;&gt;fa20-523-302&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
@@ -3993,7 +4158,7 @@ Status: in progress&lt;/p&gt;
     &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-methodology&#34;&gt;4. Methodology&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#4-methodology-and-code&#34;&gt;4. Methodology and Code&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#5-discussion&#34;&gt;5. Discussion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#6-conclusion&#34;&gt;6. Conclusion&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&#34;#7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/a&gt;&lt;/li&gt;
@@ -4008,32 +4173,57 @@ Status: in progress&lt;/p&gt;
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;Wearables have been on the market for years now, gradually improving and providing increasingly insightful data on user health metrics. Most wearables contain an array of sensors allowing the user to track aspects of their physical health. This includes heart rate, motion, calories burned, and some devices now support ECG and BMI measurements. This vast trove of data is valuable to consumers, as it allows for the measurement and gamification of key health metrics. But can this data also be useful for health professionals in determining a patient’s activity levels and tracing important events in their health history?&lt;/p&gt;
 &lt;h2 id=&#34;2-background-research-and-previous-work&#34;&gt;2. Background Research and Previous Work&lt;/h2&gt;
-&lt;p&gt;Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.  This paper examines the roadblocks in making this information available to healthcare professionals and examines what wearable information is currently being used in healthcare.&lt;/p&gt;
-&lt;p&gt;Existing research focuses on a wide variety of inputs &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.  Sensors including electrodes, chemical probes, microphones, optical detectors, and blood glucose sensors are referenced as devices used for gathering healthcare information.  This research will focus on data that can be gathered with a modern smartphone or smartwatch.  Most of the sensors described are not as ubiquitous as consumer items like FitBits or Apple Watches.&lt;/p&gt;
-&lt;p&gt;Previous studies have indicated the significance of precision health and the need for patient-specific data from wearables to be integrated into a patient&amp;rsquo;s care strategy &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.  Wearable data outlining a patient&amp;rsquo;s sleep, motion habits, heart rate, and other metrics can be invaluable in diagnosing or predicting conditions.  Increased sedentary activity could indicate depression, and could predict future heart problems.  A patient&amp;rsquo;s health could be graphed and historical trends could be useful to determine potential causes for a diagnosis.
-It is often asserted that a person&amp;rsquo;s environmental factors are better predictors for their health than their genetic makeup &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.  Linking behavioral and social determinants with biomedical data would allow professionals to better target certain conditions.&lt;/p&gt;
+&lt;p&gt;Previous work exists on the use of sensors and wearables in assisted living environments.  Consumer wearables are commonplace and have been used primarily for tracking individual activity metrics.  This research attempts to establish the efficacy of these devices in providing useful data for user activity, and how this information could be useful for healthcare workers.&lt;br&gt;
+This paper examines the roadblocks in making this information available to healthcare professionals and examines what wearable information is currently being used in healthcare.&lt;/p&gt;
+&lt;p&gt;Existing research focuses on a wide variety of inputs &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.  Sensors including electrodes, chemical probes, microphones, optical detectors, and blood glucose sensors are referenced as devices used for gathering healthcare information.  This research will focus on data that can be gathered with a modern smartphone or smartwatch.  Most of the sensors described are not as ubiquitous as consumer items like FitBits or Apple Watches.
+Furthermore, many users report diminished enthusiasm towards wearables due to complex sensors and pairing processes &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.  Focusing on devices that are already successful in the consumer market
+ensures that the impact of this study will not be confined to specific users and use cases.&lt;/p&gt;
+&lt;p&gt;Previous studies have indicated the significance of precision health and the need for patient-specific data from wearables to be integrated into a patient&amp;rsquo;s care strategy &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.  Wearable data outlining a patient&amp;rsquo;s sleep, motion habits, heart rate, and other metrics can be invaluable in diagnosing or predicting conditions.  Increased sedentary activity could indicate depression, and could predict future heart problems.
+A patient&amp;rsquo;s health could be graphed and historical trends could be useful in determining factors that contribute to the patient&amp;rsquo;s condition.&lt;br&gt;
+It is often asserted that a person&amp;rsquo;s environmental factors are better predictors for their health than their genetic makeup &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.  Linking behavioral and social determinants with biomedical data would allow professionals to better target certain conditions.&lt;/p&gt;
 &lt;h2 id=&#34;3-choice-of-data-sets&#34;&gt;3. Choice of Data-sets&lt;/h2&gt;
 &lt;p&gt;The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.&lt;/p&gt;
-&lt;p&gt;A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each gyroscopic sensor has several attributes describing its motion.&lt;/p&gt;
+&lt;p&gt;A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, acceleration, and rotation rate, will be used to determine user states.  The dataset is labeled with six states (walking downstairs, walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion.
+This dataset does not contain sleep data, but considering&lt;/p&gt;
 &lt;p&gt;If successful, this will establish that wearables have a high potential for providing relevant information beyond exercise metrics.&lt;/p&gt;
-&lt;h2 id=&#34;4-methodology&#34;&gt;4. Methodology&lt;/h2&gt;
-&lt;p&gt;The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data using various classification methods (K-nearest neighbors, random forest).&lt;/p&gt;
-&lt;p&gt;First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.&lt;/p&gt;
-&lt;p&gt;A SciKit pipeline is set up for each classifier.  After obtaining a train/test split the pipeline applies a standard scaler to normalize the data, and then fits the classifier on the training data.  Each classifier is then scored using the testing dataset.&lt;/p&gt;
+&lt;h2 id=&#34;4-methodology-and-code&#34;&gt;4. Methodology and Code&lt;/h2&gt;
+&lt;p&gt;The IPython notebook used for this analysis is available on the &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/code/Wearables.ipynb&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The analysis of relevant wearable data is undertaken to determine the accuracy of activity information.  This analysis will consist of a brief descriptive analysis of the motion tracking data, and will proceed with attempts to classify the labeled data.&lt;/p&gt;
+&lt;p&gt;First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.
+During the data acquisition, the sensors are sampled at a 50hz rate.  Since the dataset is a timeseries, classification methods that take advantage of historical datapoints will be the most effective.
+The Keras Long Short Term Memory classifier implementation is used for this task.  The dataset is first split into its various classes of motion using the one-hot-encoded matrix to filter out each
+class.  Each class is then subdivided into one-second &amp;lsquo;windows&amp;rsquo;, each with 50 entries.  Each window is offset by 10 entries from the previous window.&lt;/p&gt;
+&lt;p&gt;The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
+features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a Google
+Colab instance and benchmarked.&lt;/p&gt;
 &lt;p&gt;If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient&amp;rsquo;s medical history.&lt;/p&gt;
-&lt;p&gt;Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.  Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.&lt;/p&gt;
+&lt;p&gt;Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.
+Much of this research will be focused on determining the state of wearables in the healthcare industry and determining if there is a need for streamlined data transfer to healthcare professionals.&lt;/p&gt;
 &lt;h2 id=&#34;5-discussion&#34;&gt;5. Discussion&lt;/h2&gt;
-&lt;p&gt;The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.  The six movement classes are one-hot encoded.&lt;/p&gt;
+&lt;p&gt;The dataset is comprised of six discrete classes of movement.  There are 12 parameters describing the readouts of the sensors over time.&lt;/p&gt;
 &lt;p&gt;There is an imbalance in the number of datapoints for each class, which could lead to classification errors.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/occurence.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; Data distribution per movement class.&lt;/p&gt;
-&lt;p&gt;Figure 3 is an example of the data&amp;rsquo;s representation of a class of movement.  In this instance it&amp;rsquo;s that of a male jogging.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_run.png&#34; alt=&#34;Figure 3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/occurence.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Data distribution per movement class.&lt;/p&gt;
+&lt;p&gt;Figure 2 is an example of the data&amp;rsquo;s representation of a class of movement.  In this instance it&amp;rsquo;s that of a male jogging.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_run.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; 10 second sensor readout of a jogging male.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_downstairs.png&#34; alt=&#34;Figure 3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; 20 second sensor readout of a female going downstairs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_upstairs.png&#34; alt=&#34;Figure 4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; 20 second sensor readout of a male going upstairs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_walk.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; 10 second sensor readout of a female walking.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_sit.png&#34; alt=&#34;Figure 6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; 10 second sensor readout of a male sitting.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_stand.png&#34; alt=&#34;Figure 7&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; 10 second sensor readout of a female standing.&lt;/p&gt;
+&lt;p&gt;Only roll, pitch, and yaw are shown for clarity and to illustrate the quality of the readings obtained by the sensors.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/LSTM_benchmark.png&#34; alt=&#34;Figure 8&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt; Cloudmesh benchmark for LSTM train and test.&lt;/p&gt;
+&lt;p&gt;The final accuracy measurement for the LSTM was &lt;strong&gt;%95.42&lt;/strong&gt;.  This proves that discrete movement classes can be determined through the analysis of basic sensor data regarding device movement.&lt;/p&gt;
 &lt;h2 id=&#34;6-conclusion&#34;&gt;6. Conclusion&lt;/h2&gt;
-&lt;p&gt;todo&lt;/p&gt;
 &lt;h2 id=&#34;7-acknowledgements&#34;&gt;7. Acknowledgements&lt;/h2&gt;
-&lt;p&gt;todo&lt;/p&gt;
+&lt;p&gt;I would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications.&lt;/p&gt;
 &lt;h2 id=&#34;8-references&#34;&gt;8. References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -4045,7 +4235,10 @@ It is often asserted that a person&amp;rsquo;s environmental factors are better 
 &lt;p&gt;Piwek L, Ellis DA, Andrews S, Joinson A. (2016, February 02).  I Retrieved November 11, 2020 from &lt;a href=&#34;https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953&#34;&gt;https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Glasgow, Russell E. Realizing the full potential of precision health: The need to include patient-reported health behavior, mental health, social determinants, and patient preferences data (2018, September 13). I Retrieved November 15, 2020 from &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Loncar-Turukalo, Tatjana.  Literature on Wearable Technology for Connected Health: Scoping Review of Research Trends, Advances, and Barriers (2019, September 21).  I Retrieved December 1st from &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6818529/&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6818529/&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Glasgow, Russell E. Realizing the full potential of precision health: The need to include patient-reported health behavior, mental health, social determinants, and patient preferences data (2018, September 13). I Retrieved November 15, 2020 from &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -4714,7 +4907,7 @@ Status: in progress&lt;/p&gt;
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;In behavioral economics, it is said that emotions have an effect on individual&amp;rsquo;s behavior and their choice in their decision making process. This can be true for a society at large but can this apply to the leader of the free world? Here we will investigate the collective mood of President Trump&amp;rsquo;s tweets are correlated to the value of the Nasdaq Stock Market (NASDAQ) during certain events during his presidency. The applications of sentiment analysis will help find the correlation that we are looking for. President Trump&amp;rsquo;s tweets will be used to analyze the mood and the NASDAQ movements.&lt;/p&gt;
+&lt;p&gt;President Trump has utilized the social media platform Twitter as a way to convey his message to the American people. The tweets he has published during his presidency cover a vast array of topics and issues from MAGA rallies to impeachment. This analysis investigates the relationship of the NASDAQ and the sentiment of President Trump&amp;rsquo;s tweets during key events in his presidency. NASDAQ data was gathered though Yahoo Finance&amp;rsquo;s API while President Trump&amp;rsquo;s tweets were gathered from Kaggle.&lt;/p&gt;
 &lt;p&gt;Contents&lt;/p&gt;
 &lt;div class=&#34;toc&#34;&gt;
   &lt;nav id=&#34;TableOfContents&#34;&gt;
@@ -4801,14 +4994,14 @@ Status: in progress&lt;/p&gt;
 &lt;p&gt;After weeks of talks among Congress, the House of Representatives have voted to impeach President Trump on two charges: abuse of power and obstruction of Congress on December 18, 2019. Since the country&amp;rsquo;s founding in 1776, only three presidents have faced impeachment from Congress: Andrew Johnson, Bill Clinton and now Donald Trump. This move has been widely advocated for since his election in 2016. &amp;ldquo;In September 2019, news leaked of a phone call between President Trump and Ukrainian President Volodymyr Zelensky regarding an investigation into Hunter Biden, son of then Democratic candidate Joe Biden, for his dealings in Ukraine&amp;rdquo; [^3]. The sentiment analysis preformed on tweets that fall in the time frame of President Trump&amp;rsquo;s impeachment. The graph shows an almost even split in polarity but more tweets have a higher subjectivity suggesting many tweets are personal opinions. The NASDAQ shows stock were down when the Articles of Impeachment were announced but when the vote to approve the articles started in mid December, the stock price is on an upward trend.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/impeachment_sentiment.png&#34; alt=&#34;Figure 5: Sentiment Analysis during Impeachment&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Sentiment Analysis during Impeachment&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/impeachment_stock.png&#34; alt=&#34;Figure 6: Open and Close Price during Impeachment&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Open and Close Price during Impeachment&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/impeachment_stock.png&#34; alt=&#34;Figure 6: Open and Daily Change Price during Impeachment&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Open and Daily Change Price during Impeachment&lt;/p&gt;
 &lt;h3 id=&#34;62-the-dakota-access-and-keystone-xl-pipelines-approval&#34;&gt;6.2 The Dakota Access and Keystone XL pipelines approval&lt;/h3&gt;
 &lt;p&gt;One of the first moves President Trump made when arriving into office was to approve the Dakota Access and Keystone XL pipelines. &amp;ldquo;Both of the pipelines were blocked by the Obama administration due to environmental concerns, but President Trump has questioned climate change and promised to expand energy infrastructure and create jobs&amp;rdquo;[^4]. The Keystone pipeline would span 1,200 miles across six states, moving over 800,000 barrels of oil daily from Canada to the Gulf coast. The Dakota Access pipeline would move oil from North Dakota all the way to Illinois. &amp;ldquo;The Standing Rock Sioux tribe, whose reservation is adjacent to the pipeline, staged protests that drew thousands of climate change activists to the rural area of Cannon Ball, North Dakota&amp;rdquo; [^4]. The sentiment graph shows tweets have a higher polarity but subjectivity is not as high as other events. In the days leading up to the signing of the pipelines on January 24th, the stock price has an upward trend but takes a sharp drop a couple days later possibly due to protests against the pipelines.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/dakota_sentiment.png&#34; alt=&#34;Figure 7: Sentiment Analysis during Dakota Approval&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Sentiment Analysis during Dakota Approval&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/dakota_stock.png&#34; alt=&#34;Figure 8: Open and Close Price during Dakota Approval&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt; Open and Close Price during Dakota Approval&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/dakota_stock.png&#34; alt=&#34;Figure 8: Open and Daily Change Price during Dakota Approval&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt; Open and Daily Change Price during Dakota Approval&lt;/p&gt;
 &lt;h3 id=&#34;63-the-government-shutdown&#34;&gt;6.3 The Government Shutdown&lt;/h3&gt;
 &lt;p&gt;On December 21, 2018 the United States Government shutdown. &amp;ldquo;At the heart of the dispute is Trump&amp;rsquo;s demand for just over $5 billion toward a long-promised wall along the US-Mexico border&amp;rdquo; [^5]. The shutdown affected a part of the federal government such as homeland security, transportation, and agriculture. &amp;ldquo;The problems caused by the shutdown are wide-ranging, from waste piling up in national parks to uncertainty for 800,000 federal workers about when their next paycheck will come&amp;rdquo; [^5]. This shutdown was the longest shutdown in the modern era coming to an end on January 25, 2019 after 35 days. The sentiment graph tells that the tweets shared during the shutdown are skewed to the right in terms of polarity with a majority of tweets being at or around 0.6 in subjectivity. Prior to the government shutdown, stock prices fell by 10 dollars with the lowest being around the time the shutdown began. The new year shows stock on a steady increase during the month of January, when the shutdown was lifted.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-307/main/project/images/shutdown_sentiment.png&#34; alt=&#34;Figure 9: Sentiment Analysis during the Government Shutdown&#34;&gt;&lt;/p&gt;
@@ -6190,545 +6383,6 @@ While there are previous works on predicting stock markets, most of them are bas
         
         
         &lt;h2 id=&#34;this-is-testmd&#34;&gt;This is Test.md&lt;/h2&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-314/assignment_6/assignment_6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-314/assignment_6/assignment_6/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;artificial-intelligence-in-health&#34;&gt;Artificial Intelligence in Health&lt;/h1&gt;
-&lt;p&gt;Artificial Intelligence has influenced most of the sectors in the world like health, agriculture, sports and so much more. In the last decade, one of the most influenced sector is healthcare. In the beginning, AI was considered only a technology to help in the medical decision-making. Little were we aware that it will bring a tremendous transition in the healthcare industry. From simple decision-making, it advanced to autonomous surgical robots, image diagnosis, virtual nursing assistants etc. Most of the websites/apps are now offering symptom checkers which enable the patients to reduce the number of hospital visits drastically.&lt;/p&gt;
-&lt;h2 id=&#34;ai-in-cancer-prognosis-and-diagnosis&#34;&gt;AI in Cancer Prognosis and Diagnosis&lt;/h2&gt;
-&lt;p&gt;Chronic health conditions like cancer, diabetics, heart diseases etc. are mostly benefited from artificial intelligence as shown in Figure 1.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/master/assignment_6/images/ai_1.jpg&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Chronic health conditions that benefit most from AI/ML&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;Cancer is an aggressive disease with high mortality rate. But if the disease is diagnosed in early stages some of the cancers like lung cancer, breast cancer, thyroid cancer etc can be cured or controlled. A decade ago, doctors spent hours just for diagnosing cancer but still lacked accuracy. Now with the introduction of AI, the time for diagnosis has reduced considerably with much more precision.&lt;/p&gt;
-&lt;p&gt;AI model can be trained with vast amount of image data from tests like Ultrasound scanning, sonography, Endoscopy etc. Integrative processing and extraction  of these images will result in more efficient diagnosis. A set of computer algorithms used to process medical images and extract details are refered to as DL. It can be used to inform doctors on prognosis, molecular status or treatment sensitivity.&lt;/p&gt;
-&lt;p&gt;Integration of AI technology in cancer care has increased the survival rate of patients. Research is being conducted on introducing AI to provide a customized care to people according to their genes and history.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.healthcareitnews.com/news/3-charts-show-where-artificial-intelligence-making-impact-healthcare-right-now&#34;&gt;https://www.healthcareitnews.com/news/3-charts-show-where-artificial-intelligence-making-impact-healthcare-right-now&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/fa20-523-314/project/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-314/project/project/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;residential-power-usage-prediction&#34;&gt;Residential Power Usage Prediction&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/workflows/Check%20Report/badge.svg&#34; alt=&#34;Check Report&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/workflows/Status/badge.svg&#34; alt=&#34;Status&#34;&gt;&lt;/a&gt;
-Status: final&lt;/p&gt;
-&lt;p&gt;Siny P. Raphel, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/&#34;&gt;fa20-523-314&lt;/a&gt;, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/project.md&#34;&gt;Edit&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;We are living in a technology-driven world. Innovations make human life easier. As science advances, the usage of electrical and electronic gadgets are leaping. This leads to the shoot up of power consumption. Weather plays an important role in power usage. Even the outbreak of Covid-19 has impacted daily power utilization. Similarly, many factors influence the use of electricity-driven appliances at homes. Monitoring these factors and consolidating them will result in a humungous amount of data. But analyzing this data will help to keep track of power consumption. This system provides a prediction of usage of electric power at residences in the future and will enable people to plan ahead of time and not be surprised by the monthly electricity bill.&lt;/p&gt;
-&lt;p&gt;Contents&lt;/p&gt;
-&lt;div class=&#34;toc&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-introduction&#34;&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-reason-to-choose-this-dataset&#34;&gt;2. Reason to choose this dataset&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-datasets&#34;&gt;3. Datasets&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#4-data-preprocessing&#34;&gt;4. Data preprocessing&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#41-data-download-and-load&#34;&gt;4.1 Data download and load&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#42-data-descriptive-analysis&#34;&gt;4.2 Data descriptive analysis&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#43-preprocessing-data&#34;&gt;4.3 Preprocessing data&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#44-merge-datasets&#34;&gt;4.4 Merge datasets&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#5-exploratory-data-analysis&#34;&gt;5. Exploratory Data Analysis&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#6-modeling&#34;&gt;6. Modeling&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#61-split-data&#34;&gt;6.1 Split Data&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#62-pipelines&#34;&gt;6.2 Pipelines&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#63-metrics&#34;&gt;6.3 Metrics&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#631-mean-squared-errormse&#34;&gt;6.3.1 Mean squared error(MSE)&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#632-root-mean-squared-errorrmse&#34;&gt;6.3.2 Root mean squared error(RMSE)&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#633-r-squaredr2-score&#34;&gt;6.3.3 R-Squared(R2) Score&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#64-baseline-linear-regression-model&#34;&gt;6.4 Baseline Linear Regression model&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#65-other-regression-models&#34;&gt;6.5 Other regression models&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#66-results&#34;&gt;6.6 Results&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#7-conclusion&#34;&gt;7. Conclusion&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#8-acknowledgments&#34;&gt;8. Acknowledgments&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#9-references&#34;&gt;9. References&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Keywords:&lt;/strong&gt; power usage, big data, regression&lt;/p&gt;
-&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
-&lt;p&gt;Electricity is an inevitable part of our day-to-day life. The residential power sector consumes about one-fifth of the total energy in the U.S. economy&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Most of the appliances in a household use electricity for its working. The usage of electricity in a residence depends on the standard of living of the country, weather conditions, family size, type of residence, etc&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. Most of the houses in the USA are equipped with lightings and refrigerators using electric power. The usage of air conditioners is also increasing. From Figure 1, we can see that the top three categories for energy consumption are air conditioning, space heating, water heating as of 2015.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/chart.png&#34; alt=&#34;Figure 1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; Residential electricity consumption by end use, 2015&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;Climate change is one of the biggest challenges in our current time. As a result, temperatures are rising. Therefore, to analyze energy consumption, understanding weather variations are critical&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. As the temperature rises, the use of air conditioners is also rising. As shown in Figure 1, air conditioning is the primary source of power consumption in households. The weather change has also resulted in a drop in temperatures and variation in humidity. These results in secondary power consumers.&lt;/p&gt;
-&lt;p&gt;Even though weather plays an important role in power usage, factors like household income, age of the residents, family type, etc also influence consumption. During the holidays&amp;rsquo; many people tend to spend time outside which reduces power utilization at their homes. Similarly, during the weekend, since most people have work off, the appliances will be frequently consumed compared to weekdays when they go to work. Our world is currently facing an epidemic. Most of the countries had months of lockdown periods. Schools and many workplaces were closed. People were not allowed to go out and so they were stuck in their homes. As a result, power expending reduced drastically everywhere other than residences. But during the lockdown period, the energy consumption of residences spiked.&lt;/p&gt;
-&lt;p&gt;Most of the electric service providers like Duke, Dominion provide customers their consumption data so that customers are aware of their usages. Some providers give predictions on their future usages so that they are prepared.&lt;/p&gt;
-&lt;h2 id=&#34;2-reason-to-choose-this-dataset&#34;&gt;2. Reason to choose this dataset&lt;/h2&gt;
-&lt;p&gt;There were many datasets on residential power usage analysis in Kaggle itself. But most of them were three or four years old. This dataset has the recent data of power consumptions together with weather data of each day. Since the pandemic hit the world in 2019-2020, the availability of recent data is considered to be significant for the analysis.&lt;/p&gt;
-&lt;p&gt;This dataset is chosen because,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;It has the latest power usage data - till August 2020.&lt;/li&gt;
-&lt;li&gt;It has marked covid lockdown, vacations, weekdays and weekends which is a challenge for the prediction.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;3-datasets&#34;&gt;3. Datasets&lt;/h2&gt;
-&lt;p&gt;This project is based on the dataset, &lt;em&gt;Residential Power Usage 3 years data&lt;/em&gt; in Kaggle datasets&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;. The dataset contains data of hourly power consumption of a 2 storied house in Houston, Texas from 01-06-2016 to August 2020 and also weather conditions of each day like temperatures, humidity wind etc of that area. Each day is marked whether it is a weekday, weekend, vacation or COVID-19 lockdown.&lt;/p&gt;
-&lt;p&gt;The project is intending to build a model to predict the future power consumption of a house with similar environments from the available data. Python&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; is used for the development and since the expected output is a continuous variable, linear regression is considered for the baseline model. Later the performance of the base model is compared to one or two other models like tuned linear regression, gradient boosting, Light Gbm, or random forest.&lt;/p&gt;
-&lt;p&gt;Data is spread across two csv files.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;power_usage_2016_to_2020.csv&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This file depicts the hourly electricity usage of the house for three years, from 2016 to 2020. It contains basic details like startdate with hour, the value of power consumption in kwh, day of the week and notes. It has 4 features and 35953 instances.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-1.png&#34; alt=&#34;Figure 2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; First five rows of power_usage_2016_to_2020 data&lt;/p&gt;
-&lt;p&gt;Figure 2 provides a snapshot of the first few rows of the data. Day of the week is an integer value with 0 being Monday. The column &lt;em&gt;notes&lt;/em&gt; layout details like whether that day was weekend, weekday, covid lockdown or vacation, as shown in Figure 3.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-2.png&#34; alt=&#34;Figure 3&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Details in notes column&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;weather_2016_2020_daily.csv&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The second file or the weather file imparts the weather conditions of that particular area on each day. It has 19 features and 1553 instances. Figure 4 is the snapshot of the first few rows and columns of this file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/fig-3.png&#34; alt=&#34;Figure 4&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; First few rows of weather_2016_2020_daily data&lt;/p&gt;
-&lt;p&gt;Each feature in this data has different units and the units of the features are given in Table 1.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Table 1:&lt;/strong&gt; Feature units&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Feature names&lt;/th&gt;
-&lt;th&gt;Units&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Temperature&lt;/td&gt;
-&lt;td&gt;F deg&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Dew Point&lt;/td&gt;
-&lt;td&gt;F deg&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Humidity&lt;/td&gt;
-&lt;td&gt;%age&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Wind&lt;/td&gt;
-&lt;td&gt;mph&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Pressure&lt;/td&gt;
-&lt;td&gt;Hg&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Precipitation&lt;/td&gt;
-&lt;td&gt;inch&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Weather file has additional features like &lt;em&gt;date&lt;/em&gt; and &lt;em&gt;day&lt;/em&gt; of the date.&lt;/p&gt;
-&lt;h2 id=&#34;4-data-preprocessing&#34;&gt;4. Data preprocessing&lt;/h2&gt;
-&lt;p&gt;The data has to be preprocessed before modelling for predictions.&lt;/p&gt;
-&lt;h3 id=&#34;41-data-download-and-load&#34;&gt;4.1 Data download and load&lt;/h3&gt;
-&lt;p&gt;The data in this project is directly downloaded from &lt;em&gt;Kaggle&lt;/em&gt;. The downloaded file is then unzipped and loaded to two dataframes using python codes. For more detailed explanation and codes for download and load of data, see &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb&#34;&gt;python code&lt;/a&gt; &lt;em&gt;Download datasets&lt;/em&gt; and &lt;em&gt;Load datasets&lt;/em&gt; sections.&lt;/p&gt;
-&lt;h3 id=&#34;42-data-descriptive-analysis&#34;&gt;4.2 Data descriptive analysis&lt;/h3&gt;
-&lt;p&gt;The data loaded has to be analyzed properly before it can be preprocessed. An analysis is made on the existence of missing values, the range of each feature, etc. On analysis, it is determined that there are no missing values and the date format in both tables is different. The &lt;em&gt;StartDate&lt;/em&gt; feature of the power_usage dataset and &lt;em&gt;Date&lt;/em&gt; feature of the weather dataset is to be used as a key to merge the two datasets. But the format of both features is different. StartDate feature is the combination of date and hour. Whereas, &lt;em&gt;Date&lt;/em&gt; feature of weather is just the date. Hence, these issues will have to be taken care of before merging data.&lt;/p&gt;
-&lt;h3 id=&#34;43-preprocessing-data&#34;&gt;4.3 Preprocessing data&lt;/h3&gt;
-&lt;p&gt;In this step, the column name &lt;em&gt;Values (kWh)&lt;/em&gt;  is renamed to &lt;em&gt;Value&lt;/em&gt; and also date format issue is addressed. Firstly, StartDate column is split into Date and Hour columns. Since the StartDate column is in Pandas Period type, the function strftime() is used for converting to the required format.&lt;/p&gt;
-&lt;h3 id=&#34;44-merge-datasets&#34;&gt;4.4 Merge datasets&lt;/h3&gt;
-&lt;p&gt;For proper analysis of data, it is critical that the analyst should be able to analyze the relationships of each feature concerning the target feature(Value in kWh in this project). Therefore, both power_usage and weather tables are merged with respect to the Date column. The resulting table has a total of 35952 instances and 22 features.&lt;/p&gt;
-&lt;h2 id=&#34;5-exploratory-data-analysis&#34;&gt;5. Exploratory Data Analysis&lt;/h2&gt;
-&lt;p&gt;Here we analyze different features, their relationship with each other, and with the target.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/dow.png&#34; alt=&#34;Figure 5&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Average power usage by day of the week&lt;/p&gt;
-&lt;p&gt;In Figure 5, the average power usage by the day of the week is plotted&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;. It is analyzed that Saturday and Friday have the most usage compared to other days of the week. Since the day of the week represents values Sunday-Saturday, we can consider it as a categorical feature.
-Similarly, from Figure 6, there is a huge dip in power usage during vacation. Other three occasions like covid lockdown, weekend and weekdays have almost the same power usage, even though consumption during weekends outweigh.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/tod.png&#34; alt=&#34;Figure 6&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 6:&lt;/strong&gt; Average power usage by type of the day&lt;/p&gt;
-&lt;p&gt;In Figure 7, we compare the monthly power consumption for three years - 2018, 2019, 2020&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. The overall power usage in 2019 is less compared to 2018. But in 2020 may be due to Covid-lockdown the power consumption shoots. Also, power consumption peaks in the months of June, July, and August.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/monthly_power.png&#34; alt=&#34;Figure 7&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 7:&lt;/strong&gt; Average power usage per month for three years&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/corr_plot.png&#34; alt=&#34;Figure 8&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt; Correlation plot between features&lt;/p&gt;
-&lt;p&gt;The correlation plot in Figure 8, depicts the inter-correlation between features. We can see that features like temperature, dew and pressure has a high correlation to our target feature. Also, different temperatures and dew features are inter-correlated. Therefore, all the intercorrelated features except for temp_avg can be dropped during feature selection.&lt;/p&gt;
-&lt;h2 id=&#34;6-modeling&#34;&gt;6. Modeling&lt;/h2&gt;
-&lt;p&gt;Modeling of the data includes splitting data into train and test, include cross-validation, create pipelines, select metrics for measuring performance, run data in regression models, and discuss results.&lt;/p&gt;
-&lt;h3 id=&#34;61-split-data&#34;&gt;6.1 Split Data&lt;/h3&gt;
-&lt;p&gt;For measuring the accuracy of the model, the main data is split into train and test. 20% of data is selected as test data and the remaining 80% is the train data. The proportion of notes(vacation, weekday, weekend, and covid lockdown) are different. Therefore, we stratify the data according to the notes column. After the split, train data has 28761 rows and test data has 7191 rows.&lt;/p&gt;
-&lt;h3 id=&#34;62-pipelines&#34;&gt;6.2 Pipelines&lt;/h3&gt;
-&lt;p&gt;Categorical variables and numeric variables are separated and processed in pipelines separately.
-Categorical features are one hot encoded before feeding to the model. Similarly, numerical features are standardized before modeling. Later these two pipelines are joined and modeled used Linear regression and other models.&lt;/p&gt;
-&lt;h3 id=&#34;63-metrics&#34;&gt;6.3 Metrics&lt;/h3&gt;
-&lt;p&gt;Our target is a continuous variable and hence we implement regression models for prediction. To determine how accurate a regression model is, we use the following metrics.&lt;/p&gt;
-&lt;h4 id=&#34;631-mean-squared-errormse&#34;&gt;6.3.1 Mean squared error(MSE)&lt;/h4&gt;
-&lt;p&gt;MSE is the average of squares of error. The larger the MSE score, the larger the errors are. Models with lower values of MSE is considered to perform well. But, since MSE is the squared value, the scale of the target variable and MSE will be different. Therefore, we go for RMSE values.&lt;/p&gt;
-&lt;h4 id=&#34;632-root-mean-squared-errorrmse&#34;&gt;6.3.2 Root mean squared error(RMSE)&lt;/h4&gt;
-&lt;p&gt;RMSE is the square root of MSE scores. The square root is introduced to make the scale of the errors to be the same as the scale of targets. Similar to MSE, the lower scores for RMSE means better model performance. Therefore, in this project, the models with lower RMSE values will be monitored&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;633-r-squaredr2-score&#34;&gt;6.3.3 R-Squared(R2) Score&lt;/h4&gt;
-&lt;p&gt;R2 score is the goodness-of-fit measure. It&amp;rsquo;s a statistical measure that ranges between 0 and 1. R2 score helps the analyst to understand how similar the fitted line is to the data it is fitted to. The closer it is to one, the more likely the model predicts its variance. Similarly, if the score is zero, the model doesn&amp;rsquo;t predict any variance.
-In this project, the R2 score of the test data is calculated. The model with the highest R2 scores will be considered&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;64-baseline-linear-regression-model&#34;&gt;6.4 Baseline Linear Regression model&lt;/h3&gt;
-&lt;p&gt;We use linear regression as our baseline model. For the baseline model, we are not hyperparameter tuning. For the baseline model, the train RMSE score was 0.6783, and R2 for the test set was 0.4460. These values are then compared to other regression models with hyperparameter tuning.&lt;/p&gt;
-&lt;h3 id=&#34;65-other-regression-models&#34;&gt;6.5 Other regression models&lt;/h3&gt;
-&lt;p&gt;After developing a baseline model, we are developing four other regression models and comparing the results. We implement feature selection and hyperparameter tuning. As we analyzed in exploratory data analysis, some features have strong inter-correlation and these features are dropped. The parameters for the regression models are hyper tuned and modeled in GridsearchCV of sklearn package.&lt;/p&gt;
-&lt;p&gt;The models used for prediction are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Linear regression with hyperparameter tuning&lt;/li&gt;
-&lt;li&gt;Gradient boosting&lt;/li&gt;
-&lt;li&gt;XGBoost&lt;/li&gt;
-&lt;li&gt;Light GBM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Similar to the baseline model, the metrics like train RMSE, test RMSE, and test R2 scores are calculated.&lt;/p&gt;
-&lt;h3 id=&#34;66-results&#34;&gt;6.6 Results&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/result.png&#34; alt=&#34;Figure 9&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Figure 9:&lt;/strong&gt; Performance of all the regression models&lt;/p&gt;
-&lt;p&gt;Figure 9 documents the performance of all the regression models used.&lt;/p&gt;
-&lt;p&gt;cloudmesh.common benchmark and stopwatch framework are used to monitor and record the time taken for each step in this project&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;. Time taken for critical steps like downloading data, loading data, preprocessing data, training and predictions of each model are recorded. The StopWatch recordings are shown in Table 2. StopWatch recordings played an important role in the selection of the best model. Benchmark also provides a detailed report on the system or device information as shown in Table 2.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Table 2:&lt;/strong&gt; Benchmark results&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Attribute&lt;/th&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;BUG_REPORT_URL&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/%22&#34;&gt;https://bugs.launchpad.net/ubuntu/&amp;quot;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;DISTRIB_CODENAME&lt;/td&gt;
-&lt;td&gt;bionic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;DISTRIB_DESCRIPTION&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;Ubuntu 18.04.5 LTS&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;DISTRIB_ID&lt;/td&gt;
-&lt;td&gt;Ubuntu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;DISTRIB_RELEASE&lt;/td&gt;
-&lt;td&gt;18.04&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;HOME_URL&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://www.ubuntu.com/%22&#34;&gt;https://www.ubuntu.com/&amp;quot;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ID&lt;/td&gt;
-&lt;td&gt;ubuntu&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ID_LIKE&lt;/td&gt;
-&lt;td&gt;debian&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;NAME&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;Ubuntu&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PRETTY_NAME&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;Ubuntu 18.04.5 LTS&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PRIVACY_POLICY_URL&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy%22&#34;&gt;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&amp;quot;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;SUPPORT_URL&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;&lt;a href=&#34;https://help.ubuntu.com/%22&#34;&gt;https://help.ubuntu.com/&amp;quot;&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;UBUNTU_CODENAME&lt;/td&gt;
-&lt;td&gt;bionic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VERSION&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;18.04.5 LTS (Bionic Beaver)&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VERSION_CODENAME&lt;/td&gt;
-&lt;td&gt;bionic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;VERSION_ID&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;18.04&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;cpu_count&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;mem.active&lt;/td&gt;
-&lt;td&gt;1.0 GiB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;mem.available&lt;/td&gt;
-&lt;td&gt;11.2 GiB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;mem.free&lt;/td&gt;
-&lt;td&gt;8.5 GiB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;mem.inactive&lt;/td&gt;
-&lt;td&gt;2.6 GiB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;mem.percent&lt;/td&gt;
-&lt;td&gt;11.6 %&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;mem.total&lt;/td&gt;
-&lt;td&gt;12.7 GiB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;mem.used&lt;/td&gt;
-&lt;td&gt;1.9 GiB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;platform.version&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;python&lt;/td&gt;
-&lt;td&gt;3.6.9 (default, Oct  8 2020, 12:12:24)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;[GCC 8.4.0]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;python.pip&lt;/td&gt;
-&lt;td&gt;19.3.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;python.version&lt;/td&gt;
-&lt;td&gt;3.6.9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sys.platform&lt;/td&gt;
-&lt;td&gt;linux&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;uname.machine&lt;/td&gt;
-&lt;td&gt;x86_64&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;uname.node&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;uname.processor&lt;/td&gt;
-&lt;td&gt;x86_64&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;uname.release&lt;/td&gt;
-&lt;td&gt;4.19.112+&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;uname.system&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;uname.version&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;user&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Status&lt;/th&gt;
-&lt;th&gt;Time&lt;/th&gt;
-&lt;th&gt;Sum&lt;/th&gt;
-&lt;th&gt;Start&lt;/th&gt;
-&lt;th&gt;tag&lt;/th&gt;
-&lt;th&gt;Node&lt;/th&gt;
-&lt;th&gt;User&lt;/th&gt;
-&lt;th&gt;OS&lt;/th&gt;
-&lt;th&gt;Version&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Data download&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;2.652&lt;/td&gt;
-&lt;td&gt;2.652&lt;/td&gt;
-&lt;td&gt;2020-11-30 12:43:50&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Data load&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;0.074&lt;/td&gt;
-&lt;td&gt;0.074&lt;/td&gt;
-&lt;td&gt;2020-11-30 12:43:53&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Data preprocessing&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;67.618&lt;/td&gt;
-&lt;td&gt;67.618&lt;/td&gt;
-&lt;td&gt;2020-11-30 12:43:53&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Baseline Linear Regression&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;2.814&lt;/td&gt;
-&lt;td&gt;2.814&lt;/td&gt;
-&lt;td&gt;2020-11-30 12:45:03&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Linear Regression&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;5.581&lt;/td&gt;
-&lt;td&gt;5.581&lt;/td&gt;
-&lt;td&gt;2020-11-30 12:45:06&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Gradient Boosting&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;244.868&lt;/td&gt;
-&lt;td&gt;244.868&lt;/td&gt;
-&lt;td&gt;2020-11-30 12:45:12&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;XGBoost&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;2946.7&lt;/td&gt;
-&lt;td&gt;2946.7&lt;/td&gt;
-&lt;td&gt;2020-11-30 12:49:16&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Light GBM&lt;/td&gt;
-&lt;td&gt;ok&lt;/td&gt;
-&lt;td&gt;770.967&lt;/td&gt;
-&lt;td&gt;770.967&lt;/td&gt;
-&lt;td&gt;2020-11-30 13:38:23&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;a1f46a7ed3c2&lt;/td&gt;
-&lt;td&gt;collab&lt;/td&gt;
-&lt;td&gt;Linux&lt;/td&gt;
-&lt;td&gt;#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;For the baseline model, the RMSE values were high and R2 scores were small compared to all other regression models. The hyperparameter tuned linear regression model scores are better compared to the baseline model. But the other three models outweigh both linear models. XGBoost has the lowest RMSE and highest R2 score of all other models. But the time taken for execution is too long. Therefore, XGBoost is computationally expensive which leads us to ignore its scores. Gradient boosting and Light GBM have similar scores and hence the time taken for execution has to be considered as the deciding factor here. Gradient boosting completed 135 fits in 244.868 seconds whereas LightGBM took around 770.967 seconds for executing 3645 fits and then prediction. Since per fit execution time for Light GBM is too small, we consider Light GBM as the best model for predicting daily power usage of a residence with similar background conditions.&lt;/p&gt;
-&lt;p&gt;The RMSE scores for Light GBM are .2896 for train and .2910 for the test. The R2 score for the test set is .6526.&lt;/p&gt;
-&lt;h2 id=&#34;7-conclusion&#34;&gt;7. Conclusion&lt;/h2&gt;
-&lt;p&gt;As the importance of electricity is increasing, the need to know how or where the power usage increase will be a lifesaver for the electricity consumers. In this project, the daily power consumption of a house is analyzed and modeled for a prediction of electricity usage for residences with similar environments. The model considered a set of parameters like weather conditions, weekdays, type of days, etc. for prediction. Since the output is power consumption in kWh, we selected regression for modeling and prediction. Experiments are conducted on five regression models. After analyzing the experiment results, we concluded that the performance of the Light GBM model is better and faster compared to all other models.&lt;/p&gt;
-&lt;h2 id=&#34;8-acknowledgments&#34;&gt;8. Acknowledgments&lt;/h2&gt;
-&lt;p&gt;The author would like to express special thanks to Dr. Geoffrey Fox, Dr. Gregor Von Laszewski, and all the associate instructors of the Big Data Applications course (FA20-BL-ENGR-E534-11530) offered by Indiana University, Bloomington for their continuous guidance and support throughout the project.&lt;/p&gt;
-&lt;h2 id=&#34;9-references&#34;&gt;9. References&lt;/h2&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Jia Li and Richard E. Just, Modeling household energy consumption and adoption of energy efficient technology, Energy Economics, vol. 72, pp. 404-415, 2018.
-Available: &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0140988318301440#bbb0180&#34;&gt;https://www.sciencedirect.com/science/article/pii/S0140988318301440#bbb0180&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Domestic Power Consumption, [Online resource] &lt;a href=&#34;https://en.wikipedia.org/wiki/Domestic_energy_consumption&#34;&gt;https://en.wikipedia.org/wiki/Domestic_energy_consumption&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Use of energy explained - Energy use in homes, [Online resource] &lt;a href=&#34;https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php&#34;&gt;https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Yating Li, William A. Pizer, and Libo Wu, Climate change and residential electricity consumption in the Yangtze River Delta, China, Research article, Available: &lt;a href=&#34;https://www.pnas.org/content/116/2/472#ref-1&#34;&gt;https://www.pnas.org/content/116/2/472#ref-1&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Residential Power Usage dataset, &lt;a href=&#34;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&#34;&gt;https://www.kaggle.com/srinuti/residential-power-usage-3years-data-timeseries&lt;/a&gt; &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Residential Power Usage Prediction script, &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb&#34;&gt;https://github.com/cybertraining-dsc/fa20-523-314/blob/main/project/code/residential_power_usage_prediction.ipynb&lt;/a&gt; &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;seaborn: statistical data visualization, &lt;a href=&#34;https://seaborn.pydata.org/index.html&#34;&gt;https://seaborn.pydata.org/index.html&lt;/a&gt; &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Group by: split-apply-combine, &lt;a href=&#34;https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html&#34;&gt;https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html&lt;/a&gt; &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Mean Square Error &amp;amp; R2 Score Clearly Explained, [Online resource] &lt;a href=&#34;https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/&#34;&gt;https://www.bmc.com/blogs/mean-squared-error-r2-and-variance-in-regression-analysis/&lt;/a&gt; &lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, &lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-common&#34;&gt;https://github.com/cloudmesh/cloudmesh-common&lt;/a&gt; &lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
 
       </description>
     </item>

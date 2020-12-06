@@ -32,7 +32,7 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
 Rama Asuri, fa20-523-319, Edit
 Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life.">
 
-<meta itemprop="wordCount" content="1847">
+<meta itemprop="wordCount" content="2118">
 
 
 
@@ -232,7 +232,19 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-eigenfaces-test" href="/report/cloudmesh-openapi/readme-eigenfaces-test/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-scikitlearn" href="/report/cloudmesh-openapi/readme-scikitlearn/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-security" href="/report/cloudmesh-openapi/readme-security/"></a>
       
       
       
@@ -463,18 +475,6 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313test" href="/report/fa20-523-313/test/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314assignment_6assignment_6" href="/report/fa20-523-314/assignment_6/assignment_6/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -532,6 +532,7 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
         <li><a href="#42-false-negative-rate-fnr">4.2 False Negative Rate (FNR)</a></li>
         <li><a href="#43-specificitytrue-negative-rate-tnr">4.3 Specificity/True Negative Rate (TNR)</a></li>
         <li><a href="#44-false-positive-rate-fpr">4.4 False Positive Rate (FPR)</a></li>
+        <li><a href="#45-purpose-of-auc-roc-curve">4.5 Purpose of AUC-ROC curve</a></li>
       </ul>
     </li>
     <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</a></li>
@@ -611,6 +612,7 @@ Status: in progress</p>
         <li><a href="#42-false-negative-rate-fnr">4.2 False Negative Rate (FNR)</a></li>
         <li><a href="#43-specificitytrue-negative-rate-tnr">4.3 Specificity/True Negative Rate (TNR)</a></li>
         <li><a href="#44-false-positive-rate-fpr">4.4 False Positive Rate (FPR)</a></li>
+        <li><a href="#45-purpose-of-auc-roc-curve">4.5 Purpose of AUC-ROC curve</a></li>
       </ul>
     </li>
     <li><a href="#5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</a></li>
@@ -629,7 +631,7 @@ Status: in progress</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Radiologists widely use chest X-Rays to identify and detect underlying conditions. However, analyzing Chest X-Rays takes too much time, and accurately diagnosing without errors requires considerable experience. On the one hand, if the analyzing process is expedited, it might result in misdiagnosis, but on the other hand, lack of experience means long analysis time and/or errors; even with the correct diagnosis, it might be too late to prescribe a treatment. Radiologists are up against time and experience. With the advancements in AI, Deep Learning can easily solve this problem quickly and efficiently.</p>
 <p>Deep Learning methods are becoming very reliable at achieving expert-level performance using large labeled datasets. Deep learning is a technique to extract and transform data using multiple layers of neural networks. Each layer takes inputs from previous layers and incrementally refines it. An algorithm is used to train these layers to minimize errors and improve these layers&rsquo; overall accuracy <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It enables the network to learn to perform a specified task and gain an expert level performance by training on large datasets. The scope of this project is to identify and detect the following 5 pathologies using an image classification algorithm: Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion.  We use the CheXpert dataset, which consists of Chest X-rays. CheXpert dataset contains 224,316 chest Radiographs of 65,240 patients. The dataset has 14 observations in radiology reports and captures uncertainties inherent in radiograph interpretation using uncertainty labels. Our focus is on 5 observations (Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion). We impute uncertainty labels with randomly selected Boolean values.  Our Deep Learning models are developed using the PyTorch library, enabling fast, flexible experimentation and efficient production through a user-friendly front-end, distributed training, and ecosystem of tools and libraries<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. It was primarily developed by Facebook&rsquo;s AI Research lab (FAIR) and used for Computer Vision and NLP applications. PyTorch supports Python and C++ interfaces. There are popular Deep Learning applications built using PyTorch, including Tesla Autopilot, Uber&rsquo;s Pyro, etc. <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
-<p>In this analysis, first, we begin with an overview of the PyTorch library and DenseNet. We cover DenseNet architecture and advantages over ResNet for Multi-Image classification problems. Second, we explain the CheXpert dataset and how the classifiers are labeled, including uncertainties. Next, we explain the basic definitions of the AUC-ROC curve and how it measures a model&rsquo;s performance. Finally, we cover how our Deep Learning model classifies pathologies and concludes with the model&rsquo;s performance and prediction of the pathologies.</p>
+<p>In this analysis, first, we begin with an overview of the PyTorch library and DenseNet. We cover DenseNet architecture and advantages over ResNet for Multi-Image classification problems. Second, we explain the CheXpert dataset and how the classifiers are labeled, including uncertainties. Next, we cover the AUC-ROC curve&rsquo;s basic definitions and how it measures a model&rsquo;s performance. Finally, we explain how our Deep Learning model classifies pathologies and conclude with our model&rsquo;s performance and results.</p>
 <h2 id="2-overview-of-pytorch-library-and-densenet">2. Overview Of PyTorch Library And DenseNet</h2>
 <p>The PyTorch library is based on Python and is used for developing Python deep learning models. Many of the early adopters of the PyTorch are from the research community. It grew into one of the most popular libraries for deep learning projects. PyTorch provides great insight into Deep Learning. PyTorch is widely used in real-world applications. PyTorch makes an excellent choice for introducing deep learning because of clear syntax, streamlined API, and easy debugging. PyTorch provides a core data structure, the tensor, a multidimensional array similar to NumPy arrays. It performs accelerated mathematical operations on dedicated hardware, making it convenient to design neural network architectures and train them on individual machines or parallel computing resources <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <p>We use a pre-trained DenseNet model, which classifies the images. DenseNet is efficient on image classification benchmarks as compared to ResNet <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
@@ -640,9 +642,9 @@ Status: in progress</p>
 <h2 id="3-overview-of-chexpert-dataset">3. Overview of CheXpert Dataset</h2>
 <p>CheXpert is a large public dataset. It contains an interpreted chest radiograph consisting of 224,316 chest radiographs
 of 65,240 patients labeled for the presence of 14 observations as positive, negative, or uncertain <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
-<p>Figure 2 shows the CheXpert labels and the Probability</p>
+<p>Figure 2 shows the CheXpert labels and the Probability <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/chest_disease.png" alt="Figure 2"></p>
-<p><strong>Figure 2:</strong> Probability of different observations</p>
+<p><strong>Figure 2:</strong> Probability of different observations <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
 <h3 id="31-data-collection">3.1 Data Collection</h3>
 <p>CheXpert&rsquo;s dataset is a collection of chest radiographic studies from Stanford Hospital, performed between October
 2002 and July 2017 in both inpatient and outpatient centers, along with their associated radiology reports.
@@ -674,19 +676,26 @@ label if there is at least one negatively classified mention. Assign (blank) if 
 The <em>No Finding</em> observation is assigned a positive label (1) if there is no pathology classified as positive
 or uncertain <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
 <h2 id="4-basics-of-auc-roc-curve">4. Basics Of AUC-ROC Curve</h2>
-<p>AUC-ROC stands for Area Under Curve - Receiver Operating Characteristics. It visualizes how well a machine learning classifier is performing. However, it works for only binary classification problems <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. In our project, we extend it to evaluate multi-class classification problems.</p>
+<p>AUC-ROC stands for Area Under Curve - Receiver Operating Characteristics. It visualizes how well a machine learning classifier is performing. However, it works for only binary classification problems <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. In our project, we extend it to evaluate Multi-Image classification problem.</p>
 <p>Figure 3 shows Confusion Matrix. We use Confusion Matrix to explain Sensitivity and Specificity.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/confusion_matrix.png" alt="Figure 3"></p>
 <p><strong>Figure 3:</strong> Confusion Matrix</p>
 <h3 id="41-sensitivitytrue-positive-rate-tpr">4.1 Sensitivity/True Positive Rate (TPR)</h3>
-<p>Sensitivity explains what proportion of the positive class got correctly classified. A simple example would be determining what proportion of the actual sick people are correctly detected by the model <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
+<p>Sensitivity/True Positive Rate (TPR) explains what proportion of the positive class got correctly classified. A simple example would be determining what proportion of the actual sick people are correctly detected by the model <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/TPR.png" alt="Figure 4"></p>
 <h3 id="42-false-negative-rate-fnr">4.2 False Negative Rate (FNR)</h3>
+<p>False Negative Rate (FNR) explains what proportion of the positive class is incorrectly classified by the classifier. A higher TPR and a lower FNR means correctly classify the positive class <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/FNR.png" alt="Figure 5"></p>
 <h3 id="43-specificitytrue-negative-rate-tnr">4.3 Specificity/True Negative Rate (TNR)</h3>
+<p>Specificity/True Negative Rate (TNR) indicates what proportion of the negative class is classified correctly. For example, Specificity determines what proportion of actual healthy people are correctly classified as healthy by the model <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/TNR.png" alt="Figure 6"></p>
 <h3 id="44-false-positive-rate-fpr">4.4 False Positive Rate (FPR)</h3>
+<p>False Positive Rate (FPR) indicates what proportion of the negative class got incorrectly classified by the classifier. A higher TNR and a lower FPR means the model correctly classifies the negative class<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/FPR.png" alt="Figure 7"></p>
+<h3 id="45-purpose-of-auc-roc-curve">4.5 Purpose of AUC-ROC curve</h3>
+<p>A machine learning classification model can predict the actual class of the data point directly or predict its probability of belonging to different classes. The former case example is where a model can classify whether a patient is healthy or not healthy. In the latter case, a model can predict a patient&rsquo;s probability of being healthy or not healthy and provide more control over the result by enabling a way to tune the model&rsquo;s behavior by changing the threshold values. This is powerful because it eliminates the possibility of building a completely new model to achieve a different range of results <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. A threshold value helps to interpret the probability and map the probability to a class label. For example, a threshold value such as 0.5, where all values equal to or greater than the threshold, is mapped to one class and rests to another class <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/aucroc.png" alt="Figure 8"></p>
+<p><strong>Figure 8:</strong> Probability of prediction and metrics <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <h2 id="5-chest-x-rays---multi-image-classification-using-deep-learning-model">5. Chest X-Rays - Multi-Image Classification Using Deep Learning Model</h2>
 <p>Our Deep Learning model loads and process the raw data files and implement a Python class to represent data by
 converting it into a format usable by PyTorch. We then, visualize the training and validation data.</p>
@@ -701,7 +710,7 @@ converting it into a format usable by PyTorch. We then, visualize the training a
 <p>AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s. By analogy, Higher the AUC, better the model is at distinguishing between patients with disease and no disease.</p>
 <p>AUCROC&rsquo;s Sensitivity and Specificity are inversely proportional to each other. So when we increase Sensitivity, Specificity decreases and vice versa.
 When we decrease the threshold, we get more positive values thus it increases the sensitivity and decreasing the specificity.
-Similarly, when we increase the threshold, we get more negative values thus we get higher specificity and lower sensitivity <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
+Similarly, when we increase the threshold, we get more negative values thus we get higher specificity and lower sensitivity <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>.</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>Model was able to predict False Positives. Below is AUCROC table.
 <img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/roc.png" alt="Figure 8"></p>
@@ -773,10 +782,16 @@ Similarly, when we increase the threshold, we get more negative values thus we g
 <p>Whitepaper - CheXpert Dataset and Labelling  <a href="https://arxiv.org/pdf/1901.07031.pdf">https://arxiv.org/pdf/1901.07031.pdf</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
-<p>Overview of AUC-ROC Curve in Machine Learning <a href="https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/">https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Chest X-ray Dataset <a href="https://stanfordmlgroup.github.io/competitions/chexpert/">https://stanfordmlgroup.github.io/competitions/chexpert/</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:9" role="doc-endnote">
-<p>PyTorch Deep Learning Model for CheXpert Dataset <a href="https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121">https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Overview of AUC-ROC Curve in Machine Learning <a href="https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/">https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Overview of DenseNet <a href="https://towardsdatascience.com/understanding-and-visualizing-densenets-7f688092391a">https://towardsdatascience.com/understanding-and-visualizing-densenets-7f688092391a</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>PyTorch Deep Learning Model for CheXpert Dataset <a href="https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121">https://www.kaggle.com/hmchuong/chexpert-pytorch-densenet121</a> <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

@@ -32,7 +32,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy.">
 
-<meta itemprop="wordCount" content="2428">
+<meta itemprop="wordCount" content="2471">
 
 
 
@@ -232,7 +232,19 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-eigenfaces-test" href="/report/cloudmesh-openapi/readme-eigenfaces-test/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-scikitlearn" href="/report/cloudmesh-openapi/readme-scikitlearn/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-security" href="/report/cloudmesh-openapi/readme-security/"></a>
       
       
       
@@ -463,18 +475,6 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313test" href="/report/fa20-523-313/test/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314assignment_6assignment_6" href="/report/fa20-523-314/assignment_6/assignment_6/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -521,11 +521,12 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     <li><a href="#4-project-goals">4. Project Goals</a></li>
     <li><a href="#5-analysis">5. Analysis</a>
       <ul>
-        <li><a href="#51-accumulation-of-lyrics">5.1 Accumulation of lyrics</a></li>
+        <li><a href="#51-accumulation-of-audio-features-and-lyrics">5.1 Accumulation of audio features and lyrics</a></li>
         <li><a href="#52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</a></li>
-        <li><a href="#53-performance-of-sentiment-analysis-on-lyrics">5.3 Performance of sentiment analysis on lyrics</a></li>
-        <li><a href="#description-of-select-data-fields">Description of select data fields</a></li>
-        <li><a href="#preliminary-analysis-of-data">Preliminary Analysis of Data</a></li>
+        <li><a href="#53-description-of-select-data-fields">5.3 Description of select data fields</a></li>
+        <li><a href="#54-preliminary-analysis-of-data">5.4 Preliminary Analysis of Data</a></li>
+        <li><a href="#55-scatterplot-analysis">5.5 Scatterplot Analysis</a></li>
+        <li><a href="#56-linear-regression-analysis">5.6 Linear Regression Analysis</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -594,11 +595,12 @@ Status: in progress</p>
     <li><a href="#4-project-goals">4. Project Goals</a></li>
     <li><a href="#5-analysis">5. Analysis</a>
       <ul>
-        <li><a href="#51-accumulation-of-lyrics">5.1 Accumulation of lyrics</a></li>
+        <li><a href="#51-accumulation-of-audio-features-and-lyrics">5.1 Accumulation of audio features and lyrics</a></li>
         <li><a href="#52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</a></li>
-        <li><a href="#53-performance-of-sentiment-analysis-on-lyrics">5.3 Performance of sentiment analysis on lyrics</a></li>
-        <li><a href="#description-of-select-data-fields">Description of select data fields</a></li>
-        <li><a href="#preliminary-analysis-of-data">Preliminary Analysis of Data</a></li>
+        <li><a href="#53-description-of-select-data-fields">5.3 Description of select data fields</a></li>
+        <li><a href="#54-preliminary-analysis-of-data">5.4 Preliminary Analysis of Data</a></li>
+        <li><a href="#55-scatterplot-analysis">5.5 Scatterplot Analysis</a></li>
+        <li><a href="#56-linear-regression-analysis">5.6 Linear Regression Analysis</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -620,8 +622,8 @@ Status: in progress</p>
 <p><code>phybrid = \alpha plyrics + (1 - \alpha )paudio</code></p>
 <p>where a is the probability weight given by the lyrical classifier <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="3-datasets">3. Datasets</h2>
-<p>For the audio content analysis portion of this project, we use Spotify&rsquo;s Web API, which provides a great amount audio data for every song in Spotify&rsquo;s song collection, including valence, energy, and danceability.</p>
-<p>For the lyrical analysis portion of this project, we use Genius&rsquo;s API to pull lyrics information for a song. Genius is a website which contains lyrics to several popular songs. We will then use WordNet, which is large collection of English lexicon, used to classify words and phrases with features such as valence, arousal, dominance.</p>
+<p>For the audio content analysis portion of this project, we use Spotify&rsquo;s Web API, which provides a great amount audio data for every song in Spotify&rsquo;s song collection, including valence, energy, and danceability <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
+<p>For the lyrical analysis portion of this project, we use Genius&rsquo;s API to pull lyrics information for a song. Genius is a website which contains lyrics to several popular songs <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. To perform sentiment analysis on a set of lyrics collected from Genius, we use the NLTK Vader library.</p>
 <h2 id="4-project-goals">4. Project Goals</h2>
 <ul>
 <li>make dataset of collected song information from spotify and genius api</li>
@@ -645,12 +647,10 @@ Status: in progress</p>
 </li>
 </ul>
 <h2 id="5-analysis">5. Analysis</h2>
-<h3 id="51-accumulation-of-lyrics">5.1 Accumulation of lyrics</h3>
-<p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSOup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered a little over 6000 Spotify tracks</p>
+<h3 id="51-accumulation-of-audio-features-and-lyrics">5.1 Accumulation of audio features and lyrics</h3>
+<p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSoup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered a little over 6000 Spotify tracks.</p>
 <h3 id="52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</h3>
-<p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSOup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered a little over 6000 Spotify tracks</p>
-<h3 id="53-performance-of-sentiment-analysis-on-lyrics">5.3 Performance of sentiment analysis on lyrics</h3>
-<p>With a song&rsquo;s lyrics in hand, we used NLTK&rsquo;s sentiment module, Vader, to read each line in the lyrics. NLTK Vader reads a line of text and gives a scores on positivity, negativity, neutrality, and and overall compound score. We marked lines with a compound score greater than 0.5 as positive, less than -0.1 as negative, and anything in between as neutral. We then found the percentages of positive, negative, and neutral lines in a song&rsquo;s composition and saved them to our data set.</p>
+<p>With a song&rsquo;s lyrics in hand, we used NLTK&rsquo;s sentiment module, Vader, to read each line in the lyrics. NLTK Vader reads a line of text and assigns it scores of positivity, negativity, neutrality, and and overall compound score. We marked lines with a compound score greater than 0.5 as positive, less than -0.1 as negative, and anything in between as neutral. We then found the percentages of positive, negative, and neutral lines in a song&rsquo;s composition and saved them to our data set.</p>
 <p>We performed a brief analysis of the legibility of the Vader module in determining sentiment on four separate strings. &ldquo;I&rsquo;m happy&rdquo; and &ldquo;I&rsquo;m so happy&rdquo; were used to compare two positive lines, &ldquo;I&rsquo;m happy&rdquo; was expected to have a positive compound score, but slightly less positive than &ldquo;I&rsquo;m so happy&rdquo;. Similarly, we used two negative lines &ldquo;I&rsquo;m sad&rdquo; and the slightly more extreme, &ldquo;I&rsquo;m so sad&rdquo; which were expected to result in negative compound scores with &ldquo;I&rsquo;m sad&rdquo; being less negative than &ldquo;I&rsquo;m so sad&rdquo;.</p>
 <pre><code>Scores for 'I'm happy': {
     'neg': 0.0, 
@@ -679,7 +679,7 @@ Scores for 'I'm so sad': {
     'pos': 0.0, 
     'compound': -0.5256
 }
-</code></pre><p>While these results confirmed our expectations, one issue that comes to the table is that Vader takes into consideration additional string features such as punctuation in its determination of score, meaning &ldquo;I&rsquo;m so sad!&rdquo; will be more negative than &ldquo;I&rsquo;m so sad&rdquo;. Since lyrics on Genius are contributed by the community, in most cases there is a lack of consistency using accurate punctuation. Additionally in some cases there can be typos present in a line of lyrics, both of which can skew our data. However we determined that our method in using the Vader module is suitable for our project as we simply want to determine if a track is positive or negative without needing to be too specific.</p>
+</code></pre><p>While these results confirmed our expectations, a few issues come to the table with our use of the Vader module. One is that Vader takes into consideration additional string features such as punctuation in its determination of score, meaning &ldquo;I&rsquo;m so sad!&rdquo; will be more negative than &ldquo;I&rsquo;m so sad&rdquo;. Since lyrics on Genius are contributed by the community, in most cases there is a lack of consistency using accurate punctuation. Additionally, in some cases there can be typos present in a line of lyrics, both of which can skew our data. However we determined that our method in using the Vader module is suitable for our project as we simply want to determine if a track is positive or negative without needing to be too specific. Another issue is that our implementation of Vader acts only on English words. Again, since lyrics on Genius are contributed by the community, there could be errors in our data from misspelled word contributions as well as sections or entire lyrics written in different languages.</p>
 <p>In addition to performing sentiment analysis on the lyrics, we tokenized the lyrics, removing common words such as &lsquo;a&rsquo;, &lsquo;the&rsquo;,&lsquo;for&rsquo;, etc. This was done to collect data on the number of meaningful and number of non-repeating words in each song. Albeit while this data was never used in our study, it could prove useful in future studies.</p>
 <p><em>Table 1</em> displays a snapshot of the data we collected from seven tracks released in 2020. The dataset contains 27 fields, 13 of which describe the audio content of a track, and 8 of which describe the lyrics of the track.</p>
 <p><strong>Table 1:</strong> Snapshot of dataset containing tracks released in 2020</p>
@@ -881,25 +881,29 @@ Scores for 'I'm so sad': {
 </tr>
 </tbody>
 </table>
-<h3 id="description-of-select-data-fields">Description of select data fields</h3>
+<h3 id="53-description-of-select-data-fields">5.3 Description of select data fields</h3>
 <p>The following terms defined are important in our analyses. In our data set most terms contain are represented by a  value between 0 and 1, indicating least to most. For example, looking at the first two rows in <em>Table 1</em>, we can see that the track by the artist, Pop Smoke, has a greater speechiness score, indicating a greater percentage of that song contains spoken word.</p>
 <ul>
 <li><strong>Danceability:</strong> uses several musical elements (tempo, stability, beat strength, regularity) to determine how suitable a given track is for dancing</li>
 <li><strong>Energy:</strong>  measures intensity of a song</li>
-<li><strong>Loudness:</strong> average loudness (in decibels) of a track</li>
-<li><strong>Mode:</strong> indicates whether track uses major(0) or minor (1) scale</li>
 <li><strong>Speechiness:</strong> identifies how much of a track contains spoken word</li>
-<li><strong>Instrumentalness:</strong> confidence value on a track having no vocal content</li>
 <li><strong>Valence:</strong> predicts the overall happiness, or positivity of a track based on its musical features</li>
-<li><strong>Tempo:</strong> average tempo of a track</li>
 <li><strong>Positivity</strong> percentage of lines in a song&rsquo;s lyrics determined to have a positive sentiment score</li>
 <li><strong>Negativity</strong> percentage of lines in a song&rsquo;s lyrics determined to have a negative sentiment score</li>
+<li><strong>Neutrality</strong> percentage of lines in a song&rsquo;s lyrics determined to have a neutral sentiment score</li>
 </ul>
-<p>Out of these fields, we seek to find which audio features correlate to a song&rsquo;s valence and if our positivity and negativity scores of a song&rsquo;s lyrics provide any meaningfullness in determining a song&rsquo;s positivity. For the purpose of this study we mainly focus on valence, energy, danceability, positivity, and negativity.</p>
-<h3 id="preliminary-analysis-of-data">Preliminary Analysis of Data</h3>
+<p>Out of these fields, we seek to find which audio features correlate to a song&rsquo;s valence and if our positivity and negativity scores of a song&rsquo;s lyrics provide any meaningfulness in determining a song&rsquo;s positivity. For the purpose of this study we mainly focus on valence, energy, danceability, positivity, and negativity.</p>
+<h3 id="54-preliminary-analysis-of-data">5.4 Preliminary Analysis of Data</h3>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/all_tracks_heatmap.png" alt="Heatmap"></p>
 <p><strong>Figure 1:</strong> Heatmap of data with fields valence, energy, danceability, positivity, negativity</p>
 <p>Referring to <em>Figure 1</em>, we find that track lyrics tend to be more negative than positive. However for the most part, even with tracks with negative lyrics, the valence, or overall happiness of the audio features hovers around 0.5; indicating that most songs tend to have neutral audio features. Looking at tracks with lyrics that are highly positive we find that the valence rises to about 0.7 to 0.8 and that songs with extremely high negatively also cause the valence to drop to the 0.3 range. These observations indicate that only extremes in lyrical sentiment correlate significantly in a song&rsquo;s valence, as some songs with negative lyrics may also be fast-tempo and energetic, keeping the valence relatively high compared to lyrical composition. This is shown in our visualization, where both tracks with positive and negative lyricals have high energy and danceability values, indicating fast-tempos and high-pitches.</p>
+<h3 id="55-scatterplot-analysis">5.5 Scatterplot Analysis</h3>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/audio_features_scatterplots.png" alt="Audio_Features_Scatterplots"></p>
+<p><strong>Figure 2:</strong> Scatterplots showing relation of features danceability, energy, speechiness, positivity, negativity, and neutrality to valence.</p>
+<p><em>Figure 2</em> describes the relation of several data fields we collected to a song&rsquo;s valence, or its overall positivity. We find that the positivity and negativity plots reflect that of the speechiness plot in that there seems to be little correlation between the x and y axes. On the other hand neutrality seems to show a positive correlation between a song&rsquo;s lyrical content and its respective valence. If a song is more neutral, it seems more likely to have a higher valence.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/spotify_distributions.png" alt="Audio_Features_Scatterplots"></p>
+<p><strong>Figure 2:</strong> Distributions of field values across the Spotify music library <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<h3 id="56-linear-regression-analysis">5.6 Linear Regression Analysis</h3>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>There are several aspects that could be improved upon in future iterations of our study. In this project we only worked with songs released after 2017, but obviously, people would still enjoy listening to songs from previous years. The Spotiy API contains audio features data for every song in its library, so it would be worth collecting that data on every song for usage in the generation of song recommendations. Secondly, our data set excluded songs on Spotify, whose lyrics could not be found easily on Genius.com. We should have handled these cases by attempting to find the lyrics from other popular websites which store music lyrics. And lastly, we worked with a very small dataset relative to the total amount of songs that exist, or that are available on Spotify. There is great possibility in repeating this study quite easily with a greater selection of songs. We were suprised by how small the file sizes were of our dataset of 6000 songs, the aggregated data set being only 2.3 megabytes in size. Using that value a set of one million songs can be estimated to only be around 350 megabytes.</p>
 <p>This section will be expanded upon after completion of analyses</p>
@@ -924,6 +928,12 @@ Scores for 'I'm so sad': {
 </li>
 <li id="fn:6" role="doc-endnote">
 <p>Morris, C. (2016). SongSim. Retrieved November 17, 2020, from <a href="https://colinmorris.github.io/SongSim/">https://colinmorris.github.io/SongSim/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Get Audio Features for a Track. (2020). Retrieved November 17, 2020, from <a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Genius API Documentation. (2020). Retrieved November 17, 2020, from <a href="https://docs.genius.com/">https://docs.genius.com/</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

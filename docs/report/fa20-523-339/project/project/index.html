@@ -32,7 +32,7 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
 Tao Liu, fa20-523-339, Edit
 Abstract As a result of last twenty year&rsquo;s Internet development in the global, E-commerce industry is getting stronger and stronger. While customers enjoyed their convenient online purchase environment, the E-commerce see the potential for the data and information customer left during their online-shopping process.">
 
-<meta itemprop="wordCount" content="2595">
+<meta itemprop="wordCount" content="2862">
 
 
 
@@ -232,7 +232,19 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-eigenfaces-test" href="/report/cloudmesh-openapi/readme-eigenfaces-test/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-scikitlearn" href="/report/cloudmesh-openapi/readme-scikitlearn/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapireadme-security" href="/report/cloudmesh-openapi/readme-security/"></a>
       
       
       
@@ -461,18 +473,6 @@ Abstract As a result of last twenty year&rsquo;s Internet development in the glo
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313test" href="/report/fa20-523-313/test/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314assignment_6assignment_6" href="/report/fa20-523-314/assignment_6/assignment_6/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-314projectproject" href="/report/fa20-523-314/project/project/"></a>
       
       
     </li>
@@ -731,7 +731,7 @@ The size of DATABASE : 1547
 <pre><code>The 4561  Lines of Reformatted ASIN reference dictionary as following.
 {'B001BKEWF2': 0, 'B001GXRQW0': 1, 'B001H53QE4': 2, 'B001H53QEO': 3, 'B001KMWN2K': 4, 'B001M1UVQO': 5, 'B001M1UVZA': 6, 'B001M5GKHE': 7, 'B002BSHDJK': 8, 'B002DN7XS4': 9, 'B002H9RN0C': 10, 'B002MS7BPA': 11, 'B002NZXF9S': 12, 'B002O018DM': 13, 'B002O0536U': 14, 'B002OOBESC': 15, 'B002PY04EG': 16, 'B002QFXC7U': 17, 'B002QTM0Y2': 18, 'B002QTPZUI': 19, 'B002SC9DRO': 20, 'B002UKLD7M': 21, 'B002VFYGC0': 22, 'B002VG4AR0': 23, 'B002VG4BRO': 24, 'B002W8YL6W': 25, 'B002XNLC04': 26, 'B002XNOVDE': 27, 'B002YEWXZ0': 28, 'B002YEWXMI': 29, 'B003755QI6': 30, 'B003CMYYGY': 31, 'B003NALDC8': 32, 'B003XNIBTS': 33, 'B003ZYIKDM': 34, 'B00414Y7Y6': 35, 'B0046IIHMK': 36, 'B004BVCHDC': 37, 'B004CG61UQ': 38, 'B004CZRZKW': 39, 'B004D01QJ2': 40, 'B004KNWWPE': 41, 'B004KNWWP4': 42, 'B004KNWWR2': 43, 'B004KNWWRC': 44, 'B004KNWWT0': 45, 'B004KNWWRW': 46, 'B004KNWWQ8': 47, 'B004KNWWNG': 48, 'B004KNWWPO': 49, 'B004KNWWXQ': 50, 'B004KNWWUE': 51, 'B004KNWWYU': 52, 'B004KNWWWC': 53, 'B004KNWX3A': 54, 'B004KNWX1W': 55, 'B004KNWWZE': 56, 'B004KNWWSQ': 57, 'B004KNWX4Y': 58, 'B004KNWX12': 59, 'B004KNWX3U': 60, 'B004KNWX62': 61, 'B004KNWX2Q': 62, 'B004KNWX6C': 63...}
 </code></pre><p><strong>Figure 2:</strong> The ASIN dictionary</p>
-<p>Then the data contained in the each record&rsquo;s attributes: <strong>also_view</strong> &amp; <strong>also_buy</strong> will be reformated as following:</p>
+<p>Then the data contained in the each record&rsquo;s attributes: <strong>also_view</strong> &amp; <strong>also_buy</strong> will be reformated as <strong>Figure 3</strong> and <strong>Figure 4</strong>. <strong>Figure 3</strong> is about the also_view item in reformatted numeric numbers based on each item customer purchased. <strong>Figure 4</strong> is about the also_buy item in reformatted numeric numbers based on each item customer purchased.</p>
 <pre><code>also_view List: The first 10 lines
 Item  0 :  []
 Item  1 :  [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
@@ -758,16 +758,28 @@ Item  8 :  [4224, 4225, 4226, 4227, 4228, 4229, 4230, 4231, 4232, 4233, 4234, 42
 Item  9 :  []
 Item  10 :  []
 </code></pre><p><strong>Figure 4:</strong> The also_buy list</p>
-<p>A dictionary of the asin&rsquo;s relationship with particular record in also_view is recorded. An example from item 2000 is showingas following.</p>
+<p>While the also_buy list and also_view list is addressed. It is also important to know how many times a particular item appeared in other items&rsquo; also view list and also buy list. These dictionaries will help to calculate the recommendation rate later.  <strong>Figure 5</strong> and <strong>Figure 6</strong> is an example for how many times item 2000 appeared in other item&rsquo;s also_view and also_buy lists.</p>
 <pre><code>also_view dictionary: use Item 2000 as an example
 Item  2000 :  [1, 2, 11, 12, 51, 60, 63, 65, 66, 67, 85, 86, 90, 94, 99, 100, 101, 103, 107, 108, 113, 116, 123, 126, 127, 129, 130, 141, 142, 143, 145, 146, 147, 148, 194, 199, 200, 204, 217, 221, 225, 229, 230, 231, 232, 233, 234, 235, 251, 253, 254, 260, 264, 268, 269, 270, 271, 280, 284, 285, 286, 287, 288, 294, 295, 296, 298, 299, 305, 306, 307, 308, 309, 313, 319, 327, 328, 338, 339, 344, 346, 348, 355, 356, 360, 371, 372, 377, 380, 389, 394, 406, 407, 410, 415, 440, 456, 469, 480, 490, 494, 495, 496, 502, 505, 509, 511, 512, 514, 517, 519, 520, 527, 530, 548, 591, 595, 600, 608, 609, 621, 631, 633, 670, 671, 672, 673, 675, 681, 689, 691, 695, 697, 707, 708, 709, 719, 783, 792, 793, 796, 797, 801, 803, 804, 807, 810, 816, 817, 818, 819, 836, 840, 842, 856, 892, 902, 913, 914, 917, 921, 955, 968, 972, 974, 975, 979, 981, 990, 991, 997, 998, 999, 1000, 1001, 1003, 1005, 1006, 1007, 1010, 1011, 1014, 1015, 1017, 1018, 1023, 1024, 1026, 1027, 1028, 1031, 1032, 1035, 1037, 1038, 1039, 1040, 1042, 1043, 1050, 1069, 1070, 1084, 1114, 1115, 1116, 1117, 1119, 1143, 1153, 1171, 1175, 1192, 1197, 1198, 1199, 1200, 1201, 1202, 1203, 1204, 1205, 1207, 1208, 1213, 1217, 1218, 1220, 1222, 1233, 1236, 1238, 1242, 1244, 1245, 1246, 1249, 1251, 1258, 1268, 1270, 1280, 1285, 1289, 1290, 1292, 1295, 1315, 1318, 1319, 1324, 1328, 1330, 1333, 1336, 1341, 1345, 1346, 1347, 1348, 1352, 1359, 1361, 1365, 1366, 1373, 1378, 1384, 1389, 1394, 1395, 1396, 1403, 1405, 1406, 1407, 1414, 1415, 1417, 1418, 1419, 1420, 1423, 1424, 1426, 1427, 1430, 1431, 1432, 1433, 1434, 1437, 1443, 1453, 1454, 1455, 1457, 1458, 1462, 1463, 1464, 1467, 1468, 1469, 1470, 1472, 1474, 1475, 1477, 1478, 1480, 1481, 1482, 1486, 1488, 1492, 1496, 1497, 1498, 1499, 1500, 1501, 1504, 1505, 1506, 1508, 1509, 1512, 1513, 1514, 1515, 1523, 1530, 1533, 1537, 1539, 1546]
 </code></pre><p><strong>Figure 5:</strong> The also_view dictionary</p>
-<p>A dictionary of the asin&rsquo;s relationship with particular record in also_buy is also recorded. An example from item 2000 is showingas following.</p>
 <pre><code>also_buy dictionary: use Item 2000 as an example
 Item  2000 :  [217, 231, 235, 236, 277, 284, 285, 286, 287, 306, 307, 308, 327, 359, 476, 482, 505, 583, 609, 719, 891, 922, 963, 1065, 1328, 1359, 1384, 1399, 1482, 1483, 1490, 1496, 1497, 1499, 1509, 1512, 1540]
 </code></pre><p><strong>Figure 6:</strong> The also_buy dictionary</p>
 <h2 id="5-recommendation-rate-and-similarity-calculation">5. Recommendation Rate and Similarity Calculation</h2>
-<p>This section will be addressed upon project completion.</p>
+<p>While all the dictionaries and attributes-label relationship is prepared in Part4, the recommendation rate calculation is addressed in this part. In this algorithm, there are two types of similarity methods: <strong>Cosine Similarity</strong> and <strong>Euclidean Distance Similarity</strong> that perform the similarity calculation. The first step before calculating the similarity would be phrasing the recommendation rate for each item to another item. The <strong>Figure 8</strong> is a shortcut for the recoomendation rate matrix. It will use the logic in <strong>Figure 7</strong>.</p>
+<pre><code>for item in the asin list:
+  for asin in the also_view dictionary:
+    if asin is founded in also_view dictionary[item] list:
+        score for this item increase 2
+    each item in the also_view_dict[asin]'s score will be also increase 2
+  for asin in the also_view dictionary:
+    if asin is founded in also_view dictionary[item] list:
+        score for this item increase 10
+    each item in the also_view_dict[asin]'s score will be also increase 10
+for other scores which is currently 0, assigned the average value for it
+return the overall matrix for the further step
+   
+</code></pre><p><strong>Figure 7:</strong> The sudocode for giving the recommendation rate for the likelyhood of the next purchase item based the current purchase</p>
 <pre><code>Item  0 :  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ...]
 Item  1 :  [13.0, 52, 28, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 2, 2, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0 ...]
 Item  2 :  [29.5, 28, 182, 29.5, 29.5, 29.5, 29.5, 29.5, 29.5, 29.5, 29.5, 4, 2, 29.5, 29.5, 29.5, 29.5, 29.5, 29.5, 29.5 ...]
@@ -779,7 +791,7 @@ Item  7 :  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
 Item  8 :  [14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 290, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5, 14.5 ...]
 Item  9 :  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ...]
 Item  10 :  [1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 6, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ...]
-</code></pre><p><strong>Figure 7:</strong> The shortcut for the recommenation rate matrix</p>
+</code></pre><p><strong>Figure 8:</strong> The shortcut for recommenation rate matrix</p>
 <table>
 <thead>
 <tr>
@@ -841,6 +853,12 @@ Item  10 :  [1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 6, 1.5, 1.5, 1.5,
 <p><strong>table 2:</strong> The shortcut for using consine similarity to address the recommendation result</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>This section will be addressed upon project completion.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-339/raw/main/project/images/CosVSEuc.jpeg" alt="image info"></p>
+<p><strong>Figure 9:</strong> The Cosine similarity and Euclidean Distance Accuracy Comparison</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-339/raw/main/project/images/bothrightandwrong.jpeg" alt="image info"></p>
+<p><strong>Figure 10:</strong> The bothright and bothwrong accuracy comparison</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-339/raw/main/project/images/timecompare.jpeg" alt="image info"></p>
+<p><strong>Figure 11:</strong> The Cosine Similarity and Euclidean Distance Time Comparison</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8. References</h2>
