@@ -160,6 +160,9 @@ counter = 0
 # check for html
 for line in content.splitlines():
     line = line.strip()
+    if "# Acknowledge" in line:
+        break
+    
     counter = counter + 1     
 
 
