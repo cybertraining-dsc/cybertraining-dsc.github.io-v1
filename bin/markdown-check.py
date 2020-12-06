@@ -184,7 +184,7 @@ for line in content.splitlines():
     for word in ["prefer",
                      "will",
                      "chose",
-                     "chose",
+                     "choose",
                      "thought",
                      "have",
                      "want",
