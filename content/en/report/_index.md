@@ -69,6 +69,9 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
       author="Balaji Dhamodharan and Anantha Janakiraman"
 	  hid="fa20-523-337" %}}
 
+#### Politics
+
+* {{% addreport title="Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election" author="Sudheer Alluri, Vishwanadham Mandala" hid="fa20-523-316" %}}
 
 
 #### Technology
@@ -118,7 +121,4 @@ hid="fa20-523-341" %}}
 * {{% addreportonly title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 
-#### Twitter
-
-* {{% addreport title="Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election" author="Sudheer Alluri, Vishwanadham Mandala" hid="fa20-523-316" %}}
 
