@@ -68,13 +68,8 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 #### Technology
 
-* {{% cloudmesh-project
-      title="Benchmarking Multi-Cloud Auto Generated AI Services"
-      author="Gregor von Laszewski, Richard Otten, Anthony Orlowski, Caleb Wilson"
-      org="cloudmesh"
-	  repo="cloudmesh-openapi"
-	  doc="paper"
-	  link="/report/cloudmesh-openapi/paper" %}}
+*
+  [Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Richard Otten, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
 
 ## Other Reports and Projects
 
@@ -103,7 +98,6 @@ Finance:
 * {{% addreport title="Online Store Customer Revenue Prediction"
   author="Balaji Dhamodharan and Anantha Janakiraman" hid="fa20-523-337" %}}
 * {{% addreport title="Big Data Analytics in Brazilian E-Commerce" author="Oluwatobi Bolarin" hid="fa20-523-330" %}}
-* {{% addreport title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 
 #### Lifestyle
@@ -119,6 +113,7 @@ hid="fa20-523-341" %}}
 * {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
 * {{% addreportonly title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
 * {{% addreportonly title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
+* {{% addreportonly title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 
 #### Twitter
