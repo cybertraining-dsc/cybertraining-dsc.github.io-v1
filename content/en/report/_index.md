@@ -37,7 +37,6 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 * {{% addreport title="NBA Performance and Injury" author="Gavin Hemmerlein, Chelsea Gorius" hid="fa20-523-301" %}}
 * {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
-* {{% addreport title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
 
 #### Environment
 
@@ -119,6 +118,8 @@ hid="fa20-523-341" %}}
 * {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
 * {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
 * {{% addreportonly title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
+* {{% addreportonly title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
+
 
 #### Twitter
 
