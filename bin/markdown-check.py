@@ -148,6 +148,10 @@ for line in content.splitlines():
 
         if line.startswith("# "):
             titles = titles + 1
+        if (line.startswith("# ") or  line.startswith("## ") or
+            line.startswith("### ") or  line.startswith("#### "))
+            and line.strip().endswith(":"):
+            error(f"Line {counter}: section header ends with ':' please remove.")
         if " http://" in line or " https://" in line:
             error(f"Line {counter}: http link is not enclosed in < >.")
         if ("http://" in line or "https://" in line) and " >" in line:
