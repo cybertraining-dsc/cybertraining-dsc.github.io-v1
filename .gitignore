@@ -2,6 +2,7 @@
 *~
 .#*
 .DS_Store
+docs/report/*/report/plan
 docs/report/*/*.csv
 docs/report/*/*.ipynb
 docs/report/*/LICENSE

@@ -110,6 +110,9 @@ for line in content.splitlines():
     line = line.strip()
     counter = counter + 1 
     if line.startswith("!["):
+        if "https://user-images.githubusercontent.com" in line:
+            error(f"Line {counter}: Images must not be in user-images. Please see our template on how to include figures. Place them as png or jpg in your images directory.")
+            
         if "https://github.com/cybertraining-dsc" in line and "raw" not in line:
             error(f"Line {counter}: Image must be included from raw. URL wrong.")
 
