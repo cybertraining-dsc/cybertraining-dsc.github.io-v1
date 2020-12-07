@@ -21,21 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Stock Price Reactions to Earnings Announcements  each table must be proceeded with a numbered table caption that yu can then refer to in the text. such as Table 1 when you write &ldquo;first result&rdquo; SHould tahn not be &ldquo;Results of Calculation 1 in Section 6.1&rdquo;, I woudl refer to all results that way when describing your analysis no links to your own programs are provided. paper does not include a benchmark section in results that describes how long it takes to download the data for each calculation or the calculation conducted." />
+<meta property="og:description" content="Stock Price Reactions to Earnings Announcements   Status: final
+Matthew Frechette, fa20-523-336, Edit
+Abstract On average the US stock market sees a total of $192 billion a day trading hands. Massive companies, hedge funds, and other high level institutions use the markets to capitalize on companies potential and growth over time. The authors used Financial Modeling Prep to gather over 20 years of historical stock data and earnings calls to understand better what happens during company&rsquo;s earnings annoucements." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-336/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Stock Price Reactions to Earnings Announcements  each table must be proceeded with a numbered table caption that yu can then refer to in the text. such as Table 1 when you write &ldquo;first result&rdquo; SHould tahn not be &ldquo;Results of Calculation 1 in Section 6.1&rdquo;, I woudl refer to all results that way when describing your analysis no links to your own programs are provided. paper does not include a benchmark section in results that describes how long it takes to download the data for each calculation or the calculation conducted.">
+<meta itemprop="description" content="Stock Price Reactions to Earnings Announcements   Status: final
+Matthew Frechette, fa20-523-336, Edit
+Abstract On average the US stock market sees a total of $192 billion a day trading hands. Massive companies, hedge funds, and other high level institutions use the markets to capitalize on companies potential and growth over time. The authors used Financial Modeling Prep to gather over 20 years of historical stock data and earnings calls to understand better what happens during company&rsquo;s earnings annoucements.">
 
-<meta itemprop="wordCount" content="3910">
+<meta itemprop="wordCount" content="3568">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Stock Price Reactions to Earnings Announcements  each table must be proceeded with a numbered table caption that yu can then refer to in the text. such as Table 1 when you write &ldquo;first result&rdquo; SHould tahn not be &ldquo;Results of Calculation 1 in Section 6.1&rdquo;, I woudl refer to all results that way when describing your analysis no links to your own programs are provided. paper does not include a benchmark section in results that describes how long it takes to download the data for each calculation or the calculation conducted."/>
+<meta name="twitter:description" content="Stock Price Reactions to Earnings Announcements   Status: final
+Matthew Frechette, fa20-523-336, Edit
+Abstract On average the US stock market sees a total of $192 billion a day trading hands. Massive companies, hedge funds, and other high level institutions use the markets to capitalize on companies potential and growth over time. The authors used Financial Modeling Prep to gather over 20 years of historical stock data and earnings calls to understand better what happens during company&rsquo;s earnings annoucements."/>
 
 
 
@@ -571,18 +577,9 @@
     
 	       
 	<h1 id="stock-price-reactions-to-earnings-announcements">Stock Price Reactions to Earnings Announcements</h1>
-<ul>
-<li><input disabled="" type="checkbox"> each table must be proceeded with a numbered table caption that yu can then refer to in the text. such as Table 1</li>
-<li><input disabled="" type="checkbox"> when you write &ldquo;first result&rdquo; SHould tahn not be &ldquo;Results of Calculation 1 in Section 6.1&rdquo;, I woudl refer to all results that way</li>
-<li><input disabled="" type="checkbox"> when describing your analysis no links to your own programs are provided.</li>
-<li><input disabled="" type="checkbox"> paper does not include a benchmark section in results that describes how long it takes to download the data for each calculation or the calculation conducted. This coudl be a total, but also you coudl measue each caclulation form A - ? However looking at the code this is likely super fast is this correct. If so other than the download you could say that each individula calculation is below x seconds/milliseconds.
-YOu dod need to include information on which comuter you did this. memory, cpu. YOu may want to take a oook at cloudmesh StopWatch as you do not use functions to separate your calculations.</li>
-<li><input disabled="" type="checkbox"> very good progress</li>
-<li><input disabled="" type="checkbox"> None of your refernces are cited explicitly in the text, so they will not show in your final report on the cybertraining web page. Please fix. See the template on how to cite refernces. It is not enought to just put them in the refernce section.</li>
-</ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-336/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-336/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-336/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-336/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress</p>
+Status: final</p>
 <p>Matthew Frechette, <a href="https://github.com/cybertraining-dsc/fa20-523-336/">fa20-523-336</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-336/blob/main/project/project.md">Edit</a></p>
 
 
@@ -637,13 +634,9 @@ For this project, the studies planned to look at markets as a whole and had the 
 <h3 id="52-finding-earnings-data">5.2. Finding Earnings Data</h3>
 <p>Secondly, the earnings data from the company must be gathered, FMP has the ability to pull earnings results going back roughly 20 years depending on the company, this is more than adequate for this software as the calculations will not solely be using the earnings reports from one company or industry. After the earnings dates, eps, and expected eps is pulled from the API call, it is stored in an earningsData object which possessed the date, eps, expected eps, revenue, and expected revenue for that specific earning call. A function in the software called FMPfindStockEarningData() returns a list of all earningsData object for further analysis.</p>
 <h3 id="53-calculations-and-results">5.3. Calculations And Results</h3>
-<p>The final and most complex area of the software’s processes include the calculations and results formulations functions. This is where all of the company’s stock data is computed to better understand the price action after the company exhibits an earnings call. This function formulates 10 main calculations listed:</p>
-<ul>
-<li><input disabled="" type="checkbox"> TODO there is a colon here but not what the 10 calculations are. I guess you like to refer to the tables so you can say as listed in Tables 1 to ???. The next sections seem to contain sentence fragments that may or may not relate to the tables. Please can you improve the description as is unclear where what belongs. Maybe some of the functions are the captions. Please see academic papers or our examples an how to do use tables effectively in a research paper. We like the format of the tables, but due to lack of cations and their inclusion in the text it is a bit unclear. YOU could also just use one table and than refer to an explanation in text while refereing to the table and each row by your letter you introduced.</li>
-</ul>
-<p>Finds the likelihood of a company beating earnings solely on what the trend of the stock is doing.</p>
-<p>This would be used to identify stocks that are projected to beat earnings based of the historical trend accuracy and price correlation. Using a strategy like this is not recommended and most likely will not be very accurate as a trend does not always correlate to the company actually being profitable.</p>
-<p><strong>Table 1</strong>: TODO: Describe her what the table shows</p>
+<p>The final and most complex area of the software’s processes include the calculations and results formulations functions. This is where all of the company’s stock data is computed to better understand the price action after the company exhibits an earnings call. This function formulates 10 main calculations listed in Table 1.</p>
+<p>The first set of calculation would be used to identify stocks that are projected to beat earnings based off the historical trend. Using a strategy like this is not recommended and most likely will not be very accurate as a trend does not always correlate to the company actually being profitable.</p>
+<p><strong>Table 1</strong>: Table shows the calculations that are to be performed on the SP500 dataset.</p>
 <table>
 <thead>
 <tr>
@@ -662,8 +655,8 @@ For this project, the studies planned to look at markets as a whole and had the 
 </tr>
 </tbody>
 </table>
-<p>Finds the likelihood of a stock’s price movement based on earnings results
-Stocks the perform well (or beat earnings) are typically looked at by investors as buying opportunities, and thus the security’s price increases. This is not always the case however, and the results of this will be shown later in the report. Sometimes, investors project the stock to beat earnings by more than others and in turn find even some positive earnings results bearish. This can cause major stockholder to sell their shares and bring the price down.</p>
+<p>These calculations find the likelihood of a stock’s price movement based on the company&rsquo;s earnings results.
+Stocks that perform well (or beat earnings) are typically looked at by investors as buying opportunities, and thus the security’s price increases. This is not always the case however, and the results of this will be shown later in the report. Sometimes, investors project the stock to beat earnings by more than others and in turn find even some positive earnings results bearish. This can cause major stockholder to sell their shares and bring the price down.</p>
 <table>
 <thead>
 <tr>
@@ -690,8 +683,7 @@ Stocks the perform well (or beat earnings) are typically looked at by investors 
 </tr>
 </tbody>
 </table>
-<p>Finds the likelihood of a stock’s price movement based on earnings results and stock trend</p>
-<p>The final set of calculations the software is performing looks at all parts of the stock and its trend. It identifies the likelihood of a stock price increasing due to (+) beat or (-) missed earnings, while it is in a specific type of trend reflective of the earnings direction. This can be used by investors to find stocks in an uptrend or downtrend, who also want to play the earnings direction and try to profit from it.</p>
+<p>The final set of calculations the software is performing, looks at all parts of the stock and its trend. It identifies the likelihood of a stock price increasing due to (+) beat or (-) missed earnings, while it is in a specific type of trend reflective of the earnings direction. This can be used by investors to find stocks in an uptrend or downtrend, who also want to play the earnings direction and try to profit from it.</p>
 <table>
 <thead>
 <tr>
@@ -719,10 +711,11 @@ Stocks the perform well (or beat earnings) are typically looked at by investors 
 </tbody>
 </table>
 <h2 id="6-the-results">6. The Results</h2>
-<p>= [ ] TODO: What is presented here</p>
+<p>The results here are caclulated based on the data gathered and calculated during SP500 companyies&rsquo; earnings.</p>
 <h3 id="61-test-results---calculation-1">6.1 Test Results - Calculation 1</h3>
-<p>= [ ] TODO: What is presented here. What is calculation 1. use sentence</p>
+<p><strong>Table 2</strong>: Table shows the results of the calculation on AAPL stock price going back 20 years.</p>
 <p>Stock Scanned: AAPL</p>
+<p>Caclulated using the code on: <a href="https://github.com/cybertraining-dsc/fa20-523-336/blob/main/project/project.py">https://github.com/cybertraining-dsc/fa20-523-336/blob/main/project/project.py</a> API key required.</p>
 <ul>
 <li>Total Data Points Evaluated: 10,000</li>
 <li>Total Beat Earnings: 64 (84.2%)</li>
@@ -791,10 +784,11 @@ Stocks the perform well (or beat earnings) are typically looked at by investors 
 </tbody>
 </table>
 <h3 id="62-test-results---calculation-2">6.2 Test Results - Calculation 2</h3>
-<p>= [ ] TODO: What is presented here. What is calculation 2, use sentence</p>
+<p><strong>Table 3</strong>: Table shows the results of the calculation on AAPL, MSFT, TWLO, GE, and NVDA&rsquo;s stock price going back to their IPO. This caclulation gathers more data.</p>
 <p>Stocks Scanned: AAPL, MSFT, TWLO, GE, NVDA</p>
 <p>For the second results scan, 5 popular companies within the S&amp;P500 were picked, in the technology and energy sector. This first test was meant to get a baseline of calculations of strong stocks in this index and get an estimated calculation time for the operation. After running the first calculation, the results were as followed. The total calculation time clocked in at just over 8 seconds for the 5 stock calculations (1.6 seconds/stock). At this rate, calculating all 500 stocks from the S&amp;P500 should take around 13:20 minutes.</p>
 <p>From the 5 stocks scanned, there were over 36,170 data points evaluated, 222 earnings beats, and 98 earnings misses. When stocks are in a current uptrend, the company is expected to beat earnings expectations 78.6% of the time, and when the stock is in a current downtrend the company is expected to miss earnings 59.7% of the time. This means that if the stock is in an uptrend, investors predicting a company will beat earnings would be correct more than 3/4 of the time. Of the stocks evaluated, if the company beat earnings, the price would increase from the open 42.3% of the time, and increase from the past close 61.3% of the time. Additionally, if a company missed earnings expectations, the stock price closed below the open 59% of the time, and below the previous close 60% of the time. This leads to the prediction that investors are more concerned about the company missing earnings, rather than the company beating earnings. The company missing earning expectations is more detrimental to the stock price than the company beating earnings predictions. Lastly, of these 5 stocks, the price increases from open, when earnings have been beat and the stock is in an uptrend, 43.5% of the time. Notice since we added the uptrend filter on this scan, it results a higher calculation than calculation C but only slightly. Stocks that are in an uptrend and beat earnings, increase from the previous close 63.9% of the time. Again, these results are only slightly higher than calculation D. If the stock is in a downtrend and the company misses earnings, the stock price will decrease from the open 60.1% of the time and will decrease from the previous close 54.3% of the time. This means that stocks that are in a downtrend and miss earnings, tend to actually have a spike up in premarket hours (before open 9:30amET) and then crash further throughout the day, since the decrease from open % is greater than the decrease from past close %.</p>
+<p>Caclulated using the code on: <a href="https://github.com/cybertraining-dsc/fa20-523-336/blob/main/project/project.py">https://github.com/cybertraining-dsc/fa20-523-336/blob/main/project/project.py</a> API key required.</p>
 <ul>
 <li>Total Data Points Evaluated: 36,170</li>
 <li>Total Beat Earnings: 222 (69.38%)</li>
@@ -863,8 +857,9 @@ Stocks the perform well (or beat earnings) are typically looked at by investors 
 </tbody>
 </table>
 <h3 id="63-full-results---calculation-3">6.3 Full Results - Calculation 3</h3>
-<p>= [ ] TODO: What is presented here. What is calculation 3, use sentence. Is theer a better name than calculation 1,2,3. If not keep it</p>
+<p>This calculation find the test results based all stocks in the SP500.</p>
 <p>The final results scanned all stocks in the S&amp;P500 and took roughly 17 minutes (1023 seconds in total) to complete. This was one of the things that originally was surprising as the first scan pointed toward the full calculations taking less time than it did. The total data points scanned totaled 3.7 million. From the results gathered on the full results pull, the changes between the first test scan and the full scan were identified. The calculation result percentages seemed to average out and begin to navigate towards the 50% (random) mark, although there were a few scan results that yielded some potential advantage across the board.</p>
+<p>Caclulated using the code on: <a href="https://github.com/cybertraining-dsc/fa20-523-336/blob/main/project/project.py">https://github.com/cybertraining-dsc/fa20-523-336/blob/main/project/project.py</a> API key required.</p>
 <ul>
 <li>Total Data Points Evaluated: 3,704,001</li>
 <li>Total Beat Earnings: 20,789 (62.3%)</li>
@@ -932,13 +927,7 @@ Stocks the perform well (or beat earnings) are typically looked at by investors 
 </tr>
 </tbody>
 </table>
-<p>Although these results tend to show more randomness than the 5 scanned in the</p>
-<p>first results,</p>
-<ul>
-<li><input disabled="" type="checkbox"> Should that be</li>
-</ul>
-<p>results of Calculation 1 in Section 6.1</p>
-<p>there are a few scans that could yield a profitable and predictive strategy for investors, and/or provide some insight into what the price of a security may do. One area where the software is still able to predict events is in scan A, where we are evaluating the probability that the company will beat earning solely based on what the stock price trend is doing. If we only looked while investing in S&amp;P500 stocks, an investor would be able to assume the company will beat earnings 61.6% of the time if the stock is above the 20 and 50 period moving averages. Of these times, the stock price will increase from the past close 57.68% of the time.</p>
+<p>Although these results tend to show more randomness than the 5 scanned in the results of Calculation 1 in Section 6.1, there are a few scans that could yield a profitable and predictive strategy for investors, and/or provide some insight into what the price of a security may do. One area where the software is still able to predict events is in scan A, where we are evaluating the probability that the company will beat earning solely based on what the stock price trend is doing. If we only looked while investing in S&amp;P500 stocks, an investor would be able to assume the company will beat earnings 61.6% of the time if the stock is above the 20 and 50 period moving averages. Of these times, the stock price will increase from the past close 57.68% of the time.</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
 <p>To conclude, as more and more companies are evaluated in the software&rsquo;s calculations, the chance of unusual and unique events increase. Theoretically, if a company outperforms their expected earnings and shows number better than what financial advisors predict the company to earn, investors should be encouraged to buy more shares in the company and in turn drive the price of the security higher. Sometimes however, stock prices act in the opposite effect during earnings times as large hedge funds and corporations sell off large volume shares of stock to fear other investors into selling. This can snowball the stock price down to where large institutions can repurchase massive amount of those shares again. This is usually refered to as market manipulation. (In a sort of dollar cost averaging method) Because of this, and many other market manipulation activities that occur on stock markets across the globe, positive earnings announcements do not always yield positive buyer sentiment and a price increase. Concluded from this research, it can be said that the strongest correlation to a stock beating earnings estimates, is the price trend of the security. If the stock is in a current uptrend, the chance of that security beating earnings is over 60% (based on SP500 Stock Calculations) With this, earnings announcements are something that many investors should and could look at while investing both short term and long term in companies, however, to develop a truly profitable trading strategy, more work and analysis would need to be conducted. The market moves in ways that few can acurately explain, and as more stocks are scanned and analyzed, the randomness and factor of luck began to show.</p>
 <h2 id="8-acknowledgements">8. Acknowledgements</h2>

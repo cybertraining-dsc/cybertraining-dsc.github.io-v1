@@ -384,7 +384,7 @@
   
   <url>
     <loc>/report/</loc>
-    <lastmod>2020-12-04T07:58:57-05:00</lastmod>
+    <lastmod>2020-12-06T19:36:16-05:00</lastmod>
   </url>
   
   <url>
@@ -450,11 +450,6 @@
   <url>
     <loc>/modules/sample/module/</loc>
     <lastmod>2020-09-16T14:56:26-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/modules/sample/pandoc/</loc>
-    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
@@ -538,18 +533,8 @@
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
-    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/module/</loc>
     <lastmod>2020-09-16T14:56:26-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/pandoc/</loc>
-    <lastmod>2020-09-21T14:33:58-04:00</lastmod>
   </url>
   
   <url>
@@ -819,6 +804,10 @@
   </url>
   
   <url>
+    <loc>/report/fa20-523-317/report/images/test/</loc>
+  </url>
+  
+  <url>
     <loc>/report/fa20-523-317/report/report/</loc>
   </url>
   
@@ -907,7 +896,7 @@
   </url>
   
   <url>
-    <loc>/report/fa20-523-331/project/project/</loc>
+    <loc>/report/fa20-523-331/report/report/</loc>
   </url>
   
   <url>
@@ -939,7 +928,7 @@
   </url>
   
   <url>
-    <loc>/report/fa20-523-334/project/project/</loc>
+    <loc>/report/fa20-523-334/report/report/</loc>
   </url>
   
   <url>

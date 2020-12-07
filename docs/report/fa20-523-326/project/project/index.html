@@ -32,7 +32,7 @@ Abstract Water buffalo (Bubalus bubalis) is also called Domestic Water Buffalo o
 Gangaprasad Shahapurkar, fa20-523-326, Edit Python Notebook
 Abstract Water buffalo (Bubalus bubalis) is also called Domestic Water Buffalo or Asian Water Buffalo. It is large bovid originating in Indian subcontinent, Southeast Asia, and China and today found in other regions of world - Europe, Australia, North America, South America and some African countries. There are two extant types recognized based on morphological and behavioral criteria:">
 
-<meta itemprop="wordCount" content="3058">
+<meta itemprop="wordCount" content="3255">
 
 
 
@@ -632,7 +632,7 @@ Status: final</p>
 
 <p><strong>Keywords:</strong> hid 326, i532, buffalo, milk production, livestock, benchmarking, in-milk yield, agriculture, india, analysis</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Indian Agriculture sector has been playing a vital role in overall contribution to Indian Economy. Most of the rural community in the nation still make their livelihood on Dairy Farming or Agriculture Farming. Dairy Farming itself has been on its progressive stage from past few years and it is contributing to almost more than 25% of Agriculture Gross Domestic Product (GDP) <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Livestock rearing has been integral part of the nation&rsquo;s rural community and this sector is leveraging the economy in a big way considering the growth seen. It not only provides food, income, employment but also plays major role in life of farmers. It also does other contributions to the overall rural development of the nation. The output of livestock rearing such as milk, egg, meat, and wool provides everyday income to the farmers on daily basis, it provides nutrition to consumers and indirectly it helps in contributing to the overall economy and socio-economic development of the country.</p>
+<p>Indian agriculture sector has been playing a vital role in overall contribution to Indian economy. Most of the rural community in the nation still make their livelihood on dairy farming or agriculture farming. Dairy farming itself has been on its progressive stage from past few years and it is contributing to almost more than 25% of agriculture Gross Domestic Product (GDP) <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Livestock rearing has been integral part of the nation&rsquo;s rural community and this sector is leveraging the economy in a big way considering the growth seen. It not only provides food, income, employment but also plays major role in life of farmers. It also does other contributions to the overall rural development of the nation. The output of livestock rearing such as milk, egg, meat, and wool provides everyday income to the farmers on daily basis, it provides nutrition to consumers and indirectly it helps in contributing to the overall economy and socio-economic development of the country.</p>
 <p>The world buffalo population is estimated at 185.29 million, spread in some 42 countries, of which 179.75 million (97%) are in Asia (Source: Fao.org/stat 2008). Hence major share of buffalo milk production in world comes from Asia (see Figure 1). India has 105.1 million and they comprise approximately 56.7 percent of the total world buffalo population. During the last 10 years, the world buffalo population increased by approximately 1.49% annually, by 1.53% in India, 1.45% in Asia and 2.67% in the rest of the world. Figure 1 shows worldwide share of milk production from buffalo breed. Figure 2 highlights percentage contribution of Asia including other top 2 contributors to world milk production.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/main/project/images/milk_production_world.png" alt="Milk Production World"></p>
 <p><strong>Figure 1:</strong> Production of Milk, whole fresh buffalo in World + (Total), Average 2013 - 2018 <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
@@ -640,13 +640,13 @@ Status: final</p>
 <p><strong>Figure 2:</strong> Production share of Milk, whole fresh buffalo by region, Average 2013 - 2018 <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
 <p>Production of milk and meat from buffaloes in Asian countries over the last decades has shown a varying pattern: in countries such as India, Sri Lanka, Pakistan and China. Buffaloes are known to be better at converting poor-quality roughage into milk and meat. They are reported to have 5% higher digestibility of crude fibre than high-yielding cows; and a 4% to 5% higher efficiency of utilization of metabolic energy for milk production <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
-<p>After studying literatures and researches it was noticed that there has been some research around to quantify livestock yield gaps. There is no standard methodology, but multiple methods were combined for research. Researchers were able to calculate relative yield gaps for the dairy production in India and Ethiopia <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. There was analysis based on attainable yields using Empirical Benchmarking and Stochastic Frontier Analysis and evaluate possible interventions to increase production (household modelling). It was noticed that large yield gaps exist for dairy production in both countries, and packages of interventions are required to bridge these gaps rather than single interventions. Part of the research was borrowed to analyze the limited dataset chosen as part of this project.</p>
+<p>After studying literatures and researches it was noticed that there has been some research around to quantify livestock yield gaps. There is no standard methodology, but multiple methods were combined for research. Researchers were able to calculate relative yield gaps for the dairy production in India and Ethiopia <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. There was analysis based on attainable yields using Empirical Benchmarking, and Stochastic Frontier Analysis to evaluate possible interventions for increasing production (household modelling). It was noticed that large yield gaps exist for dairy production in both countries, and packages of interventions are required to bridge these gaps rather than single interventions. Part of the research was borrowed to analyze the limited dataset chosen as part of this project.</p>
 <h2 id="3-choice-of-datasets">3. Choice of Datasets</h2>
 <p>Number of online literatures and datasets were checked to find out suitable dataset required for this project analysis. Below dataset were found promising:</p>
 <ol>
-<li><a href="https://dahd.nic.in/about-us/divisions/statistics">DAHD Data</a> <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>, <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>, <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> (<strong>20th Livestock Census Data</strong>)</li>
+<li><a href="https://dahd.nic.in/about-us/divisions/statistics">DAHD Data</a> <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>, <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>, <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> (<strong>20th India Livestock Census Data</strong>)</li>
 </ol>
-<p>The Animal Husbandry Statistics Division of the Department of Animal Husbandry &amp; Dairying Division (DAHD) is responsible for the generation of Animal Husbandry Statistics through the schemes of Livestock Census and Integrated Sample Surveys <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Survey is defined by Indian Agriculture Statistics Research Institute (IASRI) <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. This is the only scheme through which considerable data, particularly on the production estimate of major livestock products, is being generated for policy formulation in the livestock sector. It is mandate for this division to</p>
+<p>The Animal Husbandry Statistics Division of the Department of Animal Husbandry &amp; Dairying Division (DAHD) is responsible for the generation of animal husbandry statistics through the schemes of livestock census and integrated sample surveys <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Survey is defined by Indian Agriculture Statistics Research Institute (IASRI) <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. This is the only scheme through which considerable data, particularly on the production estimate of major livestock products, is being generated for policy formulation in the livestock sector. It is mandate for this division to</p>
 <ul>
 <li>Conduct quinquennial livestock census</li>
 <li>Conduct annual sample survey through integrated sample survey</li>
@@ -655,7 +655,7 @@ Status: final</p>
 <ol start="2">
 <li><a href="http://www.fao.org/faostat/en/#data">FAO Data</a> <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>, <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
 </ol>
-<p>Food and Agriculture Organization of United Nation (FAO) publishes worldwide data on the aspects of dairy farming which can also be visualized online with the options provided. Some of the data from this source was used to extract useful summary needed in analysis.</p>
+<p>Food and Agriculture Organization (FAO) of United Nation publishes worldwide data on the aspects of dairy farming which can also be visualized online with the options provided. Some of the data from this source was used to extract useful summary needed in analysis.</p>
 <ol start="3">
 <li>[UIDAI Data] (<a href="https://uidai.gov.in">https://uidai.gov.in</a>) <sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></li>
 </ol>
@@ -663,7 +663,7 @@ Status: final</p>
 <p>In addition to above, other demographics information such as area of each state, district count was extracted from OpenStreetMap <sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>. Agricultural zone information was extracted from report of Food and Nutrition Security Analysis, India, 2019 <sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>.</p>
 <h2 id="4-methodology">4. Methodology</h2>
 <h3 id="41-software-components">4.1 Software Components</h3>
-<p>This project has been implemented in Python 3.7 version. Jupyter Notebook application was used to develop the code and produce a notebook document. Jupyter Notebook is a Client-Server architecture-based application which allows modification and execution of code through web browser. Jupyter Notebook can be installed locally and accessed through localhost browser or it can be installed on a remote machine and accessed via Internet <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>, <sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup>.</p>
+<p>This project has been implemented in Python 3.7 version. Jupyter Notebook application was used to develop the code and produce a notebook document. Jupyter notebook is a Client-Server architecture-based application which allows modification and execution of code through web browser. Jupyter notebook can be installed locally and accessed through localhost browser or it can be installed on a remote machine and accessed via internet <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>, <sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup>.</p>
 <p>Following python libraries were used in overall code development. Before running the code, one must make sure that these libraries are installed.</p>
 <ul>
 <li><strong>Pandas</strong> This is a high performance and easy to use library. It was used for data cleaning, data analysis, &amp; data preparation.</li>
@@ -676,7 +676,7 @@ Status: final</p>
 <h3 id="42-data-processing">4.2 Data Processing</h3>
 <p>The raw data retrieved from various sources was in excel or report format. The data was pre-processed and stored back in csv format for the purpose of this project and to easily process it. This dataset was further processed through various stages via EDA, feature engineering and modelling.</p>
 <h4 id="421-eda">4.2.1 EDA</h4>
-<p>Preprocessed dataset selected for this analysis contains information at the state level. Below is the nature of the attributes in the dataset:</p>
+<p>Preprocessed dataset selected for this analysis contained information at the state level. There were two seperate pre-processed dataset used.  Below was the nature of the attributes in the main dataset which had buffalo information:</p>
 <ul>
 <li><strong>State Name:</strong> Name of each state in India. One record for each state.</li>
 <li><strong>Buffalo count:</strong> Total number of male and female buffaloes. Data recorded for 14 types of buffalo breeds. One attribute for each type of female and male breeds.</li>
@@ -684,18 +684,110 @@ Status: final</p>
 <li><strong>Yield per In-Milk animal:</strong> Yield per In-Milk animals per state (figures in kg/day) recorded each year from 2013 to 2019. One attribute per year.</li>
 <li><strong>Milk production:</strong> - Milk production per state (figures in 000 tones) recorded each year from 2013 to 2019. One attribute per year.</li>
 </ul>
-<p>Figure 3 shows top 10 states from livestock census having total number of buffalo counts. Uttar Pradesh is the state which reported a greater number of buffalos compared to any other states in the country.</p>
+<p>Below was the nature of the attributes in the secondary dataset which had demographic information:</p>
+<ul>
+<li><strong>Geographic information:</strong> features captured at state level where each feature represented - projected population of 2020, total districts in each state, total villages in each state, official area of each state in square kilometer.</li>
+<li><strong>Climatic information:</strong> One of attribute for each zone highlighted in Table 1</li>
+</ul>
+<p><strong>Table 1:</strong> Agro climatic regions in India</p>
+<table>
+<thead>
+<tr>
+<th>Zones</th>
+<th>Agro-Climatic Regions</th>
+<th>States</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zone 1</td>
+<td>Western Himalayan Region</td>
+<td>Jammu and Kashmir, Himachal Pradesh, Uttarakhand</td>
+</tr>
+<tr>
+<td>Zone 2</td>
+<td>Eastern Himalayan Region</td>
+<td>Assam, Sikkim, West Bengal, Manipur, Mizoram, Andhra Pradesh, Meghalaya, Tripura</td>
+</tr>
+<tr>
+<td>Zone 3</td>
+<td>Lower Gangetic Plains Region</td>
+<td>West Bengal</td>
+</tr>
+<tr>
+<td>Zone 4</td>
+<td>Middle Gangetic Plains Region</td>
+<td>Uttar Pradesh, Bihar, Jharkhand</td>
+</tr>
+<tr>
+<td>Zone 5</td>
+<td>Upper Gangetic Plains Region</td>
+<td>Uttar Pradesh</td>
+</tr>
+<tr>
+<td>Zone 6</td>
+<td>Trans-Gangetic Plains Region</td>
+<td>Punjab, Haryana, Delhi and Rajasthan</td>
+</tr>
+<tr>
+<td>Zone 7</td>
+<td>Eastern Plateau and Hills Region</td>
+<td>Maharashtra, Chhattisgarh, Jharkhand, Orissa and West Bengal</td>
+</tr>
+<tr>
+<td>Zone 8</td>
+<td>Central Plateau and Hills Region</td>
+<td>Madhya Pradesh, Rajasthan, Uttar Pradesh, Chhattisgarh</td>
+</tr>
+<tr>
+<td>Zone 9</td>
+<td>Western Plateau and Hills Region</td>
+<td>Maharashtra, Madhya Pradesh, Chhattisgarh and Rajasthan</td>
+</tr>
+<tr>
+<td>Zone 10</td>
+<td>Southern Plateau and Hills Region</td>
+<td>Andhra Pradesh, Karnataka, Tamil Nadu, Telangana, Chhattisgarh</td>
+</tr>
+<tr>
+<td>Zone 11</td>
+<td>East Coast Plains and Hills Region</td>
+<td>Orissa, Andhra Pradesh, Tamil Nadu and Pondicherry</td>
+</tr>
+<tr>
+<td>Zone 12</td>
+<td>West Coast Plains and Ghat Region</td>
+<td>Tamil Nadu, Kerala, Goa, Karnataka, Maharashtra, Gujarat</td>
+</tr>
+<tr>
+<td>Zone 13</td>
+<td>Gujarat Plains and Hills Region</td>
+<td>Gujarat, Madhya Pradesh, Rajasthan, Maharashtra</td>
+</tr>
+<tr>
+<td>Zone 14</td>
+<td>Western Dry Region</td>
+<td>Rajasthan</td>
+</tr>
+<tr>
+<td>Zone 15</td>
+<td>The Islands Region</td>
+<td>Andaman and Nicobar, Lakshadweep</td>
+</tr>
+</tbody>
+</table>
+<p>Figure 3 shows top 10 states from livestock census having total number of buffalo counts. Uttar Pradesh was the state which reported a greater number of buffaloes compared to any other states in the country.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/main/project/images/top10states.png" alt="Milk Production Share"></p>
-<p><strong>Figure 3:</strong> Top 10 state with buffalo counts compared to others</p>
-<p>There are a greater number of female buffalos reported in country (80%) compared to male buffalo breeds.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/main/project/images/buffaloshare.png" alt="Milk Production Share"></p>
-<p><strong>Figure 4:</strong> Percentage of Female vs Male buffalo reported</p>
+<p><strong>Figure 3:</strong> Top 10 state by buffalo counts</p>
+<p>There were greater number of female buffaloes reported in country (80%) compared to male buffalo breeds.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/main/project/images/buffaloeshare.png" alt="Milk Production Share"></p>
+<p><strong>Figure 4:</strong> Buffalo breeds ratio by male and female</p>
 <h4 id="422-feature-engineering">4.2.2 Feature Engineering</h4>
 <p>Murrah buffalo shown in Figure 5 is the most productive and globally famous breed <sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup>, <sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup>. This breed is resistant to diseases and can adjust to various Indian climate conditions.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/main/project/images/murrah_buffalo.jpeg" alt="Murrah buffalo"></p>
 <p><strong>Figure 5:</strong> Murrah buffalo (Bubalus bubalis), globally famous local breed of Haryana, were exported to many nations <sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup>, <sup id="fnref:20"><a href="#fn:20" class="footnote-ref" role="doc-noteref">20</a></sup></p>
-<p>In Feature engineering multiple attributes were derived needed in modelling or for analysis. From survey data total number of Murrah buffalo count from top 10 states and their percentage share were derived and listed in Table 1. Though Uttar Pradesh is top state in India in terms of total number of buffalos but percentage share of Murrah buffalo is more in state of Punjab.</p>
-<p><strong>Table 1:</strong> Murrah buffalo percent share in top 10 state with buffalo count</p>
+<p>In feature engineering multiple attributes were derived needed for modelling or during analysis. Table 2 shows percentage share of Murrah buffalo breed in top 10 states having highest number of total buffaloes. Though Uttar Pradesh was top state in India in terms of total number of buffaloes but percentage share of Murrah buffalo was more in state of Punjab.</p>
+<p><strong>Table 2:</strong> Murrah buffalo percent share in top 10 state with buffalo count</p>
 <table>
 <thead>
 <tr>
@@ -768,7 +860,7 @@ Status: final</p>
 </tr>
 </tbody>
 </table>
-<p>Survey dataset had three primary attributes reported at the state level. Data reported from 2013 to 2019 for in-milk animals, yield per in-milk animals and milk production per state were averaged for analysis purpose. Total number of buffalos per breed type were calculated from the data provided in the dataset. Following list of breeds were identified from dataset <sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup>.</p>
+<p>Survey dataset had three primary attributes reported at the state level. Data reported from 2013 to 2019 for in-milk animals, yield per in-milk animals and milk production per state were averaged for analysis purpose. Total number of buffaloes per breed type were calculated from the data provided in the dataset. Following list of breeds were identified from dataset <sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup>.</p>
 <ul>
 <li>Banni</li>
 <li>Bhadawari</li>
@@ -785,43 +877,77 @@ Status: final</p>
 <li>Surti</li>
 <li>Toda</li>
 </ul>
-<p>Data showed that Uttar Pradesh had highest average milk production with in the top 10 states whereas Punjab state had highest average yield per in-milk animals. Figure 6 shows the share of top 3 breeds in both the state. Common attribute between two states would be seen as highest number of Murrah breed buffalos compared to other breeds.</p>
+<p>Data showed that Uttar Pradesh had highest average milk production with in the top 10 states whereas Punjab state had highest average yield per in-milk animals. Figure 6 shows the share of top 3 breeds in both the state. Common attribute seen between two states was highest number of Murrah breed buffaloes compared to other breeds.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/main/project/images/punjab_up_state.png" alt="TOP TWO States"></p>
 <p><strong>Figure 6:</strong> Top 3 types of buffalo breeds of Uttar Pradesh and Punjab</p>
 <h3 id="43-modelling">4.3 Modelling</h3>
 <h4 id="431-data-preperation">4.3.1 Data Preperation</h4>
-<p>Data from main dataset and supplementary dataset which is demographics data was merged into one dataset. This dataset was not labelled and it is small dataset. We considered average milk production as our target label for analysis. The rest of the features were divided based on categorical and numerical nature. Our dataset did not had any categorical features except state name which was used as index column so no futher processing was considered for this attribute. All the features were of numerical nature and all the data points were not on same scale. Hence datapoints were normalized for further processing.</p>
+<p>Data from main dataset and supplementary dataset which was demographics data was merged into one dataset. This dataset was not labelled and it was small dataset. We considered average milk production as our target label for analysis. The rest of the features were divided based on categorical and numerical nature. Our dataset did not had any categorical features except state name which was used as index column so no futher processing was considered for this attribute. All the features were of numerical nature and all the data points were not on same scale. Hence datapoints were normalized for further processing.</p>
 <h4 id="432-empirical-benchmarking-model">4.3.2 Empirical Benchmarking Model</h4>
 <p>There are two dominant approach of economic modelling to estimate the production behavior - Empirical Benchmarking and Stochastic Frontier Analysis <sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup>, <sup id="fnref:23"><a href="#fn:23" class="footnote-ref" role="doc-noteref">23</a></sup>. Empirical Benchmarking is simple modelling method, and it is one of the two dominant approach. This method was used to analyze past 6 years of data points available in the livestock dataset. In this approach milk production data of past 6 years was averaged. Top 10 states with most milk production reported were compared with average of the whole sample. The problem analyzed as part of this project was relatively small. The comparison did not consider all possible characteristics for modelling.</p>
-<p>Correlation of target variable with various demographics features available in the dataset was calculated. Table 2 and Table 3 shows the positive and negative coorelation with target variable average milk production respectively. We can notice from Table 2 that average milk production contribution does get affected by number of in-milk animals reported in the particular year census data and their is also factor of climatic conditions affecting the milk production. India is divided into 15 Agro climate zones. Agro zone 6 is Trans-Gangetic Plains region. Indian states Chandigarh, Delhi, Haryana, Punjab, Rajasthan (some parts) falls under this zone. Agricultural development has shown phenomenal growth in overall productivity and in providing better environment for dairy farming in this zone <sup id="fnref:24"><a href="#fn:24" class="footnote-ref" role="doc-noteref">24</a></sup>.</p>
-<p><strong>Table 2:</strong> Positive coorelation of target with demographics features</p>
-<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;+
-| Feature             |    % |
-+=====================+======+
-| avg_milk_production | 1.00 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;+
-| avg_in_milk         | 0.95 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;+
-| total_female        | 0.90 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;+
-| total_male          | 0.71 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;+
-| agro_climatic_zone6 | 0.50 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;+</p>
-<p><strong>Table 3:</strong> Negative coorelation of target with demographics features</p>
-<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;-+
-| Feature              |     % |
-+======================+=======+
-| official_area_sqkm   | -0.17 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;-+
-| agro_climatic_zone2  | -0.19 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;-+
-| avg_yield_in_milk    | -0.23 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;-+
-| district_count       | -0.34 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;-+
-| proj_population_2020 | -0.94 |
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;-+</p>
+<p>Correlation of target variable with various demographics features available in the dataset was calculated. Table 3 and Table 4 shows the positive and negative coorelation with target variable average milk production respectively. We noticed from Table 3 that average milk production contribution was getting affected by number of in-milk animals reported in the particular year census data and their was also factor of climatic conditions affecting the milk production. India is divided into 15 Agro climate zones. Agro zone 6 is Trans-Gangetic Plains region. Indian states Chandigarh, Delhi, Haryana, Punjab, Rajasthan (some parts) falls under this zone. Agricultural development has shown phenomenal growth in overall productivity and in providing better environment for dairy farming in this zone <sup id="fnref:24"><a href="#fn:24" class="footnote-ref" role="doc-noteref">24</a></sup>.</p>
+<p><strong>Table 3:</strong> Positive coorelation of target with demographics features</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>avg_milk_production</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>avg_in_milk</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>total_female</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>total_male</td>
+<td>0.71</td>
+</tr>
+<tr>
+<td>agro_climatic_zone6</td>
+<td>0.50</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 4:</strong> Negative coorelation of target with demographics features</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>official_area_sqkm</td>
+<td>-0.17</td>
+</tr>
+<tr>
+<td>agro_climatic_zone2</td>
+<td>-0.19</td>
+</tr>
+<tr>
+<td>avg_yield_in_milk</td>
+<td>-0.23</td>
+</tr>
+<tr>
+<td>district_count</td>
+<td>-0.34</td>
+</tr>
+<tr>
+<td>proj_population_2020</td>
+<td>-0.94</td>
+</tr>
+</tbody>
+</table>
 <h4 id="433-linear-regression">4.3.3 Linear Regression</h4>
 <p>Our target variable considered was a continous variable. In an attempt to perform dimension reduction, Principal Component Analysis (PCA) was applied to available limited dataset. In the example presented, an pipeline was constructed that had dimension reduction followed by Linear regression classifier. Grid search cross validation was applied (GridSearchCV) to find the best parameters and score. Linear regression was applied with default parameter settings whereas parameter range was passed for PCA. Below is snapshot of pipeline implemented.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#8f5902;font-style:italic"># Define a pipeline to search for the best combination of PCA truncation</span>
@@ -842,9 +968,9 @@ Status: final</p>
     <span style="color:#4e9a06">&#39;pca__n_components&#39;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">15</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">30</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">45</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">64</span><span style="color:#000;font-weight:bold">]</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div><h2 id="5-results">5. Results</h2>
-<p>Based on simple Empirical Benchmarking Analysis and trends noticed in data it appears that it is possible to increase production past currently attainable yields (see Figure 7). The current scale of the yield does indicate that, leading states have best breeds of buffalos. Different methods of analyzing yield gaps can be combined to give estimates of attainable yields. It will also help to evaluate possible interventions to increase production and profits.</p>
+<p>Based on simple Empirical Benchmarking Analysis and trends noticed in data it appears that it is possible to increase production past currently attainable yields (see Figure 7). The current scale of the yield does indicate that, leading states have best breeds of buffaloes. Different methods of analyzing yield gaps can be combined to give estimates of attainable yields. It will also help to evaluate possible interventions to increase production and profits.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-326/raw/main/project/images/avgmilkproduction.png" alt="TOP 10 States"></p>
-<p><strong>Figure 7:</strong> Average milk production top 10 state with benchmark</p>
+<p><strong>Figure 7:</strong> Average milk production in top 10 state with benchmark</p>
 <p>The best parameter came out of the pipeline implemented are highlighted here. The results were not promising due the limited dataset so further experimentation was not attempted, but one thing was noticed that cross validated score came out to 0.28 and dimension reduction to 5 components.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">Best</span> <span style="color:#000">parameter</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">CV</span> <span style="color:#000">score</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0.282</span><span style="color:#000;font-weight:bold">):</span>
 <span style="color:#000;font-weight:bold">{</span><span style="color:#4e9a06">&#39;pca__n_components&#39;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">}</span>
@@ -855,7 +981,7 @@ Status: final</p>
 <p><strong>Figure 8:</strong> Covariance Heat Map</p>
 <p>We were able to calculate correlation of census data with other socioeconomic factors like population information, climate information (see Figure 8). The biggest probable limitation here was availability of good quality data. It would have been possible to conduct the analysis at finer level if more granular level data would have been available. Our analysis had to be done state level rather than at district level or specific area.</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
-<p>The analysis done above with the limited dataset showed that there are considerable gaps in the average yield per in-milk buffalo of state Punjab and Uttar Pradesh, compared to other states in top 10 list. These states have larger share of Murrah breed buffalos. Based on the data trends it appears that it is possible to increase the production past current attenable numbers. However, this would need to combine different methods and multiple strategies.</p>
+<p>The analysis done above with the limited dataset showed that there are considerable gaps in the average yield per in-milk buffalo of state Punjab and Uttar Pradesh, compared to other states in top 10 list. These states have larger share of Murrah breed buffaloes. Based on the data trends it appears that it is possible to increase the production past current attenable numbers. However, this would need to combine different methods and multiple strategies.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8. References</h2>

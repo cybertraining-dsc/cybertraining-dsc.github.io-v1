@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Trending Youtube Videos Analysis   Status: in progress
  Adam Chai, fa20-523-327 Edit  Abstract In this modern era of the internet revolution, consumption of all media types is easier than ever. Going onto the internet and finding interesting content takes less than minute to do. In the already growing industry of amateur video production, Youtube is the go to platform for viewers and creators to collide. However, it is harder for video creators to make an interesting video most people can enjoy than a viewer to find one of those videos.">
 
-<meta itemprop="wordCount" content="920">
+<meta itemprop="wordCount" content="1124">
 
 
 
@@ -514,14 +514,9 @@
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work</a></li>
-    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
-    <li><a href="#4-methodology">4. Methodology</a>
-      <ul>
-        <li><a href="#41-hardware-component">4.1. Hardware Component</a></li>
-        <li><a href="#42-software-component">4.2 Software Component</a></li>
-      </ul>
-    </li>
-    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#3-choice-of-data-set">3. Choice of Data-set</a></li>
+    <li><a href="#4data-preprocessing">4.Data Preprocessing</a></li>
+    <li><a href="#5-model">5. Model</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgments">7. Acknowledgments</a></li>
     <li><a href="#8-references">8. References</a></li>
@@ -584,14 +579,9 @@ Status: in progress</p>
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work</a></li>
-    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
-    <li><a href="#4-methodology">4. Methodology</a>
-      <ul>
-        <li><a href="#41-hardware-component">4.1. Hardware Component</a></li>
-        <li><a href="#42-software-component">4.2 Software Component</a></li>
-      </ul>
-    </li>
-    <li><a href="#5-inference">5. Inference</a></li>
+    <li><a href="#3-choice-of-data-set">3. Choice of Data-set</a></li>
+    <li><a href="#4data-preprocessing">4.Data Preprocessing</a></li>
+    <li><a href="#5-model">5. Model</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgments">7. Acknowledgments</a></li>
     <li><a href="#8-references">8. References</a></li>
@@ -612,7 +602,7 @@ Status: in progress</p>
 <p>but these criterians Youtube has set are not defined[1]. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtube content creators to find this out themselves. Youtube content creators are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.</p>
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
 <p>After reviewing other background literature and works from other authors witin this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research into the right direction.</p>
-<h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
+<h2 id="3-choice-of-data-set">3. Choice of Data-set</h2>
 <p>To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[2].</p>
 <p>The Trending Youtube dataset contains 40,949 entries and 16 labels covering the basic information of a trending Youtube video.</p>
 <table>
@@ -685,22 +675,37 @@ Status: in progress</p>
 </tr>
 </tbody>
 </table>
-<p>The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. These labels will be used in creating a model and predicting if a video will trend on Youtube. The drawbacks of using this dataset are important labels not covered such as the number of subscribers a channel has and older data is being used (all videos were uploaded and trended between 2017 and 2018).</p>
-<p>The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].</p>
-<p>Afterwards, the model is built wihtin the trending dataset it will be applied onto the data set of public Youtube videos and will be evaluate how accurate the model is at predicting a trending Youtube video. To test if this works the datasets can be compared to find which video trended and if the dataset was able to predict the trending videos on the public videos dataset then it will be successful.</p>
-<h2 id="4-methodology">4. Methodology</h2>
-<h3 id="41-hardware-component">4.1. Hardware Component</h3>
-<p>This section will be addressed once I go to office hours</p>
-<h3 id="42-software-component">4.2 Software Component</h3>
-<p>This section will be addressed once I go to office hours</p>
-<h2 id="5-inference">5. Inference</h2>
-<p>This section will be addressed upon completion</p>
+<p>The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. These labels will be used in creating a model to discover how a video will trend on Youtube. The drawbacks of using this dataset are various labels are not covered such as the number of subscribers a channel has or the likelihood of someone that sees the video will click on it and older data is being used (all videos were uploaded and trended between 2017 and 2018).</p>
+<h2 id="4data-preprocessing">4.Data Preprocessing</h2>
+<p>All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. Pandas and Datetime are used for data preprocessing.</p>
+<p>To begin there are several labels which can be taken out of the model as they do not appear revelant or cannot be run through the model:</p>
+<p>*video_id: unique identifier for each video not necessary to use
+*title: cannot be translated into a numerical value
+*channel_title: cannot be translated into a numerical value
+*tags: many tags appear irrelevant to the actual video therefore this will be taken out
+*thumbnail_link: cannot be ran through model
+*description: irrelevant, does not add value to most videos</p>
+<p>To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for descriptions which are empty. After removing descriptions from the dataset duplicates will no longer be an issue.</p>
+<p>Several labels need to be converted into an integer so they can be ran through the model:</p>
+<p>*trending_date</p>
+<p>*publish_time</p>
+<p>*comments_disabled</p>
+<p>*ratings_disabled</p>
+<p>*video_error_or_removed</p>
+<p>Python reads the trending_date and publish_time labels as objects which needs to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After, another datetime function will be used to convert the month, day, and year into their own columns.</p>
+<p>Figure 1: Show how this is done</p>
+<p>Next the remaining three labels can be easily converted from their boolean values into 1/0 values.</p>
+<p>Figure 2: Show how this is done</p>
+<p>Result of preprocessed data</p>
+<p>Figure 3: Show snapshot</p>
+<h2 id="5-model">5. Model</h2>
+<p>The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].</p>
+<p>To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>This section will be addressed upon completion</p>
 <h2 id="7-acknowledgments">7. Acknowledgments</h2>
 <p>Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8. References</h2>
-<p>[^5] Chai, Adam <a href="https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/youtubeanalysis.ipynb">https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/youtubeanalysis.ipynb</a></p>
 
 	
 	
