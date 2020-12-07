@@ -21,42 +21,45 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Sentiment Analysis and Visualization using a US-election dataset for the 2020 Election   Status: final
+<meta property="og:description" content="Sentiment Analysis and Visualization using a US-election dataset for the 2020 Election   Status: in progress, Type: Project
 Sudheer Alluri, Indiana University, fa20-523-316, ngsudheer@gmail.com
 Vishwanadham Mandala, Indiana University, fa20-523-325, vishwandh.mandala@gmail.com
 Edit
   not addressed: check spaces befor and after .
   not addressed: use proper sentences. we see several sentence fragments.
   use proper grammer.
-  see issues in github and do not close them if you have not fixed them" />
+  use proper sentences see section 6
+  section 7 starts as ppt, you do not describe how you sanized the data, explained how I sanitized from section 5 and 6" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-316/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Sentiment Analysis and Visualization using a US-election dataset for the 2020 Election   Status: final
+<meta itemprop="description" content="Sentiment Analysis and Visualization using a US-election dataset for the 2020 Election   Status: in progress, Type: Project
 Sudheer Alluri, Indiana University, fa20-523-316, ngsudheer@gmail.com
 Vishwanadham Mandala, Indiana University, fa20-523-325, vishwandh.mandala@gmail.com
 Edit
   not addressed: check spaces befor and after .
   not addressed: use proper sentences. we see several sentence fragments.
   use proper grammer.
-  see issues in github and do not close them if you have not fixed them">
+  use proper sentences see section 6
+  section 7 starts as ppt, you do not describe how you sanized the data, explained how I sanitized from section 5 and 6">
 
-<meta itemprop="wordCount" content="3892">
+<meta itemprop="wordCount" content="3939">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Sentiment Analysis and Visualization using a US-election dataset for the 2020 Election   Status: final
+<meta name="twitter:description" content="Sentiment Analysis and Visualization using a US-election dataset for the 2020 Election   Status: in progress, Type: Project
 Sudheer Alluri, Indiana University, fa20-523-316, ngsudheer@gmail.com
 Vishwanadham Mandala, Indiana University, fa20-523-325, vishwandh.mandala@gmail.com
 Edit
   not addressed: check spaces befor and after .
   not addressed: use proper sentences. we see several sentence fragments.
   use proper grammer.
-  see issues in github and do not close them if you have not fixed them"/>
+  use proper sentences see section 6
+  section 7 starts as ppt, you do not describe how you sanized the data, explained how I sanitized from section 5 and 6"/>
 
 
 
@@ -229,7 +232,7 @@ Edit
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaper" href="/report/cloudmesh-openapi/paper/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaperresultsinstallcloud_lscpu" href="/report/cloudmesh-openapi/paper/results/install/cloud_lscpu/"></a>
       
       
       
@@ -534,7 +537,11 @@ Edit
     <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work:</a></li>
     <li><a href="#3-datasets">3. DataSets:</a></li>
     <li><a href="#4-methodologyprocess">4. Methodology/Process:</a></li>
-    <li><a href="#5-development-of-models">5. Development of Models:</a></li>
+    <li><a href="#5-development-of-models">5. Development of Models:</a>
+      <ul>
+        <li><a href="#51-removing-noise-from-data">5.1 Removing Noise from Data:</a></li>
+      </ul>
+    </li>
     <li><a href="#6-technologies-used">6. Technologies used:</a></li>
     <li><a href="#7-analysis-of-user-behavior">7. Analysis Of User Behavior:</a>
       <ul>
@@ -546,8 +553,7 @@ Edit
     <li><a href="#8-results">8. Results:</a></li>
     <li><a href="#9-conclusion">9. Conclusion:</a></li>
     <li><a href="#10-acknowledgments">10. Acknowledgments:</a></li>
-    <li><a href="#11-plan-for-the-rest-of-the-semester">11. Plan for the rest of the Semester:</a></li>
-    <li><a href="#12-references">12. References:</a></li>
+    <li><a href="#11-references">11. References:</a></li>
   </ul>
 </nav>
 
@@ -591,7 +597,7 @@ Edit
 	<h1 id="sentiment-analysis-and-visualization-using-a-us-election-dataset-for-the-2020-election">Sentiment Analysis and Visualization using a US-election dataset for the 2020 Election</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-316/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-316/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-316/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-316/workflows/Status/badge.svg" alt="Status"></a>
-Status: final</p>
+Status: in progress, Type: Project</p>
 <p>Sudheer Alluri, Indiana University, fa20-523-316, <a href="mailto:ngsudheer@gmail.com">ngsudheer@gmail.com</a></p>
 <p>Vishwanadham Mandala, Indiana University, fa20-523-325, <a href="mailto:vishwandh.mandala@gmail.com">vishwandh.mandala@gmail.com</a></p>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-316/blob/master/project/project.md">Edit</a></p>
@@ -606,6 +612,12 @@ Status: final</p>
 <p><input checked="" disabled="" type="checkbox"> use proper grammer.</p>
 </li>
 <li>
+<p><input checked="" disabled="" type="checkbox"> use proper sentences see section 6</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> section 7 starts as ppt, you do not describe how you sanized the data, explained how I sanitized from section 5 and 6</p>
+</li>
+<li>
 <p><input checked="" disabled="" type="checkbox"> see issues in github and do not close them if you have not fixed them</p>
 </li>
 <li>
@@ -613,6 +625,9 @@ Status: final</p>
 </li>
 <li>
 <p><input checked="" disabled="" type="checkbox"> section hedares must not have :</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> remove plan section or is this supposed to be not a final paper?</p>
 </li>
 <li>
 <p><input checked="" disabled="" type="checkbox"> content is not spell checked. Suggestion: use grammarly</p>
@@ -672,7 +687,7 @@ Status: final</p>
 
 
 <div class="pageinfo pageinfo-primary">
-<h2 id="abstract">Abstract</h2>
+<h2 id="abstract">Abstract:</h2>
 <p>Sentiment analysis is an evaluation of the opinion of the speaker, writer, or other subjects about some topic. We are going to use the US-elections dataset and combining the tweets of people&rsquo;s opinions for leading presidential candidates. We have various datasets from Kaggle and combining tweets and NY times datasets, by combining all data prediction will be derived.</p>
 <p>Contents</p>
 <div class="toc">
@@ -682,7 +697,11 @@ Status: final</p>
     <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work:</a></li>
     <li><a href="#3-datasets">3. DataSets:</a></li>
     <li><a href="#4-methodologyprocess">4. Methodology/Process:</a></li>
-    <li><a href="#5-development-of-models">5. Development of Models:</a></li>
+    <li><a href="#5-development-of-models">5. Development of Models:</a>
+      <ul>
+        <li><a href="#51-removing-noise-from-data">5.1 Removing Noise from Data:</a></li>
+      </ul>
+    </li>
     <li><a href="#6-technologies-used">6. Technologies used:</a></li>
     <li><a href="#7-analysis-of-user-behavior">7. Analysis Of User Behavior:</a>
       <ul>
@@ -694,8 +713,7 @@ Status: final</p>
     <li><a href="#8-results">8. Results:</a></li>
     <li><a href="#9-conclusion">9. Conclusion:</a></li>
     <li><a href="#10-acknowledgments">10. Acknowledgments:</a></li>
-    <li><a href="#11-plan-for-the-rest-of-the-semester">11. Plan for the rest of the Semester:</a></li>
-    <li><a href="#12-references">12. References:</a></li>
+    <li><a href="#11-references">11. References:</a></li>
   </ul>
 </nav>
 </div>
@@ -718,8 +736,7 @@ One thing we are going to avoiding is the use of polls as source material. Many 
 <h2 id="4-methodologyprocess">4. Methodology/Process:</h2>
 <p>There are more than approximately 80 million active users of Twitter in the United States of America and Twitter makes an ideal case study of social media usage in political discourse.
 Our project has two main sections of data sets in it. The primary section contains candidate information and previous presidential election data, and the second containing twitter data. We believed the second needed more time because the first dataset contained straightforward facts while the twitter dataset is more susceptible to different perspectives and viewpoints.
-In this project, we are analyzing Twitter data of key presidential candidates and other key supporters. We gathered the data from Kaggle datasets. Data is mainly divided into 3 subcategories. Tweets made by key personnel.Twitter profiles of the two candidates(all info including followers, following, number of tweets, etc.).The final category involves graphs for visualization purposes. A problem with Twitter data is the fact that it is huge. We are using google drive and with it comes the problem of storage. To combat this we are only using 4 twitter data sets. The datasets of Donald J. Trump, Joe Biden, Kamala Harris, and Mike Pence. We also downloaded these data sets to use them locally. There are mainly 3 types of formats used in everyday twitter use: images, text, and video. Only text will be used in this project because others are not useful for the
-experiment. Our project mostly uses Twitter data as support to the primary dataset. It is there to strengthen the already predicted result. The reason why we cannot make the twitter data set our primary data set is that the data(tweets) are mostly opinion based with only some exceptions. So we cannot predict with the Twitter data, however, it
+In this project, we are analyzing Twitter data of key presidential candidates and other key supporters. We gathered the data from Kaggle datasets. Data is mainly divided into 3 subcategories. Tweets made by key personnel.Twitter profiles of the two candidates(all info including followers, following, number of tweets, etc.).The final category involves graphs for visualization purposes. A problem with Twitter data is the fact that it is huge. We are using google drive and with it comes the problem of storage. To combat this we are only using 4 twitter data sets. The datasets of Donald J. Trump, Joe Biden, Kamala Harris, and Mike Pence. We also downloaded these data sets to use them locally. There are mainly 3 types of formats used in everyday twitter use: images, text, and video. Only text will be used in this project because others are not useful for the experiment. Our project mostly uses Twitter data as support to the primary dataset. It is there to strengthen the already predicted result. The reason why we cannot make the twitter data set our primary data set is that the data(tweets) are mostly opinion based with only some exceptions. So we cannot predict with the Twitter data, however, it
 can be used to show public support which will be vital in supporting the prediction derived from the primary data set. So, we found many twitter data sets on Kaggle and used certain parts from each to make our final four. The difference between the background sets and our final four datasets is the fact that they used Twitter data as their primary dataset while we are using Twitter data as our secondary dataset. We realized that twitter data is best used as secondary data that supports the primary dataset, which is more fact-based. We can use three of the four OSoMe tools available: trends, networking, and maps. Trends and networking can be combined to find a group that involves every user that is taking part in the elections in some way. Mapping can show these users and their location. Giving us the area based result that we seek. However, this method is already a part of our project. Because all this data is in Kaggle in a wider array. Which gave us the option to condense into four large data sets.</p>
 <p>Our methodology comprised of following steps:</p>
 <ol>
@@ -742,15 +759,17 @@ Buzzwords for each candidate
 By using Pandas:
 Used to extract the data and clean the tweets.
 Seaborn and Matlab, used to represent the status of elections in the graphs.</p>
+<h3 id="51-removing-noise-from-data">5.1 Removing Noise from Data:</h3>
+<p>To increase accuracy of our analysis, the next step is to remove noise from our dataset. Presence of spam on Twitter is a well known phenomenon. Although Twitter tries hard to idntify and remove
+automated accounts, not everything are easily identifiable.  In order to identify and remove spam present in our dataset, we removed tweets belonigng to accounts having
+abnormally high tweet rates. We have also filted our dataset by replaced the existing words with keywords and assigned the tweet id.</p>
 <h2 id="6-technologies-used">6. Technologies used:</h2>
-<p>Python, Jupyter notebook or collab, Pandas, Scikit-learn, wget</p>
-<p>Used Pandas to extract details of candidates and wget to download data dynamically from Kaggle.
-Scikit-learn is used for graphical representation of candidates along with liked tweets.</p>
+<p>In this project Python 3 and Google Colab Jupyter Notebook were used to build the notebook. Also several Python packages were employed in this exploration such as Pandas, Numpy, Matplotlib, sklearn, wget.</p>
 <h2 id="7-analysis-of-user-behavior">7. Analysis Of User Behavior:</h2>
-<p>Data is sanitized, we then proceed in data mining and analysis techniques to perform data analytics and find useful information.  We tried to find evidence
+<p>Data is sanitized as metnioned in [^5.1], we then proceed in data mining and analysis techniques to perform data analytics and find useful information.  We tried to find evidence
 supporting some of our beliefs that by reviewing Twitter data for insights into user behavior and tweeting patterns.</p>
 <h3 id="hypothesis-1-twitter-users-are-commenting-on-the-elections-and-retweeting-the-presidential-tweets">Hypothesis 1: Twitter users are commenting on the elections and retweeting the Presidential tweets.</h3>
-<p>Activity based on following and usage: Research has been conducted on message framing behavior of users on Twitter as a function of various characteristics including the number of followers and level of activity. Adding hashtag(#) to the preceding keywords allowing users to search with the word. The use of hashtag become part of Twitter
+<p>Activity-based on following and usage: Research has been conducted on message framing behavior of users on Twitter as a function of various characteristics including the number of followers and level of activity. Adding hashtag(#) to the preceding keywords allowing users to search with the word. The use of hashtag become part of Twitter
 trends and also enables them to reach a large audience.</p>
 <p>Similarly, we believe that a similar trend will be discovered in our election dataset. Users with a large following and heavy usage will be more concerned about making their tweets searchable and then those having fewer followers and less number of tweets. By framing the keyword with hashtag(#), large users are
 able to reach a broader audience.</p>
@@ -762,7 +781,7 @@ creates complexities for users in having to handle multiplicity and one-to-one c
 <p>Several studies have been conducted to conclude Twitter is used as a real-time latest news identification tool and studies have claimed that based on trending topics active period of tweets showed that as many as 85% of topics are headlines or persistent in real-world news.</p>
 <p>Analysis of daily tweets during the US- election 2020 provides us current news events taking place in the real world. We analyzed high-frequency terms to justify our hypothesis.</p>
 <h2 id="8-results">8. Results:</h2>
-<p>In this section, we present the results of the data analysis performed over the course of the study. With the help of some prefatory findings, we understood the sentiment of the data, found the numerical statistics of the positive and negative tweets, and set a trend that successfully predicted the results of the 2020 U.S. presidential elections. Through the help of profound data analysis, we validated our hypotheses presented in the previous section.</p>
+<p>In this section, we present the results of the data analysis performed throughout the study. With the help of some prefatory findings, we understood the sentiment of the data, found the numerical statistics of the positive and negative tweets, and set a trend that successfully predicted the results of the 2020 U.S. presidential elections. Through the help of profound data analysis, we validated our hypotheses presented in the previous section.</p>
 <p>The initial step of the analysis involves analyzing the data in two methods: individual candidate analysis and combined candidate analysis. Both the methods involved assigning tweets with individual sentiment scores and averaging these scores accordingly. Performing these steps, we will achieve positive and negative sentimental scores towards the candidates and get to compare these scores with each other. This way, we see an overall opinion about the candidates. We also get to monitor the conversations taking place over the topic of the election. The attitude towards the candidates is strongly positive from their inner circles. When it came to the general public, however, both candidates received negative feedback.</p>
 <p>The mentality of the whole public can never be properly depicted by a single dataset. Furthermore, you cannot assume that the data recorded and analyzed from Twitter will be genuine in all regions. However, it can be a good representation due to its ability to empower users by allowing them to freely share their views and opinions. The consensus of an average American citizen is currently divided due to two factors. The first factor is the existence of a previous or a new affiliation with a specific political party. This is not surprising since political affiliation is a phenomenon that has existed since the conception of a democratic government. However, it does make a huge difference. Since the start of the concept, the American population has always changed their opinion. More recently, however, the general American population has dedicated its supporting two main political parties: the Democratic party and the Republican party. The population is almost split evenly throughout the country. However, the location of these specific groups has changed in recent years. The change is very interesting as it shows major trends towards the individual parties and their followers. Democratic followers, shown by twitter information of Biden supporters, tend to live in cities and are generally younger or work white-collar jobs. Republican followers, shown by twitter information of Trump supporters, tend to live in suburbs, small towns, and in the countryside. They are also generally older and have blue-collar jobs. Due to this reason, there are fewer republicans active on Twitter, however, we know that there are many more republicans outside of Twitter from the results of the previous elections. This would make our use of Twitter data nugatory. If that is the truth, why have we decided to use the Twitter data? There are indeed more Democratic Twitter users than Republican ones, however, there are many more neutral citizens that are not affiliated with any party. The second factor affects this group of neutral citizens. The second factor is the individual opinion of the person in question. The general view held in the minds of these neutral citizens, showed by many tweets from these groups of people, is that they have to choose the best option from two subpar choices. The truth of the fact is that the candidates are strongly advertising to their party supporters first and then to the supporters of the other parties and non-affiliates to any party. This leads to the neutral group not preferring the two candidates as their first choices. However, they have to choose one of the two and the decision, like all other decisions, will be heavily based on their livelihoods. Therefore, the results, based solely on Twitter data and previous presidential elections data that we have looked at, will depend on the lively hood of these neutral citizens. This will not be the perfect representation of the entire country by any means, however, the sample size is wide and large enough to be a good representation of the American public.</p>
 <p>After all the data was collected, we have formatted the candidate&rsquo;s information and cleaned the Twitter data. After closely watching the Twitter data
@@ -786,27 +805,8 @@ Among the most frequent words in tweets dedicated to Donald Trump (excluding can
 <p>So, we&rsquo;ve taken a quick look at the sentiment of tweets. There are a lot of analysis variants. It looks great to study the tweets by each Twitter account and therefore don&rsquo;t cover the actual situation since restriction to data.
 Based on the visualization analysis with predicted tweets from Twitter the predicted winner is projected. The sentiment analysis was performed only on data that had geo-data originating from the &ldquo;United States of America&rdquo; to try to ascertain the sentiment in each respective dataset and therefore each presidential candidate.</p>
 <h2 id="10-acknowledgments">10. Acknowledgments:</h2>
-<p>Would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors for providing continuous guidance and feedback for this final project.</p>
-<h2 id="11-plan-for-the-rest-of-the-semester">11. Plan for the rest of the Semester:</h2>
-<p>October 26:</p>
-<ul>
-<li>Furthur looking into new datasets and getting new Twitter data.</li>
-<li>Brainstorm ideas for future engineering and build features</li>
-<li>update the report.</li>
-</ul>
-<p>November 2:</p>
-<ul>
-<li>Working on creating a function to download the content. Remove the spaces in the project.</li>
-</ul>
-<p>November 9:</p>
-<ul>
-<li>Completed major part of the notebook, uploaded only necessary files, and modified the code.</li>
-</ul>
-<p>November 16:</p>
-<ul>
-<li>Results were derived and compared with actual results, posted at sub-section 6.</li>
-</ul>
-<h2 id="12-references">12. References:</h2>
+<p>Would like to thank Dr. Gregor von Laszewski, Dr. Geoffrey Fox, and the associate instructors for providing continuous guidance and feedback for this final project.</p>
+<h2 id="11-references">11. References:</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

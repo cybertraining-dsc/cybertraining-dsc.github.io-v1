@@ -21,25 +21,25 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Music Mood Classification   Status: final
+<meta property="og:description" content="Music Mood Classification   Status: final, Type: Project
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to find relationships in a song&rsquo;s lyrics, audio features, and its valence." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-341/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Music Mood Classification   Status: final
+<meta itemprop="description" content="Music Mood Classification   Status: final, Type: Project
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to find relationships in a song&rsquo;s lyrics, audio features, and its valence.">
 
-<meta itemprop="wordCount" content="3583">
+<meta itemprop="wordCount" content="3692">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Music Mood Classification   Status: final
+<meta name="twitter:description" content="Music Mood Classification   Status: final, Type: Project
 Kunaal Shah, fa20-523-341, Edit
 Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to find relationships in a song&rsquo;s lyrics, audio features, and its valence."/>
 
@@ -214,7 +214,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaper" href="/report/cloudmesh-openapi/paper/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaperresultsinstallcloud_lscpu" href="/report/cloudmesh-openapi/paper/results/install/cloud_lscpu/"></a>
       
       
       
@@ -531,7 +531,8 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     </li>
     <li><a href="#5-benchmarks">5. Benchmarks</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#7-references">7. References</a></li>
+    <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
+    <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 
@@ -575,7 +576,7 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
 	<h1 id="music-mood-classification">Music Mood Classification</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-341/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-341/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-341/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-341/workflows/Status/badge.svg" alt="Status"></a>
-Status: final</p>
+Status: final, Type: Project</p>
 <p>Kunaal Shah, <a href="https://github.com/cybertraining-dsc/fa20-523-312/">fa20-523-341</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-341/blob/master/project/project.md">Edit</a></p>
 
 
@@ -602,7 +603,8 @@ Status: final</p>
     </li>
     <li><a href="#5-benchmarks">5. Benchmarks</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
-    <li><a href="#7-references">7. References</a></li>
+    <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
+    <li><a href="#8-references">8. References</a></li>
   </ul>
 </nav>
 </div>
@@ -1072,7 +1074,9 @@ Scores for 'I'm so sad': {
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>We received inconclusive results from our study. The linear and polynomial regression tests that we performed, showed little correlation between our lyrical features and a track&rsquo;s valence. This was backed by our multivariate regression test which performed with a RSME score of about 0.19 on our dataset. Since valence is recorded on a scale from 0 to 1.0, this means that our predictions typically fall within 20% of the actual value, which is considerably inaccurate. As previous studies have shown massive improvements in combining lyrical and audio features for machine learning applications in music, we believe that the blame for our low scores falls heavily on our approach to assigning sentiment scores on our lyrics <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Future studies should consider the presence of foreign lyrics and the potential inaccuracies of community submitted lyrics.</p>
 <p>There are several other elements of this study that could be improved upon in future iterations. In this project we only worked with songs released after the beginning of 2017, but obviously, people would still enjoy listening to songs from previous years. The Spotiy API contains audio features data for every song in its library, so it would be worth collecting that data on every song for usage in the generation of song recommendations. Secondly, our data set excluded songs on Spotify, whose lyrics could not be found easily on Genius.com. We should have handled these cases by attempting to find the lyrics from other popular websites which store music lyrics. And lastly, we worked with a very small dataset relative to the total amount of songs that exist, or that are available on Spotify. There is great possibility in repeating this study quite easily with a greater selection of songs. We were surprised by how small the file sizes were of our dataset of 6551 songs, the aggregated data set being only 2.3 megabytes in size. Using that value, a set of one million songs can be estimated to only be around 350 megabytes.</p>
-<h2 id="7-references">7. References</h2>
+<h2 id="7-acknowledgements">7. Acknowledgements</h2>
+<p>We would like to give our thanks to Dr. Geoffrey Fox, Dr. Gregor von Laszewski, and the other associate instructors who taught FA20-BL-ENGR-E534-11530: Big Data Applications during the Fall 2020 semester at Indiana University, Bloomington for their suggestions and assistance in compiling this project report. Additionally we would like to thank the students who contributed to Piazza by either answering questions that we had ourselves, or giving their own suggestions and experiences in building projects. In taking this course we learned of several applications of and use cases for big data applications, and gained the knowledge to build our own big data projects.</p>
+<h2 id="8-references">8. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

@@ -21,25 +21,25 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Review of the Use of Wearables in Personalized Medicine   Status: in progress
+<meta property="og:description" content="Review of the Use of Wearables in Personalized Medicine   Status: final, Type: Project
 Adam Martin, fa20-523-302, Edit
 Abstract Wearable devices offer an abundant source of data on wearer activity and health metrics. Smartphones and smartwatches have become increasingly ubiquitous, and provide high-quality motion sensor data. This research attempts to classify movement types, including running, walking, sitting, standing, and going up and down stairs, to establish the practicality of sharing this raw data with healthcare workers." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-302/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Review of the Use of Wearables in Personalized Medicine   Status: in progress
+<meta itemprop="description" content="Review of the Use of Wearables in Personalized Medicine   Status: final, Type: Project
 Adam Martin, fa20-523-302, Edit
 Abstract Wearable devices offer an abundant source of data on wearer activity and health metrics. Smartphones and smartwatches have become increasingly ubiquitous, and provide high-quality motion sensor data. This research attempts to classify movement types, including running, walking, sitting, standing, and going up and down stairs, to establish the practicality of sharing this raw data with healthcare workers.">
 
-<meta itemprop="wordCount" content="1484">
+<meta itemprop="wordCount" content="1956">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Review of the Use of Wearables in Personalized Medicine   Status: in progress
+<meta name="twitter:description" content="Review of the Use of Wearables in Personalized Medicine   Status: final, Type: Project
 Adam Martin, fa20-523-302, Edit
 Abstract Wearable devices offer an abundant source of data on wearer activity and health metrics. Smartphones and smartwatches have become increasingly ubiquitous, and provide high-quality motion sensor data. This research attempts to classify movement types, including running, walking, sitting, standing, and going up and down stairs, to establish the practicality of sharing this raw data with healthcare workers."/>
 
@@ -214,7 +214,7 @@ Abstract Wearable devices offer an abundant source of data on wearer activity an
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaper" href="/report/cloudmesh-openapi/paper/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportcloudmesh-openapipaperresultsinstallcloud_lscpu" href="/report/cloudmesh-openapi/paper/results/install/cloud_lscpu/"></a>
       
       
       
@@ -533,6 +533,8 @@ Abstract Wearable devices offer an abundant source of data on wearer activity an
     <li><a href="#6-conclusion">6. Conclusion</a>
       <ul>
         <li><a href="#61-results">6.1 Results</a></li>
+        <li><a href="#62-limitations">6.2 Limitations</a></li>
+        <li><a href="#63-impact">6.3 Impact</a></li>
       </ul>
     </li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
@@ -580,7 +582,7 @@ Abstract Wearable devices offer an abundant source of data on wearer activity an
 	<h1 id="review-of-the-use-of-wearables-in-personalized-medicine">Review of the Use of Wearables in Personalized Medicine</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-302/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-302/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-302/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-302/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress</p>
+Status: final, Type: Project</p>
 <p>Adam Martin, <a href="https://github.com/cybertraining-dsc/fa20-523-302">fa20-523-302</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md">Edit</a></p>
 
 
@@ -612,6 +614,8 @@ the use of wearable data in clinical settings and discusses shortcomings in maki
     <li><a href="#6-conclusion">6. Conclusion</a>
       <ul>
         <li><a href="#61-results">6.1 Results</a></li>
+        <li><a href="#62-limitations">6.2 Limitations</a></li>
+        <li><a href="#63-impact">6.3 Impact</a></li>
       </ul>
     </li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
@@ -622,7 +626,7 @@ the use of wearable data in clinical settings and discusses shortcomings in maki
 
 </div>
 
-<p><strong>Keywords:</strong> Wearables, Classification, Descriptive Analysis, Healthcare, Movement Tracking, Precision Health</p>
+<p><strong>Keywords:</strong> Wearables, Classification, Descriptive Analysis, Healthcare, Movement Tracking, Precision Health, LSTM</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Wearables have been on the market for years now, gradually improving and providing increasingly insightful data on user health metrics. Most wearables contain an array of sensors allowing the user to track aspects of their physical health.
 This includes heart rate, motion, calories burned, and some devices now support ECG and BMI measurements. This vast trove of data is valuable to consumers, as it allows for the measurement and gamification of key
@@ -647,7 +651,8 @@ would allow professionals to better target certain conditions.</p>
 <h2 id="3-choice-of-dataset">3. Choice of Dataset</h2>
 <p>The dataset used for this project contains labeled movement data from wearable devices.  The goal is to establish the potential for wearable devices to provide high-quality data to users and healthcare professionals.</p>
 <p>A dataset gathered from 24 individuals with Apple devices measuring attitude, gravity, and acceleration was used to determine user states.  The dataset is labeled with six states (walking downstairs,
-walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion.  Many smartphones and wearables already offer comprehensive sleep tracking features, so sleep motion
+walking upstairs, sitting, standing, walking and jogging) and each sensor has several attributes describing its motion. The attitude, gravity, and acceleration readings each have three components corresponding to each
+axis of freedom.  Many smartphones and wearables already offer comprehensive sleep tracking features, so sleep motion
 data will not be considered for this study.  The CrowdSense iOS application was used to record user movements.  Each sensor was configured to sample at 50hz, and each user was instructed to start the recording,
 and begin their assigned activity.</p>
 <h2 id="4-methodology-and-code">4. Methodology and Code</h2>
@@ -660,7 +665,14 @@ The Keras Long Short Term Memory classifier implementation is used for this task
 class.  Each class is then subdivided into one-second &lsquo;windows&rsquo;, each with 50 entries.  Each window is offset by 10 entries from the previous window.</p>
 <p>The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
 features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a Google
-Colab instance and benchmarked.</p>
+Colab instance and benchmarked.  The workflow consists of the following:</p>
+<ul>
+<li>A Long Short Term Memory layer with the cell count matching the size of the input window (50)</li>
+<li>A Dropout layer to minimize overfitting</li>
+<li>A fully connected layer with relu activation to help learn the weights of the LSTM output</li>
+<li>A fully connected output layer with a softmax activation to return the final classifications</li>
+</ul>
+<p>The model is trained in 15 epochs, and uses a batch size of 64 for each backpropagation.</p>
 <p>If a classification strategy of sufficient accuracy is possible, it will be determined that wearable data can potentially serve as a useful supplementary source of information to aid in establishing a patient&rsquo;s
 medical history.</p>
 <p>Reviewing relevant literature is important to determine the current state of wearables research regarding usefulness to healthcare workers and user well-being.
@@ -692,7 +704,23 @@ Much of this research will be focused on determining the state of wearables in t
 <p>The final accuracy measurement for the LSTM was <strong>%95.42</strong>.  This proves that discrete movement classes can be determined through the analysis of basic sensor data regarding device movement.</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <h3 id="61-results">6.1 Results</h3>
-<p>Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.</p>
+<p>Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.  Viewing previous analyses of
+similar datasets, it should also be possible to determine the gender of the user, and estimate their stride length, walking asymmetry, double support time, and more.  Viewing the benchmarks,
+the inference time is rapid, taking only 3 seconds to validate results for the entire testing dataset.  This model could be distilled for a production environment, and the rapid inference speed
+would allow for faster analyses for end users.</p>
+<h3 id="62-limitations">6.2 Limitations</h3>
+<p>The classes of movement considered for this study were limited.  For more precise movements, or movement combinations, more data and a more complex model would be required.  For example;
+classifying the type of activity being done while a user is seated, if they are typing or eating.  Future research could involve a wider review of timeseries classifiers, including transformers
+and rnns, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with
+information regarding a users daily habits, their gender, their location, and other sensitive data.</p>
+<p>Existing research highlights some of the issues with the adoption of wearable devices in healthcare.  Inconsistent reporting, usage, and data quality are the most common concerns <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.  Addressing
+these issues through an analysis of data quality and device usage could contribute towards the robustness of this study.</p>
+<h3 id="63-impact">6.3 Impact</h3>
+<p>Frameworks like Apple CareKit and Google Fit are emerging to address the increasing demand for health tracking applications.  There is a need for a more effective pipeline for sharing this information
+securely with doctors and researchers, and these frameworks are a step in the right direction.  Furthermore, this research can be applied towards finding correlations between a patient&rsquo;s condition and
+their activity history, or helping a patient reach certain goals towards their overall well-being.  Comprehensive movement history can be combined with device usage patterns, eating habit data, self-reported
+well-being data, and other relevant sources to establish a more holistic perspective of a patient&rsquo;s health.
+Giving users and healthcare workers access to an insights on the data that they generate every day will promote healthier habits, increase physician efficacy, and promote overall well-being.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications throughout this course.</p>
 <h2 id="8-references">8. References</h2>
@@ -710,6 +738,9 @@ Much of this research will be focused on determining the state of wearables in t
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>Glasgow, Russell E. Realizing the full potential of precision health: The need to include patient-reported health behavior, mental health, social determinants, and patient preferences data (2018, September 13). I Retrieved November 15, 2020 from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6202010/</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Malekzadeh, Mohammad. Mobile Sensor Data Anonymization (2018).  I Retrieved September 18, 2020 from <a href="http://doi.acm.org/10.1145/3302505.3310068">http://doi.acm.org/10.1145/3302505.3310068</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
