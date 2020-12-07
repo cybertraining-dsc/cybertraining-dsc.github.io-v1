@@ -21,25 +21,25 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease   Status: in progress
+<meta property="og:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease   Status: final
 Ethan Nguyen, fa20-523-309, Edit
 Abstract As cardiovascular diseases are the number 1 cause of death in the United States, the study of the factors and early detection and treatment could improve quality of life and lifespans. From investigating how the variety of factors related to cardiovascular health relate to a general trend, it has resulted in general guidelines to reduce the risk of experiencing a cardiovascular disease." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-309/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease   Status: in progress
+<meta itemprop="description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease   Status: final
 Ethan Nguyen, fa20-523-309, Edit
 Abstract As cardiovascular diseases are the number 1 cause of death in the United States, the study of the factors and early detection and treatment could improve quality of life and lifespans. From investigating how the variety of factors related to cardiovascular health relate to a general trend, it has resulted in general guidelines to reduce the risk of experiencing a cardiovascular disease.">
 
-<meta itemprop="wordCount" content="3638">
+<meta itemprop="wordCount" content="3817">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease   Status: in progress
+<meta name="twitter:description" content="Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease   Status: final
 Ethan Nguyen, fa20-523-309, Edit
 Abstract As cardiovascular diseases are the number 1 cause of death in the United States, the study of the factors and early detection and treatment could improve quality of life and lifespans. From investigating how the variety of factors related to cardiovascular health relate to a general trend, it has resulted in general guidelines to reduce the risk of experiencing a cardiovascular disease."/>
 
@@ -560,7 +560,8 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
             <li><a href="#417-spectral-clustering">4.1.7 Spectral Clustering</a></li>
           </ul>
         </li>
-        <li><a href="#42-discussion">4.2 Discussion</a></li>
+        <li><a href="#42-system-information">4.2 System Information</a></li>
+        <li><a href="#43-discussion">4.3 Discussion</a></li>
       </ul>
     </li>
     <li><a href="#5-conclusion">5. Conclusion</a></li>
@@ -609,7 +610,7 @@ Abstract As cardiovascular diseases are the number 1 cause of death in the Unite
 	<h1 id="analysis-of-various-machine-learning-classification-techniques-in-detecting-heart-disease">Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-309/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-309/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-309/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-309/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress</p>
+Status: final</p>
 <p>Ethan Nguyen, <a href="https://github.com/cybertraining-dsc/fa20-523-309">fa20-523-309</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-309/blob/main/project/project.md">Edit</a></p>
 
 
@@ -665,7 +666,8 @@ Status: in progress</p>
             <li><a href="#417-spectral-clustering">4.1.7 Spectral Clustering</a></li>
           </ul>
         </li>
-        <li><a href="#42-discussion">4.2 Discussion</a></li>
+        <li><a href="#42-system-information">4.2 System Information</a></li>
+        <li><a href="#43-discussion">4.3 Discussion</a></li>
       </ul>
     </li>
     <li><a href="#5-conclusion">5. Conclusion</a></li>
@@ -775,7 +777,7 @@ Status: in progress</p>
 <p>The metrics used to determine the viability of each of the algorithms are precision, recall, and f1-score. These are simple metrics based on the values from a confusion matrix which is a visualization of the False and True Positives and Negatives. Precision is essentially how accurate was the algorithm in classifying each data point. This however, is not a good metric to solely base performance as precision does not account for imbalanced distributions within a dataset <sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>.</p>
 <p>This is where the recall metric comes in which is defined as how many samples were accurately classified by the algorithm. This is a more versatile metric as it can compensate for imbalanced datasets. While it may not be in our case as seen in the dataset analysis where we have a relatively balanced ratio. It still gives great insight on the performance for our application.</p>
 <p>Finally is the f1-score which is the harmonic mean of the precision and recall metric <sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>. This will be the key metric we will mainly focus on as it strikes a good balance between the two more primitive metrics. Since one may think in medical applications one would want to maximize recall, it is at the cost of precision which ends up in more false predictions which is essentially an overfitting scenario <sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>. Something that reduces the viability of the model to the application especially since we have a relatively balanced dataset, more customized weighting is not as necessary.</p>
-<p>The metrics for each algorithm implementation are as follows.</p>
+<p>The metrics for each algorithm implementation are as follows. The training time metric is provided by the cloudmesh.common benchmark library <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>.</p>
 <h4 id="411-support-vector-machines">4.1.1 Support Vector Machines</h4>
 <p><strong>Table 4.1:</strong> dav_set metrics</p>
 <table>
@@ -1229,7 +1231,164 @@ Status: in progress</p>
 </tr>
 </tbody>
 </table>
-<h3 id="42-discussion">4.2 Discussion</h3>
+<h3 id="42-system-information">4.2 System Information</h3>
+<p>Google Collab was used to train and evaluate the models selected. The specifications of the system in use is provided by the cloudmesh.common benchmark library and is listed in Table 4.15 <sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>.</p>
+<p><strong>Table 4.15</strong>: Training and Evaluation System Specifications</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BUG_REPORT_URL</td>
+<td>&ldquo;<a href="https://bugs.launchpad.net/ubuntu/%22">https://bugs.launchpad.net/ubuntu/&quot;</a></td>
+</tr>
+<tr>
+<td>DISTRIB_CODENAME</td>
+<td>bionic</td>
+</tr>
+<tr>
+<td>DISTRIB_DESCRIPTION</td>
+<td>&ldquo;Ubuntu 18.04.5 LTS&rdquo;</td>
+</tr>
+<tr>
+<td>DISTRIB_ID</td>
+<td>Ubuntu</td>
+</tr>
+<tr>
+<td>DISTRIB_RELEASE</td>
+<td>18.04</td>
+</tr>
+<tr>
+<td>HOME_URL</td>
+<td>&ldquo;<a href="https://www.ubuntu.com/%22">https://www.ubuntu.com/&quot;</a></td>
+</tr>
+<tr>
+<td>ID</td>
+<td>ubuntu</td>
+</tr>
+<tr>
+<td>ID_LIKE</td>
+<td>debian</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>&ldquo;Ubuntu&rdquo;</td>
+</tr>
+<tr>
+<td>PRETTY_NAME</td>
+<td>&ldquo;Ubuntu 18.04.5 LTS&rdquo;</td>
+</tr>
+<tr>
+<td>PRIVACY_POLICY_URL</td>
+<td>&ldquo;<a href="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy%22">https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&quot;</a></td>
+</tr>
+<tr>
+<td>SUPPORT_URL</td>
+<td>&ldquo;<a href="https://help.ubuntu.com/%22">https://help.ubuntu.com/&quot;</a></td>
+</tr>
+<tr>
+<td>UBUNTU_CODENAME</td>
+<td>bionic</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>&ldquo;18.04.5 LTS (Bionic Beaver)&rdquo;</td>
+</tr>
+<tr>
+<td>VERSION_CODENAME</td>
+<td>bionic</td>
+</tr>
+<tr>
+<td>VERSION_ID</td>
+<td>&ldquo;18.04&rdquo;</td>
+</tr>
+<tr>
+<td>cpu_count</td>
+<td>2</td>
+</tr>
+<tr>
+<td>mem.active</td>
+<td>698.5 MiB</td>
+</tr>
+<tr>
+<td>mem.available</td>
+<td>11.9 GiB</td>
+</tr>
+<tr>
+<td>mem.free</td>
+<td>9.2 GiB</td>
+</tr>
+<tr>
+<td>mem.inactive</td>
+<td>2.6 GiB</td>
+</tr>
+<tr>
+<td>mem.percent</td>
+<td>6.5 %</td>
+</tr>
+<tr>
+<td>mem.total</td>
+<td>12.7 GiB</td>
+</tr>
+<tr>
+<td>mem.used</td>
+<td>1.6 GiB</td>
+</tr>
+<tr>
+<td>platform.version</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>python</td>
+<td>3.6.9 (default, Oct  8 2020, 12:12:24)  [GCC 8.4.0]</td>
+</tr>
+<tr>
+<td>python.pip</td>
+<td>19.3.1</td>
+</tr>
+<tr>
+<td>python.version</td>
+<td>3.6.9</td>
+</tr>
+<tr>
+<td>sys.platform</td>
+<td>linux</td>
+</tr>
+<tr>
+<td>uname.machine</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>uname.node</td>
+<td>bc15b46ebcf6</td>
+</tr>
+<tr>
+<td>uname.processor</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>uname.release</td>
+<td>4.19.112+</td>
+</tr>
+<tr>
+<td>uname.system</td>
+<td>Linux</td>
+</tr>
+<tr>
+<td>uname.version</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>user</td>
+<td>collab</td>
+</tr>
+</tbody>
+</table>
+<h3 id="43-discussion">4.3 Discussion</h3>
 <p>In analyzing the resulting metrics in section 4.1, two major trends between the algorithms are apparent.</p>
 <ol>
 <li>The classification algorithms perform significantly better than the clustering algorithms.</li>
@@ -1287,6 +1446,9 @@ Status: in progress</p>
 </li>
 <li id="fn:14" role="doc-endnote">
 <p>Mianaee, S., 2020. 20 Popular Machine Learning Metrics. Part 1: Classification &amp; Regression Evaluation Metrics. [online] Medium. Available at: <a href="https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce">https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce</a> [Accessed 10 November 2020]. <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p>Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <a href="https://github.com/cloudmesh/cloudmesh-common">https://github.com/cloudmesh/cloudmesh-common</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

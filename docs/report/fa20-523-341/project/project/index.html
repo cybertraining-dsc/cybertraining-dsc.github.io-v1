@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Music Mood Classification  please implement the changes we suggested fix the way the sections are organized. See the rendered TOC &hellip; you have some sections to deep?    Status: in progress
+<meta property="og:description" content="Music Mood Classification   Status: final
 Kunaal Shah, fa20-523-341, Edit
-Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy." />
+Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to find relationships in a song&rsquo;s lyrics, audio features, and its valence." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-341/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Music Mood Classification  please implement the changes we suggested fix the way the sections are organized. See the rendered TOC &hellip; you have some sections to deep?    Status: in progress
+<meta itemprop="description" content="Music Mood Classification   Status: final
 Kunaal Shah, fa20-523-341, Edit
-Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy.">
+Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to find relationships in a song&rsquo;s lyrics, audio features, and its valence.">
 
-<meta itemprop="wordCount" content="2471">
+<meta itemprop="wordCount" content="3583">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Music Mood Classification  please implement the changes we suggested fix the way the sections are organized. See the rendered TOC &hellip; you have some sections to deep?    Status: in progress
+<meta name="twitter:description" content="Music Mood Classification   Status: final
 Kunaal Shah, fa20-523-341, Edit
-Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy."/>
+Abstract Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to find relationships in a song&rsquo;s lyrics, audio features, and its valence."/>
 
 
 
@@ -518,17 +518,18 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-related-work">2. Related Work</a></li>
     <li><a href="#3-datasets">3. Datasets</a></li>
-    <li><a href="#4-project-goals">4. Project Goals</a></li>
-    <li><a href="#5-analysis">5. Analysis</a>
+    <li><a href="#4-analysis">4. Analysis</a>
       <ul>
-        <li><a href="#51-accumulation-of-audio-features-and-lyrics">5.1 Accumulation of audio features and lyrics</a></li>
-        <li><a href="#52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</a></li>
-        <li><a href="#53-description-of-select-data-fields">5.3 Description of select data fields</a></li>
-        <li><a href="#54-preliminary-analysis-of-data">5.4 Preliminary Analysis of Data</a></li>
-        <li><a href="#55-scatterplot-analysis">5.5 Scatterplot Analysis</a></li>
-        <li><a href="#56-linear-regression-analysis">5.6 Linear Regression Analysis</a></li>
+        <li><a href="#41-accumulation-of-audio-features-and-lyrics">4.1 Accumulation of audio features and lyrics</a></li>
+        <li><a href="#42-performance-of-sentiment-analysis-on-lyrics">4.2 Performance of sentiment analysis on lyrics</a></li>
+        <li><a href="#43-description-of-select-data-fields">4.3 Description of select data fields</a></li>
+        <li><a href="#44-preliminary-analysis-of-data">4.4 Preliminary Analysis of Data</a></li>
+        <li><a href="#45-scatterplot-analysis">4.5 Scatterplot Analysis</a></li>
+        <li><a href="#46-linear-and-polynomial-regression-analyses">4.6 Linear and Polynomial Regression Analyses</a></li>
+        <li><a href="#47-multivariate-regression-analysis">4.7 Multivariate Regression Analysis</a></li>
       </ul>
     </li>
+    <li><a href="#5-benchmarks">5. Benchmarks</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-references">7. References</a></li>
   </ul>
@@ -572,19 +573,15 @@ Abstract Music analysis on an individual level is incredibly subjective. A parti
     
 	       
 	<h1 id="music-mood-classification">Music Mood Classification</h1>
-<ul>
-<li><input disabled="" type="checkbox"> please implement the changes we suggested</li>
-<li><input disabled="" type="checkbox"> fix the way the sections are organized. See the rendered TOC &hellip; you have some sections to deep?</li>
-</ul>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-341/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-341/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-341/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-341/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress</p>
+Status: final</p>
 <p>Kunaal Shah, <a href="https://github.com/cybertraining-dsc/fa20-523-312/">fa20-523-341</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-341/blob/master/project/project.md">Edit</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to create an algorithm to recommend songs to a user based on their mood. We take advantage of the audio data provided by Spotify for each song in their massive library, as well as lyrical data from popular music news and lyrics site, Genius.</p>
+<p>Music analysis on an individual level is incredibly subjective. A particular song can leave polarizing impressions on the emotions of its listener. One person may find a sense of calm in a piece, while another feels energy. In this study we examine the audio and lyrical features of popular songs in order to find relationships in a song&rsquo;s lyrics, audio features, and its valence. We take advantage of the audio data provided by Spotify for each song in their massive library, as well as lyrical data from popular music news and lyrics site, Genius.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -592,17 +589,18 @@ Status: in progress</p>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-related-work">2. Related Work</a></li>
     <li><a href="#3-datasets">3. Datasets</a></li>
-    <li><a href="#4-project-goals">4. Project Goals</a></li>
-    <li><a href="#5-analysis">5. Analysis</a>
+    <li><a href="#4-analysis">4. Analysis</a>
       <ul>
-        <li><a href="#51-accumulation-of-audio-features-and-lyrics">5.1 Accumulation of audio features and lyrics</a></li>
-        <li><a href="#52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</a></li>
-        <li><a href="#53-description-of-select-data-fields">5.3 Description of select data fields</a></li>
-        <li><a href="#54-preliminary-analysis-of-data">5.4 Preliminary Analysis of Data</a></li>
-        <li><a href="#55-scatterplot-analysis">5.5 Scatterplot Analysis</a></li>
-        <li><a href="#56-linear-regression-analysis">5.6 Linear Regression Analysis</a></li>
+        <li><a href="#41-accumulation-of-audio-features-and-lyrics">4.1 Accumulation of audio features and lyrics</a></li>
+        <li><a href="#42-performance-of-sentiment-analysis-on-lyrics">4.2 Performance of sentiment analysis on lyrics</a></li>
+        <li><a href="#43-description-of-select-data-fields">4.3 Description of select data fields</a></li>
+        <li><a href="#44-preliminary-analysis-of-data">4.4 Preliminary Analysis of Data</a></li>
+        <li><a href="#45-scatterplot-analysis">4.5 Scatterplot Analysis</a></li>
+        <li><a href="#46-linear-and-polynomial-regression-analyses">4.6 Linear and Polynomial Regression Analyses</a></li>
+        <li><a href="#47-multivariate-regression-analysis">4.7 Multivariate Regression Analysis</a></li>
       </ul>
     </li>
+    <li><a href="#5-benchmarks">5. Benchmarks</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-references">7. References</a></li>
   </ul>
@@ -613,44 +611,21 @@ Status: in progress</p>
 
 <p><strong>Keywords:</strong> music, mood classification, audio, audio content analysis, lyrics, lyrical analysis, big data, spotify, emotion</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. This can be attributed to varying interpretations of tone and lyrics in song between different listeners. In this project we study both the audio and lyrical patterns of a song through machine learning and natural language processing (NLP) tools in order to create a &lsquo;mood sort algorithm&rsquo;.</p>
+<p>The overall mood of a musical piece is generally very difficult to decipher due to the highly subjective nature of music. One person might think a song is energetic and happy, while another may think it is quite sad. This can be attributed to varying interpretations of tone and lyrics in song between different listeners. In this project we study both the audio and lyrical patterns of a song through machine learning and natural language processing (NLP) to find a relationship between the song&rsquo;s lyrics and its valence, or its overall positivity.</p>
 <h2 id="2-related-work">2. Related Work</h2>
-<p>Previous studies take three different ways in classifying the mood of a song according to various mood models by analyzing audio, analyzing lyrics, and analyzing lyrics and audio. Most of these studies have been successful in their goals but have uses a limited collection of songs/words for their analysis <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Perhaps obviously, the best results come when combining audio and lyrics.</p>
-<p>When researching existing work, we found two applications that approach music recommendations based on mood, one is called &lsquo;moooodify&rsquo;, a free web application developed by an independent music enthusiast, Siddharth Ahuja <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Another website, Organize Your Music, aims to organize a Spotify user&rsquo;s music library based on mood, genre, popularity, style, and other categories <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. However, both of these applications do not seem to take into account any lyrical analysis of a song.</p>
-<p>Lyrics of a song can be used to learn a lot about music from lexical pattern analysis to gender, genre, and mood analyses. For example, in an individual study a researcher found that female artists tend to mention girls, women, and friends a lot, while male artists sing about late Saturday Nights, play and love <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Another popular project, SongSim, used repetition to visualize the parts of a song <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Findings such as these can be used to uncover the gender of an artist based on their lyrics. Similarly, by use of NLP tools, lyrical text can be analyzed to elicit the mood and emotion of a song.</p>
-<p>A simple weighting is given by a study from the University of Illinois to categorize moods of a song by audio and lyrical content analysis.</p>
+<p>Previous studies take three different ways in classifying the mood of a song according to various mood models by analyzing audio, analyzing lyrics, and analyzing lyrics and audio. Most of these studies have been successful in their goals but have uses a limited collection of songs/words for their analysis <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Perhaps obviously, the best results come when combining audio and lyrics. A simple weighting is given by a study from the University of Illinois to categorize moods of a song by audio and lyrical content analysis, A simple weighting is given by a study from the University of Illinois to categorize moods of a song by audio and lyrical content analysis.</p>
 <p><code>phybrid = \alpha plyrics + (1 - \alpha )paudio</code></p>
-<p>where a is the probability weight given by the lyrical classifier <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>When researching existing work, we found two applications that approach music recommendations based on mood, one is called &lsquo;moooodify&rsquo;, a free web application developed by an independent music enthusiast, Siddharth Ahuja <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Another website, Organize Your Music, aims to organize a Spotify user&rsquo;s music library based on mood, genre, popularity, style, and other categories <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. However, both of these applications do not seem to take into account any lyrical analysis of a song.</p>
+<p>Lyrics of a song can be used to learn a lot about music from lexical pattern analysis to gender, genre, and mood analyses. For example, in an individual study a researcher found that female artists tend to mention girls, women, and friends a lot, while male artists sing about late Saturday Nights, play and love <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Another popular project, SongSim, used repetition to visualize the parts of a song <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Findings such as these can be used to uncover the gender of an artist based on their lyrics. Similarly, by use of NLP tools, lyrical text can be analyzed to elicit the mood and emotion of a song.</p>
 <h2 id="3-datasets">3. Datasets</h2>
-<p>For the audio content analysis portion of this project, we use Spotify&rsquo;s Web API, which provides a great amount audio data for every song in Spotify&rsquo;s song collection, including valence, energy, and danceability <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>.</p>
-<p>For the lyrical analysis portion of this project, we use Genius&rsquo;s API to pull lyrics information for a song. Genius is a website which contains lyrics to several popular songs <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. To perform sentiment analysis on a set of lyrics collected from Genius, we use the NLTK Vader library.</p>
-<h2 id="4-project-goals">4. Project Goals</h2>
-<ul>
-<li>make dataset of collected song information from spotify and genius api</li>
-<li>Analyze audio and lyrical data of top songs on spotify
-<ul>
-<li>graphs and statistics of data fields like valence, danceability, word count, etc</li>
-<li>note current trends in song types</li>
-</ul>
-</li>
-<li>determine a song&rsquo;s overall positivity - postive / negative lyrics
-<ul>
-<li>potential simple rating system : (positive_words - negative_words / total_words )</li>
-<li><strong>Note: words can be neutral</strong></li>
-</ul>
-</li>
-<li>Make sense of emotions portrayed by the songs based off of audio/lyrical data</li>
-<li>generate ability to generate list of songs relevant to input mood
-<ul>
-<li>user enters mood on scale from 0-1, receives a list of songs</li>
-</ul>
-</li>
-</ul>
-<h2 id="5-analysis">5. Analysis</h2>
-<h3 id="51-accumulation-of-audio-features-and-lyrics">5.1 Accumulation of audio features and lyrics</h3>
-<p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSoup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered a little over 6000 Spotify tracks.</p>
-<h3 id="52-performance-of-sentiment-analysis-on-lyrics">5.2 Performance of sentiment analysis on lyrics</h3>
-<p>With a song&rsquo;s lyrics in hand, we used NLTK&rsquo;s sentiment module, Vader, to read each line in the lyrics. NLTK Vader reads a line of text and assigns it scores of positivity, negativity, neutrality, and and overall compound score. We marked lines with a compound score greater than 0.5 as positive, less than -0.1 as negative, and anything in between as neutral. We then found the percentages of positive, negative, and neutral lines in a song&rsquo;s composition and saved them to our data set.</p>
+<p>For the audio content analysis portion of this project, we use Spotify&rsquo;s Web API, which provides a great amount audio data for every song in Spotify&rsquo;s song collection, including valence, energy, and danceability <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+<p>For the lyrical analysis portion of this project, we use Genius&rsquo;s API to pull lyrics information for a song. Genius is a website where users submit lyrics and annotations to several popular songs <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. To perform sentiment analysis on a set of lyrics collected from Genius, we use the NLTK Vader library.</p>
+<h2 id="4-analysis">4. Analysis</h2>
+<p>For the purposes of this study, we analyze a track&rsquo;s lyrics and assign them scores based on their positivity, negativity, and neutrality. We then append this data to the audio feature data we receive from Spotify. To compare and find relationships and meaningfulness in using lyrics and audio features to predict a song&rsquo;s valence, we employ several statistical and machine learning approaches. We try linear regression and polynomial regression to find relationships between several features of a track and a song&rsquo;s valence. Then we perform multivariate linear regression to find how accurately we can predict a song&rsquo;s valence based on the audio and lyrical features available in our dataset.</p>
+<h3 id="41-accumulation-of-audio-features-and-lyrics">4.1 Accumulation of audio features and lyrics</h3>
+<p>From our data sources, we collected data for roughly 10000 of the most popular songs released between 2017 and 2020, taking account of several audio and lyrical features present in the track. We gathered this data by hand, first querying the most popular 2000 newly released songs in each year between 2017 and 2020. We then sent requests to Genius to gather lyrics for each song. Some songs, even though they were popular, did not have lyrics present on Genius, these songs were excluded from our dataset. With BeautifulSoup, we extracted and cleaned up the lyrics, removing anything that is not a part of the song&rsquo;s lyrics like annotations left by users, section headings (Chorus, Hook, etc), and empty lines. After exclusions our data covered 6551 Spotify tracks.</p>
+<h3 id="42-performance-of-sentiment-analysis-on-lyrics">4.2 Performance of sentiment analysis on lyrics</h3>
+<p>With a song&rsquo;s lyrics in hand, we used NLTK&rsquo;s sentiment module, Vader, to read each line in the lyrics. NLTK Vader Sentiment Intensity Analyzer is a pretrained machine learning model that reads a line of text and assigns it scores of positivity, negativity, neutrality, and and overall compound score. We marked lines with a compound score greater than 0.5 as positive, less than -0.1 as negative, and anything in between as neutral. We then found the percentages of positive, negative, and neutral lines in a song&rsquo;s composition and saved them to our dataset.</p>
 <p>We performed a brief analysis of the legibility of the Vader module in determining sentiment on four separate strings. &ldquo;I&rsquo;m happy&rdquo; and &ldquo;I&rsquo;m so happy&rdquo; were used to compare two positive lines, &ldquo;I&rsquo;m happy&rdquo; was expected to have a positive compound score, but slightly less positive than &ldquo;I&rsquo;m so happy&rdquo;. Similarly, we used two negative lines &ldquo;I&rsquo;m sad&rdquo; and the slightly more extreme, &ldquo;I&rsquo;m so sad&rdquo; which were expected to result in negative compound scores with &ldquo;I&rsquo;m sad&rdquo; being less negative than &ldquo;I&rsquo;m so sad&rdquo;.</p>
 <pre><code>Scores for 'I'm happy': {
     'neg': 0.0, 
@@ -681,7 +656,7 @@ Scores for 'I'm so sad': {
 }
 </code></pre><p>While these results confirmed our expectations, a few issues come to the table with our use of the Vader module. One is that Vader takes into consideration additional string features such as punctuation in its determination of score, meaning &ldquo;I&rsquo;m so sad!&rdquo; will be more negative than &ldquo;I&rsquo;m so sad&rdquo;. Since lyrics on Genius are contributed by the community, in most cases there is a lack of consistency using accurate punctuation. Additionally, in some cases there can be typos present in a line of lyrics, both of which can skew our data. However we determined that our method in using the Vader module is suitable for our project as we simply want to determine if a track is positive or negative without needing to be too specific. Another issue is that our implementation of Vader acts only on English words. Again, since lyrics on Genius are contributed by the community, there could be errors in our data from misspelled word contributions as well as sections or entire lyrics written in different languages.</p>
 <p>In addition to performing sentiment analysis on the lyrics, we tokenized the lyrics, removing common words such as &lsquo;a&rsquo;, &lsquo;the&rsquo;,&lsquo;for&rsquo;, etc. This was done to collect data on the number of meaningful and number of non-repeating words in each song. Albeit while this data was never used in our study, it could prove useful in future studies.</p>
-<p><em>Table 1</em> displays a snapshot of the data we collected from seven tracks released in 2020. The dataset contains 27 fields, 13 of which describe the audio content of a track, and 8 of which describe the lyrics of the track.</p>
+<p><em>Table 1</em> displays a snapshot of the data we collected from seven tracks released in 2020. The dataset contains 27 fields, 12 of which describe the audio features of a track, and 8 of which describe the lyrics of the track. For the purpose of this study we exclude the use of audio features key, duration, and time signature.</p>
 <p><strong>Table 1:</strong> Snapshot of dataset containing tracks released in 2020</p>
 <table>
 <thead>
@@ -881,59 +856,249 @@ Scores for 'I'm so sad': {
 </tr>
 </tbody>
 </table>
-<h3 id="53-description-of-select-data-fields">5.3 Description of select data fields</h3>
-<p>The following terms defined are important in our analyses. In our data set most terms contain are represented by a  value between 0 and 1, indicating least to most. For example, looking at the first two rows in <em>Table 1</em>, we can see that the track by the artist, Pop Smoke, has a greater speechiness score, indicating a greater percentage of that song contains spoken word.</p>
+<h3 id="43-description-of-select-data-fields">4.3 Description of select data fields</h3>
+<p>The following terms defined are important in our analyses. In our data set most terms contain are represented by a value between 0 and 1, indicating least to most. For example, looking at the first two rows in <em>Table 1</em>, we can see that the track by the artist, Pop Smoke, has a greater speechiness score, indicating a greater percentage of that song contains spoken word.</p>
 <ul>
 <li><strong>Danceability:</strong> uses several musical elements (tempo, stability, beat strength, regularity) to determine how suitable a given track is for dancing</li>
 <li><strong>Energy:</strong>  measures intensity of a song</li>
+<li><strong>Loudness:</strong> a songs overall loudness measured in decibels</li>
 <li><strong>Speechiness:</strong> identifies how much of a track contains spoken word</li>
+<li><strong>Acousticness:</strong> confidence of a track being acoustic, or with physical instruments</li>
+<li><strong>Instrumentalness:</strong> confidence of a track having no vocals</li>
+<li><strong>Liveness:</strong> confidence of a track being a live recording</li>
 <li><strong>Valence:</strong> predicts the overall happiness, or positivity of a track based on its musical features</li>
-<li><strong>Positivity</strong> percentage of lines in a song&rsquo;s lyrics determined to have a positive sentiment score</li>
-<li><strong>Negativity</strong> percentage of lines in a song&rsquo;s lyrics determined to have a negative sentiment score</li>
-<li><strong>Neutrality</strong> percentage of lines in a song&rsquo;s lyrics determined to have a neutral sentiment score</li>
+<li><strong>Tempo:</strong> the average beats per minute of a track</li>
+<li><strong>Positivity:</strong> percentage of lines in a track&rsquo;s lyrics determined to have a positive sentiment score</li>
+<li><strong>Negativity:</strong> percentage of lines in a track&rsquo;s lyrics determined to have a negative sentiment score</li>
+<li><strong>Neutrality:</strong> percentage of lines in a track&rsquo;s lyrics determined to have a neutral sentiment score</li>
 </ul>
 <p>Out of these fields, we seek to find which audio features correlate to a song&rsquo;s valence and if our positivity and negativity scores of a song&rsquo;s lyrics provide any meaningfulness in determining a song&rsquo;s positivity. For the purpose of this study we mainly focus on valence, energy, danceability, positivity, and negativity.</p>
-<h3 id="54-preliminary-analysis-of-data">5.4 Preliminary Analysis of Data</h3>
+<h3 id="44-preliminary-analysis-of-data">4.4 Preliminary Analysis of Data</h3>
+<p>When calculating averages of the feature fields captured in our dataset, we found it interesting that based on our lyrical interpretation, tracks between 2017 and 2020 tended to be more negative than positive. The average negativity score for a track in our dataset was 0.21 which means 21% of the lines in the track were deemed to have negative connotation, while having a 0.08 positivity score.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/all_tracks_heatmap.png" alt="Heatmap"></p>
 <p><strong>Figure 1:</strong> Heatmap of data with fields valence, energy, danceability, positivity, negativity</p>
-<p>Referring to <em>Figure 1</em>, we find that track lyrics tend to be more negative than positive. However for the most part, even with tracks with negative lyrics, the valence, or overall happiness of the audio features hovers around 0.5; indicating that most songs tend to have neutral audio features. Looking at tracks with lyrics that are highly positive we find that the valence rises to about 0.7 to 0.8 and that songs with extremely high negatively also cause the valence to drop to the 0.3 range. These observations indicate that only extremes in lyrical sentiment correlate significantly in a song&rsquo;s valence, as some songs with negative lyrics may also be fast-tempo and energetic, keeping the valence relatively high compared to lyrical composition. This is shown in our visualization, where both tracks with positive and negative lyricals have high energy and danceability values, indicating fast-tempos and high-pitches.</p>
-<h3 id="55-scatterplot-analysis">5.5 Scatterplot Analysis</h3>
+<p>Backed by <em>Figure 1</em>, we find that track lyrics tend to be more negative than positive. However for the most part, even with tracks with negative lyrics, the valence, or overall happiness of the audio features hovers around 0.5; indicating that most songs tend to have neutral audio features. Looking at tracks with lyrics that are highly positive we find that the valence rises to about 0.7 to 0.8 and that songs with extremely high negatively also cause the valence to drop to the 0.3 range. These observations indicate that only extremes in lyrical sentiment correlate significantly in a song&rsquo;s valence, as some songs with negative lyrics may also be fast-tempo and energetic, keeping the valence relatively high compared to lyrical composition. This is shown in our visualization, where both tracks with positive and negative lyricals have high energy and danceability values, indicating fast-tempos and high-pitches.</p>
+<h3 id="45-scatterplot-analysis">4.5 Scatterplot Analysis</h3>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/audio_features_scatterplots.png" alt="Audio_Features_Scatterplots"></p>
 <p><strong>Figure 2:</strong> Scatterplots showing relation of features danceability, energy, speechiness, positivity, negativity, and neutrality to valence.</p>
 <p><em>Figure 2</em> describes the relation of several data fields we collected to a song&rsquo;s valence, or its overall positivity. We find that the positivity and negativity plots reflect that of the speechiness plot in that there seems to be little correlation between the x and y axes. On the other hand neutrality seems to show a positive correlation between a song&rsquo;s lyrical content and its respective valence. If a song is more neutral, it seems more likely to have a higher valence.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/spotify_distributions.png" alt="Audio_Features_Scatterplots"></p>
-<p><strong>Figure 2:</strong> Distributions of field values across the Spotify music library <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
-<h3 id="56-linear-regression-analysis">5.6 Linear Regression Analysis</h3>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/spotify_distributions.png" alt="Spotify Distributions"></p>
+<p><strong>Figure 3:</strong> Distributions of field values across the Spotify music library <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+<p>Our scatterplots do show consistency with the expected distributions exemplified in the Spotify API documentation, as shown in <em>Figure 3</em>. In the top three plots, which use values for audio features obtained exclusively obtained from the audio features given by Spotify, we can see the these matching distributions which imply that most songs fall in the 0.4 to 0.8 range for danceability, energy, and valence, and 0 to 0.1 for speechiness. The low distribution in speechiness can be explained by music features being more dependant on instruments and sounds than spoken word. A track with higher than 0.33 speechiness score indicates that the track is very high in spoken word content over music, like a poetry recitation, talk show clip, etc <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
+<h3 id="46-linear-and-polynomial-regression-analyses">4.6 Linear and Polynomial Regression Analyses</h3>
+<p>We performed a simple linear regression test against valence with the audio and lyrical features described in <em>Figure 2</em> and <em>Figure 3</em>. Like the charts show, it was hard to find any linear correlation between the fields. <em>Table 2</em> displays the r-squared results that we obtained when applying linear regression to find the relationship between a song&rsquo;s feature and its valence. The only features that indicate potential relationships with a song&rsquo;s valence are energy, and danceability, as definitions of energy and and danceability indicate some semblance of positivity as well.</p>
+<p><strong>Table 2:</strong> R-Squared results obtained from linear regression application on select fields against valence</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>R-Squared</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Positivity</td>
+<td>-0.090859047</td>
+</tr>
+<tr>
+<td>Negativity</td>
+<td>-0.039686828</td>
+</tr>
+<tr>
+<td>Neutrality</td>
+<td>0.093002783</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>0.367113611</td>
+</tr>
+<tr>
+<td>Danceability</td>
+<td>0.324412662</td>
+</tr>
+<tr>
+<td>Speechiness</td>
+<td>0.066492856</td>
+</tr>
+</tbody>
+</table>
+<p>Since we found little relation between the selected features and valence, we tried applying polynomial regression with the same features as shown in <em>Table 3</em>. Again, we failed to find any relationship between a feature in our dataset and the song&rsquo;s valence. Energy and danceability once again were found to have the highest relationship with valence. We speculate that some of the data we have is misleading the regression applications; as mentioned before, we found some issues in reading sentiment in the lyrics we collected due to misspelled words, inaccurate punctuations, and non-english words.</p>
+<p><strong>Table 3:</strong> R-Square results obtained from polynomial regression application on select data fields against valence</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>R-Squared</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Positivity</td>
+<td>0.013164307</td>
+</tr>
+<tr>
+<td>Negativity</td>
+<td>0.001588184</td>
+</tr>
+<tr>
+<td>Neutrality</td>
+<td>0.010308495</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>0.136822113</td>
+</tr>
+<tr>
+<td>Danceability</td>
+<td>0.113119545</td>
+</tr>
+<tr>
+<td>Speechiness</td>
+<td>0.008913925</td>
+</tr>
+</tbody>
+</table>
+<h3 id="47-multivariate-regression-analysis">4.7 Multivariate Regression Analysis</h3>
+<p>We performed multivariate regression tests to predict a song&rsquo;s valence with a training set of 5500 tracks and a test set of 551 tracks. Our first test only included four independent variables: neutrality, energy, danceability, and speechiness. Our second test included all numerical fields available in our data, adding loudness, acousticness, liveness, instrumentalness, tempo, positivity, word count, and unique word count to the regression coefficient calculations. In both tests we calculated the relative mean squared error (RMSE) between our predicted values and the actual values of a song&rsquo;s valence given several features. Our RMSEs were 0.1982 and 0.1905 respectively, indicating that as expected, adding additional pertinent independent variables gave slightly better results. However given that a song&rsquo;s valence is captured between 0 and 1.0, and both our RSMEs were approximately 0.19, it is unclear how significant the results of these tests are. <em>Figure 4</em> and <em>Figure 5</em> show the calculated differences between the predicted and actual values for the first 50 tracks in our testing dataset for each regression test respectively.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/multivariate_regression_1.png" alt="Multivariate Regression 1"></p>
+<p><strong>Figure 4:</strong> Differences between expected and predicted values with application of multivariate regression model with 4 independent variables</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-341/raw/main/project/images/multivariate_regression_2.png" alt="Multivariate Regression 2"></p>
+<p><strong>Figure 5:</strong> Differences between expected and predicted values with application of multivariate regression model with 12 independent variables</p>
+<h2 id="5-benchmarks">5. Benchmarks</h2>
+<p><em>Table 4</em> displays the benchmarks we received from key parts of our analyses. As expected, creating our dataset took a longer amount of time relative to the rest of the benchmarks. This is because accumulating the data involved sending two requests to online sources, and running the sentiment intensity analyzer on the lyrics received from the Genius API calls. Getting the sentiment of a line of text itself did not take much time at all. We found it interesting that applying multivariate regression on our dataset was much quicker than calculating averages on our dataset with numpy, and that it was the fastest process to complete.</p>
+<p><strong>Table 4:</strong> Benchmark Results</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Status</th>
+<th>Time</th>
+<th>Sum</th>
+<th>Start</th>
+<th>tag</th>
+<th>Node</th>
+<th>User</th>
+<th>OS</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create dataset of 10 tracks</td>
+<td>ok</td>
+<td>12.971</td>
+<td>168.523</td>
+<td>2020-12-07 00:19:30</td>
+<td></td>
+<td>884e3d61f237</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Sentiment Intensity Analyzer on a line of lyrical text</td>
+<td>ok</td>
+<td>0.001</td>
+<td>0.005</td>
+<td>2020-12-07 00:19:49</td>
+<td></td>
+<td>884e3d61f237</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Load dataset</td>
+<td>ok</td>
+<td>0.109</td>
+<td>1.08</td>
+<td>2020-12-07 00:19:59</td>
+<td></td>
+<td>884e3d61f237</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Calculate averages of values in dataset</td>
+<td>ok</td>
+<td>0.275</td>
+<td>0.597</td>
+<td>2020-12-07 00:19:59</td>
+<td></td>
+<td>884e3d61f237</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Multivariate Regression Analysis on dataset</td>
+<td>ok</td>
+<td>0.03</td>
+<td>0.151</td>
+<td>2020-12-07 00:21:49</td>
+<td></td>
+<td>884e3d61f237</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Generate and display heatmap of data</td>
+<td>ok</td>
+<td>0.194</td>
+<td>0.194</td>
+<td>2020-12-07 00:20:03</td>
+<td></td>
+<td>884e3d61f237</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+<tr>
+<td>Plot differences</td>
+<td>ok</td>
+<td>0.504</td>
+<td>1.473</td>
+<td>2020-12-07 00:21:50</td>
+<td></td>
+<td>884e3d61f237</td>
+<td>collab</td>
+<td>Linux</td>
+<td>#1 SMP Thu Jul 23 08:00:38 PDT 2020</td>
+</tr>
+</tbody>
+</table>
 <h2 id="6-conclusion">6. Conclusion</h2>
-<p>There are several aspects that could be improved upon in future iterations of our study. In this project we only worked with songs released after 2017, but obviously, people would still enjoy listening to songs from previous years. The Spotiy API contains audio features data for every song in its library, so it would be worth collecting that data on every song for usage in the generation of song recommendations. Secondly, our data set excluded songs on Spotify, whose lyrics could not be found easily on Genius.com. We should have handled these cases by attempting to find the lyrics from other popular websites which store music lyrics. And lastly, we worked with a very small dataset relative to the total amount of songs that exist, or that are available on Spotify. There is great possibility in repeating this study quite easily with a greater selection of songs. We were suprised by how small the file sizes were of our dataset of 6000 songs, the aggregated data set being only 2.3 megabytes in size. Using that value a set of one million songs can be estimated to only be around 350 megabytes.</p>
-<p>This section will be expanded upon after completion of analyses</p>
+<p>We received inconclusive results from our study. The linear and polynomial regression tests that we performed, showed little correlation between our lyrical features and a track&rsquo;s valence. This was backed by our multivariate regression test which performed with a RSME score of about 0.19 on our dataset. Since valence is recorded on a scale from 0 to 1.0, this means that our predictions typically fall within 20% of the actual value, which is considerably inaccurate. As previous studies have shown massive improvements in combining lyrical and audio features for machine learning applications in music, we believe that the blame for our low scores falls heavily on our approach to assigning sentiment scores on our lyrics <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Future studies should consider the presence of foreign lyrics and the potential inaccuracies of community submitted lyrics.</p>
+<p>There are several other elements of this study that could be improved upon in future iterations. In this project we only worked with songs released after the beginning of 2017, but obviously, people would still enjoy listening to songs from previous years. The Spotiy API contains audio features data for every song in its library, so it would be worth collecting that data on every song for usage in the generation of song recommendations. Secondly, our data set excluded songs on Spotify, whose lyrics could not be found easily on Genius.com. We should have handled these cases by attempting to find the lyrics from other popular websites which store music lyrics. And lastly, we worked with a very small dataset relative to the total amount of songs that exist, or that are available on Spotify. There is great possibility in repeating this study quite easily with a greater selection of songs. We were surprised by how small the file sizes were of our dataset of 6551 songs, the aggregated data set being only 2.3 megabytes in size. Using that value, a set of one million songs can be estimated to only be around 350 megabytes.</p>
 <h2 id="7-references">7. References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Hu, X., &amp; Downie, J. S. (2010). Improving mood classification in music digital libraries by combining lyrics and audio. Proceedings of the 10th Annual Joint Conference on Digital Libraries - JCDL &lsquo;10. doi:10.1145/1816123.1816146 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Kashyap, N., Choudhury, T., Chaudhary, D. K., &amp; Lal, R. (2016). Mood Based Classification of Music by Analyzing Lyrical Data Using Text Mining. 2016 International Conference on Micro-Electronics and Telecommunication Engineering (ICMETE). doi:10.1109/icmete.2016.65 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>Kashyap, N., Choudhury, T., Chaudhary, D. K., &amp; Lal, R. (2016). Mood Based Classification of Music by Analyzing Lyrical Data Using Text Mining. 2016 International Conference on Micro-Electronics and Telecommunication Engineering (ICMETE). doi:10.1109/icmete.2016.65 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Ahuja, S. (2019, September 25). Sort your music by any mood - Introducing moooodify. Retrieved November 17, 2020, from <a href="https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab">https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Ahuja, S. (2019, September 25). Sort your music by any mood - Introducing moooodify. Retrieved November 17, 2020, from <a href="https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab">https://blog.usejournal.com/sort-your-music-by-any-mood-introducing-moooodify-41749e80faab</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Lamere, P. (2016, August 6). Organize Your Music. Retrieved November 17, 2020, from <a href="http://organizeyourmusic.playlistmachinery.com/">http://organizeyourmusic.playlistmachinery.com/</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>Lamere, P. (2016, August 6). Organize Your Music. Retrieved November 17, 2020, from <a href="http://organizeyourmusic.playlistmachinery.com/">http://organizeyourmusic.playlistmachinery.com/</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Jeong, J. (2019, January 19). What Songs Tell Us About: Text Mining with Lyrics. Retrieved November 17, 2020, from <a href="https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829">https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Jeong, J. (2019, January 19). What Songs Tell Us About: Text Mining with Lyrics. Retrieved November 17, 2020, from <a href="https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829">https://towardsdatascience.com/what-songs-tell-us-about-text-mining-with-lyrics-ca80f98b3829</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Morris, C. (2016). SongSim. Retrieved November 17, 2020, from <a href="https://colinmorris.github.io/SongSim/">https://colinmorris.github.io/SongSim/</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>Morris, C. (2016). SongSim. Retrieved November 17, 2020, from <a href="https://colinmorris.github.io/SongSim/">https://colinmorris.github.io/SongSim/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Get Audio Features for a Track. (2020). Retrieved November 17, 2020, from <a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p>Get Audio Features for a Track. (2020). Retrieved November 17, 2020, from <a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Genius API Documentation. (2020). Retrieved November 17, 2020, from <a href="https://docs.genius.com/">https://docs.genius.com/</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
-<p>Genius API Documentation. (2020). Retrieved November 17, 2020, from <a href="https://docs.genius.com/">https://docs.genius.com/</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Hu, X., &amp; Downie, J. S. (2010). Improving mood classification in music digital libraries by combining lyrics and audio. Proceedings of the 10th Annual Joint Conference on Digital Libraries - JCDL &lsquo;10. doi:10.1145/1816123.1816146 <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
