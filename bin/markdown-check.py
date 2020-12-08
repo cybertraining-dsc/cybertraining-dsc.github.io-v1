@@ -60,6 +60,11 @@ for line in content.splitlines():
     if references or table or image:
         line = ""
 
+        
+    if ".[^" in line or ". [^" in line:
+        error (f"{lines}: Citation after a . not allowed.")
+
+
     words = words + len(line.split(" "))
 
   
@@ -97,8 +102,6 @@ if toc not in content or "{{% pageinfo %}}" not in content:
 if "] :" in content:
     error ("Spaces not allowed in front of :")
 
-if ".[^" in content or ". [^" in content:
-    error ("Citation after a . not allowed.")
 
 if "[^" not in content or "]:" not in content:
     error("Refernces are missing")
