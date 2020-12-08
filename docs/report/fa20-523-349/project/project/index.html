@@ -21,27 +21,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Rank Forecasting in Car Racing 
- Gregor fixed template please leanr markdown refernces are not cited in text background missing what is progress? Please add keywords (Vibhatha) Also add content to the missing topics (Vibhatha)  Status: final
- Jiayu Li, fa20-523-349 Edit  Abstract Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem." />
+<meta property="og:description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
+ comments have been send to piazza   Jiayu Li, fa20-523-349 Edit  Abstract The IndyCar Series is the premier level of open-wheel racing in North America. Computing System and Data analytics is critical to the game, both in improving the performance of the team to make it faster and in helping the race control to make it safer." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-349/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Rank Forecasting in Car Racing 
- Gregor fixed template please leanr markdown refernces are not cited in text background missing what is progress? Please add keywords (Vibhatha) Also add content to the missing topics (Vibhatha)  Status: final
- Jiayu Li, fa20-523-349 Edit  Abstract Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem.">
+<meta itemprop="description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
+ comments have been send to piazza   Jiayu Li, fa20-523-349 Edit  Abstract The IndyCar Series is the premier level of open-wheel racing in North America. Computing System and Data analytics is critical to the game, both in improving the performance of the team to make it faster and in helping the race control to make it safer.">
 
-<meta itemprop="wordCount" content="1554">
+<meta itemprop="wordCount" content="1680">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Rank Forecasting in Car Racing 
- Gregor fixed template please leanr markdown refernces are not cited in text background missing what is progress? Please add keywords (Vibhatha) Also add content to the missing topics (Vibhatha)  Status: final
- Jiayu Li, fa20-523-349 Edit  Abstract Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem."/>
+<meta name="twitter:description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
+ comments have been send to piazza   Jiayu Li, fa20-523-349 Edit  Abstract The IndyCar Series is the premier level of open-wheel racing in North America. Computing System and Data analytics is critical to the game, both in improving the performance of the team to make it faster and in helping the race control to make it safer."/>
 
 
 
@@ -517,8 +514,17 @@
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work</a></li>
-    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
-    <li><a href="#4-methodology">4. Methodology</a></li>
+    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a>
+      <ul>
+        <li><a href="#structure-of-the-log-file">Structure of the log file</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-methodology">4. Methodology</a>
+      <ul>
+        <li><a href="#data-preprocessing">Data preprocessing</a></li>
+        <li><a href="#feature-selection">Feature selection</a></li>
+      </ul>
+    </li>
     <li><a href="#5-inference">5. Inference</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
@@ -564,17 +570,12 @@
     
 	       
 	<h1 id="rank-forecasting-in-car-racing">Rank Forecasting in Car Racing</h1>
-<p><a href="https://github.com/cybertraining-dsc/fa20-523-349/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-349/workflows/Check%20Report/badge.svg" alt="Check Report"></a></p>
+<p><a href="https://github.com/cybertraining-dsc/fa20-523-349/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-349/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
+<a href="https://github.com/cybertraining-dsc/fa20-523-349/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-349/workflows/Status/badge.svg" alt="Status"></a>
+Status: final, Type: Project</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> Gregor fixed template</li>
-<li><input checked="" disabled="" type="checkbox"> please leanr markdown</li>
-<li><input checked="" disabled="" type="checkbox"> refernces are not cited in text</li>
-<li><input checked="" disabled="" type="checkbox"> background missing</li>
-<li><input checked="" disabled="" type="checkbox"> what is progress?</li>
-<li><input checked="" disabled="" type="checkbox"> Please add keywords (Vibhatha)</li>
-<li><input checked="" disabled="" type="checkbox"> Also add content to the missing topics (Vibhatha)</li>
+<li><input checked="" disabled="" type="checkbox"> comments have been send to piazza</li>
 </ul>
-<p>Status: final</p>
 <ul>
 <li>Jiayu Li, fa20-523-349</li>
 <li><a href="https://github.com/cybertraining-dsc/fa20-523-349/blob/master/project/project.md">Edit</a></li>
@@ -583,15 +584,24 @@
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem. Existing methods, including statistical models, machine learning regression models, and several state-of-the-art deep forecasting models all perform not well on this problem. By elaborative analysis of pit stops events, we find it is critical to decompose the cause effects and model them, the rank position and pit stop events, separately. We propose RankNet, a combination of encoder-decoder network and separate MLP network that capable of delivering probabilistic forecasting to model the pit stop events and rank position in car racing. Further with the help of feature optimizations, RankNet demonstrates a significant performance improvement over the baselines.</p>
+<p>The IndyCar Series is the premier level of open-wheel racing in North America. Computing System and Data analytics is critical to the game, both in improving the performance of the team to make it faster and in helping the race control to make it safer. IndyCar ranking prediction is a practical application of time series problems. We will use the LSTM model to analyze the state of the car, and then predict the future ranking of the car. Rank forecasting in car racing is a challenging problem, which is featured with highly complex global dependency among the cars, with uncertainty resulted from existing exogenous factors, and as a sparse data problem. Existing methods, including statistical models, machine learning regression models, and several state-of-the-art deep forecasting models all perform not well on this problem. In this project, we apply deep learning methods to racing telemetry data. And compare deep learning with traditional statistical methods (SVM, XGBoost).</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-background-research-and-previous-work">2. Background Research and Previous Work</a></li>
-    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a></li>
-    <li><a href="#4-methodology">4. Methodology</a></li>
+    <li><a href="#3-choice-of-data-sets">3. Choice of Data-sets</a>
+      <ul>
+        <li><a href="#structure-of-the-log-file">Structure of the log file</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-methodology">4. Methodology</a>
+      <ul>
+        <li><a href="#data-preprocessing">Data preprocessing</a></li>
+        <li><a href="#feature-selection">Feature selection</a></li>
+      </ul>
+    </li>
     <li><a href="#5-inference">5. Inference</a></li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
     <li><a href="#7-acknowledgements">7. Acknowledgements</a></li>
@@ -604,48 +614,76 @@
 
 <p><strong>Keywords:</strong> Time series forecasting, deep learning.</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Rank Forecasting in Car Racing.
-Indy500 is the premier event of the IndyCar series. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps.
-The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively.
-A local communication network broadcasts race information to all the teams, following a general data exchange protocol\cite{IndyCar_Understanding_nodate}.</p>
+<p>Indy500 is the premier event of the IndyCar series<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps. The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively. A local communication network broadcasts race information to all the teams, following a general data exchange protocol.
+We aim to predict the leading car in the future through telemetry data generated in real time during the race. Given a prediction step t_p, and a time point t_0 in the game, we predict the following two events:</p>
+<ol>
+<li>Whether the currently leading car continue to lead at time t_0 + t_p.</li>
+<li>Which car is the leading car at  time t_0 + t_p.</li>
+</ol>
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
-<p>Indy500 is the premier event of the IndyCar series. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps. The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively.A local communication network broadcasts race information to all the teams, following a general data exchange.
-<img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/fig1.png" alt="alt text">
-In motorsports, a \textbf{pit stop} is a pause for refueling, new tires, repairs, mechanical adjustments, a driver change, a penalty, or any combination of them.Unexpected events happen in a race, including mechanical failures or a crash. Depending on the severity level of the event, sometimes it leads to a dangerous situation for other cars to continue the racing with high speed on the track. In these cases, a full course yellow flag rises to indicate the race entering a caution laps mode, in which all the cars slow down and follow a safety car and can not overtake until another green flag raised.</p>
-<p>A series of work forecasting the decision-to-decision loss in rank position for each racer in NASCAR<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, and <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> describes how they leveraged expert knowledge of the domain to produce a real-time decision system for tire changes within a NASCAR race.
-They chose to model the change in rank position and avoid predicting the rank position directly since it is complicated due to its dependency on the timing of other racers&rsquo; pit stops. In our work, we aim to build forecasting that relies less on domain knowledge and investigate the pit stop modeling.</p>
+<p>In many real-world applications, data is captured over the course of time, constituting a Time-Series. Time-Series often contain temporal dependencies that cause two otherwise identical points of time to belong to different classes or predict different behavior. This characteristic generally increases the difficulty of analysing them.
+The traditional statistical learning model (Naive Bayes, SVM, Simple Neural Networks) is difficult to deal with the problem of time series prediction, since the model is unable to understand the time-series dependence of data. Traditional time series prediction models such as autoregressive integrated moving average (ARIMA) can only deal with linear time series with certain periodicity. The anomaly events and human strategies in the racing competition make these methods no longer applicable. Therefore, time series prediction models (RNN, GRU, LSTM, etc.) based on deep learning are more suitable for solving such problems.
+Previous racing prediction attempts such as <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.</p>
 <h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
-<p>We select races of superspeedway after 2013 with at least 5 years data each, and after removing corrupted data, get a dataset of 25 races from four events.
-Among all the events, Indy500 is the most dynamic one which has both the largest PitLapsRatio and RankChangesRatio, Iowa is the least.</p>
-<p>We will train models separately for each event. Races of the first five years are used as the training dataset, the remains are used as testing data. Since Pocono has only five years of data in total, its training set uses four of them.
-First, we start from Indy500 and use Indy500-2018 as validation set. Then we investigate the generalization capability of the model on data of the other events.
-<img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/fig3.png" alt="alt text"></p>
+<p>There are two main sources of data: One is the game record from 2013 to 2019. The other is telemetry data for 2017 and 2018.</p>
+<p>The race record only includes the time spent in each section and does not include the precise location of every two cars at a certain point in time.
+Telemetry data is a high-resolution data, each car will produce about 7 records per second, we use telemetry data to estimate the position of each car at any time.
+In order to expand the training data set, we used interpolation to convert ordinary race records into a time series of car positions.
+If we assume that the speed of the car within each section does not change, then the position of the car at time T can be calculated as follows:
+LapDistance(T) \approx L \frac{T-T_1}{T_2 - T_1} . T_1 and T_2 are the start and end time of the current section. L=2.5 miles is the length of the section.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled6.png" alt="alt text"></p>
+<h3 id="structure-of-the-log-file">Structure of the log file</h3>
+<p>The Multi-Loop Protocol is designed to deliver specific dynamic and static data that is set up and produced by the INDYCAR timing system. This is accomplished by serially streaming data that is broken down into different record sets. This information includes but is not limited to the following:</p>
+<ul>
+<li>Completed lap results</li>
+<li>Time line passing or crossing results</li>
+<li>Completed section results</li>
+<li>Current run or session information</li>
+<li>Flag information</li>
+<li>Track set up information including segment definitions</li>
+<li>Competitor information</li>
+<li>Announcement information</li>
+</ul>
+<p>The INDYCAR MLP is based on the AMB Multi-Loop Protocol version 1.3. This document contains the
+INDYCAR formats for specific fields not defined in the AMB document.</p>
+<p>Record Description:</p>
+<p>Every record starts with a header and ends with a CR/LF. Inside the record, the fields are separated by a &ldquo;broken bar&rdquo; symbol 0xA6 (not to be confused with the pipe symbol 0x7C). The length of a record is not defined and can therefore be more than 256 characters. The data specific to each record Command is contained between the header and CR/LF.
+<img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled8.png" alt="alt text"></p>
 <h2 id="4-methodology">4. Methodology</h2>
-<p>First, we have a naive baseline which assumes that the rank positions will not change in the future, denoted as CurRank.
-Secondly, We implement machine learning regression models as baselines that follow the ideas in which forecast changes of rank position between two consecutive pit stops, including RandomForest, SVM, and XGBoost that do pointwise forecast.
-Thirdly, we test with four latest deep forecasting models as the choice of RankModel, including DeepAR(2017)<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, DeepState(2018), DeepFactor(2019), N-BEATS(2020)<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.
-PitModel has three implementations. For example for RankNet, we have 1. RankNet-Joint is the model that train target with pit stop jointly without decomposition. 2. RankNet-Oracle is the model with ground truth TrackStatus and LapStatus as covariates input. It represents the best performance that can be obtained from the model given the caution and pit stop information for a race. 3. RankNet-MLP deploys a separate pit stop model, which is a multilayer perceptron(MLP) network with probability output, as in figue:</p>
-<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/fig4.png" alt="alt text"></p>
+<h3 id="data-preprocessing">Data preprocessing</h3>
+<p>There are two main sources of data: One is the game record from 2013 to 2019. The other is telemetry data for 2017 and 2018.</p>
+<p>The race record only includes the time spent in each section and does not include the precise location of every two cars at a certain point in time.
+Telemetry data is a high-resolution data, each car will produce about 7 records per second, we use telemetry data to estimate the position of each car at any time.
+In order to expand the training data set, we used interpolation to convert ordinary race records into a time series of car positions.
+If we assume that the speed of the car within each section does not change, then the position of the car at time T can be calculated as follows:
+LapDistance(T) \approx L \frac{T-T_1}{T_2 - T_1} . T_1 and T_2 are the start and end time of the current section. L=2.5 miles is the length of the section.</p>
+<p>The preprocessing mainly includes 3 operations.</p>
+<ol>
+<li>Stream data interpolation. In order to expand the training data set, we used interpolation to convert ordinary race records into a time series of car positions.</li>
+<li>Data normalization, scale the input data to the range of -1 to 1.</li>
+<li>Data sorting. Due to the symmetry of the input data, that is, any data exchanged between two cars can still get a legal data set. Therefore, a model with more parameters is required to learn this symmetry. In order to avoid unnecessary complexity, we sort the data according to the position of the car. That is, the data of the current leading car is placed in the first column, the data of the currently ranked second car is placed in the second column, and so on. This helps to compress the model and improve performance.</li>
+</ol>
+<h3 id="feature-selection">Feature selection</h3>
+<p>The future ranking of a car is mainly affected by two factors:
+One is its current position: the car that is currently leading has a greater probability of being ahead in the future; the other is the time of the last pit stop: because the fuel tank of each car is limited, Entering pit stop, the possibility of it leading in the future will be reduced.</p>
+<p>Therefore, we choose the following characteristics to predict ranking:</p>
+<ul>
+<li>The current position of each car (Lap and Lap Distance)</li>
+<li>Time of the last Pit Stop of each car</li>
+</ul>
+<p>Time series prediction problems are a difficult type of predictive modeling problem. Unlike regression predictive modeling, time series also adds the complexity of a sequence dependence among the input variables. A powerful type of neural network designed to handle sequence dependence is called recurrent neural networks. The Long Short-Term Memory network or LSTM network is a type of recurrent neural network used in deep learning because very large architectures can be successfully trained.
+<img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled5.png" alt="alt text"></p>
 <h2 id="5-inference">5. Inference</h2>
-<p>Table shows the evaluation results of two laps rank position forecasting.
-CurRank demonstrates good performance. 73% leader prediction correct and 1.16 mean absolute error on Indy500-2019 indicates that the rank position does not change much within two laps.</p>
-<p>DeepAR is a powerful model but fails to exceed CurRank, which reflects the difficulty of this task that the patterns of the rank position variations are not easy to learn from history.
-When adding an oracle PitModel, DeepAR-Oracle shows a 28% improvement in MAE over CurRank.
-By adding further optimizations, RankNet-Oracle(which uses DeepAR as RankModel) achieves significantly better performance than CurRank, with 23% better in Top1Acc and 51% better in MAE.
-These results demonstrate the effectiveness of model decomposition and domain knowledge-based optimizations.</p>
-<p>Comparing the four state-of-the-art deep forecasting models as the choice of RankModel, we find DeepAR and N-BEATS obtains similar performance, but the N-BEATS is limited in supporting covariates which prevents it to be adopted into RankNet. DeepState and DeepFactor demonstrate very poor forecasting performance on this problem.
-We speculate that the model assumption is critical to how well the model fits the problem. These four deep models are all capable of capturing global dependencies among multiple time series, but through different assumptions. N-BEATS and DeepAR do not introduce strong assumptions and learns similarity among time series through shared the same network in training all the time series. DeepState is a state-space model that assumes a linear-Gaussian transition structure and assumes the time series are conditional independent of the model parameters. DeepFactor, as a factor model, requires the data to be exchangeable time series and assumes to be able to explicitly model global dependency by line combination of global factors. As the car racing rank forecasting problem is challenging in its highly dynamic with complex global dependency among the cars, models with strong assumptions of the structure of the global dependency do not perform as well as the one with weaker assumptions. And also this is a data sparse problem, which prefers the model that can provide forecasts for items that have little history available, where DeepAR has advantages\cite{salinas_deepar_2017}.</p>
-<p>Other machine learning models, and RankNet-Joint all failed to get better accuracy than CurRank.
-RankNet-MLP, our proposed model, is not as good as RankNet-Oracle, but still able to exceed CurRank by 7% in Top1Acc and 19% in MAE. It also achieves more than 20% improvement of accuracy on 90-risk when probabilistic forecasting gets considered.
-%Detailed comparsion are presented in apeedix~\ref{sec:appendix_performance_improve_shotterm}.
-Evaluation results on PitStop Covered Laps, where pit stop occurs at least once in one lap distance, show the advantages of RankNet-MLP and Oracle come from their capability of better forecasting in these extreme events areas.</p>
-<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/table.png" alt="alt text"></p>
+<p>Table shows the experimental results, which verify our hypothesis that the time series prediction model based on deep learning obtained the highest accuracy. Although the LSTM model achieves the highest accuracy, its advantages are not as obvious as RankNet. This is because the telemetry data of racing cars is non-public, and the data available for training are limited.</p>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled4.png" alt="alt text"></p>
+<p>According to the experimental results in Table 6, we draw the following conclusions:</p>
+<ol>
+<li>The LSTM model has higher accuracy in time series forecasting.</li>
+<li>Limited by the size of the training data set (only the telemetry data for 2 games is available), the accuracy improvement obtained by LSTM is not as obvious as RankNet.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled7.png" alt="alt text"></p>
 <h2 id="6-conclusion">6. Conclusion</h2>
-<p>In this project, we use deep learning models to the challenging problem of modeling sequence data with high uncertainty and extreme events. With the IndyCar car racing data, we find that the model decomposition based on the cause-effect relationship is critical to improving the rank position forecasting performance.
-We compare several state-of-the-art deep forecasting models: DeepAR, DeepState, DeepFactors,and N-BEATS. The results show that they cannot perform well on the global dependency structure.
-Finally, we propose RankNet, a combination of the encoder-decoder network and a separate MLP network that capable of delivering probabilistic forecasting, to model the pit stop events and rank position in car racing.
-In this way, we incorporate domain knowledge to enhance the deep learning method.
-Our proposed model achieves significantly better accuracy than baseline models in the rank position forecasting task. The advantages of needing less feature engineering efforts and providing probabilistic forecasting enable racing strategy optimizations.</p>
+<p>The prediction problem of racing cars has the characteristics of non-linearity, non-periodicity, randomness, and timing dependence. The traditional statistical learning model (Naive Bayes, SVM, Simple Neural Networks) is difficult to deal with the problem of time series prediction, since the model is unable to understand the time-series dependence of data. Traditional time series prediction models such as ARMA / ARIMA can only deal with linear time series with certain periodicity. The anomaly events and human strategies in the racing competition make these methods no longer applicable. Therefore, time series prediction models (RNN, GRU, LSTM, etc.) based on deep learning are more suitable for solving such problems.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8. References</h2>
@@ -653,16 +691,16 @@ Our proposed model achieves significantly better accuracy than baseline models i
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>C. L. W. Choo.   Real-time decision making in motorsports: analytics forimproving  professional  car  race  strategy, PhD  Thesis,  MassachusettsInstitute of Technology, 2015. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>IndyCar Dataset.https://racetools.com/logfiles/IndyCar/. visited  on 04/15/2020 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>T.  Tulabandhula.Interactions  between  learning  and  decision  making.PhD Thesis, Massachusetts Institute of Technology, 2014. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>M4 Competition.https://forecasters.org/resources/time-series-data/m4-competition/. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>D.Salinas, V. Flunkert, and  J. Gasthaus.DeepAR: Probabilisticforecasting with autoregressive recurrent networks.arXiv:1704.04110[cs, stat], Apr. 2017 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>C. L. W. Choo.   Real-time decision making in motorsports: analytics forimproving  professional  car  race  strategy, PhD  Thesis,  MassachusettsInstitute of Technology, 2015. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>N.  Oreshkin,  D.  Carpov,  N.  Chapados,  and  Y.  Bengio.   N-BEATS:Neural basis expansion analysis for interpretable time series forecasting.InProceedings  of  International  Conference  on  Learning  Representa-tions(ICLR), 2020. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>T.  Tulabandhula.Interactions  between  learning  and  decision  making.PhD Thesis, Massachusetts Institute of Technology, 2014. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

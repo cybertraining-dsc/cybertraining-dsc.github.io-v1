@@ -201,7 +201,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 ---
 
 * {{% addreport
-  title="Predicting Stock Market Recovery in Indonesia after COVID-19 Crash"
+  title="Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps"
   author="Fauzan Isnaini"
   hid="fa20-523-313" %}}
 
