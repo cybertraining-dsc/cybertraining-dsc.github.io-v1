@@ -209,7 +209,7 @@ Health and society:
 
 ---
 
-* {{% addreport title="Using Big Data to Eliminate Racial Bias in Healthcare" author="Robert Neubauer" hid="fa20-523-304" %}}
+* {{% addreportonly title="Using Big Data to Eliminate Racial Bias in Healthcare" author="Robert Neubauer" hid="fa20-523-304" %}}
 
 ---
 

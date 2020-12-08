@@ -21,25 +21,25 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: in progress
+<meta property="og:description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: final
 Rama Asuri, fa20-523-319, Edit
 Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-319/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: in progress
+<meta itemprop="description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: final
 Rama Asuri, fa20-523-319, Edit
 Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life.">
 
-<meta itemprop="wordCount" content="3119">
+<meta itemprop="wordCount" content="3365">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: in progress
+<meta name="twitter:description" content="Detect and classify pathologies in chest X-rays using PyTorch library   Status: final
 Rama Asuri, fa20-523-319, Edit
 Abstract Chest X-rays reveal many diseases. Early detection of disease often improves the survival chance for Patients. It is one of the important tools for Radiologists to detect and identify underlying health conditions. However, they are two major drawbacks. First, it takes time to analyze a radiograph. Second, Radiologists make errors. Whether it is an error in diagnosis or delay in diagnosis, both outcomes result in a loss of life."/>
 
@@ -376,6 +376,12 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-304reportreport" href="/report/fa20-523-304/report/report/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-304test" href="/report/fa20-523-304/test/"></a>
       
       
@@ -467,12 +473,6 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313projectproject" href="/report/fa20-523-313/project/project/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313test" href="/report/fa20-523-313/test/"></a>
       
       
     </li>
@@ -604,7 +604,7 @@ Abstract Chest X-rays reveal many diseases. Early detection of disease often imp
 	<h1 id="detect-and-classify-pathologies-in-chest-x-rays-using-pytorch-library">Detect and classify pathologies in chest X-rays using PyTorch library</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-319/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-319/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-319/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-319/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress</p>
+Status: final</p>
 <p>Rama Asuri, <a href="https://github.com/cybertraining-dsc/fa20-523-319/">fa20-523-319</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-319/blob/main/project/project.md">Edit</a></p>
 
 
@@ -675,7 +675,7 @@ Status: in progress</p>
 <h2 id="2-overview-of-pytorch-library">2. Overview Of PyTorch Library</h2>
 <p>The PyTorch library is based on Python and is used for developing Python deep learning models. Many of the early adopters of the PyTorch are from the research community. It grew into one of the most popular libraries for deep learning projects. PyTorch provides great insight into Deep Learning. PyTorch is widely used in real-world applications. PyTorch makes an excellent choice for introducing deep learning because of clear syntax, streamlined API, and easy debugging. PyTorch provides a core data structure, the tensor, a multidimensional array similar to NumPy arrays. It performs accelerated mathematical operations on dedicated hardware, making it convenient to design neural network architectures and train them on individual machines or parallel computing resources <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <h2 id="3-overview-of-densenet">3. Overview of DenseNet</h2>
-<p>We use a pre-trained DenseNet model, which classifies the images. DenseNet is new Convolutional Neural Network architecture which is efficient on image classification benchmarks as compared to ResNet <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. RestNets, Highway networks, and deep and wide neural networks add more inter-layer connections than the direct connection in adjacent layers to boost information flow and layers. Similar to ResNet, DenseNet adds shortcuts among layers. Different from ResNet, a layer in dense receives all the outputs of previous layers and concatenate them in the depth dimension. In ResNet, a layer only receives outputs from the last two layers, and the outputs are added together on the individual same depth. Therefore it will not change the depth by adding shortcuts. In other words, in ResNet the output of layer of k is x[k] = f(w * x[k-1] + x[k-2]), while in DenseNet it is x[k] = f(w * H(x[k-1], x[k-2], … x[1])) where H means stacking over the depth dimension. Besides, ResNet makes learn the identity function easy, while DenseNet directly adds an identity function <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>We use a pre-trained DenseNet model, which classifies the images. DenseNet is new Convolutional Neural Network architecture which is efficient on image classification benchmarks as compared to ResNet <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. RestNets, Highway networks, and deep and wide neural networks add more inter-layer connections than the direct connection in adjacent layers to boost information flow and layers. Similar to ResNet, DenseNet adds shortcuts among layers. Different from ResNet, a layer in dense receives all the outputs of previous layers and concatenate them in the depth dimension. In ResNet, a layer only receives outputs from the last two layers, and the outputs are added together on the individual same depth. Therefore it will not change the depth by adding shortcuts. In other words, in ResNet the output of layer of k is x[k] = f(w * x[k-1] + x[k-2]), while in DenseNet it is x[k] = f(w * H(x[k-1], x[k-2], &hellip; x[1])) where H means stacking over the depth dimension. Besides, ResNet makes learn the identity function easy, while DenseNet directly adds an identity function <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <p>Figure 1 shows the DenseNet architecture.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/densetnet.png" alt="Figure 1"></p>
 <p><strong>Figure 1:</strong> DenseNet Architecture <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
@@ -700,7 +700,7 @@ being a clinical diagnosis, <em>Pneumonia</em> was included as a label to repres
 <h3 id="44-label-classification">4.4 Label Classification</h3>
 <p>Labeler extracts the mentions of observations and classify them as negative (&ldquo;no evidence of pulmonary edema, pleural effusions or pneumothorax&rdquo;), uncertain (&ldquo;diffuse reticular pattern may represent mild interstitial pulmonary edema&rdquo;), or positive (&ldquo;moderate bilateral effusions and bibasilar opacities&rdquo;). The &lsquo;uncertain&rsquo; label can capture both the uncertainty of a radiologist in the diagnosis as well as the ambiguity inherent in the report (&ldquo;heart size is stable&rdquo;). The mention classification stage is a 3-phase pipeline consisting of pre-negation uncertainty, negation, and post-negation uncertainty. Each phase consists of rules that are matched against the mention; if a match is found, the mention is classified accordingly (as uncertain in the first or third phase and as negative in the second phase). If a mention is not matched in any of the phases, it is classified as positive <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
 <h3 id="45-label-aggregation">4.5 Label Aggregation</h3>
-<p>CheXpert dataset use the classification for each mention of observations to arrive at a final label for 14 observations that consist of 12 pathologies and the “Support Devices” and “No Finding” observations. Observations with at least one mention positively classified in the report are assigned a positive (1) label. An observation is assigned an uncertain (u) label if it has no positively classified mentions and at least one uncertain mention, and a negative label if there is at least one negatively classified mention. We assign (blank) if there is no mention of an observation. The “No Finding” observation is assigned a positive label (1) if there is no pathology classified as positive or uncertain <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
+<p>CheXpert dataset use the classification for each mention of observations to arrive at a final label for 14 observations that consist of 12 pathologies and the &ldquo;Support Devices&rdquo; and &ldquo;No Finding&rdquo; observations. Observations with at least one mention positively classified in the report are assigned a positive (1) label. An observation is assigned an uncertain (u) label if it has no positively classified mentions and at least one uncertain mention, and a negative label if there is at least one negatively classified mention. We assign (blank) if there is no mention of an observation. The &ldquo;No Finding&rdquo; observation is assigned a positive label (1) if there is no pathology classified as positive or uncertain <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
 <h2 id="5-overview-of-auc-roc-curve">5. Overview Of AUC-ROC Curve</h2>
 <p>AUC-ROC stands for Area Under Curve - Receiver Operating Characteristics. It visualizes how well a machine learning classifier is performing. However, it works for only binary classification problems <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>. In our project, we extend it to evaluate Multi-Image classification problem. AUC-ROC curve is a performance measurement for classification problems at various threshold settings. ROC is a probability curve, and AUC represents the degree or measure of separability. Higher the AUC, the better the model is at predicting 0s as 0s and 1s as 1s. By analogy, the Higher the AUC, the model distinguishes between patients with the disease and no disease <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>.</p>
 <p>Figure 3 shows Confusion Matrix. We use Confusion Matrix to explain Sensitivity and Specificity.</p>
@@ -740,17 +740,25 @@ converting it into a format usable by PyTorch. We then, visualize the training a
 <h3 id="61-load-and-split-chest-x-rays-dataset">6.1 Load and split Chest X-rays Dataset</h3>
 <p>We load and split the dataset to 90% for training and 10% for validation randomly.</p>
 <h3 id="62-build-and-train-baseline-deep-learning-model">6.2 Build and train baseline Deep Learning model</h3>
+<p>We use the PyTorch library to implement and train DenseNet CNN as a baseline model. With initial weights from ImageNet, we retrain all layers. In PyTorch, we implement a subclass for the PyTorch to transform CheXpert Dataset and create a custom data loading process. The Image Augmentation is executed within this subclass. Additionally, a DataLoader also needs to be created. We shuffle the dataset for the training dataloader. We also create a validation dataloader, which is different from the training dataloader and does not require shuffling. In the baseline model, we use DenseNet pre-trained on the ImageNet dataset. The model&rsquo;s classifier is replaced with a new dense layer and use the CheXpert labels to train <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>. The number of trainable parameters 6968206 (~7  million).</p>
 <h3 id="63-evaluate-the-model">6.3 Evaluate the model</h3>
+<p>To evaluate the model, we implement a function to validate the model on the validation dataset.</p>
 <h3 id="64-predict-the-pathologies">6.4 Predict the pathologies</h3>
+<p>We use our model to predict 1 of the 5 pathologies - Atelectasis, Cardiomegaly, Consolidation, Edema, and Pleural Effusion. Our model uses a test dataset.</p>
 <h3 id="65-calculate-the-auc-roc-score">6.5 Calculate the AUC-ROC score</h3>
+<p>We have multiple labels, and we need to calculate the AUCROC-score for each class against the rest of the classifiers.</p>
 <h2 id="7-results-and-analysis">7. Results and Analysis</h2>
 <p>Figure 9 shows training loss, Validation loss and validation AUC-ROC score after training our Deep Learning model for 7 hours.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/Train.png" alt="Figure 9"></p>
 <p><strong>Figure 9:</strong> Training loss, Validation loss and validation AUC-ROC score</p>
 <p>Figure 10 shows model predicts False Positives. Below is AUCROC table.
 <img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/roc.png" alt="Figure 10"></p>
-<p><strong>Figure 10:</strong> AUC - ROC Curve</p>
+<p><strong>Figure 10:</strong> AUC - ROC data</p>
+<p>This graph is taken from Stanford CheXpert dataset. Based on Figure 11 <sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>, our AUCROC value is around 85%.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-319/raw/main/project/images/aucroc_stanford.png" alt="Figure 11"></p>
+<p><strong>Figure 11:</strong> AUC - ROC Curve <sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup></p>
 <h2 id="8-conclusion">8. Conclusion</h2>
+<p>Our model achieves the best AUC on Edema (0.89) and the worst on Plural(0.65). The AUC of all other observations is around 0.78. Our model achieves above 0.65 overall predictions.</p>
 <h2 id="9-future-plans">9. Future Plans</h2>
 <p>As the next steps, we will work to improve the model&rsquo;s algorithm and leverage DenseNet architecture to train using smaller dataset.</p>
 <h2 id="10-acknowledgements">10. Acknowledgements</h2>
@@ -832,6 +840,9 @@ converting it into a format usable by PyTorch. We then, visualize the training a
 </li>
 <li id="fn:12" role="doc-endnote">
 <p>Definition of Threshold <a href="https://machinelearningmastery.com/threshold-moving-for-imbalanced-classification/#:~:text=The%20decision%20for%20converting%20a,in%20the%20range%20between%200">https://machinelearningmastery.com/threshold-moving-for-imbalanced-classification/#:~:text=The%20decision%20for%20converting%20a,in%20the%20range%20between%200</a> <a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p>AUCROC curves from CheXpert &lt;&gt; <a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

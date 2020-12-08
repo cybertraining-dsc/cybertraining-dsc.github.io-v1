@@ -21,27 +21,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps   Status: in progress, Type: Project
+<meta property="og:description" content="Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps   Status: final Type: Project
 Fauzan Isnaini, fa20-523-313, Edit
-Abstract Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market." />
+Abstract Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market. Now with the advancement of big data, some financial institutions are beginning to predict the market by creating a model of the market using machine learning." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-313/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps   Status: in progress, Type: Project
+<meta itemprop="description" content="Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps   Status: final Type: Project
 Fauzan Isnaini, fa20-523-313, Edit
-Abstract Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market.">
+Abstract Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market. Now with the advancement of big data, some financial institutions are beginning to predict the market by creating a model of the market using machine learning.">
 
-<meta itemprop="wordCount" content="3210">
+<meta itemprop="wordCount" content="3154">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps   Status: in progress, Type: Project
+<meta name="twitter:description" content="Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps   Status: final Type: Project
 Fauzan Isnaini, fa20-523-313, Edit
-Abstract Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market."/>
+Abstract Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market. Now with the advancement of big data, some financial institutions are beginning to predict the market by creating a model of the market using machine learning."/>
 
 
 
@@ -376,6 +376,12 @@ Abstract Predicting the stock market has been an attractive field of research fo
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-304reportreport" href="/report/fa20-523-304/report/report/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-304test" href="/report/fa20-523-304/test/"></a>
       
       
@@ -467,12 +473,6 @@ Abstract Predicting the stock market has been an attractive field of research fo
       
       
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-reportfa20-523-313projectproject" href="/report/fa20-523-313/project/project/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313test" href="/report/fa20-523-313/test/"></a>
       
       
     </li>
@@ -578,13 +578,13 @@ Abstract Predicting the stock market has been an attractive field of research fo
 	<h1 id="analyzing-lstm-performance-on-predicting-stock-market-for-multiple-time-steps">Analyzing LSTM Performance on Predicting Stock Market for Multiple Time Steps</h1>
 <p><a href="https://github.com/cybertraining-dsc/fa20-523-313/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-313/workflows/Check%20Report/badge.svg" alt="Check Report"></a>
 <a href="https://github.com/cybertraining-dsc/fa20-523-313/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-313/workflows/Status/badge.svg" alt="Status"></a>
-Status: in progress, Type: Project</p>
+Status: final Type: Project</p>
 <p>Fauzan Isnaini, <a href="https://github.com/cybertraining-dsc/fa20-523-313/">fa20-523-313</a>, <a href="https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/project.md">Edit</a></p>
 
 
 <div class="pageinfo pageinfo-primary">
 <h2 id="abstract">Abstract</h2>
-<p>Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market. Now with the advancement of big data, some financial institutions are beginning to predict the market by creating a model of the market using machine learning. While some researches produce promising results, most of them are directed on predicting the next day market behavior. In this study, we created an LSTM model to predict the market for multiple time frames. We then analyzed the performance of the model for different time period. From our observations, LSTM is good at predicting 5 time steps ahead, but the prediction became inaccurate as the time frame gets longer.</p>
+<p>Predicting the stock market has been an attractive field of research for a long time because it promises big wealth for anyone who can find the secret. For a long time, traders around the world have been relying on fundamental analysis and technical analysis to predict the market. Now with the advancement of big data, some financial institutions are beginning to predict the market by creating a model of the market using machine learning. While some researches produce promising results, most of them are directed on predicting the next day market behavior. In this study, we created an LSTM model to predict the market for multiple time frames. We then analyzed the performance of the model for different time period. From our observations, LSTM is good at predicting 10 time steps ahead, but the rmse became larger as the time frame gets longer.</p>
 <p>Contents</p>
 <div class="toc">
   <nav id="TableOfContents">
@@ -628,8 +628,8 @@ In this study, we analyzed the performance of LSTM in predicting the stock marke
 <h3 id="21-macd-in-technical-analysis">2.1 MACD in Technical Analysis</h3>
 <p>MACD is an acronym for moving average convergence/divergence. It is a widely used technical indicator to confirm either bullish or bearish phase of the market. In essence, the MACD indicator shows the perceived strength of a downward or upward movement in price. Technically, it’s an oscillator, which is a term used for indicators that fluctuate between two extreme values, for example, from 0 to 100.
 MACD evolved from the exponential moving average (EMA), which was proposed by Gerald Appel in the 1970s. The standard MACD is the 12-day EMA subtracted by the 26-day EMA, which is also called the DIF. The MACD histogram, which was developed by T. Aspray in 1986, measures the signed distance between the MACD and its signal line calculated using the 9-day EMA of the MACD, which is called the DEA. Similar to the MACD, the MACD histogram is an oscillator that fluctuates above and below the zero line. The construction formula of MACD is given on figure 1.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/MACDFormula.png" alt="Figure 1"></p>
-<p><strong>Figure 1:</strong> MACD formula</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/MACDFormula.png" alt="MACD Formula"></p>
+<p><strong>Figure 1:</strong> MACD formula [^11]</p>
 <p>The number of the MACD histogram is usually called the MACD bar or OSC. The analysis process of the cross and deviation strategy of DIF and DEA includes the following three steps: (i) Calculate the values of DIF and DEA, (ii)When DIF and DEA are positive, the MACD line cuts the signal line in the uptrend, and the divergence is positive, there is a buy signal confirmation, and (iii)When DIF and DEA are negative, the signal line cuts the MACD line in the downtrend, and the divergence is negative, there is a sell signal confirmation.</p>
 <h3 id="22-time-series-forecasting">2.2 Time Series Forecasting</h3>
 <p>Time series analysis and dynamic modeling is an interesting research area with a great number of applications in business,economics, ﬁnance and computer science. The aim of timeseries analysis is to study the path observations of timeseries and build a model to describe the structure of data and then predict the future values of time series. Due to theimportance of time series forecasting in many branches ofapplied sciences, it is essential to build an effective modelwith the aim of improving the forecasting accuracy. A varietyof the time series forecasting models have been evolved in theliterature.
@@ -638,35 +638,43 @@ Recently, new techniques in deep learning have been de-veloped to address the ch
 <h3 id="23-using-lstm-in-stock-prediction-and-quantitative-trading">2.3 Using LSTM in Stock Prediction and Quantitative Trading</h3>
 <p>During the pre-deep learning era, Financial Time Series modelling has mainly concentrated in the field of ARIMA and any modifications on this, and the result has proved that the traditional time series model does provide decent predictive power to a limit. For example, due to the asymmetric distribution in financial time series return, Minyoung Kim has replaced the traditional Maximum Likelihood Estimation with an asymmetric loss function. C.K. Lee et al. compared the forecasting performance of ARIMA and artificial neural networks on Korean stock price index. The work showed that ARIMA provided more accurate forecasts than the back-propagation neural network. More recently, deep learning methods have demonstrated better performances thanks to improved computational power and the ability of learning non-linear relationships enclosed in various financial features. Sreelekshmy Selvin et al. compared three different deep learning architectures including RNN, LSTM, and CNN-sliding window models for the prediction of NSEI listed stocks. They concluded that CNN architecture is capable of identifying changes in trend of stocks and outperforms other models. Yan and Ouyang combined the wavelet transform of the financial time series with the LSTM and showed that the resulting model beat the performance of traditional Support Vector Machine, and K-nearest Neighbours. Thien Hai Nguyen et al. demonstrated that the integration of sediment features extracted from social media can improve the accuracy of prediction.[10] The performance of LSTM-RNN will be further boosted by feeding relevant data based on financial domain knowledge. Moreover, Kim Won has developed a hybrid approach to combine LSTM and GARCH models and the resulting model has much lower prediction errors</p>
 <h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
-<p>This project used the historical data of the Jakarta Composite Index (JKSE) from Yahoo Finance <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. The JKSE is a national stock index of Indonesia, which consists of 700 companies. We choose to incorporate the composite index because it has a beta value of 1, which means it is less volatile than most individual stocks to be incorporated into a model. The dataset contains the Open, High, Low, Close, and Volume data for both daily and monthly time period on the stock index. The daily data is taken from January 4th, 2000 until November 17th, 2020, while the monthly data is taken from a longer period from January 1st, 1995 to give sufficient data. Figure 2 and 3 provides a snapshot of the first few rows of the daily and monthly data respectively.</p>
-<p>![Head of Daily Data]
-(<a href="https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/images/DailyHead.PNG">https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/images/DailyHead.PNG</a>)</p>
+<p>This project used the historical data of the Jakarta Composite Index (JKSE) from Yahoo Finance <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. The JKSE is a national stock index of Indonesia, which consists of 700 companies. We choose to incorporate the composite index because it has a beta value of 1, which means it is less volatile than most individual stocks to be incorporated into a model. The dataset contains the Open, High, Low, Close, and Volume data for daily time period on the stock index. The daily data is taken from January 4th, 2000 until November 17th, 2020. We choose the daily data over the monthly data because it offer a more complete pattern. Figure 2 and 3 provides a snapshot of the first few rows of the daily and monthly data respectively.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/newdailyhead.png" alt="Head of Daily Data"></p>
 <p><strong>Figure 2:</strong> Snapshot of the first rows of the daily data</p>
-<p>![Head of Monthly Data]
-(<a href="https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/images/MonthlyHead.PNG">https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/images/MonthlyHead.PNG</a>)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/newMonthlyHead.png" alt="Head of Monthly Data"></p>
 <p><strong>Figure 3:</strong> Snapshot of the first rows of the monthly data</p>
-<p>We also used MACD technical indicator as an input to our model. The MACD parameters are generated using the ta-lib library <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> based on the Yahoo Finance data. Figure 3 and 4 provides a snapshot of the first few rows of the daily and monthly data respectively after incorporating the MACD technical indicator.</p>
+<p>We also used MACD technical indicator as an input to our model. The MACD parameters are generated using the ta-lib library <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> based on the Yahoo Finance data. Figure 4 and 5 provides a snapshot of the first few rows of the daily and monthly data respectively after incorporating the MACD technical indicator.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/MACDonDaily.png" alt="Daily MACD"></p>
+<p><strong>Figure 4:</strong> MACD on the daily data</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/newMACDonMonthly.png" alt="Monthly MACD"></p>
+<p><strong>Figure 5:</strong> MACD on the monthly data</p>
 <h2 id="4-methodology">4. Methodology</h2>
 <h3 id="41-technology">4.1 Technology</h3>
-<p>Python [^8] was the language of choice for this project. This was an easy decision for these reasons:</p>
+<p>Python <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> was the language of choice for this project. This was an easy decision for these reasons <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>:</p>
 <ol>
 <li>Python as a language has an enormous community behind it. Any problems that might be encountered can be easily solved with a trip to Stack Overflow. Python is among the most popular languages on the site which makes it very likely there will be a direct answer to any query.</li>
 <li>Python has an abundance of powerful tools ready for scientific computing. Packages such as Numpy, Pandas, and SciPy are freely available and well documented. Packages such as these can dramatically reduce, and simplify the code needed to write a given program. This makes iteration quick.</li>
 <li>Python as a language is forgiving and allows for programs that look like pseudo code. This is useful when pseudocode given in academic papers needs to be implemented and tested. Using Python, this step is usually reasonably trivial.</li>
 </ol>
-<p>In building the LSTM model, Keras [^9] library is used. It contains numerous implementations of commonly used neural network building blocks such as layers, objectives, activation functions, optimizers, and a host of tools to make working with image and text data easier. The code is hosted on GitHub, and community support forums include the GitHub issues page, a Gitter channel and a Slack channel.</p>
+<p>In building the LSTM model, Keras <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> library is used. It contains numerous implementations of commonly used neural network building blocks such as layers, objectives, activation functions, optimizers, and a host of tools to make working with image and text data easier. The code is hosted on GitHub, and community support forums include the GitHub issues page, a Gitter channel and a Slack channel.</p>
 <h3 id="42-data-preprocessing">4.2 Data Preprocessing</h3>
 <p>After downloading the historical datasets from Yahoo Finance, the MACD technical indicator is generated using the ta-lib library. Because MACD needs to capture data from previous time period, the MACD values on the first rows of the data are missing. These rows are then removed before being split into 8:2 proportion for training and testing purposes in the LSTM model.</p>
 <h3 id="43-the-lstm-model">4.3 The LSTM Model</h3>
 <p>A multivariate LSTM model with two hidden layer is used, with dropout parameter of 0.2. Adam is used as the optimization algorithm.  The model uses 90 days time steps, which means it uses the past 90 days data to predict the output. It has 8 features, which are the Close, Low, High, Open, Volume, MACD, MACD Signal, and MACD Histogram. It then gives one output, which is the open price for the given time frame. We then analyze the performance of our model for each of the time frame.</p>
 <h2 id="5-results">5. Results</h2>
-<p>Figure 6 shows mean squared error (MSE) curve of the prediction in the training dataset for given epoch. It shows that the MSE converge at 30 epochs, with MSE of .</p>
-<p>We then use this number of epochs for different time frames. Figure 7 shows the root mean squared error (RMSE) in the training dataset for each time frame. It clearly shows that the RMSE become bigger on a longer time frame. It can still predict 5 days ahead with RMSE of , but the RMSE become when the model tries to predict 30 days ahead.</p>
-<p>We then try this model on the testing data. Figure 8 shows the RMSE in the testing dataset for each time frame. As expected, the RMSE is still low when predicting 5 days ahead, but it becomes bigger when predicting on a longer time frames.</p>
-<p>Figure 9 and Figure 10 compare the actual and predicted value for 1 day and 30 days time frames respectively. It can be seen that the model cannot predict steep ramps in the price change, thus it is lagged from the actual price. The predicted price become furtherly lagged when predicting for a longer time frame, thus resulting in a bigger RMSE.</p>
-<p>We then use the monthly stock data, and observe whether this can give a better prediction than the daily data for the same time frame. Figure 11 compare the actual and predicted values for the monthly data. When using the monthly data, the RMSE is XX when predicting the next month&rsquo;s price. In fact, it still gives RMSE of XX when predicting the price for two months ahead.</p>
+<p>Figure 6 shows mean squared error (MSE) curve of the prediction in the training dataset for each given epoch. It shows that the MSE converge after 20 epochs, with the value of 0.0243.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/newlossepochs.png" alt="Epoch Loss"></p>
+<p><strong>Figure 6:</strong> MSE on the training data for each given epoch</p>
+<p>We then use this number of epochs for different time frames. Figure 7 shows the root mean squared error (RMSE) in the training dataset for each time frame. It clearly shows that the RMSE become bigger on a longer time frame. When predicting the next day period, the RMSE is 237.28, while when predicting 10 days ahead, the RMSE doubles to 464.87. But overall, these values are still acceptable because they are smaller than the standar deviation of the actual dataset of 735.96.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/newRMSEonTimeFrame.png" alt="RMSE"></p>
+<p><strong>Figure 7:</strong> RMSE on the training data for each time frame</p>
+<p>Figure 8 and Figure 9 compare the actual and predicted value for 1 day and 30 days time frames respectively. It can be seen that the model cannot predict steep ramps in the price change, thus it is lagged from the actual price. The predicted price become furtherly lagged when predicting for a longer time frame, thus resulting in a bigger RMSE.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/newOneDayPredict.png" alt="Next Day Prediction"></p>
+<p><strong>Figure 8:</strong> Next day prediction and actual values of the JKSE</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-313/raw/main/project/images/newThirtyDaysPredict.png" alt="30 Days Prediction"></p>
+<p><strong>Figure 9:</strong> Prediction of 30 days time frame and actual values of the JKSE</p>
 <h2 id="6-conclusion-and-future-works">6. Conclusion and Future Works</h2>
-<p>We have analyzed the performance of LSTM in predicting stock price for different time frames. While it gives a promising result in predicting the next day&rsquo;s price, the prediction becomes inaccurate for a longer time frame. This might be due to the non-stationarity nature of the stock market. The stock market trends can change abruptly because of a sudden change in the political and economic condition. Using the daily market data, our model gives promising results within 5 days time frame. For predicting the price beyond that, we find that using the monthly data gives a more accurate prediction than the daily data.
+<p>We have analyzed the performance of LSTM in predicting stock price for different time frames. While it gives a promising result in predicting the next day&rsquo;s price, the prediction becomes less accurate for a longer time frame. This might be due to the non-stationarity nature of the stock market. The stock market trends can change abruptly because of a sudden change in the political and economic condition. Using the daily market data, our model gives promising results within 10 days time frame.
 This project has analysed the performance of LSTM using RMSE, but further research may measure the performance based on the potential financial gain. After all, stock market is a place to make money, thus financial gain is a better metrics of performance.
 Further improvement may also be done on our model. We only used price data and MACD technical indicator for the prediction. Further research may utilize other technical indicators, such as RSI and Stochastics to get a better prediction.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
@@ -676,25 +684,31 @@ Further improvement may also be done on our model. We only used price data and M
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>A. Nikfarjam, E. Emadzadeh, and S. Muthaiyah, &ldquo;Text mining approaches for stock market prediction,&rdquo; 2010 The 2nd International Conference on Computer and Automation Engineering (ICCAE), 2010. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>A. Mostafa and Y. S., &ldquo;Introduction to financial forecasting. Applied Intelligence,&rdquo; Applied Intelligence, 1996. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>A. Singh, &ldquo;Stock Price Prediction Using Machine Learning: Deep Learning, &quot; Analytics Vidhya, 18-Oct-2020. [Online]. Available: <a href="https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/">https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/</a>. [Accessed: 20-Oct-2020]. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Composite Index (JKSE) Charts, Data &amp; News,&rdquo; Yahoo! Finance, 08-Dec-2020. [Online]. Available: <a href="https://finance.yahoo.com/quote/%5EJKSE/">https://finance.yahoo.com/quote/^JKSE/</a>. [Accessed: 08-Dec-2020]. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>C. Stoean, W. Paja, R. Stoean, and A. Sandita, &ldquo;Deep architectures for long-term stock price prediction with a heuristic-based strategy for trading simulations,&rdquo; Plos One, vol. 14, no. 10, 2019. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>D. Shah, H. Isah, and F. Zulkernine, &ldquo;Stock Market Analysis: A Review and Taxonomy of Prediction Techniques,&rdquo; International Journal of Financial Studies, vol. 7, no. 2, p. 26, 2019. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>F. S. Alzazah and X. Cheng, &ldquo;Recent Advances in Stock Market Prediction Using Text Mining: A Survey,&rdquo; E-Business [Working Title], 2020. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>F. Isnaini, &ldquo;cybertraining-dsc/fa20-523-313,&rdquo; GitHub, 08-Dec-2020. [Online]. Available: <a href="https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/code/multivariate.ipynb">https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/code/multivariate.ipynb</a>. [Accessed: 08-Dec-2020]. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>N. Chauhan, &ldquo;Stock Market Forecasting Using Time Series Analysis,&rdquo; KDnuggets, 2020. [Online]. Available: <a href="https://www.kdnuggets.com/2020/01/stock-market-forecasting-time-series-analysis.html">https://www.kdnuggets.com/2020/01/stock-market-forecasting-time-series-analysis.html</a>. [Accessed: 20-Oct-2020]. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>F. S. Alzazah and X. Cheng, &ldquo;Recent Advances in Stock Market Prediction Using Text Mining: A Survey,&rdquo; E-Business [Working Title], 2020. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>N. Milosevic, &ldquo;Equity forecast: Predicting long term stock price movement using machine learning,&rdquo; 2018. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>J. Wang and J. Kim, &ldquo;Predicting Stock Price Trend Using MACD Optimized by Historical Volatility.&rdquo; <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p>S. Khedkar, &ldquo;Stock Market Prediction Using Deep Learning and Python,&rdquo; Medium, 27-Sep-2019. [Online]. Available: <a href="https://medium.com/analytics-vidhya/stock-market-prediction-using-python-article-4-the-next-recession-923185a2736f">https://medium.com/analytics-vidhya/stock-market-prediction-using-python-article-4-the-next-recession-923185a2736f</a>. [Accessed: 20-Oct-2020]. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>TA-Lib. [Online]. Available: <a href="https://mrjbq7.github.io/ta-lib/func_groups/momentum_indicators.html">https://mrjbq7.github.io/ta-lib/func_groups/momentum_indicators.html</a>. [Accessed: 08-Dec-2020]. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>V. Bielinskas, &ldquo;Multivariate Time Series Prediction with LSTM and Multiple features (Predict Google Stock Price),&rdquo; Youtube, 2020. [Online]. Available: <a href="https://www.youtube.com/watch?v=gSYiKKoREFI">https://www.youtube.com/watch?v=gSYiKKoREFI</a>. [Accessed: 08-Dec-2020]. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Y. Hu and X. Zhang, &ldquo;Application of evolutionary computation for rule discovery in stock algorithmic trading,&rdquo; Applied Soft Computing, 2015. <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

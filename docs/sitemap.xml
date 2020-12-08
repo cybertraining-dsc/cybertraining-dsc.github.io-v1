@@ -700,6 +700,10 @@
   </url>
   
   <url>
+    <loc>/report/fa20-523-304/report/report/</loc>
+  </url>
+  
+  <url>
     <loc>/report/fa20-523-304/test/</loc>
   </url>
   
@@ -901,6 +905,14 @@
   
   <url>
     <loc>/report/fa20-523-332/assignments/assignment6/asg6_report/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/fa20-523-332/project/api/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/report/fa20-523-332/project/daily-update/readme/</loc>
   </url>
   
   <url>

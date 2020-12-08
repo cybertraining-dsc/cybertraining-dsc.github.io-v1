@@ -21,21 +21,21 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Cybertraining</title><meta property="og:title" content="" />
-<meta property="og:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.) Benchmark the separate parts of your analysis verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, some plots seem only to be distinguished by the plotstyle but may not be content different." />
+<meta property="og:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.) Benchmark the separate parts of your analysis (Response: Addressed in the code, results displayed in section 5.5) verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-312/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.) Benchmark the separate parts of your analysis verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, some plots seem only to be distinguished by the plotstyle but may not be content different.">
+<meta itemprop="description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.) Benchmark the separate parts of your analysis (Response: Addressed in the code, results displayed in section 5.5) verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals.">
 
-<meta itemprop="wordCount" content="3528">
+<meta itemprop="wordCount" content="5680">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.) Benchmark the separate parts of your analysis verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, some plots seem only to be distinguished by the plotstyle but may not be content different."/>
+<meta name="twitter:description" content="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)  Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.) Benchmark the separate parts of your analysis (Response: Addressed in the code, results displayed in section 5.5) verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals."/>
 
 
 
@@ -370,6 +370,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-304reportreport" href="/report/fa20-523-304/report/report/"></a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-304test" href="/report/fa20-523-304/test/"></a>
       
       
@@ -463,12 +469,6 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313projectproject" href="/report/fa20-523-313/project/project/"></a>
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313test" href="/report/fa20-523-313/test/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -515,12 +515,23 @@
     <li><a href="#4-methodology">4. Methodology</a>
       <ul>
         <li><a href="#41-hardware-component">4.1 Hardware Component</a></li>
-        <li><a href="#42-software-component">4.2 Software Component</a></li>
+        <li><a href="#42-software-component">4.2 Software Component</a>
+          <ul>
+            <li><a href="#421-data-pre-processing">4.2.1 Data Pre-processing</a></li>
+            <li><a href="#422-analysis-of-preliminary-statistical-information">4.2.2 Analysis of preliminary statistical information</a></li>
+            <li><a href="#423-unsupervised-learning-k-means-clustering-analysis-safe--unsafe-centroid-calculation">4.2.3 Unsupervised learning: K-means clustering analysis (&ldquo;Safe&rdquo; &amp; &ldquo;Unsafe&rdquo; Centroid calculation)</a></li>
+            <li><a href="#424-display-of-results--analysis-of-any-given-sample-values-set">4.2.4 Display of results &amp; analysis of any given sample values set</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#5-inference">5. Inference</a>
       <ul>
-        <li><a href="#benchmark-results">Benchmark Results</a></li>
+        <li><a href="#51-plotting-of-extracted-data">5.1 Plotting of extracted data</a></li>
+        <li><a href="#52-centroid-calculation">5.2 Centroid Calculation</a></li>
+        <li><a href="#53-heatmaps-for-the-years---2017-2018-2019-and-2020">5.3 Heatmaps for the years - 2017, 2018, 2019, and 2020</a></li>
+        <li><a href="#54-analysis-of-sample-set-of-values">5.4 Analysis of sample set of values</a></li>
+        <li><a href="#55-benchmark-information">5.5 Benchmark information</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -569,9 +580,9 @@
 	<h1 id="aquatic-toxicity-analysis-with-the-aid-of-autonomous-surface-vehicle-asv">Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)</h1>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.)</li>
-<li><input disabled="" type="checkbox"> Benchmark the separate parts of your analysis</li>
-<li><input disabled="" type="checkbox"> verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data,</li>
-<li><input disabled="" type="checkbox"> some plots seem only to be distinguished by the plotstyle but may not be content different. PLease verify</li>
+<li><input checked="" disabled="" type="checkbox"> Benchmark the separate parts of your analysis (Response: Addressed in the code, results displayed in section 5.5)</li>
+<li><input checked="" disabled="" type="checkbox"> verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, (Response: Explained in section 4.2.2.)</li>
+<li><input checked="" disabled="" type="checkbox"> some plots seem only to be distinguished by the plotstyle but may not be content different. PLease verify (Response: Addressed in the &ldquo;Inference&rdquo; section)</li>
 <li><input disabled="" type="checkbox"> Extension for project granted till last day of regular semester in December</li>
 <li><input disabled="" type="checkbox"> modification of report beyond that granted and expected according to author.</li>
 </ul>
@@ -594,12 +605,23 @@ Status: in progress, Type: Project</p>
     <li><a href="#4-methodology">4. Methodology</a>
       <ul>
         <li><a href="#41-hardware-component">4.1 Hardware Component</a></li>
-        <li><a href="#42-software-component">4.2 Software Component</a></li>
+        <li><a href="#42-software-component">4.2 Software Component</a>
+          <ul>
+            <li><a href="#421-data-pre-processing">4.2.1 Data Pre-processing</a></li>
+            <li><a href="#422-analysis-of-preliminary-statistical-information">4.2.2 Analysis of preliminary statistical information</a></li>
+            <li><a href="#423-unsupervised-learning-k-means-clustering-analysis-safe--unsafe-centroid-calculation">4.2.3 Unsupervised learning: K-means clustering analysis (&ldquo;Safe&rdquo; &amp; &ldquo;Unsafe&rdquo; Centroid calculation)</a></li>
+            <li><a href="#424-display-of-results--analysis-of-any-given-sample-values-set">4.2.4 Display of results &amp; analysis of any given sample values set</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#5-inference">5. Inference</a>
       <ul>
-        <li><a href="#benchmark-results">Benchmark Results</a></li>
+        <li><a href="#51-plotting-of-extracted-data">5.1 Plotting of extracted data</a></li>
+        <li><a href="#52-centroid-calculation">5.2 Centroid Calculation</a></li>
+        <li><a href="#53-heatmaps-for-the-years---2017-2018-2019-and-2020">5.3 Heatmaps for the years - 2017, 2018, 2019, and 2020</a></li>
+        <li><a href="#54-analysis-of-sample-set-of-values">5.4 Analysis of sample set of values</a></li>
+        <li><a href="#55-benchmark-information">5.5 Benchmark information</a></li>
       </ul>
     </li>
     <li><a href="#6-conclusion">6. Conclusion</a></li>
@@ -644,50 +666,133 @@ Status: in progress, Type: Project</p>
 <p><strong>Communication System:</strong> This is possibly the most important part of the ASV system as we need to device a technique to offload the data that is collected by the vehicle back to a remote computer/server that would likely be located at a considerable distance away from the ASV. There are different options that have been considered in this regard for establishing a proper communicative functionality between the ASV and the remote computer. Some options that have been considered involved Bluetooth, IR signals, RF signals, GPS-based system, satellite communication, etc. There are both pros and cons when it comes to using any of these different communication systems for the ASV. However, the most important metric in this case involves the maximum range the communication system could span over. Obviously, some of the options (viz. Bluetooth) would not be possible in this regard as they have a very limited communication range. Some others (viz. satellite communication systems) have a very high range but were nevertheless found unsuitable for this endeavor as they required too much onboard processing power to even carry out their most basic operations. Hence, a balanced approach was followed in this scenario and a GPS/RF-based system was eventually chosen as the most appropriate candidate for carrying out the proposed tasks of the ASV.</p>
 <p><strong>Power Source:</strong> Finally, we need an onboard processing power system that can provide the required amount of power to all the functional entities housed in the ASV system. The characteristic of such a desired power source would be that it would not require charging often and can sustain proper ASV operations for at least five to six hours. Additionally, the weight of the power source should also not be too clumsy that might put the stability of the entire ASV system in jeopardy. It must have a suitable weight, and should also come in an appropriate shape and size such that the weight of the entire system is evenly distributed over a large area, thereby further reinforcing the stability of the system.</p>
 <h3 id="42-software-component">4.2 Software Component</h3>
-<p>After the data has been collected by the ASV either on a temporal scale (over a period of time) or a spatial scale (over a geographical area), it will then be analyzed to decipher the median convergent values of the water body for the four different parameters that have been measured (i.e. Temperature, pH, DO, and Conductivity). The results of this data analysis task will then be used to find out if such water quality parametric values manifested by the aquatic ecosystem in question deviates by a large proportion from the other result that is obtained after analyzing the historical data from USGS and EPA for a nearby and unpolluted source of water. The USGS and EPA websites make it easier to find data from a nearby geographical region by making it possible to enter the desired location prior to searching for water quality data in their huge databases. In this way, it can be figured out if the water quality parameters of the particular ecological system varies wildly from a neighboring system that has almost the same geographical and ecological attributes.</p>
+<p>After the data has been collected by the ASV either on a temporal scale (over a period of time) or a spatial scale (over a geographical area), it will then be analyzed to decipher the median convergent values of the water body for the four different parameters that have been measured (i.e. temperature, pH, dissolved oxygen level, and conductivity). The results of this data analysis task will then be used to find out if such water quality parametric values manifested by the aquatic ecosystem in question deviates by a large proportion from the other result that is obtained after analyzing the historical data from USGS for a nearby polluted/unpolluted source of water. The USGS website make it easier to find data from a nearby geographical region by making it possible to enter the desired location prior to searching for water quality data in their huge databases. In this way, it can also be used to figure out if the water quality parameters of the particular ecological system varies wildly from a neighboring system that has almost the same geographical and ecological attributes.</p>
 <p>The establishment of the degree of variance of the data from the historical data will be carried out by documenting the particular quartile range that the current data lies in with respect to the median data that is obtained from the past/historical datasets. For instance, if the current data resides in the second quartile, it can be demarcated as being more or less consistent with previously established values. However, if it resides in the first or third quartile then it might will that the system has aberrant aspects which might need to be investigated for possible levels of outside pollutants (viz. industrial effluents, agricultural wash-off, etc.), or presence of harmful invasive species that might be altering the delicate natural balance of the ecosystem in question.</p>
-<p>The software logic can be located at this <a href="https://github.com/cybertraining-dsc/fa20-523-312/blob/main/project/code/toxicologyASV.ipynb">link</a> <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. It has been created using the aid of Google Colaboratory platform, or simply Colab <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. It helps in postulating the inferences and conclusions of this research attempt, and which are described in detail in the subsequent sections. This is majorly achieved in the following manner:</p>
-<ul>
-<li>First, the collected data was plotted (that was obtained for a particular duration of time in a specific seasonal time of the year) to observe the overall trends of the variation of the four water-quality parameters. This gives an approximate idea regarding what we should normally expect from the water-quality data and which further helps in detecting any kind of outlier/aberrant situations that might arise either due to the presence of artifacts, or nuisance environmental variables.</li>
-<li>This part will be updated soon.</li>
-<li>This part will be updated soon.</li>
-</ul>
-<p>Furthermore, the code has been appropriately commented and documented in such a way that it can be easily reproduced. Important instructions and vital information about different aspects of the code have been properly written down wherever necessary.</p>
+<p>The software logic can be located at this <a href="https://github.com/cybertraining-dsc/fa20-523-312/blob/main/project/code/toxicologyASV.ipynb">link</a> <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. It has been created using the aid of Google Colaboratory platform, or simply Colab <sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. Furthermore, the code has been appropriately commented and documented in such a way that it can be easily reproduced. Important instructions and vital information about different aspects of the code have been properly written down wherever necessary. The coding framework helps in postulating the inferences and conclusions of this research attempt, and which are described in detail in the subsequent sections. The major steps that has been followed in establishing the software logic for this big-data analysis task have been discussed below.</p>
+<h4 id="421-data-pre-processing">4.2.1 Data Pre-processing</h4>
+<p><strong>Meta-data</strong>: As with any other instance of big data, the data obtained from the USGS website is rife with many unnecessary information. Most of these information relate to meta-data for the particular database and it also contains detailed logistical information such as location information, units used for measurement, contact details, etc. Fortunately, all these information have been bunched up nicely at the beginning of the database and they were conveniently filtered out by skipping the first thirty-four rows while reading the corresponding comma separated value (csv) files.</p>
+<p><strong>Extraction of four water-quality parameters (Temperature, Specific Conductance, pH, Dissolved Oxygen level)</strong>: After filtering out the meta-data, it is also essential to focus on the relevant portion of the database which contains the information that we are looking for. In this case, if we observe carefully, we will notice that not all the columns contain the required information relating to water-quality parameters. Some of them include information such as date, time, system&rsquo;s unit, etc. Since these will not be required for our analysis task, we extract only those columns that contain information relating to the four primary water-quality parameter.</p>
+<p>A sample file has been provided below that displays all the information contained in the USGS database files.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/sampledatabase.png" alt="database sample"></p>
+<p><strong>Figure 2:</strong> Sample Database file obtained from the USGS water-quality database for the year 2017</p>
+<h4 id="422-analysis-of-preliminary-statistical-information">4.2.2 Analysis of preliminary statistical information</h4>
+<p><strong>Seasonal Consistency</strong>: The preliminary data, that was pre-processed and extracted, was plotted. The data pertains to a particular duration of time in a specific seasonal time of the year, more importantly that spans the first two weeks of November for all the four years. This has been done to maintain consistency of results across the platform and to create as much as a robust framework as possible that can have high fidelity.</p>
+<p><strong>Data-points as x-axis</strong>: Additionally, it should be kept in mind that the data was already time-stamped rigorously. More precisely, the databases that are uploaded to the USGS website have data tabulated in them that are arranged in a chronological manner. As a result, having the x-axis refer to actual data-points means the same if we had the x-axis refer to time instead. These plotted results have been provided in the next section.</p>
+<p><strong>Visualization of trends</strong>: The preliminary plotting of the data helps us to visualize the overall trends of the variation of the four important water-quality parameters. This gives an approximate idea regarding what we should normally expect from the water-quality data, the approximate maximum and minimum range of values, and it further helps in detecting any kind of outlier/aberrant situations that might arise either due to the presence of artifacts, or nuisance environmental variables.</p>
+<h4 id="423-unsupervised-learning-k-means-clustering-analysis-safe--unsafe-centroid-calculation">4.2.3 Unsupervised learning: K-means clustering analysis (&ldquo;Safe&rdquo; &amp; &ldquo;Unsafe&rdquo; Centroid calculation)</h4>
+<p><strong>General Clustering Analysis</strong>: The concept behind any clustering based approach involves an unsupervised learning mechanism. This means that the dataset traditionally does not come labelled and the task in hand is to find patterns within the data-set based on suitable metrics. These patterns help delineate the different clusters and classify the data by assigning them to one of the clusters. This process is usually carried out by measuring the euclidean distance of each point from the &ldquo;centroids&rdquo; of every cluster. The resultant clusters are created in such a way that the distance within the points in a particular cluster are minimized whereas, the corresponding distance between points from different clusters are maximized. This concept can be summarized by the figure below.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/clusteranalysis.png" alt="clustering concept"></p>
+<p><strong>Figure 3:</strong> Concept of Clustering analysis adopted as an unsupervised learning process <sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup></p>
+<p><strong>K-means Classification: Centroid Calculation</strong>: The algorithm for this step first starts with selecting a random centroid value to start with to begin the iteration process. In order to be rigorous in this regard, the initial points for centroid values were chosen to be one standard deviation away from the median values for the four water-quality parameters. More importantly, two initial centroid values were chosen that would result in two clusters, one belonging to the safe water-standard cluster and the other belonging to the unsafe category. For the safe centroid value, the point chosen was such that it was one standard deviation lower than the median values for the temperature and specific conductance parameters, whereas it was one standard deviation higher than the median values for the pH and disolved oxygen level parameters. This logic was reversed in case of the unsafe centroid starting value. This can be summarized by the following code-excerpt.</p>
+<p>'&rsquo;&rsquo;
+mu_safe = [(t_med - (1<em>std[0])), (c_med - (1</em>std[1])), (p_med + (1<em>std[2])), (d_med + (1</em>std[3]))]
+mu_unsafe = [(t_med + (1<em>std[0])), (c_med + (1</em>std[1])), (p_med - (1<em>std[2])), (d_med - (1</em>std[3]))]
+'&rsquo;&rsquo;</p>
+<p><strong>Iteration process</strong>: The next steps for the centroid calculation involves creating an iteration process which will keep updating and perfecting the centroid values upon every execution of the iteration. In this case, the condition for ending the iteration involved either exceeding fifty iterations or reaching the ideal situation where the new centroid value equals the previous centroid value. In the later case, it can be mentioned that the centroid calculation has converged to a specific ideal value. Fortunately, in the case of this project, it was possible to arrive at this convergence of centroid values with not too many iteration steps. The details of this process has been explained in the coding framework.</p>
+<p><strong>Assigning of Clusters</strong>: At the end of the iteration step, we end up with the centroid values and with the help of these values we calculate the euclidean distance for every points and assign them to appropriate clusters to which they are closest to. In this way, we complete the unsupervised algorithm of clustering process for any unlabelled data that is provided to us. In this particular endeavor, we assign the value &ldquo;0&rdquo; for a predicted cluster indicating a safe set of water-quality values for a given point, and a value of &ldquo;1&rdquo; for an unsafe set of water-quality values for a given point. The following figure summarizes this idea.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/kmeansclustering.png" alt="k-means idea"></p>
+<p><strong>Figure 4:</strong> Concept of Clustering analysis adopted as an unsupervised learning process <sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></p>
+<h4 id="424-display-of-results--analysis-of-any-given-sample-values-set">4.2.4 Display of results &amp; analysis of any given sample values set</h4>
+<p>In the final step, we display all the results and plotting information for this big-data analysis task. Additionally, based on the labelled data and predicted classes for safe and unsafe water-quality standards, it will now be possible to find whether an arbitrary set of data values, that represents water-quality data for the surrounding region, would be classified as safe or unsafe as per this technique. This has also been shown in the results section.</p>
 <h2 id="5-inference">5. Inference</h2>
-<p>NOTE: This section will continue to be updated until project completion.</p>
+<h3 id="51-plotting-of-extracted-data">5.1 Plotting of extracted data</h3>
 <p>The first preliminary set of results are displayed below. To get a better idea, the processed data (viewed as a data-frame in python) was first analyzed to understand the four primary water-quality parameters that are being worked upon. The data-frame for one of the big data sets is shown below, along with the median values that were evalauted for the respective parameters.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/prelimresults.png" alt="Preliminary results"></p>
-<p><strong>Figure 2:</strong> First set of preliminary output results (in python data-frame) and median values for the four water-quality parameters</p>
+<p><strong>Figure 5:</strong> First set of preliminary output results (in python data-frame) and median values for the four water-quality parameters</p>
 <p>In the above set of results, it should be worthwhile to note that temperature is measured in the celsius scale, specific conductance is measured in microsiemens per centimeter at 25 degree celsius, pH is measured in the usual standard range (between 0-14), and the level of dissolved oxygen is measured in milligrams per liter.</p>
-<p>Next, the content of the dataset, after it is processed in a software architecture, is shown and it displays the alteration of the values (expressed in line plots, scatter plots, and histograms) of the four main water-quality parameters (viz. Temperature, Specific Conductance, pH, and Dissolved Oxygen) over the period of time that starts from October 9, 2020 to October 16, 2020.</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/L_temp.png" alt="Temperature plots">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/S_temp.png" alt="Temperature plots">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/H_temp.png" alt="Temperature plots"></p>
-<p><strong>Figure 3:</strong> Line, Scatter, and Histogram plots for the water-quality parameter involving &ldquo;Temperature&rdquo;</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/L_cond.png" alt="Specific Conductance plots">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/S_cond.png" alt="Specific Conductance plots">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/H_cond.png" alt="Specific Conductance plots"></p>
-<p><strong>Figure 4:</strong> Line, Scatter, and Histogram plots for the water-quality parameter involving &ldquo;Specific Conductance&rdquo;</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/L_pH.png" alt="pH plots">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/S_pH.png" alt="pH plots">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/H_pH.png" alt="pH plots"></p>
-<p><strong>Figure 5:</strong> Line, Scatter, and Histogram plots for the water-quality parameter involving &ldquo;pH&rdquo;</p>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/L_dO2.png" alt="Dissolved Oxygen level">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/S_dO2.png" alt="Dissolved Oxygen level">
-<img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/H_dO2.png" alt="Dissolved Oxygen level"></p>
-<p><strong>Figure 6:</strong> Line, Scatter, and Histogram plots for the water-quality parameter involving &ldquo;Dissolved Oxygen level&rdquo;</p>
-<h3 id="benchmark-results">Benchmark Results</h3>
+<p>Next, the content of the dataset, after it is processed in the software architecture, is shown and it displays the alteration of the values (expressed in scatter plots) of the four main water-quality parameters (viz. Temperature, Specific Conductance, pH, and Dissolved Oxygen) over the period of time that starts from November 1 to November 14 for the four years involving 2017, 2018, 2019, and 2020.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/seventeentemp.png" alt="Temperature 2017"></p>
+<p><strong>Figure 6:</strong> Scatter plot for the water-quality parameter involving &ldquo;Temperature&rdquo; (2017)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/seventeencond.png" alt="Conductance 2017"></p>
+<p><strong>Figure 7:</strong> Scatter plot for the water-quality parameter involving &ldquo;Specific Conductance&rdquo; (2017)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/seventeenph.png" alt="pH 2017"></p>
+<p><strong>Figure 8:</strong> Scatter plot for the water-quality parameter involving &ldquo;pH&rdquo; (2017)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/seventeendox.png" alt="Dissolved Oxygen 2017"></p>
+<p><strong>Figure 9:</strong> Scatter plot for the water-quality parameter involving &ldquo;Dissolved Oxygen&rdquo; (2017)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/eighteentemp.png" alt="Temperature 2018"></p>
+<p><strong>Figure 10:</strong> Scatter plot for the water-quality parameter involving &ldquo;Temperature&rdquo; (2018)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/eighteencond.png" alt="Conductance 2018"></p>
+<p><strong>Figure 11:</strong> Scatter plot for the water-quality parameter involving &ldquo;Specific Conductance&rdquo; (2018)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/eighteenph.png" alt="pH 2018"></p>
+<p><strong>Figure 12:</strong> Scatter plot for the water-quality parameter involving &ldquo;pH&rdquo; (2018)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/eighteendox.png" alt="Dissolved Oxygen 2018"></p>
+<p><strong>Figure 13:</strong> Scatter plot for the water-quality parameter involving &ldquo;Dissolved Oxygen&rdquo; (2018)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/nineteentemp.png" alt="Temperature 2019"></p>
+<p><strong>Figure 14:</strong> Scatter plot for the water-quality parameter involving &ldquo;Temperature&rdquo; (2019)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/nineteencond.png" alt="Conductance 2019"></p>
+<p><strong>Figure 15:</strong> Scatter plot for the water-quality parameter involving &ldquo;Specific Conductance&rdquo; (2019)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/nineteenph.png" alt="pH 2019"></p>
+<p><strong>Figure 16:</strong> Scatter plot for the water-quality parameter involving &ldquo;pH&rdquo; (2019)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/nineteendox.png" alt="Dissolved Oxygen 2019"></p>
+<p><strong>Figure 17:</strong> Scatter plot for the water-quality parameter involving &ldquo;Dissolved Oxygen&rdquo; (2019)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/twentytemp.png" alt="Temperature 2020"></p>
+<p><strong>Figure 18:</strong> Scatter plot for the water-quality parameter involving &ldquo;Temperature&rdquo; (2020)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/twentycond.png" alt="Conductance 2020"></p>
+<p><strong>Figure 19:</strong> Scatter plot for the water-quality parameter involving &ldquo;Specific Conductance&rdquo; (2020)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/twentyph.png" alt="pH 2020"></p>
+<p><strong>Figure 20:</strong> Scatter plot for the water-quality parameter involving &ldquo;pH&rdquo; (2020)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/twentydox.png" alt="Dissolved Oxygen 2020"></p>
+<p><strong>Figure 21:</strong> Scatter plot for the water-quality parameter involving &ldquo;Dissolved Oxygen&rdquo; (2020)</p>
+<h3 id="52-centroid-calculation">5.2 Centroid Calculation</h3>
+<p>The initial and final centroid values for the safe and unsafe water-quality standards are shown below for the year 2019. The predicted classes for the safe and unsafe clusters has also been shown below that directly follows from the previous results.</p>
+<p>'&rsquo;&rsquo;
+Final centroid mu_safe:
+Temperature          9.350000
+Sp. Conductance    613.726744
+pH                   8.424225
+Dissolved O2        11.826163
+dtype: float64</p>
+<p>Final centroid mu_unsafe:
+Temperature         10.672426
+Sp. Conductance    658.729167
+pH                   8.324755
+Dissolved O2        10.910662
+dtype: float64</p>
+<p>Final cluster assignment:</p>
+<pre><code>  Temperature  Sp. Conductance   pH  Dissolved O2  Predicted_Class
+</code></pre>
+<p>0            10.2              559  8.4          10.2                0
+1            10.1              559  8.4          10.2                0
+2            10.1              560  8.4          10.2                0
+3            10.0              560  8.4          10.3                0
+4            10.0              561  8.4          10.2                0
+&hellip;           &hellip;              &hellip;  &hellip;           &hellip;              &hellip;
+1327          7.6              670  8.3          10.7                1
+1328          7.6              671  8.3          10.6                1
+1329          7.6              671  8.3          10.6                1
+1330          7.6              671  8.3          10.6                1
+1331          7.6              671  8.3          10.6                1</p>
+<p>'&rsquo;&rsquo;</p>
+<h3 id="53-heatmaps-for-the-years---2017-2018-2019-and-2020">5.3 Heatmaps for the years - 2017, 2018, 2019, and 2020</h3>
+<p>For the all the four years, heatmaps were plotted to get more information about the trend of the data. Chiefly, the heatmaps give us an empirical form of ideology relating to the degree of correlation between the different water-quality parameters.</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/heatmapseventeen.png" alt="hmap2017"></p>
+<p><strong>Figure 22:</strong> Heatmap for the water-quality parameters (Year - 2017)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/heatmapeighteen.png" alt="hmap2018"></p>
+<p><strong>Figure 23:</strong> Heatmap for the water-quality parameters (Year - 2018)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/heatmapnineteen.png" alt="hmap2019"></p>
+<p><strong>Figure 24:</strong> Heatmap for the water-quality parameters (Year - 2019)</p>
+<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/heatmaptwenty.png" alt="hmap2020"></p>
+<p><strong>Figure 25:</strong> Heatmap for the water-quality parameters (Year - 2020)</p>
+<h3 id="54-analysis-of-sample-set-of-values">5.4 Analysis of sample set of values</h3>
+<p>In this portion, we test the unsupervised learning mechanism on the basis of sample set of water-quality values. In this regard, we feed the sample values to the coding framework and based on the centroids calculated for the past four years, it is able to identify whether the given water sample belong in the safe or unsafe category. Further, if it belongs in the unsafe category, the system can further inform us the degree of criticality of the water-quality degradation. This is carried out by finding out how many water quality parametric values are beyond the normal range. Based on this analysis, a critical nature is then displayed as shown in the figure below. As an example, a critical category of &ldquo;2&rdquo; would signify two of the water-quality parameters were beyond the normal range of values. Needless to say, higher is the critical category level, the more degraded the water source is.</p>
+<h3 id="55-benchmark-information">5.5 Benchmark information</h3>
+<p>Finally, the benchmark analysis results are shown below for the respective tasks carried out by the coding platform. Two important facts should be kept in mind in this case and they are as follows:</p>
 <ul>
-<li>First Benchmark results (To be updated further)</li>
+<li>The benchmark analysis was carried out using the cloudmesh benchmark procedure in Python (executed in Google Colab). A sleep-time of &ldquo;5&rdquo; was selected as the standard for the benchmark analysis and it has followed consistently for all the calculations.</li>
+<li>The time values for the different benchmark results was not rounded off in this case as it was both important and interesting to know the minute differences between the different kinds of tasks that were carried out in this regard. It should be noted that the final benchmark value is exceptionally high since this step involves the part where the user inputs the sample values for ascertaining the safety standard for a water source.</li>
 </ul>
-<p><img src="https://github.com/cybertraining-dsc/fa20-523-312/raw/main/project/images/firstbnmk.png" alt="First Benchmark results"></p>
-<p><strong>Figure 7:</strong> First Benchmark results for the created data analysis framework</p>
-<ul>
-<li>Second Benchmark results (Will be updated soon)</li>
-<li>Third Benchmark results (Will be updated soon)</li>
-</ul>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;-+&mdash;&mdash;&ndash;+&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&ndash;+&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+
+| Name                                     | Status   |   Time |    Sum | Start               | tag   | Node         | User   | OS    | Version                             |
+|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;-+&mdash;&mdash;&ndash;+&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&ndash;+&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|
+| <ipython-input-6-76432cd55eb5>/<module>  | ok       |  9.929 |  9.929 | 2020-12-07 11:03:29 |       | a3eaca400b9c | collab | Linux | #1 SMP Thu Jul 23 08:00:38 PDT 2020 |
+| <ipython-input-8-369a8f571c92>/<module>  | ok       |  5.275 |  5.275 | 2020-12-07 11:03:48 |       | a3eaca400b9c | collab | Linux | #1 SMP Thu Jul 23 08:00:38 PDT 2020 |
+| <ipython-input-10-c44a9c976e98>/<module> | ok       |  5.477 |  5.477 | 2020-12-07 11:04:07 |       | a3eaca400b9c | collab | Linux | #1 SMP Thu Jul 23 08:00:38 PDT 2020 |
+| <ipython-input-12-ce973ed94129>/<module> | ok       |  5.091 |  5.091 | 2020-12-07 11:04:24 |       | a3eaca400b9c | collab | Linux | #1 SMP Thu Jul 23 08:00:38 PDT 2020 |
+| <ipython-input-14-7f046bc96145>/<module> | ok       | 80.721 | 80.721 | 2020-12-07 11:04:48 |       | a3eaca400b9c | collab | Linux | #1 SMP Thu Jul 23 08:00:38 PDT 2020 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;-+&mdash;&mdash;&ndash;+&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&ndash;+&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-+</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
-<p>NOTE: This section will be addressed upon project completion.</p>
+<p>Although the endeavor carried out in this example might not involve a plethora of high-end applications or intricate logic frameworks, it still provides a very decent foundational approach for carrying out toxicological analysis for water sources. Most importantly, it should be noted that the results obtained for sample values correspond to what we would normally expect for polluted and non-polluted sources of water. For instance, it was found that water sources with high values of specific conductance were categorized in the &ldquo;unsafe&rdquo; category which is to be expected since a high conductance value typically represents the presence of dissolved salts and ions in the water source, which normally indicates that effluents or agricultural run-off might have made its way to the water source. Additionally, it was also found out that water samples with high values of dissolved oxygen levels were categorized in the &ldquo;safe&rdquo; category which is certainly true.</p>
+<p>Of course, a more diverse array of data coupled with more scientific and advanced ASV systems would have provided us with even better results. But as indicated earlier, this research endeavor provides a pragmatic foundational approach to conducting this kind of big data analytical work. We can build up on the logic presented in this endeavor to come up with even more advanced and robust version of toxicological analysis.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the <em>FA20-BL-ENGR-E534-11530: Big Data Applications</em> course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.</p>
 <h2 id="8-references">8. References</h2>
@@ -720,6 +825,12 @@ Status: in progress, Type: Project</p>
 </li>
 <li id="fn:9" role="doc-endnote">
 <p>Google Colaboratory team. <em>Google Colaboratory</em>. Retrieved from <a href="https://colab.research.google.com/">https://colab.research.google.com/</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Tan, Steinback, Kumar (2004, April). Introduction to Data Mining, Lecture Notes for Chapter 8, Page 2. Accessed: Nov. 2020, <a href="https://www-users.cs.umn.edu/~kumar001/dmbook/dmslides/chap8_basic_cluster_analysis.pdf">https://www-users.cs.umn.edu/~kumar001/dmbook/dmslides/chap8_basic_cluster_analysis.pdf</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>Alan J. (2019, November). K-means: A Complete Introduction. Retrieved from <a href="https://towardsdatascience.com/k-means-a-complete-introduction-1702af9cd8c">https://towardsdatascience.com/k-means-a-complete-introduction-1702af9cd8c</a> <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
