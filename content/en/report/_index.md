@@ -84,9 +84,6 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 ---
 
-* {{% addreport title="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)" author="Saptarshi Sinha" hid="fa20-523-312" %}}
-
----
 
 
 #### Health
@@ -263,9 +260,14 @@ Lifestyle:
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
 
+---
 
 
+Environment:
+
+---
 
 
+* {{% addreport title="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)" author="Saptarshi Sinha" hid="fa20-523-312" %}}
 
-
+---
