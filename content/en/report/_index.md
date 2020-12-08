@@ -10,10 +10,14 @@ menu:
 {{% pageinfo %}}
 This page conatins the list of the reports and projects.
 
-Any report with a tag ![](../report/failed-check.png) will no longer
-be reviewed or commented on. Fixing this is trivial. PLease watch the
-class lecture about this. Click on the icon to find out what the
-errors are.
+Any report with a tag
+
+* ![](../report/failed-check.png) will not 
+be reviewed or commented on.
+* ![](../report/failed-status.png) will not 
+be reviewed for grading. 
+
+Click on your icon to find out what the errors are. Fixing them is easy.
 
 {{% /pageinfo %}}
 
@@ -54,6 +58,12 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * {{% addreport title="How Wearable Devices Can Impact Health and Productivity" author="Adam Martin" hid="fa20-523-302" %}}
 * {{% addreportonly title="Sunny Xu, Peiran Zhao, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
 
+#### Lifestyle
+
+* {{% addreport
+	title="Music Mood Classification"
+	author="Kunaal Shah"
+	hid="fa20-523-341" %}}
 
 #### Energy
 
@@ -112,10 +122,6 @@ Finance:
 #### Lifestyle
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
-* {{% addreport
-	title="Music Mood Classification"
-	author="Kunaal Shah"
-	hid="fa20-523-341" %}}
 * {{% addreport
 	title="Trending Youtube Videos Analysis"
 	author="Adam Chai"
