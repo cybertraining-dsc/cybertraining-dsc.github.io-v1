@@ -38,7 +38,7 @@
   krishmhatre@icloud.com
   Abstract The project involves analyzing the relationships of various cryptocurrencies with Foreign Exchange Rates and Stock Market Indices. Apart from analyzing the relationships, the objective of the project is also to estimate the trend of the cryptocurrencies based on Foreign Exchange Rates and Stock Market Indices.">
 
-<meta itemprop="wordCount" content="3130">
+<meta itemprop="wordCount" content="3123">
 
 
 
@@ -655,27 +655,146 @@ Status: final, Type: Project</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>The latest type of investment in the finance world and one of the latest global medium of exchange is Cryptocurrency. The total market capitalizations of all cryptocurrencies added up to $237.1 Billion as of 2019<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, making it one of the fastest growing industries in the world. Cryptocurrency systems do not require a central authority as its state is maintained through distributed consensus<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Therefore, determining the factors affecting the prices of cryptocurrencies becomes extremely difficult. There are several factors affecting the prices of cryptocurrency like transaction cost, reward system, hash rate, coins circulation, forks, popularity of cryptomarket, speculations, stock markets, exchange rates, gold price, interest rate, legalization and restriction<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. This project involves studying and analysing the relationships of various cryptocurrencies with Foreign Exchange Rates and Stock Market Indices. Furthermore, the project also involves predicting the cryptocurrency price based on stock market indices and foreign exchange rates of the previous day. The project also involves development of a public API to access the database of the historical data and the predictions.</p>
 <h2 id="2-resources">2. Resources</h2>
-<p><strong>Table 2.1:</strong> Resources
-| <strong>No.</strong> | <strong>Name</strong> | <strong>Version</strong> | <strong>Type</strong> |     <strong>Notes</strong>     |
-| :&mdash;  |    :&mdash;-:    |    :&mdash;-:    |    :&mdash;-:    |  &mdash;:  |
-| 1. |  Python  | 3.6.9 | Programming language  |Python is a high-level interpreted programming language. |
-| 2. |  MongoDB |  4.4.2 |  Database  | MongoDB is a NoSQL Database program that uses JSON-like documents.  |
-| 3. |  Heroku  | 0.1.4 |  Cloud Platform| Heroku is a cloud platform used for deploying applications. It uses a Git server to handle application repositories. |
-| 4. |  Gunicorn  | 20.0.4  | Server Gateway Interface  | Gunicorn is a python web server gateway interface . It is mainly used in the project for running python applications on Heroku. |
-| 5. |  Tensorflow  | 2.3.1 |  Python Library|  Tensorflow is an open-source machine learning library. It is mainly used in the project for training models and predicting results.|
-| 6. |  Keras | 2.4.3|Python Library|Keras is an open-source python library used for interfacing with artificial neural networks. It is an interface for the Tensorflow library. |
-| 7. | Scikit-Learn|0.22.2|Python Library|Scikit-learn is an open-source machine learning library featuring various algorithms for classification, regression and clustering problems.|
-| 8. |Numpy|1.16.0|Python Library|Numpy is a python library used for handling and performing various operations on large multi-dimensional arrays.|
-| 9. |Scipy|1.5.4|Python Library|Scipy is a python library used for scientific and technical computing. It is not directly used in the project but serves as a dependency for tensorflow.|
-| 10.|Pandas|1.1.4|Python Library|Pandas is a python library used mainly for large scale data manipulation and analysis. |
-|11.|Matplotlib|3.2.2|Python Library|Matplotlib is a python library used for graphing and plotting. |
-|12.|Pickle|1.0.2|Python Library|Pickle-mixin is a python library used for saving and loading python variables.|
-|13.|Pymongo|3.11.2|Python Library|Pymongo is a python library containing tools for working with MongoDB.|
-|14.|Flask|1.1.2|Python Library|Flask is a micro web framework for python. It is used in the project for creating the API.|
-|15.|Datetime|4.3|Python Library|Datetime is a python library used for handling dates as date objects.|
-|16.|Pytz|2020.4|Python Library|Pytz is a python library used for accurate timezone calculations.|
-|17|Yahoo Financials|1.6|Python Library|Yahoo Financials is an unofficial python library used for extracting data from Yahoo Finance website by web scraping.|
-|18|Dns Python|2.0.0|Python Library|DNS python is a necessary dependency of Pymongo.|</p>
+<p><strong>Table 2.1:</strong> Resources</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>No.</strong></th>
+<th align="center"><strong>Name</strong></th>
+<th align="center"><strong>Version</strong></th>
+<th align="center"><strong>Type</strong></th>
+<th align="right"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1.</td>
+<td align="center">Python</td>
+<td align="center">3.6.9</td>
+<td align="center">Programming language</td>
+<td align="right">Python is a high-level interpreted programming language.</td>
+</tr>
+<tr>
+<td align="left">2.</td>
+<td align="center">MongoDB</td>
+<td align="center">4.4.2</td>
+<td align="center">Database</td>
+<td align="right">MongoDB is a NoSQL Database program that uses JSON-like documents.</td>
+</tr>
+<tr>
+<td align="left">3.</td>
+<td align="center">Heroku</td>
+<td align="center">0.1.4</td>
+<td align="center">Cloud Platform</td>
+<td align="right">Heroku is a cloud platform used for deploying applications. It uses a Git server to handle application repositories.</td>
+</tr>
+<tr>
+<td align="left">4.</td>
+<td align="center">Gunicorn</td>
+<td align="center">20.0.4</td>
+<td align="center">Server Gateway Interface</td>
+<td align="right">Gunicorn is a python web server gateway interface . It is mainly used in the project for running python applications on Heroku.</td>
+</tr>
+<tr>
+<td align="left">5.</td>
+<td align="center">Tensorflow</td>
+<td align="center">2.3.1</td>
+<td align="center">Python Library</td>
+<td align="right">Tensorflow is an open-source machine learning library. It is mainly used in the project for training models and predicting results.</td>
+</tr>
+<tr>
+<td align="left">6.</td>
+<td align="center">Keras</td>
+<td align="center">2.4.3</td>
+<td align="center">Python Library</td>
+<td align="right">Keras is an open-source python library used for interfacing with artificial neural networks. It is an interface for the Tensorflow library.</td>
+</tr>
+<tr>
+<td align="left">7.</td>
+<td align="center">Scikit-Learn</td>
+<td align="center">0.22.2</td>
+<td align="center">Python Library</td>
+<td align="right">Scikit-learn is an open-source machine learning library featuring various algorithms for classification, regression and clustering problems.</td>
+</tr>
+<tr>
+<td align="left">8.</td>
+<td align="center">Numpy</td>
+<td align="center">1.16.0</td>
+<td align="center">Python Library</td>
+<td align="right">Numpy is a python library used for handling and performing various operations on large multi-dimensional arrays.</td>
+</tr>
+<tr>
+<td align="left">9.</td>
+<td align="center">Scipy</td>
+<td align="center">1.5.4</td>
+<td align="center">Python Library</td>
+<td align="right">Scipy is a python library used for scientific and technical computing. It is not directly used in the project but serves as a dependency for tensorflow.</td>
+</tr>
+<tr>
+<td align="left">10.</td>
+<td align="center">Pandas</td>
+<td align="center">1.1.4</td>
+<td align="center">Python Library</td>
+<td align="right">Pandas is a python library used mainly for large scale data manipulation and analysis.</td>
+</tr>
+<tr>
+<td align="left">11.</td>
+<td align="center">Matplotlib</td>
+<td align="center">3.2.2</td>
+<td align="center">Python Library</td>
+<td align="right">Matplotlib is a python library used for graphing and plotting.</td>
+</tr>
+<tr>
+<td align="left">12.</td>
+<td align="center">Pickle</td>
+<td align="center">1.0.2</td>
+<td align="center">Python Library</td>
+<td align="right">Pickle-mixin is a python library used for saving and loading python variables.</td>
+</tr>
+<tr>
+<td align="left">13.</td>
+<td align="center">Pymongo</td>
+<td align="center">3.11.2</td>
+<td align="center">Python Library</td>
+<td align="right">Pymongo is a python library containing tools for working with MongoDB.</td>
+</tr>
+<tr>
+<td align="left">14.</td>
+<td align="center">Flask</td>
+<td align="center">1.1.2</td>
+<td align="center">Python Library</td>
+<td align="right">Flask is a micro web framework for python. It is used in the project for creating the API.</td>
+</tr>
+<tr>
+<td align="left">15.</td>
+<td align="center">Datetime</td>
+<td align="center">4.3</td>
+<td align="center">Python Library</td>
+<td align="right">Datetime is a python library used for handling dates as date objects.</td>
+</tr>
+<tr>
+<td align="left">16.</td>
+<td align="center">Pytz</td>
+<td align="center">2020.4</td>
+<td align="center">Python Library</td>
+<td align="right">Pytz is a python library used for accurate timezone calculations.</td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="center">Yahoo Financials</td>
+<td align="center">1.6</td>
+<td align="center">Python Library</td>
+<td align="right">Yahoo Financials is an unofficial python library used for extracting data from Yahoo Finance website by web scraping.</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="center">Dns Python</td>
+<td align="center">2.0.0</td>
+<td align="center">Python Library</td>
+<td align="right">DNS python is a necessary dependency of Pymongo.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="3-dataset">3. Dataset</h2>
 <p>The project builds its own dataset by extracting the data from Yahoo Finance website using Yahoo Financial python library <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. The data includes cryptocurrency prices, stock market indices and foreign exchange rates from September 30 2015 to December 5 2020. The project uses historical data of 6 cryptocurrencies - Bitcoin (BTC), Ethereum (ETH), Dash (DASH), Litecoin (LTC), Monero (XMR) and Ripple (XRP), 25 stock market indices - S&amp;P 500 (USA), Dow 30 (USA), NASDAQ (USA), Russell 2000 (USA), S&amp;P/TSX (Canada), IBOVESPA (Brazil), IPC MEXICO (Mexico), Nikkei 225 (Japan), HANG SENG INDEX (Hong Kong), SSE (China), Shenzhen Component (China), TSEC (Taiwan), KOSPI (South Korea), STI (Singapore), Jakarta Composite Index (Indonesia), FTSE Bursa Malaysia KLCI (Malaysia), S&amp;P/ASX 200 (Australia), S&amp;P/NZX 50 (New Zealand), S&amp;P BSE (India), FTSE 100 (UK), DAX (Germany), CAC 40 (France), ESTX 50 (Europe), EURONEXT 100 (Europe), BEL 20 (Belgium), and 22 foreign exchange rates - Australian Dollar, Euro, New Zealand Dollar, British Pound, Brazilian Real, Canadian Dollar, Chinese Yuan, Hong Kong Dollar, Indian Rupee, Korean Won, Mexican Peso, South African Rand, Singapore Dollar, Danish Krone, Japanese Yen, Malaysian Ringgit, Norwegian Krone, Swedish Krona, Sri Lankan Rupee, Swiss Franc, New Taiwan Dollar, Thai Baht. This data is, then, posted to MongoDB Database. The three databases are created for each of the data types - Cryptocurrency prices, Stock Market Indices and Foreign Exchange Rates. The three databases each contain one collection for every currency, index and rate respectively. These collections have a uniform structure containing 6 columns - &ldquo;id&rdquo;, &ldquo;formatted_date&rdquo;, &ldquo;low&rdquo;, &ldquo;high&rdquo;, &ldquo;open&rdquo; and &ldquo;close&rdquo;. The tickers used to extract data from Yahoo Finance <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> are stated in Figure 3.1.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-332/raw/main/project/images/tickers.png" alt="Ticker Information"></p>

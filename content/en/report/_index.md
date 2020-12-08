@@ -123,6 +123,17 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 ---
 
+* {{% addreport
+	title="Trending Youtube Videos Analysis"
+	author="Adam Chai"
+	hid="fa20-523-327" %}}
+
+---
+
+* {{% addreportonly title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
+
+---
+
 
 #### Energy
 
@@ -252,18 +263,6 @@ Lifestyle:
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
 
----
-
-* {{% addreportonly title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
-
----
-
-* {{% addreport
-	title="Trending Youtube Videos Analysis"
-	author="Adam Chai"
-	hid="fa20-523-327" %}}
-
----
 
 
 
