@@ -32,7 +32,7 @@ Abstract Wearable devices offer an abundant source of data on wearer activity an
 Adam Martin, fa20-523-302, Edit
 Abstract Wearable devices offer an abundant source of data on wearer activity and health metrics. Smartphones and smartwatches have become increasingly ubiquitous, and provide high-quality motion sensor data. This research attempts to classify movement types, including running, walking, sitting, standing, and going up and down stairs, to establish the practicality of sharing this raw data with healthcare workers.">
 
-<meta itemprop="wordCount" content="1956">
+<meta itemprop="wordCount" content="2081">
 
 
 
@@ -662,10 +662,20 @@ and will proceed with attempts to classify the labeled data.</p>
 <p>First, the data has to be downloaded from the MotionSense project on GitHub.  A basic descriptive analysis will be performed, visualizing the sensor values for each movement class over time.
 During the data acquisition, the sensors are sampled at a 50hz rate.  Since the dataset is a timeseries, classification methods that take advantage of historical datapoints will be the most effective.
 The Keras Long Short Term Memory classifier implementation is used for this task.  The dataset is first split into its various classes of motion using the one-hot-encoded matrix to filter out each
-class.  Each class is then subdivided into one-second &lsquo;windows&rsquo;, each with 50 entries.  Each window is offset by 10 entries from the previous window.</p>
-<p>The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50).  The dimensions correspond to the number of windows, the number of movement
-features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a Google
-Colab instance and benchmarked.  The workflow consists of the following:</p>
+class.  Each class is then subdivided into one-second &lsquo;windows&rsquo;, each with 50 entries.  Each window is offset by 10 entries from the previous window.  The use of windows allows the model to remain small
+in size, while still gathering enough information to make accurate classifications.  The hyperparameters that can be tuned include:</p>
+<ul>
+<li>Window size (50)</li>
+<li>Window offset (10)</li>
+<li>LSTM size (50)</li>
+<li>Dense layer size (50)</li>
+<li>Batch size (64)</li>
+<li>Epochs (15)</li>
+<li>Dropout ratio (0.5)</li>
+</ul>
+<p>The resulting data structure is a 3-dimensional array of shape (107434, 12, 50) for the training set and (32439, 12, 50) for the testing set.  The dimensions correspond to the number of windows, the number of movement
+features, and the number of samples per window, respectively.  These windows are then paired with their corresponding movement classifications and fed into a Keras LSTM workflow.  This workflow is executed on a standard (non-gpu)
+Google Colab instance and benchmarked.  The workflow consists of the following:</p>
 <ul>
 <li>A Long Short Term Memory layer with the cell count matching the size of the input window (50)</li>
 <li>A Dropout layer to minimize overfitting</li>
@@ -696,6 +706,7 @@ Much of this research will be focused on determining the state of wearables in t
 <p><strong>Figure 6:</strong> 10 second sensor readout of a male sitting.</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/timeseries_stand.png" alt="Figure 7"></p>
 <p><strong>Figure 7:</strong> 10 second sensor readout of a female standing.</p>
+<p>Interestingly, initial classification attempts involving random forests and knn methods performed fairly well despite their inherent lack of awareness of historical data.</p>
 <h3 id="52-results">5.2 Results</h3>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/LSTM_benchmark.png" alt="Figure 8"></p>
 <p><strong>Figure 8:</strong> Cloudmesh benchmark for LSTM train and test.</p>
@@ -704,23 +715,26 @@ Much of this research will be focused on determining the state of wearables in t
 <p>The final accuracy measurement for the LSTM was <strong>%95.42</strong>.  This proves that discrete movement classes can be determined through the analysis of basic sensor data regarding device movement.</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <h3 id="61-results">6.1 Results</h3>
-<p>Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.  Viewing previous analyses of
-similar datasets, it should also be possible to determine the gender of the user, and estimate their stride length, walking asymmetry, double support time, and more.  Viewing the benchmarks,
+<p>Using relatively basic machine learning methods, it is possible to determine with a high level of accuracy the type of movement being performed at a given moment.  Viewing the benchmarks,
 the inference time is rapid, taking only 3 seconds to validate results for the entire testing dataset.  This model could be distilled for a production environment, and the rapid inference speed
 would allow for faster analyses for end users.</p>
 <h3 id="62-limitations">6.2 Limitations</h3>
 <p>The classes of movement considered for this study were limited.  For more precise movements, or movement combinations, more data and a more complex model would be required.  For example;
 classifying the type of activity being done while a user is seated, if they are typing or eating.  Future research could involve a wider review of timeseries classifiers, including transformers
-and rnns, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with
+convolutional neural networks, and recurrent neural networks, in order to establish what classification strategy would be best suited for this data.  Privacy is also important to consider; raw sensor data could provide malicious actors with
 information regarding a users daily habits, their gender, their location, and other sensitive data.</p>
 <p>Existing research highlights some of the issues with the adoption of wearable devices in healthcare.  Inconsistent reporting, usage, and data quality are the most common concerns <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.  Addressing
 these issues through an analysis of data quality and device usage could contribute towards the robustness of this study.</p>
 <h3 id="63-impact">6.3 Impact</h3>
+<p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-302/main/project/images/service_prop.png" alt="Figure 10"></p>
+<p><strong>Figure 10</strong> Proposal for integration of wearables data with other data sources and healthcare portals.</p>
 <p>Frameworks like Apple CareKit and Google Fit are emerging to address the increasing demand for health tracking applications.  There is a need for a more effective pipeline for sharing this information
 securely with doctors and researchers, and these frameworks are a step in the right direction.  Furthermore, this research can be applied towards finding correlations between a patient&rsquo;s condition and
 their activity history, or helping a patient reach certain goals towards their overall well-being.  Comprehensive movement history can be combined with device usage patterns, eating habit data, self-reported
 well-being data, and other relevant sources to establish a more holistic perspective of a patient&rsquo;s health.
-Giving users and healthcare workers access to an insights on the data that they generate every day will promote healthier habits, increase physician efficacy, and promote overall well-being.</p>
+Giving users and healthcare workers access to an insights on the data that they generate every day can promote healthier habits, increase physician efficacy, and promote overall well-being.  The author proposes
+the idea of a centralized system for user data tracking.  This could support cross-platform devices, and tie into other fitness and well-being apps to provide a centralized and holistic view of a user&rsquo;s health.
+A system of this nature could also tie in information from patient portals, including test results, checkup info, and prescription information.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
 <p>The author would like to thank Dr. Gregor von Laszewski for his invaluable feedback on this paper, and Dr. Geoffrey Fox for sharing his expertise in Big Data applications throughout this course.</p>
 <h2 id="8-references">8. References</h2>
