@@ -64,7 +64,12 @@ for line in content.splitlines():
     if ".[^" in line or ". [^" in line:
         error (f"{lines}: Citation after a . not allowed.")
 
+    for latex in ['cite', 'ref', 'section', 'textit', 'textbf']:
+        if f"\{latex}" in line:
+            error (f"{lines}: found \{latex}. This is not a latex paper.")
 
+
+        
     words = words + len(line.split(" "))
 
   
