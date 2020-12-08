@@ -38,6 +38,8 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 * {{% addreport title="NBA Performance and Injury" author="Gavin Hemmerlein, Chelsea Gorius" hid="fa20-523-301" %}}
 * {{% addreport title="NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance" author="Travis Whitaker" hid="fa20-523-308" %}}
 * {{% addreportonly title="Predictive Model For Pitches Thrown By Major League Baseball Pitchers" author="Bryce Wieczorek" hid="fa20-523-343" %}}
+* {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
+* {{% addreportonly title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
 
 #### Environment
 
@@ -49,6 +51,8 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 * {{% addreport title="Detecting Heart Disease using Machine Learning Classification Techniques" author="Ethan Nguyen" hid="fa20-523-309" %}}
 * {{% addreport title="Detect and classify pathologies in chest X-rays using PyTorch library" author="Rama Asuri" hid="fa20-523-319" %}}
+* {{% addreport title="How Wearable Devices Can Impact Health and Productivity" author="Adam Martin" hid="fa20-523-302" %}}
+* {{% addreportonly title="Sunny Xu, Peiran Zhao, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
 
 
 #### Energy
@@ -68,6 +72,8 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
       title="Online Store Customer Revenue Prediction"
       author="Balaji Dhamodharan and Anantha Janakiraman"
 	  hid="fa20-523-337" %}}
+* {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
+* {{% addreportonly title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 #### Politics
 
@@ -79,19 +85,17 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 *
   [Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Richard Otten, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
 
-## Other Reports and Projects
+## Report and Project Proposals
 
 The following reports need to be updated to be considered for
 additional review. Make sure you make significant progress.
-They are listed here as it makes it easier fu us to monitor them
+They are listed here as it makes it easier for us to monitor them
 seperately.
 
 Health and society:
 
 * {{% addreport title="Covid-19 Analysis" author="Hany Boles" hid="fa20-523-342" %}}
 * {{% addreport title="Using Big Data to Eliminate Racial Bias in Healthcare" author="Robert Neubauer" hid="fa20-523-304" %}}
-* {{% addreportonly title="Sunny Xu, Peiran Zhao, Kris Zhang" author="Project on Gesture recognition and machine learning" hid="fa20-523-315" %}}
-* {{% addreport title="How Wearable Devices Can Impact Health and Productivity" author="Adam Martin" hid="fa20-523-302" %}}
 
 Sport:
 
@@ -108,17 +112,19 @@ Finance:
 #### Lifestyle
 
 * {{% addreport title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century" author="Raymond Adams" hid="fa20-523-333" %}}
-* {{% addreport title="Trending Youtube Videos Analysis" author="Adam Chai" hid="fa20-523-327" %}}
-* {{% addreport title="Music Mood Classification" author="Kunaal Shah"
-hid="fa20-523-341" %}}
+* {{% addreport
+	title="Music Mood Classification"
+	author="Kunaal Shah"
+	hid="fa20-523-341" %}}
+* {{% addreport
+	title="Trending Youtube Videos Analysis"
+	author="Adam Chai"
+	hid="fa20-523-327" %}}
+
 
 ### Reports without Project
 
-* {{% addreportonly title="Big Data Application in E-commerce" author="Wanru Li" hid="fa20-523-329" %}}
-* {{% addreportonly title="Big Data Analytics in the National Basketball Association" author="Igue Khaleel" hid="fa20-523-317" %}}
 * {{% addreportonly title="Review of Text-to-Voice Synthesis Technologies" author="Eugene Wang" hid="fa20-523-350" %}}
-* {{% addreportonly title="Big Data In Sports Game Predictions and How it is Used in Sports Gambling" author="Mansukh Kandhari" hid="fa20-523-331" %}}
-* {{% addreportonly title="Change of internet capabilities throughout the world" author="Matthew Cummings" hid="fa20-523-334" %}}
 
 
 
