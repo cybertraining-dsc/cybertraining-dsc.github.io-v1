@@ -40,9 +40,9 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 
 ---
-
 * [<i class="fas fa-edit"></i>](https://github.com/cloudmesh/cloudmesh-openapi)
-  [Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
+[Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
+	* ![GitHub Repo stars](https://img.shields.io/github/stars/cloudmesh/cloudmesh-openapi?style=social)
 [![image](https://img.shields.io/pypi/v/cloudmesh-openapi.svg)](https://pypi.org/project/cloudmesh-openapi/)
 [![Python](https://img.shields.io/pypi/pyversions/cloudmesh-openapi.svg)](https://pypi.python.org/pypi/cloudmesh-openapi)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/cloudmesh/cloudmesh-openapi/blob/main/LICENSE)
@@ -103,12 +103,13 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
   title="How Big Data Technologies Can Improve Indoor Agriculture"
   author="Cody Harris"
   hid="fa20-523-305" %}}
+
+---
+
 * {{% addreport
   title="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)"
   author="Saptarshi Sinha"
   hid="fa20-523-312" %}}
-
----
 
 ---
 
