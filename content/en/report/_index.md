@@ -56,12 +56,20 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 #### Sports
 
+
 ---
 
 * {{% addreport
   title="NBA Performance and Injury"
   author="Gavin Hemmerlein, Chelsea Gorius"
   hid="fa20-523-301" %}}
+
+---
+
+* {{% addreport
+  title="Rank Forecasting in Car Racing"
+  author="Jiayu Li"
+  hid="fa20-523-349" %}}
 
 ---
 
@@ -333,14 +341,6 @@ Sport:
   hid="fa20-523-345" %}}
 
 ---
-
-* {{% addreport
-  title="Rank Forecasting in Car Racing"
-  author="Jiayu Li"
-  hid="fa20-523-349" %}}
-
----
-
 
 Finance:
 
