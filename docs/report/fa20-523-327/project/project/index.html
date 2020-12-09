@@ -32,7 +32,7 @@ Abstract The internet has created a revolution for how people connect, understan
 Adam Chai, fa20-523-327 Edit
 Abstract The internet has created a revolution for how people connect, understand topics, and consume information. Today, the consumption of the media is easier than ever. Going onto the internet and finding interesting content takes less than a minute to do. In the already growing industry of amateur or professional video production, Youtube is the go-to platform for viewers and creators to collide.">
 
-<meta itemprop="wordCount" content="2447">
+<meta itemprop="wordCount" content="2722">
 
 
 
@@ -520,7 +520,7 @@ Abstract The internet has created a revolution for how people connect, understan
     <li><a href="#3-choice-of-data-set">3. Choice of Data-set</a></li>
     <li><a href="#4data-preprocessing">4.Data Preprocessing</a></li>
     <li><a href="#5-model">5. Model</a></li>
-    <li><a href="#6-additional-findings">6. Additional Findings</a></li>
+    <li><a href="#6-insights">6. Insights</a></li>
     <li><a href="#7-benchmarks">7. Benchmarks</a></li>
     <li><a href="#8-conclusion">8. Conclusion</a></li>
     <li><a href="#81-limitations">8.1 Limitations</a></li>
@@ -586,7 +586,7 @@ Status: final, Type: Project</p>
     <li><a href="#3-choice-of-data-set">3. Choice of Data-set</a></li>
     <li><a href="#4data-preprocessing">4.Data Preprocessing</a></li>
     <li><a href="#5-model">5. Model</a></li>
-    <li><a href="#6-additional-findings">6. Additional Findings</a></li>
+    <li><a href="#6-insights">6. Insights</a></li>
     <li><a href="#7-benchmarks">7. Benchmarks</a></li>
     <li><a href="#8-conclusion">8. Conclusion</a></li>
     <li><a href="#81-limitations">8.1 Limitations</a></li>
@@ -679,7 +679,7 @@ Status: final, Type: Project</p>
 </tr>
 <tr>
 <td>thumbnail_link</td>
-<td>link to thumbnail</td>
+<td>link to thumbnail picture</td>
 </tr>
 <tr>
 <td>comments_disabled</td>
@@ -745,13 +745,13 @@ Status: final, Type: Project</p>
 <p>After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .96. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png" alt="Figure 4"></p>
 <p><strong>Figure 4:</strong> Predicted vs. Actual Values Graph</p>
-<h2 id="6-additional-findings">6. Additional Findings</h2>
-<p>When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto &amp; Style categories dominate the trend for categories. This can be an indicator for Youtube&rsquo;s preferance of the type of content they want to mainstream on the website.</p>
+<h2 id="6-insights">6. Insights</h2>
+<p>Looking back at Youtube&rsquo;s trending section dividing the dataset into category ids is necessary to discover what content Youtube defines as widely appealing. Figures below show the count of videos in each category and the top 10 categories.</p>
 <table>
 <thead>
 <tr>
 <th align="center"><strong>Figure 5:</strong> Count of videos in each Category</th>
-<th align="center"><strong>Figure 1:</strong> Top 10 Categories</th>
+<th align="center"><strong>Figure 6:</strong> Top 10 Categories</th>
 </tr>
 </thead>
 <tbody>
@@ -813,6 +813,30 @@ Status: final, Type: Project</p>
 </tbody>
 </table>
 <p>The full list of category IDs can be found <a href="https://gist.github.com/dgp/1b24bf2961521bd75d6c">HERE</a> <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<p>When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto &amp; Style categories dominate the trend for categories. This can be an indicator for Youtube&rsquo;s preferance of the type of content they want to mainstream on the website.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Figure 8:</strong> Entertainment Videos</th>
+<th align="center"><img src="https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure8.png" alt="Figure 8"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Figure 9:</strong> Music Videos</td>
+<td align="center"><img src="https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure8.png" alt="Figure 9"></td>
+</tr>
+<tr>
+<td align="center">:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;:</td>
+<td align="center">:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-:</td>
+</tr>
+<tr>
+<td align="center"><strong>Figure 10:</strong> Howto &amp; Style Videos!</td>
+<td align="center"><img src="https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure10.png" alt="Figure 10"></td>
+</tr>
+</tbody>
+</table>
+<p>The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category description several videos appear to not really fit within their category. The guidelines for the entertainment and howto &amp; style categories do not have a set criteria. However, the music category explictily shows videos based on music most videos under music are music videos from popular artists.</p>
 <p>Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.</p>
 <table>
 <thead>
@@ -870,7 +894,7 @@ Status: final, Type: Project</p>
 <p><strong>Figure 7:</strong> Benchmarks</p>
 <p>When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the number of labels there are in the model there is a 62.5% increase in time for execution.</p>
 <h2 id="8-conclusion">8. Conclusion</h2>
-<p>The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapted to this model producing videos consistently reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.</p>
+<p>The results indicate engagement from viewers is vital for a video to trend on Youtube. For any video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Several categories such as entertainment and howto &amp; style are some of the most popular categories on Youtube allowing most videos to upload through these categories. Many Youtube channels once they reach the trending section are able to stay consitent allowing other their other videos a higher chance of trending. Many Youtube channels adapted to this model producing video content in a similar manner to help reach the trending section. This brings up a flaw within the model of the Youtube trending section. Youtubers are continously producing content which had success within the past contradicting an important aspect of the trending section stating videos are, &ldquo;Ideally, are surprising or novel.&rdquo; Various sucessful channels like ESPN, The Tonight Show, or Netflix are producing videos that are unique but individually very similar to each other. If a Youtuber is seeking consistent views, producing unique videos until one is sucessful will help other videos if the content is similar to the sucessful one. Ultimately, engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.</p>
 <h2 id="81-limitations">8.1 Limitations</h2>
 <p>Although this current work brings substantial analysis and understanding of this topic the model could be improved in several ways. First, the dataset being used is missing various fields that can impact the likelihood of a video will trend such as the number of subscribers a channel has, the amount of people that see the video but do not click on the video, and does that channel promote ads on Youtube for viewers to check out the channel. The number of subscribers is available to scrape but the other two fields are sensitive information not accessible to the public. It can be important to have this information because Youtube can prioritize channels uploading content under categories they want to surface or if they pay Youtube to surface their channel. As stated earlier the dataset being used is a couple of years old and the way Youtube promotes videos could have changed within the time frame. Another limiting factor is the dataset being used only contains videos uploaded within the US meaning it does not account for videos uploaded worldwide. Youtube can prioritize certain content through select regions or Youtube promotes the same content throughout the world. The final limitation of this report was not being able to score Youtube video titles and thumbnails. Within Youtube&rsquo;s criteria for popular videos that appear as clickbait will not trend on Youtube. This entails titles and/or thumbnails must have ratings Youtube scores so it does not allow clickbait to surface. These are various limitations this report faces, however; once this class is over these will be addressed.</p>
 <h2 id="9-acknowledgments">9. Acknowledgments</h2>
@@ -880,7 +904,7 @@ Status: final, Type: Project</p>
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Moshin, Maryam. 10 Youtube Statistics, Oberlo <a href="https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.">https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Moshin, Maryam. 10 Youtube Statistics, Oberlo <a href="https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.">https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.</a>[Accessed Dec 7, 2020] <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>Google Staff, Trending on Youtube, Google. <a href="https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.">https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.</a> [Accessed Oct 15, 2020] <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
