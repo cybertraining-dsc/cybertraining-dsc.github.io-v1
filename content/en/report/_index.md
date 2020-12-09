@@ -42,7 +42,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 ---
 
 *
-  [Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Richard Otten, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
+  [Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
 
 ---
 
