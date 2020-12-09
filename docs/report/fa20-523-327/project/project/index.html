@@ -32,7 +32,7 @@ Abstract The internet has created a revolution for how people connect, understan
 Adam Chai, fa20-523-327 Edit
 Abstract The internet has created a revolution for how people connect, understand topics, and consume information. Today, the consumption of the media is easier than ever. Going onto the internet and finding interesting content takes less than a minute to do. In the already growing industry of amateur or professional video production, Youtube is the go-to platform for viewers and creators to collide.">
 
-<meta itemprop="wordCount" content="2271">
+<meta itemprop="wordCount" content="2447">
 
 
 
@@ -600,7 +600,8 @@ Status: final, Type: Project</p>
 
 <p><strong>Keywords:</strong> youtube, videos, trending, popular, big data, viral, content creation, entertainment</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>This report will be focused on trending Youtube videos. Specifically, it will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who will find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,</p>
+<p>Youtube has two billion monthly active users making it the second-largest social network behind Facebook <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This statistic only accounts for users that login into their Google account while they watch a Youtube video. Hinting, there can be hundreds of millions of more people watching Youtube. Youtube&rsquo;s primary feature during release was to allow anyone to upload videos so the world can watch it. This function has changed drastically throughout the years and turned Youtube into the epicenter for anything to upload a video. Businesses, schools, and even governments are fully invested into Youtube to help promote their content for their respective benefits. Youtube is changing the world by exposing their users to content they would have never experience in person.</p>
+<p>This report will investigate trending Youtube videos. Specifically, the report will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who will find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,</p>
 <ul>
 <li>
 <p>Are appealing to a wide range of viewers</p>
@@ -618,11 +619,11 @@ Status: final, Type: Project</p>
 <p>Ideally, are surprising or novel</p>
 </li>
 </ul>
-<p>but these criterion Youtube has set are not well defined<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtubers to interpret what exactly will allow a video to trend. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealing to a wide audience is difficult. It takes enormous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.</p>
+<p>but these criterion Youtube has set are not well defined<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Meaning, the determinants and weights for how a Youtube video will trend will not be explicitly stated and it is up for Youtubers to interpret what exactly will allow their video to trend. In fact, Youtubers have argued the loose standard Youtube created is not true at all. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealing to a wide audience is difficult. It takes enormous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate an entertaining video.</p>
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
-<p>After reviewing other background literature and works from other authors within this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. These findings can still be helpful and lead this research in the right direction.</p>
+<p>After reviewing other background literature and works from other authors within this field, many people have ventured into how a video will be popular on Youtube. Most findings online consits of analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. A couple of these findings can still be helpful and lead this research in the right direction.</p>
 <h2 id="3-choice-of-data-set">3. Choice of Data-set</h2>
-<p>To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. The dataset was retrieved from the popular data science website, Kaggle. The dataset chosen is one of the most popular datasets available on Kaggle and many people have analyzed it. The dataset is known for being readable and having a high usability score.</p>
+<p>To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Meaning all videos within the dataset are uploaded from the US and reached the trending section on Youtube. The dataset was retrieved from the popular data science website, Kaggle. The dataset chosen is one of the most popular datasets available on Kaggle and many people have analyzed it. The dataset is known for being readable and having a high usability score.</p>
 <p>The Trending Youtube dataset contains 40,949 entries and 16 labels covering the basic information of a trending Youtube video.</p>
 <table>
 <thead>
@@ -703,12 +704,12 @@ Status: final, Type: Project</p>
 <p>All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. Pandas and Datetime are used for data preprocessing.</p>
 <p>To begin there are several labels which can be taken out of the model as they do not appear relevant or cannot be run through the model:</p>
 <ul>
-<li>video_id: unique identifier for each video not necessary to use</li>
-<li>title: cannot be translated into a numerical value</li>
-<li>channel_title: cannot be translated into a numerical value</li>
-<li>tags: many tags appear irrelevant to the actual video therefore this will be taken out</li>
+<li>video_id: this label is unique identifier for each video not necessary to use</li>
+<li>title: could not be translated into a numerical value</li>
+<li>channel_title: could not be translated into a numerical value</li>
+<li>tags: many tags appear to be irrelevant to the actual video therefore this will be taken out</li>
 <li>thumbnail_link: cannot be run through the model</li>
-<li>description: irrelevant for most videos, does not add value descriptions it appears to promote channel and sponsors</li>
+<li>description: irrelevant for most videos, does not add value descriptions it appears to promote their channel and sponsors</li>
 </ul>
 <p>To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for empty descriptions. After removing descriptions from the dataset duplicates will no longer be an issue.</p>
 <p>Several labels need to be converted into an integer so they can be run through the model:</p>
@@ -736,8 +737,8 @@ Status: final, Type: Project</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure2.png" alt="Figure 2"></p>
 <p><strong>Figure 2:</strong> Converting boolean variables into 1 or 0</p>
 <h2 id="5-model">5. Model</h2>
-<p>The model built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with a tree-like structure since there is an unlimited number of layers, the decision tree can achieve high accuracy and cause an overfitting problem. Random Forest will randomly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
-<p>To begin model creation the 80/20, Train/Test Ratio will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrepancy between a model and actual data <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearson&rsquo;s correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. A value of one indicates a strong positive relationship whereas a negative one indicates a strong negative relationship.</p>
+<p>The model built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with a tree-like structure since there is an unlimited number of layers, the decision tree can achieve high accuracy and cause an overfitting problem. Random Forest will randomly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>To begin model creation the 80/20, Train/Test Ratio will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrepancy between a model and actual data <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearson&rsquo;s correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. A value of one indicates a strong positive relationship whereas a negative one indicates a strong negative relationship.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure3.png" alt="Figure 3"></p>
 <p><strong>Figure 3:</strong> Pearson&rsquo;s Correlation Graph</p>
 <p>When looking at the model it is clear there is a high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell scores around .9.</p>
@@ -811,7 +812,7 @@ Status: final, Type: Project</p>
 </tr>
 </tbody>
 </table>
-<p>The full list of category IDs can be found <a href="https://gist.github.com/dgp/1b24bf2961521bd75d6c">HERE</a> <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<p>The full list of category IDs can be found <a href="https://gist.github.com/dgp/1b24bf2961521bd75d6c">HERE</a> <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
 <p>Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.</p>
 <table>
 <thead>
@@ -864,7 +865,7 @@ Status: final, Type: Project</p>
 </tbody>
 </table>
 <h2 id="7-benchmarks">7. Benchmarks</h2>
-<p>The performance measures for this program were done through Cloudmesh StopWatch and Benchmark<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. The instances where benchmark was measured include loading the dataset, data preparation, timing each model, and the overall code execution.</p>
+<p>The performance measures for this program were done through Cloudmesh StopWatch and Benchmark<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>. The instances where benchmark was measured include loading the dataset, data preparation, timing each model, and the overall code execution.</p>
 <p><img src="https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure7.png" alt="Figure 7"></p>
 <p><strong>Figure 7:</strong> Benchmarks</p>
 <p>When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the number of labels there are in the model there is a 62.5% increase in time for execution.</p>
@@ -879,28 +880,31 @@ Status: final, Type: Project</p>
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Google Staff, Trending on Youtube, Google. <a href="https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.">https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.</a> [Accessed Oct 15, 2020] <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Moshin, Maryam. 10 Youtube Statistics, Oberlo <a href="https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.">https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <a href="https://www.kaggle.com/datasnaek/youtube-new">https://www.kaggle.com/datasnaek/youtube-new</a> [Accessed Oct 15, 2020] <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Google Staff, Trending on Youtube, Google. <a href="https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.">https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.</a> [Accessed Oct 15, 2020] <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Li. Yuping, Eng. Kent, Zhang. Liqian, YouTube Videos Prediction: Will this video be popular?, Stanford <a href="http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf">http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf</a> [Accessed Oct 20, 2020] <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <a href="https://www.kaggle.com/datasnaek/youtube-new">https://www.kaggle.com/datasnaek/youtube-new</a> [Accessed Oct 15, 2020] <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>Pradeep, Gulipalli, The Pareto Principle for Data Scientist, KDnuggets. <a href="https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html">https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html</a> [Accessed Dec 5, 2020] <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Li. Yuping, Eng. Kent, Zhang. Liqian, YouTube Videos Prediction: Will this video be popular?, Stanford <a href="http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf">http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf</a> [Accessed Oct 20, 2020] <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Statistics How Staff, Explained Variance Variation, StatisticsHowTo. <a href="https://www.statisticshowto.com/explained-variance-variation/">https://www.statisticshowto.com/explained-variance-variation/</a> [Accessed Dec 5, 2020] <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Pradeep, Gulipalli, The Pareto Principle for Data Scientist, KDnuggets. <a href="https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html">https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html</a> [Accessed Dec 5, 2020] <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>Statistics How Staff, Correlation Coefficient Formula, StatsticsHowTo. <a href="https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/">https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/</a> [Accessed Dec 6, 2020] <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Statistics How Staff, Explained Variance Variation, StatisticsHowTo. <a href="https://www.statisticshowto.com/explained-variance-variation/">https://www.statisticshowto.com/explained-variance-variation/</a> [Accessed Dec 5, 2020] <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p>Prathap, Dinesh. Youtube api video category list, Github. <a href="https://gist.github.com/dgp/1b24bf2961521bd75d6c">https://gist.github.com/dgp/1b24bf2961521bd75d6c</a> [Accessed Dec 7, 2020] <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Statistics How Staff, Correlation Coefficient Formula, StatsticsHowTo. <a href="https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/">https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/</a> [Accessed Dec 6, 2020] <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
-<p>Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <a href="https://github.com/cloudmesh/cloudmesh-common">https://github.com/cloudmesh/cloudmesh-common</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Prathap, Dinesh. Youtube api video category list, Github. <a href="https://gist.github.com/dgp/1b24bf2961521bd75d6c">https://gist.github.com/dgp/1b24bf2961521bd75d6c</a> [Accessed Dec 7, 2020] <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <a href="https://github.com/cloudmesh/cloudmesh-common">https://github.com/cloudmesh/cloudmesh-common</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

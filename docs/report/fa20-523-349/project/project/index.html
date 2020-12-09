@@ -22,15 +22,15 @@
 
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
- comments have been send to piazza   Jiayu Li, fa20-523-349 Edit  Abstract The IndyCar Series is the premier level of open-wheel racing in North America. Computing System and Data analytics is critical to the game, both in improving the performance of the team to make it faster and in helping the race control to make it safer." />
+ tables and figures have no caption is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper https://arxiv.org/abs/2010.01707. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-349/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
- comments have been send to piazza   Jiayu Li, fa20-523-349 Edit  Abstract The IndyCar Series is the premier level of open-wheel racing in North America. Computing System and Data analytics is critical to the game, both in improving the performance of the team to make it faster and in helping the race control to make it safer.">
+ tables and figures have no caption is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper https://arxiv.org/abs/2010.01707. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me.">
 
-<meta itemprop="wordCount" content="1680">
+<meta itemprop="wordCount" content="1804">
 
 
 
@@ -38,7 +38,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
- comments have been send to piazza   Jiayu Li, fa20-523-349 Edit  Abstract The IndyCar Series is the premier level of open-wheel racing in North America. Computing System and Data analytics is critical to the game, both in improving the performance of the team to make it faster and in helping the race control to make it safer."/>
+ tables and figures have no caption is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper https://arxiv.org/abs/2010.01707. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me."/>
 
 
 
@@ -574,7 +574,8 @@
 <a href="https://github.com/cybertraining-dsc/fa20-523-349/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-349/workflows/Status/badge.svg" alt="Status"></a>
 Status: final, Type: Project</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> comments have been send to piazza</li>
+<li><input checked="" disabled="" type="checkbox"> tables and figures have no caption</li>
+<li><input checked="" disabled="" type="checkbox"> is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper <a href="https://arxiv.org/abs/2010.01707">https://arxiv.org/abs/2010.01707</a>. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me. Therefore, there is no need to explain the relationship.)</li>
 </ul>
 <ul>
 <li>Jiayu Li, fa20-523-349</li>
@@ -623,7 +624,7 @@ We aim to predict the leading car in the future through telemetry data generated
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
 <p>In many real-world applications, data is captured over the course of time, constituting a Time-Series. Time-Series often contain temporal dependencies that cause two otherwise identical points of time to belong to different classes or predict different behavior. This characteristic generally increases the difficulty of analysing them.
 The traditional statistical learning model (Naive Bayes, SVM, Simple Neural Networks) is difficult to deal with the problem of time series prediction, since the model is unable to understand the time-series dependence of data. Traditional time series prediction models such as autoregressive integrated moving average (ARIMA) can only deal with linear time series with certain periodicity. The anomaly events and human strategies in the racing competition make these methods no longer applicable. Therefore, time series prediction models (RNN, GRU, LSTM, etc.) based on deep learning are more suitable for solving such problems.
-Previous racing prediction attempts such as <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.</p>
+Previous racing prediction attempts such as <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.</p>
 <h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
 <p>There are two main sources of data: One is the game record from 2013 to 2019. The other is telemetry data for 2017 and 2018.</p>
 <p>The race record only includes the time spent in each section and does not include the precise location of every two cars at a certain point in time.
@@ -632,6 +633,7 @@ In order to expand the training data set, we used interpolation to convert ordin
 If we assume that the speed of the car within each section does not change, then the position of the car at time T can be calculated as follows:
 LapDistance(T) \approx L \frac{T-T_1}{T_2 - T_1} . T_1 and T_2 are the start and end time of the current section. L=2.5 miles is the length of the section.</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled6.png" alt="alt text"></p>
+<p><strong>Table 1</strong> : Indy 500 data sets</p>
 <h3 id="structure-of-the-log-file">Structure of the log file</h3>
 <p>The Multi-Loop Protocol is designed to deliver specific dynamic and static data that is set up and produced by the INDYCAR timing system. This is accomplished by serially streaming data that is broken down into different record sets. This information includes but is not limited to the following:</p>
 <ul>
@@ -649,6 +651,7 @@ INDYCAR formats for specific fields not defined in the AMB document.</p>
 <p>Record Description:</p>
 <p>Every record starts with a header and ends with a CR/LF. Inside the record, the fields are separated by a &ldquo;broken bar&rdquo; symbol 0xA6 (not to be confused with the pipe symbol 0x7C). The length of a record is not defined and can therefore be more than 256 characters. The data specific to each record Command is contained between the header and CR/LF.
 <img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled8.png" alt="alt text"></p>
+<p><strong>Figure 1</strong> : Indy 500 track map</p>
 <h2 id="4-methodology">4. Methodology</h2>
 <h3 id="data-preprocessing">Data preprocessing</h3>
 <p>There are two main sources of data: One is the game record from 2013 to 2019. The other is telemetry data for 2017 and 2018.</p>
@@ -673,15 +676,18 @@ One is its current position: the car that is currently leading has a greater pro
 </ul>
 <p>Time series prediction problems are a difficult type of predictive modeling problem. Unlike regression predictive modeling, time series also adds the complexity of a sequence dependence among the input variables. A powerful type of neural network designed to handle sequence dependence is called recurrent neural networks. The Long Short-Term Memory network or LSTM network is a type of recurrent neural network used in deep learning because very large architectures can be successfully trained.
 <img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled5.png" alt="alt text"></p>
+<p><strong>Figure 2</strong> : Work flow and model structure</p>
 <h2 id="5-inference">5. Inference</h2>
 <p>Table shows the experimental results, which verify our hypothesis that the time series prediction model based on deep learning obtained the highest accuracy. Although the LSTM model achieves the highest accuracy, its advantages are not as obvious as RankNet. This is because the telemetry data of racing cars is non-public, and the data available for training are limited.</p>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled4.png" alt="alt text"></p>
+<p><strong>Table 2</strong> : LSTM model parameters</p>
 <p>According to the experimental results in Table 6, we draw the following conclusions:</p>
 <ol>
 <li>The LSTM model has higher accuracy in time series forecasting.</li>
 <li>Limited by the size of the training data set (only the telemetry data for 2 games is available), the accuracy improvement obtained by LSTM is not as obvious as RankNet.</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/cybertraining-dsc/fa20-523-349/main/project/images/Untitled7.png" alt="alt text"></p>
+<p><strong>Table 3</strong> : Model accuracy comparison</p>
 <h2 id="6-conclusion">6. Conclusion</h2>
 <p>The prediction problem of racing cars has the characteristics of non-linearity, non-periodicity, randomness, and timing dependence. The traditional statistical learning model (Naive Bayes, SVM, Simple Neural Networks) is difficult to deal with the problem of time series prediction, since the model is unable to understand the time-series dependence of data. Traditional time series prediction models such as ARMA / ARIMA can only deal with linear time series with certain periodicity. The anomaly events and human strategies in the racing competition make these methods no longer applicable. Therefore, time series prediction models (RNN, GRU, LSTM, etc.) based on deep learning are more suitable for solving such problems.</p>
 <h2 id="7-acknowledgements">7. Acknowledgements</h2>
@@ -701,6 +707,9 @@ One is its current position: the car that is currently leading has a greater pro
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>T.  Tulabandhula.Interactions  between  learning  and  decision  making.PhD Thesis, Massachusetts Institute of Technology, 2014. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Peng B, Li J, Akkas S, Wang F, Araki T, Yoshiyuki O, Qiu J. Rank Position Forecasting in Car Racing. arXiv preprint arXiv:2010.01707. 2020 Oct 4. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
