@@ -41,9 +41,17 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 ---
 
-*
+* [<i class="fas fa-edit"></i>](https://github.com/cloudmesh/cloudmesh-openapi)
   [Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
-
+[![image](https://img.shields.io/pypi/v/cloudmesh-openapi.svg)](https://pypi.org/project/cloudmesh-openapi/)
+[![Python](https://img.shields.io/pypi/pyversions/cloudmesh-openapi.svg)](https://pypi.python.org/pypi/cloudmesh-openapi)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/cloudmesh/cloudmesh-openapi/blob/main/LICENSE)
+[![Format](https://img.shields.io/pypi/format/cloudmesh-openapi.svg)](https://pypi.python.org/pypi/cloudmesh-openapi)
+[![Status](https://img.shields.io/pypi/status/cloudmesh-openapi.svg)](https://pypi.python.org/pypi/cloudmesh-openapi)
+[![Travis](https://travis-ci.com/cloudmesh/cloudmesh-openapi.svg?branch=main)](https://travis-ci.com/cloudmesh/cloudmesh-openapi)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cloudmesh/cloudmesh-openapi)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/cloudmesh/cloudmesh-openapi)
+  
 ---
 
 #### Sports
