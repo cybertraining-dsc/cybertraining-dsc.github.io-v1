@@ -5691,74 +5691,6 @@ Here are some examples of how AI helps clinical decision [6]:&lt;/p&gt;
     
     <item>
       <title>Report: </title>
-      <link>/report/fa20-523-313/broken/assignment5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/fa20-523-313/broken/assignment5/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;homework-5&#34;&gt;Homework 5&lt;/h1&gt;
-&lt;h2 id=&#34;student-name-fauzan-isnaini&#34;&gt;Student Name: Fauzan Isnaini&lt;/h2&gt;
-&lt;h1 id=&#34;predicting-stock-market-recovery-in-indonesia-after-covid-19-crash&#34;&gt;Predicting Stock Market Recovery in Indonesia after COVID-19 Crash&lt;/h1&gt;
-&lt;h2 id=&#34;team&#34;&gt;Team&lt;/h2&gt;
-&lt;p&gt;I will conduct this study by myself.&lt;/p&gt;
-&lt;h2 id=&#34;topic&#34;&gt;Topic&lt;/h2&gt;
-&lt;p&gt;The COVID-19 Pandemic is not just a crisis in the public health sector.
-It also impacts unemployment rates, business revenues, and mass
-psychology, which in the end lead to crashes in global stock markets.
-While some stock indexes like the Dow Jones Industrial Average (DJIA)
-and NASDAQ Composite already recovered, the Indonesian Stock Market
-Index (IDX Composite) is still far below its price before the pandemic.
-Some of the possible causes are: 1. Foreign investments represent about
-50% of the total fund in the IDX stock exchange. In a pandemic
-situation, foreign investors might choose to withdraw their stocks and
-find another safer country to invest in. 2. Unpredictability of the
-pandemic situation drives investors to reallocate their funds in safer
-assets, such as cash, gold, or USD. 3. Changes in the macroeconomic
-situation, such as unemployment rate, Indonesian Rupiah (IDR) exchange
-rate, and interest rate. 4. Changes in the consumer buying power also
-change the business revenues, thus changing fundamental data. 5. Mass
-psychology of investors that the stock market is not safe in this
-pandemic situation, holding them from returning to the stock market To
-predict the time needed for IDX Composite to recover, there are two
-indicators that can be utilized: 1. Fundamental indicators, which
-represent the financial aspect. This can be in the form of macroeconomic
-data and a company financial report 2. Technical indicators, which
-represent the mass psychology of investors. This can be obtained from
-news, social media, or statistical analysis of how the stock market
-moves&lt;/p&gt;
-&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
-&lt;p&gt;In predicting the outcome, I will utilize these datasets: 1. Yahoo
-Finance (finance.yahoo.com). Yahoo Finance contains a lot of both
-fundamental and technical data, and they are free of charge. 2. Twitter
-(twitter.com). I can conduct a content analysis on Twitter to represent
-the mass psychology regarding the economic condition in Indonesia 3.
-News channel. I can also utilize data crawler software to conduct
-content analysis to compare positive and negative news in Indonesia. 4.
-Third party stock data feeder. There are some third parties who provide
-more comprehensive stock data on a subscription basis. This is another
-option if the above datasets are not sufficient&lt;/p&gt;
-&lt;h2 id=&#34;what-needs-to-be-done-to-get-a-great-grade&#34;&gt;What needs to be done to get a great grade&lt;/h2&gt;
-&lt;p&gt;I will build a Python program to learn these data and generate a
-prediction on when the IDX Composite will recover. I will also consider
-the recovery rate of each of these sectors: 1. Mining 2. Agriculture 3.
-Finance 4. Infrastructure 5. Miscellaneous Industries 6. Consumers&amp;rsquo;
-Goods 7. Property 8. Trading 9. Basic Industry While they are
-incorporated in the IDX Composite, the recovery rate of each sector may
-be different because of their respective nature of the industry. For
-example, consumer&amp;rsquo;s goods may be impacted less in this COVID-19
-pandemic, thus resulting in a faster recovery. On the other hand, the
-property sector might be the most impacted sector in this pandemic, thus
-resulting in a long time to recover. The program will be able to learn
-continuously, so if new data is available, it can renew the analysis and
-give a more accurate prediction.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
       <link>/report/fa20-523-313/project/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5920,6 +5852,20 @@ Further improvement may also be done on our model. We only used price data and M
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/fa20-523-313/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/fa20-523-313/test/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;this-is-testmd&#34;&gt;This is Test.md&lt;/h2&gt;
 
       </description>
     </item>

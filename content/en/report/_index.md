@@ -256,6 +256,13 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 ---
 
+* {{% addreportonly
+  title="Correlation between game genere and national sales, as well as general analysis of the video games industry "
+  author="Linde Aleksandr"
+  hid="fa20-523-340" %}}
+
+---
+
 
 #### Politics
 
@@ -316,13 +323,6 @@ Sport:
   title="How Big Data has Affected Statisicts in Baseball"
   author="Hunter Holder"
   hid="fa20-523-328" %}}
-
----
-
-* {{% addreportonly
-  title="Correlation between game genere and national sales, as well as general analysis of the video games industry "
-  author="Linde Aleksandr"
-  hid="fa20-523-340" %}}
 
 ---
 

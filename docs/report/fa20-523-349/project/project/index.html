@@ -22,13 +22,13 @@
 
 <title>Cybertraining</title><meta property="og:title" content="" />
 <meta property="og:description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
- tables and figures have no caption is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper https://arxiv.org/abs/2010.01707. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me." />
+ please use proper urls in the refernce section The sentence &ldquo;Previous racing prediction attempts such as 1234 could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.&rdquo; is insufficient." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/report/fa20-523-349/project/project/" />
 <meta property="og:site_name" content="Cybertraining" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
- tables and figures have no caption is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper https://arxiv.org/abs/2010.01707. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me.">
+ please use proper urls in the refernce section The sentence &ldquo;Previous racing prediction attempts such as 1234 could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.&rdquo; is insufficient.">
 
 <meta itemprop="wordCount" content="1804">
 
@@ -38,7 +38,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Rank Forecasting in Car Racing   Status: final, Type: Project
- tables and figures have no caption is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper https://arxiv.org/abs/2010.01707. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me."/>
+ please use proper urls in the refernce section The sentence &ldquo;Previous racing prediction attempts such as 1234 could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.&rdquo; is insufficient."/>
 
 
 
@@ -463,13 +463,13 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313brokenassignment5" href="/report/fa20-523-313/broken/assignment5/"></a>
-      
-      
-      
-      
-      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313projectproject" href="/report/fa20-523-313/project/project/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-reportfa20-523-313test" href="/report/fa20-523-313/test/"></a>
       
       
     </li>
@@ -574,8 +574,8 @@
 <a href="https://github.com/cybertraining-dsc/fa20-523-349/actions"><img src="https://github.com/cybertraining-dsc/fa20-523-349/workflows/Status/badge.svg" alt="Status"></a>
 Status: final, Type: Project</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> tables and figures have no caption</li>
-<li><input checked="" disabled="" type="checkbox"> is the arXiv paper cited and relationship explained? (Jiayu&rsquo;s response: Have added the arXiv paper to the reference list. The current version is not a retelling of the arXiv paper <a href="https://arxiv.org/abs/2010.01707">https://arxiv.org/abs/2010.01707</a>. Instead, it uses different methods and experiments on different data sets. The methods and experiments in this report are done independently by me. Therefore, there is no need to explain the relationship.)</li>
+<li><input disabled="" type="checkbox"> please use proper urls in the refernce section</li>
+<li><input disabled="" type="checkbox"> The sentence &ldquo;Previous racing prediction attempts such as <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.&rdquo; is insufficient. Relationship to arxiv  paper must be in detail explained</li>
 </ul>
 <ul>
 <li>Jiayu Li, fa20-523-349</li>
@@ -615,7 +615,7 @@ Status: final, Type: Project</p>
 
 <p><strong>Keywords:</strong> Time series forecasting, deep learning.</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Indy500 is the premier event of the IndyCar series<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps. The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively. A local communication network broadcasts race information to all the teams, following a general data exchange protocol.
+<p>Indy500 is the premier event of the IndyCar series<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Each year, 33 cars compete on a 2.5-mile oval track for 200 laps. The track is split into several sections or timeline. E.g., SF/SFP indicate the start and finish line on the track or on the pit lane, respectively. A local communication network broadcasts race information to all the teams, following a general data exchange protocol.
 We aim to predict the leading car in the future through telemetry data generated in real time during the race. Given a prediction step t_p, and a time point t_0 in the game, we predict the following two events:</p>
 <ol>
 <li>Whether the currently leading car continue to lead at time t_0 + t_p.</li>
@@ -624,7 +624,7 @@ We aim to predict the leading car in the future through telemetry data generated
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
 <p>In many real-world applications, data is captured over the course of time, constituting a Time-Series. Time-Series often contain temporal dependencies that cause two otherwise identical points of time to belong to different classes or predict different behavior. This characteristic generally increases the difficulty of analysing them.
 The traditional statistical learning model (Naive Bayes, SVM, Simple Neural Networks) is difficult to deal with the problem of time series prediction, since the model is unable to understand the time-series dependence of data. Traditional time series prediction models such as autoregressive integrated moving average (ARIMA) can only deal with linear time series with certain periodicity. The anomaly events and human strategies in the racing competition make these methods no longer applicable. Therefore, time series prediction models (RNN, GRU, LSTM, etc.) based on deep learning are more suitable for solving such problems.
-Previous racing prediction attempts such as <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.</p>
+Previous racing prediction attempts such as <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> could not make real-time predictions because the data they used was based on Lap, that is, new data would only be generated when the car passed a specific position. And we will try to use high-frequency telemetry data to make predictions.</p>
 <h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
 <p>There are two main sources of data: One is the game record from 2013 to 2019. The other is telemetry data for 2017 and 2018.</p>
 <p>The race record only includes the time spent in each section and does not include the precise location of every two cars at a certain point in time.
@@ -697,19 +697,19 @@ One is its current position: the car that is currently leading has a greater pro
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>IndyCar Dataset.https://racetools.com/logfiles/IndyCar/. visited  on 04/15/2020 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>M4 Competition.https://forecasters.org/resources/time-series-data/m4-competition/. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>M4 Competition.https://forecasters.org/resources/time-series-data/m4-competition/. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>C. L. W. Choo.   Real-time decision making in motorsports: analytics forimproving  professional  car  race  strategy, PhD  Thesis,  MassachusettsInstitute of Technology, 2015. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>C. L. W. Choo.   Real-time decision making in motorsports: analytics forimproving  professional  car  race  strategy, PhD  Thesis,  MassachusettsInstitute of Technology, 2015. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>T.  Tulabandhula.Interactions  between  learning  and  decision  making.PhD Thesis, Massachusetts Institute of Technology, 2014. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>T.  Tulabandhula.Interactions  between  learning  and  decision  making.PhD Thesis, Massachusetts Institute of Technology, 2014. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Peng B, Li J, Akkas S, Wang F, Araki T, Yoshiyuki O, Qiu J. Rank Position Forecasting in Car Racing. arXiv preprint arXiv:2010.01707. 2020 Oct 4. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Peng B, Li J, Akkas S, Wang F, Araki T, Yoshiyuki O, Qiu J. Rank Position Forecasting in Car Racing. arXiv preprint arXiv:2010.01707. 2020 Oct 4. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>IndyCar Dataset.https://racetools.com/logfiles/IndyCar/. visited  on 04/15/2020 <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
