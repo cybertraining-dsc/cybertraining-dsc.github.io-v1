@@ -304,7 +304,7 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 
 
-## Report and Project In Progress
+## Report or Project In Progress
 
 The following reports need to be updated to be reviewed.
 Make sure you make significant progress and that all checks pass
