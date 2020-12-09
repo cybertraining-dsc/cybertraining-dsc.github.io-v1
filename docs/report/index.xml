@@ -263,122 +263,10 @@ function.&lt;/p&gt;
     
     <item>
       <title>Report: </title>
-      <link>/report/cloudmesh-openapi/docker/ubuntu19.10/todo/</link>
+      <link>/report/cloudmesh-openapi/deprecated/paper/results/install/cloud_lscpu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/report/cloudmesh-openapi/docker/ubuntu19.10/todo/</guid>
-      <description>
-        
-        
-        &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
-currently everything&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
-This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;support both ways&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;leverage cmsd
-we have told the class that we have cmsd taht starts up cloudmesh in
-a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/cloudmesh-openapi/docker/ubuntu20.04-sklearn/todo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/cloudmesh-openapi/docker/ubuntu20.04-sklearn/todo/</guid>
-      <description>
-        
-        
-        &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;THIS IS JUST THE SKELETON AND HAS NOT BEEN RUN ONCE IT HAS BUGS&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;THIS HAS NOT YET THE SKLERAN START STOP&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
-currently everything&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
-This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;support both ways&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;leverage cmsd
-we have told the class that we have cmsd taht starts up cloudmesh in
-a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/cloudmesh-openapi/docker/ubuntu20.04/todo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/cloudmesh-openapi/docker/ubuntu20.04/todo/</guid>
-      <description>
-        
-        
-        &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;THIS IS JUST THE SKELETON AND HAS NOT BEEN RUN ONCE IT HAS BUGS&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
-currently everything&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
-This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;support both ways&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;leverage cmsd
-we have told the class that we have cmsd taht starts up cloudmesh in
-a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Report: </title>
-      <link>/report/cloudmesh-openapi/paper/results/install/cloud_lscpu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/report/cloudmesh-openapi/paper/results/install/cloud_lscpu/</guid>
+      <guid>/report/cloudmesh-openapi/deprecated/paper/results/install/cloud_lscpu/</guid>
       <description>
         
         
@@ -505,6 +393,118 @@ Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtr
                                   nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti
                                   ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat md_clear arch_capabilities
 &lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/docker/ubuntu19.10/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/docker/ubuntu19.10/todo/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
+currently everything&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
+This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;support both ways&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;leverage cmsd
+we have told the class that we have cmsd taht starts up cloudmesh in
+a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/docker/ubuntu20.04-sklearn/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/docker/ubuntu20.04-sklearn/todo/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;THIS IS JUST THE SKELETON AND HAS NOT BEEN RUN ONCE IT HAS BUGS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;THIS HAS NOT YET THE SKLERAN START STOP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
+currently everything&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
+This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;support both ways&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;leverage cmsd
+we have told the class that we have cmsd taht starts up cloudmesh in
+a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Report: </title>
+      <link>/report/cloudmesh-openapi/docker/ubuntu20.04/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/report/cloudmesh-openapi/docker/ubuntu20.04/todo/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;THIS IS JUST THE SKELETON AND HAS NOT BEEN RUN ONCE IT HAS BUGS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;make clean: only delete the artifacts created here, the clean wipes
+currently everything&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;when using this in consecutive order, would cms init not wipe out the data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;should we not mount the .cloudmesh and other data dire into the conatiner.
+This way we can use the host system for developments. Maybe we need to&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;support both ways&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;leverage cmsd
+we have told the class that we have cmsd taht starts up cloudmesh in
+a container. Develop a new directory docker-cmsd and use that&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
@@ -1023,6 +1023,15 @@ Curley brackets must use two in README-source.md&lt;/p&gt;
 &lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/format/cloudmesh-openapi.svg&#34; alt=&#34;Format&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://pypi.python.org/pypi/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://img.shields.io/pypi/status/cloudmesh-openapi.svg&#34; alt=&#34;Status&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi&#34;&gt;&lt;img src=&#34;https://travis-ci.com/cloudmesh/cloudmesh-openapi.svg?branch=main&#34; alt=&#34;Travis&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;publication&#34;&gt;Publication&lt;/h2&gt;
+&lt;p&gt;A draft paper is available at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf&#34;&gt;https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The source to the paper is at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cyberaide/paper-openapi&#34;&gt;https://github.com/cyberaide/paper-openapi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;We recommend Python 3.8.2 Python or newer.&lt;/li&gt;

@@ -93,6 +93,13 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 ---
 
+* {{% addreportonly
+  title="How Big Data has Affected Statisicts in Baseball"
+  author="Hunter Holden"
+  hid="fa20-523-328" %}}
+
+---
+
 
 #### Environment
 
@@ -324,13 +331,6 @@ Sport:
   title="Analysis of 2020 MLB Season Statistics"
   author="Edward Hribal"
   hid="fa20-523-345" %}}
-
----
-
-* {{% addreportonly
-  title="How Big Data has Affected Statisicts in Baseball"
-  author="Hunter Holder"
-  hid="fa20-523-328" %}}
 
 ---
 
