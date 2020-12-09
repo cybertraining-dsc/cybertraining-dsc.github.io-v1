@@ -289,12 +289,11 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 
 
-## Report and Project Proposals
+## Report and Project In Progress
 
-The following reports need to be updated to be considered for
-additional review. Make sure you make significant progress.
-They are listed here as it makes it easier for us to monitor them
-seperately.
+The following reports need to be updated to be reviewed.
+Make sure you make significant progress and that all checks pass
+green.
 
 Health and society:
 
