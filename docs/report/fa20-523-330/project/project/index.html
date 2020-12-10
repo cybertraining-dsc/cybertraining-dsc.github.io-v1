@@ -36,7 +36,7 @@ Abstract As the world begins to utilize online service and stores at greater cap
 Oluwatobi Bolarin, bolarint@iu.edu, fa20-523-330, Edit
 Abstract As the world begins to utilize online service and stores at greater capacity it becomes a greater priority to increase the efficiency of the various processes that are required for online stores to work effectively.">
 
-<meta itemprop="wordCount" content="672">
+<meta itemprop="wordCount" content="1262">
 
 
 
@@ -609,14 +609,18 @@ Status: WIP, Type: Project</p>
 
 <p><strong>Keywords:</strong> economics, Brazil, money, shipping, Amazon, density</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>Brazil has the largest E-commerce market in Latin America. &ldquo;It has been estimated that the country accounts for over one third of the region&rsquo;s ecommerce market&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. However, the growth of the potential e-commerce giant has problems that could potential stunt its long term growth. In this analysis will attempt to better illustrate a better picture to determine more partical ways to increase e-commerce growth in Brazil and possibile by extention this method can be superimposed on other regions of the world.</p>
+<p>Brazil has the largest E-commerce market in Latin America. &ldquo;It has been estimated that the country accounts for over one third of the region&rsquo;s ecommerce market&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. However, the growth of the potential e-commerce giant has problems that could potentially stunt its long-term growth. The concentration of this effort is to determine the areas the money is spent; however, this topic should expand to other countries and nations to determine locations to stores specific products. After amazon, this can be applied to many online stores or stores that have so form of digital commerce. Due to the nature of spending, this method could also be used to determine what regions of a country are in need of what items when the residents are in poverty. The amount of money that is spent can also be a strong indicator about what trends are possible and what type of goods people are willing to spend their income on. Part of the reason why this is important is due is combating shortages. The COVID pandemic showed that working global supply chains to their maximum at all times isn’t just a bad idea, it is detrimental to the citizens of their respective countries and by extension the world. Supply chains that are constantly working to their maximum capacity lives no room for emergency supplies that could be utilized in live saving applications. Examples would be masks, hospital beds, protective equipment, etc.</p>
 <h2 id="2-background-research-and-previous-work">2. Background Research and Previous Work</h2>
+<p>The study of economics is understanding the best way how to deal with scarcity. Earning a bachelor’s degree in economics didn’t feel satisfying enough due to my love for technology. Determine how resources are allocated is one of the most important decision that can be made in our modern world regardless of our region, race, occupations, or economical class.</p>
+<p>Working in restaurants for 7 years working through undergrad the opportunity to learn numerous social and management skills. However, there would always be never ending problems present thing themselves through the day. One of the most painful ones would consistently be the fact that we would run out of things. Surplus were hardly considered acceptable and when there was a shortage the workers would pay the price. This would be understandable in places that just opened for less than a year, however in restaurants that had been in business for a while it was inexcusable. People can reason that, it was a busy day so we didn’t know that it would sell out, that a product went bad that wasn’t counted before, or someone made an ordering error. However, none of those excuses are valid in a place that has been running for a while because they should have an estimate about how much they should be growing and how much extra product they should by to ensure the fact that they don’t run out.</p>
+<p>This is a similar issue that supply chains around the world had, except, with one problem you would have to deal with numerous angry customers and the other it was a matter of lives. This matter should increase the emphasis that we should have more relax supply chains in our world then over-worked ones. It seems that it is in worlds best interest that we start formatting our data in a more readable way for ever one to see a understand so we can do a better job of managing where we place our resources. Constantly determining what is being done well and what needs to be working on and improved. This analysis will attempt to better illustrate a better picture to determine more practical ways to increase e-commerce growth in Brazil and possible by extension this method can be superimposed on other regions of the world.</p>
 <h2 id="3-choice-of-data-sets">3. Choice of Data-sets</h2>
-<p>After exploring a vast amount of data available, it was best to choose the following dataset in order to analyze Amazon sales data in brazil to get an unbias look at what sells on average.</p>
+<p>After exploring a vast amount of data available, it was best to choose the following two datasets in order to analyze Amazon sales data in brazil to get an unbiased look at what sells on average.</p>
 <ol>
-<li><a href="https://www.kaggle.com/olistbr/brazilian-ecommerce?select=olist_products_dataset.csv">Amazon Sales Data</a> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li>Amazon Sales Data(<a href="https://www.kaggle.com/olistbr/brazilian-ecommerce?select=olist_products_dataset.csv)%5B%5E1%5D">https://www.kaggle.com/olistbr/brazilian-ecommerce?select=olist_products_dataset.csv)[^1]</a></li>
 </ol>
-<p>For this project work is done with a dataset of 100,000 that has various amazon orders ranging from basic items to more expensive and complex things. The only limiter is what was being sold on amazon at that point in time. The data set size is only 120.3 MB and markdown will be used to show the findings and the method got to them.</p>
+<p>The two datasets that will speficialy be using in this file will be the “olist_customers_dataset.csv” and the “olist_order_items_dataset.csv”. Both of the datasets are needed for this project because to obtain the location data from customers the zip code of the customer is needed for the olist_customers_dataset.csv dataset and the name of the order and specifically the category that it is in is held in the olist_order_items_dataset.csv dataset.
+For this project work is done with a dataset of 100,000 that has various amazon orders ranging from basic items to more expensive and complex things. The only limiter is what was being sold on amazon at that point in time. The data set size is only 120.3 MB and markdown will be used to show the findings and the method got to them.</p>
 <h2 id="4-methodology">4. Methodology</h2>
 <p>To correctly articulate the scope of what the dataset is measuring and the region that it is as well as when the data was collected for the project. It is also needed to come up with a viable solution for any (if there is) missing data that exists in the data set. Looking into ways that that the different data sheets interact with one another to find any patterns or factors that could exist that aren't otherwise easily seen is needed as well.</p>
 <h2 id="5-inference">5. Inference</h2>
@@ -647,9 +651,6 @@ Status: WIP, Type: Project</p>
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>Navarro, José Gabriel. &ldquo;Topic: E-Commerce in Brazil.&rdquo; Statista, &lt;www.statista.com/topics/4697/e-commerce-in-brazil/&gt;. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p>Olist. &ldquo;Brazilian E-Commerce Public Dataset by Olist.&rdquo; Kaggle, 29 Nov. 2018, &lt;www.kaggle.com/olistbr/brazilian-ecommerce&gt;. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
