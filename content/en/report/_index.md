@@ -34,6 +34,20 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 * [Github](https://github.com/cybertraining-dsc)
 
+For example renderd reports see
+
+* {{% addreport
+  title="Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)"
+  author="Saptarshi Sinha"
+  hid="fa20-523-312" %}}
+
+* {{% addreport
+  title="Detecting Heart Disease using Machine Learning Classification Techniques"
+  author="Ethan Nguyen"
+  hid="fa20-523-309" %}}
+
+
+
 ### Reports and Projects
 
 #### Technology
