@@ -197,6 +197,13 @@ keywords, and refernces. Use footnotes for refernces. Do not use br.
 
 ---
 
+* {{% addreportonly
+  title="Using Big Data to Eliminate Racial Bias in Healthcare"
+  author="Robert Neubauer"
+  hid="fa20-523-304" %}}
+
+---
+
 
 #### Energy
 
@@ -319,13 +326,6 @@ Health and society:
   title="Covid-19 Analysis"
   author="Hany Boles"
   hid="fa20-523-342" %}}
-
----
-
-* {{% addreportonly
-  title="Using Big Data to Eliminate Racial Bias in Healthcare"
-  author="Robert Neubauer"
-  hid="fa20-523-304" %}}
 
 ---
 
