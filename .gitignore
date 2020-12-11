@@ -37,6 +37,8 @@ docs/report/*/project/plan
 docs/report/*/project/project_*
 docs/report/*/report/*.csv
 docs/report/*/report/images/*.PNG
+docs/report/*/report/images/*.JPG
+docs/report/*/report/images/figures
 docs/report/*/report/plan
 docs/report/cloudmesh-openapi/images
 docs/report/cloudmesh-openapi/paper/Makefile
