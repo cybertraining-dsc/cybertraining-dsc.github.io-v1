@@ -330,6 +330,14 @@ Health and society:
 ---
 
 
+* {{% addreportonly
+  title="Big Data Application in the Healthcare Industry"
+  author="Cristian Villanueva, Christina Colon"
+  hid="fa20-523-352" %}}
+
+---
+
+
 Sport:
 
 
@@ -364,5 +372,3 @@ Lifestyle:
   hid="fa20-523-333" %}}
 
 ---
-
-
