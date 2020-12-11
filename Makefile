@@ -41,11 +41,12 @@ pull:
 	cd content/en/report/fa20-523-342; git checkout main; git pull
 	cd content/en/report/fa20-523-343; git checkout main; git pull
 	cd content/en/report/fa20-523-345; git checkout main; git pull
-	cd content/en/report/fa20-523-346; git checkout main; git pull
+	#cd content/en/report/fa20-523-346; git checkout main; git pull
 	cd content/en/report/fa20-523-347; git checkout main; git pull
 	cd content/en/report/fa20-523-348; git checkout main; git pull
 	cd content/en/report/fa20-523-349; git checkout main; git pull
 	cd content/en/report/fa20-523-350; git checkout main; git pull
+	cd content/en/report/fa20-523-352; git checkout main; git pull
 
 view:
 	gopen http://localhost:1313/ 
