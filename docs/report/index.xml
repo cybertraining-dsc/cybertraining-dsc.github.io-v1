@@ -5501,16 +5501,6 @@ Status: final, Type: Project&lt;/p&gt;
         
         
         &lt;h1 id=&#34;aquatic-toxicity-analysis-with-the-aid-of-autonomous-surface-vehicle-asv&#34;&gt;Aquatic Toxicity Analysis with the aid of Autonomous Surface Vehicle (ASV)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; figure refernces must be done with numbers (Response: This has now been addressed for all the 29 figures)&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; do not use below, above &amp;hellip; for figures and tables (Response: This has now been addressed for all the 29 figures)&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Please use references instead of using URLs to cite the work. (Response: Appropriate references have been incorporated.)&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Benchmark the separate parts of your analysis (Response: Addressed in the code, results displayed in section 5.5)&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; verify if you need time on the x axis, datapoints would not allow to relate the points if they are gathered in different time intervals. THis has to be clarified while revieing the original data, (Response: Explained in section 4.2.2.)&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; some plots seem only to be distinguished by the plotstyle but may not be content different. PLease verify (Response: Addressed in the &amp;ldquo;Inference&amp;rdquo; section)&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Extension for project granted till last day of regular semester in December (Response: Not Required)&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; modification of report beyond that granted and expected according to author. (Response: Not Required)&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/workflows/Check%20Report/badge.svg&#34; alt=&#34;Check Report&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/cybertraining-dsc/fa20-523-312/actions&#34;&gt;&lt;img src=&#34;https://github.com/cybertraining-dsc/fa20-523-312/workflows/Status/badge.svg&#34; alt=&#34;Status&#34;&gt;&lt;/a&gt;
 Status: final, Type: Project&lt;/p&gt;
