@@ -231,3 +231,9 @@ This weeks video class went through project questions.
 {{< youtube "qycWtXja8O4" >}}.
 
 The class is formally finished. Please submit your homework and project.
+
+## Week 15
+
+This weeks video class was a technical presentation on "Deep Learning for Images"
+
+{{< youtube "vgUIDZjykH8" >}}.
