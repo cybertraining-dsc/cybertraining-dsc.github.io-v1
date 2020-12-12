@@ -234,6 +234,6 @@ The class is formally finished. Please submit your homework and project.
 
 ## Week 15
 
-This weeks video class was a technical presentation on "Deep Learning for Images"
+This weeks video class was a technical presentation on "Deep Learning for Images". There are [Google Slides](https://docs.google.com/presentation/d/1uMPvKUZDc1O39KdEbsTjsydIiRGZLArt90pI7GPoZjY/edit?usp=sharing)
 
 {{< youtube "vgUIDZjykH8" >}}.
