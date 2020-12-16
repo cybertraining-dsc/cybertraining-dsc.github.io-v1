@@ -187,7 +187,6 @@ For example renderd reports see
 
 #### Lifestyle
 
-
 ---
 
 * {{% addreport
@@ -201,6 +200,13 @@ For example renderd reports see
 	title="Trending Youtube Videos Analysis"
 	author="Adam Chai"
 	hid="fa20-523-327" %}}
+
+---
+
+* {{% addreport
+  title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century"
+  author="Raymond Adams"
+  hid="fa20-523-333" %}}
 
 ---
 
@@ -376,13 +382,3 @@ Finance:
 
 ---
 
-Lifestyle:
-
----
-
-* {{% addreport
-  title="Using Spotify Data To Determine If Popular Modern-day Songs Lack Uniqueness Compared To Popular Songs Before The 21st Century"
-  author="Raymond Adams"
-  hid="fa20-523-333" %}}
-
----
