@@ -55,7 +55,7 @@ For example renderd reports see
 
 ---
 * [<i class="fas fa-edit"></i>](https://github.com/cloudmesh/cloudmesh-openapi)
-[Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Anthony Orlowski, Caleb Wilson, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
+[Benchmarking Multi-Cloud Auto Generated AI Services, Gregor von Laszewski, Anthony Orlowski, et.al.](https://github.com/laszewski/laszewski.github.io/raw/master/papers/vonLaszewski-openapi.pdf)
 	* ![GitHub Repo stars](https://img.shields.io/github/stars/cloudmesh/cloudmesh-openapi?style=social)
 [![image](https://img.shields.io/pypi/v/cloudmesh-openapi.svg)](https://pypi.org/project/cloudmesh-openapi/)
 [![Python](https://img.shields.io/pypi/pyversions/cloudmesh-openapi.svg)](https://pypi.python.org/pypi/cloudmesh-openapi)
