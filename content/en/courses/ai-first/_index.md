@@ -59,6 +59,7 @@ Introduction to AI-Driven Digital Transformation (Web)
 
 {{< /view_module >}}
 
+<!-- COMMENTED OUT
 ### Big Data Usecases Survey
 
 {{< view_module
@@ -79,6 +80,7 @@ and the high and low level computational structure. We describe the
 key features of this classification.
 
 {{< /view_module >}}
+-->
 
 ### Introduction to Google Colab
 
@@ -114,6 +116,7 @@ MNIST Classification on Google Colab (Web)
 
 ## Material
 
+<!-- COMMENTED OUT
 ### Physics
 
 {{< view_module
@@ -140,7 +143,10 @@ Poisson Distribution. Monte-Carlo and accept-reject methods. The
 Central Limit Theorem concludes discussion.
 
 {{< /view_module >}}
+-->
 
+
+<!-- COMMENTED OUT
 ### Sports
 
 {{< view_module
@@ -160,7 +166,7 @@ visualization is discussed. We look at other Sports: Soccer, Olympics,
 NFL Football, Basketball, Tennis and Horse Racing.
 
 {{< /view_module >}}
-
+-->
 
 ### Health and Medicine
 
@@ -196,7 +202,7 @@ reinforced with novel AI techniques to migrate business models with technology.
 
 {{< /view_module >}}
 
-
+<!-- COMMENTED OUT
 ### Transportation Systems
 
 {{< view_module
@@ -211,6 +217,7 @@ Analyzing tera-bytes of data collected in day-to-day transportation activities a
 to analyze issues and provide a better experience for the user. 
 
 {{< /view_module >}}
+-->
 
 
 ### Space and Energy
