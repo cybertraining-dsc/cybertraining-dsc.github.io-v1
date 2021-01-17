@@ -37,7 +37,7 @@ We will use the following material:
 
 {{< view_module alt="Course Lectures"
 	src="/images/bigdata.png"
-	url="/modules/bigdataapplications/2020/course_lectures"
+	url="/modules/ai-first/2021/course_lectures"
 >}}
 
 Course Lectures. These meeting notes are updated weekly (Web)
@@ -52,7 +52,7 @@ Course Lectures. These meeting notes are updated weekly (Web)
 {{< view_module
 	alt="Introduction to AI-Driven Digital Transformation (Web)"
 	src="/images/aitransform.png"
-	url="/modules/bigdataapplications/2020/introduction"
+	url="/modules/ai-first/2021/introduction"
 >}}
 
 Introduction to AI-Driven Digital Transformation (Web)
@@ -64,7 +64,7 @@ Introduction to AI-Driven Digital Transformation (Web)
 {{< view_module
 	alt="Big Data Usecases Survey"
 	src="/images/usecases.png"
-	url="/modules/bigdataapplications/2020/usecases"
+	url="/modules/ai-first/2021/usecases"
 >}}
 
 This module covers 51 usecases of Big data that emerged from a NIST
@@ -95,7 +95,7 @@ A Gentle Introduction to Google Colab (Web)
 {{< view_module
 	alt="A Gentle Introduction to Python on Google Colab (Web)"
 	src="/images/colab.png"
-	url="/modules/bigdataapplications/2020/python_initial"
+	url="/modules/ai-first/2021/python_initial"
 >}}
 
 A Gentle Introduction to Python on Google Colab (Web)
@@ -105,7 +105,7 @@ A Gentle Introduction to Python on Google Colab (Web)
 {{< view_module
 	alt="MNIST Classification on Google Colab (Web)"
 	src="/images/colab.png"
-	url="/modules/bigdataapplications/2020/google_colab_exercise"
+	url="/modules/ai-first/2021/google_colab_exercise"
 	>}}
 	
 MNIST Classification on Google Colab (Web)
@@ -119,7 +119,7 @@ MNIST Classification on Google Colab (Web)
 {{< view_module
 	alt="Physics"
 	src="/images/physics-hep.jpg"
-	url="/modules/bigdataapplications/2020/physics"
+	url="/modules/ai-first/2021/physics"
 >}}
 
 Big Data Applications and Analytics Discovery of Higgs Boson Part I
@@ -146,7 +146,7 @@ Central Limit Theorem concludes discussion.
 {{< view_module
 	alt="Sports"
 	src="/images/sport.png"
-	url="/modules/bigdataapplications/2020/sports"
+	url="/modules/ai-first/2021/sports"
 >}}
 
 Sports sees significant growth in analytics with pervasive statistics
@@ -167,7 +167,7 @@ NFL Football, Basketball, Tennis and Horse Racing.
 {{< view_module
 	alt="Sports"
 	src="/images/health.jpg"
-	url="/modules/bigdataapplications/2020/health_and_medicine"
+	url="/modules/ai-first/2021/health_and_medicine"
 >}}
 
 Health and Medicine sector has become a much more needed service than
@@ -186,7 +186,7 @@ effectively.
 {{< view_module
 	alt="AI in Banking"
 	src="/images/ai_in_banking.jpg"
-	url="/modules/bigdataapplications/2020/ai_in_banking"
+	url="/modules/ai-first/2021/ai_in_banking"
 >}}
 
 AI in banking has become a vital component in providing best services to the
@@ -202,7 +202,7 @@ reinforced with novel AI techniques to migrate business models with technology.
 {{< view_module
 	alt="Transportation Systems"
 	src="/images/transportation_system.jpg"
-	url="/modules/bigdataapplications/2020/transportation_systems"
+	url="/modules/ai-first/2021/transportation_systems"
 >}}
 
 Transportation systems is a vital component in human life. With the dawn of AI,
@@ -218,7 +218,7 @@ to analyze issues and provide a better experience for the user.
 {{< view_module
 	alt="Space and Energy"
 	src="/images/space_and_energy.jpg"
-	url="/modules/bigdataapplications/2020/space_and_energy"
+	url="/modules/ai-first/2021/space_and_energy"
 >}}
 
 Energy is a term we find in everyday life. Conserving energy and smart usage is vital in managing energy demands. 
@@ -234,7 +234,7 @@ data analysis have become key components in succeeding the challenge to unravel 
 {{< view_module
 	alt="Mobility (Industry)"
 	src="/images/mobility.jpg"
-	url="/modules/bigdataapplications/2020/mobility"
+	url="/modules/ai-first/2021/mobility"
 >}}
 
 Mobility is a key part in everyday life. From the personal car to space exploring rockets, there are many places that can 
@@ -249,7 +249,7 @@ have already moved towards AI to power the vehicles and provide new features for
 {{< view_module
 	alt="Cloud Computing"
 	src="/images/cloud_computing.jpg"
-	url="/modules/bigdataapplications/2020/cloud_computing"
+	url="/modules/ai-first/2021/cloud_computing"
 >}}
 
 Cloud computing is a major component of Today's service infrastructures. Artificial intelligence, micro-services, storage, 
@@ -262,7 +262,7 @@ virtualization and parallel computing are some of the key aspects of cloud compu
 {{< view_module
 	alt="Commerce"
 	src="/images/commerce.png"
-	url="/modules/bigdataapplications/2020/commerce"
+	url="/modules/ai-first/2021/commerce"
 >}}
 
 Commerce is a field which is reinforced with AI and technologies to provide a better service to the clients. 

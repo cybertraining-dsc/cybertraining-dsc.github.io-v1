@@ -1,0 +1,1804 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.75.0-DEV" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Big Data Use Cases Survey | Cybertraining</title><meta property="og:title" content="Big Data Use Cases Survey" />
+<meta property="og:description" content="4 Lectures on Big Data Use Cases Survey
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/modules/ai-first/2021/usecases/" />
+<meta property="og:site_name" content="Cybertraining" />
+<meta itemprop="name" content="Big Data Use Cases Survey">
+<meta itemprop="description" content="4 Lectures on Big Data Use Cases Survey
+">
+
+<meta itemprop="wordCount" content="2833">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Big Data Use Cases Survey"/>
+<meta name="twitter:description" content="4 Lectures on Big Data Use Cases Survey
+"/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.541f105c34f11dd207a9775a00ff9f1f41884f48abc84ab786959ab04f5fa8a0.css" as="style">
+<link href="/scss/main.min.541f105c34f11dd207a9775a00ff9f1f41884f48abc84ab786959ab04f5fa8a0.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zM197.0804 232.033c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zM197.0804 177.6188c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zM197.5309 286.4723c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zM197.0804 340.5784c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="text-uppercase font-weight-bold">Cybertraining</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/courses/" ><span>Courses</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/modules/" ><span class="active">Modules</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/report/" ><span>Reports</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/contrib/" ><span>Contributing</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/blog/" ><span>Blog</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Modules</div></a>
+  </li>
+  <ul>
+    <li class="collapse show" id="modules">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/contrib/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Contributors</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulescontrib">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/list/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> List</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="moduleslist">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/cloudmesh-rest/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Analytics Services</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulescloudmesh-rest">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/devops/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> DevOps</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesdevops">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevop-ci" href="/modules/devops/devop-ci/">DevOps - Continuous Improvement</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevops-iac" href="/modules/devops/devops-iac/">Infrastructure as Code (IaC)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsansible" href="/modules/devops/ansible/">Ansible</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopspuppet" href="/modules/devops/puppet/">Puppet</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopstravis" href="/modules/devops/travis/">Travis</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevop-aws" href="/modules/devops/devop-aws/">DevOps with AWS</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesdevopsdevop-azure-monitor" href="/modules/devops/devop-azure-monitor/">DevOps with Azure Monitor</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulespythongoogle-colabpython-google-colab" href="/modules/python/google-colab/python-google-colab/">Google Colab</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/sdsc/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> SDSC</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulessdsc">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessdscsshconnect-cybertraining" href="/modules/sdsc/sshconnect-cybertraining/">Connection over HTTP</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/ai-first/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> AI-First</div></a>
+  </li>
+  <ul>
+    <li class="collapse show" id="modulesai-first">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/ai-first/2021/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> 2020</div></a>
+  </li>
+  <ul>
+    <li class="collapse show" id="modulesai-first2021">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021introduction" href="/modules/ai-first/2021/introduction/">Introduction to AI-Driven Digital Transformation</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021course_lectures" href="/modules/ai-first/2021/course_lectures/">AI-First Engeneering Cybertraining Spring 2021</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-modulesai-first2021usecases" href="/modules/ai-first/2021/usecases/">Big Data Use Cases Survey</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021physics" href="/modules/ai-first/2021/physics/">Physics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021health_and_medicine" href="/modules/ai-first/2021/health_and_medicine/">Introduction to AI in Health and Medicine</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021mobility" href="/modules/ai-first/2021/mobility/">Mobility (Industry)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021sports" href="/modules/ai-first/2021/sports/">Sports</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021space_and_energy" href="/modules/ai-first/2021/space_and_energy/">Space and Energy</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021ai_in_banking" href="/modules/ai-first/2021/ai_in_banking/">AI In Banking</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021cloud_computing" href="/modules/ai-first/2021/cloud_computing/">Cloud Computing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021transportation_systems" href="/modules/ai-first/2021/transportation_systems/">Transportation Systems</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021commerce" href="/modules/ai-first/2021/commerce/">Commerce</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021python_initial" href="/modules/ai-first/2021/python_initial/">Python Warm Up</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesai-first2021google_colab_exercise" href="/modules/ai-first/2021/google_colab_exercise/">MNIST Classification on Google Colab</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/bigdataapplications/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Big Data Applications</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesbigdataapplications">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/bigdataapplications/2020/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> 2020</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesbigdataapplications2020">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020introduction" href="/modules/bigdataapplications/2020/introduction/">Introduction to AI-Driven Digital Transformation</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020course_lectures" href="/modules/bigdataapplications/2020/course_lectures/">BDAA Fall 2020 Course Lectures and Organization</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020usecases" href="/modules/bigdataapplications/2020/usecases/">Big Data Use Cases Survey</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020physics" href="/modules/bigdataapplications/2020/physics/">Physics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020health_and_medicine" href="/modules/bigdataapplications/2020/health_and_medicine/">Introduction to AI in Health and Medicine</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020mobility" href="/modules/bigdataapplications/2020/mobility/">Mobility (Industry)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020sports" href="/modules/bigdataapplications/2020/sports/">Sports</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020space_and_energy" href="/modules/bigdataapplications/2020/space_and_energy/">Space and Energy</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020ai_in_banking" href="/modules/bigdataapplications/2020/ai_in_banking/">AI In Banking</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020cloud_computing" href="/modules/bigdataapplications/2020/cloud_computing/">Cloud Computing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020transportation_systems" href="/modules/bigdataapplications/2020/transportation_systems/">Transportation Systems</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020commerce" href="/modules/bigdataapplications/2020/commerce/">Commerce</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020python_initial" href="/modules/bigdataapplications/2020/python_initial/">Python Warm Up</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2020google_colab_exercise" href="/modules/bigdataapplications/2020/google_colab_exercise/">MNIST Classification on Google Colab</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/bigdataapplications/2019/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> 2019</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesbigdataapplications2019">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019intro-bd-deprecated" href="/modules/bigdataapplications/2019/intro-bd-deprecated/">Introduction</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019intro-fall-2018" href="/modules/bigdataapplications/2019/intro-fall-2018/">Introduction (Fall 2018)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week1" href="/modules/bigdataapplications/2019/week1/">Motivation</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week2" href="/modules/bigdataapplications/2019/week2/">Motivation (cont.)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week3" href="/modules/bigdataapplications/2019/week3/">Cloud</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week5" href="/modules/bigdataapplications/2019/week5/">Physics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week6" href="/modules/bigdataapplications/2019/week6/">Deep Learning</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week7" href="/modules/bigdataapplications/2019/week7/">Sports</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week8" href="/modules/bigdataapplications/2019/week8/">Deep Learning (Cont. I)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week9" href="/modules/bigdataapplications/2019/week9/">Deep Learning (Cont. II)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019week10" href="/modules/bigdataapplications/2019/week10/">Introduction to Deep Learning (III)</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019e534-cloud-computing-unit" href="/modules/bigdataapplications/2019/e534-cloud-computing-unit/">Cloud Computing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019intro-cloud" href="/modules/bigdataapplications/2019/intro-cloud/">Introduction to Cloud Computing</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/bigdataapplications/2019/assignments/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Assignments</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesbigdataapplications2019assignments">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment1" href="/modules/bigdataapplications/2019/assignments/assignment1/">Assignment 1</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment2" href="/modules/bigdataapplications/2019/assignments/assignment2/">Assignment 2</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment3" href="/modules/bigdataapplications/2019/assignments/assignment3/">Assignment 3</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment4" href="/modules/bigdataapplications/2019/assignments/assignment4/">Assignment 4</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment5" href="/modules/bigdataapplications/2019/assignments/assignment5/">Assignment 5</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment6" href="/modules/bigdataapplications/2019/assignments/assignment6/">Assignment 6</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment7" href="/modules/bigdataapplications/2019/assignments/assignment7/">Assignment 7</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019assignmentsassignment8" href="/modules/bigdataapplications/2019/assignments/assignment8/">Assignment 8</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/bigdataapplications/2019/applications/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Applications</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesbigdataapplications2019applications">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationsusecases" href="/modules/bigdataapplications/2019/applications/usecases/">Big Data Use Cases Survey</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationscloud" href="/modules/bigdataapplications/2019/applications/cloud/">Cloud Computing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationslifestyle" href="/modules/bigdataapplications/2019/applications/lifestyle/">e-Commerce and LifeStyle</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationshealth" href="/modules/bigdataapplications/2019/applications/health/">Health Informatics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationsoverview" href="/modules/bigdataapplications/2019/applications/overview/">Overview of Data Science</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationsphysics" href="/modules/bigdataapplications/2019/applications/physics/">Physics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationsplotviz" href="/modules/bigdataapplications/2019/applications/plotviz/">Plotviz</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationskmeans" href="/modules/bigdataapplications/2019/applications/kmeans/">Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationsradar" href="/modules/bigdataapplications/2019/applications/radar/">Radar</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationssensor" href="/modules/bigdataapplications/2019/applications/sensor/">Sensors</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationssport" href="/modules/bigdataapplications/2019/applications/sport/">Sports</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationsstatistics" href="/modules/bigdataapplications/2019/applications/statistics/">Statistics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationsweb" href="/modules/bigdataapplications/2019/applications/web/">Web Search and Text Mining</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019applicationswebplotviz" href="/modules/bigdataapplications/2019/applications/webplotviz/">WebPlotViz</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/bigdataapplications/2019/tech/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Technologies</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesbigdataapplications2019tech">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019techpython" href="/modules/bigdataapplications/2019/tech/python/">Python</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulesbigdataapplications2019techgithub" href="/modules/bigdataapplications/2019/tech/github/">Github</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/git-pull-request/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Git pull request</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesgit-pull-request">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/mnist-reu/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> MNIST</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulesmnist-reu">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/sample/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Sample</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulessample">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/modules/sample/module/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section"><div style="border:1px; border-style:solid; border-color:#D1D1D1; padding: 0em;"> Module</div></a>
+  </li>
+  <ul>
+    <li class="collapse " id="modulessamplemodule">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplealert" href="/modules/sample/alert/">Alert</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessampleelements" href="/modules/sample/elements/">Elements</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplefigure" href="/modules/sample/figure/">Figure</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-modulessamplemermaid" href="/modules/sample/mermaid/">Mermaid</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/edit/main/content/en/modules/ai-first/2021/usecases.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/issues/new?title=Big%20Data%20Use%20Cases%20Survey" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+  
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lecture-set-1-overview-of-nist-big-data-public-working-group-nbd-pwg-process-and-results">Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results</a>
+      <ul>
+        <li><a href="#use-case-1-1-introduction-to-nist-big-data-public-working-group">Use Case 1-1 Introduction to NIST Big Data Public Working Group</a></li>
+        <li><a href="#use-case-1-2-definitions-and-taxonomies-subgroup">Use Case 1-2 Definitions and Taxonomies Subgroup</a></li>
+        <li><a href="#use-case-1-3-reference-architecture-subgroup">Use Case 1-3 Reference Architecture Subgroup</a></li>
+        <li><a href="#use-case-1-4-security-and-privacy-subgroup">Use Case 1-4 Security and Privacy Subgroup</a></li>
+        <li><a href="#use-case-1-5-technology-roadmap-subgroup">Use Case 1-5 Technology Roadmap Subgroup</a></li>
+        <li><a href="#use-case-1-6-requirements-and-use-case-subgroup">Use Case 1-6 Requirements and Use Case Subgroup</a></li>
+        <li><a href="#use-case-1-7-recent-updates-of-work-of-nist-public-big-data-working-group">Use Case 1-7 Recent Updates of work of NIST Public Big Data Working Group</a></li>
+      </ul>
+    </li>
+    <li><a href="#lecture-set-2-51-big-data-use-cases-from--nist-big-data-public-working-group-nbd-pwg">Lecture set 2: 51 Big Data Use Cases from  NIST Big Data Public Working Group (NBD-PWG)</a>
+      <ul>
+        <li><a href="#use-case-2-1-government-use-cases">Use Case 2-1 Government Use Cases</a></li>
+        <li><a href="#use-case-2-2-commercial-use-cases">Use Case 2-2 Commercial Use Cases</a>
+          <ul>
+            <li><a href="#part-1">Part 1</a></li>
+            <li><a href="#part-2">Part 2</a></li>
+            <li><a href="#part-3">Part 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#use-case-2-3-defense-use-cases">Use Case 2-3 Defense Use Cases</a></li>
+        <li><a href="#use-case-2-4-healthcare-and-life-science-use-cases">Use Case 2-4 Healthcare and Life Science Use Cases</a></li>
+        <li><a href="#use-case-2-5-deep-learning-and-social-networks-use-cases">Use Case 2-5 Deep Learning and Social Networks Use Cases</a></li>
+        <li><a href="#use-case-2-6-research-ecosystem-use-cases">Use Case 2-6 Research Ecosystem Use Cases</a></li>
+        <li><a href="#use-case-2-7-astronomy-and-physics-use-cases">Use Case 2-7 Astronomy and Physics Use Cases</a></li>
+        <li><a href="#use-case-2-8-environment-earth-and-polar-science-use-cases">Use Case 2-8 Environment, Earth and Polar Science Use Cases</a></li>
+        <li><a href="#use-case-2-9--energy-use-case">Use Case 2-9  Energy Use Case</a></li>
+      </ul>
+    </li>
+    <li><a href="#lecture-set-3-features-of-51-big-data-use-cases-from-the-nist-big-data-public-working-group-nbd-pwg">Lecture set 3: Features of 51 Big Data Use Cases from the NIST Big Data Public Working Group (NBD-PWG)</a>
+      <ul>
+        <li><a href="#use-case-3-1-summary-of-use-case-classification">Use Case 3-1 Summary of Use Case Classification</a></li>
+        <li><a href="#use-case-3-2-databasesql-use-case-classification">Use Case 3-2 Database(SQL) Use Case Classification</a></li>
+        <li><a href="#use-case-3-3-nosql-use-case-classification">Use Case 3-3 NoSQL Use Case Classification</a></li>
+        <li><a href="#use-case-3-4-other-use-case-classifications">Use Case 3-4 Other Use Case Classifications</a></li>
+        <li><a href="#use-case-3-5">Use Case 3-5</a></li>
+        <li><a href="#use-case-3-6">Use Case 3-6</a></li>
+        <li><a href="#use-case-3-7-other-benchmark-sets-and-classifications">Use Case 3-7 Other Benchmark Sets and Classifications</a></li>
+      </ul>
+    </li>
+    <li><a href="#lecture-set-4-the-10-use-case-patterns-from-the-nist-big-data-public-working-group-nbd-pwg">Lecture set 4. The 10 Use Case Patterns from the NIST Big Data Public Working Group (NBD-PWG)</a></li>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/modules/">Modules</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/modules/ai-first/">AI-First</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/modules/ai-first/2021/">2020</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/modules/ai-first/2021/usecases/">Big Data Use Cases Survey</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Big Data Use Cases Survey</h1>
+    <div class="lead">4 Lectures on Big Data Use Cases Survey</div>
+	       
+	<p>This unit has four lectures (slide=decks). The survey is 6 years old but the illustrative scope of Big Data Applications is still valid and has no better alternative. The problems and use of clouds has not changed. There has been algorithmic advances (deep earning) in some cases. The lectures are</p>
+<ul>
+<li>
+<ol>
+<li>Overview of NIST Process</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>The 51 Use cases divided into groups</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Common features of the 51 Use Cases</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>10 Patterns of data &ndash; computer &ndash; user interaction seen in Big Data Applications</li>
+</ol>
+</li>
+</ul>
+<p>There is an overview of these lectures below. The use case overview slides recorded here are available as <a href="https://docs.google.com/presentation/d/104ORUVOwFV23c-GSYvvLWaiVyCXwGDV1Ah5k2kTB4_U/edit?usp=sharing">Google Slides</a></p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/AFQLwfpm6ow" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+.</p>
+<h2 id="lecture-set-1-overview-of-nist-big-data-public-working-group-nbd-pwg-process-and-results">Lecture set 1. Overview of NIST Big Data Public Working Group (NBD-PWG) Process and Results</h2>
+<p>This is first of 4 lectures on Big Data Use Cases. It describes the process by which NIST produced this survey</p>
+<p><a href="https://drive.google.com/file/d/12F779a9bwsxUaQ66cVZj5AzTpLLdMEUw/view?usp=sharing">Presentation</a> or <a href="https://docs.google.com/presentation/d/1BQOuxKU3-y1v6s_nTpSp-3y81EivfanfwlTP-lg_-Tc/edit?usp=sharing">Google Slides</a></p>
+<h3 id="use-case-1-1-introduction-to-nist-big-data-public-working-group">Use Case 1-1 Introduction to NIST Big Data Public Working Group</h3>
+<p>The focus of the (NBD-PWG) is to form a community of interest from industry, academia, and government, with the goal of developing a consensus definition, taxonomies, secure reference architectures, and technology roadmap. The aim is to create vendor-neutral, technology and infrastructure agnostic deliverables to enable big data stakeholders to pick-and-choose best analytics tools for their processing and visualization requirements on the most suitable computing platforms and clusters while allowing value-added from big data service providers and flow of data between the stakeholders in a cohesive and secure manner.</p>
+<p>Introduction (13:02)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3oKdmuH0N3k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-1-2-definitions-and-taxonomies-subgroup">Use Case 1-2 Definitions and Taxonomies Subgroup</h3>
+<p>The focus is to gain a better understanding of the principles of Big Data. It is important to develop a consensus-based common language and vocabulary terms used in Big Data across stakeholders from industry, academia, and government. In addition, it is also critical to identify essential actors with roles and responsibility, and subdivide them into components and sub-components on how they interact/ relate with each other according to their similarities and differences.
+For Definitions: Compile terms used from all stakeholders regarding the meaning of Big Data from various standard bodies, domain applications, and diversified operational environments. For Taxonomies: Identify key actors with their roles and responsibilities from all stakeholders, categorize them into components and subcomponents based on their similarities and differences. In particular data, Science and Big Data terms are discussed.</p>
+<p>Taxonomies (7:42)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/7eOtuBV8udo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-1-3-reference-architecture-subgroup">Use Case 1-3 Reference Architecture Subgroup</h3>
+<p>The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus-based approach to orchestrate vendor-neutral, technology and infrastructure agnostic for analytics tools and computing environments. The goal is to enable Big Data stakeholders to pick-and-choose technology-agnostic analytics tools for processing and visualization in any computing platform and cluster while allowing value-added from Big Data service providers and the flow of the data between the stakeholders in a cohesive and secure manner. Results include a reference architecture with well-defined components and linkage as well as several exemplars.</p>
+<p>Architecture (10:05)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/h4ylW0vztDw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-1-4-security-and-privacy-subgroup">Use Case 1-4 Security and Privacy Subgroup</h3>
+<p>The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus secure reference architecture to handle security and privacy issues across all stakeholders. This includes gaining an understanding of what standards are available or under development, as well as identifies which key organizations are working on these standards. The Top Ten Big Data Security and Privacy Challenges from the CSA (Cloud Security Alliance) BDWG are studied. Specialized use cases include Retail/Marketing, Modern Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare, Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data Sharing, Cyber-security, Government, Military and Education.</p>
+<p>Security (9:51)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/dHrHk-GvruY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-1-5-technology-roadmap-subgroup">Use Case 1-5 Technology Roadmap Subgroup</h3>
+<p>The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus vision with recommendations on how Big Data should move forward by performing a good gap analysis through the materials gathered from all other NBD subgroups. This includes setting standardization and adoption priorities through an understanding of what standards are available or under development as part of the recommendations. Tasks are gathered input from NBD subgroups and study the taxonomies for the actors&rsquo; roles and responsibility, use cases and requirements, and secure reference architecture; gain an understanding of what standards are available or under development for Big Data; perform a thorough gap analysis and document the findings; identify what possible barriers may delay or prevent the adoption of Big Data; and document vision and recommendations.</p>
+<p>Technology (4:14)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/va0UCR5gMTA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-1-6-requirements-and-use-case-subgroup">Use Case 1-6 Requirements and Use Case Subgroup</h3>
+<p>The focus is to form a community of interest from industry, academia, and government, with the goal of developing a consensus list of Big Data requirements across all stakeholders. This includes gathering and understanding various use cases from diversified application domains.Tasks are gather use case input from all stakeholders; derive Big Data requirements from each use case; analyze/prioritize a list of challenging general requirements that may delay or prevent adoption of Big Data deployment; develop a set of general patterns capturing the <em>essence</em> of use cases (not done yet) and work with Reference Architecture to validate requirements and reference architecture by explicitly implementing some patterns based on use cases. The progress of gathering use cases (discussed in next two units) and requirements systemization are discussed.</p>
+<p>Requirements (27:28)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/f_vxmx3CmMU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-1-7-recent-updates-of-work-of-nist-public-big-data-working-group">Use Case 1-7 Recent Updates of work of NIST Public Big Data Working Group</h3>
+<p>This video is an update of recent work in this area. The first slide of this short lesson discusses a new version of use case survey that had many improvements including tags to label key features (as discussed in slide deck 3) and merged in a significant set of security and privacy fields.  This came from the security and privacy working group described in lesson 4 of this slide deck. A link for this new use case form is
+<a href="https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf">https://bigdatawg.nist.gov/_uploadfiles/M0621_v2_7345181325.pdf</a></p>
+<p>A recent December 2018 use case form for Astronomy’s Square Kilometer Array is at <a href="https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing">https://docs.google.com/document/d/1CxqCISK4v9LMMmGox-PG1bLeaRcbAI4cDIlmcoRqbDs/edit?usp=sharing</a> This uses a simplification of the official new form.</p>
+<p>The second (last) slide in update gives some useful on latest work.
+NIST’s latest work just published is at
+<a href="https://bigdatawg.nist.gov/V3_output_docs.php">https://bigdatawg.nist.gov/V3_output_docs.php</a>
+Related activities are described at
+<a href="http://hpc-abds.org/kaleidoscope/">http://hpc-abds.org/kaleidoscope/</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/2PAC2bAAcIA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="lecture-set-2-51-big-data-use-cases-from--nist-big-data-public-working-group-nbd-pwg">Lecture set 2: 51 Big Data Use Cases from  NIST Big Data Public Working Group (NBD-PWG)</h2>
+<p><a href="https://drive.google.com/file/d/1_m97KGvBu0Fkx47Fkp78_8m89ni2P8jK/view?usp=sharing">Presentation</a> or <a href="https://docs.google.com/presentation/d/1sZCiIeIdiLjq5eWziJgvuaDzYxAggo63w-3tv504oMk/edit?usp=sharing">Google Slides</a></p>
+<h3 id="use-case-2-1-government-use-cases">Use Case 2-1 Government Use Cases</h3>
+<p>This covers Census 2010 and 2000 - Title 13 Big Data; National Archives
+and Records Administration Accession NARA, Search, Retrieve,
+Preservation; Statistical Survey Response Improvement (Adaptive Design)
+and Non-Traditional Data in Statistical Survey Response Improvement
+(Adaptive Design).</p>
+<p>Government Use Cases (17:43)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/e0ks_BuYUVM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-2-commercial-use-cases">Use Case 2-2 Commercial Use Cases</h3>
+<p>This covers Cloud Eco-System, for Financial Industries (Banking,
+Securities &amp; Investments, Insurance) transacting business within the
+United States; Mendeley - An International Network of Research; Netflix
+Movie Service; Web Search; IaaS (/infrastructure as a Service) Big Data
+Business Continuity &amp; Disaster Recovery (BC/DR) Within A Cloud
+Eco-System; Cargo Shipping; Materials Data for Manufacturing and
+Simulation driven Materials Genomics.</p>
+<p>This lesson is divided into 3 separate videos</p>
+<h4 id="part-1">Part 1</h4>
+<p>(9:31)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8Z2Sk11PcPU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h4 id="part-2">Part 2</h4>
+<p>(19:45)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/bUGxcmbuVaM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h4 id="part-3">Part 3</h4>
+<p>(10:48)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/fTT66Y0Uoqo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-3-defense-use-cases">Use Case 2-3 Defense Use Cases</h3>
+<p>This covers Large Scale Geospatial Analysis and Visualization; Object
+identification and tracking from Wide Area Large Format Imagery (WALF)
+Imagery or Full Motion Video (FMV) - Persistent Surveillance and
+Intelligence Data Processing and Analysis.</p>
+<p>Defense Use Cases (15:43)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/FXFfE8zcco8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-4-healthcare-and-life-science-use-cases">Use Case 2-4 Healthcare and Life Science Use Cases</h3>
+<p>This covers Electronic Medical Record (EMR) Data; Pathology
+Imaging/digital pathology; Computational Bioimaging; Genomic
+Measurements; Comparative analysis for metagenomes and genomes;
+Individualized Diabetes Management; Statistical Relational Artificial
+Intelligence for Health Care; World Population Scale Epidemiological
+Study; Social Contagion Modeling for Planning, Public Health and
+Disaster Management and Biodiversity and LifeWatch.</p>
+<p>Healthcare and Life Science Use Cases (30:11)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/uGeYrXENlpU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-5-deep-learning-and-social-networks-use-cases">Use Case 2-5 Deep Learning and Social Networks Use Cases</h3>
+<p>This covers Large-scale Deep Learning; Organizing large-scale,
+unstructured collections of consumer photos; Truthy: Information
+diffusion research from Twitter Data; Crowd Sourcing in the Humanities
+as Source for Bigand Dynamic Data; CINET: Cyberinfrastructure for
+Network (Graph) Science and Analytics and NIST Information Access
+Division analytic technology performance measurement, evaluations, and
+standards.</p>
+<p>Deep Learning and Social Networks Use Cases (14:19)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/bdWyhT8bvE4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-6-research-ecosystem-use-cases">Use Case 2-6 Research Ecosystem Use Cases</h3>
+<p>DataNet Federation Consortium DFC; The &lsquo;Discinnet process&rsquo;, metadata
+-big data global experiment; Semantic Graph-search on Scientific
+Chemical and Text-based Data and Light source beamlines.</p>
+<p>Research Ecosystem Use Cases (9:09)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jjyv4RmMIUU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-7-astronomy-and-physics-use-cases">Use Case 2-7 Astronomy and Physics Use Cases</h3>
+<p>This covers Catalina Real-Time Transient Survey (CRTS): a digital,
+panoramic, synoptic sky survey; DOE Extreme Data from Cosmological Sky
+Survey and Simulations; Large Survey Data for Cosmology; Particle
+Physics: Analysis of LHC Large Hadron Collider Data: Discovery of Higgs
+particle and Belle II High Energy Physics Experiment.</p>
+<p>Astronomy and Physics Use Cases (17:33)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/MPEe8yDVwAo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-8-environment-earth-and-polar-science-use-cases">Use Case 2-8 Environment, Earth and Polar Science Use Cases</h3>
+<p>EISCAT 3D incoherent scatter radar system; ENVRI, Common Operations of
+Environmental Research Infrastructure; Radar Data Analysis for CReSIS
+Remote Sensing of Ice Sheets; UAVSAR Data Processing, DataProduct
+Delivery, and Data Services; NASA LARC/GSFC iRODS Federation Testbed;
+MERRA Analytic Services MERRA/AS; Atmospheric Turbulence - Event
+Discovery and Predictive Analytics; Climate Studies using the Community
+Earth System Model at DOE&rsquo;s NERSC center; DOE-BER Subsurface
+Biogeochemistry Scientific Focus Area and DOE-BER AmeriFlux and FLUXNET
+Networks.</p>
+<p>Environment, Earth and Polar Science Use Cases (25:29)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/YJGk-uvaUCg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-2-9--energy-use-case">Use Case 2-9  Energy Use Case</h3>
+<p>This covers Consumption forecasting in Smart Grids.</p>
+<p>Energy Use Case (4:01)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/5y_O-a8_Fbg%20" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="lecture-set-3-features-of-51-big-data-use-cases-from-the-nist-big-data-public-working-group-nbd-pwg">Lecture set 3: Features of 51 Big Data Use Cases from the NIST Big Data Public Working Group (NBD-PWG)</h2>
+<p>This unit discusses the categories used to classify the 51 use-cases.
+These categories include concepts used for parallelism and low and high
+level computational structure. The first lesson is an introduction to
+all categories and the further lessons give details of particular
+categories.</p>
+<p><a href="https://drive.google.com/file/d/1rAYrSaI1gNMNRcoJPy9oGVg5FdSeka5m/view?usp=sharing">Presentation</a> or <a href="https://docs.google.com/presentation/d/1GYLJse6s3TJtq00DcrhcNw5AA24hyBm85ZV5VhMV0ls/edit?usp=sharing">Google Slides</a></p>
+<h3 id="use-case-3-1-summary-of-use-case-classification">Use Case 3-1 Summary of Use Case Classification</h3>
+<p>This discusses concepts used for parallelism and low and high level
+computational structure. Parallelism can be over People (users or
+subjects), Decision makers; Items such as Images, EMR, Sequences;
+observations, contents of online store; Sensors &ndash; Internet of Things;
+Events; (Complex) Nodes in a Graph; Simple nodes as in a learning
+network; Tweets, Blogs, Documents, Web Pages etc.; Files or data to be
+backed up, moved or assigned metadata; Particles/cells/mesh points. Low
+level computational types include PP (Pleasingly Parallel); MR
+(MapReduce); MRStat; MRIter (iterative MapReduce); Graph; Fusion; MC
+(Monte Carlo) and Streaming. High level computational types include
+Classification; S/Q (Search and Query); Index; CF (Collaborative
+Filtering); ML (Machine Learning); EGO (Large Scale Optimizations); EM
+(Expectation maximization); GIS; HPC; Agents. Patterns include Classic
+Database; NoSQL; Basic processing of data as in backup or metadata; GIS;
+Host of Sensors processed on demand; Pleasingly parallel processing; HPC
+assimilated with observational data; Agent-based models; Multi-modal
+data fusion or Knowledge Management; Crowd Sourcing.</p>
+<p>Summary of Use Case Classification (23:39)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/X0vEmbn1Ld8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-3-2-databasesql-use-case-classification">Use Case 3-2 Database(SQL) Use Case Classification</h3>
+<p>This discusses classic (SQL) database approach to data handling with
+Search&amp;Query and Index features. Comparisons are made to NoSQL
+approaches.</p>
+<p>Database (SQL) Use Case Classification (11:13)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jIVdQID11Q4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-3-3-nosql-use-case-classification">Use Case 3-3 NoSQL Use Case Classification</h3>
+<p>This discusses NoSQL (compared in previous lesson) with HDFS, Hadoop and
+Hbase. The Apache Big data stack is introduced and further details of
+comparison with SQL.</p>
+<p>NoSQL Use Case Classification (11:20)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/uGL8cFPrhoE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-3-4-other-use-case-classifications">Use Case 3-4 Other Use Case Classifications</h3>
+<p>This discusses a subset of use case features: GIS, Sensors. the support
+of data analysis and fusion by streaming data between filters.</p>
+<p>Use Case Classifications I (12:42)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/79IwNCNjVWU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-3-5">Use Case 3-5</h3>
+<p>This discusses a subset of use case features: Classification, Monte
+Carlo, Streaming, PP, MR, MRStat, MRIter and HPC(MPI), global and local
+analytics (machine learning), parallel computing, Expectation
+Maximization, graphs and Collaborative Filtering.</p>
+<p>Case Classifications II (20:18)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/b-olNbWCJyg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-3-6">Use Case 3-6</h3>
+<p>This discusses the classification, PP, Fusion, EGO, HPC, GIS, Agent, MC, PP, MR, Expectation maximization and benchmarks.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ewqoFGxyQmc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-case-3-7-other-benchmark-sets-and-classifications">Use Case 3-7 Other Benchmark Sets and Classifications</h3>
+<p>This video looks at several efforts to divide applications into categories of related applications It includes “Computational Giants” from the National Research Council; Linpack or HPL from the HPC community;  the NAS Parallel benchmarks from NASA; and finally the Berkeley Dwarfs from UCB. The second part of this video describes efforts in the Digital Science Center to develop Big Data classification and to unify Big Data and simulation categories. This leads to the Ogre and Convergence Diamonds. Diamonds have facets representing the different aspects by which we classify applications. See <a href="http://hpc-abds.org/kaleidoscope/">http://hpc-abds.org/kaleidoscope/</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/H-PZkJOeX0U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="lecture-set-4-the-10-use-case-patterns-from-the-nist-big-data-public-working-group-nbd-pwg">Lecture set 4. The 10 Use Case Patterns from the NIST Big Data Public Working Group (NBD-PWG)</h2>
+<p><a href="https://drive.google.com/file/d/1Rs2h7JTaTbqkZluigD7Wk_22kiaKuZ9s/view?usp=sharing">Presentation</a> or <a href="https://docs.google.com/presentation/d/1uD17-CHCFlr05tdmwB8osmIT1vQR-FdDu4A2puNQqs8/edit?usp=sharing">Google Slides</a></p>
+<p>In this last slide deck of the use cases unit, we will be focusing on 10 Use case patterns. This includes multi-user querying, real-time analytics, batch analytics, data movement from external data sources, interactive analysis, data visualization, ETL, data mining and orchestration of sequential and parallel data transformations. We go through the different ways the user and system interact in each case. The use case patterns are divided into 3 classes 1) initial examples 2) science data use case patterns and 3) remaining use case patterns.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/A3rucn5mcVU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.nist.gov/el/cyber-physical-systems/big-data-pwg">NIST Big Data Public Working Group (NBD-PWG) Process</a></li>
+<li><a href="http://dx.doi.org/10.6028/NIST.SP.1500-1">Big Data Definitions</a></li>
+<li><a href="http://dx.doi.org/10.6028/NIST.SP.1500-2">Big Data Taxonomies</a></li>
+<li><a href="http://dx.doi.org/10.6028/NIST.SP.1500-3">Big Data Use Cases and Requirements</a></li>
+<li><a href="http://dx.doi.org/10.6028/NIST.SP.1500-4">Big Data Security and Privacy</a></li>
+<li><a href="http://dx.doi.org/10.6028/NIST.SP.1500-5">Big Data Architecture White Paper Survey</a></li>
+<li><a href="http://dx.doi.org/10.6028/NIST.SP.1500-6">Big Data Reference Architecture</a></li>
+<li><a href="http://dx.doi.org/10.6028/NIST.SP.1500-7">Big Data Standards Roadmap</a></li>
+</ul>
+<p>Some of the links bellow may be outdated. Please let us know the new
+links and notify us of the outdated links.</p>
+<ul>
+<li><del><a href="https://www.youtube.com/watch?v=l4Qii7T8zeg">DCGSA Standard Cloud</a></del> <strong>(this link does not exist any longer)</strong></li>
+<li><a href="http://bigdatawg.nist.gov/usecases.php">On line 51 Use Cases</a></li>
+<li><a href="http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx">Summary of Requirements Subgroup</a></li>
+<li><a href="https://dev.mendeley.com/">Use Case 6 Mendeley</a></li>
+<li><a href="http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial">Use Case 7 Netflix</a></li>
+<li>Use Case 8 Search
+<ul>
+<li><del><a href="http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013">http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013</a></del> <strong>(this link does not exist any longer)</strong>,</li>
+<li><a href="https://web.archive.org/web/20160828041032/http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html">https://web.archive.org/web/20160828041032/http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html</a> (Archived Pages),</li>
+<li><a href="http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws">http://www.ifis.cs.tu-bs.de/teaching/ss-11/irws</a>,</li>
+<li><a href="http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro">http://www.slideshare.net/beechung/recommender-systems-tutorialpart1intro</a>,</li>
+<li><a href="http://www.worldwidewebsize.com/">http://www.worldwidewebsize.com/</a></li>
+</ul>
+</li>
+<li><a href="http://www.disasterrecovery.org/">Use Case 9 IaaS (infrastructure as a Service) Big Data Business
+Continuity &amp; Disaster Recovery (BC/DR) Within A Cloud Eco-System
+provided by Cloud Service Providers (CSPs) and Cloud Brokerage
+Service Providers (CBSPs)</a></li>
+<li><a href="https://www.materialsproject.org/">Use Case 11 and Use Case 12 Simulation driven Materials
+Genomics</a></li>
+<li>Use Case 13 Large Scale Geospatial Analysis and Visualization
+<ul>
+<li><a href="http://www.opengeospatial.org/standards">http://www.opengeospatial.org/standards</a></li>
+<li><a href="http://geojson.org/">http://geojson.org/</a></li>
+<li><a href="http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html">http://earth-info.nga.mil/publications/specs/printed/CADRG/cadrg.html</a></li>
+</ul>
+</li>
+<li>Use Case 14 Object identification and tracking from Wide Area Large
+Format Imagery (WALF) Imagery or Full Motion Video (FMV) -
+Persistent Surveillance
+<ul>
+<li><a href="https://web.archive.org/web/20160828235002/http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm">https://web.archive.org/web/20160828235002/http://www.militaryaerospace.com/topics/m/video/79088650/persistent-surveillance-relies-on-extracting-relevant-data-points-and-connecting-the-dots.htm</a> (Archived Pages),</li>
+<li><a href="http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/">http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/</a></li>
+</ul>
+</li>
+<li>Use Case 15 Intelligence Data Processing and Analysis
+<ul>
+<li>
+<p><del><a href="http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf">http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf</a></del>,</p>
+</li>
+<li>
+<p><a href="http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf">http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf</a>,</p>
+</li>
+<li>
+<p><del><a href="http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf">http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf</a>,</del> <strong>(this link does not exist any longer)</strong></p>
+</li>
+<li>
+<p><del><a href="https://www.youtube.com/watch?v=l4Qii7T8zeg">https://www.youtube.com/watch?v=l4Qii7T8zeg</a></del> <strong>(this link does not exist any longer)</strong></p>
+</li>
+<li>
+<p><del><a href="http://dcgsa.apg.army.mil/">http://dcgsa.apg.army.mil/</a></del> <strong>(this link does not exist any longer)</strong></p>
+</li>
+</ul>
+</li>
+<li>Use Case 16 Electronic Medical Record (EMR) Data:
+<ul>
+<li><a href="http://www.regenstrief.org/">Regenstrief Institute</a></li>
+<li><a href="http://loinc.org/">Logical observation identifiers names and codes</a></li>
+<li><a href="http://www.ihie.org/">Indiana Health Information Exchange</a></li>
+<li><del><a href="http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx">Institute of Medicine Learning Healthcare System</a></del> <strong>(this link does not exist any longer)</strong></li>
+</ul>
+</li>
+<li>Use Case 17
+<ul>
+<li><a href="https://web.cci.emory.edu/confluence/display/PAIS%3E">Pathology Imaging/digital pathology</a></li>
+<li><del><a href="https://web.cci.emory.edu/confluence/display/HadoopGIS">https://web.cci.emory.edu/confluence/display/HadoopGIS</a></del> <strong>(this link does not exist any longer)</strong></li>
+</ul>
+</li>
+<li>Use Case 19 Genome in a Bottle Consortium:
+<ul>
+<li><del><a href="https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org">www.genomeinabottle.org</a></del> <strong>(this link does not exist any longer)</strong></li>
+</ul>
+</li>
+<li><a href="http://img.jgi.doe.gov/">Use Case 20 Comparative analysis for metagenomes and genomes</a></li>
+<li>Use Case 25
+<ul>
+<li><a href="https://www.biodiversitycatalogue.org/">Biodiversity</a></li>
+<li><a href="http://www.lifewatch.eu/web/guest/home">LifeWatch</a></li>
+</ul>
+</li>
+<li>Use Case 26 Deep Learning: Recent popular press coverage of deep
+learning technology:
+<ul>
+<li><a href="http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html">http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html</a></li>
+<li><a href="http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html">http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html</a></li>
+<li><a href="http://www.wired.com/2013/06/andrew_ng/">http://www.wired.com/2013/06/andrew_ng/</a>,</li>
+<li><del><a href="http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf">A recent research paper on HPC for Deep Learning</a></del> <strong>(this link does not exist any longer)</strong></li>
+<li>Widely-used tutorials and references for Deep Learning:
+<ul>
+<li><a href="http://ufldl.stanford.edu/wiki/index.php/Main_Page">http://ufldl.stanford.edu/wiki/index.php/Main_Page</a></li>
+<li><a href="http://deeplearning.net/">http://deeplearning.net/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://vision.soic.indiana.edu/projects/disco/">Use Case 27 Organizing large-scale, unstructured collections of consumer photos</a></li>
+<li>Use Case 28
+<ul>
+<li><a href="http://truthy.indiana.edu/">Truthy: Information diffusion research from Twitter Data</a></li>
+<li><a href="http://cnets.indiana.edu/groups/nan/truthy/">http://cnets.indiana.edu/groups/nan/truthy/</a></li>
+<li><a href="http://cnets.indiana.edu/groups/nan/despic/">http://cnets.indiana.edu/groups/nan/despic/</a></li>
+</ul>
+</li>
+<li><del><a href="http://cinet.vbi.vt.edu/cinet_new/">Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
+and Analytics</a></del> <strong>(this link does not exist any longer)</strong></li>
+<li><a href="http://www.nist.gov/itl/iad/">Use Case 31 NIST Information Access Division analytic technology
+performance measurement, evaluations, and
+standards</a></li>
+<li>Use Case 32
+<ul>
+<li>DataNet Federation Consortium DFC: <a href="http://datafed.org/">The DataNet Federation
+Consortium</a>,</li>
+<li><a href="http://irods.org/">iRODS</a></li>
+</ul>
+</li>
+<li><del>Use Case 33 The &lsquo;Discinnet process&rsquo;, <a href="http://www.discinnet.org/">big data global
+experiment</a></del> <strong>(this link does not exist any longer)</strong></li>
+<li>Use Case 34 Semantic Graph-search on Scientific Chemical and
+Text-based Data
+<ul>
+<li><a href="http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php">http://www.eurekalert.org/pub_releases/2013-07/aiop-ffm071813.php</a></li>
+<li><a href="http://xpdb.nist.gov/chemblast/pdb.pl">http://xpdb.nist.gov/chemblast/pdb.pl</a></li>
+</ul>
+</li>
+<li>Use Case 35 Light source beamlines
+<ul>
+<li><a href="http://www-als.lbl.gov/">http://www-als.lbl.gov/</a></li>
+<li><del><a href="https://www1.aps.anl.gov/">https://www1.aps.anl.gov/</a></del> <strong>(this link does not exist any longer)</strong></li>
+</ul>
+</li>
+<li>Use Case 36
+<ul>
+<li><a href="http://crts.caltech.edu/">CRTS survey</a></li>
+<li><a href="http://www.lpl.arizona.edu/css/">CSS survey</a></li>
+<li>For an <a href="http://arxiv.org/abs/1209.1681">overview of the classification
+challenges</a></li>
+</ul>
+</li>
+<li>Use Case 37 DOE Extreme Data from Cosmological Sky Survey and
+Simulations
+<ul>
+<li><a href="http://www.lsst.org/lsst/">http://www.lsst.org/lsst/</a></li>
+<li><a href="http://www.nersc.gov/">http://www.nersc.gov/</a></li>
+<li><a href="http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf">http://www.nersc.gov/assets/Uploads/HabibcosmosimV2.pdf</a></li>
+</ul>
+</li>
+<li>Use Case 38 Large Survey Data for Cosmology
+<ul>
+<li><a href="http://desi.lbl.gov/">http://desi.lbl.gov/</a></li>
+<li><a href="http://www.darkenergysurvey.org/">http://www.darkenergysurvey.org/</a></li>
+</ul>
+</li>
+<li>Use Case 39 Particle Physics: Analysis of LHC Large Hadron Collider
+Data: Discovery of Higgs particle
+<ul>
+<li><a href="http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf">http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf</a>,</li>
+<li><a href="http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf">http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf</a></li>
+</ul>
+</li>
+<li><a href="https://www.belle2.org">Use Case 40 Belle II High Energy Physics
+Experiment</a></li>
+<li><a href="https://www.eiscat3d.se/">Use Case 41 EISCAT 3D incoherent scatter radar
+system</a></li>
+<li>Use Case 42 ENVRI, Common Operations of Environmental Research
+Infrastructure
+<ul>
+<li><a href="http://envri.eu/">ENVRI Project website</a></li>
+<li><a href="https://web.archive.org/web/20130509014836/http://confluence.envri.eu:8090/display/ERM/Start">ENVRI Reference Model</a> (Archive Pages)</li>
+<li><del><a href="http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&amp;modificationDate=1366965933706&amp;api=v2">ENVRI deliverable D3.2 : Analysis of common requirements of
+Environmental Research
+Infrastructures</a></del> <strong>(this link does not exist any longer)</strong></li>
+<li><a href="https://www.icos-ri.eu/">ICOS</a>,</li>
+<li><a href="http://www.euro-argo.eu/">Euro-Argo</a></li>
+<li><a href="https://web.archive.org/web/20130905211646/https://www.eiscat3d.se/node">EISCAT 3D</a> (Archived Pages)</li>
+<li><a href="http://www.lifewatch.com/">LifeWatch</a></li>
+<li><a href="http://www.epos-eu.org/">EPOS</a></li>
+<li><a href="http://www.emso-eu.org/">EMSO</a></li>
+</ul>
+</li>
+<li><a href="https://www.cresis.ku.edu/%3E">Use Case 43 Radar Data Analysis for CReSIS Remote Sensing of Ice
+Sheets</a></li>
+<li>Use Case 44 UAVSAR Data Processing, Data Product Delivery, and Data Services
+<ul>
+<li><a href="http://uavsar.jpl.nasa.gov/">http://uavsar.jpl.nasa.gov/</a>,</li>
+<li><a href="https://web.archive.org/web/20101107053715/http://www.asf.alaska.edu/program/sdc">https://web.archive.org/web/20101107053715/http://www.asf.alaska.edu/program/sdc</a> (Archived Pages)</li>
+<li><a href="http://geo-gateway.org/main.html">http://geo-gateway.org/main.html</a></li>
+</ul>
+</li>
+<li>Use Case 47 Atmospheric Turbulence - Event Discovery and Predictive
+Analytics
+<ul>
+<li><a href="https://web.archive.org/web/20050303202554/http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm">https://web.archive.org/web/20050303202554/http://oceanworld.tamu.edu/resources/oceanography-book/teleconnections.htm</a> (Archived Pages),</li>
+<li><a href="http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/">http://www.forbes.com/sites/toddwoody/2012/03/21/meet-the-scientists-mining-big-data-to-predict-the-weather/</a></li>
+</ul>
+</li>
+<li>Use Case 48 Climate Studies using the Community Earth System Model
+at DOE&rsquo;s NERSC center
+<ul>
+<li><a href="http://www-pcmdi.llnl.gov/">http://www-pcmdi.llnl.gov/</a></li>
+<li><a href="http://www.nersc.gov/">http://www.nersc.gov/</a></li>
+<li><a href="http://science.energy.gov/ber/research/cesd/">http://science.energy.gov/ber/research/cesd/</a></li>
+<li><a href="http://www2.cisl.ucar.edu/">http://www2.cisl.ucar.edu/</a></li>
+</ul>
+</li>
+<li>Use Case 50 DOE-BER AmeriFlux and FLUXNET Networks
+<ul>
+<li><a href="https://web.archive.org/web/20121210222321/http://ameriflux.lbl.gov/">https://web.archive.org/web/20121210222321/http://ameriflux.lbl.gov/</a> (Archived Pages)</li>
+<li><a href="http://www.fluxdata.org/default.aspx">http://www.fluxdata.org/default.aspx</a></li>
+</ul>
+</li>
+<li>Use Case 51 Consumption forecasting in Smart Grids
+<ul>
+<li><a href="https://web.archive.org/web/20160412194521/http://dslab.usc.edu/smartgrid.php">https://web.archive.org/web/20160412194521/http://dslab.usc.edu/smartgrid.php</a> (Archived Pages)</li>
+<li><a href="https://web.archive.org/web/20120130051124/http://ganges.usc.edu/wiki/Smart_Grid">https://web.archive.org/web/20120130051124/http://ganges.usc.edu/wiki/Smart_Grid</a> (Archived Pages)</li>
+<li><del><a href="https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;_afrWindowMode=0&amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17">https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&amp;_afrWindowMode=0&amp;_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17</a></del> <strong>(this link does not exist any longer)</strong></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927">http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927</a></li>
+</ul>
+</li>
+</ul>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Gregor von Laszewski" aria-label="Gregor von Laszewski">
+    <a class="text-white" target="_blank" href="https://laszewski.github.io">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 Indiana University, 2020 All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About Cybertraining</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/js/main.min.29b0315468c00226fa6f4556a9cebc0ac4fe1ce1457a01b22c0a06b329877383.js" integrity="sha256-KbAxVGjAAib6b0VWqc68CsT&#43;HOFFegGyLAoGsymHc4M=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
