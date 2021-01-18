@@ -1757,6 +1757,118 @@ This is Part 15 of the introduction.
     
     <item>
       <title>Modules: Introduction to AI-Driven Digital Transformation</title>
+      <link>/modules/ai-first/2021/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/ai-first/2021/introduction/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;This Lecture is recorded in 8 parts and gives an introduction and motivation for the class. This and other lectures in class are divided into &amp;ldquo;bite-sized lessons&amp;rdquo; from 5 to 30 minutes in length; that&amp;rsquo;s why it has 8 parts.&lt;/p&gt;
+&lt;p&gt;Lecture explains what students might gain from the class even if they end up with different types of jobs from data engineering, software engineering, data science or a business (application) expert. It stresses that we are well into a transformation that impacts industry research and the way life is lived. This transformation is centered on using the digital way with clouds, edge computing and deep learning giving the implementation. This &amp;ldquo;AI-Driven Digital Transformation&amp;rdquo; is as transformational as the Industrial Revolution in the past. We note that deep learning dominates most innovative AI replacing several traditional machine learning methods.&lt;/p&gt;
+&lt;p&gt;The slides for this course can be found at &lt;a href=&#34;https://docs.google.com/presentation/d/1ztKIAb6GaIcaOtiyWEHuRdR9z2xPyucgbhw-EpiDIRI/edit#slide=id.g94cec20bdc_0_240&#34;&gt;E534-Fall2020-Introduction&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;a-getting-started-bdaa-course-introduction-part-a-big-data-applications-and-analytics&#34;&gt;A: Getting Started: BDAA Course Introduction Part A: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;p&gt;This lesson describes briefly the trends driving and consequent of the AI-Driven Digital Transformation. It discusses the organizational aspects of the class and notes the two driving trends are clouds and AI. Clouds are mature and a dominant presence. AI is still rapidly changing and we can expect further major changes. The edge (devices and associated local fog computing) has always been important but now more is being done there.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nCbJ-2kKf0s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;b-technology-futures-from-gartners-analysis-bdaa-course-introduction-part-b-big-data-applications-and-analytics&#34;&gt;B: Technology Futures from Gartner&amp;rsquo;s Analysis: BDAA Course Introduction Part B: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;p&gt;This lesson goes through the technologies (AI Edge Cloud) from 2008-2020 that are driving the AI-Driven Digital Transformation. we use Hype Cycles and Priority Matrices from Gartner tracking importance concepts from the Innovation Trigger, Peak of Inflated Expectations through the Plateau of Productivity. We contrast clouds and AI.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QN-rPFbUAwc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;c-big-data-trends-bdaa-course-introduction-part-c-big-data-applications-and-analytics&#34;&gt;C: Big Data Trends: BDAA Course Introduction Part C: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This gives illustrations of sources of big data.&lt;/li&gt;
+&lt;li&gt;It gives key graphs of data sizes, images uploaded; computing, data, bandwidth trends;&lt;/li&gt;
+&lt;li&gt;Cloud-Edge architecture.&lt;/li&gt;
+&lt;li&gt;Intelligent machines and comparison of data from aircraft engine monitors compared to Twitter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/b_HeufZSEaE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;d-computing-trends-bdaa-course-introduction-part-d-big-data-applications-and-analytics&#34;&gt;D: Computing Trends: BDAA Course Introduction Part D: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Multicore revolution&lt;/li&gt;
+&lt;li&gt;Overall Global AI and Modeling Supercomputer GAIMSC&lt;/li&gt;
+&lt;li&gt;Moores Law compared to Deep Learning computing needs&lt;/li&gt;
+&lt;li&gt;Intel and NVIDIA status&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NxoOe5XKGyE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;e-big-data-and-science-bdaa-course-introduction-part-e-big-data-applications-and-analytics&#34;&gt;E: Big Data and Science: BDAA Course Introduction Part E: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Applications and Analytics&lt;/li&gt;
+&lt;li&gt;Cyberinfrastructure, e-moreorlessanything.&lt;/li&gt;
+&lt;li&gt;LHC, Higgs Boson and accelerators.&lt;/li&gt;
+&lt;li&gt;Astronomy, SKA, multi-wavelength.&lt;/li&gt;
+&lt;li&gt;Polar Grid.&lt;/li&gt;
+&lt;li&gt;Genome Sequencing.&lt;/li&gt;
+&lt;li&gt;Examples, Long Tail of Science.&lt;/li&gt;
+&lt;li&gt;Wired&amp;rsquo;s End of Science; the 4 paradigms.&lt;/li&gt;
+&lt;li&gt;More data versus Better algorithms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/C_jk161mQ_s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;f-big-data-systems-bdaa-course-introduction-part-f-big-data-applications-and-analytics&#34;&gt;F: Big Data Systems: BDAA Course Introduction Part F: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clouds, Service-oriented architectures, HPC High Performance Computing, Apace Software&lt;/li&gt;
+&lt;li&gt;DIKW process illustrated by Google maps&lt;/li&gt;
+&lt;li&gt;Raw data to Information/Knowledge/Wisdom/Decision Deluge from the EdgeInformation/Knowledge/Wisdom/Decision Deluge&lt;/li&gt;
+&lt;li&gt;Parallel Computing&lt;/li&gt;
+&lt;li&gt;Map Reduce&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/V_iqzUXCcyg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;g-industry-transformation-bdaa-course-introduction-part-g-big-data-applications-and-analytics&#34;&gt;G: Industry Transformation: BDAA Course Introduction Part G: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;p&gt;AI grows in importance and industries transform with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Core Technologies related to&lt;/li&gt;
+&lt;li&gt;New “Industries” over the last 25 years&lt;/li&gt;
+&lt;li&gt;Traditional “Industries” Transformed; malls and other old industries transform&lt;/li&gt;
+&lt;li&gt;Good to be master of Cloud Computing and Deep Learning&lt;/li&gt;
+&lt;li&gt;AI-First Industries,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DAJw6mitjao&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;h-jobs-and-conclusions-bdaa-course-introduction-part-h-big-data-applications-and-analytics&#34;&gt;H: Jobs and Conclusions: BDAA Course Introduction Part H: Big Data Applications and Analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Job trends&lt;/li&gt;
+&lt;li&gt;Become digitally savvy so you can take advantage of the AI/Cloud/Edge revolution with different jobs&lt;/li&gt;
+&lt;li&gt;The qualitative idea of Big Data has turned into a quantitative realization as Cloud, Edge and Deep Learning&lt;/li&gt;
+&lt;li&gt;Clouds are here to stay and one should plan on exploiting them&lt;/li&gt;
+&lt;li&gt;Data Intensive studies in business and research continue to grow in importance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nsgPI45XJlw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Introduction to AI-Driven Digital Transformation</title>
       <link>/modules/bigdataapplications/2020/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3950,6 +4062,60 @@ computing Serverless and FaaS Cloud Native Microservices Update to 2019 Hypecycl
     </item>
     
     <item>
+      <title>Modules: AI-First Engineering Cybertraining Spring 2021</title>
+      <link>/modules/ai-first/2021/course_lectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/ai-first/2021/course_lectures/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This describes weekly meeting and overall videos and homeworks&lt;/p&gt;
+&lt;p&gt;Contents&lt;/p&gt;
+&lt;div class=&#34;toc&#34;&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#week-1&#34;&gt;Week 1&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#lecture&#34;&gt;Lecture&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;Assignments&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;week-1&#34;&gt;Week 1&lt;/h2&gt;
+&lt;p&gt;To be added&lt;/p&gt;
+&lt;h3 id=&#34;lecture&#34;&gt;Lecture&lt;/h3&gt;
+&lt;p&gt;Our first meeting is 01:10P-02:25P on Tuesday&lt;/p&gt;
+&lt;p&gt;The zoom will be &lt;a href=&#34;https://iu.zoom.us/my/gc.fox&#34;&gt;https://iu.zoom.us/my/gc.fox&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We will discuss how to interact with us. We can adjust the course
+somewhat.&lt;/p&gt;
+&lt;p&gt;Also as lectures are/will be put on YouTube, we will go to one lecture per week &amp;ndash; we will choose day&lt;/p&gt;
+&lt;p&gt;The Syllabus has a general course description&lt;/p&gt;
+&lt;p&gt;Please communicate initially by email &lt;a href=&#34;mailto:gcf@iu.edu&#34;&gt;gcf@iu.edu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Assignment Github: Get a github.com account&lt;/li&gt;
+&lt;li&gt;Assignment Slack: Enroll in our slack at
+*
+&lt;a href=&#34;https://join.slack.com/t/cybertraining-3bz7942/shared_invite/zt-kzs969ea-x35oX9wdjspX7NmkpSfUpw&#34;&gt;https://join.slack.com/t/cybertraining-3bz7942/shared_invite/zt-kzs969ea-x35oX9wdjspX7NmkpSfUpw&lt;/a&gt;
+Post your github account name into the slack channel #general and #ai&lt;/li&gt;
+&lt;li&gt;Post a 2-3 paragraph &lt;strong&gt;formal&lt;/strong&gt; Bio (see IEEE papers what a formal
+bio is. Use google to find examples for Bios or look at Geoffreys or
+Gregors Web Pages.)&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Modules: Assignment 4</title>
       <link>/modules/bigdataapplications/2019/assignments/assignment4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5989,6 +6155,158 @@ Include codes or observations you made on those sections.&lt;/p&gt;
     
     <item>
       <title>Modules: Introduction to AI in Health and Medicine</title>
+      <link>/modules/ai-first/2021/health_and_medicine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/ai-first/2021/health_and_medicine/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This module discusses AI and the digital transformation for the Health and Medicine Area with a special emphasis on COVID-19 issues. We cover both the impact of COVID and some of the many activities that are addressing it.   Parts B and C have an extensive general discussion of AI in Health and Medicine&lt;/p&gt;
+&lt;p&gt;The complete presentation is available at &lt;a href=&#34;https://docs.google.com/presentation/d/1ONxy6Fu-pGZII235mfMRGAubPun5hO3bEovyETU88p8/edit?usp=sharing&#34;&gt;Google Slides&lt;/a&gt; while the videos are a YouTube &lt;a href=&#34;https://www.youtube.com/playlist?list=PLy0VLh_GFyz8MoWDLMjS-v0-OWhA--lBp&#34;&gt;playlist&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;part-a-introduction&#34;&gt;Part A: Introduction&lt;/h2&gt;
+&lt;p&gt;This lesson describes some overarching issues including the&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Summary in terms of Hypecycles&lt;/li&gt;
+&lt;li&gt;Players in the digital health ecosystem and in particular role of Big Tech which has needed AI expertise and infrastructure from clouds to smart watches/phones&lt;/li&gt;
+&lt;li&gt;Views of Pataients and Doctors on New Technology&lt;/li&gt;
+&lt;li&gt;Role of clouds. This is essentially assumed throughout presentation but not stressed.&lt;/li&gt;
+&lt;li&gt;Importance of Security&lt;/li&gt;
+&lt;li&gt;Introduction to Internet of Medical Things; this area is discussed in more detail later in preserntation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18gsYv9yE2SPs_cuxQEInoSnLlSc_vEAZ/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/08ZbpK5oe3A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-b-diagnostics&#34;&gt;Part B: Diagnostics&lt;/h2&gt;
+&lt;p&gt;This highlights some diagnostic appliocations of AI and the digital transformation. Part C also has some diagnostic coverage &amp;ndash; especially particular applications&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General use of AI in Diagnostics&lt;/li&gt;
+&lt;li&gt;Early progress in diagnostic imaging including Radiology and Opthalmology&lt;/li&gt;
+&lt;li&gt;AI In Clinical Decision Support&lt;/li&gt;
+&lt;li&gt;Digital Therapeutics is a recognized and growing activity area&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1-n4kVEL1dkQfB7esEo6PNo6kLs64jBH1/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7-ULGwApFzM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-c-examples&#34;&gt;Part C: Examples&lt;/h2&gt;
+&lt;p&gt;This lesson covers a broad range of AI uses in Health and Medicine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flagging Issues requirng urgent attentation and more generally AI for Precision Merdicine&lt;/li&gt;
+&lt;li&gt;Oncology and cancer have made early progress as exploit AI for images. Avoiding mistakes and diagnosing curable cervical cancer in developing countries with less screening.&lt;/li&gt;
+&lt;li&gt;Predicting Gestational Diabetes&lt;/li&gt;
+&lt;li&gt;cardiovascular diagnostics and AI to interpret and guide Ultrasound measurements&lt;/li&gt;
+&lt;li&gt;Robot Nurses and robots to comfort patients&lt;/li&gt;
+&lt;li&gt;AI to guide cosmetic surgery measuring beauty&lt;/li&gt;
+&lt;li&gt;AI in analysis DNA in blood tests&lt;/li&gt;
+&lt;li&gt;AI For Stroke detection (large vessel occlusion)&lt;/li&gt;
+&lt;li&gt;AI monitoring of breathing to flag opioid-induced respiratory depression.&lt;/li&gt;
+&lt;li&gt;AI to relieve administration burden including voice to text for Doctor&amp;rsquo;s notes&lt;/li&gt;
+&lt;li&gt;AI in consumer genomics&lt;/li&gt;
+&lt;li&gt;Areas that are slow including genomics, Consumer Robotics, Augmented/Virtual Reality and Blockchain&lt;/li&gt;
+&lt;li&gt;AI analysis of information resources flags probleme earlier&lt;/li&gt;
+&lt;li&gt;Internet of Medical Things applications from watches to toothbrushes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1qqd-P0zvQY8MEZDdzuxS-DhObiMSyKRO/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Sp9h_-bf_I8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-d-impact-of-covid-19&#34;&gt;Part D: Impact of Covid-19&lt;/h2&gt;
+&lt;p&gt;This covers some aspects of the impact of COVID -19 pandedmic starting in March 2020&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The features of the first stimulus bill&lt;/li&gt;
+&lt;li&gt;Impact on Digital Health, Banking, Fintech, Commerce &amp;ndash; bricks and mortar, e-commerce, groceries, credit cards, advertising, connectivity, tech industry, Ride Hailing and Delivery,&lt;/li&gt;
+&lt;li&gt;Impact on Restaurants, Airlines, Cruise lines, general travel, Food Delivery&lt;/li&gt;
+&lt;li&gt;Impact of working from home and videoconferencing&lt;/li&gt;
+&lt;li&gt;The economy and&lt;/li&gt;
+&lt;li&gt;The often positive trends for Tech industry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1UjBvb6LnKZ8xzHlZhLe5TlDIme00G83v/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/E6EIZr6L7x4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-e-covid-19-and-recession&#34;&gt;Part E: Covid-19 and Recession&lt;/h2&gt;
+&lt;p&gt;This is largely outdated as centered on start of pandemic induced recession. and we know what really happenmed now. Probably the pandemic accelerated the transformation of industry and the use of AI.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1sbEVK_RQdBuOmx-J8WYoYo7LhGXIp99e/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fGdyC3SVA1s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-f-tackling-covid-19&#34;&gt;Part F: Tackling Covid-19&lt;/h2&gt;
+&lt;p&gt;This discusses some of AI and digital methods used to understand and reduce impact of COVID-19&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Robots for remote patient examination&lt;/li&gt;
+&lt;li&gt;computerized tomography scan + AI to identify COVID-19&lt;/li&gt;
+&lt;li&gt;Early activities of Big Tech and COVID&lt;/li&gt;
+&lt;li&gt;Other early biotech activities with COVID-19&lt;/li&gt;
+&lt;li&gt;Remote-work technology: Hopin, Zoom, Run the World, FreeConferenceCall, Slack, GroWrk, Webex, Lifesize, Google Meet, Teams&lt;/li&gt;
+&lt;li&gt;Vaccines&lt;/li&gt;
+&lt;li&gt;Wearables and Monitoring, Remote patient monitoring&lt;/li&gt;
+&lt;li&gt;Telehealth,  Telemedicine and Mobile Health&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/17mYnNxsoLWJ682aDXyJ7HjR1caxYesZj/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/iPDNxRS7JmI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-g-data-and-computational-science-and-covid-19&#34;&gt;Part G: Data and Computational Science and Covid-19&lt;/h2&gt;
+&lt;p&gt;This lesson reviews some sophisticated high performance computing HPC and Big Data approaches to COVID&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rosetta volunteer computer to analyze proteins&lt;/li&gt;
+&lt;li&gt;COVID-19 High Performance Computing Consortium&lt;/li&gt;
+&lt;li&gt;AI based drug discovery by startup Insilico Medicine&lt;/li&gt;
+&lt;li&gt;Review of several research projects&lt;/li&gt;
+&lt;li&gt;Global Pervasive Computational Epidemiology for COVID-19 studies&lt;/li&gt;
+&lt;li&gt;Simulations of Virtual Tissues at Indiana University available on &lt;a href=&#34;https://nanohub.org/groups/nanobio&#34;&gt;nanoHUB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/12Mry7k1lk7f0D0VWATeyWKz82DJv0HvM/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/02emPIxf_IA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-h-screening-drug-and-candidates&#34;&gt;Part H: Screening Drug and Candidates&lt;/h2&gt;
+&lt;p&gt;A major project involving Department of Energy Supercomputers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General Structure of Drug Discovery&lt;/li&gt;
+&lt;li&gt;DeepDriveMD Project using AI combined with molecular dynamics  to accelerate discovery of drug properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/10Umb37DZrTqYSP0HigNCads60Zv3tyI1/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tbZ_ObdOoFA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;part-i-areas-for-covid19-study-and-pandemics-as-complex-systems&#34;&gt;Part I: Areas for Covid19 Study and Pandemics as Complex Systems&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1Nnx2GjIs1Ax7IpB1rO4nvN5XoEP0fhEu/view?usp=sharing&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Possible Projects in AI for Health and Medicine and especially COVID-19&lt;/li&gt;
+&lt;li&gt;Pandemics as a Complex System&lt;/li&gt;
+&lt;li&gt;AI and computational Futures for Complex Systems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/F6vykp-gKoI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Introduction to AI in Health and Medicine</title>
       <link>/modules/bigdataapplications/2020/health_and_medicine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6237,6 +6555,111 @@ another 4 pages explaining each member&amp;rsquo;s contribution must be added
 pages must be 8 pages. 2 additional pages per author.  If results and
 methods involve your contribution, clearly state it as a subsection,
 Author&amp;rsquo;s Contribution.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Mobility (Industry)</title>
+      <link>/modules/ai-first/2021/mobility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/ai-first/2021/mobility/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Industry being transformed by a)  Autonomy (AI) and b) Electric power&lt;/li&gt;
+&lt;li&gt;Established Organizations can’t change
+&lt;ul&gt;
+&lt;li&gt;General Motors (employees: 225,000 in 2016 to around 180,000 in 2018) finds it hard to compete with Tesla (42000 employees)&lt;/li&gt;
+&lt;li&gt;Market value GM was half the market value of Tesla at the start of 2020 but is now just 11% October 2020&lt;/li&gt;
+&lt;li&gt;GM purchased Cruise to compete&lt;/li&gt;
+&lt;li&gt;Funding and then buying startups is an important “transformation” strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Autonomy needs Sensors Computers Algorithms and Software
+&lt;ul&gt;
+&lt;li&gt;Also experience (training data)&lt;/li&gt;
+&lt;li&gt;Algorithms main bottleneck; others will automatically improve although lots of interesting work in new sensors, computers and software&lt;/li&gt;
+&lt;li&gt;Over the last 3 years, electrical power has gone from interesting to “bound to happen”; Tesla’s happy customers probably contribute to this&lt;/li&gt;
+&lt;li&gt;Batteries and Charging stations needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1_N3JwUz4Hj7YE_rmYPZRYdJUTbs7eDdw/view?usp=sharing&#34;&gt;Summary Slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1UYAq4VfpJ4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;Full Slide Deck&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mobility-industry-a-introduction&#34;&gt;Mobility Industry A: Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Futures of Automobile Industry, Mobility, and Ride-Hailing&lt;/li&gt;
+&lt;li&gt;Self-cleaning cars&lt;/li&gt;
+&lt;li&gt;Medical Transportation&lt;/li&gt;
+&lt;li&gt;Society of Automotive Engineers, Levels 0-5&lt;/li&gt;
+&lt;li&gt;Gartner’s conservative View&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cUn4FbJdkjY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-b-self-driving-ai&#34;&gt;Mobility Industry B: Self Driving AI&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Image processing and Deep Learning&lt;/li&gt;
+&lt;li&gt;Examples of Self Driving cars&lt;/li&gt;
+&lt;li&gt;Road construction Industry&lt;/li&gt;
+&lt;li&gt;Role of Simulated data&lt;/li&gt;
+&lt;li&gt;Role of AI in autonomy&lt;/li&gt;
+&lt;li&gt;Fleet cars&lt;/li&gt;
+&lt;li&gt;3 Leaders: Waymo, Cruise, NVIDIA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LgS05R23q3M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-c-general-motors-view&#34;&gt;Mobility Industry C: General Motors View&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Talk by Dave Brooks at GM, &amp;ldquo;AI for Automotive Engineering&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Zero crashes, zero emission, zero congestion&lt;/li&gt;
+&lt;li&gt;GM moving to electric autonomous vehicles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pybTudmAod0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-d-self-driving-snippets&#34;&gt;Mobility Industry D: Self Driving Snippets&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Worries about and data on its Progress&lt;/li&gt;
+&lt;li&gt;Tesla’s specialized self-driving chip&lt;/li&gt;
+&lt;li&gt;Some tasks that are hard for AI&lt;/li&gt;
+&lt;li&gt;Scooters and Bikes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-YzXTfeVZMw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;mobility-industry-e-electrical-power&#34;&gt;Mobility Industry E: Electrical Power&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rise in use of electrical power&lt;/li&gt;
+&lt;li&gt;Special opportunities in e-Trucks and time scale&lt;/li&gt;
+&lt;li&gt;Future of Trucks&lt;/li&gt;
+&lt;li&gt;Tesla market value&lt;/li&gt;
+&lt;li&gt;Drones and Robot deliveries; role of 5G&lt;/li&gt;
+&lt;li&gt;Robots in Logistics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EwPsb_izTTo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -6834,6 +7257,67 @@ This unit is an introduction to deep learning with currently 7 lessons&lt;/p&gt;
     
     <item>
       <title>Modules: Space and Energy</title>
+      <link>/modules/ai-first/2021/space_and_energy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/ai-first/2021/space_and_energy/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Energy sources and AI for powering Grids.&lt;/li&gt;
+&lt;li&gt;Energy Solution from Bill Gates&lt;/li&gt;
+&lt;li&gt;Space and AI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1411g_YlmX0ibGTovY8roBhqRYJgcoJ_SAb-0NQBKgMs/edit?usp=sharing&#34;&gt;Full Slide Deck&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;a-energy&#34;&gt;A: Energy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Distributed Energy Resources as a grid of renewables with a hierarchical set of Local Distribution Areas&lt;/li&gt;
+&lt;li&gt;Electric Vehicles in Grid&lt;/li&gt;
+&lt;li&gt;Economics of microgrids&lt;/li&gt;
+&lt;li&gt;Investment into Clean Energy&lt;/li&gt;
+&lt;li&gt;Batteries&lt;/li&gt;
+&lt;li&gt;Fusion and Deep Learning for plasma stability&lt;/li&gt;
+&lt;li&gt;AI for Power Grid, Virtual Power Plant, Power Consumption Monitoring, Electricity Trading&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rdGWniEHpT8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1JkBbAy58e7DAmVx2jj2-WVkUnWGA72UK/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;b-clean-energy-startups-from-bill-gates&#34;&gt;B: Clean Energy startups from Bill Gates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;26 Startups in areas like long-duration storage, nuclear energy, carbon capture, batteries, fusion, and hydropower …&lt;/li&gt;
+&lt;li&gt;The slide deck gives links to 26 companies from their website and pitchbook which describes their startup status (#employees, funding)&lt;/li&gt;
+&lt;li&gt;It summarizes their products&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rgq99JSKoe8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/18zfISCIknCKWEpVDf4qinVmrH1f6aQ6X/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;c-space&#34;&gt;C: Space&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Space supports AI  with communications, image data and global navigation&lt;/li&gt;
+&lt;li&gt;AI Supports space in AI-controlled remote manufacturing, imaging control, system control, dynamic spectrum use&lt;/li&gt;
+&lt;li&gt;Privatization of Space - SpaceX, Investment&lt;/li&gt;
+&lt;li&gt;57,000 satellites through 2029&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bpXNLFa7piY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/173WROavlVriMm3HEAY-4Ttd4cg9lR1Gu/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: Space and Energy</title>
       <link>/modules/bigdataapplications/2020/space_and_energy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6889,6 +7373,101 @@ This unit is an introduction to deep learning with currently 7 lessons&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/173WROavlVriMm3HEAY-4Ttd4cg9lR1Gu/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules: AI In Banking</title>
+      <link>/modules/ai-first/2021/ai_in_banking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/modules/ai-first/2021/ai_in_banking/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;In this lecture, AI in Banking is discussed. Here we focus on the transition of legacy banks towards AI based
+banking, real world examples of AI in Banking, banking systems and banking as a service.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/10gQtuXuqAtdc4x7briVis1iQSbqu6XmZCtSlBb2np38/edit?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ai-in-banking-a-the-transition-of-legacy-banks&#34;&gt;AI in Banking A: The Transition of legacy Banks&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Types of AI that is used&lt;/li&gt;
+&lt;li&gt;Closing of physical branches&lt;/li&gt;
+&lt;li&gt;Making the transition&lt;/li&gt;
+&lt;li&gt;Growth in Fintech as legacy bank services decline&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5xR8uisfSc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-b-fintech&#34;&gt;AI in Banking B: FinTech&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Fintech examples and investment&lt;/li&gt;
+&lt;li&gt;Broad areas of finance/banking where Fintech operating&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/k0o74_e7xec&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-c-neobanks&#34;&gt;AI in Banking C: Neobanks&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Types and Examples of neobanks&lt;/li&gt;
+&lt;li&gt;Customer uptake by world region&lt;/li&gt;
+&lt;li&gt;Neobanking in Small and Medium Business segment&lt;/li&gt;
+&lt;li&gt;Neobanking in real estate, mortgages&lt;/li&gt;
+&lt;li&gt;South American Examples&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DMS_h_qkpDk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-d-the-system&#34;&gt;AI in Banking D: The System&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The Front, Middle, Back Office&lt;/li&gt;
+&lt;li&gt;Front Office: Chatbots&lt;/li&gt;
+&lt;li&gt;Robo-advisors&lt;/li&gt;
+&lt;li&gt;Middle Office: Fraud, Money laundering&lt;/li&gt;
+&lt;li&gt;Fintech&lt;/li&gt;
+&lt;li&gt;Payment Gateways (Back Office)&lt;/li&gt;
+&lt;li&gt;Banking as a Service&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/V6KuN0yZQws&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-e-examples&#34;&gt;AI in Banking E: Examples&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Credit cards&lt;/li&gt;
+&lt;li&gt;The stock trading ecosystem&lt;/li&gt;
+&lt;li&gt;Robots counting coins&lt;/li&gt;
+&lt;li&gt;AI in Insurance: Chatbots, Customer Support&lt;/li&gt;
+&lt;li&gt;Banking itself&lt;/li&gt;
+&lt;li&gt;Handwriting recognition&lt;/li&gt;
+&lt;li&gt;Detect leaks for insurance&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0uWDWfeLLuY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ai-in-banking-f-as-a-service&#34;&gt;AI in Banking F: As a Service&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Banking Services Stack&lt;/li&gt;
+&lt;li&gt;Business Model&lt;/li&gt;
+&lt;li&gt;Several Examples&lt;/li&gt;
+&lt;li&gt;Metrics compared among examples&lt;/li&gt;
+&lt;li&gt;Breadth, Depth, Reputation, Speed to Market, Scalability&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UYY0-OJltqQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -7001,1109 +7580,6 @@ banking, real world examples of AI in Banking, banking systems and banking as a 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Introduction to Python for Cloud Computing, Gregor von Laszewski, Aug. 2019&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Ansible</title>
-      <link>/modules/devops/ansible/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/devops/ansible/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;introduction-to-ansible&#34;&gt;Introduction to Ansible&lt;/h2&gt;
-&lt;p&gt;Ansible is an open-source IT automation DevOps engine allowing you to manage
-and configure many compute resources in a scalable, consistent and
-reliable way.&lt;/p&gt;
-&lt;p&gt;Ansible to automates the following tasks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; It sets up the servers that you will use as part
-of your infrastructure.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Configuration management:&lt;/strong&gt; You can change the configuration of an
-application, OS, or device. You can implement security policies and
-other configuration tasks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Service management:&lt;/strong&gt; You can start and stop services, install
-updates&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Application deployment:&lt;/strong&gt; You can conduct application deployments
-in an automated fashion that integrate with your DevOps strategies.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h3&gt;
-&lt;p&gt;We assume you&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;can install Ubuntu 18.04 virtual machine on VirtualBox&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;can install software packages via &amp;lsquo;apt-get&amp;rsquo; tool in Ubuntu
-virtual host&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;already reserved a virtual cluster (with at least 1 virtual
-machine in it) on some cloud. OR you can use VMs installed in
-VirtualBox instead.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;have SSH credentials and can login to your virtual machines.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;setting-up-a-playbook&#34;&gt;Setting up a playbook&lt;/h3&gt;
-&lt;p&gt;Let us develop a sample from scratch, based on the paradigms that
-ansible supports. We are going to use Ansible to install Apache server on
-our virtual machines.&lt;/p&gt;
-&lt;p&gt;First, we install ansible on our machine and make sure we have an up
-to date OS:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get update
-$ sudo apt-get install ansible
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we prepare a working environment for your Ansible example&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mkdir ansible-apache
-$ cd ansible-apache
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To use ansible we will need a local configuration. When you execute
-Ansible within this folder, this local configuration file is always
-going to overwrite a system level Ansible configuration.  It is in
-general beneficial to keep custom configurations locally unless you
-absolutely believe it should be applied system wide. Create a file
-&lt;code&gt;inventory.cfg&lt;/code&gt; in this folder, add the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[defaults]
-hostfile = hosts.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This local configuration file tells that the target machines&amp;rsquo; names
-are given in a file named &lt;code&gt;hosts.txt&lt;/code&gt;. Next we will specify hosts in
-the file.&lt;/p&gt;
-&lt;p&gt;You should have ssh login accesses to all VMs listed in this file as
-part of our prerequisites. Now create and edit file &lt;code&gt;hosts.txt&lt;/code&gt; with
-the following content:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[apache]
-&amp;lt;server_ip&amp;gt; ansible_ssh_user=&amp;lt;server_username&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The name &lt;code&gt;apache&lt;/code&gt; in the brackets defines a server group name. We will
-use this name to refer to all server items in this group. As we intend
-to install and run apache on the server, the name choice seems quite
-appropriate. Fill in the IP addresses of the virtual machines you
-launched in your VirtualBox and fire up these VMs in you VirtualBox.&lt;/p&gt;
-&lt;p&gt;To deploy the service, we need to create a playbook. A playbook tells
-Ansible what to do. it uses YAML Markup syntax. Create and edit a file
-with a proper name e.g. &lt;code&gt;apache.yml&lt;/code&gt; as follow:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- hosts: apache #comment: apache is the group name we just defined
-  become: yes #comment: this operation needs privilege access
-  tasks:
-    - name: install apache2 # text description
-      apt: name=apache2 update_cache=yes state=latest
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This block defines the target VMs and operations(tasks) need to apply.
-We are using the &lt;code&gt;apt&lt;/code&gt; attribute to indicate all software packages that
-need to be installed. Dependent on the distribution of the operating
-system it will find the correct module installer without your
-knowledge. Thus an ansible playbook could also work for multiple
-different OSes.&lt;/p&gt;
-&lt;p&gt;Ansible relies on various kinds of modules to fulfil tasks on the remote
-servers. These modules are developed for particular tasks and take in
-related arguments. For instance, when we use &lt;code&gt;apt&lt;/code&gt; module, we
-need to tell which package we intend to install. That is why we provide
-a value for the &lt;code&gt;name=&lt;/code&gt; argument. The first &lt;code&gt;-name&lt;/code&gt; attribute is just
-a comment that will be printed when this task is executed.&lt;/p&gt;
-&lt;h3 id=&#34;run-the-playbook&#34;&gt;Run the playbook&lt;/h3&gt;
-&lt;p&gt;In the same folder, execute&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ansible-playbook apache.yml --ask-sudo-pass
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After a successful run, open a browser and fill in your server IP. you
-should see an &amp;lsquo;It works!&amp;rsquo; Apache2 Ubuntu default page. Make sure the
-security policy on your cloud opens port 80 to let the HTTP traffic go
-through.&lt;/p&gt;
-&lt;p&gt;Ansible playbook can have more complex and fancy structure and syntaxes.
-Go explore! This example is based on:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04&#34;&gt;https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We are going to offer an advanced Ansible in next chapter.&lt;/p&gt;
-&lt;h2 id=&#34;ansible-roles&#34;&gt;Ansible Roles&lt;/h2&gt;
-&lt;p&gt;Next we install the R package onto our cloud VMs.  R is a useful
-statistic programing language commonly used in many scientific and
-statistics computing projects, maybe also the one you chose for this
-class.  With this example we illustrate the concept of Ansible Roles,
-install source code through Github, and make use of variables. These
-are key features you will find useful in your project deployments.&lt;/p&gt;
-&lt;p&gt;We are going to use a top-down fashion in this example. We first start
-from a playbook that is already good to go. You can execute this
-playbook (do not do it yet, always read the entire section first) to
-get R installed in your remote hosts. We then further complicate this
-concise playbook by introducing functionalities to do the same tasks
-but in different ways. Although these different ways are not necessary
-they help you grasp the power of Ansible and ease your life when they
-are needed in your real projects.&lt;/p&gt;
-&lt;p&gt;Let us now create the following playbook with the name &lt;code&gt;example.yml&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- hosts: R_hosts
-  become: yes
-  tasks:
-    - name: install the R package
-      apt: name=r-base update_cache=yes state=latest
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The hosts are defined in a file &lt;code&gt;hosts.txt&lt;/code&gt;, which we configured in
-a file that we now call &lt;code&gt;ansible.cfg&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[R_hosts]
-&amp;lt;cloud_server_ip&amp;gt; ansible_ssh_user=&amp;lt;cloud_server_username&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Certainly, this should get the installation job done. But we are going
-to extend it via new features called role next&lt;/p&gt;
-&lt;p&gt;Role is an important concept used often in large Ansible projects.
-You divide a series of tasks into different groups. Each group
-corresponds to certain role within the project.&lt;/p&gt;
-&lt;p&gt;For example, if your project is to deploy a web site, you may need to
-install the back end database, the web server that responses HTTP
-requests and the web application itself. They are three different roles
-and should carry out their own installation and configuration tasks.&lt;/p&gt;
-&lt;p&gt;Even though we only need to install the R package in this example, we
-can still do it by defining a role &amp;lsquo;r&amp;rsquo;. Let us modify our &lt;code&gt;example.yml&lt;/code&gt; to be:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- hosts: R_hosts
-
-  roles:
-    - r
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now we create a directory structure in your top project directory as follows&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mkdir -p roles/r/tasks
-$ touch roles/r/tasks/main.yml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we edit the  &lt;code&gt;main.yml&lt;/code&gt; file and include the following content:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- name: install the R package
-  apt: name=r-base update_cache=yes state=latest
-  become: yes
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You probably already get the point. We take the &amp;lsquo;tasks&amp;rsquo; section out of
-the earlier &lt;code&gt;example.yml&lt;/code&gt; and re-organize them into roles. Each role
-specified in &lt;code&gt;example.yml&lt;/code&gt; should have its own directory under roles/ and
-the tasks need be done by this role is listed in a file &amp;lsquo;tasks/main.yml&amp;rsquo;
-as previous.&lt;/p&gt;
-&lt;h2 id=&#34;using-variables&#34;&gt;Using Variables&lt;/h2&gt;
-&lt;p&gt;We demonstrate this feature by installing source code from Github.
-Although R can be installed through the OS package manager (apt-get
-etc.), the software used in your projects may not. Many research
-projects are available by Git instead. Here we are going to show you how
-to install packages from their Git repositories. Instead of directly
-executing the module &amp;lsquo;apt&amp;rsquo;, we pretend Ubuntu does not provide this
-package and you have to find it on Git. The source code of R can be
-found at &lt;a href=&#34;https://github.com/wch/r-source.git&#34;&gt;https://github.com/wch/r-source.git&lt;/a&gt;. We are going to clone it
-to a remote VM&amp;rsquo;s hard drive, build the package and install the binary
-there.&lt;/p&gt;
-&lt;p&gt;To do so, we need a few new Ansible modules. You may remember from the
-last example that Ansible modules assist us to do different tasks
-based on the arguments we pass to it. It will come to no surprise that
-Ansible has a module &amp;lsquo;git&amp;rsquo; to take care of git-related works, and a
-&amp;lsquo;command&amp;rsquo; module to run shell commands.  Let us modify
-&lt;code&gt;roles/r/tasks/main.yml&lt;/code&gt; to be:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- name: get R package source
-  git:
-    repo: https://github.com/wch/r-source.git
-    dest: /tmp/R
-
-- name: build and install R
-  become: yes
-  command: chdir=/tmp/R &amp;quot;{{ item }}&amp;quot;
-  with_items:
-    - ./configure
-    - make
-    - make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The role &lt;code&gt;r&lt;/code&gt; will now carry out two tasks. One to clone the R source
-code into &lt;code&gt;/tmp/R&lt;/code&gt;, the other uses a series of shell commands to build and
-install the packages.&lt;/p&gt;
-&lt;p&gt;Note that the commands executed by the second task may not be
-available on a fresh VM image. But the point of this example is to
-show an alternative way to install packages, so we conveniently assume
-the conditions are all met.&lt;/p&gt;
-&lt;p&gt;To achieve this we are using variables in a separate file.&lt;/p&gt;
-&lt;p&gt;We typed several string constants in our Ansible scripts so far. In
-general, it is a good practice to give these values names and use them
-by referring to their names. This way, you complex Ansible project can
-be less error prone. Create a file in the same directory, and name it
-&lt;code&gt;vars.yml&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-repository: https://github.com/wch/r-source.git
-tmp: /tmp/R
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Accordingly, we will update our &lt;code&gt;example.yml&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- hosts: R_hosts
-  vars_files:
-    - vars.yml
-  roles:
-    - r
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As shown, we specify a &lt;code&gt;vars_files&lt;/code&gt; telling the script that the file
-&lt;code&gt;vars.yml&lt;/code&gt; is going to supply variable values, whose keys are denoted by
-Double curly brackets like in &lt;code&gt;roles/r/tasks/main.yml&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- name: get R package source
-  git:
-    repo: &amp;quot;{{ repository }}&amp;quot;
-    dest: &amp;quot;{{ tmp }}&amp;quot;
-
-- name: build and install R
-  become: yes
-  command: chdir=&amp;quot;{{ tmp }}&amp;quot; &amp;quot;{{ item }}&amp;quot;
-  with_items:
-    - ./configure
-    - make
-    - make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, just edit the &lt;code&gt;hosts.txt&lt;/code&gt; file with your target VMs&amp;rsquo; IP addresses and
-execute the playbook.&lt;/p&gt;
-&lt;p&gt;You should be able to extend the Ansible playbook for your
-needs. Configuration tools like Ansible are important components to
-master the cloud environment.&lt;/p&gt;
-&lt;h2 id=&#34;ansible-galaxy&#34;&gt;Ansible Galaxy&lt;/h2&gt;
-&lt;p&gt;Ansible Galaxy is a marketplace, where developers can share Ansible
-Roles to complete their system administration tasks. Roles exchanged
-in Ansible Galaxy community need to follow common conventions so that
-all participants know what to expect. We will illustrate details in
-this chapter.&lt;/p&gt;
-&lt;p&gt;It is good to follow the Ansible Galaxy standard during your development
-as much as possible.&lt;/p&gt;
-&lt;h3 id=&#34;ansible-galaxy-helloworld&#34;&gt;Ansible Galaxy helloworld&lt;/h3&gt;
-&lt;p&gt;Let us start with a simplest case: We will build an Ansible Galaxy
-project. This project will install the Emacs software package on your
-localhost as the target host. It is a &lt;em&gt;helloworld&lt;/em&gt; project only meant to
-get us familiar with Ansible Galaxy project structures.&lt;/p&gt;
-&lt;p&gt;First you need to create a directory. Let us call it &lt;code&gt;mongodb&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ mkdir mongodb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Go ahead and create files &lt;code&gt;README.md&lt;/code&gt;, &lt;code&gt;playbook.yml&lt;/code&gt;, &lt;code&gt;inventory&lt;/code&gt; and a
-subdirectory &lt;code&gt;roles/&lt;/code&gt; then  `playbook.yml is your project playbook. It
-should perform the Emacs installation task by executing the
-corresponding role you will develop in the folder &amp;lsquo;roles/&amp;rsquo;. The only
-difference is that we will construct the role with the help of
-ansible-galaxy this time.&lt;/p&gt;
-&lt;p&gt;Now, let ansible-galaxy initialize the directory structure for you:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ cd roles
-$ ansible-galaxy init &amp;lt;to-be-created-role-name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The naming convention is to concatenate your name and the role name by a
-dot. @fig:ansible shows how it looks like.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/ansible-galaxy-init-structure.png&#34; alt=&#34;image&#34;&gt;{#fig:ansible}&lt;/p&gt;
-&lt;p&gt;Let us fill in information to our project. There are several &lt;code&gt;main.yml&lt;/code&gt;
-files in different folders, and we will illustrate their usages.&lt;/p&gt;
-&lt;p&gt;defaults and vars:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;These folders should hold variables key-value pairs for your
-playbook scripts. We will leave them empty in this example.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;files:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This folder is for files need to be copied to the target
-hosts. Data files or configuration files can be specified if
-needed. We will leave it empty too.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;templates:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Similar missions to files/, templates is allocated for template
-files. Keep empty for a simple Emacs installation.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;handlers:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is reserved for services running on target hosts. For example,
-to restart a service under certain circumstance.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;tasks:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This file is the actual script for all tasks. You can use the role you
-built previously for Emacs installation here:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- name: install Emacs on Ubuntu 16.04
-  become: yes
-  package: name=emacs state=present
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;meta:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Provide necessary metadata for our Ansible Galaxy project for
-shipping:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;    ---
-    galaxy_info:
-      author: &amp;lt;you name&amp;gt;
-      description: emacs installation on Ubuntu 16.04
-      license:
-        - MIT
-      min_ansible_version: 2.0
-      platforms:
-        - name: Ubuntu
-          versions:
-            - xenial
-      galaxy_tags:
-        - development
-
-    dependencies: []
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next let us test it out. You have your Ansible Galaxy role ready
-now. To test it as a user, go to your directory and edit the other
-two files &lt;code&gt;inventory.txt&lt;/code&gt; and &lt;code&gt;playbook.yml&lt;/code&gt;, which are already generated
-for you in directory &lt;code&gt;tests&lt;/code&gt; by the script:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ansible-playbook -i ./hosts playbook.yml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After running this playbook, you should have Emacs installed on
-localhost.&lt;/p&gt;
-&lt;h2 id=&#34;a-complete-ansible-galaxy-project&#34;&gt;A Complete Ansible Galaxy Project&lt;/h2&gt;
-&lt;p&gt;We are going to use ansible-galaxy to setup a sample project. This
-sample project will:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;use a cloud cluster with multiple VMs&lt;/li&gt;
-&lt;li&gt;deploy Apache Spark on this cluster&lt;/li&gt;
-&lt;li&gt;install a particular HPC application&lt;/li&gt;
-&lt;li&gt;prepare raw data for this cluster to process&lt;/li&gt;
-&lt;li&gt;run the experiment and collect results&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;ansible-write-a-playbooks-for-mongodb&#34;&gt;Ansible: Write a Playbooks for MongoDB&lt;/h3&gt;
-&lt;p&gt;Ansible Playbooks are automated scripts written in YAML data format.
-Instead of using manual commands to setup multiple remote machines, you
-can utilize Ansible Playbooks to configure your entire systems. YAML
-syntax is easy to read and express the data structure of certain Ansible
-functions. You simply write some tasks, for example, installing
-software, configuring default settings, and starting the software, in a
-Ansible Playbook. With a few examples in this section, you will
-understand how it works and how to write your own Playbooks.&lt;/p&gt;
-&lt;dl&gt;
-&lt;dt&gt;There are also several examples of using Ansible &lt;a href=&#34;http://docs.ansible.com/playbooks.html&#34;&gt;Playbooks&lt;/a&gt; from the official site. It covers&lt;/dt&gt;
-&lt;dd&gt;
-&lt;p&gt;from basic usage of Ansible Playbooks to advanced usage such as
-applying patches and updates with different roles and groups.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;p&gt;We are going to write a basic playbook of Ansible
-software. Keep in mind that &lt;code&gt;Ansible&lt;/code&gt; is a main program and &lt;code&gt;playbook&lt;/code&gt;
-is a template that you would like to use. You may have several playbooks
-in your Ansible.&lt;/p&gt;
-&lt;h3 id=&#34;first-playbook-for-mongodb-installation&#34;&gt;First playbook for MongoDB Installation&lt;/h3&gt;
-&lt;p&gt;As a first example, we are going to write a playbook which installs
-MongoDB server. It includes the following tasks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Import the public key used by the package management system&lt;/li&gt;
-&lt;li&gt;Create a list file for MongoDB&lt;/li&gt;
-&lt;li&gt;Reload local package database&lt;/li&gt;
-&lt;li&gt;Install the MongoDB packages&lt;/li&gt;
-&lt;li&gt;Start MongoDB&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The material presented here is based on the manual installation of MongoDB from the
-official site:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*&#34;&gt;http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We also assume that we install MongoDB on Ubuntu 15.10.&lt;/p&gt;
-&lt;h4 id=&#34;enabling-root-ssh-access&#34;&gt;Enabling Root SSH Access&lt;/h4&gt;
-&lt;p&gt;Some setups of managed nodes may not allow you to log in as root. As
-this may be problematic later, let us create a playbook to resolve this.
-Create a &lt;code&gt;enable-root-access.yaml&lt;/code&gt; file with the following contents:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- hosts: ansible-test
-  remote_user: ubuntu
-  tasks:
-    - name: Enable root login
-      shell: sudo cp ~/.ssh/authorized_keys /root/.ssh/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Explanation:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;hosts&lt;/code&gt; specifies the name of a group of machines in the inventory&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;remote_user&lt;/code&gt; specifies the username on the managed nodes to log in
-as&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;tasks&lt;/code&gt; is a list of tasks to accomplish having a &lt;code&gt;name&lt;/code&gt; (a
-description) and modules to execute. In this case we use the &lt;code&gt;shell&lt;/code&gt;
-module.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We can run this playbook like so:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ansible-playbook -i inventory.txt -c ssh enable-root-access.yaml
-
-PLAY [ansible-test] ***********************************************************
-
-GATHERING FACTS ***************************************************************
-ok: [10.23.2.105]
-ok: [10.23.2.104]
-
-TASK: [Enable root login] *****************************************************
-changed: [10.23.2.104]
-changed: [10.23.2.105]
-
-PLAY RECAP ********************************************************************
-10.23.2.104                : ok=2    changed=1    unreachable=0    failed=0
-10.23.2.105                : ok=2    changed=1    unreachable=0    failed=0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;hosts-and-users&#34;&gt;Hosts and Users&lt;/h4&gt;
-&lt;p&gt;First step is choosing hosts to install MongoDB and a user account to
-run commands (tasks). We start with the following lines in the example
-filename of &lt;code&gt;mongodb.yaml&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- hosts: ansible-test
-  remote_user: root
-  become: yes
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In a previous section, we setup two machines with &lt;code&gt;ansible-test&lt;/code&gt; group
-name. We use two machines for MongoDB installation.
-Also, we use &lt;code&gt;root&lt;/code&gt; account to complete Ansible tasks.&lt;/p&gt;
-&lt;dl&gt;
-&lt;dt&gt;Indentation is important in YAML format. Do not ignore spaces start&lt;/dt&gt;
-&lt;dd&gt;
-&lt;p&gt;with in each line.&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;h4 id=&#34;tasks&#34;&gt;Tasks&lt;/h4&gt;
-&lt;p&gt;A list of tasks contains commands or configurations to be executed on
-remote machines in a sequential order. Each task comes with a &lt;code&gt;name&lt;/code&gt; and
-a &lt;code&gt;module&lt;/code&gt; to run your command or configuration. You provide a
-description of your task in &lt;code&gt;name&lt;/code&gt; section and choose a &lt;code&gt;module&lt;/code&gt; for
-your task. There are several modules that you can use, for example,
-&lt;code&gt;shell&lt;/code&gt; module simply executes a command without considering a return
-value. You may use &lt;code&gt;apt&lt;/code&gt; or &lt;code&gt;yum&lt;/code&gt; module which is one of the packaging
-modules to install software. You can find an entire list of modules
-here: &lt;a href=&#34;http://docs.ansible.com/list_of_all_modules.html&#34;&gt;http://docs.ansible.com/list_of_all_modules.html&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;module-apt_key-add-repository-keys&#34;&gt;Module apt_key: add repository keys&lt;/h4&gt;
-&lt;p&gt;We need to import the MongoDB public GPG Key. This is going to be a
-first task in our playbook.:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;tasks:
-  - name: Import the public key used by the package management system
-    apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;module-apt_repository-add-repositories&#34;&gt;Module apt_repository: add repositories&lt;/h4&gt;
-&lt;p&gt;Next add the MongoDB repository to apt:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- name: Add MongoDB repository
-  apt_repository: repo=&#39;deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen&#39; state=present
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;module-apt-install-packages&#34;&gt;Module apt: install packages&lt;/h4&gt;
-&lt;p&gt;We use &lt;code&gt;apt&lt;/code&gt; module to install &lt;code&gt;mongodb-org&lt;/code&gt; package. &lt;code&gt;notify&lt;/code&gt; action is
-added to start &lt;code&gt;mongod&lt;/code&gt; after the completion of this task. Use the
-&lt;code&gt;update_cache=yes&lt;/code&gt; option to reload the local package database.:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- name: install mongodb
-  apt: pkg=mongodb-org state=latest update_cache=yes
-  notify:
-  - start mongodb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;module-service-manage-services&#34;&gt;Module service: manage services&lt;/h4&gt;
-&lt;p&gt;We use &lt;code&gt;handlers&lt;/code&gt; here to start or restart services. It is similar to
-&lt;code&gt;tasks&lt;/code&gt; but will run only once.:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;handlers:
-  - name: start mongodb
-    service: name=mongod state=started
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;the-full-playbook&#34;&gt;The Full Playbook&lt;/h4&gt;
-&lt;p&gt;Our first playbook looks like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-- hosts: ansible-test
-  remote_user: root
-  become: yes
-  tasks:
-  - name: Import the public key used by the package management system
-    apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
-  - name: Add MongoDB repository
-    apt_repository: repo=&#39;deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen&#39; state=present
-  - name: install mongodb
-    apt: pkg=mongodb-org state=latest update_cache=yes
-    notify:
-    - start mongodb
-  handlers:
-    - name: start mongodb
-      service: name=mongod state=started
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;running-a-playbook&#34;&gt;Running a Playbook&lt;/h4&gt;
-&lt;p&gt;We use &lt;code&gt;ansible-playbook&lt;/code&gt; command to run our playbook:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
-
-PLAY [ansible-test] ***********************************************************
-
-GATHERING FACTS ***************************************************************
-ok: [10.23.2.104]
-ok: [10.23.2.105]
-
-TASK: [Import the public key used by the package management system] ***********
-changed: [10.23.2.104]
-changed: [10.23.2.105]
-
-TASK: [Add MongoDB repository] ************************************************
-changed: [10.23.2.104]
-changed: [10.23.2.105]
-
-TASK: [install mongodb] *******************************************************
-changed: [10.23.2.104]
-changed: [10.23.2.105]
-
-NOTIFIED: [start mongodb] *****************************************************
-ok: [10.23.2.105]
-ok: [10.23.2.104]
-
-PLAY RECAP ********************************************************************
-10.23.2.104                : ok=5    changed=3    unreachable=0    failed=0
-10.23.2.105                : ok=5    changed=3    unreachable=0    failed=0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you rerun the playbook, you should see that nothing changed:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
-
-PLAY [ansible-test] ***********************************************************
-
-GATHERING FACTS ***************************************************************
-ok: [10.23.2.105]
-ok: [10.23.2.104]
-
-TASK: [Import the public key used by the package management system] ***********
-ok: [10.23.2.104]
-ok: [10.23.2.105]
-
-TASK: [Add MongoDB repository] ************************************************
-ok: [10.23.2.104]
-ok: [10.23.2.105]
-
-TASK: [install mongodb] *******************************************************
-ok: [10.23.2.105]
-ok: [10.23.2.104]
-
-PLAY RECAP ********************************************************************
-10.23.2.104                : ok=4    changed=0    unreachable=0    failed=0
-10.23.2.105                : ok=4    changed=0    unreachable=0    failed=0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;sanity-check-test-mongodb&#34;&gt;Sanity Check: Test MongoDB&lt;/h4&gt;
-&lt;p&gt;Let us try to run &amp;lsquo;mongo&amp;rsquo; to enter mongodb shell.:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ssh ubuntu@$IP
-$ mongo
-MongoDB shell version: 2.6.9
-connecting to: test
-Welcome to the MongoDB shell.
-For interactive help, type &amp;quot;help&amp;quot;.
-For more comprehensive documentation, see
-        http://docs.mongodb.org/
-Questions? Try the support group
-        http://groups.google.com/group/mongodb-user
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;terms&#34;&gt;Terms&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Module: Ansible library to run or manage services, packages, files
-or commands.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Handler: A task for notifier.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Task: Ansible job to run a command, check files, or update
-configurations.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Playbook: a list of tasks for Ansible nodes. YAML format used.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;YAML: Human readable generic data serialization.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;reference&#34;&gt;Reference&lt;/h4&gt;
-&lt;p&gt;The main tutorial from Ansible is here:
-&lt;a href=&#34;http://docs.ansible.com/playbooks_intro.html&#34;&gt;http://docs.ansible.com/playbooks_intro.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You can also find an index of the ansible modules here:
-&lt;a href=&#34;http://docs.ansible.com/modules_by_category.html&#34;&gt;http://docs.ansible.com/modules_by_category.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;exercise&#34;&gt;Exercise&lt;/h2&gt;
-&lt;p&gt;We have shown a couple of examples of using Ansible tools. Before you
-apply it in you final project, we will practice it in this exercise.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;set up the project structure similar to Ansible Galaxy example&lt;/li&gt;
-&lt;li&gt;install MongoDB from the package manager (apt in this class)&lt;/li&gt;
-&lt;li&gt;configure your MongoDB installation to start the service
-automatically&lt;/li&gt;
-&lt;li&gt;use default port and let it serve local client connections only&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Github</title>
-      <link>/modules/bigdataapplications/2019/tech/github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2019/tech/github/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;track-progress-with-github&#34;&gt;Track Progress with Github&lt;/h2&gt;
-&lt;p&gt;We will be adding git issues for all the assignments provided in the class.
-This way you can also keep a track on the items need to be completed.
-It is like a todo list. You can check things once you complete it. This way
-you can easily track what you need to do and you can comment on the issue
-to report the questions you have. This is an experimental idea we are trying
-in the class. Hope this helps to manage your work load efficiently.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-check-this&#34;&gt;How to check this?&lt;/h2&gt;
-&lt;p&gt;All you have to do is go to your git repository.&lt;/p&gt;
-&lt;p&gt;Here are the steps to use this tool effectively.&lt;/p&gt;
-&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
-&lt;p&gt;Go to the repo. Here we use a sample repo.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/fa19-516-000&#34;&gt;Sample Repo&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Link to your repo will be &lt;a href=&#34;https://github.com/cloudmesh-community/fa19-%7Bclass-id%7D-%7Bhid%7D&#34;&gt;https://github.com/cloudmesh-community/fa19-{class-id}-{hid}&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;class-id is your class number for instance 534.
-hid is your homework id assigned.&lt;/p&gt;
-&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
-&lt;p&gt;In @fig:github-repo the red colored box shows where you need to navigate
-next. Click on issues.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/assignments/git/gitissue1.png&#34; alt=&#34;Git Repo View&#34;&gt;{#fig:github-repo}&lt;/p&gt;
-&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
-&lt;p&gt;In @fig:github-issue-list, Git issue list looks like this. The inputs in this are dummy values we
-used to test the module. In your repo, things will be readable and
-identified based on week. This way you know what you need to do this
-week.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/assignments/git/gitissue-list.png&#34; alt=&#34;Git Issue List&#34;&gt;{#fig:github-issue-list}&lt;/p&gt;
-&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
-&lt;p&gt;In @fig:github-issue-view this is how a git issue looks like.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/assignments/git/gitissue-view.png&#34; alt=&#34;Git Issue View&#34;&gt;{#fig:github-issue-view}&lt;/p&gt;
-&lt;p&gt;In here you will see the things that you need to do with main task and subtasks.
-This looks like a tood list. No pressure you can customize the way you want it.
-We&amp;rsquo;ll put in the basic skeleton for this one.&lt;/p&gt;
-&lt;h3 id=&#34;step-5-optional&#34;&gt;Step 5 (Optional)&lt;/h3&gt;
-&lt;p&gt;In @fig:github-issue-assign, assign a TA, once you have completed the issues, you can assign a TA to resolve if you have
-issues. In all issues you can make a comment and you can use @ sign to add the specific TA.
-For E534 Fall 2019 you can add @vibhatha as an assignee for your issue and we will communicate
-to solve the issues. This is an optional thing, you can use canvas or meeting hours to mention
-your concerns.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/assignments/git/assign-issue.png&#34; alt=&#34;Git Issue View&#34;&gt;{#fig:github-issue-assign}&lt;/p&gt;
-&lt;h3 id=&#34;step-6-optional&#34;&gt;Step 6 (Optional)&lt;/h3&gt;
-&lt;p&gt;In @fig:github-issue-label, you can add a label to your issue by clicking labels option in the right hand size within a
-given issue.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/assignments/git/assignment-label.png&#34; alt=&#34;Git Issue Label&#34;&gt;{#fig:github-issue-label}&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Introduction to Deep Learning (III)</title>
-      <link>/modules/bigdataapplications/2019/week10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2019/week10/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Usage of deep learning algorithm is one of the demanding skills needed
-in this decade and the coming decade. Providing a hands on experience in
-using deep learning applications is one of the main goals of this
-lecture series. Let&amp;rsquo;s get started.&lt;/p&gt;
-&lt;h2 id=&#34;deep-learning-algorithm-part-1&#34;&gt;Deep Learning Algorithm Part 1&lt;/h2&gt;
-&lt;p&gt;In this part of the lecture series, the idea is to provide an
-understanding on the usage of various deep learning algorithms. In this
-lesson, we talk about different algorithms in Deep Learning world. In
-this lesson we discuss a multi-layer perceptron and convolutional neural
-networks. Here we use MNIST classification problem and solve it using
-MLP and CNN.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/OLq0s-r4IDo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1sYRkiXhYU-qrXRlBW3ZQXwnNfmYuMHRlpRtfwZkiFTc&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;deep-learning-algorithms-part-2&#34;&gt;Deep Learning Algorithms Part 2&lt;/h2&gt;
-&lt;p&gt;In this lesson, we continue our study on a deep learning algorithms. We
-use Recurrent Neural Network related examples to show case how it can be
-applied to do MNIST classfication. We showcase how RNN can be applied to
-solve this problem.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/0A4dnEMKuYU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1MMUErmadF8RTWPQY6xxuXhpchh6gczuYr6Z7znCQkbM&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;deep-learning-algorithms-part-3&#34;&gt;Deep Learning Algorithms Part 3&lt;/h2&gt;
-&lt;p&gt;CNN is one of the most prominent algorithms that has been used in the
-deep learning world in the last decade. A lots of applications has been
-done using CNN. Most of these applications deal with images, videos,
-etc. In this lesson we continue the lesson on convolution neural
-networks. Here we discuss a brief history on CNN.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/KXFfKyDNhBE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1oedasSs6tBFLYyaskes0gZEhTz2Sva57Qb2Kv2ruiXU&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;deep-learning-algorithms-part-4&#34;&gt;Deep Learning Algorithms Part 4&lt;/h2&gt;
-&lt;p&gt;In this lesson we continue our study on CNN by understanding how
-historical findings supported the upliftment of the Convolutional Neural
-Networks. And also we discuss why CNN has been used for various
-applications in various fields.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/hinOsG7eLRk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1N9V7ehwKuA2fZN-bGX6m-DLkeTBpNiYpZAGQu6IqkeU&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;deep-learning-algorithms-part-5&#34;&gt;Deep Learning Algorithms Part 5&lt;/h2&gt;
-&lt;p&gt;In this lesson we discuss about auto-encoders. This is one of the highly
-used deep learning based models in signal denoising, image denoising.
-Here we portray how an auto-encoder can be used to do such tasks.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Q9Bl3QM5Img&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1MoQQOb5a8ptUSLrBCm2dT8P0yrZat6beKv1CDjJn44I&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;deep-learning-algorithms-part-6&#34;&gt;Deep Learning Algorithms Part 6&lt;/h2&gt;
-&lt;p&gt;In this lesson we discuss one of the most famous deep neural network
-architecture, Generative Adversarial Networks. This deep learning model
-has the capability of generating new outputs from existing knowledge. A
-GAN model is more like a counter-fitter who is trying to improve itself
-to generate best counterfits.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/KwVpYp19fe8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1dHvLXgdjZLE-W-Ic0AdK-nYO9pvij4jcruHxTmNJx74&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;additional-material&#34;&gt;Additional Material&lt;/h1&gt;
-&lt;p&gt;We have included more information on different types of deep neural
-networks and their usage. A summary of all the topics discussed under
-deep learning can be found in the following slide deck. Please refer it
-to get more information. Some of these information can help for writing
-term papers and projects.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/192NZBZNR4VVOIE8GdoJNm01o5AvY9tP1lWCdEA-Qy8Q/edit?usp=sharing&#34;&gt;&lt;img src=&#34;/images/presentation.png&#34; alt=&#34;Image&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Cloud Computing</title>
-      <link>/modules/bigdataapplications/2020/cloud_computing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/cloud_computing/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;e534-cloud-computing-unit&#34;&gt;E534 Cloud Computing Unit&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1CfdQW02IE7skOdQoJy899pozKYSx7Rcplwi9y75RwqM/edit?usp=sharing&#34;&gt;Full Slide Deck&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;overall-summary&#34;&gt;Overall Summary&lt;/h2&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/FV0r-Yf6zNk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;defining-clouds-i-basic-definition-of-cloud-and-two-very-simple-examples-of-why-virtualization-is-important&#34;&gt;Defining Clouds I: Basic definition of cloud and two very simple examples of why virtualization is important&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;How clouds are situated wrt HPC and supercomputers&lt;/li&gt;
-&lt;li&gt;Why multicore chips are important&lt;/li&gt;
-&lt;li&gt;Typical data center&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8OE3oOVDmlQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;defining-clouds-ii-service-oriented-architectures-software-services-as-message-linked-computing-capabilities&#34;&gt;Defining Clouds II: Service-oriented architectures: Software services as Message-linked computing capabilities&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;The different aaS’s: Network, Infrastructure, Platform, Software&lt;/li&gt;
-&lt;li&gt;The amazing services that Amazon AWS and Microsoft Azure have&lt;/li&gt;
-&lt;li&gt;Initial Gartner comments on clouds (they are now the norm) and evolution of servers; serverless and microservices&lt;/li&gt;
-&lt;li&gt;Gartner hypecycle and priority matrix on Infrastructure Strategies&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/mzkFZApl_-4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;defining-clouds-iii-cloud-market-share&#34;&gt;Defining Clouds III: Cloud Market Share&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;How important are they?&lt;/li&gt;
-&lt;li&gt;How much money do they make?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/jYfoNxlROqU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;virtualization-virtualization-technologies-hypervisors-and-the-different-approaches&#34;&gt;Virtualization: Virtualization Technologies, Hypervisors and the different approaches&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;KVM Xen, Docker and Openstack&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Tqsx-sEPY6M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;cloud-infrastructure-i-comments-on-trends-in-the-data-center-and-its-technologies&#34;&gt;Cloud Infrastructure I: Comments on trends in the data center and its technologies&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Clouds physically across the world&lt;/li&gt;
-&lt;li&gt;Green computing&lt;/li&gt;
-&lt;li&gt;Fraction of world’s computing ecosystem in clouds and associated sizes&lt;/li&gt;
-&lt;li&gt;An analysis from Cisco of size of cloud computing&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6ncp-UTYk-4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;cloud-infrastructure-ii-gartner-hypecycle-and-priority-matrix-on-compute-infrastructure&#34;&gt;Cloud Infrastructure II: Gartner hypecycle and priority matrix on Compute Infrastructure&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Containers compared to virtual machines&lt;/li&gt;
-&lt;li&gt;The emergence of artificial intelligence as a dominant force&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/R0Sk1rAS20M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;cloud-software-hpc-abds-with-over-350-software-packages-and-how-to-use-each-of-21-layers&#34;&gt;Cloud Software: HPC-ABDS with over 350 software packages and how to use each of 21 layers&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Google’s software innovations&lt;/li&gt;
-&lt;li&gt;MapReduce in pictures&lt;/li&gt;
-&lt;li&gt;Cloud and HPC software stacks compared&lt;/li&gt;
-&lt;li&gt;Components need to support cloud/distributed system programming&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/gMAA9y8khMM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;cloud-applications-i-clouds-in-science-where-area-called-cyberinfrastructure-the-science-usage-pattern-from-nist&#34;&gt;Cloud Applications I: Clouds in science where area called cyberinfrastructure; the science usage pattern from NIST&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Artificial Intelligence from Gartner&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/sAbYkZHD81U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;cloud-applications-ii-characterize-applications-using-nist-approach&#34;&gt;Cloud Applications II: Characterize Applications using NIST approach&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Internet of Things&lt;/li&gt;
-&lt;li&gt;Different types of MapReduce&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/YaPg-OOlkdw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;parallel-computing-analogies-parallel-computing-in-pictures&#34;&gt;Parallel Computing Analogies: Parallel Computing in pictures&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Some useful analogies and principles&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/iqVHvQg851s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;real-parallel-computing-single-programinstruction-multiple-data-simd-spmd&#34;&gt;Real Parallel Computing: Single Program/Instruction Multiple Data SIMD SPMD&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Big Data and Simulations Compared&lt;/li&gt;
-&lt;li&gt;What is hard to do?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/7gD2yyTKatM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;storage-cloud-data-approaches&#34;&gt;Storage: Cloud data approaches&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Repositories, File Systems, Data lakes&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/NcIbKQ-AChA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;hpc-and-clouds-the-branscomb-pyramid&#34;&gt;HPC and Clouds: The Branscomb Pyramid&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Supercomputers versus clouds&lt;/li&gt;
-&lt;li&gt;Science Computing Environments&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/QTxYKhpVtDw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;comparison-of-data-analytics-with-simulation-structure-of-different-applications-for-simulations-and-big-data&#34;&gt;Comparison of Data Analytics with Simulation: Structure of different applications for simulations and Big Data&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Software implications&lt;/li&gt;
-&lt;li&gt;Languages&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/6WmWE_7iB3w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;the-future-i-the-future-i-gartner-cloud-computing-hypecycle-and-priority-matrix-2017-and-2019&#34;&gt;The Future I: The Future I: Gartner cloud computing hypecycle and priority matrix 2017 and 2019&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Hyperscale computing&lt;/li&gt;
-&lt;li&gt;Serverless and FaaS&lt;/li&gt;
-&lt;li&gt;Cloud Native&lt;/li&gt;
-&lt;li&gt;Microservices&lt;/li&gt;
-&lt;li&gt;Update to 2019 Hypecycle&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1xH5ow5kOhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;future-and-other-issues-ii-security&#34;&gt;Future and Other Issues II: Security&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Blockchain&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/9AmVHEXv7gY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;future-and-other-issues-iii-fault-tolerance&#34;&gt;Future and Other Issues III: Fault Tolerance&lt;/h2&gt;
-&lt;p&gt;Video: 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/VnkkCix3yEE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Transportation Systems</title>
-      <link>/modules/bigdataapplications/2020/transportation_systems/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/transportation_systems/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;transportation-systems-summary&#34;&gt;Transportation Systems Summary&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;The ride-hailing industry highlights the growth of a new “Transportation System” TS
-a. For ride-hailing TS controls rides matching drivers and customers; it predicts how to position cars and how to avoid traffic slowdowns
-b. However, TS is much bigger outside ride-hailing as we move into the “connected vehicle” era
-c. TS will probably find autonomous vehicles easier to deal with than human drivers&lt;/li&gt;
-&lt;li&gt;Cloud Fog and Edge components&lt;/li&gt;
-&lt;li&gt;Autonomous AI was centered on generalized image processing&lt;/li&gt;
-&lt;li&gt;TS also needs AI (and DL) but this is for routing and geospatial time-series; different technologies from those for image processing&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/19yAgjNjsoSzPxEqn1Ghr9tG51EfGocuc6_JjOi_0Ijk/edit?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/1UYAq4VfpJ4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;transportation-systems-a-introduction&#34;&gt;Transportation Systems A: Introduction&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;“Smart” Insurance&lt;/li&gt;
-&lt;li&gt;Fundamentals  of Ride-Hailing&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/aRBi94QTyvQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;transportation-systems-b-components-of-a-ride-hailing-system&#34;&gt;Transportation Systems B: Components of a Ride-Hailing System&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Transportation Brain and Services&lt;/li&gt;
-&lt;li&gt;Maps, Routing,&lt;/li&gt;
-&lt;li&gt;Traffic forecasting with deep learning&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/obUYIj4cNao&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;transportation-systems-c-different-ai-approaches-in-ride-hailing&#34;&gt;Transportation Systems C: Different AI Approaches in Ride-Hailing&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;View as a Time Series: LSTM and ARIMA&lt;/li&gt;
-&lt;li&gt;View as an image in a 2D earth surface - Convolutional networks&lt;/li&gt;
-&lt;li&gt;Use of Graph Neural Nets&lt;/li&gt;
-&lt;li&gt;Use of Convolutional Recurrent Neural Nets&lt;/li&gt;
-&lt;li&gt;Spatio-temporal modeling&lt;/li&gt;
-&lt;li&gt;Comparison of data with predictions&lt;/li&gt;
-&lt;li&gt;Reinforcement Learning&lt;/li&gt;
-&lt;li&gt;Formulation of General Geospatial Time-Series Problem&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/k9qFE5WdQWA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Modules: Commerce</title>
-      <link>/modules/bigdataapplications/2020/commerce/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/modules/bigdataapplications/2020/commerce/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1mAcwVUutv8n8-i5Yjc0wFSlJcwDG4DWaB-wMgdmOFVs/edit?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;ai-in-commerce-a-the-old-way-of-doing-things&#34;&gt;AI in Commerce A: The Old way of doing things&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;AI in Commerce&lt;/li&gt;
-&lt;li&gt;AI-First Engineering, Deep Learning&lt;/li&gt;
-&lt;li&gt;E-commerce and the transformation of “Bricks and Mortar”&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/w07nShBHKRY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;ai-in-commerce-b-ai-in-retail&#34;&gt;AI in Commerce B: AI in Retail&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Personalization&lt;/li&gt;
-&lt;li&gt;Search&lt;/li&gt;
-&lt;li&gt;Image Processing to Speed up Shopping&lt;/li&gt;
-&lt;li&gt;Walmart&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Kqgbbrnaf1g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;ai-in-commerce-c-the-revolution-that-is-amazon&#34;&gt;AI in Commerce C: The Revolution that is Amazon&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Retail Revolution&lt;/li&gt;
-&lt;li&gt;Saves Time, Effort and Novelity with Modernized Retail&lt;/li&gt;
-&lt;li&gt;Looking ahead of Retail evolution&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/M1TQp1CcjZk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;ai-in-commerce-d-dlmalls-e-commerce&#34;&gt;AI in Commerce D: DLMalls e-commerce&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Amazon sellers&lt;/li&gt;
-&lt;li&gt;Rise of Shopify&lt;/li&gt;
-&lt;li&gt;Selling Products on Amazon&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/kaZaxn5aHaE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;ai-in-commerce-e-recommender-engines-digital-media&#34;&gt;AI in Commerce E: Recommender Engines, Digital media&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Spotify recommender engines&lt;/li&gt;
-&lt;li&gt;Collaborative Filtering&lt;/li&gt;
-&lt;li&gt;Audio Modelling&lt;/li&gt;
-&lt;li&gt;DNN for Recommender engines&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/pY1KZu7EOn0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
 
       </description>
     </item>
