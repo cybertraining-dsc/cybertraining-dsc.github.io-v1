@@ -44,6 +44,19 @@ Course Lectures. These meeting notes are updated weekly (Web)
 
 {{< /view_module >}}
 
+## Overview
+This course is built around the revolution driven by AI and in particular deep learning that is transforming all activities: industry, research, and lifestyle. It will a similar structure to [The Big Data Class](https://cybertraining-dsc.github.io/courses/bigdata2020/)  and the details of the course will be adapted to the interests of participating students. It can include significant deep learning programming.
+
+All activities -- Industry, Research, and Lifestyle  -- are being transformed by Artificial Intelligence AI and Big Data. AI is currently dominated by deep learning implemented on a global pervasive computing environment - the global AI supercomputer. This course studies the technologies and applications of this transformation.
+
+We review Core Technologies driving these transformations: Digital transformation moving to AI Transformation, Big Data, Cloud Computing, software and data engineering, Edge Computing and Internet of Things, The Network and Telecommunications, Apache Big Data Stack, Logistics and company infrastructure, Augmented and Virtual reality, Deep Learning.
+
+There are new “Industries” over the last 25 years: The Internet, Remote collaboration and Social Media, Search, Cybersecurity, Smart homes and cities, Robotics. However, our focus is Traditional “Industries” Transformed: Computing, Transportation: ride-hailing, drones, electric self-driving autos/trucks, road management, travel, construction Industry, Space, Retail stores and e-commerce, Manufacturing: smart machines, digital twins, Agriculture and Food, Hospitality and Living spaces: buying homes, hotels, “room hailing”, Banking and Financial Technology: Insurance, mortgage, payments, stock market, bitcoin, Health: from DL for pathology to personalized genomics to remote surgery, Surveillance and Monitoring: -- Civilian Disaster response; Miltary Command and Control, Energy: Solar wind oil, Science; more data better analyzed; DL as the new applied mathematics, Sports: including Sabermetrics, Entertainment, Gaming including eSports, News, advertising, information creation and dissemination, education, fake news and Politics, Jobs.
+
+We select material from above to match student interests.
+
+Students can take the course in either software-based or report-based mode. The lectures with be offered in video form with a weekly discussion class. Python and Tensorflow will be main software used.
+
 
 ## Lectures on Particular Topics
 
