@@ -18,7 +18,6 @@ Contents
 
 ## Week 1
 
-To be added
 
 ### Lecture
 
@@ -34,6 +33,11 @@ Also as lectures are/will be put on YouTube, we will go to one lecture per week 
 The Syllabus has a general course description
 
 Please communicate initially by email gcf@iu.edu
+
+This first class discussed structure of class and agreed to have a section on deep learning technology.
+
+We gave [Introductory Lecture](https://docs.google.com/presentation/d/1esj3zXCswQm5n8kfF-BvRH2Ih6oqNpPQjq02UPzvIB0/edit?usp=sharing)
+{{< youtube "mjWXGR9NcHU" >}}
 
 ### Assignments
 
