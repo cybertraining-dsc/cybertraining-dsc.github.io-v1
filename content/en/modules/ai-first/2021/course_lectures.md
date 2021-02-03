@@ -55,10 +55,16 @@ We gave [Introductory Lecture](https://docs.google.com/presentation/d/1esj3zXCsw
 We gave an introductory lecture to optimization and deep learning. Unfortunately we didn't record the zoom serssion but we did make an offline recording with [slides](https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing) 
 {{< youtube "PCZZQ93xmGI" >}}
 
-We now have recorded all the introductory deep learning material
+We also went through material on using Google Colab with examples. This is a lecture plus four Python notebooks
 
 * [First DL: Deep Learning MNIST Example Spring 2021](https://docs.google.com/presentation/d/1YoXPaDeHldUJM8gnbOvDsmc_U6ff5T6bYq_We1JHNMg/edit?usp=sharing)
+* [Welcome To Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb)
+* [Google Colab: A gentle introduction to Google Colab for Programming](https://cybertraining-dsc.github.io/modules/python/google-colab/python-google-colab/)
+* [Python Warm Up](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/python_initial/)
+* [MNIST Classification on Google Colab](https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/google_colab_exercise/)
 
-with recorded videos
+with recorded video
 
 * First DL: Deep Learning MNIST Example Spring 2021 {{< youtube "r-aD0oHVAdA" >}}
+
+We now have recorded all the introductory deep learning material
