@@ -68,3 +68,18 @@ with recorded video
 * First DL: Deep Learning MNIST Example Spring 2021 {{< youtube "r-aD0oHVAdA" >}}
 
 We now have recorded all the introductory deep learning material
+
+* [slides IntroDLOpt: Introduction to Deep Learning and Optimization](https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing)
+* [slides Opt: Overview of Optimization](https://docs.google.com/presentation/d/1NP36rgNLTP9P7NpFBRufC96tePX1-65BllVNGnXAIbY/edit?usp=sharing)
+* [slides DLBasic: Deep Learning - Some examples](https://docs.google.com/presentation/d/1Kbojr5Qd7vZ2TcxdBA7RlmwJ5kG0NEbZm-zrYad6ktc/edit?usp=sharing)
+* [slides DLBasic: Components of Deep Learning](https://docs.google.com/presentation/d/1YXso4WEkp9e9Eu1LSIgpBGkEX_8ZO8R_TZaqZHc4XNU/edit?usp=sharing)
+* [slides DLBasic: Types of  Deep Learning Networks: Summary](https://docs.google.com/presentation/d/1sjQ00oY0h6tlsYG9aN93KRjNuBHPC_7WzCmAiax2X74/edit?usp=sharing)
+
+with recorded videos
+
+* Video: IntroDLOpt: Introduction to Deep Learning and Optimization {{< youtube "PCZZQ93xmGI" >}}
+* Video: Opt: Overview of Optimization Spring2021 {{< youtube "kFBqj4U9XyA" >}}
+* Video: DLBasic: Deep Learning - Some examples Spring 2021 {{< youtube "sJ-9YjgS35w" >}}
+* Video: DLBasic: Components of Deep Learning Systems {{< youtube "z9-OFr__Y-w" >}}
+* Video: DLBasic: Summary of Types of Deep Learning Systems {{< youtube "4Ma3SFFLhYY" >}}
+
