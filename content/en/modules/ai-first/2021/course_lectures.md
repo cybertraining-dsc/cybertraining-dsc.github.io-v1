@@ -50,3 +50,9 @@ We gave [Introductory Lecture](https://docs.google.com/presentation/d/1esj3zXCsw
   bio is. Use google to find examples for Bios or look at Geoffreys or
   Gregors Web Pages.)
 
+## Week 2
+
+We gave an introductory lecture to optimization and deep learning. Unfortunately we didn't record the zoom serssion but we did make an offline recording with [slides](https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing) 
+{{< youtube "PCZZQ93xmGI" >}}
+
+We now have recorded all the introductory deep learning material
