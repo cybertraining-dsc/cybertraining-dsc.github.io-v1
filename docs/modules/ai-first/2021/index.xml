@@ -149,6 +149,7 @@
         &lt;li&gt;&lt;a href=&#34;#assignments&#34;&gt;Assignments&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#week-2&#34;&gt;Week 2&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
@@ -181,6 +182,65 @@ Post your github account name into the slack channel #general and #ai&lt;/li&gt;
 &lt;li&gt;Post a 2-3 paragraph &lt;strong&gt;formal&lt;/strong&gt; Bio (see IEEE papers what a formal
 bio is. Use google to find examples for Bios or look at Geoffreys or
 Gregors Web Pages.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;week-2&#34;&gt;Week 2&lt;/h2&gt;
+&lt;p&gt;We gave an introductory lecture to optimization and deep learning. Unfortunately we didn&amp;rsquo;t record the zoom serssion but we did make an offline recording with &lt;a href=&#34;https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing&#34;&gt;slides IntroDLOpt: Introduction to Deep Learning and Optimization&lt;/a&gt; and YouTube
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PCZZQ93xmGI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We also went through material on using Google Colab with examples. This is a lecture plus four Python notebooks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1YoXPaDeHldUJM8gnbOvDsmc_U6ff5T6bYq_We1JHNMg/edit?usp=sharing&#34;&gt;First DL: Deep Learning MNIST Example Spring 2021&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://colab.research.google.com/notebooks/welcome.ipynb&#34;&gt;Welcome To Colaboratory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/python/google-colab/python-google-colab/&#34;&gt;Google Colab: A gentle introduction to Google Colab for Programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/python_initial/&#34;&gt;Python Warm Up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/google_colab_exercise/&#34;&gt;MNIST Classification on Google Colab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;with recorded video&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First DL: Deep Learning MNIST Example Spring 2021 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/r-aD0oHVAdA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We now have recorded all the introductory deep learning material&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing&#34;&gt;slides IntroDLOpt: Introduction to Deep Learning and Optimization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1NP36rgNLTP9P7NpFBRufC96tePX1-65BllVNGnXAIbY/edit?usp=sharing&#34;&gt;slides Opt: Overview of Optimization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1Kbojr5Qd7vZ2TcxdBA7RlmwJ5kG0NEbZm-zrYad6ktc/edit?usp=sharing&#34;&gt;slides DLBasic: Deep Learning - Some examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1YXso4WEkp9e9Eu1LSIgpBGkEX_8ZO8R_TZaqZHc4XNU/edit?usp=sharing&#34;&gt;slides DLBasic: Components of Deep Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1sjQ00oY0h6tlsYG9aN93KRjNuBHPC_7WzCmAiax2X74/edit?usp=sharing&#34;&gt;slides DLBasic: Types of  Deep Learning Networks: Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;with recorded videos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Video: IntroDLOpt: Introduction to Deep Learning and Optimization 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PCZZQ93xmGI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Video: Opt: Overview of Optimization Spring2021 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kFBqj4U9XyA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Video: DLBasic: Deep Learning - Some examples Spring 2021 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sJ-9YjgS35w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Video: DLBasic: Components of Deep Learning Systems 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/z9-OFr__Y-w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Video: DLBasic: Summary of Types of Deep Learning Systems 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/4Ma3SFFLhYY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
