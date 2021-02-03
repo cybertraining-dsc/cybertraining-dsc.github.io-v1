@@ -56,3 +56,9 @@ We gave an introductory lecture to optimization and deep learning. Unfortunately
 {{< youtube "PCZZQ93xmGI" >}}
 
 We now have recorded all the introductory deep learning material
+
+* [First DL: Deep Learning MNIST Example Spring 2021](https://docs.google.com/presentation/d/1YoXPaDeHldUJM8gnbOvDsmc_U6ff5T6bYq_We1JHNMg/edit?usp=sharing)
+
+with recorded videos
+
+* First DL: Deep Learning MNIST Example Spring 2021 {{< youtube "r-aD0oHVAdA" >}}
