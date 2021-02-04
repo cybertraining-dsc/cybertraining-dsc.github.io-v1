@@ -83,3 +83,8 @@ with recorded videos
 * Video: DLBasic: Components of Deep Learning Systems {{< youtube "z9-OFr__Y-w" >}}
 * Video: DLBasic: Summary of Types of Deep Learning Systems {{< youtube "4Ma3SFFLhYY" >}}
 
+## Week 3
+
+We discussed deep learning examples covering first half of slides [DLBasic: Deep Learning - Some examples](https://docs.google.com/presentation/d/1Kbojr5Qd7vZ2TcxdBA7RlmwJ5kG0NEbZm-zrYad6ktc/edit?usp=sharing) with recorded video {{< youtube "whzCJUKJzN4" >}}
+
+
