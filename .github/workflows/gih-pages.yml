@@ -34,7 +34,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: sudo npm install -D postcss
-      - run: npm ci
+      # - run: npm ci
       - run: hugo --minify
 
       - name: Deploy
