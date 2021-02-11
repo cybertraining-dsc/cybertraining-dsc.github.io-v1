@@ -1,0 +1,1385 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – DevOps</title><link>/modules/devops/</link><description>Recent content in DevOps on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/modules/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Modules: DevOps - Continuous Improvement</title><link>/modules/devops/devop-ci/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/devops/devop-ci/</guid><description>
+&lt;p>Deploying enterprise applications has been always challenging. Without
+consistent and reliable processes and practices, it would be
+impossible to track and measure the deployment artifacts, which
+code-files and configuration data have been deployed to what servers
+and what level of unit and integration tests have been done among
+various components of the enterprise applications. Deploying software
+to cloud is much more complex, given &lt;em>Dev-Op&lt;/em> teams do not have
+extensive access to the infrastructure and they are forced to follow
+the guidelines and tools provided by the cloud companies. In recent
+years, Continuous Integration (&lt;em>CI&lt;/em>) and Continuous Deployment
+(&lt;em>CD&lt;/em>) are the &lt;em>Dev-Op&lt;/em> mantra for delivering software reliably
+and consistently.&lt;/p>
+&lt;p>While &lt;em>CI/CD&lt;/em> process is, as difficult as it gets, monitoring the
+deployed applications is emerging as new challenge, especially, on an
+infrastructure that is sort of virtual with VMs in combination with
+containers. Continuous Monitoring (&lt;em>CM&lt;/em>) is somewhat new concept,
+that has gaining rapid popularity and becoming integral part of the
+overall &lt;em>Dev-Op&lt;/em> functionality. Based on where the software has been
+deployed, continuous monitoring can be as simple as, monitoring the
+behavior of the applications to as complex as, end-to-end visibility
+across infrastructure, heart-beat and health-check of the deployed
+applications along with dynamic scalability based on the usage of
+these applications. To address this challenge, building robust
+monitoring pipeline process, would be a necessity. Continuous
+Monitoring aspects get much better control, if they are thought as
+early as possible and bake them into the software during the
+development. We can provide much better tracking and analyze metrics
+much closer to the application needs, if these aspects are considered
+very early into the process. Cloud companies aware of this necessity,
+provide various &lt;em>Dev-Op&lt;/em> tools to make &lt;em>CI/CD&lt;/em> and continuous
+monitoring as easy as possible. While, some of these tools and
+aspects are provided by the cloud offerings, some of them must be
+planned and planted into our software.&lt;/p>
+&lt;p>At high level, we can think of a simple pipeline to achieve consistent
+and scalable deployment process. &lt;em>CI/CD&lt;/em> and Continuous Monitoring
+Pipeline:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Step 1 - Continuous Development - Plan, Code, Build and Test:&lt;/p>
+&lt;p>Planning, Coding, building the deployable artifacts - code,
+configuration, database, etc. and let them go through the various
+types of tests with all the dimensions - technical to business and
+internal to external, as automated as possible. All these aspects
+come under Continuous Development.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Step 2 - Continuous Improvement - Deploy, Operate and Monitor:&lt;/p>
+&lt;p>Once deployed to production, how these applications get operated -
+bug and health-checks, performance and scalability along with
+various high monitoring - infrastructure and cold delays due to
+on-demand VM/container instantiations by the cloud offerings due to
+the nature of the dynamic scalability of the deployment and selected
+hosting options. Making necessary adjustments to improve the overall
+experience is essentially called Continuous Improvement.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Modules: Infrastructure as Code (IaC)</title><link>/modules/devops/devops-iac/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/devops/devops-iac/</guid><description>
+&lt;h2 id="learning-objectives">Learning Objectives&lt;/h2>
+&lt;hr>
+&lt;p>&lt;img src="../images/learning.png" alt=""> &lt;strong>Learning Objectives&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Introduction to IaC&lt;/li>
+&lt;li>How IaC is related to DevOps&lt;/li>
+&lt;li>How IaC differs from Configuration Management Tools, and how is it
+related&lt;/li>
+&lt;li>Listing of IaC Tools&lt;/li>
+&lt;li>Further Reading&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="introduction-to-iac">Introduction to IaC&lt;/h2>
+&lt;p>IaC(Infrastructure as Code) is the ability of code to generate, maintain
+and destroy application infrastructure like server, storage and
+networking, without requiring manual changes. State of the
+infrastructure is maintained in files.&lt;/p>
+&lt;p>Cloud architectures, and containers have forced usage of IaC, as the
+amount of elements to manage at each layer are just too many. It is
+impractical to keep track with the traditional method of raising tickets
+and having someone do it for you. Scaling demands, elasticity during odd
+hours, usage-based-billing all require provisioning, managing and
+destroying infrastructure much more dynamically.&lt;/p>
+&lt;p>From the book “Amazon Web Services in Action” by Wittig [1], using a
+script or a declarative description has the following advantages&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>Consistent usage&lt;/li>
+&lt;li>Dependencies are handled&lt;/li>
+&lt;li>Replicable&lt;/li>
+&lt;li>Customizable&lt;/li>
+&lt;li>Testable&lt;/li>
+&lt;li>Can figure out updated state&lt;/li>
+&lt;li>Minimizes human failure&lt;/li>
+&lt;li>Documentation for your infrastructure&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>Sometimes IaC tools are also called Orchestration tools, but that label
+is not as accurate, and often misleading.&lt;/p>
+&lt;h2 id="how-iac-is-related-to-devops">How IaC is related to DevOps&lt;/h2>
+&lt;p>DevOps has the following key practices&lt;/p>
+&lt;ul>
+&lt;li>Automated Infrastructure&lt;/li>
+&lt;li>Automated Configuration Management, including Security&lt;/li>
+&lt;li>Shared version control between Dev and Ops&lt;/li>
+&lt;li>Continuous Build - Integrate - Test - Deploy&lt;/li>
+&lt;li>Continuous Monitoring and Observability&lt;/li>
+&lt;/ul>
+&lt;p>The first practice - Automated Infrastructure can be fulfilled by IaC
+tools. By having the code for IaC and Configuration Management in the
+same code repository as application code ensures adhering to the
+practice of shared version control.&lt;/p>
+&lt;p>Typically, the workflow of the DevOps team includes running
+Configuration Management tool scripts after running IaC tools, for
+configurations, security, connectivity, and initializations.&lt;/p>
+&lt;h2 id="how-iac-tools-differs-from-configuration-management-tools-and-how-it-is-related">How IaC tools differs from Configuration Management Tools, and how it is related&lt;/h2>
+&lt;p>There are 4 broad categories of such tools [2], there are&lt;/p>
+&lt;ul>
+&lt;li>Ad hoc scripts: Any shell, Python, Perl, Lua scripts that are
+written&lt;/li>
+&lt;li>Configuration management tools: Chef, Puppet, Ansible, SaltStack&lt;/li>
+&lt;li>Server templating tools: Docker, Packer, Vagrant&lt;/li>
+&lt;li>Server provisioning tools: Terraform, Heat, CloudFormation, Cloud
+Deployment Manager, Azure Resource Manager&lt;/li>
+&lt;/ul>
+&lt;p>Configuration Management tools make use of scripts to achieve a state.
+IaC tools maintain state and metadata created in the past.&lt;/p>
+&lt;p>However, the big difference is the state achieved by running procedural
+code or scripts may be different from state when it was created because&lt;/p>
+&lt;ul>
+&lt;li>Ordering of the scripts determines the state. If the order changes,
+state will differ. Also, issues like waiting time required for
+resources to be created, modified or destroyed have to be correctly
+dealt with.&lt;/li>
+&lt;li>Version changes in procedural code are inevitabale, and will lead to
+a different state.&lt;/li>
+&lt;/ul>
+&lt;p>Chef and Ansible are more procedural, while Terraform, CloudFormation,
+SaltStack, Puppet and Heat are more declarative.&lt;/p>
+&lt;p>IaC or declarative tools do suffer from inflexibility related to
+expressive scripting language.&lt;/p>
+&lt;h2 id="listing-of-iac-tools">Listing of IaC Tools&lt;/h2>
+&lt;p>IaC tools that are cloud specific are&lt;/p>
+&lt;ul>
+&lt;li>Amazon AWS - AWS CloudFormation&lt;/li>
+&lt;li>Google Cloud - Cloud Deployment Manager&lt;/li>
+&lt;li>Microsoft Azure - Azure Resource Manager&lt;/li>
+&lt;li>OpenStack - Heat&lt;/li>
+&lt;/ul>
+&lt;p>Terraform is not a cloud specific tool, and is multi-vendor. It has got
+good support for all the clouds, however, Terraform scripts are not
+portable across clouds.&lt;/p>
+&lt;h2 id="advantages-of-iac">Advantages of IaC&lt;/h2>
+&lt;p>IaC solves the problem of &lt;em>environment drift&lt;/em>, that used to lead to the
+infamous “but it works on my machine” kind of errors that are difficult
+to trace. According to &lt;span class="citeproc-not-found"
+data-reference-id="WhatisIaC002">&lt;strong>???&lt;/strong>&lt;/span>&lt;/p>
+&lt;blockquote>
+&lt;p>IaC guarantees Idempotence – known/predictable end state –
+irrespective of starting state. Idempotency is achieved by either
+automatically configuring an existing target or by discarding the
+existing target and recreating a fresh environment.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="further-reading">Further Reading&lt;/h2>
+&lt;p>Please see books and resources like the “Terraform Up and Running” [2]
+for more real-world advice on IaC, structuring Terraform code and good
+deployment practices.&lt;/p>
+&lt;p>A good resource for IaC is the book “Infrastructure as Code” [3].&lt;/p>
+&lt;h2 id="refernces">Refernces&lt;/h2>
+&lt;p>[1] M. Wittig Andreas; Wittig, &lt;em>Amazon web services in action&lt;/em>, 1st
+ed. Manning Press, 2015.&lt;/p>
+&lt;p>[2] Y. Brikman, &lt;em>Terraform: Up and running&lt;/em>, 1st ed. O’Reilly Media
+Inc, 2017.&lt;/p>
+&lt;p>[3] K. Morris, &lt;em>Infrastructure as code&lt;/em>, 1st ed. O’Reilly Media Inc,
+2015.&lt;/p></description></item><item><title>Modules: Ansible</title><link>/modules/devops/ansible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/devops/ansible/</guid><description>
+&lt;h2 id="introduction-to-ansible">Introduction to Ansible&lt;/h2>
+&lt;p>Ansible is an open-source IT automation DevOps engine allowing you to manage
+and configure many compute resources in a scalable, consistent and
+reliable way.&lt;/p>
+&lt;p>Ansible to automates the following tasks:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Provisioning:&lt;/strong> It sets up the servers that you will use as part
+of your infrastructure.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Configuration management:&lt;/strong> You can change the configuration of an
+application, OS, or device. You can implement security policies and
+other configuration tasks.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Service management:&lt;/strong> You can start and stop services, install
+updates&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Application deployment:&lt;/strong> You can conduct application deployments
+in an automated fashion that integrate with your DevOps strategies.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="prerequisite">Prerequisite&lt;/h3>
+&lt;p>We assume you&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>can install Ubuntu 18.04 virtual machine on VirtualBox&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>can install software packages via &amp;lsquo;apt-get&amp;rsquo; tool in Ubuntu
+virtual host&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>already reserved a virtual cluster (with at least 1 virtual
+machine in it) on some cloud. OR you can use VMs installed in
+VirtualBox instead.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>have SSH credentials and can login to your virtual machines.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="setting-up-a-playbook">Setting up a playbook&lt;/h3>
+&lt;p>Let us develop a sample from scratch, based on the paradigms that
+ansible supports. We are going to use Ansible to install Apache server on
+our virtual machines.&lt;/p>
+&lt;p>First, we install ansible on our machine and make sure we have an up
+to date OS:&lt;/p>
+&lt;pre>&lt;code>$ sudo apt-get update
+$ sudo apt-get install ansible
+&lt;/code>&lt;/pre>
+&lt;p>Next, we prepare a working environment for your Ansible example&lt;/p>
+&lt;pre>&lt;code>$ mkdir ansible-apache
+$ cd ansible-apache
+&lt;/code>&lt;/pre>
+&lt;p>To use ansible we will need a local configuration. When you execute
+Ansible within this folder, this local configuration file is always
+going to overwrite a system level Ansible configuration. It is in
+general beneficial to keep custom configurations locally unless you
+absolutely believe it should be applied system wide. Create a file
+&lt;code>inventory.cfg&lt;/code> in this folder, add the following:&lt;/p>
+&lt;pre>&lt;code>[defaults]
+hostfile = hosts.txt
+&lt;/code>&lt;/pre>
+&lt;p>This local configuration file tells that the target machines' names
+are given in a file named &lt;code>hosts.txt&lt;/code>. Next we will specify hosts in
+the file.&lt;/p>
+&lt;p>You should have ssh login accesses to all VMs listed in this file as
+part of our prerequisites. Now create and edit file &lt;code>hosts.txt&lt;/code> with
+the following content:&lt;/p>
+&lt;pre>&lt;code>[apache]
+&amp;lt;server_ip&amp;gt; ansible_ssh_user=&amp;lt;server_username&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>The name &lt;code>apache&lt;/code> in the brackets defines a server group name. We will
+use this name to refer to all server items in this group. As we intend
+to install and run apache on the server, the name choice seems quite
+appropriate. Fill in the IP addresses of the virtual machines you
+launched in your VirtualBox and fire up these VMs in you VirtualBox.&lt;/p>
+&lt;p>To deploy the service, we need to create a playbook. A playbook tells
+Ansible what to do. it uses YAML Markup syntax. Create and edit a file
+with a proper name e.g. &lt;code>apache.yml&lt;/code> as follow:&lt;/p>
+&lt;pre>&lt;code>---
+- hosts: apache #comment: apache is the group name we just defined
+become: yes #comment: this operation needs privilege access
+tasks:
+- name: install apache2 # text description
+apt: name=apache2 update_cache=yes state=latest
+&lt;/code>&lt;/pre>
+&lt;p>This block defines the target VMs and operations(tasks) need to apply.
+We are using the &lt;code>apt&lt;/code> attribute to indicate all software packages that
+need to be installed. Dependent on the distribution of the operating
+system it will find the correct module installer without your
+knowledge. Thus an ansible playbook could also work for multiple
+different OSes.&lt;/p>
+&lt;p>Ansible relies on various kinds of modules to fulfil tasks on the remote
+servers. These modules are developed for particular tasks and take in
+related arguments. For instance, when we use &lt;code>apt&lt;/code> module, we
+need to tell which package we intend to install. That is why we provide
+a value for the &lt;code>name=&lt;/code> argument. The first &lt;code>-name&lt;/code> attribute is just
+a comment that will be printed when this task is executed.&lt;/p>
+&lt;h3 id="run-the-playbook">Run the playbook&lt;/h3>
+&lt;p>In the same folder, execute&lt;/p>
+&lt;pre>&lt;code>ansible-playbook apache.yml --ask-sudo-pass
+&lt;/code>&lt;/pre>
+&lt;p>After a successful run, open a browser and fill in your server IP. you
+should see an &amp;lsquo;It works!&amp;rsquo; Apache2 Ubuntu default page. Make sure the
+security policy on your cloud opens port 80 to let the HTTP traffic go
+through.&lt;/p>
+&lt;p>Ansible playbook can have more complex and fancy structure and syntaxes.
+Go explore! This example is based on:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>We are going to offer an advanced Ansible in next chapter.&lt;/p>
+&lt;h2 id="ansible-roles">Ansible Roles&lt;/h2>
+&lt;p>Next we install the R package onto our cloud VMs. R is a useful
+statistic programing language commonly used in many scientific and
+statistics computing projects, maybe also the one you chose for this
+class. With this example we illustrate the concept of Ansible Roles,
+install source code through Github, and make use of variables. These
+are key features you will find useful in your project deployments.&lt;/p>
+&lt;p>We are going to use a top-down fashion in this example. We first start
+from a playbook that is already good to go. You can execute this
+playbook (do not do it yet, always read the entire section first) to
+get R installed in your remote hosts. We then further complicate this
+concise playbook by introducing functionalities to do the same tasks
+but in different ways. Although these different ways are not necessary
+they help you grasp the power of Ansible and ease your life when they
+are needed in your real projects.&lt;/p>
+&lt;p>Let us now create the following playbook with the name &lt;code>example.yml&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>---
+- hosts: R_hosts
+become: yes
+tasks:
+- name: install the R package
+apt: name=r-base update_cache=yes state=latest
+&lt;/code>&lt;/pre>
+&lt;p>The hosts are defined in a file &lt;code>hosts.txt&lt;/code>, which we configured in
+a file that we now call &lt;code>ansible.cfg&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>[R_hosts]
+&amp;lt;cloud_server_ip&amp;gt; ansible_ssh_user=&amp;lt;cloud_server_username&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>Certainly, this should get the installation job done. But we are going
+to extend it via new features called role next&lt;/p>
+&lt;p>Role is an important concept used often in large Ansible projects.
+You divide a series of tasks into different groups. Each group
+corresponds to certain role within the project.&lt;/p>
+&lt;p>For example, if your project is to deploy a web site, you may need to
+install the back end database, the web server that responses HTTP
+requests and the web application itself. They are three different roles
+and should carry out their own installation and configuration tasks.&lt;/p>
+&lt;p>Even though we only need to install the R package in this example, we
+can still do it by defining a role &amp;lsquo;r&amp;rsquo;. Let us modify our &lt;code>example.yml&lt;/code> to be:&lt;/p>
+&lt;pre>&lt;code>---
+- hosts: R_hosts
+roles:
+- r
+&lt;/code>&lt;/pre>
+&lt;p>Now we create a directory structure in your top project directory as follows&lt;/p>
+&lt;pre>&lt;code>$ mkdir -p roles/r/tasks
+$ touch roles/r/tasks/main.yml
+&lt;/code>&lt;/pre>
+&lt;p>Next, we edit the &lt;code>main.yml&lt;/code> file and include the following content:&lt;/p>
+&lt;pre>&lt;code>---
+- name: install the R package
+apt: name=r-base update_cache=yes state=latest
+become: yes
+&lt;/code>&lt;/pre>
+&lt;p>You probably already get the point. We take the &amp;lsquo;tasks&amp;rsquo; section out of
+the earlier &lt;code>example.yml&lt;/code> and re-organize them into roles. Each role
+specified in &lt;code>example.yml&lt;/code> should have its own directory under roles/ and
+the tasks need be done by this role is listed in a file &amp;lsquo;tasks/main.yml&amp;rsquo;
+as previous.&lt;/p>
+&lt;h2 id="using-variables">Using Variables&lt;/h2>
+&lt;p>We demonstrate this feature by installing source code from Github.
+Although R can be installed through the OS package manager (apt-get
+etc.), the software used in your projects may not. Many research
+projects are available by Git instead. Here we are going to show you how
+to install packages from their Git repositories. Instead of directly
+executing the module &amp;lsquo;apt&amp;rsquo;, we pretend Ubuntu does not provide this
+package and you have to find it on Git. The source code of R can be
+found at &lt;a href="https://github.com/wch/r-source.git">https://github.com/wch/r-source.git&lt;/a>. We are going to clone it
+to a remote VM&amp;rsquo;s hard drive, build the package and install the binary
+there.&lt;/p>
+&lt;p>To do so, we need a few new Ansible modules. You may remember from the
+last example that Ansible modules assist us to do different tasks
+based on the arguments we pass to it. It will come to no surprise that
+Ansible has a module &amp;lsquo;git&amp;rsquo; to take care of git-related works, and a
+&amp;lsquo;command&amp;rsquo; module to run shell commands. Let us modify
+&lt;code>roles/r/tasks/main.yml&lt;/code> to be:&lt;/p>
+&lt;pre>&lt;code>---
+- name: get R package source
+git:
+repo: https://github.com/wch/r-source.git
+dest: /tmp/R
+- name: build and install R
+become: yes
+command: chdir=/tmp/R &amp;quot;{{ item }}&amp;quot;
+with_items:
+- ./configure
+- make
+- make install
+&lt;/code>&lt;/pre>
+&lt;p>The role &lt;code>r&lt;/code> will now carry out two tasks. One to clone the R source
+code into &lt;code>/tmp/R&lt;/code>, the other uses a series of shell commands to build and
+install the packages.&lt;/p>
+&lt;p>Note that the commands executed by the second task may not be
+available on a fresh VM image. But the point of this example is to
+show an alternative way to install packages, so we conveniently assume
+the conditions are all met.&lt;/p>
+&lt;p>To achieve this we are using variables in a separate file.&lt;/p>
+&lt;p>We typed several string constants in our Ansible scripts so far. In
+general, it is a good practice to give these values names and use them
+by referring to their names. This way, you complex Ansible project can
+be less error prone. Create a file in the same directory, and name it
+&lt;code>vars.yml&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>---
+repository: https://github.com/wch/r-source.git
+tmp: /tmp/R
+&lt;/code>&lt;/pre>
+&lt;p>Accordingly, we will update our &lt;code>example.yml&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>---
+- hosts: R_hosts
+vars_files:
+- vars.yml
+roles:
+- r
+&lt;/code>&lt;/pre>
+&lt;p>As shown, we specify a &lt;code>vars_files&lt;/code> telling the script that the file
+&lt;code>vars.yml&lt;/code> is going to supply variable values, whose keys are denoted by
+Double curly brackets like in &lt;code>roles/r/tasks/main.yml&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>---
+- name: get R package source
+git:
+repo: &amp;quot;{{ repository }}&amp;quot;
+dest: &amp;quot;{{ tmp }}&amp;quot;
+- name: build and install R
+become: yes
+command: chdir=&amp;quot;{{ tmp }}&amp;quot; &amp;quot;{{ item }}&amp;quot;
+with_items:
+- ./configure
+- make
+- make install
+&lt;/code>&lt;/pre>
+&lt;p>Now, just edit the &lt;code>hosts.txt&lt;/code> file with your target VMs' IP addresses and
+execute the playbook.&lt;/p>
+&lt;p>You should be able to extend the Ansible playbook for your
+needs. Configuration tools like Ansible are important components to
+master the cloud environment.&lt;/p>
+&lt;h2 id="ansible-galaxy">Ansible Galaxy&lt;/h2>
+&lt;p>Ansible Galaxy is a marketplace, where developers can share Ansible
+Roles to complete their system administration tasks. Roles exchanged
+in Ansible Galaxy community need to follow common conventions so that
+all participants know what to expect. We will illustrate details in
+this chapter.&lt;/p>
+&lt;p>It is good to follow the Ansible Galaxy standard during your development
+as much as possible.&lt;/p>
+&lt;h3 id="ansible-galaxy-helloworld">Ansible Galaxy helloworld&lt;/h3>
+&lt;p>Let us start with a simplest case: We will build an Ansible Galaxy
+project. This project will install the Emacs software package on your
+localhost as the target host. It is a &lt;em>helloworld&lt;/em> project only meant to
+get us familiar with Ansible Galaxy project structures.&lt;/p>
+&lt;p>First you need to create a directory. Let us call it &lt;code>mongodb&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ mkdir mongodb
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Go ahead and create files &lt;code>README.md&lt;/code>, &lt;code>playbook.yml&lt;/code>, &lt;code>inventory&lt;/code> and a
+subdirectory &lt;code>roles/&lt;/code> then `playbook.yml is your project playbook. It
+should perform the Emacs installation task by executing the
+corresponding role you will develop in the folder &amp;lsquo;roles/&amp;rsquo;. The only
+difference is that we will construct the role with the help of
+ansible-galaxy this time.&lt;/p>
+&lt;p>Now, let ansible-galaxy initialize the directory structure for you:&lt;/p>
+&lt;pre>&lt;code>$ cd roles
+$ ansible-galaxy init &amp;lt;to-be-created-role-name&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>The naming convention is to concatenate your name and the role name by a
+dot. @fig:ansible shows how it looks like.&lt;/p>
+&lt;p>&lt;img src="../images/ansible-galaxy-init-structure.png" alt="image">{#fig:ansible}&lt;/p>
+&lt;p>Let us fill in information to our project. There are several &lt;code>main.yml&lt;/code>
+files in different folders, and we will illustrate their usages.&lt;/p>
+&lt;p>defaults and vars:&lt;/p>
+&lt;blockquote>
+&lt;p>These folders should hold variables key-value pairs for your
+playbook scripts. We will leave them empty in this example.&lt;/p>
+&lt;/blockquote>
+&lt;p>files:&lt;/p>
+&lt;blockquote>
+&lt;p>This folder is for files need to be copied to the target
+hosts. Data files or configuration files can be specified if
+needed. We will leave it empty too.&lt;/p>
+&lt;/blockquote>
+&lt;p>templates:&lt;/p>
+&lt;blockquote>
+&lt;p>Similar missions to files/, templates is allocated for template
+files. Keep empty for a simple Emacs installation.&lt;/p>
+&lt;/blockquote>
+&lt;p>handlers:&lt;/p>
+&lt;blockquote>
+&lt;p>This is reserved for services running on target hosts. For example,
+to restart a service under certain circumstance.&lt;/p>
+&lt;/blockquote>
+&lt;p>tasks:&lt;/p>
+&lt;blockquote>
+&lt;p>This file is the actual script for all tasks. You can use the role you
+built previously for Emacs installation here:&lt;/p>
+&lt;pre>&lt;code>---
+- name: install Emacs on Ubuntu 16.04
+become: yes
+package: name=emacs state=present
+&lt;/code>&lt;/pre>
+&lt;/blockquote>
+&lt;p>meta:&lt;/p>
+&lt;blockquote>
+&lt;p>Provide necessary metadata for our Ansible Galaxy project for
+shipping:&lt;/p>
+&lt;/blockquote>
+&lt;pre>&lt;code> ---
+galaxy_info:
+author: &amp;lt;you name&amp;gt;
+description: emacs installation on Ubuntu 16.04
+license:
+- MIT
+min_ansible_version: 2.0
+platforms:
+- name: Ubuntu
+versions:
+- xenial
+galaxy_tags:
+- development
+dependencies: []
+&lt;/code>&lt;/pre>
+&lt;p>Next let us test it out. You have your Ansible Galaxy role ready
+now. To test it as a user, go to your directory and edit the other
+two files &lt;code>inventory.txt&lt;/code> and &lt;code>playbook.yml&lt;/code>, which are already generated
+for you in directory &lt;code>tests&lt;/code> by the script:&lt;/p>
+&lt;pre>&lt;code>$ ansible-playbook -i ./hosts playbook.yml
+&lt;/code>&lt;/pre>
+&lt;p>After running this playbook, you should have Emacs installed on
+localhost.&lt;/p>
+&lt;h2 id="a-complete-ansible-galaxy-project">A Complete Ansible Galaxy Project&lt;/h2>
+&lt;p>We are going to use ansible-galaxy to setup a sample project. This
+sample project will:&lt;/p>
+&lt;ul>
+&lt;li>use a cloud cluster with multiple VMs&lt;/li>
+&lt;li>deploy Apache Spark on this cluster&lt;/li>
+&lt;li>install a particular HPC application&lt;/li>
+&lt;li>prepare raw data for this cluster to process&lt;/li>
+&lt;li>run the experiment and collect results&lt;/li>
+&lt;/ul>
+&lt;h3 id="ansible-write-a-playbooks-for-mongodb">Ansible: Write a Playbooks for MongoDB&lt;/h3>
+&lt;p>Ansible Playbooks are automated scripts written in YAML data format.
+Instead of using manual commands to setup multiple remote machines, you
+can utilize Ansible Playbooks to configure your entire systems. YAML
+syntax is easy to read and express the data structure of certain Ansible
+functions. You simply write some tasks, for example, installing
+software, configuring default settings, and starting the software, in a
+Ansible Playbook. With a few examples in this section, you will
+understand how it works and how to write your own Playbooks.&lt;/p>
+&lt;dl>
+&lt;dt>There are also several examples of using Ansible &lt;a href="http://docs.ansible.com/playbooks.html">Playbooks&lt;/a> from the official site. It covers&lt;/dt>
+&lt;dd>
+&lt;p>from basic usage of Ansible Playbooks to advanced usage such as
+applying patches and updates with different roles and groups.&lt;/p>
+&lt;/dd>
+&lt;/dl>
+&lt;p>We are going to write a basic playbook of Ansible
+software. Keep in mind that &lt;code>Ansible&lt;/code> is a main program and &lt;code>playbook&lt;/code>
+is a template that you would like to use. You may have several playbooks
+in your Ansible.&lt;/p>
+&lt;h3 id="first-playbook-for-mongodb-installation">First playbook for MongoDB Installation&lt;/h3>
+&lt;p>As a first example, we are going to write a playbook which installs
+MongoDB server. It includes the following tasks:&lt;/p>
+&lt;ul>
+&lt;li>Import the public key used by the package management system&lt;/li>
+&lt;li>Create a list file for MongoDB&lt;/li>
+&lt;li>Reload local package database&lt;/li>
+&lt;li>Install the MongoDB packages&lt;/li>
+&lt;li>Start MongoDB&lt;/li>
+&lt;/ul>
+&lt;p>The material presented here is based on the manual installation of MongoDB from the
+official site:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*">http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>We also assume that we install MongoDB on Ubuntu 15.10.&lt;/p>
+&lt;h4 id="enabling-root-ssh-access">Enabling Root SSH Access&lt;/h4>
+&lt;p>Some setups of managed nodes may not allow you to log in as root. As
+this may be problematic later, let us create a playbook to resolve this.
+Create a &lt;code>enable-root-access.yaml&lt;/code> file with the following contents:&lt;/p>
+&lt;pre>&lt;code>---
+- hosts: ansible-test
+remote_user: ubuntu
+tasks:
+- name: Enable root login
+shell: sudo cp ~/.ssh/authorized_keys /root/.ssh/
+&lt;/code>&lt;/pre>
+&lt;p>Explanation:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>hosts&lt;/code> specifies the name of a group of machines in the inventory&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>remote_user&lt;/code> specifies the username on the managed nodes to log in
+as&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>tasks&lt;/code> is a list of tasks to accomplish having a &lt;code>name&lt;/code> (a
+description) and modules to execute. In this case we use the &lt;code>shell&lt;/code>
+module.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>We can run this playbook like so:&lt;/p>
+&lt;pre>&lt;code>$ ansible-playbook -i inventory.txt -c ssh enable-root-access.yaml
+PLAY [ansible-test] ***********************************************************
+GATHERING FACTS ***************************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+TASK: [Enable root login] *****************************************************
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+PLAY RECAP ********************************************************************
+10.23.2.104 : ok=2 changed=1 unreachable=0 failed=0
+10.23.2.105 : ok=2 changed=1 unreachable=0 failed=0
+&lt;/code>&lt;/pre>
+&lt;h4 id="hosts-and-users">Hosts and Users&lt;/h4>
+&lt;p>First step is choosing hosts to install MongoDB and a user account to
+run commands (tasks). We start with the following lines in the example
+filename of &lt;code>mongodb.yaml&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>---
+- hosts: ansible-test
+remote_user: root
+become: yes
+&lt;/code>&lt;/pre>
+&lt;p>In a previous section, we setup two machines with &lt;code>ansible-test&lt;/code> group
+name. We use two machines for MongoDB installation.
+Also, we use &lt;code>root&lt;/code> account to complete Ansible tasks.&lt;/p>
+&lt;dl>
+&lt;dt>Indentation is important in YAML format. Do not ignore spaces start&lt;/dt>
+&lt;dd>
+&lt;p>with in each line.&lt;/p>
+&lt;/dd>
+&lt;/dl>
+&lt;h4 id="tasks">Tasks&lt;/h4>
+&lt;p>A list of tasks contains commands or configurations to be executed on
+remote machines in a sequential order. Each task comes with a &lt;code>name&lt;/code> and
+a &lt;code>module&lt;/code> to run your command or configuration. You provide a
+description of your task in &lt;code>name&lt;/code> section and choose a &lt;code>module&lt;/code> for
+your task. There are several modules that you can use, for example,
+&lt;code>shell&lt;/code> module simply executes a command without considering a return
+value. You may use &lt;code>apt&lt;/code> or &lt;code>yum&lt;/code> module which is one of the packaging
+modules to install software. You can find an entire list of modules
+here: &lt;a href="http://docs.ansible.com/list_of_all_modules.html">http://docs.ansible.com/list_of_all_modules.html&lt;/a>&lt;/p>
+&lt;h4 id="module-apt_key-add-repository-keys">Module apt_key: add repository keys&lt;/h4>
+&lt;p>We need to import the MongoDB public GPG Key. This is going to be a
+first task in our playbook.:&lt;/p>
+&lt;pre>&lt;code>tasks:
+- name: Import the public key used by the package management system
+apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
+&lt;/code>&lt;/pre>
+&lt;h4 id="module-apt_repository-add-repositories">Module apt_repository: add repositories&lt;/h4>
+&lt;p>Next add the MongoDB repository to apt:&lt;/p>
+&lt;pre>&lt;code>- name: Add MongoDB repository
+apt_repository: repo='deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' state=present
+&lt;/code>&lt;/pre>
+&lt;h4 id="module-apt-install-packages">Module apt: install packages&lt;/h4>
+&lt;p>We use &lt;code>apt&lt;/code> module to install &lt;code>mongodb-org&lt;/code> package. &lt;code>notify&lt;/code> action is
+added to start &lt;code>mongod&lt;/code> after the completion of this task. Use the
+&lt;code>update_cache=yes&lt;/code> option to reload the local package database.:&lt;/p>
+&lt;pre>&lt;code>- name: install mongodb
+apt: pkg=mongodb-org state=latest update_cache=yes
+notify:
+- start mongodb
+&lt;/code>&lt;/pre>
+&lt;h4 id="module-service-manage-services">Module service: manage services&lt;/h4>
+&lt;p>We use &lt;code>handlers&lt;/code> here to start or restart services. It is similar to
+&lt;code>tasks&lt;/code> but will run only once.:&lt;/p>
+&lt;pre>&lt;code>handlers:
+- name: start mongodb
+service: name=mongod state=started
+&lt;/code>&lt;/pre>
+&lt;h4 id="the-full-playbook">The Full Playbook&lt;/h4>
+&lt;p>Our first playbook looks like this:&lt;/p>
+&lt;pre>&lt;code>---
+- hosts: ansible-test
+remote_user: root
+become: yes
+tasks:
+- name: Import the public key used by the package management system
+apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
+- name: Add MongoDB repository
+apt_repository: repo='deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' state=present
+- name: install mongodb
+apt: pkg=mongodb-org state=latest update_cache=yes
+notify:
+- start mongodb
+handlers:
+- name: start mongodb
+service: name=mongod state=started
+&lt;/code>&lt;/pre>
+&lt;h4 id="running-a-playbook">Running a Playbook&lt;/h4>
+&lt;p>We use &lt;code>ansible-playbook&lt;/code> command to run our playbook:&lt;/p>
+&lt;pre>&lt;code>$ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
+PLAY [ansible-test] ***********************************************************
+GATHERING FACTS ***************************************************************
+ok: [10.23.2.104]
+ok: [10.23.2.105]
+TASK: [Import the public key used by the package management system] ***********
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+TASK: [Add MongoDB repository] ************************************************
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+TASK: [install mongodb] *******************************************************
+changed: [10.23.2.104]
+changed: [10.23.2.105]
+NOTIFIED: [start mongodb] *****************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+PLAY RECAP ********************************************************************
+10.23.2.104 : ok=5 changed=3 unreachable=0 failed=0
+10.23.2.105 : ok=5 changed=3 unreachable=0 failed=0
+&lt;/code>&lt;/pre>
+&lt;p>If you rerun the playbook, you should see that nothing changed:&lt;/p>
+&lt;pre>&lt;code>$ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
+PLAY [ansible-test] ***********************************************************
+GATHERING FACTS ***************************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+TASK: [Import the public key used by the package management system] ***********
+ok: [10.23.2.104]
+ok: [10.23.2.105]
+TASK: [Add MongoDB repository] ************************************************
+ok: [10.23.2.104]
+ok: [10.23.2.105]
+TASK: [install mongodb] *******************************************************
+ok: [10.23.2.105]
+ok: [10.23.2.104]
+PLAY RECAP ********************************************************************
+10.23.2.104 : ok=4 changed=0 unreachable=0 failed=0
+10.23.2.105 : ok=4 changed=0 unreachable=0 failed=0
+&lt;/code>&lt;/pre>
+&lt;h4 id="sanity-check-test-mongodb">Sanity Check: Test MongoDB&lt;/h4>
+&lt;p>Let us try to run &amp;lsquo;mongo&amp;rsquo; to enter mongodb shell.:&lt;/p>
+&lt;pre>&lt;code>$ ssh ubuntu@$IP
+$ mongo
+MongoDB shell version: 2.6.9
+connecting to: test
+Welcome to the MongoDB shell.
+For interactive help, type &amp;quot;help&amp;quot;.
+For more comprehensive documentation, see
+http://docs.mongodb.org/
+Questions? Try the support group
+http://groups.google.com/group/mongodb-user
+&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;h4 id="terms">Terms&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>Module: Ansible library to run or manage services, packages, files
+or commands.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Handler: A task for notifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Task: Ansible job to run a command, check files, or update
+configurations.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Playbook: a list of tasks for Ansible nodes. YAML format used.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>YAML: Human readable generic data serialization.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="reference">Reference&lt;/h4>
+&lt;p>The main tutorial from Ansible is here:
+&lt;a href="http://docs.ansible.com/playbooks_intro.html">http://docs.ansible.com/playbooks_intro.html&lt;/a>&lt;/p>
+&lt;p>You can also find an index of the ansible modules here:
+&lt;a href="http://docs.ansible.com/modules_by_category.html">http://docs.ansible.com/modules_by_category.html&lt;/a>&lt;/p>
+&lt;h2 id="exercise">Exercise&lt;/h2>
+&lt;p>We have shown a couple of examples of using Ansible tools. Before you
+apply it in you final project, we will practice it in this exercise.&lt;/p>
+&lt;ul>
+&lt;li>set up the project structure similar to Ansible Galaxy example&lt;/li>
+&lt;li>install MongoDB from the package manager (apt in this class)&lt;/li>
+&lt;li>configure your MongoDB installation to start the service
+automatically&lt;/li>
+&lt;li>use default port and let it serve local client connections only&lt;/li>
+&lt;/ul></description></item><item><title>Modules: Puppet</title><link>/modules/devops/puppet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/devops/puppet/</guid><description>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Configuration management is an important task of IT department in any
+organization. It is process of managing infrastructure changes in
+structured and systematic way. Manual rolling back of infrastructure to
+previous version of software is cumbersome, time consuming and error
+prone. Puppet is configuration management tool that simplifies complex
+task of deploying new software, applying software updates and rollback
+software packages in large cluster. Puppet does this through
+Infrastructure as Code (IAC). Code is written for infrastructure on one
+central location and is pushed to nodes in all environments (Dev, Test,
+Production) using puppet tool. Configuration management tool has two
+approaches for managing infrastructure; Configuration push and pull. In
+push configuration, infrastructure as code is pushed from centralized
+server to nodes whereas in pull configuration nodes pulls infrastructure
+as code from central server as shown in fig. 1.&lt;/p>
+&lt;figure>
+&lt;img src="../images/IAC.jpg" id="fig:InfrastructureAsCode" alt="Figure 1: Infrastructure As Code [1]" />&lt;figcaption aria-hidden="true">Figure 1: Infrastructure As Code &lt;span class="citation" data-cites="hid-sp18-523-puppet../images">[1]&lt;/span>&lt;/figcaption>
+&lt;/figure>
+&lt;p>Puppet uses push and pull configuration in centralized manner as shown
+in fig. 2.&lt;/p>
+&lt;figure>
+&lt;img src="../images/push-pull-configuration.jpg" id="fig:push-pull-config" alt="Figure 2: push-pull-config Image [1]" />&lt;figcaption aria-hidden="true">Figure 2: push-pull-config Image &lt;span class="citation" data-cites="hid-sp18-523-puppet../images">[1]&lt;/span>&lt;/figcaption>
+&lt;/figure>
+&lt;p>Another popular infrastructure tool is Ansible. It does not have master
+and client nodes. Any node in Ansible can act as executor. Any node
+containing list of inventory and SSH credential can play master node
+role to connect with other nodes as opposed to puppet architecture where
+server and agent software needs to be setup and installed. Configuring
+Ansible nodes is simple, it just requires python version 2.5 or greater.
+Ansible uses push architecture for configuration.&lt;/p>
+&lt;h2 id="master-slave-architecture">Master slave architecture&lt;/h2>
+&lt;p>Puppet uses master slave architecture as shown in fig. 3. Puppet server
+is called as master node and client nodes are called as puppet agent.
+Agents poll server at regular interval and pulls updated configuration
+from master. Puppet Master is highly available. It supports multi master
+architecture. If one master goes down backup master stands up to serve
+infrastructure.&lt;/p>
+&lt;h4 id="workflow">Workflow&lt;/h4>
+&lt;ul>
+&lt;li>nodes (puppet agents) sends information (for e.g IP, hardware
+detail, network etc.) to master. Master stores such information in
+manifest file.&lt;/li>
+&lt;li>Master node compiles catalog file containing configuration
+information that needs to be implemented on agent nodes.&lt;/li>
+&lt;li>Master pushes catalog to puppet agent nodes for implementing
+configuration.&lt;/li>
+&lt;li>Client nodes send back updated report to Master. Master updates its
+inventory.&lt;/li>
+&lt;li>All exchange between master and agent is secured through SSL
+encryption (see fig. 3)&lt;/li>
+&lt;/ul>
+&lt;figure>
+&lt;img src="../images/master-slave.jpg" id="fig:master-slave" alt="Figure 3: Master and Slave Architecture [1]" />&lt;figcaption aria-hidden="true">Figure 3: Master and Slave Architecture &lt;span class="citation" data-cites="hid-sp18-523-puppet../images">[1]&lt;/span>&lt;/figcaption>
+&lt;/figure>
+&lt;p>fig. 4, shows flow between master and slave.&lt;/p>
+&lt;figure>
+&lt;img src="../images/master-slave1.jpg" id="fig:master-slave1" alt="Figure 4: Master Slave Workflow 1 [1]" />&lt;figcaption aria-hidden="true">Figure 4: Master Slave Workflow 1 &lt;span class="citation" data-cites="hid-sp18-523-puppet../images">[1]&lt;/span>&lt;/figcaption>
+&lt;/figure>
+&lt;p>fig. 5 shows SSL workflow between master and slave.&lt;/p>
+&lt;figure>
+&lt;img src="../images/master-slave-connection.jpg" id="fig:master-slave-connection" alt="Figure 5: Master Slave SSL Workflow [1]" />&lt;figcaption aria-hidden="true">Figure 5: Master Slave SSL Workflow &lt;span class="citation" data-cites="hid-sp18-523-puppet../images">[1]&lt;/span>&lt;/figcaption>
+&lt;/figure>
+&lt;p>Puppet comes in two forms. Open source Puppet and Enterprise In this
+tutorial we will showcase installation steps of both forms.&lt;/p>
+&lt;h2 id="install-opensource-puppet-on-ubuntu">Install Opensource Puppet on Ubuntu&lt;/h2>
+&lt;p>We will demonstrate installation of Puppet on Ubuntu&lt;/p>
+&lt;p>Prerequisite - Atleast 4 GB RAM, Ubuntu box ( standalone or VM )&lt;/p>
+&lt;p>First, we need to make sure that Puppet master and agent is able to
+communicate with each other. Agent should be able to connect with master
+using name.&lt;/p>
+&lt;p>configure Puppet server name and map with its ip address&lt;/p>
+&lt;pre>&lt;code>$ sudo nano /etc/hosts
+&lt;/code>&lt;/pre>
+&lt;p>contents of the &lt;code>/etc/hosts&lt;/code> should look like&lt;/p>
+&lt;pre>&lt;code>&amp;lt;ip_address&amp;gt; my-puppet-master
+&lt;/code>&lt;/pre>
+&lt;p>my-puppet-master is name of Puppet master to which Puppet agent would
+try to connect&lt;/p>
+&lt;p>press &lt;code>&amp;lt;ctrl&amp;gt; + O&lt;/code> to Save and &lt;code>&amp;lt;ctrl&amp;gt; + X&lt;/code> to exit&lt;/p>
+&lt;p>Next, we will install Puppet on Ubuntu server. We will execute the
+following commands to pull from official Puppet Labs Repository&lt;/p>
+&lt;pre>&lt;code>$ curl -O https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
+$ sudo dpkg -i puppetlabs-release-pc1-xenial.deb
+$ sudo apt-get update
+&lt;/code>&lt;/pre>
+&lt;p>Intstall the Puppet server&lt;/p>
+&lt;pre>&lt;code>$ sudo apt-get install puppetserver
+&lt;/code>&lt;/pre>
+&lt;p>Default instllation of Puppet server is configured to use 2 GB of RAM.
+However, we can customize this by opening puppetserver configuration
+file&lt;/p>
+&lt;pre>&lt;code>$ sudo nano /etc/default/puppetserver
+&lt;/code>&lt;/pre>
+&lt;p>This will open the file in editor. Look for JAVA_ARGS line and change
+the value of &lt;code>-Xms&lt;/code> and &lt;code>-Xmx&lt;/code> parameters to 3g if we wish to configure
+Puppet server for 3GB RAM. Note that default value of this parameter is
+2g.&lt;/p>
+&lt;pre>&lt;code>JAVA_ARGS=&amp;quot;-Xms3g -Xmx3g -XX:MaxPermSize=256m&amp;quot;
+&lt;/code>&lt;/pre>
+&lt;p>press &lt;code>&amp;lt;ctrl&amp;gt; + O&lt;/code> to Save and &lt;code>&amp;lt;ctrl&amp;gt; + X&lt;/code> to exit&lt;/p>
+&lt;p>By default Puppet server is configured to use port 8140 to communicate
+with agents. We need to make sure that firewall allows to communicate on
+this port&lt;/p>
+&lt;pre>&lt;code>$ sudo ufw allow 8140
+&lt;/code>&lt;/pre>
+&lt;p>next, we start Puppet server&lt;/p>
+&lt;pre>&lt;code>$ sudo systemctl start puppetserver
+&lt;/code>&lt;/pre>
+&lt;p>Verify server has started&lt;/p>
+&lt;pre>&lt;code>$ sudo systemctl status puppetserver
+&lt;/code>&lt;/pre>
+&lt;p>we would see “active(running)” if server has started successfully&lt;/p>
+&lt;pre>&lt;code>$ sudo systemctl status puppetserver
+● puppetserver.service - puppetserver Service
+Loaded: loaded (/lib/systemd/system/puppetserver.service; disabled; vendor pr
+Active: active (running) since Sun 2019-01-27 00:12:38 EST; 2min 29s ago
+Process: 3262 ExecStart=/opt/puppetlabs/server/apps/puppetserver/bin/puppetser
+Main PID: 3269 (java)
+CGroup: /system.slice/puppetserver.service
+└─3269 /usr/bin/java -Xms3g -Xmx3g -XX:MaxPermSize=256m -Djava.securi
+Jan 27 00:11:34 ritesh-ubuntu1 systemd[1]: Starting puppetserver Service...
+Jan 27 00:11:34 ritesh-ubuntu1 puppetserver[3262]: OpenJDK 64-Bit Server VM warn
+Jan 27 00:12:38 ritesh-ubuntu1 systemd[1]: Started puppetserver Service.
+lines 1-11/11 (END)
+&lt;/code>&lt;/pre>
+&lt;p>configure Puppet server to start at boot time&lt;/p>
+&lt;pre>&lt;code>$ sudo systemctl enable puppetserver
+&lt;/code>&lt;/pre>
+&lt;p>Next, we will install Puppet agent&lt;/p>
+&lt;pre>&lt;code>$ sudo apt-get install puppet-agent
+&lt;/code>&lt;/pre>
+&lt;p>start Puppet agent&lt;/p>
+&lt;pre>&lt;code>$ sudo systemctl start puppet
+&lt;/code>&lt;/pre>
+&lt;p>configure Puppet agent to start at boot time&lt;/p>
+&lt;pre>&lt;code>$ sudo systemctl enable puppet
+&lt;/code>&lt;/pre>
+&lt;p>next, we need to change Puppet agent config file so that it can connect
+to Puppet master and communicate&lt;/p>
+&lt;pre>&lt;code>$ sudo nano /etc/puppetlabs/puppet/puppet.conf
+&lt;/code>&lt;/pre>
+&lt;p>configuration file will be opened in an editor. Add following sections
+in file&lt;/p>
+&lt;pre>&lt;code>[main]
+certname = &amp;lt;puppet-agent&amp;gt;
+server = &amp;lt;my-puppet-server&amp;gt;
+[agent]
+server = &amp;lt;my-puppet-server&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&lt;em>Note: my-puppet-server is the name that we have set up in /etc/hosts
+file while installing Puppet server. And certname is the name of the
+certificate&lt;/em>&lt;/p>
+&lt;p>Puppet agent sends certificate signing request to Puppet server when it
+connects first time. After signing request, Puppet server trusts and
+identifies agent for managing.&lt;/p>
+&lt;p>execute following command on Puppet Master in order to see all incoming
+cerficate signing requests&lt;/p>
+&lt;pre>&lt;code>$ sudo /opt/puppetlabs/bin/puppet cert list
+&lt;/code>&lt;/pre>
+&lt;p>we will see something like&lt;/p>
+&lt;pre>&lt;code>$ sudo /opt/puppetlabs/bin/puppet cert list
+&amp;quot;puppet-agent&amp;quot; (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:
+05:09:2F:EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
+&lt;/code>&lt;/pre>
+&lt;ul>
+&lt;li>Note that puppet-agent is the name that we have configured for
+certname in puppet.conf file*&lt;/li>
+&lt;/ul>
+&lt;p>After validating that request is from valid and trusted agent, we sign
+the request&lt;/p>
+&lt;pre>&lt;code>$ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
+&lt;/code>&lt;/pre>
+&lt;p>we will see message saying certificate was signed if successful&lt;/p>
+&lt;pre>&lt;code>$ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
+Signing Certificate Request for:
+&amp;quot;puppet-agent&amp;quot; (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:05:09:2F:
+EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
+Notice: Signed certificate request for puppet-agent
+Notice: Removing file Puppet::SSL::CertificateRequest puppet-agent
+at '/etc/puppetlabs/puppet/ssl/ca/requests/puppet-agent.pem'
+&lt;/code>&lt;/pre>
+&lt;p>Next, we will verify installation and make sure that Puppet server is
+able to push configuration to agent. Puppet uses domian specific
+language code written in manifests ( .pp ) file&lt;/p>
+&lt;p>create default manifest site.pp file&lt;/p>
+&lt;pre>&lt;code>$ sudo nano /etc/puppetlabs/code/environments/production/manifests/site.pp
+&lt;/code>&lt;/pre>
+&lt;p>This will open file in edit mode. Make following changes to this file&lt;/p>
+&lt;pre>&lt;code>file {'/tmp/it_works.txt': # resource type file and filename
+ensure =&amp;gt; present, # make sure it exists
+mode =&amp;gt; '0644', # file permissions
+content =&amp;gt; &amp;quot;It works!\n&amp;quot;, # Print the eth0 IP fact
+}
+&lt;/code>&lt;/pre>
+&lt;p>domain specific language is used to create it_works.txt file inside
+/tmp directory on agent node. ensure directive make sure that file is
+present. It creates one if file is removed. mode directive specifies
+that process has write permission on file to make changes. content
+directive is used to define content of the changes applied
+[hid-sp18-523-open]&lt;/p>
+&lt;p>next, we test the installation on single node&lt;/p>
+&lt;pre>&lt;code>sudo /opt/puppetlabs/bin/puppet agent --test
+&lt;/code>&lt;/pre>
+&lt;p>successfull verification will display&lt;/p>
+&lt;pre>&lt;code>Info: Using configured environment 'production'
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for puppet-agent
+Info: Applying configuration version '1548305548'
+Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content:
+--- /tmp/it_works.txt 2019-01-27 02:32:49.810181594 +0000
++++ /tmp/puppet-file20190124-9628-1vy51gg 2019-01-27 02:52:28.717734377 +0000
+@@ -0,0 +1 @@
++it works!
+Info: Computing checksum on file /tmp/it_works.txt
+Info: /Stage[main]/Main/File[/tmp/it_works.txt]: Filebucketed /tmp/it_works.txt
+to puppet with sum d41d8cd98f00b204e9800998ecf8427e
+Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content: content
+changed '{md5}d41d8cd98f00b204e9800998ecf8427e' to '{md5}0375aad9b9f3905d3c545b500e871aca'
+Info: Creating state file /opt/puppetlabs/puppet/cache/state/state.yaml
+Notice: Applied catalog in 0.13 seconds
+&lt;/code>&lt;/pre>
+&lt;h2 id="installation-of-puppet-enterprise">Installation of Puppet Enterprise&lt;/h2>
+&lt;p>First, download &lt;code>ubuntu-&amp;lt;version and arch&amp;gt;.tar.gz&lt;/code> and CPG signature
+file on Ubuntu VM&lt;/p>
+&lt;p>Second, we import Puppet public key&lt;/p>
+&lt;pre>&lt;code>$ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub | gpg --import
+&lt;/code>&lt;/pre>
+&lt;p>we will see ouput as&lt;/p>
+&lt;pre>&lt;code>--2019-02-03 14:02:54-- https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub
+Resolving downloads.puppetlabs.com
+(downloads.puppetlabs.com)... 2600:9000:201a:b800:10:d91b:7380:93a1
+, 2600:9000:201a:800:10:d91b:7380:93a1, 2600:9000:201a:be00:10:d91b:7380:93a1, ...
+Connecting to downloads.puppetlabs.com (downloads.puppetlabs.com)
+|2600:9000:201a:b800:10:d91b:7380:93a1|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3139 (3.1K) [binary/octet-stream]
+Saving to: ‘STDOUT’
+- 100%[===================&amp;gt;] 3.07K --.-KB/s in 0s
+2019-02-03 14:02:54 (618 MB/s) - written to stdout [3139/3139]
+gpg: key 7F438280EF8D349F: &amp;quot;Puppet, Inc. Release Key
+(Puppet, Inc. Release Key) &amp;lt;release@puppet.com&amp;gt;&amp;quot; not changed
+gpg: Total number processed: 1
+gpg: unchanged: 1
+&lt;/code>&lt;/pre>
+&lt;p>Third, we print fingerprint of used key&lt;/p>
+&lt;pre>&lt;code>$ gpg --fingerprint 0x7F438280EF8D349F
+&lt;/code>&lt;/pre>
+&lt;p>we will see successful output as&lt;/p>
+&lt;pre>&lt;code>pub rsa4096 2016-08-18 [SC] [expires: 2021-08-17]
+6F6B 1550 9CF8 E59E 6E46 9F32 7F43 8280 EF8D 349F
+uid [ unknown] Puppet, Inc. Release Key
+(Puppet, Inc. Release Key) &amp;lt;release@puppet.com&amp;gt;
+sub rsa4096 2016-08-18 [E] [expires: 2021-08-17]
+&lt;/code>&lt;/pre>
+&lt;p>Fourth, we verify release signature of installed package&lt;/p>
+&lt;pre>&lt;code>$ gpg --verify puppet-enterprise-VERSION-PLATFORM.tar.gz.asc
+&lt;/code>&lt;/pre>
+&lt;p>successful output will show as&lt;/p>
+&lt;pre>&lt;code>gpg: assuming signed data in 'puppet-enterprise-2019.0.2-ubuntu-18.04-amd64.tar.gz'
+gpg: Signature made Fri 25 Jan 2019 02:03:23 PM EST
+gpg: using RSA key 7F438280EF8D349F
+gpg: Good signature from &amp;quot;Puppet, Inc. Release Key
+(Puppet, Inc. Release Key) &amp;lt;release@puppet.com&amp;gt;&amp;quot; [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg: There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 6F6B 1550 9CF8 E59E 6E46 9F32 7F43 8280 EF8D 349
+&lt;/code>&lt;/pre>
+&lt;p>Next, we need to unpack installation tarball. Store location of path in
+&lt;code>$TARBALL&lt;/code> variable. This variable will be used in our installation.&lt;/p>
+&lt;pre>&lt;code>$ export TARBALL=path of tarball file
+&lt;/code>&lt;/pre>
+&lt;p>then, we extract tarball&lt;/p>
+&lt;pre>&lt;code>$ tar -xf $TARBALL
+&lt;/code>&lt;/pre>
+&lt;p>Next, we run installer from installer directory&lt;/p>
+&lt;pre>&lt;code>$ sudo ./puppet-enterprise-installer
+&lt;/code>&lt;/pre>
+&lt;p>This will ask us to chose installation option; we could chose from
+guided installation or text based installation&lt;/p>
+&lt;pre>&lt;code>~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
+$ sudo ./puppet-enterprise-installer
+~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
+~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
+=============================================================
+Puppet Enterprise Installer
+=============================================================
+## Installer analytics are enabled by default.
+## To disable, set the DISABLE_ANALYTICS environment variable and rerun
+this script.
+For example, &amp;quot;sudo DISABLE_ANALYTICS=1 ./puppet-enterprise-installer&amp;quot;.
+## If puppet_enterprise::send_analytics_data is set to false in your
+existing pe.conf, this is not necessary and analytics will be disabled.
+Puppet Enterprise offers three different methods of installation.
+[1] Express Installation (Recommended)
+This method will install PE and provide you with a link at the end
+of the installation to reset your PE console admin password
+Make sure to click on the link and reset your password before proceeding
+to use PE
+[2] Text-mode Install
+This method will open your EDITOR (vi) with a PE config file (pe.conf)
+for you to edit before you proceed with installation.
+The pe.conf file is a HOCON formatted file that declares parameters
+and values needed to install and configure PE.
+We recommend that you review it carefully before proceeding.
+[3] Graphical-mode Install
+This method will install and configure a temporary webserver to walk
+you through the various configuration options.
+NOTE: This method requires you to be able to access port 3000 on this
+machine from your desktop web browser.
+=============================================================
+How to proceed? [1]:
+-------------------------------------------------------------------
+&lt;/code>&lt;/pre>
+&lt;p>Press 3 for web based Graphic-mode-Install&lt;/p>
+&lt;p>when successfull, we will see output as&lt;/p>
+&lt;pre>&lt;code>## We're preparing the Web Installer...
+2019-02-02T20:01:39.677-05:00 Running command:
+mkdir -p /opt/puppetlabs/puppet/share/installer/installer
+2019-02-02T20:01:39.685-05:00 Running command:
+cp -pR /home/ritesh/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64/*
+/opt/puppetlabs/puppet/share/installer/installer/
+## Go to https://&amp;lt;localhost&amp;gt;:3000 in your browser to continue installation.
+&lt;/code>&lt;/pre>
+&lt;p>By default Puppet Enterprise server uses 3000 port. Make sure that
+firewall allows communication on port 3000&lt;/p>
+&lt;pre>&lt;code>$ sudo ufw allow 3000
+&lt;/code>&lt;/pre>
+&lt;p>Next, go to &lt;code>https://localhost:3000&lt;/code> url for completing installation&lt;/p>
+&lt;p>Click on &lt;code>get started&lt;/code> button.&lt;/p>
+&lt;p>Chose install on this server&lt;/p>
+&lt;p>Enter &lt;code>&amp;lt;mypserver&amp;gt;&lt;/code> as DNS name. This is our Puppet Server name. This
+can be configured in confile file also.&lt;/p>
+&lt;p>Enter console admin password&lt;/p>
+&lt;p>Click continue&lt;/p>
+&lt;p>we will get confirm the plan screen with following information&lt;/p>
+&lt;pre>&lt;code>The Puppet master component
+Hostname
+ritesh-ubuntu-pe
+DNS aliases
+&amp;lt;mypserver&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>click continue and verify installer validation screen.&lt;/p>
+&lt;p>click &lt;code>Deploy Now&lt;/code> button&lt;/p>
+&lt;p>Puppet enterprise will be installed and will display message on screen&lt;/p>
+&lt;pre>&lt;code>Puppet agent ran sucessfully
+&lt;/code>&lt;/pre>
+&lt;p>login to console with admin password that was set earlier and click on
+nodes links to manage nodes.&lt;/p>
+&lt;p>Installing Puppet Enterprise as Text mode monolithic installation&lt;/p>
+&lt;pre>&lt;code>$ sudo ./puppet-enterprise-installer
+&lt;/code>&lt;/pre>
+&lt;p>Enter 2 on &lt;code>How to Proceed&lt;/code> for text mode monolithic installation.
+Following message will be displayed if successfull.&lt;/p>
+&lt;pre>&lt;code>2019-02-02T22:08:12.662-05:00 - [Notice]: Applied catalog in 339.28 seconds
+2019-02-02T22:08:13.856-05:00 - [Notice]:
+Sent analytics: pe_installer - install_finish - succeeded
+* /opt/puppetlabs/puppet/bin/puppet infrastructure configure
+--detailed-exitcodes --environmentpath /opt/puppetlabs/server/data/environments
+--environment enterprise --no-noop --install=2019.0.2 --install-method='repair'
+* returned: 2
+## Puppet Enterprise configuration complete!
+Documentation: https://puppet.com/docs/pe/2019.0/pe_user_guide.html
+Release notes: https://puppet.com/docs/pe/2019.0/pe_release_notes.html
+If this is a monolithic configuration, run 'puppet agent -t' to complete the
+setup of this system.
+If this is a split configuration, install or upgrade the remaining PE components,
+and then run puppet agent -t on the Puppet master, PuppetDB, and PE console,
+in that order.
+~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
+2019-02-02T22:08:14.805-05:00 Running command: /opt/puppetlabs/puppet/bin/puppet
+agent --enable
+~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64$
+&lt;/code>&lt;/pre>
+&lt;p>This is called as monolithic installation as all components of Puppet
+Enterprise such as Puppet master, PuppetDB and Console are installed on
+single node. This installation type is easy to install. Troubleshooting
+errors and upgrading infrastructure using this type is simple. This
+installation type can easily support infrastructure of up to 20,000
+managed nodes. Compiled master nodes can be added as network grows. This
+is recommended installation type for small to mid size organizations
+[2].&lt;/p>
+&lt;p>&lt;code>pe.conf&lt;/code> configuration file will be opened in editor to configure
+values. This file contains parameters and values for installing,
+upgrading and configuring Puppet.&lt;/p>
+&lt;p>Some important parameters that can be specified in &lt;code>pe.conf&lt;/code> file are&lt;/p>
+&lt;pre>&lt;code>console_admin_password
+puppet_enterprise::console_host
+puppet_enterprise::puppetdb_host
+puppet_enterprise::puppetdb_database_name
+puppet_enterprise::puppetdb_database_user
+&lt;/code>&lt;/pre>
+&lt;p>Lastly, we run puppet after installation is complete&lt;/p>
+&lt;pre>&lt;code>$ puppet agent -t
+&lt;/code>&lt;/pre>
+&lt;p>Text mode split installation is performed for large networks. Compared
+to monolithic installation split installation type can manage large
+infrastucture that requires more than 20,000 nodes. In this type of
+installation different components of Puppet Enterprise (master, PuppetDB
+and Console) are installed on different nodes. This installation type is
+recommended for organizations with large infrastructure needs [3].&lt;/p>
+&lt;p>In this type of installation, we need to install componenets in specific
+order. First master then puppet db followed by console.&lt;/p>
+&lt;p>Puppet Enterprise master and agent settings can be configured in
+&lt;code>puppet.conf&lt;/code> file. Most configuration settings of Puppet Enterprise
+componenets such as Master, Agent and security certificates are all
+specified in this file.&lt;/p>
+&lt;p>Config section of Agent Node&lt;/p>
+&lt;pre>&lt;code>[main]
+certname = &amp;lt;http://your-domain-name.com/&amp;gt;
+server = puppetserver
+environment = testing
+runinterval = 4h
+&lt;/code>&lt;/pre>
+&lt;p>Config section of Master Node&lt;/p>
+&lt;pre>&lt;code>[main]
+certname = &amp;lt;http://your-domain-name.com/&amp;gt;
+server = puppetserver
+environment = testing
+runinterval = 4h
+strict_variables = true
+[master]
+dns_alt_names = puppetserver,puppet, &amp;lt;http://your-domain-name.com/&amp;gt;
+reports = pupated
+storeconfigs_backend = puppetdb
+storeconfigs = true
+environment_timeout = unlimited
+&lt;/code>&lt;/pre>
+&lt;p>Comment lines, Settings lines and Settings variables are main components
+of puppet configuration file. Comments in config files are specified by
+prefixing hash character. Setting line consists name of setting followed
+by equal sign, value of setting are specified in this section. Setting
+variable value generally consists of one word but multiple can be
+specified in rare cases [4].&lt;/p>
+&lt;h2 id="refernces">Refernces&lt;/h2>
+&lt;p>[1] Edureka, “Puppet tutorial – devops tool for configuration
+management.” Web Page, May-2017 [Online]. Available:
+&lt;a href="https://www.edureka.co/blog/videos/puppet-tutorial/">https://www.edureka.co/blog/videos/puppet-tutorial/&lt;/a>&lt;/p>
+&lt;p>[2] Puppet, “Text mode installation: Monolithic.” Web Page, Nov-2017
+[Online]. Available:
+&lt;a href="https://puppet.com/docs/pe/2017.1/install_text_mode_mono.html">https://puppet.com/docs/pe/2017.1/install_text_mode_mono.html&lt;/a>&lt;/p>
+&lt;p>[3] Puppet, “Text mode installation : Split.” Web Page, Nov-2017
+[Online]. Available:
+&lt;a href="https://puppet.com/docs/pe/2017.1/install_text_mode_split.html">https://puppet.com/docs/pe/2017.1/install_text_mode_split.html&lt;/a>&lt;/p>
+&lt;p>[4] Puppet, “Config files: The main config files.” Web Page, Apr-2014
+[Online]. Available:
+&lt;a href="https://puppet.com/docs/puppet/5.3/config_file_main.html">https://puppet.com/docs/puppet/5.3/config_file_main.html&lt;/a>&lt;/p></description></item><item><title>Modules: Travis</title><link>/modules/devops/travis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/devops/travis/</guid><description>
+&lt;p>Travis CI is a continuous integration tool that is often used as part
+of DevOps development. It is a hosted service that enables users to
+test their projects on GitHub.&lt;/p>
+&lt;p>Once travis is activated in a GitHub project, the developers can place
+a &lt;code>.travis&lt;/code> file in the project root. Upon checkin the travis
+configuration file will be interpreted and the commands indicated in
+it will be executed.&lt;/p>
+&lt;p>In fact this book has also a travis file that is located at&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cloudmesh-community/book/blob/master/.travis.yml">https://github.com/cloudmesh-community/book/blob/master/.travis.yml&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Please inspect it as we will illustrate some concepts of
+it. Unfortunately travis does not use an up to date operating system
+such as ubuntu 18.04. Therefore it contains outdated
+libraries. Although we would be able to use containers, we have
+elected for us to chose mechanism to update the operating system as we
+need.&lt;/p>
+&lt;p>This is done in the &lt;code>install&lt;/code> phase that in our case installs a new
+version of pandoc, as well as some additional libraries that we use.&lt;/p>
+&lt;p>in the &lt;code>env&lt;/code> we specify where we can find our executables with the
+&lt;code>PATH&lt;/code> variable.&lt;/p>
+&lt;p>The last portion in our example file specifies the script that is
+executed after the install phase has been completed. As our
+installation contains convenient and sophisticated makefiles, the
+script is very simple while executing the appropriate make command in
+the corresponding directories.&lt;/p>
+&lt;h2 id="exercises">Exercises&lt;/h2>
+&lt;p>E.travis.1:&lt;/p>
+&lt;blockquote>
+&lt;p>Develop an alternative travis file that in conjunction uses a
+preconfigured container for ubuntu 18.04&lt;/p>
+&lt;/blockquote>
+&lt;p>E.travis.2:&lt;/p>
+&lt;blockquote>
+&lt;p>Develop an travis file that checks our books on multiple operating
+systems such as macOS, and ubuntu 18.04.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.travis-ci.com/">https://docs.travis-ci.com/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Modules: DevOps with AWS</title><link>/modules/devops/devop-aws/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/devops/devop-aws/</guid><description>
+&lt;p>AWS cloud offering comes with end-to-end scalable and most performant
+support for DevOps, all the way from automatic deployment and monitoring
+of infrastructure-as-code to our cloud-applications-code. AWS provides
+various DevOp tools to make the deployment and support automation as
+simple as possible.&lt;/p>
+&lt;h2 id="aws-devop-tools">AWS DevOp Tools&lt;/h2>
+&lt;p>Following is the list of DevOp tools for CI/CD workflows.&lt;/p>
+&lt;table>
+&lt;colgroup>
+&lt;col style="width: 28%" />
+&lt;col style="width: 71%" />
+&lt;/colgroup>
+&lt;thead>
+&lt;tr class="header">
+&lt;th>AWS DevOp Tool&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr class="odd">
+&lt;td>CodeStar&lt;/td>
+&lt;td>AWS CodeStar provides unified UI to enable simpler deployment automation.&lt;/td>
+&lt;/tr>
+&lt;tr class="even">
+&lt;td>CodePipeline&lt;/td>
+&lt;td>CI/CD service for faster and reliable application and infrastructure updates.&lt;/td>
+&lt;/tr>
+&lt;tr class="odd">
+&lt;td>CodeBuild&lt;/td>
+&lt;td>Fully managed build service that complies, tests and creates software packages that are ready to deploy.&lt;/td>
+&lt;/tr>
+&lt;tr class="even">
+&lt;td>CodeDeploy&lt;/td>
+&lt;td>Deployment automation tool to deploy to on-premise and on-cloud EC2 instances with near-to-zero downtime during the application deployments.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="infrastructure-automation">Infrastructure Automation&lt;/h2>
+&lt;p>AWS provides services to make micro-services easily deployable onto
+containers and serverless platforms.&lt;/p>
+&lt;table>
+&lt;colgroup>
+&lt;col style="width: 28%" />
+&lt;col style="width: 71%" />
+&lt;/colgroup>
+&lt;thead>
+&lt;tr class="header">
+&lt;th>AWS DevOp Infrastructure Tool&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr class="odd">
+&lt;td>Elastic Container Service&lt;/td>
+&lt;td>Highly scalable container management service.&lt;/td>
+&lt;/tr>
+&lt;tr class="even">
+&lt;td>CodePipeline&lt;/td>
+&lt;td>CI/CD service for faster and reliable application and infrastructure updates.&lt;/td>
+&lt;/tr>
+&lt;tr class="odd">
+&lt;td>AWS Lambda&lt;/td>
+&lt;td>Serverless Computing using Function-as-service (FaaS) methodologies .&lt;/td>
+&lt;/tr>
+&lt;tr class="even">
+&lt;td>AWS CloudFormation&lt;/td>
+&lt;td>Tool to create and manage related AWS resources.&lt;/td>
+&lt;/tr>
+&lt;tr class="odd">
+&lt;td>AWS OpsWorks&lt;/td>
+&lt;td>Server Configuration Management Tool.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="monitoring-and-logging">Monitoring and Logging&lt;/h2>
+&lt;table>
+&lt;colgroup>
+&lt;col style="width: 28%" />
+&lt;col style="width: 71%" />
+&lt;/colgroup>
+&lt;thead>
+&lt;tr class="header">
+&lt;th>AWS DevOp Monitoring Tool&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr class="odd">
+&lt;td>Amazon CloudWatch&lt;/td>
+&lt;td>Tool to monitor AWS resources and cloud applications to collect and track metrics, logs and set alarms.&lt;/td>
+&lt;/tr>
+&lt;tr class="even">
+&lt;td>AWS X-Ray&lt;/td>
+&lt;td>Allows developers to analyze and troubleshoot performance issues of their cloud applications and micro-services.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>For more information, please visit Amazon AWS [1].&lt;/p>
+&lt;h2 id="refernces">Refernces&lt;/h2>
+&lt;p>[1] Amazon AWS, &lt;em>DevOps and AWS&lt;/em>. Amazon, 2019 [Online]. Available:
+&lt;a href="https://aws.amazon.com/devops/">https://aws.amazon.com/devops/&lt;/a>&lt;/p></description></item><item><title>Modules: DevOps with Azure Monitor</title><link>/modules/devops/devop-azure-monitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/devops/devop-azure-monitor/</guid><description>
+&lt;p>Microsoft provides unified tool called Azure Monitor for end-to-end
+monitoring of the infrastructure and deployed applications. Azure
+Monitor can greatly help Dev-Op teams by proactively and reactively
+monitoring the applications for bug tracking, health-check and provide
+metrics that can hint on various scalability aspects.&lt;/p>
+&lt;figure>
+&lt;img src="../images/devops-azure-monitor.jpg" id="fig:azuremonitor" alt="Figure 1: Azure Monitor [1]" />&lt;figcaption aria-hidden="true">Figure 1: Azure Monitor &lt;span class="citation" data-cites="azure-monitor">[1]&lt;/span>&lt;/figcaption>
+&lt;/figure>
+&lt;p>Azure Monitor accommodates applications developed in various programming
+languages - .NET, Java, Node.JS, Python and various others. With Azure
+Application Insights telematics API incorporated into the applications,
+Azure Monitor can provide more detailed metrics and analytics around
+specific tracking needs - usage, bugs, etc.&lt;/p>
+&lt;p>Azure Monitor can help us track the health, performance and scalability
+issues of the infrastructure - VMs, Containers, Storage, Network and all
+Azure Services by automatically providing various platform metrics,
+activity and diagnostic logs.&lt;/p>
+&lt;p>Azure Monitor provides programmatic access through Power Shell scripts
+to access the activity and diagnostic logs. It also allows querying them
+using powerful querying tools for advanced in-depth analysis and
+reporting.&lt;/p>
+&lt;p>Azure Monitor proactively monitors and notifies us of critical
+conditions - reaching quota limits, abnormal usage, health-checks and
+recommendations along with making attempts to correct some of those
+aspects.&lt;/p>
+&lt;p>Azure Monitor Dashboards allow visualize various aspects of the data -
+metrics, logs, usage patterns in tabular and graphical widgets.&lt;/p>
+&lt;p>Azure Monitor also facilitates closer monitoring of micro-services if
+they are provided through Azure Serverless Function-As-Service.&lt;/p>
+&lt;p>For more information, please visit Microsoft Azure Website [1].&lt;/p>
+&lt;h2 id="refernces">Refernces&lt;/h2>
+&lt;p>[1] Microsoft Azure, &lt;em>Azure Monitor Overview&lt;/em>. Microsoft, 2018
+[Online]. Available:
+&lt;a href="https://docs.microsoft.com/en-us/azure/azure-monitor/overview">https://docs.microsoft.com/en-us/azure/azure-monitor/overview&lt;/a>&lt;/p></description></item></channel></rss>

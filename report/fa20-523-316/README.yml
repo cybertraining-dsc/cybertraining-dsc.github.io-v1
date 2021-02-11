@@ -1,0 +1,14 @@
+---
+owner:
+  firstname: "Sudheer"
+  lastname: "Alluri"
+  hid: "fa20-523-316"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Sentiment Analysis and Visualization using an US-election dataset for the 2020 Election
+  url: https://github.com/cybertraining-dsc/fa20-523-316/blob/master/project/project.md
+  proceedings: https://cybertraining-dsc.github.io/report/fa20-523-316/project/project/
+  author:
+    - Sudheer Alluri,fa20-523-316
+    - Vishwanadham Mandala, fa20-523-325

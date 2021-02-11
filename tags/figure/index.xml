@@ -1,0 +1,79 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – figure</title><link>/tags/figure/</link><description>Recent content in figure on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tags/figure/index.xml" rel="self" type="application/rss+xml"/><item><title>Modules: Element Sample</title><link>/modules/sample/elements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/sample/elements/</guid><description>
+&lt;h2 id="ipynb">ipynb&lt;/h2>
+&lt;div class="aside">
+&lt;table style="width:100%">
+&lt;tr>
+&lt;td>&lt;a
+href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/main/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent">&lt;img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>&lt;/a>&lt;/td>
+&lt;td>&lt;a
+href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/main/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent">&lt;img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;/div>
+&lt;h2 id="fa">fa&lt;/h2>
+&lt;i class="fas fa-fa fa-smile-wink ">
+&lt;link href="/fontawesome/css/all.min.css" rel="stylesheet">
+&lt;/i>
+&lt;h2 id="python_icon">python_icon&lt;/h2>
+&lt;a href=""> &lt;i class="fab fa-python">&lt;/i>&lt;/a>
+&lt;h2 id="table_of_contents">table_of_contents&lt;/h2>
+&lt;div class="toc">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#ipynb">ipynb&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#fa">fa&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#python_icon">python_icon&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#table_of_contents">table_of_contents&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#tag_cloud">tag_cloud&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#view_book">view_book&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#view_module">view_module&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;h2 id="tag_cloud">tag_cloud&lt;/h2>
+&lt;div id="tag-cloud" style="padding: 5px 15px">
+&lt;a href="/tags/class-book" style="font-size:2.4403788516836915rem">class-book&lt;/a>
+&lt;a href="/tags/figure" style="font-size:1.4335972394768317rem">figure&lt;/a>
+&lt;a href="/tags/graph" style="font-size:1rem">graph&lt;/a>
+&lt;a href="/tags/mermaid" style="font-size:1rem">mermaid&lt;/a>
+&lt;a href="/tags/module" style="font-size:1rem">module&lt;/a>
+&lt;/div>
+&lt;h2 id="view_book">view_book&lt;/h2>
+&lt;table>
+&lt;colgroup>
+&lt;col style="width:15%;background-color:white">
+&lt;col style="width:100%;background-color:light-grey">
+&lt;/colgroup>
+&lt;tr>
+&lt;td>
+&lt;a href="https://laszewski.github.io/publication/las-20-book-markdown/">
+&lt;img alt="Markdown" src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"/>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="https://laszewski.github.io/publication/las-20-book-markdown/"> Scientific Writing with Markdown &lt;/a>
+&lt;a href="https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub"> (ePub) &lt;/a>
+&lt;a href="https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf"> (PDF) &lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;h2 id="view_module">view_module&lt;/h2>
+&lt;table>
+&lt;colgroup>
+&lt;col style="width:15%;background-color:white">
+&lt;col style="width:100%;background-color:light-grey">
+&lt;/colgroup>
+&lt;tr>
+&lt;td>
+&lt;a href="/modules/bigdataapplications/2020/course_lectures">
+&lt;img alt="Course Lectures" src="/images/lecture.png"/>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/modules/bigdataapplications/2020/course_lectures">
+Course Lectures. These meeting notes are updated weekly (Web)
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/table></description></item><item><title>Modules: Figure Sample</title><link>/modules/sample/figure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/sample/figure/</guid><description>
+&lt;p>&lt;img src="/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png" alt="A sample caption">&lt;/p></description></item></channel></rss>

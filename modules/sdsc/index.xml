@@ -1,0 +1,116 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – Modules from SDSC</title><link>/modules/sdsc/</link><description>Recent content in Modules from SDSC on Cybertraining</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/modules/sdsc/index.xml" rel="self" type="application/rss+xml"/><item><title>Modules: Jupyter Notebooks in Comet over HTTP</title><link>/modules/sdsc/sshconnect-cybertraining/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/sdsc/sshconnect-cybertraining/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>We discuss how to run jupyter notebooks securely on comet.&lt;/p>
+&lt;div class="toc">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#1-overview">1. Overview&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#11-prerequisite">1.1. Prerequisite&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#12-effort">1.2. Effort&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#13-topics-covered">1.3. Topics covered&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#2-ssh-to-jupyter-notebooks-on-comet">2. SSH to Jupyter Notebooks on Comet&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-log-onto-cometsdscedu">3. Log onto comet.sdsc.edu&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#4-launch-a-notebook-on-the-login-node">4. Launch a notebook on the login node&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#5-obtain-an-interactive-node">5. Obtain an interactive node&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#51-access-the-node-in-your-browser">5.1 Access the node in your browser&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#52-use-your-jupyterlabjupyter-notebook-server">5.2 Use your jupyterlab/jupyter notebook server!&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="1-overview">1. Overview&lt;/h2>
+&lt;h3 id="11-prerequisite">1.1. Prerequisite&lt;/h3>
+&lt;ul>
+&lt;li>Account on Comet&lt;/li>
+&lt;/ul>
+&lt;h3 id="12-effort">1.2. Effort&lt;/h3>
+&lt;ul>
+&lt;li>30 minutes&lt;/li>
+&lt;/ul>
+&lt;h3 id="13-topics-covered">1.3. Topics covered&lt;/h3>
+&lt;ul>
+&lt;li>Using Notebooks on Comet&lt;/li>
+&lt;/ul>
+&lt;h2 id="2-ssh-to-jupyter-notebooks-on-comet">2. SSH to Jupyter Notebooks on Comet&lt;/h2>
+&lt;p>We describe how to connection between the browser on your
+local host (laptop) to a Jupyter service running on Comet over HTTP
+and demonstrates why the connection is &lt;em>not&lt;/em> secure.&lt;/p>
+&lt;p>&lt;img src="https://github.com/sdsc-hpc-training-org/notebooks-101/blob/master/Docs/images/jupyter-notebook-http.png?raw=true" alt="connection over HTTP">&lt;/p>
+&lt;p>Note: google chrome has many local ports open in the range of 7713 - 7794. They are all connect to 80 or 443 on the other end.&lt;/p>
+&lt;h2 id="3-log-onto-cometsdscedu">3. Log onto comet.sdsc.edu&lt;/h2>
+&lt;pre>&lt;code>ssh -Y -l &amp;lt;username&amp;gt; &amp;lt;system name&amp;gt;.sdsc.edu
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>create a test directory, or &lt;code>cd&lt;/code> into one you have already
+created&lt;/li>
+&lt;li>Clone the examples repository:&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>git clone https://github.com/sdsc-hpc-training-org/notebook-examples.git
+&lt;/code>&lt;/pre>&lt;h2 id="4-launch-a-notebook-on-the-login-node">4. Launch a notebook on the login node&lt;/h2>
+&lt;p>Run the jupyter command. Be sure to set the &amp;ndash;ip to use the hostname,
+which will appear in your URL :&lt;/p>
+&lt;pre>&lt;code>[mthomas@comet-14-01:~] jupyter notebook --no-browser --ip=`/bin/hostname`
+&lt;/code>&lt;/pre>&lt;p>You will see output similar to that shown below:&lt;/p>
+&lt;pre>&lt;code>[I 08:06:32.961 NotebookApp] JupyterLab extension loaded from /home/mthomas/miniconda3/lib/python3.7/site-packages/jupyterlab
+[I 08:06:32.961 NotebookApp] JupyterLab application directory is /home/mthomas/miniconda3/share/jupyter/lab
+[I 08:06:33.486 NotebookApp] Serving notebooks from local directory: /home/mthomas
+[I 08:06:33.487 NotebookApp] The Jupyter Notebook is running at:
+[I 08:06:33.487 NotebookApp] http://comet-14-01.sdsc.edu:8888/?token=6d7a48dda7cc1635d6d08f63aa1a696008fa89d8aa84ad2b
+[I 08:06:33.487 NotebookApp] or http://127.0.0.1:8888/?token=6d7a48dda7cc1635d6d08f63aa1a696008fa89d8aa84ad2b
+[I 08:06:33.487 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 08:06:33.494 NotebookApp]
+To access the notebook, open this file in a browser:
+file:///home/mthomas/.local/share/jupyter/runtime/nbserver-6614-open.html
+Or copy and paste one of these URLs:
+http://comet-14-01.sdsc.edu:8888/?token=6d7a48dda7cc1635d6d08f63aa1a696008fa89d8aa84ad2b
+or http://127.0.0.1:8888/?token=6d7a48dda7cc1635d6d08f63aa1a696008fa89d8aa84ad2b
+[I 08:06:45.773 NotebookApp] 302 GET /?token=6d7a48dda7cc1635d6d08f63aa1a696008fa89d8aa84ad2b (76.176.117.51) 0.74ms
+[E 08:06:45.925 NotebookApp] Could not open static file ''
+[W 08:06:46.033 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (76.176.117.51) 7.39ms referer=http://comet-14-01.sdsc.edu:8888/tree?token=6d7a48dda7cc1635d6d08f63aa1a696008fa89d8aa84ad2b
+[W 08:06:46.131 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (76.176.117.51) 1.02ms referer=http://comet-14-01.sdsc.edu:8888/tree?token=6d7a48dda7cc1635d6d08f63aa1a696008fa89d8aa84ad2b
+&lt;/code>&lt;/pre>&lt;p>Notice that the notebook URL is using HTTP, and when you connect the
+browser on your local sysetm to this URL, the connection will &lt;em>not&lt;/em> be
+secure. Note: it is against SDSC Comet policy to run applications on
+the login nodes, and any applications being run will be killed by the
+system admins. A better way is to run the jobs on an interactive node
+or on a compute node using the batch queue (see the
+&lt;a href="https://comet.sdsc.edu">Comet User Guide&lt;/a>), or on a compute node,
+which is described in the next sections.&lt;/p>
+&lt;h2 id="5-obtain-an-interactive-node">5. Obtain an interactive node&lt;/h2>
+&lt;p>Jobs can be run on the cluster in &lt;code>batch mode&lt;/code> or in &lt;code>interactive mode&lt;/code>. Batch jobs are performed remotely and without manual
+intervention. Interactive mode enable you to run/compile your program
+and environment setup on a compute node dedicated to you. To obtain an
+interactive node, type:&lt;/p>
+&lt;pre>&lt;code>srun --pty --nodes=1 --ntasks-per-node=24 -p compute -t 02:00:00 --wait 0 /bin/bash
+&lt;/code>&lt;/pre>&lt;p>You will have to wait for your node to be allocated - which can take a
+few or many minutes. You will see pending messages like the ones
+below:&lt;/p>
+&lt;pre>&lt;code>srun: job 24000544 queued and waiting for resources
+srun: job 24000544 has been allocated resources
+[mthomas@comet-18-29:~/hpctrain/python/PythonSeries]
+&lt;/code>&lt;/pre>&lt;p>You can also check the status of jobs in the queue system to get an
+idea of how long you may need to wait.&lt;/p>
+&lt;p>Launch the Jupyter Notebook application. Note: this application will
+be running on comet, and you will be given a URL which will connect
+your local web browser the interactive comet session:&lt;/p>
+&lt;pre>&lt;code>jupyter notebook --no-browser --ip=`/bin/hostname`
+&lt;/code>&lt;/pre>&lt;p>This will give you an address which has localhost in it and a
+token. Something like:&lt;/p>
+&lt;pre>&lt;code>http://comet-14-0-4:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+&lt;/code>&lt;/pre>&lt;p>You can then paste it into your browser. You will see a running
+Jupyter notebook and a listing of the notebooks in your
+directory. From there everything should be working as a regular
+notebook. Note: This token is your auth so don&amp;rsquo;t email/send it
+around. It will go away when you stop the notebook.&lt;/p>
+&lt;p>To learn about Python, run the &lt;code>Python basics.ipynb&lt;/code> notebook. To
+see an example of remote visualization, run the &lt;code>Matplotlib.ipynb&lt;/code>
+notebook!&lt;/p>
+&lt;h3 id="51-access-the-node-in-your-browser">5.1 Access the node in your browser&lt;/h3>
+&lt;p>Copy the the URL above into the browser running on your laptop.&lt;/p>
+&lt;h3 id="52-use-your-jupyterlabjupyter-notebook-server">5.2 Use your jupyterlab/jupyter notebook server!&lt;/h3>
+&lt;p>Enjoy. Note that your notebook is unsecured.&lt;/p></description></item></channel></rss>

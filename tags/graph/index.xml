@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – graph</title><link>/tags/graph/</link><description>Recent content in graph on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tags/graph/index.xml" rel="self" type="application/rss+xml"/><item><title>Modules: Mermaid Sample</title><link>/modules/sample/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/sample/mermaid/</guid><description>
+&lt;script async src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js">&lt;/script>
+&lt;div class="mermaid">
+graph LR
+A[Introduction]
+B[Usecases]
+C[Physics]
+D[Sports]
+A-->B-->C-->D
+click A "/courses/bigdata2020/#introduction-to-ai-driven-digital-transformation" _blank
+click B "/courses/bigdata2020/#big-data-usecases-survey" _blank
+click C "/courses/bigdata2020/#physics" _blank
+click D "/courses/bigdata2020/#sports" _blank
+&lt;/div>
+&lt;script async src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js">&lt;/script>
+&lt;div class="mermaid">
+gantt
+title Class Calendar
+dateFormat YYYY-MM-DD
+section Lectures
+Overview :w1, 2020-08-28, 7d
+Introduction :w2, 2020-09-04, 7d
+Physics :w3, 2020-09-11, 7d
+Sport :w4, 2020-09-18, 7d
+section Practice
+Colab :after w1, 14d
+Github :after w2, 7d
+&lt;/div>
+&lt;p>To design a chart you can use the &lt;a href="https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19">live edior&lt;/a>.&lt;/p></description></item></channel></rss>

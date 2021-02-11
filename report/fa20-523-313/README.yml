@@ -1,0 +1,13 @@
+---
+owner:
+  firstname: "Fauzan"
+  lastname: "Isnaini"
+  hid: "fa20-523-313"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Analyzing LSTM Performance on Predicting the Stock Market for Multiple Time Steps
+  url: https://github.com/cybertraining-dsc/fa20-523-313/blob/main/project/project.md
+  author:
+    - Fauzan Isnaini, fa20-523-313
+

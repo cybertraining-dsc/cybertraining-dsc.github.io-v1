@@ -1,0 +1,14 @@
+---
+owner:
+  firstname: "Sunny"
+  lastname: "Xu"
+  hid: "fa20-523-315"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Big Data on Gesture Recognition and Machine Learning
+  url: https://github.com/cybertraining-dsc/fa20-523-315/edit/main/report/report.md
+  author:
+    - Sunny Xu, fa20-523-315
+    - Peiran Zhao, fa20-523-306
+    - Kris Zhang, fa20-523-347

@@ -1,0 +1,17 @@
+connexion[swagger-ui]
+cloudmesh-common
+cloudmesh-cmd5
+cloudmesh-sys
+cloudmesh-installer
+cloudmesh-admin
+cloudmesh-gui
+docstring_parser
+numpydoc
+azure-ai-textanalytics
+google-cloud
+google-cloud-translate
+google-cloud-language
+msrest
+pandas
+joblib
+sklearn

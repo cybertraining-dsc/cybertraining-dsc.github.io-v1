@@ -1,0 +1,12 @@
+---
+owner:
+  firstname: "Holden"
+  lastname: "Hunt"
+  hid: "fa20-523-328"
+  community: "534"
+  semester: "fa20"
+report:
+  title: "How Big Data Effects Statistics in Baseball"
+  url: https://github.com/cybertraining-dsc/fa20-523-328/blob/master/main/report.md
+  author:
+    -Holden Hunt, fa20-523-328

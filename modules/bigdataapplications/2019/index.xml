@@ -1,0 +1,1778 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – 2019</title><link>/modules/bigdataapplications/2019/</link><description>Recent content in 2019 on Cybertraining</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/modules/bigdataapplications/2019/index.xml" rel="self" type="application/rss+xml"/><item><title>Modules: Introduction</title><link>/modules/bigdataapplications/2019/intro-bd-deprecated/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/intro-bd-deprecated/</guid><description>
+&lt;h1 id="introduction-to-the-course">Introduction to the Course&lt;/h1>
+&lt;p>created from &lt;a href="https://drive.google.com/drive/folders/0B1YZSKYkpykjbnE5QzRldGxja3M">https://drive.google.com/drive/folders/0B1YZSKYkpykjbnE5QzRldGxja3M&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjeEdNcXBySU40dGc">&lt;img src="/images/presentation.png" alt="Presentation"> 1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjYkNlVWQzeE8yRTg">&lt;img src="/images/video.png" alt="Video"> 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjTkVXLXhXbTlVVjQ">&lt;img src="/images/presentation.png" alt="Presentation"> 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjamlVTTBGajA4bU0">&lt;img src="/images/video.png" alt="Video"> 3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjdVZGYVVzNzZtNnM">&lt;img src="/images/presentation.png" alt="Presentation"> 3&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE">&lt;img src="/images/video.png" alt="Video"> 4a&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjbkN5OFBYOERWQ3c">&lt;img src="/images/presentation.png" alt="Presentation"> 4a&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjbVlUb1FvbnE5LXc">&lt;img src="/images/video.png" alt="Video"> 4b&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjXzg5dXI3eHVHd1U">&lt;img src="/images/presentation.png" alt="Presentation"> 4b&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykja3RMTmtVVWlQVmc">&lt;img src="/images/presentation.png" alt="Presentation"> 4c&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjNE9SYmtJeElhN1U">&lt;img src="/images/presentation.png" alt="Presentation"> 5&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjQS1sNEpOdlh5ZG8">&lt;img src="/images/video.png" alt="Video"> 6a&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjQzdRSE1UUG5kaGM">&lt;img src="/images/presentation.png" alt="Presentation"> 6a&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjQzFQSTBpXzJBa28">&lt;img src="/images/video.png" alt="Video"> 6b&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjcTE2a2ExdUt2UzQ">&lt;img src="/images/presentation.png" alt="Presentation"> 6b&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjWXNtTnYxVGR2ZUE">&lt;img src="/images/presentation.png" alt="Presentation"> 7&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjbWxXMVBETms0WEU">&lt;img src="/images/video.png" alt="Video"> 8&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjUVplV1kwVFpkRlE">&lt;img src="/images/presentation.png" alt="Presentation"> 8&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk">&lt;img src="/images/presentation.png" alt="Presentation"> 9&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjd09FN3ZnWEFsQlk">&lt;img src="/images/presentation.png" alt="Presentation"> 10&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjOXIxTS00NXRJdms">&lt;img src="/images/video.png" alt="Video"> 11&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjd0d4OWdqRThKaEk">&lt;img src="/images/presentation.png" alt="Presentation"> 11&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M">&lt;img src="/images/video.png" alt="Video"> 12&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjM0ZIeWgwMkhkcmM">&lt;img src="/images/presentation.png" alt="Presentation"> 12&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c">&lt;img src="/images/presentation.png" alt="Presentation"> 13&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjNTZhcllDMmJ4NGM">&lt;img src="/images/presentation.png" alt="Presentation"> 14&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjT3lCcFlkT0NSRUk">&lt;img src="/images/presentation.png" alt="Presentation"> 15&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjZ1RrZEtaSjNiS0U">&lt;img src="/images/presentation.png" alt="Presentation"> 15&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=0B1YZSKYkpykjWC02RzVtRVZaZjQ">&lt;img src="/images/presentation.png" alt="Presentation"> 16&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Modules: Introduction (Fall 2018)</title><link>/modules/bigdataapplications/2019/intro-fall-2018/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/intro-fall-2018/</guid><description>
+&lt;h1 id="introduction-to-big-data-applications">Introduction to Big Data Applications&lt;/h1>
+&lt;p>This is an overview course of Big Data Applications covering a broad
+range of problems and solutions. It covers cloud computing
+technologies and includes a project. Also, algorithms are introduced
+and illustrated.&lt;/p>
+&lt;h2 id="general-remarks-including-hype-cycles">General Remarks Including Hype cycles&lt;/h2>
+&lt;p>This is Part 1 of the introduction. We start with some general remarks and
+take a closer look at the emerging technology hype cycles.&lt;/p>
+&lt;p>1.a Gartner&amp;rsquo;s Hypecycles and especially those for emerging technologies between 2016 and 2018&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/file/d/1ITxfyu5tJReRM5KgEaPWgT3MrQiK6wD1">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1vHd10o92iOqxW0yD35DmTWB2XxrGoXF3">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>1.b Gartner&amp;rsquo;s Hypecycles with Emerging technologies hypecycles and the priority matrix at selected times 2008-2015&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=18rzv00dUsFeVO6WdWASX6-dc6iVGBjUL">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>1.a + 1.b:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1vUxKfC4sQUcEZ7O6H8YCbKV5yDoboedH">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Technology trends&lt;/li>
+&lt;li>Industry reports&lt;/li>
+&lt;/ul>
+&lt;h2 id="data-deluge">Data Deluge&lt;/h2>
+&lt;p>This is Part 2 of the introduction.&lt;/p>
+&lt;p>2.a Business usage patterns from NIST&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1WMPvAsfESLy3X94SVZjfUlSUplJPYVXA">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1NfWW9yBbqHlJWfrCTuRm_9oPICZtFmuL">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>2.b Cyberinfrastructure and AI&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1NiyanWoXXPpNGilutPpFBLqFNE948taS">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1Qp-iQp2ejbFEOnVDPN7LoaqSGYcEdF1P">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>2.a + 2.b&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1CNZtR1yzNfJ3ezapZbEQl15dEcSPRO-M">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Several examples of rapid data and information growth in different areas&lt;/li>
+&lt;li>Value of data and analytics&lt;/li>
+&lt;/ul>
+&lt;h2 id="jobs">Jobs&lt;/h2>
+&lt;p>This is Part 3 of the introduction.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1tMKNKWa71HZSk9jLNw8jUws9-JlldqZ0">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1XDookVsbusK5O-_cXMtslZPuQY65_eB">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1B4HioBXvUdj4A4LG7roCPd_KU-njzg6R">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Jobs opportunities in the areas: data science, clouds and computer science and computer engineering&lt;/li>
+&lt;li>Jobs demands in different countries and companies.&lt;/li>
+&lt;li>Trends and forecast of jobs demands in the future.&lt;/li>
+&lt;/ul>
+&lt;h2 id="industry-trends">Industry Trends&lt;/h2>
+&lt;p>This is Part 4 of the introduction.&lt;/p>
+&lt;p>4a. Industry Trends: Technology Trends by 2014&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1XzLGhioe3jdtuQo1V7d_B3syH00tbHSH">&lt;img src="/images/video.png" alt="Video">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>4b. Industry Trends: 2015 onwards&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=18AzztLK0OEgej1g9Gv0jMvMkHIj4REnM">&lt;img src="/images/video.png" alt="Video">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>An older set of trend slides is available from:&lt;/p>
+&lt;p>4a. Industry Trends: Technology Trends by 2014&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=144EUUWDjB7KSf2F-lGx83DOxx45eZiVm">&lt;img src="/images/audio.png" alt="Audio"> &lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>A current set is available at:&lt;/p>
+&lt;p>4b. Industry Trends: 2015 onwards&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1UAYnU6Zy6yhliYk0JGJlf3FsNLUFxBP9">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>4c. Industry Trends: Voice and HCI, cars,Deep learning&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1ZAnywdhKqiGpaRtEdcwyEnFWaFt9Mc8u">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Many technology trends through end of 2014 and 2015 onwards, examples in different fields&lt;/li>
+&lt;li>Voice and HCI, Cars Evolving and Deep learning&lt;/li>
+&lt;/ul>
+&lt;h2 id="digital-disruption-and-transformation">Digital Disruption and Transformation&lt;/h2>
+&lt;p>This is Part 5 of the introduction.&lt;/p>
+&lt;ol start="5">
+&lt;li>Digital Disruption and Transformation&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1Wo0pf0H_kQNwau6hTO9MccFdx4zHhV-5">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1aNCfuUm40vuWdqiEjezWesz9SMI23qxZ">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1c20hiORYqhcxy1vllKswyCPunFN_njuv">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>The past displaced by digital disruption&lt;/li>
+&lt;/ul>
+&lt;h2 id="computing-model">Computing Model&lt;/h2>
+&lt;p>This is Part 6 of the introduction.&lt;/p>
+&lt;p>6a. Computing Model: earlier discussion by 2014:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1Sqfo3sGOig7S7QVqGj3mP6uY8UwP1fVk">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1IB3slfjTH-ygTNbQHhBQGqDdT9fpdYYp">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=11FDYMV_ySAHQEY5YFlVrFzCoEUbnpWNr">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>6b. Computing Model: developments after 2014 including Blockchain:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1M8wrsLawFnbyBhAAgWS_fulgzMSIAz3P">&lt;img src="/images/video.png" alt="Video"> &lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1SZ1a0ffVWaOmIF5YvXCARjJ-x4SX4JNb">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1QRqdzfYmoPT6qkJYMe_zSlx_tKkpAF9G">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Industry adopted clouds which are attractive for data analytics, including big companies, examples are Google, Amazon, Microsoft and so on.&lt;/li>
+&lt;li>Some examples of development: AWS quarterly revenue, critical capabilities public cloud infrastructure as a service.&lt;/li>
+&lt;li>Blockchain: ledgers redone, blockchain consortia.&lt;/li>
+&lt;/ul>
+&lt;h2 id="research-model">Research Model&lt;/h2>
+&lt;p>This is Part 7 of the introduction.&lt;/p>
+&lt;p>Research Model: 4th Paradigm; From Theory to Data driven science?&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1eBS5tWafVDnGCUtRsTP2l1fFMITwjn1D">&lt;img src="/images/video.png" alt="Video"> &lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1YBItIADnIZr1wLkYBWWtxsLgVg_9lgoO">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1NSZwndS7DrHgCuyef0KMHguNGfMawKiv">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>The 4 paradigm of scientific research: Theory,Experiment and observation,Simulation of theory or model,Data-driven.&lt;/li>
+&lt;/ul>
+&lt;h2 id="data-science-pipeline">Data Science Pipeline&lt;/h2>
+&lt;p>This is Part 8 of the introduction.
+8. Data Science Pipeline&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1x9DzWBXlimMYgm7EKllNlgwqairTzN2a">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=17rm2m1v-TaxXIYlR36gqKQqs13XumZNi">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>DIKW process:Data, Information, Knowledge, Wisdom and Decision.&lt;/li>
+&lt;li>Example of Google Maps/navigation.&lt;/li>
+&lt;li>Criteria for Data Science platform.&lt;/li>
+&lt;/ul>
+&lt;h2 id="physics-as-an-application-example">Physics as an Application Example&lt;/h2>
+&lt;p>This is Part 9 of the introduction.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1_qAn4LxVZ2i1k53uj47uvTKU-0T84a0O">&lt;img src="/images/presentation.png" alt="Presentation"> 9. Physics as an Application Example&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Physics as an application example.&lt;/li>
+&lt;/ul>
+&lt;h2 id="technology-example">Technology Example&lt;/h2>
+&lt;p>This is Part 10 of the introduction.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=135zSbironJ1h488CzgqF-KsZumYhyGz6">&lt;img src="/images/presentation.png" alt="Presentation"> 10. Technology Example: Recommender Systems I&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Overview of many informatics areas, recommender systems in detail.&lt;/li>
+&lt;li>NETFLIX on personalization, recommendation, datascience.&lt;/li>
+&lt;/ul>
+&lt;h2 id="exploring-data-bags-and-spaces">Exploring Data Bags and Spaces&lt;/h2>
+&lt;p>This is Part 11 of the introduction.&lt;/p>
+&lt;ol start="11">
+&lt;li>Exploring data bags and spaces: Recommender Systems II&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1DlmUYwFTRHL0S_vLQqbumvRHEyicyNt7">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1keYELndfvM0r4DeedVLPjMY-AAvBHdns">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Distances in funny spaces, about &amp;ldquo;real&amp;rdquo; spaces and how to use distances.&lt;/li>
+&lt;/ul>
+&lt;h2 id="another-example-web-search-information-retrieval">Another Example: Web Search Information Retrieval&lt;/h2>
+&lt;p>This is Part 12 of the introduction.
+12. Another Example: Web Search Information Retrieval&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1SGUB5kLi6Q0B7h6ZsJELAXrpWyrLaNgl">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1Tv5zMBxqqJOfKbNNqwgyZSAVc0WW2d9E">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="cloud-application-in-research">Cloud Application in Research&lt;/h2>
+&lt;p>This is Part 13 of the introduction discussing cloud applications in research.&lt;/p>
+&lt;ol start="13">
+&lt;li>Cloud Applications in Research: Science Clouds and Internet of Things&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=16zqsRbdmptrB14IR2iJbOLQUuQzFcm7i">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="software-ecosystems-parallel-computing-and-mapreduce">Software Ecosystems: Parallel Computing and MapReduce&lt;/h2>
+&lt;p>This is Part 14 of the introduction discussing the software ecosystem&lt;/p>
+&lt;ol start="14">
+&lt;li>Software Ecosystems: Parallel Computing and MapReduce&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1Hn6ReTxBpowvr0UihdChXZZy0Q_lnBRx">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!--
+## Opportunities at Universities
+This is Part 15 of the introduction.
+[![Video](/images/video.png) 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjT3lCcFlkT0NSRUk)
+[![Presentation](/images/presentation.png) 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjZ1RrZEtaSjNiS0U)
+-->
+&lt;h2 id="conclusions">Conclusions&lt;/h2>
+&lt;p>This is Part 15 of the introduction with some concluding remarks.
+15. Conclusions&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-">&lt;img src="/images/video.png" alt="Video">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
+&lt;a href="https://drive.google.com/open?id=1gt5ClfCnn72bWJxlnbTCAueSJ-25zBC7">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Modules: Motivation</title><link>/modules/bigdataapplications/2019/week1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week1/</guid><description>
+&lt;h1 id="part-i-motivation-i">Part I Motivation I&lt;/h1>
+&lt;h2 id="motivation">Motivation&lt;/h2>
+&lt;p>Big Data Applications &amp;amp; Analytics: Motivation/Overview; Machine (actually Deep)
+Learning, Big Data, and the Cloud; Centerpieces of the Current and Future
+Economy,&lt;/p>
+&lt;h2 id="00-mechanics-of-course-summary-and-overall-remarks-on-course">00) Mechanics of Course, Summary, and overall remarks on course&lt;/h2>
+&lt;p>In this section we discuss the summary of the motivation section.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/3NVooE9EtqY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="01a-technology-hypecycle-i">01A) Technology Hypecycle I&lt;/h3>
+&lt;p>Today clouds and big data have got through the hype cycle (they have emerged)
+but features like blockchain, serverless and machine learning are on recent hype
+cycles while areas like deep learning have several entries (as in fact do
+clouds) Gartner’s Hypecycles and especially that for emerging technologies in
+2019 The phases of hypecycles Priority Matrix with benefits and adoption time
+Initial discussion of 2019 Hypecycle for Emerging Technologies&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/25mXsHAiSeU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="01b-technology-hypecycle-ii">01B) Technology Hypecycle II&lt;/h3>
+&lt;p>Today clouds and big data have got through the hype cycle (they have emerged)
+but features like blockchain, serverless and machine learning are on recent hype
+cycles while areas like deep learning have several entries (as in fact do
+clouds) Gartner’s Hypecycles and especially that for emerging technologies in
+2019 Details of 2019 Emerging Technology and related (AI, Cloud) Hypecycles&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/-QLxzyB1tvQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="01c-technology-hypecycle-iii">01C) Technology Hypecycle III&lt;/h3>
+&lt;p>Today clouds and big data have got through the hype cycle (they have emerged)
+but features like blockchain, serverless and machine learning are on recent hype
+cycles while areas like deep learning have several entries (as in fact do
+clouds) Gartners Hypecycles and Priority Matrices for emerging technologies in
+2018, 2017 and 2016 More details on 2018 will be found in Unit 1A of 2018
+Presentation and details of 2015 in Unit 1B (Journey to Digital Business). 1A in
+2018 also discusses 2017 Data Center Infrastructure removed as this hype cycle
+disappeared in later years.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/TIb9eUrQAtk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="01d-technology-hypecycle-iv">01D) Technology Hypecycle IV&lt;/h3>
+&lt;p>Today clouds and big data have got through the hype cycle (they have emerged)
+but features like blockchain, serverless and machine learning are on recent hype
+cycles while areas like deep learning have several entries (as in fact do
+clouds) Emerging Technologies hypecycles and Priority matrix at selected times
+2008-2015 Clouds star from 2008 to today They are mixed up with transformational
+and disruptive changes Unit 1B of 2018 Presentation has more details of this
+history including Priority matrices&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/N5m3ElvTS84" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="02">02)&lt;/h2>
+&lt;h3 id="02a-cloudsbig-data-applications-i">02A) Clouds/Big Data Applications I&lt;/h3>
+&lt;p>The Data Deluge Big Data; a lot of the best examples have NOT been updated (as I
+can’t find updates) so some slides old but still make the correct points Big
+Data Deluge has become the Deep Learning Deluge Big Data is an agreed fact; Deep
+Learning still evolving fast but has stream of successes!&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/BC5fsZmPJKI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="02b-cloudbig-data-applications-ii">02B) Cloud/Big Data Applications II&lt;/h3>
+&lt;p>Clouds in science where area called cyberinfrastructure; The usage pattern from
+NIST is removed. See 2018 lectures 2B of the motivation for this discussion&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/7dXz3_o0ln0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="02c-cloudbig-data">02C) Cloud/Big Data&lt;/h3>
+&lt;p>Usage Trends Google and related Trends Artificial Intelligence from Microsoft,
+Gartner and Meeker&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/by96dQsKjjo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="03-jobs-in-areas-like-data-science-clouds-and-computer-science-and-computer">03) Jobs In areas like Data Science, Clouds and Computer Science and Computer&lt;/h2>
+&lt;p>Engineering&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/JznXEENYks8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="04-industry-technology-consumer-trends-basic-trends-2018-lectures-4a-4b-have">04) Industry, Technology, Consumer Trends Basic trends 2018 Lectures 4A 4B have&lt;/h2>
+&lt;p>more details removed as dated but still valid See 2018 Lesson 4C for 3
+Technology trends for 2016: Voice as HCI, Cars, Deep Learning&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/7jutdpNquFU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="05-digital-disruption-and-transformation-the-past-displaced-by-digital">05) Digital Disruption and Transformation The Past displaced by Digital&lt;/h2>
+&lt;p>Disruption; some more details are in 2018 Presentation Lesson 5&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/jgRSQVEJnXU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="06">06)&lt;/h2>
+&lt;h2 id="06a-computing-model-i-industry-adopted-clouds-which-are-attractive-for-data">06A) Computing Model I Industry adopted clouds which are attractive for data&lt;/h2>
+&lt;p>analytics. Clouds are a dominant force in Industry. Examples are given&lt;/p>
+&lt;h3 id="06b-computing-model-ii-with-3-subsections-is-removed-please-see-2018">06B) Computing Model II with 3 subsections is removed; please see 2018&lt;/h3>
+&lt;p>Presentation for this Developments after 2014 mainly from Gartner Cloud Market
+share Blockchain&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/3yyNa6e7J_c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="07-research-model-4th-paradigm-from-theory-to-data-driven-science">07) Research Model 4th Paradigm; From Theory to Data driven science?&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/YyBjbiprC2Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="08-data-science-pipeline-dikw-data-information-knowledge-wisdom-decisions">08) Data Science Pipeline DIKW: Data, Information, Knowledge, Wisdom, Decisions.&lt;/h2>
+&lt;p>More details on Data Science Platforms are in 2018 Lesson 8 presentation&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/WKGB_dPLato" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="09-physics-looking-for-higgs-particle-with-large-hadron-collider-lhc-physics-as-a-big-data-example">09) Physics: Looking for Higgs Particle with Large Hadron Collider LHC Physics as a big data example&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/h6WPSmE2cIg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="10-recommender-systems-i-general-remarks-and-netflix-example">10) Recommender Systems I General remarks and Netflix example&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/1xRUspH4EMM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="11-recommender-systems-ii-exploring-data-bags-and-spaces">11) Recommender Systems II Exploring Data Bags and Spaces&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/1kCDLo-w378" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="12-web-search-and-information-retrieval-another-big-data-example">12) Web Search and Information Retrieval Another Big Data Example&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/yBiqwPLb-8w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="13-cloud-applications-in-research-removed-science-clouds-internet-of-things">13) Cloud Applications in Research Removed Science Clouds, Internet of Things&lt;/h2>
+&lt;p>Part 12 continuation.
+See 2018 Presentation (same as 2017 for lesson 13) and Cloud Unit 2019-I) this year&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/yBiqwPLb-8w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="14-parallel-computing-and-mapreduce-software-ecosystems">14) Parallel Computing and MapReduce Software Ecosystems&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/QMnjgR8NihY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="15-online-education-and-data-science-education-removed">15) Online education and data science education Removed.&lt;/h2>
+&lt;p>You can find it in the 2017 version. In @sec:534-week2 you can see more about this.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/QMnjgR8NihY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="16-conclusions">16) Conclusions&lt;/h2>
+&lt;p>Conclusion contain in the latter part of the part 15.&lt;/p>
+&lt;p>Motivation Archive Big Data Applications and Analytics:
+Motivation/Overview; Machine (actually Deep) Learning, Big Data, and the
+Cloud; Centerpieces of the Current and Future Economy. Backup Lectures
+from previous years referenced in 2019 class&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/iMwnPg6SW_Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div></description></item><item><title>Modules: Motivation (cont.)</title><link>/modules/bigdataapplications/2019/week2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week2/</guid><description>
+&lt;h1 id="part-ii-motivation-archive">Part II Motivation Archive&lt;/h1>
+&lt;h2 id="2018-bdaa-motivation-1a-technology-hypecycle-i">2018 BDAA Motivation-1A) Technology Hypecycle I&lt;/h2>
+&lt;p>In this section we discuss on general remarks including Hype curves.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/fEcQl7jhwu0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2018-bdaa-motivation-1b-technology-hypecycle-ii">2018 BDAA Motivation-1B) Technology Hypecycle II&lt;/h2>
+&lt;p>In this section we continue our discussion on general remarks including Hype curves.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/_y0Efn_iakY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2018-bdaa-motivation-2b-cloudbig-data-applications-ii">2018 BDAA Motivation-2B) Cloud/Big Data Applications II&lt;/h2>
+&lt;p>In this section we discuss clouds in science where area called cyberinfrastructure; the usage
+pattern from NIST Artificial Intelligence from Gartner and Meeker.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/wcALTC38yWI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2018-bdaa-motivation-4a-industry-trends-i">2018 BDAA Motivation-4A) Industry Trends I&lt;/h2>
+&lt;p>In this section we discuss on Lesson 4A many technology trends through end of 2014.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/s_T5IBP05x4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2018-bdaa-motivation-4b-industry-trends-ii">2018 BDAA Motivation-4B) Industry Trends II&lt;/h2>
+&lt;p>In this section we continue our discussion on industry trends.
+This section includes Lesson 4B 2015 onwards many technology adoption trends.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/1ocZBhIGwlk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2017-bdaa-motivation-4cindustry-trends-iii">2017 BDAA Motivation-4C)Industry Trends III&lt;/h2>
+&lt;p>In this section we continue our discussion on industry trends. This section contains lesson 4C 2015
+onwards 3 technology trends voice as HCI cars deep learning.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/d6SUm0Mb0LY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2018-bdaa-motivation-6b-computing-model-ii">2018 BDAA Motivation-6B) Computing Model II&lt;/h2>
+&lt;p>In this section we discuss computing models. This section contains lesson 6B with 3 subsections
+developments after 2014 mainly from Gartner cloud market share blockchain&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/_F8-LaQ5Oso" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2017-bdaa-motivation-8-data-science-pipeline-dikw">2017 BDAA Motivation-8) Data Science Pipeline DIKW&lt;/h2>
+&lt;p>In this section, we discuss data science pipelines. This section also contains about
+data, information, knowledge, wisdom forming DIKW term.
+And also it contains some discussion on data science platforms.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/3bpOQge-fPA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2017-bdaa-motivation-13-cloud-applications-in-research-science-clouds-internet-of-things">2017 BDAA Motivation-13) Cloud Applications in Research Science Clouds Internet of Things&lt;/h2>
+&lt;p>In this section we discuss about internet of things and related cloud applications.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/_6aQn5daW4Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="2017-bdaa-motivation-15-data-science-education-opportunities-at-universities">2017 BDAA Motivation-15) Data Science Education Opportunities at Universities&lt;/h2>
+&lt;p>In this section we discuss more on data science education opportunities.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/SWCiCbwmWjA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div></description></item><item><title>Modules: Cloud</title><link>/modules/bigdataapplications/2019/week3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week3/</guid><description>
+&lt;h1 id="part-iii-cloud-sec534-week3">Part III Cloud {#sec:534-week3}&lt;/h1>
+&lt;h2 id="a-summary-of-course">A. Summary of Course&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/bd9KXMUsQGM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="b-defining-clouds-i">B. Defining Clouds I&lt;/h2>
+&lt;p>In this lecture we discuss the basic definition of cloud and two very
+simple examples of why virtualization is important.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/8OE3oOVDmlQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss how clouds are situated wrt HPC and supercomputers, why multicore chips are important
+in a typical data center.&lt;/p>
+&lt;h2 id="c-defining-clouds-ii">C. Defining Clouds II&lt;/h2>
+&lt;p>In this lecture we discuss service-oriented architectures, Software services as Message-linked computing capabilities.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/LnYbJYzmJ0I" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss different aaS’s: Network, Infrastructure, Platform, Software.
+The amazing services that Amazon AWS and Microsoft Azure have Initial Gartner comments on clouds (they are now the norm) and evolution of servers; serverless and microservices
+Gartner hypecycle and priority matrix on Infrastructure Strategies.&lt;/p>
+&lt;h2 id="d-defining-clouds-iii-cloud-market-share">D. Defining Clouds III: Cloud Market Share&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/X1HwKJ7yBEk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss on how important the cloud market shares are and how much money do they make.&lt;/p>
+&lt;h2 id="e-virtualization-virtualization-technologies">E. Virtualization: Virtualization Technologies,&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Tqsx-sEPY6M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss hypervisors and the different approaches KVM, Xen, Docker and Openstack.&lt;/p>
+&lt;h2 id="f-cloud-infrastructure-i">F. Cloud Infrastructure I&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/KTNx2SEe2Jo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we comment on trends in the data center and its technologies.
+Clouds physically spread across the world Green computing Fraction of world’s computing
+ecosystem. In clouds and associated sizes an analysis from Cisco of size of cloud
+computing is discussed in this lecture.&lt;/p>
+&lt;h2 id="g-cloud-infrastructure-ii">G. Cloud Infrastructure II&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/R0Sk1rAS20M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture, we discuss Gartner hypecycle and priority matrix on Compute Infrastructure Containers
+compared to virtual machines The emergence of artificial intelligence as a dominant force.&lt;/p>
+&lt;h2 id="h-cloud-software">H. Cloud Software:&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/MZrlX8fj48o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss, HPC-ABDS with over 350 software packages and how to use each of 21
+layers Google’s software innovations MapReduce in pictures Cloud and HPC software stacks compared Components need to support cloud/distributed system programming.&lt;/p>
+&lt;h2 id="i-cloud-applications-i-clouds-in-science-where-area-called">I. Cloud Applications I: Clouds in science where area called&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/sAbYkZHD81U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss cyberinfrastructure; the science usage pattern from NIST Artificial Intelligence
+from Gartner.&lt;/p>
+&lt;h2 id="j-cloud-applications-ii-characterize-applications-using-nist">J. Cloud Applications II: Characterize Applications using NIST&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/YaPg-OOlkdw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss the approach Internet of Things with different types of MapReduce.&lt;/p>
+&lt;h2 id="k-parallel-computing">K. Parallel Computing&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/C7OBEfyDE8c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss analogies, parallel computing in pictures and some useful analogies and principles.&lt;/p>
+&lt;h2 id="l-real-parallel-computing-single-programinstruction-multiple-data-simd-spmd">L. Real Parallel Computing: Single Program/Instruction Multiple Data SIMD SPMD&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/C7OBEfyDE8c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture, we discuss Big Data and Simulations compared and we furthermore discusses what is hard to do.&lt;/p>
+&lt;h2 id="m-storage-cloud-data">M. Storage: Cloud data&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/NcIbKQ-AChA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss about the approaches, repositories, file systems, data lakes.&lt;/p>
+&lt;h2 id="n-hpc-and-clouds">N. HPC and Clouds&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/QTxYKhpVtDw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss the Branscomb Pyramid Supercomputers versus clouds Science Computing Environments.&lt;/p>
+&lt;h2 id="o-comparison-of-data-analytics-with-simulation">O. Comparison of Data Analytics with Simulation:&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/6WmWE_7iB3w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss the structure of different applications for simulations and Big Data Software
+implications Languages.&lt;/p>
+&lt;h2 id="p-the-future-i">P. The Future I&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/1xH5ow5kOhc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss Gartner cloud computing hypecycle and priority matrix 2017 and 2019 Hyperscale
+computing Serverless and FaaS Cloud Native Microservices Update to 2019 Hypecycle.&lt;/p>
+&lt;h2 id="q-other-issues-ii">Q. other Issues II&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/9AmVHEXv7gY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss on Security Blockchain.&lt;/p>
+&lt;h2 id="r-the-future-and-other-issues-iii">R. The Future and other Issues III&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/VnkkCix3yEE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In this lecture we discuss on Fault Tolerance.&lt;/p></description></item><item><title>Modules: Physics</title><link>/modules/bigdataapplications/2019/week5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week5/</guid><description>
+&lt;h1 id="physics-with-big-data-applications-sec534-week5">Physics with Big Data Applications {#sec:534-week5}&lt;/h1>
+&lt;p>E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson
+Part I (Unit 8) Section Units 9-11 Summary: This section starts by
+describing the LHC accelerator at CERN and evidence found by the
+experiments suggesting existence of a Higgs Boson. The huge number of
+authors on a paper, remarks on histograms and Feynman diagrams is
+followed by an accelerator picture gallery. The next unit is devoted
+to Python experiments looking at histograms of Higgs Boson production
+with various forms of shape of signal and various background and with
+various event totals. Then random variables and some simple principles
+of statistics are introduced with explanation as to why they are
+relevant to Physics counting experiments. The unit introduces Gaussian
+(normal) distributions and explains why they seen so often in natural
+phenomena. Several Python illustrations are given. Random Numbers with
+their Generators and Seeds lead to a discussion of Binomial and
+Poisson Distribution. Monte-Carlo and accept-reject methods. The
+Central Limit Theorem concludes discussion.&lt;/p>
+&lt;h2 id="unit-8">Unit 8:&lt;/h2>
+&lt;h3 id="81---looking-for-higgs-1-particle-and-counting-introduction-1">8.1 - Looking for Higgs: 1. Particle and Counting Introduction 1&lt;/h3>
+&lt;p>We return to particle case with slides used in introduction and stress
+that particles often manifested as bumps in histograms and those bumps
+need to be large enough to stand out from background in a
+statistically significant fashion.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/L0wIh0Z-ZwI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="82---looking-for-higgs-2-particle-and-counting-introduction-2">8.2 - Looking for Higgs: 2. Particle and Counting Introduction 2&lt;/h3>
+&lt;p>We give a few details on one LHC experiment ATLAS. Experimental
+physics papers have a staggering number of authors and quite big
+budgets. Feynman diagrams describe processes in a fundamental fashion.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/ulX3oIiAusI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="83---looking-for-higgs-3-particle-experiments">8.3 - Looking for Higgs: 3. Particle Experiments&lt;/h3>
+&lt;p>We give a few details on one LHC experiment ATLAS. Experimental
+physics papers have a staggering number of authors and quite big
+budgets. Feynman diagrams describe processes in a fundamental fashion&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/BW12d780qT8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="84---looking-for-higgs--4-accelerator-picture-gallery-of-big-science">8.4 - Looking for Higgs: 4. Accelerator Picture Gallery of Big Science&lt;/h3>
+&lt;p>This lesson gives a small picture gallery of accelerators. Accelerators, detection chambers and magnets in tunnels and a large underground laboratory used fpr experiments where you need to be shielded from background like cosmic rays.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/WLJIxWWMYi8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="unit-9">Unit 9&lt;/h2>
+&lt;p>This unit is devoted to Python experiments with Geoffrey looking at
+histograms of Higgs Boson production with various forms of shape of
+signal and various background and with various event totals&lt;/p>
+&lt;h3 id="91---looking-for-higgs-ii-1-class-software">9.1 - Looking for Higgs II: 1: Class Software&lt;/h3>
+&lt;p>We discuss how this unit uses Java (deprecated) and Python on both a backend server
+(FutureGrid - closed!) or a local client. We point out useful book on
+Python for data analysis. This lesson is deprecated. Follow current
+technology for class&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/tOFJEUM-Vww" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="92---looking-for-higgs-ii-2-event-counting">9.2 - Looking for Higgs II: 2: Event Counting&lt;/h3>
+&lt;p>We define &amp;lsquo;&amp;lsquo;event counting&amp;rsquo;&amp;rsquo; data collection environments. We discuss the python and Java
+code to generate events according to a particular scenario (the
+important idea of Monte Carlo data). Here a sloping background plus
+either a Higgs particle generated similarly to LHC observation or one
+observed with better resolution (smaller measurement error).&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/h8-szCeFugQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="93---looking-for-higgs-ii-3-with-python-examples-of-signal-plus-background">9.3 - Looking for Higgs II: 3: With Python examples of Signal plus Background&lt;/h3>
+&lt;p>This uses Monte Carlo data both to generate data like the
+experimental observations and explore effect of changing amount of data
+and changing measurement resolution for Higgs.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/bl2f0tAzLj4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="94---looking-for-higgs-ii-4-change-shape-of-background--number-of-higgs-particles">9.4 - Looking for Higgs II: 4: Change shape of background &amp;amp; number of Higgs Particles&lt;/h3>
+&lt;p>This lesson continues the examination of Monte Carlo
+data looking at effect of change in number of Higgs particles produced
+and in change in shape of background&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/bw3fd5cfQhk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="unit-10">Unit 10&lt;/h2>
+&lt;p>In this unit we discuss;&lt;/p>
+&lt;p>E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
+Big Data Higgs Unit 10: Looking for Higgs Particles Part III: Random
+Variables, Physics and Normal Distributions Section Units 9-11 Summary:
+This section starts by describing the LHC accelerator at CERN and
+evidence found by the experiments suggesting existence of a Higgs Boson.
+The huge number of authors on a paper, remarks on histograms and Feynman
+diagrams is followed by an accelerator picture gallery. The next unit is
+devoted to Python experiments looking at histograms of Higgs Boson
+production with various forms of shape of signal and various background
+and with various event totals. Then random variables and some simple
+principles of statistics are introduced with explanation as to why they
+are relevant to Physics counting experiments. The unit introduces
+Gaussian (normal) distributions and explains why they seen so often in
+natural phenomena. Several Python illustrations are given. Random
+Numbers with their Generators and Seeds lead to a discussion of Binomial
+and Poisson Distribution. Monte-Carlo and accept-reject methods. The
+Central Limit Theorem concludes discussion. Big Data Higgs Unit 10:
+Looking for Higgs Particles Part III: Random Variables, Physics and
+Normal Distributions Overview: Geoffrey introduces random variables and
+some simple principles of statistics and explains why they are relevant
+to Physics counting experiments. The unit introduces Gaussian (normal)
+distributions and explains why they seen so often in natural phenomena.
+Several Python illustrations are given. Java is currently not available
+in this unit.&lt;/p>
+&lt;h3 id="101---statistics-overview-and-fundamental-idea-random-variables">10.1 - Statistics Overview and Fundamental Idea: Random Variables&lt;/h3>
+&lt;p>We go through the many different areas of statistics covered in the Physics
+unit. We define the statistics concept of a random variable.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/jCgY6MEfLWI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="102---physics-and-random-variables-i">10.2 - Physics and Random Variables I&lt;/h3>
+&lt;p>We describe the DIKW pipeline for the analysis of this type of physics experiment
+and go through details of analysis pipeline for the LHC ATLAS experiment.
+We give examples of event displays showing the final state particles
+seen in a few events. We illustrate how physicists decide whats going
+on with a plot of expected Higgs production experimental cross sections
+(probabilities) for signal and background.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Tn3GBxgplxg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="103---physics-and-random-variables-ii">10.3 - Physics and Random Variables II&lt;/h3>
+&lt;p>We describe the DIKW pipeline for the analysis of this type of physics
+experiment and go through details of analysis pipeline for the LHC ATLAS
+experiment. We give examples of event displays showing the final state
+particles seen in a few events. We illustrate how physicists decide
+whats going on with a plot of expected Higgs production experimental
+cross sections (probabilities) for signal and background.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/qWEjp0OtvdA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="104---statistics-of-events-with-normal-distributions">10.4 - Statistics of Events with Normal Distributions&lt;/h3>
+&lt;p>We introduce Poisson and Binomial distributions and define independent
+identically distributed (IID) random variables. We give the law of
+large numbers defining the errors in counting and leading to Gaussian
+distributions for many things. We demonstrate this in Python experiments.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/LMBtpWOOQLo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="105---gaussian-distributions">10.5 - Gaussian Distributions&lt;/h3>
+&lt;p>We introduce the Gaussian distribution and give Python examples of the
+fluctuations in counting Gaussian distributions.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/LWIbPa-P5W0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="106---using-statistics">10.6 - Using Statistics&lt;/h3>
+&lt;p>We discuss the significance of a standard deviation and role of biases
+and insufficient statistics with a Python example in getting incorrect answers.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/n4jlUrGwgic" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="unit-11">Unit 11&lt;/h2>
+&lt;p>In this section we discuss;&lt;/p>
+&lt;p>E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
+Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers,
+Distributions and Central Limit Theorem
+Section Units 9-11 Summary: This section starts by describing the
+LHC accelerator at CERN and evidence found by the experiments suggesting
+existence of a Higgs Boson. The huge number of authors on a paper,
+remarks on histograms and Feynman diagrams is followed by an accelerator
+picture gallery. The next unit is devoted to Python experiments looking
+at histograms of Higgs Boson production with various forms of shape of
+signal and various background and with various event totals. Then random
+variables and some simple principles of statistics are introduced with
+explanation as to why they are relevant to Physics counting experiments.
+The unit introduces Gaussian (normal) distributions and explains why they
+seen so often in natural phenomena. Several Python illustrations are given.
+Random Numbers with their Generators and Seeds lead to a discussion of
+Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods.
+The Central Limit Theorem concludes discussion.
+Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers,
+Distributions and Central Limit Theorem
+Unit Overview: Geoffrey discusses Random Numbers with their Generators
+and Seeds. It introduces Binomial and Poisson Distribution. Monte-Carlo
+and accept-reject methods are discussed. The Central Limit Theorem and
+Bayes law concludes discussion. Python and Java (for student - not
+reviewed in class) examples and Physics applications are given.&lt;/p>
+&lt;h3 id="111---generators-and-seeds-i">11.1 - Generators and Seeds I&lt;/h3>
+&lt;p>We define random numbers and describe how to generate them on the computer
+giving Python examples. We define the seed used to define to specify how to start generation.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/r80Sk_KVG2s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="112---generators-and-seeds-ii">11.2 - Generators and Seeds II&lt;/h3>
+&lt;p>We define random numbers and describe how to generate them on the computer
+giving Python examples. We define the seed used to define to specify how to start generation.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/9QY5qkQj2Ag" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="113---binomial-distribution">11.3 - Binomial Distribution&lt;/h3>
+&lt;p>We define binomial distribution and give LHC data as an eaxmple of where this distribution valid.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/DPd-eVI_twQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="114---accept-reject">11.4 - Accept-Reject&lt;/h3>
+&lt;p>We introduce an advanced method &amp;ndash; accept/reject &amp;ndash; for generating random variables with arbitrary distrubitions.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/GfshkKMKCj8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="115---monte-carlo-method">11.5 - Monte Carlo Method&lt;/h3>
+&lt;p>We define Monte Carlo method which usually uses accept/reject method in typical case for distribution.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/kIQ-BTyDfOQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="116---poisson-distribution">11.6 - Poisson Distribution&lt;/h3>
+&lt;p>We extend the Binomial to the Poisson distribution and give a set of amusing examples from Wikipedia.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/WFvgsVo-k4s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="117---central-limit-theorem">11.7 - Central Limit Theorem&lt;/h3>
+&lt;p>We introduce Central Limit Theorem and give examples from Wikipedia.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/ZO53iKlPn7c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="118---interpretation-of-probability-bayes-v-frequency">11.8 - Interpretation of Probability: Bayes v. Frequency&lt;/h3>
+&lt;p>This lesson describes difference between Bayes and frequency views of
+probability. Bayes&amp;rsquo;s law of conditional probability is derived and applied
+to Higgs example to enable information about Higgs from multiple channels
+and multiple experiments to be accumulated.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/jzDkExAQI9M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div></description></item><item><title>Modules: Deep Learning</title><link>/modules/bigdataapplications/2019/week6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week6/</guid><description>
+&lt;h1 id="introduction-to-deep-learning-sec534-intro-to-dnn">Introduction to Deep Learning {#sec:534-intro-to-dnn}&lt;/h1>
+&lt;p>In this tutorial we will learn the fist lab on deep neural networks.
+Basic classification using deep learning will be discussed in this
+chapter.&lt;/p>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1NQnrWboSI2kc38uTgd3OtFQkK44L5jZP">&lt;img src="/images/deeplearning/lab1/mnist-1.png" alt="Video">{width=20%}&lt;/a>&lt;/p>
+&lt;h2 id="mnist-classification-version-1">MNIST Classification Version 1&lt;/h2>
+&lt;h2 id="using-cloudmesh-common">Using Cloudmesh Common&lt;/h2>
+&lt;p>Here we do a simple benchmark. We calculate compile time, train time,
+test time and data loading time for this example. Installing
+cloudmesh-common library is the first step. Focus on this section
+because the ** Assignment 4 ** will be focused on the content of this
+lab.&lt;/p>
+&lt;p>&lt;a href="https://drive.google.com/open?id=165fvbfdrrsUznzyO_ulPyKhn6Xtopgtv">&lt;img src="/images/deeplearning/lab1/mnist-2.png" alt="Video">{width=20%}&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#a40000">!&lt;/span>&lt;span style="color:#000">pip&lt;/span> &lt;span style="color:#000">install&lt;/span> &lt;span style="color:#000">cloudmesh&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">common&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code> Collecting cloudmesh-common
+Downloading https://files.pythonhosted.org/packages/42/72/3c4aabce294273db9819be4a0a350f506d2b50c19b7177fb6cfe1cbbfe63/cloudmesh_common-4.2.13-py2.py3-none-any.whl (55kB)
+|████████████████████████████████| 61kB 4.1MB/s
+Requirement already satisfied: future in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (0.16.0)
+Collecting pathlib2 (from cloudmesh-common)
+Downloading https://files.pythonhosted.org/packages/e9/45/9c82d3666af4ef9f221cbb954e1d77ddbb513faf552aea6df5f37f1a4859/pathlib2-2.3.5-py2.py3-none-any.whl
+Requirement already satisfied: python-dateutil in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (2.5.3)
+Collecting simplejson (from cloudmesh-common)
+Downloading https://files.pythonhosted.org/packages/e3/24/c35fb1c1c315fc0fffe61ea00d3f88e85469004713dab488dee4f35b0aff/simplejson-3.16.0.tar.gz (81kB)
+|████████████████████████████████| 81kB 10.6MB/s
+Collecting python-hostlist (from cloudmesh-common)
+Downloading https://files.pythonhosted.org/packages/3d/0f/1846a7a0bdd5d890b6c07f34be89d1571a6addbe59efe59b7b0777e44924/python-hostlist-1.18.tar.gz
+Requirement already satisfied: pathlib in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (1.0.1)
+Collecting colorama (from cloudmesh-common)
+Downloading https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
+Collecting oyaml (from cloudmesh-common)
+Downloading https://files.pythonhosted.org/packages/00/37/ec89398d3163f8f63d892328730e04b3a10927e3780af25baf1ec74f880f/oyaml-0.9-py2.py3-none-any.whl
+Requirement already satisfied: humanize in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (0.5.1)
+Requirement already satisfied: psutil in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (5.4.8)
+Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from pathlib2-&amp;gt;cloudmesh-common) (1.12.0)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.6/dist-packages (from oyaml-&amp;gt;cloudmesh-common) (3.13)
+Building wheels for collected packages: simplejson, python-hostlist
+Building wheel for simplejson (setup.py) ... done
+Created wheel for simplejson: filename=simplejson-3.16.0-cp36-cp36m-linux_x86_64.whl size=114018 sha256=a6f35adb86819ff3de6c0afe475229029305b1c55c5a32b442fe94cda9500464
+Stored in directory: /root/.cache/pip/wheels/5d/1a/1e/0350bb3df3e74215cd91325344cc86c2c691f5306eb4d22c77
+Building wheel for python-hostlist (setup.py) ... done
+Created wheel for python-hostlist: filename=python_hostlist-1.18-cp36-none-any.whl size=38517 sha256=71fbb29433b52fab625e17ef2038476b910bc80b29a822ed00a783d3b1fb73e4
+Stored in directory: /root/.cache/pip/wheels/56/db/1d/b28216dccd982a983d8da66572c497d6a2e485eba7c4d6cba3
+Successfully built simplejson python-hostlist
+Installing collected packages: pathlib2, simplejson, python-hostlist, colorama, oyaml, cloudmesh-common
+Successfully installed cloudmesh-common-4.2.13 colorama-0.4.1 oyaml-0.9 pathlib2-2.3.5 python-hostlist-1.18 simplejson-3.16.0
+&lt;/code>&lt;/pre>&lt;p>In this lesson we discuss in how to create a simple IPython Notebook to solve
+an image classification problem. MNIST contains a set of pictures&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#a40000">!&lt;/span> &lt;span style="color:#000">python3&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">--&lt;/span>&lt;span style="color:#000">version&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>Python 3.6.8
+&lt;/code>&lt;/pre>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#a40000">!&lt;/span> &lt;span style="color:#000">pip&lt;/span> &lt;span style="color:#000">install&lt;/span> &lt;span style="color:#000">tensorflow&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">gpu&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1.14&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>Collecting tensorflow-gpu==1.14.0
+Downloading https://files.pythonhosted.org/packages/76/04/43153bfdfcf6c9a4c38ecdb971ca9a75b9a791bb69a764d652c359aca504/tensorflow_gpu-1.14.0-cp36-cp36m-manylinux1_x86_64.whl (377.0MB)
+|████████████████████████████████| 377.0MB 77kB/s
+Requirement already satisfied: six&amp;gt;=1.10.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.12.0)
+Requirement already satisfied: grpcio&amp;gt;=1.8.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.15.0)
+Requirement already satisfied: protobuf&amp;gt;=3.6.1 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (3.7.1)
+Requirement already satisfied: keras-applications&amp;gt;=1.0.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.0.8)
+Requirement already satisfied: gast&amp;gt;=0.2.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.2.2)
+Requirement already satisfied: astor&amp;gt;=0.6.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.8.0)
+Requirement already satisfied: absl-py&amp;gt;=0.7.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.8.0)
+Requirement already satisfied: wrapt&amp;gt;=1.11.1 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.11.2)
+Requirement already satisfied: wheel&amp;gt;=0.26 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.33.6)
+Requirement already satisfied: tensorflow-estimator 1.15.0rc0,&amp;gt;=1.14.0rc0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
+Requirement already satisfied: tensorboard 1.15.0,&amp;gt;=1.14.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
+Requirement already satisfied: numpy 2.0,&amp;gt;=1.14.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.16.5)
+Requirement already satisfied: termcolor&amp;gt;=1.1.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.1.0)
+Requirement already satisfied: keras-preprocessing&amp;gt;=1.0.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.1.0)
+Requirement already satisfied: google-pasta&amp;gt;=0.1.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.1.7)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.6/dist-packages (from protobuf&amp;gt;=3.6.1-&amp;gt;tensorflow-gpu==1.14.0) (41.2.0)
+Requirement already satisfied: h5py in /usr/local/lib/python3.6/dist-packages (from keras-applications&amp;gt;=1.0.6-&amp;gt;tensorflow-gpu==1.14.0) (2.8.0)
+Requirement already satisfied: markdown&amp;gt;=2.6.8 in /usr/local/lib/python3.6/dist-packages (from tensorboard 1.15.0,&amp;gt;=1.14.0-&amp;gt;tensorflow-gpu==1.14.0) (3.1.1)
+Requirement already satisfied: werkzeug&amp;gt;=0.11.15 in /usr/local/lib/python3.6/dist-packages (from tensorboard 1.15.0,&amp;gt;=1.14.0-&amp;gt;tensorflow-gpu==1.14.0) (0.15.6)
+Installing collected packages: tensorflow-gpu
+Successfully installed tensorflow-gpu-1.14.0
+&lt;/code>&lt;/pre>
+&lt;h2 id="import-libraries">Import Libraries&lt;/h2>
+&lt;p>Note: &lt;a href="https://python-future.org/quickstart.html">https://python-future.org/quickstart.html&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">__future__&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">absolute_import&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">__future__&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">division&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">__future__&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">print_function&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">time&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">numpy&lt;/span> &lt;span style="color:#204a87;font-weight:bold">as&lt;/span> &lt;span style="color:#000">np&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">keras.models&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">Sequential&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">keras.layers&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">Dense&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">Activation&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">Dropout&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">keras.utils&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">to_categorical&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">plot_model&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">keras.datasets&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">mnist&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">cloudmesh.common.StopWatch&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">StopWatch&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>Using TensorFlow backend.
+&lt;/code>&lt;/pre>
+&lt;h2 id="pre-process-data">Pre-process data&lt;/h2>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1_K--i9O2QioJ7SVOKgd4NmV71yvSDRcj">&lt;img src="/images/deeplearning/lab1/mnist-3.png" alt="Video">{width=20%}&lt;/a>&lt;/p>
+&lt;h3 id="load-data">Load data&lt;/h3>
+&lt;p>First we load the data from the inbuilt mnist dataset from Keras&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">start&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;data-load&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x_train&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">y_train&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x_test&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">y_test&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">mnist&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">load_data&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
+&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">stop&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;data-load&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>Downloading data from https://s3.amazonaws.com/img-datasets/mnist.npz
+11493376/11490434 [==============================] - 1s 0us/step
+&lt;/code>&lt;/pre>
+&lt;h3 id="identify-number-of-classes">Identify Number of Classes&lt;/h3>
+&lt;p>As this is a number classification problem. We need to know how many classes are there.
+So we&amp;rsquo;ll count the number of unique labels.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">num_labels&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">len&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">np&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">unique&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">y_train&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="convert-labels-to-one-hot-vector">Convert Labels To One-Hot Vector&lt;/h3>
+&lt;p>&lt;strong>|Exercise MNIST_V1.0.0:&lt;/strong> Understand what is an one-hot vector?&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">y_train&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">to_categorical&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">y_train&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">y_test&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">to_categorical&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">y_test&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="image-reshaping">Image Reshaping&lt;/h2>
+&lt;p>The training model is designed by considering the data as a vector.
+This is a model dependent modification. Here we assume the image is
+a squared shape image.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">image_size&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">x_train&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">shape&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;span style="color:#000">input_size&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">image_size&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">*&lt;/span> &lt;span style="color:#000">image_size&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="resize-and-normalize">Resize and Normalize&lt;/h2>
+&lt;p>The next step is to continue the reshaping to a fit into a vector
+and normalize the data. Image values are from 0 - 255, so an
+easy way to normalize is to divide by the maximum value.&lt;/p>
+&lt;p>&lt;strong>|Execrcise MNIST_V1.0.1: Suggest another way to normalize the data
+preserving the accuracy or improving the accuracy.&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">x_train&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">np&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">reshape&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x_train&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">input_size&lt;/span>&lt;span style="color:#000;font-weight:bold">])&lt;/span>
+&lt;span style="color:#000">x_train&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">x_train&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">astype&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;float32&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">255&lt;/span>
+&lt;span style="color:#000">x_test&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">np&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">reshape&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x_test&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">input_size&lt;/span>&lt;span style="color:#000;font-weight:bold">])&lt;/span>
+&lt;span style="color:#000">x_test&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">x_test&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">astype&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;float32&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">255&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="create-a-keras-model">Create a Keras Model&lt;/h2>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1pb11xVSv3lSY1sSefTSfVGmdYkzli8Ij">&lt;img src="/images/deeplearning/lab1/mnist-4.png" alt="Video">{width=20%}&lt;/a>&lt;/p>
+&lt;p>Keras is a neural network library. Most important thing with Keras is the way we design the neural network.&lt;/p>
+&lt;p>In this model we have a couple of ideas to understand.&lt;/p>
+&lt;p>&lt;strong>|Exercise MNIST_V1.1.0: Find out what is a dense layer?&lt;/strong>&lt;/p>
+&lt;p>A simple model can be initiated by using an &lt;strong>Sequential&lt;/strong> instance in Keras.
+For this instance we add a single layer.&lt;/p>
+&lt;ol>
+&lt;li>Dense Layer&lt;/li>
+&lt;li>Activation Layer (Softmax is the activation function)&lt;/li>
+&lt;/ol>
+&lt;p>Dense layer and the layer followed by it is fully connected.
+For instance the number of hidden units used here is 64
+and the following layer is a dense layer followed by an activation
+layer.&lt;/p>
+&lt;p>&lt;strong>|Execrcise MNIST_V1.2.0: Find out what is the use of an activation
+function. Find out why, softmax was used as the last layer.&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">batch_size&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">4&lt;/span>
+&lt;span style="color:#000">hidden_units&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">64&lt;/span>
+&lt;span style="color:#000">model&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">Sequential&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
+&lt;span style="color:#000">model&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">add&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Dense&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">hidden_units&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">input_dim&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">input_size&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;span style="color:#000">model&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">add&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Dense&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">num_labels&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;span style="color:#000">model&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">add&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">Activation&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;softmax&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;span style="color:#000">model&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">summary&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
+&lt;span style="color:#000">plot_model&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">model&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">to_file&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;mnist_v1.png&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">show_shapes&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#3465a4">True&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:66: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:541: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4432: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+Model: &amp;quot;sequential_1&amp;quot;
+_________________________________________________________________
+Layer (type) Output Shape Param #
+=================================================================
+dense_1 (Dense) (None, 64) 50240
+_________________________________________________________________
+dense_2 (Dense) (None, 10) 650
+_________________________________________________________________
+activation_1 (Activation) (None, 10) 0
+=================================================================
+Total params: 50,890
+Trainable params: 50,890
+Non-trainable params: 0
+_________________________________________________________________
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="/images/deeplearning/lab1/output_20_1.png" alt="images">&lt;/p>
+&lt;h2 id="compile-and-train">Compile and Train&lt;/h2>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1PTgID_ZRirgJXszLQJZzt03Fo0gtWWm4">&lt;img src="/images/deeplearning/lab1/mnist-5.png" alt="Video">{width=20%}&lt;/a>&lt;/p>
+&lt;p>A keras model need to be compiled before it can be used to train
+the model. In the compile function, you can provide the optimization
+that you want to add, metrics you expect and the type of loss function
+you need to use.&lt;/p>
+&lt;p>Here we use the adam optimizer, a famous optimizer used in neural networks.&lt;/p>
+&lt;p>&lt;strong>Exercise MNIST_V1.3.0: Find 3 other optimizers used on neural
+networks.&lt;/strong>&lt;/p>
+&lt;p>The loss funtion we have used is the categorical_crossentropy.&lt;/p>
+&lt;p>&lt;strong>Exercise MNIST_V1.4.0: Find other loss functions provided in keras.
+Your answer can limit to 1 or more.&lt;/strong>&lt;/p>
+&lt;p>Once the model is compiled, then the fit function is called upon passing the number of epochs,
+traing data and batch size.&lt;/p>
+&lt;p>The batch size determines the number of elements used per minibatch in optimizing the function.&lt;/p>
+&lt;p>&lt;strong>Note: Change the number of epochs, batch size and see what happens.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Exercise MNIST_V1.5.0: Figure out a way to plot the loss function
+value. You can use any method you like.&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">start&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;compile&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">model&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">compile&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">loss&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;categorical_crossentropy&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;span style="color:#000">optimizer&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;adam&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;span style="color:#000">metrics&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;accuracy&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">])&lt;/span>
+&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">stop&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;compile&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">start&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;train&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">model&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">fit&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x_train&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">y_train&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">epochs&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">batch_size&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">batch_size&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">stop&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;train&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:793: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3576: The name tf.log is deprecated. Please use tf.math.log instead.
+WARNING:tensorflow:From
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/math_grad.py:1250:
+add_dispatch_support. locals.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1033: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+Epoch 1/1
+60000/60000 [==============================] - 20s 336us/step - loss: 0.3717 - acc: 0.8934
+&lt;/code>&lt;/pre>
+&lt;h2 id="testing">Testing&lt;/h2>
+&lt;p>Now we can test the trained model. Use the evaluate function by passing
+test data and batch size and the accuracy and the loss value can be retrieved.&lt;/p>
+&lt;p>&lt;strong>Exercise MNIST_V1.6.0: Try to optimize the network by changing the
+number of epochs, batch size and record the best accuracy that you can
+gain&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">start&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;test&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000">loss&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">acc&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">model&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">evaluate&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">x_test&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">y_test&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">batch_size&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">batch_size&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">print&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span>&lt;span style="color:#4e9a06">\n&lt;/span>&lt;span style="color:#4e9a06">Test accuracy: &lt;/span>&lt;span style="color:#4e9a06">%.1f%%&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">%&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">100.0&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">*&lt;/span> &lt;span style="color:#000">acc&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span>
+&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">stop&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;test&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>10000/10000 [==============================] - 1s 138us/step
+Test accuracy: 91.0%
+&lt;/code>&lt;/pre>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#000">StopWatch&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">benchmark&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>+---------------------+------------------------------------------------------------------+
+| Machine Attribute | Value |
++---------------------+------------------------------------------------------------------+
+| BUG_REPORT_URL | &amp;quot;https://bugs.launchpad.net/ubuntu/&amp;quot; |
+| DISTRIB_CODENAME | bionic |
+| DISTRIB_DESCRIPTION | &amp;quot;Ubuntu 18.04.3 LTS&amp;quot; |
+| DISTRIB_ID | Ubuntu |
+| DISTRIB_RELEASE | 18.04 |
+| HOME_URL | &amp;quot;https://www.ubuntu.com/&amp;quot; |
+| ID | ubuntu |
+| ID_LIKE | debian |
+| NAME | &amp;quot;Ubuntu&amp;quot; |
+| PRETTY_NAME | &amp;quot;Ubuntu 18.04.3 LTS&amp;quot; |
+| PRIVACY_POLICY_URL | &amp;quot;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&amp;quot; |
+| SUPPORT_URL | &amp;quot;https://help.ubuntu.com/&amp;quot; |
+| UBUNTU_CODENAME | bionic |
+| VERSION | &amp;quot;18.04.3 LTS (Bionic Beaver)&amp;quot; |
+| VERSION_CODENAME | bionic |
+| VERSION_ID | &amp;quot;18.04&amp;quot; |
+| cpu_count | 2 |
+| mac_version | |
+| machine | ('x86_64',) |
+| mem_active | 973.8 MiB |
+| mem_available | 11.7 GiB |
+| mem_free | 5.1 GiB |
+| mem_inactive | 6.3 GiB |
+| mem_percent | 8.3% |
+| mem_total | 12.7 GiB |
+| mem_used | 877.3 MiB |
+| node | ('8281485b0a16',) |
+| platform | Linux-4.14.137+-x86_64-with-Ubuntu-18.04-bionic |
+| processor | ('x86_64',) |
+| processors | Linux |
+| python | 3.6.8 (default, Jan 14 2019, 11:02:34) |
+| | [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] |
+| release | ('4.14.137+',) |
+| sys | linux |
+| system | Linux |
+| user | |
+| version | #1 SMP Thu Aug 8 02:47:02 PDT 2019 |
+| win_version | |
++---------------------+------------------------------------------------------------------+
++-----------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer | time | start | tag | node | user | system | mac_version | win_version |
++-----------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| data-load | 1.335 | 2019-09-27 13:37:41 | | ('8281485b0a16',) | | Linux | | |
+| compile | 0.047 | 2019-09-27 13:37:43 | | ('8281485b0a16',) | | Linux | | |
+| train | 20.58 | 2019-09-27 13:37:43 | | ('8281485b0a16',) | | Linux | | |
+| test | 1.393 | 2019-09-27 13:38:03 | | ('8281485b0a16',) | | Linux | | |
++-----------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+timer,time,starttag,node,user,system,mac_version,win_version
+data-load,1.335,None,('8281485b0a16',),,Linux,,
+compile,0.047,None,('8281485b0a16',),,Linux,,
+train,20.58,None,('8281485b0a16',),,Linux,,
+test,1.393,None,('8281485b0a16',),,Linux,,
+&lt;/code>&lt;/pre>
+&lt;h2 id="final-note">Final Note&lt;/h2>
+&lt;p>This programme can be defined as a hello world programme in deep
+learning. Objective of this exercise is not to teach you the depths of
+deep learning. But to teach you basic concepts that may need to design a
+simple network to solve a problem. Before running the whole code, read
+all the instructions before a code section. Solve all the problems noted
+in bold text with Exercise keyword (Exercise MNIST_V1.0 - MNIST_V1.6).
+Write your answers and submit a PDF by following the &lt;strong>Assignment 5&lt;/strong>.
+Include codes or observations you made on those sections.&lt;/p>
+&lt;h3 id="reference">Reference:&lt;/h3>
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/MNIST_database">Mnist Database&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras">Advanced Deep Learning Models&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://deeplearning.net/tutorial/gettingstarted.html">Minist Deep Learning&lt;/a>&lt;/p></description></item><item><title>Modules: Sports</title><link>/modules/bigdataapplications/2019/week7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week7/</guid><description>
+&lt;h1 id="sports-with-big-data-applications-sec534-week7">Sports with Big Data Applications {#sec:534-week7}&lt;/h1>
+&lt;p>E534 2019 Big Data Applications and Analytics Sports Informatics Part I
+(Unit 32) Section Summary (Parts I, II, III): Sports sees significant
+growth in analytics with pervasive statistics shifting to more
+sophisticated measures. We start with baseball as game is built around
+segments dominated by individuals where detailed (video/image)
+achievement measures including PITCHf/x and FIELDf/x are moving field
+into big data arena. There are interesting relationships between the
+economics of sports and big data analytics. We look at Wearables and
+consumer sports/recreation. The importance of spatial visualization is
+discussed. We look at other Sports: Soccer, Olympics, NFL Football,
+Basketball, Tennis and Horse Racing.&lt;/p>
+&lt;h2 id="unit-32">Unit 32&lt;/h2>
+&lt;p>Unit Summary (PartI, Unit 32): This unit discusses baseball starting
+with the movie Moneyball and the 2002-2003 Oakland Athletics. Unlike
+sports like basketball and soccer, most baseball action is built around
+individuals often interacting in pairs. This is much easier to quantify
+than many player phenomena in other sports. We discuss
+Performance-Dollar relationship including new stadiums and
+media/advertising. We look at classic baseball averages and
+sophisticated measures like Wins Above Replacement.&lt;/p>
+&lt;h3 id="lesson-summaries">Lesson Summaries&lt;/h3>
+&lt;h2 id="bdaa-321---e534-sports---introduction-and-sabermetrics-baseball-informatics-lesson">BDAA 32.1 - E534 Sports - Introduction and Sabermetrics (Baseball Informatics) Lesson&lt;/h2>
+&lt;p>Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
+Athletics, Diamond Dollars economic model of baseball, Performance -
+Dollar relationship, Value of a Win.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/oviNJ-_fLto" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-322---e534-sports---basic-sabermetrics">BDAA 32.2 - E534 Sports - Basic Sabermetrics&lt;/h3>
+&lt;p>Different Types of Baseball Data, Sabermetrics, Overview of all data,
+Details of some statistics based on basic data, OPS, wOBA, ERA, ERC, FIP, UZR.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/-5JYfQXC2ew" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-323---e534-sports---wins-above-replacement">BDAA 32.3 - E534 Sports - Wins Above Replacement&lt;/h3>
+&lt;p>Wins above Replacement WAR, Discussion of Calculation, Examples,
+Comparisons of different methods, Coefficient of Determination, Another,
+Sabermetrics Example, Summary of Sabermetrics.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/V5uzUS6jdHw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="unit-33">Unit 33&lt;/h2>
+&lt;p>E534 2019 Big Data Applications and Analytics Sports Informatics Part II
+(Unit 33) Section Summary (Parts I, II, III): Sports sees significant
+growth in analytics with pervasive statistics shifting to more
+sophisticated measures. We start with baseball as game is built around
+segments dominated by individuals where detailed (video/image)
+achievement measures including PITCHf/x and FIELDf/x are moving field
+into big data arena. There are interesting relationships between the
+economics of sports and big data analytics. We look at Wearables and
+consumer sports/recreation. The importance of spatial visualization is
+discussed. We look at other Sports: Soccer, Olympics, NFL Football,
+Basketball, Tennis and Horse Racing.&lt;/p>
+&lt;p>Unit Summary (Part II, Unit 33):
+This unit discusses &amp;lsquo;advanced sabermetrics&amp;rsquo; covering advances possible
+from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.&lt;/p>
+&lt;h3 id="bdaa-331---e534-sports---pitching-clustering">BDAA 33.1 - E534 Sports - Pitching Clustering&lt;/h3>
+&lt;p>A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data
+from Blog and video at 2013 SABR conference&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/I06_AOKyB20" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-332---e534-sports---pitcher-quality">BDAA 33.2 - E534 Sports - Pitcher Quality&lt;/h3>
+&lt;p>Results of optimizing match ups, Data from video at 2013 SABR conference.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/vAPJx8as4_0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-333---e534-sports---pitchfx">BDAA 33.3 - E534 Sports - PITCHf/X&lt;/h3>
+&lt;p>Examples of use of PITCHf/X.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/JN1-sCa9Bjs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-334---e534-sports---other-video-data-gathering-in-baseball">BDAA 33.4 - E534 Sports - Other Video Data Gathering in Baseball&lt;/h3>
+&lt;p>FIELDf/X, MLBAM, HITf/X, COMMANDf/X.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/zGGThkkIJg8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="unit-34">Unit 34&lt;/h2>
+&lt;p>E534 2019 Big Data Applications and Analytics Sports Informatics Part
+III (Unit 34). Section Summary (Parts I, II, III): Sports sees
+significant growth in analytics with pervasive statistics shifting to
+more sophisticated measures. We start with baseball as game is built
+around segments dominated by individuals where detailed (video/image)
+achievement measures including PITCHf/x and FIELDf/x are moving field
+into big data arena. There are interesting relationships between the
+economics of sports and big data analytics. We look at Wearables and
+consumer sports/recreation. The importance of spatial visualization is
+discussed. We look at other Sports: Soccer, Olympics, NFL Football,
+Basketball, Tennis and Horse Racing.&lt;/p>
+&lt;p>Unit Summary (Part III, Unit 34): We look at Wearables and consumer
+sports/recreation. The importance of spatial visualization is discussed.
+We look at other Sports: Soccer, Olympics, NFL Football, Basketball,
+Tennis and Horse Racing.&lt;/p>
+&lt;p>Lesson Summaries&lt;/p>
+&lt;h3 id="bdaa-341---e534-sports---wearables">BDAA 34.1 - E534 Sports - Wearables&lt;/h3>
+&lt;p>Consumer Sports, Stake Holders, and Multiple Factors.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/1UzvNHzFCFQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-342---e534-sports---soccer-and-the-olympics">BDAA 34.2 - E534 Sports - Soccer and the Olympics&lt;/h3>
+&lt;p>Soccer, Tracking Players and Balls, Olympics.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/01mlZ2KBkzE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-343---e534-sports---spatial-visualization-in-nfl-and-nba">BDAA 34.3 - E534 Sports - Spatial Visualization in NFL and NBA&lt;/h3>
+&lt;p>NFL, NBA, and Spatial Visualization.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Q0Pt97BwRlo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h3 id="bdaa-344---e534-sports---tennis-and-horse-racing">BDAA 34.4 - E534 Sports - Tennis and Horse Racing&lt;/h3>
+&lt;p>Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/EuXrtfHG3cY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div></description></item><item><title>Modules: Deep Learning (Cont. I)</title><link>/modules/bigdataapplications/2019/week8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week8/</guid><description>
+&lt;h1 id="introduction-to-deep-learning-part-i">Introduction to Deep Learning Part I&lt;/h1>
+&lt;p>E534 2019 BDAA DL Section Intro Unit: E534 2019 Big Data Applications
+and Analytics Introduction to Deep Learning Part I (Unit Intro) Section
+Summary&lt;/p>
+&lt;p>This section covers the growing importance of the use of Deep Learning
+in Big Data Applications and Analytics. The Intro Unit is an
+introduction to the technology with examples incidental. It includes an
+introducton to the laboratory where we use Keras and Tensorflow. The
+Tech unit covers the deep learning technology in more detail. The
+Application Units cover deep learning applications at different levels
+of sophistication.&lt;/p>
+&lt;h2 id="intro-unit-summary">Intro Unit Summary&lt;/h2>
+&lt;p>This unit is an introduction to deep learning with four major lessons&lt;/p>
+&lt;h3 id="optimization">Optimization&lt;/h3>
+&lt;p>Lesson Summaries Optimization: Overview of Optimization Opt lesson
+overviews optimization with a focus on issues of importance for deep
+learning. Gives a quick review of Objective Function, Local Minima
+(Optima), Annealing, Everything is an optimization problem with
+examples, Examples of Objective Functions, Greedy Algorithms, Distances
+in funny spaces, Discrete or Continuous Parameters, Genetic Algorithms,
+Heuristics.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/JvnzgbNGBM4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1t6LcpCGwWxfrIvys-zJQWNq-yeu9oju2">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h3 id="first-deep-learning-example">First Deep Learning Example&lt;/h3>
+&lt;p>FirstDL: Your First Deep Learning Example FirstDL Lesson gives an
+experience of running a non trivial deep learning application. It goes
+through the identification of numbers from NIST database using a
+Multilayer Perceptron using Keras+Tensorflow running on Google Colab&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/jchO2kWv5Do" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1SCkRn2TLqQekAZoPM4hg8V884DqgQxOn">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h3 id="deep-learning-basics">Deep Learning Basics&lt;/h3>
+&lt;p>DLBasic: Basic Terms Used in Deep Learning DLBasic lesson reviews
+important Deep Learning topics including Activation: (ReLU, Sigmoid,
+Tanh, Softmax), Loss Function, Optimizer, Stochastic Gradient Descent,
+Back Propagation, One-hot Vector, Vanishing Gradient, Hyperparameter&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/3OLRON81K_g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1PJ_aVc-Na8ZFdgmH02s3Wod7FOjGIdoS">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h3 id="deep-learning-types">Deep Learning Types&lt;/h3>
+&lt;p>DLTypes: Types of Deep Learning: Summaries DLtypes Lesson reviews
+important Deep Learning neural network architectures including
+Multilayer Perceptron, CNN Convolutional Neural Network, Dropout for
+regularization, Max Pooling, RNN Recurrent Neural Networks, LSTM: Long
+Short Term Memory, GRU Gated Recurrent Unit, (Variational) Autoencoders,
+Transformer and Sequence to Sequence methods, GAN Generative Adversarial
+Network, (D)RL (Deep) Reinforcement Learning.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/hlCc2JaC_Q4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1tEPdWN9vPn2gxONwFrEPkvm8YmsGVGd_">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p></description></item><item><title>Modules: Deep Learning (Cont. II)</title><link>/modules/bigdataapplications/2019/week9/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week9/</guid><description>
+&lt;h1 id="introduction-to-deep-learning-part-ii-applications">Introduction to Deep Learning Part II: Applications&lt;/h1>
+&lt;p>This section covers the growing importance of the use of Deep Learning in Big Data Applications and Analytics. The Intro Unit is an introduction to the technology with examples incidental. The MNIST Unit covers an example on Google Colaboratory. The Technology Unit covers deep learning approaches in more detail than the Intro Unit. The Tech Unit covers the deep learning technology in more detail. The Application Unit cover deep learning applications at different levels of sophistication.&lt;/p>
+&lt;p>Applications of Deep Learning Unit Summary
+This unit is an introduction to deep learning with currently 7 lessons&lt;/p>
+&lt;h2 id="recommender-overview-of-recommender-systems">Recommender: Overview of Recommender Systems&lt;/h2>
+&lt;p>Recommender engines used to be dominated by collaborative filtering using matrix factorization and k&amp;rsquo;th nearest neighbor approaches. Large systems like YouTube and Netflix now use deep learning. We look at sysyems like Spotify that use multiple sources of information.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/iO5TtX_hGqI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1PnqQjj24x-DPhA9KL2ed1Jn2gbtClOMQ6I16vR4MlK8">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="retail-overview-of-ai-in-retail-sector-e-commerce">Retail: Overview of AI in Retail Sector (e-commerce)&lt;/h2>
+&lt;p>The retail sector can use AI in Personalization, Search and Chatbots. They must adopt AI to survive. We also discuss how to be a seller on Amazon&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/UhFAtzPHSrk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1HUiHyTQpIhAoTl6WCKrCc9QENaZsSI0d97M87JAiNA8">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="ridehailing-overview-of-ai-in-ride-hailing-industry-uber-lyft-didi">RideHailing: Overview of AI in Ride Hailing Industry (Uber, Lyft, Didi)&lt;/h2>
+&lt;p>The Ride Hailing industry will grow as it becomes main mobility method for many customers. Their technology investment includes deep learning for matching drivers and passengers. There is huge overlap with larger area of AI in transportation.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/qYpAlstoEWo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1DZWPxzkTL0Xj_VP1Sr8JymIAcXCXzjXM0nGOKnq4sdk">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="selfdriving-overview-of-ai-in-self-ai-assisted-driving-cars">SelfDriving: Overview of AI in Self (AI-Assisted) Driving cars&lt;/h2>
+&lt;p>Automobile Industry needs to remake itself as mobility companies. Basic automotive industry flat to down but AI can improve productivity. Lesson also discusses electric vehicles and drones&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/MYDyaktINTs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1cLW7sHNXXrB2D26iZorVmEXpQ-b1O8nt4m1bUgLgJXg">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="imaging-overview-of-scene-understanding">Imaging: Overview of Scene Understanding&lt;/h2>
+&lt;p>Imaging is area where convolutional neural nets and deep learning has made amazing progress. all aspects of imaging are now dominated by deep learning. We discuss the impact of Image Net in detail&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/92as3CXolHo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1d9MoXvzPOdC8Ap1CrkPSNlLES_d-ofRYCOYVEVLrwRI">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="mainlymedicine-overview-of-ai-in-health-and-telecommunication">MainlyMedicine: Overview of AI in Health and Telecommunication&lt;/h2>
+&lt;p>Telecommunication Industry has little traditional growth to look forward to. It can use AI in its operation and exploit trove of Big Data it possesses. Medicine has many breakthrough opportunities but progress hard &amp;ndash; partly due to data privacy restrictions. Traditional Bioinformatics areas progress but slowly; pathology is based on imagery and making much better progress with deep learning&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/OJxbH7KGo-g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1d6VP1TwoaxLSkLbgfpD0-RYJ7SjQ-gI-2312i2QHfpQ">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="bankingfinance-overview-of-banking-and-finance">BankingFinance: Overview of Banking and Finance&lt;/h2>
+&lt;p>This FinTech sector has huge investments (larger than other applications we studied)and we can expect all aspects of Banking and Finance to be remade with online digital Banking as a Service. It is doubtful that traditional banks will thrive&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/3CK0lDrK0O0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1DMuGUPL_NNSXkCjfTHLQyD9Bk7KmkVGFRr7DwQMPgS8">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p></description></item><item><title>Modules: Introduction to Deep Learning (III)</title><link>/modules/bigdataapplications/2019/week10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/week10/</guid><description>
+&lt;p>Usage of deep learning algorithm is one of the demanding skills needed
+in this decade and the coming decade. Providing a hands on experience in
+using deep learning applications is one of the main goals of this
+lecture series. Let&amp;rsquo;s get started.&lt;/p>
+&lt;h2 id="deep-learning-algorithm-part-1">Deep Learning Algorithm Part 1&lt;/h2>
+&lt;p>In this part of the lecture series, the idea is to provide an
+understanding on the usage of various deep learning algorithms. In this
+lesson, we talk about different algorithms in Deep Learning world. In
+this lesson we discuss a multi-layer perceptron and convolutional neural
+networks. Here we use MNIST classification problem and solve it using
+MLP and CNN.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/OLq0s-r4IDo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1sYRkiXhYU-qrXRlBW3ZQXwnNfmYuMHRlpRtfwZkiFTc">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="deep-learning-algorithms-part-2">Deep Learning Algorithms Part 2&lt;/h2>
+&lt;p>In this lesson, we continue our study on a deep learning algorithms. We
+use Recurrent Neural Network related examples to show case how it can be
+applied to do MNIST classfication. We showcase how RNN can be applied to
+solve this problem.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/0A4dnEMKuYU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1MMUErmadF8RTWPQY6xxuXhpchh6gczuYr6Z7znCQkbM">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="deep-learning-algorithms-part-3">Deep Learning Algorithms Part 3&lt;/h2>
+&lt;p>CNN is one of the most prominent algorithms that has been used in the
+deep learning world in the last decade. A lots of applications has been
+done using CNN. Most of these applications deal with images, videos,
+etc. In this lesson we continue the lesson on convolution neural
+networks. Here we discuss a brief history on CNN.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/KXFfKyDNhBE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1oedasSs6tBFLYyaskes0gZEhTz2Sva57Qb2Kv2ruiXU">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="deep-learning-algorithms-part-4">Deep Learning Algorithms Part 4&lt;/h2>
+&lt;p>In this lesson we continue our study on CNN by understanding how
+historical findings supported the upliftment of the Convolutional Neural
+Networks. And also we discuss why CNN has been used for various
+applications in various fields.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/hinOsG7eLRk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1N9V7ehwKuA2fZN-bGX6m-DLkeTBpNiYpZAGQu6IqkeU">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="deep-learning-algorithms-part-5">Deep Learning Algorithms Part 5&lt;/h2>
+&lt;p>In this lesson we discuss about auto-encoders. This is one of the highly
+used deep learning based models in signal denoising, image denoising.
+Here we portray how an auto-encoder can be used to do such tasks.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Q9Bl3QM5Img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1MoQQOb5a8ptUSLrBCm2dT8P0yrZat6beKv1CDjJn44I">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h2 id="deep-learning-algorithms-part-6">Deep Learning Algorithms Part 6&lt;/h2>
+&lt;p>In this lesson we discuss one of the most famous deep neural network
+architecture, Generative Adversarial Networks. This deep learning model
+has the capability of generating new outputs from existing knowledge. A
+GAN model is more like a counter-fitter who is trying to improve itself
+to generate best counterfits.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/KwVpYp19fe8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://drive.google.com/open?id=1dHvLXgdjZLE-W-Ic0AdK-nYO9pvij4jcruHxTmNJx74">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p>
+&lt;h1 id="additional-material">Additional Material&lt;/h1>
+&lt;p>We have included more information on different types of deep neural
+networks and their usage. A summary of all the topics discussed under
+deep learning can be found in the following slide deck. Please refer it
+to get more information. Some of these information can help for writing
+term papers and projects.&lt;/p>
+&lt;p>&lt;a href="https://docs.google.com/presentation/d/192NZBZNR4VVOIE8GdoJNm01o5AvY9tP1lWCdEA-Qy8Q/edit?usp=sharing">&lt;img src="/images/presentation.png" alt="Image">Slides&lt;/a>&lt;/p></description></item><item><title>Modules: Cloud Computing</title><link>/modules/bigdataapplications/2019/e534-cloud-computing-unit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/e534-cloud-computing-unit/</guid><description>
+&lt;h1 id="e534-cloud-computing-unit">E534 Cloud Computing Unit&lt;/h1>
+&lt;p>:orange_book: Full Slide Deck &lt;a href="https://drive.google.com/open?id=1e61jrgTSeG8wQvQ2v6Zsp5AA31KCZPEQ">https://drive.google.com/open?id=1e61jrgTSeG8wQvQ2v6Zsp5AA31KCZPEQ&lt;/a>&lt;/p>
+&lt;p>This page &lt;a href="https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWildAVdoH5hYY/edit?usp=sharing">https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWildAVdoH5hYY/edit?usp=sharing&lt;/a>&lt;/p>
+&lt;h2 id="overall-summary">Overall Summary&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video: &lt;a href="https://drive.google.com/open?id=1Iq-sKUP28AiTeDU3cW_7L1fEQ2hqakae">https://drive.google.com/open?id=1Iq-sKUP28AiTeDU3cW_7L1fEQ2hqakae&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1MLYwAM6MrrZSKQjKm570mNtyNHiWSCjC">https://drive.google.com/open?id=1MLYwAM6MrrZSKQjKm570mNtyNHiWSCjC&lt;/a>&lt;/p>
+&lt;h2 id="defining-clouds-i">Defining Clouds I:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=15TbpDGR2VOy5AAYb_o4740enMZKiVTSz">https://drive.google.com/open?id=15TbpDGR2VOy5AAYb_o4740enMZKiVTSz&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1CMqgcpNwNiMqP8TZooqBMhwFhu2EAa3C">https://drive.google.com/open?id=1CMqgcpNwNiMqP8TZooqBMhwFhu2EAa3C&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Basic definition of cloud and two very simple examples of why virtualization is important.&lt;/li>
+&lt;li>How clouds are situated wrt HPC and supercomputers&lt;/li>
+&lt;li>Why multicore chips are important&lt;/li>
+&lt;li>Typical data center&lt;/li>
+&lt;/ol>
+&lt;h2 id="defining-clouds-ii">Defining Clouds II:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1BvJCqBQHLMhrPrUsYvGWoq1nk7iGD9cd">https://drive.google.com/open?id=1BvJCqBQHLMhrPrUsYvGWoq1nk7iGD9cd&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1_rczdp74g8hFnAvXQPVfZClpvoB_B3RN">https://drive.google.com/open?id=1_rczdp74g8hFnAvXQPVfZClpvoB_B3RN&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Service-oriented architectures: Software services as Message-linked computing capabilities&lt;/li>
+&lt;li>The different aaS’s: Network, Infrastructure, Platform, Software&lt;/li>
+&lt;li>The amazing services that Amazon AWS and Microsoft Azure have&lt;/li>
+&lt;li>Initial Gartner comments on clouds (they are now the norm) and evolution of servers; serverless and microservices&lt;/li>
+&lt;/ol>
+&lt;h2 id="defining-clouds-iii">Defining Clouds III:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1MjIU3N2PX_3SsYSN7eJtAlHGfdePbKEL">https://drive.google.com/open?id=1MjIU3N2PX_3SsYSN7eJtAlHGfdePbKEL&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1cDJhE86YRAOCPCAz4dVv2ieq-4SwTYQW">https://drive.google.com/open?id=1cDJhE86YRAOCPCAz4dVv2ieq-4SwTYQW&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Cloud Market Share&lt;/li>
+&lt;li>How important are they?&lt;/li>
+&lt;li>How much money do they make?&lt;/li>
+&lt;/ol>
+&lt;h2 id="virtualization">Virtualization:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1-zd6wf3zFCaTQFInosPHuHvcVrLOywsw">https://drive.google.com/open?id=1-zd6wf3zFCaTQFInosPHuHvcVrLOywsw&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1_-BIAVHSgOnWQmMfIIC61wH-UBYywluO">https://drive.google.com/open?id=1_-BIAVHSgOnWQmMfIIC61wH-UBYywluO&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Virtualization Technologies, Hypervisors and the different approaches&lt;/li>
+&lt;li>KVM Xen, Docker and Openstack&lt;/li>
+&lt;/ol>
+&lt;h2 id="cloud-infrastructure-i">Cloud Infrastructure I:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1CIVNiqu88yeRkeU5YOW3qNJbfQHwfBzE">https://drive.google.com/open?id=1CIVNiqu88yeRkeU5YOW3qNJbfQHwfBzE&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=11JRZe2RblX2MnJEAyNwc3zup6WS8lU-V">https://drive.google.com/open?id=11JRZe2RblX2MnJEAyNwc3zup6WS8lU-V&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Comments on trends in the data center and its technologies&lt;/li>
+&lt;li>Clouds physically across the world&lt;/li>
+&lt;li>Green computing&lt;/li>
+&lt;li>Amount of world’s computing ecosystem in clouds&lt;/li>
+&lt;/ol>
+&lt;h2 id="cloud-infrastructure-ii">Cloud Infrastructure II:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Videos &lt;a href="https://drive.google.com/open?id=1yGR0YaqSoZ83m1_Kz7q7esFrrxcFzVgl">https://drive.google.com/open?id=1yGR0YaqSoZ83m1_Kz7q7esFrrxcFzVgl&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1L6fnuALdW3ZTGFvu4nXsirPAn37ZMBEb">https://drive.google.com/open?id=1L6fnuALdW3ZTGFvu4nXsirPAn37ZMBEb&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Gartner hypecycle and priority matrix on Infrastructure Strategies and
+Compute Infrastructure&lt;/li>
+&lt;li>Containers compared to virtual machines&lt;/li>
+&lt;li>The emergence of artificial intelligence as a dominant force&lt;/li>
+&lt;/ol>
+&lt;h2 id="cloud-software">Cloud Software:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=14HISqj17Ihom8G6v9KYR2GgAyjeK1mOp">https://drive.google.com/open?id=14HISqj17Ihom8G6v9KYR2GgAyjeK1mOp&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=10TaEQE9uEPBFtAHpCAT_1akCYbvlMCPg">https://drive.google.com/open?id=10TaEQE9uEPBFtAHpCAT_1akCYbvlMCPg&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>HPC-ABDS with over 350 software packages and how to use each of 21 layers&lt;/li>
+&lt;li>Google’s software innovations&lt;/li>
+&lt;li>MapReduce in pictures&lt;/li>
+&lt;li>Cloud and HPC software stacks compared&lt;/li>
+&lt;li>Components need to support cloud/distributed system programming&lt;/li>
+&lt;/ol>
+&lt;h2 id="cloud-applications-i-research-applications">Cloud Applications I: Research applications&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=11zuqeUbaxyfpONOmHRaJQinc4YSZszri">https://drive.google.com/open?id=11zuqeUbaxyfpONOmHRaJQinc4YSZszri&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1hUgC82FLutp32rICEbPJMgHaadTlOOJv">https://drive.google.com/open?id=1hUgC82FLutp32rICEbPJMgHaadTlOOJv&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Clouds in science where the area called cyberinfrastructure&lt;/li>
+&lt;/ol>
+&lt;h2 id="cloud-applications-ii-few-key-types">Cloud Applications II: Few key types&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1S2-MgshCSqi9a6_tqEVktktN4Nf6Hj4d">https://drive.google.com/open?id=1S2-MgshCSqi9a6_tqEVktktN4Nf6Hj4d&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1KlYnTZgRzqjnG1g-Mf8NTvw1k8DYUCbw">https://drive.google.com/open?id=1KlYnTZgRzqjnG1g-Mf8NTvw1k8DYUCbw&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Internet of Things&lt;/li>
+&lt;li>Different types of MapReduce&lt;/li>
+&lt;/ol>
+&lt;h2 id="parallel-computing-in-pictures">Parallel Computing in Pictures&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1LSnVj0Vw2LXOAF4_CMvehkn0qMIr4y4J">https://drive.google.com/open?id=1LSnVj0Vw2LXOAF4_CMvehkn0qMIr4y4J&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1IDozpqtGbTEzANDRt4JNb1Fhp7JCooZH">https://drive.google.com/open?id=1IDozpqtGbTEzANDRt4JNb1Fhp7JCooZH&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Some useful analogies and principles&lt;/li>
+&lt;li>Society and Building Hadrian’s wall&lt;/li>
+&lt;/ol>
+&lt;h2 id="parallel-computing-in-real-world">Parallel Computing in real world&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1d0pwvvQmm5VMyClm_kGlmB79H69ihHwk">https://drive.google.com/open?id=1d0pwvvQmm5VMyClm_kGlmB79H69ihHwk&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1aPEIx98aDYaeJS-yY1JhqqnPPJbizDAJ">https://drive.google.com/open?id=1aPEIx98aDYaeJS-yY1JhqqnPPJbizDAJ&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Single Program/Instruction Multiple Data SIMD SPMD&lt;/li>
+&lt;li>Parallel Computing in general&lt;/li>
+&lt;li>Big Data and Simulations Compared&lt;/li>
+&lt;li>What is hard to do?&lt;/li>
+&lt;/ol>
+&lt;h2 id="cloud-storage">Cloud Storage:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1ukgyO048qX0uZ9sti3HxIDGscyKqeCaB">https://drive.google.com/open?id=1ukgyO048qX0uZ9sti3HxIDGscyKqeCaB&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1rVRMcfrpFPpKVhw9VZ8I72TTW21QxzuI">https://drive.google.com/open?id=1rVRMcfrpFPpKVhw9VZ8I72TTW21QxzuI&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Cloud data approaches&lt;/li>
+&lt;li>Repositories, File Systems, Data lakes&lt;/li>
+&lt;/ol>
+&lt;h2 id="hpc-and-clouds-the-branscomb-pyramid">HPC and Clouds: The Branscomb Pyramid&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=15rrCZ_yaMSpQNZg1lBs_YaOSPw1Rddog">https://drive.google.com/open?id=15rrCZ_yaMSpQNZg1lBs_YaOSPw1Rddog&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1JRdtXWWW0qJrbWAXaHJHxDUZEhPCOK_C">https://drive.google.com/open?id=1JRdtXWWW0qJrbWAXaHJHxDUZEhPCOK_C&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Supercomputers versus clouds&lt;/li>
+&lt;li>Science Computing Environments&lt;/li>
+&lt;/ol>
+&lt;h2 id="comparison-of-data-analytics-with-simulation">Comparison of Data Analytics with Simulation:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1wmt7MQLz3Bf2mvLN8iHgXFHiuvGfyRKr">https://drive.google.com/open?id=1wmt7MQLz3Bf2mvLN8iHgXFHiuvGfyRKr&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1vRv76LerhgJKUsGosXLVKq4s_wDqFlK4">https://drive.google.com/open?id=1vRv76LerhgJKUsGosXLVKq4s_wDqFlK4&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Structure of different applications for simulations and Big Data&lt;/li>
+&lt;li>Software implications&lt;/li>
+&lt;li>Languages&lt;/li>
+&lt;/ol>
+&lt;h2 id="the-future">The Future:&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc">https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K">https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Gartner cloud computing hypecycle and priority matrix&lt;/li>
+&lt;li>Hyperscale computing&lt;/li>
+&lt;li>Serverless and FaaS&lt;/li>
+&lt;li>Cloud Native&lt;/li>
+&lt;li>Microservices&lt;/li>
+&lt;/ol>
+&lt;h2 id="fault-tolerance">Fault Tolerance&lt;/h2>
+&lt;p>&lt;img src="/images/video.png" alt="Video"> Video &lt;a href="https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24">https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24&lt;/a>&lt;/p>
+&lt;p>:orange_book: Slides &lt;a href="https://drive.google.com/open?id=1oNztdHQPDmj24NSGx1RzHa7XfZ5vqUZg">https://drive.google.com/open?id=1oNztdHQPDmj24NSGx1RzHa7XfZ5vqUZg&lt;/a>&lt;/p></description></item><item><title>Modules: Introduction to Cloud Computing</title><link>/modules/bigdataapplications/2019/intro-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/intro-cloud/</guid><description>
+&lt;h2 id="introduction-to-cloud-computing">Introduction to Cloud Computing&lt;/h2>
+&lt;p>This introduction to Cloud Computing covers all aspects of the field
+drawing on industry and academic advances. It makes use of analyses from
+the Gartner group on future Industry trends. The presentation is broken
+into 21 parts starting with a survey of all the material covered. Note
+this first part is A while the substance of the talk is in parts B to U.&lt;/p>
+&lt;h2 id="introduction---part-a-scloud-fundamentals-a">Introduction - Part A {#s:cloud-fundamentals-a}&lt;/h2>
+&lt;ul>
+&lt;li>Parts B to D &lt;strong>define cloud computing&lt;/strong>, its key concepts and how it
+is situated in the data center space&lt;/li>
+&lt;li>The next part E reviews &lt;strong>virtualization&lt;/strong> technologies comparing
+containers and hypervisors&lt;/li>
+&lt;li>Part F is the first on &lt;strong>Gartner&amp;rsquo;s Hypecycles&lt;/strong> and especially those
+for emerging technologies in 2017 and 2016&lt;/li>
+&lt;li>Part G is the second on &lt;strong>Gartner&amp;rsquo;s Hypecycles&lt;/strong> with Emerging
+Technologies hypecycles and the Priority matrix at selected times
+2008-2015&lt;/li>
+&lt;li>Parts H and I cover &lt;strong>Cloud Infrastructure&lt;/strong> with Comments on trends
+in the data center and its technologies and the Gartner hypecycle
+and priority matrix on Infrastructure Strategies and Compute
+Infrastructure&lt;/li>
+&lt;li>Part J covers &lt;strong>Cloud Software&lt;/strong> with HPC-ABDS(High Performance
+Computing enhanced Apache Big Data Stack) with over 350 software
+packages and how to use each of its 21 layers&lt;/li>
+&lt;li>Part K is first on &lt;strong>Cloud Applications&lt;/strong> covering those from
+industry and commercial usage patterns from NIST&lt;/li>
+&lt;li>Part L is second on &lt;strong>Cloud Applications&lt;/strong> covering those from
+science where area called cyberinfrastructure; we look at the
+science usage pattern from NIST&lt;/li>
+&lt;li>Part M is third on &lt;strong>Cloud Applications&lt;/strong> covering the
+characterization of applications using the NIST approach.&lt;/li>
+&lt;li>Part N covers &lt;strong>Clouds and Parallel Computing&lt;/strong> and compares Big
+Data and Simulations&lt;/li>
+&lt;li>Part O covers &lt;strong>Cloud storage&lt;/strong>: Cloud data approaches:
+Repositories, File Systems, Data lakes&lt;/li>
+&lt;li>Part P covers &lt;strong>HPC and Clouds&lt;/strong> with The Branscomb Pyramid and
+Supercomputers versus clouds&lt;/li>
+&lt;li>Part Q compares &lt;strong>Data Analytics with Simulation&lt;/strong> with application
+and software implications&lt;/li>
+&lt;li>Part R compares &lt;strong>Jobs&lt;/strong> from Computer Engineering, Clouds, Design
+and Data Science/Engineering&lt;/li>
+&lt;li>Part S covers the &lt;strong>Future&lt;/strong> with Gartner cloud computing hypecycle
+and priority matrix, Hyperscale computing, Serverless and FaaS,
+Cloud Native and Microservices&lt;/li>
+&lt;li>Part T covers &lt;strong>Security and Blockchain&lt;/strong>&lt;/li>
+&lt;li>Part U covers &lt;strong>fault-tolerance&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=16gPOZ7EK6iaac2B-9KbM3OHITqHT8YxG">&lt;img src="/images/video.png" alt="Video"> Cloud (14:48) Introduction - Part A&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=17_voZxBdqiLicJKzroQ2DzjW4zvp0VYb">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (7 Slides) Introduction - Part A&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>This lecture describes the contents of the following 20 parts (B to U).&lt;/p>
+&lt;h2 id="introduction---part-b---defining-clouds-i-scloud-fundamentals-b">Introduction - Part B - Defining Clouds I {#s:cloud-fundamentals-b}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1iGv6GG2b2th_RL3kQX6P04Y0AyuUxQcj">&lt;img src="/images/video.png" alt="Video"> Cloud (20:22) Part B - Defining Clouds I&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1SJZblEkhjgQBCDaDSiSCaXTLVPx_X8m4">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (13 Slides) Part B - Defining Clouds I&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>B: Defining Clouds I&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Basic definition of cloud and two very simple examples of why
+virtualization is important.&lt;/li>
+&lt;li>How clouds are situated wrt HPC and supercomputers&lt;/li>
+&lt;li>Why multicore chips are important&lt;/li>
+&lt;li>Typical data center&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-c---defining-clouds-ii-scloud-fundamentals-c">Introduction - Part C - Defining Clouds II {#s:cloud-fundamentals-c}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1nU9HlqDe_vEZR1MlOq2XibnoHmaygo-H">&lt;img src="/images/video.png" alt="Video"> Cloud (20:45) Part C - Defining Clouds II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1Thg2yOnKBQKdndgdItpviGw0hhxjY2K2">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (11 Slides) Part C - Defining Clouds II&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>C: Defining Clouds II&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Service-oriented architectures: Software services as Message-linked
+computing capabilities&lt;/li>
+&lt;li>The different aaS&amp;rsquo;s: Network, Infrastructure, Platform, Software&lt;/li>
+&lt;li>The amazing services that Amazon AWS and Microsoft Azure have&lt;/li>
+&lt;li>Initial Gartner comments on clouds (they are now the norm) and
+evolution of servers; serverless and microservices&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-d---defining-clouds-iii-scloud-fundamentals-d">Introduction - Part D - Defining Clouds III {#s:cloud-fundamentals-d}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1Qayxfwuc_qSeCzaIpHj3-F0N7TONvM5L">&lt;img src="/images/video.png" alt="Video"> Cloud (9:08) Part D - Defining Clouds III&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1EsHbUn7xdjTrLXmY8HCIhZqLaWeODD_1">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (9 Slides) Part D - Defining Clouds III&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>D: Defining Clouds III&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Cloud Market Share&lt;/li>
+&lt;li>How important are they?&lt;/li>
+&lt;li>How much money do they make?&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-e---virtualization-scloud-fundamentals-e">Introduction - Part E - Virtualization {#s:cloud-fundamentals-e}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1EC-eOYuBOV1qMojSg4Mg50doPqjAY0Hr">&lt;img src="/images/video.png" alt="Video"> Cloud (11:21) Part E - Virtualization&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1K3RzVlfiwZAqwhCPxNEP8Q1JNxyOZhrv">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (8 Slides) Part E - Virtualization&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>E: Virtualization&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Virtualization Technologies, Hypervisors and the different
+approaches&lt;/li>
+&lt;li>KVM Xen, Docker and Openstack&lt;/li>
+&lt;li>Several web resources are listed&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-f---technology-hypecycle-i-scloud-fundamentals-f">Introduction - Part F - Technology Hypecycle I {#s:cloud-fundamentals-f}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1_M0HDemFmykAq4iPuQ0MHYIW0kffHuMa">&lt;img src="/images/video.png" alt="Video"> Cloud (13:41) Part F - Technology Hypecycle I&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=18deLUm2zGlHcHHbyVhecwSf52RHAq9VT">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (11 Slides) Part F - Technology Hypecycle I&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>F:Technology Hypecycle I&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Gartner&amp;rsquo;s Hypecycles and especially that for emerging technologies
+in 2017 and 2016&lt;/li>
+&lt;li>The phases of hypecycles&lt;/li>
+&lt;li>Priority Matrix with benefits and adoption time&lt;/li>
+&lt;li>Today clouds have got through the cycle (they have emerged) but
+features like blockchain, serverless and machine learning are on
+cycle&lt;/li>
+&lt;li>Hypecycle and Priority Matrix for Data Center Infrastructure 2017&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-g---technology-hypecycle-ii-scloud-fundamentals-g">Introduction - Part G - Technology Hypecycle II {#s:cloud-fundamentals-g}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=19k6os58_OCCsmbusWQ6z6n9hwVmmd163">&lt;img src="/images/video.png" alt="Video"> Cloud (16:05) Part G - Technology Hypecycle II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1ZD-h-dmQgAFROBEI1KMJROTxPVPAJ_P_">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (15 Slides) Part G - Technology Hypecycle II&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>G: Technology Hypecycle II&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Emerging Technologies hypecycles and Priority matrix at selected
+times 2008-2015&lt;/li>
+&lt;li>Clouds star from 2008 to today&lt;/li>
+&lt;li>They are mixed up with transformational and disruptive changes&lt;/li>
+&lt;li>The route to Digital Business (2015)&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-h---iaas-i-scloud-fundamentals-h">Introduction - Part H - IaaS I {#s:cloud-fundamentals-h}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1_lH7ou_UQOMMfdSSQLrqZr8yJZIr7rC0">&lt;img src="/images/video.png" alt="Video"> Cloud (13:22) Part H - IaaS I&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1WOlwFtHNvFSaQX9WAXBwO2q1qsvBM6Yd">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (12 Slides) Part H - IaaS I&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>H: Cloud Infrastructure I&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Comments on trends in the data center and its technologies&lt;/li>
+&lt;li>Clouds physically across the world&lt;/li>
+&lt;li>Green computing and fraction of world&amp;rsquo;s computing ecosystem in
+clouds&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-i---iaas-ii-scloud-fundamentals-i">Introduction - Part I - IaaS II {#s:cloud-fundamentals-i}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1UwBzSKK-iHYW7aRCS_f4BoXNYxUb476i">&lt;img src="/images/video.png" alt="Video"> Cloud (13:13) Part I - IaaS II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1_1fL2L-tpjlL7og49XDxH_HLPD6Tupik">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (11 Slides) Part I - IaaS II&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>I: Cloud Infrastructure II&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Gartner hypecycle and priority matrix on Infrastructure Strategies
+and Compute Infrastructure&lt;/li>
+&lt;li>Containers compared to virtual machines&lt;/li>
+&lt;li>The emergence of artificial intelligence as a dominant force&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-j---cloud-software-scloud-fundamentals-j">Introduction - Part J - Cloud Software {#s:cloud-fundamentals-j}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1tasT1lJE_7pwowuk0D68M7rgW1gtv3im">&lt;img src="/images/video.png" alt="Video"> Cloud (37:56) Part J - Cloud Software&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1DKshrkb2bMOt5p0H2YDkOZhekAFIx5nJ">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (15 Slides) Part J - Cloud Software&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>J: Cloud Software&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>HPC-ABDS(High Performance Computing enhanced Apache Big Data Stack)
+with over 350 software packages and how to use each of 21 layers&lt;/li>
+&lt;li>Google&amp;rsquo;s software innovations&lt;/li>
+&lt;li>MapReduce in pictures&lt;/li>
+&lt;li>Cloud and HPC software stacks compared&lt;/li>
+&lt;li>Components need to support cloud/distributed system programming&lt;/li>
+&lt;li>Single Program/Instruction Multiple Data SIMD SPMD&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-k---applications-i-scloud-fundamentals-k">Introduction - Part K - Applications I {#s:cloud-fundamentals-k}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1BzpXNqs3Ai_QlSsjxSV6Q3FevZt1BPj-">&lt;img src="/images/video.png" alt="Video"> Cloud (11:58) Part K - Applications I&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1dQbzoVwDoqqnwSO8eHmu_WfiU2FVXtLL">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (16 Slides) Part K - Applications I&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>K: Cloud Applications I&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Big Data in Industry/Social media; a lot of best examples have NOT
+been updated so some slides old but still make the correct points&lt;/li>
+&lt;li>Some of the business usage patterns from NIST&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-l---applications-ii-scloud-fundamentals-l">Introduction - Part L - Applications II {#s:cloud-fundamentals-l}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1pIjcar6SZSelWiR6dv4lhnsmweDarNXR">&lt;img src="/images/video.png" alt="Video"> Cloud (13:03) Part L - Applications II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=10bAckYz455Yd5tqDGpwkMZUmDn9FKl0n">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (11 Slides) Part L - Applications II&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>L: Cloud Applications II&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Clouds in science where area called cyberinfrastructure;&lt;/li>
+&lt;li>The science usage pattern from NIST&lt;/li>
+&lt;li>Artificial Intelligence from Gartner&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-m---applications-iii-scloud-fundamentals-m">Introduction - Part M - Applications III {#s:cloud-fundamentals-m}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=16rb0zZafTLoYhT638qc4IRorOk5qgRP-">&lt;img src="/images/video.png" alt="Video"> Cloud (24:12) Part M - Applications III&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1TPgbfK6PhWjyr3u115Pq4jTPNPo2JU70">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (14 Slides) Part M - Applications III&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>M: Cloud Applications III&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Characterize Applications using NIST approach&lt;/li>
+&lt;li>Internet of Things&lt;/li>
+&lt;li>Different types of MapReduce&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-n---parallelism-scloud-fundamentals-n">Introduction - Part N - Parallelism {#s:cloud-fundamentals-n}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1apuvCaKlQBZp8FjvqN9It5bJhfXmf1kg">&lt;img src="/images/video.png" alt="Video"> Cloud (35:46) Part N - Parallelism&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1lBmpMry2FXwEjf93EMJPNDpw_G-yUcI1">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (15 Slides) Part N - Parallelism&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>N: Clouds and Parallel Computing&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Parallel Computing in general&lt;/li>
+&lt;li>Big Data and Simulations Compared&lt;/li>
+&lt;li>What is hard to do?&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-o---storage-scloud-fundamentals-o">Introduction - Part O - Storage {#s:cloud-fundamentals-o}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1_A51jrlzKYKhQvefXbJPs0J4GiCCQ1et">&lt;img src="/images/video.png" alt="Video"> Cloud (19:22) Part O - Storage&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1JvIK-J4HUSvexmNKbBV_fdN8xvGBylR2">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (10 Slides) Part O - Storage&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>O: Cloud Storage&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Cloud data approaches&lt;/li>
+&lt;li>Repositories, File Systems, Data lakes&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-p---hpc-in-the-cloud-scloud-fundamentals-p">Introduction - Part P - HPC in the Cloud {#s:cloud-fundamentals-p}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1">&lt;img src="/images/video.png" alt="Video"> Cloud (19:29) Part P - HPC in the Cloud&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (8 Slides) Part P - HPC in the Cloud&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>P: HPC and Clouds&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>The Branscomb Pyramid&lt;/li>
+&lt;li>Supercomputers versus clouds&lt;/li>
+&lt;li>Science Computing Environments&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-q---analytics-and-simulation-scloud-fundamentals-q">Introduction - Part Q - Analytics and Simulation {#s:cloud-fundamentals-q}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1vmtpndTlmtV4DzUtl04_nWo9DCR84mIM">&lt;img src="/images/video.png" alt="Video"> Cloud (16:19) Part Q - Analytics and Simulation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1u_rugpZg6m2x0B7r4kifEUxMej71-wMh">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (10 Slides) Part Q - Analytics and Simulation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Q: Comparison of Data Analytics with Simulation&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Structure of different applications for simulations and Big Data&lt;/li>
+&lt;li>Software implications&lt;/li>
+&lt;li>Languages&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-r---jobs-scloud-fundamentals-r">Introduction - Part R - Jobs {#s:cloud-fundamentals-r}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1JMNPLdbS81Hfi5P7irDUy7kna35jpU6j">&lt;img src="/images/video.png" alt="Video"> Cloud (4:52) Part R - Jobs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1Sev0VF7tDZo4Oxa_ghk6b4YhE4iTPkhE">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (6 Slides) Part R - Jobs&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>R: Availability of Jobs in different areas&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Computer Engineering&lt;/li>
+&lt;li>Clouds&lt;/li>
+&lt;li>Design&lt;/li>
+&lt;li>Data Science/Engineering&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-s---the-future-scloud-fundamentals-s">Introduction - Part S - The Future {#s:cloud-fundamentals-s}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1kgbrDiDNj0DKYi_ICvOXYeFZ32R1JH2_">&lt;img src="/images/video.png" alt="Video"> Cloud (19:46) Part S - The Future&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1_LdE64DJqSKI7EmMbSsppHMO6KU4q4Sl">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (6 Slides) Part S - The Future&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>S: The Future&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Gartner cloud computing hypecycle and priority matrix highlights:&lt;/p>
+&lt;ul>
+&lt;li>Hyperscale computing&lt;/li>
+&lt;li>Serverless and FaaS&lt;/li>
+&lt;li>Cloud Native&lt;/li>
+&lt;li>Microservices&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-t---security-scloud-fundamentals-t">Introduction - Part T - Security {#s:cloud-fundamentals-t}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1TQsCuR-2C6D_OJeJH818WO5-OBrA8Spo">&lt;img src="/images/video.png" alt="Video"> Cloud (11:29) Part T - Security&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1fVelFbLaUbNXMGS6ENRn4QHLzFitAyUD">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (13 Slides) Part T - Security&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>T: Security&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>CIO Perspective&lt;/li>
+&lt;li>Blockchain&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction---part-u---fault-tolerance-scloud-fundamentals-u">Introduction - Part U - Fault Tolerance {#s:cloud-fundamentals-u}&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1jRpkdGCT-sQRb6pOGrW-qG58A_HYfr9W">&lt;img src="/images/video.png" alt="Video"> Cloud (9:10) Part U - Fault Tolerance&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://drive.google.com/open?id=1cR9YLcrtUMKINRFNMbdVre8Ydfa-lvAj">&lt;img src="/images/presentation.png" alt="Presentation"> Cloud (5 Slides) Part U - Fault Tolerance&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>U: Fault Tolerance&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>S3 Fault Tolerance&lt;/li>
+&lt;li>Application Requirements&lt;/li>
+&lt;/ul>
+&lt;p>© 2018 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub
+Pricing API Training Blog About Press h to open a hovercard with more
+details.&lt;/p></description></item><item><title>Modules: Assignments</title><link>/modules/bigdataapplications/2019/assignments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/assignments/</guid><description>
+&lt;h1 id="assignments">Assignments&lt;/h1>
+&lt;p>Due dates are on &lt;a href="https://canvas.iu.edu/lms-prd/gateway">Canvas&lt;/a>.
+Click on the links to checkout the assignment pages.&lt;/p></description></item><item><title>Modules: Applications</title><link>/modules/bigdataapplications/2019/applications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/applications/</guid><description>
+&lt;p>We will discuss each of these applications in more detail# Applications&lt;/p></description></item><item><title>Modules: Technologies</title><link>/modules/bigdataapplications/2019/tech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/tech/</guid><description/></item></channel></rss>

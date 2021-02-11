@@ -1,0 +1,12 @@
+---
+owner:
+  firstname: "Anthony"
+  lastname: "Tugman"
+  hid: "fa20-523-323"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Predicting Hotel Reservation Cancellation Rates
+  url: https://github.com/cybertraining-dsc/fa20-523-323/blob/main/project/project.md
+  author:
+    - Anthony Tugman fa20-523-323

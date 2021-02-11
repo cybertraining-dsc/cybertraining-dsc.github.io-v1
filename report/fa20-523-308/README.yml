@@ -1,0 +1,13 @@
+----
+owner:
+  firstname: "Travis"
+  lastname: "Whitaker"
+  hid: "fa20-523-308"
+  community: "534"
+  semester: "fa20"
+project:
+  title: NFL Regular Season Skilled Position Player Performance as a Predictor of Playoff Appearance Overtime
+  url: https://github.com/cybertraining-dsc/fa20-523-308/blob/main/project/project.md
+  proceedings: https://cybertraining-dsc.github.io/report/fa20-523-308/project/project/
+  author:
+    - Travis Whitaker, fa20-523-308

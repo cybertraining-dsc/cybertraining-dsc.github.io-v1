@@ -1,0 +1,56 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.google.com	TRUE	/complete/search	FALSE	1619760352	CGIC	EhQxQzFDSEJGX2VuVVM5MTFVUzkxMSKHAXRleHQvaHRtbCxhcHBsaWNhdGlvbi94aHRtbCt4bWwsYXBwbGljYXRpb24veG1sO3E9MC45LGltYWdlL2F2aWYsaW1hZ2Uvd2VicCxpbWFnZS9hcG5nLCovKjtxPTAuOCxhcHBsaWNhdGlvbi9zaWduZWQtZXhjaGFuZ2U7dj1iMztxPTAuOQ
+drive.google.com	FALSE	/drive/u/0	TRUE	1605200021	COMPASS	drive=EKePgf0FGk4ACWuJV-Hnyx7q4uorOMV0z0IR25_8tcFcGa7qlQHtckspNQsAov-08HN_xgocpvPvoGjGmN3Odk7xLEdh1l2pndiNwF4TejUgmQ5ZGtQ
+mail.google.com	FALSE	/mail/u/0	TRUE	0	GMAIL_AT	AF6bupOxmignoUivn6vhBSFcSdnhG_0wxw
+mail.google.com	FALSE	/mail/u/0	TRUE	1604422399	GMAIL_STAT_4b93	/S:v=2&a=lc&sv=cv&t=247&i=98&id=5&hc=6&ai=mail%3Alc.4b93.2.1/S:v=2&a=st&t=124&id=5&hc=6&ai=mail%3Ast.4b93.3.1/S:v=2&a=o&sv=ti&ev=cv&t=224&i=138&id=11&hc=6&ai=mail%3Ao.4b93.4.0
+mail.google.com	FALSE	/mail/u/0	TRUE	1605231257	COMPASS	gmail=Co4BAAlriVfdixUNvVBh6dmFPcfXtb7u7LI787Nrw3h3gj_IuNydS-cIsqIvGV35j5s8IhUQmO2crWJTSggN40PzkZ-liTxz1rbN8qnLrq1aRcz9kwecsEAc_1iFm1Qcc95eggOqhF8zeKKSVPQvDtHVxrbGyPTenqt1o9FsFU-Bv_veAkQDqL5fuCpXWeCDZhCcg4P9BRqgAQAJa4lXC6YY2OHXmOvqNJ-wnnAhDGYdXOMy-z5BhzaRwqVVy0EKYANhJ6pwWGDqq2HCNDAgey0wVUNLTS7X_ZbdS84wg8JfnE4RECfkVCCn77_YBjrSUbU4_NiJ0-gG6zxiZ7Lmin5Jg6B5fCcvf2VgmXrIaxQb_ER9cUUSMJxjDyD3NxZKCTq1pEiFos2yMVLrwetsKWsDKBr6ZlEbb70
+mail.google.com	FALSE	/sync/u/0	TRUE	1605234993	COMPASS	bigtop-sync=Co4BAAlriVdC7HhDNdyQN3AxjM8GAWC3pN2tENvuqV4H5tu3ow2UwD0C1UqrnEvlZKKALUQMGMDWMO1TXI-Phkds_qIu9-QV4yZGMZvWikFybMeJ9OU1MppS1anfjSKt29a8VQh877Vsgh8O3Q1SJ1IpSJxnuN0PFClIY7ijbeUrmr6NdpwgLRGdYO0Y2Iz3qhCXoIP9BRqgAQAJa4lXGW_aOUXGXOy8b02EbVZiuVotjXUfJkxVBJGS3HTLtXzieFJpHk2W0NTr13mE4ZLsUyz6Eltyv9YlsGXvwJCOhQFw0sZK-SHZJUxtPUp7aVUT9mVEJvW5eJAMc94Up-o2iObjh3JPVXGvHBVGaZ9r0OTJvugTFEEKlnWhpkqudPkHHCrqsDELUZKaph_bd6lGchgGltdSmUAuK68
+.google.com	TRUE	/search	FALSE	1619760352	CGIC	EhQxQzFDSEJGX2VuVVM5MTFVUzkxMSKHAXRleHQvaHRtbCxhcHBsaWNhdGlvbi94aHRtbCt4bWwsYXBwbGljYXRpb24veG1sO3E9MC45LGltYWdlL2F2aWYsaW1hZ2Uvd2VicCxpbWFnZS9hcG5nLCovKjtxPTAuOCxhcHBsaWNhdGlvbi9zaWduZWQtZXhjaGFuZ2U7dj1iMztxPTAuOQ
+.google.com	TRUE	/verify	TRUE	1620103447	SNID	APx-0P3_ADT0hzvWHsbPjwGQsMN3016sFlQOGCNMAoZcGgePL16K1UM2gBVl63bajZk6oVq0eLGymF6r0ssVOA
+drive.google.com	FALSE	/drive	TRUE	1605233725	COMPASS	drive=ENCWg_0FGk4ACWuJV-Hnyx7q4uorOMV0z0IR25_8tcFcGa7qlQHtckspNQsAov-08HN_xgocpvPvoGjGmN3Odk7xLEdh1l2pndiNwF4TejUgmQ5ZGtQ
+.google.com	TRUE	/ads	TRUE	1642147203	AID	AJHaeXI6eSo4zeG3v-nFRqfIkpmEOa8bttGe09P2mFf28vGJXT9-
+.colab.research.google.com	TRUE	/	FALSE	1666838869	_ga	GA1.4.1012732127.1598720084
+.google.com	TRUE	/	TRUE	1658611302	ANID	AHWqTUnhSL9NoY2Rg_hePBtC3llDSgC4Zngjcug2lCi7cN1ey-Tq4Ehqv0mOlOPd
+.scholar.google.com	TRUE	/	TRUE	1662264844	GSP	LM=1599192837:S=4_G0TjubeZrFiMXY
+.google.com	TRUE	/	FALSE	1662875429	HSID	AH9xkix6MmcJNDFFM
+.google.com	TRUE	/	TRUE	1662875429	SSID	Aywh2sjsTQc-x5x4X
+.google.com	TRUE	/	FALSE	1662875429	APISID	htcn2nZIHTyvfApz/A_mwrrrKIxtxCZViW
+.google.com	TRUE	/	TRUE	1662875429	SAPISID	RwQsTkt1IPKP4ZbZ/AaF3cOVg1WNO0t0QF
+.google.com	TRUE	/	TRUE	1662875429	__Secure-3PAPISID	RwQsTkt1IPKP4ZbZ/AaF3cOVg1WNO0t0QF
+accounts.google.com	FALSE	/	TRUE	1662875429	ACCOUNT_CHOOSER	AFx_qI4Em6vRMtHU7X8F7rmIsonZUzlGwWlFz0xQk6Kj_3QYK8Axi5d1p6mHVNHBft2G5vZd6oPrx4UTEygc2bWYbM1fcX6jc8Ft5e4sBQz8qci85zqJFuBSzFJapH5pB3JwU18F5rflZ4yCn_TvSPLikP4UupGq0hQGgv6N9-YvVXeuHS07EvaVWIe9aIHx998YXzTdHi3nC96entgLuYPreAhrttIV-CBoDNDBMwPuNNY_s6uekcT0-Al1lu6rSfMTB51_Dw9x0kKkpohs9gbDeRnFd13KU9VByBCqtJvJnvPG3sNHlUWAkXthr6C9WONgOQrsXPCG
+developers.google.com	FALSE	/	FALSE	1615593828	django_language	en
+.developers.google.com	TRUE	/	FALSE	1664237391	_ga	GA1.3.1933310888.1600041829
+.google.com	TRUE	/	FALSE	1616716617	SEARCH_SAMESITE	CgQI45AB
+.google.com	TRUE	/	FALSE	1665470611	SID	2QeFa5cut3v0J3F9LyBqvrKqCpz-rTElVkYkfAwGZQfUqmf5KauepryHn4RQqK-AMSqdGw.
+.google.com	TRUE	/	TRUE	1665470611	__Secure-3PSID	2QeFa5cut3v0J3F9LyBqvrKqCpz-rTElVkYkfAwGZQfUqmf5sQV1yDMF4T2cFF49ViLeog.
+mail.google.com	FALSE	/	TRUE	1665783362	OSID	2QeFa-r2xWFQRIMIuxwcxR0np1kv_j6xQhQLINSgGPrKFR0Xjukn75L_Y4twhitebPNZHA.
+mail.google.com	FALSE	/	TRUE	1665783362	__Secure-OSID	2QeFa-r2xWFQRIMIuxwcxR0np1kv_j6xQhQLINSgGPrKFR0XTm0dWQWvcssQWChNAHANOw.
+www.google.com	FALSE	/	TRUE	1605549121	OTZ	5677552_72_76__76_
+meet.google.com	FALSE	/	TRUE	1605624621	OTZ	5678810_72_76__76_
+ogs.google.com	FALSE	/	TRUE	1605999584	OTZ	5685060_72_76__76_
+contacts.google.com	FALSE	/	TRUE	1606326146	OTZ	5690502_72_76__76_
+mail.google.com	FALSE	/	TRUE	1606326154	__Host-GMAIL_SCH_GMN	1
+mail.google.com	FALSE	/	TRUE	1606326154	__Host-GMAIL_SCH_GMS	1
+mail.google.com	FALSE	/	TRUE	1606326154	__Host-GMAIL_SCH_GML	1
+mail.google.com	FALSE	/	TRUE	0	__Host-GMAIL_SCH	nsl
+drive.google.com	FALSE	/	TRUE	0	S	cloudsearch=1DaqKrzctpzwj0_JpGSJhFAVxN_3dngCTS6iINo5Bhc
+mail.google.com	FALSE	/	TRUE	0	S	cloudsearch=fz1ewVEv6kWuAm6CgkOg4sXcXWkvsIp6GCO9qoxSIp8
+accounts.google.com	FALSE	/	TRUE	1667243715	__Host-GAPS	1:lForNVLCnVl-PZRPmmbWPcswWK9DkDAGZ2OgR-YC9LBhgL-l_mcgWSF4K57w_1oaaMD5wzwyGaCUv6-xd7n5R5N4vZvQ:8I2Hziod-_YRpgrJ
+accounts.google.com	FALSE	/	TRUE	1667243715	LSID	doritos|o.mail.google.com|o.myaccount.google.com|o.takeout.google.com|s.blogger|s.youtube:2geFa507GJfJOqdfFWKkJJmvs-S67-ZjSpRD0Lm5lTvh4jnZEqjDgbZNHfarRrJpk3p6NQ.
+accounts.google.com	FALSE	/	TRUE	1667243715	__Host-3PLSID	doritos|o.mail.google.com|o.myaccount.google.com|o.takeout.google.com|s.blogger|s.youtube:2geFa507GJfJOqdfFWKkJJmvs-S67-ZjSpRD0Lm5lTvh4jnZTWrVbYd6mPi5Pm2LgaBHaA.
+takeout.google.com	FALSE	/	TRUE	1667243715	OSID	2weFazRzvyDyya-OR7cc2042K2WES03nKnuQErocpUDTSK-dG4Bfz5O0DYvoEOPskCG_NQ.
+takeout.google.com	FALSE	/	TRUE	1667243715	__Secure-OSID	2weFazRzvyDyya-OR7cc2042K2WES03nKnuQErocpUDTSK-dEWeqgZ2trU5YZ__FmH1zSA.
+.google.com	TRUE	/	TRUE	1620175943	NID	204=uNXUwG9zx08XrsnKp3uYlhPojb9w3GxuFttLU7DWCNR3OjtGOSKCc1_BmIhG6lEP3YxDf9f3LBXCGVZ-XrVNhCO8-5WKLTbxU6ZdYIRQQ6nQxanNBTQfqu_EBx9Z2BQlgqnI5Y8jS7MUP10i8Fs0nrkYEK8rhatkkNXpf6ctSWNi6QyNKW2AkfvV9Wy70aWRAjrk8tOMazA82TO30LkNjwtbQ6rWdnINdduQuJe9D9p16I949Eddvy4M9L0Cqulw2Xban6lxqEE9hgVPHIpSQLYkJj6f4sw_hSNag_LW-hiKPHzHOdIeCg42w4GFD1xusY7AFPh3mBWG
+.google.com	TRUE	/	TRUE	1606963579	1P_JAR	2020-11-03-02
+www.google.com	FALSE	/	FALSE	1604372176	DV	s8yyQHyAlFZaYM2vjpxIRaX_-_e_WFcvJBy_9Krq5AAAADDVMex8VBLaWAAAAJR__9CrFs6uHgAAACtw-Ck0s2bM8uAAAA
+www.google.com	FALSE	/	FALSE	1604393176	UULE	a+cm9sZTogMQpwcm9kdWNlcjogMTIKdGltZXN0YW1wOiAxNjA0MzcxNTc2NTQ5MDAwCmxhdGxuZyB7CiAgbGF0aXR1ZGVfZTc6IDMzNjI3NDk3MgogIGxvbmdpdHVkZV9lNzogLTExMTkyMzY5MDkKfQpyYWRpdXM6IDUwMjIwCnByb3ZlbmFuY2U6IDYK
+.chrome.google.com	TRUE	/	FALSE	1667443603	__utma	73091649.1691558089.1604371578.1604371578.1604371578.1
+.chrome.google.com	TRUE	/	FALSE	0	__utmc	73091649
+.chrome.google.com	TRUE	/	FALSE	1620139603	__utmz	73091649.1604371578.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)
+.chrome.google.com	TRUE	/	FALSE	1604372178	__utmt	1
+.chrome.google.com	TRUE	/	FALSE	1604373403	__utmb	73091649.20.0.1604371580131
+.google.com	TRUE	/	FALSE	1635907606	SIDCC	AJi4QfGybeJA6bOQ5aIW7vVIOvIGnhqpn24wI_Ih2O7VsJYBsMm49m-j6Ss3IM9YzWYnNcA-oYA
+.google.com	TRUE	/	TRUE	1635907606	__Secure-3PSIDCC	AJi4QfFwGlPSyUUQqh4o9_MbEWTaexywMZ-K3MZ2gka404npprlI3PIJlMjfU86WCq_BQunnnuH9

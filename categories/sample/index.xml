@@ -1,0 +1,156 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – sample</title><link>/categories/sample/</link><description>Recent content in sample on Cybertraining</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/sample/index.xml" rel="self" type="application/rss+xml"/><item><title>Modules: Module Sample</title><link>/modules/sample/module/</link><pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate><guid>/modules/sample/module/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Here comes the more complete abstract about this module, while the
+description is a short summary, the abstract is a bit more verbose.&lt;/p>
+&lt;div class="toc">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#1-overview">1. Overview&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#11-prerequisite">1.1. Prerequisite&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#12-effort">1.2. Effort&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#13-topics">1.3. Topics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#14-organization">1.4. Organization&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#2-section-a">2. Section A&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-section-b">3. Section B&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#4-assignments">4. Assignments&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#5-references">5. References&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;/div>
+&lt;p>Splash: An optional module related image may be nice to start the
+image may be nice to create a splash the learners find attractive.&lt;/p>
+&lt;h2 id="1-overview">1. Overview&lt;/h2>
+&lt;h3 id="11-prerequisite">1.1. Prerequisite&lt;/h3>
+&lt;p>Describe what knowlede needs to be here to start the module. Use a list and be specific as much as possible:&lt;/p>
+&lt;ul>
+&lt;li>Computer with Python 3.8.3&lt;/li>
+&lt;/ul>
+&lt;h3 id="12-effort">1.2. Effort&lt;/h3>
+&lt;p>If possible describe here how much effort it takes to complete the module. Use a list&lt;/p>
+&lt;ul>
+&lt;li>1 hour&lt;/li>
+&lt;/ul>
+&lt;h3 id="13-topics">1.3. Topics&lt;/h3>
+&lt;p>Please list here the topics that are covered by the module A list is
+often the prefered way to do that. Use the abstract/pageinfo to
+provide a more textual description.&lt;/p>
+&lt;h3 id="14-organization">1.4. Organization&lt;/h3>
+&lt;p>Please decribe how the Module is organized, if needed&lt;/p>
+&lt;h2 id="2-section-a">2. Section A&lt;/h2>
+&lt;p>Include Section A here&lt;/p>
+&lt;h2 id="3-section-b">3. Section B&lt;/h2>
+&lt;p>Include Unit 2 here&lt;/p>
+&lt;h2 id="4-assignments">4. Assignments&lt;/h2>
+&lt;p>Include the assignments here. Use a numbered list.&lt;/p>
+&lt;h2 id="5-references">5. References&lt;/h2>
+&lt;p>Put the refernces here&lt;/p></description></item><item><title>Modules: Element Sample</title><link>/modules/sample/elements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/sample/elements/</guid><description>
+&lt;h2 id="ipynb">ipynb&lt;/h2>
+&lt;div class="aside">
+&lt;table style="width:100%">
+&lt;tr>
+&lt;td>&lt;a
+href="https://colab.research.google.com/github/cybertraining-dsc/cybertraining-dsc.github.io/blob/main/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent">&lt;img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>&lt;/a>&lt;/td>
+&lt;td>&lt;a
+href="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/main/content/en/modules/notebooks/E534_Higgs_Discovery_C.ipynb" target="_parent">&lt;img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" alt=""/> View in Github&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;/div>
+&lt;h2 id="fa">fa&lt;/h2>
+&lt;i class="fas fa-fa fa-smile-wink ">
+&lt;link href="/fontawesome/css/all.min.css" rel="stylesheet">
+&lt;/i>
+&lt;h2 id="python_icon">python_icon&lt;/h2>
+&lt;a href=""> &lt;i class="fab fa-python">&lt;/i>&lt;/a>
+&lt;h2 id="table_of_contents">table_of_contents&lt;/h2>
+&lt;div class="toc">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#ipynb">ipynb&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#fa">fa&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#python_icon">python_icon&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#table_of_contents">table_of_contents&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#tag_cloud">tag_cloud&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#view_book">view_book&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#view_module">view_module&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;h2 id="tag_cloud">tag_cloud&lt;/h2>
+&lt;div id="tag-cloud" style="padding: 5px 15px">
+&lt;a href="/tags/class-book" style="font-size:2.4403788516836915rem">class-book&lt;/a>
+&lt;a href="/tags/figure" style="font-size:1.4335972394768317rem">figure&lt;/a>
+&lt;a href="/tags/graph" style="font-size:1rem">graph&lt;/a>
+&lt;a href="/tags/mermaid" style="font-size:1rem">mermaid&lt;/a>
+&lt;a href="/tags/module" style="font-size:1rem">module&lt;/a>
+&lt;/div>
+&lt;h2 id="view_book">view_book&lt;/h2>
+&lt;table>
+&lt;colgroup>
+&lt;col style="width:15%;background-color:white">
+&lt;col style="width:100%;background-color:light-grey">
+&lt;/colgroup>
+&lt;tr>
+&lt;td>
+&lt;a href="https://laszewski.github.io/publication/las-20-book-markdown/">
+&lt;img alt="Markdown" src="https://laszewski.github.io/publication/las-20-book-markdown/featured_hu35c56d6c1465b1e20f3e20eeb0404972_1466540_720x0_resize_lanczos_2.png"/>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="https://laszewski.github.io/publication/las-20-book-markdown/"> Scientific Writing with Markdown &lt;/a>
+&lt;a href="https://cloudmesh-community.github.io/pub/vonLaszewski-writing.epub"> (ePub) &lt;/a>
+&lt;a href="https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf"> (PDF) &lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;h2 id="view_module">view_module&lt;/h2>
+&lt;table>
+&lt;colgroup>
+&lt;col style="width:15%;background-color:white">
+&lt;col style="width:100%;background-color:light-grey">
+&lt;/colgroup>
+&lt;tr>
+&lt;td>
+&lt;a href="/modules/bigdataapplications/2020/course_lectures">
+&lt;img alt="Course Lectures" src="/images/lecture.png"/>
+&lt;/a>
+&lt;/td>
+&lt;td>
+&lt;a href="/modules/bigdataapplications/2020/course_lectures">
+Course Lectures. These meeting notes are updated weekly (Web)
+&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/table></description></item><item><title>Modules: Figure Sample</title><link>/modules/sample/figure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/sample/figure/</guid><description>
+&lt;p>&lt;img src="/bigdata/images/2019_Matt_Turck_Big_Data_Landscape_Final_Fullsize.png" alt="A sample caption">&lt;/p></description></item><item><title>Modules: Mermaid Sample</title><link>/modules/sample/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/sample/mermaid/</guid><description>
+&lt;script async src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js">&lt;/script>
+&lt;div class="mermaid">
+graph LR
+A[Introduction]
+B[Usecases]
+C[Physics]
+D[Sports]
+A-->B-->C-->D
+click A "/courses/bigdata2020/#introduction-to-ai-driven-digital-transformation" _blank
+click B "/courses/bigdata2020/#big-data-usecases-survey" _blank
+click C "/courses/bigdata2020/#physics" _blank
+click D "/courses/bigdata2020/#sports" _blank
+&lt;/div>
+&lt;script async src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js">&lt;/script>
+&lt;div class="mermaid">
+gantt
+title Class Calendar
+dateFormat YYYY-MM-DD
+section Lectures
+Overview :w1, 2020-08-28, 7d
+Introduction :w2, 2020-09-04, 7d
+Physics :w3, 2020-09-11, 7d
+Sport :w4, 2020-09-18, 7d
+section Practice
+Colab :after w1, 14d
+Github :after w2, 7d
+&lt;/div>
+&lt;p>To design a chart you can use the &lt;a href="https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19">live edior&lt;/a>.&lt;/p></description></item></channel></rss>

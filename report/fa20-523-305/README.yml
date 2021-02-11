@@ -1,0 +1,13 @@
+---
+owner:
+  firstname: "Cody"
+  lastname: "Harris"
+  hid: "fa20-523-305"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Estimating Soil Moisture Content Using Sensor and Weather Data
+  url: https://github.com/cybertraining-dsc/fa20-523-305/blob/main/project/project.md
+  proceedings: https://cybertraining-dsc.github.io/report/fa20-523-305/project/project/
+  author:
+    - Cody Harris, fa20-523-305

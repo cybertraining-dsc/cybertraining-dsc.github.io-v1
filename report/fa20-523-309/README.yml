@@ -1,0 +1,12 @@
+---
+owner:
+  firstname: "Ethan"
+  lastname: "Nguyen"
+  hid: "fa20-523-309"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Analysis of Various Machine Learning Classification Techniques in Detecting Heart Disease
+  url: https://github.com/cybertraining-dsc/fa20-523-309/blob/main/project/project.md
+  author:
+    - Ethan Nguyen, fa20-523-309

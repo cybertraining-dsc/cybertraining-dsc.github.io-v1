@@ -1,0 +1,25 @@
+
+openapi: 3.0.0
+info:
+  title: get_processor_name
+  description: "The name of the processor"
+  version: "1.0"
+servers:
+  - url: http://localhost:8080/cloudmesh
+    description: "The name of the processor"
+paths:
+  /get_processor_name:
+     get:
+      summary: "The name of the processor"
+      description: Optional extended description in CommonMark or HTML.
+      operationId: cpu.get_processor_name
+        
+      responses:
+        '200':
+          description: "OK"
+          content:
+            text/plain:
+              schema:
+                type: string
+
+

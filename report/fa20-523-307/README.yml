@@ -1,0 +1,12 @@
+---
+owner:
+  firstname: "Alex"
+  lastname: "Baker"
+  hid: "fa20-523-307"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Analysis of Financial Markets based on President Trump's Tweets
+  url: https://github.com/cybertraining-dsc/fa20-523-307/blob/master/project/project.md
+  author:
+    - fa20-523-307

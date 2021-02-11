@@ -1,0 +1,12 @@
+---
+owner:
+  firstname: "Eugene"
+  lastname: "Wang"
+  hid: "fa20-523-350"
+  community: "434"
+  semester: "fa20"
+project:
+  title: Review of Text-to-Voice Synthesis Technologies
+  url: https://github.com/cybertraining-dsc/fa20-523-350/blob/main/report/report.md
+  author:
+    - Eugene Wang, fa20-523-350

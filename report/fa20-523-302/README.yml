@@ -1,0 +1,12 @@
+---
+owner:
+  firstname: "Adam"
+  lastname: "Martin"
+  hid: "fa20-523-302"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Review of the Use of Wearables in Personalized Medicine
+  url: https://github.com/cybertraining-dsc/fa20-523-302/blob/main/project/project.md
+  author:
+    - Adam Martin, fa20-523-302

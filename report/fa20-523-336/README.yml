@@ -1,0 +1,13 @@
+---
+owner:
+  firstname: "Matthew"
+  lastname: "Frechette"
+  hid: "fa20-523-336"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Stock Price Reactions to Earnings Announcements
+  url: https://github.com/cybertraining-dsc/fa20-523-336/tree/main/project/project.md
+  proceedings: https://github.com/cybertraining-dsc/fa20-523-336/tree/main/project
+  author:
+    - Matthew Frechette, fa20-523-336

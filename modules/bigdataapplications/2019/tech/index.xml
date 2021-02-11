@@ -1,0 +1,48 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – Technologies</title><link>/modules/bigdataapplications/2019/tech/</link><description>Recent content in Technologies on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/modules/bigdataapplications/2019/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Modules: Python</title><link>/modules/bigdataapplications/2019/tech/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/tech/python/</guid><description>
+&lt;p>Please see the Python book:&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Introduction to Python for Cloud Computing, Gregor von Laszewski, Aug. 2019&lt;/em>&lt;/li>
+&lt;/ul></description></item><item><title>Modules: Github</title><link>/modules/bigdataapplications/2019/tech/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/tech/github/</guid><description>
+&lt;h2 id="track-progress-with-github">Track Progress with Github&lt;/h2>
+&lt;p>We will be adding git issues for all the assignments provided in the class.
+This way you can also keep a track on the items need to be completed.
+It is like a todo list. You can check things once you complete it. This way
+you can easily track what you need to do and you can comment on the issue
+to report the questions you have. This is an experimental idea we are trying
+in the class. Hope this helps to manage your work load efficiently.&lt;/p>
+&lt;h2 id="how-to-check-this">How to check this?&lt;/h2>
+&lt;p>All you have to do is go to your git repository.&lt;/p>
+&lt;p>Here are the steps to use this tool effectively.&lt;/p>
+&lt;h3 id="step-1">Step 1&lt;/h3>
+&lt;p>Go to the repo. Here we use a sample repo.&lt;/p>
+&lt;p>&lt;a href="https://github.com/cloudmesh-community/fa19-516-000">Sample Repo&lt;/a>&lt;/p>
+&lt;p>Link to your repo will be &lt;a href="https://github.com/cloudmesh-community/fa19-%7Bclass-id%7D-%7Bhid%7D">https://github.com/cloudmesh-community/fa19-{class-id}-{hid}&lt;/a>&lt;/p>
+&lt;p>class-id is your class number for instance 534.
+hid is your homework id assigned.&lt;/p>
+&lt;h3 id="step-2">Step 2&lt;/h3>
+&lt;p>In @fig:github-repo the red colored box shows where you need to navigate
+next. Click on issues.&lt;/p>
+&lt;p>&lt;img src="../images/assignments/git/gitissue1.png" alt="Git Repo View">{#fig:github-repo}&lt;/p>
+&lt;h3 id="step-3">Step 3&lt;/h3>
+&lt;p>In @fig:github-issue-list, Git issue list looks like this. The inputs in this are dummy values we
+used to test the module. In your repo, things will be readable and
+identified based on week. This way you know what you need to do this
+week.&lt;/p>
+&lt;p>&lt;img src="../images/assignments/git/gitissue-list.png" alt="Git Issue List">{#fig:github-issue-list}&lt;/p>
+&lt;h3 id="step-4">Step 4&lt;/h3>
+&lt;p>In @fig:github-issue-view this is how a git issue looks like.&lt;/p>
+&lt;p>&lt;img src="../images/assignments/git/gitissue-view.png" alt="Git Issue View">{#fig:github-issue-view}&lt;/p>
+&lt;p>In here you will see the things that you need to do with main task and subtasks.
+This looks like a tood list. No pressure you can customize the way you want it.
+We&amp;rsquo;ll put in the basic skeleton for this one.&lt;/p>
+&lt;h3 id="step-5-optional">Step 5 (Optional)&lt;/h3>
+&lt;p>In @fig:github-issue-assign, assign a TA, once you have completed the issues, you can assign a TA to resolve if you have
+issues. In all issues you can make a comment and you can use @ sign to add the specific TA.
+For E534 Fall 2019 you can add @vibhatha as an assignee for your issue and we will communicate
+to solve the issues. This is an optional thing, you can use canvas or meeting hours to mention
+your concerns.&lt;/p>
+&lt;p>&lt;img src="../images/assignments/git/assign-issue.png" alt="Git Issue View">{#fig:github-issue-assign}&lt;/p>
+&lt;h3 id="step-6-optional">Step 6 (Optional)&lt;/h3>
+&lt;p>In @fig:github-issue-label, you can add a label to your issue by clicking labels option in the right hand size within a
+given issue.&lt;/p>
+&lt;p>&lt;img src="../images/assignments/git/assignment-label.png" alt="Git Issue Label">{#fig:github-issue-label}&lt;/p></description></item></channel></rss>

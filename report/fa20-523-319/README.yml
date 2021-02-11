@@ -1,0 +1,15 @@
+---
+owner:
+  firstname: "Rama"
+  lastname: "Asuri"
+  hid: "fa20-523-319"
+  community: "534"
+  semester: "fa20"
+project:
+  title: Detect and classify pathologies in chest X-rays using PyTorch library
+  url: https://github.com/cybertraining-dsc/fa20-523-319/blob/main/project/project.md
+  proceedings: https://cybertraining-dsc.github.io/report/fa20-523-319/project/project/
+  author:
+    - Rama Asuri, fa20-523-319
+
+
