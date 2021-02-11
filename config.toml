@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "Cybertraining"
-publishDir = "docs"
+# publishDir = "docs"
 ignoreFiles = [ "\\.rst$",]
 
 enableRobotsTXT = true
