@@ -19,6 +19,8 @@ This course introduces the students to AI-First Engineering Cybertraining we pro
 
 ## Class Material 
 
+Test by Gregor
+
 As part of this class, we will be using a variety of sources. To
 simplify the presentation we provide them in a variety of smaller
 packaged material including books, lecture notes, slides, presentations
