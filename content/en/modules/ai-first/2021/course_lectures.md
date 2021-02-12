@@ -52,8 +52,12 @@ We gave [Introductory Lecture](https://docs.google.com/presentation/d/1esj3zXCsw
 
 ## Week 2
 
+### Introduction
+
 We gave an introductory lecture to optimization and deep learning. Unfortunately we didn't record the zoom serssion but we did make an offline recording with [slides IntroDLOpt: Introduction to Deep Learning and Optimization](https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing) and YouTube 
 {{< youtube "PCZZQ93xmGI" >}}
+
+### Google Colab
 
 We also went through material on using Google Colab with examples. This is a lecture plus four Python notebooks
 
@@ -65,7 +69,9 @@ We also went through material on using Google Colab with examples. This is a lec
 
 with recorded video
 
-* First DL: Deep Learning MNIST Example Spring 2021 {{< youtube "r-aD0oHVAdA" >}}
+### First DL: Deep Learning MNIST Example Spring 2021 
+
+{{< youtube "r-aD0oHVAdA" >}}
 
 We now have recorded all the introductory deep learning material
 
@@ -77,10 +83,24 @@ We now have recorded all the introductory deep learning material
 
 with recorded videos
 
+### IntroDLOpt: Introduction to Deep Learning and Optimization
+
 * Video: IntroDLOpt: Introduction to Deep Learning and Optimization {{< youtube "PCZZQ93xmGI" >}}
+
+### Opt: Overview of Optimization Spring2021
+
 * Video: Opt: Overview of Optimization Spring2021 {{< youtube "kFBqj4U9XyA" >}}
+
+### DLBasic: Deep Learning - Some examples Spring 2021
+
 * Video: DLBasic: Deep Learning - Some examples Spring 2021 {{< youtube "sJ-9YjgS35w" >}}
+
+### DLBasic: Components of Deep Learning Systems
+
 * Video: DLBasic: Components of Deep Learning Systems {{< youtube "z9-OFr__Y-w" >}}
+
+### DLBasic: Summary of Types of Deep Learning Systems
+
 * Video: DLBasic: Summary of Types of Deep Learning Systems {{< youtube "4Ma3SFFLhYY" >}}
 
 ## Week 3
