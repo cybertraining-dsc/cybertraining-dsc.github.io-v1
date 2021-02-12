@@ -1645,6 +1645,27 @@ This is Part 15 of the introduction.
 &lt;a href="https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP">&lt;img src="/images/presentation.png" alt="Presentation">&lt;/a> .
 &lt;a href="https://drive.google.com/open?id=1gt5ClfCnn72bWJxlnbTCAueSJ-25zBC7">&lt;img src="/images/audio.png" alt="Audio">&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Modules: Introduction to AI-Driven Digital Transformation</title><link>/modules/ai-first/2021/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/ai-first/2021/introduction/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;div class="toc">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>
+&lt;ul>
+&lt;li>&lt;a href="#overview">Overview&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#a-getting-started-bdaa-course-introduction-part-a-big-data-applications-and-analytics">A: Getting Started: BDAA Course Introduction Part A: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#b-technology-futures-from-gartners-analysis-bdaa-course-introduction-part-b-big-data-applications-and-analytics">B: Technology Futures from Gartner&amp;rsquo;s Analysis: BDAA Course Introduction Part B: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#c-big-data-trends-bdaa-course-introduction-part-c-big-data-applications-and-analytics">C: Big Data Trends: BDAA Course Introduction Part C: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#d-computing-trends-bdaa-course-introduction-part-d-big-data-applications-and-analytics">D: Computing Trends: BDAA Course Introduction Part D: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#e-big-data-and-science-bdaa-course-introduction-part-e-big-data-applications-and-analytics">E: Big Data and Science: BDAA Course Introduction Part E: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#f-big-data-systems-bdaa-course-introduction-part-f-big-data-applications-and-analytics">F: Big Data Systems: BDAA Course Introduction Part F: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#g-industry-transformation-bdaa-course-introduction-part-g-big-data-applications-and-analytics">G: Industry Transformation: BDAA Course Introduction Part G: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#h-jobs-and-conclusions-bdaa-course-introduction-part-h-big-data-applications-and-analytics">H: Jobs and Conclusions: BDAA Course Introduction Part H: Big Data Applications and Analytics&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;/div>
 &lt;h3 id="overview">Overview&lt;/h3>
 &lt;p>This Lecture is recorded in 8 parts and gives an introduction and motivation for the class. This and other lectures in class are divided into &amp;ldquo;bite-sized lessons&amp;rdquo; from 5 to 30 minutes in length; that&amp;rsquo;s why it has 8 parts.&lt;/p>
 &lt;p>Lecture explains what students might gain from the class even if they end up with different types of jobs from data engineering, software engineering, data science or a business (application) expert. It stresses that we are well into a transformation that impacts industry research and the way life is lived. This transformation is centered on using the digital way with clouds, edge computing and deep learning giving the implementation. This &amp;ldquo;AI-Driven Digital Transformation&amp;rdquo; is as transformational as the Industrial Revolution in the past. We note that deep learning dominates most innovative AI replacing several traditional machine learning methods.&lt;/p>
@@ -3609,8 +3630,16 @@ computing Serverless and FaaS Cloud Native Microservices Update to 2019 Hypecycl
 &lt;li>&lt;a href="#dlbasic-summary-of-types-of-deep-learning-systems">DLBasic: Summary of Types of Deep Learning Systems&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="#week-3">Week 3&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#week-4">Week 4&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#week-3">Week 3&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#deep-learning-examples-1">Deep Learning Examples, 1&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#week-4">Week 4&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#deep-learning-examples-2">Deep Learning Examples, 2&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;/nav>
 &lt;/div>
@@ -3712,12 +3741,14 @@ Gregors Web Pages.)&lt;/li>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="week-3">Week 3&lt;/h2>
+&lt;h3 id="deep-learning-examples-1">Deep Learning Examples, 1&lt;/h3>
 &lt;p>We discussed deep learning examples covering first half of slides &lt;a href="https://docs.google.com/presentation/d/1Kbojr5Qd7vZ2TcxdBA7RlmwJ5kG0NEbZm-zrYad6ktc/edit?usp=sharing">DLBasic: Deep Learning - Some examples&lt;/a> with recorded video
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/whzCJUKJzN4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/p>
 &lt;h2 id="week-4">Week 4&lt;/h2>
+&lt;h3 id="deep-learning-examples-2">Deep Learning Examples, 2&lt;/h3>
 &lt;p>We concluded deep learning examples and covered components with slides &lt;a href="https://docs.google.com/presentation/d/1njxcgyZMVS846WS4FAyYn-sb4AUT-0yylNHjYWFD0f8/edit?usp=sharing">Deep Learning: More Examples and Components&lt;/a> with recorded video
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/tfDdb8mSL98" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
