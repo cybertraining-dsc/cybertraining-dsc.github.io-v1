@@ -6,11 +6,11 @@ description: >
   Last Semester's Introductory Lecture with introduction to and Motivation for Big Data Applications and Analytics Class. See section G for material directly related to this lass but all sections are relevant
 ---
 
-{% pageinfo %}
+{{% pageinfo %}}
 
 {{% table_of_contennts %}}
 
-{% /pageinfo %}
+{{% /pageinfo %}}
 
 
 ### Overview
