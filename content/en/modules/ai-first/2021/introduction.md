@@ -6,6 +6,13 @@ description: >
   Last Semester's Introductory Lecture with introduction to and Motivation for Big Data Applications and Analytics Class. See section G for material directly related to this lass but all sections are relevant
 ---
 
+{% pageinfo %}
+
+{{% table_of_contennts %}}
+
+{% /pageinfo %}
+
+
 ### Overview
 
 This Lecture is recorded in 8 parts and gives an introduction and motivation for the class. This and other lectures in class are divided into "bite-sized lessons" from 5 to 30 minutes in length; that's why it has 8 parts. 
