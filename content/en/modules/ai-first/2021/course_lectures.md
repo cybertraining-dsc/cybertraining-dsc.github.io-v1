@@ -105,8 +105,13 @@ with recorded videos
 
 ## Week 3
 
+### Deep Learning Examples, 1
+
 We discussed deep learning examples covering first half of slides [DLBasic: Deep Learning - Some examples](https://docs.google.com/presentation/d/1Kbojr5Qd7vZ2TcxdBA7RlmwJ5kG0NEbZm-zrYad6ktc/edit?usp=sharing) with recorded video {{< youtube "whzCJUKJzN4" >}}
 
 ## Week 4
+
+### Deep Learning Examples, 2
+
 We concluded deep learning examples and covered components with slides [Deep Learning: More Examples and Components](https://docs.google.com/presentation/d/1njxcgyZMVS846WS4FAyYn-sb4AUT-0yylNHjYWFD0f8/edit?usp=sharing) with recorded video {{< youtube "tfDdb8mSL98" >}}
 
