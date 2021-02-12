@@ -8,7 +8,7 @@ description: >
 
 {{% pageinfo %}}
 
-{{% table_of_contennts %}}
+{{< table_of_contents >}}
 
 {{% /pageinfo %}}
 
