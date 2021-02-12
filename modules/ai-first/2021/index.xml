@@ -94,7 +94,18 @@
 &lt;li>&lt;a href="#assignments">Assignments&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;a href="#week-2">Week 2&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#week-2">Week 2&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#google-colab">Google Colab&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#first-dl-deep-learning-mnist-example-spring-2021">First DL: Deep Learning MNIST Example Spring 2021&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#introdlopt-introduction-to-deep-learning-and-optimization">IntroDLOpt: Introduction to Deep Learning and Optimization&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#opt-overview-of-optimization-spring2021">Opt: Overview of Optimization Spring2021&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dlbasic-deep-learning---some-examples-spring-2021">DLBasic: Deep Learning - Some examples Spring 2021&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dlbasic-components-of-deep-learning-systems">DLBasic: Components of Deep Learning Systems&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dlbasic-summary-of-types-of-deep-learning-systems">DLBasic: Summary of Types of Deep Learning Systems&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>&lt;a href="#week-3">Week 3&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#week-4">Week 4&lt;/a>&lt;/li>
 &lt;/ul>
@@ -128,11 +139,13 @@ bio is. Use google to find examples for Bios or look at Geoffreys or
 Gregors Web Pages.)&lt;/li>
 &lt;/ul>
 &lt;h2 id="week-2">Week 2&lt;/h2>
+&lt;h3 id="introduction">Introduction&lt;/h3>
 &lt;p>We gave an introductory lecture to optimization and deep learning. Unfortunately we didn&amp;rsquo;t record the zoom serssion but we did make an offline recording with &lt;a href="https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing">slides IntroDLOpt: Introduction to Deep Learning and Optimization&lt;/a> and YouTube
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/PCZZQ93xmGI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/p>
+&lt;h3 id="google-colab">Google Colab&lt;/h3>
 &lt;p>We also went through material on using Google Colab with examples. This is a lecture plus four Python notebooks&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://docs.google.com/presentation/d/1YoXPaDeHldUJM8gnbOvDsmc_U6ff5T6bYq_We1JHNMg/edit?usp=sharing">First DL: Deep Learning MNIST Example Spring 2021&lt;/a>&lt;/li>
@@ -142,13 +155,10 @@ Gregors Web Pages.)&lt;/li>
 &lt;li>&lt;a href="https://cybertraining-dsc.github.io/modules/bigdataapplications/2020/google_colab_exercise/">MNIST Classification on Google Colab&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>with recorded video&lt;/p>
-&lt;ul>
-&lt;li>First DL: Deep Learning MNIST Example Spring 2021
+&lt;h3 id="first-dl-deep-learning-mnist-example-spring-2021">First DL: Deep Learning MNIST Example Spring 2021&lt;/h3>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/r-aD0oHVAdA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
-&lt;/li>
-&lt;/ul>
 &lt;p>We now have recorded all the introductory deep learning material&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://docs.google.com/presentation/d/1_aKqvFx0aObxpNsWA7IRPWgujMjrWBTa20dtUut6DuI/edit?usp=sharing">slides IntroDLOpt: Introduction to Deep Learning and Optimization&lt;/a>&lt;/li>
@@ -158,27 +168,40 @@ Gregors Web Pages.)&lt;/li>
 &lt;li>&lt;a href="https://docs.google.com/presentation/d/1sjQ00oY0h6tlsYG9aN93KRjNuBHPC_7WzCmAiax2X74/edit?usp=sharing">slides DLBasic: Types of Deep Learning Networks: Summary&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>with recorded videos&lt;/p>
+&lt;h3 id="introdlopt-introduction-to-deep-learning-and-optimization">IntroDLOpt: Introduction to Deep Learning and Optimization&lt;/h3>
 &lt;ul>
 &lt;li>Video: IntroDLOpt: Introduction to Deep Learning and Optimization
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/PCZZQ93xmGI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/li>
+&lt;/ul>
+&lt;h3 id="opt-overview-of-optimization-spring2021">Opt: Overview of Optimization Spring2021&lt;/h3>
+&lt;ul>
 &lt;li>Video: Opt: Overview of Optimization Spring2021
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/kFBqj4U9XyA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/li>
+&lt;/ul>
+&lt;h3 id="dlbasic-deep-learning---some-examples-spring-2021">DLBasic: Deep Learning - Some examples Spring 2021&lt;/h3>
+&lt;ul>
 &lt;li>Video: DLBasic: Deep Learning - Some examples Spring 2021
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/sJ-9YjgS35w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/li>
+&lt;/ul>
+&lt;h3 id="dlbasic-components-of-deep-learning-systems">DLBasic: Components of Deep Learning Systems&lt;/h3>
+&lt;ul>
 &lt;li>Video: DLBasic: Components of Deep Learning Systems
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/z9-OFr__Y-w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/li>
+&lt;/ul>
+&lt;h3 id="dlbasic-summary-of-types-of-deep-learning-systems">DLBasic: Summary of Types of Deep Learning Systems&lt;/h3>
+&lt;ul>
 &lt;li>Video: DLBasic: Summary of Types of Deep Learning Systems
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/4Ma3SFFLhYY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
