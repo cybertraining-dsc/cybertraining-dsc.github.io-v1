@@ -127,6 +127,16 @@ MNIST Classification on Google Colab (Web)
 	
 {{< /view_module >}}
 
+{{< view_module
+	alt="MNIST Classification with MLP on Google Colab (Web)"
+	src="/images/colab.png"
+	url="/modules/ai-first/2021/google_colab_mlp"
+	>}}
+	
+MNIST-MLP Classification on Google Colab (Web)
+	
+{{< /view_module >}}
+
 ## Material
 
 <!-- COMMENTED OUT
