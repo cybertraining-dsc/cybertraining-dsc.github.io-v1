@@ -1,12 +1,17 @@
 ---
-title: Motivation (cont.)
+title: Part II Motivation Archive
+linkTitle: Motivation (cont.)
 draft: true
 weight: 2
 description: >
   We present the motivation why big data is so important
 ---
 
-# Part II Motivation Archive
+{{% pageinfo %}}
+
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
 
 ## 2018 BDAA Motivation-1A) Technology Hypecycle I 
 

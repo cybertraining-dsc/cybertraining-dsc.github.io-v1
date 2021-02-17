@@ -1,15 +1,20 @@
 ---
-title: Cloud
+title: Part III Cloud
+linkTitle: Cloud
 draft: true
 weight: 3
 description: >
   We present the motivation why big data is so important
 ---
 
-# Part III Cloud {#sec:534-week3}
+{{% pageinfo %}}
+
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
+
 
 ## A. Summary of Course 
-
 
 {{< youtube "bd9KXMUsQGM" >}}
 

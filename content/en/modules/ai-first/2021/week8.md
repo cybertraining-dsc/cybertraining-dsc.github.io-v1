@@ -1,12 +1,17 @@
 ---
-title: Deep Learning (Cont. I)
+title: Introduction to Deep Learning Part I
+linkTitle: Deep Learning (Cont. I)
 draft: true
 weight: 8
 description: >
   Introduction to Deep Lenning (cont.) Part I
 ---
 
-# Introduction to Deep Learning Part I
+{{% pageinfo %}}
+
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
 
 E534 2019 BDAA DL Section Intro Unit: E534 2019 Big Data Applications
 and Analytics Introduction to Deep Learning Part I (Unit Intro) Section

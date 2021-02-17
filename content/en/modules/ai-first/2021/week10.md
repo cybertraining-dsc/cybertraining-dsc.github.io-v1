@@ -6,6 +6,12 @@ description: >
   Introduction to Deep Learning (III)
 ---
 
+{{% pageinfo %}}
+
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
+
 
 Usage of deep learning algorithm is one of the demanding skills needed
 in this decade and the coming decade. Providing a hands on experience in

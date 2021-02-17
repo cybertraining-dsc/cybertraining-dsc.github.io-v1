@@ -1,13 +1,18 @@
 ---
-title: Deep Learning (Cont. II)
+title: "Introduction to Deep Learning Part II: Applications"
+linkTitle: Deep Learning (Cont. II)
 draft: true
 weight: 8
 description: >
   Introduction to Deep Lenning (cont.) Part II
 ---
 
+{{% pageinfo %}}
 
-# Introduction to Deep Learning Part II: Applications
+{{< table_of_contents >}}
+
+{{% /pageinfo %}}
+
 
 This section covers the growing importance of the use of Deep Learning in Big Data Applications and Analytics. The Intro Unit is an introduction to the technology with examples incidental. The MNIST Unit covers an example on Google Colaboratory. The Technology Unit covers deep learning approaches in more detail than the Intro Unit. The Tech Unit covers the deep learning technology in more detail. The Application Unit cover deep learning applications at different levels of sophistication.
 
