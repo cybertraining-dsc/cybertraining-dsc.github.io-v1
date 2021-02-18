@@ -1845,4 +1845,5 @@ Test accuracy: 91.8%
 &lt;span style="color:#8f5902;font-style:italic"># csv,compile,failed,0.51,0.51,2021-02-18 15:16:12,,8f16b3b1f784,collab,Linux,#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/span>
 &lt;span style="color:#8f5902;font-style:italic"># csv,train,failed,126.612,126.612,2021-02-18 15:16:13,,8f16b3b1f784,collab,Linux,#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/span>
 &lt;span style="color:#8f5902;font-style:italic"># csv,evaluate,failed,6.798,6.798,2021-02-18 15:18:19,,8f16b3b1f784,collab,Linux,#1 SMP Thu Jul 23 08:00:38 PDT 2020&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="reference">Reference:&lt;/h3>
+&lt;p>&lt;a href="https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras">Orignal Source to Source Code&lt;/a>&lt;/p></description></item></channel></rss>
