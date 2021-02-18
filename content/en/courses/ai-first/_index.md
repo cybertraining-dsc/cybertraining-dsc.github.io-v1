@@ -137,6 +137,38 @@ MNIST-MLP Classification on Google Colab (Web)
 	
 {{< /view_module >}}
 
+{{< view_module
+	alt="MNIST Classification with RNN on Google Colab (Web)"
+	src="/images/colab.png"
+	url="/modules/ai-first/2021/google_colab_rnn"
+	>}}
+	
+MNIST-RNN Classification on Google Colab (Web)
+	
+{{< /view_module >}}
+
+{{< view_module
+	alt="MNIST Classification with LSTM on Google Colab (Web)"
+	src="/images/colab.png"
+	url="/modules/ai-first/2021/google_colab_lstm"
+	>}}
+	
+MNIST-LSTM Classification on Google Colab (Web)
+	
+{{< /view_module >}}
+
+{{< view_module
+	alt="MNIST Classification with Autoencoder on Google Colab (Web)"
+	src="/images/colab.png"
+	url="/modules/ai-first/2021/google_colab_autoencoder"
+	>}}
+	
+MNIST-Autoencoder Classification on Google Colab (Web)
+	
+{{< /view_module >}}
+
+
+
 ## Material
 
 <!-- COMMENTED OUT
