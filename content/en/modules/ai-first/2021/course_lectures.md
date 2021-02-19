@@ -111,7 +111,18 @@ We discussed deep learning examples covering first half of slides [DLBasic: Deep
 
 ## Week 4
 
-### Deep Learning Examples, 2
+### Deep Learning Examples, 2 plus Components
 
 We concluded deep learning examples and covered components with slides [Deep Learning: More Examples and Components](https://docs.google.com/presentation/d/1njxcgyZMVS846WS4FAyYn-sb4AUT-0yylNHjYWFD0f8/edit?usp=sharing) with recorded video {{< youtube "tfDdb8mSL98" >}}
+
+## Week 5
+
+### Deep Learning Networks plus Overview of Optimization
+
+We covered two topics in this weeks video
+
+* Deep Learning Networks with presentation [DLBasic: Types of  Deep Learning Networks: Summary](https://docs.google.com/presentation/d/1sjQ00oY0h6tlsYG9aN93KRjNuBHPC_7WzCmAiax2X74/edit?usp=sharing)
+* General Issues in Optimization with presentation [Week5 Presentation on Optimization](https://docs.google.com/presentation/d/1mFfF5St-DKoQyKEIaZu4tOZNO_N0h4313QlGYXbH_oE/edit?usp=sharing)
+
+ with recorded video {{< youtube "hGUDURDMet8" >}}
 
