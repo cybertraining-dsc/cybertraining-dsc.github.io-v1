@@ -168,6 +168,17 @@ MNIST-Autoencoder Classification on Google Colab (Web)
 {{< /view_module >}}
 
 
+{{< view_module
+	alt="MNIST Classification with MLP + LSTM"
+	src="/images/colab.png"
+	url="/modules/ai-first/2021/google_colab_mlp_lstm"
+	>}}
+	
+MNIST with MLP+LSTM Classification on Google Colab (Web)
+	
+{{< /view_module >}}
+
+
 
 ## Material
 
