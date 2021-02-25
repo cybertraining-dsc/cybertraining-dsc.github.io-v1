@@ -126,3 +126,10 @@ We covered two topics in this weeks video
 
  with recorded video {{< youtube "hGUDURDMet8" >}}
 
+## Week 6
+
+### Deep Learning and AI Examples in Health and Medicine
+
+We went about 2/3rds of way through presentation [AI First Scenarios: Health and Medicine](https://docs.google.com/presentation/d/1TdJ33B735nHUlKXqCdBwoyqsNIlPdmbx6wc0ExCG1d8/edit?usp=sharing)
+
+ with recorded video {{< youtube "Efbvy4tAcNg" >}}
