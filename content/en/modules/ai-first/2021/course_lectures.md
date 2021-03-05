@@ -134,7 +134,7 @@ We went about 2/3rds of way through presentation [AI First Scenarios: Health and
 
  with recorded video {{< youtube "Efbvy4tAcNg" >}}
  
- ### Week 7
+ ## Week 7
  
  ### Deep Learning and AI Examples
  
