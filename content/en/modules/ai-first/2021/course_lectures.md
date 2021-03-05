@@ -133,3 +133,14 @@ We covered two topics in this weeks video
 We went about 2/3rds of way through presentation [AI First Scenarios: Health and Medicine](https://docs.google.com/presentation/d/1TdJ33B735nHUlKXqCdBwoyqsNIlPdmbx6wc0ExCG1d8/edit?usp=sharing)
 
  with recorded video {{< youtube "Efbvy4tAcNg" >}}
+ 
+ ### Week 7
+ 
+ ### Deep Learning and AI Examples
+ 
+ * We finished the last 1/3rd of the presentation [AI First Scenarios: Health and Medicine](https://docs.google.com/presentation/d/1TdJ33B735nHUlKXqCdBwoyqsNIlPdmbx6wc0ExCG1d8/edit?usp=sharing)
+ * We finished [AI First Scenarios - Space](https://docs.google.com/presentation/d/1ZQUV7NihZRrsMsERx4wtjIH0qt0WRqGgbNDzcZAEjRI/edit?usp=sharing)
+ * We started [AI First Scenarios - Energy](https://docs.google.com/presentation/d/1pSJs_HllfZsdk_iGKoCSUQjPceX3G1fm0oybDxw-2Zs/edit?usp=sharing)
+
+ with recorded video {{< youtube "EG6OH1cUN8c" >}}
+
