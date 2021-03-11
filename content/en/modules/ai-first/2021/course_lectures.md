@@ -144,3 +144,11 @@ We went about 2/3rds of way through presentation [AI First Scenarios: Health and
 
  with recorded video {{< youtube "EG6OH1cUN8c" >}}
 
+## Week 8
+
+### Deep Learning and AI Examples
+
+* We finished [AI First Scenarios - Energy](https://docs.google.com/presentation/d/1pSJs_HllfZsdk_iGKoCSUQjPceX3G1fm0oybDxw-2Zs/edit?usp=sharing)
+* We started [AI First Scenarios: Banking and FinTech](https://docs.google.com/presentation/d/1nK2cw542OERuHoxWGEsYH-Y1eSJMHO6yxh1tsFiUtNQ/edit?usp=sharing)
+
+ with recorded video {{< youtube "_mIBVwLLTmI" >}}
