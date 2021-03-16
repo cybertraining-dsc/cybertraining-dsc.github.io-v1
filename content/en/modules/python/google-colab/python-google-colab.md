@@ -54,7 +54,6 @@ Required Installations
 
 ```bash
 pip install numpy
-pip install cloudmesh-installer
 pip install cloudmesh-common
 ```
 {{< youtube "wkpyp55tfRA" >}}
