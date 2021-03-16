@@ -4,7 +4,7 @@ linkTitle: "Reports"
 weight: 20
 menu:
   main:
-    weight: 20
+    weight: 30
 ---
 
 {{% pageinfo %}}
