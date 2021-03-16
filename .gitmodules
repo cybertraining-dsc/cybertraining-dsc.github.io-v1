@@ -118,3 +118,27 @@
 [submodule "content/en/report/fa20-523-352"]
 	path = content/en/report/fa20-523-352
 	url = git@github.com:cybertraining-dsc/fa20-523-352.git
+[submodule "content/en/report/sp21-599-358"]
+	path = content/en/report/sp21-599-358
+	url = git@github.com:cybertraining-dsc/sp21-599-358.git
+[submodule "content/en/report/sp21-599-359"]
+	path = content/en/report/sp21-599-359
+	url = git@github.com:cybertraining-dsc/sp21-599-359.git
+[submodule "content/en/report/sp21-599-357"]
+	path = content/en/report/sp21-599-357
+	url = git@github.com:cybertraining-dsc/sp21-599-357.git
+[submodule "content/en/report/sp21-599-355"]
+	path = content/en/report/sp21-599-355
+	url = git@github.com:cybertraining-dsc/sp21-599-355.git
+[submodule "content/en/report/sp21-599-356"]
+	path = content/en/report/sp21-599-356
+	url = git@github.com:cybertraining-dsc/sp21-599-356.git
+[submodule "content/en/report/sp21-599-353"]
+	path = content/en/report/sp21-599-353
+	url = git@github.com:cybertraining-dsc/sp21-599-353.git
+[submodule "content/en/report/sp21-599-354"]
+	path = content/en/report/sp21-599-354
+	url = git@github.com:cybertraining-dsc/sp21-599-354.git
+[submodule "content/en/report/hid-example"]
+	path = content/en/report/hid-example
+	url = git@github.com:cybertraining-dsc/hid-example.git
