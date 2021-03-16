@@ -1,5 +1,5 @@
 ---
-title: "MNIST for REU Students"
+title: "MNIST Example"
 linkTitle: "MNIST"
 weight: 100
 date: 2020-08-15
