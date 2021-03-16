@@ -115,4 +115,17 @@ git pull and if you see a conflict you need to resolve this. Thus it
 is pest to communicate with the development team in aces you need to
 do larger cahnges or have the risk that others work in pararlel.
 
+## Add a submodule
+
+Submodules for participants are located in the organizational repository. They shoudl be added to the reports directory to include the report for a participant.
+
+```
+cd content/en/report
+git submodule add git@github.com:cybertraining-dsc/fa20-523-301.git 
+```
+
+replace the directoryname with the new module you like to add. After that, plase modify the Makefile to add it to the target `pull`.
+
+
+
 
