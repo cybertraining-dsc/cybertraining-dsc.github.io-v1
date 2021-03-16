@@ -41,7 +41,7 @@ description: >
 
 ### 1.4. Related material
 
-Another [MNIST course](/course/mnist) exist. However, this course has more information.
+Another [MNIST course](/courses/mnist) exist. However, this course has more information.
 
 
 ## 5. Introduction to Google Colab
