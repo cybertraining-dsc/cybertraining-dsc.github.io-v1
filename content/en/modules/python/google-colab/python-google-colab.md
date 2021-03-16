@@ -56,6 +56,9 @@ Required Installations
 pip install numpy
 pip install cloudmesh-common
 ```
+
+*Correction: The video shows to also `pip install cloudmesh-installer`. This is not necessary for this example.*
+
 {{< youtube "wkpyp55tfRA" >}}
 
 ## 5. Refernces
