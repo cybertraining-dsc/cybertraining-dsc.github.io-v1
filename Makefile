@@ -47,6 +47,13 @@ pull:
 	cd content/en/report/fa20-523-349; git checkout main; git pull
 	cd content/en/report/fa20-523-350; git checkout main; git pull
 	cd content/en/report/fa20-523-352; git checkout main; git pull
+	cd content/en/report/sp21-599-353; git checkout main; git pull
+	cd content/en/report/sp21-599-354; git checkout main; git pull
+	cd content/en/report/sp21-599-355; git checkout main; git pull
+	cd content/en/report/sp21-599-356; git checkout main; git pull
+	cd content/en/report/sp21-599-357; git checkout main; git pull
+	cd content/en/report/sp21-599-358; git checkout main; git pull
+	cd content/en/report/sp21-599-359; git checkout main; git pull
 
 view:
 	gopen http://localhost:1313/ 
