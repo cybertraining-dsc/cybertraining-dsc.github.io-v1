@@ -8,8 +8,6 @@ description: >
 #resources:
 #- src: "**.{png,jpg}"
 #  title: "Image #:counter"
-#  params:
-#    byline: "Photo: Gregor von Laszewski / CC-BY-CA"
 ---
 
 ![MNIST Character Recognition](/images/MNIST.png)
@@ -43,8 +41,7 @@ description: >
 
 ### 1.4. Related material
 
-Another [MNIST course](/course/mnist) exist. However, this course has
-mor einformation.
+Another [MNIST course](/course/mnist) exist. However, this course has more information.
 
 
 ## 5. Introduction to Google Colab
@@ -80,7 +77,7 @@ A Gentle Introduction to Python on Google Colab (Web)
 
 ## 7. MNIST On Google colab
 
-INext, we discuss how to create a simple IPython
+Next, we discuss how to create a simple IPython
 Notebook to solve an image classification problem. MNIST contains a
 set of [pictures](https://docs.google.com/document/d/1E8orgHbNV6P8STl2lQxov2VHKSYyIISSj-XfsvQlRX4/edit?usp=sharing).
 
