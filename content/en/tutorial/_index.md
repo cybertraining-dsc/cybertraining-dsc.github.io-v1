@@ -3,11 +3,5 @@ title: "Tutorials"
 linkTitle: "Tutorials"
 menu:
   main:
-    weight: 50
+    weight: 25
 ---
-
-
-This is the **blog** section. It has two categories: News and Releases.
-
-Files in these directories will be listed in reverse chronological order.
-
