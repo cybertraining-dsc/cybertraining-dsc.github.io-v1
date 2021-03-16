@@ -2,10 +2,10 @@
 ---
 title: "Contributing"
 linkTitle: "Contributing"
-weight: 30
+weight: 40
 menu:
   main:
-    weight: 30
+    weight: 40
 ---
 
 {{% pageinfo %}}
