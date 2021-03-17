@@ -1,1 +1,89 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – Tutorials</title><link>/tutorial/</link><description>Recent content in Tutorials on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – Tutorials</title><link>/tutorial/</link><description>Recent content in Tutorials on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Tutorial: GitHub gh Command Line Interface</title><link>/tutorial/git-gh/</link><pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><guid>/tutorial/git-gh/</guid><description>
+&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+&lt;img class="card-img-top" src="/tutorial/git-gh/fetured-image_huf2a5c039f09f076715befc4685b8af6b_326032_600x300_fill_catmullrom_smart1_2.png" width="600" height="300">
+&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+TODO: Caption for the image
+&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>GitHub provides an extended gh commandline tool that allow easy interaction of
+forking repositories directly from github. IT also provides additional fimctionality
+to interact with other advanced features that are typically not provided in the git command tool.&lt;/p>
+&lt;p>&lt;strong>Learning Objectives&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Learn how to install the gh command&lt;/li>
+&lt;li>Learn how to use the gh command&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Topics covered&lt;/strong>&lt;/p>
+&lt;div class="toc">
+&lt;nav id="TableOfContents">&lt;/nav>
+&lt;/div>
+&lt;/div>
+&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The new GitHub CLI allows GitHub users to purely work from the terminal of
+their machine without having to visit the web browser GUI to manage things like
+issues, PRs, and forking.&lt;/p>
+&lt;h1 id="installing-github-cli">Installing GitHub CLI&lt;/h1>
+&lt;p>Visit the GitHub CLI homepage at &lt;a href="https://cli.github.com/">https://cli.github.com/&lt;/a> for installation
+instructions. We recommend that you check out the source distribution.
+We found that whne we did this tutorial not all features were included in the
+brew instalation. We assume ths will cahnge over time and you may soon be able
+to just use the bre install on LInux and MacOs.&lt;/p>
+&lt;p>On mac, you can use the following command with
+&lt;a href="https://brew.sh/">Brew&lt;/a>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">brew install gh
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="logging-in-with-github-cli">Logging in with GitHub CLI&lt;/h1>
+&lt;p>It is good practice to be using SSH-keys with GitHub. Create one if you have
+not already with the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh-keygen
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The default parameters and location are ok.&lt;/p>
+&lt;p>To authenticate with GitHub CLI, run the following command. We have included
+the answers to the interactive prompts used for this guide.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh auth login
+What account &lt;span style="color:#204a87;font-weight:bold">do&lt;/span> you want to log into? GitHub.com
+? What account &lt;span style="color:#204a87;font-weight:bold">do&lt;/span> you want to log into? GitHub.com
+? What is your preferred protocol &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> Git operations? SSH
+? Upload your SSH public key to your GitHub account? ~/.ssh/id_rsa.pub
+? How would you like to authenticate GitHub CLI? Login with a web browser
+! First copy your one-time code: 1234-1A11
+- Press Enter to open github.com in your browser...
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="forking">Forking&lt;/h1>
+&lt;p>We can easily create a fork of a repo with the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh repo fork
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This is useful for when you do not have write access to the original repository.&lt;/p>
+&lt;h1 id="pull-requests">Pull Requests&lt;/h1>
+&lt;p>We can create a pull request easily as follows from a git repo:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr create
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The command above will ask the user where to push the branch (if it does not
+already exist on the remote). It will also offer the option to fork the initial
+repository. You will want to do this if you do not have write access to the
+original repo.&lt;/p>
+&lt;p>Once created, you may view the status of the PR with the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr status
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Reviewers can checkout your pull request to verify changes as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr checkout &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>PR NUMBER&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The reviewer can then approve the PR as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr review --approve
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Subsequently, the PR can be merged as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr merge &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>PR NUMBER&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>You may also list all pull requests with the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr list
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Finally, PRs can be closed with&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr close &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>PR NUMBER&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="managing-issues-with-github-cli">Managing Issues with GitHub CLI&lt;/h1>
+&lt;p>To create an issue, call the following:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue create --title&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Bug 1&amp;#34;&lt;/span> --body&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;description&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>We can also check the status of issues relevant to use with:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue status
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Alternatively, we may list all open issues.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue list
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Finally, we may close issues with:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue close &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>ISSUE NUMBER&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>There are many other commands for the GitHub CLI that can be found in the
+&lt;a href="https://cli.github.com/manual/">gh manual&lt;/a>, however we only include a select
+number of relevant commands for this guide. The commands mentioned above serve
+to familiarize the user with the GitHub CLI while also providing practical
+usage.&lt;/p></description></item></channel></rss>
