@@ -1,8 +1,8 @@
 ---
-date: 2021-02-07
+date: 2021-03-15
 title: "GitHub gh Command Line Interface"
-linkTitle: "Command gh "
-description: "A brief turorial on the installation and usage of the GitHub CLI"
+linkTitle: "Command gh"
+description: "A brief tutorial on the installation and usage of the GitHub gh CLI"
 author: Richard Otten, Gregor von Laszewski ([laszewski@gmail.com](mailto:laszewski@gmail.com)) [laszewski.github.io](https://laszewski.github.io)
 resources:
 - src: "**.{png,jpg}"
@@ -11,8 +11,9 @@ resources:
 
 
 {{< imgproc image Fill "600x300" >}}
-TODO: Caption for the image
 {{< /imgproc >}}
+
+Figure 1: GitHub Command gh.
 
 
 {{% pageinfo %}}
@@ -32,15 +33,15 @@ to interact with other advanced features that are typically not provided in the 
 
 {{% /pageinfo %}}
 
-# Introduction
+## 1. Introduction
 
 The new GitHub CLI allows GitHub users to purely work from the terminal of
 their machine without having to visit the web browser GUI to manage things like
 issues, PRs, and forking.
 
-# Installing GitHub CLI
+## 2. Installing GitHub CLI
 
-Visit the GitHub CLI homepage at https://cli.github.com/ for installation
+Visit the GitHub CLI homepage at <https://cli.github.com/> for installation
 instructions.  We recommend that you check out the source distribution. 
 We found that whne we did this tutorial not all features were included in the 
 brew instalation. We assume ths will cahnge over time and you may soon be able 
@@ -54,7 +55,7 @@ brew install gh
 ```
 
 
-# Logging in with GitHub CLI
+## 3. Logging in with GitHub CLI
 
 It is good practice to be using SSH-keys with GitHub. Create one if you have
 not already with the following:
@@ -81,7 +82,7 @@ What account do you want to log into? GitHub.com
 - Press Enter to open github.com in your browser...
 ```
 
-# Forking
+## 4. Forking
 
 We can easily create a fork of a repo with the following:
 
@@ -91,7 +92,7 @@ gh repo fork
 
 This is useful for when you do not have write access to the original repository.
 
-# Pull Requests
+## 5. Pull Requests
 
 We can create a pull request easily as follows from a git repo:
 
@@ -140,7 +141,7 @@ Finally, PRs can be closed with
 gh pr close {PR NUMBER}
 ```
 
-# Managing Issues with GitHub CLI
+## 6. Managing Issues with GitHub CLI
 
 To create an issue, call the following:
 
@@ -166,10 +167,11 @@ Finally, we may close issues with:
 gh issue close {ISSUE NUMBER}
 ```
 
-# Conclusion
+## 7. Conclusion
 
 There are many other commands for the GitHub CLI that can be found in the 
 [gh manual](https://cli.github.com/manual/), however we only include a select
 number of relevant commands for this guide. The commands mentioned above serve
 to familiarize the user with the GitHub CLI while also providing practical
 usage.
+

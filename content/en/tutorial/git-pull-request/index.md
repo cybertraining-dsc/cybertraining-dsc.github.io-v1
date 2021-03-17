@@ -15,7 +15,7 @@ description: >
 
 {{% pageinfo %}}
 
-It is actually very easy to help us modifying the Web Site through GitHub pull requests. We demonstrate this via the commandline and via the GitHub GUI.
+It is very easy to help us modifying the Web Site through GitHub pull requests. We demonstrate this via the commandline and via the GitHub GUI.
 
 The commandline can be run form any computer with Linux, Windows, and macOS. ON Windows you need to install gitbash and use that. THis way you have a commandline terminal that just works like on LInux and OSX.
 
