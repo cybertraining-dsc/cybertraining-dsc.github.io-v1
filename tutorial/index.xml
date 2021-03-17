@@ -124,9 +124,11 @@ usage.&lt;/p></description></item><item><title>Tutorial: GitHub hid Repository</
 &lt;/div>
 &lt;p>Figure 1: GitHub hid directory.&lt;/p>
 &lt;div class="pageinfo pageinfo-primary">
-&lt;p>GitHub provides an extended gh commandline tool that allow easy interaction of
-forking repositories directly from github. IT also provides additional fimctionality
-to interact with other advanced features that are typically not provided in the git command tool.&lt;/p>
+&lt;p>To contribute to our open source projects we provide you with a Git
+repository in which you conduct your activities.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc">https://github.com/cybertraining-dsc&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;p>&lt;strong>Learning Objectives&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Learn how to cone the repo&lt;/li>
@@ -138,24 +140,101 @@ to interact with other advanced features that are typically not provided in the 
 &lt;nav id="TableOfContents">
 &lt;ul>
 &lt;li>&lt;a href="#1-introduction">1. Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#2-prerequisites">2. Prerequisites&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-setting-up-the-ssh-key">3. Setting up the ssh-key&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#4-simplify-the-tutorial-while-using-shell-variables">4. Simplify the Tutorial while using Shell Variables&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#5-cloning-the-repository">5. Cloning the Repository&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#6-commit-changes-locally">6. Commit Changes Locally&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#7-adding-files">7. Adding Files&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#8-push-the-commits-to-github">8. Push the commits to GitHub&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#8-pulling-changes">8. Pulling Changes&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#7-conclusion">7. Conclusion&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/nav>
 &lt;/div>
 &lt;/div>
 &lt;h2 id="1-introduction">1. Introduction&lt;/h2>
-&lt;p>As part of our open source activities you will be given a GitHub repositorry&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh-keygen
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">HID&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>hit-example
-&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">EDITOR&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>emacs
-&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git clone ghgit@github.com:cybertraining-dsc/&lt;span style="color:#000">$HID&lt;/span>.git
-&lt;span style="color:#204a87">cd&lt;/span> &lt;span style="color:#000">$HID&lt;/span>/project
-&lt;span style="color:#000">$EDITOR&lt;/span> index.md
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Make modifications&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git commit -m &lt;span style="color:#4e9a06">&amp;#34;Improved document with this and that&amp;#34;&lt;/span> index.md
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To add new files do&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git add image/newimage.png
-git commit -m &lt;span style="color:#4e9a06">&amp;#34;Improved document with this and that&amp;#34;&lt;/span> image/newimage.png
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Push modifications to the repo on GitHub&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git push
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-conclusion">7. Conclusion&lt;/h2></description></item></channel></rss>
+&lt;p>As part of our open source activities, you will be given a GitHub
+repository.
+To contribute to our open source projects we provide you with a Git
+repository in which you conduct your activities.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc">https://github.com/cybertraining-dsc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>We will explain how you use them from the command line.&lt;/p>
+&lt;h2 id="2-prerequisites">2. Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>On macOS we assume you have x-code installed which comes with the git command&lt;/li>
+&lt;li>line tools On Windows we assume you have gitbash installed and use git&lt;/li>
+&lt;li>through gitbash. Alternatively, you can use multipass, or WSL2 On Linux, make&lt;/li>
+&lt;li>sure you have the git command line tools installed.&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-setting-up-the-ssh-key">3. Setting up the ssh-key&lt;/h2>
+&lt;p>In case you have not yet set up an ssh key, you can do this with the command.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ ssh-keygen
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>YOu will be asked for the default location, accept it. After that, you will be
+asked for a passphrase. Please choose one and make sure you do not make it
+empty. Often you find wrong tutorials or guidance by others that say you can
+leave it empty. DO NOT FOLLOW THEIR WRONG ADVICE.&lt;/p>
+&lt;p>Upload the content of the file&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ cat ~/.ssh/id_rsa.pub
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Into the GitHub portal at &lt;a href="https://github.com/settings/keys">https://github.com/settings/keys&lt;/a>.
+You will then use the SSH key to authenticate to GitHub.
+To not always have to type in the password you can use &lt;code>ssh-keychain&lt;/code>.
+On Mac OS you can simply use the command&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ ssh-add
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>and enter your password&lt;/p>
+&lt;h2 id="4-simplify-the-tutorial-while-using-shell-variables">4. Simplify the Tutorial while using Shell Variables&lt;/h2>
+&lt;p>To simplify the tutorial we use from here on two shell variables. The first is
+&lt;code>HID&lt;/code> which specifies the name of your GitHub repository as found in&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc">https://github.com/cybertraining-dsc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>In our case, we use &lt;code>hid-example&lt;/code>. The second variable is the name/path of the
+editor in which we edit commit messages for git.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ &lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">HID&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>hid-example
+$ &lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">EDITOR&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>emacs
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-cloning-the-repository">5. Cloning the Repository&lt;/h2>
+&lt;p>Let us now clone the repository, change int the checked out repository
+and edit the project file.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ git clone git@github.com:cybertraining-dsc/&lt;span style="color:#000">$HID&lt;/span>.git
+$ &lt;span style="color:#204a87">cd&lt;/span> &lt;span style="color:#000">$HID&lt;/span>/project
+$ &lt;span style="color:#000">$EDITOR&lt;/span> index.md
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now let us make a modification and save the file locally.&lt;/p>
+&lt;h2 id="6-commit-changes-locally">6. Commit Changes Locally&lt;/h2>
+&lt;p>To commit the changes locally, you use the following command. Make sure to
+put a commit message and specify the filename.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ git commit -m &lt;span style="color:#4e9a06">&amp;#34;Improved document with this and that&amp;#34;&lt;/span> index.md
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-adding-files">7. Adding Files&lt;/h2>
+&lt;p>To add new files you can simply use the add command and use the commit command
+after it.&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ git add image/newimage.png
+$ git commit -m &lt;span style="color:#4e9a06">&amp;#34;Improved document with this and that&amp;#34;&lt;/span> image/newimage.png
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="8-push-the-commits-to-github">8. Push the commits to GitHub&lt;/h2>
+&lt;p>GitHub as you know is a service that stores your files once you push them from
+your local commits to GitHub. To push the commits use the command&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ git push
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="8-pulling-changes">8. Pulling Changes&lt;/h2>
+&lt;p>GitHub shines when you work with multiple people together on your projects. This
+may be project partners or feedbacks that are placed in your documents by us.
+Thus, it is important that you state in synchronization with the files in
+GitHub. Do this use the command&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ git pull
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>in any directory of the repository that you have checked out. It will update
+any file that has changed. In case of a conflict, your file will include a
+text such as&lt;/p>
+&lt;pre>&lt;code>&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+This is the new text from you
+=======
+This is the text in the repo
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>You will have to remove the text between the &amp;laquo;&amp;lt; and &amp;raquo;&amp;gt; and replace it with
+the text that is correct. In the simplest case, one of the choices will be
+correct. However, you may have in some cases to merge the two versions.&lt;/p>
+&lt;p>It is important to pull frequently. It is also important to not just paste and
+copy the entire file, but use the command line tools and editor to conduct the
+change as not to overwrite other changes.&lt;/p>
+&lt;h2 id="7-conclusion">7. Conclusion&lt;/h2>
+&lt;p>The use of git from the command line is straightforward for existing
+repositories. It is easy to do. Make sure to create an &lt;code>ssh-key&lt;/code> and start in
+synchronization with frequent pulls.&lt;/p></description></item></channel></rss>
