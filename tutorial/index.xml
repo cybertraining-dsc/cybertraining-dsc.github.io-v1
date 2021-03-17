@@ -113,4 +113,49 @@ original repo.&lt;/p>
 &lt;a href="https://cli.github.com/manual/">gh manual&lt;/a>, however we only include a select
 number of relevant commands for this guide. The commands mentioned above serve
 to familiarize the user with the GitHub CLI while also providing practical
-usage.&lt;/p></description></item></channel></rss>
+usage.&lt;/p></description></item><item><title>Tutorial: GitHub hid Repository</title><link>/tutorial/git-hid-repo/</link><pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate><guid>/tutorial/git-hid-repo/</guid><description>
+&lt;img src="/tutorial/git-hid-repo/featured-image_hu699bad2f39bda78a6f8b2a2be30d8f74_224192_640x0_resize_catmullrom_2.png" width="640" height="505"/>
+&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+&lt;img class="card-img-top" src="/tutorial/git-hid-repo/featured-image_hu699bad2f39bda78a6f8b2a2be30d8f74_224192_600x300_fill_catmullrom_smart1_2.png" width="600" height="300">
+&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;p>Figure 1: GitHub hid directory.&lt;/p>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>GitHub provides an extended gh commandline tool that allow easy interaction of
+forking repositories directly from github. IT also provides additional fimctionality
+to interact with other advanced features that are typically not provided in the git command tool.&lt;/p>
+&lt;p>&lt;strong>Learning Objectives&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Learn how to cone the repo&lt;/li>
+&lt;li>Learn how to use the rego&lt;/li>
+&lt;li>Learn how to commit and push changes to GitHub&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Topics covered&lt;/strong>&lt;/p>
+&lt;div class="toc">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#1-introduction">1. Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#7-conclusion">7. Conclusion&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="1-introduction">1. Introduction&lt;/h2>
+&lt;p>As part of our open source activities you will be given a GitHub repositorry&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh-keygen
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">HID&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>hit-example
+&lt;span style="color:#204a87">export&lt;/span> &lt;span style="color:#000">EDITOR&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>emacs
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git clone ghgit@github.com:cybertraining-dsc/&lt;span style="color:#000">$HID&lt;/span>.git
+&lt;span style="color:#204a87">cd&lt;/span> &lt;span style="color:#000">$HID&lt;/span>/project
+&lt;span style="color:#000">$EDITOR&lt;/span> index.md
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Make modifications&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git commit -m &lt;span style="color:#4e9a06">&amp;#34;Improved document with this and that&amp;#34;&lt;/span> index.md
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To add new files do&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git add image/newimage.png
+git commit -m &lt;span style="color:#4e9a06">&amp;#34;Improved document with this and that&amp;#34;&lt;/span> image/newimage.png
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Push modifications to the repo on GitHub&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git push
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-conclusion">7. Conclusion&lt;/h2></description></item></channel></rss>
