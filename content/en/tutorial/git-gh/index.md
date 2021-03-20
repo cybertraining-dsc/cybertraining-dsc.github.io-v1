@@ -35,14 +35,16 @@ to interact with other advanced features that are typically not provided in the 
 
 ## 1. Introduction
 
-The new GitHub CLI allows GitHub users to purely work from the terminal of
+The new GitHub `gh` command allows GitHub users to work from the terminal of
 their machine without having to visit the web browser GUI to manage things like
-issues, PRs, and forking.
+issues, PRs, and forking. We will show you what features it provides and how to 
+use it. The `gh` command provides useful features that is not provided by the `git
+commandline tool.
 
 ## 2. Installing GitHub CLI
 
 Visit the GitHub CLI homepage at <https://cli.github.com/> for installation
-instructions.  We recommend that you check out the source distribution. 
+instructions.  We recommend that you check out the source distribution because
 We found that whne we did this tutorial not all features were included in the 
 brew instalation. We assume ths will cahnge over time and you may soon be able 
 to just use the bre install on LInux and MacOs.
@@ -53,20 +55,20 @@ On mac, you can use the following command with
 ```bash
 brew install gh
 ```
+For Windows useser, please follow the install instructions fro Winodws. 
 
+## 3. Logging in with GitHub gh CLI
 
-## 3. Logging in with GitHub CLI
-
-It is good practice to be using SSH-keys with GitHub. Create one if you have
-not already with the following:
+It is best practice to be using SSH-keys with GitHub. Create one if you have
+not already with the following command:
 
 ```bash
 ssh-keygen
 ```
 
-The default parameters and location are ok.
+We recommend t use the the default location.
 
-To authenticate with GitHub CLI, run the following command. We have included
+To authenticate with the GitHub `gh` comamand, run the following command. We have included
 the answers to the interactive prompts used for this guide.
 
 ```bash
@@ -166,6 +168,40 @@ Finally, we may close issues with:
 ```bash
 gh issue close {ISSUE NUMBER}
 ```
+
+## 7. Manual PAges
+
+### 7.1 gh
+
+```
+gh(1)                                                                    gh(1)
+
+NAME
+       gh - GitHub CLI
+
+SYNOPSIS
+       gh   [flags]
+
+DESCRIPTION
+       Work seamlessly with GitHub from the command line.
+
+OPTIONS
+       --help[=false]      Show help for command
+
+       --version[=false]      Show gh version
+
+EXAMPLE
+              $ gh issue create
+              $ gh repo clone cli/cli
+              $ gh pr checkout 321
+
+SEE ALSO
+       gh-alias(1),  gh-api(1),  gh-auth(1),  gh-completion(1),  gh-config(1),
+       gh-gist(1),   gh-issue(1),   gh-pr(1),    gh-release(1),    gh-repo(1),
+       gh-secret(1), gh-ssh-key(1)
+```
+
+
 
 ## 7. Conclusion
 
