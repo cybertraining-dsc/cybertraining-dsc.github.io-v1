@@ -39,34 +39,42 @@ to interact with other advanced features that are typically not provided in the 
 &lt;ul>
 &lt;li>&lt;a href="#1-introduction">1. Introduction&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#2-installing-github-cli">2. Installing GitHub CLI&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#3-logging-in-with-github-cli">3. Logging in with GitHub CLI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-logging-in-with-github-gh-cli">3. Logging in with GitHub gh CLI&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#4-forking">4. Forking&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#5-pull-requests">5. Pull Requests&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#6-managing-issues-with-github-cli">6. Managing Issues with GitHub CLI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#7-manual-pages">7. Manual PAges&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#71-gh">7.1 gh&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>&lt;a href="#7-conclusion">7. Conclusion&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/nav>
 &lt;/div>
 &lt;/div>
 &lt;h2 id="1-introduction">1. Introduction&lt;/h2>
-&lt;p>The new GitHub CLI allows GitHub users to purely work from the terminal of
+&lt;p>The new GitHub &lt;code>gh&lt;/code> command allows GitHub users to work from the terminal of
 their machine without having to visit the web browser GUI to manage things like
-issues, PRs, and forking.&lt;/p>
+issues, PRs, and forking. We will show you what features it provides and how to
+use it. The &lt;code>gh&lt;/code> command provides useful features that is not provided by the `git
+commandline tool.&lt;/p>
 &lt;h2 id="2-installing-github-cli">2. Installing GitHub CLI&lt;/h2>
 &lt;p>Visit the GitHub CLI homepage at &lt;a href="https://cli.github.com/">https://cli.github.com/&lt;/a> for installation
-instructions. We recommend that you check out the source distribution.
+instructions. We recommend that you check out the source distribution because
 We found that whne we did this tutorial not all features were included in the
 brew instalation. We assume ths will cahnge over time and you may soon be able
 to just use the bre install on LInux and MacOs.&lt;/p>
 &lt;p>On mac, you can use the following command with
 &lt;a href="https://brew.sh/">Brew&lt;/a>:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">brew install gh
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="3-logging-in-with-github-cli">3. Logging in with GitHub CLI&lt;/h2>
-&lt;p>It is good practice to be using SSH-keys with GitHub. Create one if you have
-not already with the following:&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>For Windows useser, please follow the install instructions fro Winodws.&lt;/p>
+&lt;h2 id="3-logging-in-with-github-gh-cli">3. Logging in with GitHub gh CLI&lt;/h2>
+&lt;p>It is best practice to be using SSH-keys with GitHub. Create one if you have
+not already with the following command:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh-keygen
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The default parameters and location are ok.&lt;/p>
-&lt;p>To authenticate with GitHub CLI, run the following command. We have included
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>We recommend t use the the default location.&lt;/p>
+&lt;p>To authenticate with the GitHub &lt;code>gh&lt;/code> comamand, run the following command. We have included
 the answers to the interactive prompts used for this guide.&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh auth login
 What account &lt;span style="color:#204a87;font-weight:bold">do&lt;/span> you want to log into? GitHub.com
@@ -108,7 +116,27 @@ original repo.&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue list
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Finally, we may close issues with:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue close &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>ISSUE NUMBER&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-conclusion">7. Conclusion&lt;/h2>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-manual-pages">7. Manual PAges&lt;/h2>
+&lt;h3 id="71-gh">7.1 gh&lt;/h3>
+&lt;pre>&lt;code>gh(1) gh(1)
+NAME
+gh - GitHub CLI
+SYNOPSIS
+gh [flags]
+DESCRIPTION
+Work seamlessly with GitHub from the command line.
+OPTIONS
+--help[=false] Show help for command
+--version[=false] Show gh version
+EXAMPLE
+$ gh issue create
+$ gh repo clone cli/cli
+$ gh pr checkout 321
+SEE ALSO
+gh-alias(1), gh-api(1), gh-auth(1), gh-completion(1), gh-config(1),
+gh-gist(1), gh-issue(1), gh-pr(1), gh-release(1), gh-repo(1),
+gh-secret(1), gh-ssh-key(1)
+&lt;/code>&lt;/pre>&lt;h2 id="7-conclusion">7. Conclusion&lt;/h2>
 &lt;p>There are many other commands for the GitHub CLI that can be found in the
 &lt;a href="https://cli.github.com/manual/">gh manual&lt;/a>, however we only include a select
 number of relevant commands for this guide. The commands mentioned above serve
