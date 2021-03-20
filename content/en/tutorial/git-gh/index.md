@@ -84,6 +84,25 @@ What account do you want to log into? GitHub.com
 - Press Enter to open github.com in your browser...
 ```
 
+### 3.1 Adding Additional Keys
+
+IN acse you work with multiple computers it is advisable to add your keys from these 
+machines also. We demonstarte the interaction to upload the key from a new machine.
+
+```
+newmachine$ gh ssh-key add ~/.ssh/id_rsa.pub 
+Error: insufficient OAuth scopes to list SSH keys
+Run the following to grant scopes: gh auth refresh -s write:public_key
+newmachine$ gh auth refresh -s write:public_key
+
+! First copy your one-time code: 4C2D-E896
+- Press Enter to open github.com in your browser... 
+✓ Authentication complete. Press Enter to continue...
+
+newmachine$ gh ssh-key add ~/.ssh/id_rsa.pub   
+✓ Public key added to your account
+```
+
 ## 4. Forking
 
 We can easily create a fork of a repo with the following:
