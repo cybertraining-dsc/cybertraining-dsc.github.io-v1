@@ -38,15 +38,15 @@ to interact with other advanced features that are typically not provided in the 
 &lt;nav id="TableOfContents">
 &lt;ul>
 &lt;li>&lt;a href="#1-introduction">1. Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#2-installing-github-cli">2. Installing GitHub CLI&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#3-logging-in-with-github-gh-cli">3. Logging in with GitHub gh CLI&lt;/a>
+&lt;li>&lt;a href="#2-installing-github-gh-command">2. Installing GitHub gh command&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-logging-in-with-github-gh-command">3. Logging in with GitHub gh Command&lt;/a>
 &lt;ul>
 &lt;li>&lt;a href="#31-adding-additional-keys">3.1 Adding Additional Keys&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="#4-forking">4. Forking&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#5-pull-requests">5. Pull Requests&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#6-managing-issues-with-github-cli">6. Managing Issues with GitHub CLI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#6-managing-issues-with-github-gh-command">6. Managing Issues with GitHub gh Command&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#7-manual-pages">7. Manual Pages&lt;/a>
 &lt;ul>
 &lt;li>&lt;a href="#71-gh">7.1 gh&lt;/a>&lt;/li>
@@ -64,7 +64,7 @@ their machine without having to visit the web browser GUI to manage things like
 issues, PRs, and forking. We will show you what features it provides and how to
 use it. The &lt;code>gh&lt;/code> command provides useful features that is not provided by the `git
 commandline tool.&lt;/p>
-&lt;h2 id="2-installing-github-cli">2. Installing GitHub CLI&lt;/h2>
+&lt;h2 id="2-installing-github-gh-command">2. Installing GitHub gh command&lt;/h2>
 &lt;p>Visit the GitHub CLI homepage at &lt;a href="https://cli.github.com/">https://cli.github.com/&lt;/a> for installation
 instructions. We recommend that you check out the source distribution because
 We found that whne we did this tutorial not all features were included in the
@@ -74,7 +74,7 @@ to just use the bre install on LInux and MacOs.&lt;/p>
 &lt;a href="https://brew.sh/">Brew&lt;/a>:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">brew install gh
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>For Windows useser, please follow the install instructions fro Winodws.&lt;/p>
-&lt;h2 id="3-logging-in-with-github-gh-cli">3. Logging in with GitHub gh CLI&lt;/h2>
+&lt;h2 id="3-logging-in-with-github-gh-command">3. Logging in with GitHub gh Command&lt;/h2>
 &lt;p>It is best practice to be using SSH-keys with GitHub. Create one if you have
 not already with the following command:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ssh-keygen
@@ -124,7 +124,7 @@ original repo.&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr list
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Finally, PRs can be closed with&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh pr close &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>PR NUMBER&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="6-managing-issues-with-github-cli">6. Managing Issues with GitHub CLI&lt;/h2>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="6-managing-issues-with-github-gh-command">6. Managing Issues with GitHub gh Command&lt;/h2>
 &lt;p>To create an issue, call the following:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue create --title&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Bug 1&amp;#34;&lt;/span> --body&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;description&amp;#34;&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>We can also check the status of issues relevant to use with:&lt;/p>
@@ -154,7 +154,8 @@ gh-alias(1), gh-api(1), gh-auth(1), gh-completion(1), gh-config(1),
 gh-gist(1), gh-issue(1), gh-pr(1), gh-release(1), gh-repo(1),
 gh-secret(1), gh-ssh-key(1)
 &lt;/code>&lt;/pre>&lt;h3 id="72-list-of-man-pages">7.2 List of Man Pages&lt;/h3>
-&lt;p>For mor information simly use the man command. A full list of manual pages includes.&lt;/p>
+&lt;p>Tha manual pages are published at the &lt;a href="https://cli.github.com/manual/">gh manual&lt;/a>.
+For mor information you can also use the man command. A full list of manual pages includes:&lt;/p>
 &lt;ul>
 &lt;li>gh&lt;/li>
 &lt;li>gh-alias-delete&lt;/li>
