@@ -43,9 +43,10 @@ to interact with other advanced features that are typically not provided in the 
 &lt;li>&lt;a href="#4-forking">4. Forking&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#5-pull-requests">5. Pull Requests&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#6-managing-issues-with-github-cli">6. Managing Issues with GitHub CLI&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#7-manual-pages">7. Manual PAges&lt;/a>
+&lt;li>&lt;a href="#7-manual-pages">7. Manual Pages&lt;/a>
 &lt;ul>
 &lt;li>&lt;a href="#71-gh">7.1 gh&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#72-list-of-man-pages">7.2 List of Man Pages&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="#7-conclusion">7. Conclusion&lt;/a>&lt;/li>
@@ -116,7 +117,7 @@ original repo.&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue list
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Finally, we may close issues with:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh issue close &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>ISSUE NUMBER&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-manual-pages">7. Manual PAges&lt;/h2>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-manual-pages">7. Manual Pages&lt;/h2>
 &lt;h3 id="71-gh">7.1 gh&lt;/h3>
 &lt;pre>&lt;code>gh(1) gh(1)
 NAME
@@ -136,7 +137,77 @@ SEE ALSO
 gh-alias(1), gh-api(1), gh-auth(1), gh-completion(1), gh-config(1),
 gh-gist(1), gh-issue(1), gh-pr(1), gh-release(1), gh-repo(1),
 gh-secret(1), gh-ssh-key(1)
-&lt;/code>&lt;/pre>&lt;h2 id="7-conclusion">7. Conclusion&lt;/h2>
+&lt;/code>&lt;/pre>&lt;h3 id="72-list-of-man-pages">7.2 List of Man Pages&lt;/h3>
+&lt;p>For mor information simly use the man command. A full list of manual pages includes.&lt;/p>
+&lt;ul>
+&lt;li>gh&lt;/li>
+&lt;li>gh-alias-delete&lt;/li>
+&lt;li>gh-alias-list&lt;/li>
+&lt;li>gh-alias-set&lt;/li>
+&lt;li>gh-alias&lt;/li>
+&lt;li>gh-api&lt;/li>
+&lt;li>gh-auth-login&lt;/li>
+&lt;li>gh-auth-logout&lt;/li>
+&lt;li>gh-auth-refresh&lt;/li>
+&lt;li>gh-auth-status&lt;/li>
+&lt;li>gh-auth&lt;/li>
+&lt;li>gh-completion&lt;/li>
+&lt;li>gh-config-get&lt;/li>
+&lt;li>gh-config-set&lt;/li>
+&lt;li>gh-config&lt;/li>
+&lt;li>gh-gist-clone&lt;/li>
+&lt;li>gh-gist-create&lt;/li>
+&lt;li>gh-gist-delete&lt;/li>
+&lt;li>gh-gist-edit&lt;/li>
+&lt;li>gh-gist-list&lt;/li>
+&lt;li>gh-gist-view&lt;/li>
+&lt;li>gh-gist&lt;/li>
+&lt;li>gh-issue-close&lt;/li>
+&lt;li>gh-issue-comment&lt;/li>
+&lt;li>gh-issue-create&lt;/li>
+&lt;li>gh-issue-delete&lt;/li>
+&lt;li>gh-issue-edit&lt;/li>
+&lt;li>gh-issue-list&lt;/li>
+&lt;li>gh-issue-reopen&lt;/li>
+&lt;li>gh-issue-status&lt;/li>
+&lt;li>gh-issue-view&lt;/li>
+&lt;li>gh-issue&lt;/li>
+&lt;li>gh-pr-checkout&lt;/li>
+&lt;li>gh-pr-checks&lt;/li>
+&lt;li>gh-pr-close&lt;/li>
+&lt;li>gh-pr-comment&lt;/li>
+&lt;li>gh-pr-create&lt;/li>
+&lt;li>gh-pr-diff&lt;/li>
+&lt;li>gh-pr-edit&lt;/li>
+&lt;li>gh-pr-list&lt;/li>
+&lt;li>gh-pr-merge&lt;/li>
+&lt;li>gh-pr-ready&lt;/li>
+&lt;li>gh-pr-reopen&lt;/li>
+&lt;li>gh-pr-review&lt;/li>
+&lt;li>gh-pr-status&lt;/li>
+&lt;li>gh-pr-view&lt;/li>
+&lt;li>gh-pr&lt;/li>
+&lt;li>gh-release-create&lt;/li>
+&lt;li>gh-release-delete&lt;/li>
+&lt;li>gh-release-download&lt;/li>
+&lt;li>gh-release-list&lt;/li>
+&lt;li>gh-release-upload&lt;/li>
+&lt;li>gh-release-view&lt;/li>
+&lt;li>gh-release&lt;/li>
+&lt;li>gh-repo-clone&lt;/li>
+&lt;li>gh-repo-create&lt;/li>
+&lt;li>gh-repo-fork&lt;/li>
+&lt;li>gh-repo-view&lt;/li>
+&lt;li>gh-repo&lt;/li>
+&lt;li>gh-secret-list&lt;/li>
+&lt;li>gh-secret-remove&lt;/li>
+&lt;li>gh-secret-set&lt;/li>
+&lt;li>gh-secret&lt;/li>
+&lt;li>gh-ssh-key-add&lt;/li>
+&lt;li>gh-ssh-key-list&lt;/li>
+&lt;li>gh-ssh-key&lt;/li>
+&lt;/ul>
+&lt;h2 id="7-conclusion">7. Conclusion&lt;/h2>
 &lt;p>There are many other commands for the GitHub CLI that can be found in the
 &lt;a href="https://cli.github.com/manual/">gh manual&lt;/a>, however we only include a select
 number of relevant commands for this guide. The commands mentioned above serve
