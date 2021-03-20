@@ -41,7 +41,7 @@ issues, PRs, and forking. We will show you what features it provides and how to
 use it. The `gh` command provides useful features that is not provided by the `git
 commandline tool.
 
-## 2. Installing GitHub CLI
+## 2. Installing GitHub gh command
 
 Visit the GitHub CLI homepage at <https://cli.github.com/> for installation
 instructions.  We recommend that you check out the source distribution because
@@ -57,7 +57,7 @@ brew install gh
 ```
 For Windows useser, please follow the install instructions fro Winodws. 
 
-## 3. Logging in with GitHub gh CLI
+## 3. Logging in with GitHub gh Command
 
 It is best practice to be using SSH-keys with GitHub. Create one if you have
 not already with the following command:
@@ -162,7 +162,7 @@ Finally, PRs can be closed with
 gh pr close {PR NUMBER}
 ```
 
-## 6. Managing Issues with GitHub CLI
+## 6. Managing Issues with GitHub gh Command
 
 To create an issue, call the following:
 
@@ -222,7 +222,8 @@ SEE ALSO
 
 ### 7.2 List of Man Pages
 
-For mor information simly use the man command. A full list of manual pages includes.
+Tha manual pages are published at the [gh manual](https://cli.github.com/manual/).
+For mor information you can also use the man command. A full list of manual pages includes:
 
 * gh
 * gh-alias-delete
