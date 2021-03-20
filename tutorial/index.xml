@@ -39,7 +39,11 @@ to interact with other advanced features that are typically not provided in the 
 &lt;ul>
 &lt;li>&lt;a href="#1-introduction">1. Introduction&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#2-installing-github-cli">2. Installing GitHub CLI&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#3-logging-in-with-github-gh-cli">3. Logging in with GitHub gh CLI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#3-logging-in-with-github-gh-cli">3. Logging in with GitHub gh CLI&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#31-adding-additional-keys">3.1 Adding Additional Keys&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>&lt;a href="#4-forking">4. Forking&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#5-pull-requests">5. Pull Requests&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#6-managing-issues-with-github-cli">6. Managing Issues with GitHub CLI&lt;/a>&lt;/li>
@@ -85,7 +89,19 @@ What account &lt;span style="color:#204a87;font-weight:bold">do&lt;/span> you wa
 ? How would you like to authenticate GitHub CLI? Login with a web browser
 ! First copy your one-time code: 1234-1A11
 - Press Enter to open github.com in your browser...
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="4-forking">4. Forking&lt;/h2>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="31-adding-additional-keys">3.1 Adding Additional Keys&lt;/h3>
+&lt;p>IN acse you work with multiple computers it is advisable to add your keys from these
+machines also. We demonstarte the interaction to upload the key from a new machine.&lt;/p>
+&lt;pre>&lt;code>newmachine$ gh ssh-key add ~/.ssh/id_rsa.pub
+Error: insufficient OAuth scopes to list SSH keys
+Run the following to grant scopes: gh auth refresh -s write:public_key
+newmachine$ gh auth refresh -s write:public_key
+! First copy your one-time code: 4C2D-E896
+- Press Enter to open github.com in your browser...
+✓ Authentication complete. Press Enter to continue...
+newmachine$ gh ssh-key add ~/.ssh/id_rsa.pub
+✓ Public key added to your account
+&lt;/code>&lt;/pre>&lt;h2 id="4-forking">4. Forking&lt;/h2>
 &lt;p>We can easily create a fork of a repo with the following:&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">gh repo fork
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>This is useful for when you do not have write access to the original repository.&lt;/p>
