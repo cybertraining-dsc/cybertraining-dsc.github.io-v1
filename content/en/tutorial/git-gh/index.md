@@ -169,7 +169,7 @@ Finally, we may close issues with:
 gh issue close {ISSUE NUMBER}
 ```
 
-## 7. Manual PAges
+## 7. Manual Pages
 
 ### 7.1 gh
 
@@ -201,7 +201,76 @@ SEE ALSO
        gh-secret(1), gh-ssh-key(1)
 ```
 
+### 7.2 List of Man Pages
 
+For mor information simly use the man command. A full list of manual pages includes.
+
+* gh
+* gh-alias-delete
+* gh-alias-list
+* gh-alias-set
+* gh-alias
+* gh-api
+* gh-auth-login
+* gh-auth-logout
+* gh-auth-refresh
+* gh-auth-status
+* gh-auth
+* gh-completion
+* gh-config-get
+* gh-config-set
+* gh-config
+* gh-gist-clone
+* gh-gist-create
+* gh-gist-delete
+* gh-gist-edit
+* gh-gist-list
+* gh-gist-view
+* gh-gist
+* gh-issue-close
+* gh-issue-comment
+* gh-issue-create
+* gh-issue-delete
+* gh-issue-edit
+* gh-issue-list
+* gh-issue-reopen
+* gh-issue-status
+* gh-issue-view
+* gh-issue
+* gh-pr-checkout
+* gh-pr-checks
+* gh-pr-close
+* gh-pr-comment
+* gh-pr-create
+* gh-pr-diff
+* gh-pr-edit
+* gh-pr-list
+* gh-pr-merge
+* gh-pr-ready
+* gh-pr-reopen
+* gh-pr-review
+* gh-pr-status
+* gh-pr-view
+* gh-pr
+* gh-release-create
+* gh-release-delete
+* gh-release-download
+* gh-release-list
+* gh-release-upload
+* gh-release-view
+* gh-release
+* gh-repo-clone
+* gh-repo-create
+* gh-repo-fork
+* gh-repo-view
+* gh-repo
+* gh-secret-list
+* gh-secret-remove
+* gh-secret-set
+* gh-secret
+* gh-ssh-key-add
+* gh-ssh-key-list
+* gh-ssh-key
 
 ## 7. Conclusion
 
