@@ -153,11 +153,19 @@ We went about 2/3rds of way through presentation [AI First Scenarios: Health and
 
  with recorded video {{< youtube "_mIBVwLLTmI" >}}
  
- ## Week 9
+## Week 9
  
- ### Deep Learning and AI Examples
+### Deep Learning and AI Examples
  
- * We ended [AI First Scenarios: Banking and FinTech](https://docs.google.com/presentation/d/1nK2cw542OERuHoxWGEsYH-Y1eSJMHO6yxh1tsFiUtNQ/edit?usp=sharing)
- * We started [AI Scenarios in Mobility and Transportation Systems](https://docs.google.com/presentation/d/1_hd1H-nQ-E4kPFE8HVLWTxoFdZJ4Db4QgKNlhSbZA5M/edit?usp=sharing)
+* We ended [AI First Scenarios: Banking and FinTech](https://docs.google.com/presentation/d/1nK2cw542OERuHoxWGEsYH-Y1eSJMHO6yxh1tsFiUtNQ/edit?usp=sharing)
+* We started [AI Scenarios in Mobility and Transportation Systems](https://docs.google.com/presentation/d/1_hd1H-nQ-E4kPFE8HVLWTxoFdZJ4Db4QgKNlhSbZA5M/edit?usp=sharing)
 
  with recorded video {{< youtube "_TbKRO5Tw4o" >}}
+
+## Week 10
+ 
+### GitHub for the Class project
+ 
+* We explain how touse GitHub for the class project. A video is available on yourtube. Pleas note that we only uploaded a thelevant portion. The other half of the lecture went into  individual comments for each student which we have not published. The comments are included in tiyr GitHub repository.
+
+Video {{< youtube "PBMPWjavraU" >}}
