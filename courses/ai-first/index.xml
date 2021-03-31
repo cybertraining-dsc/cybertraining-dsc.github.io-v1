@@ -2,13 +2,13 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>We present here the project guidelines&lt;/p>
 &lt;/div>
-&lt;p>All students of this class are doing a software project.&lt;/p>
+&lt;p>All students of this class are doing a software project. (Some of our classes allow non software projects)&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>The final project is 50% of grade&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>All projects must have a well-written report and may have a software
+&lt;p>All projects must have a well-written report as well as the software
 component&lt;/p>
 &lt;/li>
 &lt;li>
@@ -16,7 +16,7 @@ component&lt;/p>
 report describing how to run your project.&lt;/p>
 &lt;ul>
 &lt;li>If you use containers you must decsribe how to create them from Docker files.&lt;/li>
-&lt;li>If you usue ipy nptebooks you must include a button or links so it can be run in collab&lt;/li>
+&lt;li>If you usue ipy notebooks you must include a button or links so it can be run in Google collab&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -56,7 +56,7 @@ possible. As a beneficial side product of this, we are able to
 distribute all previous reports that use such technologies. This means
 you can cite your own work, for example, in your resume.
 For big data, we have more than 1000 data sets we point to.&lt;/p>
-&lt;p>&lt;strong>Comments on Example Projects&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Comments on Example Projects from previous classes&lt;/strong>&lt;/p>
 &lt;p>Warning: Please note that we do not make any quality assumptions to the
 published papers that we list here. It is up to you to identify
 outstanding papers.&lt;/p>
@@ -69,7 +69,7 @@ Project report or review we refer to here. These are just assignments
 done in 2-3 weeks. So please do not use them to identify a comparison
 with your own work. The activities we ask from you are substantially
 more involved than the technology reviews.&lt;/p>
-&lt;h1 id="format">Format&lt;/h1>
+&lt;h1 id="format-of-project">Format of Project&lt;/h1>
 &lt;p>Plagiarism is of course not permitted. It is your responsibility
 to know what plagiarism is. We provide a detailed book about it, you can also do the IU
 plagiarism test to learn more.&lt;/p>
