@@ -9,18 +9,18 @@ weight: 20
 We present here the project guidelines
 {{% /pageinfo %}}
 
-All students of this class are doing a software project.
+All students of this class are doing a software project. (Some of our classes allow non software projects)
 
 - The final project is 50% of grade
 
-- All projects must have a well-written report and may have a software
+- All projects must have a well-written report as well as the software
   component
     
 - We must be able to run software from class GitHub repository. To do so you must include an appendix to your project 
   report describing how to run your project.
     
   * If you use containers you must decsribe how to create them from Docker files.
-  * If you usue ipy nptebooks you must include a button or links so it can be run in collab
+  * If you usue ipy notebooks you must include a button or links so it can be run in Google collab
     
 
 - There are a useful set of example projects submitted in previous
@@ -60,7 +60,7 @@ distribute all previous reports that use such technologies. This means
 you can cite your own work, for example, in your resume. 
 For big data, we have more than 1000 data sets we point to.
 
-**Comments on Example Projects**
+**Comments on Example Projects from previous classes**
 
 Warning: Please note that we do not make any quality assumptions to the
 published papers that we list here. It is up to you to identify
@@ -76,7 +76,7 @@ done in 2-3 weeks. So please do not use them to identify a comparison
 with your own work. The activities we ask from you are substantially
 more involved than the technology reviews.
 
-# Format 
+# Format of Project
 
 Plagiarism is of course not permitted. It is your responsibility 
 to know what plagiarism is. We provide a detailed book about it, you can also do the IU 
