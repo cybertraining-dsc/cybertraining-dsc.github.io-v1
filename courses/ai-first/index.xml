@@ -16,7 +16,7 @@ component&lt;/p>
 &lt;p>We must be able to run software from class GitHub repository. To do so you must include an appendix to your project
 report describing how to run your project.&lt;/p>
 &lt;ul>
-&lt;li>If you use containers you must decsribe how to create them from DOcker files.&lt;/li>
+&lt;li>If you use containers you must decsribe how to create them from Docker files.&lt;/li>
 &lt;li>If you usue ipy nptebooks you must include a button or links so it can be run in collab&lt;/li>
 &lt;/ul>
 &lt;/li>
