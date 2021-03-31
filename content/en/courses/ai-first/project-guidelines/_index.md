@@ -6,7 +6,7 @@ weight: 20
 ---
 
 {{% pageinfo %}}
-We present here the project Gguidelines
+We present here the project guidelines
 {{% /pageinfo %}}
 
 All students of this class are doing a software project.
