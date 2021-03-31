@@ -148,9 +148,10 @@ homework assignments or projects.
     -   Please note that exporting documents from word or google docs
         can result in a markdown file that needs substantial cleanup.
         
--   Where do I find more information about markdown
+-   Where do I find more information about markdown and plagiarism
 
-    -   [[https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf]{.ul}](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf)
+   - <https://laszewski.github.io/publication/las-20-book-markdown/>
+   - [[https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf]{.ul}](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf)
 
 -   Can I use an online markdown editor?
 
