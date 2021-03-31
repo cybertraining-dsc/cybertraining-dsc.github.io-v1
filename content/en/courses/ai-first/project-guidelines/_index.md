@@ -155,8 +155,7 @@ homework assignments or projects.
     -   There are many online markdown editors available. One of them is
         [[https://dillinger.io/]{.ul}](https://dillinger.io/).\
         Use them to write your document or check the one you have
-        developed in another editor such as word or google docs. Just
-        paste and copy ;-)
+        developed in another editor such as word or google docs. 
 
     -   Remember, online editors can be dangerous in case you lose
         network connection. So we recommend to develop small portions
