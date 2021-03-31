@@ -91,8 +91,9 @@ be checked into the Github repository. Please take a look at the example we crea
 
 The report will be stored in the github.com.
 
-> ./project/index.md
-> ./project/images/mysampleimage.png
+./project/index.md
+
+./project/images/mysampleimage.png
 
 
 **Length of Project Report**
