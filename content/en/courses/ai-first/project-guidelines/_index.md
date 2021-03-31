@@ -128,6 +128,10 @@ homework assignments or projects.
 
 # FAQ
 
+- Why you should not just paste and copy into the GitHub GUI?
+
+  We may make comments directly in your markdown or program files. If you just paste and copy you may overlook such comments. HEns only paste and copy small paragraphs. If you need to. The best way of using github is from commandline and using editors such as pycharm and emacs.
+
 -   I like to do a project that relates to my company?
 
     -   Please go ahead and do so but make sure you use open-source
