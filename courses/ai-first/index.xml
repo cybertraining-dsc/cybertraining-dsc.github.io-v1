@@ -81,10 +81,8 @@ regular citations and not text footnotes (e.g. adhere to the IEEE rules).&lt;br>
 All projects and reports must
 be checked into the Github repository. Please take a look at the example we created for you.&lt;/p>
 &lt;p>The report will be stored in the github.com.&lt;/p>
-&lt;blockquote>
-&lt;p>./project/index.md
-./project/images/mysampleimage.png&lt;/p>
-&lt;/blockquote>
+&lt;p>./project/index.md&lt;/p>
+&lt;p>./project/images/mysampleimage.png&lt;/p>
 &lt;p>&lt;strong>Length of Project Report&lt;/strong>&lt;/p>
 &lt;p>Software Project Reports: 2500 - 3000 Words.&lt;/p>
 &lt;h1 id="possible-sources-of-datasets">Possible sources of datasets&lt;/h1>
