@@ -1,1 +1,229 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – AI-First Engineering Cybertraining</title><link>/courses/ai-first/</link><description>Recent content in AI-First Engineering Cybertraining on Cybertraining</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/courses/ai-first/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – AI-First Engineering Cybertraining</title><link>/courses/ai-first/</link><description>Recent content in AI-First Engineering Cybertraining on Cybertraining</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/courses/ai-first/index.xml" rel="self" type="application/rss+xml"/><item><title>Courses: Project Guidelines</title><link>/courses/ai-first/project-guidelines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/courses/ai-first/project-guidelines/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>We present here the project Gguidelines&lt;/p>
+&lt;/div>
+&lt;p>All students of this class are doing a software project.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The final project is 40-50% of grade (depending on the number of
+homework assignments that are set)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>All projects must have a well-written report and may have a software
+component&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>We must be able to run software from class GitHub repository. To do so you must include an appendix to your project
+report describing how to run your project.&lt;/p>
+&lt;ul>
+&lt;li>If you use containers you must decsribe how to create them from DOcker files.&lt;/li>
+&lt;li>If you usue ipy nptebooks you must include a button or links so it can be run in collab&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>There are a useful set of example projects submitted in previous
+classes&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://cybertraining-dsc.github.io/report/">Last years class&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/pub/blob/master/docs/vonLaszewski-cloud-vol-9.pdf">[https://github.com/cybertraining-dsc/pub/blob/master/docs/vonLaszewski-cloud-vol-9.pdf]&lt;/a>
+(26 projects)&lt;/li>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i523-v3.pdf">[https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i523-v3.pdf]&lt;/a>
+(45 projects)&lt;/li>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i524-spring-2017.pdf">[https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i524-spring-2017.pdf]&lt;/a>
+(28 projects)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>In this class you do not have the option to work on a joint report, however you can collaborate.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Note: all reports and projects are open for everyone as they are open source.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="details">Details&lt;/h1>
+&lt;p>The major deliverable of the course is a software project with a report. The
+project must include a programming part to get a full grade. It is
+expected that you identify a suitable analysis task and data set for the
+project and that you learn how to apply this analysis as well as to
+motivate it. It is part of the learning outcome that you determine this
+instead of us giving you a topic.&lt;/p>
+&lt;p>It is desired that the project has a novel feature in it. A project
+that you simply reproduce may not recieve the best grade, but this depends
+on what the analysis is and how you report it.&lt;/p>
+&lt;p>One goal of the class is to use open source technology wherever
+possible. As a beneficial side product of this, we are able to
+distribute all previous reports that use such technologies. This means
+you can cite your own work, for example, in your resume.
+For big data, we have more than 1000 data sets we point to.&lt;/p>
+&lt;p>&lt;strong>Comments on Example Projects&lt;/strong>&lt;/p>
+&lt;p>Warning: Please note that we do not make any quality assumptions to the
+published papers that we list here. It is up to you to identify
+outstanding papers.&lt;/p>
+&lt;p>Warning: Also note that these activities took place in previous classes,
+and the content of this class has since been updated or the focus has shifted.
+Especially chapters on Google Colab, AI, DL have been added to the course after the
+date of most projects. Also, some of the documents include an additional
+assignment called Technology review. These are not the same as the
+Project report or review we refer to here. These are just assignments
+done in 2-3 weeks. So please do not use them to identify a comparison
+with your own work. The activities we ask from you are substantially
+more involved than the technology reviews.&lt;/p>
+&lt;h1 id="format">Format&lt;/h1>
+&lt;p>Plagiarism is of course not permitted. It is your responsibility
+to know what plagiarism is. We provide a detailed book about it, you can also do the IU
+plagiarism test to learn more.&lt;/p>
+&lt;p>All project reports must be provided in github.com as a markdown file.
+All images must be in an images directory. You must use proper
+citations. Images copied from the Internet must have a citation in the
+Image caption. Please use the IEEE citation format and do not use
+APA or harvard style. Simply use fotnotes in markdown but treat them as
+regular citations and not text footnotes (e.g. adhere to the IEEE rules).&lt;br>
+All projects and reports must
+be checked into the Github repository. Please take a look at the example we created for you.&lt;/p>
+&lt;p>The report will be stored in the github.com.&lt;/p>
+&lt;blockquote>
+&lt;p>./project/index.md
+./project/images/mysampleimage.png&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Length of Project Report&lt;/strong>&lt;/p>
+&lt;p>Software Project Reports: 2500 - 3000 Words.&lt;/p>
+&lt;h1 id="possible-sources-of-datasets">Possible sources of datasets&lt;/h1>
+&lt;p>Given next are links to collections of datasets that may be of use for
+homework assignments or projects.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://www.data.gov/">[https://www.data.gov/]{.ul}&lt;/a>
+&lt;a href="https://github.com/caesar0301/awesome-public-datasets">[https://github.com/caesar0301/awesome-public-datasets]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://aws.amazon.com/public-data-sets/">[https://aws.amazon.com/public-data-sets/]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.kaggle.com/datasets">[https://www.kaggle.com/datasets]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://cloud.google.com/bigquery/public-data/github">[https://cloud.google.com/bigquery/public-data/github]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public">[https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://pascal.inrialpes.fr/data/human/">[http://pascal.inrialpes.fr/data/human/]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/fivethirtyeight/uber-tlc-foil-response">[https://github.com/fivethirtyeight/uber-tlc-foil-response]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.census.gov/population/www/cen2010/glance/">[http://www.census.gov/population/www/cen2010/glance/]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ieee-dataport.org/datasets">[https://ieee-dataport.org/datasets]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://worlddata.ai/">[https://worlddata.ai/]{.ul}&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="faq">FAQ&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>I like to do a project that relates to my company?&lt;/p>
+&lt;ul>
+&lt;li>Please go ahead and do so but make sure you use open-source
+data, and all results can be shared with everyone. If that is
+not the case, please pick a different project.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Can I use Word or Google doc, or LaTeX to hand in the final
+document?&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>No. you must use github.com and markdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Please note that exporting documents from word or google docs
+can result in a markdown file that needs substantial cleanup.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Where do I find more information about markdown&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf">[https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf]{.ul}&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Can I use an online markdown editor?&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>There are many online markdown editors available. One of them is
+&lt;a href="https://dillinger.io/">[https://dillinger.io/]{.ul}&lt;/a>.&lt;br>
+Use them to write your document or check the one you have
+developed in another editor such as word or google docs. Just
+paste and copy ;-)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remember, online editors can be dangerous in case you lose
+network connection. So we recommend to develop small portions
+and copy them into a locally managed document that you then
+check into github.com.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Github GUI (recommended): this works very well, but the
+markdown is slightly limited. We use hugo&amp;rsquo;s markdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>pyCharm (recommended): works very well.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>emacs (recommended): works very well&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What level of expertise and effort do I need to write markdown?&lt;/p>
+&lt;ul>
+&lt;li>We taught 10-year-old students to use markdown in less than 5
+minutes.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What level of expertise is needed to learn BibTeX&lt;/p>
+&lt;ul>
+&lt;li>We have taught BibTeX to inexperienced students while using
+jabref in less than an hour (but it is not required for this
+course). You can use footnotes while making sure that the
+footnotes follow the IEEE format.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>How can I get IEEE formatted footnotes?&lt;/p>
+&lt;ul>
+&lt;li>Simply use jabref and paste and copy the text it produces.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Will there be more FAQ&amp;rsquo;s?&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Please see our book on markdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Discuss your issue in piazza; if it is an issue that is not yet
+covered, we will add it to the book.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>How do I write URLs?&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Answered in book&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Note: All URL&amp;rsquo;s must be either in [TEXT](URLHERE) or
+&amp;lt;URLHERE&amp;gt; format.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
