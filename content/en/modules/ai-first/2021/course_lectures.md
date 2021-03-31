@@ -166,7 +166,7 @@ We went about 2/3rds of way through presentation [AI First Scenarios: Health and
  
 ### GitHub for the Class project
  
-* We explain how touse GitHub for the class project. A video is available on YouTube. Pleas note that we only uploaded a thelevant portion. The other half of the lecture went into  individual comments for each student which we have not published. The comments are included in tiyr GitHub repository.
+* We explain how touse GitHub for the class project. A video is available on YouTube. Pleas note that we only uploaded a thelevant portion. The other half of the lecture went into  individual comments for each student which we have not published. The comments are included in the GitHub repository.
 
 Note project guidelines are given [here](https://cybertraining-dsc.github.io/courses/ai-first/project-guidelines/)
 
