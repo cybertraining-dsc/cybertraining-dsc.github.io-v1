@@ -20,7 +20,7 @@ All students of this class are doing a software project.
 - We must be able to run software from class GitHub repository. To do so you must include an appendix to your project 
   report describing how to run your project.
     
-  * If you use containers you must decsribe how to create them from DOcker files.
+  * If you use containers you must decsribe how to create them from Docker files.
   * If you usue ipy nptebooks you must include a button or links so it can be run in collab
     
 
