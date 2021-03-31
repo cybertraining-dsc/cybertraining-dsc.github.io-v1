@@ -104,26 +104,26 @@ Software Project Reports: 2500 - 3000 Words.
 Given next are links to collections of datasets that may be of use for
 homework assignments or projects.
 
--   [[https://www.data.gov/]{.ul}](https://www.data.gov/)
-    [[https://github.com/caesar0301/awesome-public-datasets]{.ul}](https://github.com/caesar0301/awesome-public-datasets)
+-   [[https://www.data.gov/]](https://www.data.gov/)
+    [[https://github.com/caesar0301/awesome-public-datasets]](https://github.com/caesar0301/awesome-public-datasets)
 
--   [[https://aws.amazon.com/public-data-sets/]{.ul}](https://aws.amazon.com/public-data-sets/)
+-   [[https://aws.amazon.com/public-data-sets/]](https://aws.amazon.com/public-data-sets/)
 
--   [[https://www.kaggle.com/datasets]{.ul}](https://www.kaggle.com/datasets)
+-   [[https://www.kaggle.com/datasets]](https://www.kaggle.com/datasets)
 
--   [[https://cloud.google.com/bigquery/public-data/github]{.ul}](https://cloud.google.com/bigquery/public-data/github)
+-   [[https://cloud.google.com/bigquery/public-data/github]](https://cloud.google.com/bigquery/public-data/github)
 
--   [[https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public]{.ul}](https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public)
+-   [[https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public]](https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public)
 
--   [[http://pascal.inrialpes.fr/data/human/]{.ul}](http://pascal.inrialpes.fr/data/human/)
+-   [[http://pascal.inrialpes.fr/data/human/]](http://pascal.inrialpes.fr/data/human/)
 
--   [[https://github.com/fivethirtyeight/uber-tlc-foil-response]{.ul}](https://github.com/fivethirtyeight/uber-tlc-foil-response)
+-   [[https://github.com/fivethirtyeight/uber-tlc-foil-response]](https://github.com/fivethirtyeight/uber-tlc-foil-response)
 
--   [[http://www.census.gov/population/www/cen2010/glance/]{.ul}](http://www.census.gov/population/www/cen2010/glance/)
+-   [[http://www.census.gov/population/www/cen2010/glance/]](http://www.census.gov/population/www/cen2010/glance/)
 
--   [[https://ieee-dataport.org/datasets]{.ul}](https://ieee-dataport.org/datasets)
+-   [[https://ieee-dataport.org/datasets]](https://ieee-dataport.org/datasets)
 
--   [[https://worlddata.ai/]{.ul}](https://worlddata.ai/)
+-   [[https://worlddata.ai/]](https://worlddata.ai/)
 
 # FAQ
 
