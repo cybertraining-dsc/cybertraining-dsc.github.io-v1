@@ -1,7 +1,7 @@
 ---
 title: "Project Guidelines"
 linkTitle: "Project Guidelines"
-description: "We present here the project guidelines"
+description: "We present here the AI First Engineering project guidelines"
 weight: 20
 ---
 
@@ -11,8 +11,7 @@ We present here the project guidelines
 
 All students of this class are doing a software project.
 
-- The final project is 40-50% of grade (depending on the number of
-  homework assignments that are set)
+- The final project is 50% of grade
 
 - All projects must have a well-written report and may have a software
   component
@@ -27,12 +26,12 @@ All students of this class are doing a software project.
 - There are a useful set of example projects submitted in previous
   classes
 
-  - [Last years class](https://cybertraining-dsc.github.io/report/)
-  - [[https://github.com/cybertraining-dsc/pub/blob/master/docs/vonLaszewski-cloud-vol-9.pdf]](https://github.com/cybertraining-dsc/pub/blob/master/docs/vonLaszewski-cloud-vol-9.pdf)
+  - [Last year's Fall 2020 Big Data class](https://cybertraining-dsc.github.io/report/)
+  - Earlier Classes [[https://github.com/cybertraining-dsc/pub/blob/master/docs/vonLaszewski-cloud-vol-9.pdf]](https://github.com/cybertraining-dsc/pub/blob/master/docs/vonLaszewski-cloud-vol-9.pdf)
     (26 projects)
-  - [[https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i523-v3.pdf]](https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i523-v3.pdf)
+  - Earlier Classes [[https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i523-v3.pdf]](https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i523-v3.pdf)
     (45 projects)
-  - [[https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i524-spring-2017.pdf]](https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i524-spring-2017.pdf)
+  - Earlier Classes [[https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i524-spring-2017.pdf]](https://github.com/cybertraining-dsc/pub/blob/master/docs//vonLaszewski-i524-spring-2017.pdf)
     (28 projects)
 
 - In this class you do not have the option to work on a joint report, however you can collaborate. 
@@ -46,11 +45,14 @@ project must include a programming part to get a full grade. It is
 expected that you identify a suitable analysis task and data set for the
 project and that you learn how to apply this analysis as well as to
 motivate it. It is part of the learning outcome that you determine this
-instead of us giving you a topic.
+instead of us giving you a topic. This topic will be presented by student in class April 1.
 
 It is desired that the project has a novel feature in it. A project
 that you simply reproduce may not recieve the best grade, but this depends 
 on what the analysis is and how you report it.
+
+However "major advances" and solving of a full-size problem are not required. You can simplify both network and dataset to be able to complete project.
+The project write-up should describe the "full-size" realistic problem with software exemplifying an instructive example.
 
 One goal of the class is to use open source technology wherever
 possible. As a beneficial side product of this, we are able to
@@ -187,14 +189,14 @@ homework assignments or projects.
 
 -   Will there be more FAQ's?
 
-    -   Please see our book on markdown.
+    -   Please see our [book](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf) on markdown.
 
     -   Discuss your issue in piazza; if it is an issue that is not yet
         covered, we will add it to the book.
 
 -   How do I write URLs?
 
-    -   Answered in book
+    -   Answered in [book](https://cloudmesh-community.github.io/pub/vonLaszewski-writing.pdf)
 
     -   Note: All URL's must be either in \[TEXT\](URLHERE) or
         \<URLHERE\> format.
