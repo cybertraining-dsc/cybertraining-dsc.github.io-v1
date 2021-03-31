@@ -79,8 +79,8 @@ more involved than the technology reviews.
 # Format of Project
 
 Plagiarism is of course not permitted. It is your responsibility 
-to know what plagiarism is. We provide a detailed book about it, you can also do the IU 
-plagiarism test to learn more.
+to know what plagiarism is. We provide a detailed description book about it [here](https://laszewski.github.io/publication/las-20-book-markdown/), you can also do the [IU 
+plagiarism test](https://plagiarism.iu.edu/certificationTests/) to learn more.
 
 All project reports must be provided in github.com as a markdown file.
 All images must be in an images directory. You must use proper
