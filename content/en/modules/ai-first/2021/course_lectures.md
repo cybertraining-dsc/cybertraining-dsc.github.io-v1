@@ -171,3 +171,12 @@ We went about 2/3rds of way through presentation [AI First Scenarios: Health and
 Note project guidelines are given [here](https://cybertraining-dsc.github.io/courses/ai-first/project-guidelines/)
 
 Video {{< youtube "PBMPWjavraU" >}}
+
+## Week 11
+
+### The Final Project
+
+* We described the gidelines of final projects in [Slides](https://docs.google.com/presentation/d/1YqHJmamwPV0TNxjwn9Uh4BQcBXqKLCM0MY18raP3Zl4/edit?usp=sharing)
+* We were impressed by the seven student presentations describing their chosen project and approach.
+
+Video {{< youtube "gUhZdkke9A8" >}}
