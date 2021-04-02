@@ -48,14 +48,18 @@ Each data loader expecte a Pytorch Dataset.
 The DataSet abstraction and DataLoader usage can be found [here](https://pytorch.org/tutorials/recipes/recipes/loading_data_recipe.html) 
 
 ```python
+# Data transformation function 
 transform = transforms.Compose([transforms.ToTensor(),
                               transforms.Normalize((0.5,), (0.5,)),
                               ])
 
-trainset = datasets.MNIST('drive/My Drive/mnist/MNIST_data/', download=True, train=True, transform=transform)
-valset = datasets.MNIST('drive/My Drive/mnist/MNIST_data/', download=True, train=False, transform=transform)
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
-valloader = torch.utils.data.DataLoader(valset, batch_size=64, shuffle=True)
+# DataSet
+train_data_set = datasets.MNIST('drive/My Drive/mnist/data/', download=True, train=True, transform=transform)
+validation_data_set = datasets.MNIST('drive/My Drive/mnist/data/', download=True, train=False, transform=transform)
+
+# DataLoader
+train_loader = torch.utils.data.DataLoader(train_data_set, batch_size=32, shuffle=True)
+validation_loader = torch.utils.data.DataLoader(validation_data_set, batch_size=32, shuffle=True)
 ```
 
 ## Define Network
