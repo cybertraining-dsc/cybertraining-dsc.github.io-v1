@@ -1616,9 +1616,6 @@ an image classification problem with Multi Layer Perceptron with PyTorch.&lt;/p>
 &lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">time&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">time&lt;/span>
 &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">os&lt;/span>
 &lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">google.colab&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">drive&lt;/span>
-&lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">torch.distributed&lt;/span> &lt;span style="color:#204a87;font-weight:bold">as&lt;/span> &lt;span style="color:#000">dist&lt;/span>
-&lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">torch.multiprocessing&lt;/span> &lt;span style="color:#204a87;font-weight:bold">as&lt;/span> &lt;span style="color:#000">mp&lt;/span>
-&lt;span style="color:#204a87;font-weight:bold">from&lt;/span> &lt;span style="color:#000">torch.nn.parallel&lt;/span> &lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">DistributedDataParallel&lt;/span> &lt;span style="color:#204a87;font-weight:bold">as&lt;/span> &lt;span style="color:#000">DDP&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="pre-process-data">Pre-Process Data&lt;/h2>
 &lt;p>Here we download the data using PyTorch data utils and transform the data by using a normalization function.
 PyTorch provides a data loader abstraction called a &lt;code>DataLoader&lt;/code> where we can set the batch size, data shuffle per batch loading.
