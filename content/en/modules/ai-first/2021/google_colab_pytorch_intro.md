@@ -34,10 +34,6 @@ from torch import optim
 from time import time
 import os
 from google.colab import drive
-
-import torch.distributed as dist
-import torch.multiprocessing as mp
-from torch.nn.parallel import DistributedDataParallel as DDP
 ```
 
 ## Pre-Process Data
