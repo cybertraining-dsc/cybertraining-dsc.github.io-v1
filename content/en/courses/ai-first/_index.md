@@ -190,6 +190,17 @@ Distributed Training with MNIST Classification on Google Colab (Web)
 {{< /view_module >}}
 
 
+{{< view_module
+	alt="PyTorch with MNIST"
+	src="/images/colab.png"
+	url="/modules/ai-first/2021/google_colab_pytorch_intro"
+	>}}
+	
+PyTorch with MNIST Classification on Google Colab (Web)
+	
+{{< /view_module >}}
+
+
 ## Material
 
 <!-- COMMENTED OUT
