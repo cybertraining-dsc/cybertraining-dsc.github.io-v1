@@ -91,6 +91,12 @@ Note the parameters that each of these methods takes in. These parameters are ex
 
 ## 3. Generating the OpenAPI YAML file
 
+This example uses some packages not included in the base installation of cloudmesh-openapi. First we install these packages using:
+
+```
+(ENV3) > pip install numpy pandas joblib sklearn
+```
+
 Let us now use the python code from above to create the openapi YAML file that we will deploy onto our server. To correctly generate this file, use the following command:
 ```
 (ENV3) > cms openapi generate PipelineAnovaSVM 
