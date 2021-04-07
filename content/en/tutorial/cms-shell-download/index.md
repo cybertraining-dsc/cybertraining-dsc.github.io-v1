@@ -1,7 +1,7 @@
 ---
-date: 2021-02-07
+date: 2021-04-07
 title: "Using Shell.download to Download Files"
-linkTitle: "Downloading files with Shell"
+linkTitle: "Downloading files with cms"
 description: "Using Shell to download files that can be potentially very large in python."
 author: Richard Otten ([ottenrichie@gmail.com](mailto:ottenrichie@gmail.com)), Gregor von Laszewski ([laszewski@gmail.com](mailto:laszewski@gmail.com)) [laszewski.github.io](https://laszewski.github.io)
 resources:
@@ -17,22 +17,20 @@ resources:
 
 **Learning Objectives**
 
-* Use `Shell.download` from `cloudmesh-common` to download files (such as disk images) from the internet.
-
-**Topics covered**
-
-* Usage of `Shell.download`
-* Underlying implementations for `Shell.download`
+* Install `cloudmesh.common`
+* Use `Shell.download` from `cloudmesh-common` to download files from the internet.
 
 **Requirements**
 
 * `python3 --version` > 3.8
 
+**Topics covered**
+
 {{% table_of_contents %}}
 
 {{% /pageinfo %}}
 
-## Basic Usage
+## Installation of `cloudmesh.commn`
 
 Install `cloudmesh-common` with:
 
@@ -40,6 +38,8 @@ Install `cloudmesh-common` with:
 pip install -U pip
 pip install cloudmesh-common
 ```
+
+## Usage of `Shell.download`
 
 `Shell.download` leverages the streaming capabilities of the `requests` library for large files.
 
@@ -60,7 +60,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Example where provider is `system`. Cloudmesh `Shell` will first try to use `wget` then `curl` (if `wget` fails)
+## Different Providers for `Shell.download`
+
+Example where provider is `system`. Cloudmesh `Shell` will first try to use 
+`wget` then `curl` (if `wget` fails)
 
 ```
 $ python3
@@ -83,5 +86,27 @@ INFO: Used curl
 >>>
 ```
 
-We can see here that `Shell.download` uses `curl` and not `wget`. This is because the example system did not have `wget` as a
-terminal (`'system'`) command.
+We can see here that `Shell.download` uses `curl` and not `wget`. This is 
+because the example system did not have `wget` as a
+terminal (`'system'`) command installed.
+
+## Installing other Download Programs
+
+Your OS typically has defined mechanisms to install commands such as `curl` and `wget`.
+If they are not installed. Shell.download will use Python requests automatically.
+If you like to use wget r curl you need to install them.
+
+On Ubuntu you can fro example say 
+
+```bash
+$ sudo apt install wget
+```
+
+or 
+
+```bash
+$ sudo apt install curl
+```
+
+Please find the method that works for your system, or use the default method 
+which does not require a third party provider.
