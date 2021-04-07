@@ -14,7 +14,88 @@
 &lt;h2 id="github-pull-request-via-the-github-gui">Github Pull Request via the GitHub GUI&lt;/h2>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/eU3jOuM7OQc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div></description></item><item><title>Tutorial: GitHub gh Command Line Interface</title><link>/tutorial/git-gh/</link><pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate><guid>/tutorial/git-gh/</guid><description>
+&lt;/div></description></item><item><title>Tutorial: Using Shell.download to Download Files</title><link>/tutorial/cms-shell-download/</link><pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate><guid>/tutorial/cms-shell-download/</guid><description>
+&lt;img src="/tutorial/cms-shell-download/featured-image_hu31ad1de8477c329f5412ff59acdd044d_22590_640x0_resize_catmullrom_2.png" width="640" height="369"/>
+&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+&lt;img class="card-img-top" src="/tutorial/cms-shell-download/featured-image_hu31ad1de8477c329f5412ff59acdd044d_22590_600x300_fill_catmullrom_smart1_2.png" width="600" height="300">
+&lt;div class="card-body px-0 pt-2 pb-0">
+&lt;p class="card-text">
+&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>&lt;strong>Learning Objectives&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Install &lt;code>cloudmesh.common&lt;/code>&lt;/li>
+&lt;li>Use &lt;code>Shell.download&lt;/code> from &lt;code>cloudmesh-common&lt;/code> to download files from the internet.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Requirements&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>python3 --version&lt;/code> &amp;gt; 3.8&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Topics covered&lt;/strong>&lt;/p>
+&lt;div class="toc">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#installation-of-cloudmeshcommn">Installation of &lt;code>cloudmesh.commn&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#usage-of-shelldownload">Usage of &lt;code>Shell.download&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#different-providers-for-shelldownload">Different Providers for &lt;code>Shell.download&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#installing-other-download-programs">Installing other Download Programs&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="installation-of-cloudmeshcommn">Installation of &lt;code>cloudmesh.commn&lt;/code>&lt;/h2>
+&lt;p>Install &lt;code>cloudmesh-common&lt;/code> with:&lt;/p>
+&lt;pre>&lt;code>pip install -U pip
+pip install cloudmesh-common
+&lt;/code>&lt;/pre>&lt;h2 id="usage-of-shelldownload">Usage of &lt;code>Shell.download&lt;/code>&lt;/h2>
+&lt;p>&lt;code>Shell.download&lt;/code> leverages the streaming capabilities of the &lt;code>requests&lt;/code> library for large files.&lt;/p>
+&lt;p>Example download of image where underlying downloader is &lt;code>requests&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>$ python3
+Python 3.9.4 (v3.9.4:1f2e3088f3, Apr 4 2021, 12:32:44)
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; from cloudmesh.common.Shell import Shell
+&amp;gt;&amp;gt;&amp;gt; file_url = 'https://github.com/cloudmesh/pi/blob/main/content/en/tutorial/example/featured-image.png?raw=true'
+&amp;gt;&amp;gt;&amp;gt; destination = '~/Desktop/image.png'
+&amp;gt;&amp;gt;&amp;gt; Shell.download(file_url, destination)
+/users/you/Desktop/image.png: 100%|###################################################################################| 22.6k/22.6k [00:00&amp;lt;00:00, 3.58MB/s]
+'/users/you/Desktop/image.png'
+&amp;gt;&amp;gt;&amp;gt;
+&lt;/code>&lt;/pre>&lt;h2 id="different-providers-for-shelldownload">Different Providers for &lt;code>Shell.download&lt;/code>&lt;/h2>
+&lt;p>Example where provider is &lt;code>system&lt;/code>. Cloudmesh &lt;code>Shell&lt;/code> will first try to use
+&lt;code>wget&lt;/code> then &lt;code>curl&lt;/code> (if &lt;code>wget&lt;/code> fails)&lt;/p>
+&lt;pre>&lt;code>$ python3
+Python 3.9.4 (v3.9.4:1f2e3088f3, Apr 4 2021, 12:32:44)
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; from cloudmesh.common.Shell import Shell
+&amp;gt;&amp;gt;&amp;gt; file_url = 'https://github.com/cloudmesh/pi/blob/main/content/en/tutorial/example/featured-image.png?raw=true'
+&amp;gt;&amp;gt;&amp;gt; destination = '~/Desktop/image.png'
+&amp;gt;&amp;gt;&amp;gt; Shell.download(file_url, destination, provider='system')
+sh: wget: command not found
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+100 153 100 153 0 0 467 0 --:--:-- --:--:-- --:--:-- 467
+100 164 100 164 0 0 379 0 --:--:-- --:--:-- --:--:-- 379
+100 22590 100 22590 0 0 43694 0 --:--:-- --:--:-- --:--:-- 43694
+INFO: Used curl
+'/users/you/Desktop/image.png'
+&amp;gt;&amp;gt;&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>We can see here that &lt;code>Shell.download&lt;/code> uses &lt;code>curl&lt;/code> and not &lt;code>wget&lt;/code>. This is
+because the example system did not have &lt;code>wget&lt;/code> as a
+terminal (&lt;code>'system'&lt;/code>) command installed.&lt;/p>
+&lt;h2 id="installing-other-download-programs">Installing other Download Programs&lt;/h2>
+&lt;p>Your OS typically has defined mechanisms to install commands such as &lt;code>curl&lt;/code> and &lt;code>wget&lt;/code>.
+If they are not installed. Shell.download will use Python requests automatically.
+If you like to use wget r curl you need to install them.&lt;/p>
+&lt;p>On Ubuntu you can fro example say&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt install wget
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>or&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo apt install curl
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Please find the method that works for your system, or use the default method
+which does not require a third party provider.&lt;/p></description></item><item><title>Tutorial: GitHub gh Command Line Interface</title><link>/tutorial/git-gh/</link><pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate><guid>/tutorial/git-gh/</guid><description>
 &lt;img src="/tutorial/git-gh/featured-image_hu01992e3b0b9fde28c6f5f617d4c1ca8c_222072_640x0_resize_catmullrom_2.png" width="640" height="231"/>
 &lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
 &lt;img class="card-img-top" src="/tutorial/git-gh/featured-image_hu01992e3b0b9fde28c6f5f617d4c1ca8c_222072_600x300_fill_catmullrom_smart1_2.png" width="600" height="300">
