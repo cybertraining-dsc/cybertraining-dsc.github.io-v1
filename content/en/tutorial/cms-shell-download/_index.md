@@ -4,7 +4,6 @@ title: "Using Shell.download to Download Files"
 linkTitle: "Downloading files with Shell"
 description: "Using Shell to download files that can be potentially very large in python."
 author: Richard Otten ([ottenrichie@gmail.com](mailto:ottenrichie@gmail.com)), Gregor von Laszewski ([laszewski@gmail.com](mailto:laszewski@gmail.com)) [laszewski.github.io](https://laszewski.github.io)
-draft: False
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
