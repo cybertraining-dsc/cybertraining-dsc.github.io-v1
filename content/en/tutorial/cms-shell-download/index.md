@@ -30,11 +30,30 @@ resources:
 
 {{% /pageinfo %}}
 
+
+## Python 3 `venv`
+
+Best practice is to use a venv in python to isolate your custom python instalation:
+
+```bash
+$ python3 -m venv ~/ENV3
+$ source ~/ENV3/bin/activate 
+```
+
+or
+
+```bash
+$ ~/ENV3/Scripts/activate.exe
+```
+
+in Windows `gitbash`.
+
 ## Installation of `cloudmesh.commn`
+
 
 Install `cloudmesh-common` with:
 
-```
+```bash
 pip install -U pip
 pip install cloudmesh-common
 ```
@@ -45,7 +64,7 @@ pip install cloudmesh-common
 
 Example download of image where underlying downloader is `requests`:
 
-```
+```python
 $ python3
 Python 3.9.4 (v3.9.4:1f2e3088f3, Apr  4 2021, 12:32:44)
 [Clang 6.0 (clang-600.0.57)] on darwin
@@ -55,17 +74,27 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> file_url = 'https://github.com/cloudmesh/pi/blob/main/content/en/tutorial/example/featured-image.png?raw=true'
 >>> destination = '~/Desktop/image.png'
 >>> Shell.download(file_url, destination)
-/users/you/Desktop/image.png: 100%|###################################################################################| 22.6k/22.6k [00:00<00:00, 3.58MB/s]
+/users/you/Desktop/image.png: 100%|#########| 22.6k/22.6k [00:00<00:00, 3.58MB/s]
 '/users/you/Desktop/image.png'
->>>
 ```
+
+## Configuring the Download Cache
+
+`Shell.download` only downloads if the filename in the destination does not 
+already exist. If you like to change the behavior and ignore it, you need to use 
+the `force` parameter.
+
+```python
+Shell.download(file_url, destination, force=True)
+```
+
 
 ## Different Providers for `Shell.download`
 
 Example where provider is `system`. Cloudmesh `Shell` will first try to use 
 `wget` then `curl` (if `wget` fails)
 
-```
+```python
 $ python3
 Python 3.9.4 (v3.9.4:1f2e3088f3, Apr  4 2021, 12:32:44)
 [Clang 6.0 (clang-600.0.57)] on darwin
@@ -110,3 +139,11 @@ $ sudo apt install curl
 
 Please find the method that works for your system, or use the default method 
 which does not require a third party provider.
+
+The order of the providers is defined as 
+
+1. wget 
+2. curl
+3. Python requests
+
+We use wget and curl first as many OS have optimized versions of them.
