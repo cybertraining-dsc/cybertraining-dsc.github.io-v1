@@ -3669,6 +3669,7 @@ computing Serverless and FaaS Cloud Native Microservices Update to 2019 Hypecycl
 &lt;li>&lt;a href="#the-final-project">The Final Project&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;li>&lt;a href="#week-12">Week 12&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/nav>
 &lt;/div>
@@ -3857,6 +3858,13 @@ Gregors Web Pages.)&lt;/li>
 &lt;p>Video
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/gUhZdkke9A8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/p>
+&lt;h2 id="week-12">Week 12&lt;/h2>
+&lt;p>We used our research on Earthquake forecasting, to illustrate deep learning for Time Series with &lt;a href="https://docs.google.com/presentation/d/1ykYnX0uvxPE-M-c-Tau8irU3IqYuvj8Ws8iUqd5RCxQ/edit?usp=sharing">slides&lt;/a>&lt;/p>
+&lt;p>Video
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/nQBr2347Xqg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/p></description></item><item><title>Modules: Assignment 4</title><link>/modules/bigdataapplications/2019/assignments/assignment4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/modules/bigdataapplications/2019/assignments/assignment4/</guid><description>
 &lt;h1 id="assignment-4">Assignment 4&lt;/h1>
