@@ -180,3 +180,9 @@ Video {{< youtube "PBMPWjavraU" >}}
 * We were impressed by the seven student presentations describing their chosen project and approach.
 
 Video {{< youtube "gUhZdkke9A8" >}}
+
+## Week 12
+
+We used our research on Earthquake forecasting, to illustrate deep learning for Time Series with [slides](https://docs.google.com/presentation/d/1ykYnX0uvxPE-M-c-Tau8irU3IqYuvj8Ws8iUqd5RCxQ/edit?usp=sharing)
+
+Video {{< youtube "nQBr2347Xqg" >}}
