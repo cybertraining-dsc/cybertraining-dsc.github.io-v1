@@ -183,6 +183,16 @@ Video {{< youtube "gUhZdkke9A8" >}}
 
 ## Week 12
 
+### Practical Issues in Deep Learning for Earthquakes
+
 We used our research on Earthquake forecasting, to illustrate deep learning for Time Series with [slides](https://docs.google.com/presentation/d/1ykYnX0uvxPE-M-c-Tau8irU3IqYuvj8Ws8iUqd5RCxQ/edit?usp=sharing)
 
 Video {{< youtube "nQBr2347Xqg" >}}
+
+## Week 13
+
+### Practical Issues in Deep Learning for Earthquakes
+
+We continued discussion that illustrated deep learning for Time Series with the same [slides](https://docs.google.com/presentation/d/1ykYnX0uvxPE-M-c-Tau8irU3IqYuvj8Ws8iUqd5RCxQ/edit?usp=sharing) as last week
+
+Video {{< youtube "jM2OJYDQE-Y" >}}
