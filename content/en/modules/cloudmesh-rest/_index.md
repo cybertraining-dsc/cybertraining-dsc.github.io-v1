@@ -20,7 +20,6 @@ with data and make predictions from said data. All code needed for this is provi
 ### 1.1 Prerequisite
 
 It is also assumed that the user has installed and has familiarity with the following:
-* Install cloudmesh-openapi using the developer install as documented [here](https://github.com/cloudmesh/cloudmesh-openapi)
 * `python3 --version` >= 3.8
 * Linux Command line
 
