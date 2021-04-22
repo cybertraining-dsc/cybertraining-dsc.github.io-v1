@@ -1,4 +1,111 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – Reports</title><link>/report/</link><description>Recent content in Reports on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/report/index.xml" rel="self" type="application/rss+xml"/><item><title>Report:</title><link>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybertraining – Reports</title><link>/report/</link><description>Recent content in Reports on Cybertraining</description><generator>Hugo -- gohugo.io</generator><atom:link href="/report/index.xml" rel="self" type="application/rss+xml"/><item><title>Report: Reports 2021</title><link>/report/2021/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/report/2021/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>This page contains the list of the reports and projects.&lt;/p>
+&lt;p>Any report with a tag&lt;/p>
+&lt;ul>
+&lt;li>&lt;img src="../report/failed-check.png" alt=""> will not
+be reviewed or commented on.&lt;/li>
+&lt;li>&lt;img src="../report/failed-status.png" alt=""> will not
+be reviewed for grading.&lt;/li>
+&lt;/ul>
+&lt;p>Click on your icon to find out what the errors are. Fixing them is easy.&lt;/p>
+&lt;/div>
+&lt;h2 id="list-for-2021">List for 2021&lt;/h2>
+&lt;h3 id="sample">Sample&lt;/h3>
+&lt;p>For samples see: &lt;a href="https://cybertraining-dsc.github.io/report/">https://cybertraining-dsc.github.io/report/&lt;/a>&lt;/p>
+&lt;h3 id="reports-and-projects">Reports and Projects&lt;/h3>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/sp21-599-359/blob/main/project/project.md">&lt;i class="fas fa-edit">&lt;/i>&lt;/a> sp21-599-359: &lt;a href="/report/sp21-599-359/project/project/">Project: Deep Learning in Drug Discovery, Anesu Chaora&lt;/a>
+&lt;ul>
+&lt;li>&lt;img src="https://img.shields.io/github/stars/cybertraining-dsc/sp21-599-359?style=social" alt="GitHub Repo stars">
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-359/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-359/workflows/Check%20Report/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-359/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-359/workflows/Status/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://GitHub.com/cybertraining-dsc/sp21-599-359/issues/">&lt;img src="https://img.shields.io/github/issues-raw/cybertraining-dsc/sp21-599-359" alt="Issues">&lt;/a>
+&lt;img src="https://img.shields.io/github/languages/code-size/cybertraining-dsc/sp21-599-359" alt="GitHub code size in bytes">
+&lt;img src="https://img.shields.io/github/repo-size/cybertraining-dsc/sp21-599-359" alt="GitHub repo size">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/sp21-599-357/blob/main/project/project.md">&lt;i class="fas fa-edit">&lt;/i>&lt;/a> sp21-599-357: &lt;a href="/report/sp21-599-357/project/project/">Project: Structural Protein Sequences Classification, Jiayu Li&lt;/a>
+&lt;ul>
+&lt;li>&lt;img src="https://img.shields.io/github/stars/cybertraining-dsc/sp21-599-357?style=social" alt="GitHub Repo stars">
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-357/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-357/workflows/Check%20Report/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-357/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-357/workflows/Status/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://GitHub.com/cybertraining-dsc/sp21-599-357/issues/">&lt;img src="https://img.shields.io/github/issues-raw/cybertraining-dsc/sp21-599-357" alt="Issues">&lt;/a>
+&lt;img src="https://img.shields.io/github/languages/code-size/cybertraining-dsc/sp21-599-357" alt="GitHub code size in bytes">
+&lt;img src="https://img.shields.io/github/repo-size/cybertraining-dsc/sp21-599-357" alt="GitHub repo size">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/sp21-599-355/blob/main/project/project.md">&lt;i class="fas fa-edit">&lt;/i>&lt;/a> sp21-599-355: &lt;a href="/report/sp21-599-355/project/project/">Project: Chat Bots in Customer Service, Rishabh Agrawal&lt;/a>
+&lt;ul>
+&lt;li>&lt;img src="https://img.shields.io/github/stars/cybertraining-dsc/sp21-599-355?style=social" alt="GitHub Repo stars">
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-355/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-355/workflows/Check%20Report/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-355/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-355/workflows/Status/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://GitHub.com/cybertraining-dsc/sp21-599-355/issues/">&lt;img src="https://img.shields.io/github/issues-raw/cybertraining-dsc/sp21-599-355" alt="Issues">&lt;/a>
+&lt;img src="https://img.shields.io/github/languages/code-size/cybertraining-dsc/sp21-599-355" alt="GitHub code size in bytes">
+&lt;img src="https://img.shields.io/github/repo-size/cybertraining-dsc/sp21-599-355" alt="GitHub repo size">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/project.md">&lt;i class="fas fa-edit">&lt;/i>&lt;/a> sp21-599-354: &lt;a href="/report/sp21-599-354/project/project/">Project: Identifying Agricultural Weeds with CNN, Paula Madetzke&lt;/a>
+&lt;ul>
+&lt;li>&lt;img src="https://img.shields.io/github/stars/cybertraining-dsc/sp21-599-354?style=social" alt="GitHub Repo stars">
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-354/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-354/workflows/Check%20Report/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-354/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-354/workflows/Status/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://GitHub.com/cybertraining-dsc/sp21-599-354/issues/">&lt;img src="https://img.shields.io/github/issues-raw/cybertraining-dsc/sp21-599-354" alt="Issues">&lt;/a>
+&lt;img src="https://img.shields.io/github/languages/code-size/cybertraining-dsc/sp21-599-354" alt="GitHub code size in bytes">
+&lt;img src="https://img.shields.io/github/repo-size/cybertraining-dsc/sp21-599-354" alt="GitHub repo size">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/sp21-599-358/blob/main/project/project.md">&lt;i class="fas fa-edit">&lt;/i>&lt;/a> sp21-599-358: &lt;a href="/report/sp21-599-358/project/project/">Project: Autonomous Vehicle Simulations Using the CARLA Simulator, Jesus Badillo&lt;/a>
+&lt;ul>
+&lt;li>&lt;img src="https://img.shields.io/github/stars/cybertraining-dsc/sp21-599-358?style=social" alt="GitHub Repo stars">
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-358/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-358/workflows/Check%20Report/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-358/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-358/workflows/Status/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://GitHub.com/cybertraining-dsc/sp21-599-358/issues/">&lt;img src="https://img.shields.io/github/issues-raw/cybertraining-dsc/sp21-599-358" alt="Issues">&lt;/a>
+&lt;img src="https://img.shields.io/github/languages/code-size/cybertraining-dsc/sp21-599-358" alt="GitHub code size in bytes">
+&lt;img src="https://img.shields.io/github/repo-size/cybertraining-dsc/sp21-599-358" alt="GitHub repo size">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/sp21-599-356/blob/main/project/project.md">&lt;i class="fas fa-edit">&lt;/i>&lt;/a> sp21-599-356: &lt;a href="/report/sp21-599-356/project/project/">Project: Forecasting Natural Gas Demand/Supply, Baekeun Park&lt;/a>
+&lt;ul>
+&lt;li>&lt;img src="https://img.shields.io/github/stars/cybertraining-dsc/sp21-599-356?style=social" alt="GitHub Repo stars">
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-356/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-356/workflows/Check%20Report/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-356/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-356/workflows/Status/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://GitHub.com/cybertraining-dsc/sp21-599-356/issues/">&lt;img src="https://img.shields.io/github/issues-raw/cybertraining-dsc/sp21-599-356" alt="Issues">&lt;/a>
+&lt;img src="https://img.shields.io/github/languages/code-size/cybertraining-dsc/sp21-599-356" alt="GitHub code size in bytes">
+&lt;img src="https://img.shields.io/github/repo-size/cybertraining-dsc/sp21-599-356" alt="GitHub repo size">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cybertraining-dsc/sp21-599-356/blob/main/project/project.md">&lt;i class="fas fa-edit">&lt;/i>&lt;/a> sp21-599-356: &lt;a href="/report/sp21-599-356/project/project/">Project: Forecasting Natural Gas Demand/Supply, Baekeun Park&lt;/a>
+&lt;ul>
+&lt;li>&lt;img src="https://img.shields.io/github/stars/cybertraining-dsc/sp21-599-356?style=social" alt="GitHub Repo stars">
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-356/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-356/workflows/Check%20Report/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://github.com/cybertraining-dsc/sp21-599-356/actions">&lt;img src="https://github.com/cybertraining-dsc/sp21-599-356/workflows/Status/badge.svg" alt="Check Report">&lt;/a>
+&lt;a href="https://GitHub.com/cybertraining-dsc/sp21-599-356/issues/">&lt;img src="https://img.shields.io/github/issues-raw/cybertraining-dsc/sp21-599-356" alt="Issues">&lt;/a>
+&lt;img src="https://img.shields.io/github/languages/code-size/cybertraining-dsc/sp21-599-356" alt="GitHub code size in bytes">
+&lt;img src="https://img.shields.io/github/repo-size/cybertraining-dsc/sp21-599-356" alt="GitHub repo size">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr></description></item><item><title>Report:</title><link>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/report/cloudmesh-openapi/cloudmesh/openapi/readme/</guid><description>
 &lt;h1 id="openapi-function-generator">Openapi Function generator&lt;/h1>
 &lt;h2 id="activity-log">Activity Log&lt;/h2>
 &lt;h2 id="week-of-mar-9---mar-16">Week of Mar 9 - Mar 16&lt;/h2>
@@ -5284,5 +5391,4 @@ Further improvement may also be done on our model. We only used price data and M
 &lt;p>TA-Lib. [Online]. Available: &lt;a href="https://mrjbq7.github.io/ta-lib/func_groups/momentum_indicators.html">https://mrjbq7.github.io/ta-lib/func_groups/momentum_indicators.html&lt;/a>. [Accessed: 08-Dec-2020]. &lt;a href="#fnref:11" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>Report:</title><link>/report/fa20-523-313/test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/report/fa20-523-313/test/</guid><description>
-&lt;h2 id="this-is-testmd">This is Test.md&lt;/h2></description></item></channel></rss>
+&lt;/section></description></item></channel></rss>
