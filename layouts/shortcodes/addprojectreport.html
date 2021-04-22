@@ -1,0 +1,7 @@
+{{ $icon := .Get "icon" | default "fa-edit" }} [<i class="{{ if not (or  (hasPrefix $icon "fas ")  (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/blob/main/project) {{.Get "hid"}}: [Project: {{ .Get "title"}}, {{.Get "author"}}](/report/{{ .Get "hid"}}/project/project/)
+    * <!-- --> ![GitHub Repo stars](https://img.shields.io/github/stars/cybertraining-dsc/{{ .Get "hid"}}?style=social)
+<!-- --> [![Check Report](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/actions) {{ $icon := .Get "icon" | default "fa-edit" }}
+<!-- --> [![Check Report](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/actions)
+<!-- --> [![Issues](https://img.shields.io/github/issues-raw/cybertraining-dsc/{{ .Get "hid"}})](https://GitHub.com/cybertraining-dsc/{{ .Get "hid"}}/issues/)
+<!-- --> ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/cybertraining-dsc/{{ .Get "hid"}})
+<!-- --> ![GitHub repo size](https://img.shields.io/github/repo-size/cybertraining-dsc/{{ .Get "hid"}})
