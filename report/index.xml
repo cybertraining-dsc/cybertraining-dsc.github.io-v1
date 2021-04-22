@@ -3,10 +3,10 @@
 &lt;p>This page contains the list of the reports and projects.&lt;/p>
 &lt;p>Any report with a tag&lt;/p>
 &lt;ul>
-&lt;li>&lt;img src="../report/failed-check.png" alt=""> will not
+&lt;li>&lt;img src="/images/failed-check.png" alt=""> will not
 be reviewed or commented on.&lt;/li>
-&lt;li>&lt;img src="../report/failed-status.png" alt=""> will not
-be reviewed for grading.&lt;/li>
+&lt;li>&lt;img src="/images/failed-status.png" alt=""> will not
+be reviewed for grading. The Status: field in the index.md file must be set only if your report is final and you like to get a grade for it.&lt;/li>
 &lt;/ul>
 &lt;p>Any report with&lt;/p>
 &lt;ul>
