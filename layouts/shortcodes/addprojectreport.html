@@ -1,4 +1,7 @@
-{{ $icon := .Get "icon" | default "fa-edit" }} [<i class="{{ if not (or  (hasPrefix $icon "fas ")  (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/blob/main/project) {{.Get "hid"}}: [Project: {{ .Get "title"}}, {{.Get "author"}}](/report/{{ .Get "hid"}}/project/project/)
+
+
+
+{{ $icon := .Get "icon" | default "fa-edit" }} [<i class="{{ if not (or  (hasPrefix $icon "fas ")  (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/blob/main/project) {{.Get "hid"}}: [Project: {{ .Get "title"}}, {{.Get "author"}}](/report/{{ .Get "hid"}}/project/)
     * <!-- --> ![GitHub Repo stars](https://img.shields.io/github/stars/cybertraining-dsc/{{ .Get "hid"}}?style=social)
 <!-- --> [![Check Report](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/actions) {{ $icon := .Get "icon" | default "fa-edit" }}
 <!-- --> [![Check Report](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/{{ .Get "hid"}}/actions)
