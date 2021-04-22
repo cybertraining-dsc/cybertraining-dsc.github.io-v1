@@ -1317,6 +1317,8 @@ server to train the model, and utilize said model for predictions.&lt;/p>
 &lt;p>Firstly, ensure we are in the correct directory.&lt;/p>
 &lt;pre>&lt;code>$ pwd
 ~/cm/cloudmesh-openapi
+&lt;/code>&lt;/pre>&lt;p>Then install some requirements needed for this example&lt;/p>
+&lt;pre>&lt;code>$ pip install sklearn pandas
 &lt;/code>&lt;/pre>&lt;p>Let us generate the yaml file from our python file to generate the proper specs for our service.&lt;/p>
 &lt;pre>&lt;code>$ cms openapi generate PipelineAnovaSVM \
 --filename=./tests/Scikitlearn-experimental/sklearn_svm.py \
@@ -1330,7 +1332,7 @@ set. We are going to use the iris data set in this example. We have
 provided it for you to use. Simply navigate to the &lt;code>/upload&lt;/code> endpoint
 by clicking on it, then click &lt;code>Try it out&lt;/code>.&lt;/p>
 &lt;p>We can now upload the file. Click on &lt;code>Choose File&lt;/code> and upload the data
-set located at &lt;code>~./tests/Scikitlearn-experimental/iris.data&lt;/code>. Simply
+set located at &lt;code>./tests/Scikitlearn-experimental/iris.data&lt;/code>. Simply
 hit &lt;code>Execute&lt;/code> after the file is uploaded. We should then get a return
 code of 200 (telling us that everything went ok).&lt;/p>
 &lt;p>The server now has our dataset. Let us now navigate to the &lt;code>/train&lt;/code>

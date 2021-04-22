@@ -6,7 +6,8 @@ owner:
   community: "599"
   semester: "sp21"
 project:
-  title: TBD
-  url: TBD
+  title: Deep Learning in Drug Discovery
+  url: https://github.com/cybertraining-dsc/sp21-599-359/blob/main/project/index.md
   author:
-    - sp21-599-359
+    - Anesu Chaora, sp21-599-359
+

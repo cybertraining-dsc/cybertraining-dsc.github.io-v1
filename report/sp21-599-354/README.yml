@@ -6,7 +6,7 @@ owner:
   community: "599"
   semester: "sp21"
 project:
-  title: TBD
-  url: TBD
+  title: Identifying Agricultural Weeds with CNN
+  url: https://github.com/cybertraining-dsc/sp21-599-354
   author:
     - sp21-599-354

@@ -6,7 +6,7 @@ owner:
   community: "599"
   semester: "sp21"
 project:
-  title: TBD
-  url: TBD
+  title: Autonomous Vehicle Simulations Using the CARLA Simulator
+  url: https://github.com/cybertraining-dsc/sp21-599-358/blob/main/project/index.md
   author:
-    - sp21-599-358
+    - Jesus Badillo, sp21-599-358
