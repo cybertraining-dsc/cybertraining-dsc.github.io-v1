@@ -8,6 +8,15 @@ be reviewed or commented on.&lt;/li>
 &lt;li>&lt;img src="../report/failed-status.png" alt=""> will not
 be reviewed for grading.&lt;/li>
 &lt;/ul>
+&lt;p>Any report with&lt;/p>
+&lt;ul>
+&lt;li>inssuficient detail will not be reviewed&lt;/li>
+&lt;li>without a link in the report to the source code or notebook will not be reviewed&lt;/li>
+&lt;li>any report without a download function that only downloads if the data is not
+present will receive point deductions. The time to download must be included
+in the benchmark time while using cloudmesh StopWatch. It must be included in
+your report.&lt;/li>
+&lt;/ul>
 &lt;p>Click on your icon to find out what the errors are. Fixing them is easy.&lt;/p>
 &lt;/div>
 &lt;h2 id="list-for-2021">List for 2021&lt;/h2>
