@@ -136,3 +136,6 @@
 [submodule "content/en/report/hid-example"]
 	path = content/en/report/hid-example
 	url = git@github.com:cybertraining-dsc/hid-example.git
+[submodule "content/en/report/sp21-599-355"]
+	path = content/en/report/sp21-599-355
+	url = git@github.com:cybertraining-dsc/sp21-599-355

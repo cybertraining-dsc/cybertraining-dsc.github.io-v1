@@ -126,6 +126,6 @@ git submodule add git@github.com:cybertraining-dsc/fa20-523-301.git
 
 replace the directoryname with the new module you like to add. After that, plase modify the Makefile to add it to the target `pull`.
 
-..
+...
 
 
