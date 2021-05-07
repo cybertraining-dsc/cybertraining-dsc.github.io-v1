@@ -111,7 +111,7 @@
 	url = git@github.com:cybertraining-dsc/fa20-523-346.git
 [submodule "content/en/report/--force"]
 	path = content/en/report/--force
-	url = git@github.com:cybertraining-dsc/fa20-523-316.git
+	url = git@github.com:cybertraining-dsc/sp21-599-355.git
 [submodule "content/en/report/fa20-523-316"]
 	path = content/en/report/fa20-523-316
 	url = git@github.com:cybertraining-dsc/fa20-523-316.git
