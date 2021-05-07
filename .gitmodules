@@ -124,9 +124,6 @@
 [submodule "content/en/report/sp21-599-357"]
 	path = content/en/report/sp21-599-357
 	url = git@github.com:cybertraining-dsc/sp21-599-357.git
-[submodule "content/en/report/sp21-599-355"]
-	path = content/en/report/sp21-599-355
-	url = git@github.com:cybertraining-dsc/sp21-599-355.git
 [submodule "content/en/report/sp21-599-356"]
 	path = content/en/report/sp21-599-356
 	url = git@github.com:cybertraining-dsc/sp21-599-356.git
