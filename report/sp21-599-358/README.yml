@@ -6,7 +6,7 @@ owner:
   community: "599"
   semester: "sp21"
 project:
-  title: Autonomous Vehicle Simulations Using the CARLA Simulator
+  title: Training A Vehicle Using Camera Feed from Vehicle Simulation
   url: https://github.com/cybertraining-dsc/sp21-599-358/blob/main/project/index.md
   author:
     - Jesus Badillo, sp21-599-358
