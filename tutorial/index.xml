@@ -15,6 +15,8 @@
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/eU3jOuM7OQc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div></description></item><item><title>Tutorial: 10 minus 5 Monitoring Tools for your Nvidia GPUs on Ubuntu 20.04 LTS</title><link>/tutorial/gpu/nvidia-monitoring/</link><pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate><guid>/tutorial/gpu/nvidia-monitoring/</guid><description>
+&lt;p>Please use this link for an up to date
+story: &lt;a href="https://laszewski.medium.com/10-minus-5-monitoring-tools-for-your-nvidia-gpus-55750d175213?sk=aa9f2ce23796c24f654a9386a84545c0">medium.com&lt;/a>&lt;/p>
 &lt;h2 id="1-introduction">1. Introduction&lt;/h2>
 &lt;p>So you have installed your long-awaited graphics card from NVIDIA and
 like to observe its utilization. You may be familiar with nvidia-smi,
@@ -132,7 +134,8 @@ GeForce RTX 3090, 0, 30, 0, 0, 24234, 23512, 722
 &lt;p>Nvtop could not be installed via pip install as it uses an outdated
 Nvidia library by default. Hence it is best to install it from the
 source as follows:&lt;/p>
-&lt;pre>&lt;code>$ git clone https://github.com/Syllo/nvtop.git
+&lt;pre>&lt;code>$ sudo apt-get install libncurses5-dev
+$ git clone https://github.com/Syllo/nvtop.git
 $ mkdir -p nvtop/build &amp;amp;&amp;amp; cd nvtop/build
 $ cmake ..
 $ make
@@ -145,7 +148,7 @@ $ sudo make install
 &lt;h3 id="44-gmonitor">4.4 gmonitor&lt;/h3>
 &lt;p>&lt;a href="https://github.com/mountassir/gmonitor">gmonitor&lt;/a> is a simple GPU monitoring program for monitoring core usage, VRAM usage, PCI-E and memory bus usage, and the temperature of the GPU.&lt;/p>
 &lt;p>It is easy to install with&lt;/p>
-&lt;pre>&lt;code>clone https://github.com/mountassir/gmonitor.git
+&lt;pre>&lt;code>git clone https://github.com/mountassir/gmonitor.git
 cd gmonitor/
 mkdir build
 cd build
