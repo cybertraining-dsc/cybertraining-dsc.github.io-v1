@@ -5,6 +5,10 @@ description: "We present several simple to use monitoring tools to inspect your 
 author: Gregor von Laszewski ([laszewski@gmail.com](mailto:laszewski@gmail.com)) [laszewski.github.io](https://laszewski.github.io)
 ---
 
+Please use this link for an up to date 
+story: [medium.com](https://laszewski.medium.com/10-minus-5-monitoring-tools-for-your-nvidia-gpus-55750d175213?sk=aa9f2ce23796c24f654a9386a84545c0)
+
+
 
 ## 1. Introduction
 
@@ -199,6 +203,7 @@ Nvidia library by default. Hence it is best to install it from the
 source as follows:
 
 ```
+$ sudo apt-get install libncurses5-dev
 $ git clone https://github.com/Syllo/nvtop.git
 $ mkdir -p nvtop/build && cd nvtop/build
 $ cmake ..
@@ -225,7 +230,7 @@ Figure: Nvtop Screenshot
 It is easy to install with
 
 ```
-clone https://github.com/mountassir/gmonitor.git
+git clone https://github.com/mountassir/gmonitor.git
 cd gmonitor/
 mkdir build
 cd build
@@ -256,6 +261,7 @@ Figure: gmonitor
 pip install py3nvml
 sudo pip install glances[gpu]
 ```
+
 
 You can start it with
 
