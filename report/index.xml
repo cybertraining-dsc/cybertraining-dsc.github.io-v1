@@ -3366,6 +3366,8 @@ A project this large and versatile requires the use of many software tools. Thes
 &lt;a href="https://github.com/cybertraining-dsc/fa20-523-305/actions">&lt;img src="https://github.com/cybertraining-dsc/fa20-523-305/workflows/Status/badge.svg" alt="Status">&lt;/a>
 Status: final, Type: Project&lt;/p>
 &lt;p>Cody Harris, &lt;a href="mailto:harrcody@iu.edu">harrcody@iu.edu&lt;/a>, &lt;a href="https://github.com/cybertraining-dsc/fa20-523-305">fa20-523-305&lt;/a>, &lt;a href="https://github.com/cybertraining-dsc/fa20-523-305/edit/main/project/project.md">Edit&lt;/a>&lt;/p>
+&lt;p>Code: &lt;a href="https://github.com/cybertraining-dsc/fa20-523-305/blob/main/project/code/ml_pipeline.ipynb">ml_pipeline.ipynb&lt;/a>
+Data: &lt;a href="https://github.com/cybertraining-dsc/fa20-523-305/tree/main/project/data">data&lt;/a>&lt;/p>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;h2 id="abstract">Abstract&lt;/h2>
 &lt;p>As the world is gripped with finding solutions to problems such as food and water shortages, the study of agriculture could improve where we stand with both of these problems. By integrating weather and sensor data, a model could be created to estimate soil moisture based on weather data that is easily accessible. While some farmers could afford to have many moisture sensors and monitor them, many would not have the funds or resources to keep track of the soil moisture long term. A solution would be to allow farmers to contract out a limited study of their land using sensors and then this model would be able to predict soil moistures from weather data. This collection of data, and predictions could be used on their own or as a part of a larger agricultural solution.&lt;/p>

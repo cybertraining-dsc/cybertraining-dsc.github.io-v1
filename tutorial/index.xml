@@ -456,14 +456,33 @@ change as not to overwrite other changes.&lt;/p>
 repositories. It is easy to do. Make sure to create an &lt;code>ssh-key&lt;/code> and start in
 synchronization with frequent pulls.&lt;/p></description></item><item><title>Tutorial: Monnitoring your Nvidia GPUs on Ubuntu</title><link>/tutorial/gpu/nvidia-monitoring/</link><pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><guid>/tutorial/gpu/nvidia-monitoring/</guid><description>
 &lt;h2 id="1-introduction">1. Introduction&lt;/h2>
-&lt;p>So you have installed your long awaited graphics card from NVIDIA and like to observe its utilization. You may be familiar with nvidia-smi, but there is more to this tool as you may know. We will provid you with som examples on what you can do with it. Furtheremore, we will show case a number of tools that allow you to monitor the Crad(s) as they provide more sophisticated visuzlisations. We present graphics and terminal commands. The reason why terminal commands are so popular is that theu can be called in containers, but also through simple remote shell invocations where it may be inconvenient to use a GUI.&lt;/p>
+&lt;p>So you have installed your long awaited graphics card from NVIDIA and
+like to observe its utilization. You may be familiar with nvidia-smi,
+but there is more to this tool as you may know. We will provid you
+with som examples on what you can do with it. Furtheremore, we will
+show case a number of tools that allow you to monitor the Crad(s) as
+they provide more sophisticated visuzlisations. We present graphics
+and terminal commands. The reason why terminal commands are so popular
+is that theu can be called in containers, but also through simple
+remote shell invocations where it may be inconvenient to use a GUI.&lt;/p>
 &lt;h2 id="2-preface">2. Preface&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Notation:&lt;/strong> We use in the document some comamnds issued on the terminal, teminal commands are preceeded by a &amp;lsquo;$&amp;rsquo; as to easily distinguish them from other text.&lt;/li>
-&lt;li>&lt;strong>Operating system:&lt;/strong> We restricted this review on tools that are available on Ubuntu as this is what we use to interact with the cards. Several tools also exist for windows, but this may be a topic for another day.&lt;/li>
+&lt;li>&lt;strong>Notation:&lt;/strong> We use in the document some comamnds issued on the
+terminal, teminal commands are preceeded by a &amp;lsquo;$&amp;rsquo; as to easily
+distinguish them from other text.&lt;/li>
+&lt;li>&lt;strong>Operating system:&lt;/strong> We restricted this review on tools that are
+available on Ubuntu as this is what we use to interact with the
+cards. Several tools also exist for windows, but this may be a
+topic for another day.&lt;/li>
 &lt;/ul>
 &lt;h2 id="3-python3-venv">3. Python3 venv&lt;/h2>
-&lt;p>Some of the tools come as python packages and in order not to effect your default python instalaation we recommend to use a python virtual environment. Create and source it and you should be ready to go after you execute the following commands:&lt;/p>
+&lt;p>Some of the tools come as python packages and in order not to effect
+your default python instalaation we recommend to use a python virtual
+environment. We use in our virtual environment python 3.9. To do so
+make sure you have python 3.9 installed, which you can optain in
+varius ways.&lt;/p>
+&lt;p>Then create and source it and you should be ready to go after
+you execute the following commands:&lt;/p>
 &lt;pre>&lt;code>$ python3 -m venv ~/ENV3
 $ source ~/ENV3/bin/activate
 $ pip install pip -U
@@ -472,25 +491,71 @@ $ pip install pip -U
 &lt;/code>&lt;/pre>&lt;p>to your &lt;code>.bash_profile&lt;/code> file&lt;/p>
 &lt;h2 id="4-the-tools-to-monitor-your-nvidia-cards">4. The tools to monitor your NVIDIA Cards&lt;/h2>
 &lt;h3 id="41-nvidia-smi">4.1 nvidia-smi&lt;/h3>
-&lt;p>After you installed the nvidia drivers and programs you will finr a program called &lt;code>nvidia-smi&lt;/code>. You simply can call it with&lt;/p>
+&lt;p>After you installed the nvidia drivers and programs you will finr a
+program called &lt;code>nvidia-smi&lt;/code>. You simply can call it with&lt;/p>
 &lt;pre>&lt;code>$ nvidia-smi
-&lt;/code>&lt;/pre>&lt;p>giving you the current status of the cards. To get a repeated update you can use the command&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>This gives you the current status of the cards.&lt;/p>
+&lt;pre>&lt;code>+-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.73.01 Driver Version: 460.73.01 CUDA Version: 11.2 |
+|-------------------------------+----------------------+----------------------+
+| GPU Name Persistence-M| Bus-Id Disp.A | Volatile Uncorr. ECC |
+| Fan Temp Perf Pwr:Usage/Cap| Memory-Usage | GPU-Util Compute M. |
+| | | MIG M. |
+|===============================+======================+======================|
+| 0 GeForce RTX 3090 On | 00000000:0B:00.0 On | N/A |
+| 32% 27C P8 15W / 350W | 618MiB / 24234MiB | 1% Default |
+| | | N/A |
++-------------------------------+----------------------+----------------------+
++-----------------------------------------------------------------------------+
+| Processes: |
+| GPU GI CI PID Type Process name GPU Memory |
+| ID ID Usage |
+|=============================================================================|
+| 0 N/A N/A 1544 G /usr/lib/xorg/Xorg 102MiB |
+| 0 N/A N/A 2663 G /usr/lib/xorg/Xorg 387MiB |
+| 0 N/A N/A 2797 G /usr/bin/gnome-shell 89MiB |
+| 0 N/A N/A 4866 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 7884 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 8939 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 10674 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 11148 G /usr/lib/firefox/firefox 4MiB |
++-----------------------------------------------------------------------------+
+&lt;/code>&lt;/pre>&lt;p>To get a repeated update
+you can use the command&lt;/p>
 &lt;pre>&lt;code>$ nvidia-smi -l 1
-&lt;/code>&lt;/pre>&lt;p>where the parameter after the -l specifies the time in seconds between updates. However it to avoid past traces to be showing up in your comand histtory, you can als use&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>where the parameter after the &lt;code>-l&lt;/code> specifies the time in seconds between
+updates. However it to avoid past traces to be showing up in your
+comand histtory, you can als use&lt;/p>
 &lt;pre>&lt;code>$ watch -n 1 nvidia-smi
-&lt;/code>&lt;/pre>&lt;p>which we prefer. Unkown to some users I spoke to they did not know that this command comes with a lot of features you can access from the commandline to customize your query. To find out more about it use the commands&lt;/p>
-&lt;pre>&lt;code>$ nvidia-smi --help-query-compute-app
+&lt;/code>&lt;/pre>&lt;p>which we prefer. Unkown to some users I spoke to they did not know
+that this command comes with a lot of features you can access from the
+commandline to customize your query. To find out more about it use the
+commands&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi --help-query-compute-apps
 &lt;/code>&lt;/pre>&lt;p>and&lt;/p>
 &lt;pre>&lt;code>$ nvidia-smi --help
-&lt;/code>&lt;/pre>&lt;p>to get inspired. Here is for example a command that returns the content of a specific query of selected attributes in csv format for further processing&lt;/p>
-&lt;pre>&lt;code>$ nvidia-smi --query-compute-apps=pid,process_name,used_memory --format=csv
-&lt;/code>&lt;/pre>&lt;h3 id="42-nvgpu">4.2 nvgpu&lt;/h3>
-&lt;p>&lt;a href="https://pypi.org/project/nvgpu/">nvgpu&lt;/a>&lt;/p>
-&lt;h3 id="43-greenwithenvy">4.3 GreenWithEnvy&lt;/h3>
+&lt;/code>&lt;/pre>&lt;p>to get inspired. Here is for example a command that returns the
+content of a specific query of selected attributes in csv format for
+further processing.&lt;/p>
+&lt;p>Examples are:&lt;/p>
+&lt;pre>&lt;code>nvidia-smi --query-gpu=timestamp,temperature.gpu --format=csv
+timestamp, temperature.gpu
+2021/05/30 10:39:37.436, 26
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>$ nvidia-smi --query-compute-apps=timestamp,pid,gpu_name,process_name,used_gpu_memory --format=csv
+&lt;/code>&lt;/pre>&lt;h3 id="43-greenwithenvy">4.3 GreenWithEnvy&lt;/h3>
 &lt;p>&lt;a href="https://flathub.org/apps/details/com.leinardi.gwe">GreenWithEnvy&lt;/a>
 &lt;a href="https://gitlab.com/leinardi/gwe">Code on GitLab&lt;/a>&lt;/p>
 &lt;h3 id="44-nvtop">4.4 nvtop&lt;/h3>
-&lt;p>&lt;a href="https://github.com/Syllo/nvtop">nvtop&lt;/a>&lt;/p>
+&lt;p>Nvtop could not be installed via pip intall as it uses an outdated nvidia library by default.
+Hence it is best to install it from source as follows&lt;/p>
+&lt;pre>&lt;code>$ git clone https://github.com/Syllo/nvtop.git
+$ mkdir -p nvtop/build &amp;amp;&amp;amp; cd nvtop/build
+$ cmake ..
+$ make
+$ sudo make install
+&lt;/code>&lt;/pre>&lt;p>Now run it with&lt;/p>
+&lt;pre>&lt;code>$ nvtop
+&lt;/code>&lt;/pre>&lt;p>&lt;a href="https://github.com/Syllo/nvtop">nvtop&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://www.linuxuprising.com/2019/06/2-tools-for-monitoring-nvidia-gpus-on.html">review&lt;/a>&lt;/p>
 &lt;h3 id="45-nvitop">4.5 nvitop&lt;/h3>
 &lt;p>&lt;a href="https://github.com/XuehaiPan/nvitop">nvitop&lt;/a>&lt;/p>
@@ -513,4 +578,14 @@ to launch: sudo glances&lt;/p>
 &lt;h2 id="conclusion">Conclusion&lt;/h2>
 &lt;p>We have shown you a number of tools for monitoring your GPUs. We found that these tools are incredible useful to make sure you system operates properly. This is espacially the case for showing workloads and temperatures, as well as the available software versions to interact with the cards.&lt;/p>
 &lt;p>Which one of the tools you like may be a personal choice. Although &lt;code>nvidia-smi&lt;/code> is the go-to tool, others provide quite good insights while visualizing historical trends enahncing the experience when you for example run workloads over time.&lt;/p>
-&lt;p>Please leav us a note about which tools you prefer and let us know about tools that we have not listed here.&lt;/p></description></item></channel></rss>
+&lt;p>Please leav us a note about which tools you prefer and let us know about tools that we have not listed here.&lt;/p>
+&lt;h3 id="42-install-issues-nvgpu">4.2 Install issues: nvgpu&lt;/h3>
+&lt;p>The Web page is located at &lt;a href="https://pypi.org/project/nvgpu/">Nvgpu&lt;/a>&lt;/p>
+&lt;p>This module could not be easily installed even though we installed&lt;/p>
+&lt;pre>&lt;code>sudo apt-get install liblzma-dev
+sudo apt-get install liblzma
+pip install -U nvgpu
+nvgpu available
+&lt;/code>&lt;/pre>&lt;p>it returns&lt;/p>
+&lt;pre>&lt;code>/home/USER/ENV3/lib/python3.9/site-packages/pandas/compat/__init__.py:97: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+&lt;/code>&lt;/pre></description></item></channel></rss>
