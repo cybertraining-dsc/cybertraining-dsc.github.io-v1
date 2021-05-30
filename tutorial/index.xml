@@ -454,4 +454,63 @@ change as not to overwrite other changes.&lt;/p>
 &lt;h2 id="7-conclusion">7. Conclusion&lt;/h2>
 &lt;p>The use of git from the command line is straightforward for existing
 repositories. It is easy to do. Make sure to create an &lt;code>ssh-key&lt;/code> and start in
-synchronization with frequent pulls.&lt;/p></description></item></channel></rss>
+synchronization with frequent pulls.&lt;/p></description></item><item><title>Tutorial: Monnitoring your Nvidia GPUs on Ubuntu</title><link>/tutorial/gpu/nvidia-monitoring/</link><pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><guid>/tutorial/gpu/nvidia-monitoring/</guid><description>
+&lt;h2 id="1-introduction">1. Introduction&lt;/h2>
+&lt;p>So you have installed your long awaited graphics card from NVIDIA and like to observe its utilization. You may be familiar with nvidia-smi, but there is more to this tool as you may know. We will provid you with som examples on what you can do with it. Furtheremore, we will show case a number of tools that allow you to monitor the Crad(s) as they provide more sophisticated visuzlisations. We present graphics and terminal commands. The reason why terminal commands are so popular is that theu can be called in containers, but also through simple remote shell invocations where it may be inconvenient to use a GUI.&lt;/p>
+&lt;h2 id="2-preface">2. Preface&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Notation:&lt;/strong> We use in the document some comamnds issued on the terminal, teminal commands are preceeded by a &amp;lsquo;$&amp;rsquo; as to easily distinguish them from other text.&lt;/li>
+&lt;li>&lt;strong>Operating system:&lt;/strong> We restricted this review on tools that are available on Ubuntu as this is what we use to interact with the cards. Several tools also exist for windows, but this may be a topic for another day.&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-python3-venv">3. Python3 venv&lt;/h2>
+&lt;p>Some of the tools come as python packages and in order not to effect your default python instalaation we recommend to use a python virtual environment. Create and source it and you should be ready to go after you execute the following commands:&lt;/p>
+&lt;pre>&lt;code>$ python3 -m venv ~/ENV3
+$ source ~/ENV3/bin/activate
+$ pip install pip -U
+&lt;/code>&lt;/pre>&lt;p>To permanently add it to your startup, please add the line:&lt;/p>
+&lt;pre>&lt;code>source ~/ENV3/bin/activate
+&lt;/code>&lt;/pre>&lt;p>to your &lt;code>.bash_profile&lt;/code> file&lt;/p>
+&lt;h2 id="4-the-tools-to-monitor-your-nvidia-cards">4. The tools to monitor your NVIDIA Cards&lt;/h2>
+&lt;h3 id="41-nvidia-smi">4.1 nvidia-smi&lt;/h3>
+&lt;p>After you installed the nvidia drivers and programs you will finr a program called &lt;code>nvidia-smi&lt;/code>. You simply can call it with&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi
+&lt;/code>&lt;/pre>&lt;p>giving you the current status of the cards. To get a repeated update you can use the command&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi -l 1
+&lt;/code>&lt;/pre>&lt;p>where the parameter after the -l specifies the time in seconds between updates. However it to avoid past traces to be showing up in your comand histtory, you can als use&lt;/p>
+&lt;pre>&lt;code>$ watch -n 1 nvidia-smi
+&lt;/code>&lt;/pre>&lt;p>which we prefer. Unkown to some users I spoke to they did not know that this command comes with a lot of features you can access from the commandline to customize your query. To find out more about it use the commands&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi --help-query-compute-app
+&lt;/code>&lt;/pre>&lt;p>and&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi --help
+&lt;/code>&lt;/pre>&lt;p>to get inspired. Here is for example a command that returns the content of a specific query of selected attributes in csv format for further processing&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi --query-compute-apps=pid,process_name,used_memory --format=csv
+&lt;/code>&lt;/pre>&lt;h3 id="42-nvgpu">4.2 nvgpu&lt;/h3>
+&lt;p>&lt;a href="https://pypi.org/project/nvgpu/">nvgpu&lt;/a>&lt;/p>
+&lt;h3 id="43-greenwithenvy">4.3 GreenWithEnvy&lt;/h3>
+&lt;p>&lt;a href="https://flathub.org/apps/details/com.leinardi.gwe">GreenWithEnvy&lt;/a>
+&lt;a href="https://gitlab.com/leinardi/gwe">Code on GitLab&lt;/a>&lt;/p>
+&lt;h3 id="44-nvtop">4.4 nvtop&lt;/h3>
+&lt;p>&lt;a href="https://github.com/Syllo/nvtop">nvtop&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.linuxuprising.com/2019/06/2-tools-for-monitoring-nvidia-gpus-on.html">review&lt;/a>&lt;/p>
+&lt;h3 id="45-nvitop">4.5 nvitop&lt;/h3>
+&lt;p>&lt;a href="https://github.com/XuehaiPan/nvitop">nvitop&lt;/a>&lt;/p>
+&lt;h3 id="46-nvidia-system-monitor">4.6 nvidia-system-monitor&lt;/h3>
+&lt;p>Based on qt&lt;/p>
+&lt;p>&lt;a href="https://github.com/congard/nvidia-system-monitor-qt">nvidia-system-monitor&lt;/a>&lt;/p>
+&lt;h3 id="47-gpustat">4.7 gpustat&lt;/h3>
+&lt;p>&lt;a href="https://github.com/wookayin/gpustat">gpustat&lt;/a>&lt;/p>
+&lt;p>gpustat -cp &amp;ndash;watch&lt;/p>
+&lt;p>watch -n 0.5 -c gpustat -cp &amp;ndash;color&lt;/p>
+&lt;h3 id="48-glances">4.8 glances&lt;/h3>
+&lt;p>You can use the monitoring program glances with its GPU monitoring plug-in:&lt;/p>
+&lt;p>open source
+to install: sudo apt-get install -y python-pip; sudo pip install glances[gpu]
+to launch: sudo glances&lt;/p>
+&lt;h3 id="49-prometheus">4.9 prometheus&lt;/h3>
+&lt;p>&lt;a href="https://github.com/chhibber/pgme">https://github.com/chhibber/pgme&lt;/a>&lt;/p>
+&lt;h3 id="410-gmonitor">4.10 gmonitor&lt;/h3>
+&lt;p>&lt;a href="https://github.com/mountassir/gmonitor">https://github.com/mountassir/gmonitor&lt;/a>&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>We have shown you a number of tools for monitoring your GPUs. We found that these tools are incredible useful to make sure you system operates properly. This is espacially the case for showing workloads and temperatures, as well as the available software versions to interact with the cards.&lt;/p>
+&lt;p>Which one of the tools you like may be a personal choice. Although &lt;code>nvidia-smi&lt;/code> is the go-to tool, others provide quite good insights while visualizing historical trends enahncing the experience when you for example run workloads over time.&lt;/p>
+&lt;p>Please leav us a note about which tools you prefer and let us know about tools that we have not listed here.&lt;/p></description></item></channel></rss>
