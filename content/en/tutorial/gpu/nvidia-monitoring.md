@@ -187,7 +187,7 @@ gpustat -h
 
 [nvtop](https://github.com/Syllo/nvtop) is a top like task monitor for NVIDIA GPUs. It can handle multiple GPUs.
 
-Nvtop could not be installed via pip intall as it uses an outdated nvidia library by default.
+Nvtop could be installed via pip intall as it uses an outdated nvidia library by default.
 Hence it is best to install it from source as follows
 
 ```
@@ -261,8 +261,10 @@ However if you use a white background use
 $ glances --theme-white
 ```
 
-
-
+All other tools listed here had instalation issues. HOwever we did not
+spend time to debug them as any of the previous tools seem
+sufficient. However some of the best looking GUI tools are in the list
+that did not install easily.
 
 ### 4.6 Install Issues: nvidia-system-monitor
 
@@ -278,7 +280,7 @@ It seems to be complex to install qt for free on a system, thus we
 have not followed up on this any further.
 
 
-### 4.2 Install Issues: nvgpu
+### 4.7 Install Issues: nvgpu
 
 The Web page is located at [Nvgpu](https://pypi.org/project/nvgpu/)
 
@@ -300,7 +302,7 @@ it returns
 
 
 
-### 4.5 Install Issues: nvitop
+### 4.8 Install Issues: nvitop
 
 [nvitop](https://github.com/XuehaiPan/nvitop) is Aa interactive
 NVIDIA-GPU process viewer, the one-stop solution for GPU process
@@ -311,7 +313,7 @@ The information on the Web site on how to fix the dependency on
 `nvidia-ml-py==11.450.51` and how to fix it could be better described
 
 
-### 4.3 Install Issues: GreenWithEnvy
+### 4.9 Install Issues: GreenWithEnvy
 
 [GreenWithEnvy](https://flathub.org/apps/details/com.leinardi.gwe) is
 a great looking application, however also its install is not possible
@@ -319,7 +321,7 @@ on my system as it fails with an install issue of pycairo. The ode is
 available on [GitLab](https://gitlab.com/leinardi/gwe)
 
 
-### 4.9 Install Issues: pgme
+### 4.10 Install Issues: pgme
 
 The tool [pgme](https://github.com/chhibber/pgme) could not be
 installed on Linux as its instructins wer incomplete and did not work
@@ -343,7 +345,15 @@ Which one of the tools you like may be a personal choice. Although
 while visualizing historical trends enahncing the experience when you
 for example run workloads over time.
 
+We naturally lik nvidia-sm as it simply works and you can customize
+its putput, while repeatedly displaying its values with watch.
+
+Other tools such as `gmonitor`
+
 Please leave us a note about which tools you prefer and let us know
 about tools that we have not listed here. Make sure they can easily be
-installed.
+installed. If you have beter instructions on how to install the tools
+with issues on Ubuntu 20.04 LTS please comment. We will then try it
+out and update this post.
+
 
