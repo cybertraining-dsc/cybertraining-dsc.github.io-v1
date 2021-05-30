@@ -1,6 +1,6 @@
 ---
 date: 2021-05-30
-title: "10 minus 5 Monitoring tools for your Nvidia GPUs on Ubuntu 20.04 LTS"
+title: "10 minus 5 Monitoring Tools for your Nvidia GPUs on Ubuntu 20.04 LTS"
 description: "We present several simple to use monitoring tools to inspect your GPUs on your computer."
 author: Gregor von Laszewski ([laszewski@gmail.com](mailto:laszewski@gmail.com)) [laszewski.github.io](https://laszewski.github.io)
 ---
