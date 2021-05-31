@@ -283,7 +283,33 @@ $ glances --theme-white
 > sufficient. However, some of the best looking GUI tools are in the list
 > that did not install easily.**
 
-### 4.6 Install Issues: nvidia-system-monitor
+### 4.6 Install Issues: GreenWithEnvy
+
+[GreenWithEnvy](https://flathub.org/apps/details/com.leinardi.gwe) is
+a good looking application, however, also its install is not possible
+on my system as it fails with an install issue of pycairo. The ode is
+available on [GitLab](https://gitlab.com/leinardi/gwe)
+Its instalation was only possible with f`flatpack`:
+
+```
+$ sudo apt install flatpak
+$ flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+$ flatpak --user install flathub com.leinardi.gwe
+$ flatpak update
+```
+
+Run it with 
+
+```
+$ flatpak run com.leinardi.gwe
+```
+
+![Figure: Green with envy main sceen](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe1.png)
+
+![Figure: Green with envy historical data](https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe2.png)
+
+
+### 4.7 Install Issues: nvidia-system-monitor
 
 As we have not installed qt we were suspicious about if this install
 would even work. Unfortunately, the documentation does not provide
@@ -297,7 +323,7 @@ It seems to be complex to install qt for free on a system, thus we
 have not followed up on this any further.
 
 
-### 4.7 Install Issues: nvgpu
+### 4.8 Install Issues: nvgpu
 
 The Web page is located at [Nvgpu](https://pypi.org/project/nvgpu/)
 
@@ -317,9 +343,7 @@ it returns
 /home/USER/ENV3/lib/python3.9/site-packages/pandas/compat/__init__.py:97: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
 ```
 
-
-
-### 4.8 Install Issues: nvitop
+### 4.9 Install Issues: nvitop
 
 [nvitop](https://github.com/XuehaiPan/nvitop) is Aa interactive
 NVIDIA-GPU process viewer, the one-stop solution for GPU process
@@ -329,13 +353,6 @@ install, not via compilation from the source.
 The information on the Web site on how to fix the dependency on
 `nvidia-ml-py==11.450.51` and how to fix it could be better described
 
-
-### 4.9 Install Issues: GreenWithEnvy
-
-[GreenWithEnvy](https://flathub.org/apps/details/com.leinardi.gwe) is
-a great-looking application, however, also its install is not possible
-on my system as it fails with an install issue of pycairo. The ode is
-available on [GitLab](https://gitlab.com/leinardi/gwe)
 
 
 ### 4.10 Install Issues: pgme
