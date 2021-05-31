@@ -175,7 +175,21 @@ spend time to debug them as any of the previous tools seem
 sufficient. However, some of the best looking GUI tools are in the list
 that did not install easily.&lt;/strong>&lt;/p>
 &lt;/blockquote>
-&lt;h3 id="46-install-issues-nvidia-system-monitor">4.6 Install Issues: nvidia-system-monitor&lt;/h3>
+&lt;h3 id="46-install-issues-greenwithenvy">4.6 Install Issues: GreenWithEnvy&lt;/h3>
+&lt;p>&lt;a href="https://flathub.org/apps/details/com.leinardi.gwe">GreenWithEnvy&lt;/a> is
+a good looking application, however, also its install is not possible
+on my system as it fails with an install issue of pycairo. The ode is
+available on &lt;a href="https://gitlab.com/leinardi/gwe">GitLab&lt;/a>
+Its instalation was only possible with f&lt;code>flatpack&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>$ sudo apt install flatpak
+$ flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+$ flatpak --user install flathub com.leinardi.gwe
+$ flatpak update
+&lt;/code>&lt;/pre>&lt;p>Run it with&lt;/p>
+&lt;pre>&lt;code>$ flatpak run com.leinardi.gwe
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe1.png" alt="Figure: Green with envy main sceen">&lt;/p>
+&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe2.png" alt="Figure: Green with envy historical data">&lt;/p>
+&lt;h3 id="47-install-issues-nvidia-system-monitor">4.7 Install Issues: nvidia-system-monitor&lt;/h3>
 &lt;p>As we have not installed qt we were suspicious about if this install
 would even work. Unfortunately, the documentation does not provide
 enough information on how to install qt. and make it work. The Web
@@ -183,7 +197,7 @@ page for the tool is located at&lt;/p>
 &lt;p>&lt;a href="https://github.com/congard/nvidia-system-monitor-qt">nvidia-system-monitor&lt;/a>&lt;/p>
 &lt;p>It seems to be complex to install qt for free on a system, thus we
 have not followed up on this any further.&lt;/p>
-&lt;h3 id="47-install-issues-nvgpu">4.7 Install Issues: nvgpu&lt;/h3>
+&lt;h3 id="48-install-issues-nvgpu">4.8 Install Issues: nvgpu&lt;/h3>
 &lt;p>The Web page is located at &lt;a href="https://pypi.org/project/nvgpu/">Nvgpu&lt;/a>&lt;/p>
 &lt;p>This module could not be easily installed even though we installed&lt;/p>
 &lt;pre>&lt;code>sudo apt-get install liblzma-dev
@@ -192,18 +206,13 @@ pip install -U nvgpu
 nvgpu available
 &lt;/code>&lt;/pre>&lt;p>it returns&lt;/p>
 &lt;pre>&lt;code>/home/USER/ENV3/lib/python3.9/site-packages/pandas/compat/__init__.py:97: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
-&lt;/code>&lt;/pre>&lt;h3 id="48-install-issues-nvitop">4.8 Install Issues: nvitop&lt;/h3>
+&lt;/code>&lt;/pre>&lt;h3 id="49-install-issues-nvitop">4.9 Install Issues: nvitop&lt;/h3>
 &lt;p>&lt;a href="https://github.com/XuehaiPan/nvitop">nvitop&lt;/a> is Aa interactive
 NVIDIA-GPU process viewer, the one-stop solution for GPU process
 management. However, it is not installable on my system via pip
 install, not via compilation from the source.&lt;/p>
 &lt;p>The information on the Web site on how to fix the dependency on
 &lt;code>nvidia-ml-py==11.450.51&lt;/code> and how to fix it could be better described&lt;/p>
-&lt;h3 id="49-install-issues-greenwithenvy">4.9 Install Issues: GreenWithEnvy&lt;/h3>
-&lt;p>&lt;a href="https://flathub.org/apps/details/com.leinardi.gwe">GreenWithEnvy&lt;/a> is
-a great-looking application, however, also its install is not possible
-on my system as it fails with an install issue of pycairo. The ode is
-available on &lt;a href="https://gitlab.com/leinardi/gwe">GitLab&lt;/a>&lt;/p>
 &lt;h3 id="410-install-issues-pgme">4.10 Install Issues: pgme&lt;/h3>
 &lt;p>The tool &lt;a href="https://github.com/chhibber/pgme">pgme&lt;/a> could not be
 installed on Linux as its instructions were incomplete and did not work
