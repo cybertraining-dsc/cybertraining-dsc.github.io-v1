@@ -14,231 +14,7 @@
 &lt;h2 id="github-pull-request-via-the-github-gui">Github Pull Request via the GitHub GUI&lt;/h2>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/eU3jOuM7OQc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div></description></item><item><title>Tutorial: 10 minus 4 Monitoring Tools for your Nvidia GPUs on Ubuntu 20.04 LTS</title><link>/tutorial/gpu/nvidia-monitoring/</link><pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate><guid>/tutorial/gpu/nvidia-monitoring/</guid><description>
-&lt;p>Please use this link for an up to date
-story: &lt;a href="https://laszewski.medium.com/10-minus-5-monitoring-tools-for-your-nvidia-gpus-55750d175213?sk=aa9f2ce23796c24f654a9386a84545c0">medium.com&lt;/a>&lt;/p>
-&lt;h2 id="1-introduction">1. Introduction&lt;/h2>
-&lt;p>So you have installed your long-awaited graphics card from NVIDIA and
-like to observe its utilization. You may be familiar with nvidia-smi,
-but there is more to this tool as you may know. We will provide you
-with some examples of what you can do with it. Furthermore, we will
-showcase several tools that allow you to monitor the card(s) as
-they provide more sophisticated visualizations. We present graphics
-and terminal commands. The reason why terminal commands are so popular
-is that they can be called in containers, but also through simple
-remote shell invocations where it may be inconvenient to use a GUI.&lt;/p>
-&lt;p>Although we started with the hope that all of them are easy to
-install, we found out that only five of the 10 did install without
-issues. We found especially a lack of documentation on the other tools
-to make them work. Naturally, we have other things to do as likely you,
-so we did not spend any time trying to fix the things. Instead, we
-moved on and looked at other tools that are easier to install and work.&lt;/p>
-&lt;p>We hope with our review we safe you time.&lt;/p>
-&lt;h2 id="2-preface">2. Preface&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Notation:&lt;/strong> We use in the document some commands issued on the
-terminal, and prepend them with a &amp;lsquo;$&amp;rsquo; to easily distinguish them
-from other text.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Operating system:&lt;/strong> We restricted this review to tools that are
-available on Ubuntu as this is what we use to interact with the
-cards. Several tools also exist for windows, but this may be a
-topic for another day.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="3-python3-venv">3. Python3 venv&lt;/h2>
-&lt;p>Some of the tools come as python packages and in order not to effect
-your default python installation we recommend using a python virtual
-environment. We use in our virtual environment python 3.9. To do so
-make sure you have python 3.9 installed, which you can obtain in
-various ways.&lt;/p>
-&lt;p>Then create and source it and you should be ready to go after
-you execute the following commands:&lt;/p>
-&lt;pre>&lt;code>$ python3 -m venv ~/ENV3
-$ source ~/ENV3/bin/activate
-$ pip install pip -U
-&lt;/code>&lt;/pre>&lt;p>To permanently add it to your startup, please add the line:&lt;/p>
-&lt;pre>&lt;code>source ~/ENV3/bin/activate
-&lt;/code>&lt;/pre>&lt;p>to your &lt;code>.bash_profile&lt;/code> file&lt;/p>
-&lt;h2 id="4-the-tools-to-monitor-your-nvidia-cards">4. The tools to monitor your NVIDIA Cards&lt;/h2>
-&lt;h3 id="41-nvidia-smi">4.1 nvidia-smi&lt;/h3>
-&lt;p>After you installed the Nvidia drivers and programs you will find a
-program called &lt;code>nvidia-smi&lt;/code>. You simply can call it with&lt;/p>
-&lt;pre>&lt;code>$ nvidia-smi
-&lt;/code>&lt;/pre>&lt;p>This gives you the current status of the cards.&lt;/p>
-&lt;pre>&lt;code>+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 460.73.01 Driver Version: 460.73.01 CUDA Version: 11.2 |
-|-------------------------------+----------------------+----------------------+
-| GPU Name Persistence-M| Bus-Id Disp.A | Volatile Uncorr. ECC |
-| Fan Temp Perf Pwr:Usage/Cap| Memory-Usage | GPU-Util Compute M. |
-| | | MIG M. |
-|===============================+======================+======================|
-| 0 GeForce RTX 3090 On | 00000000:0B:00.0 On | N/A |
-| 32% 27C P8 15W / 350W | 618MiB / 24234MiB | 1% Default |
-| | | N/A |
-+-------------------------------+----------------------+----------------------+
-+-----------------------------------------------------------------------------+
-| Processes: |
-| GPU GI CI PID Type Process name GPU Memory |
-| ID ID Usage |
-|=============================================================================|
-| 0 N/A N/A 1544 G /usr/lib/xorg/Xorg 102MiB |
-| 0 N/A N/A 2663 G /usr/lib/xorg/Xorg 387MiB |
-| 0 N/A N/A 2797 G /usr/bin/gnome-shell 89MiB |
-| 0 N/A N/A 4866 G /usr/lib/firefox/firefox 4MiB |
-| 0 N/A N/A 7884 G /usr/lib/firefox/firefox 4MiB |
-| 0 N/A N/A 8939 G /usr/lib/firefox/firefox 4MiB |
-| 0 N/A N/A 10674 G /usr/lib/firefox/firefox 4MiB |
-| 0 N/A N/A 11148 G /usr/lib/firefox/firefox 4MiB |
-+-----------------------------------------------------------------------------+
-&lt;/code>&lt;/pre>&lt;p>To get a repeated update
-you can use the command&lt;/p>
-&lt;pre>&lt;code>$ nvidia-smi -l 1
-&lt;/code>&lt;/pre>&lt;p>where the parameter after the &lt;code>-l&lt;/code> specifies the time in seconds between
-updates. However it to avoid past traces to be showing up in your
-command history, you can also use&lt;/p>
-&lt;pre>&lt;code>$ watch -n 1 nvidia-smi
-&lt;/code>&lt;/pre>&lt;p>which we prefer. Unkown to some users I spoke to they did not know
-that this command comes with a lot of features you can access from the
-command line to customize your query. To find out more about it use the
-commands&lt;/p>
-&lt;pre>&lt;code>$ nvidia-smi --help-query-compute-apps
-&lt;/code>&lt;/pre>&lt;p>and&lt;/p>
-&lt;pre>&lt;code>$ nvidia-smi --help
-&lt;/code>&lt;/pre>&lt;p>to get inspired. Here is for example a command that returns the
-content of a specific query of selected attributes in csv format for
-further processing.&lt;/p>
-&lt;p>Examples are:&lt;/p>
-&lt;pre>&lt;code>$nvidia-smi --query-gpu=timestamp,temperature.gpu --format=csv
-timestamp, temperature.gpu
-2021/05/30 10:39:37.436, 26
-&lt;/code>&lt;/pre>&lt;pre>&lt;code>$ nvidia-smi --query-gpu=name,index,temperature.gpu,utilization.gpu,utilization.memory,memory.total,memory.free,memory.used --format=csv,noheader,nounits
-GeForce RTX 3090, 0, 30, 0, 0, 24234, 23512, 722
-&lt;/code>&lt;/pre>&lt;h3 id="42-gpustat">4.2 gpustat&lt;/h3>
-&lt;p>&lt;a href="https://github.com/wookayin/gpustat">gpustat&lt;/a> is a minimal terminal command that lists a subset of nvidia-smi.&lt;/p>
-&lt;p>It is easily installable with&lt;/p>
-&lt;pre>&lt;code>$ pip install gpustat
-&lt;/code>&lt;/pre>&lt;p>you can call it repeatedly with&lt;/p>
-&lt;pre>&lt;code>gpustat -cp --watch
-&lt;/code>&lt;/pre>&lt;p>or&lt;/p>
-&lt;pre>&lt;code>watch -n 1 -c gpustat -cp --color
-&lt;/code>&lt;/pre>&lt;p>To see more options use&lt;/p>
-&lt;pre>&lt;code>gpustat -h
-&lt;/code>&lt;/pre>&lt;p>The output looks similar to&lt;/p>
-&lt;pre>&lt;code>hostname Sun May 30 12:29:59 2021 460.73.01
-[0] GeForce RTX 3090 | 27'C, 1 % | 659 / 24234 MB | gdm(102M) username(413M) ...
-&lt;/code>&lt;/pre>&lt;h3 id="43-nvtop">4.3 nvtop&lt;/h3>
-&lt;p>&lt;a href="https://github.com/Syllo/nvtop">nvtop&lt;/a> is a top-like task monitor for NVIDIA GPUs. It can handle multiple GPUs.&lt;/p>
-&lt;p>Nvtop could not be installed via pip install as it uses an outdated
-Nvidia library by default. Hence it is best to install it from the
-source as follows:&lt;/p>
-&lt;pre>&lt;code>$ sudo apt-get install libncurses5-dev
-$ git clone https://github.com/Syllo/nvtop.git
-$ mkdir -p nvtop/build &amp;amp;&amp;amp; cd nvtop/build
-$ cmake ..
-$ make
-$ sudo make install
-&lt;/code>&lt;/pre>&lt;p>Now run it with&lt;/p>
-&lt;pre>&lt;code>$ nvtop
-&lt;/code>&lt;/pre>&lt;p>The output looks like&lt;/p>
-&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/nvtop.png" alt="Figure: Nvtop Screenshot">&lt;/p>
-&lt;p>Figure: Nvtop Screenshot&lt;/p>
-&lt;h3 id="44-gmonitor">4.4 gmonitor&lt;/h3>
-&lt;p>&lt;a href="https://github.com/mountassir/gmonitor">gmonitor&lt;/a> is a simple GPU monitoring program for monitoring core usage, VRAM usage, PCI-E and memory bus usage, and the temperature of the GPU.&lt;/p>
-&lt;p>It is easy to install with&lt;/p>
-&lt;pre>&lt;code>git clone https://github.com/mountassir/gmonitor.git
-cd gmonitor/
-mkdir build
-cd build
-cmake ..
-make
-sudo make install
-&lt;/code>&lt;/pre>&lt;p>you start it with&lt;/p>
-&lt;pre>&lt;code>gmonitor
-&lt;/code>&lt;/pre>&lt;p>It looks as shown in the next figure.&lt;/p>
-&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gmonitor.png" alt="Figure: gmonitor">&lt;/p>
-&lt;p>Figure: gmonitor&lt;/p>
-&lt;h3 id="45-glances">4.5 glances&lt;/h3>
-&lt;p>&lt;a href="https://nicolargo.github.io/glances/">Glances&lt;/a> is a top-like tool that reports on many different aspects of the system and not just GPUs. The tool is easy to install with&lt;/p>
-&lt;pre>&lt;code>pip install py3nvml
-sudo pip install glances[gpu]
-&lt;/code>&lt;/pre>&lt;p>You can start it with&lt;/p>
-&lt;pre>&lt;code>$ glances
-&lt;/code>&lt;/pre>&lt;p>However, if you use a white background use&lt;/p>
-&lt;pre>&lt;code>$ glances --theme-white
-&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/glances.png" alt="Figure: Glances Screenshot">&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Note: All other tools listed here had installation issues. However, we did not
-spend time to debug them as any of the previous tools seem
-sufficient. However, some of the best looking GUI tools are in the list
-that did not install easily.&lt;/strong>&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="46-install-issues-greenwithenvy">4.6 Install Issues: GreenWithEnvy&lt;/h3>
-&lt;p>&lt;a href="https://flathub.org/apps/details/com.leinardi.gwe">GreenWithEnvy&lt;/a> is
-a good looking application, however, also its install is not possible
-on my system as it fails with an install issue of pycairo. The ode is
-available on &lt;a href="https://gitlab.com/leinardi/gwe">GitLab&lt;/a>
-Its instalation was only possible with f&lt;code>flatpack&lt;/code>:&lt;/p>
-&lt;pre>&lt;code>$ sudo apt install flatpak
-$ flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-$ flatpak --user install flathub com.leinardi.gwe
-$ flatpak update
-&lt;/code>&lt;/pre>&lt;p>Run it with&lt;/p>
-&lt;pre>&lt;code>$ flatpak run com.leinardi.gwe
-&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe1.png" alt="Figure: Green with envy main sceen">&lt;/p>
-&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe2.png" alt="Figure: Green with envy historical data">&lt;/p>
-&lt;h3 id="47-install-issues-nvidia-system-monitor">4.7 Install Issues: nvidia-system-monitor&lt;/h3>
-&lt;p>As we have not installed qt we were suspicious about if this install
-would even work. Unfortunately, the documentation does not provide
-enough information on how to install qt. and make it work. The Web
-page for the tool is located at&lt;/p>
-&lt;p>&lt;a href="https://github.com/congard/nvidia-system-monitor-qt">nvidia-system-monitor&lt;/a>&lt;/p>
-&lt;p>It seems to be complex to install qt for free on a system, thus we
-have not followed up on this any further.&lt;/p>
-&lt;h3 id="48-install-issues-nvgpu">4.8 Install Issues: nvgpu&lt;/h3>
-&lt;p>The Web page is located at &lt;a href="https://pypi.org/project/nvgpu/">Nvgpu&lt;/a>&lt;/p>
-&lt;p>This module could not be easily installed even though we installed&lt;/p>
-&lt;pre>&lt;code>sudo apt-get install liblzma-dev
-sudo apt-get install liblzma
-pip install -U nvgpu
-nvgpu available
-&lt;/code>&lt;/pre>&lt;p>it returns&lt;/p>
-&lt;pre>&lt;code>/home/USER/ENV3/lib/python3.9/site-packages/pandas/compat/__init__.py:97: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
-&lt;/code>&lt;/pre>&lt;h3 id="49-install-issues-nvitop">4.9 Install Issues: nvitop&lt;/h3>
-&lt;p>&lt;a href="https://github.com/XuehaiPan/nvitop">nvitop&lt;/a> is Aa interactive
-NVIDIA-GPU process viewer, the one-stop solution for GPU process
-management. However, it is not installable on my system via pip
-install, not via compilation from the source.&lt;/p>
-&lt;p>The information on the Web site on how to fix the dependency on
-&lt;code>nvidia-ml-py==11.450.51&lt;/code> and how to fix it could be better described&lt;/p>
-&lt;h3 id="410-install-issues-pgme">4.10 Install Issues: pgme&lt;/h3>
-&lt;p>The tool &lt;a href="https://github.com/chhibber/pgme">pgme&lt;/a> could not be
-installed on Linux as its instructions were incomplete and did not work
-even after installation of go with&lt;/p>
-&lt;pre>&lt;code>sudo snap install go --classic
-&lt;/code>&lt;/pre>&lt;h2 id="conclusion">Conclusion&lt;/h2>
-&lt;p>We have shown you several tools for monitoring your GPUs. We found
-that these tools are incredibly useful to make sure your system
-operates properly. This is especially the case for showing workloads
-and temperatures, as well as the available software versions to
-interact with the cards.&lt;/p>
-&lt;p>Which one of the tools you like maybe a personal choice. Although
-&lt;code>nvidia-smi&lt;/code> is the go-to tool, others provide quite good insights
-while visualizing historical trends enhancing the experience when you
-for example, run workloads over time.&lt;/p>
-&lt;p>We naturally like nvidia-sm as it simply works and you can customize
-its output, while repeatedly displaying its values with &lt;code>watch&lt;/code>.&lt;/p>
-&lt;p>Form tho other tools we liked &lt;code>nvtop&lt;/code> do its graphical history,
-&amp;lsquo;gmonitor&lt;code>for displaying the values in a diagram, and&lt;/code>glances&lt;code>for more then GPU information. If you are really tight in space,&lt;/code>gpustat`
-may be for you. All other tools could unfortunately not easily be
-installed.&lt;/p>
-&lt;p>Please leave us a note about which tools you prefer and let us know
-about tools that we have not listed here. Make sure they can easily be
-installed. If you have better instructions on how to install the tools
-with issues on Ubuntu 20.04 LTS please comment or provide us a
-pointer. We will then try it out and update this post.&lt;/p></description></item><item><title>Tutorial: Using Shell.download to Download Files</title><link>/tutorial/cms-shell-download/</link><pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate><guid>/tutorial/cms-shell-download/</guid><description>
+&lt;/div></description></item><item><title>Tutorial: Using Shell.download to Download Files</title><link>/tutorial/cms-shell-download/</link><pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate><guid>/tutorial/cms-shell-download/</guid><description>
 &lt;img src="/tutorial/cms-shell-download/featured-image_hu31ad1de8477c329f5412ff59acdd044d_22590_640x0_resize_catmullrom_2.png" width="640" height="369"/>
 &lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
 &lt;img class="card-img-top" src="/tutorial/cms-shell-download/featured-image_hu31ad1de8477c329f5412ff59acdd044d_22590_600x300_fill_catmullrom_smart1_2.png" width="600" height="300">
@@ -678,4 +454,232 @@ change as not to overwrite other changes.&lt;/p>
 &lt;h2 id="7-conclusion">7. Conclusion&lt;/h2>
 &lt;p>The use of git from the command line is straightforward for existing
 repositories. It is easy to do. Make sure to create an &lt;code>ssh-key&lt;/code> and start in
-synchronization with frequent pulls.&lt;/p></description></item></channel></rss>
+synchronization with frequent pulls.&lt;/p></description></item><item><title>Tutorial:</title><link>/tutorial/gpu/nvidia-monitoring/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tutorial/gpu/nvidia-monitoring/</guid><description>
+&lt;p>date: 2021-05-30
+title: &amp;ldquo;10 minus 4 Monitoring Tools for your Nvidia GPUs on Ubuntu 20.04 LTS&amp;rdquo;
+description: &amp;ldquo;We present several simple to use monitoring tools to inspect your GPUs on your computer.&amp;rdquo;
+author: Gregor von Laszewski (&lt;a href="mailto:laszewski@gmail.com">laszewski@gmail.com&lt;/a>) &lt;a href="https://laszewski.github.io">laszewski.github.io&lt;/a>&lt;/p>
+&lt;p>Please use this link for an up to date
+story: &lt;a href="https://laszewski.medium.com/10-minus-5-monitoring-tools-for-your-nvidia-gpus-55750d175213?sk=aa9f2ce23796c24f654a9386a84545c0">medium.com&lt;/a>&lt;/p>
+&lt;h2 id="1-introduction">1. Introduction&lt;/h2>
+&lt;p>So you have installed your long-awaited graphics card from NVIDIA and
+like to observe its utilization. You may be familiar with nvidia-smi,
+but there is more to this tool as you may know. We will provide you
+with some examples of what you can do with it. Furthermore, we will
+showcase several tools that allow you to monitor the card(s) as
+they provide more sophisticated visualizations. We present graphics
+and terminal commands. The reason why terminal commands are so popular
+is that they can be called in containers, but also through simple
+remote shell invocations where it may be inconvenient to use a GUI.&lt;/p>
+&lt;p>Although we started with the hope that all of them are easy to
+install, we found out that only five of the 10 did install without
+issues. We found especially a lack of documentation on the other tools
+to make them work. Naturally, we have other things to do as likely you,
+so we did not spend any time trying to fix the things. Instead, we
+moved on and looked at other tools that are easier to install and work.&lt;/p>
+&lt;p>We hope with our review we safe you time.&lt;/p>
+&lt;h2 id="2-preface">2. Preface&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Notation:&lt;/strong> We use in the document some commands issued on the
+terminal, and prepend them with a &amp;lsquo;$&amp;rsquo; to easily distinguish them
+from other text.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Operating system:&lt;/strong> We restricted this review to tools that are
+available on Ubuntu as this is what we use to interact with the
+cards. Several tools also exist for windows, but this may be a
+topic for another day.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-python3-venv">3. Python3 venv&lt;/h2>
+&lt;p>Some of the tools come as python packages and in order not to effect
+your default python installation we recommend using a python virtual
+environment. We use in our virtual environment python 3.9. To do so
+make sure you have python 3.9 installed, which you can obtain in
+various ways.&lt;/p>
+&lt;p>Then create and source it and you should be ready to go after
+you execute the following commands:&lt;/p>
+&lt;pre>&lt;code>$ python3 -m venv ~/ENV3
+$ source ~/ENV3/bin/activate
+$ pip install pip -U
+&lt;/code>&lt;/pre>&lt;p>To permanently add it to your startup, please add the line:&lt;/p>
+&lt;pre>&lt;code>source ~/ENV3/bin/activate
+&lt;/code>&lt;/pre>&lt;p>to your &lt;code>.bash_profile&lt;/code> file&lt;/p>
+&lt;h2 id="4-the-tools-to-monitor-your-nvidia-cards">4. The tools to monitor your NVIDIA Cards&lt;/h2>
+&lt;h3 id="41-nvidia-smi">4.1 nvidia-smi&lt;/h3>
+&lt;p>After you installed the Nvidia drivers and programs you will find a
+program called &lt;code>nvidia-smi&lt;/code>. You simply can call it with&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi
+&lt;/code>&lt;/pre>&lt;p>This gives you the current status of the cards.&lt;/p>
+&lt;pre>&lt;code>+-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.73.01 Driver Version: 460.73.01 CUDA Version: 11.2 |
+|-------------------------------+----------------------+----------------------+
+| GPU Name Persistence-M| Bus-Id Disp.A | Volatile Uncorr. ECC |
+| Fan Temp Perf Pwr:Usage/Cap| Memory-Usage | GPU-Util Compute M. |
+| | | MIG M. |
+|===============================+======================+======================|
+| 0 GeForce RTX 3090 On | 00000000:0B:00.0 On | N/A |
+| 32% 27C P8 15W / 350W | 618MiB / 24234MiB | 1% Default |
+| | | N/A |
++-------------------------------+----------------------+----------------------+
++-----------------------------------------------------------------------------+
+| Processes: |
+| GPU GI CI PID Type Process name GPU Memory |
+| ID ID Usage |
+|=============================================================================|
+| 0 N/A N/A 1544 G /usr/lib/xorg/Xorg 102MiB |
+| 0 N/A N/A 2663 G /usr/lib/xorg/Xorg 387MiB |
+| 0 N/A N/A 2797 G /usr/bin/gnome-shell 89MiB |
+| 0 N/A N/A 4866 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 7884 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 8939 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 10674 G /usr/lib/firefox/firefox 4MiB |
+| 0 N/A N/A 11148 G /usr/lib/firefox/firefox 4MiB |
++-----------------------------------------------------------------------------+
+&lt;/code>&lt;/pre>&lt;p>To get a repeated update
+you can use the command&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi -l 1
+&lt;/code>&lt;/pre>&lt;p>where the parameter after the &lt;code>-l&lt;/code> specifies the time in seconds between
+updates. However it to avoid past traces to be showing up in your
+command history, you can also use&lt;/p>
+&lt;pre>&lt;code>$ watch -n 1 nvidia-smi
+&lt;/code>&lt;/pre>&lt;p>which we prefer. Unkown to some users I spoke to they did not know
+that this command comes with a lot of features you can access from the
+command line to customize your query. To find out more about it use the
+commands&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi --help-query-compute-apps
+&lt;/code>&lt;/pre>&lt;p>and&lt;/p>
+&lt;pre>&lt;code>$ nvidia-smi --help
+&lt;/code>&lt;/pre>&lt;p>to get inspired. Here is for example a command that returns the
+content of a specific query of selected attributes in csv format for
+further processing.&lt;/p>
+&lt;p>Examples are:&lt;/p>
+&lt;pre>&lt;code>$nvidia-smi --query-gpu=timestamp,temperature.gpu --format=csv
+timestamp, temperature.gpu
+2021/05/30 10:39:37.436, 26
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>$ nvidia-smi --query-gpu=name,index,temperature.gpu,utilization.gpu,utilization.memory,memory.total,memory.free,memory.used --format=csv,noheader,nounits
+GeForce RTX 3090, 0, 30, 0, 0, 24234, 23512, 722
+&lt;/code>&lt;/pre>&lt;h3 id="42-gpustat">4.2 gpustat&lt;/h3>
+&lt;p>&lt;a href="https://github.com/wookayin/gpustat">gpustat&lt;/a> is a minimal terminal command that lists a subset of nvidia-smi.&lt;/p>
+&lt;p>It is easily installable with&lt;/p>
+&lt;pre>&lt;code>$ pip install gpustat
+&lt;/code>&lt;/pre>&lt;p>you can call it repeatedly with&lt;/p>
+&lt;pre>&lt;code>gpustat -cp --watch
+&lt;/code>&lt;/pre>&lt;p>or&lt;/p>
+&lt;pre>&lt;code>watch -n 1 -c gpustat -cp --color
+&lt;/code>&lt;/pre>&lt;p>To see more options use&lt;/p>
+&lt;pre>&lt;code>gpustat -h
+&lt;/code>&lt;/pre>&lt;p>The output looks similar to&lt;/p>
+&lt;pre>&lt;code>hostname Sun May 30 12:29:59 2021 460.73.01
+[0] GeForce RTX 3090 | 27'C, 1 % | 659 / 24234 MB | gdm(102M) username(413M) ...
+&lt;/code>&lt;/pre>&lt;h3 id="43-nvtop">4.3 nvtop&lt;/h3>
+&lt;p>&lt;a href="https://github.com/Syllo/nvtop">nvtop&lt;/a> is a top-like task monitor for NVIDIA GPUs. It can handle multiple GPUs.&lt;/p>
+&lt;p>Nvtop could not be installed via pip install as it uses an outdated
+Nvidia library by default. Hence it is best to install it from the
+source as follows:&lt;/p>
+&lt;pre>&lt;code>$ sudo apt-get install libncurses5-dev
+$ git clone https://github.com/Syllo/nvtop.git
+$ mkdir -p nvtop/build &amp;amp;&amp;amp; cd nvtop/build
+$ cmake ..
+$ make
+$ sudo make install
+&lt;/code>&lt;/pre>&lt;p>Now run it with&lt;/p>
+&lt;pre>&lt;code>$ nvtop
+&lt;/code>&lt;/pre>&lt;p>The output looks like&lt;/p>
+&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/nvtop.png" alt="Figure: Nvtop Screenshot">&lt;/p>
+&lt;p>Figure: Nvtop Screenshot&lt;/p>
+&lt;h3 id="44-gmonitor">4.4 gmonitor&lt;/h3>
+&lt;p>&lt;a href="https://github.com/mountassir/gmonitor">gmonitor&lt;/a> is a simple GPU monitoring program for monitoring core usage, VRAM usage, PCI-E and memory bus usage, and the temperature of the GPU.&lt;/p>
+&lt;p>It is easy to install with&lt;/p>
+&lt;pre>&lt;code>git clone https://github.com/mountassir/gmonitor.git
+cd gmonitor/
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+&lt;/code>&lt;/pre>&lt;p>you start it with&lt;/p>
+&lt;pre>&lt;code>gmonitor
+&lt;/code>&lt;/pre>&lt;p>It looks as shown in the next figure.&lt;/p>
+&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gmonitor.png" alt="Figure: gmonitor">&lt;/p>
+&lt;p>Figure: gmonitor&lt;/p>
+&lt;h3 id="45-glances">4.5 glances&lt;/h3>
+&lt;p>&lt;a href="https://nicolargo.github.io/glances/">Glances&lt;/a> is a top-like tool that reports on many different aspects of the system and not just GPUs. The tool is easy to install with&lt;/p>
+&lt;pre>&lt;code>pip install py3nvml
+sudo pip install glances[gpu]
+&lt;/code>&lt;/pre>&lt;p>You can start it with&lt;/p>
+&lt;pre>&lt;code>$ glances
+&lt;/code>&lt;/pre>&lt;p>However, if you use a white background use&lt;/p>
+&lt;pre>&lt;code>$ glances --theme-white
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/glances.png" alt="Figure: Glances Screenshot">&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Note: All other tools listed here had installation issues. However, we did not
+spend time to debug them as any of the previous tools seem
+sufficient. However, some of the best looking GUI tools are in the list
+that did not install easily.&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="46-install-issues-greenwithenvy">4.6 Install Issues: GreenWithEnvy&lt;/h3>
+&lt;p>&lt;a href="https://flathub.org/apps/details/com.leinardi.gwe">GreenWithEnvy&lt;/a> is
+a good looking application, however, also its install is not possible
+on my system as it fails with an install issue of pycairo. The ode is
+available on &lt;a href="https://gitlab.com/leinardi/gwe">GitLab&lt;/a>
+Its instalation was only possible with f&lt;code>flatpack&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>$ sudo apt install flatpak
+$ flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+$ flatpak --user install flathub com.leinardi.gwe
+$ flatpak update
+&lt;/code>&lt;/pre>&lt;p>Run it with&lt;/p>
+&lt;pre>&lt;code>$ flatpak run com.leinardi.gwe
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe1.png" alt="Figure: Green with envy main sceen">&lt;/p>
+&lt;p>&lt;img src="https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/raw/main/content/en/tutorial/gpu/gwe2.png" alt="Figure: Green with envy historical data">&lt;/p>
+&lt;h3 id="47-install-issues-nvidia-system-monitor">4.7 Install Issues: nvidia-system-monitor&lt;/h3>
+&lt;p>As we have not installed qt we were suspicious about if this install
+would even work. Unfortunately, the documentation does not provide
+enough information on how to install qt. and make it work. The Web
+page for the tool is located at&lt;/p>
+&lt;p>&lt;a href="https://github.com/congard/nvidia-system-monitor-qt">nvidia-system-monitor&lt;/a>&lt;/p>
+&lt;p>It seems to be complex to install qt for free on a system, thus we
+have not followed up on this any further.&lt;/p>
+&lt;h3 id="48-install-issues-nvgpu">4.8 Install Issues: nvgpu&lt;/h3>
+&lt;p>The Web page is located at &lt;a href="https://pypi.org/project/nvgpu/">Nvgpu&lt;/a>&lt;/p>
+&lt;p>This module could not be easily installed even though we installed&lt;/p>
+&lt;pre>&lt;code>sudo apt-get install liblzma-dev
+sudo apt-get install liblzma
+pip install -U nvgpu
+nvgpu available
+&lt;/code>&lt;/pre>&lt;p>it returns&lt;/p>
+&lt;pre>&lt;code>/home/USER/ENV3/lib/python3.9/site-packages/pandas/compat/__init__.py:97: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+&lt;/code>&lt;/pre>&lt;h3 id="49-install-issues-nvitop">4.9 Install Issues: nvitop&lt;/h3>
+&lt;p>&lt;a href="https://github.com/XuehaiPan/nvitop">nvitop&lt;/a> is Aa interactive
+NVIDIA-GPU process viewer, the one-stop solution for GPU process
+management. However, it is not installable on my system via pip
+install, not via compilation from the source.&lt;/p>
+&lt;p>The information on the Web site on how to fix the dependency on
+&lt;code>nvidia-ml-py==11.450.51&lt;/code> and how to fix it could be better described&lt;/p>
+&lt;h3 id="410-install-issues-pgme">4.10 Install Issues: pgme&lt;/h3>
+&lt;p>The tool &lt;a href="https://github.com/chhibber/pgme">pgme&lt;/a> could not be
+installed on Linux as its instructions were incomplete and did not work
+even after installation of go with&lt;/p>
+&lt;pre>&lt;code>sudo snap install go --classic
+&lt;/code>&lt;/pre>&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>We have shown you several tools for monitoring your GPUs. We found
+that these tools are incredibly useful to make sure your system
+operates properly. This is especially the case for showing workloads
+and temperatures, as well as the available software versions to
+interact with the cards.&lt;/p>
+&lt;p>Which one of the tools you like maybe a personal choice. Although
+&lt;code>nvidia-smi&lt;/code> is the go-to tool, others provide quite good insights
+while visualizing historical trends enhancing the experience when you
+for example, run workloads over time.&lt;/p>
+&lt;p>We naturally like nvidia-sm as it simply works and you can customize
+its output, while repeatedly displaying its values with &lt;code>watch&lt;/code>.&lt;/p>
+&lt;p>Form tho other tools we liked &lt;code>nvtop&lt;/code> do its graphical history,
+&amp;lsquo;gmonitor&lt;code>for displaying the values in a diagram, and&lt;/code>glances&lt;code>for more then GPU information. If you are really tight in space,&lt;/code>gpustat`
+may be for you. All other tools could unfortunately not easily be
+installed.&lt;/p>
+&lt;p>Please leave us a note about which tools you prefer and let us know
+about tools that we have not listed here. Make sure they can easily be
+installed. If you have better instructions on how to install the tools
+with issues on Ubuntu 20.04 LTS please comment or provide us a
+pointer. We will then try it out and update this post.&lt;/p></description></item></channel></rss>
