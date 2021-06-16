@@ -1,6 +1,6 @@
 ---
 date: 2021-02-07
-title: "Monnitoring your Nvidia GPUs on Ubuntu"
+> title: "Monnitoring your Nvidia GPUs on Ubuntu"
 description: "We present a number of simple to use monitoring tools to inspect your GPUs on your computer."
 author: Gregor von Laszewski ([laszewski@gmail.com](mailto:laszewski@gmail.com)) [laszewski.github.io](https://laszewski.github.io)
 ---
